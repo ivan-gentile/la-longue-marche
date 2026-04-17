@@ -30,11 +30,14 @@ Caramello (Istituto Grothendieck).
 
 - **976 pages** of handwritten French mathematical manuscript transcribed.
 - **~€10** total API cost for the production run.
-- **Gemini 3.1 Pro** (medium thinking) is the production model; **Claude
-  Opus 4.7** is 15× more expensive for modest notation-drift gains.
-- Current corpus composite quality on Section 49.1: **0.13**. With the
-  April 2026 `mateo-canonical` prompt (not yet re-run across the full
-  corpus): **0.74**.
+- **Gemini 3.1 Pro** (medium thinking) is the production model; with the
+  `mateo-canonical` prompt it reaches composite quality **0.742** on
+  Section 49.1, **beating Claude Opus 4.7** (0.661) at **16× lower cost**.
+- Current shipped corpus on Section 49.1: **0.113**. With the April 2026
+  prompt refresh: **0.742** (6.6× improvement; full-corpus re-run
+  pending).
+- Diagram rollout: both 140-3 (114 pages) and 140-4 (59 pages) have been
+  re-transcribed with the `diagram-tikzcd` prompt.
 
 ## Reproducing
 

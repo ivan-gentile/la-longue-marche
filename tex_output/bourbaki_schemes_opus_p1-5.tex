@@ -9,9 +9,9 @@ CHAPITRE 0\\
 PRÉLIMINAIRES.
 \end{center}
 
-\subsection*{§1. Algèbre commutative.}
+\section*{§1. Algèbre commutative.}
 
-Nous rappelons dans ce paragraphe certaines définitions et certains résultats d'algèbre commutative, dont nous nous servirons souvent par la suite. Nous omettrons la plupart des démonstrations, renvoyant par exemple aux chap. I et II de \emph{l'Algèbre commutative} de N. Bourbaki.
+Nous rappelons dans ce paragraphe certaines définitions et certains résultats d'algèbre commutative, dont nous nous servirons souvent par la suite. Nous omettrons la plupart des démonstrations, renvoyant par exemple aux chap. I et II de l'\emph{Algèbre commutative} de N. Bourbaki.
 
 Sauf mention expresse du contraire, tous les anneaux considérés seront commutatifs et munis d'un élément unité, et tous les modules sur un tel anneau seront supposés unitaires. Les homomorphismes d'anneaux seront toujours supposés transformer l'élément unité en élément unité, et sauf mention expresse du contraire, un sous-anneau d'un anneau $A$ sera supposé contenir l'élément unité de $A$. Un anneau \emph{intègre} est un anneau dans lequel le produit d'une famille finie d'éléments $\neq 0$ est $\neq 0$; il revient au même de dire que dans un tel anneau on a $0 \neq 1$ et le produit de deux éléments $\neq 0$ est non nul. Un idéal \emph{premier} $\mathfrak{p}$ d'un anneau $A$ est un idéal tel que $A/\mathfrak{p}$ soit intègre; cela entraîne donc $\mathfrak{p} \neq A$. Pour qu'un anneau $A$ ait au moins un idéal premier, il faut et il suffit que $A \neq \{0\}$.
 
@@ -23,7 +23,9 @@ Soit $\mathfrak{a}$ un idéal d'un anneau $A$; la \emph{racine} de $\mathfrak{a}
 
 %% ===== Page 2 =====
 
-\subsection*{2. Modules et anneaux de fractions.}
+\hfill -- ii --\hfill
+
+\subsection*{2. \underline{Modules et anneaux de fractions}.}
 
 On dit qu'une partie $S$ d'un anneau $A$ est \emph{multiplicative} si $1 \in S$ et si le produit de deux éléments de $S$ est dans $S$. Les exemples qui seront les plus importants pour la suite sont: 1° l'ensemble des puissances $f^n$ ($n \geq 0$) d'un élément $f \in A$; 2° le complémentaire $A - \mathfrak{p}$ d'un idéal premier $\mathfrak{p}$ de $A$.
 
@@ -34,7 +36,9 @@ est une relation d'équivalence. On désigne par $S^{-1}M$ l'ensemble quotient d
 Dans $S^{-1}M$ on définit une loi de groupe additif en prenant $m_1/s_1 + m_2/s_2 = (s_2 m_1 + s_1 m_2)/s_1 s_2$ (on vérifie que c'est bien indépendant des expressions des éléments de $S^{-1}M$ considérés). Sur $S^{-1}A$ on définit aussi une loi multiplicative $(a_1/s_1)(a_2/s_2) = (a_1 a_2)/(s_1 s_2)$, et enfin une loi externe sur $S^{-1}M$ ayant $S^{-1}A$ comme ensemble d'opérateurs en posant $(a/s)(m/s') = (am)/(ss')$. On vérifie ainsi que $S^{-1}A$ est muni d'une structure d'anneau (dit \emph{anneau des fractions de $A$ à dénominateurs dans $S$}) et $S^{-1}M$ d'une structure de $S^{-1}A$-module (dit \emph{module des fractions de $M$ à dénominateurs dans $S$}).
 
 L'anneau de fractions $S^{-1}A$ et l'application canonique $i_A^S$ sont solution d'un \emph{problème d'application universelle}: tout homomorphisme $u$ de $A$ dans un anneau $B$ tel que $u(S)$ se compose d'éléments \emph{inversibles} dans $B$ se factorise d'une seule manière en
-$$\begin{tikzcd} A \arrow[r, "i_A^S"] & S^{-1}A \arrow[r, "u^*"] & B \end{tikzcd}$$
+$$\begin{tikzcd}
+A \arrow[r, "i_A^S"] & S^{-1}A \arrow[r, "u^*"] & B
+\end{tikzcd}$$
 où $u^*$ est un homomorphisme de l'anneau $S^{-1}A$ dans l'anneau $B$.
 
 On définit un isomorphisme canonique $S^{-1}A \otimes_A M \xrightarrow{\sim} S^{-1}M$ en faisant cor-
@@ -44,25 +48,25 @@ On définit un isomorphisme canonique $S^{-1}A \otimes_A M \xrightarrow{\sim} S^
 %% ===== Page 3 =====
 
 \begin{center}
--- iii --
+- iii -
 \end{center}
 
 respondre à l'élément $(a/s) \otimes m$ l'élément $(am)/s$, l'isomorphisme réciproque appliquant $m/s$ sur $(1/s) \otimes m$.
 
 Notons enfin que l'application $\mathfrak{p}' \to (i_A^S)^{-1}(\mathfrak{p}')$ est un isomorphisme pour la structure d'ordre de l'ensemble des idéaux premiers de $S^{-1}A$ sur l'ensemble des idéaux premiers de $A$ qui ne rencontrent pas $S$.
 
-\subsection*{3. \underline{Propriétés fonctorielles}.}
+\subsection*{3. Propriétés \emph{fonctorielles}.}
 
 Soient $M, N$ deux $A$-modules, $u$ un $A$-homomorphisme de $M$ dans $N$. Si $S$ est une partie multiplicative de $A$, on définit un $S^{-1}A$-homomorphisme de $S^{-1}M$ dans $S^{-1}N$, noté $S^{-1}u$, en posant $(S^{-1}u)(m/s) = u(m)/s$; si $S^{-1}M$ et $S^{-1}N$ sont identifiés canoniquement à $S^{-1}A \otimes_A M$ et $S^{-1}A \otimes_A N$, $S^{-1}u$ est identifié à $1 \otimes u$. Si $P$ est un troisième $A$-module, $v$ un $A$-homomorphisme de $N$ dans $P$, on a $S^{-1}(v \circ u) = (S^{-1}v) \circ (S^{-1}u)$; autrement dit, $M \to S^{-1}M$ est un \emph{foncteur covariant} de la catégorie des $A$-modules dans celle des $S^{-1}A$-modules ($A$ et $S$ étant fixés). En outre ce foncteur est \emph{exact}, autrement dit, si la suite
-$$ M \xrightarrow{u} N \xrightarrow{v} P $$
+$$M \xrightarrow{u} N \xrightarrow{v} P$$
 est exacte, il en est de même de la suite
-$$ S^{-1}M \xrightarrow{S^{-1}u} S^{-1}N \xrightarrow{S^{-1}v} S^{-1}P. $$
+$$S^{-1}M \xrightarrow{S^{-1}u} S^{-1}N \xrightarrow{S^{-1}v} S^{-1}P.$$
 
 Soit $(M_\alpha, \varphi_{\beta\alpha})$ un système inductif de $A$-modules; alors $(S^{-1}M_\alpha, S^{-1}\varphi_{\beta\alpha})$ est un système inductif de $S^{-1}A$-modules. Exprimant les $S^{-1}M_\alpha$ et $S^{-1}\varphi_{\beta\alpha}$ comme des produits tensoriels, il résulte de la permutabilité des opérations de produit tensoriel et de limite inductive, que l'on a un isomorphisme canonique
-$$ S^{-1} \varinjlim M_\alpha \xrightarrow{\sim} \varinjlim S^{-1}M_\alpha. $$
+$$S^{-1} \varinjlim M_\alpha \xrightarrow{\sim} \varinjlim S^{-1}M_\alpha.$$
 
 Soient $M, N$ deux $A$-modules; il existe un $S^{-1}A$ isomorphisme canonique \emph{fonctoriel}
-$$ (S^{-1}M) \otimes_{S^{-1}A} (S^{-1}N) \xrightarrow{\sim} S^{-1}(M \otimes_A N) $$
+$$(S^{-1}M) \otimes_{S^{-1}A} (S^{-1}N) \xrightarrow{\sim} S^{-1}(M \otimes_A N)$$
 qui transforme $(m/s) \otimes (n/t)$ en $(m \otimes n)/st$. Utilisant une résolution projective de l'un des modules $M, N$, et le fait que $M \to S^{-1}M$ est un foncteur exact, on en conclut des isomorphismes canoniques \emph{fonctoriels} (en $M$ et $N$)
 
 \newpage
@@ -108,7 +112,7 @@ $$\rho^{U,S} = \rho^{U,T} \rho^{T,S}. \tag{1}$$
 Considérons maintenant une famille filtrante croissante $(S_\alpha)$ de parties multiplicatives de $A$ (on écrira $\alpha \leq \beta$ pour $S_\alpha \subset S_\beta$), et soit $S$ la partie multiplicative $\bigcup_\alpha S_\alpha$; posons $\rho_{\beta\alpha} = \rho_A^{S_\beta, S_\alpha}$; en vertu de (1), les homomorphismes $\rho_{\beta\alpha}$ définissent un anneau $A'$ \emph{limite inductive} du système inductif d'anneaux $(S_\alpha^{-1} A, \rho_{\beta\alpha})$. Soient $\rho_\alpha$ l'application canonique de $S_\alpha^{-1} A$ dans $A'$, et posons $\varphi_\alpha = \rho_A^{S, S_\alpha}$; comme $\varphi_\alpha = \varphi_\beta \rho_{\beta\alpha}$ pour $\alpha \leq \beta$ d'après (1), on peut définir un homomorphisme $\varphi: A' \to S^{-1} A$ tel que le diagramme
 
 \begin{center}
-\begin{tikzcd}[column sep=small]
+\begin{tikzcd}[column sep=small, row sep=small]
 & S_\alpha^{-1} A \arrow[dl, "\rho_\alpha"'] \arrow[d, "\rho_{\beta\alpha}"] \arrow[dr, "\varphi_\alpha"] & \\
 & S_\beta^{-1} A \arrow[dl, "\rho_\beta"'] \arrow[dr, "\varphi_\beta"] & \\
 A' \arrow[rr, "\varphi"'] & & S^{-1} A
@@ -116,11 +120,9 @@ A' \arrow[rr, "\varphi"'] & & S^{-1} A
 \end{center}
 
 soit commutatif. En fait, $\varphi$ est un \emph{isomorphisme}: il est en effet immédiat par construction que $\varphi$ est surjectif. D'autre part, si $\rho_\alpha(a/s_\alpha) \in A'$ est tel que $\varphi(\rho_\alpha(a/s_\alpha)) = 0$, cela signifie que $a/s_\alpha = 0$ dans $S^{-1} A$, c'est-à-dire qu'il existe $s \in S$ tel que $sa = 0$; mais il y a un $\beta \geq \alpha$ tel que $s \in S_\beta$, et par suite, comme $\rho_\alpha(a/s_\alpha) = \rho_\beta(sa/ss_\alpha) = 0$, on voit que $\varphi$ est injectif. On traite de même le cas d'un $A$-module $M$, et on a ainsi défini des isomorphismes canoniques
-
 $$\varinjlim S_\alpha^{-1} A \xrightarrow{\sim} (\varinjlim S_\alpha)^{-1} A, \qquad \varinjlim S_\alpha^{-1} M \xrightarrow{\sim} (\varinjlim S_\alpha)^{-1} M$$
-
 le second étant \emph{fonctoriel}.
 
-Il y a un cas important dans lequel l'homomorphisme $\rho^{T,S}$ est \emph{bijectif}, savoir lorsque tout élément de $T$ est diviseur d'un élément de $S$; on identifie alors par $\rho^{T,S}$ les modules $S^{-1} M$ et $T^{-1} M$. On dit que $S$ est \emph{saturé} si tout diviseur d'un élément de $S$ est dans $S$; en remplaçant $S$ par l'ensemble $T$ de tout les diviseurs des éléments de $S$ (qui est multiplicatif et saturé), on voit qu'on peut toujours si l'on veut se limiter à la considération de modules $S^{-1} M$ où
+Il y a un cas important dans lequel l'homomorphisme $\rho^{T,S}$ est \emph{bijectif}, savoir lorsque tout élément de $T$ est diviseur d'un élément de $S$; on identifie alors par $\rho^{T,S}$ les modules $S^{-1} M$ et $T^{-1} M$. On dit que $S$ est \emph{saturé} si tout diviseur d'un élément de $S$ est dans $S$; en remplaçant $S$ par l'ensemble $T$ de tous les diviseurs des éléments de $S$ (qui est multiplicatif et saturé), on voit qu'on peut toujours si l'on veut se limiter à la considération de modules $S^{-1} M$ où
 
 \newpage

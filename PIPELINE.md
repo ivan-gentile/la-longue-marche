@@ -125,15 +125,24 @@ actual publishable style alongside the canonical-notation block.
 | Variant | Raw residue/kc | Notation drift/kc | Structure coverage | Composite quality |
 |---------|----------------|-------------------|--------------------|-------------------|
 | Shipped 49.1old.tex | 4.71 | 5.42 | 7 % | **0.113** |
-| Gemini + old prompt (current corpus) | 3.33 | 7.10 | 14 % | **0.132** |
-| Claude Opus 4.7 + `mateo-canonical` | 0.71 | 1.42 | **79 %** | **0.743** |
+| Gemini 3.1 Pro + old prompt | 3.33 | 7.10 | 14 % | **0.132** |
+| Claude Opus 4.7 + `mateo-canonical` | 0.71 | 1.42 | 71 % | **0.661** |
+| **Gemini 3.1 Pro + `mateo-canonical`** | **0.80** | **0.90** | **71 %** | **0.742** |
+| Gemini 3.1 Pro + `mateo-canonical`, whole-doc (10 pages in one call) | 0.62 | 0.75 | 50 % | **0.714** |
 
-The 6.5× jump in composite quality from 0.113 to 0.743 is the
-ceiling that we would expect the full corpus to approach if we re-ran
-it with this prompt. This re-run is **pending a live Gemini run** —
-the measurement above used Claude because that is the API I had
-available the day I wrote this. The prompt itself lives in the repo
-and can be swapped in.
+The 6.6× jump in composite quality from 0.113 to 0.742 is what the
+full corpus would approach if we re-ran it with this prompt. The
+most striking comparison is **Gemini 3.1 Pro beating Claude Opus 4.7
+under the same prompt** (0.742 vs 0.661) at **16× lower cost**
+($0.074 vs $1.173 for 5 pages). Prompt is the dominant variable;
+model is a smaller second-order effect.
+
+Whole-document Gemini is also competitive with page-by-page,
+slightly cheaper per page (~$0.009 vs ~$0.015) and ~40 % faster
+end-to-end, at the cost of slightly lower structural coverage.
+Recommended for the Bourbaki typed-text branch; for handwritten
+Part II I would still use page-by-page because the
+previous-page visual context materially helps.
 
 ## 4. Context mechanism
 
@@ -164,8 +173,9 @@ with the `diagram-tikzcd` prompt. Results accumulate into
 folds them into the main `transcriptions.json`. The merge leaves a
 `transcriptions_pre_diagram.json` backup.
 
-As of April 2026, `140-3` has 114 diagram pages merged; `140-4` has
-none yet (pending live Gemini run).
+As of April 2026, both `140-3` and `140-4` have their diagram pages
+re-transcribed with the `diagram-tikzcd` prompt and merged into the
+main corpus. 140-3 contributed 114 pages; 140-4 contributed 59.
 
 ### 5.2. Notation normalization
 
@@ -244,18 +254,17 @@ ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \
 
 ## 8. Known open work
 
-1. **140-4 diagram re-run**. Its 59 identified diagram pages are still
-   the original production output (placeholders, not real tikzcd). The
-   pipeline for this is ready; it needs a live Gemini 3.1 Pro run.
-2. **Full-corpus re-run with `mateo-canonical` prompt**. Based on the
-   Section 49.1 measurement, this is the biggest single lever on
-   overall quality. Estimated cost ≈ $6 at current token prices.
-3. **Geometric / hand-drawn figures**. Roughly 5 pages across `140-3`
-   contain pictorial figures (not commutative diagrams). The current
-   pipeline either produces a matrix-style placeholder or a long
-   textual description. Neither is right. These pages will probably
-   need human intervention regardless of prompt.
-4. **LLM-judge calibration against your ratings**. We have judge
+1. **Full-corpus re-run with `mateo-canonical` prompt**. Based on the
+   Section 49.1 measurement (0.113 → 0.742 composite quality), this is
+   the biggest single lever on overall quality. Estimated cost ≈ $10
+   at current token prices for all 976 pages.
+2. **Geometric / hand-drawn figures**. Roughly 5 pages across `140-3`
+   and a few in `140-4` contain pictorial figures (not commutative
+   diagrams). The `diagram-tikzcd` prompt either produces a
+   matrix-style placeholder or a long textual description. Neither is
+   right. These pages will probably need human intervention regardless
+   of prompt.
+3. **LLM-judge calibration against your ratings**. We have judge
    scores over the full corpus, but not yet validated against expert
    judgement.
 

@@ -1,13 +1,12 @@
 {
   "1": {
     "status": "success",
-    "transcription": "UNIVERSITÉ MONTPELLIER\n\nIMAG\nINSTITUT MONTPELLIÉRAIN\nALEXANDER GROTHENDIECK\n\nLa \"Longue Marche\" à travers la théorie de Galois\n\n[suite à La \"Longue Marche\" à travers la théorie de Galois..., pages 650 bis à 787, dont\ntable des matières] : notes manuscrites (s.d.).\n\nCote n° 140-4, 279 pages\n\nAlexander GROTHENDIECK\n\ns.d.",
+    "transcription": "[DIAGRAM: Logo de l'Université de Montpellier]\n\n[DIAGRAM: Logo de l'IMAG - Institut Montpelliérain Alexander Grothendieck]\n\n## La \"Longue Marche\" à travers la théorie de Galois\n\n[suite à La \"Longue Marche\" à travers la théorie de Galois..., pages 650 bis à 787, dont table des matières] : notes manuscrites (s.d.).\n\nCote n° 140-4, 279 pages\n\nAlexander GROTHENDIECK\n\ns.d.",
     "usage": {
-      "prompt_tokens": 1989,
-      "output_tokens": 113,
-      "thinking_tokens": 200
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1244,
+      "output_tokens": 123,
+      "thinking_tokens": 948
+    }
   },
   "2": {
     "status": "success",
@@ -125,13 +124,12 @@
   },
   "14": {
     "status": "success",
-    "transcription": "Quand $G$ est affine, ceci devrait être trivial. On se ramène à\n\nProposition. Soit $S$ un préschéma [unclear: fin. qc?], $n$ un entier $\\ge 1$, $S_0 = V(n) \\subset S$ le sous-schéma fermé défini par $n.1_S$ (donc [unclear: crossed out text]), $U = S \\setminus S_0$, $G$ un schéma en groupes affine sur $S$, et\n\n(21) $$ \\varphi_U : G_{a|U} \\to G|_U $$\n\nun hom. de groupes. On suppose $U$ schématiquement dense dans $S$. Alors il existe une puiss. $m = n^r$ de $n$, et un hom. de schémas en groupes\n\n$$ \\psi_m : G_a \\to G , $$\n\ntels qu'on ait\n\n(22) $$ \\psi_m|_U = (\\varphi_U^m : \\lambda \\mapsto \\varphi_U(m\\lambda) = \\varphi_U(\\lambda)^m) $$\n\nConsidérons en effet l'endo.\n\n$$ u_m : G_a \\to G_a \\qquad \\lambda \\mapsto m\\lambda $$\n\nAlors la formule (22) signifie qu'on a commutativité\n\n\\begin{tikzcd}\nG_{a|U} \\ar[r, \"(u_m)_U\"] \\ar[dr, \"\\psi_m|_U\"'] & G_{a|U} \\ar[d, \"\\varphi_U\"] \\\\\n& G_U\n\\end{tikzcd}\n\net l'existence de $\\psi_m$ pour un $m$ grand, signifie que pour un $m$ grand le hom. composé\n\n$$ \\varphi_U \\circ u_m : G_{a|U} \\to G_U $$\n\nse prolonge en un hom de groupes $G_a \\to G$.",
+    "transcription": "Quand $G$ est affine, ceci devrait être\ntrivial. On va essayer de\n\nProposition Soit $S$ un préschéma [unclear: qc et qs],\n$n$ un entier $\\ge 1$, $S_0 = V(n) \\subset S$ le sous-\nschéma fermé défini par $n.1_S$ (donc\n[crossed out: si $x \\in S$, $\\dots$ $x \\in S_0 \\iff$ car. du corps rés. divise $n$]), $U = S \\setminus S_0$, $G$ un schéma en groupes\naffine sur $S$, et\n$$(21) \\qquad \\phi_U : G_U \\to G_U$$\nOn suppose $U$ schématiquement dense dans $S$.\nAlors il existe une puissance $m = n^k$ de $n$,\net un hom. de schémas en groupes\n$$\\phi_m : G \\to G$$\ntels qu'on ait\n$$(22) \\qquad \\phi_m|_U = (\\phi_U u_m : \\lambda \\mapsto \\phi_U(m\\lambda) = m\\phi_U(\\lambda))$$\n\nConsidérons en effet l'homom.\n$$u_m : G \\to G \\qquad \\lambda \\mapsto m \\lambda$$\nAlors la formule (22) signifie que la\ncommutativité\n[DIAGRAM: un triangle commutatif]\n$$G_U \\xrightarrow{(u_m)_U} G_U$$\n$$\\phi_m|_U \\searrow \\qquad \\swarrow \\phi_U$$\n$$G_U$$\net l'existence de $\\phi_m$ pour un $m$ grand, signifie\nque pour un $m$ grand l'hom. composé\n$$\\phi_U \\circ u_m : G_U \\to G_U$$\nse prolonge en un hom. de groupes $G \\to G$.",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 437,
-      "thinking_tokens": 4638
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 436,
+      "thinking_tokens": 4106
+    }
   },
   "15": {
     "status": "success",
@@ -153,14 +151,12 @@
   },
   "17": {
     "status": "success",
-    "transcription": "656\n\n[MARGIN: Y a une complication sur l'existence d'une construction de [unclear] $M_{S_0}$ posera $\\underline{G} = \\underline{G}_{S_0} \\times M_{S_0}$]\n\nLemme préliminaire, relatif à une extension\n\n(26) $$1 \\to M \\to G \\to H \\to 1$$\n\nsuite exacte de groupes discrets, avec $M$ commutatif — le cas qui nous intéressera pour la suite étant celui où $M$ est un $\\mathbb{Z}$-module libre de t. f. En tous cas $M$ est un $\\mathbb{Z}$-module, et à ce titre définit un Groupe sur $\\operatorname{Spec}\\ \\mathbb{Z}$, savoir \n$$A \\longmapsto M \\otimes_{\\mathbb{Z}} A$$\n($A$, $\\mathbb{Z}$-algèbre commutative) — qu'on désigne par $\\underline{M}$. En fait, $\\underline{M}$ est représentable, i.e. un schéma en groupes sur $\\mathbb{Z}$ si $M$ est libre de type fini. J'ai envie de définir aussi des schémas en Groupes sur $S_0$ (qui seront des schémas en groupes si $M$ l'est) $\\underline{G}, \\underline{H}$, et une suite exacte\n\n(27) $$1 \\to \\underline{M} \\to \\underline{G} \\to \\underline{H} \\to 1$$\n\nde Groupes sur $S_0$, et un isomorphisme de suites exactes\n\n(28)\n\\begin{tikzcd}\n1 \\ar[r] & M \\ar[r] \\ar[d, equal] & G \\ar[r] \\ar[d, \"\\simeq\"'] & H \\ar[r] \\ar[d, \"\\simeq\"'] & 1 \\\\\n1 \\ar[r] & \\underline{M}(\\mathbb{Z}) \\ar[r] & \\underline{G}(\\mathbb{Z}) \\ar[r] & \\underline{H}(\\mathbb{Z}) \\ar[r] & 1\n\\end{tikzcd}\n\nOn prendra\n\n(29) $$\\underline{H} = H_{S_0} \\text{ Groupe constant de val. } H$$\n\net les flèches verticales extrêmes de (28)",
+    "transcription": "656\n\nLemme préliminaire, relatif à une extension\n\n(26) $$1 \\to M \\to G \\to H \\to 1$$\n\nsuite exacte de groupes discrets, avec $M$\n\n[MARGIN: Y a une complication [unclear: pour] l'existence [unclear: des] construits - il suffit de poser $\\underline{G} = \\underline{G}_{S_0} \\times_{\\underline{M}_{S_0}} M$]\n\ncommutatif - le cas qui nous intéressera\npour la suite étant celui où $M$ est un\n$\\mathbb{Z}$-module libre de t. f. En tous cas\n$M$ est un $\\mathbb{Z}$-module , il définit à ce titre\ndéfinit un Groupe sur $Spec \\mathbb{Z}$ , savoir\n$$A \\mapsto M \\otimes_{\\mathbb{Z}} A$$\n($A$, $\\mathbb{Z}$-algèbre [unclear: usuelle]) - qu'on\ndésignera par $\\underline{M}$. En fait, $\\underline{M}$ est représentable,\ni.e. un schéma en groupes sur $Spec \\mathbb{Z}$ si $M$ est libre de\ntype fini. J'ai envie de définir aussi\ndes schémas en Groupes sur $S_0$ (qui seront\ndes schémas en groupes si $M$ l'est)\n$\\underline{G}, \\underline{H}$ , et une suite exacte\n\n(27) $$1 \\to \\underline{M} \\to \\underline{G} \\to \\underline{H} \\to 1$$\n\nde Groupes sur $S_0$ , et un isomorphisme de\nsuites exactes\n\n(28)\n$$1 \\to M \\to G \\to H \\to 1$$\n$$\\downarrow \\simeq \\quad \\downarrow \\simeq \\quad \\downarrow \\simeq$$\n$$1 \\to \\underline{M}(\\mathbb{Z}) \\to \\underline{G}(\\mathbb{Z}) \\to \\underline{H}(\\mathbb{Z}) \\to 1$$\n\nOn prendra\n\n(29) $\\underline{H} = H_{S_0}$ Groupe constant de [unclear: g. d.] $H$\n\net les flèches verticales extrêmes de (28)",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 519,
-      "thinking_tokens": 2698
-    },
-    "source": "diagram-retranscription",
-    "normalized": true
+      "prompt_tokens": 1787,
+      "output_tokens": 502,
+      "thinking_tokens": 4007
+    }
   },
   "18": {
     "status": "success",
@@ -191,23 +187,21 @@
   },
   "21": {
     "status": "success",
-    "transcription": "En fait, on peut [unclear: construire] un diagr.\ncommut. de suites exactes\n\n(38)\n\\begin{tikzcd}\n1 \\ar[r] & \\underline{M}_{S_0} \\ar[r] \\ar[d] & \\underline{\\mathfrak{S}}_{S_0} \\ar[r] \\ar[d] & \\underline{H}_{S_0} \\ar[r] \\ar[d] & 1 \\\\\n1 \\ar[r] & \\underline{M} \\ar[r] & \\underline{\\mathfrak{S}} \\ar[r] & \\underline{H}_{S_0} \\ar[r] & 1\n\\end{tikzcd}\n\nqui par passage aux sections donne\npour $S$ quelconque affine (disons) connexe\nun diagr. comm.\n\n[MARGIN: NB En [unclear: déduisant] de (39)\n$\\underline{\\mathfrak{S}}(A)$ est isomorphe\nau produit semi-direct\nde $H$ par\n$M \\otimes_{\\mathbb{Z}} A$\n[unclear]\n[unclear]]\n\n(39)\n\\begin{tikzcd}\n1 \\ar[r] & M \\ar[r] \\ar[d] & \\mathfrak{S} \\ar[r] \\ar[d] & H \\ar[r] \\ar[d, equal] & 1 \\\\\n1 \\ar[r] & M \\otimes_\\mathbb{Z} A \\ar[r] & \\underline{\\mathfrak{S}}(A) \\ar[r] & H \\ar[r] & 1\n\\end{tikzcd}\n\npour $S=S_0$ on retrouve l'iso (28)\n\n- . - . - .\n\nCette construction du $S_0$-schéma en\ngroupes $\\underline{\\mathfrak{S}}$, à partir d'une\nsuite exacte (27), est [unclear: manifestement]\nfonctorielle par r. à cette dernière : un\nhom. de suites exactes\n\n(40)\n\\begin{tikzcd}\n1 \\ar[r] & M \\ar[r] \\ar[d] & \\mathfrak{S} \\ar[r] \\ar[d] & H \\ar[r] \\ar[d] & 1 \\\\\n1 \\ar[r] & M' \\ar[r] & \\mathfrak{S}' \\ar[r] & H' \\ar[r] & 1\n\\end{tikzcd}\n\ndonne naissance à un diagr. comm.\nde suites exactes",
+    "transcription": "En fait, on peut construire un diagramme\ncomm. de suites exactes\n\n(38)\n$$1 \\longrightarrow M_{S_0} \\longrightarrow \\underline{\\mathfrak{S}}_{S_0} \\longrightarrow H_{S_0} \\longrightarrow 1$$\n$$\\downarrow \\qquad \\qquad \\downarrow \\qquad \\qquad \\downarrow$$\n$$1 \\longrightarrow \\underline{M} \\longrightarrow \\underline{\\mathfrak{S}} \\longrightarrow H_{S_0} \\longrightarrow 1$$\n\nd'où par passage aux sections au-dessus\npour $S$ quelconque affine (donc) connexe\nun diagr. comm.\n\n[MARGIN: NB En [unclear: identifiant] par [unclear: un isomorphisme] (27) $\\underline{\\mathfrak{S}}_{S_0}$ [unclear] sur [unclear] faisant [unclear] qui represente [unclear]]\n\n(39)\n$$1 \\longrightarrow M \\longrightarrow \\mathfrak{S} \\longrightarrow H \\longrightarrow 1$$\n$$\\downarrow \\qquad \\qquad \\downarrow \\qquad \\qquad \\parallel$$\n$$1 \\longrightarrow M \\otimes_{\\mathbb{Z}} A \\longrightarrow \\underline{\\mathfrak{S}}(A) \\longrightarrow H \\longrightarrow 1$$\n\n$S=S_0$ on retrouve l'iso (28)\n\n---\n\nCette construction du $S_0$-schéma en\ngroupes $\\underline{\\mathfrak{S}}$, à partir d'une\nsuite exacte (27), est manifestement\nfonctorielle par r. à cette dernière : un\nmorphisme de suites exactes\n\n(40)\n$$1 \\longrightarrow M \\longrightarrow \\mathfrak{S} \\longrightarrow H \\longrightarrow 1$$\n$$\\downarrow \\qquad \\qquad \\downarrow \\qquad \\qquad \\downarrow$$\n$$1 \\longrightarrow M' \\longrightarrow \\mathfrak{S}' \\longrightarrow H' \\longrightarrow 1$$\n\ndonne naissance à un diagr. comm.\nde suites exactes",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 585,
-      "thinking_tokens": 3000
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 427,
+      "thinking_tokens": 2969
+    }
   },
   "22": {
     "status": "success",
-    "transcription": "(41)\n\\begin{tikzcd}[row sep=1.5em, column sep=2em]\n& 1 \\ar[r] & M_{S_0} \\ar[r] \\ar[dd] \\ar[dl] & \\underline{G}_{S_0} \\ar[r] \\ar[dd] \\ar[dl] & H_{S_0} \\ar[r] \\ar[dd] \\ar[dl] & 1 \\\\\n1 \\ar[r] & M'_{S_0} \\ar[r] \\ar[dd] & \\underline{G}'_{S_0} \\ar[r] \\ar[dd] & H'_{S_0} \\ar[r] \\ar[dd] & 1 & \\\\\n& 1 \\ar[r] & \\underline{M} \\ar[r] \\ar[dl] & \\underline{\\underline{G}} \\ar[r] \\ar[dl] & H_{S_0} \\ar[r] \\ar[dl] & 1 \\\\\n1 \\ar[r] & \\underline{M}' \\ar[r] & \\underline{\\underline{G}}' \\ar[r] & H' \\ar[r] & 1 &\n\\end{tikzcd}\n\n[MARGIN: Exemple 4. réduction discrète des groupes métabéliens]\n\nReprenons donc un $\\mathbb{Z}$-module libre\nde type fini $M$, et pour $H$ un\ngroupe d'ordre fini, considérons\nla suite exacte\n\n(42) $$1 \\longrightarrow M_i \\longrightarrow M \\longrightarrow M/M_i \\longrightarrow 1$$\n\nPlus gén., si on part d'une suite\nexacte (27), pour un sous-groupe $M_i$\nd'indice fini de $M$, stable par\n$\\underline{\\underline{G}}$ i.e. stable par $H$, on a une\nsuite exacte\n\n(43) $$1 \\longrightarrow M_i \\longrightarrow \\underline{\\underline{G}} \\longrightarrow \\underline{\\underline{G}}/M_i \\longrightarrow 1$$\n\nqui montre que $H_i = \\underline{\\underline{G}}/M_i$\nest l'extension de\n\n(44) $$1 \\longrightarrow M/M_i \\longrightarrow H_i \\longrightarrow H \\longrightarrow 1$$\n\ndéduite de (27) par\n$M \\longrightarrow M/M_i$.",
+    "transcription": "[DIAGRAM: Commutative diagram (41) showing exact sequences linking $M_{S_0}$, $\\mathfrak{G}_{S_0}$, $H_{S_0}$ and their primed versions, as well as $M$, $\\mathfrak{G}$]\n\n[MARGIN: Exemple 4. Réduction discrète des groupes métabéliens]\n\nReprenons donc un $\\mathbb{Z}$-module libre de type fini $M$, et pour un $H$ s.-module d'indice fini, considérons la suite exacte\n\n$$(42) \\quad 1 \\to M_i \\to M \\to M/M_i \\to 1$$\n\nPlus gén., si on part d'une suite exacte (27), pour un sous-groupe $M_i$ d'indice fini de $M$, distingué dans $\\mathfrak{G}$ i.e. stable par $H$, on a une suite exacte\n\n$$(43) \\quad 1 \\to M_i \\to \\mathfrak{G} \\to \\mathfrak{G}/M_i \\to 1$$\n\net l'extension de\n\n$$(44) \\quad 1 \\to M/M_i \\to H_i \\to H \\to 1$$\n\ndéduite de (27) par $M \\to M/M_i$.",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 549,
-      "thinking_tokens": 7747
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 293,
+      "thinking_tokens": 5706
+    }
   },
   "23": {
     "status": "success",
@@ -408,13 +402,12 @@
   },
   "44": {
     "status": "success",
-    "transcription": "définir des homomorphismes\n(40) $$M_{S_0} \\xrightarrow{u_M} g^\\natural, \\quad \\underline{\\mathfrak{S}}^+_{S_0} \\xrightarrow{u_{\\underline{\\mathfrak{S}}}} g^\\natural \\quad (\\text{i.e. } \\underline{\\mathfrak{S}} \\to g^{c.s.})$$\nsatisfaisant les deux conditions suivantes :\n\na) Commutativité du diagramme\n\n(41)\n\\begin{tikzcd}\nM_{S_0} \\ar[r] \\ar[d] & \\underline{\\mathfrak{S}}^+_{S_0} \\ar[d, \"u_{\\underline{\\mathfrak{S}}}\"] \\\\\nM_{S_0} \\ar[r, \"u_M\"'] & g\n\\end{tikzcd}\n\net b)\n\n(42) $u_M$ est compatible avec les actions\nde $\\underline{\\mathfrak{S}}^+_{S_0}$ sur $M_{S_0}$ (via son action sur $M_{S_0}$)\net sur $g$ (via $u_{\\underline{\\mathfrak{S}}}$).\n\nDans le cas naturel, on aura $g = \\underline{\\mathfrak{S}}^+$\n\n(43) $u_M(\\lambda) = i(\\mu . \\lambda)$\n\noù $i : M \\longrightarrow \\underline{\\mathfrak{S}}^+$\nest l'inclusion évidente, et\n\n(44) $u_{\\underline{\\mathfrak{S}}} : \\underline{\\mathfrak{S}}^+_{S_0} \\longrightarrow g \\quad \\text{défini par (33)}$\n\nIl faudra d'abord vérifier que (33)\ndéfinit bien un hom. $\\underline{\\mathfrak{S}}^+_{S_0} \\longrightarrow g$,\nce qui revient à $= \\underline{\\mathfrak{S}} \\to g^{c.s.}$.",
+    "transcription": "définir des homomorphismes\n(40) $$ M_{S_0} \\xrightarrow{u_M} G^\\natural, \\quad \\underline{\\mathfrak{S}}^+_{S_0} \\xrightarrow{u_{\\underline{\\mathfrak{S}}}} G^\\natural \\quad (\\text{i.e. } \\underline{\\mathfrak{S}} \\to G^{(S_0)}) $$\nsatisfaisant les deux conditions suivantes :\n\na) Commutativité du diagramme\n\n(41)\n[DIAGRAM: carré commutatif avec $M_{S_0} \\to \\underline{\\mathfrak{S}}^+_{S_0}$, une flèche descendante $M_{S_0} \\to M_{S_0}$, $M_{S_0} \\xrightarrow{u_M} G$, et $\\underline{\\mathfrak{S}}^+_{S_0} \\xrightarrow{u_{\\underline{\\mathfrak{S}}}} G$]\n\net b)\n\n(42) $u_M$ est compatible avec les actions\nde $\\underline{\\mathfrak{S}}^+_{S_0}$ sur $M_{S_0}$ (via son action sur $M_{S_0}$)\net sur $G$ (via $u_{\\underline{\\mathfrak{S}}}$).\n\nDans le cas naturel, on aura $G = \\underline{\\mathfrak{S}}$\n(43) $$u_M(\\lambda) = i(\\mu.\\lambda)$$\noù\n$$i : M_{S_0} \\longrightarrow \\underline{\\mathfrak{S}}^+$$\nest l'inclusion, et\n(44) $$u_{\\underline{\\mathfrak{S}}} : \\underline{\\mathfrak{S}}^+_{S_0} \\longrightarrow G \\quad \\text{défini par (33)}$$\n\nIl faudra d'abord vérifier que (33)\ndéfinit bien un hom. $\\underline{\\mathfrak{S}}^+_{S_0} \\to G$,\nce qui revient à : $\\underline{\\mathfrak{S}} \\to G^{(S_0)}$.",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 429,
-      "thinking_tokens": 4895
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 445,
+      "thinking_tokens": 2746
+    }
   },
   "45": {
     "status": "success",
@@ -436,13 +429,12 @@
   },
   "47": {
     "status": "success",
-    "transcription": "Je dis que\n$y'_0 = \\varepsilon_0^{(M-1)}$ i.e. $y_0 \\sigma(y) \\omega^{V_2} = \\underbrace{\\varepsilon_0^{(\\mu-1)}}_{l_0^{\\nu'}} \\implies \\mu-1=2\\nu_1$, soit\n$y_0 \\sigma(y) \\omega^{V_2} = l_0^{\\nu'}$ ; $\\nu = 2\\nu'$ i.e.\n$y_0 \\sigma(y) = l_0^{2\\nu'} (\\omega l_0 \\lambda_0^{V_2}) = \\underbrace{\\lambda_0^{2\\nu'+V_2}}_{\\lambda_0^{2\\nu'} \\lambda_0^{-V_2}}$ i.e.\n$y_0 \\sigma(y) = \\lambda_0^{\\nu'}$ soit, en appliquant $\\sigma$ et notant\nque $\\sigma(y_0) = y_0^{-1}$, $\\sigma^2(y)=y$, $\\sigma(\\lambda_0)=\\lambda_1$,\n$y_0^{-1} y = \\lambda_1(y)$ soit enfin $y = y_0 \\lambda_1(y)$ $\\sim$\n$y = y_0 + \\nu \\lambda_1$ (écrit additivement)\n\nce qui est vrai par hypothèse (cf (31) ).\nReste à [unclear: s'assurer] (pour achever [unclear: l'étude] de $u_{\\mathcal{E}_0}$ pour\nles [unclear: éléments annulés] (pour [unclear: abréger on l'écrira simplement])\n$u(\\lambda_1) = u\\rho(\\lambda_0) = (\\rho \\mu)(\\lambda_0) = \\rho(u(\\lambda_0)) = \\rho(\\lambda_0 \\mu) = \\lambda_1 \\mu$\nOK.\n\nReste à vérifier (42), ce qui [unclear: se réduit] à :\ncommutativité de $u_M = \\mu\\ id_M$ à\n$(\\rho_M, \\rho'_M)$, $(\\sigma_M, \\sigma'_M)$ - ce qui signifie que\n$\\rho_M$ et $\\rho'_M$ d'une part, $\\sigma_M$ et $\\sigma'_M$ d'autre part,\nagissent [unclear: également], ce qui est trivialement évident.\n\nAinsi, le groupe $\\tilde{\\mathcal{E}}_{\\rho, \\sigma}$ est bel et\nbien construit - du moins, en tant que\nrelevant un [unclear: sous-groupe] $Z$, muni des [unclear: morphismes]\nde structure\n(51)\n\\begin{tikzcd}\n\\tilde{Z}_{\\rho, \\sigma} \\ar[r, shift left, \"f_0\"] \\ar[r, shift right, \"f_{S_0}\"'] & \\mathcal{E}_{0, S_0} \\ar[r] & \\mathcal{E}_{S_0}\n\\end{tikzcd}\nd'où $\\mu = 4\\nu' + 2 + V_2 : \\tilde{Z}_{\\rho, \\sigma} \\to \\mathcal{E}_{S_0}$\n$\\varepsilon_2, \\varepsilon_5 : \\tilde{Z}_{\\rho, \\sigma} \\rightrightarrows \\mu_{S_0} = \\mu\\ id_{S_0}$",
+    "transcription": "je dis que\n$$ \\epsilon'_0 = \\varepsilon_0^{(M-1)} \\quad i.e. \\quad \\eta_0 \\sigma(\\rho) \\omega^{\\nu_2'} = \\frac{\\epsilon_0^{(M-1)}}{l_0^{\\nu'}} \\quad (\\mu-1 = 2\\nu'_2, \\dots) soit $$\n$$ \\eta_0 \\sigma(\\rho) \\omega^{\\nu_2'} = l_0^{\\nu'} \\quad \\quad \\nu = 2 \\nu' = \\nu_2' \\quad i.e $$\n$$ \\eta_0 \\sigma(\\rho) = l_0^{2\\nu'} (\\omega l_0 \\lambda_0^{\\nu_2'}) = \\frac{\\lambda_0^{2\\nu'-\\nu_2'}}{\\lambda_0^{2\\nu'}} \\quad i.e. $$\n$$ \\eta_0 \\sigma(\\rho) = \\lambda_0^{(\\nu'_2)} \\quad \\text{soit, en appliquant } \\sigma \\text{ et notant} $$\n$$ \\text{que } \\sigma(\\eta_0) = \\eta_0^{-1}, \\sigma^{-2}(\\rho) = \\rho, \\sigma(\\lambda_0) = \\lambda_1, $$\n$$ \\eta_0^{-1} \\rho = \\lambda_1(\\rho) \\quad \\text{soit enfin } \\rho = \\eta_0 \\lambda_1^{(\\nu_2')} \\text{ ou} $$\n$$ \\rho = \\eta_0 + \\nu \\lambda_1 \\quad (\\text{écrit additivement}) $$\n\nce qui est vrai par hypothèse (cf (31) ).\nDes [unclear] (pour [unclear] par\nsimplifier)\n$$ u(\\lambda_1) = u \\rho(\\lambda_0) = (\\rho u)(\\lambda_0) = \\rho(u(\\lambda_0)) = \\rho(\\lambda_0 \\mu_1) = \\lambda_1 \\mu_1 $$\nOK.\n\nReste à vérifier (42), ce qui revient à :\ncommutativité de $u_{\\underline{M}} = \\mu id_{\\underline{M}}$ :\n$(\\rho_M, \\rho'_M)$, $(\\sigma_M, \\sigma'_M)$ - se déduit de ce que\n$\\rho_M$ et $\\rho'_M$ d'une part, $\\sigma_M$ et $\\sigma'_M$ d'autre part,\n[unclear] que c'est également évident.\n\nAinsi, le groupoïde $\\widetilde{Z}_{/\\sigma}$ est\nbien construit - du moins, en tous cas\nrelativement au [unclear] $\\mathbb{Z}$, [unclear] des morphismes\nde [unclear]\n\n(51) [DIAGRAM: Morphisms involving $\\widetilde{Z}_{/\\sigma}$, $\\underline{G}_A$, and conditions on $\\mu$]\nd'où $\\mu = 4 \\nu' + 2 + \\nu_2 : \\widetilde{Z}_{/\\sigma} \\to \\underline{G}_{S_0}$\n$\\varepsilon_2, \\varepsilon_3 : \\widetilde{Z}_{/\\sigma} \\rightrightarrows \\mu_{S_0} = \\mu id_{S_0}$",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 773,
-      "thinking_tokens": 5194
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 730,
+      "thinking_tokens": 2177
+    }
   },
   "48": {
     "status": "success",
@@ -595,13 +587,12 @@
   },
   "64": {
     "status": "success",
-    "transcription": "contenant $[\\Pi_0, \\Pi_0]$, d'indice $3$ dans $\\Pi_0$.\n\nJe présume qu'il contient le sous-groupe\nde congruences relatif à $12$ - i.e. distingué,\nqu'il correspond à un sous-groupe de\n$S\\ell(2, \\mathbb{Z}/12\\mathbb{Z})$. Il est d'indice\n$3 \\cdot 12 = 36$ dans $S\\ell(2, \\mathbb{Z})$, [unclear: rayé] $G\\ell(2, \\mathbb{Z})$,\ntandis que $$S\\ell(2, \\mathbb{Z}/12\\mathbb{Z}) \\simeq \\underset{48}{S\\ell(2, \\mathbb{Z}/4\\mathbb{Z})} \\times \\underset{24}{S\\ell(2, \\mathbb{Z}/3\\mathbb{Z})}$$\nil s'agit donc d'un sous-groupe (c'est même un sous-groupe distingué)\n$32$ de $S\\ell(2, \\mathbb{Z}/12\\mathbb{Z})$, engendré par les\néléments images de\n$$ (\\sigma(\\rho)\\rho^{-1})^3 = [\\lambda_0, \\lambda_1], \\text{ ou } [\\sigma_0, \\lambda_\\infty] $$\ncf (7)\n$\\delta = \\lambda_1 \\lambda_0^{-1}$\n$\\rho(\\delta)$\n\nou encore le sous-groupe distingué engendré par\nle seul élément dans $S\\ell(2, \\mathbb{Z}/12\\mathbb{Z})$\n\n$$ (110) \\quad \\left\\{ \\begin{array}{l} \\delta = \\lambda_1 \\lambda_0^{-1} = l_1 l_0^{-1} = \\left(\\begin{array}{cc} 1 & 0 \\\\ 2 & 1 \\end{array}\\right) \\left(\\begin{array}{cc} 1 & +2 \\\\ 0 & 1 \\end{array}\\right) \\\\ = \\left(\\begin{array}{cc} 1 & +2 \\\\ 2 & 5 \\end{array}\\right) \\end{array} \\right. $$\n\nLa question est de si ce sous-groupe\ndistingué de $S\\ell(2, \\mathbb{Z}/12\\mathbb{Z})$ est bel et\nbien d'ordre $32$, donc d'indice $36$ - un\nordre qui pourrait être plus grand, donc l'indice\nplus petit. Déjà quel est l'ordre de $\\bar{\\delta}$ ?",
+    "transcription": "contenant $[\\Pi_0, \\Pi_0]$, d'indice $3$ dans $\\Pi_0$.\n\nJe présume qu'il contient le sous-groupe\nde congruences relatif à $12$ - i.e.\nqu'il correspond à un sous-groupe [unclear: distingué, inserted] de\n$\\underline{Sl}(2, \\mathbb{Z}/12\\mathbb{Z})$. Il est d'indice\n$3 \\cdot 12 = 36$ dans $\\underline{Sl}(2, \\mathbb{Z})$, et de $72$ dans $\\underline{Gl}(2, \\mathbb{Z})$,\n\ntandis que $\\underline{Sl}(2, \\mathbb{Z}/12\\mathbb{Z}) \\simeq \\underline{Sl}(2, \\mathbb{Z}/4\\mathbb{Z}) \\times \\underline{Sl}(2, \\mathbb{Z}/3\\mathbb{Z})$\n[DIAGRAM: 48 under the first term, 24 under the second term]\n\nce serait donc un sous-groupe \nc'est même un sous-groupe distingué\n$32$ de $\\underline{Sl}(2, \\mathbb{Z}/12\\mathbb{Z})$, engendré par les\néléments \n\n[DIAGRAM: Large left curly brace grouping the next 4 lines]\n$(\\sigma(\\rho)\\rho^{-1})^3 = [\\lambda_0, \\lambda_1]$, ou $[\\sigma_\\infty, \\lambda_\\infty]$\ncf (7)\n$\\delta = \\lambda_1 \\lambda_0^{-1}$\n$\\rho(\\delta)$\n\nou encore le sous-groupe distingué engendré par\nle seul élément\n\n$\\delta = \\lambda_1 \\lambda_0^{-1}$, $\\rho(\\delta) = \\lambda_0 \\lambda_\\infty^{-1}$, $\\rho^2(\\delta) = \\lambda_\\infty \\lambda_1^{-1}$\n\n(110)\n$$ \\delta = \\lambda_1 \\lambda_0^{-1} = l_1 l_0^{-1} = \\left(\\begin{array}{cc} 1 & 0 \\\\ 2 & 1 \\end{array}\\right) \\left(\\begin{array}{cc} 1 & +2 \\\\ 0 & 1 \\end{array}\\right) $$\n$$ = \\left(\\begin{array}{cc} 1 & +2 \\\\ 2 & 5 \\end{array}\\right) $$\n\nLa question est de savoir si ce sous-groupe\ndistingué de $\\underline{Sl}(\\mathbb{Z}, \\mathbb{Z}/12\\mathbb{Z})$ est bien de\nbien d'indice $32$, ou d'indice $36$ -- à\nmoins qu'il ne soit plus grand, i.e. d'indice\nplus petit. Déjà quel est l'ordre de $\\bar{\\delta}$ ?",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 595,
-      "thinking_tokens": 2320
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 638,
+      "thinking_tokens": 4627
+    }
   },
   "65": {
     "status": "success",
@@ -615,13 +606,12 @@
   },
   "66": {
     "status": "success",
-    "transcription": "ce sous-groupe image de $\\Pi_0 \\subset \\operatorname{Sl}(2,\\hat{\\mathbb{Z}})$, c'est-à-dire dans $\\Pi_0$,\nque l'image inverse d'un sous-groupe de\nl'ét. précédente de $\\operatorname{Sl}(2, \\mathbb{Z}/12\\mathbb{Z})$.\n\nRésumons les résultats obtenus :\n\nProposition. Considérons dans $\\hat{\\mathfrak{S}}_0^+ = \\operatorname{Sl}(2, \\hat{\\mathbb{Z}})$\nla tour de sous-groupes invariants (et dans $\\hat{\\mathfrak{S}}_0$)\n(114)\n\\begin{tikzcd}\n\\hat{\\mathfrak{S}}_0^+ \\ar[r, hookleftarrow, \"6\"] & \\Pi = \\Pi[2] \\ar[r, hookleftarrow, \"2\"] \\ar[d, equal, \"\\text{def}\"'] & \\Pi_0 \\ar[r, hookleftarrow, \"3\"] \\ar[d, phantom, \"\\text{sous-groupe N}\"'] & \\Pi_{00} \\ar[r, hookleftarrow, \"2!\"] \\ar[d, phantom, \"\\text{sous-groupe inv.}\"'] & (\\Pi_0, \\Pi_0) \\\\\n& \\{u \\in \\hat{\\mathfrak{S}}_0^+ \\mid u \\equiv 1 (2)\\} & \\text{engendré par } \\rho, \\dots & \\text{engendré par les} & \\\\\n& & \\text{[unclear]} & \\lambda_1 \\lambda_0^{-1} = \\rho_1 \\rho_0^{-1} &\n\\end{tikzcd}\n\nConsidérons d'autre part le groupe quotient\n(115) $$\\operatorname{Sl}(2, \\mathbb{Z}/12\\mathbb{Z}) \\simeq \\hat{\\mathfrak{S}}_0^+ / \\Pi[12]$$\n$$ \\simeq \\operatorname{Sl}(2, \\mathbb{Z}/4\\mathbb{Z}) \\times \\operatorname{Sl}(2, \\mathbb{Z}/3\\mathbb{Z}) $$\n\net la tour de sous-groupes suivants\n\n[MARGIN: NB $(\\hat{\\mathfrak{S}}_0^+)^{ab} \\simeq \\mathbb{Z}/12\\mathbb{Z}$ (cf 42 bis)\nl'identif... en $H/\\Pi_{00}^\\bullet$ donne un homom (116)\nd'ordre 3 $-$ surj. d'un ? en un\n$\\operatorname{Sl}(2, \\mathbb{Z}/4\\mathbb{Z}) / \\operatorname{Sl}(2, \\mathbb{F}_2)' \\times \\operatorname{Sl}(2, \\mathbb{Z}/3\\mathbb{Z}) / Syl_{2,3} \\simeq \\hat{\\mathfrak{S}}_0^+ / \\Pi_{00}$]\n\n\\begin{tikzcd}\nH = \\ar[d, phantom, \"\\cup\" description, \"6\" left] & \\operatorname{Sl}(2, \\mathbb{Z}/4\\mathbb{Z}) \\times \\operatorname{Sl}(2, \\mathbb{Z}/3\\mathbb{Z}) & \\text{ordre } 48 \\times 24 \\\\\n\\Pi^\\bullet = \\ar[d, phantom, \"\\cup\" description, \"2\" left] & \\operatorname{Sl}(2, \\mathbb{F}_2) \\times \\operatorname{Sl}(2, \\mathbb{Z}/3\\mathbb{Z}) & \\text{ordre } 8 \\times 24 \\\\\n\\Pi_0^\\bullet = \\ar[d, phantom, \"\\cup\" description, \"3\" left] & \\operatorname{Sl}(2, \\mathbb{F}_2)' \\times \\operatorname{Sl}(2, \\mathbb{Z}/3\\mathbb{Z}) & \\text{ordre } 4 \\times 24 \\\\\n\\Pi_{00}^\\bullet = & \\operatorname{Sl}(2, \\mathbb{F}_2)' \\times Syl_{2,3} \\ar[d, \"\\simeq\"'] & \\text{ordre } 4 \\times 8 \\\\\n& \\text{[unclear]} \\simeq D_4 &\n\\end{tikzcd}\n\n(117)\na) $\\operatorname{Sl}(2, \\mathbb{F}_2) \\simeq \\operatorname{Ker}(\\operatorname{Sl}(2, \\mathbb{Z}/4\\mathbb{Z}) \\to \\operatorname{Sl}(2, \\mathbb{Z}/2\\mathbb{Z}))$\nb) $\\operatorname{Sl}(2, \\mathbb{F}_2)' \\subset \\operatorname{Sl}(2, \\mathbb{F}_2)$, sous-groupe distingué $\\simeq \\mathbb{F}_2 \\times \\mathbb{F}_2$ dont les trois él. $\\neq 0$ sont $\\lambda_0, \\lambda_1, \\lambda_\\infty$ (images dans $\\operatorname{Sl}(2, \\mathbb{Z}/4\\mathbb{Z})$) - c'est un supplémentaire dans la [unclear] du sous-groupe multiplicatif $\\mu_2 \\simeq \\mathbb{F}_2$ des unit. [unclear] de $\\operatorname{Sl}(2, \\mathbb{Z}/4\\mathbb{Z})$.\nc) $Syl_2 \\subset \\operatorname{Sl}(2, \\mathbb{Z}/3\\mathbb{Z})$, sous-groupe de Sylow, d'ordre 8 (qui est distingué)",
+    "transcription": "[unclear: le sous-groupe] image dans $\\Pi_0 \\subset \\operatorname{Sl}(2,\\mathbb{Z})$, c'est-à-dire dans $\\Pi_0$,\nque l'image inverse de ce sous-groupe\ndans le [unclear: précédent] de $\\operatorname{Sl}(2,\\mathbb{Z}/12\\mathbb{Z})$.\n\nRésumons les résultats obtenus :\n\nProposition Considérons dans $\\widehat{\\mathbb{G}}_0^+ = \\operatorname{Sl}(2,\\hat{\\mathbb{Z}})$\nla tour de sous-groupes invariants (et dans $\\widehat{\\mathbb{G}}_0$)\n[DIAGRAM: Tour de sous-groupes (114): $\\widehat{\\mathbb{G}}_0^+$ contient $\\Pi = \\Pi[2]$ (indice 6), qui contient $\\Pi_0$ (indice 2), qui contient $\\Pi_{00}$ (indice 3), qui contient $[\\Pi_0, \\Pi_0]$. Sous $\\Pi$ est noté $\\| \\text{ def}$ et $\\{u \\in \\widehat{\\mathbb{G}}_0^+ | u \\equiv 1 (2)\\}$. Sous $\\Pi_0$ se trouve une note raturée. Sous $\\Pi_{00}$ est noté l'indice 21 et \"sous-groupe inv. engendré par $\\lambda_1 \\lambda_0^{-1} = \\rho_1 \\rho_0^{-1}$\"]\n\nConsidérons d'autre part le groupe quotient\n$$ (115) \\quad \\operatorname{Sl}(2,\\mathbb{Z}/12\\mathbb{Z}) \\simeq \\widehat{\\mathbb{G}}_0^+ / \\Pi[12] $$\n$$ \\simeq \\{ u \\in \\widehat{\\mathbb{G}}_0^+ | u \\equiv 1 (12) \\} $$\n$$ \\simeq \\operatorname{Sl}(2,\\mathbb{Z}/4\\mathbb{Z}) \\times \\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z}) ,$$\net la tour de sous-groupes correspondants\n\n[MARGIN: N.B. L'identific. $(\\widehat{\\mathbb{G}}_0^+)^{ab} \\simeq \\mathbb{Z}/12\\mathbb{Z}$ équivaut à un isomorphisme de $H/\\Pi_{00}^*$ d'ordre 3 sur $\\mathbb{Z}/3\\mathbb{Z}$ - [unclear] de $\\operatorname{Sl}(2,\\mathbb{Z}/4\\mathbb{Z})/ sl(2,\\mathbb{F}_2)' \\times \\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z}) / Syl_2$ [unclear]]\n\n$$ H = \\operatorname{Sl}(2,\\mathbb{Z}/4\\mathbb{Z}) \\times \\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z}) \\quad \\text{ordre } 48 \\times 24 $$\n$$ \\cup \\quad 6 $$\n$$ \\Pi^* = sl(2,\\mathbb{F}_2) \\times \\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z}) \\quad \\text{ordre } 8 \\times 24 $$\n$$ \\cup \\quad 2 $$\n$$ \\Pi_0^* = sl(2,\\mathbb{F}_2)' \\times \\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z}) \\quad \\text{ordre } 4 \\times 24 $$\n$$ \\cup \\quad 3 $$\n$$ \\Pi_{00}^* = sl(2,\\mathbb{F}_2)' \\times Syl_2 \\quad \\text{ordre } 4 \\times 8 $$\n(où $Syl_2 \\simeq$ [unclear: $Q_8$])\n\nOù\n(117)\na) $sl(2,\\mathbb{F}_2) \\simeq \\operatorname{Ker}(\\operatorname{Sl}(2,\\mathbb{Z}/4\\mathbb{Z}) \\to \\operatorname{Sl}(2,\\mathbb{Z}/2\\mathbb{Z}))$\n\nb) $sl(2,\\mathbb{F}_2)' \\subset sl(2,\\mathbb{F}_2)$, sous-groupe distingué $\\simeq \\mathbb{F}_2 \\times \\mathbb{F}_2$, dont les trois él. $\\neq 0$ sont $\\lambda_0, \\lambda_1, \\lambda_\\infty$ (images dans $\\operatorname{Sl}(2,\\mathbb{Z}/4\\mathbb{Z})$) - [unclear: c'est un supplémentaire de $\\pm 1$ dans le sous-groupe de $\\operatorname{Sl}(2,\\mathbb{Z}/4\\mathbb{Z})$ d'ordre 8]\n\nc) $Syl_2 \\subset \\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z})$ sous-groupe de Sylow, d'ordre 8\n($Ker (\\operatorname{Sl}(2,\\mathbb{Z}/3\\mathbb{Z}) \\to \\dots)$ qui est distingué)",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 1161,
-      "thinking_tokens": 3669
+      "prompt_tokens": 1787,
+      "output_tokens": 1059,
+      "thinking_tokens": 6485
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "67": {
@@ -646,25 +636,22 @@
   },
   "69": {
     "status": "success",
-    "transcription": "5) Les groupes $\\underline{M}_{\\rho,\\sigma}$, $\\underline{M}_{\\rho,\\sigma}^+$ (via $\\underline{N}_{\\rho,\\sigma}$).\n\nÀ tout $l \\in \\hat{\\Pi}_0$ correspond un autom\nintérieur $int(l)$, qui est l'identité sur\n$\\underline{M}_0$. On aura, tautologiquement\n\n(118) $$ \\begin{cases} int(l)(\\rho) = \\alpha(\\rho) \\\\ int(l)(\\sigma) = \\beta(\\sigma) \\end{cases} \\quad \\alpha = \\beta = l $$\n\nMais [unclear] (rel. de lacets C relative : $f_1=1$ d. $\\nu=0$)\n$$ (1-\\rho_M)(\\underset{l}{\\alpha}) = (1-\\sigma_M)(\\underset{l}{\\beta}) $$\ni.e.\n$$ \\rho_M(l) = \\sigma_M(l) \\quad ? $$\n\nPosant \n(119) $$ l = c_0 \\lambda_0 + c_1 \\lambda_1 $$\nla relation [unclear] s'écrit\n$$ c_0 \\lambda_1 + c_1 \\underset{-\\lambda_0-\\lambda_1}{\\lambda_\\infty} = c_0 \\lambda_1 + c_1 \\lambda_0 $$\ni.e.\n$$ - c_1 \\lambda_0 + (c_0 - c_1) \\lambda_1 = c_1 \\lambda_0 + c_0 \\lambda_1 $$\ni.e. $c_1=0$ i.e. $l = c_0 \\lambda_0$. Donc c'est\nsans remords qu'on se restreint à\nconsidérer des $l \\in \\widehat{L}_0$ ; correspondant\n\n(120) $$ l = c_0 \\lambda_0 \\in \\widehat{L}_0 = Im (\\hat{\\mathbb{Z}} \\xrightarrow{u} \\underline{M}) $$\n$$ c_0 \\mapsto c_0 \\lambda_0 $$\n\nOn a un demi diagramme\n(121) \n\\begin{tikzcd}\n\\mathbb{G}_a \\simeq \\widehat{L}_0 \\ar[r] \\ar[d, hook] & \\underline{N}_{\\rho,\\sigma} \\\\\n\\underline{G}^+\n\\end{tikzcd}",
+    "transcription": "5) Les groupes $\\underline{M}_{\\rho \\sigma}$, $\\underline{M}_{\\rho \\sigma}^\\sim$ (via $\\underline{N}_{\\rho \\sigma}$).\n\nA tout $l \\in$ [unclear, crossed out] correspond un autom\nintérieur $int(l)$, qui est l'identité sur\n$M_0$. On a, tautologiquement\n(118) $$ \\begin{cases} int(l)(\\rho) = \\alpha(\\rho) \\\\ int(l)(\\sigma) = \\beta(\\sigma) \\end{cases} \\qquad \\alpha = \\beta = l $$\n\nMais [unclear, crossed out] la relation du lacet (relative : $H=1$ d'où $\\nu''=0$)\n$$ (1-\\rho_M)(\\underset{l}{\\alpha}) = (1-\\sigma_M)(\\underset{l}{\\beta}) $$\ni.e.\n$$ \\rho_M(l) = \\sigma_M(l) \\quad ? $$\n\nPosant encore\n(119) $$ l = c_0 \\lambda_0 + c_1 \\lambda_1 $$\n\nla relation (*) s'écrit\n$$ c_0 \\lambda_1 + c_1 \\underset{\\xrightarrow{-\\lambda_0-\\lambda_1}}{\\lambda_\\infty} = c_0 \\lambda_1 + c_1 \\lambda_0 $$\n\ni.e.\n$$ -c_1 \\lambda_0 + (c_0-c_1)\\lambda_1 = c_1 \\lambda_0 + c_0 \\lambda_1 $$\ni.e. $c_1 = 0$ i.e. $l = c_0 \\lambda_0$. Donc c'est\nsans surprise qu'on se restreint à\nconsidérer des $l \\in \\underline{L}_0 \\subset \\underline{M}_0$ ; correspondant\n(120) à $l = c_0 \\lambda_0 \\in \\underline{L}_0 \\overset{d\\acute{e}f}{=} \\operatorname{Im}(\\hat{\\mathbb{Z}} \\xrightarrow{u} M)$\n$$ c_0 \\mapsto c_0 \\lambda_0 $$\n\nOn a un [unclear] diagramme\n(121)\n[DIAGRAM: $\\mathbb{G}_a^\\sim \\xrightarrow{\\sim} \\underline{M}_0 \\hookrightarrow \\underline{N}_{\\rho, \\sigma}^\\sim$, with a vertical arrow from $\\mathbb{G}_a^\\sim$ down to another $\\mathbb{G}_a^\\sim$ labelled $+$]",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 538,
-      "thinking_tokens": 3557
+      "prompt_tokens": 1787,
+      "output_tokens": 564,
+      "thinking_tokens": 3384
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "70": {
     "status": "success",
-    "transcription": "l'image de\n(122) $$L_0^{\\underline{M}_0} \\to \\underline{N}_{\\rho,\\sigma}$$\nest invariante - l'hom (122) étant en\nfait compatible avec l'action de $\\underline{N}_{\\rho,\\sigma}$\n- via $p_r$ sur $L_0^{\\underline{M}_0} \\simeq \\tilde{G}_0$ (i.e. induits\npar les opérations de $\\underline{N}_{\\rho,\\sigma}$ sur $\\tilde{G}^+ \\supset \\underline{M}_a \\to L_0^{\\underline{M}}$\net opérations de [unclear] sur $\\tilde{G}^+$ déduites\nde (121) sont identiques. Donc d'après\nle topos général on trouve un\nschéma en groupes $\\underline{\\underline{M}}_{\\rho,\\sigma}$ et un\ndiagramme de suites exactes df $\\underline{\\Gamma}_{\\rho,\\sigma} = \\underline{N}_{\\rho,\\sigma}/L_0^{\\underline{M}}$\n\n[MARGIN: avec les notati. du $a$ $§ 99$ $\\underline{VI}$, le gr. noté $\\underline{\\underline{M}}_{\\rho,\\sigma}$ serait sans doute noté $\\underline{M}_{\\rho,\\sigma}/H_p$ ; ici $\\underline{M}_{\\rho,\\sigma}$ serait $\\underline{M}_{\\rho,\\sigma}$ (loc. cit. 8°)]\n\n(123)\n\\begin{tikzcd}\n1 \\ar[r] & L_0^{\\underline{M}} \\ar[r] \\ar[d] & \\underline{N}_{\\rho,\\sigma} \\ar[r] \\ar[d] & \\underline{\\Gamma}_{\\rho,\\sigma} \\ar[r] \\ar[d, \"\\simeq\"'] & 1 \\\\\n1 \\ar[r] & \\tilde{G}^{+\\Delta} \\ar[r] & \\underline{\\underline{M}}_{\\rho,\\sigma} \\ar[r] & \\underline{\\Gamma}_{\\rho,\\sigma} \\ar[r] & 1\n\\end{tikzcd}\n\nRemplaçant $\\tilde{G}^+$ par $\\underline{M}$ , on trouve un $\\underline{M}_{\\rho,\\sigma}$ , et\n(124)\n\\begin{tikzcd}\n1 \\ar[r] & L_0^{\\underline{M}} \\ar[r] \\ar[d] & \\underline{N}_{\\rho,\\sigma} \\ar[r] \\ar[d] & \\underline{\\Gamma}_{\\rho,\\sigma} \\ar[r] \\ar[d, \"\\simeq\"'] & 1 \\\\\n1 \\ar[r] & \\underline{M} \\ar[r] & \\underline{M}_{\\rho,\\sigma} \\ar[r] & \\underline{\\Gamma}_{\\rho,\\sigma} \\ar[r] & 1\n\\end{tikzcd}\n\nD'ailleurs on a dans (124)\ndans (123) (comparer $§ 99$ $\\underline{VI}$ 5° ...), le\n(125) $$M_{\\rho,\\sigma} \\subset \\underline{M}_{\\rho,\\sigma} \\dots$$",
+    "transcription": "l'image de\n(122) $$ \\underline{L}_0^{M_0} \\longrightarrow \\underline{N}_{\\beta, \\sigma} $$\nest invariante - l'hom (122) étant en\nfait compatible avec l'action de $\\underline{N}_{\\beta, \\sigma}$\n- via $p_{\\Sigma}$ sur $\\underline{L}_0^{M_0} \\simeq \\hat{\\mathbb{Z}}$ . (i.e. induits\npar l'opération de $\\underline{N}_{\\beta, \\sigma}$ sur le $\\underline{\\hat{S}}^+ \\hookrightarrow \\underline{M} \\supset \\underline{L}_0^M$\net l'opérations des deux [unclear: $\\underline{L}_0^M$] sur $\\underline{\\hat{S}}^+$ déduite\nde (121) étant identiques. Donc d'après\nla théorie générale on trouve un\nschéma en groupes $\\underline{M}_{\\beta, \\sigma}$ et un\ndiagramme de suites exactes [unclear: def $\\underline{N}_{\\beta, \\sigma}/\\underline{L}_0^M$]\n\n[MARGIN: avec les notations de § 49 VI, le groupe ici $\\underline{M}_{\\beta, \\sigma}$ serait plutôt noté $\\underline{M}_{\\beta, \\sigma}/H_{\\Sigma}$ ($\\underline{M}_{\\beta, \\sigma}$ serait cel. loc. cit. 8°)]\n\n(123)\n[DIAGRAM: Two horizontal exact sequences, the first starting with $1 \\to \\underline{L}_0^M \\to \\underline{N}_{\\beta, \\sigma} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$, the second with $1 \\to \\underline{\\hat{S}}^+ \\to \\underline{M}_{\\beta, \\sigma} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$. Vertical arrows connect the corresponding terms.]\n\nRemplaçant $\\underline{\\hat{S}}^+$ par $\\underline{M}$, on trouve de\nmême $\\underline{M}_{\\beta, \\sigma}^{\\sim}$, et\n\n(124)\n[DIAGRAM: Two horizontal exact sequences, the first starting with $1 \\to \\underline{L}_0^M \\to \\underline{N}_{\\beta, \\sigma} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$, the second with $1 \\to \\underline{M} \\to \\underline{M}_{\\beta, \\sigma}^{\\sim} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$. Vertical arrows connect the corresponding terms.]\n\nD'ailleurs on a un hom de (124)\ndans (123) (comparer § 49 VI $5^{\\circ}$... ), de\n\n(125) $$ \\underline{M}_{\\beta, \\sigma}^{\\sim} \\to \\underline{M}_{\\beta, \\sigma} \\quad ... $$",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 711,
-      "thinking_tokens": 4274
-    },
-    "source": "diagram-retranscription",
-    "normalized": true
+      "prompt_tokens": 1787,
+      "output_tokens": 650,
+      "thinking_tokens": 3314
+    }
   },
   "71": {
     "status": "success",
@@ -686,13 +673,12 @@
   },
   "73": {
     "status": "success",
-    "transcription": "5°) $Z_{\\rho,\\sigma}$ et $G_{\\rho,\\sigma} = \\mathbb{O}_{12}^* G_{12}^+$ + $G_{\\rho,\\sigma}^+ \\simeq \\mathbb{O}_{12}^* \\cdot \\underline{M} = \\underline{M}_{\\rho,\\sigma} \\simeq \\underline{M}$.\nUne fois intr. duit $\\mathbb{O}_{12}^*$ et $M_0 \\subset M$, il me semble que le groupe $Z_{\\rho,\\sigma}$ ten lieu et place de $\\tilde{Z}_{\\rho,\\sigma}$, dès l'équa - tion tirant compte de $\\alpha, \\beta$ et via ses données de $\\xi, \\eta$ redevient sympathique :\n\n(134)\n$$ \\underline{Z}_{\\rho,\\sigma} = \\operatorname{Aut}(\\underline{\\mathcal{S}}^+) \\times \\mathbb{O}_{12}^* $$\n$$ \\{ (u, \\mu) \\mid $$\na) $u(\\rho) = \\xi \\rho$ (loc.) (conjugué à $\\rho$, par un $\\alpha \\in \\widehat{G_{12}^+}$ tel que $\\chi(\\alpha) = \\varepsilon_3(\\mu)$)\nb) $u(\\sigma) = \\eta \\sigma$ (loc.) (conjugué à $\\sigma$, par un $\\beta \\in \\widehat{G_{12}^+}$ tel que $\\chi(\\beta) = \\varepsilon_2(\\mu)$)\nc) équation des bouts $\\xi_0 = \\eta_0 \\nu''(\\mu)$ soit $\\xi_0 = \\eta_0 + 3 \\nu'' \\lambda_1$ dans $M_0$\n\noù $\\nu'' = \\nu''(\\mu) \\in \\dots$ (cf pur. p. 685, et ci-dess.!)\n\n(135)\n$$ \\begin{cases} \\xi_0 = [- \\nu_3 \\lambda_1] \\in \\Gamma M_0 & \\nu_3 = \\nu_3(\\mu) \\\\ \\eta_0 = [\\nu_2 \\lambda_2] \\in \\Gamma M_0 & \\nu_2 = \\nu_2(\\mu) \\end{cases} $$\n\nOn doit supposer de plus que\n\n(136)\n$$ \\begin{cases} \\xi_0 \\text{ locale dans l'im. de } (1 - \\rho_M)(M) \\\\ \\eta_0 \\text{ locale dans l'im. de } (1 - \\sigma_M)(M) \\end{cases} $$\n\net on aura\n\n(137)\n$$ \\underline{Z}_{\\rho,\\sigma} \\simeq \\tilde{\\Sigma}_{\\rho,\\sigma} = \\left\\{ (\\mu, \\xi_0, \\eta_0) \\in \\mathbb{O}_{12}^* \\times M_0 \\times M_0 \\;\\middle|\\; \\begin{matrix} 1) \\; \\xi_0 = \\eta_0 + (\\nu'' \\lambda_1) \\text{ dans } M_0 \\\\ \\quad \\text{où } \\nu'' = \\nu''(\\mu) \\\\ 2) \\text{ on a (136)} \\end{matrix} \\right\\} $$\n\n$G$\n\n$$ (1 - \\rho_M) : M \\to M_0 $$\n$$ (1 - \\sigma_M) : M \\to \\mathbb{Z} = C_a \\to M_0 $$\n$$ (\\lambda_0, \\lambda_0+d_1, \\lambda_1) \\mapsto (b_1 - b_0) \\mapsto (\\lambda_1 - \\lambda_0) = \\lambda \\delta $$",
+    "transcription": "5°) $Z_{\\rho,\\sigma}$ et $S_{\\rho,\\sigma} = \\hat{\\mathbb{Z}}_{12}^{* G_{\\rho,\\sigma}}$ [crossed out] $+ G_{\\rho,\\sigma} \\simeq \\hat{\\mathbb{Z}}_{12}^*$, $M_\\sigma \\simeq \\hat{\\mathbb{Z}}_{12}^* \\cdot M$.\nUne fois introduits $\\hat{\\mathbb{Z}}_{12}^*$ et $M_0 \\subset M$, il me semble que le groupe $Z_{\\rho,\\sigma}$ tient lieu et place de $\\tilde{Z}_{\\rho,\\sigma}$, dès lors qu'on tient compte de $\\alpha, \\beta$ et via ses homom. de $\\xi, \\eta$) redevient sympathique :\n\n(134) $$Z_{\\rho,\\sigma} = \\operatorname{Aut}(\\widehat{S}^+) \\times \\hat{\\mathbb{Z}}_{12}^*$$\n$$f(u,\\mu) \\begin{cases} a) \\ u(\\rho) = \\xi \\rho \\text{ (loc.) } (\\xi \\in \\widehat{M} \\text{ conjugué à } \\rho \\text{ par un } \\alpha \\in \\widehat{G} \\text{ tel que } \\chi(\\alpha) = \\varepsilon_3(\\mu)) \\\\ b) \\ u(\\sigma) = \\eta \\sigma \\text{ (loc.) } (\\eta \\in \\widehat{M} \\text{ conjugué à } \\sigma \\text{ par un } \\beta \\in \\widehat{G} \\text{ tel que } \\chi(\\beta) = \\varepsilon_2(\\mu)) \\\\ c) \\text{ équation des lacets } \\\\ \\qquad \\xi = \\eta D_3^{\\nu''} \\text{ soit } \\xi_0 = \\eta_0 + 3 \\nu'' \\lambda_1 \\text{ dans } M_0 \\end{cases}$$\n\noù $\\nu'' = \\nu''(u) \\in \\hat{\\mathbb{Z}}$ (cf plus p. 685), et (nécess.)\n\n(135) $$ \\begin{cases} \\xi_0 = \\xi - \\nu_3 \\lambda_1 \\in \\Gamma M_0 & \\nu_3 = \\nu_3(\\mu) \\\\ \\eta_0 = \\eta - \\nu_2 \\lambda_2 \\in \\Gamma M_0 & \\nu_2 = \\nu_2(\\mu) \\end{cases} $$\n\nOn doit supposer de plus que\n\n(136) $$ \\begin{cases} \\xi_0 \\text{ loc. dans l'im. de } (1 - \\rho_M)(M) \\\\ \\eta_0 \\text{ loc. dans l'im. de } (1 - \\sigma_M)(M) \\end{cases} $$\n\net il apparait alors\n\n(137) $$ Z_{\\rho,\\sigma} \\simeq \\tilde{Z}_{\\rho,\\sigma} = \\left\\{ (\\mu, \\xi_0, \\eta_0) \\in \\hat{\\mathbb{Z}}_{12}^* \\times M_0 \\times M_0 \\;\\middle|\\; \\begin{aligned} 1) \\;& \\xi_0 = \\eta_0 + 3 \\nu'' \\lambda_1 \\text{ dans } M_0 \\\\ & \\text{où } \\nu'' = \\nu''(\\mu) \\\\ 2) \\;& \\text{on a } (136) \\end{aligned} \\right\\} $$\n\n[DIAGRAM: mappings for G]\n$G \\begin{cases} (1-\\rho_M) : M \\to M_0 \\\\ (1-\\sigma_M) : M \\to \\mathbb{Z} = C_a \\xrightarrow{\\lambda} M_0 \\\\ \\qquad (\\lambda_0 a + \\lambda_1 b, \\lambda_2) \\mapsto (\\lambda_1 - \\lambda_0) \\mapsto \\lambda(\\lambda_1 - \\lambda_0) = \\lambda \\delta \\end{cases}$",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 821,
-      "thinking_tokens": 4772
+      "prompt_tokens": 1787,
+      "output_tokens": 893,
+      "thinking_tokens": 5060
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "74": {
@@ -716,14 +702,12 @@
   },
   "76": {
     "status": "success",
-    "transcription": "d'où\n\n(145) $$L^\\natural \\overset{\\sim}{\\longrightarrow} Z_{\\rho,\\sigma}^{+0}$$\n\nce qui donne\n\n(146) $$\\Gamma_{\\rho,\\sigma} \\overset{dfn}{=} Z_{\\rho,\\sigma}/L^\\natural \\simeq \\mathbb{O}_{12}^* \\quad .$$\n\nSi on construit maintenant $G_{\\rho,\\sigma}$\ncomme\n\n(147) $$G_{\\rho,\\sigma} = (Z_{\\rho,\\sigma} \\cdot \\underline{\\underline{C}}^+) / L^\\natural$$\n\non a le diagramme\n\n(148)\n\\begin{tikzcd}\n& & & \\mathbb{O}_{12}^* \\ar[d, equal] \\\\\n1 \\ar[r] & L^\\natural \\ar[r] \\ar[d, hook] & Z_{\\rho,\\sigma} \\ar[r] \\ar[d, hook] & \\Gamma_{\\rho,\\sigma} \\ar[r] \\ar[d, equal] & 1 \\\\\n1 \\ar[r] & \\underline{\\underline{C}}^+ \\ar[r] & G_{\\rho,\\sigma} \\ar[r] & \\Gamma_{\\rho,\\sigma} \\ar[r] & 1\n\\end{tikzcd}\n\nD'ailleurs on a un scindage canonique\n\nde $Z_{\\rho,\\sigma}$ sur $\\Gamma_{\\rho,\\sigma} = \\mathbb{O}_{12}^*$\n\n(149)\n\\begin{tikzcd}\n\\mathbb{O}_{12}^* \\ar[r] & Z_{\\rho,\\sigma} \\ar[r, \"\\sim\"] & \\Sigma_{\\rho,\\sigma}^{1/\\natural} \\\\\n\\mu \\ar[r, mapsto] & \\tilde{\\mu} \\ar[r, mapsto] & (\\mu, \\xi_0 = \\nu''(3\\lambda_1), \\eta_0 = 0)\n\\end{tikzcd}\n\nd'où\n\n(150) $$ \\begin{cases} Z_{\\rho,\\sigma} \\simeq \\mathbb{O}_{12}^* \\cdot L^\\natural \\\\ G_{\\rho,\\sigma} \\simeq \\mathbb{O}_{12}^* \\cdot \\underline{\\underline{C}}^+ \\end{cases} $$\n\nL'opération de $\\mathbb{O}_{12}^*$ sur $L^\\natural$ se fait\nvia $\\mathbb{O}_{12}^* \\to \\operatorname{Aut}(M)$ homothéties, celle\nde $\\mathbb{O}_{12}^*$ sur $\\underline{\\underline{C}}^+$ se fait par\n\n(151) $$ \\begin{cases} u_\\mu(c) = c & (= \\delta_1 c \\text{ en écriture add. pour } C^+) \\\\ u_\\mu(x) = \\mu x & \\text{si } x \\in M \\end{cases} $$\n\n[MARGIN:\nNB On pose\n$G_{\\rho,\\sigma} = \\mathbb{O}_{12}^* \\cdot \\underline{\\underline{C}}^+$\n$\\cup$\n$Z_{\\rho,\\sigma} = \\mathbb{O}_{12}^* \\cdot L^\\natural$\n]",
+    "transcription": "donc\n\n(145) $$L_0^\\natural \\simeq Z_{\\rho,\\sigma}^{+ \\circ}$$\n\net on a\n(146) $$\\mathcal{P}_{\\rho,\\sigma} \\overset{dfn}{=} Z_{\\rho,\\sigma} / L_0^\\natural \\simeq \\mathbb{Q}_{12}^*$$\n\nOn construit maintenant $G_{\\rho,\\sigma}$\ncomme\n(147) $$G_{\\rho,\\sigma} = (Z_{\\rho,\\sigma} \\cdot \\underline{C}^+) / L_0^\\natural$$\n\ndonnant\n(148) \n[DIAGRAM: commutative diagram with exact sequences]\n$$1 \\to L_0^\\natural \\to Z_{\\rho,\\sigma} \\to \\mathcal{P}_{\\rho,\\sigma} \\to 1$$\n$$1 \\to \\underline{C}^+ \\to G_{\\rho,\\sigma} \\to \\mathcal{P}_{\\rho,\\sigma} \\to 1$$\n[with vertical inclusion $L_0^\\natural \\hookrightarrow \\underline{C}^+$, downward arrow $Z_{\\rho,\\sigma} \\to G_{\\rho,\\sigma}$, and equality/identity on $\\mathcal{P}_{\\rho,\\sigma}$ with $\\mathbb{Q}_{12}^*$ noted above $\\mathcal{P}_{\\rho,\\sigma}$]\n\n[MARGIN: NB On pose $G_{\\rho,\\sigma} \\simeq \\mathbb{Q}_{12}^* \\dots \\Sigma_{\\rho,\\sigma}$ [unclear]]\n\nD'ailleurs on a un scindage canonique\nde $Z_{\\rho,\\sigma}$ sur $\\mathcal{P}_{\\rho,\\sigma} = \\mathbb{Q}_{12}^*$\n\n(149) $$\\mathbb{Q}_{12}^* \\to Z_{\\rho,\\sigma} \\xrightarrow{\\sim} \\Sigma_{\\rho,\\sigma}^{aff}$$\n$$\\mu \\mapsto \\mu^\\natural \\mapsto (\\mu, \\xi_0 = \\nu''(3\\lambda_1), \\eta_0 = 0)$$\n\nd'où\n\n(150)\n$$Z_{\\rho,\\sigma} \\simeq \\mathbb{Q}_{12}^* \\ltimes L_0^\\natural$$\n$$G_{\\rho,\\sigma} \\simeq \\mathbb{Q}_{12}^* \\ltimes \\underline{C}^+$$\n\nL'opération de $\\mathbb{Q}_{12}^*$ sur $L_0^\\natural$ se fait\nvia $\\mathbb{Q}_{12}^* \\twoheadrightarrow \\Gamma$ et homothéties, celle\nde $\\mathbb{Q}_{12}^*$ sur $\\underline{C}^+$ se fait par\n\n(151) \n$$u_\\mu(\\rho) = [\\text{unclear}] \\rho \\quad (= d_i \\rho \\text{ en d'autres exp.})$$\n$$u_\\mu(x) = \\mu x \\quad \\text{si } x \\in \\Gamma_M$$",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 706,
-      "thinking_tokens": 3462
-    },
-    "source": "diagram-retranscription",
-    "normalized": true
+      "prompt_tokens": 1787,
+      "output_tokens": 638,
+      "thinking_tokens": 3846
+    }
   },
   "77": {
     "status": "success",
@@ -781,13 +765,13 @@
   },
   "83": {
     "status": "success",
-    "transcription": "689\n\n8) Les groupes $N_{\\sigma}, N_{\\sigma}^S$ ...\n\nPosons\n(173) $$ \\begin{cases} N_{\\sigma} \\subset \\Gamma_{\\rho,\\sigma} \\\\ =^{dfn} \\{ u \\in \\Gamma_{\\rho,\\sigma} \\mid u(\\sigma) = \\varepsilon_2(u)\\sigma \\quad (= \\omega^{\\nu_2(u)} \\sigma) \\} \\end{cases} $$\n\n(174) $$ N_{\\sigma}^S =^{dfn} N_{\\sigma} \\cap G_{\\rho,\\sigma}^S $$\n\nL'hom. composé\n\\begin{tikzcd}\nN_{\\sigma}^S \\ar[r, hook] \\ar[rr, bend right, \"\\chi_{\\sigma}\"'] & S_{\\rho,\\sigma} \\ar[r, \"\\chi\"] & \\mathbb{O}_{12}^*\n\\end{tikzcd}\nest épi. En effet, les $u_f$ sont dans $N_{\\sigma}^S$ et donnent un scindage $\\mathbb{O}_{12}^* \\hookrightarrow N_{\\sigma}^S$, d'où des décompositions en pro. $1/2$ directs\n(175) $$ \\begin{cases} N_{\\sigma}^S \\simeq \\mathbb{O}_{12}^* \\cdot S Z_{\\sigma}^S \\\\ N_{\\sigma} \\simeq \\mathbb{O}_{12}^* \\cdot S Z_{\\sigma} \\end{cases} $$\n\noù on a posé\n(176) $$ \\begin{cases} Z_{\\sigma} = \\operatorname{Ker}(N_{\\sigma} \\xrightarrow{\\varepsilon_2 \\circ p} \\mu_{S_0}) = \\operatorname{Cent}_{G_{\\rho,\\sigma}}(\\sigma) \\\\ S Z_{\\sigma} = Z_{\\sigma} \\cap S^+ = \\operatorname{Cent}_{S^+_{\\rho,\\sigma}}(\\sigma) \\\\ Z_{\\sigma}^S = Z_{\\sigma} \\cap G_{\\rho,\\sigma}^S \\\\ S Z_{\\sigma}^S = S Z_{\\sigma} \\cap G_{\\rho,\\sigma}^S \\\\ \\quad = S^{\\circ} = M \\end{cases} $$\n\nD'ailleurs\n\\begin{tikzcd}\nS Z_{\\sigma} \\ar[r, \"p_{S_0}^+\"] & \\operatorname{Cent}_{H_{S_0}^+}(\\sigma) \\ar[d, \"\\wr\"'] \\\\\n& L_{\\sigma} \\simeq (\\mathbb{Z}/q\\mathbb{Z})_{S_0} \\ar[ul, dashed]\n\\end{tikzcd}\nqui a une section, donc\n\n(177) $$ S Z_{\\sigma} \\simeq L_{\\sigma} \\times S Z_{\\sigma}^S $$",
+    "transcription": "689\n\n8) Les groupes $\\mathcal{N}_\\sigma, \\mathcal{N}_\\sigma^S$...\n\nPosons\n(173) $$ \\begin{cases} \\mathcal{N}_\\sigma \\stackrel{dfn}{=} \\\\ \\{ u \\in \\mathcal{G}_{\\rho,\\sigma} \\mid u(\\sigma) = \\varepsilon_2(u) \\sigma^{\\varepsilon_2(u)} \\quad (= \\omega^{1/2(u)} \\sigma) \\} \\end{cases} $$\n\n(174) $$ \\mathcal{N}_\\sigma^S \\stackrel{dfn}{=} \\mathcal{N}_\\sigma \\cap \\mathcal{G}_{\\rho,\\sigma}^S $$\n\nL'hom. composé\n$$ \\mathcal{N}_\\sigma^S \\hookrightarrow \\mathcal{G}_{\\rho,\\sigma}^S \\xrightarrow{\\chi} \\mathbb{O}_{12}^* $$\n\nest épi. En fait, les $u_\\rho$ sont dans $\\mathcal{N}_\\sigma^S$ - - - un scindage\n$$ \\mathbb{O}_{12}^* \\hookrightarrow \\mathcal{N}_\\sigma^S ,$$\nd'où des décompositions en produits $1/2$ directs\n(175) $$ \\begin{cases} \\mathcal{N}_\\sigma^S \\simeq \\mathbb{O}_{12}^* \\cdot S Z_\\sigma^S \\\\ \\mathcal{N}_\\sigma \\simeq \\mathbb{O}_{12}^* \\cdot S Z_\\sigma \\end{cases} $$\n\noù on a posé\n(176) $$ \\begin{cases} Z_\\sigma = \\operatorname{Ker}(\\mathcal{N}_\\sigma \\xrightarrow{\\varepsilon_2 \\sigma} \\mu_{S_0}) = \\text{Cent}_{\\mathcal{G}_{\\rho,\\sigma}}(\\sigma) \\\\ S Z_\\sigma = Z_\\sigma \\cap \\mathcal{G}^+ = \\text{Cent}_{\\mathcal{G}_{\\rho,\\sigma}^+}(\\sigma) \\\\ Z_\\sigma^S = Z_\\sigma \\cap \\mathcal{G}_{\\rho,\\sigma}^S \\\\ S Z_\\sigma^S = S Z_\\sigma \\cap \\mathcal{G}_{\\rho,\\sigma}^S \\end{cases} $$\n\nD'ailleurs\n$$ S Z_\\sigma \\longrightarrow \\text{Cent}_{H_{S_0}^+}(\\sigma) $$\n[DIAGRAM: flèche pointillée vers le bas à droite] $L_\\sigma \\simeq (\\mathbb{Z}/2\\mathbb{Z})_{S_0}$\n\nqui a une section, donc\n(177) $$ S Z_\\sigma \\simeq L_\\sigma \\ltimes S Z_\\sigma^S $$",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 607,
-      "thinking_tokens": 4483
+      "prompt_tokens": 1787,
+      "output_tokens": 578,
+      "thinking_tokens": 3918
     },
-    "source": "diagram-retranscription"
+    "normalized": true
   },
   "84": {
     "status": "success",
@@ -810,13 +794,12 @@
   },
   "86": {
     "status": "success",
-    "transcription": "(190)\n\\begin{tikzcd}\n1 \\ar[r] & \\underline{C}^\\natural \\ar[r] \\ar[d] & \\underline{M}^\\natural_{\\rho,\\sigma} \\ar[r] \\ar[d] & \\Gamma_{\\rho,\\sigma} \\ar[r] \\ar[d, equal] & 1 \\\\\n1 \\ar[r] & \\underline{C}^+ \\ar[r] & \\underline{M}_{\\rho,\\sigma} \\ar[r] & \\Gamma_{\\rho,\\sigma} \\ar[r] & 1\n\\end{tikzcd}\n\net des suites exactes\n\n(191)\n\\begin{tikzcd}\n1 \\ar[r] & S N^?_P \\times S\\mathbb{Z}^?_\\rho \\times \\underline{C}^\\natural \\ar[r] \\ar[d] & \\underline{M}^\\natural_{\\rho,\\sigma} \\ar[r] \\ar[d] & \\mathbb{O}_{12}^* \\ar[r] \\ar[d, equal] & 1 \\\\\n1 \\ar[r] & S N^?_P \\times S\\mathbb{Z}^?_\\rho \\times \\underline{C}^+ \\ar[r] & \\underline{M}_{\\rho,\\sigma} \\ar[r] & \\underset{\\gamma_{\\rho,\\sigma}}{\\mathbb{O}_{12}^*} \\ar[r] & 1\n\\end{tikzcd}\n\n(192)\n$$1 \\to S N^?_P \\times S\\mathbb{Z}^?_\\rho \\to \\Gamma_{\\rho,\\sigma} \\to \\underset{\\gamma_{\\rho,\\sigma}}{\\mathbb{O}_{12}^*} \\to 1$$\n\noù\n\n(193)\n$$ \\begin{cases} S N^?_P = \\mu_P \\simeq \\{\\pm 1\\} & (172) \\\\ S\\mathbb{Z}^?_\\rho \\simeq C_+ & (179) \\end{cases} $$\n\nCes suites exactes se précisent, grâce\naux décompositions $1/2$ directes :\n\n[MARGIN: crossed out lines]\n$??? \\simeq \\mathbb{O}_{12}^* \\cdot C_+$ (150, 151)\n$??? \\simeq \\mathbb{O}_{12}^* \\cdot C_+$ (180)\n$N^?_P / \\mu_P \\simeq \\mathbb{O}_{12}^*$ (172)\n\n(194)\n$$ \\begin{cases} \\mathbb{Z}_{\\rho,\\sigma} \\simeq \\mathbb{O}_{12}^* \\cdot C_+ & (150, 151) \\\\ \\underline{C}_{\\rho,\\sigma} \\simeq \\mathbb{O}_{12}^* \\cdot \\underline{C}^+ & (15) \\\\ \\underline{C}^\\natural_{\\rho,\\sigma} \\simeq \\mathbb{O}_{12}^* \\cdot \\underline{C}^\\natural & (160) \\\\ N^\\natural_S \\simeq \\mathbb{O}_{12}^* \\cdot \\underline{C}^\\natural & (180) \\\\ \\text{et enfin} \\\\ N^?_P / \\mu_P \\simeq \\mathbb{O}_{12}^* & (172) \\end{cases} $$",
+    "transcription": "(190)\n[DIAGRAM: diagramme commutatif avec deux suites exactes et des flèches verticales vers le bas]\n$$1 \\longrightarrow \\underline{G}_{\\underline{M}}^\\sigma \\longrightarrow \\underline{M}_{\\rho, \\sigma}^\\sigma \\longrightarrow \\Gamma_{\\rho, \\sigma} \\longrightarrow 1$$\n$$1 \\longrightarrow \\underline{G}^+ \\longrightarrow \\underline{M}_{\\rho, \\sigma} \\longrightarrow \\Gamma_{\\rho, \\sigma} \\longrightarrow 1$$\n\net des suites exactes\n\n(191)\n$$1 \\longrightarrow S N_\\rho^? \\times S \\mathbb{Z}_\\sigma^\\sigma \\times \\underline{G}_{\\underline{M}}^\\sigma \\longrightarrow \\underline{M}_{\\rho, \\sigma}^\\sigma \\longrightarrow \\mathbb{Q}_{12}^* \\longrightarrow 1$$\n$$1 \\longrightarrow S N_\\rho^? \\times S \\mathbb{Z}_\\sigma^\\sigma \\times \\underline{G}^+ \\longrightarrow \\underline{M}_{\\rho, \\sigma} \\longrightarrow \\mathbb{Q}_{12}^* / \\gamma_{\\rho, \\sigma} \\longrightarrow 1$$\n\n(192)\n$$1 \\longrightarrow S N_\\rho^? \\times S \\mathbb{Z}_\\sigma^\\sigma \\longrightarrow \\Gamma_{\\rho, \\sigma} \\longrightarrow \\mathbb{Q}_{12}^* / \\gamma_{\\rho, \\sigma} \\longrightarrow 1$$\n\noù on a :\n(193)\n$$S N_\\rho^? = \\mu_P \\simeq \\{ \\pm 1 \\} \\quad (172)$$\n$$S \\mathbb{Z}_\\sigma^\\sigma \\simeq \\mathbb{Q} \\quad (179)$$\n\nCes suites exactes se précisent, grâce aux décompositions $1/2$ directes :\n\n(194)\n$$\\mathbb{Z}_{\\rho, \\sigma} \\simeq \\mathbb{Q}_{12}^* \\cdot \\mathbb{G}_a \\quad (150, 151)$$\n$$\\underline{G}_{\\rho, \\sigma} \\simeq \\mathbb{Q}_{12}^* \\cdot \\underline{G}^+ \\quad (15)$$\n$$\\underline{G}_{\\rho, \\sigma}^\\sigma \\simeq \\mathbb{Q}_{12}^* \\cdot \\underline{G}_{\\underline{M}}^\\sigma \\quad (160)$$\n$$N_\\sigma^\\sigma \\simeq \\mathbb{Q}_{12}^* \\cdot \\mathbb{G}_a \\quad (180)$$\net enfin\n$$N_\\rho^? / \\mu_P \\overset{\\sim}{\\longrightarrow} \\mathbb{Q}_{12}^* \\quad (172)$$",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 756,
-      "thinking_tokens": 3324
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 593,
+      "thinking_tokens": 3295
+    }
   },
   "87": {
     "status": "success",
@@ -829,13 +812,12 @@
   },
   "88": {
     "status": "success",
-    "transcription": "10) Les sous-groupes $\\underline{M}_{\\rho, \\sigma}[0]$, $\\underline{M}_{\\rho, \\sigma}(0)$, $\\underline{M}_{\\rho, \\sigma}(1/2)$, $\\underline{M}_{\\rho, \\sigma}'(-J)$ $[\\underline{M}_{\\rho, \\sigma}'''(-J) \\supset \\underline{M}_{\\rho, \\sigma}'(-J)]$.\n\nOn utilise le plongement\n\n(195) $\\underline{M}_{\\rho, \\sigma} = N_\\rho^? \\times_\\gamma N_\\sigma^? \\times_\\gamma \\underline{G}_{\\rho, \\sigma} \\subset \\mathcal{N}_\\rho^? \\times \\mathcal{N}_\\sigma^? \\times \\underline{G}_{\\rho, \\sigma}$\n$$ \\Big\\| $$\n$$ \\{(a, b, u) \\in \\mathcal{N}_\\rho^? \\times \\mathcal{N}_\\sigma^? \\times \\underline{G}_{\\rho, \\sigma} \\mid \\gamma(a) = \\gamma(b) = \\underline{\\chi}(u)\\} $$\n\nOn définit donc\n\n(196) $\\underline{M}_{\\rho, \\sigma}[0] \\subset \\underline{M}_{\\rho, \\sigma}$\n[MARGIN: NB on aura $\\underline{M}_{\\rho, \\sigma}[0] \\subset \\underline{M}_{\\rho, \\sigma}^S$]\n$$ \\| $$\n$$ \\{(a, b, u) \\in \\underline{M}_{\\rho, \\sigma} \\mid u \\in \\underline{Z}_{\\rho, \\sigma}\\} $$\n\ndonc\n$$ \\underline{M}_{\\rho, \\sigma}[0] \\simeq N_\\rho^? \\times_\\gamma N_\\sigma^? \\times_\\gamma \\underline{Z}_{\\rho, \\sigma} $$\n\n(197) Soit $\\underline{Z}_{\\rho, \\sigma}(0) \\subset \\underline{Z}_{\\rho, \\sigma}$\nle facteur $1/2$ direct $\\mathbb{Q}_{12}^*$ de (150) (151),\nalors, on a $\\underline{M}_{\\rho, \\sigma}(0) \\simeq N_\\rho^? \\times_\\gamma N_\\sigma^? \\times_\\gamma \\underline{Z}_{\\rho, \\sigma}(0)$\n\n[MARGIN: NB $\\underline{Z}_{\\rho, \\sigma}(0) \\subset \\underline{Z}_{\\rho, \\sigma} \\subset \\underline{G}_{\\rho, \\sigma}$ est en fait le fact. $1/2$ direct $\\mathbb{Q}_{12}^*$ de $\\underline{G}_{\\rho, \\sigma}$ ds (150), il proviendrait la notation $\\underline{G}_{\\rho, \\sigma}(0)$]\n\n(198)\n\\begin{tikzcd}\n\\underline{M}_{\\rho, \\sigma}(0) \\ar[r, hook] \\ar[d, \"\\downarrow \\simeq\"'] & \\underline{M}_{\\rho, \\sigma}[0] \\ar[d, \"\\downarrow \\simeq\"] \\\\\nS \\underline{\\Gamma}_{\\rho, \\sigma}(0) \\ar[r, hook] \\ar[d] & S_0 \\underline{\\Gamma}_{\\rho, \\sigma} \\\\\n\\underline{\\Gamma}_{\\rho, \\sigma}(0) &\n\\end{tikzcd}\n\n(199) $\\underline{M}_{\\rho, \\sigma}(0) = \\{(a, b, u) \\in \\underline{M}_{\\rho, \\sigma} \\mid u \\in \\underline{Z}_{\\rho, \\sigma}(0)\\}$\n[MARGIN: dans la descript. (195) de $\\underline{M}_{\\rho, \\sigma}$ comme prod. $1/2$ direct.]\n$$ = \\underset{\\cap \\atop \\Gamma_Q}{\\underline{\\mu}} \\cdot ( \\underset{\\cap \\atop \\Gamma_{\\underline{Q}^+}}{\\underline{\\lambda}} , 0 ) $$",
+    "transcription": "$10^\\circ)$ Les sous-groupes $\\underline{M}_{\\rho,\\sigma}[0]$, $\\underline{M}_{\\rho,\\sigma}(0)$, $\\underline{M}_{\\rho,\\sigma}(\\frac{1}{2})$, $\\underline{M}_{\\rho,\\sigma}'(-1)$\n$[ \\underline{M}_{\\rho,\\sigma}''(-1) , \\underline{M}_{\\rho,\\sigma}^?(-1) ]$.\n\nOn utilise le plongement\n\n(195) $\\underline{M}_{\\rho,\\sigma} = N_{\\rho}^? \\times_{\\gamma} N_{\\sigma}^? \\times_{\\gamma} G_{\\rho,\\sigma} \\subset N_{\\rho}^? \\times N_{\\sigma}^? \\times G_{\\rho,\\sigma}$\n$\\| \\{ (a,b,U) \\in N_{\\rho}^? \\times N_{\\sigma}^? \\times G_{\\rho,\\sigma} \\mid \\gamma(a) = \\gamma(b) = \\pi_{/}(U) \\}$\n\nOn définit donc\n\n[MARGIN: NB on aura $\\underline{M}_{\\rho,\\sigma}[0] \\subset \\underline{M}_{\\rho,\\sigma}^{\\natural}$]\n(196) $\\underline{M}_{\\rho,\\sigma}[0] \\subset \\underline{M}_{\\rho,\\sigma}$\n$\\| \\{ (a,b,U) \\in \\underline{M}_{\\rho,\\sigma} \\mid U \\in Z_{\\rho,\\sigma} \\}$\n\ndonc $\\underline{M}_{\\rho,\\sigma}[0] \\simeq N_{\\rho}^? \\times_{\\gamma} N_{\\sigma}^? \\times_{\\gamma} Z_{\\rho,\\sigma} \\simeq$ [unclear, crossed out]\n\n[unclear: Posons] [crossed out]\nSoit\n\n[MARGIN: NB $Z_{\\rho,\\sigma} \\subset Z_{\\rho,\\sigma}' \\subset G_{\\rho,\\sigma}$ en fait. Le $\\mathbb{D}_{12}^*$ de $G_{\\rho,\\sigma}$ dans (150), il proviendrait du sous $G_{\\rho,\\sigma}(0)$]\n(197) $Z_{\\rho,\\sigma}(0) \\subset Z_{\\rho,\\sigma}$\nle facteur $1/2$ direct $\\mathbb{D}_{12}^*$ de (150) (151),\ndonne alors par $\\dots$ $\\underline{M}_{\\rho,\\sigma}(0) \\simeq N_{\\rho}^? \\times_{\\gamma} N_{\\sigma}^? \\times_{\\gamma} Z_{\\rho,\\sigma}(0)$\n\n(198)\n$\\underline{M}_{\\rho,\\sigma}(0) \\subset \\underline{M}_{\\rho,\\sigma}[0]$\n$\\downarrow \\qquad \\downarrow$\n$S\\Gamma_{\\rho,\\sigma}(0) \\subset S_0\\Gamma_{\\rho,\\sigma}$\n$\\downarrow$\n$\\Gamma_{\\rho,\\sigma}(0)$\n\n(199)\n$\\underline{M}_{\\rho,\\sigma}(0) = \\{ (a,b,U) \\in \\underline{M}_{\\rho,\\sigma} \\mid U \\in Z_{\\rho,\\sigma}(0) \\}$\n$= \\underline{\\mu} \\cdot (\\lambda, 0)$\n$\\cap \\qquad \\cap$\n$\\Gamma_{G_a} \\quad \\Gamma_{\\underline{\\hat{C}}^+}$\n\n[MARGIN: dans la décomp- hio (195) de $\\underline{M}_{\\rho,\\sigma}$ comme prod. $1/2$ direct.]",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 873,
-      "thinking_tokens": 4089
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 761,
+      "thinking_tokens": 3271
+    }
   },
   "89": {
     "status": "success",
@@ -894,13 +876,12 @@
   },
   "95": {
     "status": "success",
-    "transcription": "11) L'homomorphisme $M \\to M_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^{\\sim}$, relatif à la tour des courbes de Fermat.\n\nNotons qu'on a pour tout entier $N \\in \\mathbb{N}^*$\n\n[MARGIN: Le $\\Delta$ indique qu'on prend (215) sections de [unclear] qui sont [unclear]]\n\n$$ \\mathbb{O}_N^{\\Delta}(\\hat{\\mathbb{Z}}) \\simeq \\mathbb{Z} \\quad \\text{d'où} \\quad \\mathbb{O}_\\Gamma^{\\Delta}(\\hat{\\mathbb{Z}})^{\\wedge} \\simeq \\hat{\\mathbb{Z}}^* $$\n\nOn a donc, compte tenu des décompositions en produits semi-directs (150) et des isomorphismes\n\n(216)\n$$ Z_{\\rho,\\sigma}^\\sim \\overset{df}{=} Z_{\\rho,\\sigma}^\\Delta(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* . \\hat{L}_0 \\quad \\text{où} \\quad \\hat{L}_0 \\simeq \\hat{\\mathbb{Z}} . \\lambda_0 \\simeq \\hat{\\mathbb{Z}} $$\n$$ G_{\\rho,\\sigma}^\\sim \\overset{df}{=} G_{\\rho,\\sigma}^\\Delta(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* . \\underline{G}^{+\\wedge} $$\n$$ C_{\\rho,\\sigma}^\\sim \\overset{df}{=} C_{\\rho,\\sigma}^\\Delta(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* . M^\\wedge $$\n$$ N_{\\rho}^\\sim \\overset{df}{=} N_\\rho^\\sim(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\mathbb{O}_\\Gamma^\\Delta(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* $$\n$$ N_{\\sigma}^\\sim \\overset{df}{=} N_{\\sigma}^\\sim(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* . \\hat{\\mathbb{Z}} $$\n$$ M_{\\rho,\\sigma}^\\sim \\overset{df}{=} M_{\\rho,\\sigma}^\\sim(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* . (\\hat{\\mathbb{Z}} \\times \\underline{G}^{+\\wedge}) $$\n$$ M_{\\bar{\\rho},\\bar{\\sigma}}^\\sim \\overset{df}{=} M_{\\bar{\\rho},\\bar{\\sigma}}^\\sim(\\hat{\\mathbb{Z}})^\\wedge \\simeq \\hat{\\mathbb{Z}}^* . (\\hat{\\mathbb{Z}} \\times \\hat{M}) $$\n\noù les opérations de $\\hat{\\mathbb{Z}}^*$ sur les $\\hat{\\mathbb{Z}}$ facteurs à droite sont explicitées dans les sections précédentes. On notera que, modulo des ajustages de notations et de définitions, les groupes $Z_{\\rho,\\sigma}^\\sim$ etc. précédents sont ceux qui serais construits directement, en termes de $(\\hat{\\underline{G}}^\\wedge, \\underline{G}^{+\\wedge}, M^\\wedge)$ (non indexé de $\\rho,\\sigma,\\tau$), dans §49 VI.\n\nOn a des hom. canoniques\n\n(217)\n\\begin{tikzcd}\nM = [unclear] \\ar[r] & M_{\\rho,\\sigma}^\\sim \\\\\nM' \\ar[r] \\ar[u, hook] & M_{\\bar{\\rho},\\bar{\\sigma}}^\\sim \\ar[u, hook]\n\\end{tikzcd}\n\nqui comme d'habitude se décompose en",
+    "transcription": "119 L'homomorphisme $M \\to M_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^\\Delta$, relation sur la tour des courbes de Fermat.\n\n[MARGIN: Le $\\Delta$ indique qu'on prend les sections (continues), les [unclear] étant munis de top. adéquates]\n\nNotons qu'on a pour tout entier $N \\in \\mathbb{N}^*$\n$$ \\mathcal{O}_N(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}} \\quad \\text{d'où} \\quad \\mathcal{O}_f^*(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* $$\n\nOn a donc, compte tenu des décompositions en produits semi-directs (150) et, des isomorphismes\n\n(215)\n$$Z_{\\rho,\\sigma}^\\Delta \\overset{df}{=} Z_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* \\ltimes L_{\\hat{0}} \\quad \\text{où } L_{\\hat{0}} \\simeq \\hat{\\mathbb{Z}} \\cdot \\lambda_0 \\simeq \\hat{\\mathbb{Z}}$$\n$$G_{\\rho,\\sigma}^\\Delta \\overset{df}{=} G_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* \\ltimes \\hat{\\mathbb{S}}^{+\\wedge}$$\n$$G_{\\rho,\\sigma}^{\\prime\\Delta} \\overset{df}{=} G'_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* \\ltimes \\hat{M}^\\wedge$$\n$$N_{\\rho}^\\Delta \\overset{df}{=} N_{\\rho}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\mathcal{O}_{\\mathbb{C}}^*(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^*$$\n$$N_{\\sigma}^\\Delta \\overset{df}{=} N_{\\sigma}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* \\ltimes \\hat{\\mathbb{Z}}$$\n$$M_{\\rho,\\sigma}^\\Delta \\overset{df}{=} M_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* \\cdot (\\hat{\\mathbb{Z}} \\ltimes \\hat{\\mathbb{S}}^{+\\wedge})$$\n$$M_{\\rho,\\sigma}^{\\prime\\Delta} \\overset{df}{=} M'_{\\rho,\\sigma}(\\hat{\\mathbb{Z}})^\\Delta \\simeq \\hat{\\mathbb{Z}}^* \\cdot (\\hat{\\mathbb{Z}} \\ltimes \\hat{M}^\\wedge)$$\n\noù les opérations de $\\hat{\\mathbb{Z}}^*$ sur les [unclear: facteurs] se lisent direct sur l'explicitation des sections précédentes. On notera que, modulo des questions de notations et de purismes / définitions, les groupes $Z_{\\rho,\\sigma}^\\Delta$ etc. précédents sont au fond ceux qui se déduisent directement, en termes de $(\\hat{\\mathbb{S}}^\\wedge, \\hat{\\mathbb{S}}^{+\\wedge}, \\hat{M}^\\wedge)$ (munis de $\\rho,\\sigma,\\tau$), des § 49 VI. On a des hom. canoniques\n\n(217)\n$$ M = M_{1,1} \\longrightarrow M_{\\rho,\\sigma}^\\sim $$\n$$ \\downarrow \\quad \\quad \\quad \\quad \\downarrow \\sim_G $$\n$$ M' \\longrightarrow M_{\\rho,\\sigma}^{\\prime\\sim} $$\n\nqui comme d'habitude se décompose en",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 802,
-      "thinking_tokens": 4090
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 797,
+      "thinking_tokens": 6027
+    }
   },
   "96": {
     "status": "success",
@@ -913,13 +894,12 @@
   },
   "97": {
     "status": "success",
-    "transcription": "J'ai envie de mettre ces homomorphismes en\nrelation avec la \"tour\" des courbes algébriques\ndéfinies sur $\\mathbb{Q}$, indexées par $n \\in \\mathbb{N}^\\ast$\n\n(220) $X_n : X_0^n + X_1^n + X_\\infty^n = 0$ \\qquad \\qquad (courbe de\n$\\subset \\mathbb{P}^2_{\\mathbb{Q}}$ \\qquad \\qquad \\qquad \\qquad Fermat d'indice $n$)\n\nSoit $U_n$ l'ouvert des pts où $X_0 X_1 X_\\infty \\neq 0$\n\nSur $X_n$ le groupe fini $\\mu_n^{\\{0,1,\\infty\\}} / \\mu_n$ (diag.)\nopère ($\\mu_n \\subset \\mathbb{G}_m$), et on a aussi\nque $\\mathfrak{S}_3 = \\mathfrak{S}_{\\{0,1,\\infty\\}}$, de sorte que le\nproduit semi-direct\n\n[MARGIN: Notation $F_n$ pas très heureuse - il est possible qu'il y aura un besoin ultérieur de la notation $F_n$ pour les [unclear] de $U_n, U_\\infty$ avec un in-dice $n$? (comparer p. 719)]\n\n(221) $F_n = \\mathfrak{S}_3 \\cdot \\mu_n^{\\{0,1,\\infty\\}} / \\mu_n = F_n^0$\n\nopère sur $X_n$.\nOn a\n\n(222) $X_n / F_n^0 \\simeq X_1 \\simeq U_{0,3}$ ,\n\nisomorphismes compatibles aux opérations de\n$\\mathfrak{S}_3$. Plus généralement, si\n$n = n'd$, on a\n\n(223)\n\\begin{tikzcd}\nX_n \\ar[r] & X_{n'} \\\\\nx_i \\ar[r, |->] & x_i^d\n\\end{tikzcd}\n\net de cette façon $X_n$ devient un revête-\nment principal (= torseur) sur $X_{n'}$, de\ngroupe $\\mu_d^{\\{0,1,\\infty\\}} / \\mu_d$, de façon plus précise,\n[unclear], (223) est compatible avec\nl'épimorphisme\n\n(224)\n\\begin{tikzcd}\nF_n \\ar[r, \"\\text{épi}\"] \\ar[d, equal] & F_{n'} \\ar[d, equal] & g \\ar[r, |->] & g \\\\\n\\mathfrak{S}_3 \\cdot \\mu_n^{\\{0,1,\\infty\\}}/\\mu_n \\ar[r] & \\mathfrak{S}_3 \\cdot \\mu_{n'}^{\\{0,1,\\infty\\}}/\\mu_{n'} & (x_0, x_1, x_\\infty) \\ar[r, |->] & (x_0^d, x_1^d, x_\\infty^d)\n\\end{tikzcd}",
+    "transcription": "69 bis\n\nJ'ai envie de mettre ces homomorphismes en\nrelation avec le \"tour\" des courbes algébriques\ndéfinies sur $\\mathbb{Q}$, indexées par $n \\in \\mathbb{N}^\\ast$\n\n(220) $X_n : x_0^n + x_1^n + x_\\infty^n = 0$ (courbe de Fermat d'indice $n$)\n$\\cap \\mathbb{P}^2_\\mathbb{Q}$   Soit $U_n$ l'ouvert des pts où $x_0 x_1 x_\\infty \\neq 0$\n\nSur $X_n$ le schéma en gr. $\\mu_n^{\\{0,1,\\infty\\}}/\\mu_n^{diag.}$\nopère ( $\\mu_n \\subset \\mathbb{G}_m$ ), et on a aussi\nque $\\mathfrak{S}_3 = \\mathfrak{S}_{\\{0,1,\\infty\\}}$, d'où on a le\nproduit semi-direct\n\n[MARGIN: Notation $F_n$ pas très heureuse, - il est possible qu'il y aura un besoin ultérieur de réserver la lettre $F$ pour les faces de la stratification de $U_n \\dots$ (comparer utilit. p. 719!)]\n\n(221) $F_n = \\mathfrak{S}_3 \\cdot \\underbrace{\\mu_n^{\\{0,1,\\infty\\}}/\\mu_n}_{F_n^\\circ}$\n\nOn a\n\n(222) $X_n / F_n^\\circ \\simeq X_1 \\simeq U_{0,3}$\nisomorphisme compatible avec l'action de\n$\\mathfrak{S}_3$. Plus généralement, si\n$n = n' d$, on a un\n\n(223) $X_n \\longrightarrow X_{n'}$\n$x_i \\longmapsto x_i^d$\n\net de cette façon $X_n$ devient un revête-\nment principal ($=$ torseur) sur $X_{n'}$, de\ngroupe $\\mu_d^{\\{0,1,\\infty\\}}/\\mu_d$, de façon plus précise,\non a un [unclear] compatible avec\n\n(224) $F_n \\xrightarrow{\\text{épi}} F_{n'}$\n$\\mathfrak{S}_3 \\cdot \\mu_n^{\\{0,1,\\infty\\}}/\\mu_n \\longrightarrow \\mathfrak{S}_3 \\cdot \\mu_{n'}^{\\{0,1,\\infty\\}}/\\mu_{n'}$\n\n[DIAGRAM: on the right side, an arrow $g \\mapsto g^d$ and $(x_0, x_1, x_\\infty) \\mapsto (x_0^d, x_1^d, x_\\infty^d)$]",
     "usage": {
-      "prompt_tokens": 2532,
-      "output_tokens": 706,
-      "thinking_tokens": 3858
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1787,
+      "output_tokens": 621,
+      "thinking_tokens": 2630
+    }
   },
   "98": {
     "status": "success",
@@ -952,13 +932,12 @@
   },
   "101": {
     "status": "success",
-    "transcription": "698\n\n$$ (234) \\qquad 1 \\to \\Pi_1(U_{0,3 \\overline{\\mathbb{Q}}}, \\overline{y}) \\to \\Pi_1(U_{0,3 \\mathbb{Q}}, \\mathfrak{S}_3; \\overline{y}) \\to \\mathfrak{S}_3 \\to 1 $$\n\npar le sous-groupe invariant des commutateurs\ndu groupe $\\Pi_1(U_{0,3 \\overline{\\mathbb{Q}}}, \\overline{y})$. Cette structure\n[MARGIN: si, elle est triviale, cf. plus bas...]\nd'extension (233) de $\\mathfrak{S}_3$ par $M^\\wedge$ n'est pas\ntriviale, sauf erreur, bien que l'extension\ninduite de $\\{1, \\rho, \\rho^2\\} \\simeq \\mathbb{Z}/3\\mathbb{Z}$ par $M^\\wedge$, - ou\n$\\{1, \\sigma\\}$ par $\\hat{M}$, le soit. A fortiori (232) n'est\npas triviale (bien qu'elle ait des scindages\ncanoniques au-dessus de $\\hat{\\mathbb{Z}}$, au-dessus de\n$\\{1, \\rho, \\rho^2\\}$ et au-dessus de $\\{1, \\sigma\\}$). Donc\n(sous réserve de vérifier ces points tantot...)\nle groupe $C_{\\rho,\\sigma}/\\mu_a$ ne peut s'identifier\nà un sous-groupe du groupe \n$$ \\boxed{ Aff_{\\hat{\\mathbb{Z}}}(\\hat{M}) \\simeq \\operatorname{Aut}_{\\hat{\\mathbb{Z}}}(\\hat{M}). \\hat{M} } $$\ncomprenant le sous-groupe $\\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3$ de $\\operatorname{Aut}_{\\hat{\\mathbb{Z}}}(\\hat{M})$.\n\nConsidérons le sous-groupe\n$$ (235) \\qquad Aff \\simeq (\\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3) . \\hat{M} $$\nOn a un diagr.\n\n\\begin{tikzcd}\n(237) & 1 \\ar[r] & \\hat{M} \\ar[r] & Aff \\ar[r] & \\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3 \\ar[r] & 1 \\\\\n& & & & \\mathcal{M}_{0,3} \\ar[u]\n\\end{tikzcd}\n\n: ligne exacte. Le donné de la structure\n(230) équivaut à isoler (à un conjugué près, à l' [unclear]",
+    "transcription": "698\n\n(234)\n$$1 \\longrightarrow \\pi_1(U_{0,3 \\overline{\\mathbb{Q}}}, \\overline{j}) \\longrightarrow \\pi_1(U_{0,3 \\mathbb{Q}}, \\overline{j}) \\longrightarrow \\mathfrak{S}_3 \\longrightarrow 1$$\n\npar le sous-groupe invariant des commutateurs\ndu groupe $\\pi_1(U_{0,3 \\overline{\\mathbb{Q}}}, \\overline{j})$. Cette structure\n[MARGIN: si, elle est triviale, cf plus bas...]\nd'extension (233) de $\\mathfrak{S}_3$ par $M^{\\wedge}$ n'est pas\ntriviale, sauf erreur, bien que l'extension\ninduite de $\\{1, \\rho, \\rho^2\\} \\simeq \\mathbb{Z}/3\\mathbb{Z}$ par $M^{\\wedge}$ , - et de\n$\\{1, \\sigma\\}$ par $\\hat{M}$, le soit. A fortiori (232) n'est\npas triviale (bien qu'elle ait des scindages\ncanoniques au-dessus de $\\hat{\\mathbb{Z}}$, - au-dessus de\n$\\{1, \\rho, \\rho^2\\}$ et au-dessus de $\\{1, \\sigma\\}$). Sous\n(sous réserve de vérifier ces points tantôt...)\nle groupe $C_{\\rho, \\sigma | H_a}$ peut s'identifier\nà un sous-groupe du groupe $Aff_{\\hat{\\mathbb{Z}}}(\\hat{M}) \\simeq \\operatorname{Aut}_{\\hat{\\mathbb{Z}}}(\\hat{M}) \\cdot \\hat{M}$\ncomprenant le sous-groupe $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\subset \\operatorname{Aut}_{\\hat{\\mathbb{Z}}}(\\hat{M})$.\nConsidérons ce groupe\n\n(235)\n$$Aff \\simeq (\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3) \\cdot \\hat{M}$$\n\nOn a un diagramme\n\n(237)\n$$1 \\longrightarrow M^{\\wedge} \\longrightarrow Aff \\longrightarrow \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\longrightarrow 1$$\n\n[DIAGRAM: flèche pointant de $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ vers $\\mathcal{M}_{0,3}$ en bas à gauche]\n\n: lignes exactes. La donnée de la structure\n(230) équivaut, à isomor (en un sens gros) près, à l'",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 597,
-      "thinking_tokens": 4669
+      "prompt_tokens": 1788,
+      "output_tokens": 566,
+      "thinking_tokens": 4939
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "102": {
@@ -973,33 +952,30 @@
   },
   "103": {
     "status": "success",
-    "transcription": "699\n\n(239)\n\\begin{tikzcd}\n1 \\ar[r] & M^\\wedge \\ar[r] & G_{p\\Gamma}/H_G \\ar[r] & \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\ar[r] & 1 \\\\\n& & \\hat{\\mathbb{Z}}^* \\times G^{+ \\wedge} / H_G \\ar[u, \"\\simeq\"'] & & \\\\\n& & & \\mathcal{M}_{0,3} = \\pi_1(\\mathcal{U}_{0,3 \\overline{\\mathbb{Q}}, \\mathfrak{S}_3} ; -\\vec{1}) \\ar[uu] \\ar[ul, dashed]\n\\end{tikzcd}\n\nSur $G_{0,3}^{+ \\wedge} \\simeq \\pi_1(\\mathcal{U}_{0,3 \\overline{\\mathbb{Q}}, \\mathfrak{S}_3}, -\\vec{1}) \\subset \\mathcal{M}_{0,3}$ , cet hom. induit l'hom. canonique du passage au quotient de $G_{0,3}^{+ \\wedge}$ obtenu en rendant $\\Pi_{0,3}^\\wedge$ abélien , soit $G_{p\\Gamma}/H_G \\simeq G^{+ \\wedge}/H_G$ , extension de $\\mathfrak{S}_3$ par $M^\\wedge$.\n\nReprenons l'hom. $\\mathcal{M}_{0,3} \\to \\text{Aff}$ (238) , il s'insère dans un diag. commutatif\n\n(240)\n\\begin{tikzcd}\n1 \\ar[r] & \\Pi_{0,3}^\\wedge \\ar[r] \\ar[d] & \\mathcal{M}_{0,3} \\ar[r] \\ar[d] & \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\ar[r] \\ar[d, \"\\chi \\times \\text{id}\"] & 1 \\\\\n1 \\ar[r] & \\hat{M} \\ar[r] & \\text{Aff} \\ar[r] & \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\ar[r] & 1\n\\end{tikzcd}\n\noù $\\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\to \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ est l'hom. de (237) , et\noù $\\Pi_{0,3}^\\wedge \\to \\hat{M}$ est l'hom. canonique\n\n(241) $$ \\Pi_{0,3}^\\wedge \\to (\\Pi_{0,3}^\\wedge)_{ab} \\simeq ((\\Pi_{0,3})_{ab})^\\wedge \\simeq \\hat{M} \\ . $$\n\nSi on désigne par $\\mathcal{M}_1$ le quotient de $\\mathcal{M}_{0,3}$ par $[\\Pi_{0,3}^\\wedge, \\Pi_{0,3}^\\wedge]$ , on trouve de même",
+    "transcription": "699\n\n(239) $$1 \\to M^\\wedge \\to G_{p\\Gamma}/\\mu_{\\hat{G}} \\to \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\to 1$$\n\n[DIAGRAM: An exact sequence as in (239). Under the middle term $G_{p\\Gamma}/\\mu_{\\hat{G}}$, there is an isomorphism $\\simeq \\hat{\\mathbb{Z}}^* \\cdot \\mathfrak{S}^{+ \\wedge} / \\mu_{\\hat{G}}$. A dotted arrow points from $\\mathcal{M}_{0,3} = \\Pi_1(\\mathcal{U}_{0,3 \\overline{\\mathbb{Q}}}, \\mathfrak{S}_3 ; -j)$ up to the middle term.]\n\nSur $\\hat{\\mathfrak{S}}_{0,3}^{+ \\wedge} \\simeq \\Pi_1(\\mathcal{U}_{0,3 \\overline{\\mathbb{Q}}}, \\mathfrak{S}_3 ; -j) \\subset \\mathcal{M}_{0,3}$, cet hom. induit l'hom canonique [unclear: de passage au quotient de $\\hat{\\mathfrak{S}}_{0,3}^{+ \\wedge}$] rendant $\\Pi_{0,3}^\\wedge$ abélien, vers $G_{p\\Gamma}/\\mu_{\\hat{G}} \\simeq \\hat{\\mathfrak{S}}^{+ \\wedge}/\\mu_{\\hat{G}}$, extension de $\\mathfrak{S}_3 \\subset \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ par $M^\\wedge$.\n\nReprenons l'hom $\\mathcal{M}_{0,3} \\to \\text{Aff}$ (238), il s'inscrit dans un diagramme exact :\n\n(240)\n$$1 \\to \\Pi_{0,3}^\\wedge \\to \\mathcal{M}_{0,3} \\to \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\to 1$$\n$$\\downarrow \\quad \\downarrow \\quad \\downarrow \\chi \\times id$$\n$$1 \\to \\hat{M} \\to \\text{Aff} \\to \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\to 1$$\n\noù $\\Gamma_{\\mathbb{Q}} \\to \\hat{\\mathbb{Z}}^*$ est l'hom. (de (237)), et où $\\Pi_{0,3}^\\wedge \\to \\hat{M}$ est l'hom canonique\n\n(241) $$\\Pi_{0,3}^\\wedge \\to (\\Pi_{0,3}^\\wedge)_{ab} \\simeq ((\\Pi_{0,3})_{ab})^\\wedge \\simeq \\hat{M}$$\n\nSi on désigne par $\\mathcal{M}_1$ le quotient de $\\mathcal{M}_{0,3}$ par $[\\Pi_{0,3}^\\wedge, \\Pi_{0,3}^\\wedge]$, on trouve donc\n\n102",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 683,
-      "thinking_tokens": 9334
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 640,
+      "thinking_tokens": 4309
+    }
   },
   "104": {
     "status": "success",
-    "transcription": "un hom. canonique de suites exactes\n\n(242)\n\\begin{tikzcd}\n1 \\ar[r] & M^\\wedge \\ar[r] \\ar[d, equal] & M_1 \\ar[r] \\ar[d] & N_{0,3} \\ar[r] \\ar[d] & 1 \\\\\n1 \\ar[r] & M^\\wedge \\ar[r] & Aff \\ar[r] & \\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3 \\ar[r] & 1\n\\end{tikzcd}\n\n(dépends du choix d'un pt de $\\mathcal{U}_{0,3}(\\overline{\\mathbb{Q}})$ au-dessus de $-\\vec{j}$)\nqui montre que l'extension $M_1$ de $\\hat{\\Gamma}_Q$ par $M^\\wedge$\nest [unclear: isome] : l'image inv. de l'extension\ntriviale $Aff$ de $\\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3$ par $M^\\wedge$, donc est\ntriviale. Plus précisément encore, considérons\nle quotient $M_2$ de $M_1$ par le noyau de $M_1 \\to Aff$,\non trouve un diagramme\n\n(242 bis)\n\\begin{tikzcd}\n1 \\ar[r] & M^\\wedge \\ar[r] \\ar[d, \"\\simeq\"'] & M_2 \\ar[r] \\ar[d, hook] & N_2 \\ar[r] \\ar[d, hook] & 1 \\\\\n1 \\ar[r] & M^\\wedge \\ar[r] & Aff \\ar[r] & \\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3 \\ar[r] & 1\n\\end{tikzcd}\n\n(où $N_2 \\overset{def}{=} M_2 / \\text{Im } M^\\wedge$). On voit donc\nque l'extension de $N_2$ par $M^\\wedge$ est triviale\n- [unclear: avec un choix de] $M^\\wedge$ - conjugaison -\nde scindages de cette extension - les\nscindages correspondant aux pts de\n$\\mathcal{U}_{0,3}(\\overline{\\mathbb{Q}})$ au-dessus du pt $-\\vec{j} \\in \\mathcal{U}_{0,3}(\\mathbb{Q})$",
+    "transcription": "un hom. de suites exactes\n[DIAGRAM: commutative diagram of exact sequences]\n$$ 1 \\longrightarrow M^\\wedge \\longrightarrow \\mathcal{M}_1 \\longrightarrow \\mathcal{N}_{0,3} \\longrightarrow 1 $$\n$$ || \\qquad \\downarrow \\qquad \\downarrow $$\n(242)\n$$ 1 \\longrightarrow M^\\wedge \\longrightarrow \\text{Aff} \\longrightarrow \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n(déduite du choix d'un pt de $\\mathcal{U}_{0,3}(\\overline{\\mathbb{Q}})$ au-dessus de $-\\overline{j}$)\nqui montre que l'extension $\\mathcal{M}_1$ de $\\Pi_Q$ par $\\hat{M}$\ns'identifie : l'image inv. de l'extension\ntriviale $\\text{Aff}$ de $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ par $M^\\wedge$, donc est\ntriviale. Plus précisément encore, considérons\nle quotient $\\mathcal{M}_2$ de $\\mathcal{M}_1$ par le noyau de $\\mathcal{M}_1 \\longrightarrow \\text{Aff}$,\non trouve un diagramme\n\n(242 bis)\n$$ 1 \\longrightarrow M^\\wedge \\longrightarrow \\mathcal{M}_2 \\longrightarrow \\mathcal{N}_2 \\longrightarrow 1 $$\n$$ || \\qquad \\hookrightarrow \\qquad \\hookrightarrow $$\n$$ 1 \\longrightarrow M^\\wedge \\longrightarrow \\text{Aff} \\longrightarrow \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n\n(où $\\mathcal{N}_2 \\overset{def}{=} \\mathcal{M}_2 / \\text{Im } M^\\wedge$). On voit donc\nque l'extension de $\\mathcal{N}_2$ par $M^\\wedge$ est triviale\n- avec une classe de $M^\\wedge$-conjugais.-\nde scindages de cette extension - les\nscindages correspondant aux pts de\n$\\mathcal{U}_{0,3}(\\overline{\\mathbb{Q}})$ au-dessus du pt $-\\overline{j}$ de $\\mathcal{U}_{0,3}(\\mathbb{Q})$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 552,
-      "thinking_tokens": 4657
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 487,
+      "thinking_tokens": 3640
+    }
   },
   "105": {
     "status": "success",
-    "transcription": "On aurait vraiment envie de montrer que\ncet homomorphisme $M_{0,3} \\to Aff$ est isomorphe\nà l'hom. $M_{0,3} \\to G_{\\rho,0}/\\mu_{\\hat{\\mathbb{Z}}}$ de (239) , moyennant\nun isomorphisme canonique de\n$Aff$ avec $G_{\\rho,0}/\\mu_{\\hat{\\mathbb{Z}}}$. Cela impliquerait que\ncette dernière extension est scindée. Les\nisomorphismes de cette extension avec $Aff$\ncorrespondraient aux scindages de cette\nextension.\n\n12°) Scindages de l'extension $G_{\\rho,0}/\\mu_{\\hat{\\mathbb{Z}}}$ de $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ par $M$.\nComme on a déjà un relèvement\n$$ \\hat{\\mathbb{Z}}^* \\hookrightarrow G_{\\rho,0} $$\n(150, 151), je vais regarder les scindages\nde l'extension (231) qui prolongent celui-ci -\nce qui revient à, les\nscindages de l'extension induite sur $\\mathfrak{S}_3$ :\n\n[MARGIN: partout : il faut se donner ce scindage qui $\\mathfrak{S}_3 \\hookrightarrow \\underline{S}^+ / \\mu_{\\hat{\\mathbb{Z}}}$ ($G_{\\rho,0} \\simeq \\hat{\\mathbb{Z}}^* \\dots$)]\n[MARGIN: On regarde les scindages [unclear] correspondent bien uniquement aux repères]\n\n(241) $$ 1 \\to M \\to \\underline{S}^+ / \\mu_{\\hat{\\mathbb{Z}}} \\to (\\mathfrak{S}_3)_{S_0} \\to 1 $$",
+    "transcription": "700\n\nOn aurait vraiment envie de montrer que\ncet homomorphisme $M_{0,3} \\to Aff$ est isomorphe\nà l'hom. $M_{0,3} \\to G_{0,\\mu}/\\mu_{\\mathbb{Q}}$ de (239), moyen-\nnant un isomorphisme d'extensions convenable de\n$Aff$ avec $G_{0,\\mu}/\\mu_{\\mathbb{Q}}$. Cela impliquerait que\ncette dernière extension est scindée. Les\nisomorphismes de cette extension avec $Aff$\ncorrespondent exactement aux scindages de cette\nextension.\n\n120) Scindages de l'extension $G_{0,\\mu}/\\mu_{\\mathbb{Q}}$ de $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ par $M$.\n\nComme on a déjà un relèvement\n$$ \\hat{\\mathbb{Z}}^*_{12} \\hookrightarrow G_{\\rho, \\sigma} $$\n(150, 151), je vais regarder les scindages\nde l'extension (231) qui prolongent celui-\nci — ce qui revient à $=$, les\nscindages de l'extension induite sur $\\mathfrak{S}_3$ :\n\n[MARGIN: pour tout à fait: il faudra se limiter aux scindages qui [unclear] $\\mathfrak{S}_3 \\to \\underline{\\mathfrak{S}}^+ / \\mu_{\\mathbb{Q}}$ [unclear] $(G_{\\rho, \\sigma})_{12} \\simeq \\hat{\\mathbb{Z}}^*_{12}$]\n\n$$ 1 \\to M \\to \\underline{\\mathfrak{S}}^+ / \\mu_{\\mathbb{Q}} \\to (\\mathfrak{S}_3)_{S_0} \\to 1 \\quad (243) $$\n[DIAGRAM: en dessous de $(\\mathfrak{S}_3)_{S_0}$ est écrit $(H/\\mu)_{S_0}$]\n\nOn regarde les [unclear: mots rayés] scindages correspondent biunivoquement aux couples",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 398,
-      "thinking_tokens": 5888
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 454,
+      "thinking_tokens": 1721
+    }
   },
   "106": {
     "status": "success",
@@ -1141,13 +1117,12 @@
   },
   "121": {
     "status": "success",
-    "transcription": "70bis\n\n13°) Retour sur la tour de Fermat.\n\nCommençons par dégager une suite topologique générale, qui était un peu embrouillée entre les lignes dans 110).\n\nSoit $\\Gamma$ (ici $\\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 = \\mathcal{N}_{0,3}$) opérant sur un topos $\\mathcal{X}$ (ici $\\underline{M}_{0,3} \\simeq M_{0,4 \\overline{\\mathbb{Q}}}$) conn. loc. connexe, muni d'un \"pt\" (géométrique) $x_0$ (ici : le point $\\vec{1}$ à valeurs dans $\\mathbb{Q}$), soient\n\n[MARGIN: en fait on discute [unclear: localement] ($\\mathcal{X}$ loc. simplemt [unclear: connexe] ou profini, il faudra y revenir...)]\n\n$$ (278) \\begin{cases} \\Pi = \\Pi_1(\\mathcal{X}, x_0), \\mathcal{M} = \\Pi_1(\\mathcal{X}, \\Gamma; x_0) \\\\ M = \\Pi_{ab} = \\Pi/[\\Pi,\\Pi] \\quad, \\tilde{\\mathcal{M}} = \\mathcal{M}/[\\Pi,\\Pi] \\end{cases} $$\n\nd'où des suites exactes et hom. de suites exactes\n\n(279)\n\\begin{tikzcd}\n1 \\ar[r] & \\Pi \\ar[r] \\ar[d, \"epi\"'] & \\mathcal{M} \\ar[r] \\ar[d, \"epi\"'] & \\Gamma \\ar[r] \\ar[d, \"\\sim\"'] & 1 \\\\\n1 \\ar[r] & M \\ar[r] & \\tilde{\\mathcal{M}} \\ar[r] & \\Gamma \\ar[r] & 1\n\\end{tikzcd}\n\n(Au lieu de prendre $M = \\Pi/[\\Pi,\\Pi] = \\Pi_{ab}$ on aurait pu prendre un quotient de $\\Pi_{ab}$ invariant par action de $\\Gamma$, mais peu importe...). Considérons \"le rev. universel abélien\" $\\tilde{\\mathcal{X}}_{ab}$ de $\\mathcal{X}$ en $x_0$, i.e. le quotient par $[\\Pi,\\Pi]$ du rev. universel de $\\mathcal{X}$ en $x_0$ - c'est donc un rev. principal de $\\mathcal{X}$, de groupe $M$. On",
+    "transcription": "708\n\n13º) Retour sur la tour de Fermat.\n\nCommençons par dégager une situation topologique générale, qui était un peu embrouillée entre les lignes dans 11º).\n\nSoit $\\Gamma$ (ici $\\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\} = N_{0,3}$ ) opérant sur un topos $\\mathcal{X}$ (ici $M_{0,3} \\simeq M_{0,4 \\overline{\\mathbb{Q}}}$ ) conn. loc. connexe, muni d'un \"pt\" (géométrique) $x_0$ (ici: à valeurs dans $\\overline{\\mathbb{Q}}$ ), soient\n\n[MARGIN: ($\\mathcal{X}$ loc. simple. connexe, point de vue discret ou profini, il [unclear]...)]\n\n(278)\n$$ \\pi = \\Pi_1(\\mathcal{X}, x_0), \\mathcal{M} = \\Pi_1(\\mathcal{X}, \\Gamma ; x_0) $$\n$$ M = \\pi_{ab} = \\pi / [\\pi, \\pi] , \\tilde{\\mathcal{M}} = \\mathcal{M} / [\\pi, \\pi] , $$\n\nd'où des suites exactes et hom. de suites exactes\n\n(279)\n$$ 1 \\to \\pi \\to \\mathcal{M} \\to \\Gamma \\to 1 $$\n$$ \\downarrow \\text{épi} \\quad \\downarrow \\text{épi} \\quad \\downarrow \\simeq $$\n$$ 1 \\to M \\to \\tilde{\\mathcal{M}} \\to \\Gamma \\to 1 $$\n\n(Au lieu de prendre $M = \\pi / [\\pi, \\pi] = \\pi_{ab}$, on aurait pu prendre un quotient de $\\pi_{ab}$ invariant par action de $\\Gamma$, mais peu importe...). Considérons \"le rev. universel abélien\" de $\\mathcal{X}$ en $x_0$, i.e. le quotient par $[\\pi, \\pi]$ du rev. universel de $\\mathcal{X}$ en $x_0$ - c'est donc un rev. principal de $\\mathcal{X}$, de groupe $M$.",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 557,
-      "thinking_tokens": 2231
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 487,
+      "thinking_tokens": 2946
+    }
   },
   "122": {
     "status": "success",
@@ -1169,13 +1144,12 @@
   },
   "124": {
     "status": "success",
-    "transcription": "Donc si on introduit le groupe $Aff(E)$\non aura un homomorphisme de\nsuites exactes\n\n(281)\n\\begin{tikzcd}\n1 \\ar[r] & M \\ar[r] \\ar[d, \"id_M\"] & \\tilde{\\Gamma} \\ar[r] \\ar[d, \"\\theta_{\\tilde{\\Gamma}}\"] & \\Gamma \\ar[r] \\ar[d, \"\\Theta_\\Gamma\"] & 1 \\\\\n1 \\ar[r] & M \\ar[r] & Aff(E) \\ar[r] & \\operatorname{Aut}(M) \\ar[r] & 1\n\\end{tikzcd}\n\noù les flèches verticales extrêmes $id_M$\net $\\Theta_\\Gamma$ sont connues, et où la flèche médiane\nest à déterminer. On peut dire\nque la catégorie des $\\tilde{X}'$ au dessus\nd'un [unclear: l'é.p.] de $\\Gamma$ dessus satisfaisant\naux autres [unclear: axiomes] ) équivaut\nà celle des couples $(E, \\theta_{\\tilde{\\Gamma}})$, où $E$\nest un $M$-torseur, et $\\theta_{\\tilde{\\Gamma}}$ un\nhom. de groupes $\\tilde{\\Gamma} \\to Aff(E)$\ncompatible avec $id_M$ et $\\Theta_\\Gamma$ i.e. qui\nrend commutatif (281). On\npeut dire aussi une fois $E$ choisi,\n(et ce choix est unique à isom. [unclear: unique] près -)\nqu'on a défini une extension\n$Aff(E)$ de $\\operatorname{Aut}(M)$ par $M$, d'où\n[unclear: tirée par] $\\Gamma \\to \\operatorname{Aut}(M)$ une extension",
+    "transcription": "Donc si on introduit le groupe $Aff(E)$\non aura un homomorphisme de\nsuites exactes\n\n(281) [DIAGRAM: Commutative diagram of exact sequences]\n$$1 \\longrightarrow M \\longrightarrow \\tilde{\\pi} \\longrightarrow \\Gamma \\longrightarrow 1$$\n$$ \\downarrow id_M \\quad \\downarrow \\Theta_{\\tilde{\\pi}} \\quad \\downarrow \\Theta_\\Gamma $$\n$$1 \\longrightarrow M \\longrightarrow Aff(E) \\longrightarrow \\operatorname{Aut}(M) \\longrightarrow 1$$\n\noù les flèches verticales extrêmes $id_M$\net $\\Theta_\\Gamma$ sont connues, et où la flèche médiane\nest à déterminer. On peut dire\nque la catégorie des $\\mathcal{X}'$ au dessus\n(ou l'ép. de $\\Gamma$ dessus satisfaisant\naux autres axiomes) équivaut\nà celle des couples $(E, \\Theta_{\\tilde{\\pi}})$, où $E$\nest un $M$-torseur, et $\\Theta_{\\tilde{\\pi}}$ un\nhom. de groupes $\\tilde{\\pi} \\to Aff(E)$\ncompatible avec $id_M$ et $\\Theta_\\Gamma$ i.e. qui\nrend commutatif (281). On\npeut dire aussi : une fois $E$ choisi,\n(et ce choix est unique à isomorphisme unique près...)\nqu'un tel [unclear: $\\Theta_{\\tilde{\\pi}}$] définit une extension\n$Aff(E)$ de $\\operatorname{Aut}(M)$ par $M$, d'où à\n$\\Theta_\\Gamma : \\Gamma \\to \\operatorname{Aut}(M)$ une extension",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 396,
-      "thinking_tokens": 7041
+      "prompt_tokens": 1788,
+      "output_tokens": 353,
+      "thinking_tokens": 3021
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "125": {
@@ -1199,13 +1173,12 @@
   },
   "127": {
     "status": "success",
-    "transcription": "711\n\n(28bis)\n\\begin{tikzcd}\n1 \\ar[r] & \\hat{M} \\ar[r] \\ar[d] & \\tilde{\\mathcal{M}} \\ar[r] \\ar[d] & \\Gamma \\ar[r] \\ar[d, \"N_{0,3}=\\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3\" description, \"\\hat{\\mathbb{Z}}^\\times \\times id_{\\mathfrak{S}_3}\"] & 1 \\\\\n1 \\ar[r] & \\hat{M} \\ar[r] & G_{\\tilde{\\rho}} \\ar[r] & \\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3 \\ar[r] & 1\n\\end{tikzcd}\n\nD'ailleurs comme l'on attend - on a trouvé que\nl'extension $G_{\\tilde{\\rho}}$ de $\\hat{\\mathbb{Z}}^\\times \\times \\mathfrak{S}_3$ par $\\hat{M}$ était\nscindée, d'où il résulte que\nl'ext. $\\tilde{\\mathcal{M}}$ de $\\Gamma$ par $\\hat{M}$ l'est aussi\n(ce qui au demeurant est aussi conséquence de\nl'existence de la tour de Fermat, en\ny appliquant les réflexions générales\ndes pages précédentes). Bien mieux,\non a vu qu'il y a une unique classe\nde $\\hat{M}$-conj. de scindages de l'extension\n$G_{\\tilde{\\rho}}$, ce qui induit une classe de\n$\\hat{M}$-conjugaison canonique (mais non\nunique!) de scindages de $\\tilde{\\mathcal{M}} \\to$ \nde $\\Gamma$. Cela définit donc une\n$\\hat{M}$-conjugaison canonique de relèvements\nsur $\\tilde{X} = \\widetilde{U_{0,3 \\overline{\\mathbb{Q}}}}$\nde l'action de $\\Gamma$ (à $\\simeq$ près, ou ce\nqui revient au m., un foncteur sur\n$(U_{0,3 \\mathbb{Q}}, \\mathfrak{S}_3)$, de fibre un groupe profini\n\n[MARGIN: NB $H^1(\\Gamma, \\hat{M})$ est un groupe fort gros! Mais voir cf th. p. 716]",
+    "transcription": "711\n\n(282)\n$$1 \\to \\hat{M} \\to \\tilde{\\mathcal{M}} \\to \\Gamma \\to 1$$\n$$ \\downarrow \\quad \\downarrow \\quad \\downarrow \\chi \\times id_{\\mathfrak{S}_3} $$\n$$1 \\to \\hat{M} \\to G_{\\wp,\\tilde{\\sigma}} \\to \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\to 1$$\n[DIAGRAM: commutative diagram labeled (282), with $N_{0,3} = \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3$ written under $\\Gamma$ in the top row]\n\nD'ailleurs contre toute attente on a trouvé que l'extension $G_{\\wp,\\tilde{\\sigma}}$ de $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ par $\\hat{M}$ était scindée, d'où il résulte que l'ext. $\\tilde{\\mathcal{M}}$ de $\\Gamma$ par $\\hat{M}$ l'est aussi ([unclear: ce qui en fait] est aussi conséquence de l'existence de la tour de Fermat, en y appliquant les réflexions générales des pages précédentes). Bien mieux, on a qu'il y a une unique classe de $\\hat{M}$-conj. de scindages de l'extension $G_{\\wp,\\tilde{\\sigma}}$, ce qui induit une classe de $\\hat{M}$-conjugaison canonique (mais non unique!) de scindages de $\\tilde{\\mathcal{M}} \\to \\dots$ au-dessus de $\\Gamma$. Cela définit donc une classe d'$\\hat{M}$-conjugaison canonique de relèvements sur $\\underline{X} = \\underline{U}_{0,3 \\overline{\\mathbb{Q}}}$ de l'action de $\\Gamma$ (à $\\underline{X}_0 \\dots$ ou ce qui revient au même un foncteur sur $(U_{0,3 \\mathbb{Q}}, \\mathfrak{S}_3)$, de groupe un groupe profini\n\n[MARGIN: NB $H^1(\\Gamma, \\hat{M})$ est un groupe fort gros ! Mais voir cf th. p. 716]",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 517,
-      "thinking_tokens": 5285
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 484,
+      "thinking_tokens": 3955
+    }
   },
   "128": {
     "status": "success",
@@ -1237,13 +1210,12 @@
   },
   "131": {
     "status": "success",
-    "transcription": "suivante : après l'oubli des opérations de $\\Gamma$ on trouve un revêtement [unclear: connexe & abélien] galoisien de $\\mathfrak{X}$, correspondant à un groupe quotient $M$ de $\\pi = \\pi_1(\\mathfrak{X}, x_0)$ - de sorte que $\\mathfrak{X}'$ devient de façon naturelle un torseur sous $M_{\\mathfrak{X}}$.\n\nLe foncteur\n$$ \\mathfrak{X}' \\longmapsto \\mathfrak{X}'(x_0) \\quad (\\text{fibre en } x_0) $$\nde la catégorie de ces $\\mathfrak{X}'$ dans la catégorie des ensembles, s'en va en fait vers les ensembles $E$ munis des structures suivantes\n\na) $E$ est un $M$-torseur, et en tant que tel donne naissance à une extension\n$$ 1 \\to M \\to \\text{Aff}(E) \\to \\operatorname{Aut}(M) \\to 1 $$\nd'où une sous-extension induite\n\n(288)\n$$ 1 \\to M \\to \\text{Aff}_\\Gamma(E) \\to \\tilde{\\Gamma} \\to 1 $$\n\noù $\\tilde{\\Gamma} = \\operatorname{Im}(\\Gamma \\to \\operatorname{Aut}(M))$\n\nb) On a un hom d'extensions\n\n(289)\n\\begin{tikzcd}\n1 \\ar[r] & M \\ar[r] \\ar[d, \"id\"'] & \\tilde{M} \\ar[r] \\ar[d, \"\\theta_{\\tilde{M}}\"'] & \\Gamma \\ar[r] \\ar[d, \"can\"] & 1 \\\\\n1 \\ar[r] & M \\ar[r] & \\text{Aff}_\\Gamma(E) \\ar[r] & \\tilde{\\Gamma} \\ar[r] & 1\n\\end{tikzcd}\n\nLa catégorie des $\\mathfrak{X}'$ (à un iso...) équivaut à celle des couples $(E, \\theta_{\\tilde{M}})$, où $E$ est un $M$-torseur, et $\\theta_{\\tilde{M}}$ un hom. d'extensions (289).",
+    "transcription": "suivante : après l'oubli des opérations de $\\Gamma$ [unclear] on trouve un revêtement galoisien de $X$, correspondant à un quotient $M$ de $\\Pi = \\Pi_1(X, x_0)$ - de sorte que $X'$ devient de façon naturelle un torseur sous $M_X$.\n\nLe foncteur\n$$X' \\mapsto X'(x_0) \\quad \\text{(fibre en } x_0)$$\nde la catégorie de ces $X'$ dans la catégorie des ensembles, s'envoie en fait vers les ensembles $E$ munis des structures suivantes :\n\na) $E$ est un $M$-torseur, et [unclear: en tant que] tel donne naissance à une extension\n$$1 \\to M \\to Aff(E) \\to \\operatorname{Aut}(M) \\to 1$$\nd'où une sous-extension induite\n(288) $$1 \\to M \\to Aff_{\\tilde{\\Gamma}}(E) \\to \\tilde{\\Gamma} \\to 1$$\noù $\\tilde{\\Gamma} = \\operatorname{Im}(\\Gamma \\to \\operatorname{Aut}(M))$ .\n\nb) On a un hom. d'extensions\n$$1 \\to M \\to \\tilde{M} \\to \\Gamma \\to 1$$\n(289) $$ \\downarrow id \\quad \\downarrow \\theta_{\\tilde{M}} \\quad \\downarrow can $$\n$$1 \\to M \\to Aff_{\\tilde{\\Gamma}}(E) \\to \\tilde{\\Gamma} \\to 1$$\n\nLa catégorie des $X'$ [unclear: (à un iso près)] équivaut à celle des couples $(E, \\theta_{\\tilde{M}})$, où $E$ est un $M$-torseur, et $\\theta_{\\tilde{M}}$ un hom. d'extensions (289).",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 489,
-      "thinking_tokens": 3670
+      "prompt_tokens": 1788,
+      "output_tokens": 402,
+      "thinking_tokens": 2943
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "132": {
@@ -1285,13 +1257,12 @@
   },
   "136": {
     "status": "success",
-    "transcription": "je n'avais pas eu à ma disposition\ncette tour de Fermat, je n'aurais\ncertes pas suspecté que [crossed out: l'extension] $\\widetilde{C}^{+\\wedge} = \\widetilde{C}^{+\\wedge}_{H}$ de\n$H^+ \\simeq \\widehat{\\mathfrak{S}}_3$ par $M^\\wedge$ soit scindée !\n\nLa conjecture qui se présente tout de\nsuite, c'est que ces deux revêtements\npro-étales sont isomorphes - l'isomor-\nphisme entre les deux est alors\nunique.\n\nPour l'autre voie de détermination\ndes classes d'isomorphie [unclear: (c.a.d. $\\tilde{M}$ sur $M_{0,3} / [\\Gamma_{\\mathbb{Q}}, \\Gamma_{\\mathbb{Q}}]$)]\nde scindages de $\\Gamma = \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3$ par\n$M^\\wedge$, on a par la suite exacte associée\nà la suite spectrale de Hochschild\n\n$$ (294) \\quad 0 \\to H^1(\\Gamma_{\\mathbb{Q}}, H^0(\\widehat{\\mathfrak{S}}_3, \\widehat{M})) \\to H^1(\\Gamma, \\widehat{M}) \\to H^0(\\Gamma_{\\mathbb{Q}}, H^1(\\widehat{\\mathfrak{S}}_3, \\widehat{M})) $$\n\nOr on a vu que\n$$ (295) \\quad H^0(\\widehat{\\mathfrak{S}}_3, \\widehat{M}) = 0 \\quad (\\text{[unclear: car] } H^0(L_f, \\widehat{M}) = 0) $$\n\n[crossed out: Et] d'autre part\n$$ H^1(\\widehat{\\mathfrak{S}}_3, \\widehat{M}) = H^1(\\mathfrak{S}_3, M) \\otimes_{\\mathbb{Z}} \\hat{\\mathbb{Z}} \\quad , $$\n\n[MARGIN: donc $H^1(\\Gamma, \\widehat{M}) \\simeq H^0(\\Gamma_{\\mathbb{Q}}, H^1(\\widehat{\\mathfrak{S}}_3, \\widehat{M}))$]",
+    "transcription": "je n'avais pas eu à ma disposition\ncette tour de Fermat, je n'aurais\ncertes pas suspecté que [unclear: l'extension]\n2-extensions $\\widetilde{\\Gamma}^{+\\wedge} = \\widetilde{\\mathcal{C}}^{+\\wedge} \\rtimes H$ de\n$\\widehat{H}^+ \\simeq \\widehat{\\mathfrak{S}}_3$ par $\\widehat{M}$ soit scindée !\n\nLa conjecture qui se présente de soi,\nsurtout, c'est que ces deux revêtements\nproétales sont isomorphes - l'isomor-\nphisme entre les deux est alors\nunique.\n\n[unclear: Et l'idée même] de déterminer\nles classes d'isomorphie [unclear: loc. des deux]\n(cas $\\widehat{M} \\simeq M_{0,3} / [\\Pi_3, \\Pi_3]$) de\nscindages de $\\Gamma = \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3$ par\n$\\widehat{M}$, on a par la suite exacte associée\nà la suite spectrale de Hochschild\n\n$$(244) \\quad 0 \\to H^1(\\Gamma_{\\mathbb{Q}}, H^0(\\mathfrak{S}_3, \\widehat{M})) \\to H^1(\\Gamma, \\widehat{M}) \\to H^0(\\Gamma_{\\mathbb{Q}}, H^1(\\mathfrak{S}_3, \\widehat{M}))$$\n\n[DIAGRAM: flèche descendant du dernier terme vers $H^2(\\Gamma_{\\mathbb{Q}}, H^0(\\mathfrak{S}_3, \\widehat{M}))$]\n\n[MARGIN: donc $H^1(\\Gamma, \\widehat{M}) \\simeq H^1(\\Gamma_{\\mathbb{Q}}, H^0(\\mathfrak{S}_3, \\widehat{M}))$]\n\nOr on a vu que\n\n$$(295) \\quad H^2(\\mathfrak{S}_3, \\widehat{M}) = 0 \\quad (\\text{où } H^2( \\dots ) = 0)$$\n\net d'autre part\n\n$$H^1(\\mathfrak{S}_3, \\widehat{M}) = H^1(\\mathfrak{S}_3, M) \\otimes_{\\mathbb{Z}} \\hat{\\mathbb{Z}} ,$$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 484,
-      "thinking_tokens": 9103
+      "prompt_tokens": 1788,
+      "output_tokens": 510,
+      "thinking_tokens": 8113
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "137": {
@@ -1323,13 +1294,12 @@
   },
   "140": {
     "status": "success",
-    "transcription": "Ceci, joint aux relations\n$$H^\\circ(\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3, \\hat{M}) = H^1(\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3, \\hat{M}) = 0 \\quad,$$\npermettait d'interpréter le groupe\n$G_{\\rho, \\tilde{\\sigma}}$ comme un groupe de transformations\nsur l'âme $E$ de ce [unclear: pro-jeu singulier],\nce qui permettait d'interpréter\nl'hom $\\mathcal{M} \\to G_{\\rho, \\tilde{\\sigma}}$ (ou $\\mathcal{M}^\\sim \\to G_{\\rho, \\tilde{\\sigma}}$)\ncomme une spécification de $\\mathcal{M}$\n(ou $\\tilde{\\mathcal{M}} = \\Pi_1(U_{0,3 \\mathbb{Q}}, \\underline{\\mathfrak{S}}_3) = \\Pi_1(M_{1,1 \\mathbb{Q}}, \\dots)$\ncomme, [unclear], sur $E$ [unclear: correspondant]\nà un revêtement de $(U_{0,3 \\mathbb{Q}}, \\underline{\\mathfrak{S}}_3)$\n$\\simeq M_{1,1 \\mathbb{Q}}$ - et ce revêtement\nn'est autre que le prorevêtement\nde Fermat.\n\nIl resterait à interpréter de façon\nanalogue l'hom $\\mathcal{M} = \\mathcal{N}_{1,1} \\to G_{\\rho, \\sigma}$,\ns'insérant dans l'hom. de suites exactes\n\n(298)\n\\begin{tikzcd}\n1 \\ar[r] & \\mu_M \\ar[r] \\ar[dd] & \\mathcal{M} \\ar[r] \\ar[dd] & \\mathcal{M}^\\sim \\ar[r] \\ar[dd] & 1 \\\\\n& (\\pm 1, \\omega_f) & (\\mathcal{N}_{1,1}) & (\\tilde{\\mathcal{N}}_{1,1} = \\mathcal{M}_{0,3}) & \\\\\n1 \\ar[r] & \\mu_G \\ar[r] & G_{\\rho, \\sigma} \\ar[r] & G_{\\rho, \\tilde{\\sigma}} \\ar[r] & 1 \\\\\n& \\pm 1, \\omega_f & & &\n\\end{tikzcd}\n\nPour [unclear] d'interpréter d'ailleurs\n$\\mathcal{M}$, en tant qu'extension centrale de $\\mathcal{M}^\\sim$",
+    "transcription": "Ceci, joint aux relations\n$$H^\\circ(\\hat{\\mathbb{Z}}^* \\times \\mathfrak{G}_3, \\hat{M}) = H^1(\\hat{\\mathbb{Z}}^* \\times \\mathfrak{G}_3, \\hat{M}) = 0 \\ ,$$\npermettait d'interpréter le groupe\n$G_{\\rho, \\tilde{\\sigma}}$ comme un groupe de transformations\nsur l'un $E$ de ses pro-jac. semi-alg.,\nce qui permettait d'interpréter\nl'hom. $M \\to G_{\\rho, \\tilde{\\sigma}}$ (ou $M^\\sim \\to G_{\\rho, \\tilde{\\sigma}}$)\ncomme une transgression de $M^\\sim$\n(en spécifiant de $\\tilde{M}$\noù $\\tilde{M} = \\Pi_1(U_{0,3, \\overline{\\mathbb{Q}}}) = \\Pi_1(M_{1, \\overline{\\mathbb{Q}}})$,\n[unclear: en se restreignant sur $\\tilde{E}$]) correspondant\nà un pro-revêtement de $(U_{0,3, \\mathbb{Q}}, \\mathfrak{G}_3)$\n$\\simeq M_{1, \\mathbb{Q}}$ - et ce revêtement\nn'est autre que le pro-revêtement\nde Fermat.\n\nIl resterait à interpréter de façon\nanalogue l'hom. $M = \\hat{N}_{1,1} \\to G_{\\rho, \\sigma}$,\ns'insérant dans l'hom. de suites exactes\n\n(298)\n[DIAGRAM: Commutative diagram with two exact sequences]\n$$1 \\to \\mu_M \\to M \\to M^\\sim \\to 1$$\n(under $\\mu_M$: $(\\simeq \\hat{\\mathbb{Z}}(1))$; under $M$: $(\\hat{N}_{1,1})$; under $M^\\sim$: $(\\hat{N}_{1,1}^\\sim = \\hat{M}_{0,3})$)\n$$\\downarrow \\quad \\downarrow \\quad \\downarrow$$\n$$1 \\to \\mu_G \\to G_{\\rho, \\sigma} \\to G_{\\rho, \\tilde{\\sigma}} \\to 1 \\ ,$$\n(under $\\mu_G$: $\\simeq \\hat{\\mathbb{Z}}(1)$)\n\nPour [unclear] d'interpréter d'ailleurs\n[unclear], [unclear] présentation authentique de $M^\\sim$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 575,
-      "thinking_tokens": 5063
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 550,
+      "thinking_tokens": 3671
+    }
   },
   "141": {
     "status": "success",
@@ -1490,13 +1460,12 @@
   },
   "158": {
     "status": "success",
-    "transcription": "(328)\n\\begin{tikzcd}\n{[\\Gamma_\\mathbb{Q} \\hookrightarrow]} \\Gamma_\\mathbb{Q}^{et} \\ar[r] & \\mathcal{N}_\\sigma^\\S \\simeq \\hat{\\mathbb{Z}}^* \\cdot \\hat{\\mathbb{Z}} \\\\\n{[\\underset{\\Pi_1(U_{0,3\\mathbb{Q}})}{M_{0,3}^!} \\hookrightarrow] M_{0,3}^{! et}} \\ar[u, hook, \"K_{1/2}\"] \\ar[r, \"\\text{''Fermat''}\"', \"(32\\bar{5})\"] & G_{p,\\sigma}^\\S \\simeq \\hat{\\mathbb{Z}}^* \\cdot \\hat{M} \\ar[u, hook]\n\\end{tikzcd}\n\nCela signifie donc que l'on trouve\nl'hom. induit par (326)\n\n(329) $$\\Gamma_{\\mathbb{Q}} \\longrightarrow \\mathcal{N}_\\sigma^\\S \\simeq \\hat{\\mathbb{Z}}^* \\cdot \\hat{\\mathbb{Z}}$$\n\nen regardant l'image de l'hom.\n\n(330) $$\\Gamma_{\\mathbb{Q}} \\longrightarrow \\hat{\\mathbb{Z}}^* \\cdot \\hat{M} = Aff(\\hat{M}) \\ ,$$\n\ndans $\\mathcal{N}_\\sigma^\\S \\subset \\hat{\\mathbb{Z}}^* \\cdot \\hat{M}$ , déduit de la\ntour des courbes de Fermat en\nregardant la fibre de la dite tour\nau point $1/2$ , ce qui donne un\ntorseur sous $T_a(\\hat{\\mathbb{Z}}_{(m)}) \\otimes_{\\hat{\\mathbb{Z}}} \\hat{M}$ , s'explici-\ntant galoisiennement justement par\nl'hom. (326). Notons que le $K_{1/2}$\nde $U_{0,3\\mathbb{Q}}$ corresp. par l'iso. $\\varphi$ (317)\nde $U_{0,3\\mathbb{Q}}$ avec $U_{1,\\mathbb{Q}}$, au point [unclear: $(\\xi_{1/2}, 1)$]",
+    "transcription": "[DIAGRAM: commutative diagram with two rows and vertical arrows from bottom to top]\n(328)\n$[\\Gamma_{\\mathbb{Q}} \\hookrightarrow] \\Gamma_{\\mathbb{Q}}^{et} \\longrightarrow \\mathcal{N}_0^{\\underline{4}} \\simeq \\hat{\\mathbb{Z}}^* \\cdot \\hat{\\mathbb{Z}}$\n$K_{1/2} \\hookrightarrow \\uparrow \\ \\ \\ \\ \\ \\ \\ \\ \\uparrow$\n$[M_{0,3}^! \\hookrightarrow] \\hat{M}^! = N_{0,3}^{! \\ et} \\xrightarrow[\\text{\"Fermat\"}]{(325)} G_{p,0}^{\\underline{4}} \\simeq \\hat{\\mathbb{Z}}^* \\cdot \\hat{M}^\\wedge$\n$\\Pi_1(U_{0,3 \\mathbb{Q}})$\n\nCela signifie donc que l'on trouve\nl'hom. induit par (326)\n(329) $\\Gamma_{\\mathbb{Q}} \\longrightarrow \\mathcal{N}_0^{\\underline{4}} = \\hat{\\mathbb{Z}}^* \\cdot \\hat{\\mathbb{Z}}$\nen regardant l'image dans $\\mathcal{N}_0^{\\underline{4}} \\subset \\hat{\\mathbb{Z}}^* \\cdot \\hat{M}^\\wedge$ de l'hom\n(330) $\\Gamma_{\\mathbb{Q}} \\longrightarrow \\hat{\\mathbb{Z}}^* \\cdot \\hat{M}^\\wedge = Aff(\\hat{M})$ ,\ndans $\\mathcal{N}_0^{\\underline{4}} \\subset \\hat{\\mathbb{Z}}^* \\cdot \\hat{M}^\\wedge$, déduit de la\ntour des courbes de Fermat en\nregardant la fibre de la dite tour\nau point $1/2$ , ce qui donne un\ntorseur sous $T_{a}(\\mathbb{G}_m) \\otimes_{\\hat{\\mathbb{Z}}} \\hat{M}$, s'explici-\ntant galoisiennement justement par\nl'hom. (326). Notons que le point $1/2$\nde $U_{0,3 \\mathbb{Q}}$ corresp. par l'iso. $\\varphi$ (317)\nà [unclear: l'un des points de] [unclear: tangence],\nde $U_{0,3 \\mathbb{Q}}$ avec $U_{1,\\mathbb{Q}}$, au point $(\\epsilon_k, 1)$.",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 494,
-      "thinking_tokens": 3861
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 543,
+      "thinking_tokens": 2708
+    }
   },
   "159": {
     "status": "success",
@@ -1540,35 +1509,32 @@
   },
   "163": {
     "status": "success",
-    "transcription": "74\n\noù l'image de $G \\to \\hat{\\mathbb{Z}}^*$ est formée des $\\mu \\in \\hat{\\mathbb{Z}}^*$ tels que l'homothétie $\\mu_T$ ne change pas la classe de l'ext. (342) de $A$ par $T$. L'hom (341) peut lors s'interpréter comme s'insérant dans un diagramme\n\n(345)\n\\begin{tikzcd}\n1 \\ar[r] & \\operatorname{Hom}_\\mathbb{Z}(A, T_\\infty(\\bar{k}^*)) \\ar[r] & G \\ar[r] & \\hat{\\mathbb{Z}}^* \\\\\n& & \\Pi_1 \\ar[u] \\ar[ur, \"\\text{\"caractère cyclotomique\"}\"']\n\\end{tikzcd}\n\n[MARGIN: NB.] Si $S$ est sch. de type fini sur $\\mathbb{Q}$, alors l'image de $\\Pi_1 \\to \\hat{\\mathbb{Z}}^*$ est un sous-groupe ouvert de $\\hat{\\mathbb{Z}}^*$, donc il en est a fortiori ainsi de l'image de $G \\to \\hat{\\mathbb{Z}}^*$ - qui sera surjectif si le car. cyclotomique sur $\\Pi_1$ est surjectif, i.e. si les seules racines de 1 sur $S$ sont $\\pm 1$ (p. ex. si $S = Spec \\mathbb{Q} \\dots$).\n\nLe diagramme (345) a\nune propriété de fonctorialité évidente\npour $A$ variable (disons), i.e. pour un",
+    "transcription": "74\n\noù l'image de $G \\to \\hat{\\mathbb{Z}}^*$ est formée des $\\mu \\in \\hat{\\mathbb{Z}}^*$ tels que l'homothétie $\\mu_T$ ne change pas la classe de l'ext. (342) de $A$ par $T$.\n\nL'hom. (343) peut alors s'interpréter comme s'insérant dans un diagramme\n\n(345) $$1 \\to \\operatorname{Hom}_{\\mathbb{Z}}(A, T_{\\infty}(\\bar{k}^*)) \\to G \\to \\hat{\\mathbb{Z}}^*$$\n[DIAGRAM: flèche de $\\Pi_1$ vers $\\hat{\\mathbb{Z}}^*$ étiquetée \"caractère cyclotomique\"]\n\n[MARGIN: NB.] Si $S$ est sch. de type fini sur $\\mathbb{Q}$, alors l'image de $\\Pi_1 \\to \\hat{\\mathbb{Z}}^*$ est un sous-groupe ouvert de $\\hat{\\mathbb{Z}}^*$, donc il en est a fortiori ainsi de l'image de $G \\to \\hat{\\mathbb{Z}}^*$ - qui sera surjectif si le caractère cyclotomique sur $\\Pi_1$ est surjectif, i.e. si les seules racines de $1$ sur $S$ sont $\\pm 1$ (p.ex. si $S = Spec \\, \\mathbb{Q}$...).\n\nLe diagramme (345) a une propriété de fonctorialité évidente pour $A$ variable (disons), i.e. pour un",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 372,
-      "thinking_tokens": 2948
+      "prompt_tokens": 1788,
+      "output_tokens": 349,
+      "thinking_tokens": 3171
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "164": {
     "status": "success",
-    "transcription": "hom. de groupes abéliens\n(347) $A' \\xrightarrow{f} A$ ,\n\nl'extension $E_{\\infty}(A')_S$ s'identifie\nà l'image inverse de l'ext. $E_{\\infty}(A)_S$\npar (347), d'où un hom.\n$G_A \\to G_{A'}$ (injectif si $f$ est surjectif)\ns'insérant dans un diagramme\ncommutatif\n\n(349)\n\\begin{tikzcd}\n1 \\ar[r] & \\operatorname{Hom}_{\\mathbb{Z}}(A', T) \\ar[r] & G_{A'} \\ar[r] & \\hat{\\mathbb{Z}}^* \\\\\n1 \\ar[r] & \\operatorname{Hom}_{\\mathbb{Z}}(A, T) \\ar[r] \\ar[u] & G_A \\ar[r] \\ar[u] & \\hat{\\mathbb{Z}}^* \\ar[u, \"1\"'] \\\\\n& & \\Pi_1 \\ar[u, \"\\gamma_A\"'] \\ar[uu, bend left=45, \"\\gamma_{A'}\"] \\ar[ur, \"\\text{car. cyclot.}\"']\n\\end{tikzcd}\n\noù la flèche sur les $\\operatorname{Hom}_{\\mathbb{Z}}$ est trans-\nposée de (347). Cela montre que\npour étudier la structure de l'image de $\\gamma_A$ (345),\nil est commode, par fonctorialité, de se",
+    "transcription": "hom. de groupes abéliens\n\n(347) $$A' \\xrightarrow{f} A \\ ,$$\n\n[unclear]\n\n(348) $$\\underbrace{A' \\xrightarrow{f} A \\xrightarrow{\\xi} G_m(S)}_{\\xi'}$$\n\nl'extension $E_{A'}(\\xi')_{\\bar{S}}$ s'identifie\nà l'image inverse de l'extension $E_A(\\xi)_{\\bar{S}}$\npar (347), d'où un hom.\n\n$C_A \\to C_{A'}$ [MARGIN: injectif si $f$ est surjectif]\n\ns'insérant dans un diagramme\ncommutatif\n\n(349) \n[DIAGRAM: Commutative diagram with two horizontal rows. Top row: $1 \\to \\operatorname{Hom}_{\\mathbb{Z}}(A', T) \\to C_{A'} \\to \\hat{\\mathbb{Z}}^*$. Bottom row: $1 \\to \\operatorname{Hom}_{\\mathbb{Z}}(A, T) \\to C_A \\to \\hat{\\mathbb{Z}}^*$. Vertical arrows point upwards from the bottom row to the top row. A node $\\Pi_1$ below has diagonal arrows pointing to $C_{A'}$, $C_A$, and $\\hat{\\mathbb{Z}}^*$, with the arrow to $\\hat{\\mathbb{Z}}^*$ labeled \"car. cyclot.\"]\n\noù la flèche sur les $\\operatorname{Hom}_{\\mathbb{Z}}$ est trans-\nposée de (347). Ceci montre que\npour étudier la structure de l'image de $\\gamma_A$ (345),\non est ramené, par fonctorialité, à en",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 355,
-      "thinking_tokens": 9649
+      "prompt_tokens": 1788,
+      "output_tokens": 370,
+      "thinking_tokens": 3879
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "165": {
     "status": "success",
-    "transcription": "730\n\nétudier le cas où $j$ est injectif\n(350) $$j : A \\hookrightarrow \\mathbb{G}_m(S) \\ .$$\n\nOn peut d'ailleurs \"diviser\" encore un peu le diagramme (345), en introduisant\n\n(351) $$\\Pi_1^+ = \\Pi_1^+(S, \\bar{s}) \\overset{df}{=} \\operatorname{Ker}\\Big(\\Pi_1(S, \\bar{s}) \\overset{cyclot.}{\\longrightarrow} \\hat{\\mathbb{Z}}^*\\Big)$$\n\net l'hom. de suites exactes\n\n(352)\n\\begin{tikzcd}\n1 \\ar[r] & \\Pi_1^+ \\ar[r] \\ar[d, \"\\gamma_j^+\"'] & \\Pi_1 \\ar[r, \"\\chi_{\\Pi}\"] \\ar[d, \"\\gamma_j\"'] & \\hat{\\mathbb{Z}}^* \\ar[d] \\\\\n1 \\ar[r] & \\operatorname{Hom}_{\\hat{\\mathbb{Z}}}(A, T) \\ar[r] & G_j \\ar[r] & \\hat{\\mathbb{Z}}^*\n\\end{tikzcd}\n.\n\nOn peut considérer que l'étude de la \"taille\" de $\\operatorname{Im}(\\gamma_j : \\Pi_1 \\to G_j)$ est essentiellement ramenée à celle de la taille de $Im \\chi_{\\Pi}$ et de celle de $Im \\gamma_j^+$; de façon précise, si on pose\n\n(353) $$Im \\gamma_j = \\tilde{\\Pi}_1 \\ , \\ Im \\gamma_j^+ = \\tilde{\\Pi}_1^+ \\ , \\ Im \\chi_{\\Pi} = \\Gamma$$\n\non a une suite exacte\n\n(354) $$1 \\to \\tilde{\\Pi}_1^+ \\to \\tilde{\\Pi}_1 \\to \\Gamma \\to 1 \\ .$$\n\nJe voudrais essayer de donner des",
+    "transcription": "730\n\nétudier le cas où $j$ est injectif\n\n(350)\n$$j : A \\hookrightarrow G_m(S) \\ .$$\n\nOn peut d'ailleurs \"diviser\" encore\nun peu le diagramme (345), en\nintroduisant\n\n(351)\n$$\\Pi_1^+ = \\Pi_1^+(S,\\bar{s}) \\overset{\\text{déf}}{=} \\operatorname{Ker} \\left( \\Pi_1(S,\\bar{s}) \\xrightarrow{\\text{cyclot.}} \\hat{\\mathbb{Z}}^* \\right)$$\n\net l'hom. de suites exactes\n\n(352)\n$$\n\\begin{matrix}\n1 & \\longrightarrow & \\Pi_1^+ & \\longrightarrow & \\Pi_1 & \\xrightarrow{\\chi_\\pi} & \\hat{\\mathbb{Z}}^* \\\\\n& & \\downarrow \\gamma_j^+ & & \\downarrow \\gamma_j & & \\downarrow \\\\\n1 & \\longrightarrow & \\operatorname{Hom}_{\\hat{\\mathbb{Z}}}(A,T) & \\longrightarrow & G_j & \\longrightarrow & \\hat{\\mathbb{Z}}^*\n\\end{matrix}\n$$\n\nOn peut considérer que l'étude de la\n\"taille\" de $\\operatorname{Im}(\\gamma_j : \\Pi_1 \\to G_j)$ est\nessentiellement ramenée à celle de la taille\nde $Im \\chi_\\pi$ et de celle de $Im \\gamma_j^+$ ;\nde façon précise, si on pose\n\n(353)\n$$Im \\gamma_j = \\tilde{\\Pi}_1, \\quad Im \\gamma_j^+ = \\tilde{\\Pi}_1^+, \\quad Im \\chi_\\pi = \\Gamma$$\n\non a une suite exacte\n\n(354)\n$$1 \\longrightarrow \\tilde{\\Pi}_1^+ \\longrightarrow \\tilde{\\Pi}_1 \\longrightarrow \\Gamma \\longrightarrow 1 \\ .$$\n\nJe voudrais essayer de donner des",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 445,
-      "thinking_tokens": 1636
+      "prompt_tokens": 1788,
+      "output_tokens": 438,
+      "thinking_tokens": 3087
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "166": {
@@ -1650,24 +1616,21 @@
   },
   "174": {
     "status": "success",
-    "transcription": "Il s'impose de partir d'approximations de\nLie au moins aussi fines que celle du\nprésent $\\S$, qui apparait comme l'approximation\n\"minima\" dans laquelle on puisse exprimer\n\"algébriquement\" la tour des courbes de\nFermat, ~~via~~ comme on l'a vu dans 13°),\nà partir de $M_{0,3} \\subset \\hat{M}_{0,3}$.\n\nTenant compte des opérations de $\\mathfrak{S}_3$\nsur $U_n$, la suite ex.te (371) se prolonge\nd'ailleurs dans une suite ex.te plus\nriche\n\n$$(372) \\quad 1 \\longrightarrow \\pi_1(U_{n,\\overline{\\mathbb{Q}}}) \\longrightarrow \\underset{\\overset{\\wedge}{\\pi_1(U_1,\\mathfrak{S}_3) \\simeq M_{0,3}}}{\\pi_1(U_n,\\mathfrak{S}_3)} \\longrightarrow \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\longrightarrow 1$$\n\net les calculs faits dans le présent $\\S$ semblent\nsuggérer que cette structure d'extension plus\nriche jouera un rôle important.\n\nDu point de vue de l'approximation\nde Lie de $M_{0,3}$ développée dans le présent\n$\\S$, il y a lieu de remplacer la structure\nd'extension (372) par une structure quotient\nmoins fine, en divisant par un sous-groupe\ninvariant de $\\pi_1(U_n, \\mathfrak{S}_3)$ contenu dans",
+    "transcription": "Il s'impose de partir d'approximations de\nLie au moins aussi fines que celle du\nprésent §, qui apparaît comme l'approximation\n\"minima\" dans laquelle on puisse exprimer\n\"algébriquement\" la tour des courbes de\nFermat, [texte rayé]\nà partir de $M_{0,3} \\subset \\hat{M}_{0,3}$.\n\nTenant compte des opérations de $\\mathfrak{S}_3$\nsur $U_n$, la suite exacte (371) se prolonge\nd'ailleurs dans une suite exacte plus\nriche\n\n(372) $$1 \\to \\pi_1(U_{n,\\bar{\\mathbb{Q}}}) \\to \\pi_1(U_n, \\mathfrak{S}_3) \\to \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\to 1$$\n[DIAGRAM: Une flèche pointe vers le haut depuis l'équation suivante vers le terme central de l'équation précédente]\n$$\\pi_1(U_1, \\mathfrak{S}_3) \\simeq M_{0,3}$$\n\net les calculs faits dans le présent § semblent\nsuggérer que cette structure d'extension plus\nriche jouera un rôle important.\n\nDu point de vue de l'approximation\nde Lie de $M_{0,3}$ développée dans le présent\n§, il y a lieu de remplacer la structure\nd'extension (372) par une structure quotient\nmoins fine, en divisant par un sous-groupe\ninvariant de $\\pi_1(U_n, \\mathfrak{S}_3)$ contenu dans",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 357,
-      "thinking_tokens": 3393
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 360,
+      "thinking_tokens": 3233
+    }
   },
   "175": {
     "status": "success",
-    "transcription": "$73r$\n\n$\\Pi_1(\\mathcal{U}_n, \\overline{\\mathbb{Q}})$, savoir l'intersection dans $M_{0,3}$ de ce\ngroupe avec $[\\overline{\\pi_0, \\hat{j}}, \\overline{\\pi_0, \\hat{j}}]$. On trouve un\ndiagramme commutatif\n\n(373)\n\\begin{tikzcd}\n1 \\ar[r] & M^\\wedge[n] \\ar[r] \\ar[d, equal] & \\widetilde{\\Pi_1(\\mathcal{U}_n, \\mathfrak{S}_3)} \\ar[r] \\ar[d, \"p_n\"'] & \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\ar[r] \\ar[d, \"\\chi \\times id\"] & 1 \\\\\n1 \\ar[r] & M^\\wedge[n] \\ar[r] \\ar[d] & \\widetilde{G}_{\\rho, \\sigma}[n] \\ar[r] \\ar[d] & \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\ar[r] \\ar[d, equal] & 1 \\\\\n1 \\ar[r] & M^\\wedge \\ar[r] & \\widetilde{G}_{\\rho, \\sigma} \\ar[r] & \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\ar[r] & 1\n\\end{tikzcd}\n\noù l'image de $M^\\wedge[n] \\to M^\\wedge$ est $n M^\\wedge$.\n\nVoici une façon de construire \"algébriquement\"\nces diagrammes (373) (pour $n$ variable)\nà partir du diagramme\n\n(374)\n\\begin{tikzcd}\n1 \\ar[r] & M^\\wedge \\ar[r] \\ar[d, equal] & \\overset{\\mathcal{E}_1}{\\widetilde{\\Pi_1(\\mathcal{U}_1, \\mathfrak{S}_3)}} \\ar[r] \\ar[d] & \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\ar[r] \\ar[d, \"\\chi \\times id\"] & 1 \\\\\n& & (M_{0,3}/[\\overline{\\pi_0, \\hat{j}}, \\overline{\\pi_0, \\hat{j}}]) \\ar[d] & & \\\\\n1 \\ar[r] & M^\\wedge \\ar[r] & \\widetilde{G}_{\\rho, \\sigma} \\ar[r] \\ar[d, \"\\simeq\"'] & \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\ar[r] & 1 \\\\\n& & (\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3).M^\\wedge & & \n\\end{tikzcd}\n\nOn choisit un scindage de la première,\nqui donne [unclear] un scindage de la seconde\n(scindage [unclear: par] un [unclear: sous-groupe] fini [unclear]\n[unclear: engendré par] un unique élément de $M^\\wedge \\dots$). [unclear: En prenant]\n[unclear] on peut déduire $U_n$ en-dessous de [unclear]\n\n[MARGIN: On a vu qu'en un sens un peu tautologique les scindages de l'ext. $\\mathcal{E}_1$ [unclear: équivalent] à ceux de l'ext. [unclear] (dans 12°), i.e. à un [unclear: ensemble] de choix tels [unclear: canoniques]]",
+    "transcription": "73r\n\n$\\Pi_1(U_n, \\bar{\\mathbb{Q}})$, savoir l'intersection dans $M_{0,3}$ de ces\ngroupes avec $[\\pi_{0,\\hat{s}}, \\pi_{0,\\hat{s}}]$. On trouve un\ndiagramme commutatif \n$$ \\mathcal{E}_n $$\n(373)\n$$ 1 \\longrightarrow M^{\\wedge}[n] \\longrightarrow \\widetilde{\\Pi_1(U_n, \\mathfrak{S}_3)} \\longrightarrow \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n$$ \\| \\quad \\downarrow pr_n \\quad \\downarrow \\chi \\times id $$\n$$ 1 \\longrightarrow M^{\\wedge}[n] \\longrightarrow \\widetilde{G_{\\rho, \\sigma}}[n] \\longrightarrow \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n$$ \\downarrow \\quad \\downarrow \\quad \\| $$\n$$ 1 \\longrightarrow M^{\\wedge} \\longrightarrow \\widetilde{G_{\\rho, \\sigma}} \\longrightarrow \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n\noù l'image de $M^{\\wedge}[n] \\longrightarrow M^{\\wedge}$ est $n M^{\\wedge}$.\n\nVoici une façon de construire \"algébriquement\"\nles diagrammes (373) (pour $n$ variable)\nà partir du diagramme\n$$ \\mathcal{E}_1 $$\n(374)\n$$ 1 \\longrightarrow M^{\\wedge} \\longrightarrow \\widetilde{\\Pi_1(U_1, \\mathfrak{S}_3)} \\longrightarrow \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n$$ \\quad (M_{0,3}/[\\pi_{0,\\hat{s}}, \\pi_{0,\\hat{s}}]) $$\n$$ \\| \\quad \\downarrow \\quad \\downarrow \\chi \\times id $$\n$$ 1 \\longrightarrow M^{\\wedge} \\longrightarrow \\widetilde{G_{\\rho, \\sigma}} \\longrightarrow \\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3 \\longrightarrow 1 $$\n$$ \\quad \\simeq (\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3).M^{\\wedge} $$\n\nOn choisit un [unclear: scindage] de la première\n[MARGIN: On a vu qu'il en existe, par contre [unclear] de l'ext. [unclear] à ceux de l'ext. $\\mathcal{E}_1$ (dans 12°), i.e. le choix de choisir tels scindages canoniquement (à un unique élément de $M^{\\wedge}$ près...). On [unclear] des fibrations de $U_n$ au-dessus des]\nsuite, et un scindage de la seconde\n(scindages [unclear] à un unique élément de $M^{\\wedge}$...). On peut le [unclear] ... au-dessus des",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 826,
-      "thinking_tokens": 3497
-    },
-    "source": "diagram-retranscription",
-    "normalized": true
+      "prompt_tokens": 1788,
+      "output_tokens": 664,
+      "thinking_tokens": 2675
+    }
   },
   "176": {
     "status": "success",
@@ -1726,13 +1689,12 @@
   },
   "182": {
     "status": "success",
-    "transcription": "\"invariantes sous $\\pi$\" dans un sens évident.\nEn particulier, si $\\pi$ est une extension\nd'un groupe fini par un groupe\ndiscret $\\pi_0$, alors les $\\mathcal{L}$-structures sur\n$\\pi$ correspondent aux $\\mathcal{L}$-structures\nsur $\\pi_0$ invariantes par $\\pi / \\pi_0 \\to$ [unclear: $Out(\\pi_0)$]\nopérant sur l'ensemble des $\\mathcal{L}$-structures de $\\pi_0$\nde façon évidente. [NB $\\pi \\mapsto \\mathcal{L}(\\pi)$ est\nun foncteur en les groupes extérieurs\n$\\pi$, avec les isomorphismes extérieurs\ncomme flèches ...]\n\nExemple standard : soient $X$ une\nsurface 0-conn. \"de présentation finie\",\n$G$ un groupe fini opérant sur $X$,\n\n(5) $\\pi = \\pi_1(X, G ; -)$\n\noù $-$ est un pt base de $X$, de\nsorte qu'on a une suite exacte\n\n(6) \n\\begin{tikzcd}[row sep=small]\n1 \\ar[r] & \\pi_0 \\ar[r] & \\pi \\ar[r] & G \\ar[r] & 1 \\\\\n& \\pi_1(X,-) \\ar[u, equal]\n\\end{tikzcd}\n\nOn a donc sur $\\pi_0$ une $\\mathcal{L}$-structure : [unclear: locale]",
+    "transcription": "\"invariantes sous $\\pi'$\" dans un sens évident.\nEn particulier, si $\\pi$ est une extension\nd'un groupe $G$ fini par un groupe\ndiscret $\\pi_0$, alors les $L$-structures sur\n$\\pi$ correspondent aux $L$-structures\nsur $\\pi_0$ invariantes par $\\pi/\\pi_0 \\to Out(\\pi_0)$\nopérant sur l'ensemble des $L$-structures de $\\pi_0$\nde façon évidente. [ \\underline{NB} $\\pi \\mapsto L(\\pi)$ est\nun foncteur en les groupes extérieurs\n$\\pi$, pour les isomorphismes extérieurs\ncomme flèches... ]\n\nExemple standard : soient $X$ un\nespace \"de [unclear: type] fini\" $0$-conn.,\n$G$ un groupe fini opérant sur $X$,\n(5) $$ \\pi = \\pi_1(X, G; \\cdot) $$\noù $\\cdot$ est un pt base de $X$, de\nsorte qu'on a une suite exacte\n(6) $$ 1 \\longrightarrow \\pi_0 \\longrightarrow \\pi \\longrightarrow G \\longrightarrow 1 $$\n[DIAGRAM: en dessous de $\\pi_0$, il y a le symbole $\\parallel$ puis $\\pi_1(X, \\cdot)$]\n\nOn a alors sur $\\pi_0$ une structure : [unclear]",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 337,
-      "thinking_tokens": 4042
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 312,
+      "thinking_tokens": 2460
+    }
   },
   "183": {
     "status": "success",
@@ -1837,13 +1799,12 @@
   },
   "194": {
     "status": "success",
-    "transcription": "Plus intrinsèquement, il doit être\nvrai qu'il existe un rev. étale fini\nde $M$ (qu'on peut supposer galoisien,\nde groupe $G$) qui soit un\n[crossed out: schéma algébrique] - lequel sera néc.\nquasi-projectif, lisse, de dim relative 1\nsur $k$. Supposons en tous cas\nqu'il en soit ainsi, choisissons\nun pt base géom. $a$ de $M$, et\nconsidérons\n\n(10) $$\\pi = \\pi_1(M, a) \\simeq \\pi_1(U, G; a) \\ .$$\n\nNous supposerons désormais $k$ de\ncar. zéro. Supposons d'abord $k$\nalg clos. Utilisons la suite exacte\n\n(11) $$1 \\longrightarrow \\underset{\\pi_0}{\\pi_1(U_{\\tilde{a}})} \\longrightarrow \\underset{\\pi}{\\pi_1(M, G; a)} \\longrightarrow G \\longrightarrow 1$$\n\net la structure : [unclear: toute] naturelle\nsur $\\pi_0$, on trouve une $L$-structure\nsur $\\pi = \\pi_1(M, a)$, qui [unclear: manifeste] sur",
+    "transcription": "Plus intrinsèquement, il doit être vrai qu'il existe un rev. étale fini de $M$ (qu'on peut supposer galoisien, de groupe $G$) qui soit un [rayé: schéma algébrique] - laquelle sera néc. quasi-projective, lisse, de dim relative 1 sur $k$. Supposons en tous cas qu'il en soit ainsi, choisissons un pt base géom. $a$ de $M$, et considérons\n\n(10) $\\pi = \\Pi_1(M, a) \\simeq \\Pi_1(U, G ; a)$ .\n\nNous supposerons désormais $k$ de car. zéro. Supposons d'abord $k$ alg clos. Utilisons la suite exacte\n\n(11) $$1 \\longrightarrow \\Pi_1(U_{\\bar{a}}) \\longrightarrow \\Pi_1(M, G; a) \\longrightarrow G \\longrightarrow 1$$\n[DIAGRAM: en dessous de $\\Pi_1(U_{\\bar{a}})$ est écrit $\\Pi_0$, et en dessous de $\\Pi_1(M, G; a)$ est écrit $\\pi$]\n\net la [unclear] structure : toute naturelle sur $\\Pi_0$, [unclear] une $L$-structure sur $\\pi = \\Pi_1(M, a)$, qui [unclear]",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 279,
-      "thinking_tokens": 3808
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 295,
+      "thinking_tokens": 3022
+    }
   },
   "195": {
     "status": "success",
@@ -1921,13 +1882,12 @@
   },
   "203": {
     "status": "success",
-    "transcription": "741\n\nReNB Sauf erreur, la propriété 1) signifie qu'\non peut trouver un schéma en groupes $G$\naffine de t.f. sur $\\mathbb{Z}$, qui définit $G_\\mathbb{Q}$, et\ntel que le (27) se factorise par $G(\\hat{\\mathbb{Z}})$.\n(29) $$M \\longrightarrow G(\\hat{\\mathbb{Z}})$$\n\n2°) Compatibilité avec $\\chi$ :\n\n(30)\n\\begin{tikzcd}\nM \\ar[r] \\ar[d, \"\\chi_M\"'] & G(\\mathbb{A}_\\mathbb{Q}) \\ar[d, \"\\chi_G\"] \\\\\n\\hat{\\mathbb{Z}} \\ar[r, hook] & \\mathbb{G}_m(\\mathbb{A}_\\mathbb{Q}) \\simeq \\mathbb{A}_\\mathbb{Q}^* \\subset \\prod_{l \\in P} \\mathbb{Q}_l^*\n\\end{tikzcd}\n\nest commutatif.\n\n3°) Compatibilité avec la [unclear: désintégration] $\\pi_0$\n\n(31)\n\\begin{tikzcd}\n\\Pi'_0 \\ar[r, hook] \\ar[d, \"\\text{factorisation}\"'] & \\Pi_0 \\ar[r, hook] & M \\ar[d] \\\\\nG(\\mathbb{Q}) \\ar[rr, hook] & & G(\\mathbb{A}_\\mathbb{Q})\n\\end{tikzcd}\n,\n\npour un sous-groupe d'indice fini\nconvenable $\\Pi'_0$ de $\\Pi_0$.\n\nNB Quitte à changer les notations, [unclear: on peut supposer] $\\Pi'_0 = \\Pi_0$.\n\n4°) Caractère minimal (irrédundance) :\nSi $G'$ est un sous-schéma en groupes de",
+    "transcription": "749\n\nRe NB Sauf erreur, la propriété 1) signifie que l'on peut trouver un schéma en groupes $G$ affine et de t.f. sur $Z$, qui définisse $G_Q$, et tel que (27) se factorise par $G(\\hat{Z})$. \n(29) $$M \\longrightarrow G(\\hat{Z})$$\n\n2) Compatibilité avec $\\chi$ :\n\n(30)\n$$M \\longrightarrow G(A_Q)$$\n$$\\downarrow \\chi_M \\qquad \\downarrow \\chi_G$$\n$$\\hat{Z}^* \\hookrightarrow G_m(A_Q) \\simeq A_Q^* \\subset \\prod_\\ell Q_\\ell^*$$\nest commutatif.\n\n3) Compatibilité avec la [unclear: désintégration] de $\\Pi_0$\n\n(31)\n$$\\Pi'_0 \\longrightarrow \\Pi_0 \\longrightarrow M$$\n$$\\downarrow \\text{factorisation} \\qquad \\downarrow$$\n$$G(Q) \\hookrightarrow G(A_Q)$$\n\npour un sous-groupe d'indice fini convenable $\\Pi'_0$ de $\\Pi_0$.\n\nNB Quitte à changer de notations, [unclear: disons] $\\Pi'_0 = \\Pi_0$.\n\n4) Caractère minimal (irredondance) :\nSi $G'_Q$ est un sous-schéma en groupes de",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 417,
-      "thinking_tokens": 2073
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 311,
+      "thinking_tokens": 5873
+    }
   },
   "204": {
     "status": "success",
@@ -1940,13 +1900,12 @@
   },
   "205": {
     "status": "success",
-    "transcription": "250\n\nRéflexion faite, je préfère poser les choses de\nfaçon légèrement différente, en introduisant,\ndans le LT-gr. profini $M$, un ~~[unclear]~~\ndistingué $\\pi$ avec une L-structure (par\nex. une structure : toute pièce,\nsi par ex $\\pi = \\operatorname{Sl}(2, \\mathbb{Z})$) définissant la\nL T-structure de $M$, une discrétisation\n$\\pi_0$ de $\\pi$ (dans un sens évident, pour les\nL-structures) un sous-groupe discret\n$\\mathfrak{S}_0 \\supset \\pi_0$ normalisant $\\pi_0$ (NB. dans mon petit\nexemple [unclear] on a $\\mathfrak{S}_0 = \\pi_0$), tel que\n[MARGIN: son adh.] $\\mathfrak{S} = \\widehat{\\mathfrak{S}}_0$ dans $M$ soit distingué dans $M$.\n\nOn a donc un diag. de groupes\n\n(32)\n\\begin{tikzcd}\n& \\tau \\ar[d, no head] & \\Gamma \\ar[d, no head] \\\\\n1 \\ar[r, phantom, \"\\subset\"] & \\pi \\ar[r, phantom, \"\\subset\"] \\ar[d, equal] & \\mathfrak{S} \\ar[r, phantom, \"\\subset\"] \\ar[d, equal] & M \\\\\n& \\widehat{\\pi}_0 & \\widehat{\\mathfrak{S}}_0 \\\\\n& \\uparrow & \\uparrow \\\\\n1 \\ar[r, phantom, \"\\subset\"] & \\pi_0 \\ar[r, phantom, \"\\subset\"] \\ar[uu] & \\mathfrak{S}_0 \\ar[uu]\n\\end{tikzcd}\n\noù la première ligne est formée de\ngroupes profinis, la deuxième de groupes\ndiscrets. On notera que $\\mathfrak{S}$ s'identifie : au\nquotient du complété profini de $\\mathfrak{S}_0$, mais",
+    "transcription": "750\n\nRéflexion faite, je préfère poser les choses de façon légèrement différente, en introduisant, dans le LT- gr. pr. $M$, un [unclear: mot raturé] sous-groupe distingué $\\pi$ avec une L- structure (par ex. une structure : base - point, i.e. pour nous $\\pi = \\operatorname{Sl}(2, \\mathbb{Z})$) définissant la L T- structure de $M$, une discrétification $\\pi_0$ de $\\pi$ (dans un sens évident, pour les L- structures) un sous-groupe discret $\\mathfrak{S}_0 \\supset \\pi_0$ normalisant $\\pi_0$ (NB. dans le cas principal on aura $\\mathfrak{S}_0 = \\pi_0$), tel que \n[MARGIN: son adh.] $\\bar{\\mathfrak{S}}_0 = \\mathfrak{S}$ dans $M$ soit distingué dans $M$.\n\nOn a donc un diagramme de groupes\n\n[DIAGRAM: Commutative diagram of groups:\nTop row: $1 \\subset \\pi \\subset \\mathfrak{S} \\subset M$\nBottom row: $1 \\subset \\pi_0 \\subset \\mathfrak{S}_0$\nwith upward arrows from $\\pi_0$ to $\\pi$ and $\\mathfrak{S}_0$ to $\\mathfrak{S}$, and a vertical equals sign indicating $\\pi = \\hat{\\pi}_0$]\n\n(32) où la première ligne est formée de groupes profinis, la deuxième de groupes discrets. On notera que $\\mathfrak{S}$ s'identifie à un quotient du complété profini de $\\mathfrak{S}_0$, mais",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 446,
-      "thinking_tokens": 4629
+      "prompt_tokens": 1788,
+      "output_tokens": 367,
+      "thinking_tokens": 5201
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "206": {
@@ -1969,13 +1928,12 @@
   },
   "208": {
     "status": "success",
-    "transcription": "tion $\\mathbb{G}_0 \\to G(\\mathbb{Q})$, rendant commutatif le diagramme\n\n(35)\n\\begin{tikzcd}\n\\mathbb{G}_0 \\ar[r, hook] \\ar[d] & \\mathcal{M} \\ar[d] \\\\\nG(\\mathbb{Q}) \\ar[r, hook] & G(\\mathbb{A}_{\\mathbb{Q}})\n\\end{tikzcd}\n\nLes structures de la forme (32) \n[MARGIN: Quitte par la suite à introduire des variantes sur ces structures]\nméritent sans doute un nom, je vais les appeler - ne serait-ce que provisoirement - structures de Galois-Teichmüller.\n\nSi $G$ est un groupe algébrique affine sur $\\mathbb{Q}$, un hom $\\mathcal{M} \\to G(\\mathbb{A}_{\\mathbb{Q}})$ satisfaisant les conditions 1) 2) $3^{\\circ \\text{forte}}$) 4) est appelé un \"hom de Lie\" de la structure de Galois-Teichmüller.\n\nJe vais désigner par la suite par (en abrégé $M$) $M_{\\mathbb{Q}}$ le schéma en groupes sur $\\mathbb{Q}$ affine.\nJe désigne par $\\mathbb{G}_{\\mathbb{Q}}$ le sous-schéma en groupes de $M_{\\mathbb{Q}}$ engendré par l'",
+    "transcription": "tion $\\widehat{\\mathfrak{S}}_0 \\longrightarrow G(\\mathbb{Q})$, rendant alors\ncommutatif le diagramme\n(35)\n$$ \\widehat{\\mathfrak{S}}_0 \\subset \\mathcal{M} $$\n$$ \\downarrow \\qquad \\downarrow $$\n$$ G(\\mathbb{Q}) \\hookrightarrow G(\\mathbb{A}_\\mathbb{Q}) $$\n\nLes structures de la forme (32)\nméritent sans doute un nom, je vais\nles appeler - ne serait-ce que provisoir-\nement - structures de Galois-Teichmüller.\n\n[MARGIN: Quitte pour la suite à introduire des conditions supplémentaires]\n\nSi $G$ est un groupe algébrique affine sur\n$\\mathbb{Q}$, un hom. $\\mathcal{M} \\longrightarrow G(\\mathbb{A}_\\mathbb{Q})$ satisfai-\nsant les conditions 1) 2) $3^\\circ$ (forte) 4) est\nappelé un \"hom de Lie\" de la structure\nde Galois-Teichmüller.\n\nJe vais désigner par la suite par\n[unclear: (le complexe $\\mathcal{M}$ ?)]\n$\\mathcal{M}_\\mathbb{Q}$ le schéma en groupes sur $\\mathbb{Q}$ affine.\nJe désigne par $\\widehat{\\mathfrak{S}}_\\mathbb{Q}$ le sous-schéma\nen groupes de $\\mathcal{M}_\\mathbb{Q}$ engendré par l'",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 306,
-      "thinking_tokens": 5697
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 311,
+      "thinking_tokens": 2600
+    }
   },
   "209": {
     "status": "success",
@@ -2006,13 +1964,12 @@
   },
   "212": {
     "status": "success",
-    "transcription": "$\\underline{\\Pi}$, $\\underline{\\mathfrak{S}}$ les adhérences schématiques\ndans $\\underline{M}$ de $\\underline{\\Pi}_\\mathbb{Q}$, $\\underline{\\mathfrak{S}}_\\mathbb{Q}$, d'où un diagramme\nde schémas en groupes sur $\\mathbb{Z}$\n\n(46) $$ \\underbrace{\\underline{\\Pi} \\subset \\underline{\\mathfrak{S}}}_{\\underline{\\Gamma}} \\subset \\underline{M} $$\n[MARGIN: with another brace under $\\underline{\\mathfrak{S}} \\subset \\underline{M}$ labeled $\\underline{N}$]\n\n(sous réserve de représentabilité des\nquotients $\\underline{\\tau}, \\underline{\\Gamma}, \\underline{N}$ - mais je crois que\npour Raynaud il n'y a jamais de pb...).\n\n[unclear: On a des factorisations] [crossed out]\n\n(47)\n\\begin{tikzcd}\n\\underline{\\Pi} \\ar[r, hook] \\ar[d] & \\underline{\\mathfrak{S}} \\ar[r, hook] \\ar[d] & \\underline{M} \\ar[d] \\\\\n\\underline{\\Pi}(\\hat{\\mathbb{Z}}) \\ar[r, hook] & \\underline{\\mathfrak{S}}(\\hat{\\mathbb{Z}}) \\ar[r, hook] & \\underline{M}(\\hat{\\mathbb{Z}})\n\\end{tikzcd}\n\nOn suppose bien sûr également que\nl'hom $\\chi_{\\underline{M}} : \\underline{M}_\\mathbb{Q} \\to \\mathbb{G}_{m \\mathbb{Q}}$ se\nprolonge en\n\n(48) $$ \\chi_{\\underline{M}} : \\underline{M} \\to \\mathbb{G}_{m \\mathbb{Z}} $$\n\nlequel nécessairement se factorise par\n\n(49) $$ \\chi_{\\underline{\\Gamma}} : \\underline{\\Gamma} \\to \\mathbb{G}_{m \\mathbb{Z}} . $$",
+    "transcription": "$\\underline{\\Pi}$, $\\underline{\\mathfrak{S}}$ les adhérences schématiques dans $\\underline{M}$ de $\\underline{\\Pi}_{\\mathbb{Q}}$, $\\underline{\\mathfrak{S}}_{\\mathbb{Q}}$, d'où un diagramme de schémas en groupes sur $\\mathbb{Z}$\n\n(46)\n$$ \\underline{\\Pi} \\subset \\underline{\\mathfrak{S}} \\subset \\underline{M} $$\n[DIAGRAM: underbrace under $\\underline{\\Pi} \\subset \\underline{\\mathfrak{S}}$ labeled $\\underline{\\Gamma}$, underbrace under $\\underline{\\mathfrak{S}} \\subset \\underline{M}$ labeled $\\underline{N}$]\n\n(sous réserve de représentabilité des quotients [unclear], $\\underline{\\Gamma}$, $\\underline{N}$ - mais je crois que pour Raynaud il n'y a jamais de pb...)\n\n[crossed out text]\n\n(47)\n$$ \\underline{\\Pi} \\subset \\underline{\\mathfrak{S}} \\subset \\underline{M} $$\n$$ \\downarrow \\qquad \\downarrow \\qquad \\downarrow $$\n$$ \\underline{\\Pi}(\\hat{\\mathbb{Z}}) \\subset \\underline{\\mathfrak{S}}(\\hat{\\mathbb{Z}}) \\subset \\underline{M}(\\hat{\\mathbb{Z}}) $$\n\nOn suppose bien sûr tacitement que l'hom. $\\chi_{\\underline{M}} : \\underline{M}_{\\mathbb{Q}} \\to G_{m \\mathbb{Q}}$ se prolonge en\n\n(48) $$ \\chi_{\\underline{M}} : \\underline{M} \\to G_{m \\mathbb{Z}} \\quad , $$\n\nlequel nécessairement se factorise par\n\n(49) $$ \\chi_{\\underline{\\Gamma}} : \\underline{\\Gamma} \\to G_{m \\mathbb{Z}} \\quad . $$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 431,
-      "thinking_tokens": 3893
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 391,
+      "thinking_tokens": 4840
+    }
   },
   "213": {
     "status": "success",
@@ -2053,13 +2010,12 @@
   },
   "217": {
     "status": "success",
-    "transcription": "756\n\nLe schéma en groupes $\\underline{\\Pi}^\\circ$ sur $S_0 = Spec \\mathbb{Z}$, vu en tant\nque faisceau étale sur le \"gros topos étale\" de\n$S_0$, est engendré par ses sous-faisceaux en\nsous-groupes\n$\\underline{k}'_!(\\underline{G}_\\circ)$ (avec répétition possible d'une même\nclasse de conjugaison), et encore $\\underline{\\Pi}$ est\n(Et il y a [unclear] pratiquement quant aux\nles $\\underline{k}'_!(\\underline{G}_\\circ)$ lors d'un changement de base) et\nle groupe discret $(\\Pi_0)_{S_0}$. (Et il se pose\nla question naturellement d'expliciter les\nrelations... suffit-il d'écrire les relations de\n$\\Pi_0$, plus les commutativités de\n\n(57)\n\\begin{tikzcd}\nT_0 \\ar[r, \"k'_!\"] \\ar[d, \"can\"'] & \\Pi_0 \\ar[d, \"can\"] \\\\\n\\underline{T}_0 \\ar[r, \"\\underline{k}'_!\"'] & \\underline{\\Pi}\n\\end{tikzcd}\n? )\n\nAutres conditions concernant les schémas\nen groupes\n\n(58)\n$$ \\gamma_{\\underline{\\Pi}} = \\underline{\\Pi} / \\underline{\\Pi}^\\circ, \\gamma_{\\underline{\\mathfrak{S}}} = \\underline{\\mathfrak{S}} / \\underline{\\mathfrak{S}}^\\circ, \\gamma_{\\underline{M}} = \\underline{M} / \\underline{M}^\\circ $$\n\n- on voudrait que ces schémas soient\nen groupes constants, correspondant aux\nschémas groupes finis discrets qui décrivent les\nquotients correspondants des groupes sur $\\mathbb{Q}$,\nlesquels groupes discrets sont des quotients",
+    "transcription": "756\n\nLe schéma en groupes $\\underline{\\Pi}^{\\circ}$ sur $S_0 = Spec \\ \\mathbb{Z}$, ou en tout\ncas faisceau étale sur le \"gros topos étale\" de\n$S_0$, est engendré par un nb fini de sous-groupes\n[unclear: loc. réputés posséder un groupe discret] =\n$k'_i(G_0)$, (classes de conjugaison -), et encore\n(Et il y a [unclear: presqu'] pratiquement identi-\nles $k'_i(G_0)$ base d'un [unclear: argument direct] ) et\nle groupe discret $(\\underline{\\Pi}_0)_{S_0}$. (Et il se pose\nla question évidemment d'expliciter les\nrelations ... suffit-il d'écrire les relations dans\n$\\Pi_0$, plus les commutativités de\n\n(57)\n[DIAGRAM: carré commutatif]\n$T_0 \\xrightarrow{k'_i} \\Pi_0$\n$\\downarrow can \\quad \\downarrow can$\n$\\underline{T_0} \\xrightarrow{\\underline{k}'_i} \\underline{\\Pi}$\n? )\n\nAutres conditions, concernant les sch. en\ngroupes\n\n(58) $\\underline{\\gamma}_{\\underline{\\Pi}} = \\underline{\\Pi} / \\underline{\\Pi}^{\\circ}, \\underline{\\gamma}_{\\underline{G}} = \\underline{G} / \\underline{G}^{\\circ}, \\underline{\\gamma}_{\\underline{M}} = \\underline{M} / \\underline{M}^{\\circ}$\n\n- on voudrait que ce soient des schémas\nen groupes constants, correspondants aux\nschémas gr. pro-finis discrets qui décrivent les\nquotients correspondants de groupes sur $\\mathbb{Q}$,\nlesquels groupes discrets sont des quotients",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 424,
-      "thinking_tokens": 3266
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 409,
+      "thinking_tokens": 2585
+    }
   },
   "218": {
     "status": "success",
@@ -2100,34 +2056,30 @@
   },
   "222": {
     "status": "success",
-    "transcription": "donnant lieu à des compatibilités\n\n(68)\n\\begin{tikzcd}\nT_0 \\ar[r, \"K_i\"] \\ar[d, \"can\"'] & \\underline{\\mathfrak{S}}_0 \\ar[d, \"(65)\"] \\\\\nT_{0\\,Q}(Q) \\ar[r, \"\\underline{K}_i(Q)\"'] & \\underline{\\mathfrak{S}}(Q) \\ .\n\\end{tikzcd}\n\nJe considère alors le schéma en groupes [MARGIN: extérieurs (resp. à un...)] sur $Q$ des (automorphismes de $\\underline{\\mathfrak{S}}_Q$, formé des $\\mu \\in \\underline{Aut}(\\underline{\\mathfrak{S}}_Q)$, tels que pour tt $i \\in I$, il existe loc. une section $f_i$ de $\\underline{\\Pi}_Q$ (engendré par l'image de $\\Pi_0$ dans $\\underline{\\mathfrak{S}}(Q)$), telle que l'on ait\n\n(69) $$ \\mu(\\underline{K}_i(\\lambda)) = int(f_i)^{-1}(\\mu \\lambda) \\ . $$\n\nJe désigne par $\\underline{M}_Q^\\varphi$ ce schéma en groupes sur $Q$, s'envoyant vers $\\underline{G}_Q$ par $(u,\\mu) \\mapsto \\mu$, par un hom. qui est trivial sur $\\operatorname{Im}(\\underline{\\mathfrak{S}}_Q \\to \\underline{M}_Q^\\varphi)$, d'où se factorise par un hom.\n\n(70) $$ \\underline{\\Gamma}_Q^\\varphi \\overset{df}{=} \\underline{M}_Q^\\varphi / Im \\underline{\\mathfrak{S}}_Q \\xrightarrow{\\lambda^\\varphi} \\underline{G}_Q \\ . $$\n\nSi maintenant $(\\underline{\\mathfrak{S}}_0, \\Pi_0)$ fait partie d'un système de [unclear]-Teichmüller",
+    "transcription": "donnant lieu à des compatibilités\n\n[DIAGRAM: Carré commutatif]\n$$\n\\begin{array}{ccc}\nT_0 & \\xrightarrow{K_i} & \\underline{\\mathfrak{S}}_0 \\\\\ncan \\downarrow & & \\downarrow (65) \\\\\n\\underline{T}_0(\\mathbb{Q}) & \\xrightarrow{K_i(\\mathbb{Q})} & \\underline{\\mathfrak{S}}(\\mathbb{Q}) .\n\\end{array}\n$$\n\nJe considère alors le schéma en groupes sur $\\mathbb{Q}$ des couples $(u, \\mu)$ d'un automorphisme de $\\underline{\\mathfrak{S}}_{\\mathbb{Q}}$, et d'un $\\mu \\in \\Gamma_{\\mathbb{Q}}$ , tels que pour tt $i \\in S_0$, il existe loc. une section $f_i$ de $\\underline{\\Pi}_Q$ (engendré par l'image de $\\Pi_0$ dans $\\underline{\\mathfrak{S}}(\\mathbb{Q})$), tel que on ait\n\n(69) $u(K_i(\\lambda)) = int(f_i)^{-1} (\\mu \\lambda)$ .\n\nJe désigne par $\\underline{M}_Q^{\\varphi}$ ce schéma en groupes sur $\\mathbb{Q}$, s'envoyant vers $G_{\\mathbb{Q}}$ par $(u, \\mu) \\mapsto \\mu$, par un hom qui est trivial sur $Int(\\underline{\\mathfrak{S}}_Q \\to \\underline{M}_Q^{\\varphi})$, d'où se factorise par un hom\n\n(70) $\\Gamma_Q^{\\varphi} \\overset{def}{=} \\underline{M}_Q^{\\varphi} / Int \\underline{\\mathfrak{S}}_Q \\xrightarrow{\\chi_{\\varphi}} G_{\\mathbb{Q}}$ .\n\nSi maintenant $(\\underline{\\mathfrak{S}}_0, \\Pi_0)$ font partie d'un système de [unclear: Courbes] Teichmüller",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 425,
-      "thinking_tokens": 3415
-    },
-    "source": "diagram-retranscription",
-    "normalized": true
+      "prompt_tokens": 1788,
+      "output_tokens": 423,
+      "thinking_tokens": 4484
+    }
   },
   "223": {
     "status": "success",
-    "transcription": "$(\\Pi_0 \\subset \\mathbb{G}_0 \\subset \\mathcal{M})$, et si $\\mathbb{G}_0 \\xrightarrow{\\varphi} \\underline{\\mathbb{G}}^\\varphi_\\mathbb{Q}$ provient d'un\nhom de Lie de ce système, $\\mathcal{M} \\to M(\\mathbb{A}_\\mathbb{Q})$\npar la méthode vue la section précédente,\nalors on trouve un hom. naturel\nvia op. de $\\underline{M}_\\mathbb{Q}$ sur $\\underline{\\mathbb{G}}_\\mathbb{Q}$, et $\\lambda_M$\n(71) $$ \\underline{M}_\\mathbb{Q} \\xrightarrow{\\varphi} \\underline{M}^\\varphi_\\mathbb{Q} $$\nrendant commutatif le diagramme\n\n(72)\n\\begin{tikzcd}\n\\mathbb{G}_0 \\ar[r] \\ar[d] & \\mathcal{M} \\ar[d] & \\underline{\\mathbb{G}}_\\mathbb{Q} \\ar[r] \\ar[dr, \"via\\ \\text{can.}\\ int.\"'] & \\underline{M}_\\mathbb{Q} \\ar[d, \"\\varphi\"] \\\\\n\\underline{\\mathbb{G}}(\\mathbb{Q}) \\ar[r] \\ar[d, \"int.\"'] & M(\\mathbb{A}_\\mathbb{Q}) \\ar[d] & & \\underline{M}^\\varphi_\\mathbb{Q} \\\\\n\\underline{M}^\\varphi_\\mathbb{Q}(\\mathbb{Q}) \\ar[r, hook] & \\underline{M}^\\varphi_\\mathbb{Q}(\\mathbb{A}_\\mathbb{Q}) & &\n\\end{tikzcd}\n\nSi le centre de $\\underline{\\mathbb{G}}_\\mathbb{Q}$ est trivial (ce qui est\nune hyp. \"crédible\" surtout si le centre de\n$\\mathbb{G}_0$ l'est ...) lors $\\underline{\\mathbb{G}}_\\mathbb{Q} \\to \\underline{M}^\\varphi_\\mathbb{Q}$ est\ninjectif, et $\\underline{\\mathbb{G}}_\\mathbb{Q}$ s'interprète comme\n\"le $\\underline{\\mathbb{G}}_\\mathbb{Q}$\" \"procréé\" par un hom. de\nLie\n$$ (\\Pi \\subset \\mathbb{G} \\subset \\mathcal{M}) \\longrightarrow (\\Pi \\subset \\underline{\\mathbb{G}}_\\mathbb{Q} \\subset \\underline{M}^\\varphi_\\mathbb{Q}) , $$\nqui a un certain caractère universel\np.r. à l'hom. donné (65) $\\varphi : \\mathbb{G}_0 \\to \\underline{\\mathbb{G}}(\\mathbb{Q})$.",
+    "transcription": "$(\\underset{\\Pi_0 \\subset \\underline{G}_0}{\\Pi \\subset \\underline{G} \\subset \\mathcal{M}})$, et si $\\underline{G}_0 \\xrightarrow{\\varphi} \\underline{\\tilde{G}}_\\mathbb{Q}$ provient d'un\nhom de lie de ces systèmes, $\\mathcal{M} \\to \\mathcal{M}(\\mathbb{A}_\\mathbb{Q})$\npar la méthode vue la section précédente,\non trouve un hom. naturel\n\n(71) $$ \\underline{M}_\\mathbb{Q} \\to \\underline{M}_\\mathbb{Q}^\\varphi $$ , via op. de $\\underline{M}_\\mathbb{Q}$ sur $\\underline{\\tilde{G}}_\\mathbb{Q}$, et $\\lambda_M$\n\nrendant commutatif le diagramme\n\n(72)\n[DIAGRAM: Un diagramme commutatif complexe avec $\\underline{G}_0 \\to \\mathcal{M}$, $\\underline{\\tilde{G}}(\\mathbb{Q}) \\to \\mathcal{M}(\\mathbb{A}_\\mathbb{Q})$, $\\underline{M}_\\mathbb{Q}^\\varphi(\\mathbb{Q}) \\leftarrow \\underline{M}_\\mathbb{Q}^\\varphi(\\mathbb{A}_\\mathbb{Q})$ à gauche, et $\\underline{\\tilde{G}}_\\mathbb{Q} \\to \\underline{M}_\\mathbb{Q}$ avec une flèche vers $\\underline{M}_\\mathbb{Q}^\\varphi$ à droite via \"action int.\"]\n\nSi le centre de $\\underline{\\tilde{G}}_\\mathbb{Q}$ est trivial (ce qui est\nune hyp. \"crédible\" surtout si le centre de\n$\\underline{G}_0$ l'est ... ) alors $\\underline{\\tilde{G}}_\\mathbb{Q} \\to \\underline{M}_\\mathbb{Q}^\\varphi$ est\ninjetif, et $\\underline{\\tilde{G}}_\\mathbb{Q}$ s'interprète comme\n\" le $\\underline{\\tilde{G}}_\\mathbb{Q}$ \" [unclear: macré?] : un hom de\nLie $(\\underset{\\Pi_0 \\subset \\underline{G}_0}{\\Pi \\subset \\underline{G} \\subset \\mathcal{M}}) \\to (\\Pi \\subset \\underline{\\tilde{G}}_\\mathbb{Q} \\subset \\underline{M}_\\mathbb{Q}^\\varphi)$,\nqui a un certain caractère universel\np.r. à l'hom. donné (65) $\\varphi : \\underline{G}_0 \\to \\underline{\\tilde{G}}(\\mathbb{Q})$.",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 589,
-      "thinking_tokens": 5315
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 550,
+      "thinking_tokens": 3611
+    }
   },
   "224": {
     "status": "success",
-    "transcription": "Quand on ne suppose pas d'avance l'exis-\ntence d'un tel hom. de Lie dans lequel\ns'insère $\\underline{\\mathfrak{S}}_\\mathbb{Q}$ , il n'est pas automatique\nqu'on puisse trouver un hom.\n\n(73) $$\\varphi_M : \\mathcal{M} \\longrightarrow \\underline{\\mathcal{M}}_\\mathbb{Q}^\\varphi (A_\\mathbb{Q})$$\n\nqui rende compte des opérations de\n$\\mathcal{M}$ sur $\\underline{\\mathfrak{S}}_\\mathbb{Q}$ , par la commutativité\nd'un diagramme , pour tout $g \\in \\mathcal{M}$\n\n(74)\n\\begin{tikzcd}\n\\underline{\\mathfrak{S}} \\ar[r, \"int(g)|\\underline{\\mathfrak{S}}\"] \\ar[d, \"\\hat{\\varphi}\"'] & \\underline{\\mathfrak{S}} \\ar[d, \"\\hat{\\varphi}\"] \\\\\n\\underline{\\mathfrak{S}}(A_\\mathbb{Q}) \\ar[r, \"int(\\varphi_M(g))|\\underline{\\mathfrak{S}}(A_\\mathbb{Q})\"'] & \\underline{\\mathfrak{S}}(A_\\mathbb{Q})\n\\end{tikzcd}\n\nOn s'intéresse seulement aux $\\varphi$ (65)\npour lesquels (73) existe - au moins\nquitte à se restreindre à un sous-groupe\nouvert de $\\mathcal{M}$...",
+    "transcription": "Quand on ne suppose pas d'avance l'exis-\ntence d'un hom. de Lie dans lequel\ns'insère $\\underline{\\mathfrak{S}}_Q$ , il n'est pas automatique\nqu'on puisse trouver un hom.\n\n(73) $$\\varphi_{\\mathcal{M}} : \\mathcal{M} \\longrightarrow \\underline{\\mathcal{M}}_Q^\\varphi (A_Q)$$\n\nqui rende compte des opérations de\n$\\mathcal{M}$ sur $\\underline{\\mathfrak{S}}_Q$ , par la commutativité\nd'un diagramme, pour tout $g \\in \\mathcal{M}$\n\n(74) [DIAGRAM: Carré commutatif. En haut, une flèche horizontale de $\\underline{\\mathfrak{S}}$ vers $\\underline{\\mathfrak{S}}$ étiquetée $int(g|\\underline{\\mathfrak{S}})$. En bas, une flèche horizontale de $\\underline{\\mathfrak{S}}(A_Q)$ vers $\\underline{\\mathfrak{S}}(A_Q)$ étiquetée $int(\\varphi_{\\mathcal{M}}(g))|_{\\underline{\\mathfrak{S}}(A_Q)}$. Deux flèches verticales descendantes de $\\underline{\\mathfrak{S}}$ vers $\\underline{\\mathfrak{S}}(A_Q)$, chacune étiquetée $\\hat{\\varphi}$.]\n\nOn s'intéressera surtout aux $\\varphi$ (65)\npour lesquels (73) existe — au besoin\nquitte à se restreindre à un sous-groupe\nouvert de $\\mathcal{M}$...",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 326,
-      "thinking_tokens": 2616
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 332,
+      "thinking_tokens": 3629
+    }
   },
   "225": {
     "status": "success",
@@ -2149,13 +2101,12 @@
   },
   "227": {
     "status": "success",
-    "transcription": "761\n\net considérons l'hom. canonique\n$$ G \\longrightarrow G/G^\\circ \\xrightarrow{\\sim} \\mathcal{T}(X,S) \\quad \\text{(groupe de Teichmüller)} $$\non a alors un hom.\ncanonique d'extensions\n\n[MARGIN: Pour la démonstration de la dite proposition voir [unclear] (p. 755 ff, p. 764 ff)]\n\n(7)\n\\begin{tikzcd}\n1 \\ar[r] & T_0^I \\ar[r] \\ar[d] & \\tilde{G} \\ar[r] \\ar[d] & G \\ar[r] \\ar[d] & 1 \\\\\n1 \\ar[r] & T_0^I \\ar[r] & Sp\\mathcal{T}(X,S) \\ar[r] & \\mathcal{T}(X,S) \\ar[r] & 1 \\ ,\n\\end{tikzcd}\n\n$Sp\\mathcal{T}(X,S)$ est le groupe de Teichmüller\nspécial de $(X,S)$.\n\nNB On notera que si pour tout $i \\in I$ on\nfixe une origine $e_i$ sur $S_i$, il\nrésulte de la propriété universelle de\n$\\tilde{S}$ que la donnée d'un relèvement\n$\\tilde{u}$ de $u \\in G$ à $\\tilde{S}$ revient à la donnée,\npour tout $i \\in I$, d'un relèvement de\n$u(e_i)$ en un point $\\tilde{a}_i$ de $\\tilde{S}_{\\sigma(i)}$ (i.e., de $\\tilde{S}_{u(i)}$).",
+    "transcription": "751\n\net [unclear: considérant] l'hom. canonique\n$G \\to G/G^\\circ \\xrightarrow{\\alpha_{(X,S)}} \\tau(X,S)$ (groupe de\nTeichmüller), on a alors un hom.\ncanonique d'extensions\n\n(7)\n$$1 \\to \\Gamma_0^I \\to \\tilde{G} \\to G \\to 1$$\n$$\\downarrow \\quad \\quad \\downarrow \\quad \\quad \\downarrow$$\n$$1 \\to \\Gamma_0^I \\to Sp \\tau(X/S) \\to \\tau(X,S) \\to 1 \\, , $$\n\n$Sp \\tau(X/S)$ est le groupe de Teichmüller\nspécial de $(X,S)$.\n\n[MARGIN: Pour la démonstration de la [unclear] cf. [unclear] 50) (pp. 755^1 sqq, p. 784 ff)]\n\n$\\underline{NB}$ On notera que si pour $tt \\ i \\in I$ on\nfixe une origine $e_i$ sur $S_i$, il en\nrésulte de la propriété universelle de\n$\\tilde{S}$ que la donnée d'un relèvement\n$\\tilde{u}$ de $u \\in G$ à $\\tilde{S}$ revient : à la donnée,\npour $tt \\ i \\in I$, d'un relèvement de\n$u(e_i)$ en un pt $\\tilde{e}_i$ de $\\tilde{S}_{u(i)}$ (i.e. de $\\tilde{S}_{u(i)}$).",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 391,
-      "thinking_tokens": 3026
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 367,
+      "thinking_tokens": 3855
+    }
   },
   "228": {
     "status": "success",
@@ -2239,13 +2190,12 @@
   },
   "236": {
     "status": "success",
-    "transcription": "$$\n(29) \\quad \\begin{cases}\n\\Gamma_\\infty = \\tau_\\infty = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix} \\\\\n\\Gamma_0 = \\tau'_\\infty = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} \\\\\n\\Gamma_1 = -\\tau'_0 = \\begin{pmatrix} -1 & 1 \\\\ 0 & 1 \\end{pmatrix}\n\\end{cases}\n\\qquad\n(30) \\quad \\begin{cases}\n\\Gamma_0(\\rho) = \\rho^{-1}, \\Gamma_0(\\sigma) = \\sigma^{-1} \\\\\n\\Gamma_1 = \\rho^{-1} \\Gamma_0 = \\Gamma_0 \\rho \\\\\n\\Gamma_\\infty = \\sigma \\Gamma_0 = \\Gamma_0 \\sigma^{-1}\n\\end{cases}\n$$\n\nNotons que $(\\tilde{\\rho}, \\tilde{\\tau})$ engendre un groupe\nisomorphe à $D_\\infty$, que je note $D_{\\tilde{\\rho}}$,\net que $(\\tilde{\\sigma}, \\tilde{\\tau})$ engendre un groupe $D_{\\tilde{\\sigma}}$,\nisomorphe à $D_\\infty$. Enfin $(\\omega_0, \\tilde{\\tau})$ enge-\nndre un groupe $D_{\\omega_0}$, isomorphe encore\nà $D_\\infty$. On a un diagramme\n\n$$\n(31) \\quad \n\\begin{tikzcd}\n& D_{\\omega_0} \\ar[dl, \"i\"'] \\ar[dr, \"j\"] & \\\\\nD_{\\tilde{\\rho}} & & D_{\\tilde{\\sigma}}\n\\end{tikzcd}\n\\qquad\n\\begin{array}{l}\n\\begin{cases} i(\\omega_0) = \\tilde{\\rho}^3 \\\\ i(\\tilde{\\tau}) = \\tilde{\\tau} \\end{cases} \\\\\n\\begin{cases} j(\\omega_0) = \\tilde{\\sigma}^2 \\\\ j(\\tilde{\\tau}) = \\tilde{\\tau} \\end{cases}\n\\end{array}\n$$\n\net le cor. 1 s'écrit sous la forme\n\n$$\n(32) \\quad \\operatorname{Gl}(2, \\mathbb{Z})^\\sim \\simeq D_{\\tilde{\\rho}} *_{D_{\\omega_0}} D_{\\tilde{\\sigma}}\n$$\n\n(somme amalgamée de groupes).\n\nOr on peut prendre dans $D_{\\tilde{\\rho}}$, $D_{\\tilde{\\sigma}}$ les\ngénérateurs involutifs\n\n$$\n(33) \\quad \\begin{cases}\n\\tilde{\\Gamma}_0 = \\tilde{\\tau} = \\tilde{\\tau}'_\\infty \\\\\n\\tilde{\\Gamma}_\\rho = .......\n\\end{cases}\n\\text{et} \\quad\n\\begin{matrix}\n\\tilde{\\Gamma}_1 \\overset{df}{=} \\tilde{\\rho}^{-1} \\tilde{\\Gamma}_0 = \\tilde{\\Gamma}_0 \\tilde{\\rho} \\text{ dans } D_{\\tilde{\\rho}} \\\\\n\\text{et } \\tilde{\\Gamma}_\\infty \\overset{df}{=} \\tilde{\\sigma} \\tilde{\\Gamma}_0 = \\tilde{\\Gamma}_0 \\tilde{\\sigma}^{-1}\n\\end{matrix}\n$$",
+    "transcription": "$$\n(29) \\quad \\begin{cases} \n\\Gamma_\\infty = \\tau_\\infty = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix} \\\\ \n\\Gamma_0 = \\tau_\\infty' = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} \\\\ \n\\Gamma_1 = -\\tau_0' = \\begin{pmatrix} -1 & 1 \\\\ 0 & 1 \\end{pmatrix} \n\\end{cases}\n(30) \\quad \\begin{cases} \n\\Gamma_0(\\rho) = \\rho^{-1}, \\Gamma_0(\\sigma) = \\sigma^{-1} \\\\ \n\\Gamma_1 = \\rho^{-1} \\Gamma_0 = \\Gamma_0 \\rho \\\\ \n\\Gamma_\\infty = \\sigma \\Gamma_0 = \\Gamma_0 \\sigma^{-1} \n\\end{cases}\n$$\n\nNotons que $(\\tilde{\\rho}, \\tilde{\\tau})$ engendre un groupe isomorphe à $D_{12}$, que je note $D_{\\tilde{\\rho}}$, de même $(\\tilde{\\sigma}, \\tilde{\\tau})$ engendre un groupe $D_{\\tilde{\\sigma}}$, isomorphe à $D_\\infty$. Enfin $(\\omega_0, \\tilde{\\tau})$ engendre encore un groupe $D_{\\omega_0}$, isomorphe encore à $D_\\infty$. On a un diagramme\n\n$$\n(31)\n$$\n[DIAGRAM: $D_{\\omega_0}$ avec deux flèches descendantes $i$ vers $D_{\\tilde{\\rho}}$ et $j$ vers $D_{\\tilde{\\sigma}}$]\n$$\n\\begin{cases} i(\\omega_0) = \\tilde{\\rho}^3 \\\\ i(\\tilde{\\tau}) = \\tilde{\\tau} \\end{cases} \\quad \\begin{cases} j(\\omega_0) = \\tilde{\\sigma}^2 \\\\ j(\\tilde{\\tau}) = \\tilde{\\tau} \\end{cases}\n$$\n\net le cor. 1 s'écrit sous la forme\n\n$$\n(32) \\quad \\operatorname{Gl}(2, \\mathbb{Z})^\\sim \\simeq D_{\\tilde{\\rho}} *_{D_{\\omega_0}} D_{\\tilde{\\sigma}}\n$$\n\n(somme amalgamée de groupes).\n\nOr on peut prendre dans $D_{\\tilde{\\rho}}$, $D_{\\tilde{\\sigma}}$ les générateurs involutifs\n\n$$\n(33) \\quad \\begin{cases} \\tilde{\\Gamma}_0 = \\tilde{\\tau} = \\tilde{\\tau}_\\infty' \\\\ \\tilde{\\Gamma}_\\rho = \\dots \\end{cases} \\text{ et } \\begin{cases} \\tilde{\\Gamma}_1 = \\tilde{\\rho}^{-1} \\tilde{\\Gamma}_0 = \\tilde{\\Gamma}_0 \\tilde{\\rho} \\text{ dans } D_{\\tilde{\\rho}} \\\\ \\tilde{\\Gamma}_\\infty = \\tilde{\\sigma} \\tilde{\\Gamma}_0 = \\tilde{\\Gamma}_0 \\tilde{\\sigma}^{-1} \\end{cases}\n$$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 752,
-      "thinking_tokens": 4377
+      "prompt_tokens": 1788,
+      "output_tokens": 695,
+      "thinking_tokens": 3253
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "237": {
@@ -2289,13 +2239,12 @@
   },
   "241": {
     "status": "success",
-    "transcription": "[MARGIN: 268 crossed out]\n\n$a \\in \\mathbb{R}^2 \\setminus \\mathbb{Z}^2$,\nau dessus de $a_{1,1}$ , on a donc un iso. can.\n\n(42) $$ \\Pi_{1,1} \\simeq \\Pi_1(\\mathbb{R}^2 \\setminus \\mathbb{Z}^2, \\mathbb{Z}^2; a) $$\n\nd'où une suite exacte\n\n(43)\n\\begin{tikzcd}\n1 \\ar[r] & \\Pi_1(\\mathbb{R}^2 \\setminus \\mathbb{Z}^2) \\ar[r] & \\Pi_{1,1} \\ar[r] \\ar[d, equal] & \\mathbb{Z}^2 \\ar[r] \\ar[d, \"\\simeq\"] & 1 \\\\\n& & \\Pi_1(U_{1,1}=X_1 \\setminus \\{a_{1,1}\\}) & \\Pi_1(X_1) \\ar[d, \"\\simeq\"] \\\\\n& & & (\\Pi_{1,1})_{ab}\n\\end{tikzcd}\n\nLes éléments du $\\Pi_1$ mixte s'explicitent par le calcul de Jean Malgoire à l'aide de couples\n\n(44) $$ (\\gamma, l) \\quad (\\gamma \\in \\mathbb{Z}^2, l \\text{ classe de chemin de } \\mathbb{R}^2 \\setminus \\mathbb{Z}^2 \\text{ de } a \\text{ à } a+\\gamma) $$\n\nqu'on \"compose comme les fonctions\".\n\nNous prendrons, au dessus des générateurs $e_0, e_1$ de $\\mathbb{Z}^2$, les éléments $x, y$ définis par les chemins rectilignes de $a$ à $a+e_0$, resp. $a+e_1$, à partir de l'origine\n\n(45) $$ a = \\tilde{a}_{1,1} = (+\\frac{1}{2}, +\\frac{1}{2}) $$\n\nAlors l'élément $xyx^{-1}y^{-1}$ est figuré par le chemin ci-dessus, qui est visiblement opposé au lacet \"rectiligne\" direct de $a$ autour de l'origine $0$.",
+    "transcription": "168\n\n[crossed out text] $a \\in \\mathbb{R}^2 \\setminus \\mathbb{Z}^2$,\n\nau dessus de $a_{1,1}$, on aura donc un iso. can.\n\n(42) $$\\Pi_{1,1} \\simeq \\Pi_1(\\mathbb{R}^2 \\setminus \\mathbb{Z}^2, \\mathbb{Z}^2; a)$$\n\nd'où une suite exacte\n\n(43) $$1 \\to \\Pi_1(\\mathbb{R}^2 \\setminus \\mathbb{Z}^2) \\to \\Pi_{1,1} \\to \\mathbb{Z}^2 \\to 1$$\n\n[MARGIN: Sous $\\Pi_{1,1}$ est écrit $\\| \\Pi_1(U_{1,1} = X_1 \\setminus \\{a_{1,0}\\})$. Sous $\\mathbb{Z}^2$ est écrit $\\simeq \\Pi_1(X_1) \\simeq (\\Pi_{1,1})_{ab}$]\n\nLes éléments du $\\Pi_1$ mixte s'explicitent\npar le calcul de Jean Malgoire à l'aide\ndes couples\n\n(44) $$(\\gamma, l) \\quad (\\gamma \\in \\mathbb{Z}^2, l \\text{ classe de chemins de } \\mathbb{R}^2 \\setminus \\mathbb{Z}^2 \\text{ de } a \\text{ à } a+\\gamma)$$\n\nqu'on \"composera comme les fonctions\".\n\nNous prendrons, au dessus des générateurs\n$e_0, e_1$ de $\\mathbb{Z}^2$, les éléments $x, y$ définis par\nles chemins rectilignes de $a$\nà $a+e_0$, resp. $a+e_1$, à partir\nde l'origine\n\n(45) $$a = \\tilde{a}_0 = (+1/2, +1/2)$$\n\nAlors l'élément $x y x^{-1} y^{-1}$ est\nfiguré par le chemin ci-dessous, qui est\nvisiblement opposé au lacet \"rectiligne\"\ndirect de $a$ autour de l'origine $0$.\n\n[DIAGRAM: Grille de points représentant $\\mathbb{Z}^2$ avec les axes $x$ et $y$. Un lacet carré partant du point $a$ est formé par les segments orientés $x$, $y$, $x^{-1}$, $y^{-1}$, entourant un point central du réseau. Un petit lacet autour de ce point central est noté $l'_0$.]\n\n240",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 512,
-      "thinking_tokens": 7356
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 567,
+      "thinking_tokens": 13691
+    }
   },
   "242": {
     "status": "success",
@@ -2374,23 +2323,21 @@
   },
   "250": {
     "status": "success",
-    "transcription": "induit par l'inclusion\n$$D_x^* \\hookrightarrow \\mathcal{U}$$\nou encore, pour en termes d'automorph. d'un\nfoncteur fibre, comme l'hom. opération de\n$T_x$ sur $\\Gamma(D_x^{*\\sim}, \\mathcal{U}' \\times_\\mathcal{U} D_x^{*\\sim})$ provenant\n\n\\begin{tikzcd}\n& \\mathcal{U}'_{D_x^{*\\sim}} \\ar[dl] \\ar[d] \\\\\nD_x^{*\\sim} \\ar[dr] & \\mathcal{U}' \\ar[d] \\\\\n& \\mathcal{U}\n\\end{tikzcd}\n\nde l'opération de $T_x$ sur\n$D_x^{*\\sim}$. [unclear: text crossed out]\n\nSupposons qu'on ait déjà\n[MARGIN: $\\pi_1(\\mathcal{U},\\tilde{\\mathcal{U}}) = \\pi$]\nchoisi (par ailleurs) un [unclear: foncteur fibre sur] $\\mathcal{U}$,\npar la donnée d' un pt base, ..., ou plus\ngénéralement, d'un rev. universel $\\tilde{\\mathcal{U}}$ de $\\mathcal{U}$\n\nPour le comparer avec $\\pi_1(\\mathcal{U}, D_x^{*\\sim})$,\n- il suffira de donner une \"classe de chemins\"\nde $D_x^{*\\sim} / \\mathcal{U}$ à $\\tilde{\\mathcal{U}} / \\mathcal{U}$ , i.e. un\nisomorphisme\n\n(62) $$ \\tilde{\\mathcal{U}} \\xrightarrow{\\sim} [unclear: Rev](\\mathcal{U}, D_x^{*\\sim}) $$\n\n[MARGIN: l'image dans $\\mathcal{U}$ du [unclear] de (62) donne dans $\\mathcal{U}$ un point $y$ : [unclear]]\n\n[unclear: crossed out paragraph at the bottom]\nNB si $D_x^{*\\sim}$ défini\npar un rev. universel $\\widetilde{D_x^*}$\nde $D_x^*$, et si $\\tilde{\\mathcal{U}}$\ndéfini par un pt base $y \\in \\mathcal{U}$,\nalors [unclear]",
+    "transcription": "induit par l'inclusion\n$$D_x^* \\hookrightarrow U$$\nou encore, [unclear: passé] en termes d'automorph. d'un\nfoncteur fibre, comme l'homomorphisme de\n$T_x$ sur $\\Gamma(D_x^{*\\sim}, U'_{D_x^{*\\sim}})$ provenant\n\n[DIAGRAM: Commutative fiber product square. $U'_{D_x^{*\\sim}}$ is at the top with arrows pointing down-left to $D_x^{*\\sim}$ and down-right to $U'$. From $D_x^{*\\sim}$ an arrow points down-right to $U$, and from $U'$ an arrow points down-left to $U$.]\n\ndes opérations de $T_x$ sur\n$D_x^{*\\sim}$. [unclear: text crossed out]\n\nSupposons qu'on ait déjà\nchoisi par ailleurs, un groupe fondamental $\\Pi_1(U,\\tilde{U}) = \\pi$ de $U$,\npar le choix d'un pt base, ou, plus\ngénéralement, d'un rev. universel $\\tilde{U}$ de $U$.\nPour le comparer avec $\\Pi_1(U, D_x^{*\\sim})$,\non choisira donc un \"chemin de raccordement\"\nde $D_x^{*\\sim}/U$ à $\\tilde{U}/U$, i.e.\nun isomorphisme\n\n(62) $\\tilde{U} \\overset{\\sim}{\\longrightarrow} [unclear: Rev_{D_x^{*\\sim}}^{univ}(U)]$\n\n[MARGIN: NB si $D_x^{*\\sim}$ défini par un rayon d'un disque $D_x$ (et $D_x^*$), et si $\\tilde{U}$ défini par un pt base $x_0$, alors un tel isomorphisme équivaut à un chemin dans $U$ de $x_0$ à un point du rayon.]\n\n[unclear: (qui équivaut à la donnée d'un isomorphisme de foncteurs fibres de $Rev(U) \\to (Ens)$ défini par le foncteur fibre $Rev(U) \\to Rev(D_x^{*\\sim})$)]",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 509,
-      "thinking_tokens": 6960
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 493,
+      "thinking_tokens": 6554
+    }
   },
   "251": {
     "status": "success",
-    "transcription": "773\n\n( l'indétermination est un autom.\nint. de $\\Pi_1$, ou de $\\Pi_1(\\mathcal{U}, D_x^{* \\sim})$ ) qui\ninduit un isomorphisme\n\n(63) $$ \\pi = \\Pi_1(\\mathcal{U}, \\tilde{\\mathcal{U}}) \\overset{\\sim}{\\longleftrightarrow} \\Pi_1(\\mathcal{U}, D_x^{* \\sim}) $$\n\n(qui est changé par un autom. intérieur,\nquand on change (62) par un él. de $\\pi$).\nComposant (63) et (60), on trouve donc\nun hom.\n\n(64) $$ T_n \\longrightarrow \\pi = \\Pi_1(\\mathcal{U}, \\tilde{\\mathcal{U}}) , $$\n\nqui dépend du choix de (62) — et\nqui, indépendamment de ce choix, définit\nun hom. ext. bien déterminé —\nqui n'est autre que l'hom. can.\n\n(65) \n\\begin{tikzcd}\n\\Pi_1(D_x^*) \\ar[r] \\ar[d, \"\\simeq\"'] & \\Pi_1(\\mathcal{U}) \\ar[d, equal] \\\\\nT_n & \\pi\n\\end{tikzcd}\n\n[MARGIN: C) Relation avec\ngermes d'arcs (approche\noriginale \"par pts base\")]\nJe vais décrire une façon commode\nde fixer un rev. universel $\\tilde{D}_x^*$ de $D_x^*$,\npar un germe d'arc de courbe [unclear: analyt.]",
+    "transcription": "773\n\n(l'indétermination sur un objet de $\\pi$, ou de $\\pi_1(\\mathcal{U}, D_\\alpha^{*\\sim})$ ) qui induit un isomorphisme\n\n(63) $$ \\pi = \\pi_1(\\mathcal{U}, \\tilde{\\mathcal{U}}) \\overset{\\sim}{\\longleftrightarrow} \\pi_1(\\mathcal{U}, D_\\alpha^{*\\sim}) $$\n\n(qui est défini par un autom. intérieur, quand on compose (62) par un élém. de $\\pi$).\nComposant (63) et (60), on trouve donc un hom.\n\n(64) $$ T_\\alpha \\longrightarrow \\pi = \\pi_1(\\mathcal{U}, \\tilde{\\mathcal{U}}) $$ ,\n\nqui dépend du choix de (62) - et qui, indépendamment de ce choix, définit un hom. ext. bien déterminé - qui n'est autre que l'hom. nat.\n\n(65)\n[DIAGRAM: $\\pi_1(D_\\alpha^{*\\sim})$ avec une flèche vers $\\pi_1(\\mathcal{U})$, et des égalités verticales vers $T_\\alpha$ et $\\pi$ respectivement]\n\n[MARGIN: C) Relation avec genre d'orb. (faisant fonction de \"pts base\")]\nJe vais décrire une façon commode de fixer un rev. universel $\\tilde{D}_\\alpha^{*\\sim}$ de $D_\\alpha^{*\\sim}$, pour un germe d'orbite de courbes (sur $X$)",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 364,
-      "thinking_tokens": 4013
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 337,
+      "thinking_tokens": 2324
+    }
   },
   "252": {
     "status": "success",
@@ -2403,13 +2350,12 @@
   },
   "253": {
     "status": "success",
-    "transcription": "774\n\nd'où un rev. universel\n(70) $$D_x^{*\\sim} \\overset{\\text{déf}}{=} Rev_{univ}(D_x^*, [I], \\varphi) \\ .$$\n\nBien entendu, on aura une factorisation\n\n\\begin{tikzcd}\n{[I]} \\ar[r] \\ar[rr, bend right, \"\\varphi\"'] & D_x^{*\\sim} \\ar[r] & D_x^* \\ (\\hookrightarrow U)\n\\end{tikzcd}\n\ndonc un iso can\n\n(71) $$Rev_{univ}(U, D_x^{*\\sim}) \\simeq Rev_{univ}(U, [I]) \\ ,$$\n\noù $I$ est considéré comme un germe\n1-connexe sur $U$ par le morphisme composé\n$$[I] \\longrightarrow D_x^* \\hookrightarrow U \\ .$$\n\nDonc . . .\n\n(72) $$\\pi_1(U, D_x^{*\\sim}) = \\pi_1(U, [I]) \\overset{K_x}{\\longleftarrow} T_x \\ .$$\n\n[MARGIN: D) Relation avec structure différentiable]\nLorsque $X$ est muni d'une structure\ndifférentiable au voisi-nage de $x$, on dit\nqu'un germe de courbe de $X$ sortant\nde $x$ est différentiable, si l'application\ncontinue\n$$I \\longrightarrow X$$\nqui le définit est différentiable, et de plus",
+    "transcription": "774\n\nd'où un rev. universel\n(70) $$D_x^{*\\sim} \\stackrel{def}{=} \\underline{Rev}_{univ} (D_x^*, ([I],\\varphi)).$$\n\nBien entendu, on aura une factorisation\n$$[I] \\longrightarrow D_x^{*\\sim} \\longrightarrow D_x^* \\ (\\hookrightarrow U)$$\n[DIAGRAM: curved arrow from $[I]$ to $D_x^*$ labeled $\\varphi$]\n\nd'où un iso canon.\n(71) $$\\underline{Rev}_{univ} (U, D_x^{*\\sim}) \\simeq \\underline{Rev}_{univ} (U, [I]) ,$$\n\noù $I$ est considéré comme un germe 1-convexe sur $U$ par le morphisme composé\n$$[I] \\longrightarrow D_x^* \\longrightarrow U .$$\n\nDonc ...\n(72) $$\\pi_1(U, D_x^{*\\sim}) = \\pi_1(U, [I]) \\overset{K_x}{\\longleftarrow} T_x .$$\n\n[MARGIN: D) Relation avec structure différentiable.]\n\nLorsque $X$ est muni d' une structure différentiable au voisinage de $x$, on dit qu' un germe de courbe de $X$ sortant en $x$ est différentiable , si l'application [unclear: d'application] continue\n$$I \\longrightarrow X$$\nqui le définit est différentiable, et de plus [unclear]",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 337,
-      "thinking_tokens": 3298
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 332,
+      "thinking_tokens": 2599
+    }
   },
   "254": {
     "status": "success",
@@ -2422,23 +2368,21 @@
   },
   "255": {
     "status": "success",
-    "transcription": "Soit d'autre part, dans le cas où $X$ est diff.\nen $x$,\n\n(76) $$ \\underline{Couronne}_{diff}(X,-) $$\n\nla sous-catégorie pleine de $\\underline{Couronne}(X,x)$\nformée des germes d'arcs différentiables. Soit\n$S_x$\nl'espace des demi-droites de\nl'espace tangent $Tang_x(X)$\n\n(77) $$ S_x = \\text{espace des demi-droites de } Tang_x(X) \\simeq \\mathbb{S}^1 $$\n\net considérons le groupoïde fondamental\n\n(78) $$ \\Pi_1(S_x) \\overset{\\simeq}{\\longrightarrow} \\underline{Revunis}(S_x) $$ .\n\nJe vais définir une équivalence de\ncatégories\n\n(79)\n\\begin{tikzcd}\n\\underline{Couronne}_{diff}(X,x) \\ar[r, \"\\simeq\"] \\ar[d, \"\\simeq\"'] & \\Pi_1(S_x) \\ar[d, \"\\simeq\"] \\\\\n\\underline{Revunis}(D_x^{*\\sim}) & \\underline{Revunis}(S_x)\n\\end{tikzcd}\n\nqui, sur les ensembles d'objets, soit\nl'application associant à tout germe d'arc\ndifférentiable en $x$ sa demi-tangente. Il\ns'agit donc, si $\\gamma, \\gamma'$ sont deux tels\narcs, correspondants aux demi-tangentes $\\Delta, \\Delta'$\nde définir une bijection canonique",
+    "transcription": "775\n\nSoit d'autre part, dans le cas où $X$ est diff. en $x$,\n\n(76) $$Couronne_{diff}(X, x)$$\n\nla sous-catégorie pleine de $Couronne(X, x)$ formée des germes d'arcs différentiables. Soit $\\mathbb{S}_x$ l'espace des demi-droites de l'espace tangent $Tang_x(X)$\n\n(77) $$\\mathbb{S}_x = \\text{espace des demi-droites de } Tang_x(X) \\simeq \\mathbb{S}^1$$\n\net considérons le groupoïde fondamental\n\n(78) $$\\Pi_1(\\mathbb{S}_x) \\xrightarrow{\\simeq} Revetements(\\mathbb{S}_x) .$$\n\n[MARGIN: ||] Je vais définir une équivalence de catégories\n\n(79) $$Couronne_{diff}(X, x) \\xrightarrow{\\approx} \\Pi_1(\\mathbb{S}_x)$$\n$$\\downarrow \\wr \\qquad \\qquad \\wr \\downarrow$$\n$$Revetements(D^*_x) \\qquad Revetements(\\mathbb{S}_x)$$\n\nqui, sur les ensembles d'objets, soit l'application associant à un germe d'arc différentiable en $x$ sa demi-tangente. Il s'agit donc, si $\\gamma, \\gamma'$ sont deux tels arcs, correspondants aux demi-tangentes $\\Delta, \\Delta'$, de définir une bijection canonique",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 365,
-      "thinking_tokens": 3849
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 331,
+      "thinking_tokens": 3061
+    }
   },
   "256": {
     "status": "success",
-    "transcription": "(80) \n\\begin{tikzcd}\nIsom(\\gamma, \\gamma') \\ar[r, \"\\sim\"] \\ar[d, equal, \"\\text{déf}\"'] & Isom_{\\Pi_1 \\mathbb{S}_n}(\\Delta, \\Delta') \\ar[d, equal, \"\\text{déf}\"] \\\\\nIsom(D^{*\\sim}_{n,\\gamma}, D^{*\\sim}_{n,\\gamma'}) & \\text{classes de chemins dans } \\mathbb{S}_n \\text{ de } \\Delta \\text{ à } \\Delta'\n\\end{tikzcd}\n\nAu lieu de définir directement la bijection\n(80), je vais définir plutôt un\nfoncteur (qui sera une équivalence de\ncatégories)\n\n(81) $$ \\Phi : \\Pi_1(\\mathbb{S}_n) \\xrightarrow{(\\approx)} Revouv(D^*_n) \\ , $$\n\nSoit\n\n(82) $A_n$ ens des parties fermées (1-connexes) de $\\mathbb{S}_n$\n($i.e.$ des $\\underline{arcs}$ de cercle de $\\mathbb{S}_n$,\nmais $\\neq \\emptyset$,)\n\nc'est un ensemble ordonné, $\\underline{donc}$\nlequel définit une catégorie ordonnée $\\underline{A}_n$\n(les objets sont les $a \\in A_n$, les flèches\nsont les inclusions) -- et on sait que\nle groupoïde enveloppant $Gr(\\underline{A}_n)$ de cette catégorie\nordonnée est canoniquement équivalent à $\\Pi_1(\\mathbb{S}_n)$,",
+    "transcription": "(80) \n$$Isom (\\gamma, \\gamma') \\xrightarrow{\\sim} Isom_{\\Pi_1 S_n}(\\Delta, \\Delta')$$\n[DIAGRAM: en dessous du terme de gauche se trouve \"|| def\" pointant vers $Isom(D_{n,\\gamma}^{*\\sim}, D_{n,\\gamma'}^{*\\sim})$. En dessous du terme de droite se trouve \"|| def\" pointant vers \"classes de chemins dans $S_n$ de $\\Delta$ à $\\Delta'$\"]\n\nAu lieu de définir directement la bijection (80) , je vais définir plutôt un foncteur (qui sera une équivalence de catégories)\n\n(81) $$\\Phi : \\Pi_1(S_n) \\xrightarrow{(\\approx)} Rev_{unni} (D_n^{*\\sim}) ,$$\n\nSoit \n(82) $A_n$ ens des parties fermées 1-connexes de $S_n$ (i.e. des arcs de cercle de $S_n$, non réduits à des pts, mais $\\neq S_n$)\n\nc'est un ensemble ordonné, donc il définit une catégorie ordonnée $\\underline{A}_n$ ([unclear: les objets sont] les $\\in A_n$, les flèches sont les inclusions ) - et on sait que le groupoïde enveloppant $Gr(\\underline{A}_n)$ de cette catégorie ordonnée est canoniquement équivalent à $\\Pi_1(S_n)$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 368,
-      "thinking_tokens": 6293
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 329,
+      "thinking_tokens": 3912
+    }
   },
   "257": {
     "status": "success",
@@ -2488,13 +2432,12 @@
   },
   "262": {
     "status": "success",
-    "transcription": "(93)\n\\begin{tikzcd}\ngerm\\, revdiff(X,x) \\ar[r, \"\\simeq\"', \"\\gamma \\mapsto \\Delta(\\gamma)\"] \\ar[d, \"\\gamma \\mapsto Revunis(D_x^*,\\gamma) = D_{x,\\gamma}^{*\\sim}\"'] & \\Pi_1(S_x) \\ar[d, \"\\simeq\", \"a \\mapsto Revunis(S_x,-)\"'] \\\\\nRev.unis(D_x^*) \\ar[r, \"\\simeq\"'] \\ar[ur, dashed, \"\\Theta \\simeq\"'] & Revunis(S_x)\n\\end{tikzcd}\n\n[MARGIN: Bien sûr, la difficulté en fait provenait de ce qu'on n'avait point d'interpr. géométrique explicite entre [unclear] l'espace $S_x$ ...]\n\nLe seul foncteur qui n'ait pas une\nexplication est le foncteur\n(94)\n\\begin{tikzcd}\nRev.unis.(D_x^*) \\ar[r, \"\\simeq\"] \\ar[dr, \"\\Theta^{-1}\"'] & Revunis(S_x) \\\\\n& \\Pi_1(S_x) \\ar[u, \"can\"']\n\\end{tikzcd}\n\ndéfini comme composé de $\\Theta^{-1}$ avec\nle foncteur can. $\\Pi_1(S_x) \\to Revunis(S_x)$.\n\nFinalement, dans ces considérations\nde géométrie topologico-différentielle, la\nconstruction-clef est celle du foncteur\n$\\Theta$ (81). Nous avons pris quelques peines\nà la définir de façon invariante. Dans\nle cas où on dispose d'une iso locale\n(95) $$f \\colon (T_x(X),0) \\to (X,x),$$ la\nconstruction de $\\Theta$ peut s'expliciter comme\nune construction canonique dans un\nespace vectoriel $V$. Toute demi-droite [unclear].",
+    "transcription": "(93) [DIAGRAM: Commutative diagram relating $germes diff(X, x)$, $\\Pi_1(\\$_x)$, $Rev. univ.(D_x^*)$ and $Rev. univ.(\\$_x)$]\n\n[MARGIN: Bien sûr, le [unclear: difféom.] ici fait [unclear] l'avait posé qu'un isomorphisme $\\Theta$ des [unclear: catégories] de Rev. entre $D_x^*$ et $\\$_x$...]\n\nLe seul foncteur qui n'ait pas son explication est le foncteur\n\n(94) $$Rev. univ. (D_x^*) \\overset{\\simeq}{\\longrightarrow} Rev. univ. (\\$_x)$$\n\ndéfini comme composé de $\\Theta^{-1}$ avec le foncteur canon. $\\Pi_1(\\$_x) \\longrightarrow Rev. univ. (\\$_x)$.\n\nFinalement, dans les considérations de géométrie topologico-différentielle, la construction-clef est celle du foncteur $\\Theta$ (81). Nous verrons dans quelques [unclear: pages] à le définir de façon invariante. Dans le cas où on dispose d'un iso. local\n\n(95) $$f : (T_x(X), 0) \\longrightarrow (X, x) ,$$\n\nla construction de $\\Theta$ peut s'expliciter comme une construction canonique dans un [unclear: espace vectoriel] $V$. Toute demi-droite [unclear: hom.]",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 457,
-      "thinking_tokens": 3660
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 331,
+      "thinking_tokens": 4357
+    }
   },
   "263": {
     "status": "success",
@@ -2516,13 +2459,12 @@
   },
   "265": {
     "status": "success",
-    "transcription": "(97) \n\\begin{tikzcd}\n\\Gamma(A, \\tilde{S}_x/S_x) \\ar[d, equal] & , & \\Gamma(E_p(A), \\tilde{D}_x^*/D_x^*) \\ar[d, equal] \\\\\n\\operatorname{Hom}_{S_x}(A, \\tilde{S}_x) \\ar[d, equal, \"\\text{déf}\"'] & & \\operatorname{Hom}_{D_x^*}(E_p(A), \\tilde{D}_x^*) \\ar[d, equal, \"\\text{déf}\"'] \\\\\n\\tilde{S}_x(A) & & \\tilde{D}_x^*(E_p(A))\n\\end{tikzcd}\n\nqui sont l'un et l'autre des Torseurs sur le groupe $T_{X,x} = T_x$ le $\\mathbb{Z}$-module des orientations de $X$ en $x$ (pour $\\sim$). Considérons l'ens\n\n(98) $$H(A) = Isom_{T_x}(\\tilde{S}_x(A), \\tilde{D}_x^*(E_p(A)))$$\n\nqui est lui-même un $T_x$-torseur. Soit en effet une inclusion\n\n$$A \\subset A'$$\n\non en déduit, par restriction, des isomorph. de $T_x$-torseurs\n\n(99) $$\\tilde{S}_x(A') \\simeq \\tilde{S}_x(A), \\quad \\tilde{D}_x^*(E_p(A')) \\simeq \\tilde{D}_x^*(E_p(A))$$\n\nd'où un isom. canonique\n\n(100) $$H(A) \\simeq H(A')$$\n\nde sorte que \n\n(101) $$A \\mapsto H(A), \\text{ foncteur } A_x \\xrightarrow{H} \\underline{Tors}(T_x)$$\n\noù $A_x$ est la catégorie ordonnée [unclear] associée à l'ens. ordonné $A_x$. On trouve donc par factorisation un foncteur de la catégorie groupoïde associé $Gr(A_x)$ de $A_x$ dans $\\underline{Tors}(T_x)$,\n\n(102) \n\\begin{tikzcd}\nA_x \\ar[d] \\ar[r, \"H\"] & \\underline{Tors}(T_x) \\\\\nGr(A_x) \\ar[ru, \"Gr(H)\"'] & \n\\end{tikzcd}",
+    "transcription": "(97) $$ \\Gamma(A, \\tilde{S}_x / S_x) \\quad , \\quad \\Gamma(E_p(A), \\tilde{D}^*_x / D^*_x) $$\n$$ \\underset{\\text{déf } \\tilde{S}_x(A)}{\\operatorname{Hom}_{S_x}(A, \\tilde{S}_x)} \\qquad \\underset{\\text{déf } \\tilde{D}^*_x(E_p(A))}{\\operatorname{Hom}_{D^*_x}(E_p(A), \\tilde{D}^*_x)} $$\n\nqui sont l'un et l'autre des torseurs sur le groupe $T_{x,e} = T_x$ (le fibré $\\mathbb{Z}$-module des orientations de $X$ au point $x$). Considérons l'ens\n\n(98) $$ H(A) = Isom_{T_x}(\\tilde{S}_x(A), \\tilde{D}^*_x(E_p(A))) $$\n\nqui est lui-même un $T_x$-torseur. Soit une inclusion\n\n$$ A \\subset A' $$\n\non en déduit, par restriction, des isomorph. de $T_x$-torseurs\n\n(99) $$ \\tilde{S}_x(A') \\xrightarrow{\\sim} \\tilde{S}_x(A) \\quad , \\quad \\tilde{D}^*_x(E_p(A')) \\xrightarrow{\\sim} \\tilde{D}^*_x(E_p(A)) $$\n\nd'où un isom. canonique\n\n(100) $$ H(A) \\xrightarrow{\\sim} H(A') $$\n\nde sorte que\n\n(101) $$ A \\mapsto H(A), \\text{ foncteur } A_x \\xrightarrow{H} Tors(T_x) $$\n\noù $A_x$ est la catégorie ordonnée associée à l'ensemble ordonné $A_x$. On en déduit donc un foncteur de la catégorie groupoïde associée $Gr(A_x)$ de $A_x$ dans $Tors(T_x)$,\n\n[DIAGRAM: Triangle commutatif avec les objets $A_x$, $Gr(A_x)$ et $Tors(T_x)$. Une flèche $H$ va de $A_x$ à $Tors(T_x)$, une flèche descend de $A_x$ vers $Gr(A_x)$, et une flèche $Gr(H)$ va de $Gr(A_x)$ à $Tors(T_x)$.]\n\n(102) $$ Gr(A_x) \\xrightarrow{Gr(H)} Tors(T_x) . $$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 585,
-      "thinking_tokens": 5261
+      "prompt_tokens": 1788,
+      "output_tokens": 606,
+      "thinking_tokens": 6350
     },
-    "source": "diagram-retranscription",
     "normalized": true
   },
   "266": {
@@ -2537,13 +2479,12 @@
   },
   "267": {
     "status": "success",
-    "transcription": "781\n\n-ment par la commutation des diagrammes\n\n(107)\n\\begin{tikzcd}\nH(A) \\ar[r, \"i_A\", \"\\sim\"'] \\ar[d, \"(100)\"'] & H(\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^*) \\\\\nH(A') \\ar[ur, \"\\sim\"', \"i_{A'}\"] &\n\\end{tikzcd}\n\nPour vérifier le fait que le foncteur $Gr(H)$\nde (102) est [unclear: bien consistant], je considère les\ndeux foncteurs (dépendant du choix de\n$\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^*$)\n\n(108)\n$$ \\begin{cases} \nA \\longmapsto \\tilde{S}_{\\alpha,A} \\quad , \\quad A \\longmapsto \\tilde{D}_{\\alpha,A}^* \\\\ \n\\underline{A}_\\alpha \\longrightarrow \\underline{Rev}_{univ}(S_\\alpha) \\quad \\underline{A}_\\alpha \\longrightarrow \\underline{Rev}_{univ}(D_\\alpha^*) \n\\end{cases} $$\n\nqui se factorisent en des équivalences\n\n(109)\n$$ Gr(\\underline{A}_\\alpha) \\xrightarrow{\\sim} \\underline{Rev}_{univ}(S_\\alpha) \\quad , \\quad Gr(\\underline{A}_\\alpha) \\xrightarrow{\\sim} \\underline{Rev}_{univ}(D_\\alpha^*) $$\nutilisant $\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^*$.\n\nCeci dit, pour un $A \\in Ob \\, \\underline{A}_\\alpha = A_\\alpha$ [unclear: donné],\ndes isom. fonctoriels en $A$\n\n(110)\n$$ \\begin{cases} \n[unclear](A) \\simeq \\underline{Isom}_{\\underline{Rev}_{univ}(S_\\alpha)}(\\underbrace{F(A)}_{\\tilde{S}_{\\alpha,A}}, \\tilde{S}) \\\\ \n[unclear](E,A) \\simeq \\underline{Isom}_{\\underline{Rev}_{univ}(D_\\alpha^*)}(\\underbrace{G(A)}_{\\tilde{D}_{\\alpha,A}^*}, \\tilde{D}_\\alpha^*) \n\\end{cases} $$\n\net par la propriété univ. de $Gr(\\underline{A}_\\alpha)$,\nces isom. s'étendent sur la\ncatégorie $Gr(\\underline{A}_\\alpha)$. Dans la situation où\nelle se réduit à un groupe profini $T (= T_\\alpha)$\ntrois $T$-groupoïdes connexes $g, g', g''$",
+    "transcription": "781\n\n... par la commutation des diagrammes\n\n[DIAGRAM: commutative triangle]\n(107)\n$$H(A) \\xrightarrow[\\sim]{i_A} H(\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^\\ast)$$\n$$(100) \\downarrow \\wr$$\n$$H(A') \\xrightarrow[\\sim]{i_{A'}}$$\n(avec une flèche diagonale de $H(A')$ vers $H(\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^\\ast)$)\n\nPour vérifier le fait que le foncteur $\\underline{Gr}(H)$ de (102) est nat. constant, je considère les deux foncteurs (dépendant du choix de $\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^\\ast$)\n(108)\n$$A \\longmapsto \\tilde{S}_{\\alpha, A} \\quad , \\quad A \\longmapsto \\tilde{D}^\\ast_{\\alpha, A}$$\n$$\\underline{A}_\\pi \\longrightarrow Rev_{univ}(S_\\alpha) \\quad \\underline{A}_\\pi \\longrightarrow Rev_{univ}(D^\\ast_\\alpha)$$\nqui se factorisent en des équivalences\n(109)\n$$\\underline{Gr}(\\underline{A}_\\pi) \\xrightarrow{\\tilde{E}_\\sim} Rev_{univ}(S_\\alpha) \\, , \\, \\underline{Gr}(\\underline{A}_\\pi) \\xrightarrow{\\tilde{E}_\\sim} Rev_{univ}(D^\\ast_\\alpha)$$\nutilisant $\\tilde{S}_\\alpha, \\tilde{D}_\\alpha^\\ast$.\nCeci dit, pour $A \\in Ob \\underline{A}_\\pi = A_\\pi$ on a de, des isom. fonctoriels en $A$\n(110)\n$$\\tilde{S}(A) \\simeq \\underline{Isom}_{Rev_{univ}(S_\\alpha)} (\\underset{\\tilde{S}_{\\alpha, A}}{F(A)}, \\tilde{S})$$\n$$\\tilde{D}^\\ast_\\alpha(A) \\simeq \\underline{Isom}_{Rev_{univ}(D^\\ast_\\alpha)} (\\underset{\\tilde{D}^\\ast_{\\alpha, A}}{\\underline{Gr}(A)}, \\tilde{D}^\\ast_\\alpha)$$\n\net par la propriété univ. de $\\underline{Gr}(\\underline{A}_\\pi)$, ces isom. fonctoriels s'étendent sur la catégorie $\\underline{Gr}(\\underline{A}_\\pi)$. Dans la situation où elle a un [unclear] commun $T$ (ou $T_\\pi$)\ntrois $T$-groupoïdes [unclear] $g, g', g''$",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 587,
-      "thinking_tokens": 2744
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 580,
+      "thinking_tokens": 2511
+    }
   },
   "268": {
     "status": "success",
@@ -2557,13 +2498,12 @@
   },
   "269": {
     "status": "success",
-    "transcription": "7P2\n\nDéfinition. — On dit qu'on a une corrélation entre un rev. univ. $\\tilde{S}_x$ de $S_x$, et un rev. univ. $\\tilde{D}_x^*$ de $D_x^*$, quand on s'est donné un élément de $H(\\tilde{S}_x, \\tilde{D}_x^*)$.\n\nDonc, si $A \\in A_a$, la donnée d'une corrélation revient à la donnée d'un élément de $H(A)$, i.e. d'un isomorphisme entre les $T_a$-torseurs $\\tilde{S}_x^\\sim(A)$ et $\\tilde{D}_x^{*\\sim}(E_p(A))$. Cette identification est compatible avec les flèches d'inclusion entre $A \\subset A'$. Les corrélations entre $\\tilde{S}_x$ et $\\tilde{D}_x^*$ forment un torseur sous $T_a$. Pour $\\tilde{S}_x$ fixé\n\nSoit $Corr_x(X) = Cour_x(X)$ la catégorie des triplets $(\\tilde{S}_x, \\tilde{D}_x^*, h)$ de rev. univ. corrélés de $S_x$ et de $D_x^*$, on a des foncteurs $(\\tilde{S}_x, \\tilde{D}_x^*, h) \\rightrightarrows {\\tilde{S}_x \\atop \\tilde{D}_x^*}$\n\n(117)\n\\begin{tikzcd}\n& Corr_x(X) \\ar[dl, \"\\simeq\"'] \\ar[dr, \"\\simeq\"] & \\\\\nRevuniv(S_x) & & Revuniv(D_x^*)\n\\end{tikzcd}\n\nqui sont des équivalences de catégories.",
+    "transcription": "Définition On dit qu'on a une corrélation\nentre un rev. univ. $\\tilde{\\mathbb{S}}_\\alpha$ de $\\mathbb{S}_\\alpha$, et un\nautre $\\tilde{\\mathbb{D}}_\\alpha^*$ de $\\mathbb{D}_\\alpha^*$, quand on s'est donné\nun élément de $H(\\tilde{\\mathbb{S}}_\\alpha, \\tilde{\\mathbb{D}}_\\alpha^*)$.\n\nDonc, si $A \\in A_\\alpha$, la donnée d'une corrélation\nrevient à se donner d'un élément de $H(A)$,\nie. d'un isom. entre les $T_\\alpha$-torseurs\n$\\tilde{\\mathbb{S}}_\\alpha^\\sim(A)$ et $\\tilde{\\mathbb{D}}_\\alpha^{*\\sim}(E_P(A))$. Cette identification\nest compatible avec les relations d'inclusions\nentre $A \\subset A'$. Les corrélations\nentre $\\tilde{\\mathbb{S}}_\\alpha$ et $\\tilde{\\mathbb{D}}_\\alpha^*$ forment un torseur\nsur $T_\\alpha$. [unclear: Pour $\\tilde{\\mathbb{S}}_\\alpha$ fixé]\n\nSoit $Corr_\\alpha(X) = \\underline{Corr}_\\alpha(X)$ la catégorie\ndes triplets $(\\tilde{\\mathbb{S}}_\\alpha, \\tilde{\\mathbb{D}}_\\alpha^*, h)$ de rev. univ.\ncorrélés de $\\mathbb{S}_\\alpha$ et de $\\mathbb{D}_\\alpha^*$, on a des\n[unclear: foncteurs] oubli $(\\tilde{\\mathbb{S}}_\\alpha, \\tilde{\\mathbb{D}}_\\alpha^*, h) \\rightrightarrows {\\tilde{\\mathbb{S}}_\\alpha \\atop \\tilde{\\mathbb{D}}_\\alpha^*}$\n\n[DIAGRAM: Triangular commutative diagram]\n(117)\n$$Corr_\\alpha(X)$$\nArrows pointing down-left and down-right, both marked with $\\simeq$.\nBottom left: $\\underline{Revuniv}(\\mathbb{S}_\\alpha)$\nBottom right: $\\underline{Revuniv}(\\mathbb{D}_\\alpha^*)$\n\nqui sont des équivalences de catégories.",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 402,
-      "thinking_tokens": 3418
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 479,
+      "thinking_tokens": 2318
+    }
   },
   "270": {
     "status": "success",
@@ -2576,13 +2516,12 @@
   },
   "271": {
     "status": "success",
-    "transcription": "78s\n\nimages inverses par $u_S$ et par $u_{D^*}$ de $\\tilde{S}_{x'}^\\sim$ et de $\\tilde{D}_{x'}^{* \\sim}$\nsoient $\\tilde{S}_x^{\\prime \\sim}$, $\\tilde{D}_x^{* \\prime \\sim}$, sont munis d'une covariation\nque je désigne par $h_x^\\prime$. Ceci posé, les theoremes\nd'iso. de $T_x$-torseurs canoniques\n\n$$ (121) \\qquad F(u) \\simeq Isom_{\\tilde{S}_x}(\\tilde{S}_x^\\sim, \\tilde{S}_x^{\\prime \\sim}) $$\n$$ G(u) \\simeq Isom_{\\tilde{D}_x^*}(\\tilde{D}_x^{*\\sim}, \\tilde{D}_x^{* \\prime \\sim}) $$\n\nOr par le diagramme d'équivalence (117) on\na bien un iso de $T_x$-torseurs\n$$ Isom((\\tilde{S}_x^\\sim, \\tilde{D}_x^{*\\sim}, h_x), (\\tilde{S}_x^{\\prime \\sim}, \\tilde{D}_x^{* \\prime \\sim}, h_x^\\prime)) $$\n\n(122)\n\\begin{tikzcd}\n& Isom((\\tilde{S}_x^\\sim, \\tilde{D}_x^{*\\sim}, h_x), (\\tilde{S}_x^{\\prime \\sim}, \\tilde{D}_x^{* \\prime \\sim}, h_x^\\prime)) \\ar[dl] \\ar[dr] & \\\\\nF(u) \\simeq Isom(\\tilde{S}_x^\\sim, \\tilde{S}_x^{\\prime \\sim}) & & G(u) \\simeq Isom(\\tilde{D}_x^{* \\sim}, \\tilde{D}_x^{* \\prime \\sim})\n\\end{tikzcd}\n\nd'où la bijection canonique cherchée (120) —\n[unclear: des qui donne un justification (96).]\nLa bijection canonique (120) a la\npropriété $\\pm$ évidente suivante, qui la caractérise:\n\n(123) $\\begin{cases}\n\\text{Soient } u_{\\tilde{S}} \\text{ et } u_{\\tilde{D}^*} \\text{ des prolongements se correspondants} \\\\\n\\tilde{S}_x^\\sim \\xrightarrow{\\sim} \\tilde{S}_{x'}^\\sim, \\ \\tilde{D}_x^{*\\sim} \\xrightarrow{\\sim} \\tilde{D}_{x'}^{* \\sim}, \\text{ associés par (120), soit } A \\\\\n\\in S_x, \\ A' \\in S_{x'} \\text{ son image par } u_S \\text{, soit } \\alpha \\text{ une} \\\\\n\\text{section de } \\tilde{S}_x^\\sim \\text{ sur } A, \\ \\beta \\text{ la section de } \\tilde{D}_x^{*\\sim} \\text{ sur } Ep(A) \\\\\n\\text{associé par la covariation } h_x, \\text{ soit } \\alpha' \\text{ la section} \\\\\n\\text{de } \\tilde{S}_{x'}^\\sim \\text{ sur } A' \\text{ déduite de } \\alpha \\text{ en appliquant } u_{\\tilde{S}}, \\\\\n\\beta' \\text{ la section de } \\tilde{D}_{x'}^{* \\sim} \\text{ sur } Ep(A') \\text{ déduite de } \\beta \\\\\n\\text{en appliquant } u_{\\tilde{D}^*}, \\text{ alors } \\alpha' \\text{ et } \\beta' \\text{ sont associés} \\\\\n\\text{par la covariation } h'.\n\\end{cases}$",
+    "transcription": "785\n\nimages inverses par $u_S$ et par $u_{D^*}$ de $\\tilde{S}_{x'}$ et de $\\tilde{D}^{*\\sim}_{x'}$\nsoient $\\tilde{S}^{*\\sim}_x$, $\\tilde{D}^{*\\sim}_x$, sont munis d'une corrélation\nque je désigne par $h'_x$. Ceci posé, la donnée\nd'un iso. des $T_x$-torseurs canoniques\n\n(121)\n$$F(u) \\simeq Isom_{S_x}(\\tilde{S}_x, \\tilde{S}^{*\\sim}_x)$$\n$$G(u) \\simeq Isom_{D^*_x}(\\tilde{D}^*_x, \\tilde{D}^{*\\sim}_x)$$\n\nOr par le diagramme d'équivalence (117) on\na bien un iso. de $T_x$-torseurs\n$$Isom((\\tilde{S}_x, \\tilde{D}^*_x ; h_x), (\\tilde{S}^{*\\sim}_x, \\tilde{D}^{*\\sim}_x ; h'_x))$$\n\n(122)\n[DIAGRAM: deux flèches pointant en diagonale vers le bas (gauche et droite) depuis la formule ci-dessus]\n$F(u) \\simeq Isom(\\tilde{S}_x, \\tilde{S}^{*\\sim}_x)$               $G(u) \\simeq Isom(\\tilde{D}^*_x, \\tilde{D}^{*\\sim}_x)$\n\nd'où la bijection canonique cherchée (120)\n[unclear: des qui donne] une justification (96).\ndonc la bijection canonique (120) a la\npropriété $\\pm$ évidente suivante, qui la caractérise :\n\n(123) Soient $u_{\\tilde{S}}$ et $u_{\\tilde{D}^*}$ des prolongements de $u_S$ et $u_{D^*}$\nassociés par (120), soit $A \\in \\tilde{S}_x$, $A' \\in \\tilde{S}_{x'}$ son image par $u_{\\tilde{S}}$, soit $\\alpha$ une\nsection de $\\tilde{S}_x$ sur $A$, $\\beta$ la section de $\\tilde{D}^*_x$ sur $E_p(A)$\nassociée par la corrélation $h_x$, soit $\\alpha'$ la section\nde $\\tilde{S}_{x'}$ sur $A'$ déduite de $\\alpha$ en appliquant $u_{\\tilde{S}}$,\n$\\beta'$ la section de $\\tilde{D}^{*\\sim}_{x'}$ sur $E_p(A')$ déduite de $\\beta$\nen appliquant $u_{\\tilde{D}^*}$, alors $\\alpha'$ et $\\beta'$ sont associés\npar la corrélation $h'$.",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 868,
-      "thinking_tokens": 3855
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 640,
+      "thinking_tokens": 4229
+    }
   },
   "272": {
     "status": "success",
@@ -2640,13 +2579,12 @@
   },
   "278": {
     "status": "success",
-    "transcription": "qui prend ainsi le nom de groupe de\nTeichmüller spécial de $(X,S)$. Pour\n$G$ quelconque et action de $G$ sur\n$(X,S)$ orientée : la donnée d'un hom.\nde groupes topologiques\n$$G \\to \\mathcal{A}$$\ns'intègre dans un diagramme de\ngroupes top.\n\n(141)\n\\begin{tikzcd}\nG \\ar[r] \\ar[d] & \\mathcal{A} \\ar[d] \\\\\n\\pi_0(G) \\ar[r] & \\tau = \\pi_0(\\mathcal{A})\n\\end{tikzcd}\n\net on trouve alors, par fonctorialité,\nque le $\\tilde{G}$ construit précédemment\nest l'image inverse de l'ext. $\\tilde{\\tau}$ de $\\tau$\npar $\\mathbb{Z}^I$, via $G \\to \\tau$.\n\nCes préliminaires étant posés,\nrevenons à la situation où $X$\nadmet une structure diff. $C^\\infty$ au voisin-\nage de $S$, et soit pour tout $x \\in S$,",
+    "transcription": "qui prend ainsi le nom de groupe de\nTeichmüller spécial de $(X,S)$. Pour\n$G$ quelconque, une action de $G$ sur\n$(X,S)$ revient à la donnée d'un hom.\nde groupes topologiques\n$$G \\longrightarrow A$$\ns'en déduit un diagramme de\ngroupes top.\n$G \\longrightarrow A$\n$\\downarrow \\qquad \\downarrow$\n(141) $\\quad \\Pi_0(G) \\longrightarrow \\tau = \\Pi_0(A)$\n\net on trouve alors, par fonctorialité,\nque le $\\tilde{G}$ construit précédemment\nest l'image inverse de l'ext. $\\tilde{\\tau}$ de $\\tau$\npar $\\mathbb{Z}^I$, via $G \\longrightarrow \\tau$.\n\nCes préliminaires étant posés,\nrevenons à la situation où $X$\nadmet une structure diff. $C^\\infty$ voisi-\nnage de $S$, et soit pour $\\forall x \\in I$,",
     "usage": {
-      "prompt_tokens": 2533,
-      "output_tokens": 258,
-      "thinking_tokens": 3728
-    },
-    "source": "diagram-retranscription"
+      "prompt_tokens": 1788,
+      "output_tokens": 227,
+      "thinking_tokens": 7199
+    }
   },
   "279": {
     "status": "success",

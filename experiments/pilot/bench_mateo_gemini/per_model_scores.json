@@ -1,0 +1,335 @@
+{
+  "shipped_49_1_old": {
+    "profile": {
+      "raw_pipeline_signals": {
+        "old": {
+          "unresolved_unclear": 26,
+          "margin_placeholder": 16,
+          "diagram_placeholder": 0,
+          "crossed_out_placeholder": 3,
+          "raw_page_separator": 7,
+          "raw_newpage": 7
+        },
+        "new": {
+          "unresolved_unclear": 0,
+          "margin_placeholder": 0,
+          "diagram_placeholder": 0,
+          "crossed_out_placeholder": 0,
+          "raw_page_separator": 0,
+          "raw_newpage": 0
+        }
+      },
+      "structure_markers": {
+        "old": {
+          "chapter_heading": 0,
+          "toc_entry": 0,
+          "label_anchor": 0,
+          "leqno_numbering": 0,
+          "footnote": 0,
+          "tikzpicture": 0,
+          "tikzcd": 0,
+          "aligned_env": 1,
+          "operatorname": 0,
+          "user_macro_Ker": 0,
+          "user_macro_Aut": 0,
+          "user_macro_SL": 0,
+          "user_macro_defeq": 0,
+          "user_macro_isom": 0
+        },
+        "new": {
+          "chapter_heading": 1,
+          "toc_entry": 2,
+          "label_anchor": 1,
+          "leqno_numbering": 32,
+          "footnote": 5,
+          "tikzpicture": 1,
+          "tikzcd": 0,
+          "aligned_env": 5,
+          "operatorname": 15,
+          "user_macro_Ker": 4,
+          "user_macro_Aut": 7,
+          "user_macro_SL": 1,
+          "user_macro_defeq": 5,
+          "user_macro_isom": 1
+        }
+      },
+      "notation_drift_in_old": {
+        "hat_G_to_frakS": 13,
+        "text_int_to_op": 2,
+        "text_Norm_to_op": 3,
+        "Cent_to_Centr": 2,
+        "Zhat_bb_to_bf": 5,
+        "L_bb_to_upright": 6,
+        "lowerker_to_upper": 2,
+        "Sl_to_SL": 1,
+        "calC_to_frakS": 4,
+        "lowercase_g_to_calG": 30
+      },
+      "notation_drift_in_new": {
+        "hat_G_to_frakS": 0,
+        "text_int_to_op": 0,
+        "text_Norm_to_op": 0,
+        "Cent_to_Centr": 0,
+        "Zhat_bb_to_bf": 0,
+        "L_bb_to_upright": 0,
+        "lowerker_to_upper": 0,
+        "Sl_to_SL": 0,
+        "calC_to_frakS": 0,
+        "lowercase_g_to_calG": 1
+      },
+      "abbreviation_residue": {
+        "old": {
+          "abbr_hom": 0,
+          "abbr_autom": 0,
+          "abbr_ss_groupe": 1,
+          "abbr_s_g": 1,
+          "abbr_c_j": 0,
+          "abbr_cent": 0
+        },
+        "new": {
+          "abbr_hom": 0,
+          "abbr_autom": 0,
+          "abbr_ss_groupe": 0,
+          "abbr_s_g": 0,
+          "abbr_c_j": 0,
+          "abbr_cent": 0
+        }
+      },
+      "lengths": {
+        "old_chars": 12535,
+        "new_chars": 14714
+      }
+    },
+    "score": {
+      "raw_density_per_kchar": 4.71,
+      "notation_density_per_kchar": 5.42,
+      "abbr_density_per_kchar": 0.16,
+      "structure_coverage": 0.07,
+      "composite_penalty": 0.887,
+      "quality": 0.113
+    },
+    "length": 12535
+  },
+  "gemini_pbp": {
+    "profile": {
+      "raw_pipeline_signals": {
+        "old": {
+          "unresolved_unclear": 8,
+          "margin_placeholder": 0,
+          "diagram_placeholder": 0,
+          "crossed_out_placeholder": 0,
+          "raw_page_separator": 0,
+          "raw_newpage": 0
+        },
+        "new": {
+          "unresolved_unclear": 0,
+          "margin_placeholder": 0,
+          "diagram_placeholder": 0,
+          "crossed_out_placeholder": 0,
+          "raw_page_separator": 0,
+          "raw_newpage": 0
+        }
+      },
+      "structure_markers": {
+        "old": {
+          "chapter_heading": 1,
+          "toc_entry": 1,
+          "label_anchor": 1,
+          "leqno_numbering": 32,
+          "footnote": 0,
+          "tikzpicture": 0,
+          "tikzcd": 0,
+          "aligned_env": 1,
+          "operatorname": 11,
+          "user_macro_Ker": 4,
+          "user_macro_Aut": 1,
+          "user_macro_SL": 1,
+          "user_macro_defeq": 5,
+          "user_macro_isom": 0
+        },
+        "new": {
+          "chapter_heading": 1,
+          "toc_entry": 2,
+          "label_anchor": 1,
+          "leqno_numbering": 32,
+          "footnote": 5,
+          "tikzpicture": 1,
+          "tikzcd": 0,
+          "aligned_env": 5,
+          "operatorname": 15,
+          "user_macro_Ker": 4,
+          "user_macro_Aut": 7,
+          "user_macro_SL": 1,
+          "user_macro_defeq": 5,
+          "user_macro_isom": 1
+        }
+      },
+      "notation_drift_in_old": {
+        "hat_G_to_frakS": 0,
+        "text_int_to_op": 0,
+        "text_Norm_to_op": 1,
+        "Cent_to_Centr": 0,
+        "Zhat_bb_to_bf": 0,
+        "L_bb_to_upright": 0,
+        "lowerker_to_upper": 0,
+        "Sl_to_SL": 0,
+        "calC_to_frakS": 4,
+        "lowercase_g_to_calG": 4
+      },
+      "notation_drift_in_new": {
+        "hat_G_to_frakS": 0,
+        "text_int_to_op": 0,
+        "text_Norm_to_op": 0,
+        "Cent_to_Centr": 0,
+        "Zhat_bb_to_bf": 0,
+        "L_bb_to_upright": 0,
+        "lowerker_to_upper": 0,
+        "Sl_to_SL": 0,
+        "calC_to_frakS": 0,
+        "lowercase_g_to_calG": 1
+      },
+      "abbreviation_residue": {
+        "old": {
+          "abbr_hom": 0,
+          "abbr_autom": 0,
+          "abbr_ss_groupe": 1,
+          "abbr_s_g": 0,
+          "abbr_c_j": 0,
+          "abbr_cent": 0
+        },
+        "new": {
+          "abbr_hom": 0,
+          "abbr_autom": 0,
+          "abbr_ss_groupe": 0,
+          "abbr_s_g": 0,
+          "abbr_c_j": 0,
+          "abbr_cent": 0
+        }
+      },
+      "lengths": {
+        "old_chars": 9962,
+        "new_chars": 14714
+      }
+    },
+    "score": {
+      "raw_density_per_kchar": 0.8,
+      "notation_density_per_kchar": 0.9,
+      "abbr_density_per_kchar": 0.1,
+      "structure_coverage": 0.71,
+      "composite_penalty": 0.258,
+      "quality": 0.742
+    },
+    "length": 9962
+  },
+  "claude_pbp": {
+    "profile": {
+      "raw_pipeline_signals": {
+        "old": {
+          "unresolved_unclear": 23,
+          "margin_placeholder": 0,
+          "diagram_placeholder": 0,
+          "crossed_out_placeholder": 0,
+          "raw_page_separator": 0,
+          "raw_newpage": 0
+        },
+        "new": {
+          "unresolved_unclear": 0,
+          "margin_placeholder": 0,
+          "diagram_placeholder": 0,
+          "crossed_out_placeholder": 0,
+          "raw_page_separator": 0,
+          "raw_newpage": 0
+        }
+      },
+      "structure_markers": {
+        "old": {
+          "chapter_heading": 1,
+          "toc_entry": 1,
+          "label_anchor": 1,
+          "leqno_numbering": 52,
+          "footnote": 2,
+          "tikzpicture": 0,
+          "tikzcd": 0,
+          "aligned_env": 2,
+          "operatorname": 14,
+          "user_macro_Ker": 4,
+          "user_macro_Aut": 2,
+          "user_macro_SL": 0,
+          "user_macro_defeq": 4,
+          "user_macro_isom": 0
+        },
+        "new": {
+          "chapter_heading": 1,
+          "toc_entry": 2,
+          "label_anchor": 1,
+          "leqno_numbering": 32,
+          "footnote": 5,
+          "tikzpicture": 1,
+          "tikzcd": 0,
+          "aligned_env": 5,
+          "operatorname": 15,
+          "user_macro_Ker": 4,
+          "user_macro_Aut": 7,
+          "user_macro_SL": 1,
+          "user_macro_defeq": 5,
+          "user_macro_isom": 1
+        }
+      },
+      "notation_drift_in_old": {
+        "hat_G_to_frakS": 0,
+        "text_int_to_op": 0,
+        "text_Norm_to_op": 0,
+        "Cent_to_Centr": 0,
+        "Zhat_bb_to_bf": 0,
+        "L_bb_to_upright": 0,
+        "lowerker_to_upper": 0,
+        "Sl_to_SL": 0,
+        "calC_to_frakS": 0,
+        "lowercase_g_to_calG": 13
+      },
+      "notation_drift_in_new": {
+        "hat_G_to_frakS": 0,
+        "text_int_to_op": 0,
+        "text_Norm_to_op": 0,
+        "Cent_to_Centr": 0,
+        "Zhat_bb_to_bf": 0,
+        "L_bb_to_upright": 0,
+        "lowerker_to_upper": 0,
+        "Sl_to_SL": 0,
+        "calC_to_frakS": 0,
+        "lowercase_g_to_calG": 1
+      },
+      "abbreviation_residue": {
+        "old": {
+          "abbr_hom": 0,
+          "abbr_autom": 0,
+          "abbr_ss_groupe": 0,
+          "abbr_s_g": 0,
+          "abbr_c_j": 0,
+          "abbr_cent": 0
+        },
+        "new": {
+          "abbr_hom": 0,
+          "abbr_autom": 0,
+          "abbr_ss_groupe": 0,
+          "abbr_s_g": 0,
+          "abbr_c_j": 0,
+          "abbr_cent": 0
+        }
+      },
+      "lengths": {
+        "old_chars": 15548,
+        "new_chars": 14714
+      }
+    },
+    "score": {
+      "raw_density_per_kchar": 1.48,
+      "notation_density_per_kchar": 0.84,
+      "abbr_density_per_kchar": 0.0,
+      "structure_coverage": 0.71,
+      "composite_penalty": 0.339,
+      "quality": 0.661
+    },
+    "length": 15548
+  }
+}

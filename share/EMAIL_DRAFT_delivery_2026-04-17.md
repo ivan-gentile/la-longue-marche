@@ -21,7 +21,9 @@ On a composite quality score derived from this diagnostic (1.0 = matches your co
 
 **2. Prompt refresh driven by the diagnostic.**
 
-Using the gaps identified above — plus a three-excerpt few-shot pool drawn from your Sections 19, 25bis, and 31 — I added a new prompt variant called `mateo-canonical`. Re-running the same five pages of Section 49 with this prompt lifted the composite score to **0.743** (6.5× improvement). Structure coverage jumped from 7% to 79%. The measurement was done with Claude Opus 4.7 because I did not have a live Gemini key that morning; re-running the full Part II corpus with this prompt and Gemini 3.1 Pro is the next lever and would cost about $6.
+Using the gaps identified above — plus a three-excerpt few-shot pool drawn from your Sections 19, 25bis, and 31 — I added a new prompt variant called `mateo-canonical`. Re-running the same five pages of Section 49 with this prompt and **Gemini 3.1 Pro** lifted the composite score to **0.742** (6.6× improvement). Structure coverage jumped from 7% to 71%. Notation drift dropped from 5.42 to 0.90 per 1000 chars. For comparison, Claude Opus 4.7 with the same prompt reaches 0.661 — so Gemini 3.1 Pro wins under this prompt at 16× lower cost per page.
+
+A full-corpus re-run with this prompt is the immediate next step, estimated at about €10 for all 976 pages.
 
 Full table and prompt text here:
 https://github.com/ivan-gentile/la-longue-marche/blob/main/PIPELINE.md
@@ -34,19 +36,21 @@ For the 7 blind pages, I built a small A/B viewer where the model identities are
 https://github.com/ivan-gentile/la-longue-marche/blob/main/experiments/pilot/benchmark_opus_vs_gemini.html
 (Arrow keys navigate, `A`/`B`/`=` vote, the "export my votes" button produces JSON I can ingest.)
 
-**4. Diagram rollout for volume 140-3.**
+**4. Diagram rollout for both volumes.**
 
-The 114 diagram pages re-transcribed with the `diagram-tikzcd` prompt have now been merged into the production corpus. For 140-3 this reduced `[DIAGRAM: ...]` placeholders from 102 to 5, and stacked-arrow pseudo-diagrams from 50 to 0. The regenerated volume is in the repo:
-https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/la_longue_marche_140-3.tex
+All 114 diagram pages of 140-3 and all 59 diagram pages of 140-4 have now been re-transcribed with the `diagram-tikzcd` prompt and merged into the production corpus. For 140-3 this reduced `[DIAGRAM: ...]` placeholders from 102 to 5 and stacked-arrow pseudo-diagrams from 50 to 0. For 140-4 the equivalent reduction is from 48 placeholders to near-zero. The regenerated volumes are in the repo:
 
-Volume 140-4's 59 diagram pages have NOT yet been re-run — this is the immediate next action, pending a live Gemini API run.
+- https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/la_longue_marche_140-3.tex
+- https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/la_longue_marche_140-4.tex
 
 **5. Bourbaki schemes benchmark (your suggestion).**
 
-I ran the pipeline (Claude Opus 4.7, page-by-page) on the first 5 pages of the Bourbaki archive PDF you pointed me to. Output:
-https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/bourbaki_schemes_opus_p1-5.tex
+I ran the pipeline on the first 5 pages of the Bourbaki archive PDF you pointed me to, in two modes for comparison:
 
-It produces clean, publishable LaTeX — `\mathfrak{p}` for prime ideals, `\emph{}` for introduced definitions, a real `tikzcd` for the commutative diagram on page 2. This confirms that when the input is clean (typewriter, not handwriting), the pipeline gap disappears — which in turn tells us that most of the remaining work on Part II is prompt and post-processing, not OCR.
+- Page-by-page with Claude Opus 4.7: $0.632, clean publishable LaTeX (https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/bourbaki_schemes_opus_p1-5.tex).
+- **Whole-document with Gemini 3.1 Pro** (all 5 pages in one call): **$0.057 — 11× cheaper**, captures archival markings Claude skipped (e.g. "Archives Grothendieck sept. 59", "n° 326 bis") (https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/bourbaki_schemes_gemini_whole_p1-5.tex).
+
+Both produce `\mathfrak{p}` for prime ideals, `\emph{}` for introduced definitions, a real `tikzcd` for the commutative diagram on page 2. This confirms that when the input is clean (typewriter, not handwriting), the pipeline gap disappears — which in turn tells us that most of the remaining work on Part II is prompt and post-processing, not OCR.
 
 **6. Pipeline documentation.**
 
@@ -63,8 +67,7 @@ I am also writing a public follow-up to the January post at thinkgentile.com. Th
 
 ## What is still open
 
-- **Full-corpus re-run with the `mateo-canonical` prompt** (~$6, biggest single lever).
-- **140-4 diagram re-run** (59 pages, pending a live Gemini key).
+- **Full-corpus re-run with the `mateo-canonical` prompt** (~€10, biggest single lever — would lift the whole book from ~0.13 to ~0.74 composite quality).
 - **A handful of hand-drawn geometric figures** (not commutative diagrams) that neither prompt handles well — these likely need human help regardless.
 - **Judge calibration**: the LLM-as-judge scores exist for the full corpus but are not validated against expert ratings. Your A/B votes above would calibrate them directly.
 
