@@ -1,0 +1,106 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 25 bis. --- CAS DES DEUX GROUPES. RETOUR SUR LES NOTATIONS}\thispagestyle{empty}
+\addcontentsline{toc}{section}{25 bis. ``Cas des deux groupes'' d'opérateurs; retour sur les notations}
+\label{sec:25bis}
+\section*{}
+
+On se place d'abord pour fixer les idées dans le cas topologique et discret, mais la motivation est le cas d'un courbe algébrique $U$ sur un corps de type fini $K$, où on a à la fois le groupe $G_K = \Aut_K(U)$\footnote{Cas anabélien donc $G$ fini.} et $\Gamma = \Gal(\overline{K}/K)$ qui opérant extérieurement sur le $\pi_1(U_{\overline{K}})$.
+
+Dans ce cas, $G$ et $\Gamma$ commutent, mais on peut regarder plus généralement le cas du groupe (plus gros que $G_K$) $G_{\overline{K}} = \Aut_{\overline{K}}(U)$, sur lequel $\Gamma$ opère (de fa\c{c}on pas nécessairement triviale - cette opération décrit un groupe algébrique étale fini sur $K$).
+
+Supposons donc qu'on ait une surface $U$ (orientable, $U = X \setminus S$, $X$ compacte connexe, $S$ finie) sur laquelle opère deux groupes $G$, $\Gamma$, l'action de $\Gamma$ normalisant celle de $G$ - donc on a un groupe $\mathcal{G} = \Gamma G$ (produit semi-direct, pour une certaine action de $\Gamma$ sur $G$) qui opère sur $U$. On suppose $G$ fini, mais pas nécessairement $\Gamma$ fini.
+
+On suppose choisi un revêtement universel $\widetilde{U}$ de $U$, d'où un groupe à lacets $\pi = \Aut(\widetilde{U})$, sur lequel $\mathcal{G}$ opère extérieurement, d'où l'extension
+$$
+1 \to \pi \to E \to \mathcal{G} \to 1 \leqno{(1)}
+$$
+Si l'action de $\mathcal{G}$ sur $U$ est fidèle, alors $\mathcal{G} \hookrightarrow \Autext(\pi)$, et l'extension précédente est l'image inverse de l'extension de Teichmüller de $\pi$
+$$
+1 \to \pi \to \Aut_{\text{lac}}(\pi) \to \Autext_{\text{lac}}(\pi) \to 1
+$$
+On aura à regarder d'autres revêtements universels que $\widetilde{U}$, et leurs isomorphismes avec $\widetilde{U}$. Quand $\widetilde{U} = \widetilde{U}(P)$ est le revêtement universel basé en un certain $P \in U$, alors pour les revêtements universels $U(Q)$ basés en un point, les $U$-isomorphismes $\widetilde{U}(P) \isommap \widetilde{U}(Q)$ correspondent donc aux classes de chemins de $P$ à $Q$.
+
+Soit $Q \in U$ tel que son sous-groupe d'isotropie $G_Q$ dans $G$ soit tel que $G^+_Q \neq 1$. (Donc $G^+_Q$ est cyclique). Choisissant une classe de chemins de $P$ à $Q$, on trouve une opération de $G_Q$ sur $\widetilde{U}(P)$ i.e. un relèvement $G_Q \xlongrightarrow{r_{G_Q}} E$ dans l'extension (1) - le changement de classe de chemins de $\lambda$ en $\lambda'$ donnera un relèvement $r'_{G_Q}$ qui sera conjugué de $r$ par un unique élément de $\pi = \pi_1(U, P)$ (l'unicité provient de $\pi^{G_Q} = {1}$), savoir celui qui fait passer d'un chemin à l'autre.
+
+Considérons le stabilisateur $\Gamma_Q$ de $Q$ dans $\Gamma$, qui opère bien sur $\widetilde{U}(Q)$ tout comme $G_Q$ (en fait c'est $\mathcal{G}_Q$ qui opère d'où $r: \mathcal{G}_Q \to E$\dots), donc via $\lambda$ on a aussi un relèvement $r_{\Gamma_Q}: \Gamma_Q \to E$, qui a la même propriété de normaliser $r_{G_Q}$ (avec opération de $\Gamma_Q$ dessus, qui est celle provenant de l'opération de $\Gamma$ sur $G$)\footnote{N. B. Comme l'ensemble des points $Q$ est fini, et que $\mathcal{G}$ opère dessus, l'orbite de $Q$ sous $\mathcal{G}$ est finie, i.e. $\mathcal{G}_Q$ est d'indice fini dans $\mathcal{G}$ et de même $\Gamma_Q$ sous $\Gamma$.}. Pour simplifier, supposons quand même que $\Gamma$ opère trivialement sur $G$ i.e. $\mathcal{G} = \Gamma \times G$, alors $r_{\Gamma_Q}(\Gamma_Q) \subset  E$est contenu dans le \emph{centralisateur} de $r$ (ou de $r(G_Q)$) et comme $\pi^{r(G_Q)} = 1$, donc l'homomorphisme
+$$
+\Centr(r(G_Q)) \to \mathcal{G}
+$$
+est injectif\footnote{N. B. Indépendamment de toute hypothèse que $\Gamma$ centralise $G$, le normalisateur de $r(G_Q)$ dans $\pi$, égal à son centralisateur, est réduit à 1, donc $\Norm(r(G_Q)) \to \mathcal{G}$ est injectif.}, le relèvement en question $r_{\Gamma_Q}$ est uniquement déterminé par la condition précédente.
+
+En ait, l'image de $\Centr r(G_Q)$ dans $\mathcal{G}$ contient $\mathcal{G}_Q$, et on [] de même le relèvement $\mathcal{G}_Q \xlongrightarrow{r_{G_Q}} E$. La chose intéressante, c'est que le choix d'un relèvement du (petit) groupe $\mathcal{G}_Q$, impose déjà le choix d'un relèvement du (grand) groupe $\Gamma_Q$, ou $\mathcal{G}_Q$.
+
+Je dis   que l'image dans $\mathcal{G}$ du centralisateur (et même du normalisateur) de $r(G_Q)$ est $\mathcal{G}_Q$ lui même (a priori il le contient).
+
+Revenant à $\widetilde{U}(Q)$ lui-même, cela signifie que si $g \in \mathcal{G}$ est tel qu'il existe un automorphisme $\widetilde{g}$ de $\widetilde{U}(Q)$ qui relève $g$, en normalisant l'action de $G_Q$, alors $g \in \mathcal{G}_Q$ et $\widetilde{g}$ est le relèvement évident). En effet, si $\widetilde{g}$ normalise l'action de $G_Q$, il invarie l'ensemble des points fixes de $G_Q$ dans $\widetilde{U}(Q)$, qui est réduit au point $\overline{Q}$.
+
+L'ensemble $U^!$ des points $Q \in U$ tels que $G^+_Q \neq (1)$ est stable par l'action de $\mathcal{G}$, et s'identifie (avec cette action) à l'ensemble des relèvements maximaux modulo $\pi$ de sous-groupes (cycliques) $\neq 1$ de $G^+$.
+
+Quand on connaît, pour un relèvement partiel $r$ d'un $G_Q$ dans $E$, i.e. le relèvement correspondant de $\mathcal{G}_Q$, alors de même pour les conjugués de $r$ par n'importe quel élément $g$ (non seulement de $\pi_1$ mais même de $E$), par simple conjugaison. Donc les cas à déterminer correspondent pratiquement aux orbites de $\mathcal{G}$ dans $U^!$. 
+
+On peut s'intéresser à décrire $\mathcal{G} \to \Gamma$ en tant que sous-groupes de $\Autext_{\text{lac}}(\pi) = \Gamma'$ donnant lieu à l'extension $E'$ de $\Gamma'$ par $\pi$ (donc $E \subset  E'$). Mais pour tout relèvement $r$ d'un $G_Q$, considérons $\Centr_{E'}(r)$, on a encore $\Centr_{E'} \cap \pi = (1)$ i.e. on trouve une section au dessus de l'image de ce centralisateur dans $\Gamma'$, soit $\Gamma'(Q)$. Cette image ne dépend que de $Q$ i.e. de la classe de $\pi$-conjugaison de $r$ ou de $r(G_Q)$, et est remplacée par un $G$-conjugué quand $Q$ est remplacé par un $G$-conjugué. Ceci dit, l'intersection $\Gamma'^\natural$ des $\Gamma'(Q)$, pour $Q \in U^!$, est un sous-groupe de $\Gamma'$ qui contient l'intersection $\mathcal{G}^\natural$ des $\mathcal{G}_Q$, et le centralisateur de $G$ dans $\Gamma'\natural$ contient de même l'intersection $\Gamma^\natural$ des $\Gamma_Q$, qui est un sous-groupe invariant d'indice fini de $\Gamma$. Et on peut alors se proposer de voir s'il est posssible de caractériser au moins le sous-groupe fini $\Gamma^\natural$ de $\Gamma$ comme $\Centr_{\Gamma'^\natural}(G)$, et de récupérer peut être $\Gamma$ comme le normalisateur de $\Gamma^\natural$ dans $\Centr_G(\Gamma)$.
+
+Je m'intéresse plus particulièrement à la variante profini de ceci, dans le cas où $U = \mathbb{P}^1_{\mathbf{Q}} \setminus {0, 1, \infty}$, $G = \mathfrak{S}_3$, $\Gamma =$ groupe de Galois sur $\mathbf{Q}$ de la clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$ dans $\mathbf{C}$ et $p = \text{exp}(2i\pi/6)$.
+
+Je n'ai pas vérifier que $\Gamma \to \Autext_{\text{lac}}(\widehat{\pi})$ soit injectif, cela m'empêche de faire des calculs dans $\Aut_{\text{lac}}(\widehat{\pi})$, fussent-ils heuristiques pour le moment.
+
+Je bute sur des ennuis de notations - trop de groupes sont désignés par la lettre $\Gamma$ (avec éventuellement des primes, indices, exposants\dots) Il y a trois types de groupes qui interviennent dans mes réflexions :
+\begin{enumerate}
+    \item[a)] Les groupes de Teichmüller et ses variantes, qui jouent le rôle de groupes ``universels'' opérant (éventuellement modulo isotopie) sur des surfaces, ou sur des groupes extérieurs à lacets. Ces groupes ont tendance à être infinis.
+    \item[b)] Des groupes (le plus souvent finis) opérant sur des surfaces topologiques, ou sur des courbes algébriques (sans, dans ce cas là, bouger le corps de base).
+    \item[c)] Des groupes de Galois profinis (donc infinis), surtout de corps de type fini sur $\mathbf{Q}$, opérant ``arithmétiquement'' sur des surfaces et leurs $\widehat{\pi}_1$-géométriques\footnote{Les cas b) et c) se mélangent parfois (dans un groupe $\mathcal{G}$ extension d'un groupe de Galois $\Gamma$ par un groupe fini $G$) dans le cas de la Géométrie Algébrique.}.
+\end{enumerate}
+
+C'est à cause des analogies profondes entre les cas b) et c), et leurs relations étroites avec le cas a), que j'avais été induit à adopter des notations communes, mais qui à la longue finissent par aboutir à des collisions. Il y a donc lieu de revoir les notations. Je vais réserver la lettre $G$ et variantes pour des actions géométriques (cas b)) de groupes, le plus souvent finis, la lettre $\Gamma$ et variantes pour des groupes de Galois, la lettre $\mathcal{G}$ pour des groupes mixtes.
+
+Quant aux groupes ``universels'' de type Teichmüller, comme ceux notés $\Gamma_{g, \nu}$ précédemment, je vais plutôt les noter $\mathfrak{T}$, $\mathfrak{T}_{g, \nu}$ (initiale de ``Teichmüller'', alors que $\Gamma$, $G$ sont l'initiale de Galois).
+
+Le groupe de Galois sur $\mathbf{Q}$ de la clôture $\overline{\mathbf{Q}}$ de $\mathbf{Q}$ dans $\mathbf{C}$ mérite une lettre spéciale, je le noterai $\boldsymbol{\Gamma}$. Le quotient $\Norm_{\widehat{\mathfrak{T}}_{g, \nu}}(\widehat{\mathfrak{T}}_{g, \nu})/(\widehat{\mathfrak{T}}_{g, \nu})$, qui s'apparente plus à un groupe de Galois qu'à un group de Teichmüller, sera noté $\boldsymbol{\Gamma}_{g, \nu}$ (lettre grasse !). Dans le cas $(g, \nu) = (0, 3)$ qui m'occupe plus particulièrement, $\boldsymbol{\Gamma}_{0, 3}$\footnote{$\boldsymbol{\Gamma}$ est ici produit semi-direct de $\mathfrak{S}_3 = \mathfrak{T}^+$ par $\mathfrak{T}^!$.} s'identifie au centralisateur de $G = \mathfrak{S}_3 = \mathfrak{T}^+_{0, 3}$ dans $\hat{\hat{\mathfrak{T}}}_{0, 3}$ il est contenu dans $\hat{\hat{\mathfrak{T}}}^!_{0, 3}$, et peut-être égal. On a un homomorphisme canonique $\boldsymbol{\Gamma} \to \boldsymbol{\Gamma}_{0, 3}$ (plus généralement $\Gamma \to \Gamma_{g, \nu}$) dont j'ignore pour l'instant s'il est injectif, et encore plus s'il est surjectif. Les réflexions qui précèdent suggèrent des conditions sur l'image, qui sont surtout intéressantes si on admet les relations
+$$
+\widehat{\pi}^\rho S = \widehat{\pi^{\sigma_0}} = (1)
+$$
+On a désigné par $E_{g, \nu}$ l'extension canonique de $\mathfrak{T}_{g, \nu}$ par $\pi_{g, \nu}$ (qui pour $(g, \nu)$ anabélien s'identifie à $\mathfrak{T}'_{g, \nu + 1}$). L'opération extérieure d'un groupe $G$, $\Gamma$, $\mathcal{G}$ définit aussi une extension par $\pi$ (ou par $\widehat{\pi}$), qu'on a également désigné par la lettre $E$ (initiale d'extension) - il y a à nouveau collisions de notations.
+
+Je vais prendre la lettre $\mathfrak{S}$ (qui fait penser à $\mathfrak{T}$) pour ces extensions dans les cas universels à la Teichmüller, (en écrivant $\mathfrak{S}_{g, \nu}$ au lieu de $\Gamma'_{g, \nu+1}$, puisque l'optique est différente\dots), et en gardant la lettre $E$ dans le cas précédent. Donc $E$ a tendance à être une sous-extension d'un $\mathfrak{S}$.
+
+Admettant que $\boldsymbol{\Gamma} \to \boldsymbol{\Gamma}_{0, 3}$ est injectif, on aurait donc
+\[\begin{tikzcd}
+	1 & {\widehat{\pi}_{0, 3}} & {\widehat{\widehat{\mathfrak{S}}}_{0, 3}} & {\widehat{\widehat{\mathfrak{T}}}_{0, 3}} & 1 \\
+	1 & {\widehat{\pi}_{0, 3}} & {\widehat{\widehat{\mathfrak{S}'}}_{0, 3}} & {\mathfrak{T}^+_{0, 3} \times \boldsymbol{\Gamma}_{0, 3}} & 1 \\
+	1 & {\widehat{\pi}_{0, 3}} & E & {\mathfrak{S} \times \boldsymbol{\Gamma}} & 1 \\
+	1 & {\widehat{\pi}_{0, 3}} & {\mathfrak{S}_{0, 3}} & {\mathfrak{S}_3 \times \mathbf{Z}/2} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-1, to=2-2]
+	\arrow[hook, from=4-2, to=3-2]
+	\arrow["\isom", from=2-2, to=1-2]
+	\arrow["\isom", from=3-2, to=2-2]
+	\arrow[hook, from=2-3, to=1-3]
+	\arrow[hook, from=2-4, to=1-4]
+	\arrow[hook, from=3-4, to=2-4]
+	\arrow[from=3-4, to=3-5]
+	\arrow[from=3-3, to=3-4]
+	\arrow[from=3-2, to=3-3]
+	\arrow[hook, from=3-3, to=2-3]
+	\arrow[from=4-2, to=4-3]
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=4-1, to=4-2]
+	\arrow[from=4-3, to=4-4]
+	\arrow[from=4-4, to=4-5]
+	\arrow[hook, from=4-4, to=3-4]
+	\arrow[hook, from=4-3, to=3-3]
+\end{tikzcd}\]
+N. B. On note $\widehat{\widehat{\mathfrak{S}}}'_{g, \nu}$ le normalisateur de $\widehat{\mathfrak{S}}^+_{g, \nu}$ dans $\widehat{\widehat{\mathfrak{S}}}_{g, \nu}$, extension de $\boldsymbol{\Gamma}_{g, \nu}$ par $\widehat{\mathfrak{S}}^+_{g, \nu}$.
+
+Si $\gamma \in \boldsymbol{\Gamma}_{0, 3}$, pour qu'il soit dans l'image de $\boldsymbol{\Gamma}$ il faut qu'il admette un relèvement $u$ qui commute à $\rho$, et un relèvement qui commute à $\sigma_0$ (ce qui, dès que $\gamma \in \widehat{\widehat{\mathfrak{T}}}_{0, 3}$, implique déjà que $\gamma$ dans $\widehat{\widehat{\mathfrak{T}}}_{0, 3}$ commute à $\mathfrak{T}^+_{0, 3} = \mathfrak{S}_3$, i.e. qu'ils est dans $\boldsymbol{\Gamma}_{0, 3}$). Il se pourrait que tout élément de $\boldsymbol{\Gamma}_{0, 3}$ ait déjà cette propriété, donc que cette condition ne pose pas de restriction sur l'image de $\boldsymbol{\Gamma}$ dans $\boldsymbol{\Gamma}_{0, 3}$. 
+
+
+% End

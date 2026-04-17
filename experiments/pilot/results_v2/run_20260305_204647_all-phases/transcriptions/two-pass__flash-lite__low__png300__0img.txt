@@ -1,0 +1,255 @@
+Condition: two-pass__flash-lite__low__png300__0img
+Prompt: two-pass, Model: flash-lite, Thinking: low, Format: png300, PrevImages: 0
+============================================================
+
+
+========================================
+PAGE 5 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+PASS 1 — Raw Reading
+
+[MARGIN, vertical text: "Prop. 1.3 si E est un topos multigaloisien, ..." (some obscured text)]
+1. Topos multigaloisiens.
+Prop 1.1. Soit E une catégorie. Conditions
+équivalentes:
+a) E est un topos, et tout objet de E est
+loc. constant.
+b) E est équivalent à une catégorie C
+ou C est un groupoide 0-semé [?divisé?]
+NB. b) [??] une famille (Gi) i in I de groupes
+et une équivalence de catégories
+E [isomorphic] II Ens(Gi)
+c) Conditions d'exactitude ad-hoc, du type
+de celles donnés dans SGA 1...
+Dim. b [implies] a immédiat. Pour a) [implies] b)
+je vois mieux sûr, pour une famille d'objets
+E est loc connexe, et qu'il est suffisan-
+-ment de foncteurs fibres i.e. suffisan-
+-ment de points.
+Def. 1.1. Si les conditions équivalentes b) [or] c)
+ci-dessus sont satisfaites, on dit que E
+est un topos multigaloisien (ou catégorie
+multigaloisienne)
+
+[MARGIN, vertical text: "a) et b) sont des conditions multigaloisiennes"]
+
+=== PASS 2 (Clean Output) ===
+
+## 1. Topos multigaloisiens.
+
+Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions
+équivalentes:
+
+a) $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est
+loc. constant.
+
+b) $\mathcal{E}$ est équivalent à une catégorie $\mathcal{C}$
+où $\mathcal{C}$ est un groupoïde 0-semé
+NB. b) $\exists$ une famille $(G_i)_{i \in I}$ de groupes
+et une équivalence de catégories
+$\mathcal{E} \simeq \coprod \text{Ens}(G_i)$
+
+c) Conditions d'exactitude ad-hoc, du type
+de celles donnés dans SGA 1...
+
+Dim. b $\implies$ a immédiat. Pour a) $\implies$ b)
+je vois mieux sûr, pour une famille d'objets
+$\mathcal{E}$ est loc. connexe, et qu'il est suffisan-
+-ment de foncteurs fibres i.e. suffisan-
+-ment de points.
+
+Def. 1.1. Si les conditions équivalentes b) ou c)
+ci-dessus sont satisfaites, on dit que $\mathcal{E}$
+est un topos multigaloisien (ou catégorie
+multigaloisienne)
+
+[MARGIN: Prop. 1.3 si $\mathcal{E}$ est un topos multigaloisien, ...]
+[MARGIN: a) et b) sont des conditions multigaloisiennes]
+
+
+========================================
+PAGE 50 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+PASS 1 — Raw Reading
+
+concepteur de des syst. d'iso.
+$\mu_{\alpha} : f_{\alpha} \to f_{\alpha}'$, $\mu_{\alpha}^* f_{\alpha} \to g_{\alpha}$. Ce concepteur
+[marginal left]
+exprime d'
+l'existence de $\mu_{\alpha}$
+condition $c'=\tau$, $d_i' = d_i, \forall i \in I'$ et
+Le domaine de ceci résulte
+des conditions
+a) $\mu \in \mathcal{E}$, définira un iso
+entre $f_{\alpha} : \mathcal{E}' \to \mathcal{E}$ et $f_{\alpha}' : \mathcal{E}' \to \mathcal{E}$
+i.e. $f_{\alpha} \to g_{\alpha}$
+$f_{\alpha}' = \text{int}(\mu) f_{\alpha}$
+b) $\mu_i \in \mathcal{E}_i$ (i $\in$ I, i = i(n))
+décrit $\mu_{\alpha}^*$ satisfaisant
+$f_i' = \text{int}(\mu_i) f_i$
+au moyen de $\mu$
+, $d_i = d_i'$
+les $\mu, \mu_i$ et $\alpha, \alpha'$ liés aux $\alpha, \alpha'$ de $(\mathcal{E}, \mathcal{E})$
+$\alpha_i, \alpha_i'$ ($\in \Gamma$) de la f...
+suivants
+$\alpha' = p(\mu)\alpha$
+$\alpha_i' = f_i(\mu_i)\alpha_i$ $\forall i \in I'$
+on a
+$p(\mu) = \alpha' \alpha^{-1}$
+$f_i(\mu_i) = \alpha_i' \alpha_i^{-1}$
+50
+
+=== PASS 2 (Clean Output) ===
+
+concepteur de des syst. d'iso.
+$\mu_{\alpha} : f_{\alpha} \to f_{\alpha}'$, $\mu_{\alpha}^* f_{\alpha} \to g_{\alpha}$. Ce concepteur
+
+[MARGIN: exprime d'l'existence de $\mu_{\alpha}$]
+
+condition $c'=\tau$, $d_i' = d_i, \forall i \in I'$ et
+Le domaine de ceci résulte
+des conditions
+
+a) $\mu \in \mathcal{E}$, définira un iso
+entre $f_{\alpha} : \mathcal{E}' \to \mathcal{E}$ et $f_{\alpha}' : \mathcal{E}' \to \mathcal{E}$
+i.e. $f_{\alpha} \to g_{\alpha}$
+$f_{\alpha}' = \text{int}(\mu) f_{\alpha}$
+
+b) $\mu_i \in \mathcal{E}_i$ ($i \in I, i = i(n)$)
+décrit $\mu_{\alpha}^*$ satisfaisant
+$f_i' = \text{int}(\mu_i) f_i$
+
+au moyen de $\mu$, $d_i = d_i'$
+les $\mu, \mu_i$ et $\alpha, \alpha'$ liés aux $\alpha, \alpha'$ de $(\mathcal{E}, \mathcal{E})$
+$\alpha_i, \alpha_i'$ ($\in \Gamma$) de la famille
+suivants
+
+$\alpha' = p(\mu)\alpha$
+
+$\alpha_i' = f_i(\mu_i)\alpha_i$ $\forall i \in I'$
+
+on a
+
+$p(\mu) = \alpha' \alpha^{-1}$
+$f_i(\mu_i) = \alpha_i' \alpha_i^{-1}$
+
+50
+
+
+========================================
+PAGE 52 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+PASS 1 — Raw Reading
+
+Pi - si [?j'essaie?] [?ali?] - [?main?] explique le [?j?]
+de il semble bien [?que?] [?que?] (dans les cas
+[?correspondants?] : des [?hom?] dominants de
+[?classes?] [?logiques?] ) une [?hom?] [?morphisme?]
+d'un f [?et?] f' [?est?] [?cont?] et
+unique, in [?Hom?] (D', D") [?une?] catégorie
+discrète.
+
+On peut interpréter D comme E muni
+de sous-groupes E_i c E, et de p: E -> P_x
+(noyau pi) enfin des [?isomorphismes?]
+k_i : J(M) ~ E_i x K = L_i
+(commentat : l'otr... de E_i ). La ...
+... un ... ... syste (E; (E_i; i, i' i', i' )
+... E'
+(K_i; i, i' ) ; un [?morphisme?] de
+[?pourvu?] des [?e?] ... [?défi?] par
+...
+f : E' -> E
+satisfaisant les conditions suivantes
+b) pf est conjugué de f' [?soit?] [?alpha?] [?tel?] que pf = int(alpha) p']
+a) Vi' € I', Ei+I tel que f(E'i)
+soit contenu des un sous-groupe de Ei
+[?soit?] alpha € E tel que f(E_i') c int(alpha_i)(E_i)
+... [?int(alpha)(f(E_i'))?] c E_i
+
+=== PASS 2 (Clean Output) ===
+
+## Transcription
+
+Pi - si j'essaie ali - main explique le [?]
+de il semble bien que dans les cas
+correspondants : des hom dominants des
+classes logiques ) une homomorphisme
+d'un f et f' est cont et
+unique, in Hom (D', D") une catégorie
+discrète.
+
+On peut interpréter D comme E muni
+de sous-groupes E_i $\subset$ E, et de p: E $\to$ P_x
+(noyau $\pi$) enfin des isomorphismes
+k_i : J($\bar{M}$) $\simeq$ E_i x K = L_i
+(commentat : l'otr. de E_i ). La ...
+... un ... ... syste (E; (E_i; i, i', i' )
+... E'
+(K_i; i, i' ) ; un morphisme des
+... de E ... défi par
+...
+f : E' $\to$ E
+satisfaisant les conditions suivantes
+b) pf est conjugué de f' [soit $\alpha$ tel que pf = int($\alpha$)p']
+a) $\forall$i' $\in$ I', $\exists$i $\in$ I tel que f(E'_i)
+soit contenu dans un sous-groupe de E_i
+[soit $\alpha_i$ $\in$ E tel que f(E_i') $\subset$ int($\alpha_i$)(E_i)]
+... [int($\alpha$)(f(E_i'))) $\subset$ E_i]
+
+
+========================================
+PAGE 54 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+PASS 1 — Raw Reading
+
+8. Réflexion taxonomique.
+Le cas dim X = 0 se traduit sur le paradigme
+du système (T(K) ki -> E; pi -> E -> [?Gamma?] [?crossed out?] [?par?] le
+condition [?crossed out?] p injectif, donc se décrit [?par?]
+simplement par la donnée d'un sous-groupe
+ouvert E [?subset?] [?Gamma?], i.e. d'une sous-extension finie K
+de K[bar] / K CNB ... aussi bien sur X' = Spec K, le
+les [?crossed out?] [?fait?] sur X [?bar?] - bon tion - [?a?] cette description -
+K-
+aisément ici au delà d'une telle immersion
+de [?Gal?] = Hom(X, C) de K[bar]/K )
+Le cas dim X = 1 se traduit par le fait
+que E -> [?Gamma?] n'est pas injectif - [?quant?] [?a?]
+I, il peut être vide ou non dans ce cas.
+S'il est vide, la prescription a fait état
+simplement [?d'un?] [?le?] [?lemme?] d'un hom de
+groupes finis E -> [?Gamma?] [?où?] [?Gamma?] [?donne?] [?donne?]
+= Gal(K[bar]/K) [?]=? Aut[?pi?](Omega).
+Supposons donnés, maintenant à la fois
+D = (E, p, I, (pi : E_i -> E), (ki : T(K) -> E_i))
+et D' = (E', p', I', (pi' : ... ), (ki' : ... ))
+et revenons à [?la?] question de la description
+des morphismes de D' dans D. On
+va distinguer quatre cas, suivant les deux valeurs
+
+=== PASS 2 (Clean Output) ===
+
+## 8. Réflexion taxonomique.
+
+Le cas dim X = 0 se traduit sur le paradigme du système $(T(\bar{K}) \xrightarrow{k_i} E; \pi_i : E \to \Gamma)$ par le condition p injectif, donc se décrit simplement par la donnée d'un sous-groupe ouvert $E \subset \Gamma$, i.e. d'une sous-extension finie $K$ de $\bar{K}/K$ CNB ... aussi bien sur $X' = \text{Spec } K$, les faits sur $\bar{X}$ - bon tion - à cette description - $K$-aisément ici au delà d'une telle immersion de $\text{Gal} = \text{Hom}(X, \mathcal{C})$ de $\bar{K}/K$.
+
+Le cas dim X = 1 se traduit par le fait que $E \to \Gamma$ n'est pas injectif - quant à $I$, il peut être vide ou non dans ce cas. S'il est vide, la prescription a fait état simplement d'un lemme d'un hom de groupes finis $E \to \Gamma$ où $\Gamma$ donne = $\text{Gal}(\bar{K}/K) = \text{Aut}_{\pi}(\Omega)$.
+
+Supposons donnés, maintenant à la fois 
+$D = (E, p, I, (\pi_i : E_i \to E), (k_i : T(\bar{K}) \to E_i))$
+et $D' = (E', p', I', (\pi'_i : \dots), (k'_i : \dots))$
+et revenons à la question de la description des morphismes de $D'$ dans $D$. On va distinguer quatre cas, suivant les deux valeurs
+

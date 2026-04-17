@@ -1,0 +1,535 @@
+Experiment D — gemini-3.1-flash-lite-preview
+============================================================
+
+
+========================================
+PAGE 1 (merged from strips)
+========================================
+
+Pages 1-292 + table des matières
+
+% --- strip boundary ---
+
+[continues above]
+
+[MARGIN: EXIL]
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+[MARGIN: EXIL]
+
+1
+
+https://grothendieck.umontpellier.fr
+
+[continues below]
+
+
+========================================
+PAGE 2 (merged from strips)
+========================================
+
+La "longue marche" à travers la théorie de Galois...
+
+1. Topos multigaloisiens 1
+2. Appl. aux rev. des topos 4
+3. Variantes pré-multigaloisiens \} 6
+4. Compléments rendus 
+5. Introduction des contacts orbitiques.
+   "Conjecture orbitique" fondamentale 71
+6. Analyse locale de $(X, S)$ en un $s \in S$. 101
+7. Reformulations "orbitiques" de la conjecture
+   (le purgatoire nécessaire...) 12
+8. Réflexion taxonomique (distinction de 251
+   cas : le purgatoire s'aménage un peu...)
+9. Structures tangentielle en les $s \in S$ 34
+
+% --- strip boundary ---
+
+9. Structures tangentielles en les $s \in S$
+    (sections d'extensions "de deuxième type") 34
+
+10. Ajustements des hypothèses (taquineries) 38
+
+11. Conditions sur les syst. de groupoïdes 39
+    obtenus à partir de situations géométriques
+
+12. L'analogie topologique (d'où se com- 43
+    prend aussi que le bordé groupoïdal peut
+    s'exprimer complètement, dans les condi-
+    tions, par le gr. ext. : locaux...)
+
+13. Retours sur les analogies : fourmilier 53
+    l'ours "galoisien"
+
+13 bis. Retour sur la notion de groupe : locaux 56
+
+14. Discussion algébrique sur le "bondage" [continues below] 58
+
+% --- strip boundary ---
+
+14. Discussion algébrique sur le "bondage" 58
+    de tores")
+
+15. Retour sur le cas topologique : orbites 67
+    critiques au niveau du scindage d'extensions
+    Application aux sous-groupes finis du
+    Autech(T) (cas discret) (fourni §18)
+
+16. Bondage et fixage de tores : préliminaires 79
+    topologiques généraux
+
+17. Compléments §15, sur gr. de groupes 89
+    finis sur des surfaces
+
+
+========================================
+PAGE 3 (merged from strips)
+========================================
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+18. Fovage de trous. Applic. aux rev. finis de Autext($\Pi$) (cas discrets) \hfill 91
+
+19. Tour de Teichmüller \hfill 102
+
+20. Digression : description 2-isotopies des cat. des topos topologiques \hfill 116
+
+21. Les espaces de Teichmüller \hfill 125
+
+[MARGIN: manque §22!]
+
+23. Retour sur les surfaces à trous (finis) d'opérateurs : "mise en équation" du Pb) \hfill 133
+
+24. Essai de détermination de $\Gamma$. Liens aux relations $\Pi_g(v, v+n-1) = (1)$, programme de travail \hfill 142
+
+25. Courbes de Teichmüller "spéciales" \hfill 148
+
+25 bis. "Cas des deux groupes" d'opérateurs. Retour sur les notations. \hfill 153
+
+25. Courbes de Teichmüller profinis. Discrétisations et prédéscritifications. liens avec topos modulaire de Teichmüller. Conjecture hâtive. \hfill 161
+
+27. Changement de type $(g,v)$ : a) bouchage de trous (cet diagramme ... p. 174) \hfill 172
+
+b) passage : [unclear] rev. fini \hfill 177
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+32. Retour sur les aspects arithmétiques des bouchages de trous : relations entre $\Pi_{g,v}$ et $\Pi_{g,v-1}$. (où on reconstitue, sous le [unclear] la topos étoile d'un [unclear] algébrique à partir de $\Pi_1$ d'un ouvert [unclear]...) \hfill 200
+
+33. Digression topologique : anticommutations des surfaces orientées compactes (on laisse [unclear: de côté] d'abord le cas "à trous") \hfill 221
+
+35. L'injectivité de $\Gamma_Q \to \text{Autext}(\hat{\Pi}_{g,v})$ \hfill 249
+
+36. L'isomorphisme $\Gamma_Q \simeq \Pi_{g,v}$ et l'injectivité $\Gamma_Q \to \text{Autext}(\Pi_{g,v}) = \text{Autext}(SL(2, \mathbb{Z})^\wedge)$ \hfill 257
+
+37. Modules des courbes elliptiques, via Legendre, où $M_{1,1}[2] \simeq M_{0,3} \neq M_{0,4}$ \hfill 272
+
+33. Relations entre $N_{g,v}, \Pi_{g,v}$ pour $g$ variable (cas des rev. finis) \hfill 239
+
+34. Description heuristique profinie de la cat. des courbes alg. définies sur des [unclear: corps] de $\bar{\mathbb{Q}}/\mathbb{Q}$ \hfill 245
+\end{minipage}
+
+% --- strip boundary ---
+
+27. Changement de type $(g,v)$ : a) bouchage de trous (cet diagramme ... p. 174) \hfill 172
+
+28. Chgt. de type $(g,v)$ : b) passage à un rev. fini \hfill 177
+(la conjecture hâtive [unclear]...)
+
+29. Critique de l'approche précédente. (Des [unclear] justes des notions et les conjectures...) \hfill 185
+
+30. Propriétés des $N_{g,v}, \Pi_{g,v}$ : c) Propriétés liées aux sous-groupes finis de Teichmüller. \hfill 192
+
+31. Digression sur les relèvements d'une extention d'un groupe fini par un groupe profini à bouts \hfill 198
+
+% --- strip boundary ---
+
+32. Détermination du groupe $\Pi_{g,v}$ (le groupe de Teichmüller) comme produit libre amalgamé de groupes de surfaces. \hfill 205
+
+33. L'analogie avec le groupe de Galois $Gal(\bar{\mathbb{Q}}/\mathbb{Q})$ et la conjecture de Belyi. \hfill 213
+
+34. La pro-conjecture de Belyi (sur le groupe $\widehat{\Gamma}_{0,3}$). \hfill 220
+
+35. Compléments sur les groupes de "tresses" (ou de "mapping class") $\Gamma_{g,v}$. \hfill 226
+
+\rule{\textwidth}{0.4pt}
+
+3 \hfill https://grothendieck.umontpellier.fr
+
+
+========================================
+PAGE 4 (merged from strips)
+========================================
+
+\begin{itemize}
+\item[27.] Changement de type $(g,v)$ : a) bouchage de trous (cet diagramme ... p. 174) \hfill 172
+
+\item[28.] Chgt. de type $(g,v)$ : b) passage à un rev. fini \hfill 177 \\
+(la conjecture hâtive [unclear]...)
+
+\item[29.] Critique de l'approche précédente. (Des [unclear] justes des notions et les conjectures...) \hfill 185
+
+\item[30.] Propriétés des $N_{g,v}, \Pi_{g,v}$ : c) Propriétés liées aux sous-groupes finis de Teichmüller. \hfill 192
+
+\item[31.] Digression sur les relèvements d'une extention d'un groupe fini par un groupe profini à bouts \hfill 198
+\end{itemize}
+
+% --- strip boundary ---
+
+[continues above]
+
+\begin{itemize}
+\item[32.] Digression sur les groupes profinis : le groupe profini associé à une structure de type $(g,v)$ (et son lien avec $\Pi_{g,v}$) \hfill 205
+
+\item[33.] Le "schéma" $\mathcal{M}_{g,v}$ (ou plutôt son "analogue" : $\mathcal{M}_{g,v}$ est le quotient de $\dots$ par $\dots$) \hfill 212
+
+\item[34.] Une conjecture plus vaste encore ("la" conjecture de Grothendieck-Teichmüller pour les courbes de genre $g$ et type $v$) \hfill 220
+
+\item[35.] De quelques problèmes encore irrésolus (vers une théorie "de Galois" de Teichmüller) \hfill 228
+\end{itemize}
+
+[MARGIN: 175]
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+\begin{itemize}
+\item[36.] La "géométrie de l'espace de Teichmüller" comme "généralisation" de la théorie de Galois (et vice-versa) \hfill 234
+
+\item[37.] Appendice : sur le groupe $\text{Aut}(\hat{F}_n)$ et les actions sur les groupes de tresses (braid groups) \hfill 242
+
+\item[38.] Le groupe de Grothendieck-Teichmüller $\widehat{GT}$ \hfill 251
+
+\item[39.] Un premier pas dans la direction de la conjecture : l'étude du groupe $\widehat{GT}$ \hfill 258
+
+\item[40.] "Vers une géométrie de l'espace de Teichmüller" \hfill 269
+\end{itemize}
+
+[MARGIN: 752]
+[MARGIN: 832]
+
+[continues below]
+
+
+========================================
+PAGE 5 (merged from strips)
+========================================
+
+[MARGIN: cf. par ailleurs]
+[MARGIN: 5]
+
+\section*{1. Topos multigaloisiens.}
+
+\noindent Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions équivalentes :
+
+\begin{itemize}
+\item[a)] $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est localement constant.
+\item[b)] $\mathcal{E}$ est équivalent à une catégorie $\hat{C}$
+\end{itemize}
+
+\noindent où $\mathcal{C}$ est un groupoïde [continues below]
+
+% --- strip boundary ---
+
+[continues above]
+[MARGIN: 5]
+un groupoïde $C$ — ou même plus généralement
+b) $\exists$ une famille $(G_i)_{i \in I}$ de groupes
+et une équivalence de catégories
+\begin{equation}
+\mathcal{E} \simeq \prod \text{Ens}(G_i)
+\end{equation}
+c) Conditions d'exis[tence] ad-hoc, du type
+de celles donnés dans SGA 1...
+
+Dém. $b \Rightarrow a$ immédiat. Pour $a \Rightarrow b$
+je suis moins sûr, peut être faut-il supposer
+$\mathcal{E}$ est loc. connexe, et qu'il suffit [continues below]
+
+% --- strip boundary ---
+
+[continues above]
+$\mathcal{E}$ est loc. connexe, et qu'il suffit
+[unclear: d'] [unclear: de] [unclear: foncteurs] fibres [unclear: i.e.] [unclear: n'importe]
+[unclear: quoi] [unclear: de] points.
+
+Def. 1.2. Si les conditions équivalentes b) b)
+ci-dessus sont satisfaites, on dit que $\mathcal{C}$
+[unclear: est] [unclear: un] [unclear: topos] [unclear: multiplicain] [unclear: ou] [unclear: un] [underline{catégorie}]
+[unclear: multiplicain] )
+
+[MARGIN: 5]
+[MARGIN: Prop. 1.3]
+[continues below]
+
+
+========================================
+PAGE 50 (merged from strips)
+========================================
+
+[continues above]
+
+\noindent corresp. [unclear: ...te] : des syst. d'iso.
+
+\noindent $\mu_{D^\alpha} : f_{D^\alpha} \to f'_{D^\alpha}$, $\mu_{u^\alpha} : f_u \to g_u$. Ce correspond [MARGIN: exprime l'existence d'un $\mu_{D^\alpha}$] à la condition $\tau' = \tau$, $d'_i = d_i$ $\forall i \in I'$ et
+\noindent le donnée de $\underbrace{\text{ceci résulte}}_{\text{des conditions ...}}$
+
+$\bullet$ $\boxed{\mu \in \mathcal{E}}||$, définie par un iso
+
+\noindent entre $f : \mathcal{E}' \to \mathcal{E}$ et $f' : \mathcal{E}' \to \mathcal{E}$
+
+\noindent i.e. $f \xrightarrow{\sim} f' \text{ que}$
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+\noindent i.e. $f \xrightarrow{\sim} f'$
+
+\begin{equation}
+\boxed{f' = \mu f}
+\end{equation}
+
+\noindent b) $\boxed{\mu_i \in \mathcal{E}_i} \quad (i \in I, i = \iota(n))$
+
+\noindent décrivant $\mu_{\mathcal{D}^\alpha}$ satisfait
+
+\begin{equation}
+\boxed{f'_i = \mu_i(f_i)}
+\end{equation}
+
+\noindent ceci implique que $d_i = d'_i$
+
+\noindent les $\mu_i$, $f'_i$ et $\mu$ liés aux $\alpha, \alpha'$ de $(\mathcal{E}\mathcal{E})$
+
+\noindent $\alpha_i, \alpha'_i \in (\Gamma)$ de la fis...
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+\noindent $\alpha_i, \alpha'_i \in (\Gamma)$ de la fis...
+
+\noindent su...
+
+\begin{equation}
+\boxed{\alpha' = p(\mu) \alpha}
+\end{equation}
+
+\begin{equation}
+\boxed{\alpha'_i = p_i(\mu_i) \alpha_i} \quad \forall i \in I'
+\end{equation}
+
+\begin{equation}
+\left\{
+\begin{aligned}
+p(\mu) &= \alpha' \alpha^{-1} \\
+p_i(\mu_i) &= \alpha'_i \alpha_i^{-1}
+\end{aligned}
+\right.
+\end{equation}
+
+[continues below]
+
+
+========================================
+PAGE 51 (merged from strips)
+========================================
+
+[continues above]
+
+\noindent Notons que, comme $\mathcal{F}_i$ est injectif, les deuxièmes relations, donnant les $f_i(H_i)$, déterminent les $\mathcal{F}_i$ de façon unique, l'existence de ces $\mathcal{F}_i$ équivaut aux relations
+
+\begin{equation}
+\boxed{\alpha'_i \alpha_i^{-1} \in \mathcal{F}_i(\xi_i)} \quad \forall i \in I'
+\end{equation}
+
+\noindent Quant à la relation $p(\mu) = \alpha' \alpha^{-1}$, elle détermine (à droite près) le module multiplication par un $\mu \in \ker p = \Pi$, dont on ne peut
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+$p \in \ker p = \Pi$, mais qui doit être tel que l'on ait encore
+
+\begin{equation}
+f'_\varepsilon = \text{int}(\mu) f_\varepsilon
+\end{equation}
+(en plus de $f'_\varepsilon = \text{int}(\mu) f_\varepsilon$) ce qui signifie
+
+exige que
+\begin{equation}
+\text{int}(\mu) f_\varepsilon = f'_\varepsilon
+\end{equation}
+i.e.
+\begin{equation}
+\boxed{\mu \in \text{Cent}_{\Pi} f_\varepsilon (\varepsilon')}
+\end{equation}
+
+C'est donc cela la rédétermination exacte
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+C'est donc cela la rédétermination exacte
+
+du choix d'un isomorphisme $\mu$ entre $f$ et $f'$ de $\mathcal{D}$ dans $\mathcal{D}$.
+
+Si, p. ex., on est dans les conditions où
+
+$\Pi' \to \Pi$ conduit par $f_{\varepsilon} : \varepsilon' \to \varepsilon$ est
+
+une image d'un "morphisme de constante" ! -
+
+alors $\mu$ doit centraliser une des groupes de
+
+[MARGIN: 51]
+
+[continues below]
+
+
+========================================
+PAGE 52 (merged from strips)
+========================================
+
+[continues above]
+$\pi - \dots$ [illegible: likely "il semble"] être assez clair, explique-t-il,
+que [illegible: dans les] cas
+[illegible: considérés] : des hom. dominants des
+[illegible: composantes logiques] ) une hom-omorphisme
+d'un $f$ en $f'$ est cont. et
+unique, i.e. $\underline{\text{Hom}}(\mathcal{D}, \mathcal{D}')$ est une catégorie
+discrète.
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+discrète.
+
+On peut interpréter $\mathcal{D}$ comme $\mathcal{E}$ muni
+d'un sous-groupe $\mathcal{E}' \subset \mathcal{E}$, et de $p : \mathcal{E} \to \Gamma_2$
+(noyau $\pi$) muni d'isomorphismes
+$h_i : \Gamma(\overline{K}) \simeq \mathcal{E} \cap \overline{K} = L_i$
+(commentant : l'action de $\mathcal{E}$). Si on
+considère le système $(\mathcal{E}; (\mathcal{E}'_i)_{i \in I}, p, \pi$
+$(K'_i)_{i \in I}$ ) ; un morphisme des
+[unclear] [unclear] est défini par
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+... un morphisme est défini par :
+un morphisme $f : \mathcal{E}' \to \mathcal{E}$
+satisfaisant les conditions suivantes :
+a) $f$ est un morphisme de $\mathcal{E}' [unclear \text{ ou } \mathcal{E}]$ tel que $pf = \text{int}(\alpha) p'$
+b) $\forall i \in I', \exists i \in I$ tel que $f(\mathcal{E}_i)$
+soit contenu dans un conjugué de $\mathcal{E}_i$
+[soit $\alpha_i \in \mathcal{E}$ tel que $f(\mathcal{E}_i) \subset \text{int}(\alpha_i^{-1})(\mathcal{E}_i)$]
+[continues below]
+
+
+========================================
+PAGE 53 (merged from strips)
+========================================
+
+[continues above]
+
+25
+
+$\underline{\text{NB}}$ Le $\iota : I \to I'$ est unique, d'où $\iota : I' \to I$. Si les $\alpha_i$ sont choisis, on en déduit des induits $f_i : \mathcal{E}'_i \to \mathcal{E}_i$,
+$f_i = (\text{int}(\alpha_i) \circ f) | \mathcal{E}'_i$, qui induit des $\bar{f}_i : \bar{K}'_i \to \bar{K}_i$, un homomorphisme
+[MARGIN: $\underline{\text{NB}}$ A priori, pour $f_i : \dots$ on exige que ce soit le $\alpha'_i$ qui s'ajoute que $f_{\bar{\varepsilon}} = f_{\bar{\varepsilon}'}$, et est uniquement déterminé par ...]
+$\bar{f}_i : \overline{K}'_i \to \overline{K}_i$. On exige que
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+[MARGIN: (le $E_{i'}$ est le $f^{-1}(E_i)$)] que $f$ est *déterminé* par $f$ et l'image [unclear] uniquement déterminé par cette
+condition) et $\alpha_i$ (qui est sans doute déterminé
+par les composantes : $g_i : \mathcal{E}'_i \to \mathcal{E}_i$ (dans
+$\mathcal{E}'_i$, des transporteurs d'un sous-groupe [unclear] de $\mathcal{E}_i$ - c'est-à-dire si $f$ est tel) puisse
+être définis de telle façon que, posant
+
+$f_{i'} = p(\alpha_i) \alpha_i$
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+$\beta_{i'} = p(\alpha_i) \alpha_i$
+
+[MARGIN: Cela semble bien être un changement de base pour les $\alpha_i$ (la vérité est que $f$ [unclear] les $E_i$ sont fixés par cette condition $d_{i'} \in \mathbb{N}^*$ [unclear])]
+
+$f_{i'} = (d_{i'} \times (\beta_{i'})) \circ id_{E_{i'}}$
+$x_{i'} = d_{i'} \times (\beta_{i'})$
+
+[MARGIN: où les $d_{i'}$ sont des entiers naturels arbitraires]
+
+[unclear] uniquement déterminé par les $\alpha_i$ choisis).
+
+Remplaçons $\alpha$ par $\alpha' = \alpha_0 \alpha$.
+
+[continues below]
+
+
+========================================
+PAGE 54 (merged from strips)
+========================================
+
+[continues above]
+
+8. Réflexion taxonomique.
+
+Le cas $\dim X = 0$ se déduit sur le paradigme du système $(T(\overline{K}) \xrightarrow{K_i} \mathcal{E}_i \xrightarrow{p_i} \mathcal{E} \xrightarrow{p} \Gamma)$ [unclear: (barré: par le)] 
+[MARGIN: et donc $I = \emptyset$ - donc ce cas se condition [unclear: (barré: par le)] $p$ injectif]
+donc se décrit simplement par la donnée d'un sous-groupe [unclear] ouvert $\mathcal{E} \subset \Gamma$, i.e. d'une sous-extension finie $\bar{K} / K$. CNB [unclear: - aux] lieu sur $X' = \text{Spec } K_i$ [unclear: ... sur] $\Pi_1 \to \Pi_u \to \Pi_{\mathcal{E}} -$ les diviseurs sur $X$ sont-ils [unclear: $\emptyset$] une description [unclear] $K$ - [unclear: ... ] ici au divis' d'une telle immersion
+
+[continues below]
+
+% --- strip boundary ---
+
+[continues above]
+
+$\alpha : \Gamma \to H^1(X, \mathcal{C}_X) \text{ des } \bar{K}/K)$. 
+
+Le cas $\dim X = 1$ se traduit par le fait que $\mathcal{E} \to \Gamma$ n'est pas injectif - quand : 
+
+$I, \mathcal{I}$ peut être vide ou non dans ce cas. 
+
+S'il est vide, la prescription se fait alors en termes d'un hom. de groupes profini $\mathcal{E} \to \Gamma$ où $\Gamma$ donne l'image $= \text{Gal}(\bar{K}/K) \cong \text{Aut}_{\pi_1}(\Omega)$.
+
+[continues below]
+
+% --- strip boundary ---
+
+$= \text{Gal}(\bar{K}/K) = \text{Aut}_{\pi_1}(\Omega)$.
+
+Supposons donnés, maintenant à la fois 
+$D = (\mathcal{E}, p, I, (p_i : \mathcal{E} \to \mathcal{E}), (k_i : \Pi(\bar{K}) \to \mathcal{E}))$ 
+et $D' = (\mathcal{E}', p', I', (\varphi_i : \dots ), (k'_i : \dots ))$,
+et revenons à la question de la description
+des morphismes de $D'$ dans $D$. On
+va distinguer quatre cas, suivant les deux valeurs [continues below]
+

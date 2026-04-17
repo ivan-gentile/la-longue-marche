@@ -1,0 +1,294 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 26. --- GROUPES DE TEICHMÜLLER PROFINIS (DISCRÉTIFICATION ET PRÉDISCRÉTIFICATION)}\thispagestyle{empty}
+\addcontentsline{toc}{section}{{\bf 26.} Groupes de Teichmüller profinis (Discrétification et prédiscrétification). Lien avec topos modulaires de Teichmüller. Conjecture hâtive}
+\label{sec:26}
+\section*{}
+
+Soit $\pi$ un groupe profini à lacets de type $g,\nu$, $T$ le $\hat{\mathbf{Z}}$-module inversible de ses orientations. On suppose qu'on est dans le cas anabélien, et on admettra qu'alors
+$$
+\Centre(\pi)=\{ 1 \},
+\leqno{(1)}
+$$
+plus généralement que le centralisateur dans $\pi$ de tout sous-groupe ouvert de $\pi$ est réduit à $\{1\}$. On aura donc encore une suite exacte canonique de groupes profinis
+$$
+1 \to \pi \to \Aut_{\operatorname{lac}}(\pi)
+\to \Autext_{\operatorname{lac}}(\pi) \to 1.
+\leqno{(2)}
+$$
+On posera aussi
+$$
+\Autext_{\operatorname{lac}}(\pi)=\hat{\hat{\mathfrak{T}}}(\pi),
+\leqno{(3)}
+$$
+et on l'appellera le \emph{groupe de Teichmüller étendu} de $\pi$. On posera aussi $\hat{\hat{\mathfrak{S}}}(\pi)= \Aut_{\operatorname{lac}}(\pi)$, de sorte qu'on peut écrire (2) comme
+$$
+1 \to \pi \to \hat{\hat{\mathfrak{S}}}(\pi) \to 
+\hat{\hat{\mathfrak{T}}}(\pi) \to 1.
+\leqno{(2')}
+$$
+Appelons ``base'' de $\pi$ un ensemble d'éléments de $\pi$~: $(x_i,y_i)_{1\le i\le g}$, $(l_j)_{1\le j\le \nu}$, les $l_j$ engendrant les différents groupes à lacets, satisfaisant
+$$
+l_\nu l_{\nu-1}\dots l_1[x_g,y_g]\dots[x_1,y_1]=1,
+\leqno{(4)}
+$$
+et tels que ceci soit une relation génératrice. Si on choisit dans $\pi_{g,\nu}$ une base (discrète) (définition correspondante)\footnote{ou encore on définit $\pi_{g,\nu}$ comme le groupe discret de générateurs les $x_i,y_i,l_j$ et de relation de définition (4)}, d'où une base de $\hat{\pi}_{g,\nu}$~: on aura une bijection évidente
+$$
+\Isom_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi) \isommap {\operatorname{Bases}}(\pi).
+\leqno{(5)}
+$$
+L'ensemble des bases de $\pi$ est un ensemble homogène sous $\hat{\hat{\mathfrak{S}}}(\pi)={\Aut}_{\operatorname{lac}}(\pi)$. Si la base correspond à un isomorphisme $u:\hat{\pi}_{g,\nu} \to\pi$, le groupe $\pi_0$ engendré par les $x_i$, $y_i$, $l_j$ n'est autre que $u(\pi_{g,\nu})$. Les sous-groupes de $\pi$ qui peuvent s'obtenir ainsi sont appelés les \emph{discrétifications} de $\pi$. Celles-ci forment un ensemble homogène sous $\hat{\hat{\mathfrak{S}}}(\pi)={\Aut}_{\operatorname{lac}}(\pi)$, canoniquement isomorphe au quotient du $\hat{\hat{\mathfrak{S}}}_{g,\nu}$-ensemble à droite ${\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)$ par $\mathfrak{S}_{g,\nu}$ : %${}^1$:
+$$
+{\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)/\mathfrak{S}_{g,\nu} \isommap {\operatorname{Discrét}}(\pi).
+\leqno{(6)}
+$$
+Les automorphismes (profinis à lacets) de $\pi$ fixant une discrétification $\pi_0$ s'identifient aux automorphismes du groupe discret à lacets $\pi_0$~:
+$$
+{\Aut}_{\operatorname{lac}}(\pi,\pi_0) \isom {\Aut}_{\operatorname{lac}}(\pi_0).
+\leqno(7)
+$$
+La bijection (5) met sur l'ensemble des bases de $\pi$ une structure de bitorseur sous $\hat{\hat{\mathfrak{S}}}(\pi)$, $\hat{\hat{\mathfrak{S}}}_{g,\nu}$, et la topologie correspondante en fait un ensemble profini. L'ensemble des discrétifications de $\pi$, qui est un quotient de l'ensemble précédent, hérite d'une topologie quotient, qui n'est autre que la topologie quotient du deuxième membre de (6). Cet espace n'est pas séparé ($\mathfrak{S}_{g,\nu}$ est toujours infini), car le groupe $\mathfrak{S}_{g,\nu}\subset \hat{\hat{\mathfrak{S}}}_{g,\nu}$ n'est pas fermé.  On désigne par ${\operatorname{Discrét}}'(\pi)$ l'espace topologique séparé associé, s'identifiant à ${\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)/\overline{\mathfrak{S}}_{g,\nu}$, où $\overline{\mathfrak{S}}_{g,\nu}$ désigne l'adhérence de $\mathfrak{S}_{g,\nu}$ dans $\hat{\hat{\mathfrak{S}}}_{g,\nu}$. On a d'ailleurs un homomorphisme évident $\hat{\mathfrak{S}}_{g,\nu}\to\hat{\hat{\mathfrak{S}}}_{g,\nu}$ dont l'image est $\overline{\mathfrak{S}}_{g,\nu}$, nous admettrons qu'il est injectif et identifierons $\overline{\mathfrak{S}}_{g,\nu}$ à $\hat{\mathfrak{S}}_{g,\nu}$. Ainsi
+$$
+{\operatorname{Discrét}}'(\pi) \isom {\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)/\hat{\mathfrak{S}}_{g,\nu}.
+\leqno{(8)}
+$$
+Un élément de ${\operatorname{Discrét}}'(\pi)$ s'appelle une classe de discrétifications de $\pi$ (ou prédiscrétification de $\pi$). Si $\pi_0$ est une discrétification, on désigne sa classe par $\pi_0^\natural$. L'ensemble des classes de discrétifications de $\pi$ est un espace homogène sous $\hat{\hat{\mathfrak{S}}}(\pi)$, le stabilisateur de $\pi_0^\natural$ s'identifiant à l'adhérence de $\mathfrak{S}(\pi_0)= {\Aut}_{\operatorname{lac}}(\pi_0)$ dans $\hat{\hat{\mathfrak{S}}}(\pi)$, ou encore à $\hat{\mathfrak{S}}(\pi_0)$. Celle-ci contient toujours $\pi$.
+$$
+{\Aut}_{\operatorname{lac}}(\pi,\pi_0^\natural) \isom \hat{\mathfrak{S}}(\pi_0). %{}^2
+\leqno(9)
+$$
+Pour toute [pré?]discrétification $\pi_0^\natural$, le sous-groupe de $\hat{\hat{\mathfrak{S}}}(\pi)$ des automorphismes à lacets qui fixent $\pi_0^\natural$ est noté $\hat{\mathfrak{S}}(\pi_0^\natural)$. C'est donc l'image inverse d'un sous-groupe de $\hat{\hat{\mathfrak{T}}}(\pi)$, noté $\hat{\mathfrak{T}}(\pi_0^\natural)$.\footnote{NB. L'ensemble des classes de discrétification de $\pi$ se décrit en termes de groupes \emph{extérieurs} définis par $\pi$ comme ${\Isomext}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi$) divisé par $\hat{\mathfrak{T}}_{g,\nu}$~; on a d'ailleurs une application de degré 2 ${\Isomext}(\hat{\pi}_{g,\nu},\pi)/\hat{\mathfrak{T}}_{g,\nu}^+ \to {\Isomext}(\hat{\pi}_{g,\nu},\pi)/\hat{\mathfrak{T}}_{g,\nu}$, ce qui permet pour toute classe de discrétification de définir ses deux \emph{orientations}  et de parler des classes de discrétification \emph{orientées}.} On a donc une inclusion de structures d'extensions~:
+\[\begin{tikzcd}
+	1 & \pi & {\hat{\mathfrak{S}} (\pi^\natural_0)} & {\hat{\mathfrak{T}} (\pi^\natural_0)} & 1 \\
+	1 & \pi & {\hat{\mathfrak{S}} (\pi)} & {\hat{\mathfrak{T}} (\pi)} & {1.}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=1-5]
+	\arrow[hook', from=1-3, to=2-3]
+	\arrow[hook', from=1-4, to=2-4]
+\end{tikzcd}
+\leqno{(10)}\]
+(On montre par voie arithmético-géométrique que l'inclusion $\hat{\mathfrak{T}} \to \hat{\hat{\mathfrak{T}}}$ n'est jamais un isomorphisme). On trouve ainsi une application 
+$$
+{\operatorname{Discrét}}'(\pi)\to{\text{ sous-groupes fermés de }}\ \hat{\hat{\mathfrak{T}}}(\pi),
+\leqno{(11)}
+$$
+$$
+[\pi_0^\natural\ \mapsto \hat{\mathfrak{T}}(\pi_0^\natural)]
+$$
+évidemment compatible à l'action de $\hat{\hat{\mathfrak{S}}}(\pi)$ (transport de structure) --- opérant à droite via $\hat{\hat{\mathfrak{T}}}(\pi)$ et ses automorphismes intérieurs sur lui-même.%${}^3$
+
+On trouve ainsi une classe de conjugaison bien déterminée de sous-groupes fermés de $\hat{\hat{\mathfrak{T}}}(\pi)$, qu'on appelle ses sous-groupes de Teichmüller ``\emph{géométriques}''. Il se pourrait d'ailleurs que $\hat{\mathfrak{T}}_{g,\nu}$ soit son propre normalisateur dans $\hat{\hat{\mathfrak{T}}}_{g,\nu}$ ce qui équivaut à l'assertion que (11) est bijective~: la donnée d'une classe de discrétifications de $\pi$ serait équivalente à celle d'un sous-groupe de Teichmüller géométrique dans son groupe de Teichmüller étendu $\hat{\hat{\mathfrak{T}}}$.\footnote{c'est complètement déconnant et ultra-faux~; un moment d'égarement~! Cela apparaît clairement par la suite\dots La question judicieuse (avec laquelle j'ai dû sur le coup confondre) c'est si $\hat{\mathfrak{T}}$ est \emph{invariant} dans $\hat{\hat{\mathfrak{T}}}$, i.e. si le normalisateur est $\hat{\hat{\mathfrak{T}}}$ tout entier.}
+
+Notons qu'on a des homomorphismes canoniques
+$$
+\hat{\hat{\mathfrak{T}}} \xlongrightarrow{\chi} \hat{\mathbf{Z}^*}
+\leqno{(12)}
+$$
+$$
+\hat{\hat{\mathfrak{T}}} \to \mathfrak{S}_I
+\leqno(13)
+$$
+(où $I=I(\pi)$ est l'ensemble des classes de conjugaison des sous-groupes à lacets de $\pi$), induisant sur $\hat{\mathfrak{T}}(\pi_0^\natural)$ des homomorphismes correspondants --- d'où la définition des sous-groupes ${\hat{\hat{\mathfrak{T}}}}^!$, ${\hat{\hat{\mathfrak{T}}}}^+$, ${\hat{\hat{\mathfrak{T}}}}^{!+}$ et de même pour $\hat{\mathfrak{T}}$. Notons que $\chi$ ne prend sur $\hat{\mathfrak{T}}$ que les valeurs $\pm 1$.%${}^4$
+
+Le sous-groupe $\hat{\mathfrak{T}}^+$ des automorphismes extérieurs du groupe à lacets profinis $\pi$, fixant une classe de discrétifications $\pi_0^\natural$ et de multiplicateur $+1$, joue un rôle très particulier. A l'opposé de ce qu'on peut conjecturer sur $\hat{\mathfrak{T}}$ (dont $\hat{\mathfrak{T}}^+$ est un sous-groupe ouvert d'indice 2), on supposerait plutôt que $\hat{\mathfrak{T}}^+$ est invariant dans $\hat{\hat{\mathfrak{T}}}$ [voir note en bas de page précédente]. En tout état de cause, les sous-groupes ainsi définis dans $\hat{\hat{\mathfrak{T}}}$ via classes de discrétification de $\pi$ (peut-être n'y en a-t-il qu'un seul et unique!) %{}^5 
+s'appelleront les sous-groupes de Teichmüller géométriques  \emph{stricts}. Le choix d'un tel sous-groupe de $\hat{\hat{\mathfrak{T}}}$ est, en tout état de cause, un élément de structure nettement plus faible que celui d'une classe de discrétification, et même que celui d'un sous-groupe de Teichmüller géométrique (pas strict). Pour préciser les relations entre ces deux notions, rappelons d'abord que $\hat{\mathfrak{T}}^+=\Sigma$ se déduit de $\hat{\mathfrak{T}}$ comme noyau de $\chi|\hat{\mathfrak{T}}:\hat{\mathfrak{T}}\to\{\pm 1\}$. D'autre part (pour un sous-groupe de Teichmüller géométrique strict choisi $\hat{\mathfrak{T}}^+$), considérons
+$$
+\mathcal{N}_\Sigma=\mathcal{N}={\Norm}_{{\hat{\hat{\mathfrak{T}}}}}\ (\Sigma)\leqno{(14)}
+$$
+où $\Sigma=\hat{\mathfrak{T}}^+$ ([$\mathcal{N}_\Sigma$ est] peut-être toujours égal à $\hat{\hat{\mathfrak{T}}}$ tout entier), évidemment (si $\Sigma$ provient d'un $\hat{\mathfrak{T}}$)
+$$
+\Sigma = \hat{\mathfrak{T}}^+ \subset \hat{\mathfrak{T}}\subset \mathcal{N}_\Sigma.
+\leqno{(15)}
+$$
+Le groupe profini $\mathcal{N}/\Sigma$ associé à $\Sigma$ se note $\boldsymbol{\Gamma}_\Sigma$ (si $\Sigma$ est unique, on note $\boldsymbol{\Gamma}_\pi$), et les $\hat{\mathfrak{T}}$ donnant naissance au même $\Sigma$ correspondent à une classe de conjugaison d'éléments d'ordre 2 de $\boldsymbol{\Gamma}_\Sigma$. Il est clair en tous cas qu'on a une application injective
+$$
+\{\hbox{ensemble des sous-groupes de Teichmüller géométriques\ }
+\hat{\mathfrak{T}}\ {\rm dans}\ \hat{\hat{\mathfrak{T}}}\ {\rm tels\ que}\ \hat{\mathfrak{T}}^+=\Sigma\}
+$$
+\centerline{$\downarrow$}
+$$
+\{\hbox{ensemble des éléments d'ordre 2 dans\ }\boldsymbol{\Gamma}_\Sigma\}
+\leqno{(16)}
+$$
+et que son image est stable par conjugaison. Montrons que deux éléments de l'image sont conjugués dans $\boldsymbol{\Gamma}_\Sigma$. En effet, soient $\hat{\mathfrak{T}}$, $\hat{\mathfrak{T}}'\supset\Sigma$ tels que $\Sigma=\hat{\mathfrak{T}}^+=\hat{\mathfrak{T}}'^+$. Il existe $g\in\hat{\hat{\mathfrak{T}}}$ tel que ${\hat{\mathfrak{T}}}'={\operatorname{Int}}(g)\hat{\mathfrak{T}}$, et on aura alors $\hat{\mathfrak{T}}'^+={\operatorname{Int}}(g)\hat{\mathfrak{T}}^+$, i.e. $g\in\mathcal{N}$, OK. 
+
+Les éléments d'ordre 2 ainsi obtenus dans $\boldsymbol{\Gamma}_\Sigma$ s'appellent les involutions canoniques. On en donnera une interprétation conjecturale remarquable plus bas. L'ensemble $\hat{\hat{\mathfrak{T}}}/\mathcal{N}$ s'identifie à l'ensemble des sous-groupes de Teichmüller géométriques stricts (une fois choisi l'élément ``origine'' $\Sigma$). Plus intrinsèquement, on aura~:
+$$
+\{\hbox{Ensemble des sous-groupes de Teichmüller géométriques 
+stricts de}\ \hat{\hat{\mathfrak{T}}}(\pi)\}
+$$
+$$\uparrow$$
+$$
+{\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)/\mathcal{N}_{g,\nu}
+\leqno{(17)}
+$$
+où on pose, comme de juste,
+$$
+\mathcal{N}_{g,\nu}={\Norm}_{{\hat{\hat{\mathfrak{T}}}}_{g,\nu}}(\hat{\mathfrak{T}}^+_{g,\nu})
+\leqno{(18)}
+$$
+(peut-être égal à $\hat{\hat{\mathfrak{T}}}_{g,\nu}$ tout entier~!).
+
+Considérons maintenant le \emph{topos modulaire sur} $\mathbf{Q}$ des courbes algébriques de type $(g,\nu)$, noté $M_{g,\nu,\mathbf{Q}}$ ou simplement $M_{g,\nu}$. Si nous choisissons un revêtement universel $\widetilde{M_{g,\nu}}$ (d'où un revêtement universel de $\Spec \mathbf{Q}$, i.e. une clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$), on peut préciser le $\pi_1(M_{g,\nu,\mathbf{Q}})$ comme le groupe des $M_{g,\nu,\mathbf{Q}}$-automorphismes de ce revêtement et l'appeler le \emph{groupe de Teichmüller arithmétique} de type $(g,\nu)$ (relatif au choix de $\widetilde{M_{g,\nu,\mathbf{Q}}}$). On aura donc une suite exacte
+$$
+1 \to \pi_1(M_{g,\nu,\overline{\mathbf{Q}}}) \to \pi_1(M_{g,\nu})
+\to {\Gal}(\overline{\mathbf{Q}}/\mathbf{Q}) \to 1,
+\leqno(19)
+$$
+(où $\overline{\mathbf{Q}}$ et les points base sont explicités comme il a été dit). Notons que par la théorie transcendante de Teichmüller on a un isomorphisme (défini modulo l'opération induite par $\pi_1(M_{g,\nu})$ sur $\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})\,$)~:
+$$
+\pi_1(M_{g,\nu,\overline{\mathbf{Q}}}) \isom \hat{\mathfrak{T}}^+_{g,\nu}
+\leqno{(20)}
+$$
+(où $\hat{\mathfrak{T}}^+_{g,\nu}$ est le compactifié profini de $\mathfrak{T}^+_{g,\nu}$).  
+
+Considérons d'autre part le schéma $U_{g,\nu}$ sur $M_{g,\nu}$, courbe de type $(g,\nu)$ ``universelle''. On a donc, en choisissant un revêtement universel $\widetilde{U_{g,\nu}}$ de celle-ci \emph{au-dessus} du revêtement universel choisi $\widetilde{M_{g,\nu}}$ de $M_{g,\nu}$, un diagramme commutatif~:
+\[\begin{tikzcd}
+	1 & \pi & {\pi_1(U_{g, \nu})} & {\pi_1(M_{g, \nu})} & 1 \\
+	1 & \pi & {\hat{\hat{\mathfrak{S}}}(\pi)} & {\hat{\hat{\mathfrak{T}}}(\pi)} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow["\sim"', from=1-2, to=2-2]
+\end{tikzcd}\leqno{(21 - 22)}\]
+et de même pour $U_{g,\nu,\overline{\mathbf{Q}}}\to M_{g,\nu, \overline{\mathbf{Q}}}$:
+$$
+1\to\pi\to\pi_1(U_{g,\nu,\overline{\mathbf{Q}}})\to
+\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})\to 1.
+\leqno{(21')}
+$$
+On a bien sûr un isomorphisme de groupes à lacets
+$$
+\pi \isom \hat{\pi}_{g,\nu}
+\leqno{(23)}
+$$
+dont on voudrait déterminer l'indétermination de fa\c{c}on précise. %${}^7$
+
+Notons $M_{g,\nu,\mathbf{C}}$ le topos modulaire de Teichmüller complexe, défini à l'aide de la surface $C^\infty\ $ $U_{g,\nu}$~; il est muni du revêtement universel canonique $\widetilde{M_{g,\nu,\mathbf{C}}}$ (\S 21; $\widetilde{M_{g,\nu,\mathbf{C}}} \isom E_g/A_{g,\nu}^o$) de groupe d'automorphismes $\mathfrak{T}^+_{g,\nu}$ justement ---  $U_{g,\nu,\mathbf{C}}$ étant lui aussi muni d'un revêtement universel au-dessus du précédent, ($\widetilde{U_{g,\nu,\mathbf{C}}}=E_g/A_{g,\nu_+1}^o$). Ceci donne naissance aux suites exactes des groupes discrets (dans le contexte topologique général)
+\[\begin{tikzcd}
+	1 & {\pi_{g, \nu}} & {{\mathfrak{S}^+_{g, \nu}}} & {\mathfrak{T}^+_{g, \nu}} & 1 \\
+	1 & {\pi_{g, \nu}} & {\Aut_{\text{lac}}(\pi_{g, \nu})} & {\Autext_{\text{lac}}(\pi_{g, \nu})} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow["\sim"', from=1-2, to=2-2]
+\end{tikzcd}\leqno{(24)}\]
+(la première suite s'envoyant dans la seconde par un isomorphisme de structures d'extensions [avec les identifications] $\mathfrak{S}^+_{g,\nu}=\pi_1(U_{g,\nu,\mathbf{C}})$ et $\mathfrak{T}^+_{g,\nu}=\pi_1(M_{g,\nu,\mathbf{C}})$) qui par passage aux complétés profinis donne la suite exacte analogue pour les multiplicités algébriques sur $\mathbf{C}$.
+\[\begin{tikzcd}
+	1 & {\pi_{g, \nu}} & {{\hat{\mathfrak{S}}^+_{g, \nu}}} & {\hat{\mathfrak{T}}^+_{g, \nu}} & 1 \\
+	& {\pi_{g, \nu}} & {\Aut_{\text{lac}}(\hat{\pi}_{g, \nu})} & {\Autext_{\text{lac}}(\hat{\pi}_{g, \nu})} & {1.}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow[shift left=1, from=1-2, to=2-2]
+	\arrow[shorten <=3pt, shorten >=2pt, no head, from=1-2, to=2-2]
+\end{tikzcd}\leqno{(25)}\]
+Cette situation provient d'ailleurs canoniquement d'une situation analogue sur $\overline{\mathbf{Q}}_0=$ clôture algébrique de $\mathbf{Q}$ dans $\mathbf{C}$, le choix de $\widetilde{U_{g,\nu,\mathbf{C}}}$ définissant un $\widetilde{U_{g,\nu,\overline{\mathbf{Q}}_0}}$, d'où un $\widetilde{M_{g,\nu,\overline{\mathbf{Q}}_0}}$. Pour définir un isomorphisme entre cette suite (25) et la suite exacte (21') (munie canoniquement de deux homomorphismes dans (22)) il faut 
+\begin{enumerate} 
+    \item[1)] choisir un isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}_0}$ -- l'indétermination est dans ${\Gal}(\overline{\mathbf{Q}}/\mathbf{Q})$~; ceci permet d'identifier $\overline{\mathbf{Q}}$ et $\overline{\mathbf{Q}}_0$~;
+    \item[2)] Choisir un isomorphisme (sur $\overline{\mathbf{Q}}= \overline{\mathbf{Q}}_0$) de $(\widetilde{U_{g,\nu}})_0$  (construit par voie transcendant sur $\mathbf{C}$ et descendu à $\overline{\mathbf{Q}}_0$) avec $\widetilde{U_{g,\nu,\overline{\mathbf{Q}}}}$ --- l'indétermination est dans $\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})$.
+	En résumé, on a une classe d'isomorphismes de (21) et (25), définie modulo automorphismes intérieurs dans le groupe profini $\pi_1(U_{g,\nu})$. Une fois choisi l'isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$, les isomorphismes correspondants transforment la \emph{classe de discrétifications orientée} standard de $\hat{\pi}_{g,\nu}$ en exactement une classe de discrétifications orientée de $\pi$.
+\end{enumerate}
+Changeant le choix de l'isomorphisme en son complexe conjugué, on trouve la quasi-discrétification orientée opposée. %${}^8$
+
+On voit d'autre part que l'image de $\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})\subset \pi_1(M_{g,\nu})$ dans $\hat{\hat{\mathfrak{T}}}(\pi)$ n'est autre que le $\hat{\mathfrak{T}}^+$ correspondant à une quelconque des classes de quasi-rigidification discrètes choisies --- le sous-groupe ne dépend pas du choix de cette classe --- ce qui ne fait qu'exprimer que l'image de $\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})$ dans $\hat{\hat{\mathfrak{T}}}(\pi)$, considérée comme sous-groupe de l'image du groupe plus grand $\pi_1(M_{g,\nu})$, y est invariante --- ce qui résulte du fait que $\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})$ est invariant dans $\pi_1(M_{g,\nu,\mathbf{Q}})$. Ainsi $\pi$ est muni canoniquement (non d'une quasi-rigidification discrète orientée, ce qui dépend du choix d'un isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$, i.e. d'un plongement $\overline{\mathbf{Q}}\hookrightarrow \mathbf{C}$), mais du moins d'un groupe de Teichmüller géométrique strict $\Sigma\subset \hat{\hat{\mathfrak{T}}}(\pi)$, à savoir l'image de $\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})$ (isomorphe à [??]) %{}^9
+Ceci posé, on a un homomorphisme canonique d'extensions de groupes
+\[\begin{tikzcd}
+	1 & {\pi_1(M_{g, \nu,\overline{\mathbf{Q}}})} & {\pi_1(M_{g, \nu})} & {\Gal(\overline{\mathbf{Q}}/\mathbf{Q})} & 1 \\
+	1 & \Sigma & {\mathcal{N}_\Sigma} & {\boldsymbol{\Gamma}_\Sigma} & {1,}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow[shift left=1, from=1-2, to=2-2]
+	\arrow[shorten <=3pt, shorten >=2pt, no head, from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}\leqno{(26)}\]
+où $\mathcal{N}_\Sigma={\rm Norm}_{\hat{\hat{\mathfrak{T}}}(\pi)}(\Sigma)$ et $\boldsymbol{\Gamma}_\Sigma$ est le groupe des automorphismes extérieurs ``arithmétiques'' de $\pi$ (muni de $\Sigma$).
+
+Pour le choix d'un isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$, i.e. d'un plongement $\overline{\mathbf{Q}}\hookrightarrow \mathbf{C}$, l'image de la conjugaison complexe de ${\Gal}(\overline{\mathbf{Q}}_0/\mathbf{Q})$ n'est autre que l'élément d'ordre 2 de $\boldsymbol{\Gamma}_\Sigma$ associé au sous-groupe de Teichmüller géométrique, associé à la quasi-discrétification (orientée, mais peu importe) canonique sur $\pi$ (définie par $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$).
+
+La conjecture naturelle ici, c'est que
+$$
+{\Gal}(\overline{\mathbf{Q}}/\mathbf{Q})\to\boldsymbol{\Gamma}_\Sigma
+\leqno(27)
+$$
+du groupe de Galois vers les automorphismes extérieurs arithmétiques de $(\pi,\Sigma)$ soit un isomorphisme. On peut la compléter par la conjecture, encore plus hardie, que de plus $\Sigma$ est invariant dans $\hat{\hat{\mathfrak{T}}}(\pi)$ ($\Leftrightarrow \Sigma_{g,\nu}$ invariant dans $\hat{\hat{\mathfrak{T}}}_{g,\nu}$), ce qui signifierait donc que $\mathcal{N}_\Sigma=\hat{\hat{\mathfrak{T}}}$, ou encore que\footnote{conjectural!}
+$$
+\pi_1(M_{g,\nu}) \isommap \hat{\hat{\mathfrak{T}}}(\pi)={\Autext}_{\operatorname{lac}}(\pi) 
+\leqno{(28)}
+$$
+et ${\Gal}(\overline{\mathbf{Q}}/\mathbf{Q})$ s'identifierait au quotient ``arithmétique'' du groupe des automorphismes extérieurs
+à lacets de $\pi$.
+
+Soit maintenant $U$ une courbe algébrique de type $g,\nu$ sur $\overline{\mathbf{Q}}$. Elle est définie par un point de $M_{g,\nu,\overline{\mathbf{Q}}}$ sur ${\Spec}\, \overline{\mathbf{Q}}$, et comme fibre de $U_{g,\nu}$ en ce point. Choisissons un revêtement universel de $U$, d'où un groupe $\pi(U)$, canoniquement isomorphe au groupe $\pi$ ci-dessus, une fois choisi un isomorphisme entre $\widetilde{U_{g,\nu}}$ et le revêtement universel de $U_{g,\nu}$ déduit de $\widetilde{U}$, ce qui donne une indétermination dans $\pi_1(U_{{g,\nu},\overline{\mathbf{Q}}}) \isom \hat{\mathfrak{S}}^+$. Ainsi, une fois choisi un isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$, on trouve sur $\pi_1(U)$ une quasi-discrétification orientée [voir ${}^8$] (évidente d'ailleurs à définir directement, par voie transcendante), changée en son opposée par changement de l'isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$ par conjugaison complexe. D'autre part, le sous-groupe $\hat{\mathfrak{T}}^+$ de $\hat{\hat{\mathfrak{T}}}(\pi)$, correspondant à cette quasi-discrétification (orientée, peu nous chaut) ne dépend pas du choix de l'isomorphisme en question $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$, il est canoniquement associé à $\pi$ en tant que groupe fondamental d'un $U$ sur un corps algébriquement clos (N.B. on pourrait prendre un corps algébriquement clos de caractéristique zéro quelconque, pas la peine que ce soit sur $\overline{\mathbf{Q}}$, cf. plus bas).
+
+Si la conjecture sur $\boldsymbol{\Gamma}$ est vérifiée, il en résulterait que la donnée d'un groupe profini à lacets $\pi$ de type $(g,\nu)$, muni d'un groupe de Teichmüller géométrique strict $\Sigma\subset \hat{\hat{\mathfrak{T}}}(\pi)$ (ce qui peut-être n'est pas une structure supplémentaire du tout --- $\Sigma$ serait uniquement déterminé par $\pi$~!) équivaudrait à la donnée d'une extension algébriquement close $\overline{\mathbf{Q}}$ de $\mathbf{Q}$ (dont le groupe de Galois serait $\mathcal{N}_{{\hat{\hat{\mathfrak{T}}}}} (\Sigma)/\Sigma=\boldsymbol{\Gamma}_\Sigma$) et le $\boldsymbol{\Gamma}_0$-torseur ${\Isom} (\overline{\mathbf{Q}},\overline{\mathbf{Q}}_0)$ s'identifierait à l'ensemble ($\subset {\Isom}(\hat{\pi}_{g,\nu},\pi)/\hat{\mathfrak{T}}^\circ_{g,\nu}$) des quasi-rigidifications \emph{orientées} donnant naissance à $\pi$\dots) et d'un revêtement universel de $U_{g,\nu,\overline{\mathbf{Q}}}$ ou simplement d'un revêtement universel $\widetilde{U_{g,\nu}}$ de $U_{g,\nu}=U_{g,\nu,\mathbf{Q}}$.\footnote{si on se donne seulement $\pi$ comme groupe extérieur, avec $\Sigma$, ce qui revient à la donnée d'un revêtement universel de $M_{g,\nu}$.} La donnée d'un isomorphisme $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$ revient donc à celle d'une quasi-rigidification orientée sur $\pi$ compatible avec $\Sigma$ (condition peut-être automatiquement satisfaite\dots). Ceci dit, la donnée d'une courbe algébrique de type $g,\nu$ sur un corps algébriquement clos $\overline{\mathbf{Q}}$, et d'un revêtement universel de celle-ci reviendrait à la donnée d'une donnée précédente (à savoir un revêtement universel d'un $M_{g,\nu}$, \emph{plus} un point de $M_{g,\nu,\overline{\mathbf{Q}}}$ sur $\overline{\mathbf{Q}}$ définissant un revêtement universel) \footnote{NB. Si on renonce à choisir $\widetilde{U}$, ceci revient à travailler avec les groupes à lacets \emph{extérieurs}.}, et cette dernière donnée s'identifierait à un germe de scindage dans l'extension
+$$
+1\to\pi_1(M_{g,\nu,\overline{\mathbf{Q}}})\to \pi_1(M_{g,\nu})\to\pi_1(\mathbf{Q})\to 1.
+$$
+L'interprétation profinie (en termes des groupes \emph{extérieurs} à lacets $\pi$) est alors un $(\pi,\Sigma)$, et un germe de scindage de  
+$$
+1\to\Sigma\to\mathcal{N}_\Sigma\to\boldsymbol{\Gamma}_\Sigma\to 1.
+$$
+Si on veut une courbe sur une sous-extension finie $K'$ de $\overline{\mathbf{Q}}/\mathbf{Q}$, correspondant à un sous-groupe d'indice fini $\Gamma'\subset \boldsymbol{\Gamma}_\Sigma$, il s'agira d'un scindage partiel $\Gamma'\to\mathcal{N}_\Sigma$.
+
+Mais sûrement, si cette description des courbes algébriques anabéliennes est pleinement fidèle, elle n'est pas 2-fidèle, i.e. il faut des conditions sur ce scindage, qu'il faudra examiner par la suite. 
+
+La description d'une courbe algébrique de type $g,\nu$ sur un corps fixé, de type fini sur $\mathbf{Q}$, $K$ quelconque, muni d'une extension algébriquement close $\overline K$ (donc $\boldsymbol{\Gamma}={Gal}(\overline K/K)\to \boldsymbol{\Gamma}_0={\Gal}(\overline{\mathbf{Q}}/\mathbf{Q})$, où $\overline{\mathbf{Q}}$ est la clôture algébrique de $\mathbf{Q}$ dans $\overline K$), en termes de $\boldsymbol{\Gamma}\leftarrow\boldsymbol{\Gamma}_0$, serait la suivante~: donnée d'un groupe extérieur à lacets $\pi$ de type $g,\nu$, d'un sous-groupe de Teichmüller $\Sigma$ dans $\hat{\hat{\mathfrak{T}}}(\pi)$, d'un isomorphisme $\overline{\mathbf{Q}} \isom $ corps défini par cette situation (ayant comme groupe de Galois $\mathcal{N}_\Sigma/\Sigma$, de sorte qu'on trouve un isomorphisme $\boldsymbol{\Gamma}_0 \isom \mathcal{N}_\Sigma/\Sigma$), enfin d'un relèvement de $\boldsymbol{\Gamma}\to\boldsymbol{\Gamma}_0$ (qui décrit une action arithmétiquement extérieure de $\boldsymbol{\Gamma}$ sur $(\pi,\Sigma)$) en une action extérieur $\boldsymbol{\Gamma}\to\mathcal{N}_\Sigma$ de $\boldsymbol{\Gamma}$ sur $(\pi,\Sigma)$ avec des conditions qu'il faudra essayer de dégager (nécessaires et suffisantes conjecturalement) sur ce relèvement.
+
+Notons que tout plongement $\overline K\hookrightarrow\mathbf{C}$ définit canoniquement sur le groupe extérieur $\pi= \pi_1(U_{\overline K})$ une quasi-discrétification orientée, remplacée par l'opposée quand on remplace le plongement par le complexe conjugué. Je dis que ces quasi-discrétifications définissent toutes $\Sigma$ comme groupe des automorphismes et que la  quasi-discrétification définie par $\overline K \hookrightarrow \mathbf{C}$ ne dépend que de sa restriction en $\overline{\mathbf{Q}}\hookrightarrow \mathbf{C}$ --- de fa\c{c}on plus précise, c'est celle qu'on définit directement à l'aide de $\overline{\mathbf{Q}}\hookrightarrow \mathbf{C}$, i.e. de $\overline{\mathbf{Q}} \isom \overline{\mathbf{Q}}_0$. Mais il y a lieu d'examiner aussi la fa\c{c}on d'obtenir des \emph{discrétifications}. Ainsi, si un $U$ est défini sur $\overline{\mathbf{Q}}_0$, [c'est] un $\pi$ extérieur de type $(g,\nu)$, muni d'une quasi-discrétification orientée $\pi_0^{\natural +}$, et d'un germe de scindage de
+$$
+1\to\Sigma\to\mathcal{N}_\Sigma\to\boldsymbol{\Gamma}_\Sigma
+\to 1,
+$$
+où $\Sigma={\Autext}_{\operatorname{lac}}(\pi,\pi_0^{\natural+})$, qui fait opérer extérieurement le noyau du groupe défini par $\boldsymbol{\Gamma}_\Sigma$ sur $\pi$, les points rationnels sur $\overline{\mathbf{Q}}_0$ correspondant aux classes de $\pi$-conjugaison des germes de relèvement de cette opération extérieure en une vraie opération. Supposons donc donné un tel point, i.e. on a un sous-groupe ouvert $\boldsymbol{\Gamma}\subset \boldsymbol{\Gamma}_\Sigma$ qui opère bel et bien sur $\pi$, l'opération définie mod automorphismes intérieurs (lui-même unique car $\pi^\Gamma =\{1\}$!)  Dans cette situation, il faudrait définir dans $\pi \isom \pi_1(U_P,P)$ une \emph{discrétification orientée} $\pi_0\subset \pi$, et pas seulement une quasi-discrétification orientée~! (Bien sûr, elle doit être dans la classe qu'on s'est donnée d'avance de discrétifications orientées, qu'on avait justement notée $\pi_0^{\natural+}$. On y reviendra --- ainsi qu'à la situation analogue sur un corps de base $K$ de type quelconque\dots)
+
+Je réfère au début du \S\ suivant (\S~27) pour le changement de terminologie, la ``quasi-discrétification'' devenant une ``prédiscrétification''. Mais il y a lieu d'introduire aussi une notion plus fine, correspondant au cas d'un $\pi_1$ (profini) d'une variété algébrique $X$ définie sur un corps algébriquement clos $\overline K$, quand on plonge $\overline K$ dans $\mathbf{C}$~: il y a une discrétification mod automorphismes intérieurs --- on l'appellera une \emph{prédiscrétification stricte}.  Dans le cas d'un $\pi$ à lacets, l'espace homogène sous $\hat{\hat{\mathfrak{T}}}(\pi)$ de celles-ci s'identifie à
+$$
+{\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)/(\hat{\pi}_{g,\nu} \mathfrak{T}_{g,\nu}) \isom {\Isomext}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)/ \mathfrak{T}_{g,\nu},
+$$ 
+et cette action également ne dépend que du groupe profini à lacets extérieur défini par $\pi_{g,\nu}$, et équivaut à celle d'une ``base extérieure'' de $\pi$ mod action  de $\mathfrak{T}_{g,\nu}$, i.e. d'un isomorphisme de $\pi$ avec le $\hat{\pi}_{g,\nu}$ ``type'', mod action de $\mathfrak{T}_{g,\nu}$.  L'application
+\vskip .3cm
+\centerline{Bases extérieures de $\pi$ $\to$ Prédiscrétifications
+de $(\pi)$}
+\vskip .3cm
+fait donc du membre de gauche un torseur relatif à droite sur celui de droite, de groupe $\mathfrak{T}_{g,\nu}$.
+\vskip .3cm
+Une prédiscrétification de $(\pi,\Sigma)$ correspond à un choix d'un isomorphisme de la clôture algébrique $\overline{\mathbf{Q}}_{(\pi,\Sigma)}=\overline{\mathbf{Q}}$ associé à $(\pi,\Sigma)$, avec $\overline{\mathbf{Q}}_0$. Quand on se donne $(\pi,\Sigma)$ comme correspondant à une courbe algébrique sur $\overline{\mathbf{Q}}$, i.e. qu'on se donne un germe de relèvement de $\boldsymbol{\Gamma}_\Sigma$ dans $\mathcal{N}_\Sigma\subset \hat{\hat{\mathfrak{T}}}(\pi)$, i.e. un germe d'actions extérieures de $\boldsymbol{\Gamma}_\Sigma$ sur $\pi$, toute prédiscrétification doit donner naissance à une discrétification stricte et même à une discrétification quand on remonte un germe d'action (``admissible'') de $\boldsymbol{\Gamma}_\Sigma$ sur $\pi$\dots
+
+
+% End

@@ -1,0 +1,333 @@
+Experiment B — gemini-3.1-flash-lite-preview
+============================================================
+
+
+========================================
+PAGE 1
+========================================
+
+Pages 1-292 + table des matières
+
+\newpage
+1
+
+
+========================================
+PAGE 2
+========================================
+
+I. La "longue marche" à travers la théorie de Galois...
+
+1. Topos multigaloisiens 1
+2. Appl. aux rev. des topos 4
+3. Variétés pro-multigaloisiens 6
+4. Compléments (remarques)
+5. Introduction des contacts avec milieux 7
+"Conjectures ambitieuses" fondamentales
+6. Analyse locale de $(X, S)$ un un STS. 10
+7. Reformulations "bordéliques" de la conjecture 12
+(le purgatoire nécessaire...)
+8. Réflexion taxonomique (distinction des 25
+cas, le purgatoire s'ouvrira un peu...)
+9. Structure tangentielle un les STS 34
+(sections d'extensions "de deuxième type")
+10. Aperçu sur des hypothèses, (remarques) 38
+11. Conditions sur les syst. de groupoïdes 39
+obtenus à partir de situations géométriques
+12. L'analogie topologique (on y voit 43
+aussi que le bordel groupoïdal peut
+s'exprimer complètement, dans le même
+lieu, par 2 gr. op. ext. locaux...
+13. Retours... sur les visites par : formules 53
+pour "galoisiennes"
+13bis. Retours sur la notion de groupoïdes locaux 56
+14. Digression cohomologique (sur le "bordage 58
+de trous")
+15. Retours sur le cas topologique : orbites 67
+critiques autour des scindés d'extensions
+Application aux sous-groupes finis des
+Autext (pi) (cas discret) (fourni §18)
+16. Bordage et lissage de trous : préliminaires 79
+topologiques généraux
+17. Complément au §15, sur gr. de gr.-ga 89
+(sur... surfaces)
+
+2
+
+
+========================================
+PAGE 3
+========================================
+
+18. Fovage de trous. Application aux sous-groupes finis de $Autext(\pi_1)$ (cas discret) 91
+
+19. Tour de Teichmüller 102
+
+20. Digression : description 2-topique des cat. des surfaces topologiques 116
+
+21. Les espaces de Teichmüller 130
+
+[MARGIN: $ \text{moyen} \atop 522! $ ]
+23. Retour sur les surfaces qu. res. (finis) d'opérateurs ("mise en équation" du Pb) 133
+
+24. Essai de détermination de $Aut(\Pi_{g, (v, v+n)}) = (1)$, programme de travail 142
+
+25. Groupes de Teichmüller "spéciaux" 148
+
+25bis. Cas des deux groupes d'opérateurs. Retour sur les notations. 153
+
+26. Groupes de Teichmüller profinis. Discrétisations et prodiscrétisations. Liens avec topos modulaire des Teichmüller. Conjecture hâtive. 151 167
+
+27. Uniquement du type $(g, v)$ : $ \text{bordage des trous} $ (et du groupe rev. finis p. 174) 172
+
+28. Chapt. de type $(g, v)$ : $ b) $ passage à un rev. fini 177 (la conjecture hâtive grince...)
+
+29. Critique de l'approche précédente. (Critique juste des notions et les conjectures...) 185
+
+30. Propriétés des $N_{g,v}, \Pi_{g,v} : $ 1) Propriétés liées aux sous-groupes finis de Teichmüller. 192
+
+31. Digression sur les relèvements d'un finis extérieurs d'un groupe fini sur un gr. pro-fini à bouts 198
+
+32. Retour sur les aspects "arithmétiques" des bouchages de trous : relations entre $\Pi_{g,v}$ et $\Pi_{g,v'}$ (où on reconstitu, sous le [unclear: complet] d'un topos étale, d'une couche logique à partir de $\Pi_1$, d'un ouvert analytique...) 200
+
+33. Digression topologique : anti-involutions des surfaces analytiques compactes (en laissant de côté d'abord le cas "à trous") 221
+
+34. L'injectivité de $\Pi_Q \to Autext(\Pi_{0,3})$ 229
+
+35. L'isomorphisme $\Pi_Q \simeq \Pi_{1,1}$ et l'injectivité $\Pi_Q \to Autext(\Pi_{1,1}) = Autext(SL(2,\mathbb{Z})^\wedge)$ 257
+
+36. Modules des courbes elliptiques, via Legendre, un $M_{1,[2]} \simeq \Pi_{0,3} \simeq M_{0,4}$ 272
+
+37. Relations entre $N_{g,v}, \Pi_{g,v}$ pour $g$ variable (corps des rev. finis) 239
+
+38. Description heuristique profinie de la cat. des courbes alg. définies sur des [unclear: corps] de cat. finis de $\bar{\mathbb{Q}}/\mathbb{Q}$ 245
+
+
+========================================
+PAGE 4
+========================================
+
+39. "Motifs" des courbes alg. et leur théorie de Galois. Liens avec $\Pi_{g,v}$. 285
+
+40. Le "Dessin d'Enfants" : un paradigme pour les courbes algébriques. 296
+
+41. Les dessins d'enfants comme objets "géométriques". 306
+
+42. La structure de "corps" sur l'ensemble des dessins d'enfants. 315
+
+43. Le groupe de Galois absolu $\Gamma = Gal(\bar{\mathbb{Q}}/\mathbb{Q})$ et son action sur les dessins d'enfants. 327
+
+44. Action de $\Gamma$ sur les dessins, les suites d'inclusion, et les sous-groupes de congruence. 340
+
+45. Vers une classification des dessins d'enfants : le problème des orbites. 352
+
+46. Dessins et géométrie anabélienne. 367
+
+47. La conjecture de Belyi et les dessins d'enfants. 378
+
+48. Vers une "théorie de Galois géométrique" : esquisse. 390
+
+49. Conclusion : la marche à travers la théorie de Galois, bilan et perspectives. 405
+
+[MARGIN: 814]
+
+[MARGIN: 752]
+[MARGIN: 832]
+
+4
+
+
+========================================
+PAGE 5
+========================================
+
+\section*{1. Topos multigaloisiens.}
+
+Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions équivalentes:
+
+a) $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est localement constant.
+
+b) $\mathcal{E}$ est équivalente à une catégorie $\hat{C}$ où $C$ est un groupoïde. NB. le groupoïde est [unclear: défini] [MARGIN: le [unclear: cas] des [unclear: topos] multigaloisiens est ici [unclear: traité] en [unclear: filigrane]]
+
+b') $\exists$ une famille $(G_i)_{i \in I}$ de groupes et une équivalence de catégories
+\begin{equation*}
+\mathcal{E} \simeq \prod_{i \in I} \text{Ens}(G_i)
+\end{equation*}
+
+c) Conditions d'exactitude ad-hoc, du type de celles donnés dans SGA 1...
+
+Dém. $b \leftrightarrow b' \implies a$ immédiat. Pour $a \implies b$, [unclear: on] [unclear: peut] [unclear: voir] [unclear: que] [unclear: tout] [unclear: topos] $\mathcal{E}$ est localement connexe, et qu'il suffit [unclear: de] [unclear: foncteurs] [unclear: fibres] i.e. [unclear: d'un] [unclear: point].
+
+Def. 1.1. Si les conditions équivalentes b), b') ci-dessus sont satisfaites, on dit que $\mathcal{E}$ est un topos multigaloisien (ou une catégorie multigaloisienne).
+
+[MARGIN: Prop. 1.3. Un topos $\mathcal{E}$ est multigaloisien ssi il est localement connexe et tout objet est localement constant.]
+
+5
+
+
+========================================
+PAGE 50
+========================================
+
+\dots \dots \dots : des syst. d'inv.
+$p : f \to f', \mu^* f \to g$. Ce construit $c'= \tau, d_{i'} = d_i, \forall i \in I'$
+
+[MARGIN: esquisse d'une preuve de l'existence]
+Le service de [unclear]
+\begin{equation*}
+\mu \in \mathcal{E} \text{, défini par } i \in I
+\end{equation*}
+avec $f_i : \mathcal{E}' \to \mathcal{E}$ et $f'_i : \mathcal{E}' \to \mathcal{E}$
+
+i.e. $f_i \to g_i$
+\begin{equation*}
+f'_i = (\mu_i) f_i
+\end{equation*}
+b) $\mu_i \in \mathcal{E}_i$ ($i \in I, i = \iota(n)$)
+
+décrit $\mu^*$ satisfait $\boxed{f'_i = \text{int}(\mu_i) f_i}$ \quad \quad \quad \quad  \text{aux} \quad  d_i = d'_i \text{, } \alpha, \alpha' \dots (\mathcal{E}, \mathcal{E}')$
+les $\mu_i, \text{fi}_i$ liés aux $\alpha, \alpha'$ (de $\mathcal{E}, \mathcal{E}'$)
+
+$\alpha_i, \alpha'_i (\in \Gamma)$ de la f. \dots
+\begin{equation*}
+\alpha' = p(\mu)\alpha
+\end{equation*}
+\begin{equation*}
+\alpha'_i = f_i(\mu_i)\alpha_i \quad \forall i \in I'
+\end{equation*}
+\begin{equation*}
+\begin{cases}
+p(\mu) = \alpha' \alpha^{-1} \\
+f_i(\mu_i) = \alpha'_i \alpha_i^{-1}
+\end{cases}
+\end{equation*}
+
+50
+
+
+========================================
+PAGE 51
+========================================
+
+[MARGIN: 24]
+
+N'oublions pas, comme je l'ai déjà dit, les
+deuxième relations, donnant les $f(\mu_i)$, déter-
+minant les fils de fusion uniques, l'existence
+de ces fils implique de telles relations :
+\begin{equation*}
+\boxed{\alpha_i \alpha_i^{-1} \in f_i(\mathcal{E}_i)} \quad \text{, il + I'}
+\end{equation*}
+
+Quant à la relation $p(\mu) = \alpha' \alpha^{-1}$, elle détermine
+(d'après les relations)
+le modulo multiplication par un $\mu_0 \in \text{Ker } p = \Pi_1$,
+mais qui doit être tel que l'on ait encore
+\begin{equation*}
+f'_{\varepsilon} = \text{int}(\mu_0) f_{\varepsilon}
+\end{equation*}
+(ou plus $\text{ de } f'_{\varepsilon} = \text{int}(\mu) f_{\varepsilon}$) ce qui signifie
+
+exige que
+\begin{equation*}
+\text{int}(\mu_0) f_{\varepsilon} = f'_{\varepsilon}
+\end{equation*}
+i.e.
+\begin{equation*}
+\boxed{\mu_0 \in \text{Cent}_{\Pi_1} f_{\varepsilon}(\mathcal{E}')}
+\end{equation*}
+
+C'est donc cela la "détermination" exacte
+du choix d'un isomorphisme homomorphisme entre
+les $f$ et $f'$ de $\mathcal{D}'$ dans $\mathcal{D}$.
+Si p.ex. on est dans des conditions où
+$\pi' \to \pi$ n'est pas un $f_{\varepsilon} : \mathcal{E}' \to \mathcal{E}$ est
+un $f$ d'indices fixes (c.-à-d. ouvert )
+- ces d'"un" morphisme "exact" ! -
+alors $\mu_0$ doit centraliser $\dots$ des groupes donnés.
+
+51
+
+
+========================================
+PAGE 52
+========================================
+
+\pagebreak[4]
+
+$\Pi_1$ - et de l'inverse, cela nous explique que,
+dans il semble bien que [unclear] (dans les cas
+considérés : des sous-groupes dominants des
+sous-groupes) une trans-morphisme
+d'un $f$ en $f'$ est (si cont.) est
+unique, i.e. $\text{Hom}(\mathcal{D}', \mathcal{D})$ est une catégorie
+discrète.
+
+b) On peut interpréter $\mathcal{D}$ comme $\mathcal{E}$ muni
+des sous-groupes $\mathcal{E}_i \subset \mathcal{E}$, et de $p : \mathcal{E} \to \mathcal{P}$
+(moyennant $\Pi_1$) enfin des isomorphismes
+$k_i : \mathcal{F}(\overline{\Pi}) \xrightarrow{\sim} \mathcal{E}_i \cap \bar{\Pi} = L_i$
+(commutant : l'actions de $\mathcal{E}_i$). Si on
+[unclear] un système $(\mathcal{E}; (\mathcal{E}_i, \mathcal{F}_i, \alpha_i), \Pi)$
+$(\mathcal{W}_i; \mu_i')$; un morphisme des [unclear]
+provenant des $\mathcal{E}$ sous un défini par
+un $f : \mathcal{E}' \to \mathcal{E}$
+satisfaisant les conditions suivantes :
+b) $pf$ est conjugué de $f' [\text{soit } \alpha \in \Pi \text{ que } pf = \text{int}(\alpha) p']$
+a) $\forall i \in I', \exists i \in I \text{ tel que } f(\mathcal{E}_i') \subset \mathcal{E}_i$
+soit contenu des sous-groupes de $\mathcal{E}_i$
+[soit $\alpha_i \in \mathcal{E} \text{ que } f(\mathcal{E}_i') \subset \text{int}(\alpha_i)(\mathcal{E}_i)$
+et $\text{int}(\alpha_i) f(\mathcal{E}_i') \subset \mathcal{E}_i$]
+
+\vspace{1cm}
+52
+
+
+========================================
+PAGE 53
+========================================
+
+NB Le i-f [unclear: ... ] $i' \to I'$ [unclear]
+$i : I' \to I$. Si les $\alpha_i$ sont choisis,
+il induit $\phi_i : \mathcal{E}_i' \to \mathcal{E}_i$
+$\phi_i = (\text{int}(\alpha_i) \circ f) | \mathcal{E}_i'$, qui induit des
+morphismes, via les $k_i', k_i$, [unclear] [unclear]
+
+[MARGIN: NB A priori, [unclear] [unclear] [unclear] le [unclear] [unclear] dans l'un [unclear] [unclear] [unclear] est l'unite.]
+
+$\phi_i : \mathcal{T}(\bar{\Pi}) \to \mathcal{T}(\bar{\Pi})$. On exige que
+[unclear: l'on] [unclear] [unclear] que $f \sim f'$, et est
+[unclear] [unclear] uniquement déterminé par cette
+condition, et $\alpha_i$ (qui est [unclear] dite déterminée
+par les composantes : $g$ [unclear] [unclear]
+[unclear] des [unclear] de $\mathcal{E}_i$ (dans
+[unclear] des [unclear] d'un ss-groupe [unclear]
+de $\mathcal{E}_i$ - c'est à dire si $f$ est [unclear] puisse
+être choisis de telle façon que, posant
+$\beta_i = p(k_i)\alpha_i$, on ait
+$\phi_i^0 = (\text{int}(\beta_i) \circ f) | \mathcal{E}_i'$
+$\chi_i = \text{int}(\beta_i)$
+$d_i \in N^*$ [unclear] [unclear] [unclear] [unclear] [unclear]
+uniquement déterminé, pour $\alpha$ et les $\alpha_i$
+[unclear] choisis).
+Remplaçant $\alpha$ par $\alpha' = d\alpha$.
+
+53
+
+
+========================================
+PAGE 54
+========================================
+
+8. Réflexion taxonomique.
+
+Le cas $\dim X = 0$ se traduit sur le paradigme du système $(\mathcal{T}(\bar{\Pi}) \xrightarrow{k_i} \mathcal{E}_i \xrightarrow{p_i} \mathcal{E} \xrightarrow{p} \Gamma)$ par le fait que $I = \emptyset$ - donc ce cas se conditionne par le fait que $p$ est injectif, donc se décrit par la donnée d'un sous-groupe ouvert $\mathcal{E} \subset \Gamma$, i.e. d'une sous-extension finie $\bar{k} \subset \bar{K}$ (NB: $CNB = \text{conj. sur } \tilde{X} \to X$ - les divagations sur $X$ se résument à la description d'une telle immersion $\bar{k} = \text{Hom}(X, C)$ de $\bar{K}/K$).
+
+Le cas $\dim X = 1$ se traduit par le fait que $\mathcal{E} \to \Gamma$ n'est pas injectif - quand $I$ n'est pas vide on a un "trou" dans ce cas. S'il est vide, la prescription se fait en remplaçant un lemme d'hom. des groupes finis $\mathcal{E} \to \Gamma$ par $\Gamma$ donné comme $\text{Gal}(\bar{K}/K) = \text{Aut}_{\bar{\Pi}}(\Omega)$.
+
+Supposons donnés, maintenant à la fois $D = (\mathcal{E}, p, I, (p_i : \mathcal{E}_i \to \mathcal{E}), (k_i : \mathcal{T}(\bar{K}) \to \mathcal{E}_i))$ et $D' = (\mathcal{E}', p', I', (p'_i : \mathcal{E}'_i \to \mathcal{E}'), (k'_i : \mathcal{T}(\bar{K}) \to \mathcal{E}'_i))$.
+
+Et revenons à la question de la description des morphismes de $D'$ dans $D$. On distingue quatre cas, suivant les deux situations.
+
+54
+

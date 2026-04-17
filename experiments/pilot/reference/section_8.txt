@@ -1,0 +1,293 @@
+Section: § 8. — RÉFLEXIONS TAXONOMIQUES
+G103d pages: 38-45
+
+--- G103d page 38 ---
+§ 8. — RÉFLEXIONS TAXONOMIQUES
+Le cas dimX = 0 se traduit sur le paradigme du système
+( T(K)
+Ei
+E
+Γ
+p
+κi
+ρi
+)
+par la condition p injectif et donc I = ∅— donc ce cas se décrit simplement par la
+donnée d’un sous-groupe ouvert de E ,→Γ, i.e. une sous-extension finie L de K/K (NB
+onaurabiensûrX′ = Spec L, etlechoixfaitssurX —i.e. surΠD∗(= ∅) →ΠU →Πe
+— aboutissant à cette description, reviennent ici au choix d’une telle K-immersion de
+L = H0(X, OX) dans K/K).
+Le cas dimX = 1 se traduit par le fait que E →Γ n’est pas injectif — quand à I,
+il peut être vide ou non dans ce cas. S’il est vide, la description se fait donc simplement
+en termes d’un homomorphisme de groupes profinis E
+p
+−→Γ (où Γ donnée d’avance
+= Gal(K/K)) = AutΠe(Ω)).
+Supposons données maintenant à la fois D = (E, p, I, (ρi : Ei ,→E), (κi :
+T(K) →Ei)) et D′ = (E′, p′, I′, (ρ′
+i), (κ′
+i)), et revenons à la question de la descrip-
+tion des morphismes de D′ dans D. On va distinguer quatre cas suivant les deux valeurs
+possibles 0, 1 de n = dim D et n′ = dim D′ respectivement.
+I) n = 0, n′ = 0, I = I′ = ∅et les données se réduisent à des sous-groupes ouverts
+E
+p,−→Γ, E′
+p′
+,−→Γ. Dans la pesante description plus haut, les considérations
+relatives à I, I′ tombent et un morphisme D′ →D revient à une classe de couples
+
+--- G103d page 39 ---
+(f, α), où f : E′ →E et α ∈Γ, tels que l’on ait pf = int(α)f
+E′
+E
+Γ
+Γ
+f
+p′
+p
+∼
+int(α)
+— ce qui implique que f est déjà déterminé par α, étant induit par int(α) [α
+assujetti à α ∈TransΓ(E′, E) = TransΓ(L, L′)] [qui induit bien un homo-
+morphisme de L ⊂K dans L′ ⊂K, donc un homomorphisme Spec(L′) →
+Spec(L) en sens inverse].
+La condition que α, α′ ∈Γ définissent le même morphisme D′ →D (ou encore
+Spec L′ →Spec L) se décrit par l’existence d’un µ ∈E tel que α′ = µα. Le fait
+qu’on trouve une correspondance 1-1 entre HomK(X′, X) ≃HomK(L, L′)
+avec Hom(D′, D) explicité aussi, est clair.
+II) n′ = 1, n = 0. Ici n = 0 implique déjà I = ∅. Pour que Hom(X′, X) ̸= ∅, il
+faut que l’on ait I′ = ∅(par la condition F −1(S)
+| {z }
+=f−1(∅)=∅
+= S′ qui implique S′ = ∅,
+si f : (X′, S′) →(X, S)) — dans la description des morphismes D′ →D, cela
+correspond au fait qu’on ne peut avoir d’application τ : I′ →I(= ∅) que si
+I′ = ∅. Se bornant donc au cas I′ = ∅(sinon Hom(X′, X) = Hom(D′, D) =
+∅et on est heureux), on trouve donc que D revient à la donnée de E
+p,−→Γ
+sous-groupe ouvert, et D′ à la donnée d’un homomorphisme de groupes profi-
+nis p′ : E′ →Γ, dont l’image sera un sous-groupe ouvert de Γ, soit Γ0 ⊂Γ,
+correspondant à une sous-extension finie L′ de K/K. Les choix faits relatifs à
+X′ implique qu’on a un isomorphisme fixé L′ ≃H0(X′, OX′). Ceci dit, un K-
+morphisme de (X′, ∅) dans (X, ∅) i.e. de X′ →X revient (comme X affine)
+à la donnée d’un K-morphisme Spec L′ →X (≃Spec L) de l’enveloppe affine,
+i.e. d’un K-homomorphisme L →L′ (ce qui ne dépend que de L, L′ ou encore
+que des sous-groupes E ,→Γ et Γ0 ,→Γ de Γ). D’autre part la description en
+termes des diagrammes D, D′ revient à dire qu’un morphisme est déterminé par
+34
+
+--- G103d page 40 ---
+un couple (f, α), f : E′ →E et α ∈Γ, tels que l’on ait encore commutativité
+E′
+E
+Γ
+Γ
+p′
+p
+pf=int(α)p′
+f
+int(α)
+ce qui implique encore que f est déterminé par α (savoir, induit par int(α)), et α
+étant sujet à la seule condition
+α ∈TranspΓ(Γ′
+0, E)
+— et α, α′ décrivant le même homomorphisme si et seulement si ∃µ ∈E tel que
+α′ = µα
+donc on a encore
+Hom(D′, D) ≃E \ TranspΓ(Γ′
+0, Γ)
+≃TranspΓ(L, L′)/FixΓ(L)
+≃HomK−ext(L, L′)
+donc on trouve encore dans ce cas le pleine fidélité.
+En fait, on aurait pu traiter ensemble les deux cas (n′ = 0, n′ = 1) où n = 0, et
+la description de Hom(X, X′) en termes de D, D′ est valable d’ailleurs, sans faire
+des hypothèses draconiennes (projective, lisse, dimension ≤1, anabélienne) sur
+X′.
+En effet, comme X est fini étale sur K, son image inverse XX′ = X′ ×K X sur
+X′ est fini étale sur X′, et
+HomK(X, X′) ≃Sections(XX′/X′)
+peut se décrire en termes de la catégorie \
+Π1(X′)(= ΠU) des systèmes locaux finis
+sur X′ i.e. des systèmes locaux finis sur ΠU. Suivant cette description, on aboutit
+à la description commune donnée dans I, II, sans aucune hypothèse autre sur X
+35
+
+--- G103d page 41 ---
+que la 0-connexité (pour pouvoir décrire ΠU = ΠX′ sur Πe en termes d’un ho-
+momorphisme de groupe p′ : E′ →Γ…)
+Quand on se donne (X′, S′), avec S′ pas nécessairement vide, X′ 0-connexe (et
+X′ lisse de dimension 1 aux points de S′ (il suffirait même que S′ ne disconnecte
+pas localement pas localement (ét) X′, donc X′ \S′ 0-connexe…), alors la donnée
+Π1(X′ \ S′) →Π1(eK) es décrite encore par E′
+p′
+−→Γ (indépendamment de
+la considération des Ei etc) et par suite HomK(X′ \ S′, X) est décrit comme on
+vient de dire. Mais on a (avec les hypothèses de normalité sur X′ aux points de S′)
+HomK(X′ \ S′, X) = HomK(X′, X). Ceci encourage à modifier la définition
+des morphismes (X′, S′) →(X, S) donnée au début, via f : X′ →X avec
+f −1(S)red = S′, en exigeant ceci non pour f, mais seulement pour la restriction
+de f à la réunion des composantes irréductibles de X′ qui son envoyées dans des
+composantes irréductibles de X non discrète i.e. non réduites à un point. Dans la
+description correspondante D′, D, on spécifiait que l’on n’exige la donnée d’une
+application I′ →I (et des données correspondantes fi′, αi′) que si n ̸= 0 i.e.
+psi : E →Γ pas injectif - dans le cas contraire (impliquant I = ∅) si par hasard
+I′ ̸= ∅, on laisse tomber la connaissance des I′ et des éléments de structure cor-
+respondants.
+III) n′ = 0, n = 1. Ici on a donc I′ = ∅, p′ : E′ ,→Γ i.e. D′ se réduit à la donnée
+d’un sous-groupe ouvert E ,→Γ de Γ.
+Du coté (X′, S′ = ∅) et (X, S), la condition f −1(S)red = S′ = ∅sur le K-
+morphisme f : X′ →X implique que f se factorise par X′ = Spec(L′) →
+X \ S, sans préjudice si S = ∅ou non, i.e. si I = ∅ou non. Donc il s’agit
+de décrire HomK−Sch(X′, S \ S), en termes de Π1(X′) →Πe = Π1(eK) et
+de Π1(X \ S)
+|
+{z
+}
+=ΠU
+→Πe. Ici les éventuelles donnés supplémentaires relatives à I ne
+serventpasexplicitementàladescription, entermesdediagrammesdegroupoïdes.
+Sauf erreur, une réduction facile (descente galoisienne) nous ramène au cas où
+X′ = Spec K i.e. E′ ,→Γ. La description des homomorphismes D′ →D est
+alors encore en terme des couples (f, α), où f : Γ′ = Γ →E et où α ∈Γ avec
+36
+
+--- G103d page 42 ---
+les sempiternelles conditions pf = int(α)p′, qui devient (comme p′ = id))
+pf = int(α).
+Ici bien sûr α ne décrit plus f (mais l’inverse est vraie, ici la connaissance de f de
+pf ∈Aut(Γ) implique celle de α, i.e. Centr(Γ) = {1}…). Les couples (f, α) et
+(f ′, α′) définissent le même morphisme de diagramme, si et seulement si ∃µ ∈E
+tel que f ′ = int(µ) ◦f, α′ = p(µ)α. Comme (si ∃(f, α)) p surjectif, on veut
+que, quitte à choisir µ au-dessus de α−1, et de remplacer (f, α) par (f ′, α′) =
+(int(µ)f, p(µ)α), on peut toujours décrire un morphisme D′ →D par (f, α)
+avec α = 1 donc par une section f de l’homomorphisme E →Γ, et deux sections
+f, f ′ (correspondant à (f, 1), (f ′, 1)) définissent le même homomorphisme de D′
+dans D, si et seulement si ∃µ ∈E tel que p(µ) = 1, i.e. µ ∈π = Ker(p), et tel
+que f ′ = int(µ) ◦f.
+Ainsi, les morphismes de D′ (correspondant à X′ = Spec K) dans D correspon-
+dent exactement aux classes de scindages de E
+p
+−→Γ, modulo automorphismes
+intérieures par des µ ∈K = Ker p. La “conjecture bordelique” dans le cas III
+équivaut donc à ceci:
+Γ((X, S)/K)
+Classes de π-conjugaison de sections de E →Γ
+i.e. de sections de Π1(X) →Π1(eK);
+est bijective (si (X, S) est un couple permis “anabélien”)27.
+Je sais en tout cas que cette application est injective — ceci vaut chaque fois qu’on
+a un schéma U sur K (ici X \S) qui se plonge dans un groupe algébrique G exten-
+sion d’une variété abélienne par un tore, et résulte alors du théorème de Mordell-
+Weil “absolu” : G(K) est un Z-module de type fini. En fait, il suffit de con-
+naître la classe de splittage de l’extension E♮de Γ par πab = π/[π, π] ≃H1(U),
+correspondant à un point de U rationnel sur K pour connaître ce point. Donc
+le résultat de fidélité est obtenu, avec des hypothèses moins draconiennes sur X
+que l’hypothèse anabélienne (avec les notations du lemme 5.2, cela signifie que
+27Faux tel que, cf. n◦9 ci-dessus - il faut des conditions supplémentaires sur les f…Peut-être si I = ∅.
+37
+
+--- G103d page 43 ---
+g = 0 ⇒n ≥2 i.e. qu’il n’y a pas de composante irréductible de UK qui soit
+isomorphe à P1
+K ou E1
+K…).
+NB Ceci suggère une approche de la conjecture de Mordell, via une meilleure con-
+naissancedesextensionsdeΓparπ : lefaitqu’iln’aait(pourg ≥2)qu’unnombre
+fini de classes de π-conjugaison de scindages d’une telle extension…
+Itou pour une approche du théorème de Fermat, via une bonne connaissance
+d’une extension de Γ par π = π1(P 1
+Q \ {0, 1, ∞})…
+IV) n = 1, n′ = 1 i.e. X, X′ de dimension 1.
+a) Si I = I′ = ∅, je n’ai rien à ajouter à la description des morphismes f :
+X →X′ en termes de morphismes de diagrammes de groupoïdes. Ici la
+condition f −1(S)réd = S′ n’est pas une restriction sur f — on n’exclut
+doncpasdesapplicationsconstantes. Celles-ci(grâceàl’étudeducasII)sont
+d’ailleurs décrites de façon “pleinement fidèle” pas des homomorphismes de
+diagrammes — ils correspondent aux cas f : E′ →E qui sont nuls sur π′.
+b) Le cas I′ = ∅, I ̸= ∅(i.e. S′ = ∅, S ̸= ∅) signifie, avec la condition
+f −1(S)réd = S′ i.e. f −1(S) = ∅, quef doitappliquerX′ dansX\S, donc
+que tout f correspond à un morphisme de (X′, ∅) dans (X, S) soit con-
+stant. La conjecture bordélique dans ce cas exprime donc essentiellement
+qu’au niveau des homomorphismes E′
+p′
+−→Γ et E
+p
+−→Γ, tout homo-
+morphisme des groupes E′
+f
+−→E tel que pf = int(α)p′ pour α ∈Γ
+[on est ramené au cas où α = 1, p, p′ surjectifs, i.e. aux homomorphismes
+d’extensions de Γ par des groupes π = π1(X \ X) et π′ = π1(X′)] est triv-
+ial sur π′ [i.e. “est” une section]. Il faudrait essayer de vérifier ce point di-
+rectement, qui (modulo le cas III) établirait la “conjecture bordélique” dans
+ce cas-là.
+c) Le cas I′ ̸= ∅, I = ∅implique que Hom((X, S), (X′, S′)) = ∅(cas
+f −1(S) = f −1(∅) = ∅̸= S′ !), ce qui correspond bien à Hom(D′, D) =
+∅puisque ∄τ : I′ →I.
+d) Dans le cas I′ ̸= ∅, I ̸= ∅, la condition f −1(S)réd = S′ implique que
+f n’est pas constante (sinon on aurait f −1(S)réd = ∅ou X′), donc f est
+38
+
+--- G103d page 44 ---
+dominantetfini, génériquementétale. Donc, detelsf nepeuventintervenir
+que si I et I′ soit tous deux ∅(cas a), soit tous deux ̸= ∅(cas actuel d)). Le
+fait que dans ces cas-là, la description diagrammatique galoisienne soit fidèle
+(peut-être pas pleinement) résulte aisément du résultat analogue dans le cas
+III.
+La pleine fidélité par contre est chose mystérieuse, même si le résultat corre-
+spondant dans le cas III était acquis (et encore semble loin, même si K fini
+sur Q…).
+Réductions élémentaires. Pour prouver la “conjecture bordélique”, on est ramené
+(par des extensions finies du corps K) au cas où E →Γ (et, si on y tient, aussi E′ →Γ)
+est épimorphique. Sauf erreur, la connaissance du cas III pour des extensions de type fini
+de K, implique le cas général pour K (avec suffisamment de sueurs techniques…).
+Revenant cependant au cas général quand E →Γ est surjectif, dans toute classe
+d’équivalence de systèmes (f : E′ →E, α ∈Γ, τ : I′ →I, (αi ∈Eτ(i′)=i)i′∈I′),
+on peut trouver un système avec α = 1, de sorte que f : E′ →E soit compatible
+avec les homomorphismes dans Γ (i.e. les structures d’extension). Quand on se borne à
+de tels systèmes, l’équivalence par conjugaison se fait par un système (µ, (µi′)i′∈I′) avec
+µ ∈π (= Ker p), et les µi′ ∈Ei=τ(i′) comme avant. Ainsi, f : E′ →E est un
+homomorphisme d’extensions, défini modulo automorphisme intérieur par un élément
+deπ = Ker(E →Γ), etsatisfaisantàdesconditionsexplicitéesparailleurs. Ilsepourrait
+(commeonadéjàremarqué)quelaconnaissancedelaclassedeπ-conjugaisondef suffise
+à déterminer le “morphisme bordélique” dans lequel f s’insère (si I, I′ ̸= ∅).
+[C’est lié à la question de savoir si ∀d ∈N∗, TransE(Ld
+i , Li) est réduit à Ei (où
+Li = Ker(pi : Ei →Γ) = Im(κi : T(K) →Ei)). Dans ce cas, Ei serait connu en
+termes de Li ⊂π, et même en termes du noyau de sous-groupes qu’il définit dans π, et
+a fortiori en termes des noyaux d’homomorphismes définis par κi : T(K) →π…
+Cas où Ei →Γ sont surjectifs (i.e. les k(si) = K i.e. si rationnel sur K).
+Alors si (f, τ, (αi′)) est un homomorphisme de D′ dans D, quitte à corriger par des
+µi ∈Ei ayant même image que les αi′ dans Γ, on peut supposer αi′ ∈π, en plus de
+α = 1 (obtenu en corrigeant par µ convenable). Donc on décrit l’homomorphisme
+D′ →D par (f, 1, τ, (αi′)), les αi′ appartenant à π. La condition ici est que f :
+E′ →E soit un homomorphisme de groupes sur Γ, que f(E′
+i′) ⊂int(α−1
+i′ Eτ(i′)=i), et
+39
+
+--- G103d page 45 ---
+que l’homomorphisme induit E′
+i →Ei′ par int(αi′)f induit sur T(K) (via κi′, κi)
+l’homomorphisme de multiplication par di sans plus — que c’est beau ! Deux sys-
+tèmes (f, τ, (αi, 1)) et (f ′, τ ′, (α′
+i, 1)) définissent le même morphisme, si et seulement
+si τ = τ ′ et s’il existe µ ∈π, µi′ ∈Li=τ(i′) = κi(T(K)) tels que
+f ′ = int(µ)f
+α′
+i′ = µi′αi′
+Notons qu’à priori, pour (f, τ) fixé, les αi′ sont déterminés modulo multiplication
+à droite par des éléments de Transpπ((L)
+di′
+i , Li), qui est sans doute = Li = Ker(κi :
+Ei →Γ) = 1 = Im(πi : T(π) →Eiπ). Doncontrouvequelaclassedeπ-conjugaison
+de groupes sur Γ de f : E′ →E suffit à déterminer l’homomorphisme D′ →D dans
+la catégorie bordélique. Je présume qu’un peu de sueur permettrait de prouver que cela
+marche encore dans le cas général (sans supposer les Γi = Im(Ei →Γ) égaux à Γ).
+Cela signifie (dans le cas actuel) que la structure essentielle qui décrit (X, S) est celle
+d’“extension extérieure” de Γ par un groupe π [homomorphisme extérieur surjectif d’un
+groupe, de noyau sur π], avec π muni d’une structure à lacets i.e. d’homomorphismes
+extérieurs κi : T(= T(K) ≃ˆZ) →π (satisfaisant certaines conditions), les homomor-
+phismesdeE′ →Γ(noyauπ′)dansE →Γ(noyauπ)étantlesclassesdeπ-conjugaisons
+d’homomorphismesE′ →E degroupessurΓ, induisantdeshomomorphismesπ′ →π
+compatibles avec la structure à lacets.
+40

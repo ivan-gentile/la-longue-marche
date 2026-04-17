@@ -1,0 +1,54 @@
+Section: § 31. — DIGRESSION SUR LES RELÈVEMENTS D’UNE
+G103d pages: 213-214
+
+--- G103d page 213 ---
+§ 31. — DIGRESSION SUR LES RELÈVEMENTS D’UNE
+ACTION EXTÉRIEURE D’UN GROUPE FINI G SUR UN
+GROUPE PROFINI À LACETS π
+On suppose l’action extérieure fidèle, i.e. G ⊂ˆˆT(π) = ˆˆT, et que G = G+. On
+suppose de plus qu’il existe une discrétification invariante π0, i.e. telle que G ⊂T(π0).
+Si on suppose G cyclique, alors sauf erreur il est prouvé que la situation est réalisable
+topologiquement (donc aussi de façon analytique complexe…)
+Dans le cas discret, la signification des classes de π0 conjugaison de relèvement G →
+S(π0) est bien comprise, de même que pour les relèvements partiels. On trouve une réal-
+isation canonique [si U ! ̸= ∅] du groupoïde fondamental associé au groupe extérieur
+π0, par un groupoïde fini [U !] sur lequel G opère au sens strict, dont les points corre-
+spondent aux classes de π0-conjugaison de sections partielles ̸= 1 maximales. Le groupe
+T(π0)G opère de façon également canonique sur ce groupoïde. Si P ∈U ! correspond à
+un relèvement G →S(π0), alors un élément ·u ∈T(π0)G est dans l’image de S(π0)G,
+i.e. peut se remonter en u ∈S(π0) commutant à G, si et seulement si ·u(P) = P, i.e.
+(si ·u est remonté de façon quelconque en v), si et seulement si v(G) est π0-conjugué à
+G, i.e. si et seulement s’il existe g ∈π0 tel que v(G) = int(g)(G), i.e. u
+def= int(g−1)v
+fixe G (auquel cas bien sûr il centralise, par l’hypothèse ·u ∈TG). Donc notre bril-
+lante assertion est une tautologie, et donc le relèvement est unique. Comme U ! est fini,
+le stabilisateur T(π0)G
+P de P dans T(π0)G est d’indice fini, et c’est donc ce sous-groupe
+d’indice fini qui se remonte gaillardement et canoniquement.
+Que peut-on dire dans le contexte profini ? Bien sûr, on a une application canonique
+
+--- G103d page 214 ---
+classes de π0-conjugaison
+classes de π0-conjugaison
+de relèvements de
+des relèvements de
+G en G →S(π0)
+−→
+G en G →ˆˆS(π0),
+i.e. de scindage de l’extension
+i.e. de scindage de l’extension
+1 →π0 →E →G →1
+1 →ˆπ0 = π →ˆE →G →1.
+Il faudrait examiner d’abord
+a) la question de la bijectivité de cette application,
+b) si πG = 1 (rigidité), pour G ̸= {1}. (pour un relèvement donné, dans E pour
+simplifier).
+J’ai envie de conjecturer sans vergogne qu’il en est ainsi — ce qui impliquerait par exem-
+ple que pour tout tel relèvement de G, il y a un sous-groupe ouvert (TG)P du groupe
+(peut-être vraiment immense a priori !) ˆˆTG, qui se remonte canoniquement de façon à
+commuter à G….
+Il faudrait manifestement faire, en même temps qu’une théorie des opérations ex-
+térieures des groupes finis sur des groupes discrets à lacets (qui est pour le moment ex-
+trêmement conjecturale) une théorie analogue dans le cas profini — j’aurai sans doute à
+y revenir par la suite.
+209

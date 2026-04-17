@@ -1,0 +1,268 @@
+Section: § 29. — CRITIQUE DE L’APPROCHE PRÉCÉDENTE
+G103d pages: 201-207
+
+--- G103d page 201 ---
+§ 29. — CRITIQUE DE L’APPROCHE PRÉCÉDENTE
+L’approche des paragraphes précédents semble finalement très brutale. J’ai même des
+doutes si la conjecture sur les propriétés du foncteur “bouchage de trous” est vraie telle
+quelle. Il est vrai que pour un groupe profini à lacets π, si on fixe i ∈I(π), on a un
+homomorphisme canonique
+(1)
+ˆˆT(π, i) = ˆˆT(π)i →ˆˆS(π′),
+(où ˆˆT(π)i est le stabilisateur de i dans ˆˆT(π)), mais il est problématique si c’est un iso-
+morphisme – et même si c’est injectif, ou si c’est surjectif. Mais, choisissant une discréti-
+fication π0 ⊂π, d’où itou π′
+0 pour π′, l’homomorphisme précédent induit bel et bien
+un isomorphisme
+(2)
+T(π0)i ≃S(π′
+0)
+d’où
+(3)
+ˆT(π0)
+∼→ˆS(π′
+0)
+et par suite, la suite exacte 1 →ˆπ′
+0 →ˆS(π′
+0) →ˆT(π′
+0) →1 donne :
+(4)
+1 →ˆπ′
+0 →ˆT(π0) →ˆT(π′
+0) →1
+et par suite on trouve un homomorphisme injectif
+ˆπ′
+0 →ˆT(π0)i ,→ˆˆT(π0)i ≃ˆˆT(π)
+
+--- G103d page 202 ---
+(où ˆπ′
+0 = π′) donc un homomorphisme
+(5)
+iπ0 : π′ →ˆˆT(π)i
+dont le composé avec (1) est l’injection canonique π′ ,→ˆˆS(π′). Remplaçant la discréti-
+fication π0 par une autre, π1, on trouve a priori un autre homomorphisme iπ1 : π′ →
+ˆˆT(π)i. On peut supposer que π1 = u(π0), u ∈ˆˆT(π0)i et par transport de structure on
+trouve
+iπ1 = iu(π0) = Int(u) ◦iπ0 ◦u−1
+π′
+où uπ′ est l’automorphisme de π′ défini par u via (1). Dire que iπ0 est indépendant du
+choix de la discrétification π0, revient aussi à dire que son image dans ˆˆT(π)i est un sous-
+groupe invariant – et alors l’action de ˆˆT(π)i sur le sous-groupe invariant iπ0(π) = i(π)
+via automorphismes intérieurs, n’est autre que celle définie par (1). Dans ce cas, on
+trouve par passage au quotient un homomorphisme
+(6)
+ˆˆT(π)i/π′ →ˆˆT(π′)
+dont l’injectivité resp. surjectivité équivaudrait à celle de (1). Mais il n’est pas évident du
+tout qu’il en soit toujours ainsi.
+S’il n’en était pas ainsi, il s’imposerait de regarder le sous-groupe de ˆˆT(π)i formé
+des γ ∈ˆˆT(π)i qui normalisent le sous-groupe iπ0(π′), et tels que l’action induite sur
+iπ0(π′) correspond à celle donnée par l’action (1) de ˆˆT(π) sur π′. Ce sous-groupe Hπ0
+(qui contient ˆT(π0)i) dépend donc a priori de la discrétification choisie. Remplaçant π0
+par u(π0) (où u ∈ˆˆT(π)i) le remplace par Int(u)·H – donc H tout au moins ne change
+pas, si on fait varier π0 dans une classe de prédiscrétifications.
+On peut faire des choix plus symétriques, en considérant pour tout i ∈I le quotient
+correspondant π′
+i de π, d’où, pour une discrétification donnée π0, des homomorphismes
+iπ0,i : π′
+i →ˆˆT(π)i ⊂ˆˆT(π),
+et on définit Hπ0 ⊂ˆˆT(π) comme le sous-groupe des γ ∈ˆˆT(π) qui “permutent les iπ0,i
+entre eux” dans un sens évident. On a donc
+(7)
+Hπ0 ∩ˆˆT(π)i = Hπ0,i
+197
+
+--- G103d page 203 ---
+et
+(8)
+H ⊃ˆT(π0).
+Le point que j’ai en vue, c’est que le sous-groupe de ˆˆT(π0) image de π1(Mg,ν), doit non
+seulement normaliser ˆT(π0)+, mais de plus être contenu dans un H. C’est là une condi-
+tionquej’airencontréeparlabande, àlafaveurdel’hypothèse(peut-êtrebienhâtive)que
+(1) est un isomorphisme, qui impliquait (facilement) que l’on avait H = ˆˆT(π0) tout en-
+tier. Il est possible que ˆˆT(π0) soit un groupe à tel point démesuré et pathologique, qu’il
+ne pourra jamais être question de dire des choses raisonnables (et vraies) sur le groupe
+tout entier, (tel que la bijectivité de (1) par exemple) et qu’on soit obligé de travailler avec
+des sous-groupes plus petits, qui restent proches du discret (avec quand-même des as-
+pects supplémentaires “arithmétiques”, dû au Γ0 = Gal(Q0/Q)!). En fait, il y a (pour
+I = I(π) ̸= ∅, i.e. ν ̸= 0) dans le groupe ˆT(π0) une structure simpliciale d’extensions
+successives, qui va être respectée par l’action extérieure du groupe de Galois, et dont il
+faudrait tenir compte. Elle fait partie de la “structure à l’∞” dans le π1 des multiplicités
+modulaires Mg,ν, qui même pour ν = 0 est sans doute non triviale, et il est possible qu’il
+faille en tenir compte, pour arriver à mettre le doigt sur ΓQ.
+Sans essayer de donner d’emblée une description a priori de ΓQ “dans les ˆˆTg,ν”, on
+va procéder de façon plus inductive, en partant de la présence de ΓQ (pour des raisons
+arithmético-géométriques), et en essayant de dégager des propriétés de cette présence
+peut-être assez fortes pour finir par donner une caractérisation purement algébrique.
+Rappelons que, via le choix de Ug,ν (différentiable), on avait pu construire, par voie
+transcendante, un ^
+Mg,ν,C et un ]
+Ug,ν,C =
+^
+Mg,ν+,C, d’où un ^
+Mg,ν,Q, et un ^
+Ug,ν,Q, d’où
+un π1(Ug,ν,Q), avec une filtration en trois crans, dont les facteurs sont respectivement
+canoniquement isomorphes à
+(9)
+ˆπg,ν, ˆT(πg,ν)+, ΓQ = Gal(Q0/Q).
+Ce groupe s’envoie (on présume injectivement) dans ˆˆS(πg,ν), induisant un isomor-
+phisme entre son sous-groupe π1(Ug,ν,Q0) et ˆS(πg,ν); désignons son image par Mg,ν.
+Donc c’est un sous-groupe fermé
+(10)
+ˆSg,ν ⊂Mg,ν ⊂ˆˆSg,ν
+198
+
+--- G103d page 204 ---
+et ˆS+
+g,ν est normal dans Mg,ν (mais pas ˆSg,ν !), La donnée d’un tel Mg,ν équivaut à celle
+d’un Ng,ν
+(11)
+ˆTg,ν ⊂Ng,ν ⊂ˆˆTg,ν,
+avec ˆT+
+g,ν normal dans Ng,ν. On pose105:
+(12)
+Γg,ν = Ng,ν/ˆT+
+g,ν ≃Mg,ν/ ˆS+
+g,ν.
+On a un homomorphisme surjectif
+(13)
+ΓQ →Γg,ν
+dont on présume qu’il est bijectif – i.e. que les Γg,ν sont canoniquement isomorphes
+entre eux.
+Soit maintenant π0 un groupe discret à lacets de type g, ν, alors on définit des sous-
+groupes Mπ0, Nπ0 :
+(14)
+ˆS(π0) ⊂Mπ0 ⊂ˆˆS(π0)
+(15)
+ˆT(π0) ⊂Nπ0 = M(π0)/ˆπ0 ⊂ˆˆT(π0)
+(et on pose Γπ0 = Mπ0/ ˆS(π0)), en utilisant un isomorphisme π0
+∼→πg,ν et en procé-
+dant par transport de structure – le résultat n’en dépend pas. Plus généralement, partons
+d’un couple (π, α) d’un groupe π profini, muni d’une prédiscrétification α, qu’on peut
+donc interpréter comme une classe d’isomorphismes ˆπg,ν →π, définie modulo com-
+position à droite par un u ∈ˆSg,ν. Alors par transport de structure on en déduit des
+groupes Mα, Nα
+(16)
+ˆSα ⊂Mα ⊂ˆˆS(π)
+(17)
+ˆTα ⊂Nα = Mα/π ⊂ˆˆT(π)
+avec ˆS(π)+ normal dans Mα, i.e. ˆT+(π) normal dans Nα. On pose
+(18)
+Γα = Mα/ ˆS+
+α ≃Nα/ˆT+
+α.
+105Dans Γg,ν, on a un élément canonique d’ordre 2 τg,ν, correspondant aux éléments de ˆTg,ν \ ˆT+
+g,ν =
+ˆT−
+g,ν.
+199
+
+--- G103d page 205 ---
+On a un élément canonique
+(19)
+τα ∈Γα, τ 2
+α = 1, τα ̸= 1.
+Soit maintenant π un groupe profini à lacets de type (g, ν). On appelle arithmétisa-
+tion de π la donnée d’un élément de
+(20)
+A(π) = Isomlac(ˆπg,ν, π)/Mg,ν ≃Isomextlac(ˆπg,ν, π)/Ng,ν.
+Soit P(π) l’ensemble des prédiscrétifications orientées de π:
+(21)
+P(π) = Isomlac(ˆπg,ν, π)/ ˆS+
+g,ν ≃Isomextlac(ˆπg,ν, π)/ˆT+
+g,ν;
+alors Γg,ν opère librement à droite sur P(π), et
+(22)
+A(π) ≃P(π)/Γg,ν
+– P(π) est un torseur relatif sur A(π), de groupe Γg,ν. Pour a ∈A(π), soit Ma le
+sous-groupe de ˆˆS(π) des automorphismes de (π, a), il opère sur le Γg,ν-torseur Pa des
+discrétifications orientées de π sur a. Pour α ∈Pa, soit ˆSα ⊂ˆˆS(π); alors ˆS+
+α ne
+dépend pas de α (on le notera ˆSa); 106 c’est aussi le noyau de l’opération de Ma sur Pa.
+On a
+(23)
+ˆS+
+a ⊂Ma ⊂ˆˆS(π)
+d’où encore
+(24)
+ˆT+
+a ⊂Na ⊂ˆˆT(π)
+en posant
+(25)
+Na = Ma/π, ˆT+
+a = ˆS+
+a /π.
+On pose
+(26)
+Γa = Ma/ ˆS+
+a ≃Na/ˆT+
+a .
+106mais attention, ˆSα dépend de α, i.e. τα ∈Γa dépend de α.
+200
+
+--- G103d page 206 ---
+Alors Γa s’identifie au commutant de Γg,ν opérant sur Pa, i.e. à Γg,ν “tordu” par le
+torseur Pa. Le choix d’un α ∈Pa revient donc au choix d’un tel isomorphisme
+(27)
+Γa ≃Γg,ν
+qui est changé par automorphisme intérieur si on change α…
+On a la catégorie des groupes à lacets extérieurs arithmétisés de type g, ν — c’est
+un groupoïde connexe, avec une origine fixée (ˆπg,ν, ag,ν) (ag,ν arithmétisation “canon-
+ique”), dont le groupe des automorphismes est Ng,ν, extension de Γg,ν par ˆT+
+g,ν ≃
+π1(Mg,ν,Q) (si ΓQ →Γg,ν est injectif!) (calculé par rapport au revêtement universel
+canonique de Mg,ν,Q)…
+Se donner un objet de cette catégorie, c’est essentiellement la même chose (à isomor-
+phisme unique près) que de se donner un revêtement universel ^
+Mg,ν,Q de Mg,ν,Q – ou
+un torseur sous Ng,ν; on considère alors la famille de courbes de type g, ν sur ^
+Mg,ν,Q
+(28)
+Ug,ν ×Mg,ν ^
+Mg,ν,Q = Ug,ν( ^
+Mg,ν,Q)
+comme étant “la” courbe algébrique dont le π1 extérieur (qui est donc le π1 de ce
+schéma…) soit le groupe extérieur à lacets donné.
+Si on prenait les groupes à lacets arithmétisés, pas extérieurs, on aurait encore un
+groupoïde connexe avec “origine” (ˆπg,ν, ag,ν), avec un groupe d’automorphismes qui
+est Mg,ν ≃π1(Ug,ν,Q). La donnée d’un objet de cette catégorie revient à la donnée
+d’un revêtement universel (non seulement de Mg,ν,Q, mais) de Ug,ν,Q, soit ^
+Ug,ν,Q, qui
+sert de revêtement universel de référence pour la courbe relative (28), permettant alors
+de préciser son groupe fondamental comme un vrai groupe à lacets (pas seulement un
+groupe extérieur).
+On peut enfin regarder aussi la catégorie des groupes profinis à lacets arithmétisés,
+où on prend comme morphismes les isomorphismes arithmétiquement extérieurs. On
+trouve encore un groupoïde connexe avec origine marquée (ˆπg,ν, ag,ν), dont le groupe
+des automorphismes est maintenant Γg,ν. Maintenant les groupes ˆπ0 (π0 groupe à lacets
+discret de type g, ν) sont canoniquement isomorphe entre eux. La catégorie est (conjec-
+turalement, admettant que ΓQ →Γg,ν soit un isomorphisme) équivalente à celle des
+revêtement universels de Spec Q, i.e. à celle des clôtures algébriques de Q, l’élément orig-
+ine correspondant à Q0.
+201
+
+--- G103d page 207 ---
+Quand on se donne un π avec arithmétisation a, alors il lui correspond donc
+canoniquement une clôture algébrique Q de Q. Le ΓQ-torseur des isomorphismes
+Isom(Q0, Q), i.e. des plongements Q ,→C, est en correspondance 1-1 avec l’une (Pa)
+des prédiscrétifications orientées de π donnant naissance à a.
+Notons que tout α définit un élément τα ∈Γa, τ 2
+α = 1 (τa ̸= 1), d’où une applica-
+tion canonique
+(29)
+Pa →2Γa.
+On voit que cette application est compatible avec l’action du groupe ±1 sur Pa,
+τα = τ−α.
+S’il est vrai que ΓQ
+∼→Γg,ν, alors (29) induit par passage au quotient une application
+bijective
+(30) Pa/ ± 1
+∼→ensemble des éléments d’ordre 2 de Γa
+(où Pa/ ± 1 = P ♮
+a = ensemble des prédiscrétifications – pas orientées – sur a).
+Cela provient du fait connu que dans ΓQ, les seuls éléments d’ordre 2 sont les conjugués
+de τ, et que le centralisateur de τ dans ΓQ est réduit à {1, τ}. On peut dire que la donnée
+d’une discrétification (pas orientée) α♮sous l’arithmétisation a, revient à la donnée d’une
+valuation archimédienne sur la clôture algébrique Q de Q définie par (π, a) (i.e. d’un
+isomorphisme Q1 ≃Q0 modulo conjugaison complexe).
+202

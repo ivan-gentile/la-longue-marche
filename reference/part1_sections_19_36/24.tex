@@ -1,0 +1,143 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 24. --- ESSAI DE DÉTERMINATION DE $A^{0\Gamma}$. \\ LIEN AVEC LES RELATIONS ${\pi^\Gamma_{g,(\nu,\nu+n-1)}} =\{1\}$, ET PROGRAMME DE TRAVAIL\dots}\thispagestyle{empty}
+\addcontentsline{toc}{section}{24. Essai de détermination de $A^{0\Gamma}$. Lien avec les relations ${\pi_{g,(\nu,\nu+n-1)}}^\Gamma =\{1\}$, programme de travail}
+\label{sec:24}
+\section*{}
+
+Considérons une opération (fidèle si on y tient) du groupe fini $\Gamma$ sur la surface $U \subset  X = \widehat{U}$ de type $(g, \nu)$, $U = X \setminus S$, soit $A = \Aut(U)$, donc $\Gamma \subset  A$ et $A^u = A^\Gamma$ est le centralisateur de $\Gamma$. Supposons d'abord $\Gamma = \Gamma^+$. Évidemment $f \in A^\Gamma$ implique que $f$ induit un automorphisme $g$ de $X/\Gamma = X'$ dont $X$ est un revêtement galoisien de groupe $\Gamma$. Soit $S'$ l'image de $S$ dans $X'$ (donc $S = X|S'$), et soit $S^!$ l'ensemble des points de ramification de $\Gamma$ dans $U$, $S^{'!}$ son image dans $U' = X' \setminus S'$ (NB $U = X|U'$). Ainsi $g$ est un automorphisme de $(X', S')$, appliquant $S^{'!}$ sur lui même, et induisant donc un automorphisme de $V' = U' \setminus S^{'!} = X' \setminus (S' \cup S^{'!})$. L'image inverse $V = X | V'$ est étale sur $V'$, c'est même un $\Gamma_{V'}$-torseur sur $V'$ et l'image inverse de celui-ci par $g |{V'}$ est (via $f$) isomorphe à $V$. La donnée de $f$ équivaut à la donnée d'un automorphisme du $\Gamma$-revêtement $V$ de $V'$, induisant un isomorphisme de $V'$ qui, prolongé à $X'$, envoie $S'$ dans lui même. Cela donne une interprétation de $A^\Gamma$ en termes de constructions sur $X'$.
+
+Considérons le groupe fondamental $\pi'$ de $V'$\footnote{On a choisit un point $x \in V$ et son image $x' \in V'$ comme points de base, pour expliciter $\pi$.}, avec sa structure à lacets indexée par $S' \amalg S^{'!}$, on a donc un homomorphisme surjective
+$$
+\pi' \xlongrightarrow{\phi} \Gamma
+$$
+qui sur chacun des sous-groupes à lacets d'indice $s' \in S^{'!}$ n'est pas trivial, et un automorphisme $g$ de $V'$ définit un automorphisme extérieur $\overline{g}$ de $\pi'$. La condition à mettre dessus est que son composé avec $\phi$ est conjugué de $\phi$, et que $\overline{g}$ applique $S^{'!}$ dans lui même.
+
+Ceci posé, $g$ est défini par $\overline{g}$ à isotopie près (si on excepte les cas $(g', \nu')$ dégénérés, à savoir $(0, \nu')$ avec $\nu' = 0, 1, 2$ qu'il faudra examiner à part\dots) et $g$ étant choisi, $f$ est défini modulo multiplication par un élément du centre de $\Gamma$ mais on sait déjà que $A^\circ \cap \Gamma = \{ 1 \}$, donc si on se borne à examiner des éléments $f$ dans $A^{^\circ \Gamma}$, alors $f$ sera déterminé par $g$ de fa\c{c}on unique.
+ 
+On est ainsi amené au problème suivant~:
+
+Soit $V' = X' \setminus (S' \amalg S^{'!})$ une surface admissible de type $(g', \nu')$ ($X'$ compacte, et $\nu' = \card S' + \card S^{'!}$), muni d'un sous ensemble $S^{'!}$ de l'ensemble des points à l'infini et d'un point de base $x'$, d'où $\pi' = \pi_1 (X', x')$. On se donne un revêtement galoisien connexe $V$ de $V'$ de groupe fini $\Gamma$, ponctué au dessus de $x'$, donc défini par un homomorphisme surjectif
+$$
+\pi' \xlongrightarrow{\phi} \Gamma
+$$
+et on suppose $V'$ ramifié en chacun des $s' \in S^{'!}$ i.e. (pour un choix du groupe à lacets $L_{s'}$ correspondant à $s'$) que $L_{s'} \to \Gamma$ n'est pas trivial. 
+
+On considère le compactifié pour $X$ de $V$, et l'ensemble $S$ (resp. $S'$) des points de $X$ sur $S'$ (resp. $S^{'!}$). Soit $g$ un automorphisme de $V$, définissant un automorphisme extérieur $g_\bullet$ de $\pi'$\footnote{OPS que $g$ fixe $x'$ donc $\overline{g}$ est un automorphisme bien défini de $\pi'$.}, on suppose que 
+\[\begin{tikzcd}
+	{g^*(V'|{V})} && {V'}
+	\arrow["\sim", from=1-1, to=1-3]
+	\arrow["{V-\text{iso}}"', from=1-1, to=1-3]
+\end{tikzcd}\]
+i.e. que $\phi \circ g_\bullet$ est conjugué à $\phi$ (ce qui exprime que $g$ provient par passage au quotient d'un automorphisme $f$ de $V$, défini modulo multiplication par un élément $z \in \Centre \Gamma$). Soit $U = V \cup S^! = X \setminus S$ (revêtement ramifié sur $U' = V' \cup S^{'!} = X' \setminus S'$), on veut exprimer que parmi les $f$ qui remonte $g$, il y en a un (nécessairement unique !) qui est isotope à 1 dans $\underline{\Aut}(U)$ --- i.e. qui induise l'automorphisme extérieur trivial de $\pi_1(U)$. On aimerait prouver que se sont exactement ceux qui sont isotopes à 1 dans $\underline{\Aut}(V')$ --- ou encore que pour un tel $f$, $f$ est nécessairement isotope à 1 dans $\underline{\Aut} (V)$ --- i.e. est dans $\underline{\Aut} (V)^\circ$ et pas seulement dans $\underline{\Aut} (U)^\circ$.
+
+Notons, lorsque $\underline{\Aut} (V')^\circ$ est connexe, que $\underline{\Aut} (V')^\circ$ se relève (en vertu de principes généraux) en 
+$$
+\underline{\Aut} (V')^\circ \to \underline{\Aut} (V)^{\circ \Gamma} \subset  \underline{\Aut} (U)^{\circ \Gamma} 
+$$
+Donc la condition énoncée sur $g$ d'isotopie à 1 est certainement \emph{suffisante}. Notons d'ailleurs que les résultats déjà obtenus impliquent que $\underline{\Aut} (U)^\Gamma \cap \underline{\Aut} (U)^\circ = \underline{\Aut} (U)^{\circ \Gamma}$ induit \emph{l'identité} sur $S^{'!}$ ($= U$ avec une notation antérieure). Or soit $B \subset  \underline{\Aut} (U)^\circ \cap \Aut (U, S^!)$ le sous-groupe des automorphismes qui fixent les $s \in S^!$, de sorte que $\underline{\Aut} (U)^\circ / B \isomlong \underline{\Mon} (S^!, U)$ et $\quad B^\circ = \underline{\Aut} (V)^\circ$ --- un argument connu nous montre que $B/B^\circ \isom \pi_1 (\underline{\Mon}(S^!, U))$.
+
+Comme $\underline{\Aut} (U)^{\circ \Gamma} \subset  B \quad \text{i.e.} \quad \underline{\Aut} (U)^{\circ \Gamma} = B^\Gamma$ on déduit donc de $1 \to B^\circ \to B \to B/B^\circ \to 1$
+\[\begin{tikzcd}
+	1 & {B^{\circ \Gamma}} & {B^\Gamma} & {(B/B^\circ)^\Gamma} & {\mathrm{H}(\Gamma, B^\circ)} \\
+	& {\underline{\Aut}(V)^\circ} & {\underline{\Aut}(V)^{\circ\Gamma}} && 1
+	\arrow["{?}", shorten <=3pt, shorten >=2pt, Rightarrow, no head, from=1-5, to=2-5]
+	\arrow["\sim", from=1-3, to=2-3]
+	\arrow["\sim", from=1-2, to=2-2]
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+\end{tikzcd}\]
+Donc on trouve que la composante neutre de $\underline{\Aut} (U)^{\circ \Gamma}$ est isomorphe à $\underline{\Aut} (V)^\circ$ (donc est $\infty$-connexe si $V$ anabélienne), et son $\pi_0$ est inclus dans $(B/B^\circ)^\Gamma \isom \pi_1 (\Mon (S^!, U))^\Gamma$. On voudrait prouver que le sous-groupe des invariants sous $\Gamma$ est réduit à $\{ 1 \}$
+$$
+\mathrm{H}^\circ (\Gamma, \pi_1(\Mon (S^!, U))) = 0
+$$
+On aimerait que ceci soit vrai même indépendemment d'hypothèse de réalisabilité, quand on se donne un homomorphisme de $\Gamma$ dans le groupe de Teichmüller d'un $V$, et qu'on fait les hypothèses adéquates\dots  
+\vskip .3cm
+{
+Conjecture. --- \it Soit $\pi$ un groupe extérieur à lacets de type $(g, \nu)$, $I$ l'ensemble d'indices des classes des lacets, $\Gamma$ un groupe fini opérant extérieurement sur $\pi$. Alors il existe un groupe extérieur à lacets $\pi'$, d'ensemble $I'$ des classes de lacets, une opération extérieure de $\Gamma$ sur $\pi'$, une partie $I^{'!}$ de $I'$ stable par $\Gamma$, un homomorphisme extérieur de ``bouchage des trous de $I'$''
+$$
+\pi' \to \pi 
+$$
+compatible avec l'action de $\Gamma$, tels que~:
+\begin{enumerate}
+    \item[$1^\circ$)] Le stabilisateur dans $\Gamma$ de tout élément de $I^{'!}$ soit non réduit à 1.
+    \item[$2^\circ$)] L'extension de $\Gamma$ par $\pi'$ déduite de l'action extérieure de $\Gamma$ n'a pas d'éléments d'ordre fini $\neq 1$ (i.e. pour aucun élément de $\Gamma \neq 1$, l'action extérieure sur $\pi'$ ne se réalise par un automorphisme de $\pi'$ d'ordre fini).
+    
+    De plus le $\Gamma$-groupe extérieur à lacets $\pi'$, muni du morphisme $\pi' \to \pi$, est déterminé à isomorphisme près.
+\end{enumerate}
+}
+\vskip .3cm
+
+{\bf Commentaire}. L'existence de $\pi'$, $\pi' \to \pi$ est évidente dans le cas ``réalisable''. L'unicité à isomorphisme unique près, même dans le cas réalisable n'est pas évidente, ni même prouvée. Le noyau de
+\[\begin{tikzcd}
+	{\Autext_{\text{lac}} (\pi', \pi)} & {\Autext (\pi)} \\
+	{\Autext_{\text{lac}} (\pi', I^{'!})}
+	\arrow[from=1-1, to=1-2]
+	\arrow[shorten <=3pt, shorten >=3pt, Rightarrow, no head, from=1-1, to=2-1]
+\end{tikzcd}\]
+est justement le groupe $\pi_1$ de tantôt\footnote{Plutôt une extension de $\mathfrak{S}_{I'}$ par ce $\pi_1$}, et pour montrer que le foncteur des couples $(\pi', I^{'!})$ d'un $\Gamma$-groupe extérieur $\pi'$ et d'une partie $I^{'!}$ de $I(\pi')$ stable par $\Gamma$, telle que l'extension correspondante de $\Gamma$ par $\pi'$ soit ``sans torsion'' et que le stabilisateur de tout $i' \in I^{'!}$ dans $\Gamma$ soit non trivial, vers les $\Gamma$-groupes extérieurs, soit (non seulement essentiellement surjectif mais) pleinement fidèle, est déjà problématique. La fidélité signifie justement que $\pi^{\Gamma}_1 = \{ 1 \}$, la pleine fidélité est plus forte que le fait que
+$$
+\Autext (\pi', \pi)^\Gamma \to \Autext (\pi)^\Gamma 
+$$
+est surjectif (dans le cas réalisable, cette surjectivité serait conséquence du fait que toute classe d'homéomorphisme commutant à $\Gamma$ contient un homéomorphisme commutant à $\Gamma$) --- il faut ajouter à ceci que tout autre relèvement de $\Gamma$ en une opération extérieure sur $\pi'$ [i.e. un 
+\[\begin{tikzcd}
+	\Gamma & {\Autext_{\text{lac}} (\pi', \pi)} \\
+	& {\Autext_{\text{lac}} (\pi', I) \quad ]}
+	\arrow["\sim"', from=1-2, to=2-2]
+	\arrow[from=1-1, to=1-2]
+\end{tikzcd}\] 
+ayant la \emph{même action de $\Gamma$ sur $I^{'!}$}, est conjugué du précédent par un élément du noyau $\pi_1$ de $\Autext_{\text{lac}}(\pi', I^{'!}) \to \Autext_{\text{lac}}(\pi) \times (\mathfrak{S}_{I^{'!}})$\dots 
+
+On va réénoncer la conjecture précédente sous une forme un peu plus générale. Introduisons une notation. Si $\Gamma$ est un groupe fini opérant extérieurement de fa\c{c}on directe sur un groupe à lacets $\pi$ anabélien, donnant lieu à une extension $E$ de $\pi$ par $\Gamma$, on va désigner par $\Phi = \Phi (\pi, \Gamma)$ (``points fixés'') l'ensemble des classes de $\pi$-conjugaison des sections partielles $\neq \{ 1 \}$ maximales de l'extension. (Le caractère intrinsèque de $\Phi(\pi, \Gamma)$, indépendemment des choix particuliers de $E$ a été déjà noté). Il est clair que $\Phi$ est un $\Gamma$-ensemble, on sait aussi qu'il est fini.
+
+Soit maintenant $(\pi', \Gamma)$ un $\Gamma$-groupe extérieur à lacets avec $\Gamma$ opérant de fa\c{c}on directe $(\Gamma = \Gamma^+)$ et fidèle (pour simplifier), fixons-nous une partie $I^{'!}$ de $I' = I(\pi')$, stable par $\Gamma$, telle $\forall i' \in I^{'!}$, on ait $\Gamma_{i'} \neq \{ 1 \}$, et considérons le groupe extérieur quotient, défini par bouchage de $I^{'!}$, soit $\pi$ --- il est clair que $\Gamma$ opère encore dessus.
+
+On veut d'abord définir une bijection
+\[\begin{tikzcd}
+	{\Phi (\pi, \Gamma)} & {\Phi (\pi', \Gamma) \amalg I^{'!}}
+	\arrow["\sim"', from=1-2, to=1-1]
+\end{tikzcd}\leqno{(*)}
+\]
+en supposant $(\pi, \Gamma)$ également anabélien pour être plus sur !
+\begin{enumerate}
+    \item[a)] Application $I' \to \Phi(\pi, \Gamma)$. 
+    
+    Soit $L_{i'} \subset  \pi'$ de classe $i' \in I'$, $Z_{i'}$ son centralisateur dans l'extension $E'$ de $\Gamma$ par $\pi'$ de sorte $L_{i'}$ est une extension de $\Gamma_{i'}$ par $L_{i'}$. Le passage au quotient $E' \to E$ définit une section partielle $\Gamma_{i'} \hookrightarrow E$, contenue dans une unique section partielle maximale (sans doute déjà maximale elle même\dots\footnote{Oui car pour le voir on peut supposer $\Gamma$ cyclique et donc la situation est réalisable\dots! (?)}). On trouve ainsi une application $I' \to \Phi(\pi, \Gamma)$, évidemment compatible avec les actions de $\Gamma$.
+    \item[b)] Application $\Phi (\pi', \Gamma) \to \Phi (\pi, \Gamma)$
+    
+    Toute section partielle $\neq 1$ de $E'$ sur $\Gamma$ en définit évidemment une de $E$ sur $\Gamma$ en passant au quotient ; on a comme ci dessus qu'une section maximale donne une section maximale, en se ramenant au cas $\Gamma$ cyclique.\footnote{Pas clair, car l'hypothèse que les $\Gamma_{i'} \neq 0$, risque de ne pas être réalisée.}
+    \item[c)] Bijectivité de (*)
+    
+    Elle n'est pas prouvée (sauf si la situation de départ est réalisable, ou si $I^{'!}$ réduit à un seul élément mais alors $\Gamma$ est cyclique et la situation est réalisable\dots)
+\end{enumerate}
+Ceci admis on a défini un foncteur
+$$
+(\pi', \Gamma, I^{'!}) \mapsto (\pi, \Gamma, I^{'!})
+$$
+allant de la catégorie des $\Gamma$-groupes extérieurs à lacets $\pi'$ munis d'une partie $I^{'!}$ de $I' = I(\pi')$ stable par $\Gamma$, telle que $s' \in I' \Rightarrow \Gamma_{s'} \neq \{ 1 \}$, dans la catégorie des $\Gamma$-groupes extérieures à lacets, munis d'une partie $I^{'!}$ de $\Phi (\pi, \Gamma)$. La conjecture est que le foncteur (lui même un peu conjectural, sauf si on se réduit aux situations de départ réalisables, d'où situations d'arrivée également réalisables) est une équivalence de catégories i.e. $1^\circ$) pleinement fidèle et $2^\circ$) essentiellement surjectif.
+
+Le point $2^\circ$) est clair, quand on se borne de part et d'autre à des situations réalisables. Mais même dans ce cas, le point i) n'est pas prouvé. Je pense que si $I'$ est \emph{réduit à un élément}, alors les propriétés du foncteur ``forage d'un trou'' permettront de l'établir aisément. On voit aussi que pour l'établir, on est ramené à établir la bijectivité de (*), et le théorème d'équivalence dans le cas où $\Gamma$ est transitif sur $I^{'!}$.  
+
+Pour résumer, le programme d'attaque du problème de réalisabilité d'un $\Gamma$-groupe extérieur à lacets serait le suivant :
+\begin{enumerate}
+    \item[I)] Établir la bijectivité de (*) dans le cas général. 
+    \item[II)] Établir la pleine fidélité du foncteur précédent (en se ramenant au besoin au cas où $I^{'!}$ est \emph{une} orbite (singulière) de $\Gamma$ dans $I' = I(\pi')$).
+    \item[III)] Dans le cas où $\Phi(\pi, \Gamma) = \emptyset$ i.e. l'extension $E$ n'a pas d'élément d'ordre fini $\neq 1$, prouver que $E$, muni de l'ensemble des $E$-classes de conjugaison des centralisateurs des $L_i$ $(i \in I (\pi))$ dans $E$, est un groupe à lacets.
+\end{enumerate}
+
+D'ailleurs, pour disposer des propriétés préliminaires indispensables des ensembles   $\Phi (\pi, \Gamma)$, il faudrait commencer par réaliser ce programme pour les groupes cycliques (opérants de fa\c{c}on directe), et procéder dans ce cas par dévissage.
+
+Si le théorème de classification complet (comme équivalence des 2-catégories --- des opérations topologiques et des opérations isotopiques ---) était vrai, les points I, II, III de ce programme devrait l'être aussi, et ce serait donc un bon programme d'approche. Les points I et II devraient être encore valables, dès que le 2-foncteur entre 2-catégories serait 2-fidèle (pas nécessairement 3-fidèle), du moins pour les situations réalisables. On dirait alors qu'une action extérieure de $\Gamma$ est \emph{admissible}, si
+$$
+\Autext (\pi', \Gamma, I^{'!}) \isomlong \Aut (\pi, \Gamma, I^{'!})
+$$
+et si de plus toute autre action de $\Gamma$ sur $\pi'$, induisant la même action sur $\pi$ et la même application $I^{'!} \to \Phi (\pi, \Gamma)$, est conjugué de l'action originelle.
+
+Ceci posé, la condition nécessaire et suffisante de réalisabilité d'une action extérieure fidèle de $\Gamma$ sur $\pi$ serait alors que cette action se remonte (par ``forage de trous'' pour $I^{'!} = \Phi(\pi, \Gamma)$) en une action \emph{admissible} de $\Gamma$ sur un $(\pi', I^{'!})$, (par définition même le relèvement serait alors unique) et que de plus l'extension correspondante $E'$ de $\Gamma$ par $\pi'$ soit un groupe à lacets.
+
+
+% End

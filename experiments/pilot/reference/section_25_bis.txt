@@ -1,0 +1,184 @@
+Section: § 25 bis. — CAS DES DEUX GROUPES. RETOUR SUR LES
+G103d pages: 170-174
+
+--- G103d page 170 ---
+§ 25 bis. — CAS DES DEUX GROUPES. RETOUR SUR LES
+NOTATIONS
+On se place d’abord pour fixer les idées dans le cas topologique et discret, mais la mo-
+tivation est le cas d’un courbe algébrique U sur un corps de type fini K, où on a à la
+fois le groupe GK = AutK(U)86 et Γ = Gal(K/K) qui opérant extérieurement sur le
+π1(UK).
+Dans ce cas, G et Γ commutent, mais on peut regarder plus généralement le cas du
+groupe (plus gros que GK) GK = AutK(U), sur lequel Γ opère (de façon pas nécessaire-
+ment triviale - cette opération décrit un groupe algébrique étale fini sur K).
+Supposons donc qu’on ait une surface U (orientable, U = X \ S, X compacte
+connexe, S finie) sur laquelle opère deux groupes G, Γ, l’action de Γ normalisant celle
+de G - donc on a un groupe G = ΓG (produit semi-direct, pour une certaine action de
+Γ sur G) qui opère sur U. On suppose G fini, mais pas nécessairement Γ fini.
+On suppose choisi un revêtement universel eU de U, d’où un groupe à lacets π =
+Aut(eU), sur lequel G opère extérieurement, d’où l’extension
+(1)
+1 →π →E →G →1
+Si l’action de G sur U est fidèle, alors G ,→Autext(π), et l’extension précédente est
+l’image inverse de l’extension de Teichmüller de π
+1 →π →Autlac(π) →Autextlac(π) →1
+86Cas anabélien donc G fini.
+
+--- G103d page 171 ---
+Onauraàregarderd’autresrevêtementsuniverselsque eU, etleursisomorphismesavec eU.
+Quand eU = eU(P) est le revêtement universel basé en un certain P ∈U, alors pour les
+revêtements universels U(Q) basés en un point, les U-isomorphismes eU(P)
+∼
+−→eU(Q)
+correspondent donc aux classes de chemins de P à Q.
+Soit Q ∈U tel que son sous-groupe d’isotropie GQ dans G soit tel que G+
+Q ̸= 1.
+(Donc G+
+Q est cyclique). Choisissant une classe de chemins de P à Q, on trouve une
+opération de GQ sur eU(P) i.e. un relèvement GQ
+rGQ
+−−→E dans l’extension (1) - le
+changement de classe de chemins de λ en λ′ donnera un relèvement r′
+GQ qui sera con-
+jugué de r par un unique élément de π = π1(U, P) (l’unicité provient de πGQ = 1),
+savoir celui qui fait passer d’un chemin à l’autre.
+Considérons le stabilisateur ΓQ de Q dans Γ, qui opère bien sur eU(Q) tout comme
+GQ (en fait c’est GQ qui opère d’où r : GQ →E…), donc via λ on a aussi un relèvement
+rΓQ : ΓQ →E, quialamêmepropriétédenormaliserrGQ (avecopérationdeΓQ dessus,
+qui est celle provenant de l’opération de Γ sur G)87. Pour simplifier, supposons quand
+même que Γ opère trivialement sur G i.e. G = Γ × G, alors rΓQ(ΓQ) ⊂Eest contenu
+danslecentralisateur der (ouder(GQ))etcommeπr(GQ) = 1, doncl’homomorphisme
+Centr(r(GQ)) →G
+est injectif88, le relèvement en question rΓQ est uniquement déterminé par la condition
+précédente.
+En ait, l’image de Centr r(GQ) dans G contient GQ, et on [] de même le relèvement
+GQ
+rGQ
+−−→E. La chose intéressante, c’est que le choix d’un relèvement du (petit) groupe
+GQ, impose déjà le choix d’un relèvement du (grand) groupe ΓQ, ou GQ.
+Je dis que l’image dans G du centralisateur (et même du normalisateur) de r(GQ) est
+GQ lui même (a priori il le contient).
+Revenant à eU(Q) lui-même, cela signifie que si g ∈G est tel qu’il existe un auto-
+morphisme eg de eU(Q) qui relève g, en normalisant l’action de GQ, alors g ∈GQ et eg est
+le relèvement évident). En effet, si eg normalise l’action de GQ, il invarie l’ensemble des
+points fixes de GQ dans eU(Q), qui est réduit au point Q.
+87N. B. Comme l’ensemble des points Q est fini, et que G opère dessus, l’orbite de Q sous G est finie,
+i.e. GQ est d’indice fini dans G et de même ΓQ sous Γ.
+88N. B. Indépendamment de toute hypothèse que Γ centralise G, le normalisateur de r(GQ) dans π,
+égal à son centralisateur, est réduit à 1, donc Norm(r(GQ)) →G est injectif.
+166
+
+--- G103d page 172 ---
+L’ensemble U ! des points Q ∈U tels que G+
+Q ̸= (1) est stable par l’action de G, et
+s’identifie (avec cette action) à l’ensemble des relèvements maximaux modulo π de sous-
+groupes (cycliques) ̸= 1 de G+.
+Quand on connaît, pour un relèvement partiel r d’un GQ dans E, i.e. le relèvement
+correspondant de GQ, alors de même pour les conjugués de r par n’importe quel élément
+g (non seulement de π1 mais même de E), par simple conjugaison. Donc les cas à déter-
+miner correspondent pratiquement aux orbites de G dans U !.
+On peut s’intéresser à décrire G →Γ en tant que sous-groupes de Autextlac(π) = Γ′
+donnant lieu à l’extension E′ de Γ′ par π (donc E ⊂E′). Mais pour tout relèvement r
+d’un GQ, considérons CentrE′(r), on a encore CentrE′ ∩π = (1) i.e. on trouve une sec-
+tion au dessus de l’image de ce centralisateur dans Γ′, soit Γ′(Q). Cette image ne dépend
+que de Q i.e. de la classe de π-conjugaison de r ou de r(GQ), et est remplacée par un
+G-conjugué quand Q est remplacé par un G-conjugué. Ceci dit, l’intersection Γ′♮des
+Γ′(Q), pour Q ∈U !, est un sous-groupe de Γ′ qui contient l’intersection G♮des GQ, et
+lecentralisateurdeGdansΓ′♮contientdemêmel’intersectionΓ♮desΓQ, quiestunsous-
+groupe invariant d’indice fini de Γ. Et on peut alors se proposer de voir s’il est posssible
+de caractériser au moins le sous-groupe fini Γ♮de Γ comme CentrΓ′♮(G), et de récupérer
+peut être Γ comme le normalisateur de Γ♮dans CentrG(Γ).
+Je m’intéresse plus particulièrement à la variante profini de ceci, dans le cas où U =
+P1
+Q \0, 1, ∞, G = S3, Γ = groupe de Galois sur Q de la clôture algébrique Q de Q dans
+C et p = exp(2iπ/6).
+Je n’ai pas vérifier que Γ →Autextlac(bπ) soit injectif, cela m’empêche de faire des
+calculs dans Autlac(bπ), fussent-ils heuristiques pour le moment.
+Je bute sur des ennuis de notations - trop de groupes sont désignés par la lettre Γ
+(avec éventuellement des primes, indices, exposants…) Il y a trois types de groupes qui
+interviennent dans mes réflexions :
+a) Les groupes de Teichmüller et ses variantes, qui jouent le rôle de groupes “uni-
+versels” opérant (éventuellement modulo isotopie) sur des surfaces, ou sur des
+groupes extérieurs à lacets. Ces groupes ont tendance à être infinis.
+b) Des groupes (le plus souvent finis) opérant sur des surfaces topologiques, ou sur
+des courbes algébriques (sans, dans ce cas là, bouger le corps de base).
+167
+
+--- G103d page 173 ---
+c) Des groupes de Galois profinis (donc infinis), surtout de corps de type fini sur Q,
+opérant “arithmétiquement” sur des surfaces et leurs bπ1-géométriques89.
+C’est à cause des analogies profondes entre les cas b) et c), et leurs relations étroites
+avec le cas a), que j’avais été induit à adopter des notations communes, mais qui à la
+longue finissent par aboutir à des collisions. Il y a donc lieu de revoir les notations. Je
+vais réserver la lettre G et variantes pour des actions géométriques (cas b)) de groupes, le
+plus souvent finis, la lettre Γ et variantes pour des groupes de Galois, la lettre G pour des
+groupes mixtes.
+Quant aux groupes “universels” de type Teichmüller, comme ceux notés Γg,ν
+précédemment, je vais plutôt les noter T, Tg,ν (initiale de “Teichmüller”, alors que Γ,
+G sont l’initiale de Galois).
+Le groupe de Galois sur Q de la clôture Q de Q dans C mérite une lettre spéciale, je
+le noterai Γ. Le quotient NormbTg,ν(bTg,ν)/(bTg,ν), qui s’apparente plus à un groupe de
+Galois qu’à un group de Teichmüller, sera noté Γg,ν (lettre grasse !). Dans le cas (g, ν) =
+(0, 3) qui m’occupe plus particulièrement, Γ0,390 s’identifie au centralisateur de G =
+S3 = T+
+0,3 dans ˆˆT0,3 ilestcontenudans ˆˆT!
+0,3,etpeut-êtreégal. Onaunhomomorphisme
+canonique Γ →Γ0,3 (plus généralement Γ →Γg,ν) dont j’ignore pour l’instant s’il
+est injectif, et encore plus s’il est surjectif. Les réflexions qui précèdent suggèrent des
+conditions sur l’image, qui sont surtout intéressantes si on admet les relations
+bπρS = c
+πσ0 = (1)
+On a désigné par Eg,ν l’extension canonique de Tg,ν par πg,ν (qui pour (g, ν) anabélien
+s’identifie à T′
+g,ν+1). L’opération extérieure d’un groupe G, Γ, G définit aussi une exten-
+sion par π (ou par bπ), qu’on a également désigné par la lettre E (initiale d’extension) - il
+y a à nouveau collisions de notations.
+Je vais prendre la lettre S (qui fait penser à T) pour ces extensions dans les cas uni-
+versels à la Teichmüller, (en écrivant Sg,ν au lieu de Γ′
+g,ν+1, puisque l’optique est dif-
+férente…), et en gardant la lettre E dans le cas précédent. Donc E a tendance à être une
+sous-extension d’un S.
+89Les cas b) et c) se mélangent parfois (dans un groupe G extension d’un groupe de Galois Γ par un
+groupe fini G) dans le cas de la Géométrie Algébrique.
+90Γ est ici produit semi-direct de S3 = T+ par T!.
+168
+
+--- G103d page 174 ---
+Admettant que Γ →Γ0,3 est injectif, on aurait donc
+1
+bπ0,3
+bbS0,3
+bbT0,3
+1
+1
+bπ0,3
+c
+c
+S′0,3
+T+
+0,3 × Γ0,3
+1
+1
+bπ0,3
+E
+S × Γ
+1
+1
+bπ0,3
+S0,3
+S3 × Z/2
+1
+≃
+≃
+N. B. On note bbS
+′
+g,ν le normalisateur de bS+
+g,ν dans bbSg,ν, extension de Γg,ν par bS+
+g,ν.
+Si γ ∈Γ0,3, pour qu’il soit dans l’image de Γ il faut qu’il admette un relèvement u
+quicommuteàρ, etunrelèvementquicommuteàσ0 (cequi, dèsqueγ ∈bbT0,3, implique
+déjà que γ dans bbT0,3 commute à T+
+0,3 = S3, i.e. qu’ils est dans Γ0,3). Il se pourrait que
+tout élément de Γ0,3 ait déjà cette propriété, donc que cette condition ne pose pas de
+restriction sur l’image de Γ dans Γ0,3.
+169

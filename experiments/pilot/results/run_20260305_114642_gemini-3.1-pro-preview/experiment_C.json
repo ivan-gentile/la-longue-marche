@@ -1,0 +1,382 @@
+{
+  "1": {
+    "strips": [
+      {
+        "strip": "page_0001_strip_1",
+        "status": "success",
+        "transcription": "Page 1-292 + table des matières",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 11
+        }
+      },
+      {
+        "strip": "page_0001_strip_2",
+        "status": "success",
+        "transcription": "```latex\n\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 4
+        }
+      },
+      {
+        "strip": "page_0001_strip_3",
+        "status": "success",
+        "transcription": "1",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 1
+        }
+      }
+    ],
+    "merged": "Page 1-292 + table des matières\n\n% --- strip boundary ---\n\n```latex\n\n```\n\n% --- strip boundary ---\n\n1"
+  },
+  "2": {
+    "strips": [
+      {
+        "strip": "page_0002_strip_1",
+        "status": "success",
+        "transcription": "```latex\n\\begin{flushright}\nLa \"longue marche\" à travers la théorie de Galois...\n\\end{flushright}\n\n[MARGIN: I /]\n\n1. Topos multigaloisiens \\hfill 1\n\n2. Appl. aux rev. de topos \\hfill 4\n\n$\\left. \\begin{array}{l}\n\\text{3. Variantes pro-multigaloisiens} \\\\\n\\text{4. Compléments et remords}\n\\end{array} \\right\\}$ \\hfill 6\n\n\\underline{\\underline{5.}} Introduction des contextes arithmétiques \\hfill 7' \\\\\n\"Conjecture anabélienne\" fondamentale\n\n6. Analyse locale de $(X,S)$ en un $s \\in S$. \\hfill 10'\n\n7. Reformulation \"bordélique\" de la conjecture \\hfill 12 \\\\\n(le purgatoire nécessaire...)\n\n8. Réflexions taxonomiques (distinction de \\hfill 25' \\\\\ncas où le purgatoire s'aménage un peu...)\n\n9. Structure tangentielle en les $s \\in S$ \\hfill 34 \\\\\n[unclear: questions] d'extensions \"de deuxième type\" [continues below]\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 275
+        }
+      },
+      {
+        "strip": "page_0002_strip_2",
+        "status": "success",
+        "transcription": "9. Structure tangentielle sur les $SfS$ \\hfill 34\n\n(Sections d'extensions \"de deuxième type\")\n\n10. Ajustements des hypothèses (variantes) \\hfill 38\n\n11. Conditions sur les syst. de groupoïdes \\hfill 39\nobtenus à partir de situations géométriques\n\n12. L'analogue topologique. (Où on se con- \\hfill 41\nvainc aussi que le bordel groupoïdal peut\ns'exprimer complètement, dans le cas ana-\nlien, par le gr. $\\pi_1$ ext. à lacets ...)\n\n13. Retour au cas arithmétique : formula- \\hfill 53\ntions \"galoisiennes\"\n\n13 bis Retour sur la notion de groupe à lacets \\hfill 56\n\n14 Discussions arithmétiques. Cas de \"[unclear: bondages]\" \\hfill 58",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 207
+        }
+      },
+      {
+        "strip": "page_0002_strip_3",
+        "status": "success",
+        "transcription": "```latex\n13bis. Retour sur la notion de groupe local \\hfill 50\n\n14. Digression cohomologique (sur le \"bandage \\hfill 58\nde trous\")\n\n\\underline{\\underline{15.}} Retour sur le cas topologique : orbites \\hfill 67'\ncritiques en termes de scindages d'extensions\nApplication aux sous-groupes finis des\n$Aut ext_C (\\pi)$ (cas discret) ([unclear: renvoi] \\S 18)\n\n16. Bandages et forages de trous : préliminaires \\hfill 79'\ntopologiques généraux\n\n17. Compléments au \\S 15, sur op. de groupes \\hfill 89\nfinis sur des surfaces\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 169
+        }
+      }
+    ],
+    "merged": "```latex\n\\begin{flushright}\nLa \"longue marche\" à travers la théorie de Galois...\n\\end{flushright}\n\n[MARGIN: I /]\n\n1. Topos multigaloisiens \\hfill 1\n\n2. Appl. aux rev. de topos \\hfill 4\n\n$\\left. \\begin{array}{l}\n\\text{3. Variantes pro-multigaloisiens} \\\\\n\\text{4. Compléments et remords}\n\\end{array} \\right\\}$ \\hfill 6\n\n\\underline{\\underline{5.}} Introduction des contextes arithmétiques \\hfill 7' \\\\\n\"Conjecture anabélienne\" fondamentale\n\n6. Analyse locale de $(X,S)$ en un $s \\in S$. \\hfill 10'\n\n7. Reformulation \"bordélique\" de la conjecture \\hfill 12 \\\\\n(le purgatoire nécessaire...)\n\n8. Réflexions taxonomiques (distinction de \\hfill 25' \\\\\ncas où le purgatoire s'aménage un peu...)\n\n9. Structure tangentielle en les $s \\in S$ \\hfill 34 \\\\\n[unclear: questions] d'extensions \"de deuxième type\" [continues below]\n```\n\n% --- strip boundary ---\n\n9. Structure tangentielle sur les $SfS$ \\hfill 34\n\n(Sections d'extensions \"de deuxième type\")\n\n10. Ajustements des hypothèses (variantes) \\hfill 38\n\n11. Conditions sur les syst. de groupoïdes \\hfill 39\nobtenus à partir de situations géométriques\n\n12. L'analogue topologique. (Où on se con- \\hfill 41\nvainc aussi que le bordel groupoïdal peut\ns'exprimer complètement, dans le cas ana-\nlien, par le gr. $\\pi_1$ ext. à lacets ...)\n\n13. Retour au cas arithmétique : formula- \\hfill 53\ntions \"galoisiennes\"\n\n13 bis Retour sur la notion de groupe à lacets \\hfill 56\n\n14 Discussions arithmétiques. Cas de \"[unclear: bondages]\" \\hfill 58\n\n% --- strip boundary ---\n\n```latex\n13bis. Retour sur la notion de groupe local \\hfill 50\n\n14. Digression cohomologique (sur le \"bandage \\hfill 58\nde trous\")\n\n\\underline{\\underline{15.}} Retour sur le cas topologique : orbites \\hfill 67'\ncritiques en termes de scindages d'extensions\nApplication aux sous-groupes finis des\n$Aut ext_C (\\pi)$ (cas discret) ([unclear: renvoi] \\S 18)\n\n16. Bandages et forages de trous : préliminaires \\hfill 79'\ntopologiques généraux\n\n17. Compléments au \\S 15, sur op. de groupes \\hfill 89\nfinis sur des surfaces\n```"
+  },
+  "3": {
+    "strips": [
+      {
+        "strip": "page_0003_strip_1",
+        "status": "success",
+        "transcription": "\\begin{minipage}[t]{0.48\\textwidth}\n18. Forage de trous. Applicati. aux ss-gr. p. \\\\\nfinis de $Autext_{en}(\\Pi)$ (cas discret) \\hfill 91\n\n19. Tour de Teichmüller \\hfill 102\n\n20. Digression : descripti - 2-isotopique de \\\\\nla cat. des [unclear: topos] topologiques \\hfill 116\n\n21. Les espaces de Teichmüller \\hfill 126\n\n[MARGIN: manque \\S 22 !]\n23. Retour sur les surfaces à gr. p.p. (finis) \\\\\nd'opérateurs (\"mise en équation\" du Pb) \\hfill 133\n\n24. Essai de détermination de $\\Gamma^{\\Delta op}$. Lier avec \\\\\nles relations $\\Pi_{g,(\\nu,\\nu+n-1)} = (1)$, programme \\\\\nde travail \\hfill 142\n\n25. Groupes de Teichmüller \"spéciaux\" \\hfill 148\n\n25 bis. \"Cas des deux groupes\" d'opérateurs. Retour \\\\\nsur les notations. \\hfill 153\n\n26. Groupes de Teichmüller profinis. \\hfill 161 \\\\\nDiscrétifications et prodiscrétifications. Liens \\\\\navec topos modulaires de Teichmüller. \\hfill 167 \\\\\nConjecture hâtive.\n\n27. [unclear: Changement] de type $(g,\\nu)$ : a) bouchage de trous \\hfill 172 \\\\\n(et diagrammes [unclear] p.174) \\\\\n{[continues below]}\n\\end{minipage}\n\\hfill\n\\begin{minipage}[t]{0.48\\textwidth}\n32. Retour sur les aspects arithmétiques du bouchage \\\\\nde trous : relations entre $\\Pi_{g,\\nu}$ et $\\Pi_{g,\\nu-1}$. \\hfill 200 \\\\\n(où on reconstitue, sous le dir. [unclear: complété], la topo. \\\\\nétale d'une courbe algébrique à partir \\\\\ndu $\\Pi_1$ d'un ouvert [unclear: Zariski]...)\n\n33. Digression topologique : anti-involutions \\\\\ndes surfaces orientées compactes (en lais- \\\\\nsant de côté d'abord le cas \"0 trous\") \\hfill 221\n\n[DIAGRAM: Arrow pointing from item 34 below to insert it here, between 33 and 35]\n\n35. L'injectivité de $\\widehat{\\Gamma}_\\mathbb{Q} \\to Autext(\\widehat{\\Pi}_{0,3})$ \\hfill 249\n\n36. L'isomorphisme $\\widehat{\\Gamma}_\\mathbb{Q} \\simeq \\widehat{\\Gamma}_{1,1}$ et l'injectivité \\\\\n$\\widehat{\\Gamma}_\\mathbb{Q} \\to Autext(\\widehat{\\Pi}_{1,1}^\\bullet) = Autext(Sl(2,\\mathbb{Z})^\\wedge)$ \\hfill 257\n\n37. Modules des courbes elliptiques, via \\\\\nLegendre, ou $M_{1,1}[2]' \\simeq M_{0,3} \\neq M_{0,4}$ \\hfill 272\n\n34. Relations entre $\\Lambda_{g,\\nu}, \\Pi_{g,\\nu}$ pour $g$ variable \\\\\n(Côté des [unclear] revs. finis) \\hfill 239\n\n39. Description heuristique profinie de la \\\\\ncat. des courbes alg. définies sur \\\\\ndes [unclear] ext. finies de $\\mathbb{Q}_0/\\mathbb{Q}$ \\hfill 295\n\\end{minipage}",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 857
+        }
+      },
+      {
+        "strip": "page_0003_strip_2",
+        "status": "success",
+        "transcription": "[MARGIN: 3]\n\n[continues above] Conjecture hâtive. \\hfill des [unclear: font.] sous-ext. finies de [unclear: $\\widehat{W}_0/\\mathbb{Q}$] \\hfill 245\n\n27. Changement de type $(g,\\nu)$ : a) bouchages de trous \\hfill 172\n\\newline \\hspace*{1.5em} (et diagrammes [unclear: d'amarrage] p. 174)\n\n28. Changt. de type $(g,\\nu)$ : b) passage à un rev. fini \\hfill 177\n\\newline \\hspace*{1.5em} (la conjecture hâtive [unclear: qui coince]...)\n\n29. Critiques de l'approche précédente. (On \\hfill 185\n\\newline \\hspace*{1.5em} rajuste les notions et les conjectures...)\n\n30. Propriétés des $N_{g,\\nu}$, $\\Gamma_{g,\\nu}$ : c) Propriétés liées \n\\newline \\hspace*{1.5em} aux sous-groupes finis du Teichmüller. \\hfill 192\n\n31. Digression sur les relèvements d'une \n\\newline \\hspace*{1.5em} action extérieure d'un groupe fini sur \n\\newline \\hspace*{1.5em} un gr. pro-fini à [unclear: centre] \\hfill 198",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 328
+        }
+      },
+      {
+        "strip": "page_0003_strip_3",
+        "status": "success",
+        "transcription": "\\begin{center}\n3\n\nhttps://grothendieck.umontpellier.fr/\n\\end{center}",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 26
+        }
+      }
+    ],
+    "merged": "\\begin{minipage}[t]{0.48\\textwidth}\n18. Forage de trous. Applicati. aux ss-gr. p. \\\\\nfinis de $Autext_{en}(\\Pi)$ (cas discret) \\hfill 91\n\n19. Tour de Teichmüller \\hfill 102\n\n20. Digression : descripti - 2-isotopique de \\\\\nla cat. des [unclear: topos] topologiques \\hfill 116\n\n21. Les espaces de Teichmüller \\hfill 126\n\n[MARGIN: manque \\S 22 !]\n23. Retour sur les surfaces à gr. p.p. (finis) \\\\\nd'opérateurs (\"mise en équation\" du Pb) \\hfill 133\n\n24. Essai de détermination de $\\Gamma^{\\Delta op}$. Lier avec \\\\\nles relations $\\Pi_{g,(\\nu,\\nu+n-1)} = (1)$, programme \\\\\nde travail \\hfill 142\n\n25. Groupes de Teichmüller \"spéciaux\" \\hfill 148\n\n25 bis. \"Cas des deux groupes\" d'opérateurs. Retour \\\\\nsur les notations. \\hfill 153\n\n26. Groupes de Teichmüller profinis. \\hfill 161 \\\\\nDiscrétifications et prodiscrétifications. Liens \\\\\navec topos modulaires de Teichmüller. \\hfill 167 \\\\\nConjecture hâtive.\n\n27. [unclear: Changement] de type $(g,\\nu)$ : a) bouchage de trous \\hfill 172 \\\\\n(et diagrammes [unclear] p.174) \\\\\n{[continues below]}\n\\end{minipage}\n\\hfill\n\\begin{minipage}[t]{0.48\\textwidth}\n32. Retour sur les aspects arithmétiques du bouchage \\\\\nde trous : relations entre $\\Pi_{g,\\nu}$ et $\\Pi_{g,\\nu-1}$. \\hfill 200 \\\\\n(où on reconstitue, sous le dir. [unclear: complété], la topo. \\\\\nétale d'une courbe algébrique à partir \\\\\ndu $\\Pi_1$ d'un ouvert [unclear: Zariski]...)\n\n33. Digression topologique : anti-involutions \\\\\ndes surfaces orientées compactes (en lais- \\\\\nsant de côté d'abord le cas \"0 trous\") \\hfill 221\n\n[DIAGRAM: Arrow pointing from item 34 below to insert it here, between 33 and 35]\n\n35. L'injectivité de $\\widehat{\\Gamma}_\\mathbb{Q} \\to Autext(\\widehat{\\Pi}_{0,3})$ \\hfill 249\n\n36. L'isomorphisme $\\widehat{\\Gamma}_\\mathbb{Q} \\simeq \\widehat{\\Gamma}_{1,1}$ et l'injectivité \\\\\n$\\widehat{\\Gamma}_\\mathbb{Q} \\to Autext(\\widehat{\\Pi}_{1,1}^\\bullet) = Autext(Sl(2,\\mathbb{Z})^\\wedge)$ \\hfill 257\n\n37. Modules des courbes elliptiques, via \\\\\nLegendre, ou $M_{1,1}[2]' \\simeq M_{0,3} \\neq M_{0,4}$ \\hfill 272\n\n34. Relations entre $\\Lambda_{g,\\nu}, \\Pi_{g,\\nu}$ pour $g$ variable \\\\\n(Côté des [unclear] revs. finis) \\hfill 239\n\n39. Description heuristique profinie de la \\\\\ncat. des courbes alg. définies sur \\\\\ndes [unclear] ext. finies de $\\mathbb{Q}_0/\\mathbb{Q}$ \\hfill 295\n\\end{minipage}\n\n% --- strip boundary ---\n\n[MARGIN: 3]\n\n[continues above] Conjecture hâtive. \\hfill des [unclear: font.] sous-ext. finies de [unclear: $\\widehat{W}_0/\\mathbb{Q}$] \\hfill 245\n\n27. Changement de type $(g,\\nu)$ : a) bouchages de trous \\hfill 172\n\\newline \\hspace*{1.5em} (et diagrammes [unclear: d'amarrage] p. 174)\n\n28. Changt. de type $(g,\\nu)$ : b) passage à un rev. fini \\hfill 177\n\\newline \\hspace*{1.5em} (la conjecture hâtive [unclear: qui coince]...)\n\n29. Critiques de l'approche précédente. (On \\hfill 185\n\\newline \\hspace*{1.5em} rajuste les notions et les conjectures...)\n\n30. Propriétés des $N_{g,\\nu}$, $\\Gamma_{g,\\nu}$ : c) Propriétés liées \n\\newline \\hspace*{1.5em} aux sous-groupes finis du Teichmüller. \\hfill 192\n\n31. Digression sur les relèvements d'une \n\\newline \\hspace*{1.5em} action extérieure d'un groupe fini sur \n\\newline \\hspace*{1.5em} un gr. pro-fini à [unclear: centre] \\hfill 198\n\n% --- strip boundary ---\n\n\\begin{center}\n3\n\nhttps://grothendieck.umontpellier.fr/\n\\end{center}"
+  },
+  "4": {
+    "strips": [
+      {
+        "strip": "page_0004_strip_1",
+        "status": "success",
+        "transcription": "```latex\n[unclear: The text in this horizontal strip is extremely faint and entirely illegible. It appears to be heavily faded or possibly bleed-through from the reverse side of the page.]\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 42
+        }
+      },
+      {
+        "strip": "page_0004_strip_2",
+        "status": "success",
+        "transcription": "```latex\n[MARGIN: 814]\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 13
+        }
+      },
+      {
+        "strip": "page_0004_strip_3",
+        "status": "success",
+        "transcription": "$752$\n\n$832$\n\n[MARGIN: 4]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 18
+        }
+      }
+    ],
+    "merged": "```latex\n[unclear: The text in this horizontal strip is extremely faint and entirely illegible. It appears to be heavily faded or possibly bleed-through from the reverse side of the page.]\n```\n\n% --- strip boundary ---\n\n```latex\n[MARGIN: 814]\n```\n\n% --- strip boundary ---\n\n$752$\n\n$832$\n\n[MARGIN: 4]"
+  },
+  "5": {
+    "strips": [
+      {
+        "strip": "page_0005_strip_1",
+        "status": "success",
+        "transcription": "```latex\n\\begin{flushright}\nW\n\\end{flushright}\n\n\\begin{center}\n1\n\\end{center}\n\n\\section*{1. Topos multigaloisiens.}\n\n\\underline{Prop. 1.1.} Soit $\\mathcal{E}$ une catégorie. Conditions\n\n[MARGIN: voir p. précd pr dem aussi 5,2]\néquivalentes :\n\na) $\\mathcal{E}$ est un topos, et tout objet de $\\mathcal{E}$ est loc\\textsuperscript{\\underline{t}} constant.\n\nb) $\\mathcal{E}$ est équivalent à une catégorie $\\hat{\\mathcal{C}}$\n\noù $\\mathcal{C}$ est un groupoïde [unclear: 0-séparé plus un choix]\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 173
+        }
+      },
+      {
+        "strip": "page_0005_strip_2",
+        "status": "success",
+        "transcription": "```latex\n[MARGIN: mult. catégorique cachée ici il me semble]\n\n... une catégorie $\\mathcal{C}$\nsi $\\mathcal{C}$ est un groupoïde NB. [unclear: on n'aura plus à choisir]\n\nb) $\\exists$ une famille $(G_i)_{i \\in I}$ de groupes\net une équivalence de catégories\n\\begin{equation*}\n\\mathcal{E} \\simeq \\prod Ens(G_i)\n\\end{equation*}\n\nc) Conditions d'exactitudes ad-hoc, du type\nde celles données dans SGA 1 ...\n\nDém. $b \\Leftrightarrow b') \\Rightarrow a$ immédiat. Pour $a) \\Rightarrow b)$\nje suis moins sûr, peut être faut-il supposer\nque $\\mathcal{E}$ est loc. connexe, et qu'il [unclear: suffis-]\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 194
+        }
+      },
+      {
+        "strip": "page_0005_strip_3",
+        "status": "success",
+        "transcription": "[continues above]\n\n... que $\\mathcal{E}$ est loc connexe, et qu'il a suffisam-\n\n-ment de foncteurs fibres i.e. suffisam-\n\n-ment de points.\n\n[MARGIN: Prop. 1.3 a) $\\Rightarrow$ b) loc. de cette prop.] \n\\underline{Def. 1.1.} Si les conditions équivalentes a) b)\n\nci-dessus sont satisfaites, on dit que $\\mathcal{C}$\n\nest un topos multigaloisien (ou une \\underline{catégorie}\n\n\\underline{multigaloisienne})\n\n[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 140
+        }
+      }
+    ],
+    "merged": "```latex\n\\begin{flushright}\nW\n\\end{flushright}\n\n\\begin{center}\n1\n\\end{center}\n\n\\section*{1. Topos multigaloisiens.}\n\n\\underline{Prop. 1.1.} Soit $\\mathcal{E}$ une catégorie. Conditions\n\n[MARGIN: voir p. précd pr dem aussi 5,2]\néquivalentes :\n\na) $\\mathcal{E}$ est un topos, et tout objet de $\\mathcal{E}$ est loc\\textsuperscript{\\underline{t}} constant.\n\nb) $\\mathcal{E}$ est équivalent à une catégorie $\\hat{\\mathcal{C}}$\n\noù $\\mathcal{C}$ est un groupoïde [unclear: 0-séparé plus un choix]\n```\n\n% --- strip boundary ---\n\n```latex\n[MARGIN: mult. catégorique cachée ici il me semble]\n\n... une catégorie $\\mathcal{C}$\nsi $\\mathcal{C}$ est un groupoïde NB. [unclear: on n'aura plus à choisir]\n\nb) $\\exists$ une famille $(G_i)_{i \\in I}$ de groupes\net une équivalence de catégories\n\\begin{equation*}\n\\mathcal{E} \\simeq \\prod Ens(G_i)\n\\end{equation*}\n\nc) Conditions d'exactitudes ad-hoc, du type\nde celles données dans SGA 1 ...\n\nDém. $b \\Leftrightarrow b') \\Rightarrow a$ immédiat. Pour $a) \\Rightarrow b)$\nje suis moins sûr, peut être faut-il supposer\nque $\\mathcal{E}$ est loc. connexe, et qu'il [unclear: suffis-]\n```\n\n% --- strip boundary ---\n\n[continues above]\n\n... que $\\mathcal{E}$ est loc connexe, et qu'il a suffisam-\n\n-ment de foncteurs fibres i.e. suffisam-\n\n-ment de points.\n\n[MARGIN: Prop. 1.3 a) $\\Rightarrow$ b) loc. de cette prop.] \n\\underline{Def. 1.1.} Si les conditions équivalentes a) b)\n\nci-dessus sont satisfaites, on dit que $\\mathcal{C}$\n\nest un topos multigaloisien (ou une \\underline{catégorie}\n\n\\underline{multigaloisienne})\n\n[continues below]"
+  },
+  "50": {
+    "strips": [
+      {
+        "strip": "page_0050_strip_1",
+        "status": "success",
+        "transcription": "correspondant : des syst. d'iso.\n\n$\\mu_{D^\\alpha} : f_{D^\\alpha} \\to f'_{D^\\alpha} \\; , \\; \\mu_u^\\ast f_u \\to g_u \\; .$ Cela correspond\n\n[MARGIN: exprimant l'existence d' un iso. $\\mu_{D^\\alpha}$]\ncondition $\\tau'=\\tau$, $d'_{i'} = d_i \\quad \\forall i' \\in I'$ et\nle domaine de [ceci résulte des [unclear: autres] conditions...]\n\n[MARGIN: donnant $\\mu_u$]\n$\\bullet)$ $|| \\mu \\in \\mathcal{E} ||$, définissant un iso\n\nentre \\quad $f_{\\mathcal{E}} : \\mathcal{E}' \\to \\mathcal{E}$ \\quad et \\quad $f'_{\\mathcal{E}} : \\mathcal{E}' \\to \\mathcal{E}$\n\ni.e. [crossed out: $f \\xrightarrow{\\sim}$] tel que\n\n[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 226
+        }
+      },
+      {
+        "strip": "page_0050_strip_2",
+        "status": "success",
+        "transcription": "[continues above]\n\n\\begin{equation*}\n\\fbox{$ f'_{\\varepsilon} = int(\\mu) f_{\\varepsilon} $}\n\\end{equation*}\n\nb) \\fbox{$ \\mu_{i'} \\in \\mathcal{E}_{i} $} \\quad ($i' \\in I'$, $i = u(i')$)\n\n[MARGIN: décrit $\\mu_{\\mathfrak{D}}^*$] satisfaisant \n\\begin{equation*}\n\\fbox{$ f'_{i'} = int(\\mu_{i'}) f_{i'} $} \\qquad \\text{ceci implique } [unclear] \\quad d_{i'} = d'_{i'}\n\\end{equation*}\n\nles $\\underset{\\uparrow}{\\underset{q}{\\mu}}, \\underset{\\uparrow}{\\underset{\\mathcal{E}_i}{\\mu_{i'}}}$ étant liés aux $\\underset{\\downarrow}{\\underset{q}{\\alpha}}, \\alpha'$ de $(\\in \\mathcal{E})$\n\n\\dots $\\alpha_{i'}, \\alpha'_{i'} \\quad (\\in \\Gamma) \\quad \\text{de la fa}\\dots$\n\n[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 241
+        }
+      },
+      {
+        "strip": "page_0050_strip_3",
+        "status": "success",
+        "transcription": "[continues above]\n\n\\[\n\\dots \\rightarrow \\quad \\alpha_{i'}, \\alpha_{i} \\quad (\\in \\Gamma) \\quad \\text{de la } [unclear: fs \\dots]\n\\]\n\n\\noindent suivants\n\n\\[\n\\boxed{\\alpha' = p(\\mu) \\alpha}\n\\]\n\n\\[\n\\boxed{\\alpha'_{i'} = p_{i'}(\\mu_{i'}) \\alpha_{i'}} \\qquad \\forall i' \\in I'\n\\]\n\n\\noindent [unclear: on aura]\n\\[\n\\boxed{\n\\left\\{\n\\begin{array}{l}\np(\\mu) = \\alpha' \\alpha^{-1} \\\\\np_{i'}(\\mu_{i'}) = \\alpha'_{i'} \\alpha_{i'}^{-1}\n\\end{array}\n\\right.\n}\n\\]\n\n[MARGIN: 50]\n\n[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 201
+        }
+      }
+    ],
+    "merged": "correspondant : des syst. d'iso.\n\n$\\mu_{D^\\alpha} : f_{D^\\alpha} \\to f'_{D^\\alpha} \\; , \\; \\mu_u^\\ast f_u \\to g_u \\; .$ Cela correspond\n\n[MARGIN: exprimant l'existence d' un iso. $\\mu_{D^\\alpha}$]\ncondition $\\tau'=\\tau$, $d'_{i'} = d_i \\quad \\forall i' \\in I'$ et\nle domaine de [ceci résulte des [unclear: autres] conditions...]\n\n[MARGIN: donnant $\\mu_u$]\n$\\bullet)$ $|| \\mu \\in \\mathcal{E} ||$, définissant un iso\n\nentre \\quad $f_{\\mathcal{E}} : \\mathcal{E}' \\to \\mathcal{E}$ \\quad et \\quad $f'_{\\mathcal{E}} : \\mathcal{E}' \\to \\mathcal{E}$\n\ni.e. [crossed out: $f \\xrightarrow{\\sim}$] tel que\n\n[continues below]\n\n% --- strip boundary ---\n\n[continues above]\n\n\\begin{equation*}\n\\fbox{$ f'_{\\varepsilon} = int(\\mu) f_{\\varepsilon} $}\n\\end{equation*}\n\nb) \\fbox{$ \\mu_{i'} \\in \\mathcal{E}_{i} $} \\quad ($i' \\in I'$, $i = u(i')$)\n\n[MARGIN: décrit $\\mu_{\\mathfrak{D}}^*$] satisfaisant \n\\begin{equation*}\n\\fbox{$ f'_{i'} = int(\\mu_{i'}) f_{i'} $} \\qquad \\text{ceci implique } [unclear] \\quad d_{i'} = d'_{i'}\n\\end{equation*}\n\nles $\\underset{\\uparrow}{\\underset{q}{\\mu}}, \\underset{\\uparrow}{\\underset{\\mathcal{E}_i}{\\mu_{i'}}}$ étant liés aux $\\underset{\\downarrow}{\\underset{q}{\\alpha}}, \\alpha'$ de $(\\in \\mathcal{E})$\n\n\\dots $\\alpha_{i'}, \\alpha'_{i'} \\quad (\\in \\Gamma) \\quad \\text{de la fa}\\dots$\n\n[continues below]\n\n% --- strip boundary ---\n\n[continues above]\n\n\\[\n\\dots \\rightarrow \\quad \\alpha_{i'}, \\alpha_{i} \\quad (\\in \\Gamma) \\quad \\text{de la } [unclear: fs \\dots]\n\\]\n\n\\noindent suivants\n\n\\[\n\\boxed{\\alpha' = p(\\mu) \\alpha}\n\\]\n\n\\[\n\\boxed{\\alpha'_{i'} = p_{i'}(\\mu_{i'}) \\alpha_{i'}} \\qquad \\forall i' \\in I'\n\\]\n\n\\noindent [unclear: on aura]\n\\[\n\\boxed{\n\\left\\{\n\\begin{array}{l}\np(\\mu) = \\alpha' \\alpha^{-1} \\\\\np_{i'}(\\mu_{i'}) = \\alpha'_{i'} \\alpha_{i'}^{-1}\n\\end{array}\n\\right.\n}\n\\]\n\n[MARGIN: 50]\n\n[continues below]"
+  },
+  "51": {
+    "strips": [
+      {
+        "strip": "page_0051_strip_1",
+        "status": "success",
+        "transcription": "\\begin{center}\n24\n\\end{center}\n\nNotons que, comme $f_i$ est injectif, les \\\\\ndeuxièmes relations, donnant les $f_i(H_{i'})$, déter- \\\\\nminent les $H_{i'}$ de \\underline{façon unique}, l'existence \\\\\nde ces $H_{i'}$ équivaut aux relations\n\\begin{equation*}\n\\boxed{ \\alpha'_{i'} \\alpha_{i'}^{-1} \\in f_i(\\mathcal{G}_i) } \\hspace{1.5cm} i' \\in I'\n\\end{equation*}\n\nQuant à la relation $p(\\mu) = \\alpha' \\alpha^{-1}$, elle détermine \\\\\n$\\mu$ modulo multiplication (à droite disons) par un $\\mu_0 \\in \\text{Ker } p = \\Pi$, \\\\\ndoit être tel que l'on ait encore [continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 210
+        }
+      },
+      {
+        "strip": "page_0051_strip_2",
+        "status": "success",
+        "transcription": "[unclear] modulo multiplication (par un \\quad $H_0 \\in \\operatorname{Ker} p = \\Pi_1$,\n\nmais qui doit être tel que l'on ait encore\n\\[ f'_{\\varepsilon} = \\operatorname{int}(\\text{[unclear]} H_0) f_{\\varepsilon} \\]\n(au lieu de $f'_{\\varepsilon} = \\operatorname{int}(p) f_{\\varepsilon}$) ce qui \\cancel{signifie}\n\nexige que\n\\[ \\operatorname{int}(H_0) f_{\\varepsilon} = f_{\\varepsilon} \\]\n\ni.e.\n\\begin{center}\n\\fbox{\n$H_0 \\in \\operatorname{Cent}_{\\hat{\\Pi}} f_{\\varepsilon}(\\varepsilon')$\n}\n\\end{center}\n\nC'est donc cela l'indétermination exacte\n\ndu choix d'un isomorphisme de 1-morph[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 197
+        }
+      },
+      {
+        "strip": "page_0051_strip_3",
+        "status": "success",
+        "transcription": "C'est donc cela la \" redétermination \" exacte\n\ndans le choix d'un $2$-isomorphisme de $1$-morphismes\n\nentre $f$ et $f'$ de $\\mathcal{D}'$ dans $\\mathcal{D}$.\n\nSi p.ex. on est dans les conditions où\n\n$\\pi' \\longrightarrow \\pi$ induit par $f_\\varepsilon : \\varepsilon' \\longrightarrow \\varepsilon$ est\n\nun [unclear: s-g.] d'indice fini (resp. ouvert )\n\n$-$ cas d'un \" morphisme non constant \" ! $-$\n\nalors $\\mu_0$ doit centraliser un sous-groupe ouvert de [continues below]\n\n[MARGIN: 51]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 154
+        }
+      }
+    ],
+    "merged": "\\begin{center}\n24\n\\end{center}\n\nNotons que, comme $f_i$ est injectif, les \\\\\ndeuxièmes relations, donnant les $f_i(H_{i'})$, déter- \\\\\nminent les $H_{i'}$ de \\underline{façon unique}, l'existence \\\\\nde ces $H_{i'}$ équivaut aux relations\n\\begin{equation*}\n\\boxed{ \\alpha'_{i'} \\alpha_{i'}^{-1} \\in f_i(\\mathcal{G}_i) } \\hspace{1.5cm} i' \\in I'\n\\end{equation*}\n\nQuant à la relation $p(\\mu) = \\alpha' \\alpha^{-1}$, elle détermine \\\\\n$\\mu$ modulo multiplication (à droite disons) par un $\\mu_0 \\in \\text{Ker } p = \\Pi$, \\\\\ndoit être tel que l'on ait encore [continues below]\n\n% --- strip boundary ---\n\n[unclear] modulo multiplication (par un \\quad $H_0 \\in \\operatorname{Ker} p = \\Pi_1$,\n\nmais qui doit être tel que l'on ait encore\n\\[ f'_{\\varepsilon} = \\operatorname{int}(\\text{[unclear]} H_0) f_{\\varepsilon} \\]\n(au lieu de $f'_{\\varepsilon} = \\operatorname{int}(p) f_{\\varepsilon}$) ce qui \\cancel{signifie}\n\nexige que\n\\[ \\operatorname{int}(H_0) f_{\\varepsilon} = f_{\\varepsilon} \\]\n\ni.e.\n\\begin{center}\n\\fbox{\n$H_0 \\in \\operatorname{Cent}_{\\hat{\\Pi}} f_{\\varepsilon}(\\varepsilon')$\n}\n\\end{center}\n\nC'est donc cela l'indétermination exacte\n\ndu choix d'un isomorphisme de 1-morph[continues below]\n\n% --- strip boundary ---\n\nC'est donc cela la \" redétermination \" exacte\n\ndans le choix d'un $2$-isomorphisme de $1$-morphismes\n\nentre $f$ et $f'$ de $\\mathcal{D}'$ dans $\\mathcal{D}$.\n\nSi p.ex. on est dans les conditions où\n\n$\\pi' \\longrightarrow \\pi$ induit par $f_\\varepsilon : \\varepsilon' \\longrightarrow \\varepsilon$ est\n\nun [unclear: s-g.] d'indice fini (resp. ouvert )\n\n$-$ cas d'un \" morphisme non constant \" ! $-$\n\nalors $\\mu_0$ doit centraliser un sous-groupe ouvert de [continues below]\n\n[MARGIN: 51]"
+  },
+  "52": {
+    "strips": [
+      {
+        "strip": "page_0052_strip_1",
+        "status": "success",
+        "transcription": "Il - sauf erreur celui-ci. explique $th=1$, \\\\\ndonc il semble bien que (dans les cas \\\\\ncorrespondants à des topos provenant des \\\\\nespaces topologiques ) un homomorphisme \\\\\nd'un $f$ dans un $f'$ (s'il existe) est \\\\\nunique , i.e. $\\underline{Hom}(\\mathcal{D}', \\mathcal{D}^*)$ est une catégorie \\\\\ndiscrète .\n\n[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 104
+        }
+      },
+      {
+        "strip": "page_0052_strip_2",
+        "status": "success",
+        "transcription": "discrète.\n\nOn peut interpréter $\\mathcal{D}$ comme $\\mathcal{E}$ muni\nde sous-groupes $\\mathcal{E}_i \\subset \\mathcal{E}$, et de $p : \\mathcal{E} \\to \\Gamma_x$\n(noyau $K$) munis d'isomorphismes\n\\[ k_i : T(\\bar{M}) \\xrightarrow{\\sim} \\mathcal{E}_i \\cap K = L_i \\]\n(commutant à l'action de $\\mathcal{E}_i$). Soit\nun tel système $(\\mathcal{E}' ; (\\mathcal{E}'_i)_{i \\in I'}, p' : \\mathcal{E}' \\to \\Gamma',$\n$(K'_i)_{i \\in I'}) ;$ un morphisme des\npremiers dans le second se définit par",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 181
+        }
+      },
+      {
+        "strip": "page_0052_strip_3",
+        "status": "success",
+        "transcription": "[continues above] [unclear: prenant] dans $l$ [unclear] défini par\n\n$$f : \\mathcal{E}' \\longrightarrow \\mathcal{E}$$\n\nsatisfaisant les conditions suivantes\n\nb) $p f$ est conjugué de $p'$ $[ \\text{soit } \\alpha \\in \\Gamma \\text{ tel que } p f = \\text{int}(\\alpha) p' ]$\n\na) $\\forall i' \\in I'$, $\\exists i \\in I$ tel que $f(\\mathcal{E}'_{i'})$\n\nsoit contenu dans un conjugué de $\\mathcal{E}_i$\n\n$[ \\text{soit } \\alpha_{i'} \\in \\mathcal{E} \\text{ tel que } f(\\mathcal{E}'_{i'}) \\subset \\text{int}(\\alpha_{i'}^{-1})(\\mathcal{E}_i) ]$\n$\\quad \\text{ou } \\text{int}(\\alpha_{i'}) f(\\mathcal{E}'_{i'}) \\subset \\mathcal{E}_i$\n\n[MARGIN: 52]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 237
+        }
+      }
+    ],
+    "merged": "Il - sauf erreur celui-ci. explique $th=1$, \\\\\ndonc il semble bien que (dans les cas \\\\\ncorrespondants à des topos provenant des \\\\\nespaces topologiques ) un homomorphisme \\\\\nd'un $f$ dans un $f'$ (s'il existe) est \\\\\nunique , i.e. $\\underline{Hom}(\\mathcal{D}', \\mathcal{D}^*)$ est une catégorie \\\\\ndiscrète .\n\n[continues below]\n\n% --- strip boundary ---\n\ndiscrète.\n\nOn peut interpréter $\\mathcal{D}$ comme $\\mathcal{E}$ muni\nde sous-groupes $\\mathcal{E}_i \\subset \\mathcal{E}$, et de $p : \\mathcal{E} \\to \\Gamma_x$\n(noyau $K$) munis d'isomorphismes\n\\[ k_i : T(\\bar{M}) \\xrightarrow{\\sim} \\mathcal{E}_i \\cap K = L_i \\]\n(commutant à l'action de $\\mathcal{E}_i$). Soit\nun tel système $(\\mathcal{E}' ; (\\mathcal{E}'_i)_{i \\in I'}, p' : \\mathcal{E}' \\to \\Gamma',$\n$(K'_i)_{i \\in I'}) ;$ un morphisme des\npremiers dans le second se définit par\n\n% --- strip boundary ---\n\n[continues above] [unclear: prenant] dans $l$ [unclear] défini par\n\n$$f : \\mathcal{E}' \\longrightarrow \\mathcal{E}$$\n\nsatisfaisant les conditions suivantes\n\nb) $p f$ est conjugué de $p'$ $[ \\text{soit } \\alpha \\in \\Gamma \\text{ tel que } p f = \\text{int}(\\alpha) p' ]$\n\na) $\\forall i' \\in I'$, $\\exists i \\in I$ tel que $f(\\mathcal{E}'_{i'})$\n\nsoit contenu dans un conjugué de $\\mathcal{E}_i$\n\n$[ \\text{soit } \\alpha_{i'} \\in \\mathcal{E} \\text{ tel que } f(\\mathcal{E}'_{i'}) \\subset \\text{int}(\\alpha_{i'}^{-1})(\\mathcal{E}_i) ]$\n$\\quad \\text{ou } \\text{int}(\\alpha_{i'}) f(\\mathcal{E}'_{i'}) \\subset \\mathcal{E}_i$\n\n[MARGIN: 52]"
+  },
+  "53": {
+    "strips": [
+      {
+        "strip": "page_0053_strip_1",
+        "status": "success",
+        "transcription": "\\noindent\n\\underline{NB} Le $i \\in I$ correspondant à $i' \\in I'$ est unique, d'où\\\\\n$\\tau : I' \\rightarrow I$. Si les $\\alpha_{i'}$ sont choisis, on\\\\\nen déduit des hom. induits $f_{i'} : \\mathcal{E}'_{i'} \\rightarrow \\mathcal{E}_i$,\\\\\n$f_{i'} = ( \\text{int}(\\alpha_{i'}) \\circ f ) | \\mathcal{E}'_{i'}$ , qui induit des\\\\\n[unclear], via les $K'_{i'}$, $K_i$, un homomorphisme\\\\\n$\\bar{f}_{i'} : T(K'_{i'}) \\rightarrow T(K_i)$ . \\quad On exige que\\\\\n[unclear] que $f_{\\mathcal{E}}$ [unclear] $f'_{\\mathcal{E}}$, et est\\\\\n[continues below] uniquement déterminé par elle\n\n[MARGIN: \\underline{NB} A priori les [unclear] $\\bar{f}_{i'} : T(\\bar{K}') \\to T(\\bar{K})$ [unclear]]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 254
+        }
+      },
+      {
+        "strip": "page_0053_strip_2",
+        "status": "success",
+        "transcription": "[MARGIN: [unclear: pt $x_i \\in \\mathcal{E}_i$ le centralisateur de $x_i$ dans $\\Pi$ ... de sorte que $p_i$ est reduit à l'unité]]\n[continues above]\n\n... qui [unclear: exige] que $f_{\\xi} \\simeq f_{\\xi'}$ ), et est\n\nvraisemblablement uniquement déterminé par cette\n\ncondition) et $\\alpha_{i'}$ (qui est sans doute déterminé\n\nmod conjugaison [unclear: composantes] : par $g$ avec un\n\nél. des normalisateurs de $\\mathcal{E}_i$ (dans des $\\mathcal{E}_{i'}$,\n\nvoire des transporteurs d'un ss-groupe ouvert\n\nde $\\mathcal{E}_i$ - c'est à dire si $f$ est iso ) puissent\n\nêtre choisis de telle façon que, posant\n\n$\\beta_{i'} = p(\\alpha_{i'}) \\alpha$, on ait\n\n[continues below]",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 218
+        }
+      },
+      {
+        "strip": "page_0053_strip_3",
+        "status": "success",
+        "transcription": "[MARGIN: Avec cette convention [unclear] $\\mathcal{L}_{i'}$ ne change pas [unclear] dans $\\mathcal{F}$ la valeur [unclear] pour $\\mathcal{E}_i$ l'isomorphisme [unclear] ]\n\n$\\beta_{i'} = p(\\mathcal{L}_{i'})\\alpha$, \\quad et \\quad soit\n\n$$f_{i'}^\\circ = (d_{i'} \\times (\\beta_{i'})) \\text{id}_{T(\\bar{M})}$$\n$$X_{i'} = d_{i'} \\times (\\beta_{i'})$$\n\n$d_{i'} \\in \\mathbb{N}^*$ est un entier naturel [unclear] évident\nuniquement déterminé par $\\alpha$ et les $\\mathcal{L}_{i'}$\n[unclear: ainsi] choisis).\n\nRemplaçons $\\alpha$ par $\\alpha' = d_0 \\alpha$.\n\n53",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 204
+        }
+      }
+    ],
+    "merged": "\\noindent\n\\underline{NB} Le $i \\in I$ correspondant à $i' \\in I'$ est unique, d'où\\\\\n$\\tau : I' \\rightarrow I$. Si les $\\alpha_{i'}$ sont choisis, on\\\\\nen déduit des hom. induits $f_{i'} : \\mathcal{E}'_{i'} \\rightarrow \\mathcal{E}_i$,\\\\\n$f_{i'} = ( \\text{int}(\\alpha_{i'}) \\circ f ) | \\mathcal{E}'_{i'}$ , qui induit des\\\\\n[unclear], via les $K'_{i'}$, $K_i$, un homomorphisme\\\\\n$\\bar{f}_{i'} : T(K'_{i'}) \\rightarrow T(K_i)$ . \\quad On exige que\\\\\n[unclear] que $f_{\\mathcal{E}}$ [unclear] $f'_{\\mathcal{E}}$, et est\\\\\n[continues below] uniquement déterminé par elle\n\n[MARGIN: \\underline{NB} A priori les [unclear] $\\bar{f}_{i'} : T(\\bar{K}') \\to T(\\bar{K})$ [unclear]]\n\n% --- strip boundary ---\n\n[MARGIN: [unclear: pt $x_i \\in \\mathcal{E}_i$ le centralisateur de $x_i$ dans $\\Pi$ ... de sorte que $p_i$ est reduit à l'unité]]\n[continues above]\n\n... qui [unclear: exige] que $f_{\\xi} \\simeq f_{\\xi'}$ ), et est\n\nvraisemblablement uniquement déterminé par cette\n\ncondition) et $\\alpha_{i'}$ (qui est sans doute déterminé\n\nmod conjugaison [unclear: composantes] : par $g$ avec un\n\nél. des normalisateurs de $\\mathcal{E}_i$ (dans des $\\mathcal{E}_{i'}$,\n\nvoire des transporteurs d'un ss-groupe ouvert\n\nde $\\mathcal{E}_i$ - c'est à dire si $f$ est iso ) puissent\n\nêtre choisis de telle façon que, posant\n\n$\\beta_{i'} = p(\\alpha_{i'}) \\alpha$, on ait\n\n[continues below]\n\n% --- strip boundary ---\n\n[MARGIN: Avec cette convention [unclear] $\\mathcal{L}_{i'}$ ne change pas [unclear] dans $\\mathcal{F}$ la valeur [unclear] pour $\\mathcal{E}_i$ l'isomorphisme [unclear] ]\n\n$\\beta_{i'} = p(\\mathcal{L}_{i'})\\alpha$, \\quad et \\quad soit\n\n$$f_{i'}^\\circ = (d_{i'} \\times (\\beta_{i'})) \\text{id}_{T(\\bar{M})}$$\n$$X_{i'} = d_{i'} \\times (\\beta_{i'})$$\n\n$d_{i'} \\in \\mathbb{N}^*$ est un entier naturel [unclear] évident\nuniquement déterminé par $\\alpha$ et les $\\mathcal{L}_{i'}$\n[unclear: ainsi] choisis).\n\nRemplaçons $\\alpha$ par $\\alpha' = d_0 \\alpha$.\n\n53"
+  },
+  "54": {
+    "strips": [
+      {
+        "strip": "page_0054_strip_1",
+        "status": "success",
+        "transcription": "8. \\underline{Réflexion taxonomique.}\n\nLe cas $\\dim X = 0$ se déduit sur le paradigme\ndu système $(T(\\overline{K}) \\xrightarrow{k_i} \\mathcal{E}_i \\xrightarrow{p_i} \\mathcal{E} \\xrightarrow{p} \\Gamma)$ \\sout{[unclear]} par la\ncondition \\sout{[unclear]} $p$ injectif , [inserted above: et alors $I = \\emptyset$ - donc ce cas se] donc se décrit \\sout{p} \nsimplement par la donnée d'un sous-groupe\nouvert $\\mathcal{E} \\subset \\Gamma$, i.e. d'une sous-extension finie \\sout{k} $K$\nde $\\overline{K} / K$ \\quad (NB. -- \\quad [inserted above: i.e. sur $\\Pi_{X'} \\xrightarrow{\\emptyset} \\Pi_U \\to \\Pi_E$ -] \\quad bien sur $X' = Spec K$, et\nles dessins \\sout{faits} sur $X$ aboutissent à cette description -\n[unclear] revient ici au choix d'une telle immersion",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 265
+        }
+      },
+      {
+        "strip": "page_0054_strip_2",
+        "status": "success",
+        "transcription": "```latex\nles [unclear: données] sur $X/\\dots$ [unclear: relatives] à $K$- \namènent ici au choix d'une telle immersion\n\nde [unclear: $k_X$] $= H^0(X, \\mathcal{O}_X)$ dans $\\bar{K}/K)$\n\nLe cas $\\dim X = 1$ se traduit par le fait\nque $\\mathcal{E} \\to \\Gamma$ n'est pas injectif - quand\nà $I$ , il peut être vide ou non dans ce cas.\nS'il est vide, la description se fait alors\nsimplement en termes d'un hom de\ngroupes profinis $\\mathcal{E} \\xrightarrow{p} \\Gamma$ (où $\\Gamma$ donné d'avance\n$= Gal(\\bar{K}/K) \\cong Aut_{\\mathcal{F}_e}(\\Omega)$).\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 198
+        }
+      },
+      {
+        "strip": "page_0054_strip_3",
+        "status": "success",
+        "transcription": "```latex\n$= \\text{Gal}(\\bar{K}/k) \\} = \\text{Aut}_{\\pi_{\\mathcal{E}}}(\\Omega)$.\n\nSupposons donnés, maintenant à la fois\n\n$D = (\\mathcal{E}, p, I, (\\varphi_i: \\mathcal{E}_i \\hookrightarrow \\mathcal{E}), (k_i: \\Pi(\\bar{K}) \\to \\mathcal{E}_i))$\n\net $D' = (\\mathcal{E}', p', I', (\\varphi'_{i'} \\quad ), (k'_{i'} \\quad ))$,\n\net revenons à la question de la description\n\ndes morphismes de $D'$ dans $D$. On\n\n[MARGIN: 54] va distinguer quatre cas, suivant les deux valeurs\n```",
+        "model": "gemini-3.1-pro-preview",
+        "thinking_level": "medium",
+        "usage": {
+          "prompt_tokens": 1530,
+          "output_tokens": 168
+        }
+      }
+    ],
+    "merged": "8. \\underline{Réflexion taxonomique.}\n\nLe cas $\\dim X = 0$ se déduit sur le paradigme\ndu système $(T(\\overline{K}) \\xrightarrow{k_i} \\mathcal{E}_i \\xrightarrow{p_i} \\mathcal{E} \\xrightarrow{p} \\Gamma)$ \\sout{[unclear]} par la\ncondition \\sout{[unclear]} $p$ injectif , [inserted above: et alors $I = \\emptyset$ - donc ce cas se] donc se décrit \\sout{p} \nsimplement par la donnée d'un sous-groupe\nouvert $\\mathcal{E} \\subset \\Gamma$, i.e. d'une sous-extension finie \\sout{k} $K$\nde $\\overline{K} / K$ \\quad (NB. -- \\quad [inserted above: i.e. sur $\\Pi_{X'} \\xrightarrow{\\emptyset} \\Pi_U \\to \\Pi_E$ -] \\quad bien sur $X' = Spec K$, et\nles dessins \\sout{faits} sur $X$ aboutissent à cette description -\n[unclear] revient ici au choix d'une telle immersion\n\n% --- strip boundary ---\n\n```latex\nles [unclear: données] sur $X/\\dots$ [unclear: relatives] à $K$- \namènent ici au choix d'une telle immersion\n\nde [unclear: $k_X$] $= H^0(X, \\mathcal{O}_X)$ dans $\\bar{K}/K)$\n\nLe cas $\\dim X = 1$ se traduit par le fait\nque $\\mathcal{E} \\to \\Gamma$ n'est pas injectif - quand\nà $I$ , il peut être vide ou non dans ce cas.\nS'il est vide, la description se fait alors\nsimplement en termes d'un hom de\ngroupes profinis $\\mathcal{E} \\xrightarrow{p} \\Gamma$ (où $\\Gamma$ donné d'avance\n$= Gal(\\bar{K}/K) \\cong Aut_{\\mathcal{F}_e}(\\Omega)$).\n```\n\n% --- strip boundary ---\n\n```latex\n$= \\text{Gal}(\\bar{K}/k) \\} = \\text{Aut}_{\\pi_{\\mathcal{E}}}(\\Omega)$.\n\nSupposons donnés, maintenant à la fois\n\n$D = (\\mathcal{E}, p, I, (\\varphi_i: \\mathcal{E}_i \\hookrightarrow \\mathcal{E}), (k_i: \\Pi(\\bar{K}) \\to \\mathcal{E}_i))$\n\net $D' = (\\mathcal{E}', p', I', (\\varphi'_{i'} \\quad ), (k'_{i'} \\quad ))$,\n\net revenons à la question de la description\n\ndes morphismes de $D'$ dans $D$. On\n\n[MARGIN: 54] va distinguer quatre cas, suivant les deux valeurs\n```"
+  }
+}

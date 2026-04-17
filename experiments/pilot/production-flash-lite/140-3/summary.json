@@ -1,0 +1,15 @@
+{
+  "volume": "140-3",
+  "total_pages": 696,
+  "success": 694,
+  "errors": 2,
+  "total_chars": 1149562,
+  "total_tokens_in": 1240220,
+  "total_tokens_out": 444922,
+  "estimated_cost": 0.98,
+  "elapsed_seconds": 19502,
+  "model": "gemini-3.1-flash-lite-preview",
+  "model_key": "flash-lite",
+  "thinking_level": "high",
+  "completed": "2026-03-06T19:58:37.158523"
+}

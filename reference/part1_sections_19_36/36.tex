@@ -1,0 +1,447 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 36. --- L'ISOMORPHISME $\boldsymbol{\Gamma}_\mathbf{Q}\protect\isommap
+\boldsymbol{\Gamma}_{1,1}$ ET L'INJECTIVITÉ DE $\boldsymbol{\Gamma}_\mathbf{Q}\to {\Autext}(\hat{\mathfrak{T}}_{1,1}^+)
+ \isom  {\Autext}(\SL(2,\mathbf{Z})\,\hat{}\,)$}\thispagestyle{empty}
+\addcontentsline{toc}{section}{36. L'isomorphisme $\boldsymbol{\Gamma}_\mathbf{Q}\protect\isommap
+\boldsymbol{\Gamma}_{1,1}$ et l'injectivité de $\boldsymbol{\Gamma}_\mathbf{Q}\to {\Autext}(\hat{\mathfrak{T}}_{1,1}^+)
+ \isom  {\Autext}(\SL(2,\mathbf{Z})\,\hat{}\,)$}
+\label{sec:36}
+\section*{}
+
+Soit\footnote{Les réflexions du présent paragraphe, un peu cahin caha, seront reprises de fa\c{c}on moins pesante au paragraphe suivant.} $\pi_{0,3}'$ le groupe quotient de $\boldsymbol{\Gamma}_{0,3}$ défini par les relations
+$$
+l_1^2=l_\infty^3=1;
+\leqno(1)
+$$
+c'est donc le groupe ``cartographique orienté pour structures triangulées'', les $\pi_{0,3}'$-ensembles finis correspondant aux cartes orientées finies (pouvant avoir des boucles aplaties) dont les faces sont des triangles ou des mono-angles. L'opération extérieure de $\boldsymbol{\Gamma}_\mathbf{Q}$ (mais non celle de $\mathfrak{S}_3$ !) sur $\hat{\pi}_{0,3}$ passe au quotient en une action sur $\hat{\pi}_{0,3}'$. On peut améliorer le théorème 1 du paragraphe précédent par la
+\vskip .3cm
+{
+Proposition. --- \it L'action extérieure de $\boldsymbol{\Gamma}_\mathbf{Q}$ sur $\hat{\pi}_{0,3}'$ est fidèle.
+}
+\vskip .3cm
+Pour le montrer, on va plonger $\pi_{0,3}$ comme sous-groupe d'indice fini dans $\pi_{0,3}'$, d'où un plongement analogue  
+$$
+\hat{\pi}_{0,3}\hookrightarrow\hat{\pi}_{0,3}'
+$$
+qui sera compatible avec l'action extérieure de $\boldsymbol{\Gamma}_\mathbf{Q}$.  
+
+Considérons pour cela le schéma quotient $Y=\mathbb{P}^1_\mathbf{Q}/\mathfrak{S}_3=X/\mathfrak{S}_3$ avec les trois points $a_0, a_1, a_\infty$ de $Y$, rationnels sur $\mathbf{Q}$, $a_0$ correspondant à la trajectoire $\{0,1,\infty\}$, $a_1$ à la trajectoire $\{-1,{1\over 2},2\}$ et $a_\infty$ à la trajectoire $\{j,\bar j\}, (j={\exp}{{2i\pi}\over 3})$ de $\mathfrak{S}_3$ (ce qui épuise l'ensemble des trajectoires ``singulières'' géométriques).  On sait que $Y$ est une droite projective (sur $\overline{\mathbf{Q}}$ a priori), qu'on épingle par $a_0, a_1, a_\infty$ comme points $0,1,\infty$, donc $Y \isom \mathbb{P}_\mathbf{Q}^1$~; l'homomorphisme $X\to Y$ s'identifie donc à un morphisme bien déterminé
+$$
+f: X=\mathbb{P}^1_\mathbf{Q}\to \mathbb{P}^1_\mathbf{Q}=Y
+\leqno(3)
+$$
+qui fait de $X$ un revêtement galoisien de $Y$, de groupe $\mathfrak{S}_3$, étale au dessus de $\mathbb{P}^1_\mathbf{Q}\setminus\{0,1,\infty\}$, avec comme indices de ramifications en ces points 2,2,3.  Du point de vue de la géométrie des cartes (se pla\c{c}ant sur le corps de base $\mathbf{C}$), on considère la carte déterminée sur $X$ par le triangle sphérique $(0,1,\infty)$ (sur l'axe réel comme équateur) --- qui est donc la carte pondérée universelle --- comme image inverse de la carte universelle (ayant un seul sommet 0, une seule arête repliée $0\to 1$, une seule face, de centre $\infty$). Tout revêtement étale topologique de $U_{0,3}(\mathbf{C})\subset X$ donne ainsi un revêtement étale topologique de  $U_{0,3}(\mathbf{C})\subset  Y$, ayant au dessus de 1 la ramification 2, au dessus de l'infini la ramification 3 exactement, ce qui correspond au foncteur ``oubli'' de la pondération, où une carte triangulaire pondérée est considérée comme une carte tout court. Du point de vue des groupes fondamentaux, on trouve ainsi une équivalence de catégories:
+\vskip .3cm
+\centerline{Revêtements étales de $X\setminus\{0,1,\infty\}=U_{0,3} \isom \pi_{0,3}$-ensembles}
+
+\noindent (4) \centerline{$\downarrow \wr$}
+
+\centerline{Revêtements de $Y\setminus\{0,1,\infty\}=U_{0,3}$
+/(l'objet $X\setminus\{0,1,\infty\}$ de la dite catégorie)}
+
+\centerline{$ \isom \pi_{0,3}'$-ensembles/$E$}
+\vskip .3cm
+\noindent où:
+\begin{itemize}
+	\item les revêtements de $Y\setminus\{0,1,\infty\}$ considérés sont ceux dont la ramification est subordonnée à la signature $2\{1\}+3\{\infty\}$,
+	\item $E$ est le $\pi_{0,3}'$-ensemble correspondant à l'objet $X\setminus\{0,1,\infty\}$ de la catégorie des revêtements étales de $Y\setminus\{0,1,\infty\}$ à ramification subordonnée à $2\{1\}+3\{\infty\}$.
+\end{itemize}
+Ici, le point base de $Y\setminus\{0,1,\infty\}$ choisi pour décrire les revêtements (à ramification subordonnée à\dots) par un groupe fondamental à ramification, étant encore $P=-\overline{j}$, on aura~:
+$$
+E=f_{\mathbf{C}}^{-1}(P)
+\leqno(5)
+$$
+et on peut expliciter ainsi la catégorie ($\pi_{0,3}'$-ens.)/$E$, où $E$ est un espace homogène, isomorphe au quotient de $\pi_{0,3}'$ par le sous-groupe $\pi_{0,3}'^0$, noyau de l'homomorphisme surjectif idoine,
+\vskip .3cm
+\centerline{$\pi_{0,3}'\to\mathfrak{S}_3$}
+
+\centerline{$l_0\mapsto$\ éléments d'ordre 2}
+
+\noindent (6)\centerline{$l_1\mapsto$\ éléments d'ordre 2}
+
+\centerline{$l_\infty\mapsto$\ éléments d'ordre 3}
+\vskip .3cm
+[en marge:] A calculer~!.
+
+On choisit un $Q_0\in E$ comme ``origine'' de $E$ --- pour pouvoir identifier $E$ comme $\pi_{0,3}'$-ensemble à $\pi_{0,3}'/\pi_{0,3}'^0 \isom \mathfrak{S}_3$ -- alors ${\Ens}(\pi_{0,3}')/E$ s'identifie, par le foncteur $F\to F_{Q_0}$, à $\Ens(\pi_{0,3}'^0)$.
+
+On trouve donc en résumé une équivalence de catégories (dépendant du choix de $Q_0$)
+$$
+\pi_{0,3}-{\rm ensembles}\isommap
+\pi_{0,3}'^0-{\rm ensembles}
+$$
+qui est elle-même décrite par un bitorseur sous
+$(\pi_{0,3}'^0,\pi_{0,3})$ et, à isomorphisme (non unique~!) près par un isomorphisme
+$$
+\pi_{0,3}\isommap\pi_{0,3}'^0,
+$$
+les isomorphismes ainsi obtenus (pour des origines variables du bitorseur) formant exactement une classe de conjugaison par $\pi_{0,3}'^0$, i.e. un \emph{isomorphisme extérieur} $\pi_{0,3}\isommap\pi_{0,3}'^0$. Quand de plus le choix de $Q_0$ varie, on trouve un composé $\ \pi_{0,3}\to\pi_{0,3}'^0\to \pi_{0,3}'$ exactement une classe de $\pi_{0,3}'$-conjugaison, i.e. un homomomorphisme extérieur.
+
+J'ai beaucoup turbiné pour pas grand chose --- à défaut d'avoir écrit les fonctorialités [?] très générales [??] pour les ``groupes fondamentaux avec ramification''.  Par exemple le bifoncteur $I$ mystérieux de tantôt est formé des classes de chemins de $P\in X(\mathbf{C})\setminus\{0,1,\infty\}$ (point base pour calculer $\pi_{0,3}$) vers $Q_0$ (jouant le rôle d'un nouveau point base, ayant le mérite de s'envoyer sur celui --- $P$ --- qui sert à calculer $\pi_{0,3}'$, groupe fondamental à ramification sur $Y(\mathbf{C})\setminus\{0,1,\infty\}$\dots). Il serait peut-être plus commode de définir directement un foncteur en sens inverse,
+\vskip .3cm
+\noindent (7) \ Revêtements de $Y(\mathbf{C})\setminus\{0,1,\infty\}$\ \ \ 
+\ \ \ \ $\longrightarrow$\ \ \ \ \ Revêtements
+étales de $X(\mathbf{C})\setminus\{0,1,\infty\}$
+
+subordonnés à la signature $2\{1\}+3\{\infty\}$
+\vskip .3cm
+\noindent par image inverse, suivi d'une \emph{normalisation}.
+
+Ici on utilise le fait que l'objet $X(\mathbf{C})\setminus\{0,1,\infty\}$ de la catégorie des revêtements à ramification maximum imposée, réalise justement un maximum sur les points $1,\infty$ où la condition intervient. On trouve que le foncteur correspondant
+$$ 
+\pi_{0,3}'-{\rm ensembles}\to\pi_{0,3}-{\rm ensembles}
+\leqno{(7\  {\rm bis})}
+$$
+a les propriétés d'exactitude d'un foncteur associé à un morphisme de topos galoisiens
+$$
+\B_{\pi_{0,3}}\to \B{\pi_{0,3}'}
+$$
+(commute aux limites inductives, exact à gauche) et est donc défini par un $(\pi_{0,3},\pi_{0,3}')$-ensemble qui soit un torseur (à droite) pour $\pi_{0,3}'$\footnote{Ce bitorseur est aussi l'ensemble des $Y_\mathbf{C}\setminus\{0\}$ homomorphismes du ``revêtement universel'' à ramification imposée de cet espace sur le revêtement universel ordinaire de $X(\mathbf{C})\setminus\{0,1,\infty\}$.}. Le choix d'une origine pour ce torseur définit alors aussi un homomorphisme correspondant $\pi_{0,3} \to \pi_{0,3}'$.
+
+Revenons à la situation arithmétique sur $\mathbf{Q}$, où on dispose non seulement des groupes fondamentaux géométriques profinis $\hat{\pi}_{0,3},\hat{\pi}_{0,3}'$, mais aussi d'extensions
+\[\begin{tikzcd}
+	1 & {\hat{\pi}_{0, 3}} & {E_{0, 3}} & \boldsymbol{\Gamma} & 1 \\
+	1 & {\hat{\pi}'_{0, 3}} & {E'_{0, 3}} & \boldsymbol{\Gamma} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+\end{tikzcd}\leqno{(8)}\]
+qui s'interprètent comme des groupes fondamentaux de $U_{0,3}$, resp. de $U_{0,3}$ avec ramification subordonnée à $2\{1\}+3\{\infty\}$. Les raisonnements précédents s'étendent à ce cadre et fournissent donc un homomorphisme d'extension
+\[\begin{tikzcd}
+	1 & {\hat{\pi}_{0, 3}} & {E_{0, 3}} & \boldsymbol{\Gamma} & 1 \\
+	1 & {\hat{\pi}'_{0, 3}} & {E'_{0, 3}} & \boldsymbol{\Gamma} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[hook', from=1-3, to=2-3]
+	\arrow[hook', from=1-2, to=2-2]
+	\arrow[shift left=1, shorten <=2pt, shorten >=2pt, no head, from=1-4, to=2-4]
+	\arrow[shorten <=2pt, shorten >=2pt, no head, from=1-4, to=2-4]
+\end{tikzcd}\leqno{(9)}\]
+défini modulo composition par un automorphisme intérieur de $\pi_{0,3}'$ [$\hat{\pi}_{0,3}\to\hat{\pi}_{0,3}$ s'insère dans une suite exacte
+$$
+1\to\hat{\pi}_{0,3}\to\hat{\pi_{0,3}}'\to\mathfrak{S}_3
+\leqno{(9\ {\rm bis})}
+$$ 
+et itou pour les groupes discrets, $1\to\pi_{0,3}\to\pi_{0,3}'\to\mathfrak{S}_3$].
+
+Ceci dit, soit $K$ le noyau de l'opération extérieure de $\boldsymbol{\Gamma}$ sur $\pi_{0,3}'$. On voit alors que l'opération extérieure de $K$ sur le sous-groupe ouvert $\hat{\pi}_{0,3}$ se fait par un groupe fini (en fait par l'intermédiaire de $\hat{\pi}_{0,3}'/\hat{\pi}_{0,3} \isom  \mathfrak{S}_3$\dots) --- ce qui implique, par le théorème 1 du paragraphe précédent, que le groupe $K$ lui-même est fini. Donc par Artin on a $K=1$ ou $K=(1,\tau)$, $\tau$ la conjugaison complexe. Mais comme $\chi (\tau)=-1$, il est évident que l'opération extérieure de $\tau$ sur $\pi_{0,3}'$ (où même sur $\pi'_{{0,3}\,{\operatorname{ab}}}$ ($ \isom \mathbf{Z}/2\mathbf{Z}\times\mathbf{Z}/3\mathbf{Z}$) n'est pas triviale. Cela prouve la proposition.
+
+J'ai envie maintenant d'interpréter $\pi_{0,3}'$ comme  $\mathfrak{T}_{1,1}^+/$(centre) (le centre est isomorphe à $\{\pm 1\}$), et itou pour $\hat{\pi}_{0,3}' \isom \hat{\mathfrak{T}}_{1,1}/\{\pm 1\}$, isomorphisme qui soit compatible avec l'action extérieure de $\boldsymbol{\Gamma}$. On a (pour mémoire) 
+$$
+\mathfrak{T}_{1,1}\isommap \GL(2,\mathbf{Z}),
+\leqno(10)
+$$
+l'isomorphisme étant obtenu ainsi
+$$
+\mathfrak{T}_{1,1}\isommap\mathfrak{T}_{1,0}\isommap
+{\Autext}(\pi_{1,0}) \isom  {\Autext}(\mathbf{Z}^2) \isom  \GL(2,\mathbf{Z})
+\leqno(11)
+$$
+[où le premier isomorphisme est celui de bouchage de trou].
+
+On a donc 
+$$
+\mathfrak{T}_{1,1}^+ \isom \SL(2,\mathbf{Z})
+\leqno(12)
+$$
+et 
+$$
+{\Centre}(\mathfrak{T}_{1,1}) \isom  \{\pm 1\}
+\leqno(13)
+$$
+(s'identifie au groupe des homothéties de $\SL(2,\mathbf{Z})$). Il est connu qu'on a dans $\SL(2,\mathbf{Z})/\{\pm 1\}$ deux générateurs $\lambda_2,\lambda_3$ satisfaisant respectivement 
+$$
+\lambda_3^3 =1, \lambda_2^2=1
+\leqno(14)
+$$
+et tels que ces relations soient une \emph{présentation} de
+$\SL(2,\mathbf{Z})/\{\pm 1\}$. Sauf erreur ces éléments proviennent d'éléments $u_4, u_6$ de $\SL(2,\mathbf{Z})$ lui-même, satisfaisant
+$$
+u_6^6=1, u_4^4 =1,
+\leqno(15)
+$$
+et qui correspondent aux seuls éléments d'ordres 6 et 4 (à conjugaison et passage à l'inverse près). En fait, tout élément d'ordre fini de $\SL(2,\mathbf{Z})$ est conjugué à une puissance de $u_4$ ou $u_6$. Les sous-groupes engendrés respectivement par $u_4$ et $u_6$, cycliques d'ordre 4 et 6, sont les groupes des automorphismes des deux courbes elliptiques exceptionnelles (dites ``anharmoniques'') (en caractéristique 0).
+
+Je n'ai pas de formule sous la main pour ``placer'' $u_4$ et $u_6$, de fa\c{c}on qu'ils engendrent le groupe $\SL(2,\mathbf{Z})$ modulo son centre (ce qui implique sans doute qu'ils engendrent $\SL(2,\mathbf{Z})$) --- mais on fera attention à la relation supplémentaire, s'ajoutant à (15)
+$$
+u_4^2=u_6^3
+\leqno(16)
+$$
+(c'est justement l'élément $-1$ du centre de $\SL(2,\mathbf{Z})$). Je n'ai peut-être pas besoin de la formule explicite pour $u_4$ et $u_6$. On définit alors
+$$
+\pi_{0,3}'\isommap \SL(2,\mathbf{Z})/\{\pm 1\}
+\leqno(17)
+$$
+par 
+$$
+l_1' \mapsto \lambda_2, l_\infty' \mapsto \lambda_3
+\leqno(18)
+$$
+(donc $l_0'\mapsto(\lambda_3\lambda_2)^{-1}=\lambda_2\lambda_3^{-1} =\lambda_2\lambda_3^2$), où $l_0', l_1', l_\infty'$ sont les générateurs de $\pi_{0,3}'$ correspondants à ceux $l_0,l_1,l_\infty$ de $\pi_{0,3}$, avec les relations de définition
+$$
+l_\infty' l_1' l_0'=1,\ l_1'^2=1,\ l_\infty'^3=1,
+\leqno(19)
+$$
+de sorte que $\pi_{0,3}'$ est bien le groupe de générateurs $l_1', l_\infty'$ satisfaisant à $l_1'^2=1,l_\infty'^3=1$.
+
+Je veux maintenant me convaincre que l'homomorphisme correspondant à (17),
+$$
+\hat{\pi}_{0,3}'\to \SL(2,\mathbf{Z})\,\hat {}/\{\pm 1\} \isom \hat{\mathfrak{T}}_{1,1}^+/\{\pm 1\}
+\leqno(20)
+$$
+est compatible avec l'opération extérieure de $\boldsymbol{\Gamma}=\boldsymbol{\Gamma}_\mathbf{Q}$. Pour ceci, j'ai envie de définir directement le composé avec $\hat{\pi}_{0,3} \to \hat{\pi}_{0,3}'$, i.e. $\hat{\pi}_{0,3}\to \hat{\mathfrak{T}}_{1,1}^+/\{\pm 1\},$ et même de le relever en un homomorphisme
+$$
+\hat{\pi}_{0,3}\to \hat{\mathfrak{T}}_{1,1}^+.
+\leqno(21)
+$$
+Au niveau des groupes discrets, on définit bien 
+$$
+\pi_{0,3}\to \SL(2,\mathbf{Z})
+\leqno(22)
+$$
+$$
+{\rm par}\quad l_1\mapsto u_4,
+\ l_\infty\mapsto u_6, \ 
+l_0\mapsto (u_6 u_4)^{-1}=u_4^{-1}u_6^{-1},
+$$
+et $\SL(2,\mathbf{Z}) \isom \mathfrak{T}_{1,1}^+$ s'identifie au quotient de $\pi_{0,3}$ par le sous-groupe engendré par les éléments 
+$$
+l_1^4, l_\infty^6, (l_1^2)(l_\infty^3)^{-1}.
+$$
+D'ailleurs $\pi_{0,3}$ peut s'interpréter comme un groupe de Teichmüller $\mathfrak{T}_{0,4}^{!+}$ \footnote{En effet $\mathfrak{T}_{g,\nu}^!$ est extension de $\mathfrak{T}_{g,\nu-1}^!$ par $\pi_{g,\nu-1}$ (si $(g,\nu-1)$ anabélien) et itou pour les $\mathfrak{T}^+$; $\mathfrak{T}_{0,3}^{!+}=\{1\}$!}, et (22) comme un homomorphisme
+$$
+\mathfrak{T}_{0,4}^{!+}\to\mathfrak{T}_{1,1}^+
+\leqno(23)
+$$
+dont je soup\c{c}onne qu'il se prolonge en un homomorphisme
+$$
+\mathfrak{T}_{0,4}^!\to\mathfrak{T}_{1,1} \isom \SL(2,\mathbf{Z})
+\leqno(24)
+$$
+[le premier membre étant] une extension de $(1,\tau)$ par $\pi_{0,3}$, qui n'est autre que le groupe cartographique triangulé pondéré non orienté.
+
+J'interprète le premier membre de (23) comme le $\pi_1$ ``géométrique transcendant'' du topos modulaire $\mathbf{M}_{0,4}^!$, classifiant les droites projectives avec quatre points disctincts numérotés de 1 à 4~; et le deuxième membre de (23) est le $\pi_1$ transcendant du topos modulaire $\mathbf{M}_{1,1}$, classifiant les courbes elliptiques (avec une origine fixée). On devrait donc pouvoir définir, au niveau des multiplicités modulaires sur $\mathbf{Q}$, 
+$$
+(\mathbf{M}_{0,4}^!)_\mathbf{Q}\to (\mathbf{M}_{1,1})_\mathbf{Q},
+\leqno(25)
+$$
+qui donnerait naissance à (23).
+
+Mais on voit de suite qu'on a un isomorphisme canonique
+$$
+\mathbf{M}_{0,4}^! \isom  U_{0,3}
+\leqno(26)
+$$
+(je laisse tomber les indices $\mathbf{Q}$), et la donnée de (25) revient donc aussi à la donnée d'une famille de courbes elliptiques sur $U_{0,3}$. Mais si $\lambda$ est la ``variable $\in U_{0,3}$'', en prenant ``le'' revêtement quadratique $E_\lambda$ de $\mathbb{P}^1$ ramifié en $0,1,\infty, \lambda$, on trouve une courbe elliptique, avec quatre points marqués --- au dessus de $0,1,\infty, \lambda$ --- dont on peut prendre le point au dessus de 0 comme origine --- alors les trois autres points sont les trois points d'ordre 2, indexés respectivemnt par $1,\infty,\lambda$.
+
+De fa\c{c}on plus précise~: sur un schéma de base quelconque $S$, sauf que 2 y soit inversible (caractéristique résiduelle différente de 2), on a un foncteur qui va de la catégorie des systèmes $(E,\alpha,\beta)$ d'une courbe elliptique (homogène) relative sur $S$, et $\alpha,\beta$ deux sections de $E$ formant une base de ${}_2E$, en tant que schéma localement constant en $\mathbf{F}_2$ --- modules (ou système local de $\mathbf{F}_2$-modules) de $S$ (donnant naissance à $\gamma=\alpha+\beta$, comme troisième larron --- de sorte que $(\beta,\gamma)$ etc. sont en fait aussi des bases)\footnote{Il revient au même de dire que l'on a trois sections $\alpha,\beta,\gamma$ de ${}_2E$ sur $S$, qui sont distinctes en tout $s\in S$ et partant $\ne 1$.} --- vers la catégorie des fibrés en droites projectives $P$ sur $S$, avec quatre sections $u_0,u_1,u_\infty,\lambda$ marquées disctinctes en chaque point, en associant à $E$ le quotient $E/\pm1$, muni des sections $u_0, u_1, u_\infty, \lambda$ qui sont images respectivement de $0,\alpha,\beta,\gamma=\alpha+\beta$; et ce foncteur est \emph{presque} une équivalence de catégories. Ce qui lui manque pour l'être, c'est que pour une courbe elliptique relative $E$, la symétrie $x\to -x$ de $E$ --- qui est un automorphisme non trivial --- opère trivialement sur l'objet correspondant $E/\{\pm1\}$\footnote{Les pages qui suivent sont inutilement compliquées, avec l'introduction de $M_{1,1}', \mathfrak{T}_{1,1}'$ etc. il suffit d'y aller brutalement avec la courbe elliptique $y^2=\sqrt{x(x-1)(x-\lambda)}$ sur $U_{0,3}$, pour avoir $U_{0,3}\to M_{1,1}$~; cf. plus bas\dots}. Donc il faut prendre le champ sur $(\Sch)$, déduit de celui des courbes elliptiques en commen\c{c}ant par prendre ${\Isom}(E,F)'= {\Isom} (E,F)/\pm1$, puis on prendra le champ associé à un préchamp (les objets sur $S$ sont les ``courbes elliptiques relatives à symétrie près sur $S$''). Le champ est représentable par une multiplicité modulaire $M_{1,1}'$, ayant comme groupe fondamental géométrique $\SL(2,\mathbf{Z})\,\hat{}/\{\pm1\}$ justement, déduit par exemple des variétés modulaires à rigidification de Jacobi déchelon $n$, $M_{1,1}[n]$ --- avec un groupe $\SL(2,\mathbf{Z}/n\mathbf{Z})$ opérant dessus, de sorte que 
+$$
+M_{1,1} \isom  \bigl(M_{1,1}[n], \SL(2,\mathbf{Z}/n\mathbf{Z})\bigr)
+\leqno(27)
+$$
+et en outre que le sous-groupe central $\{\pm1\}$ de $\SL(2,\mathbf{Z}/n\mathbf{Z})$ opère trivialement sur $M_{1,1}[n]$~; donc on peut faire opérer le groupe quotient $\SL(2,\mathbf{Z}/n\mathbf{Z})'=\SL(2,\mathbf{Z}/n\mathbf{Z})/\{\pm1\}$, et poser 
+$$
+M_{1,1}'=\bigl(M_{1,1}[n], SL(2,\mathbf{Z}/n\mathbf{Z})'\bigr)
+\leqno(28)
+$$
+(ce qui manifestement ne dépend pas du choix de $n$, $n\ge 2$). On trouve ainsi un homomorphisme
+$$
+M_{0,4}^! \isom  U_{0,3}\longrightarrow M_{1,1}',
+\leqno(29)
+$$
+qui fait de $M_{0,4}^!$ un revêtement galoisien de groupe $\mathfrak{S}_3$ de $M_{1,1}'$, et de fa\c{c}on plus précise
+$$
+M_{0,4}^!\isommap M_{1,1}[2]'\to M_{1,1}'
+\leqno(30)
+$$
+[la deuxième flèche définissant un] revêtement galoisien de groupe $\SL(2,\mathbf{F}_2) \isom \mathfrak{S}_3$), le groupe fondamental géométrique de $M_{1,1}[2]$ étant d'ailleurs isomorphe au noyau de l'homomorphisme $\SL(2,\mathbf{Z})'\,\hat{}\to \SL(2,\mathbf{Z}/2\mathbf{Z})$ qui factorise l'homomorphisme canonique $\SL(2,\mathbf{Z})\,\hat{}\to \SL(2,\mathbf{Z}/2\mathbf{Z})$.
+
+Passant aux groupes fondamentaux pour $M_{0,4}^!=U_{0,3}$ et $M_{1,1}'$, on trouve un homomorphisme de suites exactes
+\[\begin{tikzcd}
+	1 & {\hat{\pi}_{0, 3} = \mathfrak{T}^!_{0, 4}} & {E_{0, 3} = \mathcal{N}_{0, 4}} & \boldsymbol{\Gamma} & 1 \\
+	1 & {\hat{\mathfrak{T}}^+_{1, 1}} & {E'_{1, 1}} & \boldsymbol{\Gamma} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=1-3, to=2-3]
+	\arrow["\sim", from=1-4, to=2-4]
+\end{tikzcd}\leqno{(31)}\]
+([avec] $\hat{\mathfrak{T}}_{1,1}'^+=\hat{\mathfrak{T}}_{1,1}^+/\{\pm1\} \isom \SL(2,\mathbf{Z})\,\hat{}/\{\pm1\})$, qui identifie $E_{0,3}$ à un sous-groupe ouvert d'indice 6 dans $E_{1,1}'=E_{1,1}/\{\pm1\}$, et itou pour $\hat{\pi}_{0,3}$ dans $\hat{\mathfrak{T}}_{1,1}'^+$. On trouve ainsi un isomorphisme
+$$
+\hat{\pi}_{0,3}\isommap {\Ker}\, 
+(\mathfrak{T}_{1,1}'^+\to\mathfrak{S}_3) \isom \bigl( {\Ker}
+(\mathfrak{T}_{1,1}^+\to\mathfrak{S}_3)\bigr)/\{\pm1\} 
+\leqno(32)
+$$
+compatible avec les actions extérieures de $\boldsymbol{\Gamma}$. On peut dire aussi qu'on a une structure d'extension
+$$
+1\to\hat{\pi}_{0,3}\to\mathfrak{T}_{1,1}'^+\to\mathfrak{S}_3
+\to 1
+\leqno(33)
+$$
+(i.e. $1\to\hat{\pi}_{0,3}\to \SL(2,\mathbf{Z})\,\hat{}/\{\pm1\} \to \SL(2,\mathbf{Z}/2\mathbf{Z})\to 1$) compatible avec les actions de $\boldsymbol{\Gamma}$ ($\boldsymbol{\Gamma}$ opérant trivialement sur $\mathfrak{S}_3$).
+
+Je finis par m'apercevoir que ce qu'on obtient ici est loin de (22) --- cet homomorphisme (22) n'a rien d'injectif, par contre il est surjectif, et ses valeurs sont, non dans $\SL(2,\mathbf{Z})/\{\pm 1\}$, mais dans $\SL(2,\mathbf{Z})$ lui-même~! Il faudra donc que je revienne encore sur une fa\c{c}on de donner un sens arithmético-géométrique remarquable à (22), et son extension aux groupes profinis correspondants. Pour le moment, je m'en tiens à exploiter un peu (33). Tout d'abord je note que les arguments faits dans le cadre schématique marchent aussi dans le cas
+transcendant, analytique complexe, et fournissent alors
+$$
+\pi_{0,3}\isommap {\Ker}(\mathfrak{T}_{1,1}'^+
+\to \mathfrak{S}_3) = {\Ker}\big(SL(2,\mathbf{Z})/\{\pm1\}
+\to \SL(2,\mathbf{Z}/2\mathbf{Z})\big) 
+\leqno(34)
+$$
+compatible avec (32), ou encore une suite exacte,
+$$
+1\to\pi_{0,3}\to \mathfrak{T}_{1,1}'^+ = \SL(2,\mathbf{Z})/\pm1\to \mathfrak{S}_3 = \SL(2,\mathbf{Z}/2\mathbf{Z})\to1. 
+\leqno(35)
+$$
+On aimerait interpréter (35) et (33), comme correspondant aux suites exactes analogues liées au diagramme (9), reliant $\pi_{0,3}$ et $\pi_{0,3}'$ --- en identifiant $\pi_{0,3}'$ à $\mathfrak{T}_{1,1}'^+$, $\hat{\pi}_{0,3}'$ à $\hat{\mathfrak{T}}_{1,1}'^+$. J'y reviendrai tantôt.
+
+Remarque. --- On peut se demander si l'homorphisme
+$$
+\hat{\pi}_{0,3}\to \SL(2,\mathbf{Z})\,\hat{}/\{\pm1\} \isom \hat{\mathfrak{T}}_{1,1}^+/\{\pm1\}
+$$
+se remonte\footnote{Oui, on peut remonter, et c'est plus ou moins trivial\dots cf. plus bas\dots} (de fa\c{c}on plus ou moins naturelle) en un homomorphisme
+$$
+\hat{\pi}_{0,3}\to \SL(2,\mathbf{Z})\,\hat{} \isom \hat{\mathfrak{T}}_{1,1}^+,$$
+et itou pour les groupes discrets
+$$
+\pi_{0,3}\to \SL(2,\mathbf{Z}) \isom  \mathfrak{T}_{1,1}^+.
+$$
+Bien sûr, comme $\pi_{0,3}$ et $\hat{\pi}_{0,3}$ sont libres (avec deux générateurs) on peut toujours remonter --- d'exactement \emph{quatre} fa\c{c}ons d'ailleurs (qui nécessairement, dans le cadre profini, respectent les réseaux discrets). Mais peut-on le faire en respectant les opérations de $\boldsymbol{\Gamma}$~? Il suffirait pour cela qu'on puisse remonter $U_{0,3}\to M_{1,1}'$ en $U_{0,3}\to M_{1,1}$ (NB. $M_{1,1}$ est une $\mathbf{Z}/2\mathbf{Z}$-gerbe au dessus de $M_{1,1}'$), et je suspecte, d'après le yoga ``anabélien'' que j'essaye de  développer, que l'inverse doit être vrai\footnote{Pas tout fait, cf. page suivante pour une formulation plus raisonnable\dots} --- que tout relèvement de $\hat{\pi}_{0,3}\to \hat{\mathfrak{T}}_{1,1}'^+$ commutant aux opérations de $\boldsymbol{\Gamma}$ est défini par un tel relèvement $U_{0,3}\to M_{1,1}$. Or l'existence d'un tel relèvement $U_{0,3}\to M_{1,1}$ signifierait exactement l'existence d'une famille de courbes elliptiques sur $U_{0,3}$, avec rigidification de Jacobi d'échelon 2, qui corresponde à l'invariant tautologique $\lambda$. Je doute qu'il en existe une, comme je doute que le relèvement en termes de groupes profinis à opération puisse se faire.
+
+À vrai dire, comme $\hat{\mathfrak{T}}_{1,1}^+ = \SL(2,\mathbf{Z})\,\hat{}$ n'a plus de centre trivial, il n'est plus raisonnable de vouloir ``tout exprimer'' par les opérations extérieures de $\boldsymbol{\Gamma}$ sur $\hat{\mathfrak{T}}_{1,1}^+$, il faut plutôt revenir à l'extension $E_{1,1}=E_{M_{1,1}}$ de $\boldsymbol{\Gamma}$ par $\hat{\mathfrak{T}}_{1,1}^+$, et la question est si l'homomorphisme 
+$$
+E_{0,3}\longrightarrow E_{1,1}'=E_{1,1}/\{\pm1\}
+$$
+se remonte en
+$$
+E_{0,3}\xlongrightarrow{?} E_{1,1},
+$$
+ce qui est plus fort que de trouver un relèvement $\hat{\pi}_{0,3}\to \hat{\mathfrak{T}}_{1,1}^+$, compatible avec les opérations extérieures de $\boldsymbol{\Gamma}$. Pour apprécier cette différence, je note que $\boldsymbol{\Gamma}$ opère sur l'ensemble $E$ des quatre relèvements $\hat{\pi}_{0,3}\to\hat{\mathfrak{T}}_{1,1}^+$ (interprétés comme homomorphismes extérieurs), et la question posée sous la forme faible est s'il existe un élément de $E$ invariant par $\boldsymbol{\Gamma}$. S'il n'existait pas, il y aurait en tous cas un sous-groupe ouvert de $\boldsymbol{\Gamma}$, d'indice 2 ou 4, qui laisserait invariant un élément --- donc, quitte à passer à l'extension finie correspondante de $\mathbf{Q}$, on trouve un relèvement, et quitte à passer à une extension un peu plus grande, les \emph{quatre} relèvements possibles commutent à l'action extérieure de $\boldsymbol{\Gamma}$. Par contre, rien ne prouve que l'on puisse trouver un ``germe de relèvement'' de $E_{0,3}\to E_{1,1}'$ en $E_{0,3}^\natural\to E_{1,1}^\natural$ (germes pris par rapport aux sous-groupes ouverts de $E_{0,3}$ contenant $\hat{\pi}_{0,3}$, ou même tous les sous-groupes ouverts). L'obstruction à remonter sur $E_{0,3}$ lui-même, i.e. à \emph{scinder} une certaine extension de $E_{0,3}$ par $\{\pm1\}$, est
+$$
+\alpha\in \mathrm{H}^2(E_{0,3},\mathbf{Z}/2\mathbf{Z}),
+\leqno(36)
+$$
+et rien ne dit que cette classe de cohomologie puisse s'effacer, en passant à un sous-groupe ouvert de $E_{0,3}$.
+
+Mais en termes géométriques, les courbes elliptiques relatives cherchées sur $U_{0,3}$ forment les sections d'un champ sur $(U_{0,3})_{\operatorname{ét}}$ --- qui est une $\mathbf{Z}/2\mathbf{Z}$-gerbe --- l'obstruction se trouve donc dans un groupe de Brauer, 
+$$
+\beta \in \mathrm{H}^2(U_{0,3},\mathbf{Z}/2\mathbf{Z}),
+\leqno(37)
+$$
+ou comme $U=U_{0,3}$ est une courbe algébrique affine sur un corps (il suffirait qu'elle ne soit pas de type $0,0$), il s'en suit que l'homomorphisme canonique (à coefficients de torsion quelconques)
+$$
+\mathrm{H}^*(E_U,-)\longrightarrow \mathrm{H}^*(U,-)
+$$
+est un isomorphisme. D'ailleurs, il doit être plus ou moins trivial que $\beta$ est l'image de $\alpha$ --- ce qui confirme l'intuition que si le relèvement est possible au niveau des groupes fondamentaux profinis (arithmético-géométriques), il l'est aussi au niveau des multiplicités modulaires elles-mêmes, donc qu'on a une existence d'une courbe elliptique relative sur $U_{0,3}$ qui\dots
+
+Il est vrai qu'il est bien connu qu'une classe de cohomologie (37) à coefficients de torsion s'efface, en passant à une extension finie du corps de base ($\mathbf{Q}$ en l'occurence). En fait, on a une suite spectrale
+$$
+\mathrm{H}^*(U_{0,3},\mathbf{Z}/2\mathbf{Z})\Leftarrow E^{p,q}_2 = \mathrm{H}^p\big(\mathbf{Q},\mathrm{H}^q(\overline
+{U_{0,3}},\mathbf{Z}/2\mathbf{Z})\bigr), 
+\leqno(38)
+$$
+et ici $\mathrm{H}^q(\overline{U_{0,3}})=0$ pour $q\ge 2$, donc on trouve une suite exacte
+$$
+\ldots E^{0,1}_2 = \mathrm{H}^q(\mathbf{Q},H^1(\overline U))\to E^{2,0}_2 = \mathrm{H}^q(\mathbf{Q},\mathbf{Z}/2\mathbf{Z})\to \mathrm{H}^2(U_{0,3})\to
+$$
+$$
+\to E^{1,1}_2 = \mathrm{H}^p(\mathbf{Q}, \mathrm{H}^1(\overline U) \isom \mathbf{F}_2^2)\to E^{3,0}_2=H^3(\mathbf{Q},\mathbf{Z}/2\mathbf{Z})\to\ldots
+$$
+Je me rends compte enfin que l'existence d'un relèvement --- i.e. de la courbe elliptique hypothétique sur $U_{0,3}$ --- est tout à fait triviale, il suffit de le définir par l'équation
+$$
+y=\sqrt{x(x-1)(x-\lambda)},
+$$
+$$
+{\rm i.e. }\quad y^2-x(x-1)(x-\lambda)=F(x,y;\lambda)=0,
+$$
+ce qui définit une courbe plane affine, ou passer en coordonnées projectives
+$$
+F(x,y,z;\lambda)=y^2z-x^3+(1+\lambda)x^2z-\lambda xz^2=0.
+$$
+Je ne vais pas approfondir la question ici, dans quelle mesure ce choix est ``naturel''.
+
+Il donne en tous cas un homomorphisme tout ce qu'il y a de précis
+$$
+M_{0,4}^! \isom U_{0,3}\longrightarrow M_{1,1},
+\leqno(39)
+$$
+d'où un homomorphisme d'extensions
+\[\begin{tikzcd}
+	1 & {\hat{\pi}_{0, 3} = \mathfrak{T}^!_{0, 4}} & {E_{0, 3} = \mathcal{N}^!_{0, 4}} & \boldsymbol{\Gamma} & 1 \\
+	1 & {\hat{\mathfrak{T}}^+_{1, 1} = \Sl(2, \mathbf{Z})} & {E_{1, 1} = \mathcal{N}_{1,1}} & \boldsymbol{\Gamma} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=1-3, to=2-3]
+	\arrow[shift left=1, shorten <=2pt, shorten >=2pt, no head, from=1-4, to=2-4]
+	\arrow[shorten <=2pt, shorten >=2pt, no head, from=1-4, to=2-4]
+\end{tikzcd}\leqno{(39)}\]
+défini modulo automorphisme intérieur par un élément de $\hat{\mathfrak{T}}_{1,1}^+ = \SL(2,\mathbf{Z})\,\hat{}$ , et au niveau des groupes discrets,
+$$
+\pi_{0,3}\longrightarrow \hat{\mathfrak{T}}_{1,1}^+
+$$
+et même,
+$$
+\pi_{0,3}\hookrightarrow \Gamma_2={\Ker}\bigl( \hat{\mathfrak{T}}_{1,1}^+ = \SL(2,\mathbf{Z})\,\hat{}\to \mathfrak{S}_3=\SL(2,\mathbf{Z}/2\mathbf{Z})\bigr)
+\leqno(42)
+$$
+(et itou pour les groupes profinis). Ici $\pi_{0,3}$ est tel que le sous-groupe de congruence du deuxième membre [?], soit $\Gamma_2$ soit produit direct [??] sous-groupe $\pi_{0,3}$ et de son centre $\{\pm1\}$. Mais en fait, il y a exactement quatre sous-groupes dans $\Gamma_2$ qui réalisent cette décomposition. Pour ne pas faire de jaloux, on pourrait regarder l'intersection des quatre, qui est un sous-groupe de $\Gamma_2$ d'indice un diviseur de 24=16 [?]\footnote{NB. Ca doit être le noyau de $\SL(2,\mathbf{Z})\to \SL(2,\mathbf{Z}/4\mathbf{Z}$).}~; c'est l'intersection des noyaux de quatre homomorphismes $\Gamma_2\to {\Centre}(\Gamma_2)=\{\pm1\}$. En tant que sous-groupe de $\pi_{0,3}$, il est d'indice un diviseur de 8 [c'est vrai et c'est même trivial\dots] --- \c{c}a ne m'étonnerait pas que ce soit justement le groupe des commutateur de $\pi_{0,3}$, qui est d'indice 4 --- il y a là toute une situation à élucider\dots
+
+Bien entendu, il faudrait aussi expliciter l'homorphisme (42) (défini modulo automorphismes intérieurs) par ses valeurs sur les générateurs $l_0,l_1,l_\infty$ --- j'y reviendrai peut-être tantôt\footnote{Il n'est pas clair si $\pi_{0,3}$ est invariant en tant que sous-groupe de $\mathfrak{T}_{1,1}^+ = \SL(2,\mathbf{Z})$, i.e. stable par l'action extérieure de $\mathfrak{S}_3$ sur $\SL(2,\mathbf{Z})$ --- je présume que oui, puisque $\mathfrak{S}_3$ agit aussi extérieurement sur $\pi_{0,3}$ a priori\dots $\mathfrak{T}_{1,1}^+/\pi_{0,3}$ serait une extension centrale intéressante de $\mathfrak{S}_3$ par $\{\pm1\}$\dots}.
+\vskip .3cm
+{
+Théorème. --- \it L'action extérieure naturelle de $\boldsymbol{\Gamma}_\mathbf{Q}$ sur $\hat{\mathfrak{T}}_{1,1}^+$, et même sur $\mathfrak{T}_{1,1}'^+=\mathfrak{T}_{1,1}^+/\{\pm1\}$, est fidèle.
+}
+\vskip .3cm
+On utilise le fait qu'on a un homomorphisme extérieur injectif
+$$
+\hat{\pi}_{0,3}\hookrightarrow \hat{\mathfrak{T}}_{1,1}'^+,
+$$
+compatible avec l'action de $\boldsymbol{\Gamma}$, en procédant comme pour la proposition du début (où $\hat{\pi}_{0,3}'$ jouait le rôle de $\hat{\mathfrak{T}}_{1,1}'^+$).
+\vskip .3cm
+{
+Corollaire. --- \it Les homomorphismes canoniques (surjectifs)
+$$
+\boldsymbol{\Gamma}_\mathbf{Q}\to \boldsymbol{\Gamma}_{1,\nu} \ \ (\nu\ge 1),
+\leqno(43)
+$$
+sont injectifs, donc des isomorphismes.
+}
+\vskip .2cm
+Il suffit de le prouver pour $\boldsymbol{\Gamma}_\mathbf{Q}\to\boldsymbol{\Gamma}_{1,1}$ (puisque $\boldsymbol{\Gamma}_{1,1}$ est un quotient de $\boldsymbol{\Gamma}_{1,\nu}$, $\nu\ge 1$\dots), or on a un homorphisme canonique $\boldsymbol{\Gamma}_{1,1}\to {\Autext}\,\hat{\mathfrak{T}}_{1,1}^+$ et on peut considérer le composé,
+$$
+\boldsymbol{\Gamma}_\mathbf{Q} \to \boldsymbol{\Gamma}_{1,1}\to {\Autext}\,\hat{\mathfrak{T}}_{1,1}^+ \to {\Autext}\,\mathfrak{T}_{1,1}'^+;
+$$
+par le théorème précédent ce composé est injectif, donc aussi $\boldsymbol{\Gamma}_\mathbf{Q}\to \boldsymbol{\Gamma}_{1,1}$, cqfd.
+
+Remarque. ---  On a vraiment l'impression, avec la proposition du début, et le résultat précédent baptisé ``théorème'', d'avoir démontré deux fois la même chose, et avec la même démonstration encore~! Donc il est temps, après ce détour, de s'assurer qu'il en est bien ainsi, i.e. que l'homorphisme $\hat{\pi_{0,3}}\to\hat{\mathfrak{T}}_{1,1}'^+$ qu'on vient d'utiliser s'identifie bel et bien à l'homomorphisme $\hat{\pi}_{0,3}\to \hat{\pi}_{0,3}'$, moyennant un isomorphisme convenable (qui reste à décrire) commutant aux actions extérieures de $\boldsymbol{\Gamma}$, qu'on se proposait de construire (cf. (10) à (20)) --- et on l'a perdu en route, en essayant de trouver $\pi_{0,3}' \isommap \mathfrak{T}_{1,1}'^+$ par factorisation dans l'homomorphisme composé $\pi_{0,3}\to \pi_{0,3}'\to\mathfrak{T}_{1,1}'^+$ [la première flèche étant donnée par la surjection canonique] --- et on s'est en un sens fourvoyé, car l'homomorphisme ``naturel'' $\pi_{0,3}\to \mathfrak{T}_{1,1}'^+$ sur lequel on est tombé n'était \emph{pas} du tout celui qu'on avait en vue~: j'étais à côté de mes pompes. Donc il me faut revenir à la charge~!
+
+
+% End

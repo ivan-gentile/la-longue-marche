@@ -1,0 +1,359 @@
+Section: § 18. — FORAGE DE TROUS ; APPLICATION AUX ACTIONS
+G103d pages: 105-113
+
+--- G103d page 105 ---
+§ 18. — FORAGE DE TROUS ; APPLICATION AUX ACTIONS
+EXTÉRIEURES DE GROUPES FINIS
+Soit π′ un groupe à lacets de type (g, ν + 1) non abélien (i.e. si g = 0 on a ν ≥2).
+Si T son module des orientations et I′ (card I′ = ν + 1) l’ensemble de ses classes de
+conjugaison de sous-groupes de lacets.
+Fixons nous un i ∈I′ et soit L′
+i ⊂π′ dans la classe i.
+Quand on se donne seulement un groupe extérieur à lacets [π′] (ce qui équivaut à
+la donnée de BD′∗→BU), la donnée d’un i ∈I′ équivaut à celle d’une composante
+connexe de BD′∗, et celle d’une réalisation du groupe extérieur (i.e. d’un couple d’un
+groupe π′ et d’un isomorphisme extérieur π′ →[π′]) équivaut à isomorphisme près à
+celle d’un objet de π1 BU′ (revêtement universel eU ′ de U ′ pour π′ = Aut(eU ′)).
+Enfin la donnée d’un couple (π′, L′
+i) (L′
+i dans la classe de conjugaison) équivaut (à
+isomorphisme unique près) à la donnée d’un objet eD
+′∗
+i dans π1 BD′∗
+i en prenant l’image
+eU ′ de eD
+′∗dans π1 BU′ et π′ = Aut(eU ′), L′i = ℑ(Aut( eD
+′∗
+i )) dans Aut(eU ′).
+Quand on se donne un objet U ′
+0 de π1 f
+BU′, d’où une réalisation π′ = Aut(eU ′
+0). (On
+va laisser tomber provisoirement les primer) alors la donnée d’un Li ⊂π dans la classe i
+équivaut à la donnée d’un couple ( eDi, λ) d’un eDi ∈Ob π1 BDi et d’un isomorphisme
+de ρ!( eDi) = eU avec eU0.
+Quand la situation topossique est réalisée à partir d’un situation topologique (X, S)
+etqu’ondéfinit eU0 àl’aided’unpointdebasea ∈U, alorslafaçonstandarddedéfinirun
+Li ⊂π = Aut(eU0) = π1(U, a) est de choisir une petite rondelle ∆i autour de si ∈X,
+un point bi sur le bord et une classe d’homotopie de chemin dans U −(∆◦
+i −{si}) = Vi
+
+--- G103d page 106 ---
+de a vers bi et de prendre le groupe Li engendré par l’un quelconque des deux lacets
+correspondants autour de si (qui donnent des lacets opposés dans π).
+On voit que l’on trouve ainsi une application surjective de Isomπ1Vi(a, bi) ≃≃π1U
+(a, bi) sur l’ensemble des Li ⊂π dans la classe i, application compatible avec l’action
+naturelle de π opérant sur Isomπ1U(a, bi) de la façon évidente par composition et sur
+l’ensemble des Li par automorphisme intérieur
+Ici le lien avec la description “abstraite” topossique s’établit ainsi : le choix d’un bi
+peut servir de point de base pour définir un revêtement universel de ∆i \ {si} ≃D∗
+i ,
+d’où un objet ρ!(f
+D∗
+i (bi)) et les Li ⊂π correspondant (d’après la description abstraite)
+aux isomorphismes de eU0 = eU(ai) avec D∗
+i (bi) modulo composition avec un automor-
+phisme de D∗
+i (bi) provenant d’un automorphisme de D∗
+i (b′
+i) mais les isomorphismes
+eU(ai) ≃ρ!( eD∗
+i (bi)) correspondent justement aux classes de chemins de a vers bi.
+(On revient aux notations π′, u′,…)
+Considérons un objet de π1 BD′∗
+i , i.e. un couple (π′, L′
+i). Soit π le groupe quotient
+de π′ par le sous-groupe invariant de π′ engendré par L′
+i. Je dis qu’à isomorphisme près
+(isomorphisme effectif de groupes, par seulement extérieur !) il ne dépend pas du choix de
+l’objet eD∗
+i dans π1 BD′∗
+i . En effet π(eB
+∗
+i ) dépend fonctoriellement de eD∗
+i et tout revient
+à voir que ce foncteur est constant, i.e., que l’opération de Aut( eD∗
+i ) ≃T ≃Li sur
+π = π( eD∗
+i ) est triviale. Or soit u ∈Li, l’automorphisme de π qu’il défini est défini
+par l’automorphisme intérieur int(u), pas passage au quotient donc (comme u devient
+1 dans π) il est trivial.
+On trouve ainsi un foncteur : “bouchage du trou i”
+
+
+
+Groupes extérieurs à lacets π′
+de type (g, ν + 1) munis d’une
+classe de lacets i ∈I(π′)
+
+
+
+ 
+groupes (réalisés)
+à lacets de type (g, ν)
+!
+(π′, 1)
+β(π′, i)
+101
+
+--- G103d page 107 ---
+qui s’exprime par un homomorphisme de groupes
+Autext(π′, i)
+(= ensemble des automorphismes extérieures
+de π′ respectant la structure à lacets)
+et fixant la classe de lacets i
+Aut π
+(où π = β(π′, i))
+D’un point de vue géométrique ce fait (existence d’un foncteur) ne fait qu’exprimer le
+fait qu’après “bouchage du trou” i on a un U = U ′ ∪{si} muni d’un point si, que l’on
+peut utiliser comme point de base canonique pour calculer π1(U). On peut dire aussi
+que le choix de i permet de construire la somme amalgamée partielle (bouchage partiel
+de trous) BU.
+BD′∗
+i
+BU′
+Bsi
+BU
+et Bsi →BU∗fournit un point géométrique dans BU∗qui permet de décrire un objet
+canonique de π1 BU∗(revêtement universel relatif à ce point) d’où canoniquement un
+groupe π, qui bien sûr est un groupe à lacets de type (g, ν −1).
+Théorème. — Supposons g, ν tel que non seulement les groupes π′ de type (g, ν), mais
+aussi le groupe π (de type (g, ν −1)) soient anabélien, i.e. 2g + ν ≥4. Alors le foncteur
+précédent (π′, i) 7→π est une équivalence de catégorie. En d’autres termes (comme il s’agit
+de groupoïdes 0-connexes)
+Autext(π′, i) →Aut(π)
+est un isomorphisme.
+Notons pour ceci que l’on a une suite exacte
+1 →π →Aut π →Autext π →1
+(car centre π = 1 par hypothèse anabélienne sur π) or on va définir une suite exacte
+1 →π →Autext(π′, i) →Autext π →1
+102
+
+--- G103d page 108 ---
+etunhomomorphismed’extensiondecelle-cidanslaprécédente(quiseranécessairement
+unisomorphisme). O.P.S.T = Z, onconsidèrelesgroupesàlacetsstandardπg,ν+1, πg,ν.
+Posons
+Autext(πg,ν)
+(induisant l’identité sur
+I(πg,ν et sur T(πg,ν))
+=
+T ◦◦
+g,ν
+(groupe de Teichmüller
+d’indice (g, ν))
+N.B. Le revêtement universel universel de Mg,ν est contractile par Teichmüller.
+On sait que (pour 2g + ν ≥3) Tg,ν est le groupe fondamental du topos modulaire
+complexe Mg,ν des courbes complexes (projectives non singulières connexes de genre g,
+avec un système de ν point s1 . . . sν distincts données). Or le topos modulaire Mg,ν+1
+n’est autre que la “courbe complexe universelle de genre g à ν tous numérotés” sur Mg,ν
+[car se donner une courbe U ′ de genre g avec ν + 1 trous x1 . . . xν+1 plus un point de
+U] d’où une suite exacte d’homotopie
+π2(Mg,ν)
+π1(M)
+π1(Mg,ν+1)
+π1(Mg,ν)
+π0(U)
+0
+π = πg,ν
+T ◦◦
+g,ν+1
+T ◦◦
+g,ν
+1
+∼
+d’où une structure d’extension
+1 →πg,ν →T ◦◦
+g,ν+1 →T ◦◦
+g,ν →1
+qui est (à passage à un sous-groupe d’indice 2ν ! près) la structure d’extension annoncée.
+Les vérification de compatibilités sont laissées…
+On a donc un foncteur quasi-inverse (défini à isomorphisme unique près)
+ 
+groupes à lacets de type
+g, ν
+2g + ν ≥3
+!
+
+
+
+groupes extérieurs à lacets de type (g, ν + 1)
+avec une “classe de lacets” distinguée
+(couples (π′, i ∈I(π′)))
+
+
+
+Au niveau topossique, quand on a un système BD∗→BU de type (g, ν) (2g + ν ≥3)
+et un “point” de BU i.e. un eU ∈Ob π1 BU, alors on peut de façon canonique trouver un
+BD∗
+i (T-groupoïde connexe, où T est le module d’orientation) et un système
+BD∗⨿BD∗
+i →BU′
+103
+
+--- G103d page 109 ---
+de type g, ν + 1 de façon que (BD∗, BU, eU) s’en déduise par l’opération de “bouchage
+du trou D∗
+i ”.
+Ces constructions sont si fonctorielles qu’elles commutent aux actions de groupe Γ.
+Si un groupe Γ opère sur un groupe à lacet π de type (g, ν) (pas seulement extérieure-
+ment), alorsonendéduituneopérationextérieuredeΓsurunπ′ àlacetsdetype(g, ν+1)
+qui fixe une classe de lacets privilégiée i ∈I.
+Mais alors, dans l’extension correspondante
+1 →π′ →E′ →Γ →1,
+choisissons un L′
+i ⊂π′ est soit E′
+i le normalisateur dans Li de E′, on trouve
+1 →L′
+i(≃T) →E′
+i →Γ →1
+(ceci marche sans hypothèse de finitude sur Γ, le cas universel étant celui où Γ est le
+groupe de Teichmüller de π′ fixant i ; i.e. Autextlac(π′, i)
+∼
+−→Autlac(π)).
+J dit que si Γ opère fidèlement sur π, i.e. si son opération extérieure sur π′ est fidèle,
+et Γ est fini alors Γ est nécessairement cyclique (cas Γ = Γ◦) ou diédral (Γ = Γ◦) et
+que si de plus Γ = Γ◦alors Ei ≃Z i.e. ∃! isomorphisme T
+∼
+−→E′
+i tel que T
+κi
+−→E′
+i
+s’identifie à n idT (de sorte qu’on trouve Γ = E′
+i/nE′
+i ≃T ⊗Z Z/nZ si n =card Γ…)
+Changeant de notations, ceci revient au
+Théorème60. — Soit Γ un groupe fini opérant fidèlement sur un groupe extérieur à
+lacet π de type (g, ν + 1) (ν ≥0), en laissant fixé un i ∈I(π). Alors Γ est cyclique (si
+Γ = Γ◦) ou diédral (si Γ = Γ◦) et dans l’extension correspondante E de Γ par π, si Ei est
+le normalisateur d’un Li dans E [de sorte que l’on a une suite exacte 1 →Li →Ei →
+Γ →1] l’image inverse E◦
+i de Γ◦est ≃Z.
+Donc si n = card Γ◦= [E◦
+i : Li]x 7→xn est un isomorphisme E◦
+i ≃Li, qui compte
+tenu de κi donne un isomorphisme E◦
+i ≃T, dont le composé avec T
+Li ⊂E◦
+i
+κi
+∼
+est n idT de sorte que l’on a un isomorphisme canonique
+Γ◦≃E◦
+i /Li ≃T/nT
+(évidemment indépendant du choix de Li…).
+60Il y a équivalence si dans le théorème on suppose (g, ν) anabélien sinon le théorème est un peu plus
+général.
+104
+
+--- G103d page 110 ---
+Démonstration. Considérons l’extension E◦de Γ◦par Li ≃T (isomorphe non
+canoniquement à Z), comme Γ◦opère trivialement sur T (sans torsion) cette extension
+(par la suite exacte de cohomologie associée à
+0 →T →T ⊗Z Q →T ⊗Z Q/Z →0)
+est canoniquement isomorphe à l’extension définie par un homomorphisme Γ◦→
+Tn = T/nT, comme image de l’extension o →T
+n
+−→T →Tn →0 de Tn par
+T. Je dis que cet homomorphisme est un isomorphisme (d’où résulteront les autres as-
+sertions), ou ce qui revient au même puisque Γ◦et Tn sont tous deux d’ordre n, qu’il est
+injectif. Remplaçant Γ◦par le noyau de Γ◦→Z/nZ, OPS que l’homomorphisme en
+question est nul et il faut prouver que cela implique que l’action de Γ◦est triviale (ce qui,
+puisque par hypothèse l’action de Γ est fidèle, implique Γ◦= {1}, OK). Donc on est
+ramené au
+Lemme fondamental. — Tout automorphisme direct extérieur u d’ordre fini n d’un
+groupe à lacets π, qui fixe une classe de lacets i et est tel que l’extension de Z/nZ par Li ∈i
+définie par u soit triviale est trivial.
+L’hypothèse signifie que u se remonte en un automorphisme u0 de π qui normalise
+Li, et qui soit aussi d’ordre n (ou d’ordre fini, cela revient au même compte tenu que T
+est sans élément d’ordre fini) alors u0 est trivial ; i.e. cela équivaut au corollaire :
+Corollaire61. — Tout automorphisme direct d’ordre fini d’un groupe à lacet π qui
+normalise un sous-groupe à lacet Li (i.e. qui centralise Li) est réduit à l’identité.
+Pour le démontrer on est ramené aussitôt au cas où u0 est tel que up
+0 = 1 avec p
+premier, i.e. u0 correspond à une opération au sens strict (pas seulement extérieure) de
+Z/pZ sur π. Mais (que l’on puisse ou non trouver un tel p) considérons le cas où l’on sait
+que l’opération extérieure de Γ = Z/nZ (n = ordre de u) sur π se réalise géométrique-
+ment par une opération (fidèle) de Γ sur U de type (g, ν + 1) U = X \ S, S ≃I, X
+compacte de genre g, le point si de S correspondant à un point fixe de Γ opérant sur U.
+On exprime l’hypothèse de l’opération […?] de Γ sur π, centralisant un Li, en disant que
+61N.B. Dans le lemme ou son corollaire, le cas g = 0, ν+1 = 1 ou ν+1 = 2 est trivial, le cas ν+1 = 3
+((g, ν) = (0, 2) abélien !) n’est pas trivial par contre, ni le cas g = 1, ν + 1 = 1 (i.e. (g, ν) = (1, 0)
+abélien). Pourtant le résultat doit être valable aussi dans ce cas.
+105
+
+--- G103d page 111 ---
+l’opération extérieure donne une extension de Γ par Li = T triviale. Mais on sait par
+ailleurs dans le cas géométrique (et opération fidèle) qu’elle n’est pas triviale !
+Il suffirait donc pour prouver le lemme fondamental de savoir que toute action
+extérieure (fidèle) d’un groupe cyclique sur un groupe à lacets de type (g, ν + 1) est
+réalisable, et il suffit même de le savoir pour un groupe cyclique d’ordre premier. Or
+sauf erreur, ce résultat est connu (même pour les groupes résolubles) (comme théorème
+d’existence de point fixe d’un tel groupe opérant sur l’espace de Teichmüller…) de sorte
+que le lemme fondamental semble démontré. J’ai seulement un doute s’il est démontré
+dans le cas général d’un (g, ν), ou seulement pour g ≥2, ν = 0. Mais s’il en est bien
+ainsi, je pense que (pour g ≥2 tout au moins) on n’en tire par dévissage pour le cas ν
+quelconque et le cas g = 0, 1 demanderait aussi un traitement à part. Je reviendrai là-
+dessusparlasuiteetpréfèrepourl’instantadmettrele“lemmefondamental”, etexaminer
+des conséquences et corollaires de celui-ci.
+Pour une action extérieure fidèle d’un Γ fini sur un groupe à lacets anabélien π, cor-
+respondant à une extension E de Γ par π on a donc établi62.
+a) Que les scindages partiels de celle-ci ne peuvent se faire que sur des sous-groupes
+Γ′ de Γ tels que Γ′◦soit cyclique et Γ′ dihédral si Γ ̸= Γ
+′◦.
+b) Pour toute classe de π-conjugaison de tels scindages partiels, on a un isomor-
+phisme canonique correspondant Γ′ ≃Tn(= T/nT) où n = card T ′. Ce sont
+là des résultats que l’on avait précédemment obtenus pour le cas d’un opération
+réalisable.
+Il n’y avait pas lieu d’ailleurs de se borner au cas anabélien, du moment que l’on suppose
+π ̸= 0 ) (cas essentiellement vide !) ce qui inclut les cas abéliens g = 0, ν = 2 et g = 1,
+ν = 0 pour lesquels un traitement direct est possible, et a déjà été donné essentiellement,
+ces cas là où l’on part d’une extension (pas d’une extension “extérieure” i.e. ici d’une
+action tout court de Γ sur π ≃Z ou Z2) étant toujours réalisables. (N.B. Dans ce cas,
+l’hypothèse d’une action fidèle est remplacée par celle que l’extension n’est une extension
+produit sous aucun sous-groupe Γ′ ⊂Γ Γ′ ̸= 1…).
+Il reste cependant d’autres résultats [de ?] cas réalisable qu’il faudrait examiner dans
+le cas général :
+62i.e. on a établi l’existence d’une application canonique de l’ensemble des éléments d’ordre fini de
+Autlac(π) dans T ⊗Q/T, satisfaisant les conditions examinées précédemment.
+106
+
+--- G103d page 112 ---
+[O.P.S. Γ = Γ◦donc Γ engendré par un automorphisme direct u ou Γ engendré par
+un anti-isomorphisme d’ordre 2].
+c) Si Γ est un sous-groupe fini de Aut(π) i.e. un groupe fini opérant fidèlement sur
+π a-t-on πΓ = {1} ?
+d) Si Γ′ et Γ′′ sont des sous-groupes finis de E (extension du groupe fini Γ par π
+correspondant à une opération extérieure fidèle, respectant l’orientation) tels que
+Γ′ ∩Γ′′ = {1}, alors Γ′ et Γ′′ sont-ils contenus dans le π-conjugué d’un sous
+groupe fini Γ′′′ de E ?
+[i.e. tout sous-groupe section = 1 est contenu dans un unique sous-groupe sec-
+tion maximal modulo conjugaison].
+N.B. Deviendrait faux en se plaçant dans le groupe Autlac(π) […?].
+e) Pour tout sous-groupe Γ′ de Γ l’ensemble des classes de π-conjugaison de relève-
+ments de Γ′ sur E est-il fini ?
+[OPS Γ′ = Γ cyclique (et Γ = Γ◦) ou dihédral sinon].
+Danslecasc), OPSΓcycliqued’ordrepremieretc’estOKs’ilestacquisqu’uneopération
+extérieure d’un tel groupe sur un πg,ν est réalisable. De même e) est établi si l’on admet
+que les opérations extérieures de groupes cycliques sur un π ≃πg,ν sont réalisables.
+Démontrons d). Nous identifions Γ′ et Γ′′ à des sous-groupes de Γ, et posons Γ0 =
+Γ′ ∩Γ′′. Soit E! le sous-groupe de E formé des g ∈E tel que int(g)Γ0 soit π-conjugué
+de Γ0 et dont l’image dans Γ centralise Γ0.
+OnaE! ⊃π etE′ estdoncl’imageinversed’unsous-groupedeΓ! deΓquicentralise
+Γ0 et qui contient Γ′ et Γ′′ (car E! contient le centralisateur de Γ0 dans E, donc Γ′ et Γ′′).
+Quitte à remplacer Γ par Γ!, E par E!, OPS E = E!, Γ = Γ! i.e. que Γ0 ⊂Centre de Γ
+et que Γ0 ,→E invariant modulo π-conjugaison par Γ.
+On va construire une section de E sur Γ tout entier, ainsi. Soit eΓ ⊂E le central-
+isateur de Γ0 dans E, on a eΓ ∩π = (1) (car cela signifie πΓ0 = (1)) donc eΓ →Γ est
+injectif, jedisqu’ilestsurjectif. Eneffet, soitγ ∈Γ, g ∈E au-dessusdeΓ, parhypothèse
+∃α ∈π tel que int(g)Γ0 = int(α)Γ0.
+107
+
+--- G103d page 113 ---
+i.e. OPS int(g)Γ0 = Γ0, i.e. g normalise Γ0, mais comme Γ0 est central dans Γ cela
+signifie que g centralise Γ0 i.e. g ∈eΓ. Ainsi eΓ ≃Γ est un sous-groupe fini de Aut(π)
+contenant Γ′ et Γ′′ c.q.f.d..
+N.B. Si on n’avait pas au début supposé Γ fini il serait vrai encore que Γ′ et Γ′′ en-
+gendre un sous-groupe eΓ ⊂Aut(π) tel que eΓ ∩π = (1) mais cela nous fait une belle
+jambe.
+108

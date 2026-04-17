@@ -1,0 +1,173 @@
+Section: § 9. — STRUCTURE TANGENTIELLE EN LES s ∈S
+G103d pages: 46-49
+
+--- G103d page 46 ---
+§ 9. — STRUCTURE TANGENTIELLE EN LES s ∈S
+Les sections d’extensions “de deuxième type”
+Revenant à la description “intrinsèque” des (X, S) par ΠD∗→ΠU →Πe, un si ∈
+S correspond donc à une composante connexe de ΠD∗
+i dans ΠD∗, ou un ΠDi de son
+quotient ΠD — considérons ΠD∗
+i
+σi=σD∗
+i Di
+−−−−−−→ΠDi. On va décrire certaines sections (à
+isomorphisme près) de ce morphisme de groupoïdes, i.e. des couples (γ, λ) ou γ est un
+foncteur ΠDi
+γ
+−→ΠD∗
+i et λ un isomorphisme σi ◦γ ≃id.
+Si on choisit un f
+D∗
+i ∈Ob ΠD∗
+i (revêtement universel de D∗
+i ) d’où [un] homomor-
+phisme surjectif Ei = Aut(f
+D∗
+i ) →Γi = Aut(σi(f
+D∗
+i ) = f
+Di), la donnée de (γ, λ),
+et d’un isomorphisme γ(f
+Di) ≃f
+D∗
+i donnant l’isomorphisme identique par application
+des σi, revient à celle d’un homomorphisme Γi →Ei — et les classes d’isomorphismes
+des couples (γ, λ) correspondent aux classes de Li-conjugaison (Li = Ker(Ei →Γi))
+de sections de l’extension Ei de Γi par Li.
+Ceci posé, on a
+Γi = Gal(Ki/Ki)
+où Ki = K(si), Ki est la clôture algébrique de Ki définie par f
+Di (à priori, elle n’est
+pas canoniquement isomorphe à K sur K…), et les classes de scindages d’extensions for-
+ment un torseur Σi (s’il y en a, et on sait qu’il y en a…) sous H1(Γi, Li), ou encore,
+comme κi : Li
+∼
+←−T(Ki), sous H1(Gal(Ki/Ki), T(Ki)) ≃H1(Ki, Tl(Gm)) ≃
+
+--- G103d page 47 ---
+lim
+←−n H1(Ki, µn). Or la suite exacte de Kummer donne
+0
+H0(Ki, Gm)n
+H1(Ki, µn)
+nH1(Ki, Gm)
+0
+(K∗
+i )n
+0
+i.e. H1(Ki, µn) ≃(K∗
+i )n, donc H1(Ki, T(Gm)) ≃lim
+←−n(K∗
+i )n
+Notons qu’on a un homomorphisme kummérien
+K∗
+i →H1(Ki, T(Gm))
+|
+{z
+}
+Hi
+≃lim
+←−(K∗
+i )n
+dont le noyau est formé des x ∈K∗
+i tel que pour tout n ∈N, on ait x ∈K∗n
+i . Comme
+Ki est de type fini sur Q, cet homomorphisme est injectif, i.e. K∗
+i s’identifie à un sous-
+groupe de Hi.
+Ceci posé, on va définir, dans le torseur Σi sous Hi des scindages de D∗
+i sur Di, un
+sous-K∗
+i -torseur (i.e. un élément de Σi/K∗
+i ). Pour ceci, considérons plus généralement
+le cas d’un corps k (= Ki) de caractéristique 0, et d’une k-algèbre O qui est une jauge
+hensélien de corps résiduel k. Soit L le corps des fractions de O. On va, pour tout uni-
+formisante t de O, définir une section (γ, λ) du groupoïde des clôtures algébriques de L,
+vers celui ses revêtements universels de Spec O ou, ce qui revient au même, des clôtures
+algébriquesdek. Pourceci, soitO(n, t) = O[Tn]/(T n
+n −t), etO(∞, t) = lim
+−→n O(n, t),
+par Tn 7→T m
+mn.
+Soit L(n, t) = O(n, t) ⊗O K = corps de fractions de O(n, t), L(∞, t) =
+lim
+−→L(n, t)le corps des fractions de O(∞, t). C’est une extension algébrique de L et
+pour tout extension finie ou ind-finie k′ de k, posant O′ = O ⊗k k′ (qui est aussi une
+jauge hensélienne sur k′ de corps résiduel k′, de corps des fractions L′ ≃L ⊗k k′), on a
+des isomorphismes canoniques
+O(n, t) ⊗O O′ ≃O′(n, t)
+O(∞, t) ⊗O O′ ≃O′(∞, t)
+d’où
+L(n, t) ⊗k k′ ≃L′(n, t)
+L(∞, t) ⊗k k′ ≃L′(∞, t)
+42
+
+--- G103d page 48 ---
+Or si k′ est algébriquement clos, O′ strictement hensélien, on sait que L′(∞, t) est alors
+algébriquement clos. D’ailleurs comme K′ ⊂O′(∞, t) ⊂L′(∞, t) dans ce cas k [?]
+s’identifie à la clôture algébrique k de k dans L′(∞, t) = L. Donc on a bien trouvé une
+section de ΠD∗sur ΠD.
+Mais si on remplace s par s′ = sun, avec u ∈O∗, on trouve des isomorphismes
+λ(n, u) : O(n, s)(= O[Tn]/(T n
+n −s)) →O(n, s′)(= O[Tn]/(T n
+n −s′))
+par Tn 7→uTn
+d’où par passage à la limite
+λ(∞, n) : O(∞, s) →O(∞, s′)
+induisant
+L(∞, s)
+∼
+−→L(∞, s′)
+isomorphisme d’extension de L, d’où un isomorphisme entre les sections correspon-
+dantes des ΠL sur Πk. Ceci implique que si s, s′ diffèrent par un v ∈O∗tel que son
+image dans k soit 1 (i.e. v ∈1 + m [qui est un sous-groupe divisible de O∗] alors s, s′
+définissent des sections isomorphes).
+On trouve une application canonique
+(m/m2)∗
+(ensemble des bases de m/m2)
+qui est un torseur sous k∗
+(classes d’isomorphie de sections de ΠL sur Πk
+i.e. de Gal(L/L) →Gal(k/k)
+qui est un torseur sous H1(Gal(k/k), T(k))
+i.e. sous H1(k, T(Gm)) . . . )
+On constate aussitôt que cette application est compatible avec l’homomorphisme
+θ : k∗→H1(k, T(Gm))
+sur les groupes d’opérateurs de ces torseurs.
+Dans le cas où cet homomorphisme est injectif (par exemple k de type fini sur Q) on
+trouvedoncunplongementdem/m2 commeunsousθ(k∗)-torseurduH1(k, T(Gm))-
+torseur des scindages de ΠD∗(≃groupoïde des clôtures algébriques de L) sur ΠD (≃
+groupoïde des clôtures algébriques de k).
+43
+
+--- G103d page 49 ---
+Revenant au cas des ΠD∗→ΠU →Πe, K…et des D : T(K
+∗)
+κi
+−→Ei ,→E
+p
+−→
+Γ qui les explicitent, on trouve donc une structure supplémentaire sur ce D via les exten-
+sions Ei de Γi ⊂Γ par T(K
+∗), savoir ∀i ∈I, un sous-K∗
+i -torseur dans le torseur sous
+H1(Ki, T(Gm)) ≃lim
+←−(K∗
+i )n desclassesdescindagesdeEi. Ilfaudraitexpliciterlecom-
+portement de cette structure supplémentaire relativement à des morphismes (provenant
+de situations géométriques) et la relation avec la norme des 1-formes différentielles — j’ai
+la flemme de l’expliciter en long et en large !
+La chose nouvelle que je retiens surtout, c’est que pour I ̸= ∅et les Ei →Γ surjec-
+tifs (pour simplifier), on trouve ∀i une “famille trancendante” de scindages de E →Γ
+(via les scindages de Ei sur Γ) — essentiellement [?] par H1(K, T(Gm)) ≃lim
+←−(K∗)n
+(plus précisément, par un torseur sous le dit) — dans cette famille, une sous-famille de
+scindages qu’on peut qualifier de “géométriques”, indexée par K∗(plus précisément, un
+sous-torseur…). On vérifie que les classes de π-scindages obtenus par des indices i, i′ dis-
+tincts sont distinctes, même en se ramenant aux scindages correspondants de l’extension
+deΓparπab déduitedel’extensionE deΓparπ (jenefaispasledétaildesvérifications,via
+Mordell-weil…) et distincts des scindages associées aux points rationnels sur K de X\S.
+Il faudrait corriger la conjecture bordélique dans le cas III, en énonçant (sous toutes
+réserves, encore !) qu’il n’y a (peut-être) pas d’autres scindages de l’extension E de Γ par
+π que ceux-là…
+44

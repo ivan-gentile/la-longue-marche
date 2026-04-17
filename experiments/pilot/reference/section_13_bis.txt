@@ -1,0 +1,64 @@
+Section: § 13 bis. — RETOUR SUR LA NOTION DE GROUPE À LACETS
+G103d pages: 69-70
+
+--- G103d page 69 ---
+§ 13 bis. — RETOUR SUR LA NOTION DE GROUPE À LACETS
+Soit π un groupe, ([Li])i∈I une famille de classes de conjugaison de sous-groupes de π.
+On dit que cela définit une “structure à lacets” sur π (de type (g, ν)) si ∃g ∈N, ∀i ∈I
+un Li ∈[Li], un générateur li ∈Li, des éléments xα, yα ∈π (i ≤α ≤g) enfin un
+ordre i1, . . . , iν sur I (ν = card(I)) tels que (posant lα = liα pour simplifier)
+[x1, y1][x2, y2] . . . [xg, yg]l1 . . . lν = 1
+soit une présentation du groupe π. On n’exclut pas a priori le cas g = 0, ni le cas ν = 0,
+i.e. I vide.
+On déduit de ceci :
+a) Si ν ̸= 0, π est libre (à 2g + ν −1 générateurs) — donc libre non abélien sauf si
+g = 0, ν ≤2.
+b) 35 Si ν = 0, le seul cas où π abélien est celui où g ≤1. [donc π ≃πg,ν est abélien
+si et seulement si g = 0, ν ≤3 ou g = 1, ν = 0]
+En tout cas36, on a une suite exacte canonique de Z-modules libres de types finis
+0 →Tπ →
+Y
+i∈I
+Li
+i
+−→πab →˜πab →0
+où pour I ̸= ∅, π ̸= ∅Tπ est ≃Z (défini comme Ker i), et où les projections
+Tπ →Li
+35Dire que π = 0 si et seulement si ν = 0 ou 1, et qu’en dehors de ces cas les Li sont ≃Z
+36NB. Sauf si π = 0
+
+--- G103d page 70 ---
+sont des isomorphismes. Dans le cas I ̸= ∅, on appelle Tπ le Z-module des orientations
+de π (muni de la famille des (Li)) — on définit, si I = ∅, (ν = 0) mais g ̸= 0 (donc
+π ̸= 1)
+Tπ = H2(π, Z)
+|
+{z
+}
+Z−module libre de rang 1
+⊗−1
+[on établira plus loin une relation entre les deux définition de Tπ]. Ainsi πab est libre de
+rang 2g + ν −1 si ν ̸= 0, 2g si ν = 0 (donc g est uniquement déterminé par π et
+ν = card π).
+Notons que [si ν ̸= 0, et] sauf les cas “abéliens” g = 0, ν = 1, 2, les classes de
+conjugaison des Li (i ∈I) sont distinctes, donc la structure à lacets de π peut se décrire
+comme la donnée d’un ensemble de ν classes de conjugaison de sous-groupes de pi. De
+plus, on voit que tout g ∈π qui normalise un Li le centralise37 (c’est évident en tout
+cas pour ν ≥2, car alors Li →πab est injectif), ce qui implique que les Li d’une même
+classe [Li] sont canoniquement isomorphes entre eux (ce qui donne un sens intrinsèque
+au terme Q Li dans la suite exacte plus haut, et à l’isomorphisme canonique Tπ →Li…
+Si38 un groupe Σ opère sur la structure à lacets (π, ([Li])) il opère sur le Z-module
+inversible Tπ, d’où un caractère
+χ : Σ →Z∗= {±1}
+inversement, si l’on a un caractère χ sur Σ donné d’avance, on parlera d’une action de Σ
+sur (π, ([Li])) compatible avec χ.
+On a des variantes profinies (ou profinies premières à p, si p est premier donné…) —
+mais il y a dès maintenant à signaler deux points à vérifier dans ce cas :39
+Normπ(Li) = Centrπ(Li) = Li dans le cas ν = 1, sinon pas de problème.
+Centr(π) = 1 (cas anabéliens) plus généralement, le centralisateur de tout sous-
+groupe discret ouvert de π est réduit à 1…
+37voir à part le cas ν = 1 : normalisateur du sous-groupe engendré par Q[xα, yα], dans le groupe libre
+engendré par les générateurs xα, yα,…
+38On suppose dorénavant qu’on est dans le cas anabélien, ou du moins on exclut g = 0, ν ≤2
+39Ce n’est démontré pour le moment dans aucun cas anabélien profini !
+65

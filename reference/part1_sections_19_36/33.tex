@@ -1,0 +1,527 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 33. --- DIGRESSION TOPOLOGIQUE~: \\ ANTI-INVOLUTIONS DES SURFACES ORIENTÉES ALGEBROÏDES}\thispagestyle{empty}
+\addcontentsline{toc}{section}{{\bf 33.} Digression topologique~: Anti-involutions des surfaces orientées algébroïdes}
+\label{sec:33}
+\section*{}
+
+On\footnote{Finalement je ne regarde que les surfaces compactes --- pourtant le cas non compact serait aussi très intéressant à regarder --- pour essayer de retrouver par voie algébrique, sur l'automorphisme extérieur d'ordre 2 du $\pi_1$, la disposition des ``points à  l'infini'' de la courbe sur les composantes connexes de $X^\sigma =\hat U$.} appelle surface algébroïde une surface $ U$ de la forme $X\setminus S$, $X$ surface compacte orientable, $S$ fini. Alors $X$ est determinée à homéomorphisme unique près comme ``compactifié pur'' de $ U$~; on la note $\hat  U$. Les homéomorphismes de $ U$ avec lui-même s'identifient aux homéomorphismes de $X$ qui appliquent $S$ dans lui-même. Les orientations de $X$ sont en correspondance 1-1 avec celles de $ U$.  Le anti-involutions de $ U$ (supposées orientées) sont en correspondance 1-1 avec celles de $X$ qui conservent $S$.
+
+On trouve alors une équivalence entre la catégorie des surfaces orientées algébroïdes $ U$ munies d'une anti-involution $\sigma$, et des surfaces à bord compactes $Y$, munies d'une partie finie $T$~; à $( U,\sigma)$ correspond $(\hat{U}/\sigma,(\hat{U}\setminus U)/\sigma)$ --- et à $(Y,T)$ correspond $\tilde Y\setminus\tilde T$, où $\tilde Y$ est le ``double orienté'' de $Y$ (qui est une surface orientée compacte), et $\tilde T$ est l'image inverse de $T$ dans $\tilde Y$.
+
+Nous nous intéressons maintenant au cas où $ U$ est  connexe de type $(g,\nu)$, en examinant d'abord le cas $\nu=0$, i.e. $ U=\hat{U}$, $S=\emptyset$ (auquel le cas général se ramènera). La condition $\nu=0$ correspond au cas où $T=\emptyset$ --- donc les $ U=X$ envisagés s'identifient aux doublements orientés de certaines variétés à bord compactes $Y$. Lesquelles~? Evidemment il faut que $Y$ soit \emph{connexe}, et \emph{non orientable}\footnote{Ce n'est pas vrai que $Y$ soit nécessairement non orientable --- seulement dans le cas où $X^\sigma=\emptyset$.}. Donc $Y$ est caractérisé, à homéomorphisme près, par son genre $\gamma$ et le nombre $\mu$ des composantes connexes du bord --- il peut se déduire du plan projectif réel $Y_0$ en y découpant $\gamma$ rondelles disjointes, et y recollant des rubans de Möbius, puis en découpant encore $\mu$ rondelles ouvertes --- ce qui donne
+$$
+\chi(Y)= \chi(Y_0) -\gamma \chi_!({\hbox{rondelles ouvertes}})+ \gamma \chi_!({\hbox{rubans de Möbius ouverts}})
+$$
+$$
+- \mu \chi_!({\hbox{rondelles ouvertes}})
+$$
+[où $\chi(Y_0)=1$ et $\chi_!($rondelle ouverte$)=1$]. Or le ruban de Möbius ouvert (déduit de $Y_0$ en enlevant une rondelle fermée) a un $\chi_!$ égal à $\chi(Y_0) - \chi_!($rondelle fermée$)$, soit $1-1=0$, d'où
+$$
+\chi(Y)=1-(\gamma+\mu),
+\leqno(1)
+$$
+pour une surface $Y$ compacte connexe avec un bord à  $\mu$ composantes non orientable de genre $\gamma$.
+
+D'autre part, on a
+$$
+\chi(X) = \chi(X\setminus X^\sigma);
+$$
+or $X^\sigma$ est une réunion de cercles donc son $\chi$ est nul. Or, comme $X\setminus X^\sigma$ est un revêtement étale d'ordre $2$ de $Y$, on a
+$$
+\chi(X\setminus X^\sigma) = 2\chi({\operatorname{Int}}(Y))$$
+enfin
+$$
+\chi(Y) = \chi(Y\setminus\partial Y) = \chi({\operatorname{Int}}(Y));
+$$
+pour la même raison que tantôt ($\chi(\partial Y)=0$), d'où enfin
+$$
+\chi(X)=2 \chi(Y)=2\bigl(1-(\gamma+\mu)\bigr),
+\leqno(2)
+$$
+ou encore, puisque $\chi(X)=2-2g$
+$$
+g=\gamma+\mu.
+\leqno(3)
+$$
+Donc on trouve\footnote{Non, on ne trouve qu'une sous-catégorie pleine de celle de tous les $(X,\sigma)$.  Il y a d'autre part aussi les doublements orientés $\coprod_{\partial Y} Y$ des surfaces \emph{orientables} compactes à bord non vide --- si $Y$ est de type $(\gamma,\mu)$, $X$ est de genre $g$ avec $g=2\gamma+\mu-1$ (ou $\gamma\ge 0$, $\mu\ge 1)$.}
+\vskip .3cm
+{
+Proposition. --- \it La catégorie des surfaces orientées connexe compactes de genre $g$ munies d'une anti-involution $\sigma$ est équivalente à celle des variétés compactes à bord \emph{non orientables}, de type $(\gamma,\nu)$ ($\gamma$ le genre, $\mu$ le nombre de trous), avec $\gamma+\nu=g$.
+}
+\vskip .3cm
+{
+Corollaire\footnote{\c{C}a ne marche qu'en se limitant aux $(X,\sigma)$ tels que $X/\sigma$ non orientable -- cf. ci-contre (i.e. (*)) pour le cas orientable.}. --- \it Il y a exactement $g+1$ classes d'isomorphisme de systèmes $(X,\sigma)$, classifiés par $\sigma\le \mu\le g$, où $\mu={\card}(\pi_0(X^\sigma))$.
+}
+\vskip .3cm
+Si $X=X_g$ est une surface orientée compacte de genre $g$, cela signifie aussi que dans le groupe $A_g={\Aut}(X_g)$, il y a exactement $g+1$ classes de conjugaison d'éléments $\sigma$ satisfaisant
+$$
+\sigma^2=1,\ \ {\rm sg}(\sigma)=+1
+\leqno(4)
+$$
+(i.e. qui soient des anti-involutions). Elles fournissent $g+1$ classes de conjugaison d'éléments de $A_g/A^\circ_g= \mathfrak{T}_g$, satisfaisant les mêmes relations. Nous montrerons (on l'espère~!) que ces classes sont distinctes et que tout $\sigma\in\mathfrak{T}_g$ satisfaisant les relations (4) est dans l'une de ces classes.
+
+On admettra le
+\vskip .3cm
+{
+Lemme. --- \it Toute anti-involution du disque unité ou de $\mathbf{C}$ est conjugué de $z\mapsto \bar z$, et par suite l'ensemble de ses points fixes est homomorphe à $\mathbf{R}$, et en particulier est \emph{connexe}.
+}
+\vskip .3cm
+{
+Théorème. --- \it Soit $ U$ une surface orientée séparée connexe, paracompacte, \emph{non isomorphe à} $S^2$, $\sigma$ une anti-involution de $ U$, $\tilde  U$ un revêtement universel de $ U$, d'où $\pi={\Aut} (\tilde  U/ U)$ et une extension $E$ de ${\mathbf{Z}}/2\mathbf{Z}$ par $\pi$, formée des automorphismes topologiques de $\tilde  U$ compatibles avec la relation d'équivalence définie par $\tilde  U\setminus U$, et induisant sur $ U$ l'automorphisme ${\id}_ U$ ou $\sigma$. Alors~:
+\begin{itemize}
+	\item[a)] (Pour mémoire) $ U^\sigma$ est une sous-variété fermée de $ U$ de dimension $1$.
+	\item[b)] Pour tout $x\in U^\sigma$, on trouve une classe de $\pi$-conjugaison de scindages de l'extension $E$, à la fa\c{c}on habituelle, d'où une application
+	$$
+	U^\sigma\to{\Sc}(E,{\mathbf{Z}}/2),
+	\leqno(5)
+	$$
+	où ${\Sc}(E,{\mathbf{Z}}/2)$ désigne l'ensemble des classes de $\pi$-conjugaison de scindages de $E$ sur ${\mathbf{Z}}/2\mathbf{Z}$, ou encore des éléments d'ordre $2$ de $E$ qui ne sont pas dans $\pi$. Cette application se factorise en une \emph{bijection}
+	$$
+	\pi_0( U^\sigma) \isom {\Sc}(E,{\mathbf{Z}}/2).
+	\leqno(6)
+	$$
+	\item[c)] Soit $Z_i$ une composante connexe de $ U^\sigma$, correspondant à un scindage $\sigma_i \in E^-$ d'ordre $2$. Alors
+	$$ 
+	\pi^{\sigma_i}=\{1\}\ \ \ {\hbox{si et seulement si}}\ \ Z_i \isom {\mathbf{R}}.
+	\leqno(7)
+	$$
+	\item[d)] Si $Z_i\not \isom {\mathbf{R}}$, i.e. $Z_i \isom S^1$, alors, pour une orientation choisie de $Z_i$, désignant par $g_i$ l'élément de $\pi=\pi_1(U)$ qu'il définit (défini à conjugaison près), et par $\phi_i:{\mathbf{Z}}\to\pi$ l'homomorphisme $\phi_i(n)=g_i^n$ de ${\mathbf{Z}}$ dans $\pi$, on a~:
+	\begin{itemize}
+		\item[1$^\circ$)] $\phi_i$ est injectif~;
+		\item[$2^\circ$)] quitte à remplacer $\phi_i$ par un conjugué, on a
+		$$
+		\pi^{\sigma_i}={\operatorname{Im}}\,\phi_i.
+		\leqno(8)
+		$$
+	\end{itemize}
+\end{itemize}
+}
+\vskip .3cm
+Démonstration. --- On trouve l'application (5) en prenant, pour tout $x\in U^\sigma$, l'opération canonique de ${\mathbf{Z}}/2\mathbf{Z}$ sur le revêtement universel $\tilde U(x)$ ponctuée en $x$, et en prenant les opérations correspondantes sur $\tilde  U$, déduites par les isomorphismes $\tilde U \isom \tilde U(x)$. On voit que les opérations $\sigma'$ obtenues sur $\tilde  U$ (pour $x$ fixé) sont celles pour lesquelles ${\tilde U}^{\sigma'}$ a un point au-dessus de $x$ --- donc l'ensemble des $x$ qui donnent naissance à la classe d'un $\sigma'$, sont les éléments de l'image de ${\tilde  U}^{\sigma'}$ par la projection $\tilde U \to U$. Comme par le lemme ${\tilde U}^{\sigma'}$ est non vide et connexe, il s'ensuit que son image dans $ U^\sigma$ l'est aussi --- on va voir que son image est exactement une composante connexe de $ U^\sigma$ --- ce qui à la fois prouvera la factorisabilité de (5) par $\pi_0( U^\sigma)$ (assez triviale de toutes fa\c{c}ons) et le fait que l'application déduite de (6) est \emph{bijective}.
+
+Soit $\tilde Z_i$ un revêtement universel de $Z_i$, et prenons le revêtement universel correspondant $\tilde  U_i$ de $ U$, de sorte qu'on a
+\[\begin{tikzcd}
+	{\widetilde{Z}_i} && {U_i} \\
+	\\
+	{Z_i} && U
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=1-3, to=1-1]
+	\arrow[from=3-3, to=3-1]
+	\arrow[from=1-1, to=3-1]
+\end{tikzcd}\leqno{(9)}\]
+et par fonctorialité $\sigma$ opère aussi sur ce diagramme (en opérant trivialement sur $Z_i$, $\tilde Z_i$), soit $\sigma_i$ son opération sur $\tilde U_i$.  On voit donc que $\tilde Z_i$ s'envoie dans ${\tilde U}_i^{\sigma_i}$, qui s'envoie donc \emph{sur} $Z_i$ --- ce qui achève déjà de prouver b).
+
+Considérons l'image de $\tilde Z_i$ dans $\tilde U_i|Z_i$~; c'est une partie \emph{ouverte} et fermée (comme image d'un homomorphisme de revêtements étales sur la même composante $Z_i$), donc c'est a fortiori une partie ouverte et fermée de ${\tilde U}_i^{\sigma_i}$, et comme cet espace est connexe, il lui est égal. De plus $\tilde Z_i\to{\tilde U}^{\sigma_i}$ fait de $Z_i$ un revêtement étale de son image ${\tilde U}_i^{\sigma_i}$ dans ${\tilde U}^{\sigma_i}|Z_i$, et comme ${\tilde U}^{\sigma_i}$ est simplement connexe, on trouve finalement
+$$
+\tilde Z_i\isommap{\tilde U}_i^{\sigma_i}.
+\leqno(10)
+$$
+Lorsque $Z_i$ est simplement connexe, i.e. $\tilde Z_i \isom  Z_i$, cela signifie aussi que ${\tilde  U}_i^{\sigma_i}$ est un homéomorphisme (donc $\tilde Z_i=Z_i\to {\tilde U}_i^{\sigma_i}$ est l'homéomorphisme inverse). Comme, pour $x\in Z_i$ et $\tilde x\in({\tilde U}_i^{\sigma_i})_x$, les $\tilde x'$ de ${\tilde U}_i^{\sigma_i}$ au-dessus de $x$ sont les éléments de la forme $\tilde x\gamma$, avec $\gamma\in\pi_i^{\sigma_i}$  ($\pi_i={\Aut}({\tilde U}_i/ U)$), il s'ensuit que l'on a bien
+$$
+\pi_i^{\sigma_i}=1
+\leqno(11)
+$$
+ce qui est essentiellement la formule (7). Dans le cas $Z_i$ non simplement connexe, posant
+$$
+T_i={\Aut}(\tilde Z_i/Z_i) \isom \pi_1(Z_i;\tilde Z_i)
+\leqno(12)
+$$
+on trouve un homomorphisme canonique
+$$
+\phi_i:T_i\to\pi_i
+\leqno(13)
+$$
+et l'injectivité dans (10) équivaut au fait que (13) est  injectif. Bien entendu, le choix d'un générateur $g_i^\circ$ de $T_i$ équivaut au choix d'une orientation de $Z_i$, et $g_i=\phi_i(g_i^\circ)\in\pi$ est alors l'élément correspondant de $\pi_1( U)$ dont il est question dans l'énoncé (moins précis, car on n'y parle que de classe de conjugaison). Il est clair que $\sigma_i$ (opérant trivialement sur $T_i$, et sur $\pi_i$ par transport de structure) commute à l'homomorphisme injectif $\phi_i$, donc $\phi_i$ induit $T_i\to\pi_i^{\sigma_i}$. Je dis que c'est en fait un \emph{isomorphisme}
+$$
+\phi_i:T_i\isommap\pi_i^{\sigma_i}
+\leqno(14)
+$$
+--- il reste à prouver la surjetivité.  Mais si $\gamma\in \pi_i^{\sigma_i}$, alors $\tilde x\gamma\in{\tilde  U}_i^{\sigma_i}$, donc $\tilde x\gamma\in\phi_i(\tilde Z_i)$ ce qui signifie que $\tilde x\gamma=\tilde x\phi_i(g)$ pour $g\in T_i$, donc $\gamma\in{\operatorname{Im}}\,y_i$, cqfd.
+\vskip .3cm
+{
+Corollaire 1. --- \it Soit $\sigma_i\in\mathfrak{T}_g$ ($1\le i\le g$), correspondant à une anti-involution $\sigma_i$ de $X_g$ telle que ${\operatorname{Card}}\,\pi_0(X_g^{\sigma_i})=i$ et $X_g/\sigma$ non orientable.  Alors 
+\begin{itemize}
+	\item[a)] Il y a exactement $i$ classes de $\pi_g$-conjugaison d'automorphismes effectifs d'ordre $2$ de $\pi_g$ dans la classe $\sigma_i$ (ce qui prouve que si $i\ne j$, $\sigma_i$ et $\sigma_j$ ne sont pas conjugués dans $\mathfrak{T}_g$\dots)~;
+	\item[b)] Si $u_i\in\mathfrak{S}_g={\Aut}_{\operatorname{lac}}(\pi_g)$ est d'ordre $2$ dans la classe $\sigma_i$, alors
+	$$
+	\pi_g \isom {\mathbf{Z}};
+	\leqno(14)
+	$$
+	\item[c)] Si $u_i,u'_i\in\mathfrak{S}_g$ sont d'ordre $2$, de classe $\sigma_i$, alors $\exists h\in\mathfrak{S}_g^+$ tel que
+	$$
+	u'_i=hu_ih^{-1}={\rm int}(h)u_i.
+	\leqno(15)
+	$$
+	(NB. Nécessairement, l'image de $h$ dans $\mathfrak{T}_g^+$ sera dans $(\mathfrak{T}^+_g)^{\sigma_i}={\Centr}_{\mathfrak{T}_g}(\sigma_i)^+$.)
+\end{itemize}
+}
+\vskip .3cm
+Démonstration. --- a) et b) sont des cas particuliers du théorème, appliqué à une anti-involution $\sigma_i$ de $X_g$, avec $\pi_0(X_g^{\sigma_i})$ de cardinal $i$. Soit $Y_{g,i}=X_g^{\sigma_i}$ surface compacte à bord non orientable connexe de type $(g-i,i)$~; il est bien connu et immédiat que le groupe des automorphismes d'une telle variété est transitif sur $\pi_0(\partial Y)$, donc en remontant à $(X_g,\sigma_i)$, que le groupe des automorphismes de $(X_g,\sigma_i)$ est transitif sur $\pi_0(X_g^{\sigma_i})$, qu'on peut interpréter aussi comme l'ensemble des classes de $\pi_g$-conjugaison de $u_i$, comme dans b), c). Cela implique donc qu'il existe $\cdot h\in\mathfrak{T}_g^+$, commutant à $\sigma_i$, tel que --- désignant par $h$ un relèvement dans $\mathfrak{S}_g^+$ --- on ait $u'_i$ $\pi$-conjugué à ${\operatorname{int}}(h)u_i$, ce qui signifie aussi qu'on peut (quitte à modifier $h$) le choisir de fa\c{c}on qu'on ait (15).
+\vskip .3cm
+{
+Corollaire 2. --- \it Sous les conditions du corollaire précédent, posant $\pi_g^{u_i}=T$ ($ \isom {\mathbf{Z}}$), on a un diagramme de suites exactes
+\[\begin{tikzcd}
+	1 & T & {\mathfrak{S}_g^{+u_i}} & {\mathfrak{T}_g^{+\sigma_i}} \\
+	1 & T & {\mathfrak{S}_g^{u_i}} & {\mathfrak{T}_g^{\sigma_i}}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[hook', from=1-4, to=2-4]
+	\arrow[hook', from=1-3, to=2-3]
+	\arrow[shift left=1, shorten <=2pt, shorten >=2pt, no head, from=1-2, to=2-2]
+	\arrow[shorten <=2pt, shorten >=2pt, no head, from=1-2, to=2-2]
+\end{tikzcd}\leqno{(16)}\]
+et l'indice de $\mathfrak{S}_g^{+u_i}$ dans $\mathfrak{T}_g^{+\sigma_i}$ (et de $\mathfrak{S}_g^{u_i}$ dans $\mathfrak{T}_g^{\sigma_i}$) est $i$.
+}
+\vskip .3cm
+Comme les deux dernières flèches verticales sont des inclusions de sous-groupes d'indice $2$, il suffit de traiter l'assertion concernant $\mathfrak{S}^+$, $\mathfrak{T}^+$. Or $\mathfrak{T}_g^{+\sigma_i}$ opère trivialement sur l'ensemble des classes de $\pi$-conjugaison de $u'_i$, d'après c)~; d'autre part le stabilisateur dans $\mathfrak{T}_g^{+\sigma_i}$, pour cette action, de $u_i$, est formé des $\dot\gamma\in\mathfrak{T}_g^{+\sigma_i}$ tels que ${\operatorname{int}}(\gamma)u_i$ soit $\pi$-conjugué à $u_i$, i.e. tels qu'il existe $\alpha\in\pi$, avec ${\operatorname{int}}(\gamma)u_i={\operatorname{int}}(\alpha)u_i$, i.e. $\alpha^{-1}\gamma\in\mathfrak{S}_g^{+u_i}$, ce qui signifie que $\dot\gamma$ est dans l'image de $\mathfrak{S}_g^{+u_i}$, cqfd.
+
+J'ai envie de construire une igure géométrique où on puisse mettre en évidence simultanément des anti-involutions topologiques qui donnent naissance aux $\sigma_i\in\mathfrak{T}_g$ (à conjugaison près, et aux divers $u_i\in \mathfrak{S}_g$ associés à un $\sigma_i$ (ce qui sera alors facile, par la recette générale).  Nous savons que $\sigma_i\in\mathfrak{T}_g$ s'obtient en regardant un $X_g$ comme doublement orienté d'un $Y=Y_{g-i,i}$, donc en partant du plan projectif réel $Y_{0}$, en y faisant $g$ trous, dont on rebouche $g-i$ par des rubans de Möbius, en laissant les $i$ autres trous tels quels.  Soient $D_j$ $(1\le j\le g)$ les disques disjoints fermés correspondant aux ``trous'' donc
+$$
+V_{0,j}=Y_0 \setminus \cup_j D_j^\circ
+\leqno(17)
+$$
+est une variété à bord (non orientable), contenue à la fois dans $Y_0$ et dans $Y=Y_{g-i,i}$, et coïncidant même avec $Y$ en les points de
+$$
+\partial Y = \bigcup_{g-i+1\le j\le g} \partial D_j.
+$$
+Soit $X_0$ la sphère orientée qui revêt $Y_0$, et $U_0=X_0\setminus V_0$ sa restriction sur $Up D_j$, c'est donc le complémentaire d'une réunion de $2g$ disques
+$$
+U_0=X_0\setminus\bigcup_{1\le j\le g} \Delta_j
+\leqno(18)
+$$
+où $\Delta_j\to D_j$ est un revêtement trivial à $2$ feuillets de $D_j$ ($\Delta_j=\Delta'_j\amalg \Delta''_j \isom  D_j\times\epsilon_j$, où $\epsilon_j$ est un ensemble à $2$ éléments qui s'identifie à l'ensemble des deux orientations de $D_j$\dots.). Soit d'autre part $M_j$ ($1\le j\le g-i$) le ruban de Möbius dont le bord a été recollé à $V_0$ par un homomorphisme
+$$
+\partial M_j \isom  \partial D_j.
+\leqno(19)
+$$
+Soit
+$$
+M=\coprod_{1\le j\le g-i} M_j
+\leqno(20)
+$$
+de sorte que
+$$
+Y_{g-i,i}=V_0\amalg_{\partial M} M.
+\leqno(21)
+$$
+
+Soit donc $X=X_g$ le doublement orienté de $Y_{g-i,i}$ défini par (21), soit $\tilde M=\coprod_{1\le j\le g} \tilde M_j$ l'image inverse de $M$ dedans, qui est un revêtement étale de degré $2$ de $M$~:
+$$
+X_{g,i}=X_g\setminus {\operatorname{Int}}(\tilde M),
+\leqno(22)
+$$
+et on aura
+$$
+X_g=X_{g,i}\amalg_{\partial\tilde M} \tilde M
+\leqno(23)
+$$
+pour un homéomorphisme bien déterminé de $\partial\tilde M$ avec une partie ouverte et fermée de $\partial X_{g,i}$. D'ailleurs, on aura une application continue canonique:
+$$
+U_0\to X_{g,i}
+\leqno(24)
+$$
+qui définit un homéomorphisme de $X_{g,i}$ avec la surface obtenue en contractant les $\partial \Delta_j\subset U_0$ ($\partial \Delta_j=(\partial D_j)\times \epsilon_j$), pour $g-i+1\le j\le g$ à l'aide des projections $\partial \Delta_j \isom (\partial D_j)\times\epsilon_j \to D_j$.
+
+D'autre part, chaque $\tilde M_j$ ($1\le j\le g-i$),  revêtement des orientations du ruban du Möbius, est isomorphe au cylindre $S^1\times I$, et son anti-involution canonique est sans point fixe, et s'identifie à $(z,t)\to (-z,-t)$ (où $S^1$ est identifié aux nombres complexes de module $1$, et $I$ à $[-1,+1]$). D'ailleurs, $X_0$ orienté avec son anti-involution de revêtement de $Y_0$ s'identifie à la sphère ordinaire (dans un espace vectoriel euclidien de dimension $3$), avec l'anti-involution $x\mapstochar\to -x$. En résumé~:
+\vskip .3cm
+{
+Proposition. --- \it On peut obtenir (pour $1\le i\le g$ fixé) les couples $(X_g,\sigma_i)$, à homéomorphisme près, en prenant la sphère (euclidienne orientée) $X_0$, avec son antipodisme standard $\tau$, en prenant un ensemble de $2g$ disques $D_j$ ($j\in J$) mutuellement disjoints, stable par $\tau$, et une partie $I'\subset J/\tau=I$ ($I$ de cardinal $g$) avec ${\operatorname{card}}(I')=i$, et en procédant ainsi~: pour tout $j\in I$, soient $\Delta_j=D'_jUp D''_j$ la réunion des deux disques correspondants, et $S_j=\partial\Delta_j/\tau$, de sorte que $S_j$ est un cercle~; soit
+$$
+T_j=S_j\times I^{\epsilon_j}
+$$
+(où $I=[-1,+1]$, $\epsilon_j=\{j\in I\mid j\ {\rm sur}\ i\} \isom \ $l'ensemble des orientations de $S_i$, $I^{\epsilon_j}$ tordu par $\epsilon_j$, de sorte qu'on a un homéomorphisme canonique~:
+$$
+\partial T_j \isom \partial\Delta_j,
+\leqno(25)
+$$
+de sorte que $X_g=U_0\amalg_{\partial \Delta}T$ (où  $\Delta=\coprod_1^g \Delta_j$, $T=\coprod_1^g T_j$) est \emph{orientée}. [NB. $T_j$ est canoniquement orienté et l'isomorphisme (25) \emph{respecte} comme il se doit l'orientation, i.e. $\partial T \isom  \partial V_0$ la renverse.] Ceci posé, l'antipodisme $\tau$ induit sur chaque $\tilde M_i \isom  S_j\times\epsilon_j$ l'anti-involution canonique provenant de cette expression des $\partial T_i$, qui échange les deux composantes connexes. Pour tout $j\in I$, on prolonge $\dot\tau|\partial T_j$ à $T_j$ en deux anti-involutions $\dot\tau_j$, $\dot\tau'_j$ de $T_j$ de telle fa\c{c}on que
+\begin{itemize}
+	\item[a)] $\dot\tau_j$ soit sans points fixes,
+	\item[b)] $\dot\tau'_j$ ait un ensemble de points fixes homéomorphe à $S_j$ par la projection $T_j^{\dot\tau_j}\to S_j$ (cf. plus bas pour des choix particuliers explicites --- on verra qu'on peut même supposer $T_j^{\dot\tau_j}=S_j\times \{0\}$).
+\end{itemize}
+Soit, pour toute partie $I'\subset  I$, $\tau_{I'}$ l'anti-involution de $X_g=V_0\amalg_{\partial T}T$ (où $V_0=X_0\setminus Up_{j\in J} D_j'$) qui coïncide avec $\tau$ sur $V_0$, avec $\tau'_j$ sur $T_j$ pour $j\in I'$, avec $\tau_j$ pour $j\in I\setminus I'$. Alors on a
+$$
+X_g^{(\tau_{I'})}=\bigcup_{j\in I'}(S_j\times\{0\})
+\leqno(26)
+$$
+donc si ${\operatorname{card}}(I')=i$ ($0\le i\le g$), alors $\tau_{I'}$ est un $\sigma_i$.
+}
+\vskip .3cm
+Choix de $\dot\tau_j$, $\dot\tau'_j$. On choisit un isomorphisme $S_j \isom U \defeq \{z\in{\mathbf{C}}\mid |z|=1\}$, d'où une orientation de $S_j$, et une bijection $\epsilon_j \isom \{\pm 1\}$, d'où $I^{\epsilon_j} \isom  I=[-1,+1]$ et on prend
+$$
+\begin{cases}
+\dot\tau(z,t)=(-z\,{\exp}({\rm i}\pi t),-t)& \\
+	 \dot\tau'(z,t)=(z,-t).& 
+\end{cases}\leqno(27)
+$$
+[NB. Pour la définition des $\dot\tau_j'$, on n'a pas besoin du choix d'un isomorphisme $S_j \isom U$.]  
+
+On a bien $\dot\tau^2=\dot\tau'^2= id,\ \dot\tau\vert\partial\tau =\dot\tau'\vert\partial\tau=\tau\vert\partial\tau.$
+
+D'ailleurs on note que:
+$$
+(\dot\tau'\dot\tau)^2=\dot\tau'\dot\tau\dot\tau'\dot\tau=
+\bigl((z,t)\mapsto(z\,{\exp}(2{\rm i}\pi t),t)
+\bigr).
+$$
+Ce n'est pas l'application identique --- l'ensemble de ses points fixes est égal à l'ensemble des $(z,t)$ tels que $t\in\{-1,0,+1\}$ -- i.e. 
+$$
+T_j^{(\dot\tau'_j\dot\tau_j)^2}=S_j\times [\partial I^{\epsilon_j} Up\{0\}].
+\leqno(28)
+$$
+Soit
+$$
+\dot\rho_j=\dot\tau'_j\dot\tau_j,\ \ [(z,t)\mapsto
+(-z\,{\exp}({\rm i}\pi t),t)]
+\leqno(29)
+$$
+--- c'est un automorphisme de $T_j$ qui est \emph{l'identité} sur $\partial T_j$. Pour toute partie $I'$ de $I=J/\tau$, soit
+$$
+\rho_{I'}={\hbox{l'automorphisme de}}\ X_g\ {\hbox{qui est l'identité sur}}\ V_0=X_g\setminus\bigcup_{j\in I\setminus I'} T_j,
+\leqno(30)
+$$
+$$
+{\hbox{et qui est}}\ \rho_j\ {\rm sur}\ T_j\ {\rm pour}\ 
+j\in I'\footnote{Posant $\rho_j=\rho_{\{j\}}$, on aura simplement $\rho_J=\prod_{j\in J}\rho_j$.  Sauf erreur, $\rho_j$ engendre le groupe $S\Gamma^{!+}(T_j) (??) \isom  \mathbf{Z}$, donc les $\rho_j$ engendre un groupe $ \isom  \mathbf{Z}^I$. NB. On a $\rho_j=\tau_{\{j\}}\tau_
+\emptyset$.}.
+$$
+On aura donc
+$$
+\tau_{I'}\tau_{I''}=\rho_{I'_0}\rho^{-1}_{I''_0}
+\leqno(32)
+$$
+où $I'_0=I'\setminus I'\cap I''$, $I''_0=I''\setminus I'\cap I''$~; d'autre part on aura evidemment
+$$
+[\rho_J,\rho_K]=1 \ {\rm pour}\  J,K\subset  I.
+\leqno(33)
+$$
+\vskip .3cm
+Remarque. --- Au lieu d'un isomorphisme $S_j \isom  U$ supposons donné plutôt sur $S_j$ une structure de torseur sous $U^{\epsilon_j}$ ($U$ tordu par $\epsilon_j$, grâce à l'automorphisme d'ordre $2$,$z\mapsto z^{-1}=\bar z$ de $U$). On peut donc définir
+$$
+{\exp}:{\mathbf{R}}^{\epsilon_j}\to U^{\epsilon_j}
+\leqno{(36\ [sic])}
+$$
+où $I^\epsilon_j\subset {\mathbf{R}}^{\epsilon_j}$, de fa\c{c}on évidente, d'où des anti-involutions $\dot\tau_j,\dot\tau'_j:T_j \isommap T_j$ par les formules (27).
+
+Si par exemple on choisit des disques $D'_j$ tels que leurs bords soient des \emph{cercles} euclidiens, alors il y a sur chaque $\partial D'_j$ une structure de torseur sous un groupe $U^{\epsilon_j}$, invariante par antipodisme, et qui passe donc au quotient. Dès lors tout automorphisme de $(X_0,(D'_j))$ qui respecte cette structure supplémentaire de torseur --- et notamment tout automorphisme qui respecte la structure \emph{métrique}, opère sur $X_g$ en commutant au système des $\tau_j$, $\tau'_j$ au sens évident.
+
+Également, si on retient sur $X$ la structure conforme seulement, et si on choisit dans chaque $D_j$ un ``centre'' $a_j$, de fa\c{c}on compatible avec l'involution, alors le choix des $a_j\in {\operatorname{Int}}(D_j')$ définit une structure de torseur sur $M_j$ et ces structures sont invariantes par transformations conformes qui respectent l'ensemble de points $a_j$. [NB. On ne suppose plus nécessairement que ($\partial D_j$ soit un cercle, seulement que $\partial D_j$ pas trop sauvage.  Si $\partial D_j$ est un cercle cette définition coïncide avec la précédente si et seulement si $a_j$ est le centre du cercle.]
+
+Pour définir $\tau_j$ sur $T_j$, il suffit de nettement moins de données que d'une structure de torseur topologique sur $T_j$. Ecrivant, pour $(z,t)\in S_j\times I^{\epsilon_j}$
+$$
+\tau_j(z,t)=\bigl(u_t(z),-t\bigr)
+\leqno(37)
+$$
+où $u_t:S_j\isommap S_j$ est un homéomorphisme dépendant continûment de $t$, écrivant que $\tau_j|\partial T_j=\tau|\partial T_j$ on trouve la condition
+\begin{itemize}
+	\item[a)] $u_t={\id}$ si $t\in\partial I^{\epsilon_j} \isom \epsilon_j$ (\c{c}a s'écrit, si $S_j$ est orienté, $u_1=u_{-1}=0$)~; écrivant que $\tau_j^2={\id}$, on trouve la condition
+	\item[b)] $u_{-t}=u_t^{-1}$\ \ ($t\in I^{\epsilon_j}$), et écrivant que ${T_j}^{\tau_j}=\emptyset$ on trouve la condition
+	\item[c)] $u_0$ sans points fixes.
+\end{itemize}
+Si une orientation est choisie, les $j\mapsto u_j$ satisfaisant a), b), c) correspondent aux applications $[0,1]\to {\Aut}(S_j)$ par $t\mapsto u_t$, telles que $u_1={\id}$, $u_0$ sans point fixe \emph{et d'ordre $2$} (le cas envisagé plus haut est celui-ci où $t\mapsto u_{1-t}$ provient d'une représentation continue $\mathbf{R} \mapsto {\Aut}(S_j)$).
+
+Remarques. --- On peut se proposer de déterminer la structure de toutes les anti-involutions $\tau$, sur un cylindre orienté $T \isom  S\times I^{\epsilon_j}$ ($\epsilon={\operatorname{Or}}(S)$) qui n'ont pas de point fixe sur le bord --- ce qui implique déjà que $\tau$ permute les deux composantes connexes du bord.  Plus généralement, les anti-involutions $\tau$ d'une surface \emph{à bord} orientée $X$, n'ayant pas de point fixe sur $\partial X$, correspondent aux variétés à bord munies d'un partie à la fois ouverte et fermée $(\partial Y)'$ de $\partial Y$ --- en associant à une telle $(Y,(\partial Y)')$ son \emph{``doublement'' orienté} relativement à $(\partial Y)'$ --- à $X,\sigma$ correspondant $(X/\sigma,\ {\operatorname{Im}}X^\sigma \to X/\sigma)$. Si $X$ est connexe compact, $Y$ est compacte \emph{non orientable}\footnote{Pas vrai~! Si $Y$ est orientable de type $(\gamma,j)$, avec $0\le i\le j$, on aura $g+\nu/2 =2\gamma+j-1, \nu=2(j-i)$, i.e. $i=j-\nu/2$ comme dans le cas ci-contre [celui du texte qui suit].}~; supposons que son type soit $(\gamma,j)$, et soit $i={\card}\bigl(\pi_0 ((\partial Y)')\bigr)={\card}(\pi_0(X^\sigma))$. Donc $0\le i\le j$, et $\chi(Y)=1-(\gamma+j)$, et on voit de suite que 
+$$ 
+\chi(X) = \chi_!\bigl(X\setminus (X|\partial Y)\bigr) = \chi_!
+\bigl( X|{\operatorname{Int}}(Y)\bigr)
+$$
+(car le $\chi$ d'un cercle est nul)
+$$
+= 2\chi_!({\operatorname{Int}}(Y))=2 \chi(Y)=2(1-(\gamma+j));
+$$
+donc si $X$ est de type $(g,\nu)$, on aura $\chi(X)=2-2g,  2-2g-\nu=2\bigl(1-(\gamma+j)\bigr)$, i.e.
+$$
+g+\nu/2 = \gamma+j
+\leqno(38)
+$$
+(cela exige que $\nu$ soit pair, ce qui était évident a priori, car $\sigma$ doit permuter les éléments de $\pi_0(\partial X)$ entre eux, sans y avoir de points fixes\dots). Mais j'ai oublié de noter que $\nu$ est déterminé en fonction de $(\gamma,j,i)$ où $i={\card}((\partial Y)')$ par
+$$
+\nu=2(j-i),
+\leqno(39)
+$$
+i.e. $i=j-\nu/2$. Donc il faut ici (pour $g=0,\nu=2$) chercher $(\gamma,j,i)$ avec $\gamma\in{\mathbf{N}}$, $0\le i\le j\in{\mathbf{N}}$, tels que l'on ait $\nu=2(j-i)$, i.e. $j-i=1$ i.e. $i=j-1$, et $\gamma+j=1$, ce qui donne la seule possibilité (comme $i\ge 0$, donc $j\ge 1$)
+\begin{itemize}
+	\item[a)] $\gamma=0$, $j=1$, $i=0$.
+\end{itemize}
+Le cas a) correspond au cas où $T^\sigma=\emptyset$~; il se déduit du plan projectif réel en y faisant un trou à bord (d'où ruban de Möbius), et en prenant le doublement orienté.
+
+Le cas où $T^\sigma\ne\emptyset$ donnera nécessairement un quotient $Y$ orienté, on doit avoir que pour son type $(\gamma,[??])$, le seul cas~:
+\begin{itemize}
+	\item[b)] $\gamma=0$, $j=2$, $i=1$ (quotient \emph{orienté})
+\end{itemize}
+déduit de la sphère à deux trous, i.e. du cylindre, en prenant le doublement orienté par rapport à \emph{un} des trous.
+
+C'est bien les deux cas donnés respectivement par $\dot\tau$ et $\dot\tau'$ dans les formules (27).
+
+Je voudrais maintenant construire une situation sous les conditions de la proposition mettant en évidence un maximum de symétries --- il est vrai que l'on pourrait travailler avec tous les automorphismes de $X_0$ commutant à l'antipodisme $\tau$, invariant l'ensemble des $D_j$, et respectant (disons) des structures de torseur topologique sur l'ensemble des $\partial D_j$ --- ou ce qui revient naturellement au même (à indétermination de multiplication par $2$ près)\footnote{Non, \emph{sans} indétermination, en relevant à la sphère de fa\c{c}on à repsecter l'orientation.} les automorphismes de $Y_0$ qui invarient $D= \cup_{i\in I} D_i$, et respectent des structures de torseur sur les composantes connexes $\partial D_j$ de $\partial D$. On prévoit que (travaillant modulo isotopie) on aura un groupe qui sera voisin d'un groupe de tresses, et sans doute calculable sans grand mal --- et en le mettant ensemble avec le groupe engendré par les opérateurs précédents, on trouvera peut-être un démarrage pour engendrer par exemple $\mathfrak{T}_g$ par générateurs (anti-involutifs) et relations.
+
+Considérons le sous-groupe $G$ de $A_g={\Aut}(X_g)$ engendré par les $\tau_{I'}$, $I'\subset  I$. Soit ${H}$ le sous-groupe engendré par les $\rho_j$, ($j\in I$). On a
+$$
+\tau_{I'}\rho_J\tau_{I'}=\tau_{I'}(\tau_{\{j\}}\tau_{\emptyset})
+\tau_{I'}=(\tau_{I'}\tau_{\{j\}})(\tau_{\emptyset}\tau_{I'})
+\in{H}
+$$
+par la formule (32) donc ${H}$ est un sous-groupe invariant. Les formules (32) montrent que $G/{H}$ est un groupe \emph{commutatif}, et même qu'il est isomorphe à $\pm 1$ par le caractère d'orientation tous les $\tau_I'$ sont égaux mod ${H}$).
+
+Considérons comme élément de référence de ${H}$ l'élément
+$$
+\tau=\tau_{\emptyset}
+\leqno(40)
+$$
+(anti-involution sans points fixes de $X_g$). On trouve alors
+par (32) que pour $I'\subset  I$,
+$$
+\tau_{I'}=\rho_{I'}\tau=\bigl(\prod_{j\in I'}\rho_j\bigr) \cdot\tau
+\footnote{On veut du reste, comme $\tau^2=1$, 
+$\tau_{I'}^2=1$, que $\tau_{I'}=\tau_{I'}^{-1}=\tau\rho_{I'}^{-1}$
+donc $\tau\rho_{I'}\tau=\rho_{I'}^{-1}$, ce qui est (42).},
+\leqno(41)
+$$
+d'ailleurs on aura, pour $j\in I$,
+$$
+\tau\rho_i\tau=\tau_{\emptyset}(\tau_{\{i\}}\tau_{\emptyset})\tau_{
+\{0\}}=\tau_{\emptyset}\tau_{\{j\}}=\rho_j^{-1}
+$$
+$$
+\tau\rho_i\tau^{-1}=\rho_i^{-1}.
+\leqno(42)
+$$
+Ainsi $G$ apparaît comme le produit semi-direct de ${H} \isom {\mathbf{Z}}^I$, et de $\{\pm 1\} \isom \{1,\tau\}$ y opérant par la symétrie $\rho\mapsto \rho^{-1}$. Donc pour \emph{tout} $\rho\in{H}$, on a $(\tau\rho)^2=1$, i.e. pour tout $\sigma\in{H}^{-1}$, $\sigma$ \emph{est une anti-involution}. Comme $\sigma$ coïncide avec $\tau$ sur $V_0=X_g\setminus \cup_{i\in I} {\operatorname{Int}}(T_i)$, on voit que l'ensemble des points fixes de $\sigma$ est contenu dans $\cup_{i\in I}{\operatorname{Int}}(T_i)$, et pour calculer l'indice de $\sigma$, i.e. ${\card}\bigl(\pi_0(X_g^\sigma)\bigr)$, il suffit de prendre la somme des indices dans les $T_j$.  Or dans $T_j$, on a par (29) $\rho_j(z,t)=(-z\ {\exp}({\rm i}\pi t),t)$, et par récurrence,
+$$
+\rho_j^{n_j}(z,t)=\bigl((-1)^{n_j}z\ {\rm exp}({\rm i}\pi n_jt),t
+\bigr)
+\leqno(43)
+$$
+donc
+$$
+\tau\rho_j^{n_j}(z,t)=\bigl((-1)^{n_j+1}z\ {\rm exp}({\rm i}\pi 
+(n_j+1)t),-t\bigr)
+\leqno(44)
+$$
+et $(z,t)\in T_j$ est point fixe de $\tau\rho_j^{n_j}$ si et seulement si $t=0$, et $n_j$ est \emph{impair}, donc
+$$
+T_j^{\tau\rho_j^{n_j}}=
+\begin{cases}
+\emptyset& \text{si } n_j\ \text{pair} \\
+	   S_j\times\{0\}&\text{si } n_j\ \text{impair}
+\end{cases}\leqno(45)
+$$
+donc
+$$
+{\hbox{Indice de}}\ u=\tau\prod_j\rho_j^{n_j} =
+\leqno(46)
+$$
+\centerline {= cardinal de l'ensemble $I'_n$ des $j\in I$ tels que
+$n_j$ soit impair.}
+
+Il en résulte pour des raisons générales que $u$ est conjugué dans $A_g={\rm Aut}(X_g)$ (par un élément de $A_g^+$) à $\tau_{I'}=\rho_{I'}\tau=\tau\rho_{I'}^{-1}$, ou aussi $\rho_{I'}^{-1}\tau=\tau\rho_{I'}$.
+
+Mais si $\tau\rho'$, $\tau\rho''\in G$, ($\rho',\rho''\in {H}$), et si $\rho\in {H}$, la relation
+$$
+\rho(\tau\rho')\rho^{-1}=\tau\rho''
+$$
+équivaut à
+$$
+\tau\rho\tau\rho'\rho^{-1}=\rho''
+$$
+(où $\tau\rho\tau=\rho^{-1}$), i.e. $\rho^2=\rho'\rho''^{-1}$; donc $\tau\rho'$ et $\tau\rho''$ sont conjugués par un élément de ${H}$ si et seulement si $\rho'\rho''^{-1}\in{H}^2$ --- ce qui précise l'observation précédente\dots
+
+La fa\c{c}on la plus riche en symétries simples pour disposer les $2g$ trous antipodiques $D_j$ me semble la suivante. On considère la sphère euclidienne, avec l'action du groupe diédral $\mathbb{D}_{2g}$ --- par exemple quand c'est la sphère de Riemann qui est considérée comme riemannienne, par le choix de antipodisme comme étant
+$$
+\tau z=- \frac{1}{\bar z};
+\leqno(47)
+$$
+on prend l'action type du groupe diédral (avec comme pôles les points $0$, $\infty$, et comme équateur le cercle unité $U=\{z\in{\mathbf{C}}\mid |z|=1\}$), en écrivant $\mathbb{D}_n$ comme $\subset  O(2,{\mathbf{R}})$, comme produit semi-direct de $\{\pm 1\}$ par $\mu_n({\mathbf{C}})=\mu_n$, le couple $(\xi,\alpha)$ ($\xi\in\mu_n$, $\alpha\in\{\pm 1\}$) opérant par $(\xi,\alpha)(z)=\xi z^\alpha$. On peut d'ailleurs l'élargir en un groupe $\tilde{\mathbb{D}}_n \isom \mathbb{D}_n\times{\mathbf{Z}}/2\mathbf{Z}$, où le deuxième facteur ${\mathbf{Z}}/2\mathbf{Z}$ est engendré par l'antipodisme (47) (qui commute à $\mathbb{D}_n$ --- de même d'ailleurs que l'anti-involution $z\mapstochar\to 1/{\bar z}$, qui a comme ensemble de points fixes $U$ et n'est autre que la symétrie par rapport à l'équateur, leur composé $z\mapsto -z$ étant la symétrie par rapport à l'axe des pôles\dots) donc on regarde les transformations
+$$
+u_{\xi,\alpha,\beta}=u_{\xi,\alpha}\tau^\beta,\ 
+\xi\in\mu_n,\  \alpha\in\{\pm 1\}, \ \beta\in{\mathbf{Z}}/2\mathbf{Z},
+$$
+donc
+$$
+u_{\xi,\alpha,\beta}\, z=
+\begin{cases}
+u_{\xi,\alpha}(z)=\xi z^{\alpha} & \text{si }\beta=0,\\
+u_{\xi,\alpha}\!\left(-\dfrac{1}{\bar z}\right)=-\xi\,\bar z^{-\alpha} & \text{si }\beta=1.
+\end{cases}
+$$
+mais on se rappellera que $\tau$ renverse l'orientation, donc est à manier avec réserve pour ce qui concerne le ``transport de structure'' dans la situation présente. Ici $n=2g$, $\mathbb{D}_{2g}$ est d'ordre $4g$, et $\tilde{\mathbb{D}}_n$ d'ordre $8g$. On prend sur l'équateur une trajectoire de $\mu_n=\mu_{2g}$, par exemple justement l'ensemble $\mu_{2g}$, de racines $2g$-ièmes de l'unité lui-même (en tant que sous-ensemble de la sphère) comme l'ensemble des ``centres'' des disques $D'_i$. On choisit un disque $D'_0$ autour du point $P_0$ (assez petit pour ce qui va suivre)\footnote{Il faut simplement que $D'_0$ ne rencontre pas $\xi D'_0$, où $\xi ={\exp}(2{\rm i}\pi/2g)$.}, et on prend les transformés de $D'_0$ par les $\xi\in \mu_n$. Ces choix étant faits, la surface $X_g$ est déterminée sans ambiguité, et le groupe $\mathbb{D}_{2g}$ y opère par transport de structure, en permutant entre eux les $g$ cylindres $T_i$, correspondant aux éléments de $J/\tau=J/\{\pm 1\}$, i.e. aux paires d'éléments antipodiques de $S$, i.e. aux ``diagonales'' du polygone à $2\mu$ côtés qu'ils déterminent sur l'équateur. Le groupe $\mathbb{D}_{2g}$ normalise le groupe $G$; de fa\c{c}on précise on aura, pour $u\in \mathbb{D}_{2g}$,
+$$
+u\tau_{I'}u^{-1}=\tau_{u(I')}
+\leqno(49)
+$$
+pour $I'\subset  I=J/\tau$, en tenant compte de l'opération de $\mathbb{D}_{2g}$ sur $I$. On aura donc en particulier, désignant par $\tau_g=\tau_\emptyset$ l'extension de l'antipodisme de la sphère $X_0$ (ou plutôt de $\tau |V_0)$ en un antipodisme sans points fixes de $X_g$, noté $\tau$ précédemment
+$$
+u\tau_g u^{-1}=\tau_g
+\leqno(50)
+$$
+i.e. $\tau_g$ commute à l'action de $\mathbb{D}_n$, et
+$$
+u\rho_j u^{-1}=\rho_{u(j)}.
+\leqno(51)
+$$
+On peut donc dire que $\mathbb{D}_{2g}$ opère sur $G$, d'où un produit semi-direct $\mathbb{D}_{2g}\cdot G$, qui opère donc sur $X_g$.  
+
+Quant à la question de prolonger de même l'action sur $X_0$ de $\widetilde{\mathbb{D}}_{2g}$ tout entier en une action sur $X_g$, \c{c}a a été fait sans crier gare, à $\tau_{X_0}$ correspondant naturellement $\tau_{X_g}=\tau_g$, qui a en effet le bon go\^ut de commuter à l'action de $\mathbb{D}_{2g}$. [Il pourrait sembler plus naturel, il est vrai, dans un esprit de ``transport de structure (envers et contre tout?)'', de faire correspondre à $\tau_{X_0}$ l'opération $\tau_I$ donnée par (27), qui en chaque $T_j$ serait égal à $\tau_j$ (et sur $V_0$, bien s\^ur, coïncide avec $\tau_{X_0}$), $\tau_j(z,t)=(z,-t)$, l'ensemble des points fixes de $\tau_I$ étant formé des $g$ cercles médians $S_j\times\{0\}$ des $g$ tubes $T_j$.  On aura par (41) $\tau_I=\rho_I\tau_g$, donc $\tau_I$ commute également à $\mathbb{D}_n$, puisque $\tau$ et $\rho_I=\prod_{i\in I} \rho_i$ y commutent. Mais il ne semble pas important pour le moment quelle convention nous adoptons.] On peut donc dire aussi que le groupe $\widetilde{\mathbb{D}}_{2g}$ opère sur ${H}$ --- cette opération prolongeant celle de $\tau_g$, identifié maintenant à un élément de $\widetilde{\mathbb{D}}_{2g}$, i.e. à l'antipodisme dans $\widetilde{\mathbb{D}}_{2g}$ --- et le produit semi-direct
+$$
+\widetilde{\mathbb{D}}_{2g} \cdot {H}\supset G=\langle 1,\tau_g\rangle \cdot {H}
+\leqno(52)
+$$
+opère sur $X_g$.
+
+Il faudrait maintenant, dans cette voie:
+\begin{itemize}
+	\item[1)] Expliciter l'action extérieure de ce produit semi-direct sur le groupe fondamental $\pi_g$, avec une attention toute particulière à l'action du groupe $({\mathbf{Z}}/2{\mathbf{Z}})^3\subset\widetilde{\mathbb{D}}_{2g}$ qui stabilise un des cylindres $T_j$ --- qui dans l'espace euclidien de dimension $3$ s'interprète comme le groupe des changements de signe relatif au système d'axes orthonormés correspondant.
+	\item[2)] Etendre l'action sur $\pi_g$ du groupe de Teichmüller (plus ou moins) ``spécial'' de données chacun des $T_j$, en l'action d'un groupe analogue d'un ensemble plus grand obtenu en lui rajoutant une ``lanière'' $L$ (d'où un tore à un trou, et son groupe de Teichmüller spécial, qui s'introduisent de fa\c{c}on naturelle)\footnote{C'est essentiellement un ${\SL}(2,{\mathbf{Z}})$ --- plutôt une extension centrale remarquable de ${\SL}(2,{\mathbf{Z}})$ par ${\mathbf{Z}}$, qui rappelle celle de ${\SL}(2,{\mathbf{R}})$ par ${\mathbf{Z}}$\dots(revêtement universel de ${\SL}(2,{\mathbf{R}})$).} voire l'ensemble encore plus grand obtenu en mettant également la lanière antipodique $L'$ (cet ensemble se présente comme un cylindre $(L \cup L')$ ou ``buse'', où on aurait mis un tube $(T_j)$ en travers, et a la structure topologique d'un tore à deux trous). Il est possible qu'il faille considérer de près ce dernier, pour étudier les relations entre les éléments de $\mathfrak{T}_g$ provenant des ensembles précédents\dots. Un travail amusant sera de se débrouiller pour écrire les générateurs du groupe $\pi_g$, et surtout la fameuse relation, dans une disposition géométrique relative des ``anses'', qui est une disposition ``panachée'' --- et non plus sagement à la queue-leu-leu~!
+\end{itemize}
+En attendant d'entrer ainsi dans le vif de la structure du groupe de Teichmüller, je vais déjà essayer de décrire des générateurs et relations pour le sous-groupe intéressant qu'on vient d'écrire, $\widetilde{\mathbb{D}}_{2g} \cdot {H}$. Je vais prendre les sempiternels générateurs $\epsilon_0$, $\epsilon_1$ de $\mathbb{D}_{2g}$\footnote{NB. $\epsilon_0$ bouge le sommet du repère, $\epsilon_1$ l'arête et pas le sommet, donc $\epsilon_1(j_0)=j_0$.},
+$$
+\epsilon_0^2=\epsilon_1^2=1,\ \ (\epsilon_0\epsilon_1)^{2g}=1
+$$
+et y joindre $\tau=\tau_g$, et $\rho_0\tau=\tau'$ ($\rho_0= \rho_{j_0}$, $j_0$ point marqué de $I=J/\tau$) satisfaisant
+$$
+\tau^2={\tau'}^2=1,
+$$
+$$
+(\tau\epsilon_0)^2=(\tau\epsilon_1)^2=1
+$$
+exprimant la commutation de $\tau$ à $\epsilon_0$, $\epsilon_1$~;
+$$
+(\epsilon_1\tau')^2=1,
+$$
+i.e. $\epsilon_1$ commute à $\tau'$,
+$$
+\bigl((\epsilon_0\epsilon_1)^g\tau'\bigr)^2=1
+$$
+(l'involution $(\epsilon_0\epsilon_1)^g$ commute à $\tau'$)~; sauf erreur, \c ca fait un ensemble de générateurs et relations pour $\widetilde{\mathbb{D}}_{2g} \cdot {H}$ --- en résumé $\epsilon_0$, $\epsilon_1$, $\tau$, $\tau'$~:
+$$
+\begin{cases}
+\epsilon_0^2=\epsilon_1^2=\tau^2={\tau'}^2=1& \\
+    (\tau\epsilon_0)^2=(\tau\epsilon_1)^2=(\tau'\epsilon_1)^2=1& \\
+    (\epsilon_0\epsilon_1)^{2g}=1& \\
+    \bigl(\tau'(\epsilon_0\epsilon_1)^g\bigr)^2=1.& 
+\end{cases}\leqno(52)
+$$
+C'est peut-être pas très astucieux comme choix de générateurs, en ce sens que $\epsilon_0$, $\epsilon_1$ ne sont pas du tout sur le même pied que $\tau$, $\tau'$ --- ce ne sont pas des \emph{anti}-involutions.  Il vaudrait mieux prendre $\epsilon'_0=\tau\epsilon_0$, $\epsilon'_1=\tau\epsilon_1$, de fa\c{c}on à obtenir~:
+$$
+\begin{cases}
+{\epsilon'}^2_0={\epsilon'}^2_1=\tau^2={\tau'}^2=1& \\
+    (\tau\epsilon'_0)^2=(\tau\epsilon'_1)^2=\bigl(\tau'(\tau
+    \epsilon'_1)\bigr)^2=1& \\
+    (\epsilon'_0\epsilon'_1)^{2g}=1& \\
+    \bigl(\tau'(\epsilon'_0\epsilon'_1)^g\bigr)^2=1.& 
+\end{cases}
+\leqno{(52\ \text{bis})}
+$$
+Ce sont essentiellement les ``mêmes'' relations sauf la dernière de la deuxième ligne.
+
+Peut-être ce petit jeu avec le tout petit groupe $\widetilde{\mathbb{D}}_n$ opérant sur ${H}$ est un peu une amusette --- le groupe ${H} \isom {\mathbf{Z}}^g$ dans $\mathfrak{T}_g$ suggère beaucoup la situation d'un tore maximal dans un groupe semi-simple~; on a vraiment envie d'en avoir une caractérisation intrinsèque dans $\mathfrak{T}_g$ --- ou dans $\mathfrak{S}_g$, ce qui est possible puisqu'en tant que groupe de transformations topologiques effectives, il laisse fixe les points de $V_0\subset X_g$ --- par exemple les deux pôles, qu'on peut prendre comme points base pour construire revêtement universel et groupe fondamental. Ce sont peut-être les sous-groupes abéliens-libres maximaux. On aimerait étudier le normalisateur --- est-ce exactement ce qui provient des automorphismes de $X_g\setminus \cup T^\circ_i \isom  V_0$~? Les ${\SL}(2, {\mathbf{Z}})$ associés aux ``lanières'' à travers le tube $T_j$, jouent-ils un rôle analogue à celui des groupes $\SL(2,K)$ où $\GP(1,K)$ ``de rang $1$'' dans la théorie des groupes algébriques réductifs~? Si [?] ne ``mord'' pas à la situation, la soumettre peut-être à [?], qui est à l'aise tant avec les groupes  discrets et leurs générateurs et relations, qu'avec la théorie des semi-simples --- et la topologie\dots
+
+
+% End

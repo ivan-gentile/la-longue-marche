@@ -1,0 +1,159 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 35. --- L'INJECTIVITÉ DE $\boldsymbol{\Gamma}_\mathbf{Q} \to {\Autext_{\operatorname{lac}}}(\hat{\pi}_{0,3})$}\thispagestyle{empty}
+\addcontentsline{toc}{section}{{\bf 35.} L'injectivité de $\boldsymbol{\Gamma}_\mathbf{Q}\to {\Autext_{\operatorname{lac}}}(\hat{\pi}_{0,3})$}
+\label{sec:35}
+\section*{}
+
+\vskip .3cm
+{
+Théorème 1\footnote{Démontré modulo le lemme 2 plus bas.}. --- \it Soit $\boldsymbol{\Gamma}={\Gal}(\overline{\mathbf{Q}}_0/{\mathbf{Q}})$, où ${\overline{\mathbf{Q}}_0}$ est la clôture algébrique de ${\mathbf{Q}}$ dans ${\mathbf{C}}$, considérons
+l'homomorphisme canonique 
+$$
+\boldsymbol{\Gamma}\longrightarrow{} \hat{\hat{\mathfrak{T}}}_{0,3}= {\Autext}_{\operatorname{lac}}(\hat{\pi}_{0,3}).
+\leqno(1)
+$$
+Cet homomorphisme est \emph{injectif}.
+}
+\vskip .3cm
+Démonstration.
+\vskip .3cm
+{
+Lemme 1. --- \it Soit $x\in{\mathbf{Q}}$, $x \neq 0,1$ i.e.
+$x \in U_{0,3}({\mathbf{Q}})$~; choisissons un chemin sur ${\mathbb{P}}^1({\mathbf{C}})$ de $P=-\overline{j}$ (point base pour définir $\pi_{0,3}= \pi_1(U_{0,3}({\mathbf{C}}),P)$, (NB. $U_{0,3}={\mathbb{P}}^1({\mathbf{Q}})\setminus\{0,1,\infty\}$), d'où un isomorphisme $\pi_1(U_{0,3} (\overline{\mathbf{Q}}_0),x) \isom \hat{\pi}_{0,3}$, et par transport de structure une action effective de $\boldsymbol{\Gamma}$ sur $\hat{\pi}_{0,3}$ (pas seulement extérieure). Alors $K={\Ker}\,\Theta$ opère trivialement sur $\hat{\pi}_{0,3}$.
+}
+\vskip .3cm
+Démonstration. --- Il suffit de voir que l'opération \emph{extérieure} de $K$ sur $\pi_1(\overline{V})$ où $V=U_{0,3}\setminus\{x\}$, est triviale. D'après le résultat de Belyi, il existe un morphisme (\emph{défini sur} ${\mathbf{Q}}$, ceci est essentiel) 
+$$
+{\mathbb{P}}^1{\mathbf{Q}}\to{\mathbb{P}}^1{\mathbf{Q}},
+$$
+étale au-dessus de $U_{0,3}={\mathbb{P}}^1{\mathbf{Q}}\setminus\{0,1,\infty\}$, et tel que $x\mapstochar\to 0$. Soit $U'$ le revêtement étale de $U_{0,3}=U$ induit, $\pi'=\pi_1(\overline{U}')$ son groupe fondamental géométrique, sur lequel $\boldsymbol{\Gamma}$ donc $K\subset \boldsymbol{\Gamma}$ opère extérieurement. Alors $\pi(\overline V)$ est un quotient de $\pi'$, avec respect des opérations extérieures de $\boldsymbol{\Gamma}$, et il suffit de prouver que $K$ opère trivialement sur $\pi'$. Mais $\pi'$ s'identifie à un sous-groupe ouvert de $\hat{\pi}_{0,3}= \pi$ (avec respect des opérations extérieures de $K$), sur lequel l'opération extérieure de $K$ est triviale.  Il s'ensuit que l'opération extérieure de $K$ sur $\pi'$ se fait à travers un groupe quotient \emph{fini}.
+\[\begin{tikzcd}
+	1 & {\pi'} & {E'_K} & K & 1 \\
+	1 & \pi & {E_K} & K & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=1-3, to=2-3]
+	\arrow[shift left=1, shorten <=2pt, shorten >=2pt, no head, from=1-4, to=2-4]
+	\arrow[shorten <=2pt, shorten >=2pt, no head, from=1-4, to=2-4]
+\end{tikzcd}\]
+[En effet, l'action extérieure de $K$ se fait à travers l'action effective du groupe extérieur $E_K$, laquelle par construction de $K$ se fait par un homomorphisme $E_K\to\Pi/Z$ ($Z={\Centre} (\pi)$), et l'action de $E'_K$ induite se fait par le composé $E'_K\to E_K\to\pi/Z$, dont l'image est dans $\mathcal{N}/Z$, où $\mathcal{N}$ est le normalisateur de $\pi'$ dans $\pi$. Donc l'image de $K$ dans ${\Autext}(\pi')$ est contenue dans celle de $\mathcal{N}/Z\to{\rm Autext}(\pi')$, or $\mathcal{N}/\pi'$ est fini.]
+
+Repassant à $\pi_1(\overline{V})$, on voit donc que l'image de $K$ dans ${\Autext}(\pi_1(\overline V))$ est finie, donc l'image de $K$ dans ${\Aut}(\hat{\pi}_{0,3})$ est finie. Elle est d'ailleurs formée d'automorphismes intérieurs, donc le lemme 1 sera conséquence du
+\vskip .3cm
+{
+Lemme 2. --- \it Tout automorphisme intérieur d'ordre fini de $\hat{\pi}_{0,3}$ (groupe profini libre à deux générateurs) est trivial. De fa\c{c}on plus précise~: $\hat{\pi}_{0,3}$ a un centre réduit à $\{1\}$, et tout élément de $\hat{\pi}_{0,3}$ d'ordre fini est réduit à $1$.
+}
+\vskip .3cm
+Ceci est un énoncé d'algèbre profini pure, que je reporte pour plus tard, pour en terminer avec la partie ``géométrique'' de la démonstration du théorème.
+\vskip .3cm
+{
+Lemme 3. --- \it Pour tout ouvert non vide $V\subset {\mathbb{P}}^1{\mathbf{Q}}$, considérant l'action extérieure de $\boldsymbol{\Gamma}$ sur $\pi_1(\overline V)$, la restriction de celle-ci à $K$ est triviale.
+}
+\vskip .3cm
+Quitte à passer à un ouvert plus petit, on peut supposer par Belyi que $V$ est un revêtement étale de $U_{0,3}$ --- et le raisonnement précédent montre alors que l'action extérieure de $K$ se fait via un groupe quotient fini --- mais cela n'est pas suffisant pour notre propos, et n'implique pas par lui-même que cette action soit triviale. D'ailleurs, au point où j'en suis, on aurait pu remplacer $U$ par n'importe quelle courbe algébrique quasi projective lisse géométriquement connexe --- pour trouver que $K$ opère sur le groupe extérieur $\pi_1(\overline{V})$ via un groupe fini. Mais ici l'hypothèse $V\subset {\mathbb{P}}^1{\mathbf{Q}}$ implique qu'il existe $y\in V({\mathbf{Q}})$, soit $x \in U({\mathbf{Q}})$ son image dans $U=U_{0,3}$. Prenant $y$, $x$ comme points base pour les groupes fondamentaux, on trouve maintenant un homomorphisme effectif de groupes fondamentaux
+$$
+\pi'=\pi_1(\overline{V},y)\hookrightarrow\pi(\isom \hat{\pi}_{0,3})=\pi_1(\overline{U},x),
+$$
+compatible avec une action \emph{effective} de $\boldsymbol{\Gamma}$ sur ces groupes. Par le lemme 1 l'action induite de $K$ sur $\pi=\pi_1(\overline{U},x)$ est triviale, donc aussi son action sur le sous-groupe $\pi'$. A fortiori l'action extérieure est triviale, cqfd.
+
+On peut maintenant prouver le
+\vskip .3cm
+{
+Lemme 4. --- \it $K=\{1\}$ (i.e. le théorème!)
+}
+\vskip .3cm
+En effet, sous les conditions du lemme 2, l'action de  $\boldsymbol{\Gamma}$ sur l'ensemble $I=S(\overline{\mathbf{Q}}_0)$, où $S={\mathbb{P}}^1_{\mathbf{Q}}\setminus V$, est déduite de l'action extérieure de $\boldsymbol{\Gamma}$ sur $\pi_1(\overline V)$ si ${\card}(I)\ge 2$, comme l'action sur les classes de conjugaison de ``sous-groupes lacets''. Comme $K$ opère trivialement sur le groupe extérieur, il opère trivialement sur $I$. Ceci étant vrai pour tout $V$, on voit que l'action de $K$ sur ${\mathbb{P}}^1 (\overline{\mathbf{Q}}_0)=\overline{\mathbf{Q}}_0 \cup \{\infty\}$ est triviale, i.e. son action sur $\overline{\mathbf{Q}}_0$ l'est, donc $K=\{1\}$, cqfd.
+\vskip .2cm
+\hfill Ouf!
+\vskip .3cm
+Il reste à reporter la démonstration du lemme 2, que je vais reformuler sous une forme plus générale:
+\vskip .3cm
+{
+Théorème 2. --- \it Soit $\pi$ un groupe profini libre sur un ensemble fini $I$ de cardinal $\ge 2$. Alors:
+\begin{itemize}
+	\item[a)] Le centre de $\pi$ est égal à $\{1\}$. 
+	\item[b)] Il n'y a pas dans $\pi$ d'élément d'ordre fini autre que $1$.
+\end{itemize}
+}
+\vskip .3cm
+Finalement je cale sur a) --- tout comme je ne vois pas pourquoi le centre de $\boldsymbol{\Gamma}$ (et de tout sous-groupe ouvert) doit être réduit à $\{1\}$. Consulter Deligne à ce sujet~!
+
+Pour b), voici un expédient. Soit $K$ un corps algébriquement clos de caractéristique $0$, et considérons le corps des fonctions $L=K(X)$ de $U={\mathbb{P}}^1_K\setminus\{n+1\ {\rm points}\}$ ($n={\card}(I)$). Alors $\pi \isom \pi_1(U)$, et c'est un quotient de $E_L= {\Gal}(\overline{L}/L)$. Comme $\pi$ est libre, $E_L \to \pi$ se relève en $\pi\to E_L$, et il suffit de voir que $E_L$ n'a pas d'élément d'ordre fini $\ne 1$. Mais d'après Artin, il n'y a pas d'automorphisme d'ordre fini $\ne 1$ d'un corps algébriquement clos $\overline{L}$, sauf dans le cas où $\overline{L}$ est extension quadratique d'un corps ordonné maximal $R$, qui soit le corps des invariants de $\tau$ (donc $\tau$ d'ordre $2$ exactement).
+
+Mais en l'occurence on aurait $R\supset L$, et $L\supset K$, or dans $K$ l'élément $-1$ est un carré, donc $R$ ne peut être ordonné --- absurde~!
+\vskip .3cm
+{
+Corollaire 1 (du théorème 1). --- \it Soit $X$ une courbe algébrique (lisse, géométriquement connexe, quasi-projective), sur $k$ extension finie de ${\mathbf{Q}}$. (Je présume que l'action extérieure de $E^{\overline{k}}_k$ sur $\pi_1(X_{\overline{k}})$ est fidèle si $U$ anabélien --- à défaut de pouvoir le prouver, j'énonce~:) Alors il existe une partie ouverte non vide $V$ de $X$ telle que l'action extérieure de $E^{\overline{k}}_k$ sur $\pi_1(V_{\overline{k}})$ soit fidèle.
+}
+\vskip .3cm
+Démonstration. --- D'après Belyi, on sait qu'on peut trouver $V\subset  X$ qui soit un revêtement étale de $U=(U_{0,3})_k$, je dis que ce $V$ là convient. Soit donc $K$ le noyau de l'opération extérieure de $\Gamma=E^{\overline{k}}_k$ sur $\pi'=\pi_1(V_{\overline{k}})$. Soit $y$ un point fermé de $V$, rationnel sur l'extension finie $k'$ de $k$ correspondant à un sous-groupe ouvert $\Gamma'=E^{\overline{k}}_{k'}$ de $\Gamma$, soit $K'=\Gamma'\cap K$. Soit $x$ l'image de $y$ dans $U$: on a
+$$
+\pi'=\pi_1(V_{\bar k},y)\hookrightarrow\pi=\pi_1(U_{\bar
+k},x),
+$$
+et par construction l'action extérieure de $K'$ sur $\pi'$ est triviale, donc $K'$ opère sur $\pi'$ par automorphismes intérieurs. Or on a le\footnote{prouvé seulement modulo vérification de (2), (4) ci-dessous -- pour le Corollaire 1; (2) est d'ailleurs suffisant\dots} 
+\vskip .3cm
+{
+Lemma 5. --- \it Soit $\pi$ un groupe profini à lacets, $\pi'$ un sous-groupe ouvert~; alors tout automorphisme $u$ de $\pi$ qui laisse stable $\pi'$ et induit sur $\pi'$ un automorphisme intérieur (resp. l'identité) est intérieur (resp. l'identité).
+}
+\vskip .3cm
+Admettons pour l'instant ce lemme --- il en résulte que les éléments de $K'$, qui opèrent sur $\pi$ en induisant sur $\pi'$ des automorphismes intérieurs, induisent sur $\pi$ lui-même des automorphismes intérieurs, i.e. que l'action extérieure de $K'$ sur $\pi$ est triviale. D'après le théorème 1, on sait d'autre part que l'action extérieure de $\Gamma'$ sur $\pi$ est fidèle, donc $K'=\{1\}$. Il en résulte que $K$ est \emph{fini}. Mais par Artin on sait que les seuls sous-groupes finis $\ne \{1\}$ de $\Gamma$ sont ceux engendrés par une ``conjugaison complexe'' $\tau$, correspondant à un sous-corps ordonné maximal entre $k$ et $\bar k$. Mais pour un tel $\tau$ on a $\chi(\tau)=-1$, donc l'action extérieure de $\tau$ ne peut être triviale --- on gagne. En fait, la démonstration a montré ceci~:
+\vskip .3cm
+{
+Corollaire. --- \it Soient $k$ un corps de caractéristique $0$, $U$ une courbe algébrique (lisse etc.) sur $k$, telle que $E^{\bar k}_k = \Gamma$ opère fidèlement sur $\pi_1(U_{\bar k})$ (opération extérieure). Alors pour tout revêtement étale géométriquement connexe $V$ de $U$, l'opération extérieure de $\Gamma$ sur $\pi_1(V_{\bar k})$ est également fidèle.
+}
+\vskip .3cm
+Reste à prouver le lemme 5.  Il suffit de le prouver dans le cas ``respé'' --- l'autre s'en déduit aussitôt. Si $\pi$ a au moins une classe de lacets (cas d'une courbe algébrique affine i.e. non propre), alors $\pi$ est libre --- et le lemme 5 est valable justement pour de tels groupes. Si $(l_i)_{1\le i\le \nu}$ est un système de générateurs, soit $L_i$ le sous-groupe fermé engendré par $l_i$, nous admettrons que $\forall n\in{\mathbf{N}}^*$\footnote{pas prouvé!}
+$$
+L_i={\Centr}_{\pi}(L_i^n).
+\leqno(2)
+$$
+Ceci posé, si l'automorphisme $u$ de $\pi$ induit l'identité sur $\pi'$, $\exists n\in{\mathbf{N}}^*$ tel que $\forall 1\le i\le \nu$, $u(l_i^n)=l_i^n$, donc $u(l_i)$ centralise $l_i^n=u(l_i)^n$, donc par (2) on a $u(l_i)\in L_i$, i.e. $u(L_i)\subset  L_i$, mais on a ${\Aut}(L_i) \isom \hat{\mathbf{Z}}^*$, et un automorphisme d'un $\hat{\mathbf{Z}}$-module libre de rang $1$ est connu quand on le connaît sur  $L_i \isommap {}_uL_i$. Donc $\forall i$ on a $u(l_i)=l_i$, donc $u={\id}$, cqfd.
+
+Dans le cas où $\pi$ n'est pas libre, prenons un bon $(x_i,y_i)_{1\le i\le g}$ --- de sorte que $\pi$ soit défini par la relation génératrice
+$$
+\prod_{1}^g [x_i,y_i]=1.
+\leqno(3)
+$$
+Soient $\Lambda_i$, $\Lambda'_i$ les sous-groupes fermés engendrés par $x_i$, $y_i$. (Ils sont d'ailleurs tous conjugués sous ${\Aut}(\pi)$\dots).  J'admets que ces groupes sont $ \isom \hat{\mathbf{Z}}$ (i.e. que les homomorphismes surjectifs $\hat{\mathbf{Z}}\to\Lambda_i$, $\hat{\mathbf{Z}}\to\Lambda'_i$ envoyant $1$ dans les $x_i$, $y_i$ sont injectifs --- c'est d'ailleurs trivial en passant à $\pi_{\operatorname{ab}}$) \emph{et} qu'on a, en analogie avec (2), pour tout $n\in{\mathbf{N}}^*$
+$$
+{\Centr}_{\pi}(\Lambda^n_i)=\Lambda_i,\ \ \ 
+{\Centr}_{\pi}({\Lambda'}^n_i)=\Lambda'_i,
+$$
+et on termine comme ci-dessus.
+
+Remarque. --- Le résultat le plus fort de fidélité dans la direction du présent paragraphe, concernant des actions de $\boldsymbol{\Gamma}$ et de ses sous-groupes ouverts, serait le suivant~: si $V$ est une courbe algébrique anabélienne sur l'extension finie $k$ de ${\mathbf{Q}}$, avec la clôture algébrique $\bar k$, alors non seulement l'action extérieure de $E^{\bar k}_k=\Gamma$ sur $\pi_1(V_{\bar k})$ devrait être fidèle, i.e.\footnote{Cet homomorphisme se factorise automatiquement par le sous-groupe $\mathcal{N}(\pi)$ qui normalise $\hat{\mathfrak{T}}(\pi)$.}
+$$
+\Gamma\to\hat{\hat{\mathfrak{T}}}(\pi)
+$$
+injective, mais même l'homomorphisme composé
+$$
+\Gamma\to\mathcal{N}(\pi)\to\mathcal{N}(\pi)/\hat{\mathfrak{T}}^+(\pi) \isom \boldsymbol{\Gamma}_\pi
+$$
+devrait être injectif (auquel cas ce sera même un isomorphisme, puisqu'il est surjectif par construction même de $\mathcal{N}(\pi)$, $\boldsymbol{\Gamma}_\pi$\dots) Des raisonnements heuristiques faits précédemment (moins convaincants sans doute que ceux du présent paragraphe~!) semblent indiquer que ce serait le cas au moins lorsque $V$ est un revêtement étale de $U=(U_{0,3})_k$, auquel cas en effet l'homomorphisme $\Gamma\to\boldsymbol{\Gamma}_\pi$ s'insère dans un diagramme commutatif
+\[\begin{tikzcd}
+	& \Gamma \\
+	{\boldsymbol{\Gamma}_{\pi_0}} & {\boldsymbol{\Gamma}_\pi} & {\boldsymbol{\Gamma}_{\pi'}}
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-2, to=2-3]
+	\arrow[from=1-2, to=2-1]
+\end{tikzcd}\]
+où $\pi_0=\pi_1(U_{\bar k})$, de sorte que $\pi$ est un sous-groupe ouvert de $\pi_0$, et $\pi'$ est un sous-groupe ouvert convenable, \emph{caractéristique} dans $\pi_0$. \emph{Si} on pouvait montrer que $\boldsymbol{\Gamma}_{\pi_0}\to\boldsymbol{\Gamma}_{\pi'}$ est injectif (ce qui est plus ou moins une histoire d'algèbre profinie), il en serait de même du composé $\Gamma\hookrightarrow\boldsymbol{\Gamma}_{\pi_0}\to\boldsymbol{\Gamma}_{\pi'}$, donc aussi de $\Gamma\to\boldsymbol{\Gamma}_{\pi}$. Donc modulo cette hypothèse sur les groupes profinis, et utilisant Belyi, on trouve que pour toute courbe algébrique $V$ sur $k$, il existe $V'\subset  V$ ouvert non vide, tel que
+$$
+\Gamma\to\boldsymbol{\Gamma}_{\pi'}
+$$
+(où $\pi'=\pi_1(V'_{\bar k})$) soit injectif. Quant à savoir si $\Gamma\to\boldsymbol{\Gamma}_{\pi}$ est lui-même déjà injectif --- ou ce qui revient au même, si $\Gamma\to \boldsymbol{\Gamma}_g$ pour $g\ge 2$ et $\Gamma\to\boldsymbol{\Gamma}_{1,1}$ sont injectifs, je n'ai pas de raison heuristique plausible pour m'en convaincre à présent --- peut-être est-ce tout à fait faux~?  L'argument plus ou moins convaincant rappelé précédemment (à supposer qu'on arrive à le justifier) montrerait seulement que si $\Gamma\to\boldsymbol{\Gamma}_\pi$ est injectif pour \emph{un} $\pi$ (ce qui ne dépend que de son type $(g,\nu)$) alors il l'est pour les $\pi'$ ouverts dans $\pi$. On le sait à présent (modulo peu de chose, tout au moins) pour les types $(0,\nu)$ $(\nu\ge 3)$ exactement --- ni plus ni moins --- et on pourrait peut-être le déduire pour les types $(g,\nu)$ qui s'en déduisent par ``revêtement fini''. Mais il est clair déjà qu'on n'obtient pas les types $(g,0)$ comme cela $(g\ge 2)$, ni même aucun $(g,\nu)$ avec $g\ge 1$, $\nu\in\{0,1,2\}$. C'est dire qu'on est loin du compte\dots Le premier cas bien intéressant serait donc le cas $(1,1)$ (tore à un trou~!), où $\hat{\mathfrak{T}}^+_{1,1} \isom {\SL}(2,{\mathbf{Z}})^{\hat{}}$ opérant extérieurement sur $\hat\pi_{1,1}$ (groupe libre à deux générateurs, encore --- comme par hasard) --- l'action ``arithmétique'' de $\boldsymbol{\Gamma}_{\mathbf{Q}}$ sur $\hat\pi_{1,1}$ (i.e. l'action extérieure \emph{mod} $\hat{\mathfrak{T}}^+_{1,1} \isom {\SL}(2,{\mathbf{Z}})^{\hat{}}$\ ) est-elle fidèle~?
+
+
+% End

@@ -1,0 +1,51 @@
+Section: § 4. — COMPLÉMENT-REMORDS
+G103d pages: 13-14
+
+--- G103d page 13 ---
+§ 4. — COMPLÉMENT-REMORDS
+Complément-remords sur les catégories multigaloisiennes, qui précise l’intention que
+pour un topos E, la donnée d’un objet S ∈E définit un topos induit E/S →E, et que
+S se reconstitue à isomorphisme unique près par la connaissance du topos induit en tant
+que topos au dessus de E.
+Ici, E étantmultigaloisien, E/S aussi—etilseposelaquestionquandunmorphisme
+detoposmultigaloisienE′ →E peutêtreconsidérécommeunmorphismed’induction.
+Si C = Π1(E), C′ = Π1(E′), la donnée de E′ →E équivaut à la donnée d’un foncteur
+C′ →C. On trouve que E′ →E est un morphisme d’induction si et seulement si
+C′ →C est fidèle. Ainsi, on trouve une équivalence entre la catégorie E (des objets S de
+la catégorie multigaloisienne E
+≈
+−→bC, où C est un groupoïde, quelconque si on y tient3)
+et la catégorie dont les objets sont les “groupoïdes C′ au dessus de C”, avec un foncteur
+structural C′ →C fidèle, les morphismes de C′
+1 dans C′
+2 étant les classes d’isomorphie
+d’une couple (f, α) d’un foncteur f : C′
+1 →C′
+2 et d’un isomorphisme de foncteurs
+α : p2f
+p1
+∼
+4
+C′
+1
+C′
+2
+C
+f
+p2
+p1
+α
+∼
+Dans le cas où par exemple C est la catégorie réduite à un seul objet, avec groupe
+d’automorphisme G, cette description de la catégorie E ≃Ens(G) est évidemment un
+3un peu vif !
+4Préciser les isomorphismes entre couples (f, α) et (g, β) …
+
+--- G103d page 14 ---
+peu lourde, mais elle s’insère bien dans certains contextes plus bas.
+Ainsi, si k est un corps de base, la catégorie E des schémas étales sur k est décrit, en
+termes d’une clôture séparable ks de k et du groupe profini Γ = Gal(ks/k), comme
+les groupoïdes profinis au dessus du groupoïde profini (pt, Γ)…Nous voulons insérer
+cette description dans une “description”“galoisienne” de [certains] schémas [lissesquasi-
+projectifs de dimension ≤1] sur k, du moins si k corps de type fini sur Q.
+9

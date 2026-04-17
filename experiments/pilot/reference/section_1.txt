@@ -1,0 +1,107 @@
+Section: § 1. — TOPOS MULTIGALOISIENS
+G103d pages: 6-9
+
+--- G103d page 6 ---
+§ 1. — TOPOS MULTIGALOISIENS
+Proposition 1.1. — Soit E une catégorie. Conditions équivalentes :
+a) E est un topos, et tout objet de E est localement constant.
+b) E est équivalent à une catégorie bC, où C est un groupoïde1.
+b’) Il existe une famille (Gi)i∈I de groupes et une équivalence de catégories
+E
+≈
+−→
+Y
+Ens(Gi)
+c) Conditions d’exactitudes ad-hoc, du type de celles données dans SGA 1…
+Démonstration. — b) ⇔b’) ⇒a) immédiat. Pour a) ⇒b) je suis moins sûr, peut être
+faut-ilsupposerqueE estlocalementconnexe,etqu’ilasuffisammentdefoncteursfibres
+i.e. suffisamment de points.
+Définition 1.2. — Si les conditions équivalentes b), b’) ci-dessus sont satisfaites, on dit
+que E est un topos multigaloisien (ou une catégorie multigaloisienne).
+Proposition 1.3. —
+a) Si E est multigaloisien, tout topos induit E/S aussi.
+b) Toute somme de topos multigaloisiens (i.e. tout produit de catégories multigaloisi-
+ennes) l’est itou.
+1N.B. On verra plus bas qu’on peut choisir C canoniquement
+
+--- G103d page 7 ---
+Proposition 1.4. — Soient E un topos, C la catégorie des points de E, (opposée à la catégorie
+des foncteurs fibres sur E). Le foncteur canonique E × C◦→(Ens) induit un foncteur
+canonique
+E →Hom(C◦, (Ens))
+def= bC
+Ceci posé : (E étant multigaloisien)
+a) C est un groupoïde (appelé “groupoïde fondamental” du topos multigaloisien E et
+souvent noté Π1(E)).
+b) E →bC est une équivalence de catégories.
+Un objet S d’un topos E est dit 0-connexe s’il est ̸= ∅E (i.e. n’est pas objet initial) et s’il
+estconnexe(i.e. S ≃S′⨿S′′ impliqueS′ ouS′′ ≃∅E)—celasignifieaussiqueletopos
+induit E/S est 0-connexe i.e. n’est pas le topos initial (“topos vide”, i.e. équivalent à la
+catégorie finale) et qu’il est connexe, i.e…. On dit que S est 1-connexe (ou “simplement
+connexe”) s’il est 0-connexe, et si tout objet S′ de E/S localement constant est constant
+— ce qui ne dépend encore que du topos induit E/S, qui sera dit alors 1-connexe.
+Proposition 1.5. — Soit E un topos multigaloisien, et soit S un objet de E. Conditions
+équivalentes :
+a) S est 1-connexe
+b) S est 0-connexe et projectif
+c) Le foncteur covariant représenté par S
+T 7→HomE(S, T)
+est un foncteur fibre, ou encore (comme il est déjà exact à gauche) il commute aux
+lim
+−→quelconques (N.B. il suffit qu’il commute aux sommes et aux passages aux quo-
+tients…)
+d) E/S est équivalent au topos ponctuel
+e) (Si E = bC, C un groupoïde) le foncteur S sur C est représentable.
+2
+
+--- G103d page 8 ---
+Définition 1.6. — On dit alors, parfois, que S (ou mieux, le topos E/S) est un
+textuprevêtement universel du topos multigaloisien E.
+Proposition 1.7. — Soit E◦la sous-catégorie pleine de E formée des objets 1-connexes
+(de la catégorie multigaloisienne E), et Π1(E) le groupoïde fondamental de E. On a par
+1.5 un foncteur canonique
+E◦→Π1(C)
+(associant à tout S ∈Ob E◦le foncteur fibre qu’il représente, ou plutôt le “point” corre-
+spondant de C), qui est (non seulement pleinement fidèle, mais même) une équivalence de
+catégories : tout foncteur fibre sur E est représentable (par un objet (1-connexe) essentielle-
+ment unique comme de juste…).
+Corollaire 1.8. — Soit P un “point” de E (associé à un foncteur fibre FP). Il existe un
+objet 1-connexe S de E et un relèvement
+P
+E/S
+E
+α
+∼
+(i.e. α ∈F(S)) et cela détermine (S, α) à isomorphisme unique près.
+En fait, S est l’unique objet de E qui représente FP…
+Définition 1.9. — On dit que S (ou E/S) est le revêtement universel ponctué au
+dessus de P déterminé par le point P.
+Scholie 1.10. — Se donner un “point” du topos multigaloisien E, ou se donner un
+revêtement universel, revient essentiellement au même : chacun détermine l’autre…
+Proposition 1.11. — Soient E, E′ deux topos multigaloisiens, Π1(E), Π1(E′) leur
+groupoïdes fondamentaux. Le foncteur évident
+Hom top(E, E′) →Hom(Π1(E)
+| {z }
+C
+, Π1(E′)
+| {z }
+C′
+)
+est une équivalence de catégories, on trouve une équivalence quasi-inverse en composant
+Hom(C, C′)
+Hom(C, C′)
+Hom(C, C′)
+Hom(C, C′)
+≈
+3
+
+--- G103d page 9 ---
+(ou bC ≊E, c
+C′ ≊E′)
+1.12. Explicitation du cas où E, E′ sont 0-connexes et ponctués, donc donnés
+comme E
+≈
+−→Ens(G), E′
+≈
+−→Ens(G′)…
+4

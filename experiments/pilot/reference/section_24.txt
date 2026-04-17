@@ -1,0 +1,265 @@
+Section: § 24. — ESSAI DE DÉTERMINATION DE A0Γ.
+G103d pages: 156-162
+
+--- G103d page 156 ---
+§ 24. — ESSAI DE DÉTERMINATION DE A0Γ.
+LIEN AVEC LES RELATIONS πΓ
+g,(ν,ν+n−1) = {1}, ET
+PROGRAMME DE TRAVAIL…
+Considérons une opération (fidèle si on y tient) du groupe fini Γ sur la surface U ⊂
+X = bU de type (g, ν), U = X \ S, soit A = Aut(U), donc Γ ⊂A et Au = AΓ
+est le centralisateur de Γ. Supposons d’abord Γ = Γ+. Évidemment f ∈AΓ implique
+que f induit un automorphisme g de X/Γ = X′ dont X est un revêtement galoisien de
+groupeΓ. Soit S′ l’imagede S dansX′ (doncS = X|S′), etsoit S! l’ensembledespoints
+de ramification de Γ dans U, S
+′! son image dans U ′ = X′ \ S′ (NB U = X|U ′). Ainsi
+g est un automorphisme de (X′, S′), appliquant S
+′! sur lui même, et induisant donc un
+automorphisme de V ′ = U ′ \ S
+′! = X′ \ (S′ ∪S
+′!). L’image inverse V = X|V ′ est
+étale sur V ′, c’est même un ΓV ′-torseur sur V ′ et l’image inverse de celui-ci par g|V ′ est
+(via f) isomorphe à V . La donnée de f équivaut à la donnée d’un automorphisme du
+Γ-revêtement V de V ′, induisant un isomorphisme de V ′ qui, prolongé à X′, envoie S′
+dans lui même. Cela donne une interprétation de AΓ en termes de constructions sur X′.
+Considérons le groupe fondamental π′ de V ′81, avec sa structure à lacets indexée par
+S′ ⨿S
+′!, on a donc un homomorphisme surjective
+π′
+φ
+−→Γ
+qui sur chacun des sous-groupes à lacets d’indice s′ ∈S
+′! n’est pas trivial, et un automor-
+phisme g de V ′ définitunautomorphismeextérieur g de π′. Laconditionàmettredessus
+81On a choisit un point x ∈V et son image x′ ∈V ′ comme points de base, pour expliciter π.
+
+--- G103d page 157 ---
+est que son composé avec ϕ est conjugué de ϕ, et que g applique S
+′! dans lui même.
+Ceci posé, g est défini par g à isotopie près (si on excepte les cas (g′, ν′) dégénérés, à
+savoir(0, ν′)avecν′ = 0, 1, 2qu’ilfaudraexamineràpart…)etg étantchoisi, f estdéfini
+modulomultiplicationparunélémentducentredeΓmaisonsaitdéjàqueA◦∩Γ = {1},
+donc si on se borne à examiner des éléments f dans A
+◦Γ, alors f sera déterminé par g de
+façon unique.
+On est ainsi amené au problème suivant :
+Soit V ′ = X′ \ (S′ ⨿S
+′!) une surface admissible de type (g′, ν′) (X′ compacte,
+et ν′ = card S′ + card S
+′!), muni d’un sous ensemble S
+′! de l’ensemble des points à
+l’infini et d’un point de base x′, d’où π′ = π1(X′, x′). On se donne un revêtement
+galoisien connexe V de V ′ de groupe fini Γ, ponctué au dessus de x′, donc défini par un
+homomorphisme surjectif
+π′
+φ
+−→Γ
+et on suppose V ′ ramifié en chacun des s′ ∈S
+′! i.e. (pour un choix du groupe à lacets
+Ls′ correspondant à s′) que Ls′ →Γ n’est pas trivial.
+On considère le compactifié pour X de V , et l’ensemble S (resp. S′) des points de
+X sur S′ (resp. S
+′!). Soit g un automorphisme de V , définissant un automorphisme
+extérieur g• de π′82, on suppose que
+g∗(V ′|V )
+V ′
+∼
+V −iso
+i.e. que ϕ ◦g• est conjugué à ϕ (ce qui exprime que g provient par passage au quo-
+tient d’un automorphisme f de V , défini modulo multiplication par un élément z ∈
+Centre Γ). Soit U = V ∪S! = X \S (revêtement ramifié sur U ′ = V ′∪S
+′! = X′\S′),
+on veut exprimer que parmi les f qui remonte g, il y en a un (nécessairement unique !)
+qui est isotope à 1 dans Aut(U) — i.e. qui induise l’automorphisme extérieur trivial
+de π1(U). On aimerait prouver que se sont exactement ceux qui sont isotopes à 1 dans
+Aut(V ′) — ou encore que pour un tel f, f est nécessairement isotope à 1 dans Aut(V )
+— i.e. est dans Aut(V )◦et pas seulement dans Aut(U)◦.
+Notons, lorsqueAut(V ′)◦estconnexe, queAut(V ′)◦serelève(envertudeprincipes
+généraux) en
+Aut(V ′)◦→Aut(V )◦Γ ⊂Aut(U)◦Γ
+82OPS que g fixe x′ donc g est un automorphisme bien défini de π′.
+152
+
+--- G103d page 158 ---
+Donc la condition énoncée sur g d’isotopie à 1 est certainement suffisante.
+No-
+tons d’ailleurs que les résultats déjà obtenus impliquent que Aut(U)Γ ∩Aut(U)◦=
+Aut(U)◦Γ induit l’identité sur S
+′! (= U avec une notation antérieure). Or soit B ⊂
+Aut(U)◦∩Aut(U, S!) le sous-groupe des automorphismes qui fixent les s ∈S!, de
+sorte que Aut(U)◦/B
+∼
+−→Mon(S!, U) et
+B◦= Aut(V )◦— un argument connu
+nous montre que B/B◦≃π1(Mon(S!, U)).
+Comme Aut(U)◦Γ ⊂B
+i.e.
+Aut(U)◦Γ = BΓ on déduit donc de 1 →B◦→
+B →B/B◦→1
+1
+B◦Γ
+BΓ
+(B/B◦)Γ
+H(Γ, B◦)
+Aut(V )◦
+Aut(V )◦Γ
+1
+?
+∼
+∼
+Donc on trouve que la composante neutre de Aut(U)◦Γ est isomorphe à Aut(V )◦
+(donc est ∞-connexe si V anabélienne), et son π0 est inclus dans (B/B◦)Γ
+≃
+π1(Mon(S!, U))Γ. On voudrait prouver que le sous-groupe des invariants sous Γ est
+réduit à {1}
+H◦(Γ, π1(Mon(S!, U))) = 0
+On aimerait que ceci soit vrai même indépendemment d’hypothèse de réalisabilité,
+quand on se donne un homomorphisme de Γ dans le groupe de Teichmüller d’un V ,
+et qu’on fait les hypothèses adéquates…
+Conjecture. — Soit π un groupe extérieur à lacets de type (g, ν), I l’ensemble d’indices
+desclassesdeslacets, Γungroupefiniopérantextérieurementsurπ. Alorsilexisteungroupe
+extérieur à lacets π′, d’ensemble I′ des classes de lacets, une opération extérieure de Γ sur π′,
+une partie I
+′! de I′ stable par Γ, un homomorphisme extérieur de “bouchage des trous de
+I′”
+π′ →π
+compatible avec l’action de Γ, tels que :
+1◦) Le stabilisateur dans Γ de tout élément de I
+′! soit non réduit à 1.
+2◦) L’extension de Γ par π′ déduite de l’action extérieure de Γ n’a pas d’éléments d’ordre
+fini ̸= 1 (i.e. pour aucun élément de Γ ̸= 1, l’action extérieure sur π′ ne se réalise
+par un automorphisme de π′ d’ordre fini).
+153
+
+--- G103d page 159 ---
+De plusle Γ-groupeextérieuràlacets π′, munidumorphisme π′ →π, estdéterminé
+à isomorphisme près.
+Commentaire. L’existence de π′, π′ →π est évidente dans le cas “réalisable”.
+L’unicité à isomorphisme unique près, même dans le cas réalisable n’est pas évidente,
+ni même prouvée. Le noyau de
+Autextlac(π′, π)
+Autext(π)
+Autextlac(π′, I
+′!)
+est justement le groupe π1 de tantôt83, et pour montrer que le foncteur des couples
+(π′, I
+′!) d’un Γ-groupe extérieur π′ et d’une partie I
+′! de I(π′) stable par Γ, telle que
+l’extension correspondante de Γ par π′ soit “sans torsion” et que le stabilisateur de tout
+i′ ∈I
+′! dans Γ soit non trivial, vers les Γ-groupes extérieurs, soit (non seulement essen-
+tiellement surjectif mais) pleinement fidèle, est déjà problématique. La fidélité signifie
+justement que πΓ
+1 = {1}, la pleine fidélité est plus forte que le fait que
+Autext(π′, π)Γ →Autext(π)Γ
+est surjectif (dans le cas réalisable, cette surjectivité serait conséquence du fait que toute
+classe d’homéomorphisme commutant à Γ contient un homéomorphisme commutant
+à Γ) — il faut ajouter à ceci que tout autre relèvement de Γ en une opération extérieure
+sur π′ [i.e. un
+Γ
+Autextlac(π′, π)
+Autextlac(π′, I)
+]
+∼
+ayant la même action de Γ sur I
+′!, est conjugué du précédent par un élément du noyau π1
+de Autextlac(π′, I
+′!) →Autextlac(π) × (SI′!)…
+On va réénoncer la conjecture précédente sous une forme un peu plus générale. In-
+troduisons une notation. Si Γ est un groupe fini opérant extérieurement de façon directe
+sur un groupe à lacets π anabélien, donnant lieu à une extension E de π par Γ, on va
+83Plutôt une extension de SI′ par ce π1
+154
+
+--- G103d page 160 ---
+désigner par Φ = Φ(π, Γ) (“points fixés”) l’ensemble des classes de π-conjugaison des
+sections partielles ̸= {1} maximales de l’extension. (Le caractère intrinsèque de Φ(π, Γ),
+indépendemment des choix particuliers de E a été déjà noté). Il est clair que Φ est un Γ-
+ensemble, on sait aussi qu’il est fini.
+Soit maintenant (π′, Γ) un Γ-groupe extérieur à lacets avec Γ opérant de façon di-
+recte (Γ = Γ+) et fidèle (pour simplifier), fixons-nous une partie I
+′! de I′ = I(π′),
+stable par Γ, telle ∀i′ ∈I
+′!, on ait Γi′ ̸= {1}, et considérons le groupe extérieur quo-
+tient, défini par bouchage de I
+′!, soit π — il est clair que Γ opère encore dessus.
+On veut d’abord définir une bijection
+(∗)
+Φ(π, Γ)
+Φ(π′, Γ) ⨿I
+′!
+∼
+en supposant (π, Γ) également anabélien pour être plus sur !
+a) Application I′ →Φ(π, Γ).
+Soit Li′ ⊂π′ de classe i′ ∈I′, Zi′ son centralisateur dans l’extension E′ de Γ par
+π′ de sorte Li′ est une extension de Γi′ par Li′. Le passage au quotient E′ →E
+définit une section partielle Γi′ ,→E, contenue dans une unique section partielle
+maximale (sans doute déjà maximale elle même…84). On trouve ainsi une applica-
+tion I′ →Φ(π, Γ), évidemment compatible avec les actions de Γ.
+b) Application Φ(π′, Γ) →Φ(π, Γ)
+Toute section partielle ̸= 1 de E′ sur Γ en définit évidemment une de E sur Γ en
+passant au quotient ; on a comme ci dessus qu’une section maximale donne une
+section maximale, en se ramenant au cas Γ cyclique.85
+c) Bijectivité de (*)
+Elle n’est pas prouvée (sauf si la situation de départ est réalisable, ou si I
+′! réduit à
+un seul élément mais alors Γ est cyclique et la situation est réalisable…)
+Ceci admis on a défini un foncteur
+(π′, Γ, I
+′!) 7→(π, Γ, I
+′!)
+84Oui car pour le voir on peut supposer Γ cyclique et donc la situation est réalisable…! (?)
+85Pas clair, car l’hypothèse que les Γi′ ̸= 0, risque de ne pas être réalisée.
+155
+
+--- G103d page 161 ---
+allant de la catégorie des Γ-groupes extérieurs à lacets π′ munis d’une partie I
+′! de I′ =
+I(π′) stable par Γ, telle que s′ ∈I′ ⇒Γs′ ̸= {1}, dans la catégorie des Γ-groupes
+extérieures à lacets, munis d’une partie I
+′! de Φ(π, Γ). La conjecture est que le foncteur
+(lui même un peu conjectural, sauf si on se réduit aux situations de départ réalisables,
+d’où situations d’arrivée également réalisables) est une équivalence de catégories i.e. 1◦)
+pleinement fidèle et 2◦) essentiellement surjectif.
+Le point 2◦) est clair, quand on se borne de part et d’autre à des situations réalisables.
+Mais même dans ce cas, le point i) n’est pas prouvé. Je pense que si I′ est réduit à un
+élément, alors les propriétés du foncteur “forage d’un trou” permettront de l’établir aisé-
+ment. On voit aussi que pour l’établir, on est ramené à établir la bijectivité de (*), et le
+théorème d’équivalence dans le cas où Γ est transitif sur I
+′!.
+Pour résumer, le programme d’attaque du problème de réalisabilité d’un Γ-groupe
+extérieur à lacets serait le suivant :
+I) Établir la bijectivité de (*) dans le cas général.
+II) Établir la pleine fidélité du foncteur précédent (en se ramenant au besoin au cas
+où I
+′! est une orbite (singulière) de Γ dans I′ = I(π′)).
+III) Dans le cas où Φ(π, Γ) = ∅i.e. l’extension E n’a pas d’élément d’ordre fini ̸= 1,
+prouver que E, muni de l’ensemble des E-classes de conjugaison des centralisa-
+teurs des Li (i ∈I(π)) dans E, est un groupe à lacets.
+D’ailleurs, pour disposer des propriétés préliminaires indispensables des ensembles
+Φ(π, Γ), il faudrait commencer par réaliser ce programme pour les groupes cycliques
+(opérants de façon directe), et procéder dans ce cas par dévissage.
+Si le théorème de classification complet (comme équivalence des 2-catégories — des
+opérations topologiques et des opérations isotopiques —) était vrai, les points I, II, III de
+ce programme devrait l’être aussi, et ce serait donc un bon programme d’approche. Les
+points I et II devraient être encore valables, dès que le 2-foncteur entre 2-catégories serait
+2-fidèle (pas nécessairement 3-fidèle), du moins pour les situations réalisables. On dirait
+alors qu’une action extérieure de Γ est admissible, si
+Autext(π′, Γ, I
+′!) ∼
+−→Aut(π, Γ, I
+′!)
+156
+
+--- G103d page 162 ---
+et si de plus toute autre action de Γ sur π′, induisant la même action sur π et la même
+application I
+′! →Φ(π, Γ), est conjugué de l’action originelle.
+Ceci posé, la condition nécessaire et suffisante de réalisabilité d’une action extérieure
+fidèle de Γ sur π serait alors que cette action se remonte (par “forage de trous” pour
+I
+′! = Φ(π, Γ)) en une action admissible de Γ sur un (π′, I
+′!), (par définition même
+le relèvement serait alors unique) et que de plus l’extension correspondante E′ de Γ par
+π′ soit un groupe à lacets.
+157

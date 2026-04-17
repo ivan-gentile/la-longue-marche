@@ -1,0 +1,70 @@
+{
+  "benchmark_pages": {
+    "group_a": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "group_b": [
+      50,
+      51,
+      52,
+      53,
+      54
+    ]
+  },
+  "all_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    50,
+    51,
+    52,
+    53,
+    54
+  ],
+  "settings": {
+    "full_page_dpi": 300,
+    "strip_dpi": 300,
+    "num_strips": 3,
+    "strip_overlap_ratio": 0.15,
+    "header_crop_ratio": 0.04,
+    "footer_crop_ratio": 0.05
+  },
+  "experiments": [
+    {
+      "id": "A",
+      "name": "full_page_no_context",
+      "description": "Full page image, no sequential context",
+      "image_type": "full_page",
+      "with_context": false
+    },
+    {
+      "id": "B",
+      "name": "full_page_with_context",
+      "description": "Full page image, with previous page transcription as context",
+      "image_type": "full_page",
+      "with_context": true
+    },
+    {
+      "id": "C",
+      "name": "strips_no_context",
+      "description": "3 horizontal strips per page, no sequential context",
+      "image_type": "strips",
+      "with_context": false
+    },
+    {
+      "id": "D",
+      "name": "strips_with_context",
+      "description": "3 horizontal strips per page, with previous page transcription as context",
+      "image_type": "strips",
+      "with_context": true
+    }
+  ],
+  "reference_pdf": "G103d.pdf",
+  "scan_pdf": "raw_pdf/140-2.pdf"
+}

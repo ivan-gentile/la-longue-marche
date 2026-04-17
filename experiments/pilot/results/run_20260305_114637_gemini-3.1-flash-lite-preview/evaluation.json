@@ -1,0 +1,1606 @@
+{
+  "A": {
+    "pages": {
+      "1": {
+        "quality": {
+          "length": 32,
+          "line_count": 1,
+          "has_latex": false,
+          "latex_inline_count": 0,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "130",
+          "similarity_score": 0.2623,
+          "top_matches": [
+            [
+              "130",
+              0.2623
+            ],
+            [
+              "1",
+              0.256
+            ],
+            [
+              "12",
+              0.2
+            ],
+            [
+              "139",
+              0.1826
+            ],
+            [
+              "51",
+              0.1803
+            ]
+          ]
+        }
+      },
+      "2": {
+        "quality": {
+          "length": 1576,
+          "line_count": 25,
+          "has_latex": true,
+          "latex_inline_count": 2,
+          "latex_display_count": 0,
+          "unclear_count": 1,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.1118,
+          "top_matches": [
+            [
+              "146",
+              0.1118
+            ],
+            [
+              "139",
+              0.1024
+            ],
+            [
+              "1",
+              0.0832
+            ],
+            [
+              "4",
+              0.0826
+            ],
+            [
+              "130",
+              0.0619
+            ]
+          ]
+        }
+      },
+      "3": {
+        "quality": {
+          "length": 2353,
+          "line_count": 45,
+          "has_latex": true,
+          "latex_inline_count": 21,
+          "latex_display_count": 0,
+          "unclear_count": 1,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "5",
+          "similarity_score": 0.1755,
+          "top_matches": [
+            [
+              "5",
+              0.1755
+            ],
+            [
+              "139",
+              0.0896
+            ],
+            [
+              "146",
+              0.0709
+            ],
+            [
+              "9",
+              0.0553
+            ],
+            [
+              "130",
+              0.0545
+            ]
+          ]
+        }
+      },
+      "4": {
+        "quality": {
+          "length": 1420,
+          "line_count": 20,
+          "has_latex": true,
+          "latex_inline_count": 18,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 4
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1241,
+          "top_matches": [
+            [
+              "139",
+              0.1241
+            ],
+            [
+              "146",
+              0.0995
+            ],
+            [
+              "12",
+              0.0832
+            ],
+            [
+              "130",
+              0.075
+            ],
+            [
+              "9",
+              0.0635
+            ]
+          ]
+        }
+      },
+      "5": {
+        "quality": {
+          "length": 1061,
+          "line_count": 25,
+          "has_latex": true,
+          "latex_inline_count": 15,
+          "latex_display_count": 1,
+          "unclear_count": 3,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 4
+        },
+        "reference_match": {
+          "best_page": "6",
+          "similarity_score": 0.3179,
+          "top_matches": [
+            [
+              "6",
+              0.3179
+            ],
+            [
+              "139",
+              0.1376
+            ],
+            [
+              "9",
+              0.1077
+            ],
+            [
+              "146",
+              0.0972
+            ],
+            [
+              "12",
+              0.0946
+            ]
+          ]
+        }
+      },
+      "50": {
+        "quality": {
+          "length": 1235,
+          "line_count": 44,
+          "has_latex": true,
+          "latex_inline_count": 24,
+          "latex_display_count": 5,
+          "unclear_count": 5,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.1217,
+          "top_matches": [
+            [
+              "146",
+              0.1217
+            ],
+            [
+              "9",
+              0.0929
+            ],
+            [
+              "139",
+              0.0817
+            ],
+            [
+              "51",
+              0.0532
+            ],
+            [
+              "1",
+              0.0492
+            ]
+          ]
+        }
+      },
+      "51": {
+        "quality": {
+          "length": 1178,
+          "line_count": 24,
+          "has_latex": true,
+          "latex_inline_count": 11,
+          "latex_display_count": 4,
+          "unclear_count": 3,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1417,
+          "top_matches": [
+            [
+              "139",
+              0.1417
+            ],
+            [
+              "36",
+              0.1331
+            ],
+            [
+              "130",
+              0.1057
+            ],
+            [
+              "12",
+              0.074
+            ],
+            [
+              "1",
+              0.0696
+            ]
+          ]
+        }
+      },
+      "52": {
+        "quality": {
+          "length": 1146,
+          "line_count": 12,
+          "has_latex": true,
+          "latex_inline_count": 23,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1292,
+          "top_matches": [
+            [
+              "139",
+              0.1292
+            ],
+            [
+              "9",
+              0.1001
+            ],
+            [
+              "146",
+              0.0791
+            ],
+            [
+              "1",
+              0.0744
+            ],
+            [
+              "12",
+              0.0733
+            ]
+          ]
+        }
+      },
+      "53": {
+        "quality": {
+          "length": 1334,
+          "line_count": 11,
+          "has_latex": true,
+          "latex_inline_count": 28,
+          "latex_display_count": 0,
+          "unclear_count": 11,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.1202,
+          "top_matches": [
+            [
+              "146",
+              0.1202
+            ],
+            [
+              "12",
+              0.1085
+            ],
+            [
+              "139",
+              0.1055
+            ],
+            [
+              "9",
+              0.0894
+            ],
+            [
+              "51",
+              0.0772
+            ]
+          ]
+        }
+      },
+      "54": {
+        "quality": {
+          "length": 1281,
+          "line_count": 7,
+          "has_latex": true,
+          "latex_inline_count": 21,
+          "latex_display_count": 0,
+          "unclear_count": 7,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1175,
+          "top_matches": [
+            [
+              "139",
+              0.1175
+            ],
+            [
+              "38",
+              0.1057
+            ],
+            [
+              "1",
+              0.0887
+            ],
+            [
+              "9",
+              0.0814
+            ],
+            [
+              "146",
+              0.0807
+            ]
+          ]
+        }
+      }
+    },
+    "summary": {
+      "n_pages": 10,
+      "avg_similarity": 0.1622,
+      "avg_length": 1262,
+      "total_unclear": 31,
+      "avg_unclear_per_page": 3.1
+    }
+  },
+  "B": {
+    "pages": {
+      "1": {
+        "quality": {
+          "length": 44,
+          "line_count": 4,
+          "has_latex": true,
+          "latex_inline_count": 0,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "1",
+          "similarity_score": 0.25,
+          "top_matches": [
+            [
+              "1",
+              0.25
+            ],
+            [
+              "130",
+              0.2256
+            ],
+            [
+              "139",
+              0.2174
+            ],
+            [
+              "51",
+              0.1955
+            ],
+            [
+              "12",
+              0.1878
+            ]
+          ]
+        }
+      },
+      "2": {
+        "quality": {
+          "length": 1326,
+          "line_count": 37,
+          "has_latex": true,
+          "latex_inline_count": 1,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1271,
+          "top_matches": [
+            [
+              "139",
+              0.1271
+            ],
+            [
+              "146",
+              0.1151
+            ],
+            [
+              "4",
+              0.0982
+            ],
+            [
+              "130",
+              0.0891
+            ],
+            [
+              "1",
+              0.0889
+            ]
+          ]
+        }
+      },
+      "3": {
+        "quality": {
+          "length": 2134,
+          "line_count": 42,
+          "has_latex": true,
+          "latex_inline_count": 18,
+          "latex_display_count": 0,
+          "unclear_count": 2,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "5",
+          "similarity_score": 0.212,
+          "top_matches": [
+            [
+              "5",
+              0.212
+            ],
+            [
+              "146",
+              0.0755
+            ],
+            [
+              "9",
+              0.0674
+            ],
+            [
+              "139",
+              0.0576
+            ],
+            [
+              "130",
+              0.0545
+            ]
+          ]
+        }
+      },
+      "4": {
+        "quality": {
+          "length": 895,
+          "line_count": 28,
+          "has_latex": true,
+          "latex_inline_count": 3,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 3,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.1243,
+          "top_matches": [
+            [
+              "146",
+              0.1243
+            ],
+            [
+              "139",
+              0.1223
+            ],
+            [
+              "1",
+              0.1047
+            ],
+            [
+              "130",
+              0.09
+            ],
+            [
+              "51",
+              0.0793
+            ]
+          ]
+        }
+      },
+      "5": {
+        "quality": {
+          "length": 1298,
+          "line_count": 22,
+          "has_latex": true,
+          "latex_inline_count": 13,
+          "latex_display_count": 1,
+          "unclear_count": 16,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 4
+        },
+        "reference_match": {
+          "best_page": "6",
+          "similarity_score": 0.3369,
+          "top_matches": [
+            [
+              "6",
+              0.3369
+            ],
+            [
+              "139",
+              0.1222
+            ],
+            [
+              "146",
+              0.1034
+            ],
+            [
+              "9",
+              0.1031
+            ],
+            [
+              "12",
+              0.1028
+            ]
+          ]
+        }
+      },
+      "50": {
+        "quality": {
+          "length": 1083,
+          "line_count": 34,
+          "has_latex": true,
+          "latex_inline_count": 13,
+          "latex_display_count": 5,
+          "unclear_count": 1,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.1208,
+          "top_matches": [
+            [
+              "146",
+              0.1208
+            ],
+            [
+              "9",
+              0.09
+            ],
+            [
+              "139",
+              0.0695
+            ],
+            [
+              "51",
+              0.0666
+            ],
+            [
+              "1",
+              0.0592
+            ]
+          ]
+        }
+      },
+      "51": {
+        "quality": {
+          "length": 1297,
+          "line_count": 38,
+          "has_latex": true,
+          "latex_inline_count": 13,
+          "latex_display_count": 4,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.12,
+          "top_matches": [
+            [
+              "146",
+              0.12
+            ],
+            [
+              "139",
+              0.09
+            ],
+            [
+              "130",
+              0.0877
+            ],
+            [
+              "12",
+              0.0748
+            ],
+            [
+              "1",
+              0.0569
+            ]
+          ]
+        }
+      },
+      "52": {
+        "quality": {
+          "length": 1348,
+          "line_count": 28,
+          "has_latex": true,
+          "latex_inline_count": 21,
+          "latex_display_count": 0,
+          "unclear_count": 3,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.085,
+          "top_matches": [
+            [
+              "139",
+              0.085
+            ],
+            [
+              "9",
+              0.0798
+            ],
+            [
+              "12",
+              0.0673
+            ],
+            [
+              "130",
+              0.0653
+            ],
+            [
+              "52",
+              0.061
+            ]
+          ]
+        }
+      },
+      "53": {
+        "quality": {
+          "length": 1213,
+          "line_count": 26,
+          "has_latex": true,
+          "latex_inline_count": 21,
+          "latex_display_count": 0,
+          "unclear_count": 32,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1098,
+          "top_matches": [
+            [
+              "139",
+              0.1098
+            ],
+            [
+              "9",
+              0.0958
+            ],
+            [
+              "12",
+              0.0936
+            ],
+            [
+              "130",
+              0.09
+            ],
+            [
+              "146",
+              0.0869
+            ]
+          ]
+        }
+      },
+      "54": {
+        "quality": {
+          "length": 1360,
+          "line_count": 11,
+          "has_latex": true,
+          "latex_inline_count": 20,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1141,
+          "top_matches": [
+            [
+              "139",
+              0.1141
+            ],
+            [
+              "38",
+              0.106
+            ],
+            [
+              "9",
+              0.0832
+            ],
+            [
+              "146",
+              0.0826
+            ],
+            [
+              "1",
+              0.076
+            ]
+          ]
+        }
+      }
+    },
+    "summary": {
+      "n_pages": 10,
+      "avg_similarity": 0.16,
+      "avg_length": 1200,
+      "total_unclear": 54,
+      "avg_unclear_per_page": 5.4
+    }
+  },
+  "C": {
+    "pages": {
+      "1": {
+        "quality": {
+          "length": 2065,
+          "line_count": 38,
+          "has_latex": true,
+          "latex_inline_count": 33,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 4
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.0844,
+          "top_matches": [
+            [
+              "139",
+              0.0844
+            ],
+            [
+              "146",
+              0.0785
+            ],
+            [
+              "9",
+              0.0713
+            ],
+            [
+              "12",
+              0.056
+            ],
+            [
+              "1",
+              0.0553
+            ]
+          ]
+        }
+      },
+      "2": {
+        "quality": {
+          "length": 1825,
+          "line_count": 55,
+          "has_latex": true,
+          "latex_inline_count": 5,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.0891,
+          "top_matches": [
+            [
+              "139",
+              0.0891
+            ],
+            [
+              "4",
+              0.088
+            ],
+            [
+              "1",
+              0.0695
+            ],
+            [
+              "51",
+              0.0663
+            ],
+            [
+              "9",
+              0.0647
+            ]
+          ]
+        }
+      },
+      "3": {
+        "quality": {
+          "length": 3125,
+          "line_count": 75,
+          "has_latex": true,
+          "latex_inline_count": 32,
+          "latex_display_count": 0,
+          "unclear_count": 2,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 4
+        },
+        "reference_match": {
+          "best_page": "5",
+          "similarity_score": 0.168,
+          "top_matches": [
+            [
+              "5",
+              0.168
+            ],
+            [
+              "146",
+              0.0691
+            ],
+            [
+              "12",
+              0.0655
+            ],
+            [
+              "9",
+              0.0628
+            ],
+            [
+              "130",
+              0.0603
+            ]
+          ]
+        }
+      },
+      "4": {
+        "quality": {
+          "length": 1263,
+          "line_count": 33,
+          "has_latex": true,
+          "latex_inline_count": 9,
+          "latex_display_count": 0,
+          "unclear_count": 5,
+          "diagram_count": 1,
+          "margin_count": 4,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1213,
+          "top_matches": [
+            [
+              "139",
+              0.1213
+            ],
+            [
+              "146",
+              0.1196
+            ],
+            [
+              "130",
+              0.1064
+            ],
+            [
+              "12",
+              0.0879
+            ],
+            [
+              "51",
+              0.0862
+            ]
+          ]
+        }
+      },
+      "5": {
+        "quality": {
+          "length": 1217,
+          "line_count": 37,
+          "has_latex": true,
+          "latex_inline_count": 23,
+          "latex_display_count": 1,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 3
+        },
+        "reference_match": {
+          "best_page": "6",
+          "similarity_score": 0.3361,
+          "top_matches": [
+            [
+              "6",
+              0.3361
+            ],
+            [
+              "139",
+              0.1178
+            ],
+            [
+              "146",
+              0.0932
+            ],
+            [
+              "12",
+              0.0874
+            ],
+            [
+              "9",
+              0.0859
+            ]
+          ]
+        }
+      },
+      "50": {
+        "quality": {
+          "length": 1475,
+          "line_count": 41,
+          "has_latex": true,
+          "latex_inline_count": 12,
+          "latex_display_count": 4,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.101,
+          "top_matches": [
+            [
+              "146",
+              0.101
+            ],
+            [
+              "139",
+              0.0778
+            ],
+            [
+              "51",
+              0.0632
+            ],
+            [
+              "9",
+              0.058
+            ],
+            [
+              "130",
+              0.0458
+            ]
+          ]
+        }
+      },
+      "51": {
+        "quality": {
+          "length": 1498,
+          "line_count": 40,
+          "has_latex": true,
+          "latex_inline_count": 15,
+          "latex_display_count": 4,
+          "unclear_count": 1,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "36",
+          "similarity_score": 0.1244,
+          "top_matches": [
+            [
+              "36",
+              0.1244
+            ],
+            [
+              "146",
+              0.1158
+            ],
+            [
+              "139",
+              0.1089
+            ],
+            [
+              "130",
+              0.0869
+            ],
+            [
+              "12",
+              0.0607
+            ]
+          ]
+        }
+      },
+      "52": {
+        "quality": {
+          "length": 1357,
+          "line_count": 30,
+          "has_latex": true,
+          "latex_inline_count": 21,
+          "latex_display_count": 0,
+          "unclear_count": 2,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 3
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.131,
+          "top_matches": [
+            [
+              "139",
+              0.131
+            ],
+            [
+              "130",
+              0.0777
+            ],
+            [
+              "12",
+              0.0664
+            ],
+            [
+              "9",
+              0.0607
+            ],
+            [
+              "1",
+              0.0582
+            ]
+          ]
+        }
+      },
+      "53": {
+        "quality": {
+          "length": 1512,
+          "line_count": 34,
+          "has_latex": true,
+          "latex_inline_count": 27,
+          "latex_display_count": 0,
+          "unclear_count": 4,
+          "diagram_count": 0,
+          "margin_count": 3,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1081,
+          "top_matches": [
+            [
+              "139",
+              0.1081
+            ],
+            [
+              "12",
+              0.0981
+            ],
+            [
+              "9",
+              0.0904
+            ],
+            [
+              "146",
+              0.0709
+            ],
+            [
+              "51",
+              0.0691
+            ]
+          ]
+        }
+      },
+      "54": {
+        "quality": {
+          "length": 1709,
+          "line_count": 30,
+          "has_latex": true,
+          "latex_inline_count": 25,
+          "latex_display_count": 1,
+          "unclear_count": 15,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "38",
+          "similarity_score": 0.1032,
+          "top_matches": [
+            [
+              "38",
+              0.1032
+            ],
+            [
+              "139",
+              0.0859
+            ],
+            [
+              "146",
+              0.0806
+            ],
+            [
+              "9",
+              0.0762
+            ],
+            [
+              "12",
+              0.0748
+            ]
+          ]
+        }
+      }
+    },
+    "summary": {
+      "n_pages": 10,
+      "avg_similarity": 0.1367,
+      "avg_length": 1705,
+      "total_unclear": 29,
+      "avg_unclear_per_page": 2.9
+    }
+  },
+  "D": {
+    "pages": {
+      "1": {
+        "quality": {
+          "length": 233,
+          "line_count": 21,
+          "has_latex": false,
+          "latex_inline_count": 0,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 2,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "1",
+          "similarity_score": 0.3014,
+          "top_matches": [
+            [
+              "1",
+              0.3014
+            ],
+            [
+              "130",
+              0.1944
+            ],
+            [
+              "139",
+              0.1853
+            ],
+            [
+              "12",
+              0.1364
+            ],
+            [
+              "51",
+              0.1204
+            ]
+          ]
+        }
+      },
+      "2": {
+        "quality": {
+          "length": 1569,
+          "line_count": 52,
+          "has_latex": true,
+          "latex_inline_count": 4,
+          "latex_display_count": 0,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.102,
+          "top_matches": [
+            [
+              "139",
+              0.102
+            ],
+            [
+              "4",
+              0.1001
+            ],
+            [
+              "1",
+              0.089
+            ],
+            [
+              "130",
+              0.0752
+            ],
+            [
+              "146",
+              0.0703
+            ]
+          ]
+        }
+      },
+      "3": {
+        "quality": {
+          "length": 3085,
+          "line_count": 69,
+          "has_latex": true,
+          "latex_inline_count": 21,
+          "latex_display_count": 0,
+          "unclear_count": 8,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "5",
+          "similarity_score": 0.1585,
+          "top_matches": [
+            [
+              "5",
+              0.1585
+            ],
+            [
+              "146",
+              0.0792
+            ],
+            [
+              "9",
+              0.0693
+            ],
+            [
+              "139",
+              0.0631
+            ],
+            [
+              "12",
+              0.0571
+            ]
+          ]
+        }
+      },
+      "4": {
+        "quality": {
+          "length": 1882,
+          "line_count": 51,
+          "has_latex": true,
+          "latex_inline_count": 14,
+          "latex_display_count": 0,
+          "unclear_count": 2,
+          "diagram_count": 0,
+          "margin_count": 3,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "5",
+          "similarity_score": 0.105,
+          "top_matches": [
+            [
+              "5",
+              0.105
+            ],
+            [
+              "139",
+              0.0844
+            ],
+            [
+              "1",
+              0.0734
+            ],
+            [
+              "9",
+              0.0685
+            ],
+            [
+              "12",
+              0.0673
+            ]
+          ]
+        }
+      },
+      "5": {
+        "quality": {
+          "length": 1440,
+          "line_count": 46,
+          "has_latex": true,
+          "latex_inline_count": 14,
+          "latex_display_count": 1,
+          "unclear_count": 14,
+          "diagram_count": 0,
+          "margin_count": 5,
+          "french_markers": 4
+        },
+        "reference_match": {
+          "best_page": "6",
+          "similarity_score": 0.3722,
+          "top_matches": [
+            [
+              "6",
+              0.3722
+            ],
+            [
+              "139",
+              0.1326
+            ],
+            [
+              "146",
+              0.102
+            ],
+            [
+              "9",
+              0.0965
+            ],
+            [
+              "12",
+              0.0892
+            ]
+          ]
+        }
+      },
+      "50": {
+        "quality": {
+          "length": 1614,
+          "line_count": 67,
+          "has_latex": true,
+          "latex_inline_count": 23,
+          "latex_display_count": 5,
+          "unclear_count": 1,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 0
+        },
+        "reference_match": {
+          "best_page": "146",
+          "similarity_score": 0.1078,
+          "top_matches": [
+            [
+              "146",
+              0.1078
+            ],
+            [
+              "139",
+              0.0886
+            ],
+            [
+              "51",
+              0.0697
+            ],
+            [
+              "9",
+              0.0632
+            ],
+            [
+              "130",
+              0.046
+            ]
+          ]
+        }
+      },
+      "51": {
+        "quality": {
+          "length": 1477,
+          "line_count": 53,
+          "has_latex": true,
+          "latex_inline_count": 16,
+          "latex_display_count": 4,
+          "unclear_count": 0,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "36",
+          "similarity_score": 0.1347,
+          "top_matches": [
+            [
+              "36",
+              0.1347
+            ],
+            [
+              "146",
+              0.1185
+            ],
+            [
+              "139",
+              0.1129
+            ],
+            [
+              "130",
+              0.089
+            ],
+            [
+              "12",
+              0.0666
+            ]
+          ]
+        }
+      },
+      "52": {
+        "quality": {
+          "length": 1420,
+          "line_count": 37,
+          "has_latex": true,
+          "latex_inline_count": 22,
+          "latex_display_count": 0,
+          "unclear_count": 3,
+          "diagram_count": 0,
+          "margin_count": 0,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1134,
+          "top_matches": [
+            [
+              "139",
+              0.1134
+            ],
+            [
+              "146",
+              0.1119
+            ],
+            [
+              "9",
+              0.0789
+            ],
+            [
+              "130",
+              0.0786
+            ],
+            [
+              "12",
+              0.0616
+            ]
+          ]
+        }
+      },
+      "53": {
+        "quality": {
+          "length": 1691,
+          "line_count": 42,
+          "has_latex": true,
+          "latex_inline_count": 33,
+          "latex_display_count": 0,
+          "unclear_count": 5,
+          "diagram_count": 0,
+          "margin_count": 4,
+          "french_markers": 1
+        },
+        "reference_match": {
+          "best_page": "139",
+          "similarity_score": 0.1008,
+          "top_matches": [
+            [
+              "139",
+              0.1008
+            ],
+            [
+              "9",
+              0.0986
+            ],
+            [
+              "12",
+              0.0921
+            ],
+            [
+              "146",
+              0.0897
+            ],
+            [
+              "1",
+              0.0823
+            ]
+          ]
+        }
+      },
+      "54": {
+        "quality": {
+          "length": 1696,
+          "line_count": 34,
+          "has_latex": true,
+          "latex_inline_count": 23,
+          "latex_display_count": 0,
+          "unclear_count": 8,
+          "diagram_count": 0,
+          "margin_count": 1,
+          "french_markers": 2
+        },
+        "reference_match": {
+          "best_page": "38",
+          "similarity_score": 0.1032,
+          "top_matches": [
+            [
+              "38",
+              0.1032
+            ],
+            [
+              "146",
+              0.0987
+            ],
+            [
+              "139",
+              0.0901
+            ],
+            [
+              "12",
+              0.0773
+            ],
+            [
+              "1",
+              0.0688
+            ]
+          ]
+        }
+      }
+    },
+    "summary": {
+      "n_pages": 10,
+      "avg_similarity": 0.1599,
+      "avg_length": 1611,
+      "total_unclear": 41,
+      "avg_unclear_per_page": 4.1
+    }
+  }
+}

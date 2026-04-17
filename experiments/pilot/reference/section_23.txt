@@ -1,0 +1,294 @@
+Section: § 23. — RETOUR SUR LES SURFACES À GROUPES
+G103d pages: 147-155
+
+--- G103d page 147 ---
+§ 23. — RETOUR SUR LES SURFACES À GROUPES
+D’OPÉRATORS
+Notre point de vue sera non celui des groupes extérieurs à lacets, mais celui des topos
+multigaloisiens et morphismes entre ceux-ci, plus souple, on l’a vu. Avant de faire in-
+tervenir des opérations de groupes, introduisons la catégorie des surfaces U orientables
+(NB pas orientées !) admissibles (i.e. de la forme X \ S, où X est compacte, S fini
+et toute composante connexe de X de genre zéro rencontre S) comme dans Ladegail-
+lerie (en prenant comme 2-morphismes entre homéomorphismes f, g : U
+U ′
+∼
+∼
+les classes d’homotopie de chemins de f à g dans l’espace Isom(U, U ′)) (qui, avec les hy-
+pothèses faites a comme composantes connexes des torseurs sous de produits de groupes
+A◦
+g,ν (avec (g, ν) = (0, 0))) — donc ce sont des K(π, 1).
+On trouve un 2-foncteur de la 2-catégorie précédente dans celle des morphismes de
+topos multigaloisiens (ou, si on préfère, dans celle des morphismes de groupoïdes) notés
+BD∗
+ρ
+−→BU,
+où pour deux objets de la 2-catégorie BD∗→BU et BD′∗→BU′, la catégorie des mor-
+phismes de l’une dans l’autre est formée des diagrammes essentiellement commutatifs de
+morphismes de topos (ou de morphismes de groupoïde).
+BD′∗
+BU′
+BD∗
+BU
+ρ′
+fD∗
+fU
+ρ
+α
+∼
+
+--- G103d page 148 ---
+où f D∗et fU sont des morphismes et α : ρ ◦fD∗
+∼
+−→fU ◦ρ′ une donnée de commu-
+tativité. Les morphismes entre un h et un g étant définis ad hoc…
+Il peut être utile de considérer les objets de la 2-catégorie comme des topos cofibrés
+(ou des groupoïdes cofibrés) sur la catégorie “flèche” D∗→U ayant deux objets D∗et U
+et une seule flèche non identique D∗→U. En termes d’un foncteur entre groupoïdes,
+ΠD∗→ΠU la catégorie cofibrée (“en groupoïdes”) associée Π est définie par : Ob Π =
+Ob ΠD∗⨿Ob ΠU.
+Les flèches entre deux objets de ΠD∗, ou deux objets de ΠU, étant celles de ΠD∗,
+resp. de ΠU et les flèches de eD∗∈Ob ΠD∗dans eU ∈Ob ΠU étant les isomorphismes
+ρ!( eD) ≃eU dans ΠU.
+On a un foncteur canonique Π →∆1 qui est “cofibrant” et pour lequel toute flèche
+de Π est cocartésienne. [Quand on préfère travailler avec les topos et qu’on rapère les
+morphismes ρ de topos par les foncteurs images inverses ρ∗(N.B. on a une suite de trois
+foncteurs adjoints ρ!ρ∗ρ∗) alors BU
+ρ∗
+−→BD∗est décrit par une catégorie fibrée en topos
+sur ∆i.e. une catégorie fibrée B telle que les catégories fibres soient des topos, et le fonc-
+teur de changement de base soit exact à guache et commute aux limites inductives quel-
+conques.]
+Soit S la 2-catégorie des surfaces admissibles, M celle des morphismes de topos
+multigaloisiens (sans condition). On a un 2-foncteur de 2-catégories
+S →M
+et on sait décrire l’image 2-essentielle par la condition “structure à lacets”79 qui définit
+une sous 2-catégorie pleine de M soit Mlac. Par ailleurs on sait que le foncteur est 2-
+fidèle, donc induit une 2-équivalence de 2-catégories80
+S →Mlac
+Si maintenant Γ est un groupe et si on considère des surfaces admissibles avec action de
+Γ, elles définissent des topos (ou groupoïdes) BD∗, BU avec opération de Γ dessus [ou des
+79N.B. On exclut par exemple BD∗≃“topos vide” BU ≃“topos ponctuel” i.e. πD∗= ∅et πU ≃
+catégorie ponctuelle.
+80Il n’y a pas à se donner une structure supplémentaire dans le cas BD∗≃“topos vide” sur BU - à
+savoir un isomorphisme T ≃H2(M, Z) pour toute composante connexe - car on ne suppose pas que
+l’on travailler avec des structures orientées ! (Dans l’analogue arithmétique il n’en sera plus de même bien
+sûr…)
+143
+
+--- G103d page 149 ---
+topos cofibrés sur le groupoïde [Γ] défini par Γ] et des morphismes entre ceux-ci com-
+mutant à Γ. On peut considérer une telle donnée comme celle d’un topos multigaloisien
+(ou groupoïde) cofibré sur ∆× [Γ]. Mais la donnée d’un tel morphisme de topos multi-
+galoisiens avec opération de Γ, équivaut à celle de morphismes de topos multigaloisiens
+:
+BD∗,Γ →BU,Γ →BΓ
+ceci semble un point de vue conceptuellement commode, notamment quand on fait
+varier Γ.
+On peut remplacer Γ par un groupoïde Π (jouant le rôle d’un groupoïde fondamen-
+tal) et se proposer de décrire la 2-catégorie RS des foncteurs de Π dans la catégorie des
+surfaces admissibles, [ou encore la 2-catégorie des “surfaces fibrées admissibles” sur le
+topos multigaloisiens bΠ◦correspondant à Π]. On la décrit par la 2-catégorie RM des
+diagrammes de topos multigaloisiens (ou de groupoïdes)
+(1)
+BD∗,Π →BU,Π →BΠ
+donc finalement on a un 2-foncteur entre deux 2-catégories : celle des représentations
+de groupoïdes dans la catégorie des surfaces admissibles et celle des diagrammes de topos
+multigaloisiens (ou de groupoïdes) (1).
+Prenant pour toute composante connexe BΠi de BΠ un revêtement universel eBΠi, et
+prenant les produits fibrés, on récupère comme de juste un diagramme
+(2)
+BD∗
+i
+ρi
+−→BUi →eBΠ ≃topos ponctuel
+et une action de πi = AutBΠi eBΠi dessus ; et la famille de ceux-ci pour i variable permet
+de récupérer la situation complète…
+On dira que le diagramme (1) est “admissible”, si les ρi dans (2) sont admissibles ;
+d’où une 2-catégorie RMlac, et un 2-foncteur
+RS →RMlac
+On regarde la sous 2-catégorie pleine obtenue en se limitant aux Π dont les groupes fon-
+damentaux sont finis, d’où un 2-foncteur induit
+RfS →RfMlac
+144
+
+--- G103d page 150 ---
+et on se propose d’étudier ses propriétés de fidélité.
+Je conjecture que c’est une équivalence de 2-catégorie i.e. qu’il est 3-fidèle.
+Bien entendu on est ramené quand même au cas de groupoïdes connexes Πf définis
+par un groupe (fini s’il le faut) et on est aussi ramené par des arguments essentiellement
+triviaux à regarder le cas de diagrammes BD∗→BU avec BU connexe.
+Du côté géométrique la situation serait donnée par un U = X \ S de type (g, ν),
+(g, ν) = (0, 0) et une opération de Γ dessus. OPS U = Ug,ν donc on donne Γ →Ag,ν.
+Pour la question de i-fidélité avec i ≤2 OPS qu’il s’agit du même groupe Γ qui opère…
+a) 0-fidélité. Soit U, U ′ avec opérations de Γ dessus k, g : U
+∼
+−→U ′ commutant à Γ
+et α, β deux homotopies de f à g i.e. : deux chemins de f à g dans IsomΓ(U, U ′).
+On suppose que dans la description topossique
+BD∗,Γ
+BU,Γ
+BΓ
+BD′∗,Γ
+BU′,Γ
+BΓ
+=
+gU,Γ
+fU,Γ
+gD∗,Γ
+fD∗,Γ
+αD∗
+∗
+= βD∗
+∗
+: fD∗→gD∗et αU
+∗: βU
+∗: fU →gU.
+A prouver que α et β sont homotopes. OPS g = Id, U = Ug,ν, donc f ∈AΓ
+g,ν, et on a
+deux chemins α, β de 1 à f dans l’espace AΓ
+g,ν. On suppose que les deux isomorphismes
+correspondants entre identité de ΠD∗et fD∗,Γ : ΠD∗
+Sν ,Γ →ΠD∗
+Sν ,Γ d’une part entre
+identité de πU,Γ et fU,Γ d’autre part sont les mêmes. On veut prouver que α et β sont
+homotopes. Bien sur l’hypothèse sur α, β relative à l’action de Γ est vérifiée a fortiori
+en se restreignant à un groupe plus petit, par exemple, Γ′ = 1, et en fait on voit qu’elle
+est équivalente pour Γ et pour son sous-groupe 1. Le résultat déjà connu (Ladegaillerie)
+pour Γ = 1, montre que ceci signifie que si deux chemins dans AΓ = (AΓ
+g,ν) de 1 à f
+sont homotopes dans A ils le sont dans AΓ ou encore que
+π1(AΓ) →π1(A)
+est injectif.
+Dans le cas π1(A) = 0 (cas (g, ν) anabélien) cela revient donc à prouver que π1(AΓ) =
+0.
+145
+
+--- G103d page 151 ---
+b) 1 fidélité. Cela signifie (en plus de la 0-fidélité) que tout isomorphisme entre Bf
+et Bg provient d’un chemin de f à g. Avec la réduction précédente OPS g = id
+donc on a f ∈AΓ d’où f : (BD∗→BU) →(BD∗→BU) (respectant Γ) et on a
+un isomorphisme avec l’identité.
+Soit A un groupe topologique, d’où deux invariants :
+π0 = π0(A),
+π1 = π1(A)
+le premier est un groupe (pas nécessairement commutatif) le deuxième est un groupe
+commutatif sur lequel π0 opère. On définit une Gr-catégorie A d’invariant π0, π1 et
+correspondant à cette opération de π0 sur π1 en prenant comme catégorie sous jacente le
+groupoïdefondamental(naïf)deAetcommefoncteurdecompositionceluideA×A →
+A (l’associativité de A = Π1A est stricte…).
+Ceci posé, tout torseur sur A définit un 1-torseur sous la Gr-catégorie A. Plus
+généralement pour tout espace topologique S (ou tout topos qui est localement un es-
+pace topologique) tout torseur sur S de groupe AS définit un AS-champ sur S qui est
+un champ en AS-torseurs. Si πi(A) = 0 pour i ≥2, alors on trouve ainsi pour tout
+n ∈N, n ≥2 une n-équivalence entre la n-catégorie des torseurs sur S de groupe AS,
+et la n-catégorie déduite de la 2-catégorie des AS-torseurs en la prolongeant de façon dis-
+crète…
+Mais considérons un groupe Γ, et considérons la classification des ABΓ-torseurs sur
+le topos classifiant - i.e. celle des A-torseurs avec une opération de Γ dessus (commu-
+tant à l’action de A). Ces objets forment une 2-catégorie dont les composantes connexes
+correspondent aux classes de conjugaison d’homomorphismes de Γ dans A. Si on a un
+homomorphisme Γ →A, il définit une action sur le torseur trivial 1A. Si u, v sont
+deux homomorphismes, les isomorphismes de (1A, u) avec (1A, v) correspondent aux
+éléments de l’ensemble :
+Transp(u, v) = {g ∈A|v = int(g) ◦u}
+Mais on fera une catégorie 0-isotopique en remplaçant par son groupoïde fondamental
+Π1 Transp(u, v).
+Donc un isomorphisme de u et v est encore un point de Transp(u, v) ; mai si on a
+deux tels isomorphismes f, g les isomorphismes f ≃g sont les classes de chemins dans
+146
+
+--- G103d page 152 ---
+Transp(u, v) de f à g. Ainsi la catégorie Aut(u) est équivalente à
+Π1 Transp(u, v)
+(Transp(u, u) = Au)
+Aut(u) = Π1 Transp(u)
+et la catégorie Isom(u, v) est soit vide (si u, v ne sont pas conjugués) soit un torseur sous
+Aut(u).
+Mais pour tout torseur P sous A sur lequel Γ opère le 1-torseur Π1P sous Π1A = U
+est muni d’opérations de Γ d’où un (Γ, A) torseur. On trouve ainsi un foncteur de 2-
+catégorie :
+ 
+2-catégorie des (Γ, A) −torseurs
+[ou encore des homomorphismes Γ →A]
+!
+ 
+2-catégorie des 1-torseurs sous
+A avec opération de Γ dessus
+!
+En somme, on vient de répéter sur le topos classifiant BΓ la construction faite plus
+haut pour un espace topologique S. On aimerait encore exprimer des conditions pour
+que ce 2-foncteur soient une 2-équivalence.
+Pour ceci, il conviendrait d’abord d’avoir une compréhension de la classification des
+classes d’équivalence d’objets de la deuxième catégorie qui sont eux de nature purement
+algébrique, entermedelaGr-catégorieAetdeΓ. Quitteàseborneràdestorseurstriviaux
+sous A (ce qui est licite) il faudrait expliciter ce qui signifie que Γ opère sur le torseur
+trivial. On constate que cea signifie qu’on a un homomorphisme de Gr-catégorie de la
+Gr-catégorie discrète définie par Γ dans A. Donc la 2-catégorie envisagée est celle dont
+les objets sont les homomorphismes de Gr-catégories
+Γ
+u
+−→A
+et pour deux tels morphismes u et v il faut définir (non seulement un ensemble
+Hom(u, v) mais) une catégorie Hom(u, v) comme la sous-catégorie Transp(u, v) de A,
+à définir ad-hoc.
+Considérons pour simplifier le cas où π1 = 0, d’où A se réduit à π0 et la catégorie des
+homomorphismes Γ →A à celle des homomorphismes Γ →π0. Le fait que le foncteur
+de 2-catégorie plus haut soit une équivalence de 2-catégorie se traduit alors pas à pas ainsi
+:
+1) 0-fidèle signifie que pour tout hom u : Γ →A, on a π1(Au) = 0.
+147
+
+--- G103d page 153 ---
+N.B. Au et A◦u ont même composante neutre donc la condition s’écrit
+π1((A◦)u) = 0
+2) 1-fidèle signifie que de plus, si u, v sont des homomorphismes de Γ ⇒A, et
+α, β ∈TranspA(u, v) ont même image dans Transpπ0(u, v) alors α, β sont dans
+une même composante connexe de TranspA(u, v).
+Pour le voir OPS u = v et on est ramené à exprimer que l’application π0(Au) →
+π0 est injective i.e. que son noyau est réduit à 1, i.e. que le sous-groupe ouvert
+Au ∩A◦= (A◦)u de Au est connexe, i.e.
+π0((A◦)u) = 0
+3) 2-fidèle signifie que en plus des conditions précédentes, qui assurent que pour u,
+v, fixés, le foncteur Hom(u, v) →Hom(u, v) est pleinement fidèle, que celui-
+ci est essentiellement surjectif, i.e. que si u, v sont tels que u, v : Γ →π0 sont
+conjugués (si on veut égaux) alors u et v sont déjà conjugués par un élément de π0.
+Il faut le dire de façon plus forte : Transp(u, v) →Transp(u, v) surjectif : cela
+équivaut à dire que si u = v alors u et v sont conjugués par un élément de A◦.
+En d’autres termes : pour tout homomorphisme u : Γ →π0 = A/A◦s’il existe
+un relèvement de u en Γ →A, celui-ci est unique à conjugaison près.
+4) 3-fidèle signifie qu’en plus tout hom u : Γ →π0 se relève en u : Γ →A.
+En résumé, si π1(A◦) = 0 la 3-fidélité signifie que pour tout homomorphisme
+u : Γ →π0 = A/A◦, il existe un relèvement u : Γ →A, unique à conjugaison
+près, et qu’alors (A◦)u est connexe et simplement connexe. Je présume que dans
+le cas général où on ne suppose pas π1(A◦) = 0 il faut remplacer la condition
+π1(A◦u) = 0 par π1(A◦u →π1(A◦)) est un isomorphisme.
+Trop brutal ! la condition en question disant π1(A◦Γ)
+∼
+−→π1(A◦)Γ mais il faut repren-
+dre avec soin l’ensemble des conditions et les modifier ad-hoc…Cf feuille intercalaire.
+(Le plus agréable serait que ce soit un homotopisme — c’est cela sans doute qui ex-
+primerait qu’on a une ∞-équivalence…)
+148
+
+--- G103d page 154 ---
+J’ai envie de prouver d’abord 1), 2), 3) dans le cas A = Ag,ν, en me limitant au besoin
+au cas anabélien (sa doute le plus dur en fait ! mais moins touffu conceptuellement) et
+bien sûr au cas où Γ est fini. Le premier travail sera bien sûr celui de déterminer A◦u et
+sa structure topologique pour essayer de prouver que A◦u est contractile dans ce cas.
+149
+
+--- G103d page 155 ---
+[Intercalaire]
+(On ne suppose plus π(A◦) = 0).
+1) 0-fidèle. π1(A◦Γ) →π1(AΓ) = H◦(Γ, π1(A)) injectif.
+2) 1-fidèle. π1(A◦Γ) →π1(AΓ) bijectif et π0(A◦Γ) →H1(Γ, π1) injectif.
+3) 2-fidèle. π1(A◦Γ) →H◦(Γ, π1(A)) et π0(A◦Γ) →H1(Γ, π1(A)) bijectif et
+π0(AΓ) →Ker(π0(A)Γ) →H2(Γ, π1) (qui est déjà injectif par la condition
+précédente) est surjectif i.e. tout élément de π0(A) qui centralise strictement Γ
+provient d’un élément de A qui centralise Γ. Il faut un peu plus, quand on a deux
+homomorphismes u, v : Γ →A qui coïncident strictement dans A, on veut qu’il
+soient conjugués par un élément de A◦.
+4) 3-fidèle. En plus des conditions précédentes, on veut que tout homomorphismes
+Γ →A (défini par Γ →π0(A) et un scindage de la Gr-catégorie de Sinh-
+Postnikov extension de Γ par π1(A)) provienne d’un homomorphisme Γ →A.
+150

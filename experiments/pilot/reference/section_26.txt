@@ -1,0 +1,443 @@
+Section: § 26. — GROUPES DE TEICHMÜLLER PROFINIS
+G103d pages: 175-185
+
+--- G103d page 175 ---
+§ 26. — GROUPES DE TEICHMÜLLER PROFINIS
+(DISCRÉTIFICATION ET PRÉDISCRÉTIFICATION)
+Soitπ ungroupeprofiniàlacetsdetypeg, ν, T le ˆZ-moduleinversibledesesorientations.
+On suppose qu’on est dans le cas anabélien, et on admettra qu’alors
+(1)
+Centre(π) = {1},
+plus généralement que le centralisateur dans π de tout sous-groupe ouvert de π est réduit
+à {1}. On aura donc encore une suite exacte canonique de groupes profinis
+(2)
+1 →π →Autlac(π) →Autextlac(π) →1.
+On posera aussi
+(3)
+Autextlac(π) = ˆˆT(π),
+et on l’appellera le groupe de Teichmüller étendu de π.
+On posera aussi ˆˆS(π) =
+Autlac(π), de sorte qu’on peut écrire (2) comme
+(2′)
+1 →π →ˆˆS(π) →ˆˆT(π) →1.
+Appelons “base” de π un ensemble d’éléments de π: (xi, yi)1≤i≤g, (lj)1≤j≤ν, les lj en-
+gendrant les différents groupes à lacets, satisfaisant
+(4)
+lνlν−1Dotsl1[xg, yg]Dots[x1, y1] = 1,
+
+--- G103d page 176 ---
+et tels que ceci soit une relation génératrice. Si on choisit dans πg,ν une base (discrète)
+(définition correspondante)91, d’où une base de ˆπg,ν: on aura une bijection évidente
+(5)
+Bases(π)
+∼←Isomlac(ˆπg,ν, π).
+L’ensemble des bases de π est un ensemble homogène sous ˆˆS(π) = Autlac(π). Si la base
+correspond à un isomorphisme u : ˆπg,ν →π, le groupe π0 engendré par les xi, yi, lj
+n’estautrequeu(πg,ν). Lessous-groupesdeπ quipeuvents’obtenirainsisontappelésles
+discrétifications de π. Celles-ci forment un ensemble homogène sous ˆˆS(π) = Autlac(π),
+canoniquement isomorphe au quotient du ˆˆSg,ν-ensemble à droite Isomlac(ˆπg,ν, π) par
+Sg,ν :
+(6)
+Discrét(π)
+∼←Isomlac(ˆπg,ν, π)/Sg,ν.
+Les automorphismes (profinis à lacets) de π fixant une discrétification π0 s’identifient
+aux automorphismes du groupe discret à lacets π0:
+(7)
+Autlac(π, π0) ≃Autlac(π0).
+La bijection (5) met sur l’ensemble des bases de π une structure de bitorseur sous ˆˆS(π),
+ˆˆSg,ν, et la topologie correspondante en fait un ensemble profini. L’ensemble des dis-
+crétifications de π, qui est un quotient de l’ensemble précédent, hérite d’une topologie
+quotient, qui n’est autre que la topologie quotient du deuxième membre de (6). Cet
+espace n’est pas séparé (Sg,ν est toujours infini), car le groupe Sg,ν ⊂ˆˆSg,ν n’est pas
+fermé. On désigne par Discrét′(π) l’espace topologique séparé associé, s’identifiant à
+Isomlac(ˆπg,ν, π)/Sg,ν, où Sg,ν désigne l’adhérence de Sg,ν dans ˆˆSg,ν. On a d’ailleurs
+un homomorphisme évident ˆSg,ν →ˆˆSg,ν dont l’image est Sg,ν, nous admettrons qu’il
+est injectif et identifierons Sg,ν à ˆSg,ν. Ainsi
+(8)
+Discrét′(π) ≃Isomlac(ˆπg,ν, π)/ ˆSg,ν.
+Un élément de Discrét′(π) s’appelle une classe de discrétifications de π (ou prédiscréti-
+fication de π). Si π0 est une discrétification, on désigne sa classe par π♮
+0. L’ensemble des
+classes de discrétifications de π est un espace homogène sous ˆˆS(π), le stabilisateur de
+91ou encore on définit πg,ν comme le groupe discret de générateurs les xi, yi, lj et de relation de défi-
+nition (4)
+171
+
+--- G103d page 177 ---
+π♮
+0 s’identifiant à l’adhérence de S(π0) = Autlac(π0) dans ˆˆS(π), ou encore à ˆS(π0).
+Celle-ci contient toujours π.
+(9)
+Autlac(π, π♮
+0) ≃ˆS(π0).
+Pourtoute[pré?]discrétificationπ♮
+0,lesous-groupede ˆˆS(π)desautomorphismesàlacets
+qui fixent π♮
+0 est noté ˆS(π♮
+0). C’est donc l’image inverse d’un sous-groupe de ˆˆT(π), noté
+ˆT(π♮
+0).92 On a donc une inclusion de structures d’extensions:
+(10)
+1
+π
+ˆS(π♮
+0)
+ˆT(π♮
+0)
+1
+1
+π
+ˆS(π)
+ˆT(π)
+1.
+(On montre par voie arithmético-géométrique que l’inclusion ˆT →ˆˆT n’est jamais un
+isomorphisme). On trouve ainsi une application
+(11)
+Discrét′(π) →sous-groupes fermés de ˆˆT(π),
+[π♮
+0 7→ˆT(π♮
+0)]
+évidemment compatible à l’action de ˆˆS(π) (transport de structure) – opérant à droite
+via ˆˆT(π) et ses automorphismes intérieurs sur lui-même.
+On trouve ainsi une classe de conjugaison bien déterminée de sous-groupes fermés
+de ˆˆT(π), qu’on appelle ses sous-groupes de Teichmüller “géométriques”. Il se pourrait
+d’ailleurs que ˆTg,ν soit son propre normalisateur dans ˆˆTg,ν ce qui équivaut à l’assertion
+que (11) est bijective: la donnée d’une classe de discrétifications de π serait équivalente
+à celle d’un sous-groupe de Teichmüller géométrique dans son groupe de Teichmüller
+étendu ˆˆT.93
+92NB. L’ensemble des classes de discrétification de π se décrit en termes de groupes extérieurs
+définis par π comme Isomextlac(ˆπg,ν, π) divisé par ˆTg,ν; on a d’ailleurs une application de degré 2
+Isomext(ˆπg,ν, π)/ˆT+
+g,ν →Isomext(ˆπg,ν, π)/ˆTg,ν, ce qui permet pour toute classe de discrétification
+de définir ses deux orientations et de parler des classes de discrétification orientées.
+93c’est complètement déconnant et ultra-faux; un moment d’égarement! Cela apparaît clairement par
+la suite…La question judicieuse (avec laquelle j’ai dû sur le coup confondre) c’est si ˆT est invariant dans
+ˆˆT, i.e. si le normalisateur est ˆˆT tout entier.
+172
+
+--- G103d page 178 ---
+Notons qu’on a des homomorphismes canoniques
+(12)
+ˆˆT
+Hi
+→ˆZ∗
+(13)
+ˆˆT →SI
+(où I = I(π) est l’ensemble des classes de conjugaison des sous-groupes à lacets de π),
+induisant sur ˆT(π♮
+0) des homomorphismes correspondants – d’où la définition des sous-
+groupes ˆˆT
+!
+, ˆˆT
++
+, ˆˆT
+!+
+et de même pour ˆT. Notons que Hi ne prend sur ˆT que les valeurs
+±1.
+Le sous-groupe ˆT+ des automorphismes extérieurs du groupe à lacets profinis π, fix-
+ant une classe de discrétifications π♮
+0 et de multiplicateur +1, joue un rôle très partic-
+ulier. A l’opposé de ce qu’on peut conjecturer sur ˆT (dont ˆT+ est un sous-groupe ouvert
+d’indice 2), on supposerait plutôt que ˆT+ est invariant dans ˆˆT [voir note en bas de page
+précédente]. En tout état de cause, les sous-groupes ainsi définis dans ˆˆT via classes de
+discrétification de π (peut-être n’y en a-t-il qu’un seul et unique!)5 s’appelleront les sous-
+groupes de Teichmüller géométriques stricts. Le choix d’un tel sous-groupe de ˆˆT est, en
+tout état de cause, un élément de structure nettement plus faible que celui d’une classe de
+discrétification, et même que celui d’un sous-groupe de Teichmüller géométrique (pas
+strict). Pour préciser les relations entre ces deux notions, rappelons d’abord que ˆT+ = Σ
+se déduit de ˆT comme noyau de Hi|ˆT : ˆT →{±1}. D’autre part (pour un sous-groupe
+de Teichmüller géométrique strict choisi ˆT+), considérons
+(14)
+NΣ = N = NormˆˆT (Σ)
+où Σ = ˆT+ ([NΣ est] peut-être toujours égal à ˆˆT tout entier), évidemment (si Σ provient
+d’un ˆT)
+(15)
+Σ = ˆT+ ⊂ˆT ⊂NΣ.
+Le groupe profini N/Σ associé à Σ se note ΓΣ (si Σ est unique, on note Γπ), et les ˆT
+donnant naissance au même Σ correspondent à une classe de conjugaison d’éléments
+d’ordre 2 de ΓΣ. Il est clair en tous cas qu’on a une application injective
+{ensemble des sous-groupes de Teichmüller géométriques ˆT dans ˆˆT tels que ˆT+ = Σ}
+173
+
+--- G103d page 179 ---
+↓
+(16)
+{ensemble des éléments d’ordre 2 dans ΓΣ}
+et que son image est stable par conjugaison. Montrons que deux éléments de l’image sont
+conjugués dans ΓΣ. En effet, soient ˆT, ˆT′ ⊃Σ tels que Σ = ˆT+ = ˆT′+. Il existe g ∈ˆˆT
+tel que ˆT′ = Int(g)ˆT, et on aura alors ˆT′+ = Int(g)ˆT+, i.e. g ∈N, OK.
+Les éléments d’ordre 2 ainsi obtenus dans ΓΣ s’appellent les involutions canoniques.
+On en donnera une interprétation conjecturale remarquable plus bas. L’ensemble ˆˆT/N
+s’identifie à l’ensemble des sous-groupes de Teichmüller géométriques stricts (une fois
+choisi l’élément “origine” Σ). Plus intrinsèquement, on aura:
+{Ensemble des sous-groupes de Teichmüller géométriques stricts de ˆˆT(π)}
+↑
+(17)
+Isomlac(ˆπg,ν, π)/Ng,ν
+où on pose, comme de juste,
+(18)
+Ng,ν = NormˆˆTg,ν(ˆT+
+g,ν)
+(peut-être égal à ˆˆTg,ν tout entier !).
+Considérons maintenant le topos modulaire sur Q des courbes algébriques de type
+(g, ν), noté Mg,ν,Q ou simplement Mg,ν. Si nous choisissons un revêtement universel
+g
+Mg,ν (d’où un revêtement universel de Spec Q, i.e. une clôture algébrique Q de Q), on
+peut préciser le π1(Mg,ν,Q) comme le groupe des Mg,ν,Q-automorphismes de ce revête-
+ment et l’appeler le groupe de Teichmüller arithmétique de type (g, ν) (relatif au choix
+de ^
+Mg,ν,Q). On aura donc une suite exacte
+(19)
+1 →π1(Mg,ν,Q) →π1(Mg,ν) →Gal(Q/Q) →1,
+(où Q et les points base sont explicités comme il a été dit). Notons que par la théorie
+transcendante de Teichmüller on a un isomorphisme (défini modulo l’opération induite
+par π1(Mg,ν) sur π1(Mg,ν,Q) ):
+(20)
+π1(Mg,ν,Q) ≃ˆT+
+g,ν
+174
+
+--- G103d page 180 ---
+(où ˆT+
+g,ν est le compactifié profini de T+
+g,ν).
+Considérons d’autre part le schéma Ug,ν sur Mg,ν, courbe de type (g, ν) “uni-
+verselle”. On a donc, en choisissant un revêtement universel g
+Ug,ν de celle-ci au-dessus
+du revêtement universel choisi g
+Mg,ν de Mg,ν, un diagramme commutatif:
+(21 −22)
+1
+π
+π1(Ug,ν)
+π1(Mg,ν)
+1
+1
+π
+ˆˆS(π)
+ˆˆT(π)
+1
+∼
+et de même pour Ug,ν,Q →Mg,ν,Q:
+(21′)
+1 →π →π1(Ug,ν,Q) →π1(Mg,ν,Q) →1.
+On a bien sûr un isomorphisme de groupes à lacets
+(23)
+π ≃ˆπg,ν
+dont on voudrait déterminer l’indétermination de façon précise.
+Notons Mg,ν,C le topos modulaire de Teichmüller complexe, défini à l’aide de la sur-
+face C∞Ug,ν; il est muni du revêtement universel canonique ^
+Mg,ν,C (§21; ^
+Mg,ν,C ≃
+Eg/Ao
+g,ν) de groupe d’automorphismes T+
+g,ν justement - Ug,ν,C étant lui aussi muni d’un
+revêtement universel au-dessus du précédent, ( ]
+Ug,ν,C = Eg/Ao
+g,ν+1). Ceci donne nais-
+sance aux suites exactes des groupes discrets (dans le contexte topologique général)
+(24)
+1
+πg,ν
+S+
+g,ν
+T+
+g,ν
+1
+1
+πg,ν
+Autlac(πg,ν)
+Autextlac(πg,ν)
+1
+∼
+(la première suite s’envoyant dans la seconde par un isomorphisme de structures
+d’extensions [avec les identifications] S+
+g,ν = π1(Ug,ν,C) et T+
+g,ν = π1(Mg,ν,C)) qui
+par passage aux complétés profinis donne la suite exacte analogue pour les multiplicités
+algébriques sur C.
+(25)
+1
+πg,ν
+ˆS+
+g,ν
+ˆT+
+g,ν
+1
+πg,ν
+Autlac(ˆπg,ν)
+Autextlac(ˆπg,ν)
+1.
+175
+
+--- G103d page 181 ---
+Cette situation provient d’ailleurs canoniquement d’une situation analogue sur Q0 =
+clôturealgébriquedeQdansC,lechoixde ]
+Ug,ν,C définissantun ^
+Ug,ν,Q0,d’oùun ^
+Mg,ν,Q0.
+Pour définir un isomorphisme entre cette suite (25) et la suite exacte (21’) (munie canon-
+iquement de deux homomorphismes dans (22)) il faut
+1) choisir un isomorphisme Q ≃Q0 – l’indétermination est dans Gal(Q/Q); ceci
+permet d’identifier Q et Q0;
+2) Choisir un isomorphisme (sur Q = Q0) de (g
+Ug,ν)0 (construit par voie transcen-
+dant sur C et descendu à Q0) avec ]
+Ug,ν,Q – l’indétermination est dans π1(Mg,ν,Q).
+En résumé, on a une classe d’isomorphismes de (21) et (25), définie modulo
+automorphismes intérieurs dans le groupe profini π1(Ug,ν).
+Une fois choisi
+l’isomorphisme Q ≃Q0, les isomorphismes correspondants transforment la
+classe de discrétifications orientée standard de ˆπg,ν en exactement une classe de dis-
+crétifications orientée de π.
+Changeantlechoixdel’isomorphismeensoncomplexeconjugué, ontrouvelaquasi-
+discrétification orientée opposée.
+On voit d’autre part que l’image de π1(Mg,ν,Q) ⊂π1(Mg,ν) dans ˆˆT(π) n’est
+autre que le ˆT+ correspondant à une quelconque des classes de quasi-rigidification dis-
+crètes choisies – le sous-groupe ne dépend pas du choix de cette classe – ce qui ne
+fait qu’exprimer que l’image de π1(Mg,ν,Q) dans ˆˆT(π), considérée comme sous-groupe
+de l’image du groupe plus grand π1(Mg,ν), y est invariante – ce qui résulte du fait
+que π1(Mg,ν,Q) est invariant dans π1(Mg,ν,Q). Ainsi π est muni canoniquement (non
+d’une quasi-rigidification discrète orientée, ce qui dépend du choix d’un isomorphisme
+Q ≃Q0, i.e. d’un plongement Q ,→C), mais du moins d’un groupe de Teichmüller
+géométrique strict Σ ⊂ˆˆT(π), à savoir l’image de π1(Mg,ν,Q) (isomorphe à [??]) Ceci
+posé, on a un homomorphisme canonique d’extensions de groupes
+(26)
+1
+π1(Mg,ν,Q)
+π1(Mg,ν)
+Gal(Q/Q)
+1
+1
+Σ
+NΣ
+ΓΣ
+1,
+où NΣ = NormˆˆT(π)(Σ) et ΓΣ est le groupe des automorphismes extérieurs “arithmé-
+tiques” de π (muni de Σ).
+176
+
+--- G103d page 182 ---
+Pourlechoix d’unisomorphisme Q ≃Q0, i.e. d’unplongement Q ,→C, l’imagede
+la conjugaison complexe de Gal(Q0/Q) n’est autre que l’élément d’ordre 2 de ΓΣ associé
+au sous-groupe de Teichmüller géométrique, associé à la quasi-discrétification (orientée,
+mais peu importe) canonique sur π (définie par Q ≃Q0).
+La conjecture naturelle ici, c’est que
+(27)
+Gal(Q/Q) →ΓΣ
+du groupe de Galois vers les automorphismes extérieurs arithmétiques de (π, Σ) soit un
+isomorphisme. On peut la compléter par la conjecture, encore plus hardie, que de plus
+Σ est invariant dans ˆˆT(π) (⇔Σg,ν invariant dans ˆˆTg,ν), ce qui signifierait donc que
+NΣ = ˆˆT, ou encore que94
+(28)
+π1(Mg,ν)
+∼→ˆˆT(π) = Autextlac(π)
+et Gal(Q/Q) s’identifierait au quotient “arithmétique” du groupe des automorphismes
+extérieurs à lacets de π.
+Soit maintenant U une courbe algébrique de type g, ν sur Q. Elle est définie par un
+point de Mg,ν,Q sur Spec Q, et comme fibre de Ug,ν en ce point. Choisissons un revête-
+ment universel de U, d’où un groupe π(U), canoniquement isomorphe au groupe π
+ci-dessus, une fois choisi un isomorphisme entre g
+Ug,ν et le revêtement universel de Ug,ν
+déduit de eU, ce qui donne une indétermination dans π1(Ug,ν,Q) ≃ˆS+. Ainsi, une fois
+choisi un isomorphisme Q ≃Q0, on trouve sur π1(U) une quasi-discrétification ori-
+entée [voir 8] (évidente d’ailleurs à définir directement, par voie transcendante), changée
+en son opposée par changement de l’isomorphisme Q ≃Q0 par conjugaison complexe.
+D’autre part, le sous-groupe ˆT+ de ˆˆT(π), correspondant à cette quasi-discrétification
+(orientée, peu nous chaut) ne dépend pas du choix de l’isomorphisme en question Q ≃
+Q0, il est canoniquement associé à π en tant que groupe fondamental d’un U sur un
+corps algébriquement clos (N.B. on pourrait prendre un corps algébriquement clos de
+caractéristique zéro quelconque, pas la peine que ce soit sur Q, cf. plus bas).
+Si la conjecture sur Γ est vérifiée, il en résulterait que la donnée d’un groupe profini à
+lacets π de type (g, ν), muni d’un groupe de Teichmüller géométrique strict Σ ⊂ˆˆT(π)
+(ce qui peut-être n’est pas une structure supplémentaire du tout – Σ serait uniquement
+94conjectural!
+177
+
+--- G103d page 183 ---
+déterminé par π!) équivaudrait à la donnée d’une extension algébriquement close Q
+de Q (dont le groupe de Galois serait NˆˆT(Σ)/Σ = ΓΣ) et le Γ0-torseur Isom(Q, Q0)
+s’identifierait à l’ensemble (⊂Isom(ˆπg,ν, π)/ˆT◦
+g,ν) des quasi-rigidifications orientées
+donnant naissance à π…) et d’un revêtement universel de Ug,ν,Q ou simplement d’un
+revêtement universel g
+Ug,ν de Ug,ν = Ug,ν,Q. 95 La donnée d’un isomorphisme Q ≃Q0
+revient donc à celle d’une quasi-rigidification orientée sur π compatible avec Σ (con-
+dition peut-être automatiquement satisfaite…). Ceci dit, la donnée d’une courbe al-
+gébrique de type g, ν sur un corps algébriquement clos Q, et d’un revêtement universel
+de celle-ci reviendrait à la donnée d’une donnée précédente (à savoir un revêtement uni-
+versel d’un Mg,ν, plus un point de Mg,ν,Q sur Q définissant un revêtement universel) 96 ,
+et cette dernière donnée s’identifierait à un germe de scindage dans l’extension
+1 →π1(Mg,ν,Q) →π1(Mg,ν) →π1(Q) →1.
+L’interprétation profinie (en termes des groupes extérieurs à lacets π) est alors un (π, Σ),
+et un germe de scindage de
+1 →Σ →NΣ →ΓΣ →1.
+Si on veut une courbe sur une sous-extension finie K′ de Q/Q, correspondant à un sous-
+groupe d’indice fini Γ′ ⊂ΓΣ, il s’agira d’un scindage partiel Γ′ →NΣ.
+Mais sûrement, si cette description des courbes algébriques anabéliennes est pleine-
+ment fidèle, elle n’est pas 2-fidèle, i.e. il faut des conditions sur ce scindage, qu’il faudra
+examiner par la suite.
+La description d’une courbe algébrique de type g, ν sur un corps fixé, de type fini
+sur Q, K quelconque, muni d’une extension algébriquement close K (donc Γ =
+Gal(K/K) →Γ0 = Gal(Q/Q), où Q est la clôture algébrique de Q dans K), en ter-
+mes de Γ ←Γ0, serait la suivante: donnée d’un groupe extérieur à lacets π de type g, ν,
+d’un sous-groupe de Teichmüller Σ dans ˆˆT(π), d’un isomorphisme Q ≃corps défini
+par cette situation (ayant comme groupe de Galois NΣ/Σ, de sorte qu’on trouve un iso-
+morphisme Γ0 ≃NΣ/Σ), enfin d’un relèvement de Γ →Γ0 (qui décrit une action
+arithmétiquement extérieure de Γ sur (π, Σ)) en une action extérieur Γ →NΣ de Γ
+95si on se donne seulement π comme groupe extérieur, avec Σ, ce qui revient à la donnée d’un revête-
+ment universel de Mg,ν.
+96NB. Si on renonce à choisir eU, ceci revient à travailler avec les groupes à lacets extérieurs.
+178
+
+--- G103d page 184 ---
+sur (π, Σ) avec des conditions qu’il faudra essayer de dégager (nécessaires et suffisantes
+conjecturalement) sur ce relèvement.
+Notons que tout plongement K
+,→
+C définit canoniquement sur le groupe
+extérieur π = π1(UK) une quasi-discrétification orientée, remplacée par l’opposée
+quand on remplace le plongement par le complexe conjugué. Je dis que ces quasi-
+discrétificationsdéfinissenttoutesΣcommegroupedesautomorphismesetquelaquasi-
+discrétificationdéfinieparK ,→CnedépendquedesarestrictionenQ ,→C–defaçon
+plus précise, c’est celle qu’on définit directement à l’aide de Q ,→C, i.e. de Q ≃Q0.
+Mais il y a lieu d’examiner aussi la façon d’obtenir des discrétifications. Ainsi, si un U
+est défini sur Q0, [c’est] un π extérieur de type (g, ν), muni d’une quasi-discrétification
+orientée π♮+
+0 , et d’un germe de scindage de
+1 →Σ →NΣ →ΓΣ →1,
+où Σ = Autextlac(π, π♮+
+0 ), qui fait opérer extérieurement le noyau du groupe défini par
+ΓΣ sur π, les points rationnels sur Q0 correspondant aux classes de π-conjugaison des
+germes de relèvement de cette opération extérieure en une vraie opération. Supposons
+donc donné un tel point, i.e. on a un sous-groupe ouvert Γ ⊂ΓΣ qui opère bel et bien
+sur π, l’opération définie mod automorphismes intérieurs (lui-même unique car πΓ =
+{1}!) Dans cette situation, il faudrait définir dans π ≃π1(UP, P) une discrétification
+orientée π0 ⊂π, et pas seulement une quasi-discrétification orientée! (Bien sûr, elle doit
+être dans la classe qu’on s’est donnée d’avance de discrétifications orientées, qu’on avait
+justement notée π♮+
+0 . On y reviendra – ainsi qu’à la situation analogue sur un corps de
+base K de type quelconque…)
+Je réfère au début du § suivant (§27) pour le changement de terminologie, la “quasi-
+discrétification” devenant une “prédiscrétification”. Mais il y a lieu d’introduire aussi
+une notion plus fine, correspondant au cas d’un π1 (profini) d’une variété algébrique
+X définie sur un corps algébriquement clos K, quand on plonge K dans C: il y a une
+discrétification mod automorphismes intérieurs – on l’appellera une prédiscrétification
+stricte. Dans le cas d’un π à lacets, l’espace homogène sous ˆˆT(π) de celles-ci s’identifie à
+Isomlac(ˆπg,ν, π)/(ˆπg,νDotTg,ν) ≃Isomextlac(ˆπg,ν, π)/Tg,ν,
+et cette action également ne dépend que du groupe profini à lacets extérieur défini par
+179
+
+--- G103d page 185 ---
+πg,ν, et équivaut à celle d’une “base extérieure” de π mod action de Tg,ν, i.e. d’un iso-
+morphisme de π avec le ˆπg,ν “type”, mod action de Tg,ν. L’application
+Bases extérieures de π →Prédiscrétifications de (π)
+fait donc du membre de gauche un torseur relatif à droite sur celui de droite, de groupe
+Tg,ν.
+Une prédiscrétification de (π, Σ) correspond à un choix d’un isomorphisme de la
+clôture algébrique Q(π,Σ) = Q associé à (π, Σ), avec Q0. Quand on se donne (π, Σ)
+comme correspondant à une courbe algébrique sur Q, i.e. qu’on se donne un germe de
+relèvement de ΓΣ dans NΣ ⊂ˆˆT(π), i.e. un germe d’actions extérieures de ΓΣ sur π,
+toute prédiscrétification doit donner naissance à une discrétification stricte et même à
+une discrétification quand on remonte un germe d’action (“admissible”) de ΓΣ sur π…
+180

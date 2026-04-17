@@ -1,0 +1,57 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Node (thinkgentile is a separate repo; this matters if any JS lands here)
+node_modules/
+
+# Heavy source material — available from the Montpellier archive and the Bourbaki archive,
+# not useful to version here.
+raw_pdf/*.pdf
+raw_pdf/single_pages/
+G103d.pdf
+
+# Rendered images (re-derivable from the PDFs via scripts)
+images/
+experiments/pilot/images/
+experiments/pilot/images_150dpi/
+experiments/pilot/strips/
+experiments/pilot/viewer_pages/
+
+# Delivery/packaging artifacts
+*.zip
+share/mateo_update_*/
+!share/*.md
+
+# Internal mega-dashboards (80+ MB; not interesting to history)
+experiments/pilot/pilot_dashboard.html
+experiments/pilot/pilot_viewer.html
+experiments/pilot/benchmark_v2_dashboard.html
+experiments/pilot/production_dashboard.html
+experiments/pilot/viewer_dashboard.html
+
+# Ephemeral work areas
+mateo_tmp/
+
+# PowerPoint / local tool exports
+*.pptx
+
+# Long private drafts (work-in-progress, not for public repo)
+notes/2026-03-05_blogpost_draft_grothendieck_ocr.md
+notes/2026-03-05_email_draft_mateo_pilot_results.md
+notes/2026-03-05_scientific_article_draft_vlm_math_ocr.md
+
+# Scratch
+experiments/bourbaki_p1.png
+

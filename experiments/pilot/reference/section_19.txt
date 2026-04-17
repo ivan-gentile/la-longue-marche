@@ -1,0 +1,840 @@
+Section: § 19. — TOUR DE TEICHMÜLLER
+G103d pages: 114-130
+
+--- G103d page 114 ---
+§ 19. — TOUR DE TEICHMÜLLER
+Soit g ∈N et Xg une surface compacte connexe orientable de genre g. Soit (ag,i)i∈N
+une suite de points distincts de Xg. On pose pour ν ∈N
+(1)
+Sg,ν = {ag,i|0 ≤i ≤ν −1}
+(ν = card Sg,ν)
+(2)
+Ug,ν = Xg \ Sg,ν
+N.B. on a ag,ν ∈Ug,ν.
+On a donc Sg,0 = ∅et Ug,0 = Xg.
+Les Sg,ν forment une suite strictement croissante de parties finies de Xg et les Ug,ν
+une partie strictement décroissante d’ouverts de Xg. On prendra par la suite Ug,ν comme
+surface orientable type, de type (g, ν).
+(3) Soit Ag = Aut(Xg) le groupe des automorphismes de Xg muni de la topologie
+de la convergence uniforme de u et de son inverse. On pose
+(4)
+Ag,ν = {u ∈Ag|u(Sg,ν) = Sg,ν}
+on a un isomorphisme canonique (de restriction)63
+(5)
+Ag,ν
+∼
+−→Aut(Ug,ν)
+on a aussi un morphisme canonique surjectif
+(6)
+Ag,ν →Aut(Sg,ν) ≃Sν
+63N.B. C’est sans doute un isomorphisme topologique quand Ag,ν est muni de la topologie induite par
+Ag et Aut(Ug,ν) de la topologie habituelle de la convergence compacte de u et de son inverse.
+
+--- G103d page 115 ---
+dont le noyau est noté A!
+g,ν
+(7)
+A!
+g,ν = {u ∈Ag|u(ag,i) = ag,i∀i ∈{0, . . . , ν −1}}
+d’où la suite exacte :
+(8)
+1 →A!
+g,ν →Ag,ν →Sν →1
+Soit A◦
+g,ν la composante neutre du groupe Ag,ν on a donc :
+(9)
+A◦
+g,ν(= A!◦
+g,ν) ⊂A!
+g,ν
+Posons
+(10)
+Γg,ν = Ag,ν/A◦
+g,ν = π0(Ag,ν)
+groupe de Teichmüller de type g, ν)
+On pose aussi Γg = Γg,0(= Γ!
+g,0)
+(11)
+Γ!
+g,ν = A!
+g,ν/A◦
+g,ν
+la suite exacte (8) donne donc une suite exacte.
+(12)
+1 →Γ!
+g,ν →Γg,ν →Sν →1
+On a des homéomorphismes canoniques :
+(13) Ag/Ag,ν ≃ouvert Symν(Xg)∗du produit symétrique (Symν(Xg)) formé des
+parties finies de card ν(= Pν(Xg)).
+(14) Ag/A!
+g,ν ≃ouvert (Xν
+g )∗des ν-uples de points distincts ≃Mon(Iν, X2) (ou
+Iν = {0, 1, . . . , ν}).
+(Cet homéomorphisme respectant les actions naturelles de Sν = Ag,ν/A!
+g,ν).
+Les A!
+g,ν pour ν variable forment une suite décroissante de sous-groupes de Ag.
+(15)
+Ag = A!
+g,0 ⊃A!
+g,1 ⊃A!
+g,2 ⊃· · · ⊃A!
+g,ν ⊃. . .
+et les homomorphismes correspondants entre espaces homogènes de Ag s’insèrent dans
+le diagramme commutatif :
+(16)
+Ag/A!
+g,ν
+Mon(Iν, X)
+0 ≤ν′ ≤ν
+Ag/A!
+g,ν
+Mon(Iν′, X)
+110
+
+--- G103d page 116 ---
+pour ν = 1 on a A!
+g,1 = Ag,1 et l’isomorphisme (13) (ou au choix (14)) s’écrit
+(17)
+Ag/Ag,1 ≃Xg
+(homéomorphisme compatible avec les actions de Ag).
+D’ailleurs si à tout x ∈Xg on associe son stabilisateur Ag,x dans Ag on trouve une
+application évidemment surjective
+(18) Xg
+→ensemble des conjugués du sous groupe Ag,1 de Ag(≃
+Ag/ NormAg(Ag,1))
+qui s’identifie via (17) à l’application canonique sur les espaces homogènes
+Ag/Ag,1 →Ag/ NormAg(Ag,1)
+déduite de l’inclusion Ag,1 ⊂NormAg(Ag,1).
+On voit de suite que (18) est bijective i.e. que
+(19)
+Ag,1 = NormAg(Ag,1)
+Plus généralement pour tout ν on a
+(20)
+Ag,ν = NormAg(Ag,ν) = NormAg(A!
+g,ν)
+Ce qui signifie que les applications canoniques de Ag-ensembles homogènes :
+Pν(Xg)
+ensemble des conjugués de Ag,ν
+(21)
+S
+stabilisateur Ag,S de S
+(22)
+S
+A!
+g,S
+sont non seulement surjectives mais même bijectives. Cela provient du fait que l’on
+retrouve S en termes de Ag,S (ou de A!
+g,S) :
+(23)
+S
+= {x ∈Xg|u(x) = x
+∀u ∈A!
+g,S} = X(A′
+g,S)
+(24)
+= {x ∈Xg|Ag,Sx fini}
+= {x ∈Xg|Ag,Sx ̸= Xg}
+111
+
+--- G103d page 117 ---
+On a aussi une application canonique d’espaces homogènes sous Ag
+Pν(Xg)
+Ensemble des conjuguées de A◦
+g,ν dans Ag(≃Ag/ NormAg(A◦
+g,ν))
+(25)
+S
+A◦
+g,S
+qui est bijective car on a la relation suivante qui renforce (23) et (24) : ∀S ∈Pν(Xg)
+(26)
+S
+= {x ∈Xg|A◦
+g,S = {x}} = X
+A◦
+g,S
+g
+= {x ∈Xg|A◦
+g,Sx fini}
+= {x ∈Xg|A◦
+g,Sx ̸= Xg}
+ainsi pour tout ν
+(27)
+Ag,ν = NormAg(Ag, ν) = NormAg(A!
+g,ν) = NormAg(A◦
+g,ν)
+Soi G un groupe topologique, muni d’une classe de conjugaison X de sous-groupes
+; soit G1 dans cette classe. On dit que (G, X) est un couple de Teichmüller de type g, s’il
+existe un isomorphisme de groupes topologiques G ≃Ag, transformant X en la classe
+de conjugaison de Ag,1
+Il revient au même de dire que X avec sa topologie d’espace homogène sous G
+(≃G/G1) est une surface compacte connexe orientable de genre g, et que l’application
+naturelle
+(28)
+G →Aut(X)
+est un homéomorphisme de groupes topologiques.
+On voit alors que (G, X) 7→X de la catégorie des couples de Teichmüller de type
+g, vers la catégorie des surfaces compactes orientables de genre g est une équivalence de
+catégorie. Il en résulte que pour un automorphisme u du groupe topologique G, u est
+intérieursietseulementsiuconservelaclasseX i.e. sietseulementsiU(G1)estconjugué
+de G2.
+D’ailleurs le centre de G est trivial.
+112
+
+--- G103d page 118 ---
+On peut donner une description analogue pour la catégorie des surfaces orientées de
+genre g à ν trous (i.e. homéomorphismes à Ug,ν) en termes d’un groupe topologique Gv
+(≃Ag,ν) et d’une classe de conjugaison Uν de sous-groupes Hν de celui-ci (≃Ag,ν ∩
+Ag,ν+1) avec les conditions que (Gν, {Hν}) soit isomorphe à (Ag,ν, {Ag,ν ∩Ag,ν+1})
+ou encore que l’homomorphisme continu
+(29)
+G →Aut(Uν)
+soit un homéomorphise de groupes topologiques. On trouve alors une équivalence entre
+la catégorie des couples de Teichmüller (Gν, {Hν}) de type (g, ν), et celle des surfaces
+orientables de type (g, ν). On trouve encore que les automorphismes d’un tel Gν (≃
+Ag,ν) qui fixent la classe Uν (i.e. qui transforme Hν en un conjugué) sont intérieurs et
+que le centre de Hν est {1}.
+En fait Uν peut être interprété aussi comme espace homogène sous G◦
+ν et pas seule-
+ment sous Gν ; plus généralement on a que G◦
+ν est transitif sur Uν et même sur Pν′(Uν)
+pour tout ν′ ∈N∗.
+Revenant à la situation type avec Ug,ν, ou trouve :
+(30)
+Ug,ν
+≃Ag,ν/Ag,(ν,ν+1) (avec Ag,(ν,ν+1) = Ag,ν ∩Ag,ν+1)
+≃A◦
+g,ν/Bg,(ν,ν+1)
+(avec Bg,(ν,ν+1) = Ag,ν+1 ∩A◦
+g,ν = {u ∈A◦
+g,ν tel que u(ag,ν) = ag,ν}).
+On a ainsi un diagramme d’inclusion de sous-groupes de Ag,ν : (en posant Bg,ν =
+A◦
+g,ν ∩A!
+g,ν+1 et en remarquant que A◦
+g,ν+1 = B◦
+g,ν = (A!
+g,ν+1)◦)
+(31)
+A◦
+g,ν+1
+Bg,ν
+A!
+g,ν+1
+Ag,(ν,ν+1) [
+Ag,ν+1]
+A◦
+g,ν
+A!
+g,ν
+Ag,ν
+Γ!
+g,ν
+inv.
+Sν
+inv.
+πg,ν
+Γ!
+g,ν
+inv.
+Sν
+inv.
+où les 2 carrés sont cartésiens et les inclusions horizontales (sauf celle entre crochets) sont
+des inclusions de sous groupes invariants (invariant même dans le groupe le plus grand
+Ag,ν (resp. Ag,ν+1)).
+113
+
+--- G103d page 119 ---
+(L’égalité B◦
+g,ν = (A!
+g,ν+1)◦, (qui précise l’inclusion triviale de B◦
+g,ν dans (A!
+g,ν+1)◦
+par l’inclusion inverse équivalente à (A!
+g,ν+1)◦⊂B◦
+g,ν) provient de l’inclusion
+(A!
+g,ν+1)◦⊂(A!
+g,ν)◦= A◦
+g,ν,
+d’où
+A◦
+g,ν+1 ⊂Ag,ν+1 ∩A◦
+g,ν = Bg,ν).
+On notera dorénavant Ag,(ν,ν+1) par A•
+g,ν (comme Ag,ν ponctué par ag,ν).
+Les trois inclusions verticales définissent trois espaces homogènes et les homomor-
+phismes d’inclusions entre ceux-ci qui sont bijectifs
+(Ag,ν ≃)
+Ag,ν/A•
+g,ν
+A!
+g,ν/A!
+g,ν+1
+A◦
+g,ν/Bg,ν
+∼
+∼
+et de même les groupes quotient Sν et Γ!
+g,ν définis par les inclusions de la première ligne
+son isomorphes par les inclusions verticales aux quotients correspondants dans la deux-
+ième ligne. Ainsi l’extension de groupe
+(12)
+1 →Γ!
+g,ν →Γg,ν →Sν →0
+peut se déduire indifféremment de la 1ère ligne ou de la 2ème ligne de (31) en particulier
+Sν ≃A•
+g,ν/A!
+g,ν+1
+(32)
+Γg,ν ≃A•
+g,ν/Bg,ν
+Γ!
+g,ν ≃A!
+g,ν+1/Bg,ν
+Ainsi le torseur canonique e groupe A•
+g,ν sur l’espace homogène Ug,ν et celui de groupe
+A!
+g,ν+1(⊂A·•
+g,ν) qui lui donne naissance sont l’un et l’autre déduit par extension du
+groupe structural d’un torseur de groupe Bg,ν (dont la fibre en x ∈Ug,ν est l’ensemble
+des u ∈A◦
+g,ν tel que u(ag,ν) = x). Le revêtement galoisien associé de groupe Bg,ν/B◦
+g,ν
+est donc aussi l’espace homogène A◦
+g,ν/A◦
+g,ν+1 qui est évidemment connexe et ponctué
+au dessus de ag,ν ∈Ug,ν.
+Posons pour (g, ν) ̸= (1, 0) et (g, ν) ̸= (0, 2).
+(13)
+eUg,ν = A◦
+g,ν/A◦
+g,ν+1
+On a le théorème :
+114
+
+--- G103d page 120 ---
+Théorème. — eUg,ν est simplement connexe (et même contractile si (g, ν) ̸= (0, 0)) et
+s’identifie donc au revêtement universel de Ug,ν ponctué en ag,ν.
+Corollaire. — On a un isomorphisme canonique
+(34)
+Bg,ν/B◦
+g,ν ≃π1(Ug,ν; ag,ν)
+def= πg,ν
+Démonstration du théorème en termes de choses “bien connues”.
+La suite exacte d’homotopie pour la fibration de A◦
+g,ν sur A◦
+g,ν+1/A◦
+g,ν+1 ≃eUg,ν est
+(35)
+. . .
+πi+1(eUg,ν)
+πi(A◦
+g,ν+1)
+πi(A◦
+g,ν)
+πi(eUg,ν)
+πi−1(A◦
+g,ν+1) . . .
+. . . π1(A◦
+g,ν+1)
+π1(A◦
+g,ν)
+π1(eUg,ν)
+1
+Elle montre que π1(eUg,ν) est isomorphe au conoyau de π1(A◦
+g,ν+1) →π1(A◦
+g,ν) dont le
+noyau est un quotient de π2(eU ◦
+g,ν)…
+Si (g, ν) ̸= (0, 0) on sait que πi(eUg,ν) = 0 ∀i ≥2 d’où si (g, ν) ̸= (0, 0) on a
+(36)
+πi(A◦
+g,ν+1) →πi(A◦
+g,ν)
+est bijectif si i ≥2, injectif à image invariante si i = 1 et l’on veut prouver que c’est
+bijectif pour i = 1.
+La chose à retenir (?) est celle ci :
+Théorème (bien connu). — Conditions équivalentes sur le couple (g, ν) ∈N × N:
+a) 2g + ν ≥3 (i.e. on n’est pas dans les cas : (1, 0), (0, 0), (0, 1), (02)).
+b) π1(Ug,ν) est non abélien.
+c) A◦
+g,ν est simplement connexe.
+d) A◦
+g,ν est contractile et (g, ν) ̸= (0, 1).
+En tous cas, que ces condition soient ou non vérifies, on a πi(A◦
+g,ν) = 0 si i ≥2, et (g, ν) ̸=
+(0, 0).
+115
+
+--- G103d page 121 ---
+(i.e. les A◦
+g,ν sont des espaces classifiants de groupes discrets, avec la seule exception
+de A◦
+0,0 ≃Aut◦S2).
+Compte tenu de (36) ce théorème équivaut aux relations :
+(37)
+πi(A◦
+g,0) = 0
+si g ≥2, i ≥1 (i.e. pour g ≥2Ag,0 est cotractile)
+πi(A◦
+g,0) = 0
+pour i ≥1 (i.e. A◦
+1,1 est contractile)
+πi(A◦
+0,1) = 0
+pour i ≥1 (i.e. A◦
+0,1 est contractile)
+(38)
+πi(A◦
+1,0) = 0 et πi(A◦
+0,1) = 0 pour i ≥2
+i.e A◦
+1,0 A◦
+0,1 sont des K(π, 1)
+etellesontcommeconséquencesque eUg,ν estsimplementconnexedanslescasanabéliens
+(2g + ν ≥3). Pour savoir ce qu’il en est dans le cas abélien, il faut préciser la structure
+topologique de A◦
+g,ν dans les 4 cas “abéliens” 2g + ν ≤2.
+Or on a le
+Corollaire. — Pour que U = Ug,ν soit à πi abélien (i.e. ne satisfasse pas aux conditions
+équivalentes du théorème) il faut et il suffit que U puisse :
+Soit être muni d’une structure de groupe topologique (qui sera nécessairement iso-
+morphe à U × U (U = {z/|z| = 1}), (cas (1, 0)) et C∗(cas (0, 2) ou C (cas
+(0, 1)))).
+Soit d’une structure d’espace homogène sous un groupe topologique (on peut pren-
+dre SO(3, R) ou Gl(1, C) pour le cas de S2) par un sous groupe connexe. Dans
+tous les cas le groupe topologique en question peut se décrire e la façon suivante : on
+choisit une structure complexe sur Xg = bUg,ν = bU (le compactifié pur de U) et
+on prend la structure complexe induite sur U (i.e. on choisit une structure de courbe
+algébrique (sur C) sur U…) et on prend G = Aut◦
+C U composante neutre du groupe
+des automorphismes complexes de U i.e. des automorphismes complexes qui invari-
+ent Sν = bU \ U.
+116
+
+--- G103d page 122 ---
+Ceci posé, l’inclusion G ,→Aut◦U ≃A◦
+g,ν est une équivalence d’homotopie.6465
+Le corollaire nous donne :
+(39)
+G = U × U
+π1(A◦
+1,0) = Z × Z
+i.e.
+A◦
+1,0 ≃K(Z × Z, 1)
+G = C∗= Gl(1, C)
+π1(A◦
+0,2) ≃Z
+i.e.
+A◦
+0,2 ≃K(Z, 1)
+G = Aff(1, C)
+π1(A◦
+0,1) ≃Z
+i.e.
+A◦
+0,1 ≃K(Z, 1)
+(Aff(1, C) homotope à C∗par l’inclusion Gl(S2) ⊂Aff(1, C))
+A◦
+0,0 = Aut(S2) ≃Aut(P1
+C)
+esthomotopeparl’inclusionausousgroupeGP(1, C)(doncàsonsousgroupecompacte
+maximal SO(3, R)/{±1}) qui n’est pas un K(π, 1) et dont le π1 est ≃Z/2Z.
+On va utiliser ce corollaire pour déterminer la nature de eUg,ν (comme revêtement de
+Ug,ν) pour les cas “abéliens”.
+Notons pour ceci que l’inclusion G ,→A◦
+g,ν induit une inclusion G0 ,→Bg,ν où
+(40)
+G0 = G ∩Bg,ν = stabilisateur de ag,ν dans G
+et comme G/G0 ≃A◦
+g,ν/Bg,ν ≃Ug,ν (G étant transitif sur Ug,ν), on trouve que le fait
+que G →A◦
+g,ν soit une équivalence d’homotopie équivaut à celle que G0 ,→Bg,ν en
+soit une. Or dans tous les cas envisagés, G0 est déjà connexe : il est réduit à 1 dans les
+cas (1, 0) et (0, 2) (donc dans ce cas le corollaire équivaut à la contractibilité de Bg,ν) et
+64N.B. Le fait que si U est un espace homogène de groupe topologique par un sous groupe connexe
+alors π1 est abélien provient de la suite exacte d’homotopie et du fait que le π1 d’un groupe topologique
+est commutatif. Le réciproque dans le cas des surfaces topologiques est assez remarquable !
+65On a un résultat plus précis : si k est le plus petit entier tel que (g, ν + k) soit un couple anabélien,
+alors dim G = k et G est simplement transitif sur l’ensemble des k-uples (u1, . . . , uk) de points distincts
+de Ug,ν d’où il résulte aussitôt que tout élément de Ag,ν s’écrit de façon unique comme un produit gu
+avec g ∈G et u ∈Ag,ν,ν+k ; donc Ag,ν est homéomorphe à Ag,(ν,ν+k) × G. Comme G est connexe on
+en conclut Γg,ν ≃Γg,(ν,ν+k) ⊂Γg,ν+k, et A◦
+g,ν ≃G × A◦
+g,ν+k et comme A◦
+g,ν+k est ∞-connexe on e
+conclut un homotopisme G
+≈
+−→A◦
+g,ν.
+117
+
+--- G103d page 123 ---
+c’est ≃C∗dans le cas (0, 1), enfin c’est Aff(1, C) dans le cas (0, 0). Donc on trouve le
+corollaire :
+Corollaire. — Dans les cas abéliens 2g + ν < 3 (et dans ceux-là seulement bien
+sûr) Bg,ν est connexe (i.e. = A◦
+g,ν+1) i.e. A◦
+g,ν/A◦
+g,ν+1 →Ug,ν est un homéomorphisme.
+Donc A◦/A◦
+g,ν+1 →Ug,ν fait du premier membre un revêtement universel de Ug,ν si et
+seulement si (g, ν) ̸= (0, 2) et ̸= (1, 0).
+Supposons donc (g, ν) différent de (0, 1) et (0, 2) (moralement on travaille dans le
+cas anabélien, les cas abéliens inclus (0, 1) et (0, 0) étant sans intérêt pour ce qui va suivre
+il me semble).
+Reprenons le diagramme (31) où dans la 1ère ligne le groupe quotient Bg,ν/B◦
+g,ν
+s’identifie donc à πg,ν = π1(Ug,ν, ag,ν).
+On trouve donc :
+Théorème. — Supposons (g, ν) ̸= (1, 0) et (0, 2), le sous groupe A•
+g,ν/A◦
+g,ν+1
+du groupe de Teichmüller Γg,ν+1 = Ag,ν+1/A◦
+g,ν+1 admet une suite de composition
+de longueur 3 dont les facteurs successifs sont Sν, Γ!
+g,ν et πg,ν, déduite d’une structure
+d’extension sur Γ!
+g,ν+1 = A!
+g,ν+1/A◦
+g,ν+1
+(41)
+1 →πg,ν →Γ!
+g,ν+1 →Γ!
+g,ν →1
+LesopérationsextérieuresdeΓ!
+g,ν surπg,ν sontcellesdéduitesparpassageauquotient
+de celles de A!
+g,ν ⊂Aut(Ug,ν) opérant extérieurement sur πg,ν. Une autre façon de dire
+leschosesestcelle-ci: distinguonsdansΓg,ν+1 opérantsurSν+1 lestabilisateurdudernier
+élément ag,ν, i.e. de son complémentaire ; soit Γ′
+g,ν+1 ≃A•
+g,ν/A◦
+g,ν+1 le sous-groupe
+d’indice ν + 1 image inverse de Sν dans Sν+1 par Γg,ν+1 →Sν+1. Ceci posé on a un
+homomorphism évident de groupes discrets, déduit de l’inclusion A◦
+g,ν ,→Ag,ν+166
+(42)
+Γ′
+g,ν+1 →Γg,ν
+et cet homomorphisme est surjectif (sans condition sur (g, ν)) et pour (g, ν) ̸= (1, 0) et
+(0, 1) son noyau est canoniquement isomorphe à πg,ν de sorte que l’on a une extension
+(43)
+1 →πg,ν →Γ′
+g,ν+1 →Γg,ν →1
+66N.B. c’est un isomorphisme dans le cas abéliens 2g + ν ≤2.
+118
+
+--- G103d page 124 ---
+où les opérations extérieurs correspondants de Γg,ν sur πg,ν sont celles déduites par pas-
+sage au quotient de celles de Ag,ν ≃Aut(Ug,ν) sur π1(Ug,ν, ag,ν) = πg,ν. La structure
+d’extension (41) est déduite de (43) par image inverse par l’inclusion Γ!
+g,ν →Γg,ν.
+Supposons que l’on soit dans le cas anabélien 2g + ν ≥3. Comme pour toute
+structured’extensionparunnoyaudecentretrivial,ilyaunhomomorphismecanonique
+dans la structure d’extension canonique associée à πg,ν
+(44)
+1
+πg,ν
+Γ′
+g,ν+1
+Γg,ν
+1
+1
+πg,ν
+Aut(πg,ν)
+Autext(πg,ν)
+1
+où la flèche verticale centrale s’obtient en associant à g ∈Γ′
+g,ν+1 la restriction à πg,ν ⊂
+Γ′
+g,ν+1 de l’automorphisme intérieur int(g).
+Théorème (bien connu). — Dans le cas anabélien (2g + ν ≥3)67
+Γg,ν
+∼
+−→Autextlac(πg,ν)
+ou ce qui revient au même par (44) :
+Γ′
+g,ν+1
+∼
+−→Autlac(πg,ν)
+L’image de Γg,ν →Autext(πg,ν) est formé des automorphismes extérieurs qui respectent
+la structure à lacets de Γg,ν (condition vide si ν = 0 d’ailleurs…)
+Corollaire. —DanslecasanabélienlefoncteurX 7→π1(X)delacatégorieisotopique
+(les fèlches dans la catégorie isotopique sont les classes d’isotopie d’homéomorphisme) des
+surfaces de type (g, ν) vers la catégorie des groupes extérieurs à lacets de type (g, ν) est une
+équivalencedecatégorie,ainsiquelefoncteur(X, s) 7→π1(X, s)delacatégorieisotopique
+des surfaces ponctuées de type (g, ν) vers la catégorie des groupes à lacets de type (g, ν)68.
+Il reste à examiner dans quelle mesure on peut adapter ces résultats au cas “abélien”.
+Rappelons que dans ce cas on a
+(45)
+Γ′
+g,ν+1
+∼
+−→Γg,ν
+si
+2g + ν ≤2
+(cas “abélien”)).
+67N.B. En fait ceci reste vrai pour le couple (1, 0) (cf. plus bas) et même dans le cas (0, 2) si on définit
+ad-hoc la notion de groupe à lacets de type (0, 2).
+68N.B. C’est même une équivalence au niveau des catégories ∞-isotopiques ce qui exprime seulement le
+fait que A◦
+g,ν et A◦
+g,ν+1 sont contractiles.
+119
+
+--- G103d page 125 ---
+i.e. Γg,ν s’identifie au sous-groupe de Γg,ν+1 formé des éléments qui fixent ag,ν.
+(1)) Cas g = 1, ν = 0 donc Γ1,0 ≃Γ′
+1,1 = Γ1,1.
+Considérons l’homomorphisme canonique
+(46)
+Γ1 = Γ1,0 →Autext(π1,0) = Aut(π1,0)
+( ≃
+Gl(2, Z) quand on a choisi une base de π0,1
+≃
+Z2), qui correspond à
+l’homomorphisme
+(46bis)
+Γ1,1 →Aut π1(U1,0, a1,0)
+(≃Gl(2, Z))
+déduits l’un et l’autre par passage au quotient à partir des opérations évidentes de A1 =
+A1,0 = Aut(X1) et de A1,1 = Aut(X1, a1,0). Il est immédiat que ce homomorphisme
+est surjectif mais moins évident que ce soit un isomorphisme i.e. que tout homéomor-
+phisme de X1 qui induit l’identité sur π1 soit isotope à l’identité ; c’est pourtant un ré-
+sultat vrai (et connu).
+Dans le cas actuel où X1 s’identifie à l’espace topologique sous-jacent à un groupe
+topologique H (ce qui est le cas dans tous les cas abéliens sauf celui de g = 0, ν = 0 de
+la 2-sphère), par translation on a un homomorphisme naturel
+(47)
+H →Ag,ν ≃Auttop H
+permettant d’identifier H à un sous-groupe topologique de Ag,ν et on trove que
+l’application
+(48)
+H × Ag,ν+1
+Ag,ν
+(g, u)
+gu
+est un homéomorphisme.
+Ceci redonne (45) (puisque H est connexe) et le précise considérablement par
+(49)
+πi(Ag,ν+1) ≃πi(Ag,ν) × πi(H)
+Cas abéliens non sphériques i.e. un des trois cas (1, 0), (0, 1), (0, 2).
+120
+
+--- G103d page 126 ---
+Dans le cas “limites” (1, 0) et (0, 2) (quand (g, ν) est abélien et (g, ν +1) anabélien)
+comme A◦
+g,ν ≃H × A◦
+g,ν+1 contractile, on retrouve que H →A◦
+g,ν est un homo-
+topisme. Notons que dans les cas anvisagés (1, 0), (0, 2), (0, 1), si on choisit une struc-
+ture complexe sur le compactifié pur b
+X de X = Ug,ν et qu’on choisit ag,ν comme orig-
+ine, il y a une structure de groupe C-algébrique unique sur X admettant ag,ν comme
+unité et la composante neutre du groupe des automorphismes de la variété algébrique X
+n’est autre justement que le groupe des translations dans les cas limites (1, 0) et (0, 2).
+2) Cas g = 0, ν = 2 donc H = C∗, Ag,ν ≃H × A•
+g,ν+1 i.e. A0,2 ≃C∗× A•
+0,3
+donc
+Γ0,2 ≃Γ′
+0,3
+(50)
+A◦
+0,2
+C∗
+(équivalence d’homotopie)
+≈
+Ici π0,2 = π1(U0,2) ≃Z, considérons
+(51)
+Γ0,2
+ρ
+−→Aut(π0,2) ≃{±1} = S2
+s’identifiant à
+(52)
+Γ′
+0,3 →Aut(π0,2) ≃{±1}
+Cette fis-ci l’homomorphisme (51) n’est pas bijectif, il s’identifie à l’homomorphisme
+canonique.
+(51bis)
+Γ0,2
+ρ
+−→S2
+de noyau Γ!
+0,1 et Γ!
+0,2 n’est pas réduit à 1, par exemple (si on prend U0,2 = C∗) z →z
+définit un élément de Γ!
+0,2 qui n’est pas égal à 1. Notons maintenant l’homomorphisme
+canonique69 (défini sans restriction sur (g, ν))
+(53)
+Γg,ν
+χ
+−→{±1}
+via l’action de Γg,ν sur le moule d’orientation Tg = T de Ug,ν (qui se définit pour
+(g, ν) ̸= (0, 0), (0, 1) et (0, 2) en termes de la structure à lacets de πg,ν). Dans le cas
+actuel mettant ensemble ρ et χ on trouve un homomorphisme
+(54)
+g 7→(ρ(g), χ(g)) : Γ0,2 →S2 × {±1} ≃{±1} × {±1}
+69Cet homomorphisme est toujours surjectif. Nous noterons son noyau Γ+
+g,ν (et non plus Γ◦
+g,ν !)
+121
+
+--- G103d page 127 ---
+qui est évidemment surjectif (si g correspond à z →z−1 son image est (−1, 1), s’il
+correspond à z →z, son image est (1, −1)). Je dis qu’il est bijectif
+Γ0,2
+S × {±1}
+∼
+ρ,χ
+oucequivientaumême, quelarestrictiondeρ(51bis)aunoyauΓ+
+0,2 deχ : Γ0,2 7→{±1}
+est un isomorphisme ou ce qui revient au même
+Théorème (bien connu !). — Γ!+
+0,2 = 1, ou encore ρ+
+0,2 : Γ+
+0,2 →S2 est un isomor-
+phisme (ou χ!
+0,1 : Γ!
+0,2
+∼
+−→{±1})70.
+[N. B. Si on veut un énoncé commun aux deux cas “abéliens limites” (1, 0) et (0, 2)
+on dira que dans ce cas Γ+
+g,ν →Aut(π) est injectif, et a comme image le groupe des
+automorphismes du Z-module libre π de rang 2 ou 1 qui sont de déterminant égal à 1].
+Ceci équivaut, modulo l’isomorphisme Γ′
+0,3 ≃Γ0,2 au
+Corollaire. —
+(56)
+
+
+
+Γ+
+0,3
+ρ+
+0,3
+−−→S
+est un isomorphisme et
+Γ0,3
+(ρ0,3,χ0,3)
+−−−−−−→S3 × {±1}
+aussi.
+3) Cas g = 0, ν = 1 donc H ≃C donc
+(57)
+A0,1
+C × A0,2 = C × C∗× A0,3
+homéo
+(avecC × C∗= Aff(1, C) (qui est simplement transitif sur les couples d’éléments dis-
+tincts)) en prenant sur A0,3 une structure de groupe algébrique complexe ≃C71.
+On a ici Γg,1 ≃Γ′
+g,2 = Γ!
+g,1 ≃{±1} i.e. :
+Corollaire. — On a par la signature un isomorphisme :
+(58)
+Γ0,1
+{±1}
+χ
+∼
+70N.B. Ceci suggère que pour une description isotopique de la catégorie des surfaces de types (0, 2) il
+faut utiliser le couple de (π1(X), T) où T est le module d’orientation ; itou plus bas pour le cas du type
+(0, 1) mais alors π1 = 0 et il suffit de T.
+71N. B. Comme A◦
+0,3 est contractile cela redonne bien que l’inclusion de G = Aff(1, C) = AutC(X)◦
+dans Ag,1 est un homotopisme.
+122
+
+--- G103d page 128 ---
+4) Cas g = 0, ν = 0. Ici il n’y a pas de H, i.e. de structure de groupe topologique
+sur X ≃X0 = U0,0 ≃S2 mais prenant une structure complexe sur X (d’où
+X ≃P1
+C) on trouve un groupe G de C-automorphismes, G = GP(1, C), et
+(59)
+G ,→A0 = A0,0
+Prouvons à nouveau que c’est un homotopisme. Comme G est simplement transitif sur
+les triples de 3 points distincts de X0, on trouve encore un homéomorphisme
+(60)
+G × A!
+0,3
+A0
+(g, u)
+gu
+∼
+d’où
+Γ0 ≃Γ!
+0,3 ≃{±1}
+et compte tenu que la composante neutre A◦
+0,3 de A!
+0,3 est contractile on trouve bien
+encore que (59) est un homotopisme.
+Conclusion commune à tous les cas.
+Il convient d’inclure dans la notion de “groupe à lacets” également les quatre cas
+abéliens, et on le fait de la manière suivante :
+1) Type (1, 0) : on n’a pas à compléter la définition générale qui revient à dire ici que
+π est un groupe abélien, Z-module libre de rang 2. Son module d’orientation T
+peut se définir alors comme H2(π, Z) ou comme V2
+Z π. La signature d’un auto-
+morphisme de π est donné par son action su T, c’est aussi son déterminant.
+2) Type (0, 2) : π ≃Z. Ici il faut se donner en plus de π, un Z-module inversible T et
+la structure à lacets est définie par l’ensemble des deux isomorphismes T ≃Z. Un
+automorphisme de la structure à lacets est donc défini par n’importe quel couple
+(uπ, uT) d’un automorphisme de π et d’un de T.
+3) Types (0, 1) et (0, 0) qui sont ceux où π1 = {1}. Par définition, une struc-
+ture de groupe à lacets de type (g, ν) est définie ici par la donné d’un “module
+d’orientation” sans plus, qui est un Z-module inversible T ; et il faut donner de
+plus le type i.e. (sous entendu g = 0) le ν ∈{0, 1} ; les automorphismes sont
+ceux de T.
+123
+
+--- G103d page 129 ---
+Avec ces définitions et pour g, ν fixés on a le
+Théorème. — Soit (g, ν) ∈N × N, le foncteur naturel de la catégorie isotopique des
+surfaces de type (g, ν) vers la catégorie des groupes extérieures à lacets de type (g, ν) est une
+équivalence de catégorie. (N.B. Comme flèches on prend les classes d’isomorphisme d’un
+coté comme de l’autre.)
+Maiscethéorèmen’estpassûrpleinementsatisfaisantdanslecasabélienparexemple.
+La donnée d’un objet de la catégorie isotopique (explicité par son π1 extérieur à lacets)
+dans le cas d’une action d’un groupe ne permet pas même de récupérer l’extension de ce
+groupe par le dit π1 ! Ce qui cloche, on le sent bien, est le fait que cette équivalence de
+catégorie soit isotopique (i.e. tient compte des π0 des espaces d’homéomorphismes) mais
+néglige la structure topologique interne des espaces topologiques Homeo(X, X′), en
+négligeantlastructurehomotopiquedescomposantesconnexesqui, entantquetorseurs
+sous des groupes topologiques ≃A◦
+g,ν, sont homéomorphes à A◦
+g,ν. C’est justement
+dans le cas anabélien et dans celui là seulement que ce groupe est ∞-connexe. Dans le cas
+abélien, l’expérience prouve que la description précédente doit être remplacée par celle
+de Ladegaillerie en termes des
+BD∗→BU
+ou
+πD∗→TU
+elle devient alors (dans tous les cas sauf (0, 0)) ∞-fidèle (i.e. tient compte des πi(A◦
+g,ν)72)
+Le seul cas entièrement réfractaire (d’importance il faut bien dire !) est celui du type
+(0, 0) i.e. des surfaces homéomorphes à S2 le type d’homotopie de
+A◦
+0 = A+
+0 ≃GP(1, C) ≡S3/ ± 1
+(quaternions)
+et en particulier ses πi n’étant pas tous bien connus.
+Il faudrait pour commencer expliciter la Gr-catégorie G, d’invariant π0 ≃{±1}
+et π1 ≃π1(A◦
+0) ≃{±1}, déduit de A0 en tuant les groupes d’homotopie supérieurs
+πi(i ≥2) de A0 ou, si l’on préfère, du groupe des automorphismes conformes de P1
+C (ex-
+tension scindée de Z/2Z par GP(1, C)). La 2-catégorie 2-isotopique des surfaces homó-
+morphesàP1
+C estalorsdécriteparle2-groupoïdedes1-torseurssouslaGr-catégorieprécé-
+dente73.
+72N.B. Il n’y a pas à se donner un k ici, T se décrit intrinsèquement à partir de la structure de topos ou
+de groupoïde.
+73On peut supposer que G n’a que deux objets correspondant à l’identité et à la conjugaison complexe
+124
+
+--- G103d page 130 ---
+de la sphère de Riemann bC ; en fait elle est scindable et même canoniquement scindée…
+125

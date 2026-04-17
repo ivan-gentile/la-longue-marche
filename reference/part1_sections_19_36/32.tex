@@ -1,0 +1,478 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 32. --- RETOUR SUR LES ASPECTS ARITHMÉTIQUES DU BOUCHAGE DE TROUS~: RELATIONS ENTRE $\boldsymbol{\Gamma}_{g,\nu}$ et $\boldsymbol{\Gamma}_{g,\nu - 1}$}\thispagestyle{empty}
+\addcontentsline{toc}{section}{{\bf 32.} Retour sur les aspects arithmétiques du bouchage de trous~: relations entre $\boldsymbol{\Gamma}_{g,\nu}$ et $\boldsymbol{\Gamma}_{g,\nu - 1}$}
+\label{sec:32}
+\section*{}
+
+Bien sûr, on a que
+$$
+\mathcal{N}_{g,\nu} \to \mathfrak{S}_\nu
+$$
+est surjectif (puisque $\mathfrak{T}_{g,\nu}\to\mathfrak{S}_\nu$ l'est), donc on aura
+$$
+1\to\mathcal{N}_{g,\nu}^! \to \mathcal{N}_{g,\nu}\to\mathfrak{S}_\nu \to 1
+\leqno(1)
+$$
+et le diagramme cartésien de sous-groupes de $\hat{\hat{\mathfrak{T}}}_{g,\nu}$~:
+\[\begin{tikzcd}
+	{\hat{\mathfrak{T}}^+_{g,\nu}} && {\mathcal{N}_{g,\nu}} \\
+	\\
+	{\hat{\mathfrak{T}}^{!+}_{g,\nu}} && {\mathcal{N}^!_{g,\nu}}
+	\arrow[hook, from=3-1, to=1-1]
+	\arrow[hook, from=1-1, to=1-3]
+	\arrow[hook, from=3-1, to=3-3]
+	\arrow[hook, from=3-3, to=1-3]
+\end{tikzcd}
+\leqno{(2)}\]
+[$\mathcal{N}_{g,\nu}= \mathcal{N}_{g,\nu}^! \cdot \hat{\mathfrak{T}}_{g,\nu}^+$] donnera un isomorphisme
+$$
+\mathcal{N}_{g,\nu}^!/\hat{\mathfrak{T}}^{!+}_{g,\nu}\isommap \mathcal{N}_{g,\nu}/\hat{\mathfrak{T}}^+_{g,\nu}=\boldsymbol{\Gamma}_{g,\nu}.
+\leqno(3)
+$$
+Dans le cas d'un $(\pi,a)$, ($\pi$ groupe extérieur à lacets, $a$ une arithmétisation), on aura de même~:
+$$
+\begin{cases}
+\mathcal{N}^!_a / \hat{\mathfrak{T}}^+_a\isommap\mathcal{N}_a / \hat{\mathfrak{T}}^+_a =\boldsymbol{\Gamma}_a \\ 
+\mathcal{N}_a=\mathcal{N}^!_a \hat{\mathfrak{T}}^+_a.
+\end{cases}
+\leqno(4)
+$$
+Considérons maintenant pour tout $i\in I$ le stabilisateur $\mathcal{N}_i$ de $i$ dans $\mathcal{N}$, et le groupe à lacets (pas extérieur~!) $\pi_i$, de type $(g,\nu-1)$, déduit de $\pi$ par ``bouchage du trou $i$''\footnote{On écrit ici $\mathcal{N}$ etc. au lieu de $\mathcal{N}_a$~; on suppose $(g,\nu-1)$ aussi anabélien, i.e. $2g+\nu\ge4.$}. On a alors, pour une discrétification choisie $\alpha$ compatible avec l'arithmétisation, un homomorphisme injectif
+$$
+\pi_i' \xlongrightarrow{\phi_i} \hat{\mathfrak{T}}^{+!}\subset \mathcal{N}^!\subset \hat{\hat{\mathfrak{T}}}_i,
+\leqno(5)
+$$
+tel que le composé
+$$
+\pi_i' \to\hat{\hat{\mathfrak{T}}}_i \to \hat{\hat{\mathfrak{S}}}(\pi_i') (\hookleftarrow \pi_i')
+$$
+soit l'inclusion canonique. Ceci posé, on veut\footnote{Plutôt, \emph{il est vrai que~!}} que l'image de (5) (qui n'est peut-être pas invariante dans $\hat{\mathfrak{T}}_i$) soit \emph{invariante dans} $\mathcal{N}_i$,\footnote{Cela signifie aussi que $\phi_i$ ne dépend pas du choix de la discrétification de classe $\alpha$\dots} ou ce qui revient au même, dans $\mathcal{N}^!$ (car $\mathcal{N}_i=\mathcal{N}^! \cdot \hat{\mathfrak{T}}_i^+$, or $\hat{\mathfrak{T}}_i^+$ invarie cette image). Revenant à la situation 
+universelle, cela signifie~:
+\vskip .3cm
+\noindent (5') $\mathcal{N}_{g,\nu}^!\subset \hat{\hat{\mathfrak{T}}}_{g,\nu}$ est contenu dans le normalisateur des $\pi_i'\hookrightarrow\hat{\mathfrak{T}}^{!+}_{g,\nu}$ ($1\le i\le \nu-1$), qui sont donc invariants dans $\mathcal{N}^!_{g,\nu}$\footnote{Il suffit me semble-t-il de le prouver pour \emph{un} $i$ pour le déduire pour les autres.}
+De plus, $\hat{\hat{\mathfrak{T}}}^!_{g,\nu}\xlongrightarrow{\psi_i}\hat{\hat{\mathfrak{S}}}^!_{g,\nu-1}$ induit un \emph{isomorphisme}
+$$ 
+\mathcal{N}_{g,\nu}^!\isommap M_{g,\nu-1}^!.
+\leqno(6)
+$$
+Cette assertion se décompose en deux~: tout d'abord que $\psi_i$ applique bien $\mathcal{N}^!_{g,\nu}$ dans $M^!_{g,\nu}$ --- et ceci résulte de la définition arithmético-géométrique de ces groupes --- cela implique d'autre part, puisque $\psi_i$ induit aussi un isomorphisme
+$$
+\hat{\mathfrak{T}}^+_{g,\nu}\isommap\hat{\mathfrak{S}}^+_{g,\nu-1},
+$$
+qu'il induit un homomorphisme
+\[\begin{tikzcd}
+	{\boldsymbol{\Gamma}_{g,\nu}} & {\boldsymbol{\Gamma}_{g,\nu-1}} \\
+	{\mathcal{N}_{g,\nu}/\hat{\mathfrak{T}}^+_{g,\nu}} & {M_{g,\nu-1}/\hat{\mathfrak{S}}}
+	\arrow[rightarrow, "{\lambda_i}", from=1-1, to=1-2]
+	\arrow["\wr"', from=2-1, to=1-1]
+	\arrow["\wr", from=2-2, to=1-2]
+\end{tikzcd}\leqno{(7)}\]
+et l'injectivité (resp. surjectivité) de (6) équivaut à celle de (7). D'ailleurs (7) s'insère, par construction, dans un diagramme commutatif~:
+\[\begin{tikzcd}
+	& {\Gamma_{\mathbf{Q}}} \\
+	{\boldsymbol{\Gamma}_{g, \nu}} && {\boldsymbol{\Gamma}_{g, \nu - 1}}
+	\arrow["{\theta_{g, \nu}}"', from=1-2, to=2-1]
+	\arrow[from=2-1, to=2-3]
+	\arrow["{\theta_{g, \nu - 1}}", from=1-2, to=2-3]
+\end{tikzcd}\leqno{(8)}\]
+avec $\theta_{g,\nu}$ et $\theta_{g,\nu-1}$ surjectifs, donc il est bel et bien évident que (6) est \emph{surjectif}. La bijectivité signifie que $\theta_{g,\nu}$ et $\theta_{g,\nu-1}$ ont même noyau (alors qu'a priori il se pourrait que $\theta_{g,\nu}$ ait un noyau plus petit, i.e. corresponde à une représentation de $\boldsymbol{\Gamma}_{\mathbf{Q}}$ ``moins infidèle'' que $\theta_{g,\nu-1}$).  D'ailleurs, il est évident (même, a priori, sans utiliser la définition ailleurs explicitée de $\mathcal{N}_{g,\nu}$) que l'homomorphisme $\lambda_i$ de (7) ne dépend pas du choix de $0\le i\le \nu-1$ --- par exemple puisque l'on passe de l'un à l'autre en appliquant des opérations de $\hat{\mathfrak{T}}^+$ (puisque $\hat{\mathfrak{T}}^+$ opère transitivement sur $I$) et que $\hat{\mathfrak{T}}^+$ opère trivialement dans $\boldsymbol{\Gamma}_{g,\nu}$\dots
+
+On peut dire que (6) décrit $M^!_{g,\nu-1}$ (donc $\mathcal{N}^!_{g,\nu-1}$) en termes de $\mathcal{N}_{g,\nu}$ --- mais l'inverse est moins clair, faute de savoir si $\hat{\hat{\mathfrak{T}}}_{g,\nu}\xlongrightarrow{\psi_i}\hat{\hat{\mathfrak{S}}}_{g,\nu-1}$ est injectif~; si on le savait, on pourrait décrire $\mathcal{N}^!_{g,\nu}$ comme l'image inverse de $M^!_{g,\nu-1}$\dots Il ne serait pas impossible d'ailleurs que (6) soit faux, i.e. que les $\theta_{g,\nu}$ soient infidèles, mais de moins en moins quand on fait augmenter $\nu$ --- en passant à la limite projective $\theta_{g,\infty}$, seulement, aurait-on (peut-être~!) une représentation fidèle de $\boldsymbol{\Gamma}_{\mathbf{Q}}$~?  Mais jusqu'à indication contraire, je préfère travailler hypothétiquement avec (6), ce qui s'exprime par les suites exactes fondamentales\footnote{On pourrait l'inclure dans une suite exacte un peu plus grande, avec $(\mathcal{N}_{g,\nu})_i$ et $\mathcal{N}_{g,\nu-1}$\dots}
+$$
+1\to\hat\pi_{g,\nu-1}\xlongrightarrow{\phi_i} \mathcal{N}^!_{g,\nu}\xlongrightarrow{\psi'_i}\mathcal{N}^!_{g,\nu-1}
+\to 1
+\leqno(9)
+$$
+qui étend la suite exacte
+$$
+1\to\hat\pi_{g,\nu-1}\xlongrightarrow{\phi_i} \hat{\mathfrak{T}}^!_{g,\nu}\xlongrightarrow{\psi'_i} \hat{\mathfrak{T}}^!_{g,\nu-1}\to 1
+\leqno(10)
+$$
+(et tient lieu de la suite exacte peut-être défaillante
+$$
+1\to\hat{\pi}_{g,\nu-1}\to\hat{\hat{\mathfrak{T}}}^!_{g,\nu}
+\to\hat{\hat{\mathfrak{T}}}^!_{g,\nu-1}\to 1
+\quad ??).
+$$
+Quand $(\pi,a)$ est un groupe extérieur à lacets muni d'une arithmétisation --- ce qu'on pourrait appeler une ``courbe algébrique virtuelle'' --- alors ce qui précède permet de définir, sur chacun des $\pi'_i$ de type $(g,\nu-1)$ associés aux $i\in I(\pi)$, une arithmétisation canoniquement associée à $a$, soit $a_i$, et on trouve alors une suite exacte
+$$
+1\to \pi'_i\to(\mathcal{N}_a)_i\xlongrightarrow{\psi_i}\mathcal{N}_{a^+_i}\to 1
+\leqno(11)
+$$
+telle que l'on ait
+$$
+(\hat{\mathfrak{T}}^+_a)_i=\psi^{-1}_i(\hat{\mathfrak{T}}^+_{a'_i}),
+\leqno(12)
+$$
+induisant
+\[\begin{tikzcd}
+	1 & {\pi'_i} & {\mathcal{N}^!_a} & {\mathcal{N}^!_a} & 1 \\
+	&& {\hat{\mathfrak{T}}^{+!}_a = {\psi'_i}^{-1}(\hat{\mathfrak{T}}^{+!}_{a_i})} & {\hat{\mathfrak{T}}^{+!}_{a'_i}}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow["{\psi^!_i}", from=1-3, to=1-4]
+	\arrow[hook, from=2-3, to=1-3]
+	\arrow[from=1-4, to=1-5]
+	\arrow[hook, from=2-4, to=1-4]
+\end{tikzcd}\leqno{(11')}\]
+et induisant par passage au quotient
+$$
+\boldsymbol{\Gamma}_a \isommap \boldsymbol{\Gamma}_{a_i}.
+\leqno(13)
+$$
+De plus, l'application canonique
+$$
+{\operatorname{Discrét}}^+(\pi)\to{\operatorname{Discrét}}^+(\pi'_i)
+$$
+définit par passage aux quotients
+$$
+\mathbb{P}_a \isommap \mathbb{P}_{a_i}
+\leqno(14)
+$$
+compatible avec les actions de $\boldsymbol{\Gamma}_a$, $\boldsymbol{\Gamma}_{a'_i}$ et (13).
+
+Je ne fais ici aucune assertion sur une soi-disant bijectivité entre ensemble des arithmétisations de $\pi$, et ensemble des arithmétisations de $\pi'_i$ --- ce qui reviendrait à la bijectivité de
+$$
+\hat{\hat{\mathfrak{T}}}/\mathcal{N}_a\to\hat{\hat{\mathfrak{S}}}'/M_{a'} \isom \hat{\hat{\mathfrak{T}}}'/\mathcal{N}_{a'},
+$$
+qui n'aurait guère de raison d'être que si on admettait $\hat{\hat{\mathfrak{T}}}(\pi)\isommap \hat{\hat{\mathfrak{S}}} (\pi'_i)$, qui me semble bien problématique.
+
+\emph{Cependant, on trouve, par le foncteur ``bouchage de trous'', une équivalence entre la catégorie des groupes profinis à lacets } {\bf extérieurs arithmétisés} \emph{de type $(g,\nu)$, et des groupes profinis à lacets (pas extérieurs!) } {\bf arithmétisés}, \emph{de type $(g,\nu-1)$}.
+
+On peut se proposer d'essayer de préciser le type de propriétés qui vont caractériser $\mathcal{N}_{g,\nu}$ dans $\mathcal{N}'_{g,\nu}={\Norm}_{\hat{\hat{\mathfrak{T}}}_{g,\nu}}(\hat{\mathfrak{T}}^+_{g,\nu})$, ou encore $\boldsymbol{\Gamma}_{g,\nu}$ dans $\boldsymbol{\Gamma}'_{g,\nu}=\mathcal{N}'_{g,\nu}/\hat{\mathfrak{T}}^+_{g,\nu}$. On a des homomorphismes naturels
+$$
+\begin{cases}
+\boldsymbol{\Gamma}'_{g,\nu}\to{\Autext}(\hat{\mathfrak{T}}^+_{g,\nu}) \\
+	 \boldsymbol{\Gamma}'_{g,\nu}\to{\Autext}(\hat{\mathfrak{T}}^{+!}_{g,\nu}) 
+\end{cases}
+\leqno(15)
+$$
+et je présume que $\boldsymbol{\Gamma}_{g,\nu}$ pourra se décrire comme image inverse d'un sous-groupe fermé convenable de l'un ou de l'autre des seconds membres, i.e. qu'on peut le décrire en termes des propriétés d'opérations extérieures sur $\hat{\mathfrak{T}}^+_{g,\nu}$ ou sur $\hat{\mathfrak{T}}_{g,\nu}$. Les conditions (e) en tout cas, sont bien de ce type (propriété de normaliser des sous-groupes invariants $\pi'_i$ de $\mathfrak{T}^{+!}_{g,\nu}$\dots). Bien sûr, on pourrait poser des conditions sur des automorphismes extérieurs (de ${\hat{\mathfrak{T}'}}^{+!}_{g,\nu}$, disons), qui soient stables par passage successifs à des ${\hat{\mathfrak{T}'}}^{+!}_{g, \nu-1}$, ${\hat{\mathfrak{T}'}}^{+!}_{g,\nu'-1}$ etc\dots et qui soient engendrées par les conditions (5') et (6). Mais il n'est pas dit du tout que cela suffira à décrire les $\boldsymbol{\Gamma}_{g,\nu}\subset\boldsymbol{\Gamma}'_{g,\nu}$, ne serait-ce que parce que la condition devient vide pour le cas limite $\nu=0$ (si $g\ge 2$~; ou pour les cas $g=1$, $\nu=1$, ou $g=0$, $\nu=3$). Il est possible qu'il faille faire intervenir des propriétés des $\pi_1$ des $M_{g,\nu,\overline{\mathbf{Q}}}$, liées à la compactification. Ce n'est guère que dans le cas de $(g,\nu)=(0,3)$ qu'il ne faut pas s'attendre du tout à ce genre de condition.
+
+Appelons ``courbe algébrique potentielle'' (sous-entendu,  sur une clôture algébrique non précisée de $\mathbf{Q}$) la donnée d'un groupe extérieur profini $\pi$ à lacets de type $(g,\nu)$, muni d'une arithmétisation $a$, et d'un germe de relèvement ``admissible''
+$$
+\boldsymbol{\Gamma}_a^\natural \to \mathcal{N}_a.
+\leqno(16)
+$$
+Elles forment une catégorie (pour les isomorphismes, pour le moment)~; si on se donne un torseur $P$ sous $\boldsymbol{\Gamma}_{g,\nu}$ (ce qui, moralement, revient à se donner une clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$\dots) les courbes potentielles de type $(g,\nu)$ \emph{relatives} à ce torseur (moralement, correspondant à des courbes algébriques sur $\overline{\mathbf{Q}}$\dots) sont celles munies en plus d'un isomorphisme (``intérieur'')
+$$
+\mathbb{P}_a\isommap P
+\leqno(17)
+$$
+(définissant un isomorphisme
+$$
+\boldsymbol{\Gamma}_a\to \Gamma_P={\Aut}_{\boldsymbol{\Gamma}_{g,\nu}}(P).)
+\leqno(18)
+$$
+Cette fois-ci, on s'attend à trouver des ensembles d'isomorphismes \emph{finis}, au lieu de torseurs sous des groupes profinis considérables \footnote{Le cas où $P$ est le torseur trivial est celui des $\pi$ [extérieurs ?] munis d'une \emph{prédiscrétification} orientée $\alpha$~; d'où une suite exacte~: $1\to\hat{\mathfrak{T}}_\alpha\to\hat{\mathcal{N}}_\alpha\to\boldsymbol{\Gamma}_\alpha\to 1$}.
+
+On considère les \emph{points} de $\pi$, comme les classes de $\pi$-conjugaison de relèvements ``admissibles'' de (16) en
+$$
+\boldsymbol{\Gamma}_a^\natural\to M_a\subset \hat{\hat{\mathfrak{T}}}(\pi)
+\leqno(19)
+$$
+i.e. un germe de vraie action de $\boldsymbol{\Gamma}_a$ sur $\pi$ avec $\pi^{\boldsymbol{\Gamma}_a^\natural}=1$ ceci pour l'admissibilité.
+
+Question liminaire. --- La connaissance de $\pi$, de $\Sigma_a=\hat{\mathfrak{T}}^+_a\subset \hat{\hat{\mathfrak{T}}}(\pi)$, et d'un sous-groupe $\Gamma\subset \hat{\hat{\mathfrak{T}}}(\pi)$ (normalisant $\Sigma_a$, tel que $\Gamma'\cap\Sigma_a=\{1\}$) permet-elle de retrouver l'arithmétisation de $\pi$ --- et, pour commencer, de retrouver $\mathcal{N}_a$ (dans lequel $\Gamma \cdot \Sigma$ est d'indice fini)~? Il suffirait, pour pouvoir répondre par l'affirmative, de savoir que tout isomorphisme extérieur $\pi\to\pi_{g,\nu}$, qui envoie $\Sigma$ sur $\hat{\mathfrak{T}}_{g,\nu}=\Sigma_{g,\nu}$, et tout sous-groupe d'indice fini $\Gamma'\cdot\Sigma$ de $\mathcal{N}_a$ dans $\mathcal{N}_{g,\nu}$, est compatible avec les arithmétisations. Or ceci revient exactement à~:
+\begin{itemize}
+	\item[(g)] (facultatif, quand-même!) Pour tout sous-groupe ouvert $\mathcal{N}'$ de $\mathcal{N}_{g,\nu}$, les éléments de $\hat{\hat{\mathfrak{T}}}_{g,\nu}$ normalisant $\hat{\mathfrak{T}}_{g,\nu}$ et qui transportent $\mathcal{N}'$ dans $\mathcal{N}_{g,\nu}$, sont dans $\mathcal{N}_{g,\nu}$ (a fortiori $\mathcal{N}_{g,\nu}$ serait son propre normalisateur dans ${\rm Norm}_{\hat{\hat{\mathfrak{T}}}_{g,\nu}}(\hat{\mathfrak{T}}_{g,\nu})$).
+\end{itemize}
+Avec les ``points de $U$'' (définis comme classes de conjugaison de relèvements (19)) ``admissibles'' i.e. satisfaisant (20), on fait un groupoïde, ayant comme groupe fondamental extérieur $\pi$, et sur lequel $\Gamma\subset \mathcal{N}_a$ opère strictement (NB. pour se reposer, on se donne maintenant $\Gamma$ lui-même, pas seulement un germe --- moralement, cela signifie qu'on a une courbe définie sur une sous-extension finie $K$ de $\overline{\mathbf{Q}}/{\mathbf{Q}}$\dots Les points fixes de $\Gamma$ correspondent aux points rationnels sur $K$, les points fixes sous un sous-groupe fermé $\Gamma'$ aux points rationnels sur la sous-extension $K'$ de $\overline{\mathbf{Q}}/{\mathbf{Q}}$ associée à $\Gamma'$\dots)
+
+Soit maintenant $I'\subset  I=I(\pi)$ une partie de $I$, stable par $\Gamma$.  On trouve par ``bouchage de trous en $I'$'' un groupe extérieur à lacets $\pi'$, et un homomorphisme extérieur
+$$
+\pi\to\pi'.
+\leqno(20)
+$$
+D'ailleurs $\pi'$ hérite d'une arithmétisation $a'$ par $\pi$ --- et on aura
+$$
+\begin{cases}
+\boldsymbol{\Gamma}_a\isommap \boldsymbol{\Gamma}_{a'} \\
+      P \isom \mathbb{P}_a\isommap\mathbb{P}_{a'} 
+\end{cases}
+\leqno(21)
+$$
+donc $\pi'$ est défini sur la même $P$ que $\boldsymbol{\Gamma}_a$ (i.e. en faisant des trous dans $U$ pour trouver $U'$, on n'a pas dérangé le corps de base algébrique absolu $\overline{\mathbf{Q}}$\dots).  D'ailleurs on aura un homomorphisme canonique
+$$
+\hat{\hat{\mathfrak{T}}}(\pi)\to\hat{\hat{\mathfrak{T}}}(\pi')
+$$
+induisant
+\[\begin{tikzcd}
+	{\mathcal{N}_a} && {\mathcal{N}_{a'}} \\
+	\\
+	{\hat{\mathfrak{T}}_a} && {\hat{\mathfrak{T}}_{a'}}
+	\arrow[from=3-1, to=3-3]
+	\arrow[from=1-1, to=1-3]
+	\arrow[hook, from=3-1, to=1-1]
+	\arrow[hook, from=3-3, to=1-3]
+\end{tikzcd}\leqno{(22)}\]
+(induisant justement $\boldsymbol{\Gamma}_a\to\boldsymbol{\Gamma}_{a'}$ par passage aux quotients), et on trouve, en composant
+$$
+\Gamma\hookrightarrow \mathcal{N}_a\to\mathcal{N}_{a'}
+$$
+un homomorphisme également injectif
+$$
+\Gamma\hookrightarrow \mathcal{N}_{a'}
+\leqno(23)
+$$
+qui est une quasi-section de $\mathcal{N}_{a'}$ sur $\boldsymbol{\Gamma}_{a'}$. Donc sous réserve d'admissibilité, on trouve sur $\pi'$ une structure de courbe algébrique potentielle, relative au même $P$.  
+
+Je suis vraiment gêné aux entournures, faute d'avoir une  définition en forme d'``admissible'' --- je vais y revenir très vite --- mais pour le moment, j'ai envie de noter que, si $I'\ne\emptyset$, le groupe extérieur $\pi'$ peut se décrire par un vrai groupoïde, ayant $I'$ comme ensemble d'objets, et sur lequel $\Gamma$ opère en sens strict (ceci est de l'algèbre pure, indépendamment des histoires d'arithmétisation\dots) Le fait que $\Gamma$ opère trivialement sur les $i'\in I'$ implique que pour tout $i'\in I'$, on a un homomorphisme canonique
+$$
+\Gamma\to \pi'(i')
+\leqno(24)
+$$
+qui relève son action extérieur, d'où une classe de $\pi'$-conjugaison de relèvements de l'action extérieure de $\Gamma$ sur $\pi'$ en une vraie action de $\Gamma$ sur $\pi'$ --- on espère qu'elle satisfait $\pi'^\Gamma=1$ --- et on a donc une application canonique
+$$
+I'\to{\operatorname{Pts}}(\pi',\alpha',\Gamma).
+\leqno(25)
+$$
+\emph{Je dis que cette application est injective}. Ceci est ``évident'' quand on interprète ``action extérieure admissible'' par ``réalisable par une vraie courbe algébrique'', et ``relèvements admissibles'' par ``réalisables par des vrais points rationnels sur $K$, corps des invariants de $\Gamma$''\footnote {On est ramené au cas ${\operatorname{Card}}(I')=2$\dots}. Mais on voudrait bien sûr des raisons internes à la donnée des $(\mathcal{N}_{g,\nu})$, et des propriétés de ces données~! Ce point étant admis (en mettant entre parenthèses les deux définitions essentielles d'admissibilité, sur lesquelles on va revenir plus bas) on trouve un foncteur ``bouchage de trous'' (il faut faire aussi les restrictions anabéliennes habituelles)~:
+\vskip .3cm
+Courbes algébriques potentielles \\ Courbes algébriques potentielles
+
+sur $P$ relatives à un sous-groupe ouvert $\Gamma$
+$\ \ \to \ \ \quad \ $ sur $P$ relatives à $\Gamma$
+
+de $\boldsymbol{\Gamma}_P$, et munies d'un ensemble \\  munies d'une partie de l'ensemble
+
+$I'$ de points à l'infini \quad\quad\quad\quad
+des ``points invariants sous $\Gamma$''
+\vskip .3cm
+et sauf erreur, il est devenu évident que ce foncteur est une \emph{équivalence de catégories} [pour les isomorphismes] et comme conséquence, il y a le foncteur en sens inverse~: forer des trous en des ``points'' invariants sous $\Gamma$ (ou en des points quelconques, quitte à passer à un $\Gamma'$ plus petit).
+
+Mais je me rends compte que ce n'est pas du tout évident --- je vais essayer d'élucider la situation axiomatiquement. On a fixé un genre $g$, on suppose donné, pour $\nu$ variable (tel que $(g,\nu)$ anabélien) des sous-groupes fermés $\mathcal{N}_{g,\nu}\subset \hat{\hat{\mathfrak{T}}}_{g,\nu}$, normalisant $\hat{\mathfrak{T}}_{g,\nu}$, et satisfaisant la condition essentielle que les $\psi_i:\hat{\hat{\mathfrak{T}}}_{g,\nu}\to\hat{\hat{\mathfrak{S}}}_{g,\nu-1}$ induisent
+$$
+M_{g,\nu}\isommap M_{g,\nu-1},
+$$
+ce qui permet de définir la notion d'arithmétisation d'un $\pi$ profini de type $(g,\nu)$ anabélien, et la théorie du bouchage d'un nombre quelconque de trous, et du forage d'un seul trou, dans la catégorie des groupes de type $(g,\nu)$ arithmétisés.
+
+On suppose d'autre part donné une sous-catégorie pleine\footnote{On la supposera stable par passage à des sous-groupes ouverts.} de la catégorie des groupes profinis (qui pourrait se réduire aux sous-groupes ouverts de $\boldsymbol{\Gamma}_g$, valeur commune des $\boldsymbol{\Gamma}_{g,\nu}$, ou des sous-groupes ouverts du groupe $\boldsymbol{\Gamma}_a$, $a$ une arithmétisation), et une notion d'opérations extérieures ``admissibles'' de tels $\Gamma$ sur des $\pi$ arithmétisés. On suppose
+\begin{itemize}
+	\item[(1)] Si $\Gamma$ opère admissiblement sur $\pi$,
+tout sous-groupe ouvert aussi (et inversement)
+	\item[(2)] Si\footnote{Il suffit de la poser pour ${\operatorname{Card}}(I')=1$, i.e. bouchage d'\emph{un} trou --- dumoins si on sait que la condition d'admissibilité ne dépend que de l'action des noyaux des groupes.} de plus $\Gamma$ invarie une partie $I'$ de $I=I(\pi)$, alors en ``bouchant $I'$'', l'opération de $\Gamma$ sur $\pi'$ est admissible.
+\end{itemize}
+Quand on a une action \emph{effective} (pas extérieure) de $\Gamma$ sur un $(\pi,a)$ de type $(g,\nu)$, alors le foncteur ``forage de trous'' donne une action extérieure sur un $(\pi^\circ, a^\circ)$ de type $(g,\nu+1)$ et on dit que l'action de  départ est admissible, si l'action \emph{extérieure} déduite l'est. On trouve ainsi une \emph{équivalence} entre la catégorie des systèmes $(\pi,a,\Gamma,\psi,i)$ d'un $(\pi,a)$ de type $(g,\nu+1)$, avec une opération \emph{extérieure} admissible $\psi$ d'un $\Gamma$ dessus, et un $i\in I(\pi)$ stable par $\Gamma$, avec la catégorie des $(\pi',a',\Gamma,\psi')$ des $(\pi',a')$ de type $(g,\nu)$, avec une \emph{vraie} action admissible $\psi'$ de $\Gamma$ dessus. La condition (2) assure que si $\Gamma$ opère effectivement, de fa\c{c}on admissible, alors l'action extérieure déduite est admissible (mais l'inverse ne sera pas vrai --- il y aura des relèvements ``pathologiques'' d'une action extérieure admissible donnée\dots). On suppose de plus
+\begin{itemize}
+	\item[(3)] Si $\Gamma$ opère effectivement de fa\c con admissible sur $\pi$, alors $\pi^\Gamma=\{1\}$.
+\end{itemize}
+Cela implique que la catégorie des $\Gamma$-points de $\pi$, ou si on veut des sections de $\B_{\pi,\Gamma}( \isom \B_u)$ sur $\B_\Gamma$, est rigide. Mais considérons la catégorie limite inductive de la catégorie des sections de $\B_{\pi,\Gamma} \isom \B_u$ sur des $\B_{\Gamma'}$ ($\Gamma'$ sous-groupe ouvert)~; elle est discrète et
+correspond à l'ensemble
+$$
+{\Pt}_{\operatorname{ad}}(\B_{\pi,\Gamma^\natural}) \isom  \varinjlim {\Pt}_{\operatorname{ad}}(B_{\pi,\Gamma'})
+$$
+où l'on prend la limite inductive sur les ouverts $\Gamma'$ de $\Gamma$.
+
+Si ${\Pt}(\B_{\pi,\Gamma})\ne\emptyset$, alors (du seul fait que $\pi^{\Gamma'}=\{1\}$ pour tout sous-groupe ouvert de $\Gamma$) le groupe extérieur $\pi$ peut être décrit canoniquement par un groupoïde profini $\underline{{\Pt}}(\B_{\pi,\Gamma})$ ayant ${\Pt}(\B_{\pi,\Gamma})$ comme ensemble d'objets\footnote{Le groupoïde à opérateurs stricts $\underline{{\rm Pt}}(B_{\pi,\Gamma})$ dépend fonctoriellement de $(\pi,\Gamma)$, pour des morphismes extérieurs [??].}, liés par le groupe extérieur $\pi$, sur lequel $\Gamma$ opère en sens strict, le stabilisateur $\Gamma_P$ de tout point étant ouvert, et $\Gamma_P\to{\Aut}(P)$ ($ \isom \pi$ modulo automorphismes intérieurs) étant continue. On a ici que si à tout $P\in{\Pt}(\B_{\pi,\Gamma})$ on associe la classe d'isomorphie de sections de $\B_{\pi,\Gamma}$ sur $\B_\Gamma$, on trouve une bijection --- ce qui caractérise le $\Gamma$-groupoïde en question à \emph{isomorphisme} unique près. On supposera~:
+\begin{itemize}
+	\item[(4)] Si $\Gamma$ opère admissiblement sur $(\pi,a)$, alors il existe un sous-groupe ouvert $\Gamma'$ de $\Gamma$ dont l'opération extérieure se relève en une opération effective admissible --- i.e. ${\Pt}_{\operatorname{ad}}(\B_{\Gamma,\pi})\ne\emptyset$.
+\end{itemize}
+Notons que dans la situation envisagée, du bouchage d'un trou $i\in I(\pi)$ d'un $\pi$, en plus de l'homomorphisme
+$$
+\hat{\hat{\mathfrak{T}}}(\pi)_i\xlongrightarrow{\psi_i}
+\hat{\hat{\mathfrak{S}}}(\pi'_i)
+$$
+associé, donnant par composition
+$$
+\hat{\hat{\mathfrak{T}}}(\pi)_i\xlongrightarrow{\psi'_i}
+\hat{\hat{\mathfrak{T}}}(\pi'_i)
+$$
+d'où une action extérieure de $\hat{\hat{\mathfrak{T}}}(\pi)$ sur $\pi'_i$, de fa\c{c}on que les $\pi\xlongrightarrow{p_i}\pi_i'$ commutent aux actions extérieures de $\hat{\hat{\mathfrak{T}}} (\pi)$, on a un homomorphisme canonique d'extensions, provenant de cette action extérieure et de l'homomorphisme $p_i:\pi\to\pi'_i$;
+\[\begin{tikzcd}
+	1 & \pi & {\hat{\hat{\mathfrak{S}}}(\pi)_i} & {\hat{\hat{\mathfrak{T}}} (\pi)_i} & 1 \\
+	1 & {\pi'_i} & {\hat{\hat{\mathfrak{S}}}(\pi'_i)} & {\hat{\hat{\mathfrak{T}}}(\pi'_i)} & 1
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-1, to=1-2]
+	\arrow["{p_i}", from=1-2, to=2-2]
+	\arrow["{\phi_i}"', from=1-3, to=2-3]
+	\arrow["{\psi'_i}", from=1-4, to=2-4]
+	\arrow["{[\psi_i]}"', from=1-4, to=2-3]
+\end{tikzcd}\]
+qui n'est \emph{pas} le composé 
+$$
+\hat{\hat{\mathfrak{S}}}(\pi)_i\to\hat{\hat{\mathfrak{T}}}(\pi)_i \xlongrightarrow{\psi_i} \hat{\hat{\mathfrak{S}}}(\pi_i')
+$$
+(il peut se définir chaque fois qu'on a un groupe $\Gamma$, i.e. $\hat{\hat{\mathfrak{T}}}(\pi)$, qui commute extérieurement sur deux groupes extérieurs $\pi$, $\pi'$, et qu'on a un homomorphisme $p_i \pi\to\pi'$ qui commute à l'action de $\Gamma$, et tel que le centre de $\pi$ et le centralisateur de son image dans $\pi'$ soient triviaux\dots) C'est aussi ici l'homomorphisme de ``transport de structure'', qui pour tout automorphisme à lacets $u$ de $\pi$, associe l'automorphisme correspondant de $\pi'_i$. On a oublié de préciser~:
+\begin{itemize}
+	\item[(g)] L'homomorphisme canonique $(\hat{\hat{\mathfrak{S}}}_{g,\nu})_i \to\hat{\hat{\mathfrak{S}}}_{g,\nu-1}$ associé à $i\in [0,\nu-1]$ envoie $(M_{g,\nu})_i$ dans $M_{g,\nu}$, donc il s'insère dans un homomorphisme de suites exactes~:
+\end{itemize}
+\[\begin{tikzcd}
+	1 & \pi & {M_a(\pi)_i} & {\mathcal{N}_a(\pi)_i} & 1 \\
+	1 & {\pi'_i} & {M_{a'}(\pi'_i)} & {\mathcal{N}_{a'}(\pi'_i)} & 1
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=2-2]
+	\arrow["{\phi_i}"', from=1-3, to=2-3]
+	\arrow[from=1-4, to=2-4]
+\end{tikzcd}\leqno{(26)}\]
+Ceci posé, si on a une opération extérieure admissible $\Gamma\to \mathcal{N}_a(\pi)$ de $\Gamma$ sur $\pi$, fixant $i$, donc aussi par exemple $\mathcal{N}_a(\pi)\to\mathcal{N}_{a'}(\pi')$ sur $\pi'_i$, on peut considérer que tout relèvement $\Gamma \to M_a(\pi)$ pour $\pi$ définit par composition un relèvement $\Gamma\to M_{a'}(\pi'_i)$ pour $\pi'_i$. On conclut aisément de (2) que si le premier est admissible, le deuxième l'est.  On trouve donc
+$$
+{\Pt}_{\operatorname{ad}}(\B_{\pi,\Gamma})\to{\Pt}_{\operatorname{ad}}(\B_{\pi'_i, \Gamma})
+\leqno(27)
+$$
+et en passant à la limite, une application de $\Gamma$-ensembles~:
+$$
+{\Pt}_{\operatorname{ad}}(\B_{\pi,\Gamma^\natural})\to{\Pt}_{\operatorname{ad}} (\B_{\pi'_i,\Gamma^\natural})
+\leqno(28)
+$$ --- qui correspond d'ailleurs à un homomorphisme de $\Gamma$-groupoïdes
+$$
+\underline{{\Pt}}_{\operatorname{ad}}(\B_{\pi,\Gamma^\natural})\to \underline{{\Pt}}_{\operatorname{ad}}(\B_{\pi'_i,\Gamma^\natural}).
+\leqno(29)
+$$
+Ceci posé, soit $P\in{\Pt}_{\operatorname{ad}}(\B_{\pi'_i,\Gamma})$ le ``point canonique'' de ${\Pt}_{\operatorname{ad}}(\B_{\pi'_i,\Gamma}) = \bigl({\Pt}_{\operatorname{ad}}(\B_{\pi'_i,\Gamma^\natural})\bigr)^\Gamma$. On demande:
+\begin{itemize}
+	\item[(5)] L'application (27) induit une \emph{bijection} 
+\end{itemize}
+$$
+{\Pt}_{\operatorname{ad}}(\B_{\pi,\Gamma})\to{\Pt}_{\operatorname{ad}}(\B_{\pi'_i,\Gamma})\setminus\{P\}
+$$
+ou encore (passant à la limite) une bijection de $\Gamma$-ensembles
+$$
+{\Pt}_{\operatorname{ad}}(\B_{\pi,\Gamma^\natural})
+\isommap{\Pt}_{\operatorname{ad}} (\B_{\pi'_i,\Gamma^\natural})\setminus\{P\}.
+$$
+Ceci signifie trois choses:
+\begin{itemize}
+	\item[(a)] L'homomorphisme canonique $\Gamma\to M_{a'}(\pi'_i)$, composé de $\Gamma\to\mathcal{N}_a(\pi)$ et de $\mathcal{N}_a(\pi)\isommap M_{a'}(\pi'_i)$, n'est pas $\pi'_i$-conjugué à un homomorphisme composé $\Gamma\xlongrightarrow{\lambda} M_a(\pi)\xlongrightarrow{\phi_i} M_{a'}(\pi'_i)$, où $\Gamma\xlongrightarrow{\phi_i} M_a(\pi)$ est un relèvement admissible.
+	\item[(b)] Si $\lambda,\mu:\Gamma\to M_a(\pi)$ sont deux relèvements admissibles de $\Gamma\to\mathcal{N}_a(\pi)$ tels que $\phi_i\circ\lambda$ et $\phi_i\circ\mu:\Gamma\to M_a(\pi)$ soient $\pi'_i$-conjugués, alors $\lambda$ et $\mu$ sont déjà $\pi$-conjugués.
+	\item[(c)] Tout relèvement admissible de $\Gamma\to \mathcal{N}_{a'}(\pi'_i)$ en $\Gamma\to M_{a'}(\pi'_i)$, provient par composition d'un relèvement admissible $\Gamma\to M_a(\pi)$.
+\end{itemize}
+Grâce à ceci~: l'équivalence de categories entre systèmes $(\pi,a,i,\Gamma,\theta:\Gamma\to\mathcal{N}_a)$ et les systèmes $(\pi',a',\Gamma,\theta':\Gamma\to\mathcal{N}_{a'},P)$, où $P\in{\Pt}(\B_{\pi',\Gamma^\natural})^\Gamma$, se précise de fa\c{c}on parfaite au niveau des points~: les points $\Gamma$-rationnels de $B_{\pi}$ s'identifient à l'un des points $\Gamma$-rationnels de $\B_{\pi'}$, distincts de $P$.
+
+Ceci nous permet alors (ce qui n'était pas faisable dans le
+contexte discret~!) d'étendre l'équivalence de catégories en une équivalence~:
+\vskip .3cm
+\noindent [Catégorie des systèmes
+$(\pi,\alpha,I',\Gamma,\theta:\Gamma\to\mathcal{N}_\alpha)$ d'un $\pi$ arithmétisé par $\alpha$ de type $(g,\nu)$ avec  $2g+(\nu-{\rm card}(I')) \ge 3$, de $I'\subset  I(\pi)$, d'une action \emph{admissible} extérieure de $\Gamma$ sur $\pi$ telle que $\Gamma$ \emph{fixe chaque point de $I'$}]
+$$|\,\wr\wr\leqno(30)$$
+[Catégorie des systèmes $(\pi',\alpha',I',\Gamma,\theta': \Gamma\to\mathcal{N}_{\alpha'})$ d'un $\pi'$ arithmétisé par $\alpha'$ de type $(g,\nu')$ [$\nu'=\nu-{\card}(I')$] avec opération extérieure admissible de $\Gamma$ dessus, et une partie $I'\subset {\Pt}_{\operatorname{ad}}(\B_{\pi',\Gamma})$ (donc $I'\subset {\Pt}_{\operatorname{ad}}(\B_{\pi',\Gamma})^\Gamma$), i.e. $I'$ formé de points invariants par $\Gamma$, i.e. ``$\Gamma$-rationnels''].
+\vskip .3cm
+On a alors un foncteur quasi-inverse~: forage de trous en $I'$! Il est à noter que dans cette approche, on a dû se borner au cas d'un ensemble de points $I'\subset  I(\pi)$, non seulement stable par $\Gamma$, mais inclus dans $I^\Gamma$, ou encore à une partie $I'\subset  {\Pt}(\B_{\pi',\Gamma^\natural})$ non seulement stable par $\Gamma$, mais même dans ${\Pt}(\B_{\pi',\Gamma^\natural})^\Gamma$.  Pour montrer que sans cette restriction, le foncteur naturel correspondant est néanmoins une équivalence, on est ramené à ceci~:
+\begin{itemize}
+	\item[(6)] Soit $(\pi,a,I'\subset  I(\pi))$ avec $(\pi,a)$ groupe à lacets extérieur profini arithmétisé de type $(g,\nu)$, d'où $(\pi',a')$ --- soit $\Gamma$, avec $\Gamma'$ sous-groupe ouvert opérant sur $(\pi,a)$ de fa\c{c}on admissible ($\Gamma\to\mathcal{N}_a(\pi)$), et laissant stable $I'$, donc il opère de fa\c{c}on admissible sur $(\pi',a')$. Supposons donné un \emph{relèvement} de cette action de $\Gamma'$ en une action admissible de $\Gamma$ sur $\mathcal{N}_{a'}$, qui invarie $I'\subset {\Pt}(\B_{\pi',\Gamma^\natural}) \isom {\Pt}(\B_{\pi',{\Gamma'}^\natural})$ [cf. le diagramme],
+	\[\begin{tikzcd}
+		{(\mathcal{N}_a)_{I'}} && {\Gamma'} \\
+		\\
+		{\mathcal{N}_{a'}} && \Gamma
+		\arrow[hook', from=1-3, to=3-3]
+		\arrow[from=1-3, to=1-1]
+		\arrow[from=3-3, to=1-1]
+		\arrow[from=3-3, to=3-1]
+		\arrow[from=1-1, to=3-1]
+	\end{tikzcd}\]
+	Alors il existe une action admissible unique de $\Gamma$ sur $(\pi,a)$, qui prolonge celle de $\Gamma'$ et qui donne naissance à celle donnée sur $\pi'$. 
+\end{itemize}
+L'unicité est-elle de toutes fa\c{c}ons claire~? Considérons l'extension $E$ de $\Gamma$ par $L={\Ker}\bigl((\mathcal{N}_a)_{I'}\to\mathcal{N}_a\bigr)$, image inverse de l'extension $(\mathcal{N}_a)_{I'}$ (de $\mathcal{N}_{a'}$ pas $L$) via $\Gamma\to\mathcal{N}_{a'}$, on a un scindage partiel de cette extension au dessus du sous-groupe $\Gamma'$ de $\Gamma$, et l'assertion est que ce scindage se \emph{prolonge, de fa\c{c}on unique} à $\Gamma$. On peut supposer $\Gamma'$ invariant dans $\Gamma$, et on identifie $\Gamma'$ à un sous-groupe de $E$. Toutes les sections de $E$ sur $\Gamma$ s'identifient à des sous-groupes, sections $\tilde \Gamma$ de $E$.  Pour un tel $\tilde\Gamma$, on a bien sûr $\tilde\Gamma\subset {\Norm}_{E}(\Gamma')$, d'ailleurs on a évidemment~:
+$$
+{\Norm}_{E}(\Gamma')\cap L=L^{\Gamma'}
+\leqno(31)
+$$
+et je présume qu'on doit avoir $L^{\Gamma'}=1$ (qui généralise la condition (3) plus haut\dots) \emph{Or cette condition implique l'unicité} -- savoir $\tilde\Gamma={\Norm}_{E}(\Gamma')$ et l'existence signifie que ${\Norm}_{E}(\Gamma') \to\Gamma$ est un épimorphisme (donc un isomorphisme\dots).
+
+Mais il faudra essayer de préciser, dans certains contextes (au moins celui des actions arithmétiquement fidèles, i.e. $\Gamma\to\boldsymbol{\Gamma}_a$ injectif --- qui correspond normalement au cas des courbes algébriques définies sur des extensions \emph{algébriques} de ${\mathbf{Q}}$) --- la notion d'action ``admissible''. Pour ceci, on doit revenir sur la relation entre courbes (potentielles) et revêtements finis, ce qui donne aussi une fa\c{c}on de faire varier $g$.
+
+Mais j'ai envie d'abord de reprendre sous un autre aspect (peut-être plus général) le formalisme précédent, qui  peut-être aussi s'applique au cas des groupes \emph{discrets} à lacets (je pense au formalisme des $U^!$, lié aux actions extérieures de groupes finis sur de tels groupes à lacets). Soit $\mathcal{X}$ un ensemble $\ne\emptyset$ (moralement, un ensemble de ``points'' d'une courbe algébriques, ou d'une surface topologique\dots)~;  on suppose donné, pour toute partie finie $I$ de $\mathcal{X}$, de complémentaire $U_I=\mathcal{X}\setminus I$, un groupoïde $\Pi_{U_I}$, ayant $U_I$ comme ensemble d'objets. De plus, pour $J\supset I$ i.e. $U_J\subset U_I$, on suppose donné un homomorphisme de groupoïdes
+$$
+\Pi_{U_J} \to \Pi_{U_I}
+$$
+qui sur les objets soit l'inclusion $U_J\hookrightarrow \mathbf{C}U_I$. On supposera la transitivité (stricte) i.e. [l'existence d']un foncteur covariant de la catégorie des parties $U$ de $\mathcal{X}$ complémentaires de parties finies\footnote{Si $\mathcal{X}$ est fini et $I=\mathcal{X}$, on suppose que cependant $\Pi_{U_I}(=\Pi_\emptyset)$ n'est pas le groupoïde vide, mais un groupoïde (qui s'envoie dans les précédents\dots) mais on ne pourra pas exiger la transitivité stricte. Il faudrait peut-être faire des hypothèses anabéliennes sur $\Pi_{U_I}$.} (avec les inclusions), vers la catégorie des groupoïdes, qui sur l'ensemble d'objets coïncide avec le foncteur évident\dots On suppose de plus que pour tout $i\in I$, on se donne un groupoïde $\Pi_i$ (ou $\Pi_{D^*_i}$), et pour $i\in I\in{\mathfrak{P}}_f(??)$ un homomorphisme de groupoïdes 
+$$
+\Pi_{D^*_i}\to\Pi_{U_I}
+$$
+compatible avec les morphismes de transition $\pi_{U_I}\to \pi_{U_J}$, $I\supset J$. On suppose que pour $I$ fixé, on trouve sur $\Pi_{U_I}$ une structure de groupoïde à lacets par 
+$$
+\Pi_{D^*_i}\to\Pi_{U_I}
+$$
+sans d'ailleurs exclure le cas où $I=\emptyset$, et où ($\Pi_\mathcal{X}$ étant connexe, disons) le genre \emph{est} $0$. On suppose de plus que si $J\supset I$ i.e. $U_J\subset U_I$, et pour $i\in J\setminus I$, l'homomorphisme composé
+$$
+\Pi_{D^*_i}\to\Pi_{U_J}\to\Pi_{U_I}
+$$
+soit ``constant'', de telle fa\c{c}on que $\Pi_{U_I}$ se déduise de $\Pi_{U_J}$ par ``bouchage des trous'' en $J\setminus I$.
+
+Jusqu'à présent, tout ceci pouvait se visualiser par exemple en partant d'une surface topologique orientable $X$, et d'une partie $\mathcal{X}$ de $X$ rencontrant toute composante connexe, en prenant pour $\Pi_I$ la restriction à $\mathcal{X}\setminus I$ du groupoïde fondamental de $X\setminus I$ (si $I\ne\mathcal{X}$~; si $\mathcal{X}=I$, ce qui exige $\mathcal{X}$ fini, on prendra le groupoïde fondamental de $X\setminus I=X\setminus\mathcal{X}$, qu'on aura du mal à envoyer dans les autres avec transitivité \emph{stricte}, qu'à cela ne tienne~!) Mais, on est surtout interessé au cas $\mathcal{X}$ infini. Où on prend $X$ courbe algébrique sur un corps algébriquement clos, $\mathcal{X}$ partie de $X$ rencontrant toute composante connexe, et on définit les $\Pi_{U_I}$ comme précédemment.  
+
+Soit maintenant $\Gamma$ une groupe qui opère sur la situation (\emph{strictement}, s'entend), donc sur l'ensemble $\mathcal{X}$, les groupoïdes $\Pi_{U_I}$, les $\Pi_{D_i^\ast}$ (NB qu'il permute entre eux), en commutant aux homomorphismes 
+$$
+\Pi_{U_I}\to\Pi_{U_J}{\rm\ et\ les\ }\Pi_{D^*_i}
+\to\Pi_{U_I}.
+$$
+(On aura des difficultés, si $\mathcal{X}$ est fini, pour $\Pi_{U_I}$ quand $I=\mathcal{X}$, pour la commutation \emph{stricte} des $\Pi_{U_\mathcal{X}}\to\Pi_{U_J}$\dots mais passons\dots) Nous supposons définie une notion de sous-groupe \emph{admissible} de $\Gamma$ (ils sont en tout cas $\ne \{1\}$) telle que si $\Gamma'$ est admissible alors tout sous-groupe $\Gamma''\supset\Gamma'$ aussi.  
+
+On suppose
+\begin{itemize}
+	\item[(1$^\circ$)] $\forall P\in\mathcal{X}$, $\Gamma_P\ne\{1\}$, et $\Gamma_P$ d'indice fini dans $\Gamma$ (i.e. l'orbite de $P$ finie).
+\end{itemize}
+Nous voulons des conditions qui assurent que $\mathcal{X}$ et les $\Pi_{U_I}$ etc. peuvent se reconstruire à isomorphisme canonique près à l'aide des données purement groupoïdiques ou topossiques (à opérateurs $\Gamma$) correspondantes.  On peut le dire en langage topossique savant, mais on va l'exprimer en termes de théorie des groupes à lacets. Soit $I$ une partie de $\mathcal{X}$ stable par $\Gamma$, on voudrait poser des conditions qui permettent d'exprimer (pour tout tel $I$) la situation des groupoïdes $\Pi_V$ associés aux $V\supset U_I$ (i.e. les $U_J$ avec $J\subset  I$), les $\Pi_{D_i^\ast}$ ($i\in I$) et l'opération de $\Gamma$ dessus, en termes des seules opérations de $\Gamma$ sur le groupe extérieur à lacets $\pi_1(\Pi_{U_I})$ associé à $I$ ou plutôt (car cela est immédiat, par l'opération de forage de trous), en sens inverse, montrer comment, sous réserve d'anabélianité, disons de $\Pi_\mathcal{X}$ (pour fixer les idées), on peut plus ou moins reconstituer $\Pi_{U_I}$ et l'action de $\Gamma$ dessus\dots, à partir de $\Pi_\mathcal{X}$ (ou plutôt, du topos $\B_{\Pi_\mathcal{X}}$), et de l'action de $\Gamma$ dessus. On veut au moins une description intrinsèque des éléments de $\mathcal{X}$ et de l'action de $\Gamma$ dessus, via cette action ``molle'' --- qui, pour $\mathcal{X}$ connexe,  revient encore à une action extérieure de $\Gamma$ sur un groupe à lacets (\emph{sans}  lacets~!) $\pi$\dots
+
+Une première condition, sous forme faible, est que (supposant $\mathcal{X}$ connexe, et appelant $\pi(I)$ le groupe extérieur $\pi_1(\Pi_{U_I})$, pour tout partie finie $I$ de $\mathcal{X}$) que pour $\pi(I)$ anabélien (ce qui sera le cas pour $I$ ``assez grand'', du moins si $\mathcal{X}$ est infini, donc qu'on puisse prendre $I$ de cardinal arbitrairement grand\dots) l'application évidente
+$$
+\begin{cases}
+\text{classes de $\pi(I)$-conjugaison} & \\
+U_I\to{\Pt}(B_{\pi(I),\Gamma^\natural})
+	 \isommap&\text{de germes de scindage de}\\
+           &\text{l'extension $E(I)$}
+\end{cases}
+\leqno(2^\circ)$$
+(compatible avec les actions de $\Gamma$) soit \emph{injective}. Mais pour aller plus loin, il faudrait pouvoir donner une caractérisation de l'image.  Notons (nous pla\c{c}ant dans le contexte profini désormais) que si on se donne sur les $\pi(I)$ des arithmétisations, compatibles avec les homomorphismes extérieurs de bouchage de trous $\pi(I)\to \pi(J)$, et avec l'action de $\Gamma$ sur les $\pi(I)$, on a donc un homomorphisme canonique de $\Gamma$ dans le groupe commun $\boldsymbol{\Gamma}$ des automorphismes arithmétiquement extérieurs de ces arithmétisations (et même $\Gamma\to M_{\pi(\theta)=\pi}$, ce qui est déjà une donnée nettement plus forte). On peut donc supposer donnée une notion de \emph{relèvement admissible} d'une telle action arithmétiquement extérieure, de telle fa\c{c}on que l'application ($2^\circ$) soit une bijection
+$$
+U_I= X \setminus I\isommap {\Pt}_{\operatorname{ad}}(\B_{\pi(I),\Gamma^\natural}).
+$$
+Ceci signifie d'ailleurs, pratiquement, que la notion d'admissibilité satisfait aux conditions ($1^\circ$) à ($6^\circ$) vues ci-dessus.
+\vskip .2cm
+Quant à savoir ce qu'il y a lieu d'appeler opération extérieure ``admissible'' de $\Gamma$ sur un groupe extérieur profini à lacets, cela reste pour le moment conjectural. On pourrait à titre expérimental conjecturer que la notion qui suit marcherait. Appelons ``admissible'' toute telle action
+$$
+\Gamma\to\hat{\hat{\mathfrak{T}}}(\pi)
+$$
+qui respecte une arithmétisation $a$, i.e. qui se factorise par le $\mathcal{N}_a$ correspondant, telle que l'image de $\Gamma\to\mathcal{N}_a/\hat{\mathfrak{T}}=\boldsymbol{\Gamma}_a$ soit ouverte, et que pour tout homomorphisme de bouchage de trous en $i\in I(\pi)$, $\pi\to\pi'_i$, $\mathcal{N}(\pi)_i\to M(\pi'_i)$, l'homomorphisme correspondant de $\Gamma_i$ ni d'aucun sous-groupe ouvert $\Gamma$ de $\Gamma_i$, ne normalise un $L_j'$, $j\in I(\pi'_i)=I\setminus\{i\}$; peut-être même faudrait-il imposer que $\pi^{({\Gamma'}^+)} =\{1\}$, où ${\Gamma'}^+$ est le noyau de $\Gamma'\xlongrightarrow{\chi}\hat{\mathbf{Z}}^*$ --- en tout cas on s'attend à ce que l'on ait alors $\pi^{\Gamma'}=\{1\}$, et si ce n'était le cas, il faudrait l'introduire dans la définition --- pour chaque opération de bouchage de trous relatif à $I'\subset  I(\pi)$, et un choix d'un $i\in I'$, permettant de définir $\Gamma_{(I',i)}\to M(\pi(I'))$)\footnote{Plus généralement, pour $i\in I'\subset  I=I(\pi)$ on impose que la [??] action de $\Gamma_I'$ sur $\pi(I')$ correspondant à $i$ ne normalise aucun sous-groupe $L_j$ ($j\in I\setminus I'$). On est ramené pour ceci au cas où $I'=I\setminus\{j\}$, donc où $\pi(I')$ n'a qu'une seule classe de lacets\dots (si $g\ge 1$)}.
+
+Notons qu'une vraie action de $\Gamma$ sur $\pi$ (pas seulement extérieure) qui relève une action donnée ``admissible'', est elle-même admissible (en ce sens qu'elle définit une action extérieure \emph{admissible} sur un $\pi'$ de type $(g,\nu+1)$), si et seulement si cette action ou plutôt son germe, ne normalise aucun $L_i$ ($i\in I(\pi)$, et qu'il en soit de même pour l'action induite sur chaque $\pi(I')$ ($I'\subset  I=I(\pi)$) [il suffit de prendre les $\pi(I')$ pour $I'$ de la forme $I\setminus \{j\}$, $j\in I$, du moins si $g\ne 0$] --- \emph{et} qu'enfin l'action de $\Gamma^\natural$ sur $\pi'(I)$ (déduite de $\pi'$ en bouchant les trous en $I$, de sorte que $\pi'(I)$ a une seule classe de lacets; $\pi'(I)$ se déduit aussi de l'action effective de $\Gamma$ sur $\pi(I)$ --- avec 0 classe de lacets -- en faisant ``un trou'' correspondant --- relatifs à un point $i\in I$), ne normalise pas de sous-groupe lacets\dots Mais je présume que la première condition (action de $\Gamma^\natural$ ne normalisant aucun des $L_i$) implique les autres. Mais il faut dans la définition d'admissibilité aussi tenir compte de la condition ($4^\circ$), qui implique l'existence de suffisamment de relèvements\dots
+
+J'en arrive (péniblement~!) à une
+\vskip .3cm
+{
+Conjecture provisoire profinie\footnote{Canulé, cf. plus bas\dots}. --- \it Pour $\Gamma$ groupe profini donné, une action extérieure sur un $(\pi,a)$ arithmétisé anabélien de type $(g,\nu)$ est dite \emph{admissible}, si
+\begin{itemize}
+	\item[a)] L'homomorphisme $\Gamma\to\boldsymbol{\Gamma}_a$ a une image ouverte.
+	\item[b)] Les actions \emph{effectives} déduites par bouchages de trous ($i'\in I'\subset  I=I(\pi)$) ne normalisent pas de sous-groupe à lacets.
+	\item[c)] Il existe une infinité de classes de $\pi$-conjugaison de germes de scindages de l'extension de $\Gamma$ par $\pi$, qui ne normalisent aucun sous-groupe à lacets de $\pi$\footnote{Cette condition c) exclut sans doute des cas comme $\Gamma =\mathcal{N}_{g,\nu}$ avec $(g,\nu)\ne (0,3)$, car l'extension $M_{g,\nu}$ de $\mathcal{N}_{g,\nu}$ par $\hat{\pi}_{g,\nu}$ n'admet sans doute pas de germe de scindage --- ce qui est équivalent (?) au fait que $U_{g,\nu}$ sur $M_{g,\nu}$ n'admet pas de multisection étale\dots}.
+\end{itemize}
+Une action effective de $\Gamma$ sur $\pi$ est dite effective, si l'action extérieure est effective, et si elle ne normalise aucun sous-groupe à lacets.
+
+Ceci posé~:
+\begin{itemize}
+	\item[a)] Si $\Gamma$ opère effectivement de fa\c{c}on admissible, on a
+	$$
+	\pi^\Gamma=\{1\}
+	$$
+	(peut-être même $\pi^{\Gamma^+}=\{1\}$).
+	\item[b)] Si $i\in I$ est stable par $\Gamma$ opérant extérieurement de fa\c{c}on admissible, alors l'action effective sur $\pi'= \pi(i)$ ne normalise aucun $L_j'$ ($j\in I\setminus\{i\}$).
+	\item[c)] Si $\Gamma$ opère effectivement sur $\pi$ de fa\c{c}on admissible, en laissant fixe $i\in I$, alors l'action correspondante effective (par passage au quotient) sur $\pi'=\pi(i)$ ne normalise aucun $L_j$, $j\in I\setminus\{i\}$).
+	\item[d)] Si $\Gamma$ opère effectivement sur $\pi$ de fa\c con admissible, alors l'application
+	$${\Pt}_{\operatorname{ad}}(\B_{\pi,\Gamma^\natural})\to {\Pt}_{ad}(B_{\pi',\Gamma^\natural})
+	$$
+	définie par c) est \emph{injective}, et le complémentaire de son image est égal à $\{P\}$, où $P$ est défini par le ``trou'' $i$.
+\end{itemize}
+}
+\vskip .3cm
+Mais cette dernière partie de l'assertion, allant au-delà de la seule \emph{injectivité} --- et caractérisant l'image, me semble maintenant tout à fait douteuse --- en effet, il suffit de regarder un schéma $S$ de paramètres, de type fini sur ${\mathbf{Q}}$ (un $K(\pi,1)$ de préférence, par exemple une courbe algébrique) et de prendre pour $\Gamma$ (non le groupe fondamental de son point générique, i.e. d'un corps, mais) le groupe fondamental de $S$ lui-même. La donnée d'une action extérieure admissible de $\Gamma$ sur un $\pi$ correspond moralement à celle d'une famille de courbes $U$ de type $g,\nu$ paramétré par $S$.\footnote {Les scindages d'extensions correspondent aux section de $U$ sur $S$.} La condition c) est vérifiée par exemple si $U$ provient d'une courbe algébrique sur le corps de base lui-même, donc pas de problème  --- et il est manifeste que la surjectivité déconne.  La difficulté provient du fait que deux actions \emph{distinctes} de $U$ sur $S$ peuvent ne pas être \emph{disjointes}~!
+
+Il faut pouvoir parler de sections ``strictement distinctes'' i.e. distinctes en tout point de $S$ --- ce qui, en traduction profinie, revient à comparer deux scindages de l'extension de $\Gamma$ par $\pi$, avec les germes de scindages sur $\boldsymbol{\Gamma}'\subset \boldsymbol{\Gamma}$ de $\Gamma$ (en tant qu'extension de $\boldsymbol{\Gamma}_{\mathbf{Q}}$ par une partie géométrique) qui correspondent aux points de $S$ --- i.e. les (germes de scindage) \emph{admissibles} justement. On a l'impression de tourner dans un cercle vicieux ou presque --- il semblerait qu'il ne faudrait pas trop vouloir avaler à la fois --- traiter d'emblée \emph{tous} les groupes profinis $\Gamma$ à la fois --- mais plutôt se borner d'abord à ceux qui moralement, correspondent à des $\pi_1$ de schémas de type fini sur ${\mathbf{Q}}$, des $K(\pi,1)$ disons, ou même des variétés élémentaires à la Artin --- et dans les définitions resp. conjectures se tirer par les lacets des souliers, en récurrant sur la dimension. Au premier cran donc (dimension $0$) on se bornerait à des actions de groupes $\Gamma$ qui soient (modulo tout au moins passage à un sous-groupe ouvert) ``arithmétiquement fidèles'', par exemple $\Gamma\to\boldsymbol{\Gamma}_a$ injectif. Dans ce cas-là, la conjecture telle qu'elle est énoncée tantôt semble raisonnable, ou du moins pas nécessairement déconnante. Le test décisif, il est vrai, serait la possibilité d'obtenir les ``courbes'' ainsi définies comme des revêtements de $\mathbb{P}^1\setminus\{0,1,\infty\}$\dots
+
+
+% End

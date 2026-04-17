@@ -1,0 +1,187 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 23. --- RETOUR SUR LES SURFACES À GROUPES D'OPÉRATORS}\thispagestyle{empty}
+\addcontentsline{toc}{section}{23. Retour sur les surfaces à groupes (finis) d'opérateurs (``mise en équations'' du problème)}
+\label{sec:23}
+\section*{}
+
+Notre point de vue sera non celui des groupes extérieurs à lacets, mais celui des topos multigaloisiens et morphismes entre ceux-ci, plus souple, on l'a vu. Avant de faire intervenir des opérations de groupes, introduisons la catégorie des surfaces $U$ orientables (NB pas orientées !) \emph{admissibles} (i.e. de la forme $X \setminus S$, où $X$ est compacte, $S$ fini et toute composante connexe de $X$ de genre zéro rencontre $S$) comme dans Ladegaillerie (en prenant comme 2-morphismes entre homéomorphismes $\begin{tikzcd}
+	{f,g: U} & {U'}
+	\arrow["\sim", shift left=2, from=1-1, to=1-2]
+	\arrow["\sim"', shift right=2, from=1-1, to=1-2]
+\end{tikzcd}$ les classes d'homotopie de chemins de $f$ à $g$ dans l'espace $\underline{\Isom}(U, U')$) (qui, avec les hypothèses faites a comme composantes connexes des torseurs sous de produits de groupes $A^\circ_{g, \nu}$ (avec $(g, \nu) = (0, 0)$)) --- donc ce sont des $K(\pi, 1)$.
+
+On trouve un 2-foncteur de la 2-catégorie précédente dans celle des morphismes de topos multigaloisiens (ou, si on préfère, dans celle des morphismes de groupoïdes) notés
+$$
+\B_{D^*} \xlongrightarrow{\rho} \B_U,
+$$
+où pour deux objets de la 2-catégorie $\B_{D^*} \to \B_U$ et $\B_{D^{'*}} \to \B_{U'}$, la catégorie des morphismes de l'une dans l'autre est formée des diagrammes essentiellement commutatifs de morphismes de topos (ou de morphismes de groupoïde).
+\[\begin{tikzcd}
+	{\B_{D^{'*}}} && {\B_{U'}} \\
+	\\
+	{\B_{D^*}} && {\B_U}
+	\arrow["{\rho'}", from=1-1, to=1-3]
+	\arrow["{f^{D^*}}"', from=1-1, to=3-1]
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{f_U}", from=1-3, to=3-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "\rho"', from=3-1, to=3-3]
+	\arrow["\alpha", shorten <=7pt, shorten >=7pt, from=1, to=0]
+	\arrow["\sim"', shorten <=7pt, shorten >=7pt, from=1, to=0]
+\end{tikzcd}\]
+où $f^{D^*}$ et $f_U$ sont des morphismes et $\alpha: \rho \circ f_{D^*} \isommap f_U \circ \rho'$ une donnée de commutativité. Les morphismes entre un $h$ et un $g$ étant définis ad hoc\dots
+
+Il peut être utile de considérer les objets de la 2-catégorie comme des topos cofibrés (ou des groupoïdes cofibrés) sur la catégorie ``flèche'' $D^* \to U$ ayant deux objets $D^*$ et $U$ et une seule flèche non identique $D^* \to U$. En termes d'un foncteur entre groupoïdes, $\Pi_{D^*} \to \Pi_U$ la catégorie cofibrée (``en groupoïdes'') associée $\Pi$ est définie par : $\Ob \Pi = \Ob \Pi_{D^*} \amalg \Ob \Pi_U$.
+
+Les flèches entre deux objets de $\Pi_{D^*}$, ou deux objets de $\Pi_U$, étant celles de $\Pi_{D^*}$, resp. de $\Pi_U$ et les flèches de $\widetilde{D}^* \in \Ob \Pi_{D^*}$ dans $\widetilde{U} \in \Ob \Pi_U$ étant les isomorphismes $\rho_!(\widetilde{D}) \isom \widetilde{U}$ dans $\Pi_U$.
+
+On a un foncteur canonique $\Pi \to \Delta_1$ qui est ``cofibrant'' et pour lequel toute flèche de $\Pi$ est cocartésienne. [Quand on préfère travailler avec les topos et qu'on rapère les morphismes $\rho$ de topos par les foncteurs images inverses $\rho^*$ (N.B. on a une suite de trois foncteurs adjoints $\rho_! \rho^* \rho_*$) alors $\B_U \xlongrightarrow{\rho^*} \B_{D^*}$ est décrit par une catégorie \emph{fibrée} en topos sur $\Delta$ i.e. une catégorie fibrée $\B$ telle que les catégories fibres soient des topos, et le foncteur de changement de base soit exact à guache et commute aux limites inductives quelconques.]
+
+Soit $\mathscr{S}$ la 2-catégorie des surfaces admissibles, $\mathscr{M}$ celle des morphismes de topos multigaloisiens (sans condition). On a un 2-foncteur de 2-catégories
+$$
+\mathscr{S} \to \mathscr{M}
+$$
+et on sait décrire l'image 2-essentielle par la condition ``structure à lacets''\footnote{N.B. On exclut par exemple $\B_{D^*} \isom$ ``topos vide'' $\B_U \isom$ ``topos ponctuel'' i.e. $\pi_{D^*} = \emptyset$ et $\pi_U \isom$ catégorie ponctuelle.} qui définit une sous 2-catégorie pleine de $\mathscr{M}$ soit $\mathscr{M}_{\text{lac}}$. Par ailleurs on sait que le foncteur est 2-fidèle, donc induit une 2-équivalence de 2-catégories\footnote{Il n'y a pas à se donner une structure supplémentaire dans le cas $\B_{D^*} \isom$ ``topos vide'' sur $\B_U$ - à savoir un isomorphisme $T \isom \mathrm{H}^2(M, \mathbf{Z})$ pour toute composante connexe - car on ne suppose pas que l'on travailler avec des structures orientées ! (Dans l'analogue arithmétique il n'en sera plus de   même bien sûr\dots)}
+$$
+\mathscr{S} \to \mathscr{M}_{\text{lac}}
+$$
+Si maintenant $\Gamma$ est un groupe et si on considère des surfaces admissibles avec action de $\Gamma$, elles définissent des topos (ou groupoïdes) $\B_{D^*}$, $\B_U$ avec opération de $\Gamma$ dessus [ou des topos cofibrés sur le groupoïde [$\Gamma$] défini par $\Gamma$] et des morphismes entre ceux-ci commutant à $\Gamma$. On peut considérer une telle donnée comme celle d'un topos multigaloisien (ou groupoïde) cofibré sur $\Delta \times [\Gamma]$. Mais la donnée d'un tel morphisme de topos multigaloisiens avec opération de $\Gamma$, équivaut à celle de morphismes de topos multigaloisiens :
+$$
+\B_{D^*, \Gamma} \to \B_{U, \Gamma} \to \B_{\Gamma}
+$$
+ceci semble un point de vue conceptuellement commode, notamment quand on fait varier $\Gamma$.
+
+On peut remplacer $\Gamma$ par un groupoïde $\Pi$ (jouant le rôle d'un groupoïde fondamental) et se proposer de décrire la 2-catégorie $\mathscr{R}\mathscr{S}$ des foncteurs de $\Pi$ dans la catégorie des surfaces admissibles, [ou encore la 2-catégorie des ``surfaces fibrées admissibles'' sur le topos multigaloisiens $\widehat{\Pi}^\circ$ correspondant à $\Pi$]. On la décrit par la 2-catégorie $\mathscr{R}\textfrak{M}$ des diagrammes de topos multigaloisiens (ou de groupoïdes)
+$$
+\B_{D^*, \Pi} \to \B_{U, \Pi} \to \B_{\Pi}
+\leqno{(1)}
+$$
+donc finalement on a un 2-foncteur entre deux 2-catégories : celle des représentations de groupoïdes dans la catégorie des surfaces admissibles et celle des diagrammes de topos multigaloisiens (ou de groupoïdes) (1).
+
+Prenant pour toute composante connexe $\B_{\Pi_i}$ de $\B_{\Pi}$ un revêtement universel $\widetilde{B}_{\Pi_i}$, et prenant les produits fibrés, on récupère comme de juste un diagramme
+$$
+\B_{D^*_i} \xlongrightarrow{\rho_i} \B_{U_i} \to \widetilde{B}_{\Pi} \isom~\text{topos ponctuel}
+\leqno{(2)}
+$$
+et une action de $\pi_i = \Aut_{\B_{\Pi_i}}\widetilde{B}_{\Pi_i}$ dessus ; et la famille de ceux-ci pour $i$ variable permet de récupérer la situation complète\dots 
+
+On dira que le diagramme (1) est ``admissible'', si les $\rho_i$ dans (2) sont admissibles ; d'où une 2-catégorie $\mathscr{R}\mathscr{M}_{\text{lac}}$, et un 2-foncteur
+$$
+\mathscr{R}\mathscr{S} \to \mathscr{R}\mathscr{M}_{\text{lac}}
+$$
+On regarde la sous 2-catégorie pleine obtenue en se limitant aux $\Pi$ dont les groupes fondamentaux sont finis, d'où un 2-foncteur induit
+$$
+\mathscr{R}_f\mathscr{S} \to \mathscr{R}_f\mathscr{M}_{\text{lac}}
+$$
+et on se propose d'étudier ses propriétés de fidélité.
+
+Je conjecture que c'est une équivalence de 2-catégorie i.e. qu'il est 3-fidèle.
+
+Bien entendu on est ramené quand même au cas de groupoïdes connexes $\Pi_f$ définis par un groupe (fini s'il le faut) et on est aussi ramené par des arguments essentiellement triviaux à regarder le cas de diagrammes $\B_{D^*} \to \B_U$ avec $\B_U$ connexe.
+
+Du côté géométrique la situation serait donnée par un $U = X \setminus S$ de type $(g, \nu)$, $(g, \nu) = (0, 0)$ et une opération de $\Gamma$ dessus. OPS $U = U_{g, \nu}$ donc on donne $\Gamma \to A_{g, \nu}$. Pour la question de $i$-fidélité avec $i \leq 2$ OPS qu'il s'agit du même groupe $\Gamma$ qui opère\dots
+\begin{enumerate}
+    \item[a)] {\bf 0-fidélité}. Soit $U$, $U'$ avec opérations de $\Gamma$ dessus $k, g:U \isommap U'$ commutant à $\Gamma$ et $\alpha$, $\beta$ deux homotopies de $f$ à $g$ i.e. : deux chemins de $f$ à $g$ dans $\Isom_\Gamma (U, U')$. On suppose que dans la description topossique
+    \[\begin{tikzcd}
+	{\B_{D^*, \Gamma}} && {\B_{U, \Gamma}} && {\B_{\Gamma}} \\
+	\\
+	{\B_{D^{'*}, \Gamma}} && {\B_{U', \Gamma}} && {\B_{\Gamma}}
+	\arrow["{=}", from=1-5, to=3-5]
+	\arrow[from=3-3, to=3-5]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=3-1, to=3-3]
+	\arrow["{g_{U, \Gamma}}", shift left=2, from=1-3, to=3-3]
+	\arrow["{f_{U, \Gamma}}"', from=1-3, to=3-3]
+	\arrow["{g_{D^*, \Gamma}}", shift left=1, from=1-1, to=3-1]
+	\arrow["{f_{D^*, \Gamma}}"', shift right=1, from=1-1, to=3-1]
+    \end{tikzcd}\]
+    $\alpha_*^{D^*} = \beta_*^{D^*}: f_{D^*} \to g_{D^*}$ et $\alpha_*^U: \beta_*^U: f_U \to g_U$.
+\end{enumerate}  
+A prouver que $\alpha$ et $\beta$ sont homotopes. OPS $g = \Id$, $U = U_{g, \nu}$, donc $f \in A^{\Gamma}_{g, \nu}$, et on a deux chemins $\alpha, \beta$ de 1 à $f$ dans l'espace $A^\Gamma_{g, \nu}$. On suppose que les deux isomorphismes correspondants entre identité de $\Pi_{D^*}$ et $f_{D^*, \Gamma}: \Pi_{D^*_{S_\nu}, \Gamma} \to \Pi_{D^*_{S_\nu}, \Gamma}$ d'une part entre identité de $\pi_{U, \Gamma}$ et $f_{U, \Gamma}$ d'autre part sont les mêmes. On veut prouver que $\alpha$ et $\beta$ sont homotopes. Bien sur l'hypothèse sur $\alpha$, $\beta$ relative à l'action de $\Gamma$ est vérifiée a fortiori en se restreignant à un groupe plus petit, par exemple, $\Gamma' = 1$, et en fait on voit qu'elle est équivalente pour $\Gamma$ et pour son sous-groupe 1. Le résultat déjà connu (Ladegaillerie) pour $\Gamma = 1$, montre que ceci signifie que si deux chemins dans $A^\Gamma = (A^\Gamma_{g, \nu})$ de 1 à $f$ sont homotopes dans $A$ ils le sont dans $A^\Gamma$ ou encore que
+$$
+\boxed{\pi_1(A^\Gamma) \to \pi_1(A) \quad \text{est injectif.}}
+$$
+Dans le cas $\pi_1(A) = 0$ (cas $(g, \nu)$ anabélien) cela revient donc à prouver que $\pi_1(A^\Gamma) = 0$.
+
+\begin{enumerate}
+    \item[b)] {\bf 1 fidélité}. Cela signifie (en plus de la 0-fidélité) que tout isomorphisme entre $\B_f$ et $\B_g$ provient d'un chemin de $f$ à $g$. Avec la réduction précédente OPS $g = \id$ donc on a $f \in A^\Gamma$ d'où $f: (\B_{D^*} \to \B_U) \to (\B_{D^*} \to \B_U)$ (respectant $\Gamma$) et on a un isomorphisme avec l'identité.
+\end{enumerate}
+Soit $A$ un groupe topologique, d'où deux invariants :
+$$
+\pi_0 = \pi_0 (A), \quad \pi_1 = \pi_1(A)
+$$
+le premier est un groupe (pas nécessairement commutatif) le deuxième est un groupe commutatif sur lequel $\pi_0$ opère. On définit une $\Gr$-catégorie $\underline{A}$ d'invariant $\pi_0$, $\pi_1$ et correspondant à cette opération de $\pi_0$ sur $\pi_1$ en prenant comme catégorie sous jacente le groupoïde fondamental (naïf) de $A$ et comme foncteur de composition celui de $A \times A \to A$ (l'associativité de $\underline{A} = \Pi_1 A$ est stricte\dots).
+
+Ceci posé, tout torseur sur $A$ définit un 1-torseur sous la $\Gr$-catégorie $\underline{A}$. Plus généralement pour tout espace topologique $S$ (ou tout topos qui est localement un espace topologique) tout torseur sur $S$ de groupe $A_S$ définit un $\underline{A}_S$-champ sur $S$ qui est un champ en $\underline{A}_S$-torseurs. Si $\pi_i (A) = 0$ pour $i \geq 2$, alors on trouve ainsi pour tout $n \in \mathbf{N}$, $n \geq 2$ une \emph{$n$-équivalence} entre la $n$-catégorie des torseurs sur $S$ de groupe $A_S$, et la $n$-catégorie déduite de la 2-catégorie des $\underline{A}_S$-torseurs en la prolongeant de fa\c{c}on discrète\dots 
+
+Mais considérons un groupe $\Gamma$, et considérons la classification des $A_{\B_\Gamma}$-torseurs sur le topos classifiant - i.e. celle des $A$-torseurs avec une opération de $\Gamma$ dessus (commutant à l'action de $A$). Ces objets forment une 2-catégorie dont les composantes connexes correspondent aux classes de conjugaison d'homomorphismes de $\Gamma$ dans $A$. Si on a un homomorphisme $\Gamma \to A$, il définit une action sur le torseur trivial $1_A$. Si $u$, $v$ sont deux homomorphismes, les isomorphismes de $(1_A, u)$ avec $(1_A, v)$ correspondent aux éléments de l'ensemble :
+$$
+\Transp (u, v) = \{ g \in A | v = \text{int}(g) \circ u \}
+$$
+Mais on fera une catégorie 0-isotopique en rempla\c{c}ant par son groupoïde fondamental $\Pi_1$ $\Transp (u, v)$. 
+
+Donc un isomorphisme de $u$ et $v$ est encore un point de $\Transp (u, v)$ ; mai si on a deux tels isomorphismes $f, g$ les isomorphismes $f \isom g$ sont les classes de chemins dans $\Transp (u, v)$ de $f$ à $g$. Ainsi la catégorie $\underline{\Aut}(u)$ est équivalente à
+$$
+\Pi_1 \Transp (u, v) \quad (\Transp (u, u) = A^u) \quad \underline{\Aut}(u) = \Pi_1 \Transp (u)
+$$
+et la catégorie $\Isom (u, v)$ est soit vide (si $u$, $v$ ne sont pas conjugués) soit un torseur sous $\underline{\Aut}(u)$.
+
+Mais pour tout torseur $P$ sous $A$ sur lequel $\Gamma$ opère le 1-torseur $\Pi_1 P$ sous $\Pi_1 A = \underline{U}$ est muni d'opérations de $\Gamma$ d'où un $(\Gamma, \underline{A})$ torseur. On trouve ainsi un foncteur de 2-catégorie :
+\[\begin{tikzcd}
+	{\begin{pmatrix} \text{2-catégorie des}~(\Gamma, A)-\text{torseurs} \\ \text{[ou encore des homomorphismes}~\Gamma \to A] \end{pmatrix}} && {\begin{pmatrix} \text{2-catégorie des 1-torseurs sous} \\ \underline{A}~\text{avec opération de}~\Gamma~\text{dessus} \end{pmatrix}}
+	\arrow[from=1-1, to=1-3]
+\end{tikzcd}\]
+ 
+ En somme, on vient de répéter sur le topos classifiant $\B_\Gamma$ la construction faite plus haut pour un espace topologique $S$. On aimerait encore exprimer des conditions pour que ce 2-foncteur soient une 2-équivalence.
+
+Pour ceci, il conviendrait d'abord d'avoir une compréhension de la classification des classes d'équivalence d'objets de la deuxième catégorie qui sont eux de nature purement algébrique, en terme de la $\Gr$-catégorie $\underline{A}$ et de $\Gamma$. Quitte à se borner à des torseurs triviaux sous $\underline{A}$ (ce qui est licite) il faudrait expliciter ce qui signifie que $\Gamma$ opère sur le torseur trivial. On constate que cea signifie qu'on a un homomorphisme de $\Gr$-catégorie de la $\Gr$-catégorie discrète définie par $\Gamma$ dans $\underline{A}$. Donc la 2-catégorie envisagée est celle dont les objets sont les homomorphismes de $\Gr$-catégories 
+$$
+\Gamma \xlongrightarrow{u} \underline{A}
+$$
+et pour deux tels morphismes $u$ et $v$ il faut définir (non seulement un ensemble $\Hom(u, v)$ mais) une catégorie $\underline{\Hom}(u, v)$ comme la sous-catégorie $\underline{\Transp}(u, v)$ de $A$, à définir ad-hoc.
+
+Considérons pour simplifier le cas où $\pi_1 = 0$, d'où $\underline{A}$ se réduit à $\pi_0$ et la catégorie des homomorphismes $\Gamma \to \underline{A}$ à celle des homomorphismes $\Gamma \to \pi_0$. Le fait que le foncteur de 2-catégorie plus haut soit une équivalence de 2-catégorie se traduit alors pas à pas ainsi :
+\begin{enumerate}
+    \item[1)] {\bf 0-fidèle} signifie que pour tout hom $u: \Gamma \to A$, on a $\pi_1(A^u) = 0$.
+    
+    \underline{N.B.} $A^u$ et $A^{\circ u}$ ont même composante neutre donc la condition s'écrit
+    $$
+    \boxed{\pi_1((A^\circ)^u) = 0}
+    $$
+    \item[2)] {\bf 1-fidèle} signifie que de plus, si $u$, $v$ sont des homomorphismes de $\Gamma \rightrightarrows A$, et $\alpha, \beta \in \Transp_A (u, v)$ ont même image dans $\Transp_{\pi_0}(\underline{u}, \underline{v})$ alors $\alpha$, $\beta$ sont dans une même composante connexe de $\Transp_A(u, v)$.
+    
+    Pour le voir OPS $u = v$ et on est ramené à exprimer que l'application $\pi_0 (A^u) \to \pi_0$ est injective i.e. que son noyau est réduit à 1, i.e. que le sous-groupe ouvert $A^u \cap A^\circ = (A^\circ)^u$ de $A^u$ est connexe, i.e.
+    $$
+    \boxed{\pi_0 ((A^\circ)^u) = 0}
+    $$
+    \item[3)] {\bf 2-fidèle} signifie que en plus des conditions précédentes, qui assurent que pour $u$, $v$, fixés, le foncteur $\underline{\Hom}(u, v) \to \underline{\Hom}(\underline{u}, \underline{v})$ est pleinement fidèle, que celui-ci est essentiellement surjectif, i.e. que si $u$, $v$ sont tels que $\underline{u}, \underline{v}: \Gamma \to \pi_0$ sont conjugués (si on veut égaux) alors $u$ et $v$ sont déjà conjugués par un élément de $\pi_0$.
+    
+    Il faut le dire de fa\c{c}on plus forte : $\Transp(u, v) \to \Transp(\underline{u}, \underline{v})$ surjectif : cela équivaut à dire que si $\underline{u} = \underline{v}$ alors $u$ et $v$ sont conjugués par un \emph{élément} de $A^\circ$.
+    
+    En d'autres termes : pour tout homomorphisme $\underline{u}: \Gamma \to \pi_0 = A/A^\circ$ s'il existe un relèvement de $u$ en $\Gamma \to A$, celui-ci est unique à conjugaison près.
+    \item[4)] {\bf 3-fidèle} signifie qu'en plus tout hom $\underline{u}: \Gamma \to \pi_0$ se relève en $u: \Gamma \to A$. En résumé, si $\pi_1(A^\circ) = 0$ la 3-fidélité signifie que pour tout homomorphisme $\underline{u}: \Gamma \to \pi_0 = A/A^\circ$, il existe un relèvement $u: \Gamma \to A$, unique à conjugaison près, et qu'alors $(A^\circ)^u$ est connexe et simplement connexe. Je présume que dans le cas général où on ne suppose pas $\pi_1(A^\circ) = 0$ il faut remplacer la condition $\pi_1(A^{\circ u}) = 0$ par $\pi_1(A^{\circ u} \to \pi_1(A^\circ))$ est un isomorphisme.  
+\end{enumerate}
+Trop brutal ! la condition en question disant $\pi_1 (A^{\circ \Gamma}) \isommap \pi_1(A^\circ)^\Gamma$ mais il faut reprendre avec soin l'ensemble des conditions et les modifier ad-hoc\dots Cf feuille intercalaire.
+
+(Le plus agréable serait que ce soit un homotopisme --- c'est cela sans doute qui exprimerait qu'on a une $\infty$-équivalence\dots)
+
+J'ai envie de prouver d'abord 1), 2), 3) dans le cas $A = A_{g, \nu}$, en me limitant au besoin au cas anabélien (sa doute le plus dur en fait ! mais moins touffu conceptuellement) et bien sûr au cas où $\Gamma$ est fini. Le premier travail sera bien sûr celui de déterminer $A^{\circ u}$ et sa structure topologique pour essayer de prouver que $A^{\circ u}$ est contractile dans ce cas.
+
+\newpage
+
+[Intercalaire]
+
+\vskip 2cm
+
+(On ne suppose plus $\pi(A^\circ) =0$).
+
+\begin{enumerate}
+    \item[1)] 0-fidèle. $\pi_1 (A^\circ \Gamma) \to \pi_1(A^\Gamma) = \mathrm{H}^\circ(\Gamma, \pi_1(A))$ injectif. 
+    \item[2)] 1-fidèle. $\pi_1 (A^{\circ \Gamma}) \to \pi_1(A^\Gamma)$ bijectif et $\pi_0(A^{\circ \Gamma}) \to \mathrm{H}^1(\Gamma, \pi_1)$ injectif.
+    \item[3)] 2-fidèle. $\pi_1(A^{\circ \Gamma}) \to \mathrm{H}^\circ (\Gamma, \pi_1(A))$ et $\pi_0 (A^{\circ \Gamma}) \to \mathrm{H}^1(\Gamma, \pi_1(A))$ bijectif et $\pi_0 (A^\Gamma) \to \Ker (\pi_0(A)^\Gamma) \to \mathrm{H}^2(\Gamma, \pi_1)$ (qui est déjà injectif par la condition précédente) est surjectif i.e. tout élément de $\pi_0(A)$ qui centralise \emph{strictement} $\Gamma$ provient d'un élément de $A$ qui centralise $\Gamma$. Il faut un peu plus, quand on a deux homomorphismes $u, v: \Gamma \to A$ qui coïncident \emph{strictement} dans $\underline{A}$, on veut qu'il soient conjugués par un élément de $A^\circ$. 
+    \item[4)] 3-fidèle. En plus des conditions précédentes, on veut que tout homomorphismes $\Gamma \to \underline{A}$ (défini par $\Gamma \to \pi_0 (A)$ et un scindage de la $\Gr$-catégorie de Sinh-Postnikov extension de $\Gamma$ par $\pi_1(A)$) provienne d'un homomorphisme $\Gamma \to A$.
+\end{enumerate}
+
+
+% End

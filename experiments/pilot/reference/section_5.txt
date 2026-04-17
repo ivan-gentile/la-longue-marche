@@ -1,0 +1,107 @@
+Section: § 5. — INTRODUCTION DU CONTEXTE ARITHMÉTIQUE;
+G103d pages: 15-18
+
+--- G103d page 15 ---
+§ 5. — INTRODUCTION DU CONTEXTE ARITHMÉTIQUE;
+“CONJECTURE ANABÉLIENNE” FONDAMENTALE
+Soit K une extension de type fini de Q, et choisissons une clôture algébrique K de K.
+On pose Γ = Gal(K/K).
+5.1. Nous considérons des couples (X, S), où :
+a) X est un schéma projectif et lisse sur K, de dimension ≤1 ;
+b) S est sous-schéma fini réduit de X (donc fini étale sur K) contenu dans la réunion
+des composantes irréductibles de dimension 1 de X.
+Les morphismes (X′, S′) →(X, S) seront par définition les morphismes de sché-
+mas
+f : X′ →X
+tels que
+S′ = f −1(S)red
+i.e. tels que supp S′ = f −1(supp S).
+Nous cherchons une “description galoisienne” de cette catégorie, ou tout au moins
+d’une sous-catégorie pleine VK que nous allons définir maintenant.
+Lemme 5.2. — Soit Ωun corps algébriquement clos X une courbe projective lisse con-
+nexe sur Ω, S une partie finie de X(Ω), U = X \ S, g le genre de X, n = card S.
+Conditions équivalentes :
+a) π1(U) non abélien,
+
+--- G103d page 16 ---
+b) Aut(U) fini,
+c) Pour tout schéma connexe réduit X de type fini sur Ω, l’ensemble des morphismes
+non constants de X dans U est fini,
+d) On est dans l’un des trois cas suivant : 1◦) g ≥2 2◦) g = 1, n ≥1 3◦) g = 0,
+n ≥3
+e) (si Ω⊂C) le revêtement universel de X(C) \ S(C) est isomorphe au demi plan de
+Poincaré,
+f) (??) (si Ω= Q, S ̸= ∅) Le revêtement universel de X \ S = U est isomorphe à
+celui de P1
+Ω\ {0, 1, ∞}.
+Définition 5.3. — On dit alors que (X, S) est anabélien.
+Comme cette condition est (par d) par exemple, invariante par extension du corps
+de base algébriquement clos, on étend cette définition au cas d’un couple (X, S), avec
+(X, S) comme dans (5.1.) (NB. On regarde séparément les composantes connexes de
+XK…). Dorénavant, dans (5.1.) nous allons nous borner au cas de couples (X, S) an-
+abéliens.
+5.4. À un couple (X, S) (pas nécessairement anabélien) — plus généralement à tout
+schéma X localement de type fini sur S, on associe un objet “de nature galoisienne” [à]
+savoirlegroupoïdefondamental(profini)Π1(X)deX (formésionveutdesrevêtements
+universel de X), muni d’un foncteur canonique
+Π1(X)
+Π1(K)
+[Tors(Γ)]
+≈
+Un morphisme de K-schémas
+X′
+f
+−→X
+définit un foncteur
+Π1(X′)
+Π1(f)
+−−−→Π1(X)
+11
+
+--- G103d page 17 ---
+et un isomorphisme α de commutation
+Π1(X′)
+Π1(X)
+Π1(K)
+Π1(f)
+α
+∼
+On trouve ainsi un foncteur, de la catégorie des schémas localement de type fini X sur
+K, dans la “catégorie des groupoïdes profinis sur Π1(K)”, définie comme au n◦4.
+QuandonpasseàlacatégoriedesK-schémaslocalementdetypefiniconnexes,munis
+d’un point géométrique au dessus de K/K5 (i.e. d’un x ∈X, d’une clôture séparable
+k(x) de k(x) et d’un K-morphisme K ,→k(x)), cela correspond à un foncteur des K-
+schémas localement de type fini et connexes, ponctués sur K/K (au ses précédent) vers
+la catégorie des groupes profinis π munis d’un homomorphisme (de groupes profinis)
+π →Γ
+(dont l’image sera d’ailleurs nécessairement ouverte donc d’indice fini, pour des objets
+provenant de X comme [ci-]dessus).
+Conjecture 5.56 — La restriction du foncteur précédent X 7→(Π1(X) sur Π1(K))
+aux schémas projectifs lisses de dimension ≤1 et anabéliens (i.e. tels que (X, S) soit an-
+abélien, où S est la réunion des composantes de dimension 0) est pleinement fidèle.
+Il revient au même de dire ceci :
+Définition 5.5 bis. — Le foncteur qui, à tout X comme dans 5.5. et de plus connexe,
+(de dimension 0 ou 1), muni d’un point géométrique ξ au dessus de K, associe le groupe
+profini π1(X, ξ) sur Γ = π1(K, ξ), est un foncteur pleinement fidèle.
+Il faut quand même expliciter les morphismes (X, ξ) →(X′, ξ′) dans la catégorie
+de départ : morphismes de K-schémas X
+f
+−→X′, munis d’un morphisme de Π1(X′)
+(ou classe de chemins) f(ξ) ≃ξ′.
+Ces conjectures se réduisent à la théorie de Galois, pour des X de dimension 0. Pour
+des X de dimension 1, elles ne concernent que des X tels que les composantes connexes
+5il vaut mieux dire : munis d’un revêtement universel…
+6c’est un peu faux cf n◦9
+12
+
+--- G103d page 18 ---
+de XK soient de genre ≥2 (ou, ce qui revient au même, introduisant l’extension finie
+K′ = H0(X, OX)) de K, de sorte que X soit géométriquement connexe sur K′, tel que
+X comme courbe algébrique sur K′ soit de genre ≥2. On voit aisément (prenant X′ =
+Spec(K), X = P1
+K courbe elliptique sur K) qu’elles deviennent fausses sinon — c’est
+pourquoi il a fallu introduire S, plus l’hypothèse anabélienne sur (X, S), pour associer
+à (X, S) une structure plus riche que Π1(X) sur Π1(K). On trouvera des conjectures
+(par exemple) pour X courbe géométriquement connexe sur K de genre 1 (resp. 0),
+pourvu que S soit de degré ≥1 (resp. ≥3).
+13

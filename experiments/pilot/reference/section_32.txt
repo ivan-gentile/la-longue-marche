@@ -1,0 +1,855 @@
+Section: § 32. — RETOUR SUR LES ASPECTS ARITHMÉTIQUES DU
+G103d pages: 215-233
+
+--- G103d page 215 ---
+§ 32. — RETOUR SUR LES ASPECTS ARITHMÉTIQUES DU
+BOUCHAGE DE TROUS : RELATIONS ENTRE Γg,ν et Γg,ν−1
+Bien sûr, on a que
+Ng,ν →Sν
+est surjectif (puisque Tg,ν →Sν l’est), donc on aura
+(1)
+1 →N !
+g,ν →Ng,ν →Sν →1
+et le diagramme cartésien de sous-groupes de ˆˆTg,ν:
+(2)
+ˆT+
+g,ν
+Ng,ν
+ˆT!+
+g,ν
+N !
+g,ν
+[Ng,ν = N !
+g,ν · ˆT+
+g,ν] donnera un isomorphisme
+(3)
+N !
+g,ν/ˆT!+
+g,ν
+∼
+−→Ng,ν/ˆT+
+g,ν = Γg,ν.
+Dans le cas d’un (π, a), (π groupe extérieur à lacets, a une arithmétisation), on aura de
+même:
+(4)
+
+
+
+N !
+a/ˆT+
+a
+∼
+−→Na/ˆT+
+a = Γa
+Na = N !
+aˆT+
+a .
+
+--- G103d page 216 ---
+Considérons maintenant pour tout i ∈I le stabilisateur Ni de i dans N, et le groupe
+à lacets (pas extérieur!) πi, de type (g, ν −1), déduit de π par “bouchage du trou i”
+107. On a alors, pour une discrétification choisie α compatible avec l’arithmétisation, un
+homomorphisme injectif
+(5)
+π′
+i
+φi
+−→ˆT+! ⊂N ! ⊂ˆˆTi,
+tel que le composé
+π′
+i →ˆˆTi →ˆˆS(π′
+i)(←- π′
+i)
+soit l’inclusion canonique. Ceci posé, on veut 108 que l’image de (5) (qui n’est peut-être
+pas invariante dans ˆTi) soit invariante dans Ni, 109Cela signifie aussi que ϕi ne dépend
+pas du choix de la discrétification de classe α… ou ce qui revient au même, dans N ! (car
+Ni = N ! · ˆT+
+i , or ˆT+
+i invarie cette image). Revenant à la situation universelle, cela
+signifie:
+(5’) N !
+g,ν ⊂ˆˆTg,ν est contenu dans le normalisateur des π′
+i ,→ˆT!+
+g,ν (1 ≤i ≤ν −1),
+qui sont donc invariants dans N !
+g,ν
+110 De plus, ˆˆT!
+g,ν
+ψi
+−→ˆˆS!
+g,ν−1 induit un isomorphisme
+(6)
+N !
+g,ν
+∼
+−→M !
+g,ν−1.
+Cetteassertionsedécomposeendeux: toutd’abordqueψi appliquebienN !
+g,ν dansM !
+g,ν
+– et ceci résulte de la définition arithmético-géométrique de ces groupes – cela implique
+d’autre part, puisque ψi induit aussi un isomorphisme
+ˆT+
+g,ν
+∼
+−→ˆS+
+g,ν−1,
+qu’il induit un homomorphisme
+(7)
+Γg,ν
+Γg,ν−1
+Ng,ν/ˆT+
+g,ν
+Mg,ν−1/ ˆS
+λi
+≀
+≀
+107On écrit ici N etc. au lieu de Na; on suppose (g, ν −1) aussi anabélien, i.e. 2g + ν ≥4.
+108Plutôt, il est vrai que!
+109(***)
+110Il suffit me semble-t-il de le prouver pour un i pour le déduire pour les autres.
+211
+
+--- G103d page 217 ---
+et l’injectivité (resp. surjectivité) de (6) équivaut à celle de (7). D’ailleurs (7) s’insère, par
+construction, dans un diagramme commutatif:
+(8)
+ΓQ
+Γg,ν
+Γg,ν−1
+θg,ν
+θg,ν−1
+avec θg,ν et θg,ν−1 surjectifs, donc il est bel et bien évident que (6) est surjectif. La bijec-
+tivité signifie que θg,ν et θg,ν−1 ont même noyau (alors qu’a priori il se pourrait que θg,ν
+ait un noyau plus petit, i.e. corresponde à une représentation de ΓQ “moins infidèle” que
+θg,ν−1). D’ailleurs, il est évident (même, a priori, sans utiliser la définition ailleurs explic-
+itée de Ng,ν) que l’homomorphisme λi de (7) ne dépend pas du choix de 0 ≤i ≤ν −1
+– par exemple puisque l’on passe de l’un à l’autre en appliquant des opérations de ˆT+
+(puisque ˆT+ opère transitivement sur I) et que ˆT+ opère trivialement dans Γg,ν…
+On peut dire que (6) décrit M !
+g,ν−1 (donc N !
+g,ν−1) en termes de Ng,ν – mais l’inverse
+est moins clair, faute de savoir si ˆˆTg,ν
+ψi
+−→ˆˆSg,ν−1 est injectif; si on le savait, on pourrait
+décrire N !
+g,ν comme l’image inverse de M !
+g,ν−1…Il ne serait pas impossible d’ailleurs que
+(6) soit faux, i.e. que les θg,ν soient infidèles, mais de moins en moins quand on fait
+augmenter ν – en passant à la limite projective θg,∞, seulement, aurait-on (peut-être!)
+une représentation fidèle de ΓQ? Mais jusqu’à indication contraire, je préfère travailler
+hypothétiquement avec (6), ce qui s’exprime par les suites exactes fondamentales
+(9)
+1 →ˆπg,ν−1
+φi
+−→N !
+g,ν
+ψ′
+i
+−→N !
+g,ν−1 →1111
+qui étend la suite exacte
+(10)
+1 →ˆπg,ν−1
+φi
+−→ˆT!
+g,ν
+ψ′
+i
+−→ˆT!
+g,ν−1 →1
+(et tient lieu de la suite exacte peut-être défaillante
+??
+1 →ˆπg,ν−1 →ˆˆT!
+g,ν →ˆˆT!
+g,ν−1 →1
+??).
+Quand (π, a) est un groupe extérieur à lacets muni d’une arithmétisation – ce qu’on
+pourrait appeler une “courbe algébrique virtuelle” – alors ce qui précède permet de
+111On pourrait l’inclure dans une suite exacte un peu plus grande, avec (Ng,ν)i et Ng,ν−1…
+212
+
+--- G103d page 218 ---
+définir, sur chacun des π′
+i de type (g, ν −1) associés aux i ∈I(π), une arithmétisa-
+tion canoniquement associée à a, soit ai, et on trouve alors une suite exacte
+(11)
+1 →π′
+i →(Na)i
+ψi
+−→Na+
+i →1
+telle que l’on ait
+(12)
+(ˆT+
+a )i = ψ−1
+i (ˆT+
+a′
+i),
+induisant
+(11′)
+1
+π′
+i
+N !
+a
+N !
+a
+1
+ˆT+!
+a = ψ′
+i
+−1(ˆT+!
+ai )
+ˆT+!
+a′
+i
+ψ!
+i
+et induisant par passage au quotient
+(13)
+Γa
+∼
+−→Γai.
+De plus, l’application canonique
+Discrét+(π) →Discrét+(π′
+i)
+définit par passage aux quotients
+(14)
+Pa
+∼
+−→Pai
+compatible avec les actions de Γa, Γa′
+i et (13).
+Je ne fais ici aucune assertion sur une soi-disant bijectivité entre ensemble des arith-
+métisationsdeπ, etensembledesarithmétisationsdeπ′
+i –cequireviendraitàlabijectivité
+de
+ˆˆT/Na →ˆˆS′/Ma′ ≃ˆˆT′/Na′,
+qui n’aurait guère de raison d’être que si on admettait ˆˆT(π)
+∼
+−→ˆˆS(π′
+i), qui me semble
+bien problématique.
+Cependant, on trouve, par le foncteur “bouchage de trous”, une équivalence entre la
+catégorie des groupes profinis à lacets extérieurs arithmétisés de type (g, ν), et des groupes
+profinis à lacets (pas extérieurs!) arithmétisés, de type (g, ν −1).
+213
+
+--- G103d page 219 ---
+On peut se proposer d’essayer de préciser le type de propriétés qui vont caractériser
+Ng,ν dans N ′
+g,ν = NormˆˆTg,ν(ˆT+
+g,ν), ou encore Γg,ν dans Γ′
+g,ν = N ′
+g,ν/ˆT+
+g,ν. On a des
+homomorphismes naturels
+(15)
+
+
+
+Γ′
+g,ν →Autext(ˆT+
+g,ν)
+Γ′
+g,ν →Autext(ˆT+!
+g,ν)
+et je présume que Γg,ν pourra se décrire comme image inverse d’un sous-groupe fermé
+convenable de l’un ou de l’autre des seconds membres, i.e. qu’on peut le décrire en ter-
+mes des propriétés d’opérations extérieures sur ˆT+
+g,ν ou sur ˆTg,ν. Les conditions (e) en
+tout cas, sont bien de ce type (propriété de normaliser des sous-groupes invariants π′
+i de
+T+!
+g,ν…). Bien sûr, on pourrait poser des conditions sur des automorphismes extérieurs
+(de ˆT′+!
+g,ν, disons), qui soient stables par passage successifs à des ˆT′+!
+g,ν−1, ˆT′+!
+g,ν′−1 etc….et
+qui soient engendrées par les conditions (5’) et (6). Mais il n’est pas dit du tout que cela
+suffira à décrire les Γg,ν ⊂Γ′
+g,ν, ne serait-ce que parce que la condition devient vide pour
+le cas limite ν = 0 (si g ≥2; ou pour les cas g = 1, ν = 1, ou g = 0, ν = 3). Il est
+possible qu’il faille faire intervenir des propriétés des π1 des Mg,ν,Q, liées à la compactifi-
+cation. Ce n’est guère que dans le cas de (g, ν) = (0, 3) qu’il ne faut pas s’attendre du
+tout à ce genre de condition.
+Appelons “courbe algébrique potentielle” (sous-entendu, sur une clôture algébrique
+nonprécisée deQ)ladonnéed’ungroupeextérieurprofiniπ àlacetsdetype (g, ν), muni
+d’une arithmétisation a, et d’un germe de relèvement “admissible”
+(16)
+Γ♮
+a →Na.
+Ellesformentunecatégorie(pourlesisomorphismes, pourlemoment); sionsedonneun
+torseur P sous Γg,ν (ce qui, moralement, revient à se donner une clôture algébrique Q de
+Q…) les courbes potentielles de type (g, ν) relatives à ce torseur (moralement, correspon-
+dant à des courbes algébriques sur Q…) sont celles munies en plus d’un isomorphisme
+(“intérieur”)
+(17)
+Pa
+∼
+−→P
+(définissant un isomorphisme
+(18)
+Γa →ΓP = AutΓg,ν(P).)
+214
+
+--- G103d page 220 ---
+Cette fois-ci, on s’attend à trouver des ensembles d’isomorphismes finis, au lieu de
+torseurs sous des groupes profinis considérables 112.
+On considère les points de π, comme les classes de π-conjugaison de relèvements “ad-
+missibles” de (16) en
+(19)
+Γ♮
+a →Ma ⊂ˆˆT(π)
+i.e. un germe de vraie action de Γa sur π avec πΓ♮
+a = 1 ceci pour l’admissibilité.
+Question liminaire: La connaissance de π, de Σa =
+ˆT+
+a
+⊂
+ˆˆT(π), et d’un sous-
+groupe Γ ⊂ˆˆT(π) (normalisant Σa, tel que Γ′ ∩Σa = {1}) permet-elle de retrou-
+ver l’arithmétisation de π – et, pour commencer, de retrouver Na (dans lequel Γ · Σ est
+d’indice fini)? Il suffirait, pour pouvoir répondre par l’affirmative, de savoir que tout
+isomorphisme extérieur π →πg,ν, qui envoie Σ sur ˆTg,ν = Σg,ν, et tout sous-groupe
+d’indice fini Γ′ · Σ de Na dans Ng,ν, est compatible avec les arithmétisations. Or ceci
+revient exactement à:
+(g)(facultatif, quand-même!) Pourtoutsous-groupeouvertN ′ deNg,ν, leséléments
+de ˆˆTg,ν normalisant ˆTg,ν et qui transportent N ′ dans Ng,ν, sont dans Ng,ν (a fortiori
+Ng,ν serait son propre normalisateur dans NormˆˆTg,ν(ˆTg,ν)).
+Avec les “points de U” (définis comme classes de conjugaison de relèvements (19))
+“admissibles” i.e. satisfaisant (20), on fait un groupoïde, ayant comme groupe fonda-
+mental extérieur π, et sur lequel Γ ⊂Na opère strictement (NB. pour se reposer, on
+se donne maintenant Γ lui-même, pas seulement un germe – moralement, cela signifie
+qu’on a une courbe définie sur une sous-extension finie K de Q/Q…Les points fixes de
+Γ correspondent aux points rationnels sur K, les points fixes sous un sous-groupe fermé
+Γ′ aux points rationnels sur la sous-extension K′ de Q/Q associée à Γ′…)
+Soit maintenant I′ ⊂I = I(π) une partie de I, stable par Γ. On trouve par
+“bouchage de trous en I′” un groupe extérieur à lacets π′, et un homomorphisme ex-
+térieur
+(20)
+π →π′.
+112Le cas où P est le torseur trivial est celui des π [extérieurs ?] munis d’une prédiscrétification orientée
+α; d’où une suite exacte:
+1 →ˆTα →ˆ
+Nα →Γα →1
+215
+
+--- G103d page 221 ---
+D’ailleurs π′ hérite d’une arithmétisation a′ par π – et on aura
+(21)
+
+
+
+Γa
+∼
+−→Γa′
+P ≃Pa
+∼
+−→Pa′
+donc π′ est défini sur la même P que Γa (i.e. en faisant des trous dans U pour trouver
+U ′, on n’a pas dérangé le corps de base algébrique absolu Q…). D’ailleurs on aura un
+homomorphisme canonique
+ˆˆT(π) →ˆˆT(π′)
+induisant
+(22)
+Na
+Na′
+ˆTa
+ˆTa′
+(induisant justement Γa →Γa′ par passage aux quotients), et on trouve, en composant
+Γ ,→Na →Na′
+un homomorphisme également injectif
+(23)
+Γ ,→Na′
+qui est une quasi-section de Na′ sur Γa′. Donc sous réserve d’admissibilité, on trouve sur
+π′ une structure de courbe algébrique potentielle, relative au même P.
+Je suis vraiment gêné aux entournures, faute d’avoir une définition en forme
+d’“admissible” – je vais y revenir très vite – mais pour le moment, j’ai envie de noter
+que, si I′ ̸= ∅, le groupe extérieur π′ peut se décrire par un vrai groupoïde, ayant I′
+comme ensemble d’objets, et sur lequel Γ opère en sens strict (ceci est de l’algèbre pure,
+indépendamment des histoires d’arithmétisation…) Le fait que Γ opère trivialement sur
+les i′ ∈I′ implique que pour tout i′ ∈I′, on a un homomorphisme canonique
+(24)
+Γ →π′(i′)
+216
+
+--- G103d page 222 ---
+qui relève son action extérieur, d’où une classe de π′-conjugaison de relèvements de
+l’action extérieure de Γ sur π′ en une vraie action de Γ sur π′ – on espère qu’elle satis-
+fait π′Γ = 1 – et on a donc une application canonique
+(25)
+I′ →Pts(π′, α′, Γ).
+Je dis que cette application est injective. Ceci est “évident” quand on interprète “action
+extérieure admissible” par “réalisable par une vraie courbe algébrique”, et “relèvements
+admissibles” par “réalisables par des vrais points rationnels sur K, corps des invariants
+de Γ” 113. Mais on voudrait bien sûr des raisons internes à la donnée des (Ng,ν), et des
+propriétés de ces données! Ce point étant admis (en mettant entre parenthèses les deux
+définitions essentielles d’admissibilité, sur lesquelles on va revenir plus bas) on trouve un
+foncteur “bouchage de trous” (il faut faire aussi les restrictions anabéliennes habituelles):
+Courbes algébriques potentielles
+Courbes algébriques potentielles
+sur P relatives à un sous-groupe ouvert Γ →
+sur P relatives à Γ
+de ΓP, et munies d’un ensemble
+munies d’une partie de l’ensemble
+I′ de points à l’infini
+des “points invariants sous Γ”
+et sauf erreur, il est devenu évident que ce foncteur est une équivalence de catégories
+[pour les isomorphismes] et comme conséquence, il y a le foncteur en sens inverse: forer
+des trous en des “points” invariants sous Γ (ou en des points quelconques, quitte à passer
+à un Γ′ plus petit).
+Mais je me rends compte que ce n’est pas du tout évident – je vais essayer d’élucider
+la situation axiomatiquement. On a fixé un genre g, on suppose donné, pour ν variable
+(tel que (g, ν) anabélien) des sous-groupes fermés Ng,ν ⊂ˆˆTg,ν, normalisant ˆTg,ν, et
+satisfaisant la condition essentielle que les ψi : ˆˆTg,ν →ˆˆSg,ν−1 induisent
+Mg,ν
+∼
+−→Mg,ν−1,
+ce qui permet de définir la notion d’arithmétisation d’un π profini de type (g, ν) an-
+abélien, et la théorie du bouchage d’un nombre quelconque de trous, et du forage d’un
+seul trou, dans la catégorie des groupes de type (g, ν) arithmétisés.
+113On est ramené au cas Card(I′) = 2…
+217
+
+--- G103d page 223 ---
+On suppose d’autre part donné une sous-catégorie pleine 114 de la catégorie des
+groupes profinis (qui pourrait se réduire aux sous-groupes ouverts de Γg, valeur com-
+mune des Γg,ν, ou des sous-groupes ouverts du groupe Γa, a une arithmétisation), et
+une notion d’opérations extérieures “admissibles” de tels Γ sur des π arithmétisés. On
+suppose
+(1) Si Γ opère admissiblement sur π, tout sous-groupe ouvert aussi (et inversement);
+(2)115 Si de plus Γ invarie une partie I′ de I = I(π), alors en “bouchant I′”, l’opération
+de Γ sur π′ est admissible.
+Quandonauneactioneffective(pasextérieure)deΓsurun(π, a)detype(g, ν),alors
+le foncteur “forage de trous” donne une action extérieure sur un (π◦, a◦) de type (g, ν +
+1) et on dit que l’action de départ est admissible, si l’action extérieure déduite l’est. On
+trouve ainsi une équivalence entre la catégorie des systèmes (π, a, Γ, ψ, i) d’un (π, a) de
+type (g, ν +1), avec une opération extérieure admissible ψ d’un Γ dessus, et un i ∈I(π)
+stable par Γ, avec la catégorie des (π′, a′, Γ, ψ′) des (π′, a′) de type (g, ν), avec une vraie
+action admissible ψ′ de Γ dessus. La condition (2) assure que si Γ opère effectivement,
+de façon admissible, alors l’action extérieure déduite est admissible (mais l’inverse ne sera
+pas vrai – il y aura des relèvements “pathologiques” d’une action extérieure admissible
+donnée…). On suppose de plus
+(3) Si Γ opère effectivement de façon admissible sur π, alors πΓ = {1}.
+CelaimpliquequelacatégoriedesΓ-pointsdeπ, ousionveutdessectionsdeBπ,Γ(≃
+Bu) sur BΓ, est rigide. Mais considérons la catégorie limite inductive de la catégorie des
+sectionsdeBπ,Γ ≃Bu surdesBΓ′ (Γ′ sous-groupeouvert); elleestdiscrèteetcorrespond
+à l’ensemble
+Ptad(Bπ,Γ♮) ≃lim
+−→Ptad(Bπ,Γ′)
+où l’on prend la limite inductive sur les ouverts Γ′ de Γ.
+Si Pt(Bπ,Γ) ̸= ∅, alors (du seul fait que πΓ′ = {1} pour tout sous-groupe ouvert
+de Γ) le groupe extérieur π peut être décrit canoniquement par un groupoïde profini
+Pt(Bπ,Γ) ayant Pt(Bπ,Γ) comme ensemble d’objets 116, liés par le groupe extérieur π, sur
+114On la supposera stable par passage à des sous-groupes ouverts.
+115Il suffit de la poser pour Card(I′) = 1, i.e. bouchage d’un trou – dumoins si on sait que la condition
+d’admissibilité ne dépend que de l’action des noyaux des groupes.
+116Le groupoïde à opérateurs stricts Pt(Bπ,Γ) dépend fonctoriellement de (π, Γ), pour des morphismes
+218
+
+--- G103d page 224 ---
+lequel Γ opère en sens strict, le stabilisateur ΓP de tout point étant ouvert, et ΓP →
+Aut(P) (≃π modulo automorphismes intérieurs) étant continue. On a ici que si à tout
+P ∈Pt(Bπ,Γ) on associe la classe d’isomorphie de sections de Bπ,Γ sur BΓ, on trouve
+unebijection –ce quicaractériseleΓ-groupoïdeenquestionà isomorphismeuniqueprès.
+On supposera:
+(4) Si Γ opère admissiblement sur (π, a), alors il existe un sous-groupe ouvert Γ′ de
+Γ dont l’opération extérieure se relève en une opération effective admissible – i.e.
+Ptad(BΓ,π) ̸= ∅.
+Notons que dans la situation envisagée, du bouchage d’un trou i ∈I(π) d’un π, en
+plus de l’homomorphisme
+ˆˆT(π)i
+ψi
+−→ˆˆS(π′
+i)
+associé, donnant par composition
+ˆˆT(π)i
+ψ′
+i
+−→ˆˆT(π′
+i)
+d’où une action extérieure de ˆˆT(π) sur π′
+i, de façon que les π
+pi→π′
+i commutent aux ac-
+tions extérieures de ˆˆT(π), on a un homomorphisme canonique d’extensions, provenant
+de cette action extérieure et de l’homomorphisme pi : π →π′
+i;
+1
+π
+ˆˆS(π)i
+ˆˆT(π)i
+1
+1
+π′
+i
+ˆˆS(π′
+i)
+ˆˆT(π′
+i)
+1
+pi
+φi
+ψ′
+i
+[ψi]
+qui n’est pas le composé
+ˆˆS(π)i →ˆˆT(π)i
+ψi
+−→ˆˆS(π′
+i)
+(il peut se définir chaque fois qu’on a un groupe Γ, i.e. ˆˆT(π), qui commute extérieure-
+ment sur deux groupes extérieurs π, π′, et qu’on a un homomorphisme piπ →π′ qui
+commute à l’action de Γ, et tel que le centre de π et le centralisateur de son image dans π′
+soient triviaux…) C’est aussi ici l’homomorphisme de “transport de structure”, qui pour
+extérieurs [??].
+219
+
+--- G103d page 225 ---
+tout automorphisme à lacets u de π, associe l’automorphisme correspondant de π′
+i. On
+a oublié de préciser:
+(g) L’homomorphisme canonique ( ˆˆSg,ν)i →ˆˆSg,ν−1 associé à i ∈[0, ν −1] envoie
+(Mg,ν)i dans Mg,ν, donc il s’insère dans un homomorphisme de suites exactes:
+(26)
+1
+π
+Ma(π)i
+Na(π)i
+1
+1
+π′
+i
+Ma′(π′
+i)
+Na′(π′
+i)
+1
+φi
+Ceci posé, si on a une opération extérieure admissible Γ →Na(π) de Γ sur π, fixant i,
+donc aussi par exemple Na(π) →Na′(π′) sur π′
+i, on peut considérer que tout relève-
+ment Γ →Ma(π) pour π définit par composition un relèvement Γ →Ma′(π′
+i) pour
+π′
+i. On conclut aisément de (2) que si le premier est admissible, le deuxième l’est. On
+trouve donc
+(27)
+Ptad(Bπ,Γ) →Ptad(Bπ′
+i,Γ)
+et en passant à la limite, une application de Γ-ensembles:
+(28)
+Ptad(Bπ,Γ♮) →Ptad(Bπ′
+i,Γ♮)
+– qui correspond d’ailleurs à un homomorphisme de Γ-groupoïdes
+(29)
+Ptad(Bπ,Γ♮) →Ptad(Bπ′
+i,Γ♮).
+Ceci posé, soit P
+∈
+Ptad(Bπ′
+i,Γ) le “point canonique” de Ptad(Bπ′
+i,Γ)
+=
+ Ptad(Bπ′
+i,Γ♮)
+Γ. On demande:
+(5) L’application (27) induit une bijection
+Ptad(Bπ,Γ) →Ptad(Bπ′
+i,Γ) \ {P}
+ou encore (passant à la limite) une bijection de Γ-ensembles
+Ptad(Bπ,Γ♮)
+∼
+−→Ptad(Bπ′
+i,Γ♮) \ {P}.
+Ceci signifie trois choses:
+220
+
+--- G103d page 226 ---
+(a) L’homomorphisme canonique Γ →Ma′(π′
+i), composé de Γ →Na(π) et de
+Na(π)
+∼→Ma′(π′
+i), n’est pas π′
+i-conjugué à un homomorphisme composé Γ
+λ→
+Ma(π)
+φi
+→Ma′(π′
+i), où Γ
+λ→Ma(π) est un relèvement admissible.
+(b) Si λ, µ : Γ →Ma(π) sont deux relèvements admissibles de Γ →Na(π) tels que
+ϕi ◦λ et ϕi ◦µ : Γ →Ma(π) soient π′
+i-conjugués, alors λ et µ sont déjà π-conjugués.
+(c) Tout relèvement admissible de Γ →Na′(π′
+i) en Γ →Ma′(π′
+i), provient par compo-
+sition d’un relèvement admissible Γ →Ma(π).
+Grâce à ceci: l’équivalence de categories entre systèmes (π, a, i, Γ, θ : Γ →Na)
+et les systèmes (π′, a′, Γ, θ′ : Γ →Na′, P), où P ∈Pt(Bπ′,Γ♮)Γ, se précise de façon
+parfaite au niveau des points: les points Γ-rationnels de Bπ s’identifient à l’un des pts
+Γ-rationnels de Bπ′, distincts de P.
+Ceci nous permet alors (ce qui n’était pas faisable dans le contexte discret!) d’étendre
+l’équivalence de catégories en une équivalence:
+[Catégorie des systèmes (π, α, I′, Γ, θ : Γ →Nα) d’un π arithmétisé par α de type
+(g, ν) avec 2g + (ν −card(I′)) ≥3, de I′ ⊂I(π), d’une action admissible extérieure
+de Γ sur π telle que Γ fixe chaque point de I′]
+(30)
+| ≀≀
+[Catégorie des systèmes (π′, α′, I′, Γ, θ′ : Γ →Nα′) d’un π′ arithmétisé par α′ de type
+(g, ν′) [ν′ = ν−card(I′)] avec opération extérieure admissible de Γ dessus, et une partie
+I′ ⊂Ptad(Bπ′,Γ) (donc I′ ⊂Ptad(Bπ′,Γ)Γ), i.e. I′ formé de points invariants par Γ, i.e.
+“Γ-rationnels”].
+On a alors un foncteur quasi-inverse: forage de trous en I′! Il est à noter que dans
+cette approche, on a dû se borner au cas d’un ensemble de points I′ ⊂I(π), non seule-
+ment stable par Γ, mais inclus dans IΓ, ou encore à une partie I′ ⊂Pt(Bπ′,Γ♮) non seule-
+ment stable par Γ, mais même dans Pt(Bπ′,Γ♮)Γ. Pour montrer que sans cette restriction,
+le foncteur naturel correspondant est néanmoins une équivalence, on est ramené à ceci:
+(6) Soit (π, a, I′ ⊂I(π)) avec (π, a) groupe à lacets extérieur profini arithmétisé de
+type (g, ν), d’où (π′, a′) – soit Γ, avec Γ′ sous-groupe ouvert opérant sur (π, a) de façon
+admissible (Γ →Na(π)), et laissant stable I′, donc il opère de façon admissible sur
+(π′, a′). Supposons donné un relèvement de cette action de Γ′ en une action admissible
+221
+
+--- G103d page 227 ---
+de Γ sur Na′, qui invarie I′ ⊂Pt(Bπ′,Γ♮) ≃Pt(Bπ′,Γ′♮) [cf. le diagramme],
+(Na)I′
+Γ′
+Na′
+Γ
+Alors il existe une action admissible unique de Γ sur (π, a), qui prolonge celle de Γ′ et
+qui donne naissance à celle donnée sur π′.
+L’unicité est-elle de toutes façons claire? Considérons l’extension E de Γ par L =
+Ker
+ (Na)I′ →Na
+
+, image inverse de l’extension (Na)I′ (de Na′ pas L) via Γ →Na′,
+on a un scindage partiel de cette extension au dessus du sous-groupe Γ′ de Γ, et l’assertion
+est que ce scindage se prolonge, de façon unique à Γ. On peut supposer Γ′ invariant dans
+Γ, et on identifie Γ′ à un sous-groupe de E. Toutes les sections de E sur Γ s’identifient
+à des sous-groupes, sections ˜Γ de E. Pour un tel ˜Γ, on a bien sûr ˜Γ ⊂NormE(Γ′),
+d’ailleurs on a évidemment:
+(31)
+NormE(Γ′) ∩L = LΓ′
+et je présume qu’on doit avoir LΓ′ = 1 (qui généralise la condition (3) plus haut…) Or
+cette condition implique l’unicité – savoir ˜Γ = NormE(Γ′) et l’existence signifie que
+NormE(Γ′) →Γ est un épimorphisme (donc un isomorphisme…).
+Mais il faudra essayer de préciser, dans certains contextes (au moins celui des actions
+arithmétiquement fidèles, i.e. Γ →Γa injectif – qui correspond normalement au cas des
+courbes algébriques définies sur des extensions algébriques de Q) – la notion d’action
+“admissible”. Pour ceci, on doit revenir sur la relation entre courbes (potentielles) et
+revêtements finis, ce qui donne aussi une façon de faire varier g.
+Mais j’ai envie d’abord de reprendre sous un autre aspect (peut-être plus général) le
+formalismeprécédent, quipeut-êtreaussis’appliqueaucasdesgroupesdiscretsàlacets(je
+pense au formalisme des U !, lié aux actions extérieures de groupes finis sur de tels groupes
+à lacets). Soit X un ensemble ̸= ∅(moralement, un ensemble de “points” d’une courbe
+algébriques, ou d’une surface topologique…); on suppose donné, pour toute partie finie
+I de X, de complémentaire UI = X \ I, un groupoïde ΠUI, ayant UI comme ensemble
+222
+
+--- G103d page 228 ---
+d’objets. De plus, pour J ⊃I i.e. UJ ⊂UI, on suppose donné un homomorphisme de
+groupoïdes
+ΠUJ →ΠUI
+qui sur les objets soit l’inclusion UJ ,→CUI. On supposera la transitivité (stricte)
+i.e. [l’existence d’]un foncteur covariant de la catégorie des parties U de X complémen-
+taires de parties finies 117 (avec les inclusions), vers la catégorie des groupoïdes, qui sur
+l’ensemble d’objets coïncide avec le foncteur évident…On suppose de plus que pour tout
+i ∈I, on se donne un groupoïde Πi (ou ΠD∗
+i ), et pour i ∈I ∈Pf(??) un homomor-
+phisme de groupoïdes
+ΠD∗
+i →ΠUI
+compatible avec les morphismes de transition πUI →πUJ, I ⊃J. On suppose que
+pour I fixé, on trouve sur ΠUI une structure de groupoïde à lacets par
+ΠD∗
+i →ΠUI
+sans d’ailleurs exclure le cas où I = ∅, et où (ΠX étant connexe, disons) le genre est 0.
+On suppose de plus que si J ⊃I i.e. UJ ⊂UI, et pour i ∈J \ I, l’homomorphisme
+composé
+ΠD∗
+i →ΠUJ →ΠUI
+soit “constant”, de telle façon que ΠUI se déduise de ΠUJ par “bouchage des trous” en
+J \ I.
+Jusqu’à présent, tout ceci pouvait se visualiser par exemple en partant d’une surface
+topologique orientable X, et d’une partie X de X rencontrant toute composante con-
+nexe, en prenant pour ΠI la restriction à X \ I du groupoïde fondamental de X \ I
+(si I ̸= X; si X = I, ce qui exige X fini, on prendra le groupoïde fondamental de
+X \ I = X \ X, qu’on aura du mal à envoyer dans les autres avec transitivité stricte,
+qu’à cela ne tienne!) Mais, on est surtout interessé au cas X infini. Où on prend X
+courbe algébrique sur un corps algébriquement clos, X partie de X rencontrant toute
+composante connexe, et on définit les ΠUI comme précédemment.
+117Si X est fini et I = X, on suppose que cependant ΠUI(= Π∅) n’est pas le groupoïde vide, mais un
+groupoïde (qui s’envoie dans les précédents…) mais on ne pourra pas exiger la transitivité stricte Il faudrait
+peut-être faire des hypothèses anabéliennes sur ΠUI.
+223
+
+--- G103d page 229 ---
+Soit maintenant Γ une groupe qui opère sur la situation (strictement, s’entend), donc
+sur l’ensemble X, les groupoïdes ΠUI, les ΠD∗
+i (NB qu’il permute entre eux), en commu-
+tant aux homomorphismes
+ΠUI →ΠUJ et les ΠD∗
+i →ΠUI.
+(On aura des difficultés, si X est fini, pour ΠUI quand I = X, pour la commutation
+stricte des ΠUX →ΠUJ…mais passons…) Nous supposons définie une notion de sous-
+groupe admissible de Γ (ils sont en tout cas ̸= {1}) telle que si Γ′ est admissible alors tout
+sous-groupe Γ′′ ⊃Γ′ aussi.
+On suppose
+(1◦) ∀P ∈X, ΓP ̸= {1}, et ΓP d’indice fini dans Γ (i.e. l’orbite de P finie).
+Nous voulons des conditions qui assurent que X et les ΠUI etc. peuvent se recon-
+struire à isomorphisme canonique près à l’aide des données purement groupoïdiques ou
+topossiques (à opérateurs Γ) correspondantes. On peut le dire en langage topossique sa-
+vant, mais on va l’exprimer en termes de théorie des groupes à lacets. Soit I une partie de
+X stable par Γ, on voudrait poser des conditions qui permettent d’exprimer (pour tout
+tel I) la situation des groupoïdes ΠV associés aux V ⊃UI (i.e. les UJ avec J ⊂I), les
+ΠD∗
+i (i ∈I) et l’opération de Γ dessus, en termes des seules opérations de Γ sur le groupe
+extérieur à lacets π1(ΠUI) associé à I ou plutôt (car cela est immédiat, par l’opération de
+forage de trous), en sens inverse, montrer comment, sous réserve d’anabélianité, disons
+de ΠX (pour fixer les idées), on peut plus ou moins reconstituer ΠUI et l’action de Γ
+dessus…, à partir de ΠX (ou plutôt, du topos BΠX ), et de l’action de Γ dessus. On veut
+au moins une description intrinsèque des éléments de X et de l’action de Γ dessus, via
+cette action “molle” – qui, pour X connexe, revient encore à une action extérieure de Γ
+sur un groupe à lacets (sans lacets!) π…
+Une première condition, sous forme faible, est que (supposant X connexe, et ap-
+pelant π(I) le groupe extérieur π1(ΠUI), pour tout partie finie I de X) que pour π(I)
+anabélien (ce qui sera le cas pour I “assez grand”, du moins si X est infini, donc qu’on
+224
+
+--- G103d page 230 ---
+puisse prendre I de cardinal arbitrairement grand…) l’application évidente
+(2◦)
+
+
+
+
+
+
+
+
+
+classes de π(I)-conjugaison
+UI →Pt(Bπ(I),Γ♮)
+∼
+−→
+de germes de scindage de
+l’extension E(I)
+(compatible avec les actions de Γ) soit injective. Mais pour aller plus loin, il faudrait
+pouvoir donner une caractérisation de l’image. Notons (nous plaçant dans le contexte
+profini désormais) que si on se donne sur les π(I) des arithmétisations, compatibles avec
+les homomorphismes extérieurs de bouchage de trous π(I) →π(J), et avec l’action de
+Γ sur les π(I), on a donc un homomorphisme canonique de Γ dans le groupe commun
+Γ des automorphismes arithmétiquement extérieurs de ces arithmétisations (et même
+Γ →Mπ(θ)=π, ce qui est déjà une donnée nettement plus forte). On peut donc sup-
+poser donnée une notion de relèvement admissible d’une telle action arithmétiquement
+extérieure, de telle façon que l’application (2◦) soit une bijection
+UI = X \ I
+≃
+−→Ptad(Bπ(I),Γ♮).
+Ceci signifie d’ailleurs, pratiquement, que la notion d’admissibilité satisfait aux condi-
+tions (1◦) à (6◦) vues ci-dessus.
+Quant à savoir ce qu’il y a lieu d’appeler opération extérieure “admissible” de Γ sur
+un groupe extérieur profini à lacets, cela reste pour le moment conjectural. On pourrait à
+titre expérimental conjecturer que la notion qui suit marcherait. Appelons “admissible”
+toute telle action
+Γ →ˆˆT(π)
+qui respecte une arithmétisation a, i.e. qui se factorise par le Na correspondant, telle
+que l’image de Γ →Na/ˆT = Γa soit ouverte, et que pour tout homomorphisme de
+bouchage de trous en i ∈I(π), π →π′
+i, N(π)i →M(π′
+i), l’homomorphisme corre-
+spondant de Γi ni d’aucun sous-groupe ouvert Γ de Γi, ne normalise un L′
+j, j ∈I(π′
+i) =
+I \ {i}; peut-être même faudrait-il imposer que π(Γ′+) = {1}, où Γ′+ est le noyau de
+Γ′
+Hi
+−→ˆZ∗– en tout cas on s’attend à ce que l’on ait alors πΓ′ = {1}, et si ce n’était le cas,
+il faudrait l’introduire dans la définition – pour chaque opération de bouchage de trous
+relatif à I′ ⊂I(π), et un choix d’un i ∈I′, permettant de définir Γ(I′,i) →M(π(I′)))
+225
+
+--- G103d page 231 ---
+118.
+Notons qu’une vraie action de Γ sur π (pas seulement extérieure) qui relève une ac-
+tion donnée “admissible”, est elle-même admissible (en ce sens qu’elle définit une action
+extérieureadmissiblesurunπ′ detype(g, ν+1)), sietseulementsicetteactionouplutôt
+son germe, ne normalise aucun Li (i ∈I(π), et qu’il en soit de même pour l’action in-
+duite sur chaque π(I′) (I′ ⊂I = I(π)) [il suffit de prendre les π(I′) pour I′ de la forme
+I \ {j}, j ∈I, du moins si g ̸= 0] – et qu’enfin l’action de Γ♮sur π′(I) (déduite de π′
+en bouchant les trous en I, de sorte que π′(I) a une seule classe de lacets; π′(I) se déduit
+aussi de l’action effective de Γ sur π(I) – avec 0 classe de lacets – en faisant “un trou”
+correspondant – relatifs à un point i ∈I), ne normalise pas de sous-groupe lacets…Mais
+je présume que la première condition (action de Γ♮ne normalisant aucun des Li) im-
+plique les autres. Mais il faut dans la définition d’admissibilité aussi tenir compte de la
+condition (4◦), qui implique l’existence de suffisamment de relèvements…
+J’en arrive (péniblement!) à une
+Conjecture provisoire profinie119. — Pour Γ groupe profini donné, une action ex-
+térieure sur un (π, a) arithmétisé anabélien de type (g, ν) est dite admissible, si
+a) L’homomorphisme Γ →Γa a une image ouverte
+b) Les actions effectives déduites par bouchages de trous (i′ ∈I′ ⊂I = I(π))
+ne normalisent pas de sous-groupe à lacets.
+c) Il existe une infinité de classes de π-conjugaison de germes de scindages de l’extension
+de Γ par π, qui ne normalisent aucun sous-groupe à lacets de π120.
+Une action effective de Γ sur π est dite effective, si l’action extérieure est effective, et si
+elle ne normalise aucun sous-groupe à lacets.
+Ceci posé:
+118Plus généralement, pour i ∈I′ ⊂I = I(π) on impose que la [??] action de Γ′
+I sur π(I′) correspon-
+dant à i ne normalise aucun sous-groupe Lj (j ∈I \ I′). On est ramené pour ceci au cas où I′ = I \{j},
+donc où π(I′) n’a qu’une seule classe de lacets…(si g ≥1)
+119Canulé, cf. plus bas…
+120Cette condition c) exclut sans doute des cas comme Γ = Ng,ν avec (g, ν) ̸= (0, 3), car l’extension
+Mg,ν de Ng,ν par
+ˆ
+πg,ν n’admet sans doute pas de germe de scindage - ce qui est équivalent (?) au fait que
+Ug,ν sur Mg,ν n’admet pas de multisection étale…
+226
+
+--- G103d page 232 ---
+a) Si Γ opère effectivement de façon admissible, on a
+πΓ = {1}
+(peut-être même πΓ+ = {1}).
+b) Si i ∈I est stable par Γ opérant extérieurement de façon admissible, alors l’action
+effective sur π′ = π(i) ne normalise aucun L′
+j (j ∈I \ {i}).
+c) Si Γ opère effectivement sur π de façon admissible, en laissant fixe i ∈I, alors
+l’action correspondante effective (par passage au quotient) sur π′ = π(i) ne normalise
+aucun Lj, j ∈I \ {i}).
+d) Si Γ opère effectivement sur π de façon admissible, alors l’application
+Ptad(Bπ,Γ♮) →Ptad(Bπ′,Γ♮)
+définie par c) est injective, et le complémentaire de son image est égal à {P}, où P est défini
+par le “trou” i.
+Mais cette dernière partie de l’assertion, allant au-delà de la seule injectivité – et carac-
+térisant l’image, me semble maintenant tout à fait douteuse – en effet, il suffit de regarder
+un schéma S de paramètres, de type fini sur Q (un K(π, 1) de préférence, par exemple
+une courbe algébrique) et de prendre pour Γ (non le groupe fondamental de son point
+générique, i.e. d’un corps, mais) le groupe fondamental de S lui-même. La donnée d’une
+action extérieure admissible de Γ sur un π correspond moralement à celle d’une famille
+de courbes U de type g, ν paramétré par S. 121 La condition c) est vérifiée par exemple si
+U provient d’une courbe algébrique sur le corps de base lui-même, donc pas de problème
+– et il est manifeste que la surjectivité déconne. La difficulté provient du fait que deux
+actions distinctes de U sur S peuvent ne pas être disjointes!
+Il faut pouvoir parler de sections “strictement distinctes” i.e. distinctes en tout point
+de S – ce qui, en traduction profinie, revient à comparer deux scindages de l’extension
+de Γ par π, avec les germes de scindages sur Γ′ ⊂Γ de Γ (en tant qu’extension de ΓQ par
+unepartiegéométrique)quicorrespondentauxpointsdeS –i.e. les(germesdescindage)
+admissibles justement. On a l’impression de tourner dans un cercle vicieux ou presque
+– il semblerait qu’il ne faudrait pas trop vouloir avaler à la fois – traiter d’emblée tous
+121Les scindages d’extensions correspondent aux section de U sur S.
+227
+
+--- G103d page 233 ---
+les groupes profinis Γ à la fois – mais plutôt se borner d’abord à ceux qui moralement,
+correspondent à des π1 de schémas de type fini sur Q, des K(π, 1) disons, ou même des
+variétés élémentaires à la Artin – et dans les définitions resp. conjectures se tirer par les
+lacets des souliers, en récurrant sur la dimension. Au premier cran donc (dimension 0)
+on se bornerait à des actions de groupes Γ qui soient (modulo tout au moins passage à
+un sous-groupe ouvert) “arithmétiquement fidèles”, par exemple Γ →Γa injectif. Dans
+ce cas-là, la conjecture telle qu’elle est énoncée tantôt semble raisonnable, ou du moins
+pas nécessairement déconnante. Le test décisif, il est vrai, serait la possibilité d’obtenir les
+“courbes” ainsi définies comme des revêtements de P1 \ {0, 1, ∞}…
+228

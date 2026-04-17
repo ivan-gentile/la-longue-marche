@@ -1,0 +1,97 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 30. --- PROPRIÉTÉS DES $\mathcal{N}_{g,\nu}$, $\boldsymbol{\Gamma}_{g,\nu}$ \\ a) PROPRIÉTÉS LIÉES AUX SOUS-GROUPES FINIS DE TEICHMÜLLER}\thispagestyle{empty}
+\addcontentsline{toc}{section}{30. Propriétés des $\mathcal{N}_{g,\nu}$, $\boldsymbol{\Gamma}_{g,\nu}$ a) Propriétés liées aux sous-groupes finis de Teichmüller}
+\label{sec:30}
+\section*{}
+
+On aimerait dégager des propriétés, inspirées par le contexte géométrico-arithmétique, mais qui puissent se formuler de fa\c{c}on purement algébrique --- et qui soient assez fortes peut-être pour finir par caractériser les $\mathcal{N}_{g,\nu}$.  
+
+Revenons à un $(\pi,a)$, groupe à lacets arithmétisé, heuristiquement, il correspond à la donnée d'une clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$, et (si $\pi$ est donné extérieurement) d'une famille algébrique, paramétrée par un revêtement universel $\widetilde{M_{g,\nu,\overline{\mathbf{Q}}}}$ de $M_{g,\nu,\overline{\mathbf{Q}}}$, de courbes algébriques de type $(g,\nu)$. Dans cette optique, réduire cette famille à \emph{une} courbe algébrique --- i.e. se donner une courbe algébrique de type $(g,\nu)$ sur $\overline{\mathbf{Q}}$ --- doit revenir à se donner un noyau de relèvement de l'homomorphisme surjectif
+$$
+\mathcal{N}_a\to\boldsymbol{\Gamma}_a
+\leqno(1)
+$$
+(de noyau $\hat{\mathfrak{T}}^+_a$). La donnée d'un tel relèvement sur un sous-groupe ouvert $\Gamma'$ revient à la donnée d'une courbe algébrique de type $g,\nu$, définie sur l'extension finie $K'\subset \overline{\mathbf{Q}}$ définie par $\Gamma'$. Il s'agit ici non pas de relèvements continus quelconques, mais de relèvements ayant des propriétés particulières (dont certaines fort profondes, du genre ``Weil''\dots mais \emph{peut-être} conséquences de propriétés beaucoup plus simples). Les propriétés à dégager devraient en tout cas être stables par passage à un sous-groupe ouvert plus petit. Parmi ces propriétés, il y aurait que ces germes de relèvements pourraient à leur tour se remonter à $\hat{\hat{\mathfrak{S}}}(\pi)$ lui-même --- de fa\c{c}on également ``admissible'' en un sens à préciser --- et même qu'il y aurait ``beaucoup'' de classes de $\pi$-conjugaison de tels germes de relèvements, pour un germe d'action extérieure sur $\pi$ déjà donné --- ce qui correspond au fait naïf que la courbe algébrique $U$ sur $\overline{\mathbf{Q}}$ définie par cette action extérieure a ``beaucoup de points'' rationnels sur  $\overline{\mathbf{Q}}$. En fait, il suffirait, à la limite, de parler des propriétés de ces relèvements plus complets en un germe d'une vraie action de $\boldsymbol{\Gamma}_a$ sur $\pi$ (pas seulement extérieure) --- dont les actions extérieures vont se déduire par composition avec
+$$
+M_a\to\mathcal{N}_a \isom M_a/\pi.
+$$
+On suppose donc donné un sous-groupe fermé
+$$
+\Gamma\subset M_a\subset \hat{\hat{\mathfrak{S}}}(\pi)
+$$
+tel que
+$$
+\Gamma\to\boldsymbol{\Gamma}_a=M_a/\pi
+\leqno(a)
+$$
+est injectif, et a comme image un sous-groupe ouvert de $\boldsymbol{\Gamma}_a$ --- étant entendu que deux sous-groupes conjugués sous $\pi$ --- voire même parfois, sous $M_a$ --- ne sont pas considérés comme essentiellement distincts. On considère, en même temps que $\Gamma$, ses sous-groupes ouverts $\Gamma'$. On veut surement, pour de tels sous-groupes ouverts
+$$
+\pi^{\Gamma'}=\{1\}.
+\leqno(b)
+$$
+Si on désigne par $\tilde\Gamma$ l'image de $\Gamma$ dans $\mathcal{N}_a$, de sorte qu'on a une extension
+$$
+1 \to \pi \to E \to \tilde \Gamma \to 1
+\leqno(1')
+$$
+(où $\tilde\Gamma$ est isomorphe à $\Gamma$)~; on peut considérer $\Gamma$ comme une section de cette extension, $\Gamma'$ comme une section partielle. L'hypothèse $\pi^{\Gamma'}=\{1\}$ assure la \emph{rigidité} de la catégorie des points de $U$ à valeurs dans $\overline{\mathbf{Q}}$, paradigmée par celle des germes de scindage de l'extension (1').
+
+On peut aussi regarder les ensembles $(\hat{\mathfrak{S}}_a^+)^{\Gamma'}= {\Centr}_{M_a}(\Gamma')\cap\hat{\mathfrak{S}}^+_a$ et $(\hat{\mathfrak{T}}^+_a)^{\Gamma'}={\Centr}_{\mathcal{N}_a}(\tilde\Gamma')\cap \hat{\mathfrak{T}}^+_a$~; on a donc une suite exacte
+$$
+1\to \pi^{\Gamma'}\to\bigl(\hat{\mathfrak{S}}^+_a\bigr)
+^{\Gamma'}\to\bigl(\hat{\mathfrak{T}}^+_a\bigr)^{\Gamma'}
+\leqno(2)
+$$
+qui, compte tenu de l'hypothèse $\pi^{\Gamma'}=\{1\}$, donne
+$$
+\bigl(\hat{\mathfrak{S}}^+_a\bigr)^{\Gamma'}\hookrightarrow\bigl(\hat{\mathfrak{T}}^+_a\bigr)^{\Gamma'}.
+\leqno(3)
+$$
+Le deuxième membre de (3), par notre dictionnaire hypothétique, devrait être canoniquement isomorphe au groupe des automorphismes de la courbe $U$ sur $K'$, donc être un groupe fini, et même la limite inductive (pour $\Gamma'$ décroissant) --- qui est le groupe des automorphismes de $U$ sur $\overline{\mathbf{Q}}$ --- est finie. Désignant par un exposant $\natural$ le germe de groupe correspondant, on veut donc que
+$$
+Z=\bigl(\hat{\mathfrak{T}}^+_a\bigr)^{\Gamma^\natural} \bigl(={\Centr}_{\mathcal{N}_a} (\tilde \Gamma^\natural)\cap\hat{\mathfrak{T}}^+_a\bigr)\ {\rm soit\  un\  groupe\  fini} 
+\leqno(c)
+$$
+--- ce qui fait pendant à (b), et exprime que les groupes d'automorphismes des points de $M_{g,\nu,\overline{\mathbf{Q}}}$ sur $\overline{\mathbf{Q}}$ sont finis.
+
+En fait, on voudrait que $Z$ soit conjugué dans $M_a$ à un sous-groupe de $\mathfrak{T}^+$ (si on suppose qu'on dispose d'une discrétification $\pi_0$ de $\pi$, permettant de définir $\mathfrak{T}$ --- sinon, on peut exprimer cette propriété en disant qu'il existe une discrétification $\pi_0$ de $\pi$, compatible avec $a$, telle que $Z\subset \mathfrak{T}(\pi_0)\dots$)
+
+Considérons maintenant un sous-groupe fini quelconque $G\subset \hat{\mathfrak{T}}^+_a$. [N.B. si on prend seulement $G\subset M_a$, de sorte que l'image de $G$ dans $\boldsymbol{\Gamma}_a=M_a/\hat{\mathfrak{T}}^+_a$ est un sous-groupe fini, alors s'il est vrai que $\boldsymbol{\Gamma}_a \isom \Gal(\overline{\mathbf{Q}}, \mathbf{Q})$, cette image doit être d'ordre $1$ ou $2$, et dans le deuxième cas, doit définir un $\tau\in\boldsymbol{\Gamma}_a$ correspondant à une \emph{prédiscrétification} (pas orientée) bien déterminée de $\pi$.  Ce cas devrait être encore réutilisée dans la suite$\dots$] Supposons alors que [ce n'est sans doute \emph{pas} automatique --- si on ne suppose \emph{pas} $\mathcal{N}_a={\Norm}_{\hat{\hat{\mathfrak{T}}}}(\hat{\mathfrak{T}}_a)$], que $G$ est contenu dans $\mathfrak{T}^+$, pour une discrétification convenable dans la classe $a$, et que l'action extérieure ainsi obtenue de $G$ sur un $\pi_0$ discret de type $(g,\nu)$ soit toujours \emph{réalisable}. Elle est donc réalisable aussi pour une action de $G$ sur une structure complexe, donc algébrique, ce qui signifie qu'on peut trouver un germe de relèvement \emph{admissible}
+$$
+\boldsymbol{\Gamma}_a\to \mathcal{N}_a
+$$
+qui centralise $G$. Considérons d'autre part
+$$
+{\Centr}_{\mathcal{N}_a}(G)\to\boldsymbol{\Gamma}_a
+\leqno(4)
+$$
+dont le noyau est ${\Centr}_{\hat{\mathfrak{T}}^+_a}(G)=\hat{\mathfrak{T}}_a^{+G}$. Si on se pla\c cait dans le contexte discret (avec une discrétification $\pi_0\subset \pi$ invariante par $G$) on aurait, par les conjectures standard topologiques, que $\hat{\mathfrak{T}}_a^{+G}$ est le groupe des automorphismes, dans la catégorie isotopique, de l'action de $G$ sur une surface $U$ de type $(g,\nu)$, décrite par l'opération extérieure donnée de $G$ sur $\pi_0$.  Ce groupe n'a aucune raison d'être fini --- s'il l'était, l'homomorphisme (4) serait à noyau fini, donc serait un isomorphisme des noyaux des groupes, et il y aurait un germe de relèvement unique $\boldsymbol{\Gamma}_a^\natural \to M_a$ qui centraliserait $G$ --- ce qui signifierait qu'il y a une seule fa\c{c}on de réaliser l'opération topologique de $G$ sur $U$ par une opération analytique complexe, donc algébrique --- or ce n'est surement pas le cas, l'ensemble des points fixes de $G$ opérant  sur l'espace de Teichmüller $\widetilde{M_{g,\nu}}$ n'est pas réduit à un point --- c'est (dans le contexte algébrique) une multiplicité schématique qui peut être de dimension quelconque --- elle est de dimension $>0$ en tout cas, si le quotient $U/G$ n'est pas de genre $0$.
+
+A retenir en tout cas, comme propriétés plausibles~: (d) Pour tout sous-groupe fini $G$ de $\hat{\mathfrak{T}}^+_a$ (ou du moins si $G\subset \mathfrak{T}^+$, quand on dispose d'une discrétification $\pi_0\subset \pi$ dans $a$), regardant ${\Centr}_{\hat{\hat{\mathfrak{T}}}}(G)=Z(G)$, $\mathcal{N}_a\cap Z(G)\to \boldsymbol{\Gamma}_a$ a une image ouverte (et il y a même des germes de relèvements admissibles $\boldsymbol{\Gamma}_a\to Z(G)$).
+
+Ceci implique une propriété non triviale pour les $g\in M_a$ en tant qu'éléments de $\hat{\hat{\mathfrak{T}}}(\pi)$, ou mieux de $\mathcal{N}'={\Norm}_{\hat{\hat{\mathfrak{T}}}}(\hat{\mathfrak{T}})$ [à savoir: $\exists n\in\mathbf{N}^*$ tel que $g^n$ soit congru mod $\hat{\mathfrak{T}}^+_a$ à un élément de $Z(G)$\dots]. Considérons en effet l'image $Z'_G$ de $Z(G)\cap\mathcal{N}'$ dans $\Gamma'=\mathcal{N}'/\hat{\mathfrak{T}}$. On a évidemment $\boldsymbol{\Gamma}_a\subset \Gamma'$, et l'image de $Z(G)\cap\mathcal{N}_a$ dans $\boldsymbol{\Gamma}_a$ n'est autre que $Z'_G\cap\boldsymbol{\Gamma}_a$. Dire que celle-ci est ouverte, i.e. d'indice fini, implique donc que $\forall g\in\boldsymbol{\Gamma}_a$, $\exists n\in\mathbf{N}^*$ tel que $g^n\in Z'_G$.
+
+Notons que dans $\mathfrak{T}(\pi_{g,\nu})$ il n'y a qu'un nombre fini de classes de conjugaison de sous-groupes finis, donc si on regarde leurs centralisateurs $Z_G$ dans ${\hat{\hat{\mathfrak{T}}}}(\pi_{g,\nu})$ et leurs images dans
+$$
+\Gamma'_{g,\nu}={\Norm}_{\hat{\hat{\mathfrak{T}}}_{g,\nu}}(\hat{\mathfrak{T}}^+_{g,\nu})/\hat{\mathfrak{T}}^+_{g,\nu},
+$$
+on ne trouve qu'un nombre fini de sous-groupes de $\Gamma'_{g,\nu}$, soit $Z'_{g,\nu}$ leur intersection. On voit donc que le sous-groupe $\boldsymbol{\Gamma}_{g,\nu}$ de $\Gamma'_{g,\nu}$ est tel que $\boldsymbol{\Gamma}_{g,\nu}\cap Z'_{g,\nu}$ soit ouvert dans $\boldsymbol{\Gamma}_{g,\nu}$.
+
+Passons maintenant à des sous-groupes finis de $\hat{\hat{\mathfrak{S}}}(\pi)$ lui-même --- ou du moins de $M_a$ --- ou, ce qui revient presque au même, de $\hat{\mathfrak{S}}^+_a$. On va, comme tantôt, se borner à des $G\subset \mathfrak{S}(\pi_0)$, pour une discrétification convenable $\in a$, car autrement il n'y aurait rien à dire. On sait qu'alors $G$ est cyclique --- et correspond à une action de $G$ sur un $U$ topologique, \emph{avec point fixe}. On peut la réaliser de fa\c{c}on complexe, ce qu'on exprime en disant qu'il existe un relèvement admissible $\boldsymbol{\Gamma}_a^\natural \to M_a$, qui centralise $G$. On sait d'ailleurs, si $G\ne 1$, que
+$$
+\pi^G=\{1\}
+\leqno(5)
+$$
+(ou plutôt, on le sait dans le cas discret --- on l'admet dans le contexte profini) --- ce qu'on peut encore interpréter comme une propriété de rigidité -- ainsi
+$$
+{\Centr}_{\hat{\hat{\mathfrak{S}}}}(G)=\hat{\hat{\mathfrak{S}}}^G\to\hat{\hat{\mathfrak{T}}}^G
+$$
+est \emph{injectif}, donc si on a $\Gamma\subset \mathcal{N}_a$ qui est dans l'image, alors il existe un relèvement $\Gamma\to\hat{\hat{\mathfrak{S}}}$ unique qui centralise $G$, i.e. tel que $\Gamma\to\hat{\hat{\mathfrak{S}}}^G$. Mais en fait ce qu'on saura, pour un $\Gamma\subset M_a$ donné (décrivant une courbe algébrique via son action extérieure sur un $\pi_1$) c'est que $\Gamma\subset M_a^G$ (i.e. l'action extérieure commute à une action extérieure donnée de $G$, i.e. $G$ opère sur la courbe algébrique) --- et on voudrait néanmoins en conclure que lorsqu'on a relevé $G\to\hat{\mathfrak{T}}^+$ ou $G\to\hat{\mathfrak{S}}^+$ (i.e. quand on s'est donné un point fixe de l'action de $G$ sur $U$) alors l'action de $\Gamma^\natural$ se remonte automatiquement en $\Gamma^\natural\to M_a$ de fa\c{c}on à commuter\dots(i.e. $\Gamma^\natural\to M_a^G$). Est-ce là une propriété du choix de $M_a$ ou de celui du relèvement $\Gamma^\natural\to\mathcal{N}_a$, ou de $G$~?
+
+Dans le cadre discret, sauf erreur, si on a une action fidèle discrète de $G$ fini sur $\pi_0$, alors $\mathfrak{S}(\pi_0)^G\to\mathfrak{T}(\pi_0)^G$ (qui est injectif, par $\pi_0^G=1$) est aussi surjectif. Non, il y \emph{a} erreur --- \c{c}a signifierait tel quel que si $G$ opère fidèlement sur une surface topologique $U$ de type $g,\nu$, avec un point fixe $P$, alors les automorphismes qui commutent à $G$ \emph{fixent} $P$ (au lieu de permuter seulement les points fixes entre deux\dots). Donc il ne faut {\it pas} s'attendre à ce que tout tout élément  dans $\mathcal{N}_a^G$, ni même dans $\hat{\mathfrak{T}}_a^G$, se remonte à $M_a^G$ --- mais plutôt ceci~: pour un $G\subset \mathfrak{T}_a(\pi_0)$ sous-groupe fini donné, les classes de $\pi$-conjugaison de ``remontages'' à $\hat{\mathfrak{S}}$, qui s'interprètent comme des points fixes d'une action de $G$ sur quelque $U$, forment un ensemble fini, sur lequel $\hat{\hat{\mathfrak{T}}}(\pi)^G$ opère de fa\c{c}on naturelle, et le stabilisateur d'un point $P$ i.e. d'une classe de conjugaison de relèvements se remonte de fa\c{c}on unique en $\hat{\hat{\mathfrak{S}}}^G$. Il faudrait réexaminer ceci de fa\c{c}on plus soigneuse par la suite. Mais il me semble qu'on ne trouve pas ici de nouvelles propriétés des $\Gamma\subset M_a$ ni de $M_a$ lui-même, i.e. de $\boldsymbol{\Gamma}_a$ comme sous-groupe profini de $\Gamma'= \Norm_{\hat{\hat{\mathfrak{T}}}} (\hat{\mathfrak{T}})/\hat{\mathfrak{T}}$.
+
+
+% End

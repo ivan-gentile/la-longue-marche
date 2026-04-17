@@ -1,0 +1,3253 @@
+{
+  "generated": "2026-03-20T17:11:42.812919",
+  "total_diagram_pages": 178,
+  "summary": {
+    "by_volume": {
+      "140-3": 119,
+      "140-4": 59
+    },
+    "by_approach": {
+      "marker": 147,
+      "matrix-env": 30,
+      "stacked-arrows": 57,
+      "diagonal-arrows": 7
+    },
+    "high_complexity": 28,
+    "marker_only": 87
+  },
+  "pages": [
+    {
+      "volume": "140-3",
+      "page": 9,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram (12) linking $T_a$, $T_b$, $\\Pi_1(X)$, $\\Pi_1(X,G)$ and $\\Pi_1(Y,\\underline{d})$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 10,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 17,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Une sphère avec des points marqués sur l'équateur et les méridiens, projetée par une application $f$ vers une seconde sphère en dessous"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 22,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Diagramme commutatif étiqueté (1) reliant deux suites exactes. Ligne du haut : $1 \\to \\hat{\\Gamma}_{1,1}^+ \\to N_{1,1} \\to \\Gamma_{\\mathbb{Q}} \\to 1$. Ligne du bas : $1 \\to Sl(2,\\hat{\\mathbb{Z}}) \\to Gl(2,\\hat{\\mathbb{Z}}) \\xrightarrow{det} \\hat{\\mathbb{Z}}^* \\to 1$. Des flèches verticales descendent de $\\hat{\\Gamma}_{1,1}^+$ vers $Sl(2,\\hat{\\mathbb{Z}})$, de $N_{1,1}$ vers $Gl(2,\\hat{\\mathbb{Z}})$, et de $\\Gamma_{\\mathbb{Q}}$ vers $\\hat{\\mathbb{Z}}^*$ (cette dernière est étiquetée $\\chi$). Sous $\\hat{\\Gamma}_{1,1}^+$ est noté $\\simeq Sl(2,\\mathbb{Z})^\\wedge$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 26,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Un premier diagramme commutatif étiqueté (11)",
+        " Un second diagramme commutatif étiqueté (11)"
+      ],
+      "downarrows": 4,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 10,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 40,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative square"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 41,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Carré commutatif"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 7,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 56,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 57,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 68,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " two exact sequences of automorphism groups linked by vertical maps"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 70,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " under $\\rho u_0 \\rho^{-1}(l_1)$ there are three aligned terms, stacked vertically:\n$l_0$\n$int(\\rho(g_0))(l_0^\\rho)$\n$int(\\rho(g_0))(l_1^\\rho)$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 73,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif avec $\\sigma_\\infty l_1^\\gamma$, $\\sigma_\\infty$, $\\varepsilon_0$, $l_0$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 85,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Sphere with an equator and three great circles intersecting at the poles, dividing the sphere into triangles. There are points marked on the equator."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 92,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Domaine fondamental dans le demi-plan de Poincaré, délimité par l'axe imaginaire, la droite $\\Re(z) = 1/2$ et le cercle unité."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 97,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèches verticales montantes d'isomorphisme $\\uparrow \\simeq$ depuis la ligne du dessous"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 104,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 6,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 161,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " several crossed-out matrix calculations"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 176,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram de deux suites exactes courtes liées par des flèches verticales"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 177,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 8,
+      "diag_arrows": 0,
+      "total_arrows": 11,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 178,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 8,
+      "diag_arrows": 0,
+      "total_arrows": 11,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 183,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 4,
+      "horiz_arrows": 15,
+      "diag_arrows": 0,
+      "total_arrows": 19,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 184,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " $\\mathcal{N}_{0,3}^{\\sim} \\xrightarrow{\\chi} \\widehat{\\mathbb{Z}}^*$, avec des flèches obliques descendantes vers $\\mathcal{N}_{0,3}^{\\sim}/\\mathfrak{S}_3 \\simeq \\mathcal{N}_{0,3}^{\\sim !}$",
+        " diagramme commutatif avec deux suites exactes\n$1 \\to \\mathcal{M}_{0,3}^{\\sim +} \\to \\mathcal{M}_{0,3}^{\\sim} \\xrightarrow{\\chi} \\widehat{\\mathbb{Z}}^* \\to 1$\n$\\downarrow \\qquad \\downarrow \\qquad \\|$\n$1 \\to \\mathcal{N}_{0,3}^{\\sim +} \\to \\mathcal{N}_{0,3}^{\\sim} \\xrightarrow{\\chi} \\widehat{\\mathbb{Z}}^* \\to 1$ "
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 185,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 197,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Box around the equation number"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 269,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " An arrow points from \"par (36)\" to the term $Tr(\\xi \\rho)$ in the equation above"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 286,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " G_{\\rho,\\sigma} \\longrightarrow X_{\\rho,\\sigma} \\text{ avec une flèche montante } B'_0 \\longrightarrow X_{\\rho,\\sigma} \\text{ notée } \\underline{u} \\mapsto ([\\underline{u},\\rho"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 325,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " vertical arrows pointing down from the three terms above",
+        " vertical arrow pointing down from \\sigma^2 \\in \\Gamma \\mathbb{G}_m"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 335,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative square with mapping annotations"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 360,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " mappings between Borel varieties and unipotent subgroups"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 377,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram with $\\mathcal{G}_{\\rho,\\sigma}^* \\xrightarrow{t} G$, with crossed-out text below $\\mathcal{G}_{\\rho,\\sigma}^*$, an object $\\mathcal{B}'_0 \\times T_\\rho \\times N'_\\sigma$ below that, and a dashed arrow to $G$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 382,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif d'extensions"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 13,
+      "diag_arrows": 0,
+      "total_arrows": 16,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 393,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram with two horizontal exact sequences"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 394,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 1,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 397,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Under $\\mathcal{M}_{\\rho,\\sigma}$ there is $\\wr$ and $S\\mathcal{G}_{\\rho,\\sigma}^{(\\omega)*4}.SG$. Under the multiplication arrow there is $(\\alpha,\\beta,\\mu,\\varepsilon) \\longmapsto \\mu$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 398,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " underbraces indicating quotients $M_{\\rho,\\sigma} / I_{\\rho,\\sigma} = G$ and $M_{\\rho,\\sigma} / J_{\\rho,\\sigma} = PG \\simeq SGl / \\mu_2$"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 399,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif avec un signe $=$ entouré au centre"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 401,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " inclusion arrow pointing upwards from $SG$ to $M_{\\rho, \\sigma}^o$",
+        " crossed out diagram involving $ST_\\rho \\times ST_\\sigma \\times G \\to M_{\\rho, \\sigma}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 17,
+      "diag_arrows": 0,
+      "total_arrows": 17,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 403,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " triangle commutatif avec $M_{p,\\sigma}(\\infty) \\hookrightarrow M_{p,\\sigma}$, la flèche diagonale vers $T_{p,\\sigma}^!$ notée $\\sim$, et la flèche verticale de $M_{p,\\sigma}$ vers $T_{p,\\sigma}^!$ notée $can$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 410,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 414,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " un symbole d'inclusion $\\subset$ vertical pointant vers un $G$ en dessous de $N'_{\\sigma}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 416,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Inclusions indicated below the sequence: $\\mathcal{M}_{\\rho,\\sigma}(0) \\subset T_{\\sigma} \\times T_{\\rho} \\times N'_{\\sigma}$ ; $T_{\\sigma} \\subset G_1$ ; and identifications $P G_1 = G_1 / \\mathbb{G}_m \\simeq \\text{Aut}(G_1)$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 8,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 422,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 423,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Une suite exacte"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 425,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 431,
+      "has_diagram": true,
+      "marker_count": 3,
+      "marker_descriptions": [
+        " $R_{p,\\sigma} \\xrightarrow{\\kappa} \\mathbb{G}_m \\xrightarrow{\\sim} \\operatorname{Centr}(G) \\hookrightarrow G$, avec une flèche courbe $\\Theta$ en dessous allant de $R_{p,\\sigma}$ à $G$",
+        " $M_{p,\\sigma} \\xrightarrow{\\Theta} G \\xrightarrow{\\det} \\mathbb{G}_m$, avec une flèche $\\chi$ en dessous allant de $M_{p,\\sigma}$ à $\\mathbb{G}_m$",
+        " Triangle avec $R_{p,\\sigma} \\xrightarrow{\\kappa} \\mathbb{G}_m$ et $\\mathbb{G}_m \\xrightarrow{\\lambda \\mapsto \\lambda^2} \\mathbb{G}_m$, et une flèche diagonale $\\chi | R_{p,\\sigma}$ de $R_{p,\\sigma}$ vers $\\mathbb{G}_m$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 11,
+      "diag_arrows": 0,
+      "total_arrows": 11,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 432,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Commutative diagram showing horizontal inclusions $S R_{\\rho, \\sigma} \\hookrightarrow R_{\\rho, \\sigma} \\hookrightarrow M_{\\rho, \\sigma}$ with fiber labels $\\mathbb{G}_m$ and $P G$, and vertical maps $\\downarrow \\mu_2 \\times \\mu_2$ down to $S R^\\circ_{\\rho, \\sigma} \\hookrightarrow R^\\circ_{\\rho, \\sigma} \\hookrightarrow M^\\circ_{\\rho, \\sigma}$ with annotations \"Ker $\\Theta$\" and \"Ker $\\tilde{\\Theta}^\\circ$\"",
+        " 3D prism diagram showing mapping between sequences $S R_{\\rho, \\sigma} \\to R_{\\rho, \\sigma} \\to M_{\\rho, \\sigma}$ and their degree-circle equivalents $S R^\\circ_{\\rho, \\sigma} \\to R^\\circ_{\\rho, \\sigma} \\to M^\\circ_{\\rho, \\sigma}$, with fiber labels $\\mathbb{G}_m$, $P G$, and vertical quotients $\\mu_2 \\times \\mu_2$"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 433,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Cube commutatif avec les groupes $SR_{p,\\sigma}$, $R_{p,\\sigma}$, $\\mathbb{G}_m$, etc., et des projections horizontales et verticales"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 435,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " under $S R_{\\rho,\\sigma}$ is written $\\simeq S' T_{\\rho} \\times S N'_{\\sigma}$ ; under $\\tilde{\\mathcal{G}}_{\\rho,\\sigma}^+$ is written $\\simeq S G$",
+        " under $S R_{\\rho,\\sigma}^{+0}$ is written $\\simeq S T_{\\rho} \\times S T_{\\sigma}$ ; under $\\tilde{\\mathcal{G}}_{\\rho,\\sigma}^+$ is written $S G$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 436,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Cartesian square with horizontal arrows $R_{p,\\sigma} \\to \\mathcal{T}_{p,\\sigma}$ and $\\mathbb{G}_m \\to \\mathbb{G}_m$"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 10,
+      "diag_arrows": 0,
+      "total_arrows": 12,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 437,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 5,
+      "horiz_arrows": 13,
+      "diag_arrows": 0,
+      "total_arrows": 18,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 438,
+      "has_diagram": true,
+      "marker_count": 3,
+      "marker_descriptions": [
+        " flèches allant de $R_{\\rho,\\sigma}$ vers $G$ et de $G$ vers $\\mathbb{G}_m \\simeq \\text{Cent}(Q)$",
+        " carré et triangles commutatifs",
+        " isomorphismes et flèches en dessous, $R_{\\rho,\\sigma} \\ltimes SG$ vers $\\mathcal{M}_{\\rho,\\sigma}$ et $R_{\\rho,\\sigma}/\\mu_2$ vers $\\tau_{\\rho,\\sigma}$"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 11,
+      "diag_arrows": 0,
+      "total_arrows": 13,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 439,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Flèche de $\\mathcal{M}_{p,\\sigma}$ vers $\\mathcal{T}_{p,\\sigma}$, d'où partent trois flèches : $pr_1$ vers $\\mathcal{T}_p$, $pr_2$ vers $\\mathcal{N}'_\\sigma$ (suivie de $det$ vers $\\mathbb{G}_m$), et une flèche vers le bas étiquetée $pr_1 \\times pr_2$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 440,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram (116) showing a complex 3D prism structure with nodes such as $S R_{\\rho, \\sigma}$, $R_{\\rho, \\sigma}$, $P G$, $\\underline{S} G$, $G$, $\\mathcal{M}_{\\rho, \\sigma}$, their counterparts with superscript 0 ($S R_{\\rho, \\sigma}^0$, etc.), and various morphisms between them including $G_{an}$, $pr_1 \\times pr_2$, $\\lambda \\mapsto \\lambda^2$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 441,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Complex commutative diagram in the shape of a cube or prism involving groups $R_{\\rho,\\sigma}$, $S R_{\\rho,\\sigma}$, $G$, $PG$, $SG$, $\\mathcal{M}_{\\rho,\\sigma}$ and various morphisms, labeled (117) on the left"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 443,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Triangle commutatif",
+        " Triangle commutatif"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 8,
+      "diag_arrows": 1,
+      "total_arrows": 10,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 444,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Arrows from $R_{\\rho,\\sigma}$ to $T_{\\rho,\\sigma}$, which then splits into arrows to $T_{\\rho}$ and $N_{\\sigma}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 446,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " fragment de diagramme raturé avec $\\mu_2'$ et $ST_\\sigma$",
+        " flèches d'inclusion verticales vers le haut"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 448,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Large commutative diagram centered on $\\mathcal{M}_{\\rho, \\sigma}$. Incoming arrows from $SG$, $S'T_{\\rho}$, $SN'_{\\sigma}$, and $\\mathbb{G}_m$ via maps $j_G, j_{\\rho}, j_{\\sigma}, j_{\\mu}$. An object $\\mu_2$ maps into $S'T_{\\rho}$ and $SN'_{\\sigma}$. Outgoing arrows from $\\mathcal{M}_{\\rho, \\sigma}$ to $G$ via $\\Theta=\\Theta_G$, to $T_{\\rho}$ via $\\Theta_{\\rho}$, to $N'_{\\sigma}$ via $\\Theta_{\\sigma}$, and to $\\mu_2$ via $\\varepsilon_3$. Further arrows from $G$ to $PG$ and $\\mathbb{G}_m$, from $T_{\\rho}$ to $\\mathbb{G}_m$, from $N'_{\\sigma}$ to $\\mathbb{G}_m$, and from $N'_{\\sigma}$ to $\\mu_2$ via $\\varepsilon_{\\sigma}$.",
+        " Crossed out diagram"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 450,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 0,
+      "horiz_arrows": 9,
+      "diag_arrows": 6,
+      "total_arrows": 15,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env",
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 452,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 453,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Bubble containing \"$f$ à valeurs dans $G$\""
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 482,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " $\\mu_2 \\longrightarrow \\mathbb{G}_m$ with three arrows pointing respectively to $T_p$, $T_\\sigma \\hookrightarrow N_\\sigma'$, and $G$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 7,
+      "diag_arrows": 0,
+      "total_arrows": 7,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 505,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif avec $L_0$ à gauche, des flèches allant de $L_0$ vers $\\underline{G}$ (en haut) et $B_{p,\\sigma}$ (en bas), puis des flèches de $\\underline{G}$ et $B_{p,\\sigma}$ vers $G_{p,\\sigma}$ à droite"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 506,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram of exact sequences:\n$1 \\to \\mathfrak{G} \\to S_0 G_{p, \\sigma} \\to B_{p, \\sigma} \\to 1$\n$\\downarrow = \\quad \\downarrow \\quad \\downarrow$\n$1 \\to \\mathfrak{G} \\to G_{p, \\sigma} \\to \\bar{\\Gamma}_{p, \\sigma} \\to 1$\n"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 517,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif avec $\\widehat{\\mathfrak{G}}_{0,3}^+$ en haut, $\\mathfrak{G}$ en bas, flèches horizontales $u$ et $u_{\\mathfrak{G}}$, flèches verticales $\\psi$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 518,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram with two exact sequences.\nTop row: $1 \\to \\hat{\\mathbb{C}}_{0,3}^{+ \\wedge} \\to M_{0,3}^{\\prime \\sim} \\to \\widehat{\\Gamma}_{\\mathbb{Q}}^{\\prime \\sim} \\to 1$\nBottom row: $1 \\to \\mathbb{C} \\to M_\\psi^\\circ \\to \\overline{\\Gamma}_\\psi^\\circ \\to 1$\nVertical maps: $\\downarrow \\psi_{\\mathbb{C}}$, $\\downarrow \\psi_M$, $\\downarrow \\psi_\\Gamma$"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 519,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " $M_{0,3}^{'\\sim}$ mapping via \"can\" to $\\Gamma_{\\mathbb{Q}}^{'\\sim}$ (top branch) and $\\Gamma_{\\mathbb{Q}}^\\sim$ (middle branch), which map via $\\psi_{T_\\rho}$ and $\\psi_{T_\\sigma}$ to $T_\\rho$ and $T_\\sigma$, then via $\\delta_\\rho$ and $\\delta_\\sigma$ respectively to $\\Phi_{\\rho,\\sigma}$. $M_{0,3}^{'\\sim}$ also maps via $\\psi_G$ (bottom branch) to $G_{\\rho,\\sigma}$, which maps via $\\delta_G$ to $\\Phi_{\\rho,\\sigma}$.",
+        " Commutative square where $\\widehat{G}_{0,3}^{+\\wedge}$ maps to $\\mathcal{G}$ via $\\Psi$ (top and bottom horizontal arrows). The left vertical arrow is $int(x)|\\widehat{G}_{0,3}^{+\\wedge}$ from $\\widehat{G}_{0,3}^{+\\wedge}$ to itself, and the right vertical arrow is $int(U)|\\mathcal{G}$ from $\\mathcal{G}$ to itself."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 520,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Commutative square",
+        " Commutative square"
+      ],
+      "downarrows": 4,
+      "horiz_arrows": 10,
+      "diag_arrows": 0,
+      "total_arrows": 14,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 522,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 0,
+      "horiz_arrows": 5,
+      "diag_arrows": 1,
+      "total_arrows": 6,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env",
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 524,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " commutative diagram of exact sequences",
+        " commutative diagram of exact sequences"
+      ],
+      "downarrows": 8,
+      "horiz_arrows": 18,
+      "diag_arrows": 0,
+      "total_arrows": 26,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 525,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " 3 flèches verticales vers le bas, chacune étiquetée \"épi\""
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 526,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif avec une flèche diagonale"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 1,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows",
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 533,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " large block of heavily crossed out equations attempting to compute $u(\\varepsilon_0)$, $\\sigma(\\gamma)$, etc."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 536,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " diagramme commutatif triangulaire avec $L_0 \\hookrightarrow \\mathcal{C}$, $L_0 \\hookrightarrow B_{\\rho,\\sigma}$, et leurs flèches vers $G_{\\rho,\\sigma}$",
+        " homomorphisme de suites exactes verticales entre $1 \\to L_0 \\to B_{\\rho,\\sigma} \\xrightarrow{\\delta_B} \\gamma_{\\rho,\\sigma} \\to 1$ et $1 \\to \\mathcal{C} \\to G_{\\rho,\\sigma} \\xrightarrow{\\delta_G} \\gamma_{\\rho,\\sigma} \\to 1$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 9,
+      "diag_arrows": 0,
+      "total_arrows": 9,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 543,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèche de section retournant vers $g_{\\rho, \\sigma}^{eff}$, et isomorphisme vertical $\\uparrow \\simeq$ depuis $B_{\\rho, \\sigma}$ vers $\\Sigma_{\\rho, \\sigma}^{eff}$, avec indication $u \\mapsto$ [unclear"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 550,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram with arrows from $\\{\\pm 1\\}$ to $L_\\rho$ and $L_\\sigma$, and from $L_\\rho$ and $L_\\sigma$ to $\\mathfrak{S}^+$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 553,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " carré commutatif avec flèches allant de $L_0$ vers $Z_{\\rho,\\sigma}$ (notée $i_{L_0, Z}$) et vers $\\hat{\\mathbb{C}}^+$ (notée $i_{L_0, \\hat{C}}$), puis de $Z_{\\rho,\\sigma}$ vers $G_{\\rho,\\sigma}$ (notée $i_Z$) et de $\\hat{\\mathbb{C}}^+$ vers $G_{\\rho,\\sigma}$ (notée $i_{\\hat{C}^+}$)",
+        " diagramme commutatif de deux suites exactes horizontales. En haut : $1 \\to L_0 \\xrightarrow{i_{L_0, Z}} Z_{\\rho,\\sigma} \\xrightarrow{\\delta_Z} \\Gamma_{\\rho,\\sigma} \\to 1$. En bas : $1 \\to \\hat{\\mathbb{C}}^+ \\to G_{\\rho,\\sigma} \\xrightarrow{\\delta_G} \\Gamma_{\\rho,\\sigma} \\to 1$. Les flèches verticales descendent de la première ligne vers la seconde : de $L_0$ vers $\\hat{\\mathbb{C}}^+$ (notée $i_{L_0, \\hat{C}}$), de $Z_{\\rho,\\sigma}$ vers $G_{\\rho,\\sigma}$ (notée $i_Z$), et l'identité $||$ de $\\Gamma_{\\rho,\\sigma}$ vers $\\Gamma_{\\rho,\\sigma}$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 555,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme avec $D_\\rho \\to N_\\rho \\xrightarrow{i_\\rho} G_{\\rho,\\sigma}$ et $D_\\sigma \\to N_\\sigma \\xrightarrow{i_\\sigma} G_{\\rho,\\sigma}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 556,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " vertical arrows from top to bottom sequence: $\\downarrow$ (left), $\\downarrow \\delta_\\rho$ (middle), $||$ (right)",
+        " vertical arrows from top to bottom sequence: $\\downarrow$ (left), $\\downarrow \\delta_\\sigma$ (middle), $||$ (right)"
+      ],
+      "downarrows": 4,
+      "horiz_arrows": 10,
+      "diag_arrows": 0,
+      "total_arrows": 14,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 557,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif complexe de groupes incluant $L_0 \\simeq SZ_{\\rho,\\sigma}$, $\\widehat{\\mathcal{C}}^+$, $G_{\\rho,\\sigma}$, $\\gamma_{\\rho,\\sigma}$, $N^*_\\rho$, $N^*_\\sigma$, avec des flèches vers $\\hat{\\mathbb{Z}}^* \\times \\{\\pm 1\\} \\times \\{\\pm 1\\}$ pour l'application $(\\chi_\\gamma, \\varepsilon_{\\gamma,\\rho}, \\varepsilon_{\\gamma,\\sigma})$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 559,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif avec des colonnes exactes"
+      ],
+      "downarrows": 5,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 560,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " sketch of arrows between terms"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 561,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram showing relationships between various groups such as $L_0$, $Z_{\\rho,\\sigma}$, $N^*_\\rho$, $N^*_\\sigma$, $\\Gamma_{\\rho,\\sigma}$, $G_{\\rho,\\sigma}$, $M_{\\rho,\\sigma}$, and products like $S N^*_\\rho \\times S N^*_\\sigma \\times G^+$, with projection and injection maps, and sub-diagrams labeled I, II, III, IV."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 562,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Hexagonal and diamond-shaped commutative diagram of subgroups showing inclusions between $?$, $?'$, $?''$, $?^\\circ$, $?^+$, $?^{+\\prime}$, $?^{+\\prime\\prime}$, and $?^{+\\circ}$",
+        " Triangle commutatif avec la source $?$, les cibles $\\hat{\\mathbb{Z}}^*$ et $\\{\\pm 1\\}$, et les flèches $\\chi_?$, $\\varepsilon_{?,\\rho}$, $\\varepsilon_{?,\\sigma}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 563,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif avec plusieurs nœuds et flèches, certains nœuds à droite sont entre crochets"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 570,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative square"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 573,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " triangle commutatif"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 574,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " \n(8) $\\widehat{\\mathbb{G}}^+ \\longrightarrow \\mathfrak{S}_3 = \\widehat{\\mathbb{G}}^+ / \\widehat{\\pi} \\xrightarrow{sgn} \\{\\pm 1\\}$\nBelow $\\mathfrak{S}_3$: groupe symétrique à trois lettres\nBelow $sgn$: signature, [unclear"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 601,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " 3 rows of exact sequences.\nTop row: $1 \\to \\mu \\to \\mathcal{E} \\to \\mu \\times \\mu \\to 1$\nMiddle row: $1 \\to \\mu \\to S_0^\\pi \\Gamma_{p,\\sigma}^! \\to Z_{p,\\sigma}^!$\nBottom row: $1 \\to L_p \\times L_\\sigma \\to S_0 \\Gamma_{p,\\sigma} \\to Z_{p,\\sigma} \\to 1$\nVertical arrows from Middle to Top: $||$ for $\\mu \\to \\mu$, $\\uparrow$ for $S_0^\\pi \\Gamma_{p,\\sigma}^! \\to \\mathcal{E}$, $\\uparrow$ with label $(\\varepsilon_3, \\varepsilon_2)$ for $Z_{p,\\sigma}^! \\to \\mu \\times \\mu$.\nVertical arrows from Middle to Bottom: $\\downarrow$ for $\\mu \\to L_p \\times L_\\sigma$, $\\downarrow$ for $S_0^\\pi \\Gamma_{p,\\sigma}^! \\to S_0 \\Gamma_{p,\\sigma}$, $\\downarrow$ for $Z_{p,\\sigma}^! \\to Z_{p,\\sigma}$"
+      ],
+      "downarrows": 8,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 11,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 613,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Commutative diagram with $Z_{\\rho,\\sigma}^!$ mapping to $N_{\\rho}^* / \\{\\pm 1\\}$ (via $\\delta_\\rho$) and to $N_{\\sigma}^*$ (via $\\delta_\\sigma$), both then mapping to $\\gamma_{\\rho,\\sigma} \\simeq \\Gamma_Q^\\sim$, with a direct map $\\delta_Z$ from $Z_{\\rho,\\sigma}^!$ to $\\gamma_{\\rho,\\sigma} \\simeq \\Gamma_Q^\\sim$",
+        " Commutative diagram of two exact sequences:\n$1 \\to \\underline{L}_0^\\pi \\to Z_{\\rho,\\sigma}^! \\to \\gamma_{\\rho,\\sigma} \\to 1$\n$\\downarrow \\ \\ \\ \\ \\downarrow \\ \\ \\ \\ \\downarrow \\ \\ \\ \\ \\downarrow$\n$1 \\to \\underline{L}_0^\\otimes \\to Z_{\\rho,\\sigma} \\to \\gamma_{\\rho,\\sigma} \\to 1$\n"
+      ],
+      "downarrows": 4,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 614,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 615,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram with $\\tilde{\\Gamma}_Q = \\gamma_{\\rho,\\sigma} \\longrightarrow N_\\sigma^*$ and a path via $\\simeq$ to $M(0) \\subset M[0"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 619,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram mapping $S_0^\\pi \\Gamma^!_{\\rho, \\sigma}$ and related structures $S_0 \\Gamma^!_{\\rho, \\sigma}$ to $M'[0"
+      ],
+      "downarrows": 4,
+      "horiz_arrows": 7,
+      "diag_arrows": 0,
+      "total_arrows": 11,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 622,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 4,
+      "horiz_arrows": 22,
+      "diag_arrows": 0,
+      "total_arrows": 26,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 628,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Diagramme commutatif de schémas modulaires"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 630,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Un triangle d'homomorphismes avec $\\Gamma_{\\mathbb{Q}}$ pointant vers $\\tilde{\\mathcal{G}}_3$ (flèche pointillée) et $\\mathcal{G}_3$ (flèche pleine), et $\\tilde{\\mathcal{G}}_3$ pointant vers $\\mathcal{G}_3$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 631,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Triangle commutatif avec des flèches $\\mathcal{E}'' \\to \\mu$, $\\Gamma_{\\mathbb{Q}} \\to \\mu$, et un relèvement pointillé $\\Gamma_{\\mathbb{Q}} \\dashrightarrow \\mathcal{E}''$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 633,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " $\\tilde{\\mathfrak{S}}_3 \\xrightarrow{can} \\mathfrak{S}_3 \\xrightarrow{sgn} \\mu$, avec une flèche de $\\Gamma_\\mathbb{Q}$ vers $\\mu$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 636,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Diagramme commutatif d'inclusions avec indices. $\\mathcal{M}^\\circ(-\\vec{j})$ s'envoie vers $\\mathcal{M}'(-\\vec{j}) = Z_{\\vec{p}}!$ (indice 2) et vers $\\mathcal{M}'''(-\\vec{j})$ (indice 2). $\\mathcal{M}'(-\\vec{j})$ s'envoie vers $Z_{\\vec{p}}$ (indice 6) et vers $\\mathcal{N}_p^?$ (indice 4). $\\mathcal{M}'''(-\\vec{j})$ s'envoie vers $\\mathcal{N}_p^?$ (indice 4). $Z_{\\vec{p}}$ s'envoie vers $\\mathcal{N}_p^*$ (indice 2) et $\\mathcal{N}_p^?$ s'envoie vers $\\mathcal{N}_p^*$ (indice 3)."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 637,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Diagramme commutatif complexe montrant de nombreuses inclusions entre les sous-groupes de $N_p^*$, notamment $\\mathcal{M}^0(-j)$, $\\mathcal{M}'(-j)$, $\\mathcal{M}''(-j)$, $\\mathcal{M}'''(-j)$, $Z_p$, $N_p^c$, $N_p^*$, $\\mu_1$, $D_{\\tau}$, $D_p$, et $L_p$, avec divers indices sur les flèches."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 638,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Grand diagramme commutatif tridimensionnel complexe, reliant divers groupes et sous-groupes tels que $Z_\\rho$, $N_\\rho^*$, $\\mathcal{M}'(-J).\\mu_{\\tau'}^*$, $\\mathcal{M}'(-J)\\times\\mu$, $\\mathcal{M}''(-J)$, $L_\\rho$, $D_\\rho$, $\\mu_{\\tau'}$, etc. Les flèches indiquent des inclusions, souvent étiquetées par les indices 1, 2 ou 3."
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 643,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Equation (45) showing a sequence of homomorphisms"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 644,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif avec en haut $M(0) \\to M$, à gauche une flèche descendante $(\\varepsilon_1, \\varepsilon_2)$ de $M(0)$ vers $\\mu \\times \\mu$, à droite une flèche descendante $(45)$ de $M$ vers $\\hat{\\mathfrak{S}}/\\Pi_0$, et en bas une flèche $\\mu \\times \\mu \\xrightarrow{?} \\hat{\\mathfrak{S}}/\\Pi_0$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 649,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram of exact sequences"
+      ],
+      "downarrows": 7,
+      "horiz_arrows": 27,
+      "diag_arrows": 0,
+      "total_arrows": 34,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 658,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Un triangle commutatif et des flèches sortantes"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 7,
+      "diag_arrows": 2,
+      "total_arrows": 9,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 660,
+      "has_diagram": true,
+      "marker_count": 3,
+      "marker_descriptions": [
+        " diagramme commutatif avec $L_0^\\natural$, $Z_{\\rho,\\sigma}$, $G_{\\rho,\\sigma}^\\natural$, $G_{\\rho,\\sigma}$ et $\\underline{\\mathfrak{C}}^\\natural$",
+        " diagramme commutatif de suites exactes avec $L_0^\\natural$, $Z_{\\rho,\\sigma}$, $\\gamma_{\\rho,\\sigma}$, $\\underline{\\mathfrak{C}}^\\natural$, $G_{\\rho,\\sigma}^\\natural$, $G_{\\rho,\\sigma}$",
+        " diagramme commutatif avec $G_{\\rho,\\sigma}$, $\\gamma_{\\rho,\\sigma}$, $\\hat{\\mathbb{Z}}$ et $\\mu$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 664,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèche verticale $\\hookrightarrow$ descendante de $\\widetilde{G}_{\\rho,\\sigma}$ vers $Aut(\\hat{\\mathcal{C}}^+) \\times \\mu \\times \\mu$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 666,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Commutative diagram connecting $D_\\rho \\to N_\\rho \\cap G^+ \\leftarrow N_\\rho$ and $D_\\sigma \\to N_\\sigma \\cap G^+ \\leftarrow N_\\sigma$, with equalities $\\simeq \\mu_{\\tau i} \\cdot S Z_\\rho$ and $= \\mu_{\\tau i} \\cdot S Z_\\sigma$ respectively, and arrows leading to $G^+$ and $G_{\\rho,\\sigma}$",
+        " Complex 3-dimensional commutative diagram connecting objects such as $\\mu$, $\\mu_{\\tau \\iota}$, $D_{\\tau \\iota}$, $L_\\rho$, $L_\\sigma$, $D_\\rho$, $D_\\sigma$, $S Z_\\rho$, $S Z_\\sigma$, $S N_\\rho$, $S N_\\sigma$, $Z_\\rho$, $Z_\\sigma$, $N_\\rho$, $N_\\sigma$, $G^+$, $G_{\\rho,\\sigma}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 8,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 667,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Large commutative diagram with objects $L_0^{\\cal G} = SZ_{\\rho,\\sigma}^C$, $Z_{\\rho,\\sigma}$, $SZ_\\rho^C$, $N_\\rho^{\\cal G}$, $SZ_\\sigma^{\\cal G}$, $N_\\sigma^{\\cal G}$, ${\\cal C}^\\natural$, ${\\cal G}_{\\rho,\\sigma}$, $\\gamma_{\\rho,\\sigma}$, ${\\cal C}^+$, $\\underline{\\cal G}$, $\\mu$, $\\hat{\\mathbb{Z}}^*$"
+      ],
+      "downarrows": 12,
+      "horiz_arrows": 32,
+      "diag_arrows": 0,
+      "total_arrows": 44,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 669,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutatif diagram of exact sequences.\nTop row: $1 \\to L_0^\\natural \\to Z_{\\hat{\\rho}, \\sigma} \\to \\Gamma_{\\hat{\\rho}, \\sigma} \\to 1$\nBottom row: $1 \\to \\hat{\\mathbb{Z}} \\to B'_0 \\xrightarrow{det} \\hat{\\mathbb{Z}}^* \\to 1$\nVertical arrows go from top to bottom:\nLeft arrow: $L_0^\\natural \\to \\hat{\\mathbb{Z}}$, labeled $\\sigma^n \\mapsto n$.\nMiddle arrow: $Z_{\\hat{\\rho}, \\sigma} \\to B'_0$.\nRight arrow: $\\Gamma_{\\hat{\\rho}, \\sigma} \\to \\hat{\\mathbb{Z}}^*$, labeled $\\chi_\\sigma$.\nBelow the bottom row, the maps are detailed as $\\lambda \\mapsto \\begin{pmatrix} 1 & \\lambda \\\\ 0 & 1 \\end{pmatrix}$ and $\\begin{pmatrix} \\mu & \\lambda \\\\ 0 & 1 \\end{pmatrix} \\mapsto \\mu$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 673,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " 3x3 commutatif diagram with horizontal exact sequences"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 676,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative square"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 680,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Deux suites exactes $1 \\to L_0^{\\natural} \\to M_{\\rho,\\sigma}^{\\natural}[0"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 685,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " commutative diagram with exact rows",
+        " commutative diagram with exact rows"
+      ],
+      "downarrows": 6,
+      "horiz_arrows": 19,
+      "diag_arrows": 0,
+      "total_arrows": 25,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 688,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative square"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 689,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram of exact sequences"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 693,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diamond with vertices $N$ (top), $G$ (right), $\\tilde{G}$ (bottom), $SN$ (left). Arrows are $SN \\hookrightarrow N$, $N \\xrightarrow{\\varphi_N} G$, $SN \\xrightarrow{\\varphi_{SN}} \\tilde{G}$, $\\tilde{G} \\to G$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 694,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " $SN_i$ pointant vers $\\mathfrak{G}$ via $\\varphi_{i}$ et vers $N_i$ via un plongement. $\\mathfrak{G}$ et $N_i$ pointant vers $G$ via des flèches pointillées."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-3",
+      "page": 695,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif avec flèches horizontales $N_i \\to G_i (\\subset G)$ et $SN_i \\to \\mathfrak{G}$, et inclusions verticales $SN_i \\hookrightarrow N_i$ et $\\mathfrak{G} \\hookrightarrow G_i$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 1,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Logo de l'Université de Montpellier",
+        " Logo de l'IMAG - Institut Montpelliérain Alexander Grothendieck"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 14,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " un triangle commutatif"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 2,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "diagonal-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 17,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 21,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 8,
+      "horiz_arrows": 24,
+      "diag_arrows": 0,
+      "total_arrows": 32,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 22,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram (41) showing exact sequences linking $M_{S_0}$, $\\mathfrak{G}_{S_0}$, $H_{S_0}$ and their primed versions, as well as $M$, $\\mathfrak{G}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 44,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif avec $M_{S_0} \\to \\underline{\\mathfrak{S}}^+_{S_0}$, une flèche descendante $M_{S_0} \\to M_{S_0}$, $M_{S_0} \\xrightarrow{u_M} G$, et $\\underline{\\mathfrak{S}}^+_{S_0} \\xrightarrow{u_{\\underline{\\mathfrak{S}}}} G$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 47,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Morphisms involving $\\widetilde{Z}_{/\\sigma}$, $\\underline{G}_A$, and conditions on $\\mu$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 64,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " 48 under the first term, 24 under the second term",
+        " Large left curly brace grouping the next 4 lines"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 66,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Tour de sous-groupes (114): $\\widehat{\\mathbb{G}}_0^+$ contient $\\Pi = \\Pi[2"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 69,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " $\\mathbb{G}_a^\\sim \\xrightarrow{\\sim} \\underline{M}_0 \\hookrightarrow \\underline{N}_{\\rho, \\sigma}^\\sim$, with a vertical arrow from $\\mathbb{G}_a^\\sim$ down to another $\\mathbb{G}_a^\\sim$ labelled $+$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 70,
+      "has_diagram": true,
+      "marker_count": 2,
+      "marker_descriptions": [
+        " Two horizontal exact sequences, the first starting with $1 \\to \\underline{L}_0^M \\to \\underline{N}_{\\beta, \\sigma} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$, the second with $1 \\to \\underline{\\hat{S}}^+ \\to \\underline{M}_{\\beta, \\sigma} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$. Vertical arrows connect the corresponding terms.",
+        " Two horizontal exact sequences, the first starting with $1 \\to \\underline{L}_0^M \\to \\underline{N}_{\\beta, \\sigma} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$, the second with $1 \\to \\underline{M} \\to \\underline{M}_{\\beta, \\sigma}^{\\sim} \\to \\underline{\\Gamma}_{\\beta, \\sigma} \\to 1$. Vertical arrows connect the corresponding terms."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 73,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " mappings for G"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 76,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram with exact sequences"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 83,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèche pointillée vers le bas à droite"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 86,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " diagramme commutatif avec deux suites exactes et des flèches verticales vers le bas"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 21,
+      "diag_arrows": 0,
+      "total_arrows": 21,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 88,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 95,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 96,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 7,
+      "diag_arrows": 0,
+      "total_arrows": 9,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 97,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " on the right side, an arrow $g \\mapsto g^d$ and $(x_0, x_1, x_\\infty) \\mapsto (x_0^d, x_1^d, x_\\infty^d)$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 101,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèche pointant de $\\hat{\\mathbb{Z}}^* \\times \\mathfrak{S}_3$ vers $\\mathcal{M}_{0,3}$ en bas à gauche"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 8,
+      "diag_arrows": 0,
+      "total_arrows": 8,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 103,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " An exact sequence as in (239). Under the middle term $G_{p\\Gamma}/\\mu_{\\hat{G}}$, there is an isomorphism $\\simeq \\hat{\\mathbb{Z}}^* \\cdot \\mathfrak{S}^{+ \\wedge} / \\mu_{\\hat{G}}$. A dotted arrow points from $\\mathcal{M}_{0,3} = \\Pi_1(\\mathcal{U}_{0,3 \\overline{\\mathbb{Q}}}, \\mathfrak{S}_3 ; -j)$ up to the middle term."
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 104,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram of exact sequences"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 19,
+      "diag_arrows": 0,
+      "total_arrows": 21,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 105,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " en dessous de $(\\mathfrak{S}_3)_{S_0}$ est écrit $(H/\\mu)_{S_0}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 121,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 124,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram of exact sequences"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 8,
+      "diag_arrows": 0,
+      "total_arrows": 11,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 127,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram labeled (282), with $N_{0,3} = \\Gamma_{\\mathbb{Q}} \\times \\mathfrak{S}_3$ written under $\\Gamma$ in the top row"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 131,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 136,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèche descendant du dernier terme vers $H^2(\\Gamma_{\\mathbb{Q}}, H^0(\\mathfrak{S}_3, \\widehat{M}))$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 140,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram with two exact sequences"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 158,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative diagram with two rows and vertical arrows from bottom to top"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 7,
+      "diag_arrows": 0,
+      "total_arrows": 9,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 163,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " flèche de $\\Pi_1$ vers $\\hat{\\mathbb{Z}}^*$ étiquetée \"caractère cyclotomique\""
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 164,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram with two horizontal rows. Top row: $1 \\to Hom_{\\mathbb{Z}}(A', T) \\to C_{A'} \\to \\hat{\\mathbb{Z}}^*$. Bottom row: $1 \\to Hom_{\\mathbb{Z}}(A, T) \\to C_A \\to \\hat{\\mathbb{Z}}^*$. Vertical arrows point upwards from the bottom row to the top row. A node $\\Pi_1$ below has diagonal arrows pointing to $C_{A'}$, $C_A$, and $\\hat{\\mathbb{Z}}^*$, with the arrow to $\\hat{\\mathbb{Z}}^*$ labeled \"car. cyclot.\""
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 165,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 12,
+      "diag_arrows": 0,
+      "total_arrows": 15,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 174,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Une flèche pointe vers le haut depuis l'équation suivante vers le terme central de l'équation précédente"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 175,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 6,
+      "horiz_arrows": 21,
+      "diag_arrows": 0,
+      "total_arrows": 27,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 182,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " en dessous de $\\pi_0$, il y a le symbole $\\parallel$ puis $\\pi_1(X, \\cdot)$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 194,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " en dessous de $\\Pi_1(U_{\\bar{a}})$ est écrit $\\Pi_0$, et en dessous de $\\Pi_1(M, G; a)$ est écrit $\\pi$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 203,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 4,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 10,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 205,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram of groups:\nTop row: $1 \\subset \\pi \\subset \\mathfrak{S} \\subset M$\nBottom row: $1 \\subset \\pi_0 \\subset \\mathfrak{S}_0$\nwith upward arrows from $\\pi_0$ to $\\pi$ and $\\mathfrak{S}_0$ to $\\mathfrak{S}$, and a vertical equals sign indicating $\\pi = \\hat{\\pi}_0$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 208,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 212,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " underbrace under $\\underline{\\Pi} \\subset \\underline{\\mathfrak{S}}$ labeled $\\underline{\\Gamma}$, underbrace under $\\underline{\\mathfrak{S}} \\subset \\underline{M}$ labeled $\\underline{N}$"
+      ],
+      "downarrows": 3,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 217,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " carré commutatif"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 222,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Carré commutatif"
+      ],
+      "downarrows": 2,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 223,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Un diagramme commutatif complexe avec $\\underline{G}_0 \\to \\mathcal{M}$, $\\underline{\\tilde{G}}(\\mathbb{Q}) \\to \\mathcal{M}(\\mathbb{A}_\\mathbb{Q})$, $\\underline{M}_\\mathbb{Q}^\\varphi(\\mathbb{Q}) \\leftarrow \\underline{M}_\\mathbb{Q}^\\varphi(\\mathbb{A}_\\mathbb{Q})$ à gauche, et $\\underline{\\tilde{G}}_\\mathbb{Q} \\to \\underline{M}_\\mathbb{Q}$ avec une flèche vers $\\underline{M}_\\mathbb{Q}^\\varphi$ à droite via \"action int.\""
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 224,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Carré commutatif. En haut, une flèche horizontale de $\\underline{\\mathfrak{S}}$ vers $\\underline{\\mathfrak{S}}$ étiquetée $int(g|\\underline{\\mathfrak{S}})$. En bas, une flèche horizontale de $\\underline{\\mathfrak{S}}(A_Q)$ vers $\\underline{\\mathfrak{S}}(A_Q)$ étiquetée $int(\\varphi_{\\mathcal{M}}(g))|_{\\underline{\\mathfrak{S}}(A_Q)}$. Deux flèches verticales descendantes de $\\underline{\\mathfrak{S}}$ vers $\\underline{\\mathfrak{S}}(A_Q)$, chacune étiquetée $\\hat{\\varphi}$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 227,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 3,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 236,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " $D_{\\omega_0}$ avec deux flèches descendantes $i$ vers $D_{\\tilde{\\rho}}$ et $j$ vers $D_{\\tilde{\\sigma}}$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": true,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker",
+        "matrix-env"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 241,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Grille de points représentant $\\mathbb{Z}^2$ avec les axes $x$ et $y$. Un lacet carré partant du point $a$ est formé par les segments orientés $x$, $y$, $x^{-1}$, $y^{-1}$, entourant un point central du réseau. Un petit lacet autour de ce point central est noté $l'_0$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 250,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative fiber product square. $U'_{D_x^{*\\sim}}$ is at the top with arrows pointing down-left to $D_x^{*\\sim}$ and down-right to $U'$. From $D_x^{*\\sim}$ an arrow points down-right to $U$, and from $U'$ an arrow points down-left to $U$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 251,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " $\\pi_1(D_\\alpha^{*\\sim})$ avec une flèche vers $\\pi_1(\\mathcal{U})$, et des égalités verticales vers $T_\\alpha$ et $\\pi$ respectivement"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 1,
+      "diag_arrows": 0,
+      "total_arrows": 1,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 253,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " curved arrow from $[I"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 7,
+      "diag_arrows": 0,
+      "total_arrows": 7,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 255,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 4,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 256,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " en dessous du terme de gauche se trouve \"|| def\" pointant vers $Isom(D_{n,\\gamma}^{*\\sim}, D_{n,\\gamma'}^{*\\sim})$. En dessous du terme de droite se trouve \"|| def\" pointant vers \"classes de chemins dans $S_n$ de $\\Delta$ à $\\Delta'$\""
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 2,
+      "diag_arrows": 0,
+      "total_arrows": 2,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 262,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Commutative diagram relating $germes diff(X, x)$, $\\Pi_1(\\$_x)$, $Rev. univ.(D_x^*)$ and $Rev. univ.(\\$_x)$"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 3,
+      "diag_arrows": 0,
+      "total_arrows": 3,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 265,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Triangle commutatif avec les objets $A_x$, $Gr(A_x)$ et $Tors(T_x)$. Une flèche $H$ va de $A_x$ à $Tors(T_x)$, une flèche descend de $A_x$ vers $Gr(A_x)$, et une flèche $Gr(H)$ va de $Gr(A_x)$ à $Tors(T_x)$."
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 5,
+      "diag_arrows": 0,
+      "total_arrows": 5,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 267,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " commutative triangle"
+      ],
+      "downarrows": 1,
+      "horiz_arrows": 6,
+      "diag_arrows": 0,
+      "total_arrows": 7,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 269,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " Triangular commutative diagram"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 271,
+      "has_diagram": true,
+      "marker_count": 1,
+      "marker_descriptions": [
+        " deux flèches pointant en diagonale vers le bas (gauche et droite) depuis la formule ci-dessus"
+      ],
+      "downarrows": 0,
+      "horiz_arrows": 0,
+      "diag_arrows": 0,
+      "total_arrows": 0,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "marker"
+      ]
+    },
+    {
+      "volume": "140-4",
+      "page": 278,
+      "has_diagram": true,
+      "marker_count": 0,
+      "marker_descriptions": [],
+      "downarrows": 2,
+      "horiz_arrows": 4,
+      "diag_arrows": 0,
+      "total_arrows": 6,
+      "has_matrix_env": false,
+      "has_tikzcd": false,
+      "approaches": [
+        "stacked-arrows"
+      ]
+    }
+  ]
+}

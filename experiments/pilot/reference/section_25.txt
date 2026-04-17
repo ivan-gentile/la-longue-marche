@@ -1,0 +1,329 @@
+Section: § 25. — GROUPES DE TEICHMÜLLER SPÉCIAUX
+G103d pages: 163-169
+
+--- G103d page 163 ---
+§ 25. — GROUPES DE TEICHMÜLLER SPÉCIAUX
+Revenons aux notations du n◦19, on va définir un sous-groupe SAg,ν de A!
+g,ν
+SAg,ν = {u ∈Ag | u induise l’identité sur un voisinage de Sg,ν}
+i.e. ensemble des automorphismes de Ug,ν qui induisent l’identité dans le complémen-
+taire d’un compact.
+Contrairement aux autre sous-groupes de Ag considérés jusqu’à présent, celui-ci
+n’est pas un sous-groupe fermé. N.B. Dans le cas où on travaille avec des surfaces com-
+pactes à bord au lieu de surfaces compactes (sans bord) “trouées”, il y aurait lieu de pren-
+dre le groupe des automorphismes qui induisent l’identité sur le bord.
+SAg,ν estunsous-groupeinvariantdeAg,ν, lequotientAg,ν/SAg,ν étantisomorphe
+au groupe des germes d’automorphismes de Xg au voisinage de Sg,ν, ou encore le groupe
+des germes à l’infini d’automorphismes de Ug,ν ([?] les complémentaires de compacts…)
+On aura évidemment, puisque SAg,ν ⊂Ag,ν
+(SAg,ν)◦⊂A◦
+g,ν
+Posons
+SA!
+g,ν = SAg,ν/SA◦
+g,ν
+on aura un homomorphisme canonique
+SA!
+g,ν →Γ!+
+g,ν
+
+--- G103d page 164 ---
+qu’on va interpréter de façon algébrique, en termes de l’interprétation de Γ!
+g,ν comme le
+groupe des automophismes extérieures du groupe à lacets πg,ν, induisant l’identité sur
+Sg,ν = I(πg,ν).
+Pour tout i ∈Sg,ν, choisissons un Li de classe i dans πg,ν - ce qui revient à se donner
+un “point” de BD∗
+i (≃un revêtement universel f
+D∗
+i ) et un isomorphisme entre son image
+dans BU=Ug,ν avec le “point” s = sg,ν de référence, qui servait à définir πg,ν comme
+AutBU ≃π1(BU, s).
+Ceci dit, si u est un automorphisme de π = πg,ν le fait qu’il respecte (strictement, en
+induisant l’identité sur Sg,ν) la structure à lacets, s’exprime par l’existence d’une famille
+d’éléments gi ∈π, tels que
+u(l) = intg−1
+i (lα)
+(i ∈I, l ∈Li, α = χ(n))
+-lesquels gi sont déterminés par u modulo multiplication à droite par des λi ∈Li. Si on
+a de même v, (hi), alors : pour l ∈Li on a (si α = χ(u), β = χ(v))
+(uv)(l) = v(u(l)) = v(int(g−1
+i ))v(lα) = int(v(g−1
+i )h−1
+i )(lαβ) = int(hiu(gi)−1)lαβ
+donc vu est compatible avec le système des hiv(gi). Posons
+(v, (hi))(u, (gi)) = (vu, hiv(gi))
+On trouve alors une structure de groupe sur l’ensemble SE! des (u, (gi)), sous-groupes
+du produit semi-direct de E! = Autextlac(π, id sur I) par πI, sur lequel E! opère de
+façon évidente. L’homomorphisme naturel
+SE! →E!
+est surjectif, et son noyau est essentiellement isomorphe à Q
+i∈I Li ≃T I, où T est le
+module des orientations. D’où une structure d’extension où E opère sur T I via son
+action sur T
+1 →T I →SE! →E! →1
+Et je voudrais interpréter cette extension comme l’image inverse d’une extension canon-
+ique de Γ! par T I (canonique en tous cas, une fois choisi les f
+D∗
+i ).
+Pour ceci, notons que si ˙u est une auto-équivalence de la situation BD∗→BU, in-
+duisant l’identité sur I, on peut considérer les ˜˙u au dessus de ˙u, à savoir les systèmes
+( ˙u, γi), où pour tout i ∈I, γi : f
+D∗
+i →˙u(f
+D∗
+i ) [déterminé mod élément de T].
+159
+
+--- G103d page 165 ---
+Le groupe des classes d’isomorphie d’automorphismes de (BD∗→BU, (f
+D∗
+i )), ou si
+onpréfère, desclassesd’isomorphied’automorphismesde(BI →BD∗→BU)induisant
+l’identité sur I, est donc une extension de Γ! par T I, soit ST !.
+On va définir un homomorphisme de suites exactes
+1
+T I
+SE!
+E!
+1
+1
+T I
+SΓ!
+Γ!
+1
+qui prouve que SE! est bien l’image de l’extension SΓ! par T I. Pour ceci, on note que
+E! est le groupe des classes d’isomorphie d’auto-équivalences de
+BD∗
+BU
+pt .s
+et SE! celui des classes d’isomorphie d’auto-équivalences de
+BD∗
+BI
+(⋆est un isomorphisme de commutation)
+BU
+pt .s
+⋆
+qui s’envoie e façon naturelle dans celui des classes d’isomorphie d’auto-équivalences des
+diagrammes BI →BD∗→BU.
+En fait, dans tout ceci il n’y avait aucunement lieu de se borner aux automorphismes
+de π (extérieurs ou totaux) induisant l’identité sur I. On trouve de toutes façons des
+160
+
+--- G103d page 166 ---
+extensions SE de E par T I, SΓ de Γ par TI, et un homomorphisme d’extension
+1
+1
+π
+π
+1
+T I
+SE
+E
+1
+1
+T I
+SΓ
+Γ
+1
+1
+1
+de façon que l’on peut considérer SE comme extension de Γ par T I × π
+1 →T I × π →SE →Γ →1
+et l’extension E resp. SΓ se déduit en divisant par T I resp. par π.
+Revenant maintenant au cas type Ug,ν = Xg,ν\Sg,ν, on prends des notations
+Eg,ν = Autlac(πg,ν)
+(≃Γg,ν+1 si (g, ν) ̸= (0, 0), (0, 1) i.e. πg,ν ̸= 0)
+et
+SΓg,ν = S Autextlac(πg,ν)
+(extension de Γg,ν par T I)
+et
+SEg,ν
+(≃SΓ′
+g,ν+1/Γg,ν),
+(où SΓ′
+g,ν+1 désigne le sous-groupe de SΓg,ν+1 [?] des éléments qui fixent le dernier
+élément sν…)
+On désigne par SΓ!
+g,ν et SE!
+g,ν les sous-groupes des précédents SΓg,ν, SEg,ν qui
+induisent l’identité sur I = Sg,ν.
+Et revenons enfin aux relations avec SAg,ν, on va définir
+SAg,ν →SΓ!+
+g,ν
+en notant que si un u ∈Ag,ν induit l’identité sur un voisinage de Sg,ν, alors u•(f
+D∗
+i ) =
+f
+D∗
+i et on pourra définir un élément de SΓ!
+g,ν en prenant comme Γi les identités. Le fait
+que l’homomorphisme obtenu soit trivial sur (SAg,ν)◦est sans doute trivial, d’où
+SAg,ν/(SAg,ν)◦→SΓ!+
+g,ν
+161
+
+--- G103d page 167 ---
+Dire que c’est surjectif signifie que tout automorphisme dans A!+
+g,ν (i.e. tout automor-
+phisme de Ug,ν induisant l’identité sur Sg,ν et respectant l’orientation) est isotope (par
+une isotopie, si on veut, qui reste l’identité dans l’extérieur d’un petit voisinage de Sg,ν)
+à un automorphisme qui soit l’identité sur un voisinage, c’est facile. L’injectivité [est]
+peut-être plus délicate, elle revient essentiellement à déterminer le noyau de
+SAg,ν/(SAg,ν)◦→Γ!
+g,ν,
+i.e.
+SAg,ν ∩A◦
+g,ν/(SAg,ν)◦
+comme T I = T Sg,ν. On peut sans doute se ramener au contexte des surfaces compactes
+à bord (notons par un ′ les groupes topologiques correspondants), on a
+1 →SA
+′+
+g,ν →A
+′!+
+g,ν →
+Y
+i∈Sg,ν
+Aut+(Ci) →1
+où Aut+(Ci) homotope au groupe circulaire standard U tordu par T, et le + indique
+les automorphismes conservant l’orientation et les Ci sont les composantes connexes du
+bord. On en conclut la suite exacte d’homotopie
+Q
+i π2(Aut+(Ci)) = 0
+π1(A
+′+
+g,ν)
+T I
+π1(SA
+′◦
+g,ν)
+π1(A
+′!+
+g,ν)
+Q
+i π1(Aut+(Ci))
+π0(SA
+′!+
+g,ν)
+π0(A
+′!+
+g,ν)
+Q
+i π0(Aut+(Ci)) = 1
+(à calculer)
+Γ′
+g,ν
+∼
+[et πi(SA
+′◦
+g,ν) ≃πi(A
+′◦
+g,ν) si i ≥2] i.e.
+
+
+
+0 →π1(SA
+′+
+g,ν) →π1(A
+′◦
+g,ν) →T I →π0(A
+′!+
+g,ν) →Γ
+′!+
+g,ν →1
+πi(SA
+′+
+g,ν)
+∼
+−→πi(A
+′◦
+g,ν)
+∀i ≥2
+On a un homomorphisme évidente (par “recollement de disques”) A
+′◦
+g,ν →Ag,ν in-
+duisant SA′
+g,ν →SAg,ν, et ce sont là sûrement des équivalences d’homotopie donc la
+162
+
+--- G103d page 168 ---
+suite exacte précédente doit pouvoir s’interpréter comme suite exacte
+
+
+
+0 →π1(SAg,ν)◦→π1(A◦
+g,ν) →T I →π0(SA!+
+g,ν) →Γ!+
+g,ν →1
+πi(SAg,ν)◦
+∼
+−→πi(Ag,ν)◦
+∀i ≥2
+Dans le cas anabélien, on trouve bien, puisque π1(A◦
+g,ν) = 0, une structure d’extension
+1 →T Sg,ν →π0(SAg,ν) →Γ!+
+g,ν →1
+et de plus
+πi((SAg,ν)◦) = 0
+pour
+i ≥2
+Dans le cas abélien, on doit expliciter
+π1(A◦
+g,ν) →T Sg,ν
+et on va distinguer les deux cas abéliens (sous-entendant que l’on ait I ̸= ∅!) - on a
+toujours g = 0, ν = 1 ou 2.
+En tous cas, introduisant une structure analytique complexe et le groupe G, com-
+posante neutre du groupe des automorphismes complexes, on a
+G
+≈
+−→A◦
+g,ν
+a) Cas g = 0, ν = 2 G ≃C∗, on voit que si la structure à lacets de π est
+définie par les deux isomorphismes κi : T →π (i ∈I = {s0,0, s0,1}) alors
+π1(G) →T I s’identifie, à T →T I dont les composantes sont ces deux κi (qui
+sontsymétriques,doncc’estunhomomorphismeinjectifdontl’imageestlenoyau
+de l’application somme T I →T, donc ici le noyau de π0(SAg,ν) →Γ!+
+g,ν (dont
+π0(SAg,ν)) lui même) est isomorphe, non à T I, mais à son quotient T.
+Quant à (SA′
+g,ν)◦, tous ses πi (i ≥1) sont nuls - il est encore ∞-connexe.
+b) Cas g = 0, ν = 1. Alors G ≃Aff(1, C), π1(G) ≃T et π1(G) →T I = T est
+un isomorphisme. Ici, le noyau de l’homomorphisme π0(SAg,ν) →Γ!+
+g,ν est nul
+i.e. π0(SAg,ν) = 0.
+Dans ce cas encore, on trouve que πi(SA◦
+g,ν) = 0 pour tout i ≥1. On trouve donc
+163
+
+--- G103d page 169 ---
+Théorème. — Supposons ν > 0. Si (γ, ν) est anabélien, alors π0(SAg,ν) est canon-
+iquement isomorphe à SΓ!+
+g,ν. Dans tous les cas (SAg,ν)◦est ∞-connexe.
+Nous allons expliciter une relation de compatibilité pour SΓ relatif à un π à lacets,
+en fixant un i ∈I = I(π), d’où un stabilisateur Γi ⊂Γ dont l’image inverse (SΓ)i
+dans SΓ est donc une extension de Γi par T I.
+Utilisant la projection T I
+pri
+−→T, on trouve une extension de Γi par T, qu’on va
+décrire d’une autre façon.
+L’extension SΓ est définie intrinsèquement par la donnée de I réalisation (π)i∈I du
+groupe extérieur π par des groupes, avec dans chaque πi un Li ⊂πi de la classe i (c’est
+cela, la donnée d’un système de (f
+D∗
+i ) !).
+Pour un automorphisme extérieur à lacets u ∈Γ de π, pour tout i il est possible
+de le réaliser pour ui ∈Autlac(πi), avec ui(Li) ⊂Li - cet ui est déterminé modulo
+multiplication à droite par un int(κi(α)), où α ∈T.
+Si on regarde la sous-extension obtenue par restriction à Γi, on note que la projection
+T I
+pri
+−→T est stable par Γi, donc on en déduit une extension de Γi par T, qui n’est autre
+que le groupe des automorphismes à lacets de πi qui normalisent Li - qui est bien une
+extension de Γi par Li (son intersection avec πi ⊂Autlac(πi) étant réduite à Li).
+Ceci nous montre que l’extension de Γ par T I a une nette tendance à ne pas être
+triviale, car il en est ainsi (pour i ∈I fixé) de l’extension de Γi par T à qui elle donne
+naissance. Si par exemple on a un sous-groupe fini G ⊂Γ+
+i , l’extension induite n’est
+jamais triviale si G ̸= 1, on l’a vu. En ait, G doit être cyclique et son image inverse dans
+l’extension en question est isomorphe à T…
+164

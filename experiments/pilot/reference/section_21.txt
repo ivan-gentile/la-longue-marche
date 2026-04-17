@@ -1,0 +1,363 @@
+Section: § 21. — LIEN AVEC LES ESPACES DE TEICHMÜLLER
+G103d pages: 140-146
+
+--- G103d page 140 ---
+§ 21. — LIEN AVEC LES ESPACES DE TEICHMÜLLER
+D’abord un complément lié au diagramme d’inclusion (31) du n◦19. Considérons
+l’inclusion de sous-groupes de Ag :
+(72)
+A◦
+g,ν ⊃Bg,ν ⊃A◦
+g,ν+1(= B◦
+g,ν)
+donne en divisant par A◦
+g,ν+1 et dans le cas anabélien la filtration
+(73)
+(A◦
+g,ν/A◦
+g,ν+1 =)eUg,ν →Ug,ν
+On cherche le plus grand sous-groupe de Ag qui normalise les triples (72), et qui opère
+donc sur la fibration ci-dessus. Comme les normalisateurs de A◦
+g,ν et A◦
+g,ν+1 sont respec-
+tivement Ag,ν et Ag,ν+1, le groupe en question doit être contenu dans leur intersection
+A•
+g,ν, lequel normalise également Bg,ν = A•
+g,ν ∩A◦
+g,ν. C’est donc ce groupe qu’il y
+a lieu de faire opérer sur la fibration (73). Le sous-groupe formé des éléments de A•
+g,ν
+dont l’opération sur Ug,ν est isotope à l’identité étant justement Bg,ν, donc c’est le groupe
+Γ = A•
+g,ν/ Bg,ν ≃Γg,ν qui comme de juste opère à isotopie près. On voudrait décrire le
+groupe de tous les automorphismes de la fibration topologique eUg,ν sur Ug,ν qui sera a
+priori une extension du groupe A◦
+g,ν = Aut(Ug,ν) par
+πg,ν = π1(Ug,ν, ag,ν) = AutUg,ν(eUg,ν)
+Cette extension est scindé sur A•
+g,ν stabilisateur du point de base ag,ν, et on retrouve ainsi
+l’opération de A•
+g,ν sur la fibration (73). Or on a déjà une extension Γ′
+g,ν+1 de Γg,ν par
+πg,ν d’où par image inverse par Ag,ν →Γg,ν une extension (que je vais notes eAg,ν) de
+
+--- G103d page 141 ---
+Ag,ν par πg,ν :
+eAg,ν = Ag,ν ×Γg,ν Γi
+g,ν+1 =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+groupe quotient du sous-groupe A♮
+g,ν de
+Ag,ν × A•
+g,ν formé des couples
+(u, v) tel que u ≡v mod. A◦
+g,ν,
+par le sous-groupe 1 × A◦
+g,ν+1
+donc on a deux (et même trois) structures d’extension sur eAg,ν
+(75)
+1
+πg,ν
+eAg,ν
+Ag,ν
+1
+1
+A◦
+g,ν
+eAg,ν
+Γ′
+g,ν+1
+1
+1
+A◦
+g,ν × πg,ν
+eAg,ν
+Γg,ν
+1
+p
+Je voudrais faire opérer eAg,ν sur eUg,ν, i.e. faire opérer H = eA♮
+g,ν avec opération triviale
+de A◦
+g,ν+1, et ceci en respectant les conditions suivantes :
+a) (Compatibilité avec πg,ν →eAg,ν). Le couple (u, v) ∈H opère sur eUg,ν par un
+automorphisme compatible avec l’automorphisme u de Ug,ν (on dira que c’est un
+u-automorphisme).
+b) (Compatibilité avec πg,ν →eAg,ν). Si u = 1, [donc v ∈A◦
+g,ν donc (comme
+v ∈A•
+g,ν) u ∈Bg,ν] alors l’opération de (u, v) = (1, v) sur eUg,ν n’est autre que
+celle définie par v modB◦
+g,ν = A◦
+g,ν+1 qui est un élément de πg,ν ≃Aut eUg,ν/Ug,ν
+ou encore celle définie par translation à droite par v−1.
+c) Compatibilitéavecl’opérationdéjàobtenueplushautdeA•
+g,ν sur eUg,ν : si(u, v) ∈
+H est tel que u = v (donc u = v ∈A•
+g,ν) alors (u, v) = (u, u) opère via
+l’automorphisme intérieur défini par u.
+d) Compatibilité avec A◦
+g,ν →eAg,ν ; l’opération de A◦
+g,ν est continue (ce qui, joint
+à a) détermine une opération de façon unique et l’existence à priori d’une telle
+opération résulte de π1(A◦
+g,ν) = 0. Or tout élément (u, v) de H s’écrit de
+136
+
+--- G103d page 142 ---
+manière unique comme produit d’un élément (v, v) dans δ(A•
+g,ν), par un élément
+(v−1u, 1) de A◦
+g,ν × 1 (le 1er groupe normalisant le 2ème)78 et une opération de ce
+produit semi-direct est donnée bel et bien par la donnée d’opérations des deux
+groupes facteurs, satisfaisant une condition de compatibilité, qui est vérifiée ici
+par transport de structure. On a bien défini une opération de H = eA♮
+g,ν sur la
+fibration (73) satisfaisant aux contions c) et d) par construction même ; il reste
+à vérifier a) et b). Or pour a), il suffit de vérifier séparément pour des éléments
+de H dans δ(A•
+g,ν) et de A◦
+g,ν × 1, où c’est trivial par construction dans les deux
+cas. Reste à vérifier b) et à expliciter l’opération d’un élément (1, v), v ∈Bg,ν
+qu’on écrit comme (1, v) = (v, v)(v−1, 1) d’où ρ(1, v) = ρ(v, v)ρ(v−1, 1) or
+ρ(v, v) est induit par int(v) et ρ(v−1, 1) par translation à guache x →v−1x donc
+le composé opère par x 7→xv−1.
+On suppose maintenant que Xg est muni d’une structure C∞et l’on remplace dans les
+considérations précédentes les groupes d’homéomorphismes par des groupes de difféo-
+morphismes.
+(76)
+Soit Eg =
+Ensemble des structures conformes sur Xg
+compatibles avec sa structure C∞
+On voit de suite que Eg est un espace topologique ∞-connexe, comme quotient de
+l’espace ∞-connexe (et même convexe) des structures riemaniennes par le groupe ∞-
+connexe des applications C∞de Xg dans R+∗. Sur Eg le groupe Ag opère mais bien sûr
+Eg n’est plus un espace homogène. Notons tout de suite
+(77)
+Eg/Ag ≃
+Ensemble des classes d’isomorphie de surfaces
+conformes compactes orientables de genre g.
+Si on choisit une des deux orientations de Xg de sorte que Eg s’identifie à l’ensemble
+des structures complexes sur Xg (compatible avec sa structure C∞et son orientation)
+alors Eg/Ag s’identifie à l’espace des classes d’isomorphie de courbes complexes (non
+singulières) connexes compactes de genre g, modulo passage à la complexe conjuguée.
+78N.B. L’opération de A◦
+g,ν × 1 se décrit le plus simplement par translation de A◦
+g,ν sur l’espace ho-
+mogène eUg,ν de A◦
+g,ν
+137
+
+--- G103d page 143 ---
+D’autre part
+(78)
+Eg/A+
+g ≃
+Ensemble des classes d’isomorphie de courbes
+C algébriques lisses connexes de genre g.
+plus généralement
+(79)
+Eg/A•
+g ≃
+Ensemble des classes d’isomorphie de surfaces compactes conformes
+connexes multiponctuées de type (g, ν).
+Si Xg est orientée :
+(80)
+Eg/Ag ≃
+Ensemble des classes d’isomorphie de courbes algébriques
+[lisses projectives connexes de genre g]
+munies d’une multiponctuation de type (g, ν)
+Ce sont là les “espaces modulaires grossiers” (“Coarse moduli” de Mumford) qu’on peut
+noter M ♮
+g et M ♮
+g,ν et qui sont justement trop grossiers pour les usages géométriques les
+plus importants.
+Beaucoup plus intéressant est le quotient
+(81)
+Eg/A◦
+g,ν = f
+Mg,ν
+(f
+Mg = f
+Mg,0 = Eg/A◦
+g)
+sur lequel opère le groupe
+Γg,ν = Ag,ν/A◦
+g,ν
+par passage au quotient de l’opération de Ag,ν.
+L’espace f
+Mg,ν (avec l’opération de Γg,ν est appelé l’espace de Teichmüller de type
+g, ν). Bien sûr on retrouve M ♮
+g,ν à partir de f
+Mg,ν et de l’opération de Γg,ν dessus par
+M ♮
+g,ν = f
+Mg,ν/Γg,ν
+Théorème (Teichmüller). — L’espace de Teichmüller f
+Mg,ν est homéomorphe à Cµ où
+µ = 3g −3+ν dans le cas anabélien 2g +ν ≥3 et µ = 3g −3+ν +δ avec δ =dimCG
+dans le cas général G étant le groupe des automorphismes algébriques d’une Ug,ν complexe
+(donc δ = 1 dans le cas “limites” (1, 0) et (0, 2), et plus généralement δ augmente de 1
+chaque fois pour g fixé et (g, ν −1) abélien quand on passe de ν à ν −1), donc
+138
+
+--- G103d page 144 ---
+µ = 1 dans le cas (1, 0)
+µ = 0 dans le cas (0, 2), (0, 1), (0, 0), i.e. f
+Mg,ν est réduit à 1 point i.e. l’action de
+A◦
+g,ν sur Eg = E0 est transitive et ce sont avec le cas anabélien (0, 3) les seuls 4 cas
+où il en est ainsi.
+A partis de f
+M0,3 ou de f
+M1,1 ou de f
+Mg,0 = f
+Mg avec g ≥1 quand ν augmente la “di-
+mension complexe” des f
+Mg,ν augmente d’autant (par contre f
+M1,1
+∼
+−→f
+M1,0 est un
+homéomorphisme). On peut préciser le théorème de Teichmüller ainsi :
+Corollaire. — Dans le cas anabélien, A◦
+g,ν opère librement sur Eg, de sorte que Eg
+devient un torseur sur f
+Mg,ν, de groupe structural A◦
+g,ν.
+On en déduit que f
+Mg,ν joue le rôle d’espace classifiant pour A◦
+g,ν et que
+(83)
+πi(f
+Mg,ν)
+∼
+−→πi−1(A◦
+g,ν)
+et le fait que f
+Mg,ν soit ∞-connexe (contenu dans le théorème de Teichmüller) équivaut
+à celui que A◦
+g,ν le soit ce qui est un “théorème bien connu” rappelé au n◦19.
+Je n’insiste pas ici sur l’interprétation de points de f
+Mg,ν comme des classes
+d’isomorphisme de courbes complexes, munies d’une “rigidification de Teichmüller”
+convenable et le point de vue espaces modulaires rigidifiés, qui permet de vérifier à priori
+que f
+Mg,ν est muni d’une structure de variété complexe non singulière ; mais déjà le fait
+que f
+Mg,ν soit simplement connexe (ce qu’on peut exprimer en interprétant f
+Mg,ν comme
+revêtement universel d’un topos modulaire Ug,ν) est un résultat profond qui ne semble
+pas pouvoir rentrer dans le cadre de la topologie (ou de la topologie différentielle (C∞))
+sans plus…
+N.B. Pour prouver que les f
+Mg,ν sont ∞-connexe on est réduit facilement au cas de
+Mg,0 (si g ≥2) ou de M1,1 (cas elliptique ponctué) en utilisant A◦
+g,ν/A◦
+g,ν+1 ≃eUg,ν
+(qui est ∞-connexe) le cas g = 1 est d’ailleurs facile et bien compris…
+Notons que les inclusions des sous-groupes A◦
+g,ν+1 ,→A◦
+g,ν · · · ⊂A◦
+g,0 = A◦
+g,
+définissent une tour d’applications continues :
+(84)
+· · · →f
+Mg,ν+1 →f
+Mg,ν →. . . f
+Mg,ν = f
+Mg
+(85) où f
+Mg,ν+1 →f
+Mg,ν est pour (g, ν) anabélien une fibration en fibre A◦
+g,ν ≃eUg,ν
+139
+
+--- G103d page 145 ---
+[il est donc à fibre contractile et l’∞-connexité de f
+Mg,ν équivaut à celle de f
+Mg,ν ; ce qui
+nous ramène au cas f
+Mg si g ≥2 de M1,1 et de M0,3 si g = 1 ou 0].
+Dans le cas (g, ν) abélien on trouve
+f
+Mg,ν+1
+∼
+−→f
+Mg,ν
+ce qui signifie que dans ce cas si on a deux structures complexes α, β sur X qui sont
+congrues par u ∈A◦
+g,ν (i.e. β = uα) elles sont mêmes congrues par A◦
+g,ν+1. En effet si
+G est la composante neutre du groupe des automorphismes complexes de Ug,ν pour β on
+peut écrire u = gv avec g ∈G, v ∈A◦
+g,ν+1 donc β = guα donc (comme g−1β = β)
+β = uα c.q.f.d.
+Donc f
+M1,1 ≃f
+M1,0 et il est immédiat que celui-ci est isomorphe au demi plan de
+Poincaré. De même f
+M3,0 ≃f
+M1,0 ≃f
+M0,0 et comme A◦
+0 est simplement formé des
+automorphismes de X0 = S2 qui conservent l’orientation, on voit que deux structures
+complexes sur S2 sont isotopes (puisqu’elles sont isomorphes et qu’un isomorphisme
+conserve l’orientation). Cela prouve que les f
+M0,i (i ≤3), sont réduits à des points !
+Ainsi le théorème de Teichmüller est assez évident si g = 0 ou 1, c’est le cas g ≥2 qui
+est profond…
+L’espace de Teichmüller (plus généralement tout espace E ∞-connexe sur lequel Ag
+opère de façon que A◦
+g,ν opère librement) va permettre d’interpréter l’extension canon-
+ique Γ′
+g,ν+1 de Γg,ν par πg,ν (cas (g, ν) anabélien) comme groupe fondamental mixte
+d’un espace (homotope à Ug,ν) sur lequel Γg,ν opère.
+(On était ennuyé précédemment, car Γg,ν n’opérait pas lui même sur Ug,ν mais seule-
+ment le groupe Ag,ν dont Γg,ν est quotient, on avait l’impression que le passage au quo-
+tient par A◦
+g,ν était pourtant inessentiel, car A◦
+g,ν, car A◦
+g,ν est ∞-connexe et d’ailleurs on
+avaittrouvéuneextension eAg,ν deΓ′
+g,ν+1 parcemêmegroupe∞-connexeA◦
+g,ν quiopère
+sur le revêtement universel, et un homomorphisme surjectif eAg,ν →Ag,ν de noyau πg,ν
+compatible avec cette opération).
+Or si f
+M = E/A◦
+g,ν, E est un A◦
+g,ν - torseur de base f
+M, qu’on peut utiliser pour
+tordre Ug,ν sur lequel A◦
+g,ν opère continuement, on trouve donc un fibré H (≃Ug,ν ×
+E/A•
+g,ν opérant diagonalement) sur f
+M, de fibre Ug,ν (c’est pour E = Eg le fibré uni-
+verselencourbescomplexesdetype(g, ν)avecrigidificationdeTeichmüller…). Comme
+E et A◦
+g,ν sont ∞-connexes, f
+M aussi, donc l’inclusion d’une fibre dans le fibré est un ho-
+motopisme. Or maintenant Γg,ν opère sur X (de façon compatible avec son opération
+140
+
+--- G103d page 146 ---
+sur f
+M), d’où la construction d’une extension de Γg,ν par π1(H) = π1(Ug,ν) = πg,ν.
+On a fait tout ce qu’il fallait pour prouver que c’est bien essentiellement Γ′
+g,ν…
+141

@@ -1,0 +1,342 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 49. --- HOMOMORPHISMES DE $\mathcal{M}_{0, 3}$, LES GROUPES $\mathcal{M}_{\rho,\sigma}$ GÉNÉRAUX}\thispagestyle{empty}
+\addcontentsline{toc}{section}{{\bf 49}. Les groupes $\mathcal{M}_{\rho,\sigma}$ généraux}
+\label{sec:49}
+\section*{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{subsection}{I. Préliminaires heuristiques}
+\vskip .3cm
+{\bf I)} Considérons\footnote{Où on se met dans le bain\dots Toute cette section I semble entièrement inutile pour la suite, c'est un tâtonnement préliminaire qui débouche sur la section II, p.\ 553.} un sous-groupe fermé $\mathcal{G}$ de $\mathcal{M}_{0,3}$, contenant $\mathfrak{S}^{+\wedge}_{0, 3}$, donc image inverse d'un sous-groupe fermé de ${\boldsymbol{\Gamma}_{0,3}}^\sim$. On suppose que celui-ci est ``suffisament gros'' --- disons qu'il contienne un sous-groupe d'indice fini de $\boldsymbol{\Gamma}_{\mathbf{Q}} \subset {\boldsymbol{\Gamma}_{0,3}}^\sim$. Pour le moment, on suppose pour simplifier que $\mathcal{G}\subset \Ker \varepsilon_3$. En résumé
+$$
+\mathfrak{S}_{0, 3}^{+ \wedge} \subset \mathcal{G} \subset \mathcal{M}_{0, 3}^\sim, \quad u \in \mathcal{G} \Rightarrow \mu(u) \equiv 1 (3).
+\leqno (1)
+$$
+Cette dernière hypothèse signifie donc que pour tout $u \in \mathcal{G}$, on a $\alpha_0(u)\in\mathfrak{S}_{0, 3}^{\wedge +}$, donc on a 
+$$
+\mathcal{G} \overset{\underline{\alpha_0}}{\underset{\underline{\beta_0}}{\rightrightarrows}} \mathfrak{S}_{0,3}^{+},
+\leqno (2)
+$$
+caractérisés par
+$$
+(2') \quad
+\begin{cases}
+u(\rho) = \operatorname{int}(\alpha_0)\rho\;, \quad \alpha_0 = \underline{\alpha_0}(u)\; , \\
+u(\sigma) = \operatorname{int}(\beta_0)\sigma\;, \quad \beta_0 = \underline{\beta_0}(u)\; .
+\end{cases}
+$$
+On considère
+\[
+\begin{tikzpicture}[x=1pt,y=1pt]
+
+% top line
+\node at (0,150) [anchor=west] 
+{$\mathcal{G}(0)= \mathcal{G}\cap\mathcal{M}_{0,3}^\sim(0)$};
+
+% bottom line
+\node at (0,0) [anchor=west] 
+{$\mathcal{G}[0]= \mathcal{G}\cap\mathcal{M}_{0,3}^\sim[0]
+= \operatorname{Norm}_{\mathcal{G}}(L_0^{\mathfrak{S}})\; ,$};
+
+% vertical segment
+\draw (40,70) -- (40,92);
+
+% top half oval (the "cap")
+\draw (40,70) ellipse [x radius=10, y radius=25];
+
+\end{tikzpicture}
+\]
+de sorte que 
+$$
+\mathcal{G}= \mathcal{G}(0)\cdot \mathfrak{S}_{0, 3}^{+ \wedge} \quad \text{(produit semidirect)}
+\leqno (4)
+$$
+$$
+\mathcal{G}[0]= \mathcal{G}(0)\cdot L_0^\mathfrak{S}\quad\quad \text{idem}\quad
+\leqno (5)
+$$
+$$
+\mathcal{G}[0]\cap\mathfrak{S}_{0, 3}^{+ \wedge}= L_0^\mathfrak{S}\; .
+\leqno (6)
+$$
+On a posé
+$$
+L_0^\mathfrak{S}= \text{sous-groupe fermé de $\mathfrak{S}_{0, 3}^{+ \wedge}$ engendré par $\varepsilon_0\;$,}
+\leqno (7)
+$$
+et on définit de même $L_1^\mathfrak{S}$, $L_\infty^\mathfrak{S}$.
+
+Considérons un groupe profini $\mathcal{M}$, et un homomorphisme (continu) \emph{surjectif}
+$$
+\varphi\; :\; \mathcal{G}\;\to\;\mathcal{M}\; .
+\leqno (8)
+$$
+On pose
+$$
+\begin{cases}
+\varphi(\mathfrak{S}_{0, 3}^{+ \wedge}) = \mathfrak{S} \quad \text{sous-groupe distingué de $\mathcal{M}$} \\
+\varphi(\mathcal{G}(0)) = \mathcal{M}(0) \\
+\varphi(\mathcal{G}[0]) = \mathcal{M}[0] \\
+\varphi(L_0^\mathfrak{S}) = L_0\; .
+\end{cases}
+\leqno (9)
+$$
+Donc ce sont des sous-groupes fermés de $\mathcal{M}$, satisfaisant
+$$
+\mathcal{M}(0)\; \subset \; \mathcal{M}[0]\; \subset\; \operatorname{Norm}_\mathcal{M}(L_0)
+\leqno (10)
+$$
+$$
+L_0\;\subset\; \mathfrak{S}\cap\mathcal{M}[0]\; .
+\leqno (11)
+$$
+Par abus de langage, on désigne encore par $\rho$, $\sigma$, $\varepsilon_0$, $\varepsilon_1$ \dots les images de ces éléments dans $\mathfrak{S}$, qui y satisfont donc les relations connues dans $\mathfrak{S}_{0, 3}^{+ \wedge}$, en particulier
+$$
+\sigma^2 = \rho^3 = 1\; ,\quad  \sigma\rho= \varepsilon_0\; ,\quad \rho\sigma= \varepsilon_1\; ,\quad\; \varepsilon_1= \sigma(\varepsilon_0) = \rho(\varepsilon_0)\; .
+\leqno (12)
+$$
+Les restrictions des applications $\alpha_0$, $\beta_0$ de (2, 2') à $\mathcal{M}_{\rho, \sigma}[0]$ seront plutôt notées $\alpha,\beta$, où $\alpha$, $\beta$ sont en fait des applications
+$$
+S\mathcal{G}\; \defeq \; \underbrace{\text{image inverse de $\mathcal{G}$ dans $S\mathcal{M}_{0,3}^\sim$}}_{= \{ (u,f)\in\mathcal{G}\times\mathfrak{S}_{0, 3}^{+ \wedge}\; |\; fu\in\mathcal{G}[0]\}}
+    \; \overset{\alpha}{\underset{\beta}{\rightrightarrows}} \mathfrak{S}_{0, 3}^{+ \wedge}
+\leqno (13)
+$$
+dont on regarde les restrictions au sous-groupe ($\isom\mathcal{M}_{\rho, \sigma}[0]$) de $S\mathcal{G}$ défini par la relation $f = 1$.
+
+Composant $\underline{\alpha},\underline{\beta}:\mathcal{G}[0]\rightrightarrows\mathfrak{S}_{0, 3}^{+ \wedge}$ avec $\varphi|\mathfrak{S}_{0, 3}^{+ \wedge}$, on trouve des applications, encore notées $\underline{\alpha}$, $\underline{\beta}$ (ou $\underline{\alpha}^\mathcal{M}$, $\underline{\beta}^\mathcal{M}$ en cas de confusion possible)
+$$
+\mathcal{G}[0] \;\overset{\underline{\alpha}}{\underset{\underline{\beta}}{\rightrightarrows}}\;\mathfrak{S}\; ,
+\leqno (14) 
+$$
+satisfaisant donc
+$$
+\begin{cases}
+u(\rho) = \operatorname{int}(\alpha)\rho \\
+u(\sigma) = \operatorname{int}(\beta)\sigma
+\end{cases}
+\text{\shortstack[l]{pour $u\in\mathcal{M}[0]$ de la forme $\varphi(u_0)$,\\et $\alpha = \alpha(u_0)$, $\beta = \beta(u_0)\;$.\vspace*{-4mm}}}
+\leqno (15)
+$$
+A priori, $\alpha$ et $\beta$ dépendent du choix de $u_0$ dont $u$ provient, pas seulement de $u$ --- mais
+$$
+(16) \quad
+\begin{cases}
+\alpha\rho(\alpha)^{-1} = [u,\rho] \\
+\beta\sigma(\beta)^{-1} = [u,\sigma]
+\end{cases}
+$$
+n'en dépendent pas. Si on pose
+$$
+T_\rho=\underline{\operatorname{Centr}}_\mathcal{M}(\rho)\; ,\quad T_\sigma= \underline{\operatorname{Centr}}_\mathcal{M}(\sigma)\; ,
+\leqno (17)
+$$
+on sait donc que, modulo $T_\rho$ resp.\ $T_\sigma$, $\alpha$, $\beta$ ne dépendent pas de $u$.
+
+Hypothèse. --- $\alpha = \alpha(u_0)$, $\beta = \beta(u_0)$ ne dépendent que de $u = \varphi(u_0)$ (pour $u_0\in\mathcal{G}[0]$).
+
+On va exprimer cette hypothèse de fa\c{c}on un peu différente, en introduisant
+$$
+J = \Ker(\mathcal{G}[0]\to\mathcal{M}[0])\; ,
+\leqno (18)
+$$
+on veut donc que pour
+\[
+u_0'= \delta_0 u_0\; ,
+\]
+avec $u_0\in\mathcal{G}[0]$, $\delta_0\in J$, on ait
+\[
+\alpha(u_0')=\alpha(u_0)\; ,\quad \beta(u_0')=\beta(u_0)\; .
+\]
+Soient $\alpha_0 = \underline{\alpha}(u_0)$, $\beta_0 = \underline{\beta}(u_0)$, $\alpha'_0 = \underline{\alpha}(u'_0)$, $\beta'_0 = \underline{\beta}(u'_0)$, 
+$\overline{\alpha}_0 = \underline{\alpha}(\delta_0)$, $\overline{\beta}_0 = \underline{\beta}(\delta_0)$ \emph{dans} $\mathcal{G}$, de sorte qu'on 
+aura, par les formules de cocycles dans $\mathcal{G}$,
+\[
+\alpha_0'= \delta_0(\alpha_0)\overline{\alpha}_0\; ,\quad \beta_0'= \delta_0(\beta_0)\overline{\beta}_0\; ,
+\]
+d'où, en appliquant $\varphi$ et notant que
+$$
+\varphi(\delta_0(\alpha_0)) = \underbrace{\varphi(\delta_0)}_{=\; 1}(\varphi(\alpha_0)) = \varphi(\alpha_0)\;\defeq \; \alpha\; , \quad \text{et de même}
+$$
+$$
+\varphi(\delta_0(\beta_0)) = \varphi(\beta_0)\;\defeq \; \beta
+$$
+$$
+\alpha'= \alpha\overline{\alpha}\; ,\quad \beta'= \beta\overline{\beta}\quad\text{dans $\mathfrak{S}$}\; ,
+\leqno (19)
+$$
+où $\alpha$, $\beta$, $\alpha'$, $\beta'$, $\overline{\alpha}$, $\overline{\beta}$ sont les images par $\varphi$ des quantités $\alpha_0$ etc.\ dans $\mathfrak{S}^{+\wedge}_{0,3}$. Donc l'hypothèse signifie aussi
+$$
+\text{$\forall\;\delta_0 \in J \defeq \Ker(\mathcal{G}[0]\to\mathcal{M}[0])$, on a $\alpha^\pi(\delta_0),\beta^\pi(\delta_0) \in \Ker \varphi$.}
+\leqno (20)
+$$
+Quand cette hypothèse est satisfaite, on a donc des applications
+$$
+\mathcal{M}[0]\;\overset{\underline{\alpha}}{\underset{\underline{\beta}}{\rightrightarrows}}\;\mathfrak{S}
+\leqno (21)
+$$
+factorisant (14), et satisfaisant donc
+$$
+\begin{cases}
+u(\rho) = \operatorname{int}(\alpha)\rho \\
+u(\sigma) = \operatorname{int}(\beta)\sigma
+\end{cases}
+\quad\text{pour $u\in\mathcal{M}[0]$, $\alpha = \underline{\alpha}(u)$, $\beta = \underline{\beta}(u)$}\; ,
+\leqno (22)
+$$
+qui paraphrasent (21). 
+
+D'ailleurs, posant
+$$
+\xi = \alpha \rho (\alpha)^{-1}\; ,\quad \eta= \beta\sigma(\beta)^{-1}\; ,
+\leqno (23)
+$$
+les relations (22) s'écrivent aussi
+$$
+u(\rho) = \xi\rho\; ,\quad u(\sigma) = \eta\sigma
+\leqno (24)
+$$
+et on aura
+$$
+\xi = [u,\rho]\; , \quad \eta = [u,\sigma]\; ,
+\leqno (25)
+$$
+et de plus
+$$
+\xi = \eta \ell_1^\nu \; , \quad \text{où $\nu = \frac{\mu - 1}{2}\in \hat{\mathbf{Z}}\;\;$ ($\mu$ le multiplicateur de $u$)}\; ,
+\leqno (26)
+$$
+qui provient de la relation analogue dans $\mathfrak{S}_{0,3}^+$. (On suppose pour fixer les idées que l'homomorphisme
+$$
+\mathcal{G}\;\xrightarrow{\chi^\mathcal{G}}\; \hat{\mathbf{Z}}^* \quad\text{(`multiplicateur')}
+$$
+se factorise par
+$$
+\mathcal{G}\;\to\;\mathcal{M}\;\xrightarrow{\chi^\mathcal{M}}\; \hat{\mathbf{Z}}^* \; ,
+\leqno (27)
+$$
+de sorte qu'on a une notion de multiplicateur ($\in\hat{\mathbf{Z}}^\ast$) pour les $u\in\mathcal{M}$.)
+
+Considérons l'homomorphisme naturel
+$$
+\begin{aligned}
+\mathcal{M}[0] &\to \Aut(\mathfrak{S}) \\
+u &\longmapsto \operatorname{int}(u)|\mathfrak{S}\; ,
+\end{aligned}
+\leqno{(28)}
+$$
+on voit sur (22) ou sur (24) qu'il est connu quand on connaît les fonctions $\underline{\alpha},\; \underline{\beta}\; :\; \mathcal{M}[0] \to \mathfrak{S}$, et même quand on connaît seulement $\xi,\; \eta \; :\; \mathcal{M}[0] \to \mathfrak{S}$\footnote{car $\rho$, $\sigma$ engendrent topologiquement $\mathfrak{S}$.}. Si d'ailleurs on pose
+$$
+\mathcal{M}'[0] = \operatorname{Im}(\mathcal{M}[0]\to\Aut(\mathfrak{S}))\; ,
+\leqno (29)
+$$
+ces dernières fonctions $\xi$, $\eta$ sont déjà définies sur $\mathcal{M}'[0]$ --- alors qu'il n'est pas clair qu'il en soit de même de $\alpha$, $\beta$, quand $\mathcal{M}[0]$ n'opère pas fidèlement sur $\mathfrak{S}$. On a ainsi une application $(\underline{\xi},\underline{\eta})$ d'un certain sous-groupe $\mathcal{M}'[0] \subset \operatorname{Norm}_{\Aut(\mathfrak{S})}(L_0)$ dans l'ensemble des solutions de l'équation en $\xi$, $\eta$ (26) qu'on écrira simplement
+$$
+\eta^{-1}\xi\;\in\; L_1,
+\leqno (31)
+$$
+relation qui implique (26) (avec la forme précise de l'exposant $\nu$) si on suppose p.ex.\ $\mathfrak{S}$ assez gros pour que $\mathfrak{S}_{0,3}^{+\,\wedge}\to \SL(2,\hat{\mathbf{Z}})$ se factorise par $\mathfrak{S}$ --- ce qu'on va supposer, pour nous simplifier la vie.
+
+De façon plus précise, soit
+$$
+\Sigma = \Sigma_{\mathfrak{S},{\rho,\sigma}}
+= \left\{ (\xi,\eta)\in\mathfrak{S}\times\mathfrak{S}\;\middle|\;
+\begin{cases}
+\text{a) } \xi\rho \text{ conjugué à } \rho \text{ dans } \mathfrak{S}, \text{ i.e. } \xi = [\alpha,\rho] = \alpha\rho(\alpha)^{-1},\\
+\text{b) } \xi\sigma \text{ conjugué à } \sigma \text{ dans } \mathfrak{S}, \text{ i.e. } \eta = [\beta,\sigma] = \beta\sigma(\beta)^{-1},\\
+\text{c) } \eta^{-1}\xi\in L_1, \text{ i.e. } \exists\,\nu'\in\hat{\mathbf{Z}} \text{ tel que } \xi = \eta\varepsilon_1^{\nu'}.
+\end{cases}
+\right\}.
+$$
+et soit $u\in\Aut(\mathfrak{S})$ un automorphisme de $\mathfrak{S}$, et posons
+$$
+\left\{
+\text{
+\begin{tabular}{ll}
+$\xi  = [u,\rho]   = u \rho u^{-1} \rho^{-1} = u(\rho)\rho^{-1}\; ,$ & i.e.\ $u(\rho) = \xi\rho$ \\
+$\eta = [u,\sigma] = u(\sigma)\sigma^{-1}\; ,$                            & i.e.\ $u(\sigma) = \eta\sigma$ \\
+\end{tabular}
+}
+\right. \; , \;\;\;\text{cf.\ (24), (25),} \;\;\;\text{\tt [\footnotemark]}\; , \hspace*{-5mm}
+\leqno (34)
+$$
+\footnotetext{\tt [(33) n'existe pas.]}%
+alors dire que $\xi\rho$ ($= u(\rho)$) est conjugué à $\rho$ signifie que $u$ fixe la classe de conjugaison de $\rho$, dire que $\eta\sigma$ ($= u(\sigma)$)
+est conjugué de $\sigma$ signifie que $u$ fixe la classe de conjugaison de $\sigma$. Enfin la condition $\eta^{-1}\xi\in L_1$ s'écrit aussi, comme
+\[
+\begin{aligned}
+\eta^{-1}\xi 
+& = & (\sigma u(\sigma^{-1}))(u(\rho)\rho^{-1}) \\
+& = & \sigma u(\sigma^{-1}\rho)\rho^{-1} \\
+& = & \sigma \Big(u(\underbrace{\sigma^{-1}\rho}_{=\;\varepsilon_0}) \underbrace{(\rho^{-1}\sigma)}_{=\; \varepsilon_0^{-1}} \Big) \\
+& = & \sigma(u(\varepsilon_0)\varepsilon_0^{-1})\; ,
+\end{aligned}
+\quad (\footnotemark)
+\]
+\footnotetext{NB $\sigma^{-1} = \sigma$.}%
+sous la forme
+\[
+\sigma(u(\varepsilon_0)\varepsilon_0^{-1})\;\in\; L_1\; , \quad\text{i.e.\ $\; u(\varepsilon_0)\varepsilon_0^{-1}\;\in\; L_0$}
+\]
+(puisque $L_0 = \sigma^{-1}(L_1)$), ou encore (puisque $\varepsilon_0\in L_0$) $u(\varepsilon_0)\in L_0$, soit (puisque $\varepsilon_0$ engendre $L_0$)
+\[
+u(L_0)= L_0\; ,
+\]
+i.e.\ que $u$ \emph{normalise} $L_0$ (\footnote{Dans cet argument, on n'a utilisé que la relation $\sigma_0^{-1}\rho = \varepsilon_0$ {\tt [plutôt 
+$\sigma^{-1}\rho = \varepsilon_0$]} et le fait que $\varepsilon_0$ engendre $L_0$, et pas que $\sigma^2 = 1$ ou $\rho^3 = 1$ p.ex.}).
+
+Soit donc
+$$
+\begin{aligned}
+\tilde{B}_0' 
+& \defeq & \left\{ u\in\Aut(\mathfrak{S})\; \left|\; 
+\text{
+\begin{tabular}{l}
+$u$ fixe {\tt [la]} classe de conjugaison de $\rho$ et celle de $\sigma$ \\ 
+$u$ normalise $L_0$ \\
+\end{tabular}
+} \right.\right\} \\
+& \subset & \Aut(\mathfrak{S})\; ,\\
+\end{aligned}\hspace*{-5mm}
+\leqno (35)
+$$
+de sorte qu'on a une application (injective parce que $\rho$, $\sigma$ engendrent $\mathfrak{S}$)
+$$
+\begin{aligned}  
+\tilde{B}_0' & \hookrightarrow     & \Sigma \\
+u       & \longmapsto & \Big( [u,\rho] = u(\rho)\rho^{-1}\; , \; [u,\sigma] = u(\sigma)\sigma^{-1}\Big)\; .
+\end{aligned}
+\leqno (36)
+$$
+$$
+\text{
+\begin{tabular}{p{14cm}}
+\emph{Hypothèse fondamentale sur $\mathfrak{S}$, muni de $\rho$, $\sigma$, d'où $\varepsilon_0 = \sigma^{-1}\rho$, 
+$\varepsilon_1 = \rho\sigma^{-1} = \sigma(\varepsilon_0) = \rho(\varepsilon_0)$~:} \\
+\begin{tabular}{ll}
+a) & $\mathfrak{S}$ est engendré topologiquement par $\rho$, $\sigma$. \\
+b) & L'application (36) (injective par a)) est bijective. \\
+\end{tabular} \\
+\end{tabular}
+}
+\leqno (37)
+$$
+La condition b) signifie donc que pour $(\alpha,\beta)\in\mathfrak{S}\times\mathfrak{S}$, satisfaisant une relation
+\[
+\underbrace{\alpha\rho(\alpha)^{-1}}_{=\;\xi}= \underbrace{\beta\sigma(\beta)^{-1}}_{=\;\eta}\varepsilon_1^{\nu'}\; ,\quad\text{$\nu'$ convenable,}
+\]
+il existe $u\in\Aut(\mathfrak{S})$ tel qu'on ait
+\[
+\begin{aligned}
+{[u,\rho]} & = & \alpha\rho(\alpha)^{-1}\; , & \text{i.e.} & u(\rho) & = & \operatorname{int}(\alpha)(\rho)\; , & \text{i.e.} & u(\rho) & = & \xi\rho \\
+{[u,\sigma]} & = & \beta\sigma(\beta)^{-1}\; , & \text{i.e.} & u(\sigma) & = & \operatorname{int}(\beta)(\sigma)\; , & \text{i.e.} & u(\sigma) & = & \eta\sigma \\
+\end{aligned}
+\]
+(on aura donc nécessairement $u\in\tilde{B}_0'$, et $u$ sera unique si on a a)).
+
+Ainsi, sur l'ensemble des $R_{\rho, \sigma}$ des $(\xi,\eta)$ satisfaisant a) b) c), on aura une structure de groupe, déduite par transport de structure de celle de $\tilde{B}_0'$ etc.
+
+
+%End

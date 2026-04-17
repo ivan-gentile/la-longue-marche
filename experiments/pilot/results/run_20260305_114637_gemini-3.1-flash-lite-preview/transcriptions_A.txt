@@ -1,0 +1,277 @@
+Experiment A — gemini-3.1-flash-lite-preview
+============================================================
+
+
+========================================
+PAGE 1
+========================================
+
+Pages 1-292 + table des matières
+
+
+========================================
+PAGE 2
+========================================
+
+\section*{La "longue marche" à travers la théorie de Galois...}
+
+\begin{enumerate}
+    \item Topos multigaloisiens \hfill 1
+    \item Appl. aux rev. des topos \hfill 4
+    \item Variétés pro-multigaloisiennes \hfill 6
+    \item Compléments \hfill 7
+    \item Introduction des contacts avec milieux "conjecturaux" fondamentaux \hfill 10
+    \item Analyse locale de $(X,S)$ en un s.f.s. \hfill 12
+    \item Reformulation "bordélique" de la conjecture (le purgatoire nécessaire...) \hfill 25
+    \item Réflexion taxinomique (distinction des "câble purgatoire s'ouvrant au pur...") \hfill 29
+    \item Structure tangentielle en les s.f.s (sections d'extensions "détricotées") \hfill 34
+    \item Ajustements des hypothèses (raccords) \hfill 38
+    \item Conditions sur les syst. de groupoïdes obtenus à partir de situation géométrique \hfill 39
+    \item L'analogie topologique (où si on veut aussi que le bordélique puisse s'exprimer complètement, dans le contexte, pour de gr. ext. : locaux...) \hfill 43
+    \item Retours sur les visions "fondamentales" \hfill 53
+    \item 13bis. Retour sur la notion de groupoïdes locaux \hfill 56
+    \item 14. Digressions cosmologiques (ou le "bordage de trous") \hfill 58
+    \item 15. Retours sur le cas topologique : orbites critiques au sein d'extensions (Application aux sous-groupes finis du contexte ($\pi$) (cas discret) (form. §18) \hfill 67
+    \item 16. Bordage et lissage de topos : préliminaires topologiques généraux \hfill 79
+    \item 17. Complément §15 sur gr. de gr.-p. [unclear] \hfill 89
+\end{enumerate}
+
+\vfill
+\hfill 2
+
+
+========================================
+PAGE 3
+========================================
+
+Voici la transcription LaTeX du manuscrit :
+
+18. Fovage de trous. Application aux sous-groupes finis de Aut ext ($\pi_1$) (cas disjoint) \hfill 91
+
+19. Tour de Teichmüller \hfill 102
+
+20. Digression : description 2-topique des cat. des morphismes topologiques \hfill 116'
+
+21. Les espaces de Teichmüller \hfill 125
+
+[MARGIN: mangan $\S 22$!] 23. Retour sur les surfaces qui ne sont (finis) d'opinions ("mise en équation" du Pb) \hfill 133
+
+24. Essai de détermination de $Aut^0 \Gamma_{g,v}$. Lien avec les relations $\pi_{g,(v, v+n)} = (1)$, programme de travail \hfill 142
+
+25. Groupes de Teichmüller "spéciaux" \hfill 148
+
+25 bis. Cas des deux groupes d'opérateurs. Retour sur les notations. \hfill 153
+
+26. Groupes de Teichmüller profinis. Discrétisations et procrétisations. Lien avec les espaces de Teichmüller. Conjecture hâtive. \hfill 151
+    \hfill 167
+
+27. Changement du type $(g,v)$ : 1) bouchage de trous (et du groupe ... $g,v$ ... p. 174) \hfill 172
+
+28. Changt de type $(g,v)$ : 2) passage à un rev. fini \hfill 177
+    (la conjecture hâtive grince ...)
+
+29. Critique de l'approche précédente (et juste les notions et les conjectures ...) \hfill 185
+
+30. Propriétés des $N_{g,v}, \Pi_{g,v}$ : 1) Propriétés liées aux sous-groupes finis de Teichmüller \hfill 192
+
+31. Digression sur les relèvements d'un fini extérieur d'un groupe fini sur un groupe profini à bouts \hfill 198
+
+32. Retour sur les aspects combinatoires des bouchages de trous : relations entre $\Pi_{g,v}$ et $\Pi_{g,v-1}$. (où on reconstitue, sous le droit de topus [unclear: complet] l'étale, d'une couche logique à partir de $\pi_1$, d'un ouvert anatélis...) \hfill 200
+
+33. Digression topologique : anti-involutions des surfaces orientées compactes (en passant du cas "à 2 trous") \hfill 221
+
+34. L'injectivité de $\Gamma_Q \to$ Aut ext $(\pi_{0,3})$ \hfill 229
+
+35. L'isomorphisme $\Gamma_Q \simeq \Pi_1$ et l'injectivité $\Gamma_Q \to$ Aut ext $(\hat{\Pi}_{g,v}) = $ Aut ext $(SL(2,\mathbb{Z})^\wedge)$ \hfill 237
+
+36. Modules des courbes elliptiques via Legendre, ou $M_{1,[2]} \simeq \mu_{0,3} \neq M_{0,4}$ \hfill 242
+
+37. Relations entre $N_{g,v}, \Pi_{g,v}$ pour $g$ variable (corps des rev. finis) \hfill 239
+
+38. Description heuristique profinie de la cat. des courbes alg. définies sur des corps de base, cat. finis de $\bar{\mathbb{Q}}/\mathbb{Q}$ \hfill 243
+
+
+========================================
+PAGE 4
+========================================
+
+Voici la transcription en LaTeX du manuscrit :
+
+\section*{18}
+
+On voit ainsi que le foncteur $\Phi: \mathcal{C} \to \hat{C}$ est une immersion pleine, et que son image consiste des objets de $\hat{C}$ qui sont des faisceaux pour la topologie canonique.
+Plus précisément, si l'on note $\mathcal{C}^\sim$ la catégorie des faisceaux sur $\mathcal{C}$ (pour la topologie canonique), on a un foncteur "faisceautification" $\mathcal{L}: \hat{C} \to \mathcal{C}^\sim$, et on a un isomorphisme canonique $\mathcal{C}^\sim \cong \mathcal{C}$ (si $\mathcal{C}$ est un topos).
+
+Ceci est une facette du théorème de Giraud sur la caractérisation des topos.
+Un autre point de vue, qui nous sera utile, est celui de la \textit{topologie étale}.
+
+Si $X$ est un schéma, on définit le site étale $X_{et}$ comme suit :
+les objets sont les morphismes étales $U \to X$ (de type fini), et les morphismes sont les morphismes de $X$-schémas (qui sont automatiquement étales).
+La topologie est celle des recouvrements par des familles $\{U_i \to U\}$ telles que $\cup Im(U_i) = U$.
+
+On définit alors le topos étale $X_{et}^\sim$ comme la catégorie des faisceaux d'ensembles sur $X_{et}$.
+Il y a un morphisme de topos canonique $\varepsilon: X_{et}^\sim \to X_{zar}^\sim$ où $X_{zar}^\sim$ est le topos des faisceaux pour la topologie de Zariski (c'est-à-dire le topos associé au site des ouverts de Zariski de $X$).
+
+[MARGIN: 814]
+
+[MARGIN: 832]
+
+
+========================================
+PAGE 5
+========================================
+
+\section*{1. Topos multigaloisiens.}
+
+Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions équivalentes:
+
+a) $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est localement constant.
+
+b) $\mathcal{E}$ est équivalente à une catégorie $\hat{C}$ où $C$ est un groupoïde.
+NB: $\mathcal{E}$ est un topos si et seulement si ... [unclear]
+
+b') $\exists$ une famille $(G_i)_{i \in I}$ de groupes et une équivalence de catégories
+\begin{equation*}
+\mathcal{E} \simeq \prod_{i \in I} \text{Ens}(G_i)
+\end{equation*}
+
+c) Conditions d'exactitude ad-hoc, du type de celles donnés dans SGA 1...
+
+Dém. $b \iff b' \Rightarrow a$ immédiat. Pour $a \Rightarrow b$ :
+je crois même sans partir de la famille de topos
+$\mathcal{E}$ est localement connexe, et qu'il suffit...
+[unclear: et] de foncteurs fibres i.e. d'objets...
+... un des points.
+
+Def. 1.1. Si les conditions équivalentes $b, b'$ ci-dessus sont satisfaites, on dit que $\mathcal{E}$ est un topos multigaloisien (ou une catégorie... [unclear])
+
+[MARGIN: Propos 1.3. Si $\mathcal{E}$ est multigaloisien...]
+
+
+========================================
+PAGE 50
+========================================
+
+\dots \quad : des syst. d'inv.
+$\mu : f_\alpha \to f_{\alpha'}$, $\mu^* f_{\alpha'} \to f_\alpha$. Au construit
+[MARGIN: exprimé d'emblée] condition $\tau' = \tau$, $d_{i'} = d_i$, $\forall i \in I$ [unclear]
+Le domaine de ... [unclear: ces résultats] des ... [unclear: conditions]...
+
+$\mu \in \mathcal{E}$, définissant une iso
+entre $f_\alpha : \mathcal{E}' \to \mathcal{E}$ et $f_{\alpha'} : \mathcal{E}' \to \mathcal{E}$
+
+i.e. $f_{\alpha'} \xrightarrow{\sim} f_\alpha$
+
+\begin{equation}
+f_{\alpha'} = (\text{rep}) f_\alpha
+\end{equation}
+
+b) $\mu_i \in \mathcal{E}_i$ ($i \in I$, $i = \iota(n)$)
+
+\begin{equation}
+f_{i'} = \text{int}(\mu_{i'}) f_i
+\end{equation}
+
+décrit $\mu^*$ satisfait [unclear: à]
+\quad \quad $d_{i'} = d_i$
+
+les $\mu$, $f_{i'}$ et $\alpha$, $\alpha'$ liés aux $\alpha, \alpha' \in \text{Aut}(\mathcal{E})$
+$\downarrow$ \quad $\downarrow$
+$i \quad i'$
+
+$- \quad \alpha_{i'}, \alpha_i \in (\mathcal{F})$ de la $f_i \dots$
+... [unclear]
+
+\begin{equation}
+\alpha' = p(\mu) \alpha
+\end{equation}
+
+\begin{equation}
+\alpha_{i'} = p(\mu_{i'}) \alpha_i \quad \forall i \in I'
+\end{equation}
+
+\begin{equation}
+\begin{cases}
+p(\mu) = \alpha' \alpha^{-1} \\
+p(\mu_i) = \alpha_{i'} \alpha_i^{-1}
+\end{cases}
+\end{equation}
+
+
+========================================
+PAGE 51
+========================================
+
+[MARGIN: 24]
+
+Notons que, comme fi. et [unclear: jnkt], les deuxièmes relations, donnant les $\phi(f_i)$, déterminent la phi de façon unique, l'existence de ces phi équivaut à la relation
+\begin{equation}
+\alpha'_i \alpha^{-1}_i \in \text{fi}(\mathcal{E}_i) \quad \text{il } + I'
+\end{equation}
+
+Quant à la relation $p(f_i) = \alpha'_i \alpha^{-1}_i$, elle détermine la multiplication par un $f_0 \in \ker p = \pi_1$ mais qui doit être tel que l'on ait encore
+\begin{equation}
+f'_{\varepsilon} = \text{int}(f_0) f_{\varepsilon}
+\end{equation}
+(ce qui plus de $f'_{\varepsilon} = \text{int}(f_0) f_{\varepsilon}$) ce qui signifie exige que
+\begin{equation}
+\text{int}(f_0) f_{\varepsilon} = f'_{\varepsilon}
+\end{equation}
+i.e.
+\begin{equation}
+f_0 \in \text{Cent}_{\pi_1} f_{\varepsilon}(\mathcal{E}')
+\end{equation}
+
+C'est donc cela la détermination exacte du choix d'un isomorphisme entre $f$ et $f'$ de $\mathcal{D}'$ dans $\mathcal{D}$.
+P. ex. on est dans les conditions où $\pi' \to \pi$ avec $f_{\varepsilon} : \mathcal{E}' \to \mathcal{E}$ est un (image d'un "morphisme" "construit" !) - et alors $f_0$ doit centraliser [unclear: un des] [unclear: groupes].
+
+[MARGIN: 59]
+
+
+========================================
+PAGE 52
+========================================
+
+$\Pi$ -- je reviens ici à notre explication de tout à l'heure, il semble bien que dans les cas considérés : des sous-groupes (ou des isomorphismes) d'un $f$ ou $f'$ (si continu) et uniques, dans $\mathcal{E}$ (ou $\mathcal{E}'$) ou une catégorie discrète.
+
+$I$ -- on peut interpréter $\mathcal{E}$ comme une catégorie de sous-groupes $\mathcal{E}_i \subset \mathcal{E}$, et de $p : \mathcal{E} \to \mathcal{P}$ (ou $\Pi$) enfin des isomorphismes
+$$ k_i : \mathcal{T}(\bar{k}) \tilde{\to} \mathcal{E}_i \times \bar{k} = L_i $$
+(commentant : l'action de $\mathcal{E}$). Si on a un système $(\mathcal{E}_i, (\mathcal{E}_{ij}, \varphi_{ij} ))$ ou $(\mathcal{K}_i, \varphi_{ij})$; un morphisme dans $\mathcal{E}$ peut être défini par:
+
+$$ f : \mathcal{E}' \to \mathcal{E} $$
+satisfaisant les conditions suivantes :
+b) $p f$ est conjugué de $f' [ \text{ soit } \alpha \in \Pi \text{ que } pf = \text{int}(\alpha) p' ]$
+a) $\forall i \in I', \exists i \in I \text{ tel que } f(\mathcal{E}'_i)$
+soit contenu dans un conjugué de $\mathcal{E}_i$
+[ soit $\alpha_i \in \mathcal{E} \text{ que } f(\mathcal{E}'_i) \subset \text{int}(\alpha_i)(\mathcal{E}_i) ]$
+
+
+========================================
+PAGE 53
+========================================
+
+NB Le i-f $I \to I'$ est unique, d'où: $I \to I'$. Si les $\alpha_i$ sont choisis, on définit $f_i : \mathcal{E}_i \to \mathcal{E}'_i$,
+$$f_i = (\text{Aut}(\alpha_i) \circ f) | \mathcal{E}_i$$
+qui induit des $[unclear]$, $k'_{i}, k_i$, un [unclear]
+[MARGIN: NB A priori la condition que $f_i$ est un morphisme est une conséquence de la condition que $f$ est un morphisme dans le sens que $f$ est déterminé par les $\alpha_i$ (qui est d'ailleurs déterminé par les $f_i$)]
+$f_i : \pi(\mathcal{E}_i) \to \pi(\mathcal{E}'_i)$. On exige que $f_i = f'_i$ si $\alpha_i = \alpha'_i$, et est [unclear] uniquement déterminé par cette condition, et $\alpha_i$ (qui est d'ailleurs déterminé [unclear]...) est [unclear] compositions : $g$ [unclear] des morphismes de $\mathcal{E}_i$ (dans des transporteurs d'un ss-groupe [unclear] de $\mathcal{E}_i$ - c'est à dire si $f$ [unclear] puissent être définis de telle façon que, pour tout [unclear]).
+
+[MARGIN: En fait pour le choix des $\alpha_i$ on a la condition la plus générale (a priori c'est une fixation locale)]
+$$ \beta_i = p(\mathcal{E}_i) \alpha_i \implies f_i^\circ = (d_i, \chi(\beta_i)) d_i^{-1}, \chi_i = d_i \chi(\beta_i) $$
+$d_i \in N^*$ est un entier naturel [unclear] unique déterminé [unclear] de et les $\alpha_i$ sont choisis.
+
+Remplaçons $\alpha$ par $\alpha' = \delta \alpha$.
+
+
+========================================
+PAGE 54
+========================================
+
+8. Réflexion taxonomique.
+
+Le cas $\dim X = 0$ se traduit sur le paradigme du système $(T\bar{K} \to \mathcal{E}, \mathcal{E} \to \Gamma)$ par le fait que $I = \emptyset$ (donc ce cas se conditionne par $p$ injectif), donc se décrit simplement par la donnée d'un sous-groupe $E \subset \Gamma$, i.e. d'une sous-extension finie $\bar{K}/K$ [unclear: CNB] ... [unclear] $X' = \text{Spec } K_i$, le [unclear] sur $\Pi \to \Gamma$ -- les données sur $X$ sont [unclear: équivalentes] à une telle immersion $I = \text{Hom}(X, \bar{K})$ des $\bar{K}/K$).
+
+Le cas $\dim X = 1$ se traduit par le fait que $\mathcal{E} \to \Gamma$ n'est pas injectif -- quand $I, \Pi$ sont vides on [unclear] dans ce cas. S'il n'est vide, la description se fait au moyen de [unclear] d'un hom de groupes fini $\mathcal{E} \to \Gamma$ où $\Gamma$ doit donner $\text{Gal}(\bar{K}/K) = \text{Aut}_{\bar{K}}(\Omega)$.
+
+Supposons donnés, maintenant, à la fois $D = (\mathcal{E}, p, I, (\rho_i: \mathcal{E} \to \mathcal{E}), (k_i: T\bar{K} \to \mathcal{E}))$ et $D' = (\mathcal{E}', p', I', (\rho'_i: \mathcal{E}' \to \mathcal{E}'), (k'_i: T\bar{K} \to \mathcal{E}'))$ et revenons à [unclear: la] question de la description des morphismes de $D'$ dans $D$. On va distinguer, dans ces cas, suivant les deux classes.
+

@@ -1,0 +1,4 @@
+anthropic>=0.75
+google-genai>=1.15
+pymupdf>=1.24
+python-dotenv>=1.0

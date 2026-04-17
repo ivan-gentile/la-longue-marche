@@ -1,0 +1,313 @@
+Section: § 16. — BOUCHAGE ET FORAGE DE TROUS : PRÉLIMINAIRES
+G103d pages: 93-102
+
+--- G103d page 93 ---
+§ 16. — BOUCHAGE ET FORAGE DE TROUS : PRÉLIMINAIRES
+TOPOLOGIQUES GÉNÉRAUX
+Considérons une situation56
+BD∗→BU
+Je m’aperçois qu’il me fut revenir sur les notations des divers topos associes à une telle
+donnée. Mais je vais me guider sur la situation des n◦…où on a un schéma régulier X de
+dimension 1, un sous-schéma fermé S de dimension 0, d’où U = X \ S — dans ce cas
+Xét ne peut se reconstituer à partir des BD∗comme BI avec I = π0(BD∗), il faut tenir
+compte des corps résiduels k(s) (s ∈S) i.e. des groupes de Galois Gal(k(s)/k(s)).
+Doncilyalieudereveniràunesituationdedépart(quiestadaptéeaucasarithmético-
+géométrique) de morphismes de topos multigaloisiens
+(∗)
+BD∗
+BU
+BS
+ρ
+σ
+(attention, on écrit BS, non BD, qui aura un autre sens), où σ induit un isomorphisme sur
+les π0 (et est surjectif sur les Hom).
+Pour l’instant, on ne va faire aucune hypothèse particulière sur cette situation, qui
+pour BU connexe, et en termes des choix (de revêtements universels eD∗
+i des composantes
+56(N.B. Une telle situation topossique (de topos multigaloisiens) décrit 2-fidèlement la situation
+topologique (X, S) ou U, pourvu qu’aucune composante irréductible de U ne soit ≃S2, et du fait qu’elle
+reste très proche du langage et de l’intuition topologique, elle est supérieure au point de vue “groupe à
+lacets”, qui correspond plutôt à l’approche calculatoire.)
+
+--- G103d page 94 ---
+connexes D∗
+i de D∗, d’un revêtement universel eU de U, et d’isomorphismes entre les
+ρ!( eD∗
+i ) et eU s’explicite par la donné des groupes E (ou π) (= Aut(eU)) et Ei (ou πi
+(= Aut( eD∗
+i )), Γi(i ∈I)), et des homomorphismes de groupes
+Ei
+E
+Γi
+ρi
+σi
+avec les σi surjectifs (quand il y a un corps de base K pour la situation géométrique alors
+dans la description toposique, posons e = Spec K et désignons par Ee le topos étale eét
+de e, i.e. BΓ si Γ = Gal(K/K), le diagramme (*) s’insère dans
+BD∗
+BU
+BS
+Be
+φ
+ρ
+ψ
+σ
+avec donnée de commutativité pour le carré envisagé…Comme au début de ces notes).
+Entermesde(*), onconstruitpar“recollement”deBU etdeBS (vialefoncteurderec-
+ollement σ∗ρ∗) un topos mixte, qui n’est pas en général multigaloisien, noté précédem-
+mentBX,U, etquejepréfèremaintenantnotéBX,S [pourrappelerqu’ils’agitdefaisceaux
+sur X, mais n’ayant de singularités que sur S].
+Il s’insère dans un diagramme de topos
+BD∗
+BU
+BS
+Be
+αX
+avec une flèche “de commutation” αX qui n’est telle que par abus de langage — ce n’est
+pas un isomorphisme mais un morphisme de foncteurs sans plus
+σ∗ψ∗
+αX
+−−→ρ∗ϕ∗
+89
+
+--- G103d page 95 ---
+De la même façon, recollant D∗et S via σ∗(i.e. remplaçant BU par BD∗dans la
+construction précédente de BX,S), on trouve un topos, pas multigaloisien en général,
+noté BD,S. Dans le modèle géométrique avec un X, S comme dessus, BX correspond
+aux faisceaux sur X qui sont essentiellement localement constants sur U (et sur S, où
+ils n’ont pas de mérite) i.e. sur U provenant de l’image inverse par U U →BΠ,U d’un
+faisceau sur BΠ,U et de même BD,S correspond aux faisceaux sur D = ⨿i Spec(Oi =
+hensélisé de OX,S) qui sont localement constants sur D∗= D \ S (et sur S, sans mérite
+!) mais avec l’hypothèse de dimension faite on a en fait
+BD,S ≃Dét
+(Di n’a que 2 points, D∗
+i = {ηi}…).
+Ainsi BD,S (≃Dét quand on part de X, S) s’insère dans un triangle de morphisme
+de
+BD∗
+BD∗
+BS
+BD,S
+φD
+σ
+ψD
+αD
+où αD, comme αX ci-dessus, n’est qu’un vulgaire homomorphisme (pas isomorphisme
+en général)57.
+QuandonparledumorphismecanoniquedeBD dansBD,S c’estdeϕD (etnonψDσ)
+qu0il s’agit — dans le cas géométrique on a BD∗≃D∗
+ét et ϕD correspond à l’inclusion
+de schémas
+D∗⊃D \ S →D
+et ψD : BS →BD,S à l’inclusion de schémas S →D alors que σ ni ψDσ ne correspon-
+dent en général à des morphismes de schémas.
+57(N.B. dans le cas géométrique, les trois topos de ce diagramme sont des topos étales (D∗
+ét, Dét, Sét) et
+les flèches ϕD et ψD correspondent à des morphismes de topos, mais non σ).
+90
+
+--- G103d page 96 ---
+On obtient ainsi un diagramme de topos
+(∗∗)
+BS
+BD∗
+BD,S
+BS
+BU
+BX,S
+(Attention le triangle n’est pas essentiellement commutatif mais on a une pseudo-
+commutativité…)
+où les trois topos soulignés BU, BS, et BD∗sont multigaloisiens, et BD,S et BX,S sont
+composites (obtenus par recollement de deux topos multigaloisiens).
+Sauf erreur les deux carrés sont [non seulement essentiellement commutatifs, mais
+aussi] 2-cartésiens (dans la 2-catégorie des topos).
+Passant aux BΠ1 ? des topos envisagés (correspondant aux objets localement con-
+stants sur ce topos) on trouve un topos BX = Bπ1 BX,S comme somme amalgamée de
+topos dans le diagramme
+BD∗
+BU
+BS
+BX
+∼
+(ce carré est bel et bien essentiellement commutatif) et de même (en remplçant BU par
+BD∗) un BD, qui est cependant (par BS →BD) isomorphe (plutôt équivalent) à BS. Le
+91
+
+--- G103d page 97 ---
+diagramme (**) devient alors
+(∗∗∗)
+BS
+BD∗
+BD
+BS
+BU
+BX
+∼
+σ
+où cette fois-ci le triangle supérieur est bien essentiellement surjectif (c’est bien comme ça
+que l’on a défini σ, dans le cas géométrique !) et on a un morphisme de (**) dans (***), qui
+parlesflèchesquisontparessencedesidentités[à]savoirBD,S →BD etBX,S →BX,ont
+une nette tendance à être “acyclique” ou à induire des isomorphismes sur la cohomologie
+(ilfaudraitvérifiercepoint). Enfin,danslecasgéométrique,onaundiagrammeanalogue
+de morphismes de topos étales
+(∗∗∗∗)
+Sét
+D∗
+ét
+Dét
+Sét
+Uét
+Xét
+(triangle supérieur pas essentiellement commutatif)
+où toutes les flèches sauf D∗
+ét →Sét sont induites par des morphismes de topos,
+le (****) s’insère dans le diagramme homologue (**), en induisant des isomorphismes de
+topos pour D∗, D, S et, pour Uét →BU et Xét →X, induisant des morphismes qui ont
+moins tendance à être acyclique, mais qui le sont quand même dans des cas importants,
+rappelés dans une section antérieure…
+92
+
+--- G103d page 98 ---
+Les constructions de (**) et (***) en termes du diagramme de départ
+BD∗
+BU
+BS
+sont purement formelles, et indépendantes de toutes hypothèses. La construction d’un
+BX multigaloisien, comme somme amalgamée, peut être interprété comme la traduction
+(au niveau des groupoïdes fondamentaux) d’une opération de “bouchage de trous”.
+Dans le contexte calculatoire (avec choix de eU, eUi, ρ!(eUi) ≃eU) avec
+Ei
+π
+Γi
+ρi
+σi
+posant e
+X = image de eU par i ! (i : BU →Bπ1X), BU est décrit en termes de ce eU
+comme le classifiant BπX, où πX = π1(X, e
+X) se calcule comme quotient de π par le
+sous-groupe invariant engendré par les ρi(Li), où Li = ker σi ⊃Ei.
+Si on se donne une sommande directe BD∗
+0 dans BD∗(correspondant à une partie
+de I0 de I = π0(BD∗)) on trouve de même une somme amalgamée de BU et de BSD
+sous BD∗
+0 notée BU∪S1 qui se visualise comme un bouchage partiel de trous, interprété au
+niveau des groupoïdes fondamentaux. Dans le cas géométrique, si on pose I = I0 ⨿I1,
+i.e. S = S0 ⨿S1, on peut interpréter ce topos comme Bπ1U1, où U = X \ S1.
+Bien sûr, on a un homomorphisme de diagrammes cartésiens de topos relatifs à
+BD∗
+0
+BU
+BS0
+celui relatif à BD∗s’envoyant dans BU, et BS.
+93
+
+--- G103d page 99 ---
+BD∗
+1
+BD∗
+[BD∗
+1]
+BS0
+BS
+BU
+BU
+BU∪S0
+BU∪S
+et d’autre part on a un composé
+BD∗
+1 →BU →BU1
+qui avec BD1 →BS1, donne un diagramme de topos
+BD∗
+1
+BU1
+BS1
+du même type qu’au début, qu’on peut utiliser pour construire encore une somme amal-
+gamée. Et il est évident que celle-ci est canoniquement équivalente à BX, la somme amal-
+gamée correspondant à cette situation du départ…
+Toutes ces opérations sont essentiellement triviales et sans mystère, et indépendantes
+de toutes hypothèses spéciales du type “groupe à lacets”. Un intérêt particulier s’attache
+au cas où BS est un topos discret : e s’identifie BI où I = π0(BD∗) de sorte qu’on part
+simplement d’un morphisme de topos multigaloisiens
+BD∗→BU
+mais où de plus on a un groupe Γ (discret, disons ou profini dans le contexte arithmé-
+tique) qui opère sur BD∗, BU ; le morphisme précédent commutant à l’action de Γ.
+Notons que la donnée d’une action de Γ sur un topos B permet de construire un
+topos (B, Γ), et un morphisme (B, Γ) →BΓ (topos classifiant de Γ) i.e. un Γ-torseur
+dans (B, Γ) et B s’identifie au topos induit par X = (B /Γ) sur ce Γ torseur.
+94
+
+--- G103d page 100 ---
+Inversement, la donnée d’un topos X et d’un Γ-torseur U dans X et d’un isomor-
+phisme de B avec le topos induit X/U (identifié à U, ou à B) permet de récupérer des
+opérations de Γ sur B, via les opérations sur U. Donc la donnée d’une opération de Γ sur
+un topos B revient à celle de la donnée de B comme revêtement galoisien de groupe Γ
+d’un autre topos (essentiellement unique, noté alors (B, Γ)…). Ainsi, faire opérer Γ sur
+BD∗→BU, c’est la même chose que d’insérer cette flèche dans un diagramme commu-
+tatif
+BD∗
+BU
+BD∗,Γ
+BU,Γ
+oùles flèchesverticalessont Γ-galoisiennes, etlecarréest2-cartésien, ouencore(indépen-
+damment de la donné préalable de BD∗, BU) c’est se donner un triangle essentiellement
+commutatif de morphismes de topos
+BD∗,Γ
+BU,Γ
+BΓ
+Si Γ opère sur un topos multigaloisien, on veut que (B, Γ) soit aussi multigaloisien, et
+la situation d’un topos multigaloisien BU et d’une opération de Γ dessus revient à celle
+d’un topos multigaloisien BU,Γ et d’un morphisme BU,Γ →BΓ.
+Donc la donnée d’une situation BD∗→BU de topos multigaloisiens et d’une opéra-
+tion de Γ dessus revient exactement à celle d’homomorphismes de topos multigaloisiens
+BD∗,Γ →BU,Γ →BΓ
+BU,Γ est 0-connexe si et seulement si card π0(BU)/Γ = 1, i.e. BU non vide est Γ-transitif
+sur π0(BU). Notons que la situation envisagée au début, avec (X, S) sur un corps K,
+d’où BD∗→BU →BΓ (Γ = Gal(K/K)), peut être interprétée comme déduite de
+la situation “géométrique” (K, S) sur K, BD∗
+E →BU, en tenant compte des opéra-
+tions de Γ dessus. Il se trouve que pour beaucoup de questions, c’est cette interprétation
+“géométrique” (au sens strict, i.e. K algébriquement clos) avec opérations d’un groupe
+de Galois Γ, qui est la plus commode.
+Si on regarde une opération de Γ sur un topos (BD∗disons), il opère sur le topos
+discret BI (I = π0(BD∗)), et BD∗→BI est compatible aux actions de Γ.
+95
+
+--- G103d page 101 ---
+Mais le topos B(I,Γ) est aussi celui des Γ-ensembles au dessus de I (sur lequel Γ opère)
+un topos induit dans BΓ. Ses composantes connexes correspondent aux orbites de Γ sur
+I. Si Γ est transitif sur I non vide (ou si on regarde une telle orbite…), choisissant i ∈I,
+le topos en question s’identifie à BΓi où Γi est le stabilisateur de i dans Γ.
+N.B. Si on donne une opération de Γ sur un topos discret B(= BI), quand on
+l’interprèteentantquemorphismed’untoposmultigaloisienB′ = (B, Γ) →BΓ, estcar-
+actérisé par le fait que le morphisme du groupoïde qui la décrit soit injectif sur les flèches,
+i.e. en termes d’un système d’homomorphismes de groupe Γj →Γ i ∈J(≃I \ Γ),
+par la condition que ces homomorphismes soient injectifs. Γ est donc I se reconstitue
+comme la somme directe des Γ \ Γj…]
+Ainsi un diagramme BD∗→BU avec action de Γ équivaut à la donnée d’un dia-
+gramme
+BD∗,Γ →BU,Γ →BΓ
+et celui-ci se complète (en utilisant l’action de Γ sur π0(BD∗) — B étant lui-même déduit
+de BD∗Γ →BΓ comme l’image inverse du torseur universel) en
+BD∗,Γ →BI,Γ →BΓ
+i.e. il s’agit de la factorisation canonique d’un homomorphisme de groupoïdes en ho-
+momorphisme bijectif (pour les objets) épimorphique (pour les Hom) suivi d’un homo-
+morphisme épimorphique (sur les Hom).
+On trouve ainsi un carré essentiellement commutatif
+BD∗,Γ
+BU,Γ
+BI,Γ
+BΓ
+96
+
+--- G103d page 102 ---
+qui correspond au diagramme de groupoïdes au début des notes (§7)
+ΠD∗
+ΠU
+ΠD
+Πe
+J’ai l’impression d’avoir à peu près compris le mécanisme des actions des groupes sur
+destoposmultigaloisiens,etcommentl’opérationdepassaged’untoposBavecopération
+de Γ au topos “quotient” (B, Γ) = ‘‘ B /Γ”, commute aux opérations du type passage
+de BD∗→BU à un BX,S, via un BX (“Bouchage des trous”). Le temps semble donc mûr
+enfin pour s’expliquer avec l’opération inverse hypothétique de “forage des trous”.
+97

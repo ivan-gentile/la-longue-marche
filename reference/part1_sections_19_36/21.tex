@@ -1,0 +1,176 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 21. --- LIEN AVEC LES ESPACES DE TEICHMÜLLER}\thispagestyle{empty}
+\addcontentsline{toc}{section}{21. Les espaces de Teichmüller}
+\label{sec:21}
+\section*{}
+
+D'abord un complément lié au diagramme d'inclusion (31) du n$^\circ 19$. Considérons l'inclusion de sous-groupes de $A_g$ :
+$$
+A^\circ_{g, \nu} \supset B_{g, \nu} \supset A^\circ_{g, \nu + 1} (= B^\circ_{g, \nu})
+\leqno{(72)}
+$$
+donne en divisant par $A^\circ_{g, \nu + 1}$ et dans le cas anabélien la filtration
+$$
+(A^\circ_{g, \nu}/A^\circ_{g, \nu + 1} =) \widetilde{U}_{g, \nu} \to U_{g, \nu}
+\leqno{(73)}
+$$
+On cherche le plus grand sous-groupe de $A_g$ qui normalise les triples (72), et qui opère donc sur la fibration ci-dessus. Comme les normalisateurs de $A^\circ_{g, \nu}$ et $A^\circ_{g, \nu + 1}$ sont respectivement $A_{g, \nu}$ et $A_{g, \nu + 1}$, le groupe en question doit être contenu dans leur intersection $A^\bullet_{g, \nu}$, lequel normalise également $\B_{g, \nu} = A^\bullet_{g, \nu} \cap A^\circ_{g, \nu}$. C'est donc ce groupe qu'il y a lieu de faire opérer sur la fibration (73). Le sous-groupe formé des éléments de $A^\bullet_{g, \nu}$ dont l'opération sur $U_{g, \nu}$ est isotope à l'identité étant justement $\B_{g, \nu}$, donc c'est le groupe $\Gamma = A^\bullet_{g, \nu}/\B_{g, \nu} \isom \Gamma_{g, \nu}$ qui comme de juste opère à isotopie près. On voudrait décrire le groupe de tous les automorphismes de la fibration topologique $\widetilde{U}_{g, \nu}$ sur $U_{g, \nu}$ qui sera a priori une extension du groupe $A^\circ_{g, \nu} = \Aut (U_{g, \nu})$ par
+$$
+\pi_{g, \nu} = \pi_1 (U_{g, \nu}, a_{g, \nu}) = \Aut_{U_{g, \nu}}(\widetilde{U}_{g, \nu})
+$$
+Cette extension est scindé sur $A^\bullet_{g, \nu}$ stabilisateur du point de base $a_{g, \nu}$, et on retrouve ainsi l'opération de $A^\bullet_{g, \nu}$ sur la fibration (73). Or on a déjà une extension $\Gamma'_{g, \nu + 1}$ de $\Gamma_{g, \nu}$ par $\pi_{g, \nu}$ d'où par image inverse par $A_{g, \nu} \to \Gamma_{g, \nu}$ une extension (que je vais notes $\widetilde{A}_{g, \nu}$) de $A_{g, \nu}$ par $\pi_{g, \nu}$ :
+$$
+\widetilde{A}_{g, \nu} = A_{g, \nu} \times_{\Gamma_{g, \nu}} \Gamma^i_{g, \nu + 1} =
+\begin{cases}
+\text{groupe quotient du sous-groupe}~A^\natural_{g, \nu}~\text{de} \\
+A_{g, \nu} \times A^\bullet_{g, \nu}~\text{formé des couples} \\
+(u, v)~\text{tel que}~u \equiv v~\text{mod}.~A^\circ_{g, \nu}, \\
+\text{par le sous-groupe}~1 \times A^\circ_{g, \nu + 1}
+\end{cases}
+$$
+donc on a deux (et même trois) structures d'extension sur $\widetilde{A}_{g, \nu}$
+\[\begin{tikzcd}
+	1 & {\pi_{g, \nu}} & {\widetilde{A}_{g, \nu}} & {A_{g, \nu}} & 1 \\
+	1 & {A^\circ_{g, \nu}} & {\widetilde{A}_{g, \nu}} & {\Gamma'_{g, \nu + 1}} & 1 \\
+	1 & {A^\circ_{g, \nu} \times \pi_{g, \nu}} & {\widetilde{A}_{g, \nu}} & {\Gamma_{g, \nu}} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow["p", from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=3-2, to=3-3]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=3-3, to=3-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=3-4, to=3-5]
+\end{tikzcd}\leqno{(75)}\]
+Je voudrais faire opérer $\widetilde{A}_{g, \nu}$ sur $\widetilde{U}_{g, \nu}$, i.e. faire opérer $H = \widetilde{A}^\natural_{g, \nu}$ avec opération triviale de $A^\circ_{g, \nu + 1}$, et ceci en respectant les conditions suivantes :
+\begin{enumerate}
+    \item[a)] (Compatibilité avec $\pi_{g, \nu} \to \widetilde{A}_{g, \nu}$). Le couple $(u, v) \in H$ opère sur $\widetilde{U}_{g, \nu}$ par un automorphisme compatible avec l'automorphisme $u$ de $U_{g, \nu}$ (on dira que c'est un $u$-automorphisme). 
+    \item[b)] (Compatibilité avec $\pi_{g, \nu} \to \widetilde{A}_{g, \nu}$). Si $u = 1$, [donc $v \in A^\circ_{g, \nu}$ donc (comme $v \in A^\bullet_{g, \nu}$) $u \in \B_{g, \nu}$] alors l'opération de $(u, v) = (1, v)$ sur $\widetilde{U}_{g, \nu}$ n'est autre que celle définie par $v$ mod$\B^\circ_{g, \nu} = A^\circ_{g, \nu + 1}$ qui est un élément de $\pi_{g, \nu} \isom \Aut \widetilde{U}_{g, \nu}/U_{g, \nu}$ ou encore celle définie par translation à droite par $v^{-1}$.
+    \item[c)] Compatibilité avec l'opération déjà obtenue plus haut de $A^\bullet_{g, \nu}$ sur $\widetilde{U}_{g, \nu}$ : si $(u, v) \in H$ est tel que $u = v$ (donc $u = v \in A^\bullet_{g, \nu}$) alors $(u, v) = (u, u)$ opère via l'automorphisme intérieur défini par $u$.
+    \item[d)] Compatibilité avec $A^\circ_{g, \nu} \to \widetilde{A}_{g, \nu}$ ; l'opération de $A^\circ_{g, \nu}$ est continue (ce qui, joint à a) détermine une opération de fa\c{c}on unique et l'existence à priori d'une telle opération résulte de $\pi_1(A^\circ_{g, \nu}) = 0$. Or tout élément $(u, v)$ de $H$ s'écrit de manière unique comme produit d'un élément $(v, v)$ dans $\delta (A^\bullet_{g, \nu})$, par un élément $(v^{-1}u, 1)$ de $A^\circ_{g, \nu} \times 1$ (le 1$^{\text{er}}$ groupe normalisant le 2$^{\text{ème}}$)\footnote{N.B. L'opération de $A^\circ_{g, \nu} \times 1$ se décrit le plus simplement par \emph{translation} de $A^\circ_{g, \nu}$ sur l'espace homogène $\widetilde{U}_{g, \nu}$ de $A^\circ_{g, \nu}$} et une opération de ce produit semi-direct est donnée bel et bien par la donnée d'opérations des deux groupes facteurs, satisfaisant une condition de compatibilité, qui est vérifiée ici par transport de structure. On a bien défini une opération de $H = \widetilde{A}^\natural_{g, \nu}$ sur la fibration (73) satisfaisant aux contions c) et d) par construction même ; il reste à vérifier a) et b). Or pour a), il suffit de vérifier séparément pour des éléments de $H$ dans $\delta (A^\bullet_{g, \nu})$ et de $A^\circ_{g, \nu} \times 1$, où c'est trivial par construction dans les deux cas. Reste à vérifier b) et à expliciter l'opération d'un élément $(1, v)$, $v \in \B_{g, \nu}$ qu'on écrit comme $(1, v) = (v, v)(v^{-1}, 1)$ d'où $\rho (1, v) = \rho(v, v) \rho(v^{-1}, 1)$ or $\rho(v, v)$ est induit par int$(v)$ et $\rho(v^{-1}, 1)$ par translation à guache $x \to v^{-1}x$ donc le composé opère par $x \mapsto xv^{-1}$.
+\end{enumerate}
+On suppose maintenant que $X_g$ est muni d'une structure $C^\infty$ et l'on remplace dans les considérations précédentes les groupes d'homéomorphismes par des groupes de difféomorphismes.
+\[
+\text{Soit}~E_g =\  
+\begin{array}{l}
+\text{Ensemble des structures conformes sur}~X_g\\
+\text{compatibles avec sa structure}~C^\infty
+\end{array}
+\leqno{(76)}
+\]
+On voit de suite que $E_g$ est un espace topologique $\infty$-connexe, comme quotient de l'espace $\infty$-connexe (et même convexe) des structures riemaniennes par le groupe $\infty$-connexe des applications $C^\infty$ de $X_g$ dans $\mathbf{R}^{+*}$. Sur $E_g$ le groupe $A_g$ opère mais bien sûr $E_g$ n'est plus un espace homogène. Notons tout de suite
+\[
+E_g / A_g \isom \  
+\begin{array}{l}
+\text{Ensemble des classes d'isomorphie de surfaces}\\
+\text{conformes compactes orientables de genre}~g.
+\end{array}
+\leqno{(77)}
+\]
+Si on choisit une des deux orientations de $X_g$ de sorte que $E_g$ s'identifie à l'ensemble des structures complexes sur $X_g$ (compatible avec sa structure $C^\infty$ et son orientation) alors $E_g/A_g$ s'identifie à l'espace des classes d'isomorphie de courbes complexes (non singulières) connexes compactes de genre $g$, \emph{modulo} passage à la complexe conjuguée. D'autre part  
+\[
+E_g / A^+_g \isom \  
+\begin{array}{l}
+\text{Ensemble des classes d'isomorphie de courbes}\\
+\mathbf{C}~\text{algébriques lisses connexes de genre}~g.
+\end{array}
+\leqno{(78)}
+\]
+plus généralement
+\[
+E_g / A^\bullet_g \isom \  
+\begin{array}{l}
+\text{Ensemble des classes d'isomorphie de surfaces compactes conformes}\\
+\text{connexes multiponctuées de type}~(g, \nu).
+\end{array}
+\leqno{(79)}
+\]
+Si $X_g$ est orientée :
+\[
+E_g / A_g \isom \  
+\begin{array}{l}
+\text{Ensemble des classes d'isomorphie de courbes algébriques}\\
+\text{[lisses projectives connexes de genre}~g] \\
+\text{munies d'une multiponctuation de type}~(g, \nu)
+\end{array}
+\leqno{(80)}
+\]
+Ce sont là les ``espaces modulaires grossiers'' (``Coarse moduli'' de Mumford) qu'on peut noter $M^\natural_g$ et $M^\natural_{g, \nu}$ et qui sont justement trop grossiers pour les usages géométriques les plus importants. 
+
+Beaucoup plus intéressant est le quotient
+$$
+E_g/A^\circ_{g, \nu} = \widetilde{M}_{g, \nu} \quad (\widetilde{M}_g = \widetilde{M}_{g, 0} = E_g/A^\circ_{g})
+\leqno{(81)}
+$$
+sur lequel opère le groupe 
+$$
+\Gamma_{g, \nu} = A_{g, \nu}/A^\circ_{g, \nu}
+$$
+par passage au quotient de l'opération de $A_{g, \nu}$.
+
+L'espace $\widetilde{M}_{g, \nu}$ (avec l'opération de $\Gamma_{g, \nu}$ est appelé \emph{l'espace de Teichmüller} de type $g, \nu$). Bien sûr on retrouve $M^\natural_{g, \nu}$ à partir de $\widetilde{M}_{g, \nu}$ et de l'opération de $\Gamma_{g, \nu}$ dessus par
+$$
+M^\natural_{g, \nu} = \widetilde{M}_{g, \nu}/\Gamma_{g, \nu}
+$$
+\vskip .3cm
+{
+Théorème (Teichmüller). --- \it L'espace de Teichmüller $\widetilde{M}_{g, \nu}$ est homéomorphe à $\mathbf{C}^\mu$ où $\mu = 3g - 3 + \nu$ dans le cas anabélien $2g + \nu \geq 3$ et $\mu = 3g - 3 + \nu + \delta$ avec $\delta = $dim${}_{\mathbf{C}} G$ dans le cas général $G$ étant le groupe des automorphismes algébriques d'une $U_{g, \nu}$ complexe (donc $\delta = 1$ dans le cas ``limites'' $(1, 0)$ et $(0, 2)$, et plus généralement $\delta$ augmente de 1 chaque fois pour $g$ fixé et $(g, \nu-1)$ abélien quand on passe de $\nu$ à $\nu - 1$), donc
+\begin{enumerate}
+    \item[] $\mu = 1$ dans le cas $(1, 0)$
+    \item[] $\mu = 0$ dans le cas $(0, 2)$, $(0, 1)$, $(0, 0)$, i.e. $\widetilde{M}_{g, \nu}$ est réduit à 1 point i.e. l'action de $A^\circ_{g, \nu}$ sur $E_g = E_0$ est transitive et ce sont avec le cas anabélien $(0, 3)$ les seuls 4 cas où il en est ainsi.
+\end{enumerate}
+}
+\vskip .3cm
+A partis de $\widetilde{M}_{0, 3}$ ou de $\widetilde{M}_{1, 1}$ ou de $\widetilde{M}_{g, 0} = \widetilde{M}_g$ avec $g \geq 1$ quand $\nu$ augmente la ``dimension complexe'' des $\widetilde{M}_{g, \nu}$ augmente d'autant (par contre $\widetilde{M}_{1, 1} \isommap \widetilde{M}_{1, 0}$ est un homéomorphisme). On peut préciser le théorème de Teichmüller ainsi :
+\vskip .3cm
+{
+Corollaire. --- \it Dans le cas \emph{anabélien}, $A^\circ_{g, \nu}$ opère librement sur $E_g$, de sorte que $E_g$ devient un torseur sur $\widetilde{M}_{g, \nu}$, de groupe structural $A^\circ_{g, \nu}$.
+}
+\vskip .3cm
+On en déduit que $\widetilde{M}_{g, \nu}$ joue le rôle \emph{d'espace classifiant} pour $A^\circ_{g, \nu}$ et que
+$$
+\pi_i (\widetilde{M}_{g, \nu}) \isommap \pi_{i - 1} (A^\circ_{g, \nu})
+\leqno{(83)}
+$$
+et le fait que $\widetilde{M}_{g, \nu}$ soit $\infty$-connexe (contenu dans le théorème de Teichmüller) équivaut à celui que $A^\circ_{g, \nu}$ le soit ce qui est un ``théorème bien connu'' rappelé au n$^\circ$ 19.
+
+Je n'insiste pas ici sur l'interprétation de points de $\widetilde{M}_{g, \nu}$ comme des classes d'isomorphisme de courbes complexes, munies d'une ``rigidification de Teichmüller'' convenable et le point de vue espaces modulaires rigidifiés, qui permet de vérifier à priori que $\widetilde{M}_{g, \nu}$ est muni d'une structure de variété complexe non singulière ; mais déjà le fait que $\widetilde{M}_{g, \nu}$ soit \emph{simplement connexe} (ce qu'on peut exprimer en interprétant $\widetilde{M}_{g, \nu}$ comme revêtement universel d'un \emph{topos modulaire} $U_{g, \nu}$) est un résultat profond qui ne semble pas pouvoir rentrer dans le cadre de la topologie (ou de la topologie différentielle $(C^\infty)$) sans plus\dots 
+
+N.B. Pour prouver que les $\widetilde{M}_{g, \nu}$ sont $\infty$-connexe on est réduit facilement au cas de $M_{g, 0}$ (si $g \geq 2$) ou de $M_{1, 1}$ (cas elliptique ponctué) en utilisant $A^\circ_{g, \nu}/A^\circ_{g, \nu + 1} \isom \widetilde{U}_{g, \nu}$ (qui est $\infty$-connexe) le cas $g = 1$ est d'ailleurs facile et bien compris\dots 
+
+Notons que les inclusions des sous-groupes $A^\circ_{g, \nu + 1} \hookrightarrow A^\circ_{g, \nu} \dots \subset  A^\circ_{g, 0} = A^\circ_g$, définissent une tour d'applications continues :
+$$
+\dots \to \widetilde{M}_{g, \nu + 1} \to \widetilde{M}_{g, \nu} \to \dots \widetilde{M}_{g, \nu} = \widetilde{M}_g
+\leqno{(84)}
+$$
+$$
+\text{où}~\widetilde{M}_{g, \nu + 1} \to \widetilde{M}_{g, \nu}~\text{est pour}~(g, \nu)~\text{anabélien une fibration en fibre}~A^\circ_{g, \nu} \isom \widetilde{U}_{g, \nu}
+\leqno{(85)}
+$$
+[il est donc à fibre contractile et l'$\infty$-connexité de $\widetilde{M}_{g, \nu}$ équivaut à celle de $\widetilde{M}_{g, \nu}$ ; ce qui nous ramène au cas $\widetilde{M}_g$ si $g \geq 2$ de $M_{1, 1}$ et de $M_{0, 3}$ si $g = 1$ ou $0$].
+
+Dans le cas $(g, \nu)$ abélien on trouve
+$$
+\widetilde{M}_{g, \nu + 1} \isommap \widetilde{M}_{g, \nu}
+$$
+ce qui signifie que dans ce cas si on a deux structures complexes $\alpha$, $\beta$ sur $X$ qui sont congrues par $u \in A^\circ_{g, \nu}$ (i.e. $\beta = u \alpha$) elles sont mêmes congrues par $A^\circ_{g, \nu + 1}$. En effet si $G$ est la composante neutre du groupe des automorphismes complexes de $U_{g, \nu}$ pour $\beta$ on peut écrire $u = gv$ avec $g \in G$, $v \in A^\circ_{g, \nu + 1}$ donc $\beta = gu \alpha$ donc (comme $g^{-1}\beta = \beta$) $\beta = u \alpha$ c.q.f.d.
+
+Donc $\widetilde{M}_{1, 1} \isom \widetilde{M}_{1, 0}$ et il est immédiat que celui-ci est isomorphe au demi plan de Poincaré. De même $\widetilde{M}_{3, 0} \isom \widetilde{M}_{1, 0} \isom \widetilde{M}_{0, 0}$ et comme $A^\circ_0$ est simplement formé des automorphismes de $X_0 = S^2$ qui conservent l'orientation, on voit que deux structures complexes sur $\mathbb{S}^2$ sont isotopes (puisqu'elles sont isomorphes et qu'un isomorphisme conserve l'orientation). Cela prouve que les $\widetilde{M}_{0, i}$ $(i \leq 3)$, sont réduits à des points ! Ainsi le théorème de Teichmüller est assez évident si $g = 0$ ou 1, c'est le cas $g \geq 2$ qui est profond\dots 
+
+L'espace de Teichmüller (plus généralement tout espace $E$ $\infty$-connexe sur lequel $A_g$ opère de fa\c{c}on que $A^\circ_{g, \nu}$ opère librement) va permettre d'interpréter l'extension canonique $\Gamma'_{g, \nu + 1}$ de $\Gamma_{g, \nu}$ par $\pi_{g, \nu}$ (cas $(g, \nu)$ anabélien) comme groupe fondamental mixte d'un espace (homotope à $U_{g, \nu}$) sur lequel $\Gamma_{g, \nu}$ opère.
+
+(On était ennuyé précédemment, car $\Gamma_{g, \nu}$ n'opérait pas lui même sur $U_{g, \nu}$ mais seulement le groupe $A_{g, \nu}$ dont $\Gamma_{g, \nu}$ est quotient, on avait l'impression que le passage au quotient par $A^\circ_{g, \nu}$ était pourtant inessentiel, car $A^\circ_{g, \nu}$, car $A^\circ_{g, \nu}$ est $\infty$-connexe et d'ailleurs on avait trouvé une extension $\widetilde{A}_{g, \nu}$ de $\Gamma'_{g, \nu + 1}$ par ce même groupe $\infty$-connexe $A^\circ_{g, \nu}$ qui opère sur le revêtement universel, et un homomorphisme surjectif $\widetilde{A}_{g, \nu} \to A_{g, \nu}$ de noyau $\pi_{g, \nu}$ compatible avec cette opération).
+
+Or si $\widetilde{M} = E/A^\circ_{g, \nu}$, $E$ est un $A^\circ_{g, \nu}$ - torseur de base $\widetilde{M}$, qu'on peut utiliser pour tordre $U_{g, \nu}$ sur lequel $A^\circ_{g, \nu}$ opère continuement, on trouve donc un fibré $H$ $(\isom U_{g, \nu} \times E/A^\bullet_{g, \nu}$ opérant diagonalement) sur $\widetilde{M}$, de fibre $U_{g, \nu}$ (c'est pour $E = E_g$ le fibré universel en courbes complexes de type $(g, \nu)$ avec rigidification de Teichmüller\dots). Comme $E$ et $A^\circ_{g, \nu}$ sont $\infty$-connexes, $\widetilde{M}$ aussi, donc l'inclusion d'une fibre dans le fibré est un homotopisme. Or maintenant $\Gamma_{g, \nu}$ opère sur $X$ (de fa\c{c}on compatible avec son opération sur $\widetilde{M}$), d'où la construction d'une extension de $\Gamma_{g, \nu}$ par $\pi_1(H) = \pi_1(U_{g, \nu}) = \pi_{g, \nu}$.
+
+On a fait tout ce qu'il fallait pour prouver que c'est bien essentiellement $\Gamma'_{g, \nu}$\dots
+
+
+% End

@@ -1,0 +1,118 @@
+Section: § 11. — CONDITIONS SUR LES SYSTÈMES DE GROUPOÏDES
+G103d pages: 52-55
+
+--- G103d page 52 ---
+§ 11. — CONDITIONS SUR LES SYSTÈMES DE GROUPOÏDES
+OBTENUS À PARTIR DE SITUATIONS GÉOMÉTRIQUES
+On en a déjà cité au passage, par exemple que les groupes noyaux de ΠD∗→Πe sont
+abéliens (avec l’isomorphisme de Kummer κ) et que les images sont des sous-groupes
+ouverts, et de même pour l’image des π1 dans ΠU →Πe. On va expliciter et préciser ceci
+dans le cadre de l’interprétation en termes de
+T(K)
+κi
+−→Ei
+ρi
+−→E
+p
+−→Γ
+(cas de la “dim 1” — on n’exclut pas le cas I = ∅— le cas “dim 0” étant trivial…)
+a) L’image Σ de p est ouverte, plus précisément il existe un sous-groupe ouvert Γ′ ⊂
+Γ au dessus du quel E ait une section [et même une “section admisible” en un sens
+qui sera défini par la suite — de sorte à exclure les sections “triviales” provenant
+des Ei…].
+b) L’image Σi de Ei dans Γ est ouverte, et l’extension Ei de Σi par Li(≃T(K))
+est triviale. [En fait, on a une classe privilégiée de scindages, dits “algébriques”,
+formant un torseur sous K∗
+i ,→lim
+←−(K∗
+i )n, cf n◦9 — mais on ne va pas considérer
+pour l’instant cet élément de structure supplémentaire…]
+Le reste des conditions concerne essentiellement la structure des groupes π = Ker(p :
+E →Γ) avec ses classes de conjugaison de sous-groupes (ou plutôt les homomorphismes
+extérieures κi : T(= T(K
+∗) →π), et la façon dont Σ opère extérieurement sur π. Ces
+conditions s’expriment de façon particulièrement simple lorsque les Σi ⊂Γ sont = Γ
+
+--- G103d page 53 ---
+(“les points de S sont rationnels sur K”) i.e. Ei →Γ surjectif, a fortiori Σ = Γ i.e.
+E →Γ surjectif. On va se borner à ce cas. Le cas général s’en déduit par extension finie
+du corps de base [chaque point de S non rationnel sur K i.e. chaque Σi ̸= Γ donne
+naissance à ni points, ni = [Γ : Σi] - et XK′ se scinde en n = (Γ : Σ) composantes
+connexes qui sont géométriquement connexes] - mais j’ai la flemme d’expliciter comme
+il faudrait, dans le contexte des groupoïdes ou des homomorphismes de groupes profinis,
+l’opération d’extension du corps de base…
+Il est entendu que les conditions que je vais décrire seront invariantes par extension
+du corps de base.
+c) ∀i, l’homomorphisme extérieur
+κi : T →π
+est compatible avec l’action extérieure de Γ (opérant sur T par le caractère cyclo-
+tomique χ, et sur π grâce à l’extension E de Γ par π). En d’autres termes, pour
+tout g ∈E, existe un α ∈π (NB pas seulement α ∈E !) tel que l’on ait :
+int(g)κi(ξ) = int(α)κi(χ(p(g))ξ)
+i.e.
+int(α−1g)κi(ξ) = κi(χ(p(g))ξ)
+Ceci signifie que 1◦) α−1g normalise Li = κi(T) [et ceci signifie même, probablement,
+que α−1g ∈Ei - et qu’on puisse trouver un tel α ∈π (tel que α−1g ∈Ei) provient de
+l’hypothèse Ei →Γ surjectif - on prend un β(= α−1g) ∈Ei ayant même image que
+g dans Γ et on prend α = gβ−1] et que 2◦) l’action intérieure de β = α−1 sur T n’est
+autre que par multiplication par χ(g) = χ(β) - ce qui (pour β ∈Ei) n’est autre que la
+condition déjà explicitée que l’homomorphisme de groupes κi : T →Ei est compatible
+avec l’action de Ei, opérant sur T via χ ◦p|Ei, et sur lui même par automorphismes
+intérieures.
+Donc la condition c) n’est pas vraiment nouvelle — je la réexplicite en termes un peu
+différents, à cause de son importance. Elle implique que l’opération de Γ sur π est très
+non triviale (puisque χ : Γ →bZ∗a une image ouverte !) — il n’était pas même évident, a
+priori (sans raisons arithmétiques profondes !) — compte tenu de la structure de π qu’on
+va donner — qu’il existe de telles opérations de Γ sur π !
+48
+
+--- G103d page 54 ---
+Cette condition sera complétée par une condition de non trivialité à la Weil.
+d) ∃η ∈T ∗(unebasedeT), etdesαi ∈π (afindeconjuguerκi enκ′
+i = int(αi)◦κi),
+enfin un entier g ≥0 et des éléments xj, yj ∈π (1 ≤j ≤g), tels que l’on ait
+1◦) Les κ′
+i(η), et les xj, yj engendrent le groupe profini π.
+2◦) Ils satisfont la relation
+[x1, y1].[x2, y2] . . . [xg, xyg]κ′
+1(η)κ′
+2(η) . . . κ′
+ν(η) = 1
+3◦) Cette relation, avec les générateurs envisagés, décrit π (en tant que groupe
+profini) par générateurs et relations…
+NB On sait que par ces conditions, g est uniquement déterminé, par exemple par le fait
+que πab/Σκi(T) est un bZ-module libre de rang 2g — πab étant libre de rang 2g + ν −1
+où ν = card(I).
+Pour le choix de η, on voit que si η convient, alors tout χ(α)η aussi (où α ∈Γ) —
+quitte à prendre des conjugués. Donc les η qui conviennent contiennent un sous-torseur
+de T ∗sous le sous-groupe ouvert χ(Γ) de bZ∗.
+En fait, comme la structure du groupe π est indépendante de K, prenant K = Q (et
+en admettant qu’il existe une courbe lisse projective (géométriquement connexe de genre
+g sur Q, ayant ν points rationnels sur Q !), on trouve que si les li ](1 ≤i ≤ν) s’insèrent
+dans un système de générateurs privilégies (avec des xj, yi) alors pour tout ρ ∈bZ∗, on
+peut trouver des conjugués l′
+i des lρ
+i qui s’insèrent de même. Même pour ρ = −1 ce n’est
+pas entièrement trivial…
+Enfin, on va énoncer une condition draconienne de non trivialité de l’opération
+de Γ sur π. Soient E′ un sous-groupe ouvert (donc d’indice fini) de E, π′ = π ∩
+E′ = Ker(E′ →Γ), Γ′ l’image de E′ dans Γ. On trouve donc une extension de
+Γ′(= Gal(K
+′/K′)) sur π′, donc aussi par (π′
+ab)(ℓ) (ℓétant un nombre fourni), qui est
+(on le sait par d)) un Zℓ-module libre de type fini, sur lequel Γ′ opère.
+[Avec un peu de travail28, on doit pouvoir mettre sur E′ →Γ une “structure à
+lacets” i.e. des E′
+i′ comme pour E, et décrire dans (π´ab(ℓ)) la somme des images des L′
+i′,
+sur lesquels Γ′ opère donc via le caractère χ. On s’intéresse au quotient de (π′
+ab)(l) par
+28Ça se fait très élégamment dans le contexte ΠD∗→ΠU →Πe.
+49
+
+--- G103d page 55 ---
+ce sous-module relativement trivial (la partie “VA” du module ℓ-adique envisagé). Ceci
+posé, on exige que la représentation de Γ′ là dessus soir “pure de poids 1” — et que les
+polynômes caractéristiques des frobénius (qui sont à coefficients dans Z, pas seulement
+dans Zℓ) soient indépendants de ℓ.
+50

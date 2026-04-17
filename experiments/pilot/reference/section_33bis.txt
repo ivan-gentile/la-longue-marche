@@ -1,0 +1,179 @@
+Section: § 33bis. — ÉTUDE DES REVÊTEMENTS FINIS - RELATION
+G103d pages: 252-256
+
+--- G103d page 252 ---
+§ 33bis. — ÉTUDE DES REVÊTEMENTS FINIS - RELATION
+ENTRE LES Ng,ν, Γg,ν POUR g VARIABLE
+Soientπ ungroupeextérieuràlacetsprofiniarithmétisédetype(g, ν), π′ unsous-groupe
+connexe de π, d’où une application injective
+Discrét(π) ,→Discrét(π′);
+on voudrait prouver qu’elle est compatible avec la relation d’équivalence de
+l’arithmétisation, de sorte que toute arithmétisation de π en donne une de π′, et
+de même pour les prédiscrétifications. On voudrait établir en même temps que les
+applications P +(π) →P +(π′) sur les prédiscrétifications orientées et A(π) →A(π′)
+sur les arithmétisations sont injectives. Pour prouver ces points, on est ramené au cas où
+π′ invariant caractéristique (cf. § 28, diagramme (7)). Choisissant une discrétification
+π0 de π, donc π′
+0 de π′, on trouve donc ˆˆS(π0) →ˆˆS(π′
+0) et on a :
+L’homomorphisme ˆˆS(π0) →ˆˆS(π′
+0) envoie M(π0) dans M(π′
+0).
+On aura donc un diagramme (variante de celui du § 28) :
+(18)
+ˆ
+S+(π0)
+M(π0)
+ˆˆS(π0)
+ˆ
+S+(π′
+0)
+M(π′
+0)
+ˆˆS(π′
+0)
+qui implique qu’une discrétification π1 sur π qui donne même prédiscrétification orien-
+tée que π0 (resp. même arithmétisation) définit une discrétification π′
+1 de π′ qui donne
+même prédiscrétification orientée (resp. même arithmétisation) que π′
+0.
+
+--- G103d page 253 ---
+Donc on a bien P +(π) →P +(π′), A(π) →A(π′) et il faut encore exprimer
+l’injectivité, qui revient aux relations
+ˆS+(π0) = ˆS+(π′
+0) ∩ˆˆS(π0),
+M(π0) = M(π′
+0) ∩ˆˆS(π0).
+(2)
+i.e. un automorphisme à lacets de π qui, sur π′, appartient à ˆS(π′
+0), resp. à M(π′
+0), est
+déjà dans ˆS(π0), resp. dans M(π′
+0).
+L’assertion repérée étant admise, l’assertion non repérée signifie aussi que
+l’homomorphisme canonique :
+(3)
+Γa = Ma(π)/ ˆS+
+a (π) →Γ′
+a = M ′
+a(π′)/ ˆS+
+a′(π′)
+est injectif.
+Par construction (via ΓQ), c’est aussi surjectif, donc on trouverait :
+l’homomorphisme canonique (3) est bijectif et on trouverait aussi une bijection
+(4)
+Pa(π) →P ′
+a(π′)
+entre arithmétisation de π de type a et arithmétisation de π′ de type a′, compatible avec
+l’isomorphisme (3).
+Enfin, ces résultats dans les cas π′ invariant caractéristique s’étendraient aussitôt au
+cas d’un π′ ⊂π ouvert quelconque.
+Procédant par exemple comme dans le § 28 à coups de “correspondances” arithmé-
+tiques extérieures entre “courbes potentielles”, on trouve un groupoïde connexe (ponc-
+tuéparles ˆπg,ν, parexemple, quiysontcanoniquementisomorphes), dontleπ1 extérieur
+est la valeur commune des Γg∗= Γg,ν. Pour trouver un isomorphisme canonique entre
+Γg,ν et Γg′,ν′, on choisit une correspondance entre πg,ν et πg′,ν′, par exemple on regarde
+l’unetl’autre(quitteàpasserdeg, ν àg, ˜ν avec ˜ν ≥ν, etdemêmepourg′, ν′ àg′, ˜ν′ avec
+˜ν′ ≥ν′) comme des sous-groupes [d’indices] finis du même π0,3, d’où Γ0,3
+∼
+−→Γg,˜ν,
+Γ0,3
+∼
+−→Γg′,˜ν′.
+On aimerait maintenant voir ce qui, dans le yoga précédent, est indépendant de
+toute conjecture. Par exemple, le fait que les homomorphismes surjectifs canoniques
+Γg,ν →Γg,ν′ (g le même, ν′ constant) n’est pas établi. Cependant, si on savait que dans
+la situation du (π, π′) avec π′ invariant caractéristique, on a ˆˆT(π′
+0)∩ˆS+(π0) = ˆS+(π0)
+(qui est un énoncé de nature relativement anodine sur des groupes à lacets profinis), on
+248
+
+--- G103d page 254 ---
+concluerait à la bijectivité de Γπ0 →Γπ′
+0 dans cette situation, et on en concluerait que
+le noyau de ΓQ →Γ0,3 s’envoie trivialement dans les Γg,ν pour tout ν — i.e. qu’il
+s’envoie dans les Γg,ν par l’intermédiaire de Γ0,3 — et que de plus Γ0,3 →Γg,ν est un
+isomorphisme pour tout (g, ν) avec ν assez grand — il suffit que la surface de type (g, ν)
+(ou de type (g, ν′) avec un ν′ ≤ν) puisse s’obtenir comme revêtement étale de X0,3, i.e.
+que πg,ν′ se réalise (avec sa structure à lacets) comme sous-groupe d’indice fini de π0,3.
+Alors, considérant un π′′ = πg′′,ν′′ ⊂πg,ν′ d’indice fini et contenu dans π0,3, on aura
+un diagramme commutatif :
+Γ0,3
+Γg′′,ν′′
+ΓQ
+Γg,ν′
+∼
+∼
+d’oùnotreassertionΓ0,3
+∼
+−→Γg,ν′ etafortioril’homomorphismesurjectifΓ0,3 →Γg,ν
+qui le factorise (ν ≥ν′) est bijectif. Notons par exemple que les Γ0,ν →Γ0,3 (ν ≥3)
+sont alors bijectifs. Mais on notera qu’en tout état de cause, on ne trouve de résultat
+pour un g, ν que si ν ≥3 — donc ceci ne dit rien sur la fidélité éventuelle, par exemple
+de Γ0,3 →Γg,0 = Γg (g ≥2), ou Γ0,3 →Γ1,1 = Γ1.
+Soit une courbe algébrique U de type g, ν 133, définie sur un sous-corps K fini sur
+Q de Q0, donc elle définit une action extérieure du sous-groupe ouvert Γ = ΓK ⊂ΓQ
+sur π1(UQ0). Quitte à agrandir K, et à agrandir ν ou ν′ (i.e. faire des trous) pour trouver
+U ′ on peut supposer que U ′ est un revêtement étale de (U0,3)K. On pose π′ = π1(U ′
+Q0),
+π = π1(UQ). Soit alors θ le noyau de
+Γ (⊂ΓQ) −→Γ0,3,
+il opère donc par automorphismes intérieurs sur ˆπ0,3, donc l’image de θ′ = Γ′ ∩θ dans
+le groupe des automorphismes extérieurs de π′ ⊂ˆπ0,3 est un sous-groupe fini — a for-
+tiori son image dans Γπ′, et dans N(π), et dans Γπ. Il en est de même (choisissant un
+point base rationnel sur K dans U ′) de l’opération effective sur π1(U, P) car il suffit
+d’appliquer le résultat précédent à U \ {P}. On en conclut aussi que les noyaux des
+homomorphismes Γ0,ν →Γ0,3 (ν ≥3) sont finis. On voit facilement que pour tout
+133On ne fait plus d’hypothèse conjecturale (telle que l’injectivité dans (3)).
+249
+
+--- G103d page 255 ---
+V.A. [Valuation Arithmétique] A définie sur K, l’opération de θ′ sur Q
+ℓTℓ(A) se fait à
+travers un groupe quotient fini.
+Il devient très difficile de s’imaginer comment il pourrait se faire que θ′ n’opère pas
+en fait trivialement ! J’ai même l’impression que je peux montrer, grâce au résultat du
+russe que m’a signalé Deligne, que ΓQ →Γ0,3 est un isomorphisme! Cela signifierait
+que les actions extérieures de ΓQ sur des π1 ≃πg,ν peuvent s’interpréter (au moins pour
+ν assez grand, g étant fixé) comme des scindages de l’extension Ng,ν de Γg,ν par ˆTg,ν —
+ou de l’extension Mg,ν de Γg,ν par ˆSg,ν, quand il s’agit d’actions effectives.
+Bien entendu, la question essentielle qui se pose alors (admettant ΓQ ≃Γ0,3) est
+de caractériser Γ0,3 algébriquement, ainsi que les Ng,ν — et de donner une description
+algébrique également des scindages “admissibles” — i.e. correspondant bel et bien à des
+courbes algébriques sur des corps de nombres algébriques, que ce sont exactement les ac-
+tions relevant l’action extérieure donnée, qui ne normalisent aucun sous-groupe à lacets,
+ou encore telle que ˆπΓ′′+
+0,3 (mais il est concevable qu’il faille y ajouter de conditions plus
+subtiles, faisant intervenir les Frobenius…). On peut se proposer de trouver une descrip-
+tion des actions extérieures “admissibles”, sans avoir à passer par des actions effectives
+admissibles — et à s’embarasser d’en donner une définition plus ou moins plausible. La
+difficulté bien sûr provient du fait que si Γ′′ opère extérieurement sur ˆπ0,3, il n’opère pas
+extérieurement pour autant sur un sous-groupe ouvert donné π′ de ˆπ0,3. Mais on va sup-
+poser justement qu’il existe une telle action, de telle façon que π′ →ˆπ0,3 soit compatible
+avec les actions extérieures, et que l’action de Γ′ sur π se déduise (modulo isomorphisme)
+de [??].
+Pour ce deuxième point, on a une réponse immédiate (supposant connus déjà les
+Ng,ν). Soit un (π, a) de type g, ν, avec relèvement partiel de Γa en Γ′
+a ,→Na. Elle sera
+admissible si et seulement si on peut trouver un (π′, a′) de type (g, ν′) et un plongement
+de π′ comme sous-groupe d’indice fini de ˆπ0,3 compatible avec a′, et un sous-groupe
+ouvert Γ′′ de Γ0,3, et une action effective admissible de Γ′′ sur ˆπ0,3 qui relève l’action
+extérieure donnée, et qui invarie π′, de façon qu’à isomorphisme près, (π, a), et le germe
+d’action de Γ′ dessus se déduise de (π′, a′) par l’action de Γ′′ dessus, par “bouchage” d’un
+paquet de trous (et oubli d’une action effective au profit de l’action extérieure). Il faut
+dans cette approche de simplement savoir préciser algébriquement ce qu’on entend par
+action “admissible” de Γ′′ ⊂Γ0,3 sur ˆπ0,3 – sous-entendant que ça doit correspondre
+250
+
+--- G103d page 256 ---
+aux points de U0,3 rationnels sur le corps de nombres défini par Γ′′. On peut conjecturer
+celle-ci, par “bouchage de trous”.
+Il semble qu’on puisse sur le même principe donner une description des Ng,ν (donc
+de Γg,ν) en termes de Γ0,3. Utilisant les homomorphismes de transition ˆˆTg,ν →ˆˆTg,ν′,
+il suffit de le faire, quand g est fixé, pour des ν grands — assez grands pour qu’il existe
+une courbe algébrique de type g, ν sur Q qui soit un revêtement étale de U0,3 sur Q. On
+considère donc un plongement correspondant de πg,ν dans π0,3, et on décrète que si on
+peut faire opérer extérieurement Γ0,3 dans πg,ν, de façon que πg,ν →π0,3 commute à
+ces actions extérieures, alors le sous-groupe de ˆˆTg,ν engendré par ˆTg,ν et Γ0,3 est Ng,ν.
+251

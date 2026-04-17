@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grothendieck OCR benchmark — Mateo A/B viewer</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --fg: #e7e9ee;
+    --panel: #161a22;
+    --border: #283041;
+    --accent: #7aa2f7;
+    --good: #9ece6a;
+  }
+  html, body { background: var(--bg); color: var(--fg); margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+  header { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 24px; }
+  header h1 { margin: 0; font-size: 18px; font-weight: 500; }
+  .muted { color: #8e96a8; }
+  .container { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 12px 24px; min-height: calc(100vh - 120px); }
+  .pane { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; display: flex; flex-direction: column; }
+  .pane h2 { margin: 0; padding: 10px 14px; font-size: 14px; font-weight: 500; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .pane pre { flex: 1; overflow: auto; margin: 0; padding: 14px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 13px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+  nav { padding: 10px 24px; border-top: 1px solid var(--border); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  button { background: var(--panel); color: var(--fg); border: 1px solid var(--border); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  button:hover { border-color: var(--accent); }
+  button.vote { padding: 8px 16px; font-weight: 500; }
+  button.vote.active { background: var(--accent); color: #0b0d12; border-color: var(--accent); }
+  .label { padding: 2px 8px; background: var(--border); border-radius: 4px; font-size: 11px; color: #c0c5d1; }
+  .stats { margin-left: auto; font-size: 12px; color: #8e96a8; }
+  .export { margin-left: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Grothendieck OCR benchmark — blind A/B</h1>
+  <span class="muted">Gemini 3.1 Pro vs Claude Opus 4.7 — same prompt, same context, pages randomized per card</span>
+  <span class="stats" id="stats"></span>
+</header>
+<div class="container">
+  <div class="pane"><h2>A <span class="label" id="labelA">?</span></h2><pre id="textA"></pre></div>
+  <div class="pane"><h2>B <span class="label" id="labelB">?</span></h2><pre id="textB"></pre></div>
+</div>
+<nav>
+  <button id="prev">&larr; prev</button>
+  <span id="pageLabel" class="muted">page ?/?</span>
+  <button id="next">next &rarr;</button>
+  <button class="vote" id="voteA">A wins</button>
+  <button class="vote" id="voteEq">equal / tie</button>
+  <button class="vote" id="voteB">B wins</button>
+  <button class="vote" id="reveal">reveal which is which</button>
+  <button class="export" id="export">export my votes (JSON)</button>
+</nav>
+<script>
+const DATA = {"items": []};  // injected by Python
+const PAGES = DATA.items;
+const STORAGE_KEY = "grothendieck-ab-votes-v1";
+let votes = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+let idx = 0;
+let revealed = false;
+
+function render() {
+  const p = PAGES[idx];
+  // Stable pseudo-random assignment per page key so the same page always
+  // shows the same models in the same slots (but distribution is mixed).
+  const flip = hash(p.key) % 2 === 1;
+  const modelA = flip ? "claude" : "gemini";
+  const modelB = flip ? "gemini" : "claude";
+  document.getElementById("textA").textContent = p[modelA + "_text"];
+  document.getElementById("textB").textContent = p[modelB + "_text"];
+  document.getElementById("labelA").textContent = revealed ? modelA : "hidden";
+  document.getElementById("labelB").textContent = revealed ? modelB : "hidden";
+  document.getElementById("pageLabel").textContent = `page ${idx + 1}/${PAGES.length} — ${p.volume} p.${p.page}`;
+  // highlight active vote
+  for (const id of ["voteA", "voteEq", "voteB"]) {
+    document.getElementById(id).classList.remove("active");
+  }
+  const v = votes[p.key];
+  if (v === "A") document.getElementById("voteA").classList.add("active");
+  if (v === "tie") document.getElementById("voteEq").classList.add("active");
+  if (v === "B") document.getElementById("voteB").classList.add("active");
+  // Store which model is in which slot so the export is meaningful
+  p._slotA = modelA;
+  p._slotB = modelB;
+  updateStats();
+}
+
+function hash(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h) + s.charCodeAt(i);
+    h |= 0;
+  }
+  return Math.abs(h);
+}
+
+function updateStats() {
+  const done = Object.keys(votes).length;
+  const scored = Object.fromEntries([["claude", 0], ["gemini", 0], ["tie", 0]]);
+  for (const p of PAGES) {
+    const v = votes[p.key];
+    if (!v) continue;
+    if (v === "tie") scored.tie += 1;
+    else scored[v === "A" ? p._slotA : p._slotB] += 1;
+  }
+  document.getElementById("stats").textContent =
+      `voted ${done}/${PAGES.length} — claude ${scored.claude} gemini ${scored.gemini} tie ${scored.tie}`;
+}
+
+function vote(letter) {
+  const p = PAGES[idx];
+  votes[p.key] = letter;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(votes));
+  render();
+}
+
+document.getElementById("prev").onclick = () => { idx = Math.max(0, idx - 1); revealed = false; render(); };
+document.getElementById("next").onclick = () => { idx = Math.min(PAGES.length - 1, idx + 1); revealed = false; render(); };
+document.getElementById("voteA").onclick = () => vote("A");
+document.getElementById("voteEq").onclick = () => vote("tie");
+document.getElementById("voteB").onclick = () => vote("B");
+document.getElementById("reveal").onclick = () => { revealed = !revealed; render(); };
+document.getElementById("export").onclick = () => {
+  // Re-render once for every page to populate slot assignments
+  const snapshot = { generated: new Date().toISOString(), votes: [] };
+  for (let i = 0; i < PAGES.length; i++) {
+    const p = PAGES[i];
+    const flip = hash(p.key) % 2 === 1;
+    const modelA = flip ? "claude" : "gemini";
+    const modelB = flip ? "gemini" : "claude";
+    const v = votes[p.key];
+    let winner = null;
+    if (v === "A") winner = modelA;
+    if (v === "B") winner = modelB;
+    if (v === "tie") winner = "tie";
+    snapshot.votes.push({ key: p.key, volume: p.volume, page: p.page, vote: v || null, winner });
+  }
+  const blob = new Blob([JSON.stringify(snapshot, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "grothendieck_ab_votes.json";
+  a.click();
+};
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowLeft") document.getElementById("prev").click();
+  else if (e.key === "ArrowRight") document.getElementById("next").click();
+  else if (e.key === "a" || e.key === "A") vote("A");
+  else if (e.key === "b" || e.key === "B") vote("B");
+  else if (e.key === "=" || e.key === "0") vote("tie");
+  else if (e.key === "r") document.getElementById("reveal").click();
+});
+
+render();
+</script>
+</body>
+</html>

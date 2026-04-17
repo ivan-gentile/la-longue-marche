@@ -1,0 +1,220 @@
+% Begin
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 20. --- DIGRESSION : DESCRIPTION 2-ISOTOPIQUE DE LA CATÉGORIE DES SPHÈRES TOPOLOGIQUES}\thispagestyle{empty}
+\addcontentsline{toc}{section}{20. Digression: description 2-isotopique de la catégorie des isomorphismes topologiques}
+\label{sec:20}
+\section*{}
+
+Voici une fa\c{c}on de trouver une description 1-isotopique (et même 2-isotopique, il se trouve) en utilisant un groupe revêtement canonique $\widetilde{A}_0$ de $A_0$, s'insérant dans la suite exacte
+$$
+1 \to \mu_2 (\mathbf{C}) \to \widetilde{A}_0 \to A_0 \to 1,
+\leqno{(62)}
+$$
+qui contient la suite exacte correspondante de sous-groupes
+$$
+1 \to \mu_2 \to \widetilde{\Sl}(2, \mathbf{C}) \to \widetilde{\GP}(1, \mathbf{C}) \to 1
+\leqno{(63)}
+$$
+où $\widetilde{\Sl}(2, \mathbf{C})$ est formé des automorphismes semi-linéaires de $\mathbf{C}^2$ (pour un $\mathbf{R}$-automorphisme $\rho$ non précisé, $\id$ ou la conjugaison complexe $\tau$), tels que l'automorphisme $\rho$-linéaire correspondant de $\bigwedge^2 \mathbf{C}^2 \isom \mathbf{C}$ soit l'identité si $\rho = \id$ et soit $\tau: z \mapsto \overline{z}$ si $\rho = \tau$ i.e. indépendamment des cas, on considère un vectoriel unimodulaire $V$ sur $\mathbf{R}$, d'où $V_{\mathbf{C}}$ sur $\mathbf{C}$, avec une restriction de $\bigwedge^2 V_{\mathbf{C}}$ à $\mathbf{R}$, d'où une conjugaison complexe sur $\bigwedge^2 V_{\mathbf{C}}$ et une base de $\bigwedge^2 V_{\mathbf{C}}$ invariante par celle-ci - et on s'intéresse aux automorphismes $\rho$-linéaires ($\rho \in \Aut_{\mathbf{R}} \mathbf{C}$ de $V_{\mathbf{C}}$ qui sur $\bigwedge^2 V_{\mathbf{C}}$ soient $\id$ ou la conjugaison complexe\dots)
+
+$\widetilde{\GP}(1, \mathbf{C})$\footnote{N.B. $\widetilde{\GP}(1, \mathbf{C})$ est aussi le grupe des automorphismes $\mathbf{R}$-linéaires de la $\mathbf{R}$-algèbre $M_2(\mathbf{C})$ (et la classification $\infty$-isotopique des 2-sphères équivaut donc à celle des algèbres simples de rang 4 sur une extension quadratique non précisée de $\mathbf{C}$\dots)} s'identifie au groupe des automorphismes conformes de la sphère de Riemann $P^1_{\mathbf{C}} \isom \mathbb{P}^1(\mathbf{C}^2)$, i.e. des automorphismes de $P^1_{\mathbf{C}}$ comme $\mathbf{R}$-schéma.
+
+On choisit ici $X_0 = P^1_{\mathbf{C}}$, de sorte qu'on a une inclusion canonique 
+$$
+\widetilde{\GP}(1, \mathbf{C}) \hookrightarrow A_0
+$$
+qui est (par ce qui précède (59)) une équivalence d'homotopie.
+
+Sauf erreur il en résulte que la classification des extensions du groupe topologique $A_0$ par un groupe discret disons $\mu$ est équivalente (par le foncteur restriction, à la catégorie des extensions correspondantes pour $\GP (1, \mathbf{C})$, ce qui permet de construire $\widetilde{A}_0$, à isomorphisme unique près).
+
+Ceci posé la donnée d'une surface compacte orientée $X$ de genre 0, qui équivaut à celle d'un torseur [$\Isom (\mathbb{P}^1_{\mathbf{C}}, X)$] sous $A_0$, définit 
+\begin{enumerate}
+    \item[1$^\circ$)] le torseur sous $\{ \pm 1 \}$ qui s'en déduit par $\chi: A_0 \to \{ \pm 1 \}$ (qui est surjectif de noyau $A^\circ_0$) et
+    \item[2$^\circ$)] le groupoïde des relèvements de ce $A_0$-torseur en un $\widetilde{A}_0$-torseur, qui est un groupoïde connexe (= gerbe) lié par le lien abélien $\underbrace{\mu_2 (\mathbf{C}) = \{ \pm 1 \}}_{\mu}$, et sur lequel par suite $\Tors(\mu) \isom \Ens_2$ opère (c'est un 1-torseur sous la $\Gr$-catégorie $\Tors(\mu)$).
+\end{enumerate}
+Associant ainsi à tout $X$ le couple $(\omega, R)$ du $\mu$-torseur associé $\omega$ (i.e. l'ensemble à 2 éléments des deux orientations de $X$, ou ce qui revient au même, le module des orientations de $X$), plus le $\mu$-groupoïde $R$, on trouve un 2-foncteur de la 2-catégorie 2-isotopique des 2-sphères topologiques dans la catégorie des couples $(\omega, R)$, et celui-ci est une équivalence de 2-catégorie.
+
+De ce point de vue on a envie de dire qu'elle est 3-fidèle, mais comme la surjectivité essentielle sur les objets est triviale, il vaut mieux l'appeler 2-fidèle, et même (comme pour la décrire on a fait attention de respecter les $\pi_1$ (en plus des $\pi_0$) des composantes connexes du $A_0$-torseur $\Isom(X_0, X)$, qui sont des $A^\circ_0$-torseurs donc à $\pi_1$ isomorphe à $\mu = \{ \pm 1 \}$, il vaut encore mieux l'appeler 1-fidèle).
+
+Mais en fait elle est même 2-fidèle (en le sens correspondant) grâce au fait que
+\[\begin{tikzcd}
+	{\pi_2(A^\circ_0)} & {\pi_2(\GP(1, \mathbf{C}))} & {\pi_2(S^3/ \pm 1) \isom \pi_2 S^3 = 0}
+	\arrow["\sim"', from=1-3, to=1-2]
+	\arrow["\sim"', from=1-2, to=1-1]
+\end{tikzcd}\leqno{(65)}\]
+Par contre elle n'est pas 3-fidèle, car
+\[\begin{tikzcd}
+	{\pi_i(A^\circ_0)} & {\pi_i(S^3)} & {\text{pour}~i \geq 2}
+	\arrow["\sim"', from=1-2, to=1-1]
+\end{tikzcd}\leqno{(66)}\]
+et $\pi_0 (S^3) \isom \mathbf{Z} (\neq 0)$ donc $\pi_3 (A^\circ_0) \isom \mathbf{Z} \neq 0$.
+
+On cherche une description $\infty$-isotopique, qui tienne compte des groupes d'homotopie de tous ordres (à déterminer !) de $A^\circ_0$ i.e. de $S^3$ (ou encore $\Sl (2, \mathbf{C})$, ou de $\GP (1, \mathbf{C})$). Au concours !
+
+Mais déjà pour la modeste description proposée à prétention 1 ou 2-isotopique, faute d'avoir écrit les choses avec soin je ne suis pas trop sûr si la description donnée est bien correcte - je suis un peu inquiet du fait que je n'ai pas imposé de relations entre le $\mu$-torseur $w$, et le $\mu$-groupoïde $R$.
+
+Soit plus généralement un groupe topologique $G$ ($\widetilde{A}_0$, ou $\widetilde{\GP}(1, \mathbf{C})$) tel que $G^\circ$ soit simplement connexe : 
+$$
+\pi_1 (G^\circ) = 0
+\leqno{(67)}
+$$
+Soit
+$$
+\mu = \Centre (G^\circ), \quad \Gamma = G/G^\circ
+\leqno{(68)}
+$$
+On suppose $\mu$ discret (donc $G^\circ$ s'identifie au groupe revêtement universel de $G^\circ/\mu = H^\circ$ si $H = G/\mu$).
+
+Alors l'extension de groupes topologiques $G$ de $\Gamma$ par $G^\circ$ définit
+$$
+\Gamma \to \Autext(G^\circ) (\to \Aut(\mu))
+\leqno{(69)}
+$$
+et l'ensemble des classes d'extensions correspondants à une opération extérieure donnée de $\Gamma$ sur $G^\circ$ est de fa\c{c}on naturelle un torseur sous $\mathrm{H}^2(\Gamma, \mu)$ (s'il n'est vide, ce qu'on a exclu par l'hypothèse de départ, en parlant de $G$\dots)
+
+Cette catégorie d'extension est d'ailleurs équivalente à celle des scindages d'une certaine $\Gr$-catégorie définie par Sinh via (69) dont les $\pi_0$ et $\pi_1$ sont respectivement $\Gamma$ est $\mu$ - laquelle est donc ici scindée par la donnée de l'extension $G$. Dans le cas qui nous intéresse, $\Gamma \isom \mu \isom \{ \pm 1 \}$, et cette extension est même scindée, et correspond à une opération d'ordre 2 de $\Gamma$ sur $G^\circ$, dont je doute fort que ce soit un automorphisme intérieur.
+
+En fait, j'ai l'impression que dans les deux cas qui nous occupent ($\widetilde{\GP}(1, \mathbf{C})$ et $\widetilde{A}_0$) que (69) est un \emph{isomorphisme} : $\Gamma = \{ \pm 1 \} \isom \Autext (G^\circ)$.
+
+Ceci posé, la donné d'un torseur sous $H = G/\mu$ définit\footnote{on suppose que $\Gamma$ opère \emph{trivialement} que $\mu$ i.e. $\mu \subset  \Centre (G)$}
+\begin{enumerate}
+    \item[1$^\circ$)] un torseur sous $\Gamma$, grâce à $H \to \Gamma \isom H/H^\circ$
+    \item[2$^\circ$)] le groupoïde des relèvements des relèvements de ce torseur    est un torseur sous $G$, qui est un $\mu$-groupoïde connexe (sur lequel $\mu$ opère).
+\end{enumerate}
+
+Si on reprend en termes de fibrés sur un espace de base $S$, on trouve encore sur $S$ (pour tout $H_S$-torseur topologique) un couple $(\omega, R)$ d'un $\Gamma$-torseur et d'une $\mu$-gerbe sur $S$, qui sont décrits, (à isomorphisme et à équivalence près) par $\mathrm{H}^1(S, \Gamma)$ et $\mathrm{H}^2(S, \mu)$ respectivement\footnote{N.B. $\omega$ ne dépend pas du choix de l'extension $G$ de $H$ par ? $\isom \pi_1(H^\circ)$ ; par contre $R$ en dépend (et il faudrait voir comment).}.
+
+On voudrait dégager des conditions sur $G$ et sur $S$ pour que l'application
+$$
+\mathrm{H}^1(S, H) \to \mathrm{H}^1(S, \Gamma) \times \mathrm{H}^2(S, \mu)
+\leqno{(70)}
+$$
+soit bijective.
+
+Injectivité : si l'image d'un $\xi \in \mathrm{H}^1(S, H)$ dans $\mathrm{H}^2(S, \mu)$ est nulle, $\xi$ se relève en un élément $\tilde{\xi}$ dans $\mathrm{H}^1(S, \widetilde{H} = G)$, dont l'image dans $\mathrm{H}^1(S, \Gamma)$ est la même que celle de $\xi$. Donc si elle est triviale, on voit que $\tilde{\xi}$ provient d'un $\tilde{\xi}_0 \in \mathrm{H}^2(S, G^\circ)$.
+
+Si on sait que $\mathrm{H}^2(S, G^\circ) = \{ 1 \}$, on gagne. Par les marteaux-pilons d'homotopie, \c{c}a marche si $\exists n \in \mathbf{N}$ avec :
+$$
+\pi_i (G^\circ) = 0~\text{si}~i \leq n~\text{(donc}~\pi_i(B^\circ_G) = 0~\text{si}~i \leq n + 1)
+$$
+(dans le cas qui nous occupe on peut prendre $n = 2$) et $S$ un CW-complexe de dimension $\leq n + 1$.
+
+Par la surjectivité notons que pour un élément dans $\mathrm{H}^2(S, \mu)$, l'obstraction à ce qu'il se relève en un élément $\xi$ dans $\mathrm{H}^1(S, H)$ est dans $\mathrm{H}^2(S, G)$ [par la suite exacte de cohomologie associée à $1 \to \mu_S \to G_S \to H_S \to 1$].
+
+Il faut exprimer qu'une certaine gerbe liée par $g_s$ est neutre - brr ! Mais partons plutôt de l'élément $\omega$ de $\mathrm{H}^1(S, \Gamma)$, si l'extension de $\Gamma$ par $H^\circ$ est scindée, alors on peut trouver un $\xi_0 \in \mathrm{H}^1(S, H_S)$ qui donne naissance à $\omega$.
+
+Elle a une certaine obstruction $\rho_0$ dans $\mathrm{H}^2(S, \mu)$, et il s'agit de corriger $\rho_0$ en $\xi$, de telle fa\c{c}on que l'obstruction devienne $\rho \in \mathrm{H}^2(S, \mu)$ donnée.
+
+Utilisant $\rho_0$ pour tordre $H_S$ en $H'_S$, et (via l'opération de $H_S = G_S/\mu_S$ sur $G_S$, compte tenu que $\mu_S \subset  \Centre G_S$) pour tordre aussi $G_S$ et $G'_S$, d'où
+$$
+1 \mu \to G'_S \to H'_S \to 1
+$$
+on trouve que les $\xi$ ayant même image dans $\mathrm{H}^1(s, \Gamma)$ que $\xi_0$ correspond bijectivemment aux $\xi' \in \mathrm{H}^1(S, H'_S)$.
+
+Pour un tel $\xi'$, soit $S'(\xi') \in \mathrm{H}^2(S, \mu)$ l'obstruction à le relever dans $\mathrm{H}^1(S, G'_S)$ et $S(\xi') = S(\xi)$ l'obstruction à le relever dans $\mathrm{H}^2(S, G_S)$.
+
+Sauf erreur on a 
+$$
+\delta'(\xi') = \delta (\xi') - \rho_0
+$$
+i.e. $\delta(\xi') = \delta(\xi) = \delta' (\xi') + \rho_0$ et on veut $\delta(\xi) = \rho$ i.e. $\delta'(\xi') = \rho - \rho_0$ et la question revient encore à la surjectivité de 
+$$
+\mathrm{H}^1(S, H'_S) \to \mathrm{H}^2(S, \mu)
+$$
+- je ne m'en tire pas. Il faudrait consulter des gens compétents, comme Giraud ou Larry Breen. On sent qu'il faudrait travailler avec un $\Gr$-champ $\mathbf{H}$ de coefficients, d'invariants, $\underline{\pi}_0 = \Gamma$ et $\underline{\pi}_1 = \mu$, (mais pas nécessairement un champ de Picard !) et $\mathrm{H}^1(S, \mathbf{H}) \isom$ Classes d'applications de $S$ dans $B_{\mathbf{H}}$, qui est un espace connexe avec $\pi_1(B_{\mathbf{H}}) \isom \Gamma$ et $\pi_2(B_{\mathbf{H}}) = \mu$. 
+
+Ici la classe de Postnikov dans $\mathrm{H}^3(\Gamma, \mu)$ est nulle. [mais peut-être n'y a-t-il pas lieu trop sa raccrocher à cette hypothèse, correspondant à l'existence d'une extension $G$ de $H$ par $\pi_1(H^\circ)$ qui redonne l'extension universelle de $H^\circ$ par $\pi_1(H^\circ)$].
+
+On a un homomorphisme $B_H \to B_{\mathbf{H}}$ qui induit un isomorphisme sur les $\pi_i$ pour $i \leq 2$, et pour $i \leq n$ (où $n \geq 2$ est donné) si et seulement si $\pi_i(B_H) = 0$ pour $2 < i \leq n$, i.e. $\pi_i(H) = 0$ pour $2 \leq i \leq n - 1$ (dans le cas qui nous intéresse $H = A_0$, on peut prendre $n = 3$).
+
+Ceci implique que pour tout CW-complexe $S$ de dimension $\leq n$, on a 
+$$
+\Hot (S, B_H) \isommap \Hot (S, B_{\mathbf{H}})
+$$
+($\Hot$ désignant les morphismes dans la catégorie homotopique non ponctuée) i.e.
+$$
+\mathrm{H}^1(S, H) \isommap \mathrm{H}^1(S, \mathbf{H})
+$$
+Mais si l'invariant de Postnikov-Sinh $k \in \mathrm{H}^3(\Gamma, \mu)$ est nul, (ainsi qu l'action de $\Gamma$ sur $\mu$) alors sauf erreur $B_{\mathbf{H}}$ s'identifie à un produit $K(\Gamma, 1) \times K(\pi, 2)$ (cette ``idetification'' dépendant justement du choix des $\mathrm{H}^2(\pi_1, \pi_2) \isom \mathrm{H}^2(\Gamma, \mu)$ !) et par suite
+$$
+\mathrm{H}^1(S, \mathbf{H}) \isom \mathrm{H}^1(S, \Gamma) \times \mathrm{H}^2(S, \mu) 
+$$
+pour tout espace $S$ donc pour $S$ un CW-complexe de dimension $\leq n$
+$$
+\mathrm{H}^1(S, H) \isommap \mathrm{H}^1(S, \Gamma) \times \mathrm{H}^2(S, \mu)
+\leqno{(71)}
+$$
+Donc la classification des fibrés en sphères topologiques sur un espace topologique $S$, pour un CW-complexe $S$ de dimension $\leq 3$, marche bel et bien.
+
+Bien entendu, le fait qu'on soit obligé ici à se borner à $S$ de dim $\leq 3$ tient au fait que nous n'avons trouvé (via $\mathbf{H}$) qu'une description 2-isotopique (et non $\infty$-isotopique) de la catégorie des 2-sphères topologiques.
+
+Je voudrais reprendre la classification pour un CW-complexe $S$ quelconque, en utilisant le fait que l'inclusion
+$$
+\widetilde{\GP} (1, \mathbf{C}) \hookrightarrow A_0
+$$
+est une équivalence d'homotopie, et induit donc une bijection
+$$
+\mathrm{H}^1(S, \widetilde{\GP}(1, \mathbf{C})) \to \mathrm{H}^1(S, A_0)
+$$
+et même une $\infty$-équivalence des $\infty$-catégories des torseurs sur $S$ de groupe $\widetilde{\GP}$ (correspondant aux fibrés en sphères conformes, en droites projectives sur une $\mathrm{R}$-algèbre non précisée isomorphe à $\mathbf{C}$) et de groupe $A_0$ - correspondant aux fibrés en sphères sur $S$.
+
+Le premier invariant d'un fibré de groupe $\widetilde{\GP}$ est un torseur $\eta$ sous $(\mathbf{Z}/2\mathbf{Z})_S$, défini (à isomorphisme \emph{non unique près}) par un $\chi \in \mathrm{H}^1(S, \mathbf{Z}/2\mathbf{Z})$ i.e. un revêtement de degré 2. La donnée de $\eta$ revient à la donnée d'une système $T$ d'entiers tordus sur $S$.
+
+Ce torseur servira à tordre $\mathbf{C}$ (via l'opération fidèle de $\mathbf{Z}/2\mathbf{Z}$ sur la $\mathbf{R}$-extension $\mathbf{C}$), d'où un fibré localement constant en extension quadratiques de $\mathbf{R}$, soit $C$, et on [?] $S$ par le faisceau $\underline{C}_S$ (ou $\underline{C}$) des sections continues de $C$ (ce qui est une fa\c{c}on de tordre $\GP(1, \mathbf{C})_S$ ou $\GP(1, C)_S = \GP(1, \underline{C})$) et il s'agit de décrire de fa\c{c}on compréhensible - en passant au besoin aux $n$-isotopiques, pour $n = \dots$ - la catégorie (dépendant du choix de $\chi$ via $\underline{C}$) des algèbres d'Azumaya de rang 4 sur $\underline{C}$, ou encore des fibrés en droites projectives sur $\underline{C}$, ou des torseurs sous $\GP(1, \underline{C})$.
+
+Or utilisant la suite exacte
+$$
+1 \to \mu_{2 S} \to \Sl(2, \underline{C}_S) \to \GP (1, \underline{C}_S) \to 1
+$$
+on associe à un objet de la catégorie - disons un torseur sous $\GP (1, \underline{C}_S)$ - la catégorie fibrée (sur des ouverts variables de $S$) de ces relèvements à $\Sl(2, \underline{C}_S)$, qui est une \emph{gerbe} $G$ liée par $\mu_2$. C'est cette gerbe qui est le deuxième invariant complet - plus fin que sa classe d'équivalence qui s'identifie à un $\xi \in \mathrm{H}^2(S, \mu_2) = \mathrm{H}^2(S, \{ \pm 1 \})$ (jouant le rôle d'un groupe de Brauer).
+
+Un isomorphisme de fibrés, d'invariants $(T, G) \isom (T', G')$, définira un isomorphisme $T \isom T'$ (d'où un isomorphisme $\underline{C}_T \isom \underline{C}_{T'}$ d'où un isomorphisme $\GP(1, \underline{C}_T) \isom \GP(1, \underline{C}_{T'})$) et une équivalence de gerbes.
+
+Il faudrait expliciter que pour deux isomorphismes $f$ et $g$ des torseurs, d'où
+\[\begin{tikzcd}
+	{f_T, g_T: T} & {T'} && {f_G, g_G: G} & {G'}
+	\arrow["\sim", shift left=1, from=1-1, to=1-2]
+	\arrow["\sim"', shift right=1, from=1-1, to=1-2]
+	\arrow["\sim", shift left=1, from=1-4, to=1-5]
+	\arrow["\sim"', shift right=1, from=1-4, to=1-5]
+\end{tikzcd}\]
+et pour toute homotopie $h_t$ $(0 \leq t \leq 1)$ de $f$ à $g$ on trouve $f_T = g_T$ et un isomorphisme $h_*: f_G \isommap g_G$ d'équivalence des gerbes, qui ne dépend que de la classe d'homotopie de cette homotopie.
+
+On trouve ainsi un 2-foncteur de la 2-catégorie des torseurs sur $S$ de groupe $\widetilde{\GP}(1, \mathbf{C})$ vers la 2-catégorie formée des couples $(T, G)$ d'un système d'entiers tordus ($\Leftrightarrow$ d'un torseur sur $S$ de groupe $\mathbf{Z}/2\mathbf{Z}$) et d'une $\mu_2(\mathbf{C})$-gerbe $G$ sur $S$.
+
+Ce 2-foncteur, sauf erreur, est 2-fidèle sous les conditions explicitées plus haut ($\dim S \leq 4$) et est 3-fidèle (i.e. l'application injective
+$$
+\mathrm{H}^1(S, \widetilde{\GP}) \to \mathrm{H}^1(S, \mathbf{Z}/2\mathbf{Z}) \times \mathrm{H}^2(S, \mu_2)
+$$
+est surjective) si on a même $\dim S \leq 3$.
+
+On s'attend qu'elle soi 1-fidèle dès que $\dim S \leq 5$, 0-fidèle dès que $\dim S \leq 6$ (??\dots).
+
+N.B. : l'assertion ``0-fidèle'' signifie que si ci-dessus on a deux homotopies $h$, $h'$, de $f$ à $g$, telles que $h_* = h'_*$ alors $h$ et $h'$ sont homotopes.
+
+La condition ``1-fidèle'' signifie 0-fidèle et que tout isomorphisme de $f_G$ à $g_G$ est de la forme $h_*$ (avec $h$ bien déterminé à homotopie près, par la condition précédente de 0-fidélité).
+
+La condition 2-fidèle signifies de plus que pour toute $\phi: T \isommap T'$, $\psi: G \xlongrightarrow{\approx} G'$, il existe un isomorphisme de fibrés $f$ tel que $\phi = f_T$, et un isomorphisme $\psi \isommap f_G$.
+
+Enfin 3-fidèle signifie que de plus, pour tout couple $T$, $G$, $\exists T', G'$ provenant d'un fibré, un isomorphisme $T \isommap T'$ et une équivalence $G \isommap G'$.
+
+Ces notions catégoriques doivent interpréter simplement que, si on regarde $H = \widetilde{\GP}(1, \mathbf{C}) \to \mathbf{H}$ - ou $\mathbf{H}$ est déduite de $H$ en ``tuant les groupes d'homotopie $\pi_i$ pour $i \geq 2$'', de sorte que $\alpha$ induit un isomorphisme des $\pi_i$ pour $i \leq 1$ (et même pour $i \leq n$ si $\pi_i (H) = 0$ pour $1 < i \leq n$) d'où $B_\alpha: B_H \to B_{\mathbf{H}}$\footnote{N.B. $B_{\mathbf{H}}$ est déduite de $B_H$ en tuant les $\pi_i$ pour $i \geq 3$} (induisant un isomorphisme des $\pi_i$ pour $i \leq n + 1$), alors prenant pour un espace donné $S$, l'application correspondante des espaces d'applications continues
+$$
+\underline{\Cont} (S, B_H) \to \underline{\Cont}(S, B_{\mathbf{H}})
+$$
+celle-ci induit un isomorphisme pour les $\pi_i$ $(0 \leq i \leq 2)$.
+
+Il semblerait que 0-fidèle est une condition d'injectivité pour les $\pi_2$, 1-fidèle la bijectivité pou les $\pi_2$, l'injectivité pour les $\pi_1$, 2-fidèle la bijectivité $\pi_2$ et $\pi_3$ et l'injectivié pour $\pi_0$, 3-fidèle la bijectivité pour $\pi_0$, $\pi_1$, $\pi_2$.
+
+Comme $\pi_i (\Cont (S, B)) \isom \pi_0 (S \times S^i, B)$, il semblerait qu'on est conduit, pour la 0-fidèlité, de faire l'hypothèse draconienne que $S \times S^2$ de dim $\leq 4$ pour la 1-fidèlite que $S \times S^2$ de dim $\leq 3$ i.e. dim $S \leq 1$ ?, (qui impliquerait alors la 3-fidélité\dots)
+
+Prenons l'analogue arithmétique d'une description (plus ou moins ``fidèle'') de nature ``profinie'' des droites projectives (éventuellement tordues) définies sur un corps de type fini $K$ sur $\mathbf{Q}$ (plus généralement sur un schéma $S$ quelconque), celle-ci forment à priori une catégorie sans plus - un groupoïde (pas nécessairement connexe) - je ne sais pas en faire une 2-catégorie raisonnablement, pour deux isomorphismes $f, g$ ($= f \circ u$) de tels torseurs, définir les homotopismes de $f$ à $g$, i.e. pour une ``forme'' $G$ de $\GP (1)_S$ et une section $u$ de $G$, définir les ``homotopies'' de $u$ à l'identité, ou plutôt une notion qui remplace la notion de classe d'homotopie de telles homotopies. Et serait sans doute un relèvement de $u$ en une section du revêtement simplement connexe $\widetilde{G}$ de $G$ !
+
+Je tiens là quelque chose d'assez amusant, mais que je ne vais pas poursuivre - de toute fa\c{c}on il est clair que la ``description'' des droites projectives (sur un corps de type fini disons) à laquelle on aboutit, n'a rien de fidèle - par même 0-fidèle !
+
+Ainsi tous les automorphismes de $\mathbb{P}^1_K$ provenant de $\Sl (2, K)$ seraient identifiés à l'identité - c'est un peu brutal ! Mais je me rends compte que le travail conceptuel autour du thème ``Brauer'' n'est pas terminé - qu'il y a à comprendre des choses pour l'étude de la catégorie (qui devrait être une {\bf 2}-catégorie !) des Algèbres d'Azumaya de degré \emph{fixé} (ici 4)\dots 
+
+
+
+% end

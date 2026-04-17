@@ -1,0 +1,747 @@
+Section: § 36. — L’ISOMORPHISME ΓQ
+G103d pages: 268-281
+
+--- G103d page 268 ---
+§ 36. — L’ISOMORPHISME ΓQ
+∼
+−→Γ1,1 ET L’INJECTIVITÉ DE
+ΓQ →Autext(ˆT+
+1,1) ≃Autext(SL(2, Z)ˆ)
+Soit139 π′
+0,3 le groupe quotient de Γ0,3 défini par les relations
+(1)
+l2
+1 = l3
+∞= 1;
+c’est donc le groupe “cartographique orienté pour structures triangulées”, les π′
+0,3-
+ensembles finis correspondant aux cartes orientées finies (pouvant avoir des boucles
+aplaties) dont les faces sont des triangles ou des mono-angles. L’opération extérieure de
+ΓQ (mais non celle de S3 !) sur ˆ
+π0,3 passe au quotient en une action sur ˆ
+π0,3
+′. On peut
+améliorer le théorème 1 du paragraphe précédent par la
+Proposition. — L’action extérieure de ΓQ sur ˆ
+π0,3
+′ est fidèle.
+Pour le montrer, on va plonger π0,3 comme sous-groupe d’indice fini dans π′
+0,3, d’où
+un plongement analogue
+ˆ
+π0,3 ,→ˆ
+π0,3
+′
+qui sera compatible avec l’action extérieure de ΓQ.
+Considérons pour cela le schéma quotient Y = P1
+Q/S3 = X/S3 avec les trois
+points a0, a1, a∞de Y , rationnels sur Q, a0 correspondant à la trajectoire {0, 1, ∞},
+a1 à la trajectoire {−1, 1
+2, 2} et a∞à la trajectoire {j, ¯j}, (j = exp2iπ
+3 ) de S3 (ce qui
+épuise l’ensemble des trajectoires “singulières” géométriques). On sait que Y est une
+139Les réflexions du présent paragraphe, un peu cahin caha, seront reprises de façon moins pesante au
+paragraphe suivant.
+
+--- G103d page 269 ---
+droite projective (sur Q a priori), qu’on épingle par a0, a1, a∞comme points 0, 1, ∞,
+donc Y ≃P1
+Q; l’homomorphisme X →Y s’identifie donc à un morphisme bien déter-
+miné
+(3)
+f : X = P1
+Q →P1
+Q = Y
+qui fait de X un revêtement galoisien de Y , de groupe S3, étale au dessus de P1
+Q \
+{0, 1, ∞}, avec comme indices de ramifications en ces points 2,2,3. Du point de vue
+de la géométrie des cartes (se plaçant sur le corps de base C), on considère la carte déter-
+minée sur X par le triangle sphérique (0, 1, ∞) (sur l’axe réel comme équateur) – qui est
+donclacartepondéréeuniverselle–commeimageinversedelacarteuniverselle(ayantun
+seul sommet 0, une seule arête repliée 0 →1, une seule face, de centre ∞). Tout revête-
+ment étale topologique de U0,3(C) ⊂X donne ainsi un revêtement étale topologique
+de U0,3(C) ⊂Y , ayant au dessus de 1 la ramification 2, au dessus de l’infini la ramifi-
+cation 3 exactement, ce qui correspond au foncteur “oubli” de la pondération, où une
+carte triangulaire pondérée est considérée comme une carte tout court. Du point de vue
+des groupes fondamentaux, on trouve ainsi une équivalence de catégories:
+Revêtements étales de X \ {0, 1, ∞} = U0,3 ≃π0,3-ensembles
+(4)
+↓≀
+Revêtements de Y \ {0, 1, ∞} = U0,3 /(l’objet X \ {0, 1, ∞} de la dite catégorie)
+≃π′
+0,3-ensembles/E
+où:
+- les revêtements de Y \ {0, 1, ∞} considérés sont ceux dont la ramification est subor-
+donnée à la signature 2{1} + 3{∞},
+- E est le π′
+0,3-ensemble correspondant à l’objet X \ {0, 1, ∞} de la catégorie des revête-
+ments étales de Y \ {0, 1, ∞} à ramification subordonnée à 2{1} + 3{∞}.
+Ici, le point base de Y \{0, 1, ∞} choisi pour décrire les revêtements (à ramification
+subordonnée à…) par un groupe fondamental à ramification, étant encore P = −¯j, on
+aura:
+(5)
+E = f −1
+C (P)
+et on peut expliciter ainsi la catégorie (π′
+0,3-ens.)/E, où E est un espace homogène, iso-
+morpheauquotientdeπ′
+0,3 parlesous-groupeπ′0
+0,3,noyaudel’homomorphismesurjectif
+idoine,
+264
+
+--- G103d page 270 ---
+π′
+0,3 →S3
+l0 7→éléments d’ordre 2
+(6)
+l1 7→éléments d’ordre 2
+l∞7→éléments d’ordre 3
+[en marge:] A calculer!.
+On choisit un Q0 ∈E comme “origine” de E – pour pouvoir identifier E comme
+π′
+0,3-ensemble à π′
+0,3/π′0
+0,3 ≃S3 – alors Ens(π′
+0,3)/E s’identifie, par le foncteur F →
+FQ0, à Ens(π′0
+0,3).
+On trouve donc en résumé une équivalence de catégories (dépendant du choix de
+Q0)
+π0,3 −ensembles
+∼
+−→π′0
+0,3 −ensembles
+qui est elle-même décrite par un bitorseur sous (π′0
+0,3, π0,3) et, à isomorphisme (non
+unique!) près par un isomorphisme
+π0,3
+∼
+−→π′0
+0,3,
+les isomorphismes ainsi obtenus (pour des origines variables du bitorseur) formant ex-
+actementuneclassedeconjugaisonparπ′0
+0,3,i.e. unisomorphismeextérieurπ0,3
+∼
+−→π′0
+0,3.
+Quand de plus le choix de Q0 varie, on trouve un composé π0,3 →π′0
+0,3 →π′
+0,3 exacte-
+ment une classe de π′
+0,3-conjugaison, i.e. un homomomorphisme extérieur.
+J’ai beaucoup turbiné pour pas grand chose – à défaut d’avoir écrit les fonctorial-
+ités [?] très générales [??] pour les “groupes fondamentaux avec ramification”. Par
+exemple le bifoncteur I mystérieux de tantôt est formé des classes de chemins de P ∈
+X(C) \ {0, 1, ∞} (point base pour calculer π0,3) vers Q0 (jouant le rôle d’un nouveau
+point base, ayant le mérite de s’envoyer sur celui – P – qui sert à calculer π′
+0,3, groupe
+fondamental à ramification sur Y (C) \ {0, 1, ∞}…). Il serait peut-être plus commode
+de définir directement un foncteur en sens inverse,
+(7) Revêtements de Y (C)\{0, 1, ∞}
+−→Revêtements étales de X(C)\{0, 1, ∞}
+subordonnés à la signature 2{1} + 3{∞}
+par image inverse, suivi d’une normalisation.
+Ici on utilise le fait que l’objet X(C) \ {0, 1, ∞} de la catégorie des revêtements à
+ramification maximum imposée, réalise justement un maximum sur les points 1, ∞où
+265
+
+--- G103d page 271 ---
+la condition intervient. On trouve que le foncteur correspondant
+(7 bis)
+π′
+0,3 −ensembles →π0,3 −ensembles
+a les propriétés d’exactitude d’un foncteur associé à un morphisme de topos galoisiens
+Bπ0,3 →Bπ′
+0,3
+(commute aux limites inductives, exact à gauche) et est donc défini par un (π0,3, π′
+0,3)-
+ensemble qui soit un torseur (à droite) pour π′
+0,3
+140. Le choix d’une origine pour ce
+torseur définit alors aussi un homomorphisme correspondant π0,3 →π′
+0,3.
+Revenons à la situation arithmétique sur Q, où on dispose non seulement des
+groupes fondamentaux géométriques profinis ˆ
+π0,3, ˆ
+π0,3
+′, mais aussi d’extensions
+(8)
+1
+ˆπ0,3
+E0,3
+Γ
+1
+1
+ˆπ′
+0,3
+E′
+0,3
+Γ
+1
+qui s’interprètent comme des groupes fondamentaux de U0,3, resp. de U0,3 avec rami-
+fication subordonnée à 2{1} + 3{∞}. Les raisonnements précédents s’étendent à ce
+cadre et fournissent donc un homomorphisme d’extension
+(9)
+1
+ˆπ0,3
+E0,3
+Γ
+1
+1
+ˆπ′
+0,3
+E′
+0,3
+Γ
+1
+défini modulo composition par un automorphisme intérieur de π′
+0,3 [ ˆ
+π0,3 →
+ˆ
+π0,3
+s’insère dans une suite exacte
+(9 bis)
+1 →ˆ
+π0,3 →ˆ
+π0,3
+′ →S3
+et itou pour les groupes discrets, 1 →π0,3 →π′
+0,3 →S3].
+Ceci dit, soit K le noyau de l’opération extérieure de Γ sur π′
+0,3. On voit alors que
+l’opération extérieure de K sur le sous-groupe ouvert ˆ
+π0,3 se fait par un groupe fini (en
+140Ce bitorseur est aussi l’ensemble des YC \ {0} homomorphismes du “revêtement universel” à ramifi-
+cation imposée de cet espace sur le revêtement universel ordinaire de X(C) \ {0, 1, ∞}.
+266
+
+--- G103d page 272 ---
+fait par l’intermédiaire de ˆ
+π0,3
+′/ ˆ
+π0,3 ≃S3…) – ce qui implique, par le théorème 1 du
+paragraphe précédent, que le groupe K lui-même est fini. Donc par Artin on a K = 1
+ou K = (1, τ), τ la conjugaison complexe. Mais comme Hi(τ) = −1, il est évident
+que l’opération extérieure de τ sur π′
+0,3 (où même sur π′
+0,3 ab (≃Z/2Z × Z/3Z) n’est pas
+triviale. Cela prouve la proposition.
+J’ai envie maintenant d’interpréter π′
+0,3 comme T+
+1,1/(centre) (le centre est isomor-
+phe à {±1}), et itou pour ˆ
+π0,3
+′ ≃ˆT1,1/{±1}, isomorphisme qui soit compatible avec
+l’action extérieure de Γ. On a (pour mémoire)
+(10)
+T1,1
+∼
+−→GL(2, Z),
+l’isomorphisme étant obtenu ainsi
+(11)
+T1,1
+∼
+−→T1,0
+∼
+−→Autext(π1,0) ≃Autext(Z2) ≃GL(2, Z)
+[où le premier isomorphisme est celui de bouchage de trou].
+On a donc
+(12)
+T+
+1,1 ≃SL(2, Z)
+et
+(13)
+Centre(T1,1) ≃{±1}
+(s’identifie au groupe des homothéties de SL(2, Z)).
+Il est connu qu’on a dans
+SL(2, Z)/{±1} deux générateurs λ2, λ3 satisfaisant respectivement
+(14)
+λ3
+3 = 1, λ2
+2 = 1
+et tels que ces relations soient une présentation de SL(2, Z)/{±1}. Sauf erreur ces élé-
+ments proviennent d’éléments u4, u6 de SL(2, Z) lui-même, satisfaisant
+(15)
+u6
+6 = 1, u4
+4 = 1,
+et qui correspondent aux seuls éléments d’ordres 6 et 4 (à conjugaison et passage à
+l’inverse près). En fait, tout élément d’ordre fini de SL(2, Z) est conjugué à une puis-
+sance de u4 ou u6. Les sous-groupes engendrés respectivement par u4 et u6, cycliques
+267
+
+--- G103d page 273 ---
+d’ordre 4 et 6, sont les groupes des automorphismes des deux courbes elliptiques excep-
+tionnelles (dîtes “anharmoniques”) (en caractéristique 0).
+Je n’ai pas de formule sous la main pour “placer” u4 et u6, de façon qu’ils engendrent
+le groupe SL(2, Z) modulo son centre (ce qui implique sans doute qu’ils engendrent
+SL(2, Z)) – mais on fera attention à la relation supplémentaire, s’ajoutant à (15)
+(16)
+u2
+4 = u3
+6
+(c’est justement l’élément −1 du centre de SL(2, Z)). Je n’ai peut-être pas besoin de la
+formule explicite pour u4 et u6. On définit alors
+(17)
+π′
+0,3
+∼
+−→SL(2, Z)/{±1}
+par
+(18)
+l′
+1 7→λ2, l′
+∞7→λ3
+(donc l′
+0 7→(λ3λ2)−1 = λ2λ−1
+3
+= λ2λ2
+3), où l′
+0, l′
+1, l′
+∞sont les générateurs de π′
+0,3
+correspondants à ceux l0, l1, l∞de π0,3, avec les relations de définition
+(19)
+l′
+∞l′
+1l′
+0 = 1, l′2
+1 = 1, l′3
+∞= 1,
+de sorte que π′
+0,3 est bien le groupe de générateurs l′
+1, l′
+∞satisfaisant à l′2
+1 = 1, l′3
+∞= 1.
+Je veux maintenant me convaincre que l’homomorphisme correspondant à (17),
+(20)
+ˆ
+π0,3
+′ →SL(2, Z)ˆ/{±1} ≃ˆT+
+1,1/{±1}
+est compatible avec l’opération extérieure de Γ = ΓQ. Pour ceci, j’ai envie de définir
+directement le composé avec ˆπ0,3 →ˆπ′
+0,3, i.e. ˆπ0,3 →ˆT+
+1,1/{±1}, et même de le relever
+en un homomorphisme
+(21)
+ˆπ0,3 →ˆT+
+1,1.
+Au niveau des groupes discrets, on définit bien
+(22)
+π0,3 →SL(2, Z)
+par
+l1 7→u4, l∞7→u6, l0 7→(u6u4)−1 = u−1
+4 u−1
+6 ,
+268
+
+--- G103d page 274 ---
+et SL(2, Z) ≃T+
+1,1 s’identifie au quotient de π0,3 par le sous-groupe engendré par les
+éléments
+l4
+1, l6
+∞, (l2
+1)(l3
+∞)−1.
+D’ailleurs π0,3 peut s’interpréter comme un groupe de Teichmüller T!+
+0,4
+141, et (22)
+comme un homomorphisme
+(23)
+T!+
+0,4 →T+
+1,1
+dont je soupçonne qu’il se prolonge en un homomorphisme
+(24)
+T!
+0,4 →T1,1 ≃SL(2, Z)
+[le premier membre étant] une extension de (1, τ) par π0,3, qui n’est autre que le groupe
+cartographique triangulé pondéré non orienté.
+J’interprète le premier membre de (23) comme le π1 “géométrique transcendant”
+du topos modulaire M !
+0,4, classifiant les droites projectives avec quatre points disctincts
+numérotés de 1 à 4; et le deuxième membre de (23) est le π1 transcendant du topos mo-
+dulaire M1,1, classifiant les courbes elliptiques (avec une origine fixée). On devrait donc
+pouvoir définir, au niveau des multiplicités modulaires sur Q,
+(25)
+(M !
+0,4)Q →(M1,1)Q,
+qui donnerait naissance à (23).
+Mais on voit de suite qu’on a un isomorphisme canonique
+(26)
+M !
+0,4 ≃U0,3
+(je laisse tomber les indices Q), et la donnée de (25) revient donc aussi à la donnée d’une
+famille de courbes elliptiques sur U0,3. Mais si λ est la “variable ∈U0,3”, en prenant “le”
+revêtement quadratique Eλ de ¶1 ramifié en 0, 1, ∞, λ, on trouve une courbe elliptique,
+avec quatre points marqués – au dessus de 0, 1, ∞, λ – dont on peut prendre le point au
+dessus de 0 comme origine – alors les trois autres points sont les trois points d’ordre 2,
+indexés respectivemnt par 1, ∞, λ.
+141En effet T!
+g,ν est extension de T!
+g,ν−1 par πg,ν−1 (si (g, ν −1) anabélien) et itou pour les T+; T!+
+0,3 =
+{1}!
+269
+
+--- G103d page 275 ---
+De façon plus précise : sur un schéma de base quelconque S, sauf que 2 y soit in-
+versible (caractéristique résiduelle différente de 2), on a un foncteur qui va de la catégorie
+des systèmes (E, α, β) d’une courbe elliptique (homogène) relative sur S, et α, β deux
+sections de E formant une base de 2E, en tant que schéma localement constant en F2
+– modules (ou système local de F2-modules) de S (donnant naissance à γ = α + β,
+comme troisième larron - de sorte que (β, γ) etc. sont en fait aussi des bases) 142 – vers la
+catégoriedesfibrésendroitesprojectivesP surS, avecquatresectionsu0, u1, u∞, λmar-
+quées disctinctes en chaque point, en associant à E le quotient E/±1, muni des sections
+u0, u1, u∞, λ qui sont images respectivement de 0, α, β, γ = α + β; et ce foncteur est
+presque une équivalence de catégories. Ce qui lui manque pour l’être, c’est que pour une
+courbe elliptique relative E, la symétrie x →−x de E – qui est un automorphisme non
+trivial – opère trivialement sur l’objet correspondant E/{±1} 143. Donc il faut prendre
+le champ sur (Sch), déduit de celui des courbes elliptiques en commençant par prendre
+Isom(E, F)′ = Isom(E, F)/ ± 1, puis on prendra le champ associé à un préchamp
+(les objets sur S sont les “courbes elliptiques relatives à symétrie près sur S”). Le champ
+est représentable par une multiplicité modulaire M ′
+1,1, ayant comme groupe fondamen-
+tal géométrique SL(2, Z)ˆ/{±1} justement, déduit par exemple des variétés modulaires
+à rigidification de Jacobi déchelon n, M1,1[n] – avec un groupe SL(2, Z/nZ) opérant
+dessus, de sorte que
+(27)
+M1,1 ≃
+ M1,1[n], SL(2, Z/nZ)
+
+et en outre que le sous-groupe central {±1} de SL(2, Z/nZ) opère trivialement
+sur M1,1[n]; donc on peut faire opérer le groupe quotient SL(2, Z/nZ)′
+=
+SL(2, Z/nZ)/{±1}, et poser
+(28)
+M ′
+1,1 =
+ M1,1[n], SL(2, Z/nZ)′
+(ce qui manifestement ne dépend pas du choix de n, n ≥2). On trouve ainsi un homo-
+morphisme
+(29)
+M !
+0,4 ≃U0,3 −→M ′
+1,1,
+142Il revient au même de dire que l’on a trois sections α, β, γ de 2E sur S, qui sont distinctes en tout
+s ∈S et partant ̸= 1.
+143Lespagesquisuiventsontinutilementcompliquées,avecl’introductiondeM ′
+1,1, T′
+1,1 etc. ilsuffitd’y
+aller brutalement avec la courbe elliptique y2 =
+p
+x(x −1)(x −λ) sur U0,3, pour avoir U0,3 →M1,1;
+cf. plus bas…
+270
+
+--- G103d page 276 ---
+qui fait de M !
+0,4 un revêtement galoisien de groupe S3 de M ′
+1,1, et de façon plus précise
+(30)
+M !
+0,4
+∼
+−→M1,1[2]′ →M ′
+1,1
+[la deuxième flèche définissant un] revêtement galoisien de groupe SL(2, F2) ≃S3),
+le groupe fondamental géométrique de M1,1[2] étant d’ailleurs isomorphe au noyau de
+l’homomorphisme SL(2, Z)′ˆ→SL(2, Z/2Z) qui factorise l’homomorphisme canon-
+ique SL(2, Z)ˆ→SL(2, Z/2Z).
+Passant aux groupes fondamentaux pour M !
+0,4 = U0,3 et M ′
+1,1, on trouve un homo-
+morphisme de suites exactes
+(31)
+1
+ˆπ0,3 = T!
+0,4
+E0,3 = N0,4
+Γ
+1
+1
+ˆT+
+1,1
+E′
+1,1
+Γ
+1
+∼
+([avec] ˆT′+
+1,1 = ˆT+
+1,1/{±1} ≃SL(2, Z)ˆ/{±1}), qui identifie E0,3 à un sous-groupe
+ouvert d’indice 6 dans E′
+1,1 = E1,1/{±1}, et itou pour ˆ
+π0,3 dans ˆT′+
+1,1. On trouve ainsi
+un isomorphisme
+(32)
+ˆ
+π0,3
+∼→Ker (T′+
+1,1 →S3) ≃
+ Ker(T+
+1,1 →S3)
+
+/{±1}
+compatible avec les actions extérieures de Γ. On peut dire aussi qu’on a une structure
+d’extension
+(33)
+1 →ˆ
+π0,3 →T′+
+1,1 →S3 →1
+(i.e. 1 →
+ˆ
+π0,3 →SL(2, Z)ˆ/{±1} →SL(2, Z/2Z) →1) compatible avec les actions
+de Γ (Γ opérant trivialement sur S3).
+Je finis par m’apercevoir que ce qu’on obtient ici est loin de (22) – cet homomor-
+phisme (22) n’a rien d’injectif, par contre il est surjectif, et ses valeurs sont, non dans
+SL(2, Z)/{±1}, mais dans SL(2, Z) lui-même! Il faudra donc que je revienne encore
+sur une façon de donner un sens arithmético-géométrique remarquable à (22), et son ex-
+tension aux groupes profinis correspondants. Pour le moment, je m’en tiens à exploiter
+un peu (33). Tout d’abord je note que les arguments faits dans le cadre schématique
+marchent aussi dans le cas transcendant, analytique complexe, et fournissent alors
+(34)
+π0,3
+∼
+−→Ker(T′+
+1,1 →S3) = Ker
+ SL(2, Z)/{±1} →SL(2, Z/2Z)
+
+271
+
+--- G103d page 277 ---
+compatible avec (32), ou encore une suite exacte,
+(35)
+1 →π0,3 →T′+
+1,1 = SL(2, Z)/ ± 1 →S3 = SL(2, Z/2Z) →1.
+On aimerait interpréter (35) et (33), comme correspondant aux suites exactes analogues
+liées au diagramme (9), reliant π0,3 et π′
+0,3 – en identifiant π′
+0,3 à T′+
+1,1, ˆ
+π0,3
+′ à ˆT′+
+1,1. J’y
+reviendrai tantôt.
+Remarque: On peut se demander si l’homorphisme
+ˆπ0,3 →SL(2, Z)ˆ/{±1} ≃ˆT+
+1,1/{±1}
+se remonte 144Oui, on peut remonter, et c’est plus ou moins trivial…cf. plus bas… (de
+façon plus ou moins naturelle) en un homomorphisme
+ˆπ0,3 →SL(2, Z)ˆ≃ˆT+
+1,1,
+et itou pour les groupes discrets
+π0,3 →SL(2, Z) ≃T+
+1,1.
+Bien sûr, comme π0,3 et ˆπ0,3 sont libres (avec deux générateurs) on peut toujours remon-
+ter – d’exactement quatre façons d’ailleurs (qui nécessairement, dans le cadre profini,
+respectent les réseaux discrets). Mais peut-on le faire en respectant les opérations de Γ?
+Il suffirait pour cela qu’on puisse remonter U0,3 →M ′
+1,1 en U0,3 →M1,1 (NB. M1,1 est
+uneZ/2Z-gerbeaudessusdeM ′
+1,1), etjesuspecte, d’aprèsleyoga“anabélien”quej’essaye
+de développer, que l’inverse doit être vrai 145 – que tout relèvement de ˆ
+π0,3 →ˆT′+
+1,1 com-
+mutant aux opérations de Γ est défini par un tel relèvement U0,3 →M1,1. Or l’existence
+d’un tel relèvement U0,3 →M1,1 signifierait exactement l’existence d’une famille de
+courbes elliptiques sur U0,3, avec rigidification de Jacobi d’échelon 2, qui corresponde à
+l’invarianttautologiqueλ. Jedoutequ’ilenexisteune, commejedoutequelerelèvement
+en termes de groupes profinis à opération puisse se faire.
+À vrai dire, comme ˆT+
+1,1
+=
+SL(2, Z)ˆn’a plus de centre trivial, il n’est plus
+raisonnable de vouloir “tout exprimer” par les opérations extérieures de Γ sur ˆT+
+1,1, il
+144(*)
+145Pas tout fait, cf. page suivante pour une formulation plus raisonnable…
+272
+
+--- G103d page 278 ---
+faut plutôt revenir à l’extension E1,1 = EM1,1 de Γ par ˆT+
+1,1, et la question est si
+l’homomorphisme
+E0,3 −→E′
+1,1 = E1,1/{±1}
+se remonte en
+E0,3
+?
+−→E1,1,
+ce qui est plus fort que de trouver un relèvement ˆπ0,3 →ˆT+
+1,1, compatible avec les
+opérations extérieures de Γ. Pour apprécier cette différence, je note que Γ opère sur
+l’ensembleE desquatrerelèvements ˆπ0,3 →ˆT+
+1,1 (interprétéscommehomomorphismes
+extérieurs), et la question posée sous la forme faible est s’il existe un élément de E invari-
+ant par Γ. S’il n’existait pas, il y aurait en tous cas un sous-groupe ouvert de Γ, d’indice 2
+ou 4, qui laisserait invariant un élément – donc, quitte à passer à l’extension finie corre-
+spondante de Q, on trouve un relèvement, et quitte à passer à une extension un peu plus
+grande, les quatre relèvements possibles commutent à l’action extérieure de Γ. Par con-
+tre, rien ne prouve que l’on puisse trouver un “germe de relèvement” de E0,3 →E′
+1,1 en
+E♮
+0,3 →E♮
+1,1 (germes pris par rapport aux sous-groupes ouverts de E0,3 contenant ˆπ0,3,
+ou même tous les sous-groupes ouverts). L’obstruction à remonter sur E0,3 lui-même,
+i.e. à scinder une certaine extension de E0,3 par {±1}, est
+(36)
+α ∈H2(E0,3, Z/2Z),
+etrienneditquecetteclassedecohomologiepuisses’effacer, enpassantàunsous-groupe
+ouvert de E0,3.
+Mais en termes géométriques, les courbes elliptiques relatives cherchées sur U0,3 for-
+ment les sections d’un champ sur (U0,3)ét – qui est une Z/2Z-gerbe – l’obstruction se
+trouve donc dans un groupe de Brauer,
+(37)
+β ∈H2(U0,3, Z/2Z),
+ou comme U = U0,3 est une courbe algébrique affine sur un corps (il suffirait qu’elle
+ne soit pas de type 0, 0), il s’en suit que l’homomorphisme canonique (à coefficients de
+torsion quelconques)
+H∗(EU, −) −→H∗(U, −)
+est un isomorphisme. D’ailleurs, il doit être plus ou moins trivial que β est l’image de α
+– ce qui confirme l’intuition que si le relèvement est possible au niveau des groupes fon-
+damentaux profinis (arithmético-géométriques), il l’est aussi au niveau des multiplicités
+273
+
+--- G103d page 279 ---
+modulaires elles-mêmes, donc qu’on a une existence d’une courbe elliptique relative sur
+U0,3 qui…
+Il est vrai qu’il est bien connu qu’une classe de cohomologie (37) à coefficients de
+torsion s’efface, en passant à une extension finie du corps de base (Q en l’occurence). En
+fait, on a une suite spectrale
+(38)
+H∗(U0,3, Z/2Z) ⇐Ep,q
+2
+= Hp Q, Hq(U0,3, Z/2Z)
+
+,
+et ici Hq(U0,3) = 0 pour q ≥2, donc on trouve une suite exacte
+. . . E0,1
+2
+= Hq(Q, H1(U)) →E2,0
+2
+= Hq(Q, Z/2Z) →H2(U0,3) →
+→E1,1
+2
+= Hp(Q, H1(U) ≃F2
+2) →E3,0
+2
+= H3(Q, Z/2Z) →. . .
+Je me rends compte enfin que l’existence d’un relèvement – i.e. de la courbe ellip-
+tique hypothétique sur U0,3 – est tout à fait triviale, il suffit de le définir par l’équation
+y =
+p
+x(x −1)(x −λ),
+i.e.
+y2 −x(x −1)(x −λ) = F(x, y; λ) = 0,
+ce qui définit une courbe plane affine, ou passer en coordonnées projectives
+F(x, y, z; λ) = y2z −x3 + (1 + λ)x2z −λxz2 = 0.
+Je ne vais pas approfondir la question ici, dans quelle mesure ce choix est “naturel”.
+Il donne en tous cas un homomorphisme tout ce qu’il y a de précis
+(39)
+M !
+0,4 ≃U0,3 −→M1,1,
+d’où un homomorphisme d’extensions
+(39)
+1
+ˆπ0,3 = T!
+0,4
+E0,3 = N !
+0,4
+Γ
+1
+1
+ˆT+
+1,1 = Sl(2, Z)
+E1,1 = N1,1
+Γ
+1
+défini modulo automorphisme intérieur par un élément de ˆT+
+1,1 = SL(2, Z)ˆ, et au
+niveau des groupes discrets,
+π0,3 −→ˆT+
+1,1
+274
+
+--- G103d page 280 ---
+et même,
+(42)
+π0,3 ,→Γ2 = Ker
+ ˆT+
+1,1 = SL(2, Z)ˆ→S3 = SL(2, Z/2Z)
+
+(et itou pour les groupes profinis). Ici π0,3 est tel que le sous-groupe de congruence du
+deuxième membre [?], soit Γ2 soit produit direct [??] sous-groupe π0,3 et de son centre
+{±1}. Mais en fait, il y a exactement quatre sous-groupes dans Γ2 qui réalisent cette dé-
+composition. Pour ne pas faire de jaloux, on pourrait regarder l’intersection des quatre,
+qui est un sous-groupe de Γ2 d’indice un diviseur de 24=16 [?] 146; c’est l’intersection
+des noyaux de quatre homomorphismes Γ2 →Centre(Γ2) = {±1}. En tant que sous-
+groupe de π0,3, il est d’indice un diviseur de 8 [c’est vrai et c’est même trivial…] – ça
+ne m’étonnerait pas que ce soit justement le groupe des commutateur de π0,3, qui est
+d’indice 4 – il y a là toute une situation à élucider…
+Bien entendu, il faudrait aussi expliciter l’homorphisme (42) (défini modulo auto-
+morphismes intérieurs) par ses valeurs sur les générateurs l0, l1, l∞– j’y reviendrai peut-
+être tantôt 147.
+Théorème. — L’action extérieure naturelle de ΓQ sur ˆT+
+1,1, et même sur T′+
+1,1 =
+T+
+1,1/{±1}, est fidèle.
+On utilise le fait qu’on a un homomorphisme extérieur injectif
+ˆπ0,3 ,→ˆT′+
+1,1,
+compatible avec l’action de Γ, en procédant comme pour la proposition du début (où
+ˆ
+π0,3
+′ jouait le rôle de ˆT′+
+1,1).
+Corollaire. — Les homomorphismes canoniques (surjectifs)
+(43)
+ΓQ →Γ1,ν (ν ≥1),
+sont injectifs, donc des isomorphismes.
+146NB. Ça doit être le noyau de SL(2, Z) →SL(2, Z/4Z).
+147Il n’est pas clair si π0,3 est invariant en tant que sous-groupe de T+
+1,1 = SL(2, Z), i.e. stable par
+l’action extérieure de S3 sur SL(2, Z) – je présume que oui, puisque S3 agit aussi extérieurement sur
+π0,3 a priori…T+
+1,1/π0,3 serait une extension centrale intéressante de S3 par {±1}…
+275
+
+--- G103d page 281 ---
+Il suffit de le prouver pour ΓQ →Γ1,1 (puisque Γ1,1 est un quotient de Γ1,ν, ν ≥
+1…), or on a un homorphisme canonique Γ1,1 →Autext ˆT+
+1,1 et on peut considérer le
+composé,
+ΓQ →Γ1,1 →Autext ˆT+
+1,1 →Autext T′+
+1,1;
+par le théorème précédent ce composé est injectif, donc aussi ΓQ →Γ1,1, cqfd.
+Remarque. — On a vraiment l’impression, avec la proposition du début, et le ré-
+sultat précédent baptisé “théorème”, d’avoir démontré deux fois la même chose, et avec
+la même démonstration encore ! Donc il est temps, après ce détour, de s’assurer qu’il
+en est bien ainsi, i.e. que l’homorphisme ˆ
+π0,3 →ˆT′+
+1,1 qu’on vient d’utiliser s’identifie
+bel et bien à l’homomorphisme ˆπ0,3 →ˆ
+π0,3
+′, moyennant un isomorphisme convenable
+(qui reste à décrire) commutant aux actions extérieures de Γ, qu’on se proposait de con-
+struire (cf. (10) à (20)) – et on l’a perdu en route, en essayant de trouver π′
+0,3
+∼→T′+
+1,1
+par factorisation dans l’homomorphisme composé π0,3 →π′
+0,3 →T′+
+1,1 [la première
+flèche étant donnée par la surjection canonique] – et on s’est en un sens fourvoyé, car
+l’homomorphisme “naturel” π0,3 →T′+
+1,1 sur lequel on est tombé n’était pas du tout
+celui qu’on avait en vue : j’étais à côté de mes pompes. Donc il me faut revenir à la
+charge !
+276

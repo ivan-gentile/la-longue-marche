@@ -1,0 +1,296 @@
+Section: § 14. — DIGRESSION COHOMOLOGIQUE (SUR LE
+G103d pages: 71-78
+
+--- G103d page 71 ---
+§ 14. — DIGRESSION COHOMOLOGIQUE (SUR LE
+“BOUCHAGE DE TROUS”)
+Soit40 X un schéma localement noethérien, régulier de dimension 1, S un sous-schéma
+fermé réduit discret tel que ∀s ∈S, dimsS = 1 (donc S défini par une partie fermée dis-
+crète de X), U = X\S. On veut expliciter par voie galoisienne les faisceaux d’ensembles
+étales constructibles sur X tels que F|U soit localement constant. Par le tapis d’Artin sur
+les ouverts du topos, ils correspondent aux triples
+(FU, FS, ϕ)
+où FU est un faisceau constructible localement constant sur U, FS un faisceau (néces-
+sairement localement constant) et ϕ un homomorphisme
+FS
+φ
+−→j∗i∗(FU)
+(où i : U ,→X et j : S ,→X sont les inclusions). Toute condition de constructibilité
+été mis à part, un faisceau étale F sur X correspond à un tel triple — on se restreint ici
+aux F tels que FU provienne du topos fondamental BΠ1(U) de U…(il n’y a pas lieu de
+supposer FU à fibres finies pour ce qui suit).
+Soit ∀s ∈S, Os un hensélisé de OX,s, Ds = Spec Os (“disque en s”), D∗
+s = Ds −
+{s} = Spec Ks (Ks corps des fractions de Os) (“disque épointé” en s), D = ⨿s∈SDs,
+40Il vaudrait peut être mieux démarrer avec le cas purement topologique d’une surface…et faire le lien
+avec les groupes discrets.
+
+--- G103d page 72 ---
+D∗= ⨿s∈SD∗
+s. On a un diagramme commutatif
+D∗
+U
+D
+(
+S)
+X
+ρ
+i
+κ
+σ
+j0
+j
+en on voit (par Artin) que ce diagramme permet d’exprimer les faisceaux étales de X
+comme des systèmes (FU, FD, ϕ) avec FU faisceau étale sur U, FD faisceau étale “essen-
+tiellement localement constant” sur D [NB l’inclusion S →D définit une équivalence
+entre la catégorie de ces faisceaux sur D, et celle des faisceaux étales sur S] et un homo-
+morphisme de faisceaux
+FD →σ∗ρ∗FU
+ou encore
+σ∗(FD)
+φ
+−→ρ∗(FU)
+Or, si on se borne aux FU tels que FU soit lui-même essentiellement localement con-
+stant, alors les données FU, FD, ϕ ne font intervenir que des faisceaux essentiellement
+localement constants, i.e. des topos fondamentaux (multigaloisiens) associés aux sché-
+mas envisagés, donc se décrivent entièrement en termes des diagrammes
+(∗)
+BΠ1D∗
+BΠ1U
+BΠ1D
+σ
+ρ
+— d’ailleurs le cas où ϕ est un isomorphisme correspond justement au cas des faisceaux
+localement essentiellement constant sur X, i.e. de faisceaux sur BΠ1X — lequel topos
+fondamental apparaît donc comme somme amalgamée du diagramme de topos précé-
+dent, s’insérant dans le carré
+BΠ1D∗
+BΠ1U
+BΠ1D
+BΠ1X
+67
+
+--- G103d page 73 ---
+SupposonspoursimplifierU connexe, choisissonsunrevêtementuniversel eU deU, etun
+revêtement universel eD∗
+i de chaque D∗
+i — d’où un revêtement universel eDi de Di — et
+des isomorphismes (= “classes de chemins”) entre ρ!( eD∗
+i ) et eU — donc le diagramme de
+topos (*) — ou des groupoïdes fondamentaux — s’explicite en termes d’un diagramme
+(Gal(Ki/Ki))
+Ei
+E
+Γi
+(π1(U, eU) = AutU(eU))
+Gal(k(s))
+ρi
+σi
+et la donnée d’un F comme envisagé sur X revient à la donnée d’un système
+(EU, (Ei)i∈I, (ϕi)i∈I), où EU est un E-ensemble, Ei un Γi-ensemble (∀i ∈I), et ϕi
+un Ei-homomorphisme de Ei dans EU (i.e. un Γi-homomorphisme
+ϕi : Ei →Eπi
+U ,
+où πi = Ker(σi) s’insère dans la suite exacte
+1 →πi →Ei →Γi →1
+)
+Le cas où les Ei →EU sont des isomorphismes, i.e. Ei s’identifiant tous à EU, avec ac-
+tiontrivialedeπi surEU, correspondaucasoùF estessentiellementlocalementconstant
+sur X, d’où aussitôt
+π1(X) = E = π1(U)/ sous-groupe invariant engendré par les ρi(πi)
+Notre propos est celui d’un calcul galoisien (si possible) de la cohomologie de X pour les
+F envisagés.
+Soit BX,U le topos dont les faisceaux sont les triples (FU, FD, ϕ) comme dessus, qui
+s’envoie donc dans le topos BΠ1X, correspondant aux couples pour lesquels ϕ est un
+isomorphisme, et reçoit le topos Xét :
+Xét
+f
+−→BX,U
+g
+−→BΠ1X
+On se pose la question
+68
+
+--- G103d page 74 ---
+a) Calcul “explicite”, en termes de cohomologie des groupes profinis, de la coho-
+mologie du topos abracadabra BX,U. (NB. La cohomologie de BΠ1X n’est autre
+que la cohomologie galoisienne profinie de π1(X) = E/ . . . calculée plus
+haut…).
+b) Vérifier si pour un faisceau de torsion F sur BX,U l’homomorphisme canonique
+H∗(BX,U, F) →H∗(Xét, f ∗F)
+est un isomorphisme.
+NB. Jusqu’à maintenant, l’hypothèse dim X = 1 n’a pas servi, ni l’hypothèse
+noethérienne — seulement le fait que S soit partie fermée discrète, X connexe…Pour
+les calculs qui suivent, correspondants du cas où les Os sont des jauges à corps résiduels
+k(s) de caractéristique 0, on va supposer que
+πi ≃ˆZ
+(non canoniquement)
+— en fait, par la théorie Kummérienne on a un système de systèmes locaux de Tate TE
+(sur E), Ti (sur Γi), et des Ei-isomorphismes TE ≃Ti (i.e. un TX sur lequel opère
+˜E = E\…) et on aura un isomorphisme canonique Kummérien
+Ti
+πi
+∼
+κi
+On aimerait pouvoir paraphraser, sur BX,U, la suite exacte de cohomologie bien connue
+→Hi(X, F) →Hi(U, F) →Hi+1
+S (X, F) →. . .
+relative à l’ouvert U du topos X, et son “complémentaire” fermé S. Or, tout comme X
+s’insère dans un diagramme de topos
+D∗
+ét
+Uét
+Dét
+Sét,
+Xét
+69
+
+--- G103d page 75 ---
+de même BX,U s’insère dans
+BΠ1D∗
+BΠ1U
+BΠ1D
+BΠ1S,
+BX,U
+≈
+[NB. Les lim
+←−finies et les lim
+−→quelconques dans BX,U i.e. pour les (FU, FD, ϕ),
+se calculent “termes à termes”] Je dis que BΠ1U →BX,U s’identifie à un morphisme
+d’induction, relatif à l’objet (noté encore U par abus de notation) de BX,U défini par
+FU = faisceau final eU,
+FD = faisceau initial ∅D
+(et ϕ étant alors fixé !). En effet, les objets de BX,U au dessus de U s’identifient aux
+(FU, FD, ϕ) avec FD = ∅D (ce que fixe ϕ !) donc ils forment une catégorie équiva-
+lente à celle des FU, i.e. à BΠ1U. On voit que le topos résiduel (s’identifiant à la catégorie
+des F = (FU, FD, ϕ) tels que FU = eU faisceau final, s’identifie de même à la catégorie
+BΠ1D des fD — le foncteur canonique “ image inverse sur BΠ1D de l’image directe sur
+BΠ1U” n’étant autre [que] σ∗ρ∗, de sorte que’on retrouve la description typique d’Artin
+d’un topos déduit par “recollement” d’un ouvert et du fermé complémentaire.
+On trouve donc une suite exacte
+→Hi(BX,U, F) →Hi(BΠ1U, FU) →Hi+1
+S(ou D)(BX,U, F) →. . .
+s’envoyant dans la suite exacte analogue relative à Xét, Uét, Sét. (On n’a toujours pas
+utilisé d’hypothèse spéciale sur S…).
+Pour vérifier que l’on a des isomorphismes au niveau des Hi(BX,U, F)
+→
+Hi(Xét, F), il suffit par le lemme des cinq de le prouver au niveau des Hi(BΠ1,U, F) →
+Hi(Uét, F) [i.e. vérifions que la cohomologie de Uét “se calcule galoisiennement”] et au
+niveau des Hi
+S. Regardons d’abord ces derniers — on a
+H0
+S(BX,U, F) = ensemble des sections de F [i.e. des couples d’une section de FU et
+d’une de FD se correspondant par ϕ, i.e. d’un élément x de EU invariant par E, et des
+xi ∈Ei invariants par les Γi, tels que ∀i x = ϕi(xi)] tels que X = 0 = Q
+i(Ker(Ei →
+EU))
+70
+
+--- G103d page 76 ---
+On constate que ce foncteur se factorise par le foncteur H0
+S relatif à “l’inclusion”
+analogue
+BΠ1D
+|{z}
+remplaçant Π1U
+→BD,D∗
+et les Hi
+S sur DX,U se calculent comme ceux dans la situation locale BD,D∗— où on
+trouve le calcul habituel41 en termes de l’homomorphisme de groupes Ei →Γi. Mais
+dans le cas actuel, l’hypothèse dimsX = 1 aux points de s ∈S, implique la situation du
+topos localisée D∗
+ét ,→Dét est déjà entièrement définie en termes des topos fondamen-
+taux i.e. le topos BD,D∗est équivalente à Dét — or les Hi
+S(Xét, F) se calculent bien sur
+Dét…On trouve donc
+Proposition42 : L’homomorphisme de suites exactes de cohomologie envisagé est un iso-
+morphisme, pourvu que l’on sache que l’homomorphisme Hi(E, FE) →Hi(Uét, FU) est
+un isomorphisme pour tout i (FU faisceau étale sur Uét défini par un groupe FE sur lequel
+E = π1(U) opère).
+Exemple : OK si U est une courbe affine sur k algébriquement clos F premier à car
+(car OK pour i = 0, 1, et pour i = 2 les deux [membres] sont nuls (la cohomologie
+galoisienne, car le groupe fondamental premier à p est libre…) — d’où on déduit le cas
+analogue pour U affine sur k quelconque, puis même si U n’est pas affine mais simple-
+ment quasi-projective ?
+Nous nous intéressons maintenant au cas où X projective (connexe) sur k al-
+gébriquement clos, on voit donc que :
+a) Si S = ∅i.e. X = U, la cohomologie de U (à coefficients dans des systèmes
+locaux) est celle de π. Donc on a un isomorphisme canonique
+H2(π, T) ≃H2(X, T)
+(≃ˆZ)
+(avec [un] grain de sel en caractéristique p > 0)
+41que j’ai un peu oublié !
+42Corollaire : Dans ce cas la cohomologie de X à coefficients dans un FX localement constant se calcule
+également ? Non, à cause du genre 0 !! Dans le cas de courbes projectives lisses de genre ̸= 0 il faut un
+argument spécial.
+71
+
+--- G103d page 77 ---
+b) Si S ̸= ∅, les Hi
+!(U, −) se décrivent et calculent par voie galoisienne, en termes
+de groupes à lacets, permettant de réconstituer la situation
+BΠ1D∗
+BΠ1U
+BΠ1D
+(= topos discret défini par S = I)
+BU,X
+en notant que le composant BΠ1D∗
+i n’est autre que BLi (avec les notations du
+numéro précédent). On trouve alors des isomorphismes canoniques (par [calculs]
+locaux)
+H2
+si(BU,X, Li) ≃ˆZ
+i.e.
+H2
+si(BU,X, ˆZ) ≃L⊗−1
+i
+(si g ̸= 0)
+H2
+si(BU,X, ˆZ)
+∼
+−→H2(X, ˆZ) ≃H2(π, ˆZ)
+d’où en mettant ensemble, des isomorphismes canoniques
+Li ≃H2(π, ˆZ)⊗−1
+d’où en mettant ensemble43, des isomorphismes canoniques
+Li ≃H2(π, ˆZ)⊗−1
+On constate que les composés
+Tπ
+∼
+−→Li →H2(π, ˆZ)⊗−1
+nedépendentpasduchoixdei, desortequelemoduled’orientationTπ dugroupe
+profini à lacets π s’identifie au dual de H(π, ˆZ) (si g ̸= 0).
+Considérons maintenant un homomorphisme de groupes à lacets π′
+f
+−→π, I′
+0
+τ
+−→
+I associé à un isomorphisme Tπ′ ≃Tπ et une application degré d : I′
+0 →N (NB.
+i′ ∈I′ \ I′
+0 →f(L′
+i′) = (1)).
+43Mais dans tous les cas (même si g = 0, du moment qu’on n’a pas ν = 0) on trouve H2
+! (Bπ,U, ˆZ) ≃
+ˆT ⊗−1
+π
+canoniquement, d’où une description cohomologique des modules des orientations, commune au
+cas sans trous et avec trous…
+72
+
+--- G103d page 78 ---
+On voudrait en déduire un diagramme de morphismes de topos
+BΠ1U′
+BX′,U′
+BΠ1X′
+BΠ1U
+BX,U
+BΠ1X
+et un homomorphisme trace sur la cohomologie à supports propres de U ′, U (définie en
+termes de cohomologie sur BX′,U′, BX,U relativement) qui induise un isomorphisme
+H2
+! (U ′, bZ) →H2
+! (U, bZ)
+qui soit justement (contragrédiant de) l’isomorphisme des modules d’orientations asso-
+cié à f…
+73

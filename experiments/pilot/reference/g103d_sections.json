@@ -1,0 +1,202 @@
+{
+  "1": {
+    "start": 6,
+    "end": 9,
+    "title": "§ 1. — TOPOS MULTIGALOISIENS"
+  },
+  "2": {
+    "start": 10,
+    "end": 11,
+    "title": "§ 2. — APPLICATIONS AUX REVÊTEMENTS DES TOPOS"
+  },
+  "3": {
+    "start": 12,
+    "end": 12,
+    "title": "§ 3. — VARIANTES “PRO-MULTIGALOISIENNES”"
+  },
+  "4": {
+    "start": 13,
+    "end": 14,
+    "title": "§ 4. — COMPLÉMENT-REMORDS"
+  },
+  "5": {
+    "start": 15,
+    "end": 18,
+    "title": "§ 5. — INTRODUCTION DU CONTEXTE ARITHMÉTIQUE;"
+  },
+  "6": {
+    "start": 19,
+    "end": 20,
+    "title": "§ 6. — ANALYSE LOCALE DE (X, S) EN UN s ∈S"
+  },
+  "7": {
+    "start": 21,
+    "end": 37,
+    "title": "§ 7. — REFORMULATION “BORDÉLIQUE” DE LA"
+  },
+  "8": {
+    "start": 38,
+    "end": 45,
+    "title": "§ 8. — RÉFLEXIONS TAXONOMIQUES"
+  },
+  "9": {
+    "start": 46,
+    "end": 49,
+    "title": "§ 9. — STRUCTURE TANGENTIELLE EN LES s ∈S"
+  },
+  "10": {
+    "start": 50,
+    "end": 51,
+    "title": "§ 10. — AJUSTEMENT DES HYPOTHÈSES (REMORDS)"
+  },
+  "11": {
+    "start": 52,
+    "end": 55,
+    "title": "§ 11. — CONDITIONS SUR LES SYSTÈMES DE GROUPOÏDES"
+  },
+  "12": {
+    "start": 56,
+    "end": 65,
+    "title": "§ 12. — L’ANALOGIE TOPOLOGIQUE"
+  },
+  "13": {
+    "start": 66,
+    "end": 68,
+    "title": "§ 13. — RETOUR AU CAS ARITHMÉTIQUE"
+  },
+  "13 bis": {
+    "start": 69,
+    "end": 70,
+    "title": "§ 13 bis. — RETOUR SUR LA NOTION DE GROUPE À LACETS"
+  },
+  "14": {
+    "start": 71,
+    "end": 78,
+    "title": "§ 14. — DIGRESSION COHOMOLOGIQUE (SUR LE"
+  },
+  "14 bis": {
+    "start": 79,
+    "end": 81,
+    "title": "§ 14 bis. — OÙ ON REVIENT SUR LES MORPHISMES MIXTES"
+  },
+  "15": {
+    "start": 82,
+    "end": 92,
+    "title": "§ 15. — RETOUR SUR LE CAS TOPOLOGIQUE"
+  },
+  "16": {
+    "start": 93,
+    "end": 102,
+    "title": "§ 16. — BOUCHAGE ET FORAGE DE TROUS : PRÉLIMINAIRES"
+  },
+  "17": {
+    "start": 103,
+    "end": 104,
+    "title": "§ 17. — COMPLÉMENTS SUR LES OPÉRATIONS DE GROUPES"
+  },
+  "18": {
+    "start": 105,
+    "end": 113,
+    "title": "§ 18. — FORAGE DE TROUS ; APPLICATION AUX ACTIONS"
+  },
+  "19": {
+    "start": 114,
+    "end": 130,
+    "title": "§ 19. — TOUR DE TEICHMÜLLER"
+  },
+  "20": {
+    "start": 131,
+    "end": 139,
+    "title": "§ 20. — DIGRESSION : DESCRIPTION 2-ISOTOPIQUE DE LA"
+  },
+  "21": {
+    "start": 140,
+    "end": 146,
+    "title": "§ 21. — LIEN AVEC LES ESPACES DE TEICHMÜLLER"
+  },
+  "23": {
+    "start": 147,
+    "end": 155,
+    "title": "§ 23. — RETOUR SUR LES SURFACES À GROUPES"
+  },
+  "24": {
+    "start": 156,
+    "end": 162,
+    "title": "§ 24. — ESSAI DE DÉTERMINATION DE A0Γ."
+  },
+  "25": {
+    "start": 163,
+    "end": 169,
+    "title": "§ 25. — GROUPES DE TEICHMÜLLER SPÉCIAUX"
+  },
+  "25 bis": {
+    "start": 170,
+    "end": 174,
+    "title": "§ 25 bis. — CAS DES DEUX GROUPES. RETOUR SUR LES"
+  },
+  "26": {
+    "start": 175,
+    "end": 185,
+    "title": "§ 26. — GROUPES DE TEICHMÜLLER PROFINIS"
+  },
+  "27": {
+    "start": 186,
+    "end": 192,
+    "title": "§ 27. — CHANGEMENT DE TYPE (g, ν): a) BOUCHAGE DE"
+  },
+  "28": {
+    "start": 193,
+    "end": 200,
+    "title": "§ 28. — CHANGEMENT DE TYPE (g, ν) (SUITE): PASSAGE À"
+  },
+  "29": {
+    "start": 201,
+    "end": 207,
+    "title": "§ 29. — CRITIQUE DE L’APPROCHE PRÉCÉDENTE"
+  },
+  "30": {
+    "start": 208,
+    "end": 212,
+    "title": "§ 30. — PROPRIÉTÉS DES Ng,ν, Γg,ν"
+  },
+  "31": {
+    "start": 213,
+    "end": 214,
+    "title": "§ 31. — DIGRESSION SUR LES RELÈVEMENTS D’UNE"
+  },
+  "32": {
+    "start": 215,
+    "end": 233,
+    "title": "§ 32. — RETOUR SUR LES ASPECTS ARITHMÉTIQUES DU"
+  },
+  "33": {
+    "start": 234,
+    "end": 251,
+    "title": "§ 33. — DIGRESSION TOPOLOGIQUE"
+  },
+  "33bis": {
+    "start": 252,
+    "end": 256,
+    "title": "§ 33bis. — ÉTUDE DES REVÊTEMENTS FINIS - RELATION"
+  },
+  "34": {
+    "start": 257,
+    "end": 260,
+    "title": "§ 34. — DESCRIPTION HEURISTIQUE PROFINIE DE LA"
+  },
+  "35": {
+    "start": 261,
+    "end": 267,
+    "title": "§ 35. — L’INJECTIVITÉ DE ΓQ →Autextlac(ˆπ0,3)"
+  },
+  "36": {
+    "start": 268,
+    "end": 281,
+    "title": "§ 36. — L’ISOMORPHISME ΓQ"
+  },
+  "37": {
+    "start": 282,
+    "end": 305,
+    "title": "§ 37. — THÉORIE DES MODULES DES COURBES ELLIPTIQUES"
+  }
+}

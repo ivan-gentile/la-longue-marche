@@ -1,0 +1,92 @@
+Section: § 6. — ANALYSE LOCALE DE (X, S) EN UN s ∈S
+G103d pages: 19-20
+
+--- G103d page 19 ---
+§ 6. — ANALYSE LOCALE DE (X, S) EN UN s ∈S
+On s’intéresse au cas où dims(X) = 1, i.e. où s n’est pas point isolé dans X.
+Soit Os le hensélisé (ou le complété, si on y tient) de OX,s, Ks son corps de fractions,
+D∗
+s = Spec(Ks), — on identifie s à Spec k(s) (k(s) est le corps résiduel de l’anneau-
+jauge Os). Considérons Ds = Spec(Os) (“disque arithmétique relatif à k(s)”), donc
+D∗
+s = Ds \ {s} = (“disque épointé”) →Ds, on a :
+(6.1)
+Π1(D∗
+s)
+Π1(Ds)
+Π1(K)
+Π1(s)
+σs
+js
+ps
+is
+qs
+surj. sur Hom
+fidèle
+≈
+Pour le choix d’un point géométrique ξs de D∗
+s sur K/K (i.e. d’une clôture algébrique
+Ks de Ks et d’une K-injection K ,→Ks), ce diagramme de groupoïdes se reflète en un
+homomorphisme de groupes 7 de
+(6.2)
+π1(D∗
+s, ξs)
+π1(k(s), ξs)
+Γ
+Gal(Ks/Ks)
+Gal(k(s)/k(s))
+≃
+surjectif
+injectif
+≃
+dont le noyau, on le sait par Kummer, est canoniquement isomorphe à T(ks) ≃T(Ks)
+[≃T(K)]. On veut exprimer la donnée de cet isomorphisme privilégié comme une
+7NB Le choix de Ks implique un choix de ks — c’est la flèche pointillée (6.1).
+
+--- G103d page 20 ---
+structure supplémentaire sur (6.1) — i.e. sur le groupoïde Π1(D∗
+s) sur Π1(s) (ou sur
+Π1(K)). On peut le dire ainsi. Si à tout ξ ∈Π1(D∗
+s), on associe le noyau de
+Aut(ξ) →Aut(i(ξ))
+(qui est aussi le noyau des composés
+Aut(ξ) →Aut(i(ξ)) →Aut(ps(ξ) = qs(is(ξ)))
+on trouve un groupe abélien, qui ne dépend (à isomorphisme canonique près) que de
+i(ξ) = ξ′ [ceci, et la suite de la phrase, marche chaque fois qu’on a un foncteur de
+groupoïdes connexes à noyau abélien et surjectif sur les Hom], et pour ξ′ variable forme
+un système local sur Π1(Ds), qu’on peut appeler le π1 relatif du groupoïde Π1(D∗
+s) sur
+le groupoïde Π1(Ds). Ceci dit, on a un isomorphisme de systèmes locaux de groupes
+π1(Π1(D∗
+s) sur Π1(Ds)) ≃q∗
+s(TK)
+où TK est le système local de Tate sur K.
+Posons maintenant
+DS = ⨿s∈SDs
+(“multidisque arithmétique en S”)
+D∗
+S = ⨿s∈SD∗
+s
+(“multicouronne arithmétique en S”)
+On a un homomorphisme de groupoïdes
+Π1(D∗
+S)
+σs
+−→Π1(S)
+(
+js
+−→Π1(K))
+et un isomorphisme canonique
+π1(Π1(DS)/Π1(S)) ≃j∗
+S(T (K))
+Ceci posé, on a aussi un morphisme
+D∗
+S
+ρS
+−→X \ S
+induisant
+Π1(D∗
+S)
+Π1(ρS)
+−−−−→Π1(X \ S).
+15

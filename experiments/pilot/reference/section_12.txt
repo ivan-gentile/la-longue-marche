@@ -1,0 +1,362 @@
+Section: § 12. — L’ANALOGIE TOPOLOGIQUE
+G103d pages: 56-65
+
+--- G103d page 56 ---
+§ 12. — L’ANALOGIE TOPOLOGIQUE
+Soit X une surface (topologique) compacte orientable, S une partie finie de X. Si X est
+connexe, on considère l’ensemble ω de ces deux orientations, on l’utilise pour tordre le
+groupe Z, d’où un groupe
+T = Z ∧±1 ω
+isomorphe (non canoniquement) à Z. Plus généralement, supposons donné un tel
+groupe T, i.e. un ω ∈Ob Ens2, une T-orientation de X sera par définition un élé-
+ment de l’ensemble Ob(X) ∧±1 ω [dans le cas précédent, X sera donc canoniquement
+T-orienté…]
+Considérons le groupoïde fondamental de X \ S = U soit ΠU, et le groupoïde
+fondamental ΠD∗des germes d’espaces de X autour de S, privé de S (groupoïde des
+germes de revêtements universels de X \ S au voisinage de S). On a donc un foncteur
+canonique
+ΠD∗→ΠU
+et d’autre part, si X est T-orienté, on a une structure supplémentaire intéressante sur le
+groupoïde ΠD∗: le système local de ses π1 est canoniquement isomorphe à T.
+Associant à tout X T-orienté le système
+ΠD∗→ΠX,
+κ : T(ΠD∗) ≃π1(ΠD∗/e),
+on trouve une 2-équivalence entre la 2-catégorie isotopique des couples (X, S) d’une
+variété compacte T-orientée (pour les homéomorphismes à isotopie près…), et de la 2-
+catégorie des systèmes précédents (pour les équivalences) qui satisfont les conditions
+
+--- G103d page 57 ---
+a) π0(ΠD∗), π0(ΠX) finis
+b) Pour toute composante connexe de ΠU, soit ΠU0, et la partie ΠD∗
+0 au-
+dessus, explicitant la situation groupoïde par un groupe π, et une famille
+d’homomorphisme T
+κi
+−→π (NB le tout dépendant de choix, mais π étant in-
+trinsèque comme groupe extérieur, et les κi comme homomorphismes extérieurs
+— définissant une “T-structure à lacets sur S” —) on a ce qui suit :
+il existe générateur g ∈T (i.e. g ∈T ∗) et un ordre i1, . . . , iν sur l’ensemble I, des
+conjugués li des κi(g), et g ∈N et des xα, yα ∈π(1 ≤α ≤g) tels que l’on ait
+(
+gY
+α=1
+[xα, yα])
+νY
+i=1
+li = 1
+et que ceci soit une relation de définition de π.
+Il y a cependant un grain de sel pour I = ∅(auquel cas T ne sert à rien apparemment
+dans la description groupoïde de (X, S) = (X, ∅) = X) il faut alors, au lieu des don-
+nées “kummériennes” κ, se donner un isomorphisme29
+H2(π, Z)
+κ≃T
+Enfin, il faut (même avec ce grain de sel) exclure le cas X = S2, S = ∅(en tant que
+composante connexe) — i.e. du coté groupes, le cas d’une composante connexe de ΠU
+avec π = (1) et I = ∅. Si je me rappelle bien, il n’y a pas lieu d’exclure (S2, pt) (i.e.
+X \ S = U ≃R2 ≃E1
+C où pourtant on a π = 0. Mais sauf dans ces deux cas
+(correspondant au cas g = 0, ν = 1) l’homomorphisme κi : T →π est injectif. Si
+T = Z, la donnée des κi équivaut à celle d’éléments li ∈π, et on retrouve la définition
+usuelle des structures à lacets.
+Ceci est explicité dans la thèse de Yves Ladegaillerie — ce qui y manque, est (entre
+autre) la considération de flèches entre (X, S) autres que des homéomorphismes (mod-
+ulo isotopies) ; par exemple des applications X′
+f
+−→X telles que S′ = f −1(S) [et que
+X′ soit étale sur X\S, si on y tient], ce qui se ramène au cas précédent - le cas plus général
+où on suppose seulement que X′ est un revêtement ramifié de X (pouvant être ramifié
+29Il faut introduire ceci comme donnée supplémentaire dans la définition des groupes à lacets.
+L’exclusion des cas X0 ≃S2 (dans le cas S = ∅) est alors particulièrement convaincante.
+52
+
+--- G103d page 58 ---
+aussi en dehors de S′) et S′ ⊃f −1(S) (mais S′ pouvant être plus grand) demanderait
+une étude soigneuse, avec une notion ad-hoc de l’isotopie…
+Une autre direction importante (notamment pour l’étude du cas non orienté, non
+orientable) est l’introduction de groupes finis d’homéomorphismes, ne respectant pas
+nécessairement l’orientation. Pour traiter le cas du changement d’orientation, notons
+quedansladescriptiongroupoïdale(ΠD∗→ΠU, κ)d’une(X, S)T-orientée, lepassage
+à l’orientation opposée s’exprime en gardant tel que ΠD∗→ΠU, et en remplaçant κ par
+κ = κ−1
+κ(ξ) = κ(−ξ) = κ(ξ)−1
+(si T = Z, sur le système (π, (li)), cela revient à remplacer les li par les l−1
+i …)30
+Soit donc Γ un groupe (a priori pas nécessairement fini) qui opère sur (X, S) donc
+sur U = X \ S et sur ΠU, ΠD∗. On trouve alors des groupoïdes fondamentaux mixtes
+par la construction bien connue
+ΠD∗,Γ →ΠU,Γ →Πe,Γ
+(où Πe,Γ est la catégorie des Γ-torseurs i.e. des objets 1-connexes dans Γ −Ens) corre-
+spondant aux foncteurs en sens inverse
+Γ −revêtement étale de D∗←−Γ −revêtement étale de U ←−Γ −Ens .
+Les composantes connexes de ΠD∗,Γ correspondent aux orbites de Γ dans S = π0(ΠD∗),
+et même pour celles de ΠU,Γ. Le cas ΠU,Γ connexe i.e. le topos ˆΠU,Γ connexe est celui où
+Γ transitif sur π0(U) ≃π0(X) — quitte à remplacer X par une composante connexe
+X0, et Γ par le sous-groupe Σ ⊂Γ qui le stabilise, on serait ramené (pour l’étude des
+topos ˆΠU,Γ et des morphismes de topos
+ˆΠD∗,Γ →ˆΠU,Γ →(ˆΠe,Σ →)ˆΠe,Γ
+au cas de (X0, S0, Σ). Mais l’analogie que j’ai en vue le cas “arithmétique” prend cette
+réduction inopportune dans le cas général (cas dans le cas arithmétique, on ne se borne
+pas non plus au cas où Σ = Γ i.e. E →Γ surjectif, i.e. la composante connexe X
+géométriquement connexe sur K). Notons ici que (X, S, Γ) se récupère à partir des
+(X0, S0, Γ0 = Σ) comme somme amalgamée X = X0 ∧Σ Γ…
+30et itou (si I = ∅) pour κ : T ≃H2(π, Z) remplacé par −κ.
+53
+
+--- G103d page 59 ---
+Quand on exprime (pour ΠU,Γ connexe) la situation en termes de théorie de groupes,
+on trouve donc un groupe fondamental mixte
+EU,Γ = π1(U, Γ)
+et un homomorphisme
+EU,Γ →Γ
+surjectif si et seulement si U connexe (on a Γ/Σ ≃π0(U)), enfin un ensemble d’indices
+I (≃S/Γ ≃π0(ΠD∗,Γ)) et des groupes fondamentaux mixtes.
+Ei ≃π1(D∗
+i , Γ) ≃π1(D∗
+i,0, Σi)
+où D∗
+i,0 est une composante connexe du multidisque troué D∗
+i , (correspondant au choix
+d’unsi,0 ∈S)etoù Σi ⊂Γ estsonstabilisateur(i.e. lestabilisateurde si,0 dansΓ, quiest
+(si Γi est fini et opère fidèlement au voisinages de si) un groupe cyclique ou dièdral…On
+trouve donc, si X est T-orientée, une extension de Γi,0 par T, l’homomorphisme Ei →
+Σi ,→Γi étant induit bien sûr via EU,Γ →Γ et Ei →EU,Γ.
+Il faut encore lier l’action de Γ sur X à l’orientation de X — pour ceci on suppose
+donné un caractère
+χ : Γ →Z∗= {±1}
+et on exige que pour g ∈Γ, gX conserve l’orientation si χ(g) = 1, la renverse si χ(g) =
+−1. Ceci implique que l’on a un isomorphisme
+π1(ΠD∗,Γ/Πe,Γ)
+|
+{z
+}
+système local des noyaux des π1(ξ)→π1(φρ(ξ)) pour ξ∈Ob ΠD∗,Γ
+T
+∼
+κΓ
+T étant considéré comme système local sur ΠΓ,e i.e. comme Γ-groupe, grâce à l’action
+de Γ via le caractère χ. Il revient au même de dire que ∀i ∈I, l’application
+κi : T
+∼
+−→Li = Ker(Ei →Γ)
+en tant que homomorphisme de T dans Ei, est compatible avec l’action de Ei (opérant
+sur T via χpi (pi : Ei →Γ)), et sur lui même par automorphisme intérieure…)
+Si on exclut le cas où (X0, S0) est isomorphe à (S2, ∅) ou (S2, 1 pt) (i.e. le cas π =
+0), les κi : T →π sont injectifs, donc aussi les Ei →EU,Γ, donc les Ei peuvent être
+considérés comme des sous-groupes de EU,Γ.
+54
+
+--- G103d page 60 ---
+Iciilseraitparticulièrementcontre-indiqué(mêmesionsupposeΣ = Γi.e. X = X0
+i.e. X connexe) de supposer que les Γi sont égaux à Γ i.e. que les s ∈S sont fixés par Γ !
+Commelecentredeπ estréduità1(sionexceptelecas(X0, S0) ≃(S2, deuxpoints)
+i.e. U0 ≃C∗— cas de la couronne —), la donnée d’une extension de Σ (⊂Γ) par π
+revient (à isomorphisme unique près) à la donnée d’un homomorphisme
+Σ →Autext(π)
+E se reconstitue comme image inverse de l’extension
+1 →π →Aut(π) →Autext(π) →1.
+Mais ici les automorphismes extérieures relatifs aux α ∈Σ respectent la structure à lacets
+de π, modulo le signe χ(α) — i.e. pour g ∈E, et s ∈S ∃α ∈pi et s′ ∈S (s′ unique
+!) tels que
+int(g)κs(ξ) = int(α)κs′(χ(p(g))ξ)
+∀ξ ∈Γ, i.e.
+int(α−1g)κs(ξ) = κi(χ(p(g))ξ)
+Ainsi, l’opération de Σ sur S0 (donc de Γ sur S = S0 ∧Σ Γ) est connue, par l’opération
+extérieure de Σ ⊂Γ sur π muni de sa structure à “T-lacets” (i.e. les homomorphismes
+extérieures κs : T →π) — donc aussi I = S0/Σ ≃S/Γ. Peut-on reconstituer Ei
+(i ∈I) à partir de la structure d’extension ? On voit, en vertu des choix faits, que si
+i ∈I (donc i une orbite de Σ dans S0) ∃s ∈i tel que (Ker Ei →Γ) ne soit autre que
+Ls = κs(T), et on a donc Ei ⊂NormE(Ls), mais on a
+NormE(Ls) ∩π = Normπ(Ls) = Ls = Ei ∩π,
+et d’autre part l’image de NormE(Ls) dans Σ ⊂Γ n’est inclus dans Σs = stabilisateurs
+de s dans Σ = Image de Ei dans Σ, donc en résumé
+Ei = NormE(Ls)
+Inversement, la donnée de E →Γ et des Ei, κi : T →Ei redonne la structure à lacets
+de π, en prenant les κi et tous les conjugués extérieures distincts par les α ∈Σ (modifiés
+par χ(α)…).
+Donc la donnée de la situation E
+p
+−→Γ, Ei ,→E (famille de sous-groupes, chacun
+défini modulo conjugaison dans E) équivaut à la donnée de
+55
+
+--- G103d page 61 ---
+a) π = Ker p, avec sa structure à T-lacets (ensemble fini d’homomorphismes ex-
+térieurs de T dans π)
+b) Un sous-groupe Σ ⊂Γ, et un homomorphisme
+Σ
+Teichmüller étendu de π
+(automorphismes extérieurs de π,
+respectant la structure à lacets modulo signe)
+compatible avec le caractère χ|Σ et le caractère “signe” sur Teichmüller étendu.
+En fait, (X, S, Γ) où (U, Γ) ne définit π que comme groupe extérieur à T-lacets,
+sur lequel Γ opère de façon compatible avec χ.
+En résumé, on a un foncteur canonique
+Catégorie isotopique des (X, S, Γ), X surface compacte T-orientée, S partie discrète, Γ
+opérant par χ-automorphisme (γ ∈Γ respectant l’orientation si χ(γ) = +1, la renversant
+sinon), Γ transitif sur π0(X), et si (X0, S0) est une composante connexe de (X, S), on veut
+que si X0 ≃S⊭on ait card S ≥3
+Catégorie des groupes extérieurs à T −lacets π, π non commutatif (i.e. π ̸= 0, Z) sur
+lesquels un sous-groupe Σ ⊂Γ de Γ opère.
+(Cette description étant équivalente à une description en termes de système de groupoïdes
+ΠD∗,Γ →ΠU,Γ →Πe,Γ et κ . . . , plus conceptuelle dans certains contextes).
+Je présume que la démonstration du fait que ce foncteur soit pleinement fidèle ne fasse
+pas de difficultés essentielles31, en utilisant ce qui est connu pour Γ = 1. Mais le fait
+que, pour Γ groupe fini donné, il soit essentellement surjectif est un problème ouvert
+sur lequel les gens sèchent. Bien sûr on peut supposer Σ = Γ, et Γ ⊂Teichmüller
+étendu et la question est si tout sous-groupe fini de Teichmüller étendu se réalise comme
+groupe opérant sur (X0, S0), de façon essentiellement unique. Plus précisément, si A =
+groupe des homéomorphismes (ou difféomorphismes, si X0 est différentiable) de X0,
+31Ca vaudrait drôlement le coup de le faire très soigneusement…
+56
+
+--- G103d page 62 ---
+A◦sa composante connexe [neutre] (NB A◦est contractile dans le cas anabélien) donc
+A/A◦= Tg,ν (groupe de Teichmüller pour genre g et ν trous), la question revient à
+ceci si pour tout homomorphisme d’un groupe fini Σ dans Tg,ν, (on peut supposer Σ ⊂
+Tg,ν), celui-ci se relève en un homomorphisme dans A, et si deux tels relèvements sont
+conjugués par un a ∈A◦(isotopie au sens strict de deux relèvements…).
+Ayant aboutit à une réinterpretation tellement simple de la 1-catégorie (“1-
+isotopique”) déduite de la 2-catégorie des systèmes
+(ΠD∗,Γ →ΠU,Γ →Πe,Γ, κ)
+en termes de groupes extérieurs à lacets π [munis d’un ensemble d’homomorphismes ex-
+térieurs κi : T →π, et à défaut d’un κ : T →H2(π, Z) (pour bien faire, il faudrait
+écrire T (⊗−1) ≃H2(π, Z), mais ici on a un isomorphisme canonique T ⊗−1 ≃T i.e.
+T ⊗2 ≃Z…)], la question se pose comment récupérer, (à équivalence définie à isomor-
+phisme unique près) ce diagramme, en termes de κ ; tout revient à la description des
+catégories ΠD∗,Γ et ΠU,Γ et des deux foncteurs ΠD∗,Γ →ΠU,Γ, ΠU,Γ →Πe,Γ ; ou ce qui
+revient au même, des topos (multigaloisiens) et morphismes de topos correspondants.
+a) Description de ΠU,Γ et de ΠU,Γ →Πe,Γ.
+Soit plus généralement π un groupe extérieur dont le centre soit trivial (ceci correspond
+à l’hypothèse anabélienne !), montrons comment on lui associe une topos classifiant Bπ,
+qui (comme catégorie de faisceaux) sera Ens(π)) de façon “fonctorielle” (pour les iso-
+morphismes). Tout revit à voir comment, à une classe de conjugaison d’isomorphismes
+π′
+u
+−→π
+on associe un foncteur “image inverse” Ens(π) →Ens(π′), défini à isomorphisme
+unique près. Considérons pour tout u de la classe θ, le foncteur “u-restriction des opéra-
+tions”
+Ens(π)
+u∗
+−→Ens(π′)
+[qui définit donc, [?] (u−1)∗, une équivalence de topos
+Bπ′
+Bπ
+]
+≈
+u•
+On va, entre ces équivalences pour u ∈θ, définir un système transitif d’isomorphismes
+(ce qui permet donc de les identifier entre eux !).
+57
+
+--- G103d page 63 ---
+Soit u, u′ ∈θ, d’où u∗, u
+′∗; on a par hypothèse un g ∈π tel que u′ = int(t) ◦u,
+de plus g est déterminé module un élément de Centrπ u(π′) = Centr(π) = 1, donc ici
+g est unique. Mais g peut servir à définir un isomorphisme fonctoriel
+iu′,u : u∗
+∼
+−→u
+′∗
+en prenant, pour E ∈Ob Ens(π),
+iu′,u(E) : u∗(E) →u
+′∗(E)
+iu′,u(E) = gE.
+NB Le raisonnement marche pour toute classe de conjugaison d’homomorphismes de
+groupes π′ →π (i.e. tout homomorphisme extérieur) dont le centralisateur dans π est
+réduit à 1 (ce qui pour un épimorphisme se réduit à l’hypothèse Centr(π) = 1)32.
+Si maintenant un groupe Σ opère sur le groupe extérieur π, alors par le résultat précé-
+dent on peut dire qu’il opère aussi sur le topos Bπ, d’où un topos Bπ,Γ. On peut dire aussi
+que (comme Centr(π) = 1) l’opération de Σ sur π définit une extension E de Σ par π
+d’où un topos Bπ,Γ = BE. On récupère bien sûr aussi Bπ,Γ →BΓ. Pour se tranquil-
+liser il faudrait s’assurer que si on a un homomorphisme de groupes extérieurs π′
+θ
+−→π
+commutant à l’action d’un Σ, avec Centrπ(θ) = (1), alors il existe un θΓ : Bπ,Γ →Bπ,Γ
+défini à isomorphisme canonique près.
+Or tout u ∈θ définit un homomorphisme d’extension uΓ (de Σ par π′ resp. π)
+E′ →E au-dessus de u, et si on passe de u à u′ = int(g)◦u, on aura u′
+Γ = intE(g)◦uΓ,
+et on termine comme plus haut avec unicité de g ; c’est maintenant un homomorphisme
+extérieur injectif
+Λ = [κ] : T →π
+(T commutatif)
+(Λ comme initiale de “lacets”)
+L’injectivité dans le cas qui nous intéresse résulte de l’hypothèse anabélienne.
+Supposons que (pour κ ∈[κ])
+Centreπ κ = κ(T)
+(ce qui ne dépend pas de choix de κ dans [κ]). Je vais alors définir un groupoïde abélien
+connexe Πλ, et un isomorphisme de son π1 avec T (d’où un topos, qui joue le rôle de
+32Marche pour les groupes à lacets anabéliens, et les homomorphismes de tels dont l’image soit d’indice
+fini…(car le centralisateur dans un tel groupe π d’un sous-groupe d’indice fini est encore réduit à e)
+58
+
+--- G103d page 64 ---
+ˆΠD). Un objet sera un κ ∈[κ]. Un homomorphisme de κ dans κ′ sera un élément
+g ∈Transpπ(κ, κ′). La composition des homomorphismes est évidente. On trouve
+bien un groupoïde connexe, dans lequel
+Aut(κ) = Centrπ(κ)
+par hyp.
+=
+κ(T)
+κ≃T.
+OK.
+Bien sûr, on a un homomorphisme
+ΠΛ →groupoïde ponctuel
+d’où sur les topos classifiants définis par π
+BΛ →Bπ
+Il faut voir le comportement de cette construction par homomorphisme extérieur. Soit
+donc
+θ = fπ = [u] : π′ →π
+un homomorphisme extérieur tel que Centrπ(θ) = 1, et Λ′ : T →π′ un homomor-
+phisme extérieur injectif tel que κ′ ∈Λ′ ⇒Centrπ′(κ′) = Imκ′ et considérons le
+composé
+fπ ◦Λ′ : T →π
+soit d ∈Z et considérons
+Λ = fπ ◦Λ′ ◦(d idT)
+supposons que κ ∈Λ (⇒Centrπ(κ) = Imκ).
+On va définir un homomorphisme de Πλ′ dans Πλ, d’où un homomorphisme de
+topos BΛ′ →BΛ, et une donnée de commutativité α du
+(∗)
+BΛ′
+BΛ
+Bπ′
+Bπ
+Bfπ
+fD
+α
+Soit κ ∈T →π′ un objet de ΠΛ′ on veut définir (à isomorphisme unique près) un objet
+κ de ΠΛ. Pour tout u ∈fπ = θ, on considère u ◦κ ◦(d idT),il y a entre eux un système
+transitif d’isomorphismes pour u variable dans θ, on peut les identifier entre eux.
+59
+
+--- G103d page 65 ---
+La fonctorialité de cet objet par rapport à κ′ variable est évidente : on peut dire que
+u ∈θ définit un homomorphisme de groupoïdes uΛ : ΠΛ →ΠΛ′, et entre ceux-
+ci il y a un système transitif d’isomorphismes. En fait, pour u fixé on a un diagramme
+commutatif d’homomorphismes de groupoïdes
+ΠΛ′
+ΠΛ
+(e, π′)
+(e, π)
+u
+uΛ
+et entre ces diagrammes il y a un système transitif d’isomorphismes, d’où le diagramme
+(*) et la donnée de commutation α.
+Quant on a une famille Λ′ (ou un ensemble) d’homomorphisme extérieurs Λ′
+i′ (i′ ∈
+I′) : T →π′, et une famille Λ(Λi)i∈I d’homomorphismes extérieures T →π, et un
+τ : I′ →I, et (di′)i′∈I′ avec di′ ∈Z, tels que (pour θ : π′ →π homomorphisme
+extérieur donné) ∀i′ ∈I′, posant i = τ(i′), on ait Λi = Λi′ ◦θ ◦(di id)
+[NBSiI →Homext(T, π)injectif,cesconditionsmontrentqueτ estdéterminépar
+θ, et si de plus Z opère fidèlement sur T, par exemple si T ≃Z, alors (di′) est également
+unique…] alors on construit ΠD∗,Λ′ = groupoïde somme des ΠΛ′
+i′ et de même ΠD∗,Λ, et
+on trouve un diagramme essentiellement commutatif de topos
+BD∗,Λ′
+BD∗,Λ
+Bπ′
+Bπ
+Supposons maintenant (ouf !) que Σ opère sur [un] groupe extérieur à lacets…Je déclare
+forfait — il est évident que tout marche bien !
+60

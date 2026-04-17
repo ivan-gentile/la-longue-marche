@@ -1,0 +1,119 @@
+Section: § 14 bis. — OÙ ON REVIENT SUR LES MORPHISMES MIXTES
+G103d pages: 79-81
+
+--- G103d page 79 ---
+§ 14 bis. — OÙ ON REVIENT SUR LES MORPHISMES MIXTES
+(Correspondants, dans le cadre topologique, au cas de f : (X′, S′) →(X, S)44 tels que
+l’on ait [f(X′ \ S′) ⊂X \ S, i.e. S′ ⊃f −1(S), mais] (S′ ̸= f −1(S), i.e. il y a des
+points de S′ qui sont envoyés dans U = X \ S).
+Dans le paradigme topossique et groupoïdal, (X, S) est décrit par un diagramme de
+groupoïdes
+ΠD∗→ΠU
+(et κ : TΠD∗≃système local des π1 sur ΠD∗)
+ou de topos
+BD∗→BU
+et un isomorphisme κ du système local des π1 sur BD∗, dans les systèmes localement
+constant T, qui permet de définir (le topos discret) BD(≃BΠ0D∗) et le topos BX,U,
+s’insérant dans le diagramme de topos
+BD∗
+BU
+BD
+(topos discret ≃BS)
+BX,U
+ρ
+σ
+ψ
+φ
+44X, X′ T-orientés
+
+--- G103d page 80 ---
+où ϕ, ψ sont des morphismes d’inductions de sous-topos, ϕ ouvert ψ fermé, complé-
+mentaire l’un de l’autre, et itou pour (X′, S′), décrit par un diagramme analogue
+BD′∗
+BU′
+BD′
+≈
+−→B′
+S
+BX′,U′
+Ceci dit, on veut absolument, dans une description de f : (X′, S′) →(X, S), que celle-
+ci permette de retrouver non seulement BU′ →BU (ce qui sera acquis par la donnée d’un
+fπ : π′ →π), mais aussi BX′,U′ →BX,U. On aura S′ = S′
+0(= f −1(S)) ⨿S′
+1, donc
+D′ = D′
+0 ⨿D′
+1 et en fait f induit S′
+1
+f
+−→U (et non S′
+1 →S) qui doit s’expliciter, au
+niveau des topos multigaloisiens, par un morphisme
+BD′
+1(≃BS′
+1) →BU
+i.e. la donnée d’une famille de revêtements universels de U, paramétrée par S′
+1 = I′
+1, ou
+(si un te revêtement universel est choisi, U étant connexe, d’où un π = Aut(eU)) par une
+famille de torseurs sous π, (Pi′)i′∈I′
+1. Ceci étant posé, on pourra décrire, en termes de
+BD′∗
+0
+BU′
+BD∗
+BU
+∼
+et de
+BD′∗
+1 →BD′
+1 →BU
+l’homomorphisme de topos BX′,U′ →BX,U 45
+— Je passe sur le détail de la description.
+Quand on se donne un groupe d’opérateurs Γ sur la situation (X′, S′) →(X, S)
+donc sur la situation groupoïdale ou topossique, il faut en tenir compte dans la descrip-
+tion ci-dessus.
+45Il semble qu’on soit en train de faire la description des morphismes de topos BX′,U ′ →BX,U qui
+induisent U ′ →U et qui sur D′∗
+1 (= D′∗|U), se factorisent par D′∗
+1 →D′
+1…
+75
+
+--- G103d page 81 ---
+Ainsi I′
+0 dans I′
+1 sera stable par Γ, et le morphisme BD′
+1 →BU doit être stable par Γ.
+Ce qui signifie aussi, sans doute, qu’on a un morphisme de topos de BD′
+1,Σ = BI′
+1,Σ dans
+BU,Γ. Choisissant pour toute orbite de Γ dans I′
+1 un représentant s′ ∈I′
+1, et considérant
+son stabilisateur Γs′ ⊂Γ, il faut donc pour toute telle orbite i.e. tout i′ se donner un Γs′
+objet de la catégorie des revêtements universels de (U, Γ).
+Décrivant (U, Γ) en termes d’une extension E de Σ ⊂Γ par π (en choisissant un
+revêtement universel eU de U), la donnée de BΓs′ →BX,U compatible avec tout revient
+sauferreuràladonnéed’untorseurP àdroitesousπ (permettantdetordrelerevêtement
+universelde référence eU de U, àl’aide de P donaussi detordre E par P), etd’un scindage
+de EP →Γ au dessus de Γs′…)
+Un automorphisme d’un tel couple (P, Γs′
+q
+−→EP) correspond à un α ∈π qui
+centralise Γs′
+i, i.e. qui soit fixé par Γs′
+i opérant sur π.
+Si les Γs′
+i opèrent assez fortement sur π pour que l’on sache que π
+Γs′
+i = (1), l’objet
+(P, q : Γsi →EP) est défini à isomorphisme unique près par la classe d’isomorphie
+(classe de scindage de E sur Γsi). Il me semble probable que ceci soit toujours le cas
+dans le cas arithmétique, où Γs′
+i est un sous-groupe ouvert du groupe de Galois Γ (dont
+l’opération extérieure est alors draconienne !).
+Ceci va en direction de la conjecture qu’une classe de scindage de E sur Γ est “aussi
+bonne” qu’un point rationnel de U sur K — et permet de paradigmer ce qu’un tel point
+rationnel permettrait d’obtenir…
+76

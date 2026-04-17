@@ -1,0 +1,55 @@
+Section: § 2. — APPLICATIONS AUX REVÊTEMENTS DES TOPOS
+G103d pages: 10-11
+
+--- G103d page 10 ---
+§ 2. — APPLICATIONS AUX REVÊTEMENTS DES TOPOS
+Théorème2.1. —SoitE untoposlocalementconnexe(i.e. donttoutobjetestsommed’objets
+0-connexes) et localement simplement connexe (i.e. admettant un système de générateurs
+qui sont 1-connexes)2. Alors la catégorie Elc des objets localement constants de E est un
+topos multigaloisien, et l’inclusion
+(2.1.1.)
+Elc ,→E
+commute aux lim
+←−finies (NB en fait, sans hypothèses sur le topos E, Elc est stable par lim
+←−
+finies) et aux lim
+−→quelconques.
+Définition2.2. —OndénotecetoposparE[1],onl’appellel’enveloppemultigaloisienne
+de E, et le morphisme de topos transposé de l’inclusion (2.1.1.) :
+E →E[1]
+prend le nom de morphisme canonique.
+NB. — C’est l’équivalent en théorie des topos de l’opération de “tuage des πi pour
+i ≥2”. On peut définir aussi un E[0] et une suite
+E →E[1] →E[0]
+[E[0] est le topos discret défini par π0(E), qui a un sens satisfaisant dès que E localement
+connexe…]. Moyennant des hypothèses convenables sur E (du type “locale contractibil-
+ité”), on doit pouvoir définir les E[i] pour tout i ∈N, et des morphismes canoniques
+E →. . . E[i] →E[i−1] →. . . E[1] →E[0].
+2NB. peut-être faut-il supposé que E ait “assez de points” i.e. assez de foncteurs fibres…
+
+--- G103d page 11 ---
+2.3. Le groupoïde fondamental de E se définit comme ayant pour objets les points
+de E (qui induisent des points de E[1] grâce à E[1] →E), et comme morphismes les
+morphismes de points de E[1]. On a donc des foncteurs canoniques
+Pt(E)
+α
+−→Π1(E)
+β
+−→
+≈
+Pt(E[1])
+def= Π1(E[1])
+où β est une équivalence (mais pas surjectif sur les objets), et où bien sûr α n’est pas
+nécessairement une équivalence ni même pleinement fidèle, ou seulement fidèle. Par
+exemple si E est 1-connexe i.e. Π1(E) équivalent à la catégorie ponctuelle, il ne s’ensuit
+pas nécessairement que les Hom dans Pt(E) soient tous de cardinal ≤1 !
+Comme un point P de E définit un point (noté encore P par abus) de E[1], on peut
+donc définir le revêtement universel de E basé en ce point, comme un objet S 1-connexe
+de E[1] — il est caractérisé dans E par le fait d’être localement constant, 1-connexe, et
+muni d’un relèvement
+P →E/S.
+Mais comme α n’est pas une équivalence de catégories (bien qu’il soit essentiellement
+surjectif si on suppose que E a suffisamment de points…) on ne peut pas dire que tout
+revêtement universel de E soit défini par un point de E, défini à isomorphisme unique
+près…
+6

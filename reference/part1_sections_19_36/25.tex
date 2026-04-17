@@ -1,0 +1,244 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 25. --- GROUPES DE TEICHMÜLLER SPÉCIAUX}\thispagestyle{empty}
+\addcontentsline{toc}{section}{25. Groupes de Teichmüller ``spéciaux''}
+\label{sec:25}
+\section*{}
+
+Revenons aux notations du n$^\circ 19$, on va définir un sous-groupe $S A_{g, \nu}$ de $A^!_{g, \nu}$
+$$
+S A_{g, \nu} = \{ u \in A_g~|~u~\text{induise l'identité sur un voisinage de}~S_{g, \nu} \}
+$$
+i.e. ensemble des automorphismes de $U_{g, \nu}$ qui induisent l'identité dans le complémentaire d'un compact.
+
+Contrairement aux autre sous-groupes de $A_g$ considérés jusqu'à présent, celui-ci n'est pas un sous-groupe fermé. N.B. Dans le cas où on travaille avec des surfaces compactes à bord au lieu de surfaces compactes (sans bord) ``trouées'', il y aurait lieu de prendre le groupe des automorphismes qui induisent l'identité sur le bord. 
+
+$S A_{g, \nu}$ est un sous-groupe invariant de $A_{g, \nu}$, le quotient $A_{g, \nu}/SA_{g, \nu}$ étant isomorphe au groupe des \emph{germes} d'automorphismes de $X_g$ au voisinage de $S_{g, \nu}$, ou encore le groupe des germes à l'infini d'automorphismes de $U_{g, \nu}$ ([?] les complémentaires de compacts\dots)
+
+On aura évidemment, puisque $SA_{g, \nu} \subset  A_{g, \nu}$
+$$
+(SA_{g, \nu})^\circ \subset  A^\circ_{g, \nu}
+$$
+Posons
+$$
+S A^!_{g, \nu} = SA_{g, \nu}/SA^\circ_{g, \nu}
+$$
+on aura un homomorphisme canonique
+$$
+SA^!_{g, \nu} \to \Gamma_{g, \nu}^{!+}
+$$
+qu'on va interpréter de fa\c{c}on algébrique, en termes de l'interprétation de $\Gamma^!_{g, \nu}$ comme le groupe des automophismes extérieures du groupe à lacets $\pi_{g, \nu}$, induisant l'identité sur $S_{g, \nu} = I(\pi_{g, \nu})$.
+
+Pour tout $i \in S_{g, \nu}$, choisissons un $L_i$ de classe $i$ dans $\pi_{g, \nu}$ - ce qui revient à se donner un ``point'' de $B_{D^*_i}$ ($\isom$ un revêtement universel $\widetilde{D^*_i}$) et un isomorphisme entre son image dans $B_{U = U_{g, \nu}}$ avec le ``point'' $s = s_{g, \nu}$ de référence, qui servait à définir $\pi_{g, \nu}$ comme $\Aut_{B_U} \isom \pi_1(B_U, s)$.
+
+Ceci dit, si $u$ est un automorphisme de $\pi = \pi_{g, \nu}$ le fait qu'il respecte (strictement, en induisant l'identité sur $S_{g, \nu}$) la structure à lacets, s'exprime par l'existence d'une famille d'éléments $g_i \in \pi$, tels que
+$$
+u(l) = \text{int}g^{-1}_i(l^\alpha) \quad (i \in I, l \in L_i, \alpha = \chi(n))
+$$
+-lesquels $g_i$ sont déterminés par $u$ modulo multiplication à droite par des $\lambda_i \in L_i$. Si on a de même $v$, $(h_i)$, alors : pour $l \in L_i$ on a (si $\alpha = \chi(u)$, $\beta = \chi(v)$)
+$$
+(uv)(l) = v(u(l)) = v(\text{int}(g^{-1}_i))v(l^\alpha) = \text{int}(v(g^{-1}_i) h^{-1}_i)(l^{\alpha \beta}) = \text{int}(h_i u(g_i)^{-1})l^{\alpha \beta}
+$$
+donc $vu$ est compatible avec le système des $h_i v(g_i)$. Posons 
+$$
+(v, (h_i))(u, (g_i)) = (vu, h_iv(g_i))
+$$
+On trouve alors une structure de groupe sur l'ensemble $S E^!$ des $(u, (g_i))$, sous-groupes du produit semi-direct de $E^! = \Autext_{\operatorname{lac}}(\pi, \id$ sur $I)$ par $\pi^I$, sur lequel $E^!$ opère de fa\c{c}on évidente. L'homomorphisme naturel
+$$
+SE^! \to E^!
+$$
+est surjectif, et son noyau est essentiellement isomorphe à $\prod_{i \in I} L_i \isom T^I$, où $T$ est le module des orientations. D'où une structure d'extension où $E$ opère sur $T^I$ via son action sur $T$
+$$
+1 \to T^I \to SE^! \to E^! \to 1
+$$
+Et je voudrais interpréter cette extension comme l'image inverse d'une extension canonique de $\Gamma^!$ par $T^I$ (canonique en tous cas, une fois choisi les $\widetilde{D^*_i}$).
+
+Pour ceci, notons que si $\dot{u}$ est une auto-équivalence de la situation $\B_{D^*} \to \B_U$, induisant l'identité sur $I$, on peut considérer les $\tilde{\dot{u}}$ au dessus de $\dot{u}$, à savoir les systèmes $(\dot{u}, \gamma_i)$, où pour tout $i \in I$, $\gamma_i: \widetilde{D^*_i} \to \dot{u}(\widetilde{D^*_i})$ [déterminé mod élément de $T$].
+
+Le groupe des classes d'isomorphie d'automorphismes de $(\B_{D^*} \to \B_U, (\widetilde{D^*_i}))$, ou si on préfère, des classes d'isomorphie d'automorphismes de $(\B_I \to \B_{D^*} \to \B_U)$ induisant l'identité sur $I$, est donc une extension de $\Gamma^!$ par $T^I$, soit $ST^!$. 
+
+On va définir un homomorphisme de suites exactes 
+\[\begin{tikzcd}
+	1 & {T^I} & {SE^!} & {E^!} & 1 \\
+	1 & {T^I} & {S \Gamma^!} & {\Gamma^!} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-1, to=2-2]
+	\arrow[shift left=2, shorten <=1pt, shorten >=2pt, no head, from=1-2, to=2-2]
+	\arrow[shift right=1, shorten <=1pt, shorten >=2pt, no head, from=1-2, to=2-2]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=1-4, to=2-4]
+\end{tikzcd}\]
+qui prouve que $SE^!$ est bien l'image de l'extension $S \Gamma^!$ par $T^I$. Pour ceci, on note que $E^!$ est le groupe des classes d'isomorphie d'auto-équivalences de
+\[\begin{tikzcd}
+	{\B_{D^*}} \\
+	{\B_U} & {\pt . s}
+	\arrow[from=2-2, to=2-1]
+	\arrow[from=1-1, to=2-1]
+\end{tikzcd}\]
+et $SE^!$ celui des classes d'isomorphie d'auto-équivalences de 
+\[\begin{tikzcd}
+	{\B_{D^*}} && {\B_I} \\
+	&&& {(\star~\text{est un isomorphisme de commutation})} \\
+	{\B_U} && {\pt . s}
+	\arrow[from=1-3, to=1-1]
+	\arrow[from=1-3, to=3-3]
+	\arrow[""{name=0, anchor=center, inner sep=0}, from=3-3, to=3-1]
+	\arrow[""{name=1, anchor=center, inner sep=0}, from=1-1, to=3-1]
+	\arrow["\star"', shorten <=7pt, shorten >=7pt, from=0, to=1]
+\end{tikzcd}\]
+qui s'envoie e fa\c{c}on naturelle dans celui des classes d'isomorphie d'auto-équivalences des diagrammes $\B_I \to \B_{D^*} \to \B_U$.
+
+En fait, dans tout ceci il n'y avait aucunement lieu de se borner aux automorphismes de $\pi$ (extérieurs ou totaux) induisant l'identité sur $I$. On trouve de toutes fa\c{c}ons des extensions $SE$ de $E$ par $T^I$, $S \Gamma$ de $\Gamma$ par $T_I$, et un homomorphisme d'extension
+\[\begin{tikzcd}
+	&& 1 & 1 \\
+	&& \pi & \pi \\
+	1 & {T^I} & SE & E & 1 \\
+	1 & {T^I} & S\Gamma & \Gamma & 1 \\
+	&& 1 & 1
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=1-4, to=2-4]
+	\arrow[shift right=2, from=2-3, to=2-4]
+	\arrow[shorten <=5pt, shorten >=5pt, no head, from=2-3, to=2-4]
+	\arrow[from=2-4, to=3-4]
+	\arrow[from=2-3, to=3-3]
+	\arrow[from=3-4, to=4-4]
+	\arrow[from=3-3, to=4-3]
+	\arrow[from=3-3, to=3-4]
+	\arrow[from=4-3, to=4-4]
+	\arrow[from=4-3, to=5-3]
+	\arrow[from=4-4, to=5-4]
+	\arrow[from=4-4, to=4-5]
+	\arrow[from=3-4, to=3-5]
+	\arrow[from=3-2, to=3-3]
+	\arrow[from=4-2, to=4-3]
+	\arrow[from=4-1, to=4-2]
+	\arrow[from=3-1, to=3-2]
+	\arrow[shift left=2, shorten <=2pt, shorten >=2pt, no head, from=3-2, to=4-2]
+	\arrow[shift right=1, shorten <=2pt, shorten >=2pt, no head, from=3-2, to=4-2]
+\end{tikzcd}\]
+de fa\c{c}on que l'on peut considérer $SE$ comme extension de $\Gamma$ par $T^I \times \pi$
+$$
+1 \to T^I \times \pi \to SE \to \Gamma \to 1
+$$
+et l'extension $E$ resp. $S\Gamma$ se déduit en divisant par $T^I$ resp. par $\pi$.
+
+Revenant maintenant au cas type $U_{g, \nu} = X_{g, \nu} \textbackslash S_{g, \nu}$, on prends des notations
+$$
+E_{g, \nu} = \Aut_{\text{lac}}(\pi_{g, \nu}) \quad (\isom \Gamma_{g, \nu + 1}~\text{si}~(g, \nu) \neq (0, 0), (0, 1)~\text{i.e.}~\pi_{g, \nu} \neq 0)
+$$
+et 
+$$
+S \Gamma_{g, \nu} = S \Autext_{\text{lac}}(\pi_{g, \nu}) \quad \text{(extension de}~\Gamma_{g, \nu}~\text{par}~T^I)
+$$
+et
+$$
+SE_{g, \nu} \quad (\isom S \Gamma'_{g, \nu + 1}/\Gamma_{g, \nu}),
+$$
+(où $S \Gamma'_{g, \nu + 1}$ désigne le sous-groupe de $S \Gamma_{g, \nu + 1}$ [?] des éléments qui fixent le dernier élément $s_\nu$\dots)
+
+On désigne par $S\Gamma^!_{g, \nu}$ et $S E^!_{g, \nu}$ les sous-groupes des précédents $S \Gamma_{g, \nu}$, $SE_{g, \nu}$ qui induisent l'identité sur $I = S_{g, \nu}$.
+
+Et revenons enfin aux relations avec $S A_{g, \nu}$, on va définir
+$$
+SA_{g, \nu} \to S \Gamma^{!+}_{g, \nu} 
+$$
+en notant que si un $u \in A_{g, \nu}$ induit l'identité sur un voisinage de $S_{g, \nu}$, alors $u_{\bullet}(\widetilde{D^*_i}) = \widetilde{D^*_i}$ et on pourra définir un élément de $S\Gamma^!_{g, \nu}$ en prenant comme $\Gamma_i$ les identités. Le fait que l'homomorphisme obtenu soit trivial sur $(S A_{g, \nu})^\circ$ est sans doute trivial, d'où
+$$
+SA_{g, \nu} / (SA_{g, \nu})^\circ \to S \Gamma^{!+}_{g, \nu}
+$$
+Dire que c'est surjectif signifie que tout automorphisme dans $A^{!+}_{g, \nu}$ (i.e. tout automorphisme de $U_{g, \nu}$ induisant l'identité sur $S_{g, \nu}$ et respectant l'orientation) est isotope (par une isotopie, si on veut, qui reste l'identité dans l'extérieur d'un petit voisinage de $S_{g, \nu}$) à un automorphisme qui soit l'identité sur un voisinage, c'est facile. L'injectivité [est] peut-être plus délicate, elle revient essentiellement à déterminer le noyau de
+$$
+SA_{g, \nu} / (SA_{g, \nu})^\circ \to \Gamma^!_{g, \nu}, \quad \text{i.e.} \quad SA_{g, \nu} \cap A^\circ_{g, \nu}/(SA_{g, \nu})^\circ
+$$
+comme $T^I = T^{S_{g, \nu}}$. On peut sans doute se ramener au contexte des surfaces compactes à bord (notons par un $'$ les groupes topologiques correspondants), on a
+$$
+1 \to SA^{'+}_{g, \nu} \to A^{'!+}_{g, \nu} \to \prod_{i \in S_{g, \nu}} \Aut^+ (C_i) \to 1
+$$
+où $\Aut^+(C_i)$ homotope au groupe circulaire standard $\mathbb{U}$ tordu par $T$, et le $+$ indique les automorphismes conservant l'orientation et les $C_i$ sont les composantes connexes du bord. On en conclut la suite exacte d'homotopie
+\[\begin{tikzcd}
+	{\prod_i \pi_2 (\Aut^+(C_i)) = 0} \\
+	& {\pi_1(A^{' +}_{g, \nu})} & {T^I} \\
+	{\pi_1(SA^{' \circ}_{g, \nu})} & {\pi_1(A^{' ! +}_{g, \nu})} & {\prod_i \pi_1(\Aut^+(C_i))} \\
+	& {\pi_0(SA^{' ! +}_{g, \nu})} & {\pi_0(A^{' ! +}_{g, \nu})} & {\prod_i \pi_0(\Aut^+(C_i)) = 1} \\
+	& {\text{(à calculer)}} & {\Gamma'_{g, \nu}}
+	\arrow["\sim"', from=3-3, to=2-3]
+	\arrow[shift right=1, shorten <=2pt, shorten >=2pt, no head, from=2-2, to=3-2]
+	\arrow[shift left=1, shorten <=2pt, shorten >=2pt, no head, from=2-2, to=3-2]
+	\arrow[from=5-2, to=4-2]
+	\arrow[from=4-2, to=4-3]
+	\arrow[from=4-3, to=4-4]
+	\arrow[from=3-3, to=4-2]
+	\arrow[from=3-2, to=3-3]
+	\arrow[shift right=1, shorten <=2pt, shorten >=2pt, no head, from=4-3, to=5-3]
+	\arrow[shorten <=2pt, shorten >=2pt, no head, from=4-3, to=5-3]
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=1-1, to=3-1]
+\end{tikzcd}\]
+[et $\pi_i(SA^{'\circ}_{g, \nu}) \isom \pi_i(A^{'\circ}_{g, \nu})$ si $i \geq 2$]
+i.e.
+$$
+\begin{cases}
+0 \to \pi_1(SA^{'+}_{g, \nu}) \to \pi_1(A^{'\circ}_{g, \nu}) \to T^I \to \pi_0(A^{'!+}_{g, \nu}) \to \Gamma^{'!+}_{g, \nu} \to 1 \\
+\pi_i(SA^{'+}_{g, \nu}) \isommap \pi_i(A^{'\circ}_{g, \nu}) \quad \forall i \geq 2
+\end{cases}
+$$
+On a un homomorphisme évidente (par ``recollement de disques'') $A^{'\circ}_{g, \nu} \to A_{g, \nu}$ induisant $SA'_{g, \nu} \to SA_{g, \nu}$, et ce sont là sûrement des équivalences d'homotopie donc la suite exacte précédente doit pouvoir s'interpréter comme suite exacte
+$$
+\begin{cases}
+0 \to \pi_1(SA_{g, \nu})^\circ \to \pi_1(A^\circ_{g, \nu}) \to T^I \to \pi_0 (SA^{!+}_{g, \nu}) \to \Gamma^{!+}_{g, \nu} \to 1 \\
+\pi_i(SA_{g, \nu})^\circ \isommap \pi_i(A_{g, \nu})^\circ \quad \forall i \geq 2
+\end{cases}
+$$
+Dans le cas anabélien, on trouve bien, puisque $\pi_1(A^\circ_{g, \nu}) = 0$, une structure d'extension
+$$
+\boxed{1 \to T^{S_{g, \nu}} \to \pi_0(SA_{g, \nu}) \to \Gamma^{!+}_{g, \nu} \to 1}
+$$
+et de plus 
+$$
+\pi_i((SA_{g, \nu})^\circ) = 0 \quad \text{pour} \quad i \geq 2
+$$
+Dans le cas abélien, on doit expliciter
+$$
+\pi_1(A^\circ_{g, \nu}) \to T^{S_{g, \nu}} 
+$$
+et on va distinguer les deux cas abéliens (sous-entendant que l'on ait $I \neq \emptyset$ !) - on a toujours $g = 0$, $\nu = 1$ ou 2.
+
+En tous cas, introduisant une structure analytique complexe et le groupe $G$, composante neutre du groupe des automorphismes complexes, on a 
+$$
+G \xlongrightarrow{\approx} A^\circ_{g, \nu} 
+$$
+\begin{enumerate}
+    \item[a)] Cas $g = 0$, $\nu = 2$ $G \isom \mathbf{C}^*$, on voit que si la structure à lacets de $\pi$ est définie par les deux isomorphismes $\kappa_i: T \to \pi$ $(i \in I = \{ s_{0, 0}, s_{0, 1} \})$ alors $\pi_1(G) \to T^I$ s'identifie, à $T \to T^I$ dont les composantes sont ces deux $\kappa_i$ (qui sont symétriques, donc c'est un homomorphisme injectif dont l'image est le noyau de l'application somme $T^I \to T$, donc ici le noyau de $\pi_0(SA_{g, \nu}) \to \Gamma^{!+}_{g, \nu}$ (dont $\pi_0(SA_{g, \nu})$) lui même) est isomorphe, non à $T^I$, mais à son quotient $T$.
+    
+    Quant à $(SA'_{g, \nu})^\circ$, tous ses $\pi_i$ $(i \geq 1)$ sont nuls - il est encore $\infty$-connexe.
+    \item[b)] Cas $g = 0$, $\nu = 1$. Alors $G \isom \Aff(1, \mathbf{C})$, $\pi_1(G) \isom T$ et $\pi_1(G) \to T^I = T$ est un isomorphisme. Ici, le noyau de l'homomorphisme $\pi_0(SA_{g, \nu}) \to \Gamma^{!+}_{g, \nu}$ est nul i.e. $\pi_0(SA_{g, \nu}) = 0$.
+\end{enumerate}
+Dans ce cas encore, on trouve que $\pi_i(SA^\circ_{g, \nu}) = 0$ pour tout $i \geq 1$. On trouve donc
+\vskip .3cm
+{
+Théorème. --- \it Supposons $\nu > 0$. Si $(\gamma, \nu)$ est anabélien, alors $\pi_0(SA_{g, \nu})$ est canoniquement isomorphe à $S\Gamma^{!+}_{g, \nu}$. Dans tous les cas $(S A_{g, \nu})^\circ$ est $\infty$-connexe.
+}
+\vskip .3cm
+
+Nous allons expliciter une relation de compatibilité pour $S \Gamma$ relatif à un $\pi$ à lacets, en fixant un $i \in I = I(\pi)$, d'où un stabilisateur $\Gamma_i \subset  \Gamma$ dont l'image inverse $(S \Gamma)_i$ dans $S \Gamma$ est donc une extension de $\Gamma_i$ par $T^I$.
+
+Utilisant la projection $T^I \xlongrightarrow{\pr_i} T$, on trouve une extension de $\Gamma_i$ par $T$, qu'on va décrire d'une autre fa\c{c}on.
+
+L'extension $S \Gamma$ est définie intrinsèquement par la donnée de $I$ réalisation $(\pi)_{i \in I}$ du groupe extérieur $\pi$ par des groupes, avec dans chaque $\pi_i$ un $L_i \subset  \pi_i$ de la classe $i$ (c'est cela, la donnée d'un système de $(\widetilde{D^*_i})$ !).
+
+Pour un automorphisme extérieur à lacets $u \in \Gamma$ de $\pi$, pour tout $i$ il est possible de le réaliser pour $u_i \in \Aut_{\text{lac}}(\pi_i)$, avec $u_i(L_i) \subset  L_i$ - cet $u_i$ est déterminé modulo multiplication à droite par un int$(\kappa_i(\alpha))$, où $\alpha \in T$.
+
+Si on regarde la sous-extension obtenue par restriction à $\Gamma_i$, on note que la projection $T^I \xlongrightarrow{\pr_i} T$ est stable par $\Gamma_i$, donc on en déduit  une extension de $\Gamma_i$ par $T$, qui n'est autre que le groupe des automorphismes à lacets de $\pi_i$ qui normalisent $L_i$ - qui est bien une extension de $\Gamma_i$ par $L_i$ (son intersection avec $\pi_i \subset  \Aut_{\text{lac}}(\pi_i)$ étant réduite à $L_i$).
+
+Ceci nous montre que l'extension de $\Gamma$ par $T^I$ a une nette tendance à ne pas être triviale, car il en est ainsi (pour $i \in I$ fixé) de l'extension de $\Gamma_i$ par $T$ à qui elle donne naissance. Si par exemple on a un sous-groupe \emph{fini} $G \subset  \Gamma^+_i$, l'extension induite n'est jamais triviale si $G \neq 1$, on l'a vu. En ait, $G$ doit être cyclique et son image inverse dans l'extension en question est isomorphe à $T$\dots
+
+
+% End

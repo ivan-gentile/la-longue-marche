@@ -1,0 +1,910 @@
+Section: § 7. — REFORMULATION “BORDÉLIQUE” DE LA
+G103d pages: 21-37
+
+--- G103d page 21 ---
+§ 7. — REFORMULATION “BORDÉLIQUE” DE LA
+CONJECTURE (LE PURGATOIRE NÉCESSAIRE …)
+Ainsi, à (X, S) comme dans 5.1, on associe :
+1◦) Trois groupoïdes (profinis) ΠU, ΠD, ΠD∗(en plus de Πe = Π1(Spec(K))(≃
+Tors(Γ))).
+2◦) Quatre foncteurs (de groupoïdes profinis) :
+ΠD∗
+ΠU
+ΠD
+Πe
+ρ
+σ
+ψ
+φ
+3◦) Un isomorphisme de commutation
+α : ϕρ ≃ψσ
+(qui est même l’identité dans le cas de système provenant de (X, S), mais il vaut
+mieux oublier qu’il en soit ainsi). Ces données satisfaisant aux conditions prélim-
+inaires
+a) σ induit un isomorphisme sur les π0, et des épimorphismes sur les Hom, et il est à
+noyau abélien ;
+
+--- G103d page 22 ---
+b) ψ est fidèle
+[ c) ρ est fidèle…
+d) ϕ est épimorphique modulo groupes finis sur les Aut…]
+La condition a) permet déjà de définir le π1 relatif π1(σ) = π1(ΠD∗/ΠD), qui est un
+système local de groupes abéliens sur ΠD i.e. un foncteur (ΠD)◦→Ens, et la dernière
+donnée :
+4◦) Un isomorphisme kummérien
+κ : π1(σ) ≃ψ∗(T )
+Si on a deux systèmes de cette nature Π = (ΠU, ΠD, ΠD∗, ϕ, ψ, ρ, σ, α, κ) et Π′ =
+(ΠU, . . . ), un morphisme de Π′ dans Π est un système de trois foncteurs
+fU : Π′
+U →ΠU
+fD : Π′
+D →ΠD
+fD∗: Π′
+D∗→ΠD∗
+et de quatre isomorphismes de commutation αD∗,D, αD∗,U, αU,e, αD,e, pour les quatre
+faces du prisme :
+Π′
+D∗
+Π′
+U
+Π′
+D
+ΠD∗
+Πe
+ΠU
+ΠD
+Πe
+ψ′
+σ′
+ρ′
+φ′
+ψ
+φ
+ρ
+σ
+fU
+fD∗
+fD
+17
+
+--- G103d page 23 ---
+satisfaisant une équation de compatibilité avec α, α′ que je n’écris pas — signifiant que
+les deux isomorphismes u, v de foncteurs
+Π′
+D∗
+Πe
+φ◦ρ◦fD∗
+id ◦φ′◦σ′
+v
+u
+obtenus respectivement, u en utilisant successivement α, αD∗,D, αD,e, v en utilisant suc-
+cessivement αD∗,U, αU,e, α′, sont égaux. [Cette compatibilité pourrait s’exprimer en in-
+terprétant la donnée de Π comme celle d’une catégorie fibrée Π sur la “catégorie carrée”
+D∗
+Q :
+U
+D
+où
+ϕ0ρ0 = ψ0σ0
+e
+ρ0
+σ0
+φ0
+ψ0
+à restriction à {e} imposée, et en prenant des foncteurs cartésiens entre catégories fi-
+brées…]. De plus, on exige une autre compatibilité, savoir que l’homomorphisme de
+systèmes locaux en groupes abéliens sur Π′
+D
+π1(σ′) →(fD)∗(π1(σ))
+défini à l’aide de fD∗, fD, αD∗,D rende commutatif le diagramme suivant
+d’isomorphismes de systèmes locaux sur Π′
+D
+8 :
+(fD∗)∗(π1(σ))
+π1(σ′)
+(fD∗)∗(ψ∗(T))
+ψ′(T)
+(ψfD)∗(T)
+∼κ′
+x
+can. ∼
+(fD∗)∗(κ) ∼
+(où x est déduit de αD,e : ψ′ ≃ψ ◦fD)
+Pour Π, Π∗fixés, les systèmes (fα = (fU, fD, fD∗, αD∗,D, αD∗,U, αU,e, αD,e))
+précédents forment une catégorie de façon naturelle — en fait un groupoïde — en
+8non, celanemarchequepourlecasdemorphismesétales, sinonilfautfaireintervenirlamultiplication
+par les “degrés de ramifications” di′ (i′ ∈π0(Π′
+D∗).
+18
+
+--- G103d page 24 ---
+prenant comme morphismes µ de (f ′, α′) dans (f, α) les triplets de morphismes (fonc-
+teurs profinis)
+f ′
+U
+µU
+−→fU,
+f ′
+D
+µD
+−→fD,
+f ′
+D∗
+µD∗
+−−→fD
+satisfaisant quatre conditions de compatibilité avec αD∗,D et α′
+D∗,D, avec αD∗,U et α′
+D∗,U
+avec αU,e et α′
+U,e, avec αD,e et α′
+D,e respectivement (i.e. on travaille avec une sous-
+catégoriepleinedelacatégoriedesHomentrecatégoriesfibréessurQ,àfibreenefixée…).
+J’ai l’impression que le groupoïde Hom((f ′, α′), (f, α)) est toujours rigide, i.e.
+Aut(f, α) est toujours réduit au groupe unité — j’ai la flemme de vérifier — donc que si
+(f ′, α′) et (f, α) son isomorphes, l’isomorphisme en question est unique. Quoi qu’il en
+soit, on posera
+Hom((f ′, α′), (f, α)) = π0Hom((f ′, α′), (f, α))
+D’où une catégorie des systèmes Π = (ΠU, ΠD, Πd∗, ϕ, ψ, ρ, σ, α, κ).
+On a un foncteur des couples (X, S)9 (où X schéma localement de type fini sur K,
+S sous schéma fermé de X étale sur K, tels que ∀s ∈S, X soit lisse de dimension relative
+1 en s) vers cette catégorie bordélique B.
+Conjecture bordélique 7.1. — Quand on se borne aux (X, S) tels que X projectif lisse
+de dimension ≤1, et qui de plus sont anabéliens, alors le foncteur précédent est pleinement
+fidèle10.
+Description de la catégorie bordélique en termes de théorie de groupes.
+Soit I = π0(ΠD∗) ≃π0(ΠD). Choisissons un élément D∗
+i dans chaque com-
+posante de ΠD∗, et soit Di = σ(D∗
+i ). Pour tout i, choisissons un isomorphisme
+ψ(Di)
+Spec(K)
+λi
+∼
+Quitte à remplacer l’objet par un “sous-objet” isomorphe on peut supposer que ΠD∗
+est la catégorie somme de catégories [Ei] définis par les Ei = Aut(D∗
+i ), ΠD la catégorie
+somme des catégories [Γi] définies par les Γi = Aut(Di), le foncteur σ s’exprimant par
+un système d’homomorphismes
+σi : Ei →Σi
+(i ∈I)
+9[les] morphismes (X′, S′) →(X, S) sont les morphismes f : X′ →X tels que f −1(S)red = S′
+10N.B. La fidélité est facile…
+19
+
+--- G103d page 25 ---
+qui sont surjectifs de noyaux abéliens, le foncteur ψ par un système d’inclusions ψi :
+Γi ,→Γ et la donnée de κ équivaut en fait à des isomorphismes
+κi : ker σi ≃T(K)
+compatibles avec les opérations de Γi et de Γ sur les deux morphismes respectivement, et
+les inclusions ψi. On peut dire que la donnée de (σ, ψ, κ) est exprimée par la donnée du
+système (Ei)i∈I, d’un système de suites exactes1112
+1 →T(K)
+κi
+−→→Ei
+pi
+−→Γ
+telles que les Σi = Impi soient ouverts, et que κi soit compatible avec les opérations de
+Σi ≃Cokerκi (ou de Ei et Γ sur les deux termes respectivement).
+Supposant d’autre part (pour simplifier) ΠU connexe, et choisissant un élément eU
+de ΠU et un isomorphisme
+ϕ(eU)
+λU
+−→Spec(k)
+donc (quitte à remplacer ΠU par un groupoïde équivalent) on peut supposer ΠU réduit
+à eU, et ΠU est donné alors par un groupe E, et ϕ par un homomorphisme de groupes
+E
+φ e
+U,λU,(ou p)
+−−−−−−−→Γ
+dont l’image Σ ⊂Γ est encore un sous-groupe ouvert de Γ, et le noyau sera noté π13
+1 →π
+κ
+−→E →Σ →1
+Ayant remplacé ΠU initial par une sous-catégorie pleine plus petite, on sera obligé
+de modifier ρ à isomorphisme près, pratiquement en choisissant pour chaque i ∈I un
+isomorphisme
+ρ(Di)
+µi
+−→eU
+11NB Les extensions des Γi par T(K) obtenues par des situations géométriques splittent le choix d’une
+uniformisante en si définit un splittage, et même [seulement ?] le choix d’une base de l’espace tangent en
+s…
+12Re N.B. Deux bases différents définissent des scindages différents !
+13N.B. Dans la situation géométrique cette extension de noyaux de groupes splitte, i.e. il existe un sous-
+groupe ouvert Σ◦dans σ, et un relèvement Σ◦→E…
+20
+
+--- G103d page 26 ---
+moyennant quoi ρ s’explicite simplement par des homomorphismes de groupes
+ρi : Ei →E
+Il reste à expliciter l’isomorphisme de commutation
+α : ϕρ →ψσ
+qui est défini par un système d’éléments
+γi ∈Γ
+(i ∈I)
+tels que
+(∗)
+ϕ ◦ρi = int(γi) ◦ρi
+ce qui implique d’ailleurs que ρi applique kerρi dans kerρ, i.e. induit un homomor-
+phisme de suites exactes
+1
+T(K)
+Ei
+Γi
+1
+1
+π
+E
+Γ0
+1
+ρi
+avec un homomorphisme induit Γi →Γ0 injectif — et ceci posé, la relation de compat-
+ibilité (∗) devient une relation sur des monomorphismes de groupes
+Γi
+Γ
+Γ0
+Γ.
+[Les “objets bordéliques simplifiés” sont donc les systèmes d’homomorphismes de
+suites exactes
+1
+T(K)
+Ei
+Γi
+1
+π
+E
+Γ0
+int(γi)
+ρi
+pi
+p
+κ
+κi
+ρ◦
+i
+]
+21
+
+--- G103d page 27 ---
+Ainsi, on a une description relativement simple des systèmes bordéliques “réduit”
+(i.e. où dans les groupoïdes ΠU, ΠD∗, ΠD, chaque composante connexe a exactement
+un objet, et où de plus on force en quelque sorte Π(K) a n’avoir que l’objet Spec(K).
+Mais on est retrouvé en [ne] tournant pas la détermination des morphismes des systèmes
+G = (I, Gi, pi, Ki, E, ϕ
+|{z}
+ou p?
+, ρi, γi)
+et
+G′ = (I′, G′
+i, . . . ),
+disons dans le sens f : G′ →G. Il faut donc (pour fD∗) une application
+τ = τf : I′ →I
+et pour tout i un homomorphisme
+G′
+i′
+fi′
+−→Gτi′
+induisant (compte tenu de fD) par passage au quotient des homomorphismes
+Γ′
+i′
+gi
+−→Γτi′
+de sous groupes ouverts de Γ, et la donnée fD∗, fD, αD∗,D, αD,e équivaut donc à la don-
+née d’éléments αi (i ∈I) de Γ,
+αi′ ∈Γ
+(i′ ∈I′)
+tels que
+gi′(γ′) = int(αi′)(γ′)
+∀i′ ∈I′, γ′ ∈Γ′
+i′
+La donnée de fU équivaut à la donnée d’un homomorphisme de groupes
+fE : E′ →E
+celle de αD,e équivaut à la donnée de
+α ∈Γ
+tel que
+(∗)
+ϕfE = int(α)ϕ
+22
+
+--- G103d page 28 ---
+de sorte que fE induit un homomorphisme de suites exactes
+1
+π′
+E′
+i
+Γ′
+0
+1
+1
+π
+E
+Γ0
+1
+fσ0
+fE
+et moyennant cela, la condition dite (*) devient une condition sur des inclusions de sous-
+groupes de γ :
+fσ0(γ′) = int(α)γ′
+si
+γ′ ∈σ′
+0.
+Il faut expliciter encore (en plus de fD∗, fD, fU, αD∗,D, αD,e, αU,e déjà explicités) la
+donnée de commutation αD∗,U, et écrire les conditions de compatibilités avec α, α′ et κ,
+κ′. La donnée de αD∗,U équivaut à celle de systèmes d’éléments
+βi′ ∈E′
+(i′ ∈I′)
+tels que l’on ait, dans le diagramme
+G′
+i′
+E′
+Gτi′
+E
+fi′
+ρ′
+i′
+ρτi′
+fE
+la relation
+fEρ′
+i′ = int(βi)ρτi′ ◦fi′
+Reste à exprimer les deux compatibilités de (fD∗, fD1, FU, αD∗,D, αD,e, αD∗,U, αU,e)
+avec lui même et avec κ — la deuxième compatibilité est simplement la compatibilité
+des f ′
+i′ avec les κ′
+i′, κi, i.e.
+f ′
+i′ ◦κ′
+i′ = κi
+(i = τi′)
+et la première sauf erreur s’exprime par la “commutativité”
+αi′ = γ−1
+i p(β−1
+i′ )αγ′
+i′
+∀i′ ∈I′
+En résumé les homomorphismes, dans un système de diagrammes commutatifs
+1
+T(K)
+Ei
+Γ
+1
+π
+E
+Γ
+κi
+pi
+ρi
+p
+int(γi)
+(i∈I)
+23
+
+--- G103d page 29 ---
+d’un système analogue, relatif à un ensemble d’indices I′, est donné par une application
+τ : I′ →I
+et pour tout i′ ∈I′, posant i = τ(i′) , d’un système de flèches verticales fi′ : E′
+i′ →Ei,
+et d’une flèche verticale fE : E′ →E, enfin d’un système d’éléments βi′ ∈E et d’un
+α ∈Γ, s’insérant dans le système de diagrammes14
+1
+T(K)
+E′
+i′
+Γ
+1
+π′
+E′
+Γ
+1
+T(K)
+Ei
+Γ
+1
+π
+E
+Γ
+di′
+κi
+κ′
+i′
+fi′
+p′
+i′
+int(αi′)
+pi
+fϵ
+fi′
+p′
+p
+int(α)
+int(γ′
+i′)
+int(γi)
+ρ′
+i′
+ρi
+ϵi
+ϵ′
+i′
+où on a posé
+α′
+i = γ−1
+i p(β−1
+i )αγ′
+i′
+i.e.
+αγ′
+i′ = p(βi)γiαi′
+et où la face verticale postérieure des prismes est commutative (deux conditions, sur deux
+carrés), la face verticale antérieure aussi (c’est une condition, sur le carré de droite, l’autre
+carré commutatif s’en déduit par définition de π′ →π comme induit par fE…), la face
+verticale gauche du cube de droite étant commutative modulo l’isomorphisme de com-
+mutativité int(βi′), et la face verticale droite étant commutative (non seulement, par la
+condition précédente, sur P′
+i′ = Im(E′
+i′
+p′
+i′
+−→Γ), mais sur Γ tout entier) en vertu de la
+relation plus précise.
+Conjecture bordélique précisée (correspondant aux ΠU connexes). — Ces objets sont
+les homomorphismes de groupes profinis
+E
+p
+−→Γ
+14N.B. Comme les Ei →E sont injectifs, fi′ est connu quand on connaît fE et βi′, (l’existence de
+fi′ est donc une condition sur les couples fE, βi′ savoir que int(βi′)−1fEρi′ applique Ei′ dans pi(Ei).
+On peut supposer les γi′, γi égaux à 1 (en choisissant l’isomorphisme de ψ(σ(D∗
+i )) avec Spec(K) via
+l’isomorphisme de ϕ(ρ(D∗
+i )) = ϕ(eU) avec Spec K [?])
+24
+
+--- G103d page 30 ---
+(donnant naissance à une suite exacte
+1 →π
+κ
+−→E
+p
+−→Γ)
+et un ensemble fini de sous-groupes (indexés par un ensemble I d’indices)
+Ei
+E,
+ρi
+et d’isomorphismes
+Ei ∩π
+T(K)
+κi
+∼
+Un homomorphisme d’un système (E′, p′, (E′
+i′)i′∈I′, (κ′
+i′)i′∈I′) dans un système
+(E, p, (Ei)i∈I, . . . ) est donné par un homomorphisme
+f : E′ →E
+et des βi′ ∈E (i′ ∈I′)15, α ∈Γ, tels que l’on ait les conditions :
+1◦) p ◦f = int(α)p′
+2◦) ∀i′ ∈I′, ∃i ∈I (unique !) tel que
+int(βi′)−1f(E′
+i′) = Ei
+et un entier di′ ∈N∗16 tel que
+int(β−1
+i′ )fκ′
+i′ = κi ◦(di, idT(K))
+Je me a’perçois qu’il vaut mieux remplacer les βi′ par les β−1
+i′ , i.e.
+prendre
+l’isomorphisme de commutation plutôt dans le sens
+fϵρ′
+i′
+βi′
+−→ρifi′
+15Les βi′ pas uniques (si βi′ convient aussi γβi′, avec γ ∈Imκi) Mais α unique ??
+16N. B. di′ est aussi unique…
+25
+
+--- G103d page 31 ---
+qu’en sens inverse. De plus, conceptuellement le diagramme
+ΠD∗
+ΠU
+ΠD
+Πe
+φ
+ψ
+ρ
+σ
+α
+est trop compliqué, il suffit de se donner
+ΠD∗
+ρ
+−→ΠU
+φ
+−→Πe
+et de déduire ΠD par factorisation canonique de l’homomorphisme de groupoïdes
+ΠD∗→Πe en un homomorphisme qui induit un isomorphisme sur π0 et un épimor-
+phisme sur les π1, suivi d’un homomorphisme qui est [épi. sur π0, et pour cause, et qui
+est] fidèle. Alors les 1-morphismes de
+Π′
+D∗
+ρ′
+−→Π′
+U
+φ′
+−→Πe
+dans
+ΠD∗
+ρ
+−→ΠU
+φ
+−→Πe
+sont
+les
+quintuplés
+de
+2-foncteurs
+et
+3-isomorphismes
+de
+foncteurs
+(fD∗, fU, αD∗,U, αU,e, κ) donnant un diagramme avec données de commutation1718
+Π′
+D∗
+Π′
+U
+Πe
+ΠD∗
+ΠU
+Πe
+∼
+φ′
+ρ′
+fD∗
+fU
+ρ
+φ
+αD∗,U
+αU,e
+et si on a deux tels 1-morphismes f
+=
+(fD∗, fU, αD∗,U, αU,e) et g
+=
+(gD∗, gU, βD∗,U, βU,e) un 0-morphisme de f dans g est formé d’un couple (µD∗, µU)
+d’isomorphismes de foncteurs
+µD∗: fD∗
+∼
+−→gD∗,
+µU : fU
+∼
+−→gU
+17de plus, π1(ϕρ) = π1(ΠD∗/Πe) peut se définir comme un système local de groupes (commutatifs)
+sur ΠD∗, et on peut alors définir κ : (ϕρ)∗T ′
+K ≃π1(ϕρ).
+18avec une condition sur le morphisme π1(ϕ′ρ′) ≃fD∗(π1(ϕρ)) induit, qui modulo les isomor-
+phismes de Kummer doit être la multiplication par un d (indice de ramification) qui est un application
+π0(Π′
+D∗) →N∗.
+26
+
+--- G103d page 32 ---
+compatibles avec αD∗,U, βD∗,U (deux conditions de compatibilités sur les deux carrés).
+Si on se borne à des ΠU connexes, on trouve en choisissant comme plus haut un objet
+˜U de ΠU, et un isomorphisme
+ϕ(eU)
+λ
+−→
+∼
+Ω
+(où Ω= Spec(K) est l’objet référence de Πe…), un groupe E et un homomorphisme
+E
+φ
+−→Γ
+(qui est changé par automorphisme intérieure si on change λ, et E lui même remplacé
+par un groupe isomorphe, l’isomorphisme défini modulo isomorphisme intérieur, si on
+change l’objet de référence ˜U). De même, choisissant un ˜Ui dans chaque composante
+i ∈π0(ΠD∗), et un isomorphisme
+λi : ρ( ˜Ui) ≃˜U,
+on trouve des groupes Ei et des homomorphismes
+Ei
+ρi
+−→E
+Si on change λi, ρi est changé par automorphisme intérieur de E. Si on change eUi,
+Ei est remplacé par un groupe isomorphe, l’isomorphisme défini à automorphisme in-
+térieur près.
+Considérons les composés
+Ei
+E
+Γ
+p
+pi
+d’où [un ?] noyau, κ est défini par un système d’isomorphismes
+T(K)
+κi
+−→
+∼
+Ker pi
+(i ∈I)
+s’insèrent dans une famille de suites exactes
+1 →T(K)
+κi
+−→Ei
+pi
+−→Γ
+27
+
+--- G103d page 33 ---
+(NB l’image de pi est un sous-groupe ouvert) κi étant compatible aux actions de Ei,
+quand on fait opérer Ei sur T(K) via l’action de Γ sur T(K), et su lui même par auto-
+morphismes intérieures. Introduisant également π = Ker p, on trouve donc un homo-
+morphisme de suites exactes:
+(D)
+1
+T(K)
+Ei
+Γ
+1
+π
+E
+Γ
+κi
+pi
+|
+ρi
+ϵi
+κ
+p
+(i ∈I). On peut dire que ΠU définit un “groupe extérieur” [E], et ΠU →Πe un
+homomorphisme de groupes extérieures
+[E] →[Γ]
+de même ΠD∗définit un système de “groupes extérieures” [Ei], et ΠD∗→ΠU un sys-
+tème d’homomorphismes extérieurs
+[Ei] →[E],
+mais comment en termes de groupes extérieurs exprimer les données de Kummer κi ?
+Revenant aux systèmes de diagrammes D (relatif à un ensemble d’indices I) et à un
+D′ analogue (avec un ensemble d’indices I′) :
+D′
+1
+T(K)
+E′
+i′
+Γ
+1
+π
+E′
+Γ
+i′ ∈I′
+κ′
+i′
+pi′
+|
+ρ′
+i′
+ϵ′
+i′
+κ′
+p′
+un homomorphisme f de D′ dans D s’explicite par
+a) Un homomorphisme19
+fE : E′ →E
+[s’explicite en termes du choix d’un isomorphisme
+ν : f(eU ′) ≃eU
+(un autre choix modifie fE par un int(β), β ∈E)]
+19décrit le foncteur fU
+28
+
+--- G103d page 34 ---
+b) Une application20 τ : I′ →I, et pour tout i′ ∈I′, posant i = τ(i′), un homo-
+morphisme de groupes
+Ei
+f′
+i′
+−→Ei
+[s’explicite en terme du choix d’un isomorphisme fD∗( ˜
+Ui′)
+νi
+−→
+∼
+ΠUi, et modifié
+par des int(βi′), βi′ ∈Ei, si on change νi′]
+c) Une donnée de commutation21 pour
+E′
+Γ
+E
+Γ
+fE
+p′
+p
+α ∼
+α ∈Γ
+i.e.
+pfE = int(α)p′
+d) ∀i′ ∈I une donnée de commutation22 pour
+E′
+i′
+E′
+Ei
+E
+fi′
+p′
+i′
+pi
+αi′ fE
+αi′ ∈Γ
+(i′ ∈I′)
+i.e.
+pifi′ = int(αi′)fEρ′
+i′
+Notons que c), d) ensemble définissent une donnée de commutation
+E′
+i′
+Γ
+Ei
+Γ
+fi′
+p′
+i′
+pi
+βi′ |
+avec βi′ = p(αi′)α
+20décrit le foncteur fD∗
+21α décrit αU,e
+22αi′ décrit αD∗,U
+29
+
+--- G103d page 35 ---
+i.e.
+pifi′ = int(βi′)p′
+i′
+i.e. on a commutativité dans
+E′
+i′
+Γ
+Ei
+Γ
+fi′
+p′
+i′
+pi
+∼int(βi′)
+donc fi′ induit un homomorphisme de suites exactes
+1
+T(K)
+E′
+i′
+Γ
+1
+T(K)
+Ei
+Γ
+f◦
+i′
+fi′
+int(βi′)
+κ′
+i′
+pi′
+κi
+pi
+et il faut exprimer la fonctorialité de f ◦
+i′ avec l’indice de ramification di′ ∈N, on trouve
+f ◦
+i′ = di′χ(βi′) idT(K)
+où
+χ : Γ →bZ∗
+est le caractère canonique.
+Ceci posé, déterminons, pour un 1-morphisme f = (fE, τ, (fi′), α, (αi)) et un
+autref ′ = (f ′
+E, τ ′, (f ′
+i′), α′, (α′
+i)), les0-morphismesdel’undansl’autrecorrespondants
+à de systèmes d’isomorphismes µD∗: fD∗→f ′
+D∗, µU : fU →gU. Cela correspond [à
+la] condition
+τ ′ = τ,
+d′
+i′ = d′
+i
+∀i′ ∈I′
+|
+{z
+}
+ceci résulte des autres conditions
+et à la donnée de
+a) µ ∈E 23 définissant un isomorphisme entre fE : E′ →E et f ′
+E : E′ →E i.e.
+tel que
+f ′
+E = int(µ)fE
+23décrit µU
+30
+
+--- G103d page 36 ---
+b) µi′ ∈Ei 24 (i′ ∈I′, i = τ(i′)) satisfaisant
+f ′
+i′ = int(µi′)fi′
+ceci implique déjà di′ = d′
+i′. Les µ ∈E, µi′ ∈Ei étant liés aux α, α′ (∈E), aux
+αi′, α′
+i′ (∈Γ) de la façon suivante
+α′ = p(µ)α
+α′
+i′ = ρi(µi′)α′
+∀i′ ∈I′
+ou encore
+
+
+
+p(µ) = α′α−1
+ρi(µi′) = α′
+i′α−1
+i′
+Notons que, comme ρi est injectif, les deuxièmes relations, donnant les ρi(µi′),
+déterminent les µi′ de façon unique, l’existence de ces µi′ équivaut aux relations
+αi′α−1
+i′
+∈ρi(Ei)
+i′ ∈I′
+Quant à la relation p(µ) = α′α−1, elle détermine µ modulo multiplication (à
+droite disons) par un µ0 ∈Ker p = π, mais qui doit être tel que l’on ait encore
+f ′
+E = int(µµ0)fE
+(en plus de f ′
+E = int(µ)fE) ce qui signifie que
+int(µ0)fE = fE
+i.e.
+µ0 ∈CentrΠ fE(E′)
+C’est donc cela l’indétermination exacte dans le choix d’un 0-morphisme des 1-
+morphismes f et f ′ de D′ dans D.
+Si par exemple on est dans les conditions où π →π induit par fE : E′ →E a une
+image d’indice fini (image ouverte) — cas d’un “morphisme non constant” ! — alors µ0
+doit centraliser un sous-groupe ouvert de π — sauf erreur cela aussi implique µ0 = 1,
+24décrit µD∗
+31
+
+--- G103d page 37 ---
+donc il semble bien que (dans les cas correspondants à des homomorphismes dominants
+de courbes algébriques) une 0-morphisme d’un f dans un f ′ (s’il existe) est unique, i.e.
+Hom(D′, D∗) est une catégorie discrète.
+On peut interpréter D comme E muni de sous-groupes Ei ⊂E, et de p : E →Γ,
+(noyau π) enfin d’isomorphismes
+κi : T(K)
+∼
+−→Ei ∩π = Li
+(commutant à l’action de Ei). Si on a une autre système (E′, ( E′
+i′
+|{z}
+⊂E′
+)i′∈I′, p′ : E′ →
+Γ, (κ′
+i′)i′∈I′), un morphisme du premier dans le second est défini par un
+f : E′ →E
+satisfaisant les conditions suivantes
+a) ∀i′ ∈I′, ∃i ∈I tel que f(E′
+i) soit contenu dans un conjugué de Ei [soit αi′ ∈E
+tel que f(E′
+i) ⊂int(α−1
+i′ (Ei))] i.e. int(αi′)f(E′
+i) ⊂Ei.
+b) pf est conjugué de f ′ [soit α ∈Γ tel que pf = int(α)p′]
+NBLei ∈I correspondantài′ ∈I′ estunique, d’oùτ : I′ →I. Silesαi′ sontchoi-
+sis, on déduit ∀i′ [un] homomorphisme induit fi′ : E′
+i′ →Ei, fi′ = (int(αi′)◦f)/E′
+i′,
+qui induit dès lors, via les κ′
+i′, κi, un endomorphisme f ◦
+i′ : T(K) →T(K)25. On ex-
+ige que α ∈Γ (qui conjugue fE en f ′
+E, et est probablement uniquement déterminé par
+cette condition) et αi′ (qui est sans doute déterminé modulo composition à gauche avec
+élément du normalisateur de Ei (du moins des transporteurs des Ei d’un sous-groupe
+ouvert de Ei — c’est itou si f est isomorphisme) puissent être choisis de telle façon que,
+posant βi′ = p(αi′)α, on ait
+f ◦
+i′ = (di′χ(βi′)) idT(K)
+i.e.
+χi′ = di′χ(βi′)
+où di′ ∈N∗est un entier naturel (évidement uniquement déterminé quand α et les αi′
+sont choisis)26.
+25NB A priori f ◦
+i′ est la multiplication par un χi′ ∈bZ∗; le centralisateur dans Γ d’un sous-groupe
+ouvert est réduit à l’unité.
+26Cettecondition surlessystèmesdes αi′ nechange pas(α restantfixé)sionchange αi′ enµi′αi′ ∈Ei.
+32

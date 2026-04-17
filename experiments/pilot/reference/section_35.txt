@@ -1,0 +1,237 @@
+Section: § 35. — L’INJECTIVITÉ DE ΓQ →Autextlac(ˆπ0,3)
+G103d pages: 261-267
+
+--- G103d page 261 ---
+§ 35. — L’INJECTIVITÉ DE ΓQ →Autextlac(ˆπ0,3)
+Théorème 1135. — Soit Γ = Gal(Q0/Q), où Q0 est la clôture algébrique de Q dans C,
+considérons l’homomorphisme canonique
+(1)
+Γ
+Θ→ˆˆT0,3 = Autextlac(ˆπ0,3).
+Cet homomorphisme est injectif.
+Démonstration.
+Lemme 1. — Soit x ∈Q, x ̸= 0, 1 i.e. x ∈U0,3(Q); choisissons un chemin
+sur ¶1(C) de P = −¯j (point base pour définir π0,3 = π1(U0,3(C), P), (NB. U0,3 =
+¶1(Q) \ {0, 1, ∞}), d’où un isomorphisme π1(U0,3(Q0), x) ≃ˆπ0,3, et par transport de
+structure une action effective de Γ sur ˆπ0,3 (pas seulement extérieure). Alors K = Ker Θ
+opère trivialement sur ˆπ0,3.
+Démonstration. Il suffit de voir que l’opération extérieure de K sur π1(V ) où V =
+U0,3 \ {x}, est triviale. D’après le résultat de Belyi, il existe un morphisme (défini sur Q,
+ceci est essentiel)
+¶1Q →¶1Q,
+étale au-dessus de U0,3 = ¶1Q \ {0, 1, ∞}, et tel que x 7→0. Soit U ′ le revêtement étale
+de U0,3 = U induit, π′ = π1(U
+′) son groupe fondamental géométrique, sur lequel Γ
+donc K ⊂Γ opère extérieurement. Alors π(V ) est un quotient de π′, avec respect des
+135Démontré modulo le lemme 2 plus bas.
+
+--- G103d page 262 ---
+opérations extérieures de Γ, et il suffit de prouver que K opère trivialement sur π′. Mais
+π′ s’identifieàunsous-groupeouvertde ˆπ0,3 = π (avecrespectdesopérationsextérieures
+de K), sur lequel l’opération extérieure de K est triviale. Il s’ensuit que l’opération ex-
+térieure de K sur π′ se fait à travers un groupe quotient fini.
+1
+π′
+E′
+K
+K
+1
+1
+π
+EK
+K
+1
+[En effet, l’action extérieure de K se fait à travers l’action effective du groupe extérieur
+EK, laquelle par construction de K se fait par un homomorphisme EK →Π/Z (Z =
+Centre(π)), et l’action de E′
+K induite se fait par le composé E′
+K →EK →π/Z, dont
+l’image est dans N/Z, où N est le normalisateur de π′ dans π. Donc l’image de K dans
+Autext(π′) est contenue dans celle de N/Z →Autext(π′), or N/π′ est fini.]
+Repassant à π1(V ), on voit donc que l’image de K dans Autext(π1(V )) est finie,
+donc l’image de K dans Aut(ˆπ0,3) est finie. Elle est d’ailleurs formée d’automorphismes
+intérieurs, donc le lemme 1 sera conséquence du
+Lemme 2. — Tout automorphisme intérieur d’ordre fini de ˆπ0,3 (groupe profini libre
+à deux générateurs) est trivial. De façon plus précise: ˆπ0,3 a un centre réduit à {1}, et tout
+élément de ˆπ0,3 d’ordre fini est réduit à 1.
+Ceci est un énoncé d’algèbre profini pure, que je reporte pour plus tard, pour en
+terminer avec la partie “géométrique” de la démonstration du théorème.
+Lemme 3. — Pour tout ouvert non vide V ⊂¶1Q, considérant l’action extérieure de
+Γ sur π1(V ), la restriction de celle-ci à K est triviale.
+Quitte à passer à un ouvert plus petit, on peut supposer par Belyi que V est un revête-
+ment étale de U0,3 – et le raisonnement précédent montre alors que l’action extérieure
+de K se fait via un groupe quotient fini – mais cela n’est pas suffisant pour notre pro-
+pos, et n’implique pas par lui-même que cette action soit triviale. D’ailleurs, au point
+où j’en suis, on aurait pu remplacer U par n’importe quelle courbe algébrique quasi pro-
+jective lisse géométriquement connexe – pour trouver que K opère sur le groupe ex-
+térieur π1(V ) via un groupe fini. Mais ici l’hypothèse V ⊂¶1Q implique qu’il existe
+y ∈V (Q), soit x ∈U(Q) son image dans U = U0,3. Prenant y, x comme points base
+257
+
+--- G103d page 263 ---
+pour les groupes fondamentaux, on trouve maintenant un homomorphisme effectif de
+groupes fondamentaux
+π′ = π1(V , y) ,→π(≃ˆπ0,3) = π1(U, x),
+compatible avec une action effective de Γ sur ces groupes. Par le lemme 1 l’action induite
+de K sur π = π1(U, x) est triviale, donc aussi son action sur le sous-groupe π′. A fortiori
+l’action extérieure est triviale, cqfd.
+On peut maintenant prouver le
+Lemme 4. — K = {1} (i.e. le théorème!)
+En effet, sous les conditions du lemme 2, l’action de Γ sur l’ensemble I = S(Q0),
+où S = ¶1
+Q \ V , est déduite de l’action extérieure de Γ sur π1(V ) si card(I) ≥2,
+comme l’action sur les classes de conjugaison de “sous-groupes lacets”. Comme K opère
+trivialement sur le groupe extérieur, il opère trivialement sur I. Ceci étant vrai pour tout
+V , on voit que l’action de K sur ¶1(Q0) = Q0 ∪{∞} est triviale, i.e. son action sur Q0
+l’est, donc K = {1}, cqfd.
+Ouf!
+Ilresteàreporterladémonstrationdulemme2, quejevaisreformulersousuneforme
+plus générale:
+Théorème 2. — Soit π un groupe profini libre sur un ensemble fini I de cardinal ≥2.
+Alors:
+a) Le centre de π est égal à {1}.
+b) Il n’y a pas dans π d’élément d’ordre fini autre que 1.
+Finalement je cale sur a) – tout comme je ne vois pas pourquoi le centre de Γ (et de
+tout sous-groupe ouvert) doit être réduit à {1}. Consulter Deligne à ce sujet!
+Pour b), voici un expédient. Soit K un corps algébriquement clos de caractéristique
+0, et considérons le corps des fonctions L = K(X) de U = ¶1
+K \ {n + 1 points}
+(n = card(I)). Alors π ≃π1(U), et c’est un quotient de EL = Gal(¯L/L). Comme
+π est libre, EL →π se relève en π →EL, et il suffit de voir que EL n’a pas d’élément
+d’ordre fini ̸= 1. Mais d’après Artin, il n’y a pas d’automorphisme d’ordre fini ̸= 1 d’un
+258
+
+--- G103d page 264 ---
+corps algébriquement clos ¯L, sauf dans le cas où ¯L est extension quadratique d’un corps
+ordonné maximal R, qui soit le corps des invariants de τ (donc τ d’ordre 2 exactement).
+Mais en l’occurence on aurait R ⊃L, et L ⊃K, or dans K l’élément −1 est un
+carré, donc R ne peut être ordonné – absurde!
+Corollaire1(duthéorème1). —SoitX unecourbealgébrique(lisse, géométriquement
+connexe, quasi-projective), sur k extension finie de Q. (Je présume que l’action extérieure de
+E
+¯k
+k sur π1(X¯k) est fidèle si U anabélien – à défaut de pouvoir le prouver, j’énonce:) Alors
+il existe une partie ouverte non vide V de X telle que l’action extérieure de E
+¯k
+k sur π1(V¯k)
+soit fidèle.
+Démonstration. D’après Belyi, on sait qu’on peut trouver V ⊂X qui soit un revête-
+ment étale de U = (U0,3)k, je dis que ce V là convient. Soit donc K le noyau de
+l’opération extérieure de Γ = E
+¯k
+k sur π′ = π1(V¯k). Soit y un point fermé de V , ra-
+tionnel sur l’extension finie k′ de k correspondant à un sous-groupe ouvert Γ′ = E
+¯k
+k′ de
+Γ, soit K′ = Γ′ ∩K. Soit x l’image de y dans U: on a
+π′ = π1(V¯k, y) ,→π = π1(U¯k, x),
+et par construction l’action extérieure de K′ sur π′ est triviale, donc K′ opère sur π′ par
+automorphismes intérieurs. Or on a le
+Lemma 5136. — Soit π un groupe profini à lacets, π′ un sous-groupe ouvert; alors tout
+automorphisme u de π qui laisse stable π′ et induit sur π′ un automorphisme intérieur
+(resp. l’identité) est intérieur (resp. l’identité).
+Admettonspourl’instantcelemme–ilenrésultequelesélémentsdeK′, quiopèrent
+sur π en induisant sur π′ des automorphismes intérieurs, induisent sur π lui-même des
+automorphismes intérieurs, i.e. que l’action extérieure de K′ sur π est triviale. D’après
+le théorème 1, on sait d’autre part que l’action extérieure de Γ′ sur π est fidèle, donc
+K′ = {1}. Il en résulte que K est fini. Mais par Artin on sait que les seuls sous-groupes
+finis ̸= {1} de Γ sont ceux engendrés par une “conjugaison complexe” τ, correspondant
+à un sous-corps ordonné maximal entre k et ¯k. Mais pour un tel τ on a Hi(τ) = −1,
+136prouvé seulement modulo vérification de (2), (4) ci-dessous – pour le Corollaire 1; (2) est d’ailleurs
+suffisant…
+259
+
+--- G103d page 265 ---
+donc l’action extérieure de τ ne peut être triviale – on gagne. En fait, la démonstration a
+montré ceci:
+Corollaire. — Soient k un corps de caractéristique 0, U une courbe algébrique (lisse
+etc.) sur k, telle que E
+¯k
+k = Γ opère fidèlement sur π1(U¯k) (opération extérieure). Alors
+pour tout revêtement étale géométriquement connexe V de U, l’opération extérieure de Γ
+sur π1(V¯k) est également fidèle.
+Reste à prouver le lemme 5. Il suffit de le prouver dans le cas “respé” – l’autre s’en
+déduitaussitôt. Siπ aaumoinsuneclassedelacets(casd’unecourbealgébriqueaffinei.e.
+non propre), alors π est libre – et le lemme 5 est valable justement pour de tels groupes.
+Si (li)1≤i≤ν est un système de générateurs, soit Li le sous-groupe fermé engendré par li,
+nous admettrons que ∀n ∈N∗
+(2)
+Li = Centrπ(Ln
+i ) 137.
+Ceci posé, si l’automorphisme u de π induit l’identité sur π′, ∃n ∈N∗tel que ∀1 ≤
+i ≤ν, u(ln
+i ) = ln
+i , donc u(li) centralise ln
+i = u(li)n, donc par (2) on a u(li) ∈Li,
+i.e. u(Li) ⊂Li, mais on a Aut(Li) ≃ˆZ∗, et un automorphisme d’un ˆZ-module libre
+de rang 1 est connu quand on le connaît sur uLi
+∼←Li. Donc ∀i on a u(li) = li, donc
+u = id, cqfd.
+Dans le cas où π n’est pas libre, prenons un bon (xi, yi)1≤i≤g – de sorte que π soit
+défini par la relation génératrice
+(3)
+gY
+1
+[xi, yi] = 1.
+Soient Λi, Λ′
+i les sous-groupes fermés engendrés par xi, yi. (Ils sont d’ailleurs tous con-
+juguéssousAut(π)…). J’admetsquecesgroupessont≃ˆZ(i.e. queleshomomorphismes
+surjectifs ˆZ →Λi, ˆZ →Λ′
+i envoyant 1 dans les xi, yi sont injectifs – c’est d’ailleurs trivial
+en passant à πab) et qu’on a, en analogie avec (2), pour tout n ∈N∗
+Centrπ(Λn
+i ) = Λi, Centrπ(Λ′n
+i ) = Λ′
+i,
+et on termine comme ci-dessus.
+137pas prouvé!
+260
+
+--- G103d page 266 ---
+Remarque: Le résultat le plus fort de fidélité dans la direction du présent paragraphe,
+concernant des actions de Γ et de ses sous-groupes ouverts, serait le suivant: si V est une
+courbe algébrique anabélienne sur l’extension finie k de Q, avec la clôture algébrique ¯k,
+alors non seulement l’action extérieure de E
+¯k
+k = Γ sur π1(V¯k) devrait être fidèle, i.e.
+Γ →ˆˆT(π)138
+injective, mais même l’homomorphisme composé
+Γ →N(π) →N(π)/ˆT+(π) ≃Γπ
+devrait être injectif (auquel cas ce sera même un isomorphisme, puisqu’il est surjectif par
+constructionmêmedeN(π), Γπ…)Desraisonnementsheuristiquesfaitsprécédemment
+(moins convaincants sans doute que ceux du présent paragraphe!) semblent indiquer
+que ce serait le cas au moins lorsque V est un revêtement étale de U = (U0,3)k, auquel
+cas en effet l’homomorphisme Γ →Γπ s’insère dans un diagramme commutatif
+Γ
+Γπ0
+Γπ
+Γπ′
+où π0 = π1(U¯k), de sorte que π est un sous-groupe ouvert de π0, et π′ est un sous-groupe
+ouvert convenable, caractéristique dans π0. Si on pouvait montrer que Γπ0 →Γπ′ est
+injectif (ce qui est plus ou moins une histoire d’algèbre profinie), il en serait de même du
+composé Γ ,→Γπ0 →Γπ′, donc aussi de Γ →Γπ. Donc modulo cette hypothèse sur
+les groupes profinis, et utilisant Belyi, on trouve que pour toute courbe algébrique V sur
+k, il existe V ′ ⊂V ouvert non vide, tel que
+Γ →Γπ′
+(où π′ = π1(V ′
+¯k)) soit injectif. Quant à savoir si Γ →Γπ est lui-même déjà injectif – ou
+ce qui revient au même, si Γ →Γg pour g ≥2 et Γ →Γ1,1 sont injectifs, je n’ai pas de
+raison heuristique plausible pour m’en convaincre à présent – peut-être est-ce tout à fait
+faux? L’argument plus ou moins convaincant rappelé précédemment (à supposer qu’on
+arrive à le justifier) montrerait seulement que si Γ →Γπ est injectif pour un π (ce qui
+138Cet homomorphisme se factorise automatiquement par le sous-groupe N(π) qui normalise ˆT(π).
+261
+
+--- G103d page 267 ---
+ne dépend que de son type (g, ν)) alors il l’est pour les π′ ouverts dans π. On le sait à
+présent (modulo peu de chose, tout au moins) pour les types (0, ν) (ν ≥3) exactement
+– ni plus ni moins – et on pourrait peut-être le déduire pour les types (g, ν) qui s’en
+déduisent par “revêtement fini”. Mais il est clair déjà qu’on n’obtient pas les types (g, 0)
+comme cela (g ≥2), ni même aucun (g, ν) avec g ≥1, ν ∈{0, 1, 2}. C’est dire
+qu’on est loin du compte…Le premier cas bien intéressant serait donc le cas (1, 1) (tore
+à un trou!), où ˆT+
+1,1 ≃SL(2, Z)ˆopérant extérieurement sur ˆπ1,1 (groupe libre à deux
+générateurs, encore – comme par hasard) – l’action “arithmétique” de ΓQ sur ˆπ1,1 (i.e.
+l’action extérieure mod ˆT+
+1,1 ≃SL(2, Z)ˆ) est-elle fidèle?
+262

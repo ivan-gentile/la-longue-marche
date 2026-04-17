@@ -1,0 +1,150 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 28. --- CHANGEMENT DE TYPE $(g,\nu)$ (SUITE)~: \\ b) PASSAGE À UN REVÊTEMENT FINI}\thispagestyle{empty}
+\addcontentsline{toc}{section}{28. Changement de type $(g,\nu)$ (suite): b) passage à un revêtement fini (la conjecture hâtive grince\dots)}
+\label{sec:28}
+\section*{}
+
+Soit $\pi$ un groupe profini à lacets de type $(g,\nu)$, anabélien comme toujours, $\pi'$ un sous-groupe d'indice fini.  On sait (ou on vérifie, par passage au cas discret) que muni des traces sous $\pi$ des sous-groupes à lacets de $\pi$, $\pi'$ est un groupe à lacets.  Ses sous-groupes à lacets sont aussi les sous-groupes $L'$ tels que
+\begin{enumerate}
+    \item[a)] $L'= \Centr_{\pi}(L')\cap \pi'$
+    \item[b)] $L= \Centr_{\pi}(L')$ est un sous-groupe à lacets dans $\pi$.
+\end{enumerate}
+On pose $d(L')=[L:L']$, et on a ainsi une fonction $d:I'=I(\pi')\to \mathbf{N}^*$, et une application $I'\xlongrightarrow{\phi} I$, telles que $\forall i\in I$, on ait~:
+$$
+\sum_{{i'\in I'}\atop{i' \, {\hbox {au dessus de}}\, i}} d(i')= n
+\ \ \ \ \ ({\hbox  {où} }\ n=[\pi:\pi']).  \leqno{(1)}
+$$
+On aura la formule de Hurwitz
+$$
+2g'-2 = n(2g-2)+\sum_{i'\in I'} (d(i')-1 ),
+\leqno{(2)}
+$$
+où la somme à droite est égale à $(n\,{\card}(I)-{\card}(I'))$, i.e.
+$$
+2g'-2 + {\card}(I')=n\bigl(2g-2+{\card}(I)).
+\leqno{(3)}
+$$
+(NB.  $2g-2+{\card}(I)$ est l'opposé de la caractéristique d'Euler-Poincaré à supports compacts de la courbe dont $\pi$ est le groupe fondamental\dots).\footnote{NB. Dire qu'on est dans le cas anabélien signifie que $-{\operatorname{EP}}_!$ [i.e. l'opposé de la caractéristique d'Euler-Poincaré à support compact] est $\ge 1$, et cette relation est donc conservée par passage à un revêtement. L'entier $-{\operatorname{EP}}_!$ mesure par sa positivité stricte le degré d'anabélianité en quelque sorte.}
+
+De fa\c{c}on évidente, toute discrétification de $\pi$ en définit une de $\pi'$ --- et il en est de même pour les discrétifications orientées, modulo un peu de cohomologie, ce qui revient à dire, dans le cas discret par exemple, que $T \isom  \mathrm{H}^2_!(U,\mathbf{Z}) \to \mathrm{H}^2_!(U',\mathbf{Z}) \isom  T'$ peut s'écrire sous la forme $n\theta^{-1}$, où $\theta$ est un isomorphisme bien déterminé (l'isomorphisme trace) $T' \isommap T$.
+
+Il n'est pas clair pour moi à première vue si l'application
+$$
+\operatorname{Discrét}(\pi)\to \operatorname{Discrét}(\pi')
+$$
+est surjective, ou injective. L'injectivité pour tout $\pi'$ d'indice fini dans $\pi$ signifierait que deux discrétifications $\pi_0$, $\pi'_0$ de $\pi$ qui sont commensurables, i.e. telles que $\pi_0\cap\pi'_0$ soit d'indice fini dans $\pi_0$ et dans $\pi'_0$, sont égales.
+
+Supposons que $\pi'$ soit un sous-groupe invariant dans $\pi$, et posons $G=\pi/\pi'$.
+\vskip .3cm
+{
+Conjecture. --- \it L'application $\operatorname{Discrét}(\pi)\to \operatorname{Discrét}(\pi')$ est injective, et son image est formée des discrétifications $\pi'_0\subset \pi'$ telles que $G\to{\Autext}_{\operatorname{lac}}(\pi') \isom {\Autext}_{\operatorname{lac}} (\hat\pi'_0) \isom \hat{\hat{\mathfrak{T}}}(\hat\pi'_0)$ se factorise par $\mathfrak{T}(\pi'_0)={\Autext}_{\operatorname{lac}}(\pi'_0)$ (et en fait, même par $\mathfrak{T}(\pi'_0)^+$).  En d'autres termes, $\forall g\in\pi$, $\exists h\in\pi'$ tel que ${\operatorname{Int}}(hg)(\pi'_0) \subset  \pi'_0$, i.e. $\pi' \pi_0=\pi$, où $\pi_0$ est le normalisateur de $\pi'_0$ dans $\pi$.
+}
+\vskip .3cm
+La condition pour qu'un $\pi'_0$ soit dans l'image est évidemment nécessaire. Montrons qu'elle est suffisante, et que le $\pi_0$ donnant naissance à $\pi'_0$ par $\pi_0\cap\pi'$ est unique. On a une action extérieure de $G$ sur $\pi'_0$, qui définit l'action extérieure sur $\hat{\pi}'_0 \isom \pi'$, or $\pi$ se récupère canoniquement à partir de cette dernière (car ${\Centre}(\hat{\pi}')=1$), et on voit que c'est le complété profini de l'extension $\pi_0$ de $G$ par $\pi'_0$, définie par l'action extérieure de $G$ sur $\pi'_0$. On a donc bien une discrétification généralisée $\pi_0$ de $\pi$, au sens de la seule structure de groupe profini, et elle induit $\pi'_0$ --- mais il faut voir qu'elle est compatible avec la structure à lacets de $\pi$. Mais celle-ci s'explicite, à partir de la structure à lacets de $\pi'$, en prenant les sous-groupes à lacets $L'$ de $\pi'$, et leurs centralisateurs dans $\pi$.  Faisant itou pour $\pi_0\supset\pi_0'$, on devrait trouver une structure à lacets sur $\pi_0$, donnant lieu aux mêmes $d_i$. J'ai l'impression que \c ca ne doit pas être très vache à prouver --- ce serait comme si on savait déjà que toute extension ``sans torsion'' d'un groupe fini par un groupe à lacets est de fa\c con canonique un groupe à lacets\dots
+\vskip .3cm
+{
+Corollaire. --- \it En tout cas, l'application
+$$
+\operatorname{Discrét}(\pi)\to \operatorname{Discrét}(\pi')
+$$
+est \emph{injective}. 
+}
+\vskip .3cm
+N.B. Elle ne doit pas toujours être bijective, car il doit y avoir une action extérieure d'un $G$ sur un $\hat{\pi}'_0$, i.e. un homomorphisme $G\to{\hat{\hat{\mathfrak{T}}}}(\hat{\pi}'_0)$, qui ne se factorise pas par $\mathfrak{T}(\pi'_0)$, et qui pourtant est aussi bonne du point de vue groupe profini que celles provenant d'un $\pi$ et d'un sous-groupe invariant $\pi'$. En fait, partons d'une telle situation \emph{discrète} $\pi_0\supset \pi'_0$, d'où $G = \pi_0/\pi'_0$ et $G\to{\Autext}_{\operatorname{lac}}(\pi'_0)=\mathfrak{T}(\pi'_0)\subset {\hat{\hat{\mathfrak{T}}}}(\hat{\pi}'_0)$, et \emph{conjuguons} $G$ par un élément $\gamma$ de ${\hat{\hat{\mathfrak{T}}}}(\pi'_0)$, de fa\c con à trouver $G\to\hat{\hat{\mathfrak{T}}}(\hat{\pi}'_0)$ qui ne se factorise pas par $\mathfrak{T}(\pi'_0)$. On trouve une extension $\pi^\natural$ de $G$ par $\hat{\pi}'_0$, \emph{isomorphe} à $\hat{\pi}_0$ (en tant qu'extension de $G$ par $\hat{\pi}'_0$), donc la structure à lacets de $\hat{\pi}'_0$ en définit une sur $\pi^\natural$ (de fa\c con à être induite par cette dernière), mais  pourtant la discrétification choisie $\pi_0$ de $\hat{\pi}_0$ n'est pas induite par une de $\pi$. Pour faire la construction, il suffit de trouver un élément  $\gamma\in {\hat{\hat{\mathfrak{T}}}}(\pi'_0)$ tel que ${\operatorname{Int}}(\gamma)\cdot G \not\subset \mathfrak{T}$ i.e. tel que $G$ ne stabilise pas $\gamma^{-1}(\pi'_0)\subset  \hat{\pi}'_0$. Un tel $\gamma$ existe toujours\dots
+
+Bien sûr, il n'y a pas de raison, pour deux discrétifications $\pi_0$, $\pi_1$ de $\pi$, que si $\pi_0$, $\pi_1$ sont $\pi$-conjugués (i.e. définissent la même prédiscrétification stricte de $\pi$), il en soit de même pour $\pi'_0$ et $\pi'_1$ pour l'action intérieure de $\pi'$ (il faudrait que $\pi_0$, $\pi_1$ soient conjugués par $\pi'$, et pas seulement par $\pi$). Par contre, je présume que si $\pi_0$, $\pi_1$ sont ``adhérents'' l'un à l'autre dans l'espace des discrétifications de $\pi$, i.e. s'ils définissent une même prédiscrétification, il en est de même pour $\pi'_0$, $\pi'_1$, et que l'application
+$$
+\operatorname{Prédiscrét}(\pi)\to\operatorname{Prédiscrét}(\pi')
+\leqno{(4)}
+$$
+qu'on obtient ainsi, est encore bijective, et qu'elle passe à son tour au quotient, pour définir une application bijective
+$$
+\operatorname{Préarith}(\pi)\to\operatorname{Préarith}(\pi'),
+\leqno{(5)}
+$$
+et que si $\Sigma$, $\Sigma'$ se correspondent par cette dernière, on a un isomorphisme canonique
+$$
+\boldsymbol{\Gamma}_\Sigma\to\boldsymbol{\Gamma}_{\Sigma'},
+\leqno{(6)}
+$$
+compatible avec les actions de ces groupes sur l'ensemble $P_\Sigma$ des prédiscrétifications de $\pi$ compatibles à $\Sigma$, et l'ensemble $P_{\Sigma'}$ des prédiscrétifications de $\pi'$ compatibles à $\Sigma'$ (qui sont respectivement des torseurs à gauche sous $\boldsymbol{\Gamma}_\Sigma$, $\boldsymbol{\Gamma}_{\Sigma'}$). En même temps, on trouvera donc que $\Sigma$ est unique pour $\pi$, i.e. invariant dans $\hat{\hat{\mathfrak{T}}}(\pi)$, si et seulement si $\Sigma'$ est unique dans $\pi'$, i.e. invariant dans $\hat{\hat{\mathfrak{T}}}(\pi')$.
+
+En tout cas, la conjecture fondamentale qui interprète les $\boldsymbol{\Gamma}_{g,\nu}$ comme $\boldsymbol{\Gamma}_0={\Gal}$ $(\overline{\mathbf{Q}}_0/\mathbf{Q})$ aurait au moins comme conséquence que l'application $\operatorname{Discrét}^+(\pi)\to\operatorname{Discré}^+(\pi')$ passe au quotient de deux fa\c cons, pour donner un diagramme commutatif~:
+\[\begin{tikzcd}
+	{\operatorname{Discrét}^+(\pi)} & {\operatorname{Discrét}^+(\pi')} \\
+	{P =~\operatorname{Prédiscrét}^+(\pi)} & {P' =~\operatorname{Prédiscrét}^+(\pi')} \\
+	{A =~\operatorname{Arithm}(\pi)} & {A' =~\operatorname{Arithm}(\pi')}
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-2, to=3-2]
+	\arrow[from=2-1, to=3-1]
+	\arrow[from=1-1, to=2-1]
+\end{tikzcd}\]
+et que le carré inférieur est cartésien (sans préjuger de l'injectivité ou de la bijectivité de l'application $A\to A'$).  Donc il faudrait que si $\pi_0$, $\pi_1$ sont deux discrétifications orientées de $\pi$, qui définissent la même prédiscrétification (orientée), alors il en soit de même pour leurs traces sur $\pi'$, $\pi'_0$ et $\pi'_1$, relativement à $\pi'$. Mais déjà si $\pi_0$ et $\pi_1$ sont $\pi$-conjugués (i.e. définissent la même discrétification orientée, \emph{stricte}), ce n'est pas tellement clair --- mais si, car on aura $\pi=\pi' \pi_0$ donc si $\pi_1= {\operatorname{int}}(u)\ \pi_0$, écrivant $u=u'u_0$ avec $u'\in\pi'$, $u_0\in\pi_0$, on aura $\pi_1={\operatorname{int}}(u'){\operatorname{int}}(u_0)\pi_0={\operatorname{int}}(u')\pi_0$, donc $\pi'_1={\rm int}(u')\pi'_0$ donc $\pi'_0$ et $\pi'_1$ sont conjugués. Tâchons de procéder de même dans le cas général d'un $u\in\hat{\mathfrak{S}}(\pi_0)^+$ tel que $\pi_1=u(\pi_0)$, en écrivant si possible $u=u'u_0$, avec $u'\in\hat{\mathfrak{S}}(\pi_0,\pi'_0)^+$, et $u_0\in\mathfrak{S}(\pi_0)^+$, où on définit $\mathfrak{S}(\pi_0,\pi'_0)^+$ comme le groupe des automorphismes discrets de $\pi_0$ qui \emph{stabilisent} $\pi'_0$, et $\hat{\mathfrak{S}}(\pi_0,\pi'_0)^+$ est son compactifié profini.  On aurait alors $\pi_1= u'(u_0(\pi_0))=\cdot u'(\pi_0)$, où $\cdot u'$ désigne l'image de $u'$ dans $\hat{\mathfrak{T}}(\pi'_0)$. En tous cas, il n'y a aucun problème si $\pi'$ est un sous-groupe \emph{caractéristique} de $\pi$, car alors on a un homomorphisme discret $\mathfrak{S}(\pi_0)\to\mathfrak{S}(\pi'_0)$, définissant l'homomorphisme  $\hat{\mathfrak{S}}(\hat\pi_0)\to\hat{\mathfrak{S}}(\hat\pi'_0)$. Comme les sous-groupes ouverts caractéristiques de $\pi$ sont cofinaux, on est ramené (pour les questions de factorisabilité de $D(\pi)\to D(\pi')$ en $P(\pi)\to P(\pi')$ et $A(\pi)\to A(\pi')$ et de bijectivité des applications $P(\pi)\to P(\pi')$ et $A(\pi)\to A(\pi')$) au cas où $\pi'$ est un sous-groupe \emph{caractéristique}. On a alors factorisabilité de $D(\pi)\to D(\pi')$ en $P(\pi)\to P(\pi')$. Montrons que cette application est injective\dots Cela signifie (a) que l'image inverse dans $\hat{\hat{\mathfrak{S}}}(\hat\pi_0)$ de $\hat{\mathfrak{S}}(\hat\pi'_0)^+$ est $\hat{\mathfrak{S}}(\hat\pi_0)^+$, la surjectivité signifie (b) que tout élément de $\hat{\hat{\mathfrak{S}}}(\hat{\pi'_0})$ est congru mod $\hat{\mathfrak{S}}(\pi'_0)^+$ à un élément de l'image de $\hat{\hat{\mathfrak{S}}}(\pi_0)$. La factorisabilité en $A(\pi)\to A(\pi')$ signifie que (c) par l'application précédente $\hat{\hat{\mathfrak{S}}}(\pi_0)\hookrightarrow \hat{\hat{\mathfrak{S}}}(\pi'_0)$, (NB. il est immédiat que c'est injectif) envoie $M(\pi_0)={\Norm}_{\hat{\hat{\mathfrak{S}}}(\pi_0)}(\hat{\mathfrak{S}}^+(\pi_0)$) dans $M(\pi'_0)$, l'injectivité de $A(\pi) \to A(\pi')$ que (d) l'on a même que $M(\pi)$ est exactement l'image inverse de $M(\pi')$, la surjectivité de $A(\pi)\to A(\pi')$ que (e) tout élément de $\hat{\hat{\mathfrak{S}}}(\pi'_0)$ est congru mod $M(\pi'_0)$ à un élément de $\hat{\hat{\mathfrak{S}}}(\pi_0)$ (c'est plus faible que (b)) --- et ces conditions réunies impliquent que l'homomorphisme canonique 
+$$
+M(\pi_0)/\hat{\mathfrak{S}}(\pi_0)=\boldsymbol{\Gamma}_{\pi_0}\to\boldsymbol{\Gamma}_{\pi'_0}=M(\pi'_0)/\hat{\mathfrak{S}}(\pi'_0)
+$$
+est un isomorphisme --- il suffit même pour ceci d'avoir (c) (pour pouvoir définir cette application) et (a) (pour son injectivité), et (b) et le renforcement (d) de (c) (pour sa surjectivité). Donc on voit que tout est suspendu aux propriétés des homomorphismes d'inclusions de groupes~:
+\[\begin{tikzcd}
+	{\hat{\mathfrak{S}}^+(\pi_0)} & {M(\pi_0)} & {\hat{\hat{\mathfrak{S}}}(\pi_0)} \\
+	{\hat{\mathfrak{S}}^+(\pi'_0)} & {M(\pi'_0)} & {\hat{\hat{\mathfrak{S}}}(\pi'_0)}
+	\arrow[hook', from=1-3, to=2-3]
+	\arrow[hook, from=1-2, to=1-3]
+	\arrow[hook, from=2-2, to=2-3]
+	\arrow["{?}", hook', from=1-2, to=2-2]
+	\arrow[hook', from=1-1, to=2-1]
+	\arrow[hook, from=1-1, to=1-2]
+	\arrow[hook, from=2-1, to=2-2]
+\end{tikzcd}\leqno{(7)}\]
+à charge de prouver (a) et (b) (qui ne concernent que le carré composé) et (c).
+
+Peut-être les propriétés (a), (b) et (c) sont-elles tout à fait fausses --- pourtant (a) (qui correspond à l'injectivité de $P(\pi)\to P(\pi')$) semble assez plausible. La propriété (b) (qui exprimerait la surjectivité de $P(\pi)\to P(\pi')$) est beaucoup plus problématique, voir fausse. L'ennui, c'est que le groupe $\hat{\hat{\mathfrak{S}}}(\pi_0)$ peut être ``beaucoup plus petit'' que $\hat{\hat{\mathfrak{S}}}(\pi'_0)$, on s'en rend compte en passant au quotient par le sous-groupe $\hat{\pi'_0}=\pi'$ (contenu dans le plus petit des groupes de (7), et invariant dans le plus grand), on trouve sur la deuxième ligne les groupes $\hat{\mathfrak{T}}^+(\pi'_0)$, $\mathcal{N}(\pi'_0)$ et $\hat{\hat{\mathfrak{T}}}(\pi'_0)$, sur la première des extensions des groupes correspondants pour $\pi_0$ ($\hat{\mathfrak{T}}^+(\pi_0)$, $\mathcal{N}(\pi_0)$ et $\hat{\hat{\mathfrak{T}}}(\pi_0)$) par le groupe fini $G=\pi_0/\pi'_0 \isom  \pi/\pi'$, notées par des $\tilde{}$~, de sorte que l'on a~:
+\[\begin{tikzcd}
+	G & {\tilde{\hat{\mathfrak{T}}}^+(\pi_0)} & {\tilde{\mathcal{N}}(\pi_0)} & {\tilde{\hat{\hat{\mathfrak{T}}}}(\pi_0)} \\
+	& {\hat{\mathfrak{T}}^+(\pi'_0)} & {\mathcal{N}(\pi'_0) } & {\hat{\hat{\mathfrak{T}}}(\pi'_0)}
+	\arrow[from=1-1, to=2-2]
+	\arrow[hook, from=1-1, to=1-2]
+	\arrow[hook, from=1-2, to=1-3]
+	\arrow[hook, from=2-2, to=2-3]
+	\arrow[hook', from=1-2, to=2-2]
+	\arrow["{?}", hook', from=1-3, to=2-3]
+	\arrow[hook, from=1-3, to=1-4]
+	\arrow[hook, from=2-3, to=2-4]
+	\arrow[hook', from=1-4, to=2-4]
+\end{tikzcd}\leqno{(8)}\]
+qui montre que les groupes de la première ligne \emph{normalisent} le sous-groupe $G\subset \hat{\mathfrak{T}}^+(\pi'_0)$ (NB en fait on a $G\subset \mathfrak{T}^+(\pi'_0)$, et $\pi_0$ se reconstitue à partir de $\pi'_0$ et de ce sous-groupe de $\pi'_0$) --- on doit pouvoir montrer sans trop de mal que dans (8), $\tilde{\hat{\mathfrak{T}}}^+(\pi_0)$ et  $\tilde{\hat{\hat{\mathfrak{T}}}}(\pi_0)$ sont justement les normalisateurs de $G$ dans $\hat{\mathfrak{T}}^+(\pi'_0)$ et dans $\hat{\hat{\mathfrak{T}}}(\pi'_0)$ (ce qui impliquerait bien (a), d'ailleurs) --- mais je ne vois aucune raison plausible que (b) soit vrai --- ce qui signifierait, essentiellement, qu'il n'y a pas plus de ``transcendance arithmétique'' définie par le (``très gros''!) $\hat{\hat{\mathfrak{T}}}(\pi'_0)$ (mod $\hat{\mathfrak{T}}(\pi'_0)^+$), que celle définie par le (``bien plus petit'') groupe $\tilde{\hat{\hat{\mathfrak{T}}}}(\pi_0)={\Norm}_{\hat{\hat{\mathfrak{T}}}(\pi_0)}(G)$\dots D'ailleurs ces conditions (a), (b) ne sont pas impératives pour que la conjecture fondamentale reliant les $\pi_{g,\nu}$ à $\boldsymbol{\Gamma}_0$ soit cohérente -- par contre il faudrait absolument avoir (c) pour pouvoir au moins définir $A(\pi)\to A(\pi')$ et (si $\Sigma$, $\Sigma'$ se correspondent) $\boldsymbol{\Gamma}_\Sigma\to\boldsymbol{\Gamma}_{\Sigma'}$, dans le cas $\pi'$ caractéristique dans $\pi$ (et dans tous les cas si on admet de plus (a), qui semble assez plausible, et donne les \emph{injectivités} qu'il faut). Mais on se demande bien pourquoi un élément de $\hat{\hat{\mathfrak{T}}}(\pi'_0)$ simplement parce qu'il est dans le normalisateur $R$ de $G$ dans $\hat{\hat{\mathfrak{T}}}(\pi'_0)$, donc aussi $R$, et qu'il normalise $R\cap\hat{\mathfrak{T}}^+(\pi'_0)$, devrait normaliser aussi $\hat{\mathfrak{T}}^+(\pi'_0)$ lui-même~! Il est vrai qu'on a fait des hypothèses draconiennes au départ (partant d'un sous-groupe \emph{caractéristique} $\pi'_0$ de $\pi_0$) qui doivent bien se refléter par des propriétés particulières de $G\subset \mathfrak{T}^+(\pi'_0)$. Peut-être finalement l'astuce de se ramener à des sous-groupes caractéristiques pour examiner la situation n'est-elle pas si astucieuse. Pour y voir plus clair, on pourrait déjà essayer de comprendre le cas où (sans suppose $\pi'$ caractéristique), on suppose $\pi'$ d'indice $2$ dans $\pi$, donc invariant et $G \isom \mathbf{Z}/2\mathbf{Z}$, ou bien on prend le noyau de l'homomorphisme canonique $\pi\to(\pi_{ab})_2$ ($ \isom (\mathbf{Z}/2\mathbf{Z})^{2g}$ si $\nu=0$, $ \isom (\mathbf{Z}/2\mathbf{Z})^{2g-\nu-1}$ si $\nu\ge 1$), en prenant par exemple $\pi=\hat{\pi_{0,3}}$ --- situation de la courbe de Fermat $x^2+y^2+z^2=0$ (revêtement octaédral de $\mathbb{P}^1_{\overline{\mathbf{Q}}} \setminus\{0,1,\infty\}$\dots)
+ 
+Mais admettons provisoirement les hypothèses d'injectivité (relativement anodines), {\it plus} la condition (c), pas anodine du tout --- d'où si $\Sigma$ et $\Sigma'$ se correspondent, un homomorphisme injectif
+$$
+\boldsymbol{\Gamma}_\Sigma\hookrightarrow\boldsymbol{\Gamma}_{\Sigma'},
+\leqno{(9)}
+$$
+et voyons ce qu'on pourrait en tirer, en admettant même, provisoirement (pour voir) que (9) est un isomorphisme, c'est-à-dire toute la force de la conjecture principale $\boldsymbol{\Gamma}_0  \isom  \boldsymbol{\Gamma}_{g,\nu}$.
+
+Soit $\pi$ un groupe profini à lacets de type $(g,\nu)$, $\pi'$ de type $(g',\nu')$.  Appelons ``correspondance'' entre $\pi$ et $\pi'$ un couple formé d'un $\mathfrak{B}$ profini à lacets et d'homomorphismes à lacets $\mathfrak{B} \xlongrightarrow{p}\pi$, $\mathfrak{B} \xlongrightarrow{q} \pi'$ qui sont donc chacune composée d'un morphisme ``bouchage de trous'', et d'un isomorphisme avec un sous-groupe d'indice fini. Soient $D_p$, $D_q\subset D=I(\pi'')$ les sous-ensembles de $D$ qui correspondent aux ``trous bouchés par $p$'' resp. par $q$, on suppose s'il le faut que $D_p\cap D_q=\emptyset$ (sinon on pourrait factoriser par un même quotient $\tilde\pi''$ de $\pi''$). En d'autres termes, si $\overline{D}_p$, $\overline{D}_q$ sont les complémentaires de $D_p$, $D_q$ dans $D$ (de sorte qu'on a  $\overline{D}_p\setminus I=I(\pi)$, $\overline{D}_q\setminus I'=I(\pi')$), on a $\overline{D}_pUp\overline{D}_q=D$.
+
+On va supposer maintenant $\pi$ muni d'un $\Sigma\in A(\pi)$, $\pi'$ muni d'un $\Sigma'\in A(\pi')$, on appellera ``correspondance arithmétique'' entre $\pi$ et $\pi'$ un quadruplet $(\mathfrak{B},p,q,\Sigma_{\mathfrak{B}})$ où $(\mathfrak{B},p,q)$ sont comme dessus, et $\Sigma_{\mathfrak{B}}\in A(\mathfrak{B})$, tel que l'on ait $\Sigma_{\mathfrak{B}}=p^*(\Sigma)=q^*(\Sigma')$.  Si $P_\Sigma$, $P_{\Sigma'}$, $P_{\Sigma_G}$ sont respectivement les torseurs sous $\boldsymbol{\Gamma}_\Sigma$, $\boldsymbol{\Gamma}_{\Sigma'}$, $\boldsymbol{\Gamma}_{\Sigma''}$ qu'on sait, on a deux diagrammes d'isomorphismes de torseurs~:
+\[\begin{tikzcd}
+	& {P_{\Sigma_G}} &&& {\boldsymbol{\Gamma}_{\Sigma_G}} \\
+	{P_\Sigma} && {P_{\Sigma'}} & {\boldsymbol{\Gamma}_\Sigma} && {\boldsymbol{\Gamma}_{\Sigma''}}
+	\arrow["{p^*_P}", from=2-1, to=1-2]
+	\arrow["{q^*_P}"', from=2-3, to=1-2]
+	\arrow["{p^*_{\boldsymbol{\Gamma}}}", from=2-4, to=1-5]
+	\arrow["{q^*_{\boldsymbol{\Gamma}}}"', from=2-6, to=1-5]
+\end{tikzcd}\]
+d'où par composition un isomorphisme 
+$$
+(P_\Sigma,\boldsymbol{\Gamma}_\Sigma)\isommap (P_{\Sigma'},
+\boldsymbol{\Gamma}_{\Sigma'}).
+$$
+On appelle ``isomorphisme arithmétiquement extérieur'' de $(\pi,\Sigma)$ avec $(\pi',\Sigma')$, tout isomorphisme de torseurs qu'on peut obtenir de cette fa\c con. Deux correspondances sont dites équivalentes du point de vue arithmétiquement extérieur, si elles définissent le même isomorphisme arithmétiquement extérieur. La composition est définie par composition des actions sur $(P_\Sigma,\boldsymbol{\Gamma}_\Sigma)$ --- on voit que \c{c}a provient d'une correspondance. On trouve donc un groupoïde, dont on vérifie sans peine qu'il est connexe. \footnote{On l'appellera le groupoïde des courbes  arithmétiques extérieures.} Je dis que les automorphismes de $(\pi,\Sigma)$ ``sont'' les automorphismes de $(P_\Sigma,\boldsymbol{\Gamma}_\Sigma)$ définis par des éléments de $\boldsymbol{\Gamma}_\Sigma$. C'est facile\dots
+
+Dans ce groupoïde, il y a un système transitif d'isomorphismes entre les $(\hat{\pi_0},\Sigma_{\pi_0})$, où $\pi_0$ est un groupe discret à lacets) plus généralement entre les $(\pi,\Sigma_\alpha)$, où $\alpha\in P(\pi)$ est un prédiscrétification de $\pi$ --- définissons donc un isomorphisme arithmétiquement extérieur de $\pi_{g,\nu}$, $\pi$ \dots  Le groupe de ces automorphismes est noté $\boldsymbol{\Gamma}_0$. Le groupoïde des courbes virtuelles arithmétiques extérieures s'identifie donc à la catégorie des torseurs sous $\boldsymbol{\Gamma}_0$. Une prédiscrétification (on pourrait aussi l'appeler une rigidification arithmétiquement extérieure) n'est pas autre chose qu'un isomorphisme arithmétiquement extérieur entre cet élément de référence, et $\pi$.
+
+
+% End

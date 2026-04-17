@@ -1,0 +1,97 @@
+Condition: text-first__flash-lite__low__png300__0img
+Prompt: text-first, Model: flash-lite, Thinking: low, Format: png300, PrevImages: 0
+============================================================
+
+
+========================================
+PAGE 5 — success
+========================================
+
+## 1. Topos multigalisiens.
+
+Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions équivalentes :
+
+a) $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est local constant.
+
+b) $\mathcal{E}$ est équivalent à une catégorie $\hat{\mathcal{C}}$ où $\mathcal{C}$ est un groupoïde (0-sens ... [unclear: division] ... NB. [unclear: de cette définition]
+b') $\exists$ une famille $(G_i)_{i \in I}$ de groupes et une équivalence de catégories
+$$\mathcal{E} \simeq \prod_i Ens(G_i)$$
+
+c) Conditions d'exactitude ad-hoc, du type de celles donnés dans SGA 1...
+
+Dim. b $\iff$ b' $\implies$ a immédiat. Pour a) $\implies$ b) je suis mieux sûr, pour dire, il s'oppose que $\mathcal{E}$ est loc. connexe, et qu'il est suffisamment de foncteurs fibres i.e. suffisant de points.
+
+Def. 1.1. Si les conditions équivalentes b), b') ci-dessus sont satisfaites, on dit que $\mathcal{E}$ est un topos multigaloisien (ou catégorie multigaloisienne).
+
+[MARGIN: Prop 1.3 : Si $\mathcal{E}$ est un topos multigaloisien, alors $\mathcal{E}$ est un topos... [unclear: et] ... [unclear: ...]]
+
+[MARGIN: NB. au sujet de b) : $\mathcal{C}$ est un groupoïde, et ... [unclear] ... catégorie des ... [unclear: préfaisceaux] sur $\mathcal{C}$.]
+
+
+========================================
+PAGE 50 — success
+========================================
+
+conception de : des syst. d'inv.
+$\mu_{\alpha} : f_{\alpha} \to f'_{\alpha}$, $\mu_{\alpha}* f_{\alpha} \to f_{\alpha}$ . Ce concept [MARGIN: exigence de l'existence de $\mu$] conduit $\tau = \tau$, $d'_{i} = d_i$, $\forall i \in I$, et le dernier des [unclear: conditions]
+ceci résulte des conditions
+
+*) $\mu \in \mathcal{E}$, définissant un iso
+
+entre $f_{\alpha} : \mathcal{E}' \to \mathcal{E}$ et $f'_{\alpha} : \mathcal{E}' \to \mathcal{E}$
+
+i.e. $f'_{\alpha} = (\mu) f_{\alpha}$
+
+$$f'_{\alpha} = \text{int}(\mu) f_{\alpha}$$
+
+b) $\mu_i \in \mathcal{E}_i$ ($i \in I$, $i=\iota(n)$)
+
+décrit $\mu_{\alpha}*$ satisfaisant
+$$f'_i = \text{int}(\mu_i) f_i$$
+, $d_{i'} = d'_{i'}$ , au niveau de $\mu$
+
+les $\mu, \mu_i$ et $\alpha$ liés aux $\alpha, \alpha'$ de $(\text{Gal}\mathcal{E})$
+$\uparrow$ $\uparrow$
+$\mathcal{E}$ $\mathcal{E}_i$
+
+- $\alpha_i, \alpha_i$ ($\in \Gamma$) de la fais
+
+suivant
+$$\alpha' = p(\mu) \alpha$$
+
+$$\alpha'_{i'} = f_i(\mu_i) \alpha_{i'} \quad \forall i \in I'$$
+
+- on a
+$$\begin{cases} p(\mu) = \alpha' \alpha^{-1} \\ f_i(\mu_i) = \alpha'_{i'} \alpha_{i'}^{-1} \end{cases}$$
+
+50
+
+
+========================================
+PAGE 52 — success
+========================================
+
+$\pi$ — J'avoue cela — explique [unclear: peut-être] il semble bien que [unclear: dans] les cas considérés : des homomorphisme de $f$ vers $f'$ est [unclear: cont.] et unique, i.e. $Hom(\mathcal{D}, \mathcal{D}')$ est une catégorie discrète.
+
+b) on peut interpréter $\mathcal{D}$ comme $\mathcal{E}$ muni de sous-groupes $\mathcal{E}_i \subset \mathcal{E}$, et de $p: \mathcal{E} \to \Gamma$ (noyau $\pi$) enfin des isomorphismes $k_i : \Gamma(\overline{k}) \xrightarrow{\sim} \mathcal{E}_i$ où $\overline{k} = L_i$.
+
+(contenant : l'action de $\mathcal{E}$). De sorte que... un système $(\mathcal{E}; (\mathcal{E}_i)_{i \in I}, (\alpha_i)_{i \in I})$ ( où $\mathcal{E}_i \xrightarrow{\alpha_i} \mathcal{E}$ ); un morphisme des précédents est défini par un $f : \mathcal{E}' \to \mathcal{E}$ satisfaisant les conditions suivantes :
+a) $pf$ est conjugué de $f' [ \text{soit } \alpha \in \Gamma \text{ que } pf = \text{int}(\alpha) f' ]$
+b) $\forall i \in I', \exists i \in I$ tel que $f(\mathcal{E}'_i)$ soit contenu dans un conjugué de $\mathcal{E}_i$
+[soit $\alpha_i \in \mathcal{E}$ tel que $f(\mathcal{E}'_i) \subset \text{int}(\alpha_i)(\mathcal{E}_i)$]
+
+
+========================================
+PAGE 54 — success
+========================================
+
+## 8. Réflexion taxonomique.
+
+Le cas $\dim X = 0$ se traduit sur le paradigme du système $(T(\bar{K}) \xrightarrow{k_i} \mathcal{E} \xrightarrow{p_i} \Gamma)$ [unclear] par le condition $I = \emptyset$ - donc ce cas se simplifie par la donnée d'un sous-groupe ouvert $\mathcal{E} \subset \Gamma$, i.e. d'une sous-extension finie $K$ de $\bar{K}/K$. CNB [unclear] pour $X' = \text{Spec } K_i$, le les données [unclear] $X$ [unclear] sur $\Pi_{\bar{K}} \to \Pi_K \to \dots$ les descriptions - qu'on a ici au delà d'une telle immersion de $\text{Gal}(\bar{K}/K) = \text{Hom}(\mathcal{E}, \mathcal{C})$ des $\bar{K}/K$.
+
+Le cas $\dim X = 1$ se traduit par le fait que $\mathcal{E} \to \Gamma$ n'est pas injectif - quand $I$ peut être vide ou non dans ce cas. S'il est vide, la prescription se fait alors simplifiée en termes d'un hom. de groupes fini $\mathcal{E} \to \Gamma$ où $\Gamma$ donne [unclear] $= \text{Gal}(\bar{K}/K) = \text{Aut}_{\Pi_E}(\Omega)$.
+
+Supposons donnés, maintenant à la fois $\mathcal{D} = (\mathcal{E}, p, I, (p_i : \mathcal{E}_i \to \mathcal{E}), (k_i : T(\bar{K}) \to \mathcal{E}_i))$ et $\mathcal{D}' = (\mathcal{E}', p', I', (\dots), (k_i', \dots))$, et revenons à la question de la description des morphismes de $\mathcal{D}'$ dans $\mathcal{D}$. On va distinguer quatre cas, suivant les deux valeurs [unclear].
+
+54
+

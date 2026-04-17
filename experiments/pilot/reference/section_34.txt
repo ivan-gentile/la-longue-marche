@@ -1,0 +1,134 @@
+Section: § 34. — DESCRIPTION HEURISTIQUE PROFINIE DE LA
+G103d pages: 257-260
+
+--- G103d page 257 ---
+§ 34. — DESCRIPTION HEURISTIQUE PROFINIE DE LA
+CATÉGORIE DES COURBES ALGÉBRIQUES
+DÉFINIES SUR DES SOUS-EXTENSIONS FINIES K DE Q0/Q
+(I.E. DE C/Q))
+On se borne aux courbes géométriques connexes (par commodité) anabéliennes (par né-
+cessité provisoire), cf. plus bas sur la façon de se débarrasser de cette restriction. La don-
+née d’un revêtement de UQ0 définit une structure d’extension
+(1)
+1 →π →Σ →Γ+ →1
+ou encore on a un homomorphisme
+(2)
+E →Γ
+(image Γ ouverte, de noyau appelé π) où Γ ⊂ΓQ ≃Γ0,3 est le sous-groupe ouvert
+correspondant à K. Se donner une telle extension (moyennant Centre(π) = 1) revient
+à se donner une action extérieure de Γ′ sur π. Une première question : faut-il mettre la
+structure à lacets de π dans les données de l’objet (1) (ou (2)) censé décrire U/K ?
+Conjecture. — Ce n’est pas la peine – la structure à lacets de π est la seule structure à
+lacets invariante par l’action extérieure de Γ (ou de Γ♮). Les sous-groupes à lacets Li sont
+les sous-groupes maximaux dans π, tels que NormE(Li) →Γ ait comme image un sous-
+groupe ouvert de Γ 134. Je présume aussi que tout homomorphisme entre extensions E de
+134et tout sous-groupe ̸= {1} de π qui a cette propriété est contenu dans un unique Li…
+
+--- G103d page 258 ---
+Γ+ par un π, E′ de Γ par un π′ (E, E′ provenant de courbes algébriques U, U ′) et tel que
+l’image de E dans E′ soit ouverte respecte nécessairement la structure à lacets, et en fait
+provient d’un homomorphisme (unique, on le sait) de courbes algébriques.
+En tout cas, si on admet la description des sous-groupes à lacets, il sera clair que
+l’image par u d’un Li sera ou bien (1), ou bien contenu dans un unique Lj…
+Ceci signifierait que le foncteur des courbes algébriques sur K ([avec comme] mor-
+phismes les morphismes dominants) vers les groupes profinis extérieurs sur lesquels Γ
+opère, serait pleinement fidèle. Le foncteur “extension du corps de base” de K à K′ cor-
+respond au foncteur restriction d’un groupe extérieur (ou d’une structure d’extension)
+de Γ à Γ′ (sous-groupe ouvert). Les revêtements étales finis de U correspondent aux E-
+ensembles ( ˜U étant choisi)…
+Pour décrire l’image essentielle de ce foncteur, on n’est pas réduit aux conjectures.
+On part de l’extension canonique E0,3 de Γ0,3 = Γ par ˆ
+π0,3, on prend un sous-groupe
+ouvert E′ de E0,3, d’image Γ ⊂Γ0,3, noyau π′ ⊂
+ˆ
+π0,3, et dans la structure à lacets
+canonique de π′ de genre g (induite par celle de π0,3), on prend un I ⊂I(π′) tel que
+2g + card(I) ≥3, stable par Γ, et on “bouche les trous” en I(π′) \ I. De même,
+pour décrire quand une action effective, relevant une action extérieure admissible, est
+elle-même admissible — i.e. peut-être obtenue à partir d’une courbe algébrique U, ponc-
+tuée par un point rationnel sur K. Ceci ne signifie pas pour autant, que si U est donnée
+par une action extérieure de Γ sur un π, que les classes de conjugaison de relèvements ad-
+missibles de cette action proviennent bien toutes de points de U rationnels sur K. Mais
+on voit de suite que ceci sera le cas, dès que l’on admet la pleine fidélité pour les isomor-
+phismes.
+(NB. Même pour les automorphismes de U0,3 = P1
+Q \ {0, 1, ∞}, cette pleine fidél-
+ité n’est pas du tout claire. Il faudrait prouver que le commutant de Γ0,3 dans ˆˆT0,3 est
+réduit à S3. La situation est moins sans espoir, quand on se donne, avec la structure de
+groupe profini extérieur à opérateur Γ, une arithmétisation de π (ce qui suppose qu’on
+a explicité une structure à lacets) invariante par Γ — donc dans ˆˆT(π) on dispose d’un
+N(π), et Γ ,→N(π). Dans ce point de vue, pour un homomorphisme de Γ-groupes
+extérieurs (arithmétisés) π′ →π, il est sous-entendu qu’il est compatible avec les arith-
+métisations, i.e. si π′′ est l’image de π′ dans π, on veut que l’arithmétisation de π′′ déduite
+de celle de π′ par “passage au quotient”, soit celle induite par π. En particulier, pour les
+253
+
+--- G103d page 259 ---
+automorphismes extérieurs de π, il est sous-entendu que non seulement ils commutent
+à Γ, mais encore qu’ils sont dans N(π) (ce qui implique qu’ils sont dans ˆT(π), car le
+centralisateur dans π de tout sous-groupe ouvert de Γπ est {1} !) Dans le cas de U0,3, on
+a N0,3 ≃S3 × Γ0,3, et on sait que le centre de Γ0,3 ≃Γ est triviale — donc on trouve
+bien que le groupe des automorphismes de cette structure est réduit à S3 !
+Ce point de vue est néanmoins probablement superflu — car on présume que pour
+l’action extérieure donnée de Γ, il y a une unique arithmétisation invariante par Γ, et que
+les homomorphismes “admissibles” de Γ-groupes extérieurs “admissibles”, tels qu’ils ont
+été définis précédemment, respectent automatiquement cette arithmétisation. S’il n’en
+était rien, il faudrait bien entendu introduire les arithmétisations dans la structure.
+Il se pose la question de trouver une description plus simpliste des actions extérieures
+d’un Γ sur un π qui sont “admissibles”. Ici, on va partir d’un π dont on fixe déjà une
+structure à lacets et une arithmétisation a (invariantes par Γ), de sorte que Γ ⊂N(π),
+Γ →Γπ injective à image ouverte, i.e. Γ correspond à un scindage partiel (ou germe de
+scindage) de
+1 →ˆT(π) →N(π) →Γπ →1.
+Soit (g, ν) le type de π ; si g ≥1 le critère la plus simple, c’est que les “Γ♮-points” de π′
+déduits de π en bouchant tous les trous, soient distincts. (NB. Si g = 1, en bouchant
+tous les trous on tombe dans un cas abélien — mais ça ne fait rien). Si g = 0, il n’y a
+pas de condition pour ν = 3, et si ν > 3, mettant à part une partie I′ ⊂I(π) avec
+card(I′) = 3, la condition c’est qu’en bouchant les trous en I \ I′, les Γ♮-points de π
+déduits des points de I \ I′ soient distincts.
+On notera que dans cette optique conjecturale, dans les cas limites (g, 0) (g ≥2),
+(1, 1), (0, 3), on n’impose aucune condition a priori sur les relèvements. C’est peut-être
+très brutal — et il se pourrait qu’on trouve des relèvements qui ne correspondent pas à
+une courbe algébrique — i.e. qui en fait ne sont pas admissibles, même s’ils le paraissent.
+Pour y comprendre quelque chose, il me semble qu’il faut revenir à une interpréta-
+tion des germes de scindages dits “admissibles” d’une extension telle que
+1 →ˆTg,ν →Ng,ν →Γg,ν →1
+où Γg,ν ≃ΓQ ≃Γ0,3, comme correspondants aux points algébriques d’une variété
+(plutôt ici, une multiplicité) modulaire Mg,ν,Q, dont Ng,ν est le groupe fondamental
+254
+
+--- G103d page 260 ---
+arithmétique, et ˆTg,ν legroupefondamentalgéométrique. J’aimeraisexaminercettesitu-
+ation de plus près, par la suite. Pour le moment, il semble prudent de ne pas faire de con-
+jectures hâtives pour une description directe (i.e. pas via U0,3) des opérations extérieures
+“admissibles”. On travaillera donc pour le moment avec cette notion sous la forme con-
+structive (via U0,3).
+Si on a un π extérieur de type (g, ν) avec opération extérieure admissible de Γ ⊂Γ,
+on prévoit qu’il y aura une prédiscrétification stricte canonique sur π (pas invariante
+pas Γ, bien sûr — mais telle que l’arithmétisation correspondante le soit). On va même,
+pour une action effective admissible de Γ♮sur π (relevant l’action extérieure donnée),
+définir une discrétification orientée correspondante canonique π0 ⊂π (remplacée par
+une conjuguée, quand on conjugue le relèvement Γ♮→E par un g ∈π) — toutes ces
+discrétifications orientées (correspondant aux différents “points” de Bπ,Γ♮) définissent
+unemêmeprédiscrétificationorientée—etmêmeunemêmeprédiscrétificationorientée
+stricte.
+L’action effective de Γ♮sur π peut s’obtenir (à isomorphisme près) comme suit : on
+prend un sous-groupe ouvert E′ ⊂E0,3, d’où extension 1 →π′ →E′ →Γ′ →
+1 avec π′ ⊂
+ˆ
+π0,3, donc π′ = ˆπ′
+0 (π′
+0 = π′ ∩π0,3). On a une opération de Γ′ sur
+I(π′) = I(π′
+0), on la prend triviale (quitte à passer à un sous-groupe ouvert de Γ′), on
+choisit i ∈I′ ⊂I(π′), on bouche les trous en I′, d’où π, avec discrétification orientée
+π0, et une action extérieure de Γ′ dessus, qui est relevée en une action effective grâce à
+i. On trouvera bien ainsi un “réseau” — une discrétification orientée dans π — je dis
+qu’il ne dépend pas des choix qui ont été faits — en particulier, que les automorphismes
+de (π, a, Γ♮) transforment π0 en lui-même. De plus, si on a deux points x, y de Bπ,Γ♮,
+d’où π(x), π(y), parmi les classes de chemins de x à y (qui font un bitorseur sous π(y),
+π(x)) il y a en a pour lesquelles π(x) →π(y) envoie π0(x) dans π0(y) — quand on se
+limite à ceux-ci, on trouve un sous-groupoïde du groupoïde fondamental Π(π, Γ♮), qui
+est cette fois-ci un groupoïde connexe à lacets. On fera attention que Γ n’opère pas sur ce
+groupoïde, bien qu’il opère sur l’ensemble de ses objets.
+255

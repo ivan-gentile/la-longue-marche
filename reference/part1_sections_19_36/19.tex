@@ -1,0 +1,585 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 19. --- TOUR DE TEICHMÜLLER}\thispagestyle{empty}
+\addcontentsline{toc}{section}{{\bf 19}. Tour de Teichmüller}
+\label{sec:19}
+\section*{}
+
+Soit $g \in \mathbf{N}$ et $X_g$ une surface compacte connexe orientable de genre $g$. Soit $(a_{g, i})_{i \in \mathbf{N}}$ une suite de points distincts de $X_g$. On pose pour $\nu \in \mathbf{N}$
+$$
+S_{g, \nu} = \{ a_{g, i} | 0 \leq i \leq \nu - 1 \} \quad (\nu = \card S_{g, \nu})
+\leqno{(1)}
+$$
+$$
+U_{g, \nu} = X_g \setminus S_{g, \nu} \quad \text{N.B. on a}~a_{g, \nu} \in U_{g, \nu}.
+\leqno{(2)}
+$$
+On a donc $S_{g, 0} = \emptyset$ et $U_{g, 0} = X_g$.
+
+Les $S_{g, \nu}$ forment une suite strictement croissante de parties finies de $X_g$ et les $U_{g, \nu}$ une partie strictement décroissante d'ouverts de $X_g$. On prendra par la suite $U_{g, \nu}$ comme surface orientable type, de type $(g, \nu)$.
+
+(3) Soit $A_g = \Aut (X_g)$ le groupe des automorphismes de $X_g$ muni de la topologie de la convergence uniforme de $u$ et de son inverse. On pose
+$$
+A_{g, \nu} = \{ u \in A_g | u(S_{g, \nu}) = S_{g, \nu} \}
+\leqno{(4)}
+$$
+on a un isomorphisme canonique (de restriction)\footnote{N.B. C'est sans doute un isomorphisme topologique quand $A_{g, \nu}$ est muni de la topologie induite par $A_g$ et $\Aut (U_{g, \nu})$ de la topologie habituelle de la convergence compacte de $u$ et de son inverse.}
+$$
+A_{g, \nu} \isommap \Aut(U_{g, \nu})
+\leqno{(5)}
+$$
+on a aussi un morphisme canonique surjectif
+$$
+A_{g, \nu} \to \Aut(S_{g, \nu}) \isom \mathfrak{S}_\nu
+\leqno{(6)}
+$$
+dont le noyau est noté $A^!_{g, \nu}$
+$$
+A^!_{g, \nu} = \{ u \in A_g | u(a_{g, i}) = a_{g, i} \forall i \in \{ 0, \dots, \nu-1 \} \}
+\leqno{(7)}
+$$
+d'où la suite exacte :
+$$
+1 \to A^!_{g, \nu} \to A_{g, \nu} \to \mathfrak{S}\nu \to 1
+\leqno{(8)}
+$$
+Soit $A^\circ_{g, \nu}$ la composante neutre du groupe $A_{g, \nu}$ on a donc :
+$$
+A^\circ_{g, \nu} (= A^{! \circ}_{g, \nu}) \subset  A^!_{g, \nu}
+\leqno{(9)}
+$$
+Posons
+$$
+\Gamma_{g, \nu} = A_{g, \nu}/A^\circ_{g, \nu} = \pi_0(A_{g, \nu}) \quad \text{groupe de Teichmüller de type}~g, \nu)
+\leqno{(10)}
+$$
+On pose aussi $\Gamma_g = \Gamma_{g, 0} (= \Gamma^!_{g, 0})$
+$$
+\Gamma^!_{g, \nu} = A^!_{g, \nu} / A^\circ_{g, \nu}
+\leqno{(11)}
+$$
+la suite exacte (8) donne donc une suite exacte.
+$$
+1 \to \Gamma^!_{g, \nu} \to \Gamma_{g, \nu} \to \mathfrak{S}_\nu \to 1
+\leqno{(12)}
+$$
+On a des homéomorphismes canoniques :
+
+(13) $A_g/A_{g, \nu} \isom$~ouvert $\Sym^\nu (X_g)^*$ du produit symétrique $(\Sym^\nu (X_g))$ formé des parties finies de $\card \nu (= \textfrak{P}_\nu (X_g))$.
+
+(14) $A_g/A^!_{g, \nu} \isom$~ouvert $(X^\nu_g)^*$ des $\nu$-uples de points distincts $\isom \Mon (I_\nu, X_2)$ (ou $I_\nu = \{ 0, 1, \dots, \nu \}$).
+
+(Cet homéomorphisme respectant les actions naturelles de $\mathfrak{S}_\nu = A_{g, \nu} / A^!_{g, \nu}$).
+
+Les $A^!_{g, \nu}$ pour $\nu$ variable forment une suite décroissante de sous-groupes de $A_g$.
+$$
+A_g = A^!_{g, 0} \supset A^!_{g, 1} \supset A^!_{g, 2} \supset \dots \supset A^!_{g, \nu} \supset \dots  
+\leqno{(15)}
+$$
+et les homomorphismes correspondants entre espaces homogènes de $A_g$ s'insèrent dans le diagramme commutatif :
+\[\begin{tikzcd}
+	{A_g/A^!_{g, \nu}} && {\Mon(I_\nu, X)} \\
+	&&& {0 \leq \nu' \leq \nu} \\
+	{A_g/A^!_{g, \nu}} && {\Mon(I_{\nu'}, X)}
+	\arrow[from=1-1, to=3-1]
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=3-1, to=3-3]
+\end{tikzcd} \leqno{(16)}\]
+pour $\nu = 1$ on a $A^!_{g, 1} = A_{g, 1}$ et l'isomorphisme (13) (ou au choix (14)) s'écrit
+$$
+A_g/A_{g, 1} \isom X_g
+\leqno{(17)}
+$$
+(homéomorphisme compatible avec les actions de $A_g$).
+
+D'ailleurs si à tout $x \in X_g$ on associe son stabilisateur $A_{g, x}$ dans $A_g$ on trouve une application évidemment surjective
+
+(18) $X_g \to$ ensemble des conjugués du sous groupe $A_{g, 1}$ de $A_g (\isom A_g/\Norm_{A_g}(A_{g, 1}))$ 
+
+qui s'identifie via (17) à l'application canonique sur les espaces homogènes
+$$
+A_g/A_{g, 1} \to A_g/\Norm_{A_g}(A_{g, 1})
+$$
+déduite de l'inclusion $A_{g, 1} \subset  \Norm_{A_g}(A_{g, 1})$.
+
+On voit de suite que (18) est bijective i.e. que 
+$$
+A_{g, 1} = \Norm_{A_g}(A_{g, 1})
+\leqno{(19)}
+$$
+Plus généralement pour tout $\nu$ on a 
+$$
+A_{g, \nu} = \Norm_{A_g} (A_{g, \nu}) = \Norm_{A_g}(A^!_{g, \nu})
+\leqno{(20)}
+$$
+Ce qui signifie que les applications canoniques de $A_g$-ensembles homogènes :
+\[\begin{tikzcd}
+	& {\textfrak{P}_\nu(X_g)} & {\text{ensemble des conjugués de}~A_{g, \nu}} \\
+	{(21)} & S & {\text{stabilisateur}~A_{g, S}~\text{de}~S} \\
+	{(22)} & S & {A^!_{g, S}}
+	\arrow[from=1-2, to=1-3]
+	\arrow[shorten <=10pt, shorten >=10pt, maps to, from=2-2, to=2-3]
+	\arrow[shorten <=8pt, shorten >=40pt, maps to, from=3-2, to=3-3]
+\end{tikzcd}\]
+sont non seulement surjectives mais même \emph{bijectives}. Cela provient du fait que l'on retrouve $S$ en termes de $A_{g, S}$ (ou de $A^!_{g, S}$) :
+\[\begin{tikzcd}
+	{(23)} & S & {= \{ x \in X_g | u(x) = x \quad \forall u \in A^!_{g, S} \} = X^{(A'_{g, S})}} \\
+	{(24)} && {= \{ x \in X_g | A_{g, S} x~\text{fini} \}} \\
+	&& {= \{ x \in X_g | A_{g, S} x \neq X_g \}}
+\end{tikzcd}\]
+On a aussi une application canonique d'espaces homogènes sous $A_g$
+\[\begin{tikzcd}
+	& {\textfrak{P}_\nu (X_g)} & {\text{Ensemble des conjuguées de}~A^\circ_{g, \nu}~\text{dans}~A_g (\isom A_g/\Norm_{A_g}(A^\circ_{g, \nu}))} \\
+	{(25)} & S & {A^\circ_{g, S}}
+	\arrow[shorten <=14pt, shorten >=71pt, maps to, from=2-2, to=2-3]
+	\arrow[from=1-2, to=1-3]
+\end{tikzcd}\]
+qui est bijective car on a la relation suivante qui renforce (23) et (24) : $\forall S \in \textfrak{P}_\nu (X_g)$
+\[\begin{tikzcd}
+	{(26)} & S & {= \{ x \in X_g | A^\circ_{g, S} = \{ x \} \} = X^{A^\circ_{g, S}}_g} \\
+	&& {= \{ x \in X_g | A^\circ_{g, S} x~\text{fini} \}} \\
+	&& {= \{ x \in X_g | A^\circ_{g, S} x \neq X_g \}}
+\end{tikzcd}\]
+ainsi pour tout $\nu$
+$$
+A_{g, \nu} = \Norm_{A_g} (A_{}g, \nu) = \Norm_{A_g}(A^!_{g, \nu}) = \Norm_{A_g}(A^\circ_{g, \nu})
+\leqno{(27)}
+$$
+
+Soi $G$ un groupe topologique, muni d'une classe de conjugaison $X$ de sous-groupes ; soit $G_1$ dans cette classe. On dit que $(G, X)$ est un couple de Teichmüller de type $g$, s'il existe un isomorphisme de groupes topologiques $G \isom A_g$, transformant $X$ en la classe de conjugaison de $A_{g, 1}$
+
+Il revient au même de dire que $X$ avec sa topologie d'espace homogène sous $G$ $(\isom G/G_1)$ est une surface compacte connexe orientable de genre $g$, et que l'application naturelle
+$$
+G \to \Aut(X)
+\leqno{(28)}
+$$
+est un homéomorphisme de groupes topologiques.
+
+On voit alors que $(G, X) \mapsto X$ de la catégorie des couples de Teichmüller de type $g$, vers la catégorie des surfaces compactes orientables de genre $g$ est une équivalence de catégorie. Il en résulte que pour un automorphisme $u$ du groupe topologique $G$, $u$ est intérieur si et seulement si $u$ conserve la classe $X$ i.e. si et seulement si $U(G_1)$ est conjugué de $G_2$.
+
+D'ailleurs le centre de $G$ est trivial.
+
+On peut donner une description analogue pour la catégorie des surfaces orientées de genre $g$ à $\nu$ trous (i.e. homéomorphismes à $U_{g, \nu}$) en termes d'un groupe topologique $G_v$ $(\isom A_{g, \nu})$ et d'une classe de conjugaison $U_\nu$ de sous-groupes $H_\nu$ de celui-ci $(\isom A_{g, \nu} \cap A_{g, \nu + 1})$ avec les conditions que $(G_\nu, \{ H_\nu \})$ soit isomorphe à $(A_{g, \nu}, \{ A_{g, \nu} \cap A_{g, \nu + 1} \})$ ou encore que l'homomorphisme continu
+$$
+G \to \Aut (U_\nu)
+\leqno{(29)}
+$$
+soit un homéomorphise de groupes topologiques. On trouve alors une équivalence entre la catégorie des couples de Teichmüller $(G_\nu, \{ H_\nu \})$ de type $(g, \nu)$, et celle des surfaces orientables de type $(g, \nu)$. On trouve encore que les automorphismes d'un tel $G_\nu$ $(\isom A_{g, \nu})$ qui fixent la classe $U_\nu$ (i.e. qui transforme $H_\nu$ en un conjugué) sont intérieurs et que le centre de $H_\nu$ est $\{ 1 \}$.
+
+En fait $U_\nu$ peut être interprété aussi comme espace homogène sous $G^\circ_\nu$ et pas seulement sous $G_\nu$ ; plus généralement on a que $G^\circ_\nu$ est transitif sur $U_\nu$ et même sur $\textfrak{P}_{\nu'}(U_\nu)$ pour tout $\nu' \in \mathbf{N}^*$.
+
+Revenant à la situation type avec $U_{g, \nu}$, ou trouve :
+\[\begin{tikzcd}
+	{(30)} && {U_{g, \nu}} & {\isom A_{g, \nu} / A_{g, (\nu, \nu + 1)}~\text{(avec}~A_{g, (\nu, \nu + 1)} = A_{g, \nu} \cap A_{g, \nu + 1})} \\
+	&&& {\isom A^\circ_{g, \nu}/B_{g, (\nu, \nu + 1)}}
+\end{tikzcd}\]
+(avec $B_{g, (\nu, \nu + 1)} = A_{g, \nu + 1} \cap A^\circ_{g, \nu} = \{ u \in A^\circ_{g, \nu}~\text{tel que}~u(a_{g, \nu}) = a_{g, \nu} \}$).
+
+On a ainsi un diagramme d'inclusion de sous-groupes de $A_{g, \nu}$ :
+(en posant $B_{g, \nu} = A^\circ_{g, \nu} \cap A^!_{g, \nu + 1}$ et en remarquant que $A^\circ_{g, \nu + 1} = B^\circ_{g, \nu} = (A^!_{g, \nu + 1})^\circ$)
+\[\begin{tikzcd}
+	{A^\circ_{g, \nu + 1}} & {B_{g, \nu}} & {A^!_{g, \nu + 1}} & {A_{g, (\nu, \nu + 1)}~[} & {A_{g, \nu + 1}]} \\
+	& {A^\circ_{g, \nu}} & {A^!_{g, \nu}} & {A_{g, \nu}}
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=1-2, to=2-2]
+	\arrow["{\Gamma^!_{g, \nu}}"', hook, from=2-2, to=2-3]
+	\arrow["{\text{inv.}}", from=2-2, to=2-3]
+	\arrow["{\mathfrak{S}_\nu}"', hook, from=2-3, to=2-4]
+	\arrow["{\text{inv.}}", from=2-3, to=2-4]
+	\arrow[hook, from=1-4, to=1-5]
+	\arrow["{\pi_{g, \nu}}"', hook, from=1-1, to=1-2]
+	\arrow["{\Gamma^!_{g, \nu}}"', hook, from=1-2, to=1-3]
+	\arrow["{\text{inv.}}", from=1-2, to=1-3]
+	\arrow["{\mathfrak{S}_\nu}"', hook, from=1-3, to=1-4]
+	\arrow["{\text{inv.}}", from=1-3, to=1-4]
+\end{tikzcd}\leqno{(31)}\]
+où les 2 carrés sont cartésiens et les inclusions horizontales (sauf celle entre crochets) sont des inclusions de sous groupes invariants (invariant même dans le groupe le plus grand $A_{g, \nu}$ (resp. $A_{g, \nu + 1}$)).
+
+(L'égalité $B^\circ_{g, \nu} = (A^!_{g, \nu + 1})^\circ$, (qui précise l'inclusion triviale de $B^\circ_{g, \nu}$ dans $(A^!_{g, \nu + 1})^\circ$ par l'inclusion inverse équivalente à $(A^!_{g, \nu + 1})^\circ \subset  B^\circ_{g, \nu}$) provient de l'inclusion
+$$
+(A^!_{g, \nu + 1})^\circ \subset  (A^!_{g, \nu})^\circ = A^\circ_{g, \nu}, \quad \text{d'où} \quad A^\circ_{g, \nu + 1} \subset  A_{g, \nu + 1} \cap A^\circ_{g, \nu} = B_{g, \nu}).
+$$
+On notera dorénavant $A_{g, (\nu, \nu + 1)}$ par $A^\bullet_{g, \nu}$ (comme $A_{g, \nu}$ ponctué par $a_{g, \nu}$).
+
+Les trois inclusions verticales définissent trois espaces homogènes et les homomorphismes d'inclusions entre ceux-ci qui sont \emph{bijectifs}
+\[\begin{tikzcd}
+	{(A_{g, \nu} \isom) \quad A_{g, \nu}/A^\bullet_{g, \nu}} & {A^!_{g, \nu}/A^!_{g, \nu + 1}} & {A^\circ_{g, \nu}/B_{g, \nu}}
+	\arrow["\sim"', from=1-2, to=1-1]
+	\arrow["\sim"', from=1-3, to=1-2]
+\end{tikzcd}\]
+et de même les groupes quotient $\mathfrak{S}_\nu$ et $\Gamma^!_{g, \nu}$ définis par les inclusions de la première ligne son isomorphes par les inclusions verticales aux quotients correspondants dans la deuxième ligne. Ainsi l'extension de groupe 
+$$
+1 \to \Gamma^!_{g, \nu} \to \Gamma_{g, \nu} \to \mathfrak{S}_\nu \to 0
+\leqno{(12)}
+$$
+peut se déduire indifféremment de la 1$^{\text{ère}}$ ligne ou de la 2$^{\text{ème}}$ ligne de (31) en particulier
+$$
+\mathfrak{S}_\nu \isom A^\bullet_{g, \nu}/A^!_{g, \nu + 1}
+$$
+$$
+\Gamma_{g, \nu} \isom A^\bullet_{g, \nu} / B_{g, \nu}
+\leqno{(32)}
+$$
+$$
+\Gamma^!_{g, \nu} \isom A^!_{g, \nu + 1}/B_{g, \nu}
+$$
+Ainsi le torseur canonique e groupe $A^\bullet_{g, \nu}$ sur l'espace homogène $U_{g, \nu}$ et celui de groupe $A^!_{g, \nu + 1} (\subset  A·^\bullet_{g, \nu})$ qui lui donne naissance sont l'un et l'autre déduit par extension du groupe structural d'un torseur de groupe $B_{g, \nu}$ (dont la fibre en $x \in U_{g, \nu}$ est l'ensemble des $u \in A^\circ_{g, \nu}$ tel que $u(a_{g, \nu}) = x$). Le revêtement galoisien associé de groupe $B_{g, \nu}/B^\circ_{g, \nu}$ est donc aussi l'espace homogène $A^\circ_{g, \nu} / A^\circ_{g, \nu + 1}$ qui est évidemment connexe et ponctué au dessus de $a_{g, \nu} \in U_{g, \nu}$.
+
+Posons pour $(g, \nu) \neq (1, 0)$ et $(g, \nu) \neq (0, 2)$.
+$$
+\widetilde{U}_{g, \nu} = A^\circ_{g, \nu} / A^\circ_{g, \nu + 1}
+\leqno{(13)}
+$$
+
+On a le théorème :
+\vskip .3cm
+{
+Théorème. --- \it $\widetilde{U}_{g, \nu}$ est simplement connexe (et même contractile si $(g, \nu) \neq (0, 0)$) et s'identifie donc au revêtement universel de $U_{g, \nu}$ ponctué en $a_{g, \nu}$.
+}
+\vskip .3cm
+{
+Corollaire. --- \it On a un isomorphisme canonique
+$$
+B_{g, \nu}/B^\circ_{g, \nu} \isom \pi_1(U_{g, \nu} ; a_{g, \nu}) \defeq \pi_{g, \nu}
+\leqno{(34)}
+$$
+}
+\vskip .3cm
+Démonstration du théorème en termes de choses ``bien connues''.
+
+La suite exacte d'homotopie pour la fibration de $A^\circ_{g, \nu}$ sur $A^\circ_{g, \nu + 1}/A^\circ_{g, \nu + 1} \isom \widetilde{U}_{g, \nu}$ est
+\[\begin{tikzcd}
+	\dots & {{\pi_{i + 1}(\widetilde{U}_{g, \nu})}} & {{\pi_i(A^\circ_{g, \nu + 1})}} & {{\pi_i(A^\circ_{g, \nu})}} & {{\pi_i(\widetilde{U}_{g, \nu})}} & {{\pi_{i - 1}(A^\circ_{g, \nu + 1})}\dots} \\
+	&& {\dots{\pi_1(A^\circ_{g, \nu + 1})}} & {{\pi_1(A^\circ_{g, \nu})}} & {{\pi_1(\widetilde{U}_{g, \nu})}} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=1-5, to=1-6]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+\end{tikzcd}\leqno{(35)}\]
+Elle montre que $\pi_1(\widetilde{U}_{g, \nu})$ est isomorphe au conoyau de $\pi_1(A^\circ_{g, \nu + 1}) \to \pi_1(A^\circ_{g, \nu})$ dont le noyau est un quotient de $\pi_2(\widetilde{U}^\circ_{g, \nu})$\dots 
+
+Si $(g, \nu) \neq (0, 0)$ on sait que $\pi_i(\widetilde{U}_{g, \nu}) = 0$ $\forall i \geq 2$ d'où si $(g, \nu) \neq (0, 0)$ on a 
+$$
+\pi_i(A^\circ_{g, \nu + 1}) \to \pi_i (A^\circ_{g, \nu})
+\leqno{(36)}
+$$
+est bijectif si $i \geq 2$, injectif à image invariante si $i = 1$ et l'on veut prouver que c'est bijectif pour $i = 1$.
+
+La chose à retenir (?) est celle ci :
+\vskip .3cm
+{
+Théorème (bien connu). --- \it Conditions équivalentes sur le couple $(g, \nu) \in \mathbf{N} \times \mathbf{N}$:
+\begin{enumerate}
+    \item[a)] $2g + \nu \geq 3$ (i.e. on n'est pas dans les cas : $(1, 0), (0, 0), (0, 1), (0 2)$).
+    \item[b)] $\pi_1(U_{g, \nu})$ est non abélien.
+    \item[c)] $A^\circ_{g, \nu}$ est simplement connexe.
+    \item[d)] $A^\circ_{g, \nu}$ est contractile et $(g, \nu) \neq (0, 1)$.
+\end{enumerate}
+En tous cas, que ces condition soient ou non vérifies, on a $\pi_i(A^\circ_{g, \nu}) = 0$ si $i \geq 2$, et $(g, \nu) \neq (0, 0)$.
+}
+\vskip .3cm
+(i.e. les $A^\circ_{g, \nu}$ sont des espaces classifiants de groupes discrets, avec la seule exception de $A^\circ_{0, 0} \isom \Aut^\circ \mathbb{S}^2$).
+
+Compte tenu de (36) ce théorème équivaut aux relations :
+$$
+\pi_i (A^\circ_{g, 0}) = 0 \quad \text{si}~g\geq 2, i \geq 1~\text{(i.e. pour}~g \geq 2 A_{g, 0}~\text{est cotractile)}
+\leqno{(37)}
+$$
+$$
+\pi_i (A^\circ_{g, 0}) = 0 \quad \text{pour}~i \geq 1~\text{(i.e.}~A^\circ_{1, 1}~\text{est contractile)}
+$$
+$$
+\pi_i (A^\circ_{0, 1}) = 0 \quad \text{pour}~i \geq 1~\text{(i.e.}~A^\circ_{0, 1}~\text{est contractile)}
+$$
+$$
+\pi_i (A^\circ_{1, 0}) = 0~\text{et}~\pi_i(A^\circ_{0, 1}) = 0~\text{pour}~i \geq 2
+\leqno{(38)}
+$$
+$$
+\text{i.e}~A^\circ_{1, 0}~A^\circ_{0, 1}~\text{sont des}~K(\pi, 1)
+$$
+et elles ont comme conséquences que $\widetilde{U}_{g, \nu}$ est simplement connexe dans les cas anabéliens $(2g + \nu \geq 3)$. Pour savoir ce qu'il en est dans le cas abélien, il faut préciser la structure topologique de $A^\circ_{g, \nu}$ dans les 4 cas ``abéliens'' $2 g + \nu \leq 2$.
+
+Or on a le
+\vskip .3cm
+{
+Corollaire. --- \it Pour que $U = U_{g, \nu}$ soit à $\pi_i$ abélien (i.e. ne satisfasse pas aux conditions équivalentes du théorème) il faut et il suffit que $U$ puisse :
+\begin{enumerate}
+    \item[] Soit être muni d'une structure de groupe topologique (qui sera nécessairement isomorphe à $\mathbb{U} \times \mathbb{U}$ ($\mathbb{U} = \{ z/|z| = 1 \}$), (cas $(1, 0)$) et $\mathbf{C}^*$ (cas $(0, 2)$ ou $\mathbf{C}$ (cas $(0, 1)$))).
+    \item[] Soit d'une structure d'espace homogène sous un groupe topologique (on peut prendre $\SO (3, \mathbf{R})$ ou $\Gl(1, \mathbf{C})$ pour le cas de $\mathbb{S}^2$) par un sous groupe connexe. Dans tous les cas le groupe topologique en question peut se décrire e la fa\c{c}on suivante : on choisit une structure complexe sur $X_g = \widehat{U}_{g, \nu} = \widehat{U}$ (le compactifié pur de $U$) et on prend la structure complexe induite sur $U$ (i.e. on choisit une structure de courbe algébrique (sur $\mathbf{C}$) sur $U$\dots) et on prend $G = \Aut^\circ_{\mathbf{C}} U$ composante neutre du groupe des automorphismes complexes de $U$ i.e. des automorphismes complexes qui invarient $S_\nu = \widehat{U}\setminus U$.
+    
+Ceci posé, l'inclusion $G \hookrightarrow \Aut^\circ U \isom A^\circ_{g, \nu}$ est une équivalence d'homotopie.\footnote{N.B. Le fait que si $U$ est un espace homogène de groupe topologique par un sous groupe connexe alors $\pi_1$ est abélien provient de la suite exacte d'homotopie et du fait que le $\pi_1$ d'un groupe topologique est commutatif. Le réciproque dans le cas des surfaces topologiques est assez remarquable !}\footnote{On a un résultat plus précis : si $k$ est le plus petit entier tel que $(g, \nu + k)$ soit un couple anabélien, alors $\dim G = k$ et $G$ est simplement transitif sur l'ensemble des $k$-uples $(u_1, \dots, u_k)$ de points distincts de $U_{g, \nu}$ d'où il résulte aussitôt que tout élément de $A_{g, \nu}$ s'écrit de fa\c{c}on unique comme un produit $gu$ avec $g \in G$ et $u \in A_{g, \nu, \nu + k}$ ; donc $A_{g, \nu}$ est homéomorphe à $A_{g, (\nu, \nu + k)} \times G$. Comme $G$ est connexe on en conclut $\Gamma_{g, \nu} \isom \Gamma_{g, (\nu, \nu + k)} \subset  \Gamma_{g, \nu + k}$, et $A^\circ_{g, \nu} \isom G \times A^\circ_{g, \nu + k}$ et comme $A^\circ_{g, \nu + k}$ est $\infty$-connexe on e conclut un homotopisme $G \xlongrightarrow{\approx} A^\circ_{g, \nu}$.}    
+\end{enumerate}
+}
+\vskip .3cm
+Le corollaire nous donne :
+\[\begin{tikzcd}
+	{G = \mathbb{U} \times \mathbb{U}} & {\pi_1(A^\circ_{1, 0}) = \mathbf{Z} \times \mathbf{Z}} & {\text{i.e.}} & {A^\circ_{1, 0} \isom K(\mathbf{Z} \times \mathbf{Z}, 1)} \\
+	{G = \mathbf{C}^* = \Gl(1, \mathbf{C})} & {\pi_1(A^\circ_{0, 2}) \isom \mathbf{Z}} & {\text{i.e.}} & {A^\circ_{0, 2} \isom K(\mathbf{Z}, 1)} \\
+	{G = \Aff(1, \mathbf{C})} & {\pi_1(A^\circ_{0, 1}) \isom \mathbf{Z}} & {\text{i.e.}} & {A^\circ_{0, 1} \isom K(\mathbf{Z}, 1)}
+\end{tikzcd}\leqno{(39)}\]
+($\Aff(1, \mathbf{C})$ homotope à $\mathbf{C}^*$ par l'inclusion $\Gl(\mathbb{S}^2) \subset  \Aff(1, \mathbf{C})$)
+$$
+A^\circ_{0, 0} = \Aut (\mathbb{S}^2) \isom \Aut (\mathbb{P}^1_{\mathbf{C}})
+$$
+est homotope par l'inclusion au sous groupe $\GP (1, \mathbf{C})$ (donc à son sous groupe compacte maximal $\SO (3, \mathbf{R})/\{ \pm 1 \}$) qui \emph{n'est pas} un $K(\pi, 1)$ et dont le $\pi_1$ est $\isom \mathbf{Z}/2\mathbf{Z}$.
+
+On va utiliser ce corollaire pour déterminer la nature de $\widetilde{U}_{g, \nu}$ (comme revêtement de $U_{g, \nu}$) pour les cas ``abéliens''.
+
+Notons pour ceci que l'inclusion $G \hookrightarrow A^\circ_{g, \nu}$ induit une inclusion $G_0 \hookrightarrow B_{g, \nu}$ où
+$$
+G_0 = G \cap B_{g, \nu} =~\text{stabilisateur de}~a_{g, \nu}~\text{dans}~G
+\leqno{(40)}
+$$
+et comme $G/G_0 \isom A^\circ_{g, \nu}/B_{g, \nu} \isom U_{g, \nu}$ ($G$ étant transitif sur $U_{g, \nu}$), on trouve que le fait que $G \to A^\circ_{g, \nu}$ soit une équivalence d'homotopie équivaut à celle que $G_0 \hookrightarrow B_{g, \nu}$ en soit une. Or dans tous les cas envisagés, $G_0$ est déjà connexe : il est réduit à 1 dans les cas $(1, 0)$ et $(0, 2)$ (donc dans ce cas le corollaire équivaut à la \emph{contractibilité} de $B_{g, \nu}$) et c'est $\isom \mathbf{C}^*$ dans le cas $(0, 1)$, enfin c'est $\Aff (1, \mathbf{C})$ dans le cas $(0, 0)$. Donc on trouve le corollaire :
+\vskip .3cm
+{
+Corollaire. --- \it Dans les cas abéliens $2g + \nu < 3$ (et dans ceux-là seulement bien sûr) $B_{g, \nu}$ est connexe (i.e. $= A^\circ_{g, \nu + 1}$) i.e. $A^\circ_{g, \nu}/A^\circ_{g, \nu + 1} \to U_{g, \nu}$ est un homéomorphisme. Donc $A^\circ/A^\circ_{g, \nu + 1} \to U_{g, \nu}$ fait du premier membre un revêtement universel de $U_{g, \nu}$ si et seulement si $(g, \nu) \neq (0, 2)$ et $\neq (1, 0)$. 
+}
+\vskip .3cm
+Supposons donc $(g, \nu)$ différent de $(0, 1)$ et $(0, 2)$ (moralement on travaille dans le cas anabélien, les cas abéliens inclus $(0, 1)$ et $(0, 0)$ étant sans intérêt pour ce qui va suivre il me semble).
+
+Reprenons le diagramme (31) où dans la 1$^{\text{ère}}$ ligne le groupe quotient $B_{g, \nu}/B^\circ_{g, \nu}$ s'identifie donc à $\pi_{g, \nu} = \pi_1(U_{g, \nu}, a_{g, \nu})$.
+
+On trouve donc :
+\vskip .3cm
+{
+Théorème. --- \it Supposons $(g, \nu) \neq (1, 0)$ et $(0, 2)$, le sous groupe $A^\bullet_{g, \nu}/A^\circ_{g, \nu + 1}$ du groupe de Teichmüller $\Gamma_{g, \nu + 1} = A_{g, \nu + 1}/A^\circ_{g, \nu + 1}$ admet une suite de composition de longueur 3 dont les facteurs successifs sont $\mathfrak{S}_\nu$, $\Gamma^!_{g, \nu}$ et $\pi_{g, \nu}$, déduite d'une structure d'extension sur $\Gamma^!_{g, \nu + 1} = A^!_{g, \nu + 1}/A^\circ_{g, \nu + 1}$
+$$
+1 \to \pi_{g, \nu} \to \Gamma^!_{g, \nu + 1} \to \Gamma^!_{g, \nu} \to 1
+\leqno{(41)}
+$$
+}
+\vskip .3cm
+Les opérations extérieures de $\Gamma^!_{g, \nu}$ sur $\pi_{g, \nu}$ sont celles déduites par passage au quotient de celles de $A^!_{g, \nu} \subset  \Aut(U_{g, \nu})$ opérant extérieurement sur $\pi_{g, \nu}$. 
+Une autre fa\c{c}on de dire les choses est celle-ci : distinguons dans $\Gamma_{g, \nu + 1}$ opérant sur $S_{\nu + 1}$ le stabilisateur du dernier élément $a_{g, \nu}$, i.e. de son complémentaire ; soit  $\Gamma'_{g, \nu + 1} \isom A^\bullet_{g, \nu} /A^\circ_{g, \nu + 1}$ le sous-groupe d'indice $\nu + 1$ image inverse de $\mathfrak{S}_\nu$ dans $\mathfrak{S}_{\nu + 1}$ par $\Gamma_{g, \nu + 1} \to \mathfrak{S}_{\nu + 1}$. Ceci posé on a un homomorphism évident de groupes discrets, déduit de l'inclusion $A^\circ_{g, \nu} \hookrightarrow A_{g, \nu + 1}$\footnote{N.B. c'est un isomorphisme dans le cas abéliens $2g + \nu \leq 2$.}
+$$
+\Gamma'_{g, \nu + 1} \to \Gamma_{g, \nu}
+\leqno{(42)}
+$$
+et cet homomorphisme est surjectif (sans condition sur $(g, \nu)$) et pour $(g, \nu) \neq (1, 0)$ et $(0, 1)$ son noyau est canoniquement isomorphe à $\pi_{g, \nu}$ de sorte que l'on a une extension
+$$
+1 \to \pi_{g, \nu} \to \Gamma'_{g, \nu + 1} \to \Gamma_{g, \nu} \to 1
+\leqno{(43)}
+$$
+où les opérations extérieurs correspondants de $\Gamma_{g, \nu}$ sur $\pi_{g, \nu}$ sont celles déduites par passage au quotient de celles de $A_{g, \nu} \isom \Aut(U_{g, \nu})$ sur $\pi_1(U_{g, \nu}, a_{g, \nu}) = \pi_{g, \nu}$. La structure d'extension (41) est déduite de (43) par image inverse par l'inclusion $\Gamma^!_{g, \nu} \to \Gamma_{g, \nu}$.
+
+Supposons que l'on soit dans le cas anabélien $2 g + \nu \geq 3$. Comme pour toute structure d'extension par un noyau de centre trivial, il y a un homomorphisme canonique dans la structure d'extension canonique associée à $\pi_{g, \nu}$
+\[\begin{tikzcd}
+	1 & {\pi_{g, \nu}} & {\Gamma'_{g, \nu + 1}} & {\Gamma_{g, \nu}} & 1 \\
+	1 & {\pi_{g, \nu}} & {\Aut(\pi_{g, \nu})} & {\Autext(\pi_{g, \nu})} & 1
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=1-2, to=2-2]
+	\arrow[shift right=1, shorten <=3pt, shorten >=2pt, no head, from=1-2, to=2-2]
+\end{tikzcd}\leqno{(44)}\]
+où la flèche verticale centrale s'obtient en associant à $g \in \Gamma'_{g, \nu + 1}$ la restriction à $\pi_{g, \nu} \subset  \Gamma'_{g, \nu + 1}$ de l'automorphisme intérieur $\text{int}(g)$.
+\vskip.3cm
+{
+Théorème (bien connu). --- \it Dans le cas anabélien $(2g + \nu \geq 3)$\footnote{N.B. En fait ceci reste vrai pour le couple $(1, 0)$ (cf. plus bas) et même dans le cas $(0, 2)$ si on définit ad-hoc la notion de groupe à lacets de type $(0, 2)$.}
+$$
+\Gamma_{g, \nu} \isommap \Autext_{\text{lac}} (\pi_{g, \nu})
+$$
+ou ce qui revient au même par (44) :
+$$
+\Gamma'_{g, \nu + 1} \isommap \Aut_{\text{lac}}(\pi_{g, \nu})
+$$
+L'image de $\Gamma_{g, \nu} \to \Autext(\pi_{g, \nu})$ est formé des automorphismes extérieurs qui respectent la structure à lacets de $\Gamma_{g, \nu}$ (condition vide si $\nu = 0$ d'ailleurs\dots)
+}
+\vskip.3cm
+{
+Corollaire. --- \it Dans le cas anabélien le foncteur $X \mapsto \pi_1(X)$ de la catégorie isotopique (les fèlches dans la catégorie isotopique sont les classes d'isotopie d'homéomorphisme) des surfaces de type $(g, \nu)$ vers la catégorie des groupes \emph{extérieurs} à lacets de type $(g, \nu)$ est une équivalence de catégorie, ainsi que le foncteur $(X, s) \mapsto \pi_1(X, s)$ de la catégorie isotopique des surfaces \emph{ponctuées} de type $(g, \nu)$ vers la catégorie des groupes à lacets de type $(g, \nu)$\footnote{N.B. C'est même une équivalence au niveau des catégories $\infty$-\emph{isotopiques} ce qui exprime seulement le fait que $A^\circ_{g, \nu}$ et $A^\circ_{g, \nu + 1}$ sont contractiles.}.
+}
+\vskip.3cm
+Il reste à examiner dans quelle mesure on peut adapter ces résultats au cas ``abélien''. Rappelons que dans ce cas on a
+$$
+\Gamma'_{g, \nu + 1} \isommap \Gamma_{g, \nu} \quad \text{si} \quad 2g + \nu \leq 2 \quad \text{(cas ``abélien''))}.
+\leqno{(45)}
+$$
+i.e. $\Gamma_{g, \nu}$ s'identifie au sous-groupe de $\Gamma_{g, \nu + 1}$ formé des éléments qui fixent $a_{g, \nu}$.
+\begin{enumerate}
+    \item[(1))] Cas $g = 1$, $\nu = 0$ donc $\Gamma_{1, 0} \isom \Gamma'_{1,1} = \Gamma_{1, 1}$. 
+\end{enumerate}
+Considérons l'homomorphisme canonique
+$$
+\Gamma_1 = \Gamma_{1, 0} \to \Autext(\pi_{1, 0}) = \Aut(\pi_{1, 0})
+\leqno{(46)}
+$$
+( $\isom \Gl(2, \mathbf{Z})$ quand on a choisi une base de $\pi_{0, 1} \isom \mathbf{Z}^2$), qui correspond à l'homomorphisme
+$$
+\Gamma_{1, 1} \to \Aut \pi_1 (U_{1, 0}, a_{1, 0}) \quad (\isom \Gl (2, \mathbf{Z}))
+\leqno{(46^{\text{bis}})}
+$$
+déduits l'un et l'autre par passage au quotient à partir des opérations évidentes de $A_1 = A_{1, 0} = \Aut (X_1)$ et de $A_{1, 1} = \Aut (X_1, a_{1, 0})$. Il est immédiat que ce homomorphisme est surjectif mais moins évident que ce soit un isomorphisme i.e. que tout homéomorphisme de $X_1$ qui induit l'identité sur $\pi_1$ soit isotope à l'identité ; c'est pourtant un résultat vrai (et connu).
+
+Dans le cas actuel où $X_1$ s'identifie à l'espace topologique sous-jacent à un groupe topologique $H$ (ce qui est le cas dans tous les cas abéliens sauf celui de $g = 0$, $\nu = 0$ de la 2-sphère), par translation on a un homomorphisme naturel 
+$$
+H \to A_{g, \nu} \isom \Aut_{\text{top}} H
+\leqno{(47)}
+$$
+permettant d'identifier $H$ à un sous-groupe topologique de $A_{g, \nu}$ et on trove que l'application 
+\[\begin{tikzcd}
+	{H \times A_{g, \nu + 1}} & {A_{g, \nu}} \\
+	{(g, u)} & gu
+	\arrow[from=1-1, to=1-2]
+	\arrow[shorten <=2pt, shorten >=2pt, maps to, from=2-1, to=2-2]
+\end{tikzcd}\leqno{(48)}\]
+est un homéomorphisme.
+
+Ceci redonne (45) (puisque $H$ est connexe) et le précise considérablement par
+$$
+\pi_i (A_{g, \nu + 1}) \isom \pi_i (A_{g, \nu}) \times \pi_i (H)
+\leqno{(49)}
+$$
+Cas abéliens non sphériques i.e. un des trois cas $(1, 0), (0, 1), (0, 2)$.
+
+Dans le cas ``limites'' $(1, 0)$ et $(0, 2)$ (quand $(g, \nu)$ est abélien et $(g, \nu + 1)$ anabélien) comme $A^\circ_{g, \nu} \isom H \times A^\circ_{g, \nu + 1}$ contractile, on retrouve que $H \to A^\circ_{g, \nu}$ est un homotopisme. Notons que dans les cas anvisagés $(1, 0), (0, 2), (0, 1)$, si on choisit une structure complexe sur le compactifié pur $\widehat{X}$ de $X = U_{g, \nu}$ et qu'on choisit $a_{g, \nu}$ comme origine, il y a une structure de groupe $\mathbf{C}$-algébrique unique sur $X$ admettant $a_{g, \nu}$ comme unité et la composante neutre du groupe des automorphismes de la variété algébrique $X$ n'est autre justement que le groupe des translations dans les cas limites $(1, 0)$ et $(0, 2)$.
+\begin{enumerate}
+    \item[2)] Cas $g = 0$, $\nu = 2$ donc $H = \mathbf{C}^*$, $A_{g, \nu} \isom H \times A^\bullet_{g, \nu + 1}$ i.e. $A_{0, 2} \isom \mathbf{C}^* \times A^\bullet_{0, 3}$ donc
+    $$
+    \Gamma_{0, 2} \isom \Gamma'_{0, 3}
+    $$
+    \[\begin{tikzcd}
+	{A^\circ_{0, 2}} & {\mathbf{C}^* \quad \text{(équivalence d'homotopie)}}
+	\arrow["\approx"', from=1-2, to=1-1]
+    \end{tikzcd}\leqno{(50)}\]
+\end{enumerate}
+Ici $\pi_{0, 2} = \pi_1(U_{0, 2}) \isom \mathbf{Z}$, considérons
+$$
+\Gamma_{0, 2} \xlongrightarrow{\rho} \Aut(\pi_{0, 2}) \isom \{ \pm 1 \} = \mathfrak{S}_2
+\leqno{(51)}
+$$
+s'identifiant à
+$$
+\Gamma'_{0, 3} \to \Aut (\pi_{0, 2}) \isom \{ \pm 1 \}
+\leqno{(52)}
+$$
+Cette fis-ci l'homomorphisme (51) \emph{n'est pas bijectif}, il s'identifie à l'homomorphisme canonique.
+$$
+\Gamma_{0, 2} \xlongrightarrow{\rho} \mathfrak{S}_2
+\leqno{(51^{\text{bis}})}
+$$
+de noyau $\Gamma^!_{0, 1}$ et $\Gamma^!_{0, 2}$ n'est pas réduit à 1, par exemple (si on prend $U_{0, 2} = \mathbf{C}^*$) $z \to \overline{z}$ définit un élément de $\Gamma^!_{0, 2}$ qui n'est pas égal à 1. Notons maintenant l'homomorphisme canonique\footnote{Cet homomorphisme est toujours surjectif. Nous noterons son noyau $\Gamma^+_{g, \nu}$ (et non plus $\Gamma^\circ_{g, \nu}$ !)} (défini sans restriction sur $(g, \nu)$)
+$$
+\Gamma_{g, \nu} \xlongrightarrow{\chi} \{ \pm 1 \}
+\leqno{(53)}
+$$
+via l'action de $\Gamma_{g, \nu}$ sur le moule d'orientation $T_g = T$ de $U_{g, \nu}$ (qui se définit pour $(g, \nu) \neq (0, 0), (0, 1)$ et $(0, 2)$ en termes de la structure à lacets de $\pi_{g, \nu}$). Dans le cas actuel mettant ensemble $\rho$ et $\chi$ on trouve un homomorphisme
+$$
+g \mapsto (\rho (g), \chi (g)): \Gamma_{0, 2} \to \mathfrak{S}_2 \times \{ \pm 1 \} \isom \{ \pm 1 \} \times \{ \pm 1 \}
+\leqno{(54)}
+$$
+qui est évidemment surjectif (si $g$ correspond à $z \to z^{-1}$ son image est $(-1, 1)$, s'il correspond à $z \to \overline{z}$, son image est $(1, -1)$). Je dis qu'il est \emph{bijectif}
+\[\begin{tikzcd}
+	{\Gamma_{0, 2}} & {\mathfrak{S} \times \{ \pm 1 \}}
+	\arrow["\sim", from=1-1, to=1-2]
+	\arrow["{\rho, \chi}"', from=1-1, to=1-2]
+\end{tikzcd}\]
+ou ce qui vient au même, que la restriction de $\rho$ (51$^{\text{bis}}$) au noyau $\Gamma^+_{0, 2}$ de $\chi: \Gamma_{0, 2} \mapsto \{ \pm 1 \}$ est un isomorphisme ou ce qui revient au même
+\vskip .3cm
+{
+Théorème (bien connu !). --- \it $\Gamma^{!+}_{0, 2} = 1$, ou encore $\rho^+_{0, 2}: \Gamma^+_{0, 2} \to \mathfrak{S}_2$ est un isomorphisme (ou $\chi^!_{0, 1}: \Gamma^!_{0, 2} \isommap \{ \pm 1 \}$)\footnote{N.B. Ceci suggère que pour une description isotopique de la catégorie des surfaces de types $(0, 2)$ il faut utiliser le couple de $(\pi_1 (X), T)$ où $T$ est le module d'orientation ; itou plus bas pour le cas du type $(0, 1)$ mais alors $\pi_1 = 0$ et il suffit de $T$.}.
+}
+\vskip .3cm
+[N. B. Si on veut un énoncé commun aux deux cas ``abéliens limites'' $(1, 0)$ et $(0, 2)$ on dira que dans ce cas $\Gamma^+_{g, \nu} \to \Aut (\pi)$ est injectif, et a comme image le groupe des automorphismes du $\mathbf{Z}$-module libre $\pi$ de rang 2 ou 1 qui sont de déterminant égal à 1].
+
+Ceci équivaut, modulo l'isomorphisme $\Gamma'_{0, 3} \isom \Gamma_{0, 2}$ au
+\vskip .3cm
+{
+Corollaire. --- \it
+    $$
+    \begin{cases}
+    \Gamma^+_{0, 3} \xlongrightarrow{\rho^+_{0, 3}} \mathfrak{S} \quad \text{est un isomorphisme et} \\
+    \Gamma_{0, 3} \xlongrightarrow{(\rho_{0, 3}, \chi_{0, 3})} \mathfrak{S}_3 \times \{ \pm 1 \} \quad \text{aussi}.
+    \end{cases}\leqno{(56)}
+    $$
+}
+\vskip .3cm
+\begin{enumerate}
+    \item[3)] Cas $g = 0$, $\nu = 1$ donc $H \isom \mathbf{C}$ donc 
+    \[\begin{tikzcd}
+	{A_{0, 1}} & {\mathbf{C} \times A_{0, 2} = \mathbf{C} \times \mathbf{C}^* \times A_{0, 3}}
+	\arrow["{\text{homéo}}", from=1-1, to=1-2]
+    \end{tikzcd}\leqno{(57)}\]
+\end{enumerate}
+(avec$\mathbf{C} \times \mathbf{C}^* = \Aff (1, \mathbf{C})$ (qui est simplement transitif sur les couples d'éléments distincts)) en prenant sur $A_{0, 3}$ une structure de groupe algébrique complexe $\isom \mathbf{C}$\footnote{N. B. Comme $A^\circ_{0, 3}$ est contractile cela redonne bien que l'inclusion de $G = \Aff(1, \mathbf{C}) = \Aut_{\mathbf{C}}(X)^\circ$ dans $A_{g, 1}$ est un homotopisme.}.
+
+On a ici $\Gamma_{g, 1} \isom \Gamma'_{g, 2} = \Gamma^!_{g, 1} \isom \{ \pm 1 \}$ i.e. :
+
+\vskip .3cm
+{
+Corollaire. --- \it On a par la signature un isomorphisme :
+\[\begin{tikzcd}
+	{\Gamma_{0, 1}} & {\{ \pm 1 \}}
+	\arrow["\chi", from=1-1, to=1-2]
+	\arrow["\sim"', from=1-1, to=1-2]
+\end{tikzcd}\leqno{(58)}\]
+}
+\vskip .3cm
+\begin{enumerate}
+    \item[4)] Cas $g = 0$, $\nu = 0$. Ici il n'y a pas de $H$, i.e. de structure de groupe topologique sur $X \isom X_0 = U_{0, 0} \isom \mathbb{S}^2$ mais prenant une structure complexe sur $X$ (d'où $X \isom \mathbb{P}^1_{\mathbf{C}}$) on trouve un groupe $G$ de $\mathbf{C}$-automorphismes, $G = \GP (1, \mathbf{C})$, et
+    $$
+    G \hookrightarrow A_0 = A_{0, 0}
+    \leqno{(59)}
+    $$
+\end{enumerate}
+Prouvons à nouveau que c'est un homotopisme. Comme $G$ est simplement transitif sur les triples de 3 points distincts de $X_0$, on trouve encore un homéomorphisme
+\[\begin{tikzcd}
+	{G \times A^!_{0, 3}} & {A_0} \\
+	{(g, u)} & gu
+	\arrow["\sim", from=1-1, to=1-2]
+	\arrow[shorten <=2pt, shorten >=2pt, maps to, from=2-1, to=2-2]
+\end{tikzcd}\leqno{(60)}\]
+d'où
+$$
+\Gamma_0 \isom \Gamma^!_{0, 3} \isom \{ \pm 1 \}
+$$
+et compte tenu que la composante neutre $A^\circ_{0, 3}$ de $A^!_{0, 3}$ est contractile on trouve bien encore que (59) est un homotopisme.
+
+{\bf Conclusion commune à tous les cas}.
+
+Il convient d'inclure dans la notion de ``groupe à lacets'' également les quatre cas abéliens, et on le fait de la manière suivante :
+\begin{enumerate}
+    \item[1)] Type $(1, 0)$ : on n'a pas à compléter la définition générale qui revient à dire ici que $\pi$ est un groupe abélien, $\mathbf{Z}$-module libre de rang 2. Son module d'orientation $T$ peut se définir alors comme $\mathrm{H}_2(\pi, \mathbf{Z})$ ou comme $\bigwedge^2_{\mathbf{Z}}\pi$. La signature d'un automorphisme de $\pi$ est donné par son action su $T$, c'est aussi son déterminant.
+    \item[2)] Type $(0, 2)$ : $\pi \isom \mathbf{Z}$. Ici il faut se donner \emph{en plus} de $\pi$, un $\mathbf{Z}$-module inversible $T$ et la structure à lacets est définie par l'ensemble des deux isomorphismes $T \isom \mathbf{Z}$. Un automorphisme de la structure à lacets est donc défini par n'importe quel couple $(u_\pi, u_T)$ d'un automorphisme de $\pi$ et d'un de $T$.  
+    \item[3)] Types $(0, 1)$ et $(0, 0)$ qui sont ceux où $\pi_1 = \{ 1 \}$. Par définition, une structure de groupe à lacets de type $(g, \nu)$ est définie ici par la donné d'un ``module d'orientation'' sans plus, qui est un $\mathbf{Z}$-module inversible $T$ ; et il faut donner de plus le type i.e. (sous entendu $g = 0$) le $\nu \in \{ 0, 1 \}$ ; les automorphismes sont ceux de $T$.
+\end{enumerate}
+Avec ces définitions et pour $g, \nu$ fixés on a le
+\vskip .3cm
+{
+Théorème. --- \it Soit $(g, \nu) \in \mathbf{N} \times \mathbf{N}$, le foncteur naturel de la catégorie isotopique des surfaces de type $(g, \nu)$ vers la catégorie des groupes extérieures à lacets de type $(g, \nu)$ est une équivalence de catégorie. (N.B. Comme flèches on prend les classes d'isomorphisme d'un coté comme de l'autre.)
+}
+\vskip .3cm
+
+Mais ce théorème n'est pas sûr pleinement satisfaisant dans le cas abélien par exemple. La donnée d'un objet de la catégorie isotopique (explicité par son $\pi_1$ extérieur à lacets) dans le cas d'une action d'un groupe ne permet pas même de récupérer l'extension de ce groupe par le dit $\pi_1$ ! Ce qui cloche, on le sent bien, est le fait que cette équivalence de catégorie soit isotopique (i.e. tient compte des $\pi_0$ des espaces d'homéomorphismes) mais néglige la structure topologique interne des espaces topologiques $\Homeo(X, X')$, en négligeant la structure homotopique des composantes connexes qui, en tant que torseurs sous des groupes topologiques $\isom A^\circ_{g, \nu}$, sont homéomorphes à $A^\circ_{g, \nu}$. C'est justement dans le cas anabélien et dans celui là seulement que ce groupe est $\infty$-connexe. Dans le cas abélien, l'expérience prouve que la description précédente doit être remplacée par celle de Ladegaillerie en termes des
+$$
+\B_{D^*} \to \B_U \quad \text{ou} \quad \pi_{D^*} \to T_U
+$$
+elle devient alors (dans tous les cas sauf $(0, 0)$) $\infty$-fidèle (i.e. tient compte des $\pi_i(A^\circ_{g, \nu})$\footnote{N.B. Il n'y a pas à se donner un $k$ ici, $T$ se décrit intrinsèquement à partir de la structure de topos ou de groupoïde.})
+
+Le seul cas entièrement réfractaire (d'importance il faut bien dire !) est celui du type $(0, 0)$ i.e. des surfaces homéomorphes à $\mathbb{S}^2$ le type d'homotopie de 
+$$
+A^\circ_0 = A^+_0 \isom \GP (1, \mathbf{C}) \equiv \mathbb{S}^3 / \pm 1 \quad \text{(quaternions)}
+$$
+et en particulier ses $\pi_i$ n'étant pas tous bien connus.
+
+Il faudrait pour commencer expliciter la $\Gr$-catégorie $G$, d'invariant $\pi_0 \isom \{ \pm 1 \}$ et $\pi_1 \isom \pi_1 (A^\circ_0) \isom \{ \pm 1 \}$, déduit de $A_0$ en tuant les groupes d'homotopie supérieurs $\pi_i (i \geq 2)$ de $A_0$ ou, si l'on préfère, du groupe des automorphismes conformes de $\mathbb{P}^1_{\mathbf{C}}$ (extension scindée de $\mathbf{Z}/2\mathbf{Z}$ par $\GP (1, \mathbf{C})$). La 2-catégorie 2-isotopique des surfaces homómorphes à $\mathbb{P}^1_{\mathbf{C}}$ est alors décrite par le 2-groupoïde des 1-torseurs sous la $\Gr$-catégorie précédente\footnote{On peut supposer que $\mathcal{G}$ n'a que deux objets correspondant à l'identité et à la conjugaison complexe de la sphère de Riemann $\widehat{\mathbf{C}}$ ; en fait elle est scindable et même canoniquement scindée\dots}.
+
+
+% End

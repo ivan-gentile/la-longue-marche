@@ -1,0 +1,51 @@
+Section: § 10. — AJUSTEMENT DES HYPOTHÈSES (REMORDS)
+G103d pages: 50-51
+
+--- G103d page 50 ---
+§ 10. — AJUSTEMENT DES HYPOTHÈSES (REMORDS)
+Je me rends compte que dans la définition des morphismes (X′, S′)
+f
+−→(X, S),
+l’hypothèse f −1(S)red = S′ est étriquée — il faut prendre des morphismes quelconques
+f : X′ \ S′ →X \ S (se prolongeant bien sûr en ˆf : X′ →X). On aura donc
+S′ ⊃ˆf −1(S)red, mais S′ peut être strictement plus grand que ˆf −1(S)red. Il faut alors
+ajuster en conséquence la description de la “catégorie bordélique” — les objets restent les
+diagrammes de groupoïdes D : ΠD∗→ΠU →Πe (plus donnée de Kummer), mais
+un morphisme d’un D′ dans un D ne définit plus nécessairement un Π′
+D∗→ΠD∗(en
+plus de Π′
+U →ΠU) il faut se donner une partie I′
+f de I′ = π0(Π′
+D∗) et se donner seule-
+ment Π′
+D∗,I′
+f
+fD∗
+−−→ΠD∗(avec donnée de commutation αD∗,U relative au carré avec fU).
+Bien sûr, dans la description en termes de E′, E etc, on exige que pour i′ ∈I′ \ I′
+f,
+fE : E′ →E est trivial sur E′
+i′ ⊂E′ - et τ est défini comme I′
+f′ →I; les données
+relatives aux i′ ∈I′
+f′ (fi′ : Ei′ →Ei=τ(i′), les αi′ ∈E) sont pareilles que dans le cas
+envisagé précédemment.
+NB Cela signifie en fait qu’on commence à “boucher les trous” (de X′) correspon-
+dants aux i′ ∈I′ \I′
+f′, en remplaçant E′ par le groupe quotient de E′ par le sous-groupe
+invariant engendré par les Li′ = κi′(T(K))(i′ ∈I′ \ I′
+f′), et les Ei′(i′ ∈I′
+f) par leurs
+images dans le dit groupe quotient, et en oubliant I′ \ I′
+f′ i.e. remplaçant I′ par I′
+f.
+[Pour bien faire, il faudrait exprimer ces opérations aussi au niveau des diagrammes
+de groupoïdes Π′
+D∗→Π′
+U →Πe…].
+Cela signifie donc qu’en fait, on s’est ramené à la situation envisagée au début, où
+S′ = ˆf −1(S)…Donc finalement la différence des deux points de vue n’est pas énorme,
+
+--- G103d page 51 ---
+et celui adopté au début a l’avantage de la simplicité plus grande (tout est relatif !)
+46

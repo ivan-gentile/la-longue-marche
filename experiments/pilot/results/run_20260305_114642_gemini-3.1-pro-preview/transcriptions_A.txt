@@ -1,0 +1,398 @@
+Experiment A — gemini-3.1-pro-preview
+============================================================
+
+
+========================================
+PAGE 1
+========================================
+
+Pages 1-292 + table des mati\`eres
+\vspace{15cm}
+
+1
+
+
+========================================
+PAGE 2
+========================================
+
+[MARGIN: I]
+\begin{center}
+La ``longue marche'' à travers la théorie de Galois...
+\end{center}
+
+\noindent \underline{1. Topos multigaloisien} \hfill 1 \\
+2. Appl. aux rev. des topos \hfill 4 \\
+3. Variétés pro-multigaloisiennes \hfill 6 \\
+4. Compléments [unclear: normands] \\
+\underline{5. Introduction} des contextes arithmétiques \hfill 7' \\
+``Conjectures anabéliennes'' fondamentales \\
+6. Analyse locale de $(X,S)$ en un $s \in S$. \hfill 10' \\
+7. Reformulation ``bordélique'' de la conjecture \hfill 12 \\
+(le purgatoire [unclear: néomaien] ...) \\
+8. Réflexions taxonomiques (distinction de \hfill 25' \\
+cas - le purgatoire s'aménage un peu...) \\
+9. Structures tangentielles en les $s \in S$ \hfill 34 \\
+(Sections d'extensions ``de [unclear: dévissage] type'') \\
+10. Ajouts au vu des hypothèses (erronées) \hfill 38 \\
+11. Conditions sur les syst. de groupoïdes \hfill 39 \\
+obtenus à partir de situations géométriques \\
+12. L'analogue topologique. (Où on se con- \hfill 41 \\
+vainc aussi que le bordel groupoïdal peut \\
+s'exprimer complètement, dans le cas anabé- \\
+lien, par le $\pi_1$ ext. : locats ...) \\
+13. Retours sur [unclear] : formules \hfill 53 \\
+d'Euler ``galoisiennes'' \\
+13bis Retours sur la notion de groupe : locats \hfill 56 \\
+14. Digression cohomologique (ou le ``bouchage \hfill 58 \\
+des trous'') \\
+\underline{15. Retours sur le cas} topologique : orbites \hfill 67' \\
+critiques autour des scindages d'extensions \\
+Application aux sous-groupes finis des \\
+$Aut ext(\pi)$ (cas discret) (cf. aussi \S 18) \\
+16. Bouchage et lissage des trous: préliminaires \hfill 79' \\
+topologiques généraux \\
+\underline{17. Compléments} au \S 15, sur op. de groupes \hfill 89 \\
+finis sur des surfaces
+
+[MARGIN: 2]
+
+
+========================================
+PAGE 3
+========================================
+
+Here is the transcription of the handwritten manuscript page in LaTeX format:
+
+```latex
+\noindent
+18. Forage de trous. Application aux ss-groupes \\
+finis de $Aut_{ext} (\Pi)$ (cas discret) \hfill 91
+
+\noindent
+19. Tour de Teichmüller \hfill 102
+
+\noindent
+20. Digression : description - 2-catégorique de \\
+la cat. des [unclear: topos et morphismes topologiques] \hfill 116
+
+\noindent
+21. Les espaces de Teichmüller \hfill 125
+
+\noindent
+[MARGIN: manque \S 22 !]
+23. Retour sur les surfaces à gr. ps (finis) \\
+d'opérateurs ("mise en équation" du Pb) \hfill 133
+
+\noindent
+24. Essai de détermination de $\widehat{\Gamma}^{Aor}$. [unclear: Liens] \\
+des relations $\Pi_{g,(\nu,\nu+m)} = (1)$, programme \\
+de travail \hfill 142
+
+\noindent
+25. Groupes de Teichmüller "spéciaux" \hfill 148
+
+\noindent
+25 bis. "Cas des deux groupes" d'opérateurs. Retour \\
+sur les notations. \hfill 153
+
+\noindent
+26. Groupes de Teichmüller profinis. \\
+Discrétisations et prodiscrétisations. Liens \\
+avec topos modulaire de Teichmüller. \hfill 167 \\
+Conjecture hâtive.
+
+\noindent
+27. Changement de type $(g,\nu)$ : a) bouchage de trous \hfill 172 \\
+(et digression sur... g. [unclear] p.174)
+
+\noindent
+28. Changt. de type $(g,\nu)$ : b) passage à un rev. fini \hfill 177 \\
+(la conjecture hâtive grince...)
+
+\noindent
+29. Critiques de l'approche précédente. (Où \\
+on rejette des notions et les conjectures...) \hfill 185
+
+\noindent
+30. Propriétés des $N_{g,\nu}, \Gamma_{g,\nu}$ : [unclear] Propriétés liées \\
+aux sous-groupes finis de Teichmüller. \hfill 192
+
+\noindent
+31. Digression sur les relèvements d'une \\
+action extérieure d'un groupe fini sur \\
+un gr. pr. profini à centres \hfill 198
+
+\vspace{1cm}
+
+\noindent
+32. Retour sur les aspects arithmétiques des bouchages \\
+de trous: relations entre $\Gamma_{g,\nu}$ et $\Gamma_{g,\nu-1}$. \hfill 200 \\
+(où on reconstitue, sous la dir. de la [unclear: topologie] \\
+étale, d'un cercle algébrique [unclear: à partir] \\
+du $\Pi_1$ d'un ouvert [unclear]...)
+
+\noindent
+33. Digression topologique: antiinvolutions \\
+des surfaces orientées compactes (en lais- \\
+sant de côté d'abord le cas "à trous") \hfill 221
+
+\noindent
+$\vec{34}$. L'injectivité de $\widehat{\Gamma}_\mathbb{Q} \to Aut_{ext}(\widehat{\Pi}_{0,3})$ \hfill 229
+
+\noindent
+35. L'isomorphisme $\widehat{\Gamma}_\mathbb{Q} \simeq \widehat{\Gamma}_{1,1}$ et l'injectivité \\
+$\widehat{\Gamma}_\mathbb{Q} \hookrightarrow Aut_{ext}(\widehat{\Pi}_{1,1}) = Aut_{ext}(SL(2,\mathbb{Z})^\wedge)$ \hfill 237
+
+\noindent
+37. Modules des courbes elliptiques, via \\
+Legendre, ... $M_{1,1}[2] \simeq U_{0,3} \mp M_{0,4}^1$ \hfill 272
+
+\noindent
+38. Relations entre $N_{g,\nu}, \Gamma_{g,\nu}$ pour $g$ variable \\
+(étude des rev. finis) \hfill 239
+
+\noindent
+39. Description heuristique profinie de la \\
+cat. des courbes alg. définies sur \\
+des ext. finies de $\mathbb{Q}_0 / \mathbb{Q}$ \hfill 245
+```
+
+
+========================================
+PAGE 4
+========================================
+
+814
+
+752
+832
+
+
+========================================
+PAGE 5
+========================================
+
+\section*{1. Topos multigaloisiens.}
+
+Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions équivalentes :
+
+[MARGIN: a) $\Rightarrow$ b) est [unclear] ds SGA 4 \dots]
+a) $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est loc\textsuperscript{t} constant.
+
+b) $\mathcal{E}$ est équivalente à une catégorie $\hat{C}$ où $C$ est un groupoïde
+[MARGIN: NB. On y verra plus clair de diviser [unclear]]
+
+b') $\exists$ une famille $(G_i)_{i \in I}$ de groupes et une équivalence de catégories
+$$ \mathcal{E} \simeq \prod \text{Ens}(G_i) $$
+
+c) Conditions d'exactitude ad-hoc, du type de celles données dans SGA 1 \dots
+
+[MARGIN: Prop. 1.3 c) $\Rightarrow$ b) la dem de cette [unclear] \dots topos multigaloisien \dots]
+Dém. $b \Leftrightarrow b' \Rightarrow a$ immédiat. Pour $a) \Rightarrow b)$ je suis moins sûr, peut-être faut-il supposer que $\mathcal{E}$ est loc connexe, et qu'il a suffisamment de foncteurs fibres i.e. suffisamment de points.
+
+Def. 1.1. Si les conditions équivalentes b, b') ci-dessus st satisfaites, on dit que $\mathcal{E}$ est un topos multigaloisien (ou une catégorie multigaloisienne).
+
+
+========================================
+PAGE 50
+========================================
+
+Here is the transcription of the handwritten manuscript page:
+
+```latex
+correspondante : des syst. d'iso.
+
+$$ \mu_{D'} : f_{D'} \to f'_{D'} , \quad \mu_{U^*} : f_{U^*} \to g_{U^*} . \quad \text{Ce morph-m} $$
+
+[MARGIN: exprimant l'existence d'un iso. $\mu_{D'}$] condition $\tau' = \tau$, $d'_{i'} = d_{i'}$ $\forall i' \in I'$ et 
+la donnée de \hspace{2cm} ceci résulte
+\hspace{4cm} des trois
+\hspace{4cm} conditions --
+
+a) \fbox{$\mu \in \mathcal{E}$}, définissant un iso
+
+entre \quad $f_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E}$ \quad et \quad $f'_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E}$
+
+i.e. faisant en sorte que
+
+\begin{equation*}
+\fbox{$f'_{\mathcal{E}} = int(\mu) f_{\mathcal{E}}$}
+\end{equation*}
+
+b) \fbox{$\mu_{i'} \in \mathcal{E}_i$} \quad ($i \in I', i = \tau(i')$)
+
+[MARGIN: décrit $\mu_{D'}^*$] satisfais. à
+\begin{equation*}
+\fbox{$f'_{i'} = int(\mu_{i'}) f_{i'}$} \hspace{1cm} \text{ceci implique déjà } d_{i'} = d'_{i'}
+\end{equation*}
+
+les $\begin{matrix} \mu, & \mu_{i'} \\ \uparrow & \uparrow \\ \eta & \eta_{i'} \end{matrix}$ étant liés aux $\alpha, \alpha'$ de $(\text{E}\mathcal{E})$
+
+\quad \quad $\alpha_{i'}, \alpha'_{i'}$ ($\in \Gamma$) de la fa\c{c}on
+
+suivante
+
+\begin{equation*}
+\fbox{$\alpha' = p(\mu) \alpha$}
+\end{equation*}
+
+\begin{equation*}
+\fbox{$\alpha'_{i'} = p_i(\mu_{i'}) \alpha_{i'}$} \hspace{2cm} \forall i' \in I'
+\end{equation*}
+
+ou encore
+\begin{equation*}
+\begin{cases}
+p(\mu) = \alpha' \alpha^{-1} \\
+p_i(\mu_{i'}) = \alpha'_{i'} \alpha_{i'}^{-1}
+\end{cases}
+\end{equation*}
+```
+
+
+========================================
+PAGE 51
+========================================
+
+\begin{center}
+    24
+\end{center}
+
+Notons que, comme $f_i$ est [unclear: injectif], les
+deuxièmes relations, donnant les $f_i(H_{i'})$, déter-
+minent les $H_i$ de façon unique, l'existence
+de ces $H_i$ équivaut aux relations
+\begin{equation*}
+    \framebox{$\alpha'_{i'} \alpha_{i'}^{-1} \in f_i(\mathcal{E}_i)$} \qquad i' \vdash i
+\end{equation*}
+
+Quant à la relation $p(\mu) = \alpha'_i \alpha_i^{-1}$, elle détermine
+(à droite [unclear: disons]),
+$\mu$ modulo multiplication par un $\mu_0 \in \text{Ker } p = \Pi$,
+mais qui doit être tel que l'on ait encore
+$$f'_{\mathcal{E}} = \text{int}(\mu_0) f_{\mathcal{E}}$$
+(au lieu de $f'_{\mathcal{E}} = \text{int}(\mu) f_{\mathcal{E}}$) ce qui signifie
+exige que
+$$\text{int}(\mu_0) f_{\mathcal{E}} = f_{\mathcal{E}}$$
+i.e.
+\begin{equation*}
+    \framebox{$\mu_0 \in \text{Cent}_{\Pi} f_{\mathcal{E}}(\mathcal{E}')$}
+\end{equation*}
+
+C'est donc cela l'indétermination exacte
+dans le choix d'un isomorphisme entre
+$f$ et $f'$ de $\mathcal{D}'$ dans $\mathcal{D}$.
+
+Si p.ex. on est dans les conditions où
+$\Pi' \to \Pi$ déduit de $f_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E}$ est
+un fonct. d'inclusion pleine ( [unclear] )
+- cas d'un "isomorphisme strict" ! -
+alors $\mu_0$ doit centraliser un sous-groupe ouvert de
+
+\vspace{1cm}
+\noindent 51
+
+
+========================================
+PAGE 52
+========================================
+
+\noindent
+$\pi$ - [unclear] cela $\leadsto$ explique $H=1$,\\
+donc il semble bien que [crossed out] (dans les cas\\
+correspondants : des hom dominants des\\
+co-ordres algébriques ) un $0$-morphisme\\
+d'un $f$ dans un $f'$ (s'il en existe) est\\
+unique, i.e. $\underline{Hom}(\mathcal{D}', \mathcal{D}^*)$ est une catégorie\\
+discrète.
+
+\vspace{0.5cm}
+
+On peut interpréter $\mathcal{D}$ comme un $\mathcal{E}$ muni\\
+de sous-groupes $\mathcal{E}_i \subset \mathcal{E}$, et de $p : \mathcal{E} \to \Gamma_x$\\
+(noyau $\pi$) muni d'isomorphismes
+$$k_i : \Gamma(\overline{K}) \simeq \mathcal{E}_i \cap K = L_i$$
+(commutant à l'action de $\mathcal{E}_i$ ). Soit\\
+un autre système $(\mathcal{E}'; (\mathcal{E}'_{i'})_{i' \in I'}, p', \dots $\\
+$(k'_{i'})_{i' \in I'}) ;$ un morphisme des\\
+premiers dans le second est défini par\\
+un
+$$f : \mathcal{E}' \to \mathcal{E}$$
+satisfaisant les conditions suivantes\\
+b) $p f$ est conjugué de $p'$ $[\text{soit } \alpha \in \Gamma \text{ tel que } p f = \operatorname{int}(\alpha) p']$\\
+a) $\forall i' \in I', \exists i \in I \text{ tel que } f(\mathcal{E}'_{i'})$\\
+soit contenu dans un conjugué de $\mathcal{E}_i$\\
+$[\text{soit } \alpha_{i'} \in \mathcal{E} \text{ tel que } f(\mathcal{E}'_{i'}) \subset \operatorname{int}(\alpha_{i'}^{-1})(\mathcal{E}_i)]$\\
+$[\text{i.e. } \operatorname{int}(\alpha_{i'}) f(\mathcal{E}'_{i'}) \subset \mathcal{E}_i]$
+
+
+========================================
+PAGE 53
+========================================
+
+\begin{center}
+25
+\end{center}
+
+\noindent \underline{NB} Le $i \in I$ correspondant à $i' \in I'$ se marque, dit \\
+$r: I' \to I$. Si les $\alpha_{i'}$ sont choisis, \text{[unclear]} \\
+\text{[unclear: il s'en]} déduit \text{[unclear: homomorphisme]} $f_{i'} : \mathcal{E}'_{i'} \to \mathcal{E}_i$ \\
+$f_{i'} = ( \text{int}(\alpha_{i'}) \circ f ) | \mathcal{E}'_{i'}$, qui induit des \\
+\text{[MARGIN: NB A priori, \text{[unclear]} ]}
+homomorphismes \text{[unclear]} $k'_{i'} \to k_i$, ou en \text{[unclear: base]} \text{[unclear]} \\
+$f_{i'}^* : T(\bar{K}) \to T(\bar{K}')$. \quad On exige que \\
+\text{[MARGIN: \text{[unclear]} petite modif de la déf des $\alpha_{i'}$ dans l'app. \text{[unclear]} si on y ajoute \text{[unclear]} est, \text{[unclear]}]}
+$f_{i'}$ (qui ne dépend que $f$ et $\alpha_{i'}$, et est \\
+d'ailleurs spirituellement uniquement déterminé par elle \\
+si on y \text{[unclear: ajoute]} la condition) et $\alpha_{i'}$ (qui est sans doute déterminé \\
+mod conjugaisons \text{[unclear: composites]} par $g$ avec un \\
+él. des normalisateurs de $\mathcal{E}_i$ (dans $\mathcal{E}_{i'}$ \\
+voire des transporteurs d'un ss-groupe \text{[unclear]} \\
+de $\mathcal{E}_i$ - c'est \text{[unclear: alors]} si $f$ est iso ) puissent \\
+être choisis de telle façon que, posant \\
+$\beta_{i'} = p(L_{i'}) \alpha_{i'}$, on ait \\
+\text{[MARGIN: Cette condition sur les $\alpha_{i'}$ dit au plus \text{[unclear]} la val. de $f_{i'}$ (à conj. près) en \text{[unclear]} p(L_{i'}) \dots]}
+\begin{align*}
+f_{i'}^* &= (d_{i'} \chi(\beta_{i'})) id_{T(M)} \\
+\chi_{i'} &= d_{i'} \chi(\beta_{i'})
+\end{align*}
+où $d_{i'} \in \mathbb{N}^*$ est une certaine \text{[unclear: entière]} constante évidente \\
+uniquement déterminée par $K$ et les $\mathcal{L}_{i'}$ \\
+\text{[unclear: sont]} choisis). \\
+Remplaçons $\alpha$ par $\alpha' = \alpha_0 \alpha$.
+
+
+========================================
+PAGE 54
+========================================
+
+8. Réflexion taxonomique.
+
+Le cas $\dim X = 0$ se traduit sur le paradigme
+du système $(T(\overline{K}) \overset{k_i}{\to} \mathcal{E}_i \overset{p_i}{\to} \mathcal{E} \overset{p}{\to} \Gamma)$ [crossed out] pour la
+condition [crossed out] $p$ injectif , (et alors $I = \emptyset$ - donc ce cas se,
+donc se décrit y
+simplement par la donnée d'un sous-groupe
+ouvert $\mathcal{E} \subset \Gamma$, i.e. d'une sous-extension finie $K$
+de $\overline{K} / K$ CNB . - aussi bien sur $X' = Spec\ k_i$ et
+les divagations faites sur $\overline{X}$ aboutissent à cette description - 
+i.e. sur $T_{\overline{K}} \to \Pi_U \to \Pi_E$ - 
+amenant ici au choix d'une telle immersion
+de [crossed out] dans $\overline{K}/K$)
+
+Le cas $\dim X = 1$ se traduit par le fait
+que $\mathcal{E} \to \Gamma$ n'est pas injectif - quant à
+$I$, il peut être vide ou non dans ce cas.
+S'il est vide, la prescription se fait alors
+simplement en termes d'un hom de
+groupes profinis $\mathcal{E} \overset{p}{\to} \Gamma$ (où $\Gamma$ [unclear] [unclear]
+$= Gal(\overline{K}/K)$ \} $= Aut_{Ste}(\Omega)$).
+
+Supposons donnés maintenant à la fois
+$\mathcal{D} = (\mathcal{E}, p, I, (p_i : \mathcal{E}_i \hookrightarrow \mathcal{E}), (k_i : T(\overline{K}) \to \mathcal{E}_i))$
+et $\mathcal{D}' = (\mathcal{E}', p', I', (p'_i \ \dots \ ), (k'_i \ \dots \ ) \ )$
+et revenons à la question de la description
+des isomorphismes de $\mathcal{D}'$ dans $\mathcal{D}$. On
+va distinguer quatre cas, suivant les deux valeurs
+

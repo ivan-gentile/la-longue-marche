@@ -1,0 +1,102 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 33bis. --- ÉTUDE DES REVÊTEMENTS FINIS --- RELATION ENTRE LES $\mathcal{N}_{g,\nu}$, $\Gamma_{g,\nu}$ POUR $g$ VARIABLE}\thispagestyle{empty}
+\addcontentsline{toc}{section}{33bis. Étude des revêtements finis --- relation entre les $\mathcal{N}_{g,\nu}$, $\Gamma_{g,\nu}$ pour $g$ variable}
+\label{sec:33bis}
+\section*{}
+
+Soient $\pi$ [un] groupe extérieur à lacets profini arithmétisé de type $(g,\nu)$, $\pi'$ un sous-groupe ouvert de $\pi$, d'où une application injective
+$$
+{\operatorname{Discrét}}(\pi) \hookrightarrow {\operatorname{Discrét}}(\pi'),
+$$
+on voudrait prouver qu'elle est compatible avec la relation d'équivalence de l'arithmétisation, de sorte que toute arithmétisation de $\pi$ en donne une de $\pi'$, et de même pour les prédiscrétifications. On voudrait établir en même temps que les applications 
+$$
+P^+(\pi) \to P^+(\pi')
+$$ 
+sur les prédiscrétifications orientées et 
+$$
+A(\pi) \to A(\pi')
+$$ 
+sur les arithmétisations, sont injectives. Pour prouver ces points, on est ramené au cas où $\pi'$ invariant caractéristique (cf. \S~28, diagramme (7)). Choisissant une discrétification $\pi_0$ de $\pi$, donc $\pi_0'$ de $\pi'$, on trouve donc $\hat{\hat{\mathfrak{S}}}(\pi_0) \to \hat{\hat{\mathfrak{S}}}(\pi_0')$ et on a~: 
+\begin{itemize}
+	\item[(f)] L'homomorphisme $\hat{\hat{\mathfrak{S}}}(\pi_0) \to \hat{\hat{\mathfrak{S}}}(\pi_0')$ envoie $M(\pi_0)$ dans $M(\pi_0')$.
+\end{itemize}
+On aura donc un diagramme (variante de celui du \S~28)
+\[\begin{tikzcd}
+	{\hat {\mathfrak{S}^+}(\pi_0)} & {M(\pi_0)} & {\hat{\hat{\mathfrak{S}}}(\pi_0)} \\
+	{\hat {\mathfrak{S}^+}(\pi_0')} & {M(\pi_0')} & {\hat{\hat{\mathfrak{S}}}(\pi_0')}
+	\arrow[hook', from=1-3, to=2-3]
+	\arrow[hook', from=1-2, to=2-2]
+	\arrow[hook', from=1-1, to=2-1]
+	\arrow[hook, from=1-1, to=1-2]
+	\arrow[hook, from=2-1, to=2-2]
+	\arrow[hook, from=2-2, to=2-3]
+	\arrow[hook, from=1-2, to=1-3]
+\end{tikzcd}\leqno{(1)}\]
+qui implique qu'une discrétification $\pi_1$ sur $\pi$ qui donne même prédiscrétification orientée que $\pi_0$ (resp. même arithmétisation) définit une discrétification $\pi_1'$ de $\pi'$ qui donne même prédiscrétification orientée (resp. même arithmétisation) que $\pi_0'$. Donc on a bien $P^+(\pi) \to P^+(\pi')$, $ A(\pi) \to A(\pi')$, il faut encore exprimer l'injectivité, qui revient aux relations
+$$
+\hat{\mathfrak{S}}^{+}(\pi_0) = \hat{\mathfrak{S}}^{+}(\pi_0') \cap \hat{\hat{\mathfrak{S}}}(\pi_0),\quad M(\pi_0) = M(\pi_0') \cap \hat{\hat{\mathfrak{S}}}(\pi_0).
+\leqno{(2)}
+$$
+i.e. un automorphisme à lacets de $\pi$ qui, sur $\pi'$, appartient à $\hat{\mathfrak{S}}(\pi_0')$, resp. à $M(\pi_0')$, est déjà dans $\hat{\mathfrak{S}}(\pi_0)$, resp. dans $M(\pi_0')$. 
+
+L'assertion repérée étant admise, l'assertion non
+repérée  signifie aussi que l'homomorphisme canonique
+$$
+\boldsymbol{\Gamma}_a = M_a(\pi)/\hat{\mathfrak{S}}^+_a(\pi) \to \boldsymbol{\Gamma}_a' = M_a'(\pi')/\hat{\mathfrak{S}}^+_{a'}(\pi')
+\leqno{(3)}$$
+est \emph{injectif}. Par construction (via $\boldsymbol{\Gamma}_{\mathbf{Q}}$), c'est aussi surjectif, donc on trouverait~: 
+\begin{itemize}
+	\item[(g)] l'homomorphisme canonique (3) est bijectif et on trouverait aussi une bijection
+	$$
+	P_a(\pi) \to P_a'(\pi')
+	\leqno{(4)}
+	$$
+	entre arithmétisation de $\pi$ de type $a$, et arithmétisation de $\pi'$ de type $a'$, \emph{compatible} avec l'isomorphisme (3).
+\end{itemize}
+Enfin, ces résultats dans les cas $\pi'$ invariant caractéristique s'étendraient aussitôt au cas d'un $\pi' \subset \pi$ ouvert quelconque.
+
+Procédant par exemple comme dans le \S~28 à coups de ``correspondances'' arithmétiques extérieures entre ``courbes potentielles'', on trouve un groupoïde connexe (ponctué par les $\hat{\pi}_{g,\nu}$, par exemple, qui y sont canoniquement isomorphes), dont le $\pi_1$ extérieur est la valeur commune des $\boldsymbol{\Gamma}_{g*} = \boldsymbol{\Gamma}_{g,\nu}$. 
+Pour trouver un isomorphisme canonique entre $\boldsymbol{\Gamma}_{g,\nu}$ et $\boldsymbol{\Gamma}_{g',\nu'}$, on choisit une correspondance entre $\pi_{g,\nu}$ et $\pi_{g',\nu'}$, par exemple on regarde  l'un et l'autre (quitte à passer de $g,\nu$ à $g, \tilde{\nu}$ avec $\tilde{\nu} \geq \nu$, et de même pour $g',\nu'$ à $g',\tilde{\nu}'$ avec $\tilde{\nu}' \geq \nu'$) comme des sous-groupes finis du même $\pi_{0,3}$, d'où $\boldsymbol{\Gamma}_{0,3} \isommap \boldsymbol{\Gamma}_{g,\tilde \nu}$, $\boldsymbol{\Gamma}_{0,3} \isommap \boldsymbol{\Gamma}_{g',\tilde{\nu}'}$.
+
+On aimerait maintenant voir ce qui, dans le yoga précédent, est indépendant de toute conjecture. Par exemple, le fait que les homomorphismes surjectifs canoniques $\boldsymbol{\Gamma}_{g,\nu}\to \boldsymbol{\Gamma}_{g,\nu'}$ ($g$ le même, $\nu'$ constant) n'est pas établi. 
+
+Cependant, si on savait que dans la situation du $(\pi,\pi')$ avec $\pi'$ invariant caractéristique, on ait $\hat{\hat{\mathfrak{T}}}(\pi_0')\cap \hat{\mathfrak{S}}^+(\pi_0)=\hat{\mathfrak{S}}^+(\pi_0)$ (qui est un énoncé de nature relativement anodine sur des groupes à lacets profinis), on concluerait à la \emph{bijectivité} de $\boldsymbol{\Gamma}_{\pi_0}\to\boldsymbol{\Gamma}_{\pi_0'}$ dans cette situation, et on en concluerait que le noyau de $\boldsymbol{\Gamma}_\mathbf{Q}\to\boldsymbol{\Gamma}_{0,3}$ s'envoie \emph{trivialement} dans les $\boldsymbol{\Gamma}_{g,\nu}$ pour tout $\nu$ --- i.e. qu'il s'envoie dans les $\boldsymbol{\Gamma}_{g,\nu}$ par \emph{l'intermédiaire} de $\boldsymbol{\Gamma}_{0,3}$ --- et que de plus $\boldsymbol{\Gamma}_{0,3}\to\boldsymbol{\Gamma}_{g,\nu}$ est [un] \emph{isomorphisme} pour tout $(g,\nu)$ avec $\nu$ \emph{assez} grand --- il suffit que la surface de type $(g,\nu)$ (ou de type $(g,\nu')$ avec un $\nu'\le \nu$) puisse s'obtenir comme revêtement étale de $X_{0,3}$, i.e. que $\pi_{g,\nu'}$ se réalise (avec sa structure à lacets) comme sous-groupe d'indice fini de $\pi_{0,3}$. Alors, considérant un $\pi'' \isom \pi_{g'',\nu''}\subset \pi_{g,\nu'}$ d'indice fini et contenu dans $\pi_{0,3}$, on aura un diagramme commutatif~:
+\[\begin{tikzcd}
+	{\boldsymbol{\Gamma}_{0, 3}} & {\boldsymbol{\Gamma}_{g'', \nu''}} \\
+	{\boldsymbol{\Gamma}_{\mathbf{Q}}} & {\boldsymbol{\Gamma}_{g, \nu'}}
+	\arrow["\sim", from=1-1, to=1-2]
+	\arrow[from=2-1, to=1-1]
+	\arrow[from=2-1, to=2-2]
+	\arrow["\wr"', from=2-2, to=1-2]
+\end{tikzcd}\]
+d'où notre assertion $\boldsymbol{\Gamma}_{0,3}\isommap\boldsymbol{\Gamma}_{g,\nu'}$ et a fortiori l'homomorphisme surjectif $\boldsymbol{\Gamma}_{0,3}\to \boldsymbol{\Gamma}_{g,\nu}$ qui le factorise ($\nu\ge\nu'$) est bijectif. Notons par exemple que les $\boldsymbol{\Gamma}_{0,\nu}\to\boldsymbol{\Gamma}_{0,3}$ ($\nu\ge 3$) sont alors bijectifs.  Mais on notera qu'en tout état de cause, on ne trouve de résultat pour un $g,\nu$ que si $\nu\ge 3$ --- donc ceci ne dit rien sur la fidélité éventuelle, par exemple de $\boldsymbol{\Gamma}_{0,3}\to\boldsymbol{\Gamma}_{g,0}=\boldsymbol{\Gamma}_g$ ($g\ge 2$), ou $\boldsymbol{\Gamma}_{0,3}\to\boldsymbol{\Gamma}_{1,1}=\boldsymbol{\Gamma}_1$.
+
+Soit une courbe algébrique $U$ de type $g,\nu$\footnote{On ne fait plus d'hypothèse conjecturale (telle que l'injectivité dans (3)).}, définie sur un sous-corps $K$ fini sur $\mathbf{Q}$ de $\overline{\mathbf{Q}}_0$, donc elle définit une action extérieure du sous-groupe ouvert $\Gamma= \Gamma_K\subset \Gamma_\mathbf{Q}$ sur $\pi_1(U_{\overline{\mathbf{Q}}_0})$. Quitte à agrandir $K$, et à agrandir $\nu$ ou $\nu'$ (i.e. faire des trous pour trouver $U'$) \emph{on peut supposer que $U'$ est un revêtement étale de $(U_{0,3})_K$}\footnote{On pose $\pi'=\pi_1(U'_{\overline{\mathbf{Q}}_0})$, $\pi=\pi_1(U_{\overline{\mathbf{Q}}})$}. Soit alors $\theta$ le noyau de
+\[
+\begin{tikzcd}
+	{\boldsymbol{\Gamma}} & {\boldsymbol{\Gamma}_{0, 3},} \\
+	{\boldsymbol{\Gamma}_{\mathbf{Q}}}
+	\arrow[from=1-1, to=1-2]
+	\arrow[draw=none, "\cap" pos=0.5, from=2-1, to=1-1]
+\end{tikzcd}
+\]
+il opère donc par automorphismes intérieurs sur $\hat{\pi}_{0,3}$, donc l'image de $\theta'=\Gamma'\cap\theta$ dans le groupe des automorphismes extérieurs de $\pi'\subset \hat{\pi}_{0,3}$ est un sous-groupe fini --- a fortiori son image dans $\boldsymbol{\Gamma}_{\pi'}$, et dans $\mathcal{N}(\pi)$, et dans $\boldsymbol{\Gamma}_\pi$. Il en est de même (choisissant un point base rationnel sur $K$ dans $U'$) de l'opération effective sur $\pi_1(U, P)$ --- car il suffit d'appliquer le résultat précédent à $U\setminus\{P\}$. On en conclut aussi que les noyaux des homomorphismes $\boldsymbol{\Gamma}_{0,\nu}\to\boldsymbol{\Gamma}_{0, 3}$ ($\nu\ge 3$) sont \emph{finis}. On voit facilement que pour tout [variété abélienne] $A$ définie sur $K$, l'opération de $\theta'$ sur $\prod_{\ell}T_\ell(A)$ se fait à travers un groupe quotient fini.
+
+Il devient très difficile de s'imaginer comment il pourrait se faire que $\theta'$ n'opère pas, en fait, trivialement~! J'ai même l'impression que je peux montrer, grâce au résultat du russe que m'a signalé Deligne, que $\boldsymbol{\Gamma}_\mathbf{Q}\to\boldsymbol{\Gamma}_{0,3}$ est [un] isomorphisme~! Cela signifierait que les actions extérieures de $\boldsymbol{\Gamma}_\mathbf{Q}$ sur des $\pi_1 \isom \overline{\pi_{g,\nu}}$ peuvent s'interpréter (au moins pour $\nu$ assez grand, $g$ étant fixé) comme des scindages de l'extension $\mathcal{N}_{g,\nu}$ de $\boldsymbol{\Gamma}_{g,\nu}$ par $\hat{\mathfrak{T}}_{g,\nu}$ --- ou de l'extension $M_{g,\nu}$ de $\boldsymbol{\Gamma}_{g,\nu}$ par $\hat{\mathfrak{S}}_{g,\nu}$, quand il s'agit d'actions effectives.
+
+Bien entendu, la question essentielle qui se pose alors (admettant $\boldsymbol{\Gamma}_\mathbf{Q} \isommap \boldsymbol{\Gamma}_{0,3}$) est de caractériser $\boldsymbol{\Gamma}_{0,3}$ algébriquement, ainsi que les $\mathcal{N}_{g,\nu}$ --- et de donner une description algébrique également des scindages ``admissibles'' --- i.e. correspondant bel et bien à des courbes algébriques sur des corps de nombres algébriques, que ce sont exactement les actions relevant l'action extérieure donnée, qui ne normalisent aucun sous-groupe à lacets, ou encore telle que $\hat{\pi}_{0,3}^{\Gamma''^+}$ (mais il est concevable qu'il faille y ajouter de conditions plus subtiles, faisant intervenir les Frobenius\dots). On peut se proposer de trouver une description des actions \emph{extérieures} ``admissibles'', sans avoir à passer par des actions effectives admissibles --- et à s'embarasser d'en donner une définition plus ou moins plausible. La difficulté bien sûr provient du fait que si $\Gamma''$ opère \emph{extérieurement} sur $\hat{\pi}_{0,3}$, il n'opère pas extérieurement pour autant sur un sous-groupe ouvert donné $\pi'$ de $\hat{\pi}_{0,3}$. 
+Mais on va supposer justement qu'il \emph{existe} une telle action, de telle fa\c{c}on que $\pi' \to \hat{\pi}_{0,3}$ soit compatible avec les actions extérieures, et que l'action de $\Gamma'$ sur $\pi$ se déduise (modulo isomorphisme) de [\dots].
+
+Pour ce deuxième point, on a une réponse immédiate (supposant connus déjà les $\mathcal{N}_{g,\nu}$). Soit un $(\pi, a)$ de type $g,\nu$, avec relèvement partiel de $\boldsymbol{\Gamma}_a$ en $\Gamma'_a \hookrightarrow \mathcal{N}_a$.  
+Elle sera admissible si et seulement si on peut trouver un $(\pi', a')$ de type $(g, \nu')$ et un plongement de $\pi'$ comme sous-groupe d'indice fini de $\hat{\pi}_{0,3}$ compatible avec $a'$, et un sous-groupe ouvert $\Gamma''$ de $\boldsymbol{\Gamma}_{0,3}$, et une action effective admissible de $\Gamma''$ sur $\hat{\pi}_{0,3}$ qui relève l'action extérieure donnée, et qui invarie $\pi'$, de fa\c{c}on qu'à isomorphisme près, $(\pi, a)$, et le germe d'action de $\Gamma'$ dessus se déduise de $(\pi', a')$ par l'action de $\Gamma''$ dessus, par ``bouchage'' d'un paquet de trous (et oubli d'une action effective au profit de l'action extérieure). Il faut dans cette approche de simplement savoir préciser algébriquement ce qu'on entend par action ``admissible'' de $\Gamma''\subset \boldsymbol{\Gamma}_{0,3}$ sur $\hat{\pi}_{0,3}$ --- sous-entendant que \c{c}a doit correspondre aux points de $U_{0,3}$ rationnels sur le corps de nombres défini par $\Gamma''$. On peut conjecturer
+celle-ci, par ``bouchage de trous''.
+
+Il semble qu'on puisse sur le même principe donner une description des $\mathcal{N}_{g,\nu}$ (donc de $\boldsymbol{\Gamma}_{g,\nu}$) en termes de $\boldsymbol{\Gamma}_{0,3}$. Utilisant les homomorphismes de transition $\hat{\hat{\mathfrak{T}}}_{g,\nu} \to\hat{\hat{\mathfrak{T}}}_{g,\nu'}$, il suffit de le faire, quand $g$ est fixé, pour des $\nu$ grands --- assez grands pour qu'il existe une courbe algébrique de type $g,\nu$ sur $\mathbf{Q}$ qui soit un revêtement étale de $U_{0,3}$ sur $\mathbf{Q}$. 
+
+On considère donc un plongement correspondant de $\pi_{g,\nu}$ dans $\pi_{0,3}$, et on décrète que si on peut faire opérer extérieurement $\boldsymbol{\Gamma}_{0,3}$ dans $\pi_{g,\nu}$, de fa\c{c}on que $\pi_{g,\nu} \to \pi_{0,3}$ commute à ces actions extérieures, \emph{alors} le sous-groupe de $\hat{\hat{\mathfrak{T}}}_{g,\nu}$ engendré par $\hat{\mathfrak{T}}_{g,\nu}$ et $\boldsymbol{\Gamma}_{0,3}$ est $\mathcal{N}_{g,\nu}$.
+
+
+% End

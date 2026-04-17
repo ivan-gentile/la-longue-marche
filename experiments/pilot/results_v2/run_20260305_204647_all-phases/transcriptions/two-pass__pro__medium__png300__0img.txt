@@ -1,0 +1,233 @@
+Condition: two-pass__pro__medium__png300__0img
+Prompt: two-pass, Model: pro, Thinking: medium, Format: png300, PrevImages: 0
+============================================================
+
+
+========================================
+PAGE 5 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+1. Topos multigaloisiens.
+
+Prop. 1.1. Soit $\cal E$ une catégorie. Conditions
+équivalentes:
+
+a) $\cal E$ est un topos, et tout objet de $\cal E$ est
+loc^t constant.
+
+b) $\cal E$ est équivalent à une catégorie $\hat{C}$
+où $C$ est un groupoïde NB. on sera souvent amené à choisir canoniquement des groupes
+
+b') $\exists$ une famille $(G_i)_{i \in I}$ de groupes
+et une équivalence de catégories
+$\cal E \simeq \prod Ens(G_i)$
+
+c) Conditions d'exactitudes ad-hoc, du type
+de celles donnés dans SGA 1 ...
+
+Dém. $b \Leftrightarrow b' \Rightarrow a$ immédiat. Pour $a) \Rightarrow b)$
+je suis moins sûr, peut-être faut-il supposer
+que $\cal E$ est loc. connexe, et qu'il a suffisam-
+-ment de foncteurs fibres i.e. suffisam-
+-ment de points.
+
+Déf. 1.1. Si les conditions équivalentes b, b')
+ci-dessus sont satisfaites, on dit que $\cal E$
+est un topos multigaloisien (ou une catégorie
+multigaloisienne)
+
+[MARGIN: Prop 1.2 Si $\cal E$ est multigaloisien il est le coproduit $\coprod \cal E_i$ (produit dans cat. topos) de topos multigaloisiens conn. i.e. $\cal E_i \simeq Ens(G_i)$]
+
+=== PASS 2 (Clean Output) ===
+
+## 1. Topos multigaloisiens.
+
+Prop. 1.1. Soit $\mathcal{E}$ une catégorie. Conditions équivalentes:
+
+a) $\mathcal{E}$ est un topos, et tout objet de $\mathcal{E}$ est loc\textsuperscript{t} constant.
+
+b) $\mathcal{E}$ est équivalent à une catégorie $\hat{C}$ où $C$ est un groupoïde. NB. on sera souvent amené à choisir canoniquement des groupes.
+
+b') $\exists$ une famille $(G_i)_{i \in I}$ de groupes et une équivalence de catégories
+$\mathcal{E} \simeq \prod Ens(G_i)$
+
+c) Conditions d'exactitudes ad-hoc, du type de celles donnés dans SGA 1 ...
+
+Dém. $b \Leftrightarrow b' \Rightarrow a$ immédiat. Pour $a) \Rightarrow b)$ je suis moins sûr, peut-être faut-il supposer que $\mathcal{E}$ est loc. connexe, et qu'il a suffisam-ment de foncteurs fibres i.e. suffisam-ment de points.
+
+Déf. 1.1. Si les conditions équivalentes b, b') ci-dessus sont satisfaites, on dit que $\mathcal{E}$ est un topos multigaloisien (ou une catégorie multigaloisienne)
+
+[MARGIN: Prop 1.2 Si $\mathcal{E}$ est multigaloisien il est le coproduit $\coprod \mathcal{E}_i$ (produit dans cat. topos) de topos multigaloisiens conn. i.e. $\mathcal{E}_i \simeq Ens(G_i)$]
+
+
+========================================
+PAGE 50 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+---PASS1---
+composantes : des syst. d'iso.
+[MARGIN LEFT: exprime l'existence d' un iso. \mu_{D'}] \mu_{D'} : f_{D'} \to f'_{D'} , \mu_M : f_M \to f'_M . Ce qui suppose
+condit. \tau' = \tau, d'_{i'} = d_{i'} \forall i' \in I' et
+la donnée de [MARGIN RIGHT: ceci résulte des. tous condit. ..]
+a) \underline{ \mu \in \mathcal{E} } , définissant un iso
+[MARGIN LEFT: décrit \mu_M] entre f_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E} et f'_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E}
+i.e. [crossed out: tel que]
+[BOX] f'_{\mathcal{E}} = int(\mu) f_{\mathcal{E}}
+b) \underline{ \mu_{i'} \in \mathcal{E}_{i} } ( i' \in I', i=\tau(i') )
+[MARGIN LEFT: décrit \mu_{\mathcal{D}_{i'}^*}] satisfaisant
+[BOX] f'_{i'} = int(\mu_{i'}) f_{i'} [MARGIN RIGHT: ce qui implique de p , d_{i'} = d'_{i'}]
+les \mu, \mu_{i'} étant liés aux \alpha, \alpha' ( \in \mathcal{E} )
+(under \mu is \in \mathcal{E}, under \mu_{i'} is \in \mathcal{E}_i)
+et \alpha_{i'}, \alpha'_{i'} ( \in \Gamma ) de la façon
+suivante
+[BOX] \alpha' = p(\mu) \alpha
+[BOX] \alpha'_{i'} = f_i(p(\mu_{i'})) \alpha_{i'} \quad \forall i' \in I'
+ou encore
+[BOX] { p(\mu) = \alpha' \alpha^{-1}
+{ p_i(\mu_{i'}) = \alpha'_{i'} \alpha_{i'}^{-1}
+50
+
+=== PASS 2 (Clean Output) ===
+
+composantes : des systèmes d'isomorphismes.
+
+[MARGIN: exprime l'existence d'un isomorphisme $\mu_{D'}$] 
+$\mu_{D'} : f_{D'} \to f'_{D'}$, $\mu_M : f_M \to f'_M$. Ce qui suppose
+conditions $\tau' = \tau$, $d'_{i'} = d_{i'}$ $\forall i' \in I'$ et
+la donnée de 
+[MARGIN: ceci résulte d'ailleurs des conditions ...]
+
+a) $\underline{ \mu \in \mathcal{E} }$, définissant un isomorphisme
+[MARGIN: décrit $\mu_M$] 
+entre $f_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E}$ et $f'_{\mathcal{E}} : \mathcal{E}' \to \mathcal{E}$
+i.e.
+$$ \boxed{ f'_{\mathcal{E}} = int(\mu) f_{\mathcal{E}} } $$
+
+b) $\underline{ \mu_{i'} \in \mathcal{E}_{i} }$ ($i' \in I'$, $i=\tau(i')$)
+[MARGIN: décrit $\mu_{\mathcal{D}_{i'}^*}$] 
+satisfaisant
+$$ \boxed{ f'_{i'} = int(\mu_{i'}) f_{i'} } $$ 
+[MARGIN: ce qui implique de plus, $d_{i'} = d'_{i'}$]
+
+les $\mu$ ($\in \mathcal{E}$), $\mu_{i'}$ ($\in \mathcal{E}_i$) étant liés aux $\alpha, \alpha'$ ($\in \mathcal{E}$)
+et $\alpha_{i'}, \alpha'_{i'}$ ($\in \Gamma$) de la façon
+suivante
+
+$$ \boxed{ \alpha' = p(\mu) \alpha } $$
+
+$$ \boxed{ \alpha'_{i'} = f_i(p(\mu_{i'})) \alpha_{i'} } \quad \forall i' \in I' $$
+
+ou encore
+
+$$ \boxed{ \begin{cases} p(\mu) = \alpha' \alpha^{-1} \\ p_i(\mu_{i'}) = \alpha'_{i'} \alpha_{i'}^{-1} \end{cases} } $$
+
+50
+
+
+========================================
+PAGE 52 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+Il - y - a [???] erreur [???] calcul -- > m' explique th=1,
+dont il semble bien que [crossed out] (dans les cas
+correspondants : des hom dominants de
+[???] topologiques ) un tel 0-morphisme
+d' un f dans un f' (s'il existe) est
+unique , i.e. \underline{Hom} (\mathcal{D}', \mathcal{D}^*) est une catégorie
+discrète.
+On peut interpréter \mathcal{D} comme \mathcal{E} muni
+de sous-groupes \mathcal{E}_i \subset \mathcal{E}, et de p : \mathcal{E} \to \Gamma_x
+(noyau \pi) munis d'isomorphismes
+k_i : T(\bar{K}) \simeq \mathcal{E}_i \cap \pi = L_i
+(commutant à l'action de \mathcal{E} ). Soit
+un autre syst. (\mathcal{E}', (\mathcal{E}'_{i'})_{i' \in I'}, p', k'_{i'} ,
+(L'_{i'})_{i' \in I'} ) ; un morphisme du
+premier dans le second est défini par
+un
+f : \mathcal{E}' \to \mathcal{E}
+satisfaisant les conditions suivantes
+b) pf est conjugué de p' [ soit \alpha \in \Gamma_M tel que p f = int(\alpha) p' ]
+a) \forall i' \in I', \exists i \in I tel que f(\mathcal{E}'_{i'})
+soit contenu dans un conjugué de \mathcal{E}_i
+[ soit \alpha_{i'} \in \mathcal{E} tel que f(\mathcal{E}'_{i'}) \subset int(\alpha_{i'}^{-1})(\mathcal{E}_i) ]
+[i.e. int(\alpha_{i'}) f(\mathcal{E}'_{i'}) \subset \mathcal{E}_i ]
+
+=== PASS 2 (Clean Output) ===
+
+Il - y - a [unclear] erreur [unclear] calcul -- > m' explique $th=1$,
+dont il semble bien que (dans les cas
+correspondants : des hom dominants de
+[unclear] topologiques ) un tel 0-morphisme
+d'un $f$ dans un $f'$ (s'il existe) est
+unique, i.e. $\underline{Hom} (\mathcal{D}', \mathcal{D}^*)$ est une catégorie
+discrète.
+
+On peut interpréter $\mathcal{D}$ comme $\mathcal{E}$ muni
+de sous-groupes $\mathcal{E}_i \subset \mathcal{E}$, et de $p : \mathcal{E} \to \Gamma_x$
+(noyau $\pi$) munis d'isomorphismes
+$k_i : T(\bar{K}) \simeq \mathcal{E}_i \cap \pi = L_i$
+(commutant à l'action de $\mathcal{E}$ ). Soit
+un autre syst. $(\mathcal{E}', (\mathcal{E}'_{i'})_{i' \in I'}, p', k'_{i'},$
+$(L'_{i'})_{i' \in I'} ) ;$ un morphisme du
+premier dans le second est défini par
+un
+$f : \mathcal{E}' \to \mathcal{E}$
+satisfaisant les conditions suivantes
+b) $pf$ est conjugué de $p'$ [ soit $\alpha \in \Gamma_M$ tel que $p f = int(\alpha) p'$ ]
+a) $\forall i' \in I', \exists i \in I$ tel que $f(\mathcal{E}'_{i'})$
+soit contenu dans un conjugué de $\mathcal{E}_i$
+[ soit $\alpha_{i'} \in \mathcal{E}$ tel que $f(\mathcal{E}'_{i'}) \subset int(\alpha_{i'}^{-1})(\mathcal{E}_i)$ ]
+[i.e. $int(\alpha_{i'}) f(\mathcal{E}'_{i'}) \subset \mathcal{E}_i$ ]
+
+
+========================================
+PAGE 54 — success
+========================================
+
+=== PASS 1 (Raw Reading) ===
+
+8. Reflexion taxonomique.
+Le cas $\dim X = 0$ se decrit par le paradigme
+du système $( \Pi(\bar{K}) \xrightarrow{k_i} \mathcal{E}_i \hookrightarrow^{p_i} \mathcal{E} \xrightarrow{p} \Gamma )$ [crossed out: par la]
+condition [crossed out: avec $p$ injectif] [inserted: Il y a $I = \emptyset$ - dans ce cas se] donc se decrit [?y?]
+simplement par la donnée d'un sous-groupe
+ouvert $\mathcal{E} \subset \Gamma$, i.e. d'une sous-extension finie $K_i$
+de $\bar{K}/K$ (NB - encore bien sur $X' = Spec K_i$ et
+les [?don.?] sur $X'$ [inserted: i.e. sur $\Pi_{\bar{X}'} \xrightarrow{\sim} \Pi_{\bar{K}} \to \Pi_K$ - ] se bornent à cette description -
+reviennent ici au choix d'une telle immersion
+de $K_i = H^0(X', \mathcal{O}_{X'})$ dans $\bar{K}/K$)
+
+Le cas $\dim X = 1$ se traduit par le fait
+que $\mathcal{E} \to \Gamma$ n'est pas injectif - quant à
+$I$, il peut être vide ou non dans ce cas.
+S'il est vide, la description se fait alors
+simplement en termes d'un hom. de
+groupes profinis $\mathcal{E} \xrightarrow{p} \Gamma$ (où $\Gamma$ donné d'avance
+$= Gal(\bar{K}/K)$ ) $= Aut_{\Pi_K}(\Omega)$).
+
+Supposons donnés, maintenant à la fois
+$\mathcal{D} = (\mathcal{E}, p, I, (p_i : \mathcal{E}_i \hookrightarrow \mathcal{E}), (k_i : \Pi(\bar{K}) \to \mathcal{E}_i))$
+et $\mathcal{D}' = (\mathcal{E}', p', I', (p'_{i'} \dots ), (k'_{i'} \dots ))$
+et revenons à la question de la description
+des morphismes de $\mathcal{D}'$ dans $\mathcal{D}$. On
+va distinguer quatre cas, suivant les deux valeurs
+
+=== PASS 2 (Clean Output) ===
+
+## 8. Reflexion taxonomique.
+
+Le cas $\dim X = 0$ se decrit par le paradigme du système $( \Pi(\bar{K}) \xrightarrow{k_i} \mathcal{E}_i \hookrightarrow^{p_i} \mathcal{E} \xrightarrow{p} \Gamma )$ condition (Il y a $I = \emptyset$ - dans ce cas se) donc se decrit simplement par la donnée d'un sous-groupe ouvert $\mathcal{E} \subset \Gamma$, i.e. d'une sous-extension finie $K_i$ de $\bar{K}/K$ (NB - encore bien sur $X' = Spec K_i$ et les don. sur $X'$ (i.e. sur $\Pi_{\bar{X}'} \xrightarrow{\sim} \Pi_{\bar{K}} \to \Pi_K$) se bornent à cette description - reviennent ici au choix d'une telle immersion de $K_i = H^0(X', \mathcal{O}_{X'})$ dans $\bar{K}/K$).
+
+Le cas $\dim X = 1$ se traduit par le fait que $\mathcal{E} \to \Gamma$ n'est pas injectif - quant à $I$, il peut être vide ou non dans ce cas. S'il est vide, la description se fait alors simplement en termes d'un hom. de groupes profinis $\mathcal{E} \xrightarrow{p} \Gamma$ (où $\Gamma$ donné d'avance $= Gal(\bar{K}/K) = Aut_{\Pi_K}(\Omega)$).
+
+Supposons donnés, maintenant à la fois 
+$\mathcal{D} = (\mathcal{E}, p, I, (p_i : \mathcal{E}_i \hookrightarrow \mathcal{E}), (k_i : \Pi(\bar{K}) \to \mathcal{E}_i))$
+et $\mathcal{D}' = (\mathcal{E}', p', I', (p'_{i'} \dots ), (k'_{i'} \dots ))$
+et revenons à la question de la description des morphismes de $\mathcal{D}'$ dans $\mathcal{D}$. On va distinguer quatre cas, suivant les deux valeurs
+

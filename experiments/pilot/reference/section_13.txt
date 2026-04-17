@@ -1,0 +1,98 @@
+Section: § 13. — RETOUR AU CAS ARITHMÉTIQUE
+G103d pages: 66-68
+
+--- G103d page 66 ---
+§ 13. — RETOUR AU CAS ARITHMÉTIQUE
+où on veut décrire en termes “galoisiens” les couples (X, S) anabéliens connexes sur un
+corps K de type fini sur Q. [NB Si on prend un K de type fini sur Fp, il faudrait se borner
+aux groupes fondamentaux “premiers à p”, à cela près nos développements pourraient se
+faire quand même…]
+Il est devenu clair qu’en termes d’une clôture algébrique K de K, d’où un groupe
+de Galois profini Γ = Gal(K/K), la description la plus simple est en termes de groupes
+extérieures à lacets et d’actions extérieures de sous-groupes ouverts Σ de Γ dessus. De
+façon précise, on choisit une composante connexe X0 de X (ou ce qui revient au même,
+U 0 de U = (X \ S)K), soit Σ son stabilisateur dans Γ (il est remplacé par un conjugué,
+quand on change U 0). Alors Σ opère sur le schéma U 0, donc opère extérieurement sur
+π1 (considéré comme groupe extérieure). Or sur celui-ci il y a une T(K)-structure à
+lacets, avec comme ensemble d’indices I = S0(K) ⊂S(K) ≃S0(K) ∧Σ Γ [vide si
+et seulement si S ̸= ∅] et l’opération de Σ sur π est compatible avec cette structure à
+lacet, et le caractère cyclotomique χ : Γ →bZ∗(plutôt, χ|Σ). Ainsi l’opération de Σ sur
+π implique son action sur Σ, d’où S(K) ≃S0(K) ∧Σ Γ en tant que σ-ensemble - on
+récupère donc le K-schéma étale S. Mais mieux, on récupère tout le diagramme
+ΠD∗
+0 →[ΠU0 →]ΠU →Πe
+et l’opération de Σ dessus d’où le diagramme des topos classifiant - où si on préfère, le
+diagramme
+ΠD∗→ΠU →Πe
+
+--- G103d page 67 ---
+(avec les notations du début de ces notes, qui deviendraient ici
+ΠD∗,Γ →ΠU,Γ →Πe,Γ)
+plus bien sur K…
+Les homomorphismes (X′, S′)
+f
+−→(X, S) [S′ ⊃f −1(S), f dominant] se
+décrivent simplement (via le choix d’un X
+′
+0 au dessus d’un X0 par des homomorphismes
+extérieures π′(= π1(X
+′
+0)) →π(= π1(X0)), compatibles avec les actions de Σ′ (⊂Σ)
+et de Σ, et avec les structures à lacets anabéliennes (ce qui s’exprime à l’aide d’une appli-
+cation τ : (I′ ⊂S
+′
+0) →I = S033 compatible avec Σ′, et un système d’entiers naturels
+(di′)i′∈I′).
+Il faut cependant compléter, pour I = ∅, i.e. S = ∅, la définition de la structure à
+lacets, par la donnée d’un isomorphisme
+κ : T ⊗−1
+∼
+−→H2(π, bZ)
+[NB. en caractéristique p ≥0, on doit se borner aux composantes ℓ-adiques avec ℓ̸= p]
+i.e.
+bZ
+∼
+−→H2(π, T)
+compatible avec l’action de Σ — et il faut exiger, dans l’interprétation “galoisienne” de
+f : (X′, S′) →(X, S), quand S = S′ = ∅que l’homomorphisme π →π′ induit un
+diagramme commutatif
+bZ
+H2(π, T)
+bZ
+H2(π′, T)
+f∗
+d
+∼
+κ
+∼
+κ′
+où d ∈N est le degré (défini de façon unique par cette condition, comme l’ordre de
+Coker f ∗). Quand S = ∅, mais S′ ̸= ∅, il devraity avoirencore une compatibilitépour
+les données kummériennes (de natures différentes sur π′, où il y a bel et bien “des lacets”,
+et sur π, où elle est purement cohomologique). La question équivaut sans doute à celle
+de décrire une structure kummérienne “cohomologique” sur le groupe ˜π′, déduit d’un
+π′ à lacets (avec I′ ̸= ∅) en divisant par les dits lacets34. La question est la même, semble-
+t-il dans le cadre topologique, ou le cadre arithmétique, il me faudra revenir dessus. Il
+33NB I′ = S
+′
+0 ∩f −1(S0)
+34Paradigme du passage de (X, S) à X : “bouchage de trous”…
+62
+
+--- G103d page 68 ---
+faudrait que pour tout homomorphisme π′ →π de groupes à lacets, l’homomorphisme
+˜π′ →˜π correspondant respecte aussi (pour un degré convenable) la structure à lacets.
+Quandons’intéresseauxsystèmesanabéliens(X, S)définisdirectementsurK, avec
+X connexe disons, ceci s’exprime par un groupe extérieur à T-lacets, muni d’une action
+(non de Γ mais des) noyaux de groupes profinis définis par Γ. Si on considère les “Γ-
+automorphismes” d’un tel objet (formés d’un γ ∈Γ et d’un automorphisme extérieur f
+de π respectant la structure à lacets, f et γ étant compatible dans un sens évident…), on
+trouve un groupe (profini ???) (“discret” ??) G et un homomorphisme G →Γ (à image
+unsous-groupeouvertdeΓ, etànoyauG0 lesou-groupedesautomorphismesextérieures
+àlacetsdeπ quicommutentàl’actionextérieuredu“noyau”(lequelG0 estconjecturelle-
+ment par la “conjecture bordélique”, isomorphe au groupe fini AutK(K, S . . . ).
+En termes de cette suite exacte
+1 →G0 →G →Γ
+la “restriction de (X, S) au corps K” s’exprime donc (on l’espère, de façon pleinement
+fidèle, si la conjecture bordélique est valable) par un scindage Γ →G de G →Γ…
+63

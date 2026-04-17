@@ -1,0 +1,401 @@
+Section: § 15. — RETOUR SUR LE CAS TOPOLOGIQUE
+G103d pages: 82-92
+
+--- G103d page 82 ---
+§ 15. — RETOUR SUR LE CAS TOPOLOGIQUE
+Structure des Γ-orbites critiques en termes d’extensions…
+Soit Γ un groupe fini opérant sur un groupe à lacets π — supposons que ceci provienne
+d’une situation topologique, Γ opérant sur (X, S). Il y a des points à vérifier (cas an-
+abélien).
+a) Opération de Γ triviale ⇐⇒Γ −−−→
+trivial Autext(π).
+en d’autres termes : un automorphisme d’ordre fini de (S, X) ne peut être isotope à
+l’identité (ou même seulement homotope, cela revient au même d’ailleurs) que si il est
+trivial.
+C’est même connu en Géométrie Algébrique “abstraite” du moment qu’on admet
+que u conserve une structure complexe — il en est justement ainsi si on admet qu’il n’y
+a pas de sauvagerie…Sans doute toute action d’un groupe fini Γ laisse [une] structure
+conforme invariante, et même si on restreint à Γ◦= ker(Γ
+χ
+−→{±1}), laisse [une]
+structure complexe invariante.
+SupposonsdorénavantqueΓopèrefidèlement, Γ ̸= 1, lechoixd’unestructurecom-
+plexe sur Y = X/Γ◦en définit une sur X46 stable par Γ◦— et une structure conforme
+stable par Γ si on choisit celle de Y invariée par l’élément non trivial de Γ/Γ◦(s’il y en a
+un)47.
+46(N. B. Γ/Γ◦opère encore sur X/Γ◦, en fait si Γ ̸= Γ◦i.e. Γ/Γ◦≃{±1}, X/Γ◦est muni d’une
+“structure de courbe algébrique réelle”…)
+47(cela marche chaque fois qu’on a un revêtement ramifié de surface conforme).
+
+--- G103d page 83 ---
+Tout x ∈U Γ définit une classe de π-conjugaison de scindages de l’extension E de Γ
+par π, comme on voit en prenant x comme point base48.
+Notons que si Γ◦̸= 1 (i.e. Γ n’est pas réduit à l’identité et une anti-involution).
+U Γ est un ensemble fini — on trouve une application U Γ →ensemble des classes de π-
+conjugaison de scindages de E →Γ, i.e. ensemble des relèvements de Γ →Autext π ou
+Γ →Aut(π) modulo π-conjugaison.
+Question. — (Si Γ◦̸= {1}) cette application est-elle bijective ?
+[Si Γ◦= {1}, Γ/Γ◦≃{±1}, alors XΓ est l’ensemble des points réels d’une courbe
+algébrique réelle et U Γ = XΓ −−−SΓ est le complémentaire d’une partie finie dedans,
+on a :
+π0(XΓ −−−SΓ) →π −classe de scindages de E sur Γ
+et la question analogue de bijectivité se pose, pour l’extension de ±1 par π…]
+Pour l’injectivité de l’application dans le cas Γ◦̸= {1}, on peut supposer Γ = Γ◦≃
+Z/pZ, avec p premier, i.e. Γ engendré par un automorphisme complexe u d’ordre p, qui
+définit (si x, y ∈U Γ, x ̸= y) un automorphisme d’ordre p dans π1(U, x), ux donc une
+classedeπ-conjugaisond’automorphismedeπ d’ordrep, etdemêmeunautomorphisme
+uy de π1(U, y). Il faut prouver que ux, uy ne sont pas conjugués sur π.
+Soient U un espace topologique connexe par arcs, Γ un groupe fini opérant sur U,
+eU un revêtement universel de U, d’où un groupe extension
+1 →π
+i
+−→E
+p
+−→Γ →1
+opérant fidèlement sur eU (π = AutU(eU ≃π1(U))…). Pour tout point fixe x ∈U Γ, Γ
+opère sur le revêtement universel ponctué sur x, soir Rx, en laissant fixe le point marqué
+˜x dans Rx au-dessus de x, d’où un scindage de l’extension relative
+1
+πx
+Ex
+Γ
+1
+ix
+σx
+px
+et pour tout isomorphisme c (“chemin”) : Rx ≃
+eU, induisant un isomorphisme
+d’extension Ex ≃E (défini de manière compatible avec l’automorphisme intérieur in-
+duit par un α ∈π…) on trouve par transport de structure un scindage σx,l de E
+p
+−→Γ
+(qui, pour l variable, est défini à automorphisme intérieur près par un α ∈π).
+48(N.B. U Γ ̸= ∅implique que Γ est cyclique).
+78
+
+--- G103d page 84 ---
+On trouve ainsi une application (*)
+U Γ
+classes de π −conjugaison des scindages de l’extension E de Γ par π
+(= classes de π −conjugaison de sous-groupes Γ′ de E
+[images de sections])
+L’image de cette application est donc formée des classes de conjugaison de sous-
+groupes sections Γ′ ⊂E tels que eΓ′ ̸= ∅, et pour un tel Γ′, l’ensemble des x ∈U Γ
+qui donnent comme image cette classe de conjugaison est l’image de U Γ dans U 49.
+Enfin, si x est dans cette image, l’ensemble eU Γ′
+x des ˜x ∈eU Γ′ au-dessus de x (̸= ∅par
+hypothèse sur x) est un torseur sous πΓ′ i.e. si ˜x ∈(U Γ′)x, et si α ∈π, alors
+α˜x ∈eU Γ′ ⇐⇒α ∈πΓ′
+(vérification triviale, comme dans toutes les assertions précédentes).
+a) (*) est une bijection, et pour tout sous-groupe Γ de E section de l’extension, on a
+πΓ′ = {1}.
+b) pour tout Γ′ comme dans a), Γ′ opérant sur eU a un point fixe et un seul.
+Ceci posé, prouvons le
+Lemme fondamental. — Soit Γ un groupe fini, opérant fidèlement sur un espace D ≃
+R2, soit Γ◦le sous-groupe de Γ (d’indice 1 ou 2) formé des g ∈Γ tels que gD conserve
+l’orientation, et supposons Γ◦̸= {1} (i.e. Γ n’est réduit ni au groupe unité, ni au groupe
+{1, σ}, où σ est une anti-involution de D). Alors
+a) Γ admet un point fixe et un seul dans D i.e. card DΓ = 1.
+b) Γ◦est cyclique, et si Γ ̸= Γ◦. Γ est un groupe diédral.
+Plus précisément, il existe un homéomorphisme D
+≃
+C tel que le groupe
+d’homéomorphismes de C transformé de Γ soit : soit le groupe des homothéties par
+49(N.B. eUx étant identifié à IsomU(Rx, eU), eU Γ′
+x
+s’identifie à IsomU,Γ(Rx, eU). Les deux isomor-
+phismes qui commutent à l’action de Γ, et πΓ = (1) signifie donc que cet isomorphisme est unique
+en terme de la classe de conjugaison des sections de [?])
+79
+
+--- G103d page 85 ---
+µn(C) (si Γ = Γ◦d’ordre n), soit le groupe diédral associé
+z 7→ξτ ϵ(z)
+(ξ ∈µn(C), ϵ = ±1)
+où τ est la conjugaison complexe.
+Démonstration du lemme fondamental.
+a) Supposons d’abord qu’on puisse trouver une structure C2 sur D invariante par Γ
+alors un argument standard montre qu’il existe une structure conforme invariante
+par Γ, or le théorème fondamental de la représentation conforme montre qu’alors
+ou bien D ≃intérieur ∆du disque unité ou du demi-plan de Poincaré
+ou bien D ≃C (isomorphisme conforme).
+Dans le premier cas, les groupes des automorphismes conformes est
+≃Sl(2, R)˜= {u ∈Sl(2, R)/ det u = ±1}(u =
+ 
+a
+b
+c
+d
+!
+) opérant par θuτ det u où τ
+est la conjugaison complexe et θu(z) = az+b
+cz+d en laissant stable le demi plan de Poincaré,
+et tout sous-groupe compact est contenu dans un conjugué du sus-groupe compact max-
+imal qui (en repassant au disque unité ∆) s’identifie au groupe O(2, R) des transforma-
+tions du disque unité de la forme
+z 7→χτ ϵ
+ξ ∈U = {ξ ∈C/|ξ| = 1}
+ϵ ∈{±1}
+τ est la conjugaison complexe.
+Tout sous-groupe fini de ce groupe est de l’un des types explicités plus haut.
+On gagne, en utilisant un homéomorphisme [0, 1[→[0, +∞[ pour définir un
+homéomorphisme D ≃C commutant à l’action de G = O(2, R).
+Dans le cas D ≃C, on voit que le groupe des endomorphismes conformes de C est le
+groupe des transformations az +b ou az +b, dans lequel un sous-groupe compact max-
+imal est le même groupe O(2, R) que tantôt — et tout sous-groupe compact (à fortiori
+tout sous-groupe fini) est contenu dans un conjugué de celui-ci.
+On gagne encore.
+80
+
+--- G103d page 86 ---
+Le reste du travail consiste essentiellement à montrer que l’hypothèse de non-
+sauvagerie est toujours satisfaite, du moins pour Γ◦. Supposons d’abord Γ = Γ◦.
+On suppose que tout est prouvé pour les ordres < card Γ.
+b) Γ admet un point fixe où Dr ̸= ∅.
+Sinon, les sous-groupes des orbites ˜x des x ∈D étant d’ordre < card Γ, par hypothèse de
+récurrence les Γx ont la structure dite dans le théorème, donc DΓ = U est une surface
+topologique et D →U est un revêtement ramifié ; choisissons une structure conforme
+sur U, il y a une unique structure conforme sur D telle que D →U soit “conforme”
+(holomorphe ou antiholomorphe), celle-ci est invariante par Γ et, d’après a), Γ admet un
+point fixe, contradiction.
+c) Γ n’admet pas d’autre point fixe que 0. On fait opérer Γ fidèlement sur D∗=
+D \ {0} et il faut prouver que D∗Γ = ∅.
+Soit donc x ∈D∗Γ. On va alors aboutir à une contradiction. Considérons le revête-
+ment universel eD∗de D∗ponctué en x, donc Γ opère sur eD∗avec point fixe ˜x au-dessus
+de x. Ici π = π1(D∗) ≃Z, et Γ y opère trivialement (car Γ = Γ◦) donc Γ × Z opère sur
+eD∗.
+On peut supposer D = C, O = 0, x = 1, D∗= C∗, eD∗= C, ˜x = 0, eD∗→eD
+donné par exp (2iπz), et Z opérant sur C par θnz = z + n (n ∈Z).
+Il reste à prouver que si un groupe fini Γ opère sur C en commutant à l’action de Z
+surC, etenlaissantfixelepoint0, alorsΓopèretrivialement(cequicontreditl’hypothèse
+de fidélité de l’opération).
+On est ramené au
+Lemme. — Soit u un homéomorphisme d’ordre fini de C commutant à z 7→z + 1 et
+laissant invariant l’origine, alors u ≃id.
+On peut supposer qu’il existe un nombre premier p tel que up = id, i.e. que u
+correspond à une opération de Γ = Z/pZ sur C. Tous les points de Z ⊂C sont fixe par
+Γ. Passant à ˜C ≃S2, on trouve que ∞est un point d’accumulation des points fixes sous
+Γ. Si Γ n’opérait pas trivialement, ce serait décidément très sauvage ! On doit pouvoir
+terminer par la suite spectrale d’Adams…je n’entre pas dans ces dédales…
+81
+
+--- G103d page 87 ---
+d) Lapartiepurementtopologiqueétantainsisupposéeprouvée, onenconclutaussi,
+si Γ ̸= Γ◦, Γ◦̸= {1}, comme DΓ◦est invariant sous Γ, comme DΓ◦est réduit à
+un point, celui-ci est invariant sous Γ tout entier, pas seulement Γ◦. D’autre part,
+on en sait assez maintenant pour savoir que si Γ groupe fini opère sur une surface
+compacte U, les Γx (x ∈U) respectant l’orientation, alors U \ Γ ≃V est un
+surface U →V = U \ Γ est un revêtement ramifié, choisissons une structure
+conforme sur V , on trouve par image inverse une structure conforme sur U in-
+variante par Γ. Pour le cas U = D, on termine par a) pour le complément du
+lemme fondamental.
+[Maispourbienfaire,ilfaudraitprouverqu’ilexistetoujoursunestructureconforme
+invariante si Γ est un groupe fini opérant sur une surface compacte - donc U \ Γ est une
+surface à bord…Ici ce qui manque, c’est l’analyse de l’action d’une anti-involution d’une
+surface au voisinage d’un point fixe…]50
+Conséquence du lemme fondamental :
+Théorème. — Soit U une surface topologique paracompacte 0-connexe, Γ un groupe
+fini opérant fidèlement sur U, on suppose eU non compacte (i.e. U non homéomorphe à S2
+ni au plan projectif réel) on suppose que de plus si U est orientable, le sous-groupe Γ◦de Γ
+des g ∈Γ qui conservent une orientation soit ̸= {1} [donc Γ n’est ni réduit à 1, ni à 1 et
+une anti-involution], et si U non orientable, que Γ ̸= {1} i.e. card Γ > 3.
+Ceci posé considérons l’extension E de Γ par π = π1(U), et l’application
+U Γ →classes de π −conjugaison des scindages de E →Γ
+on a ceci :
+a) Cette application est bijective
+b) Pour tout sous-groupe section Γ′ ⊂E on a πΓ′ = {1}.
+50Il faudrait prouver que si τ est un anti-automorphisme involutif de D, alors il existe un isomorphisme
+D ≃C tel que τ devienne z 7→z (donc Dτ ≃R !) ce qui doit permettre de prouver, si Γ = Z/2Z opère
+paranti-automorphismesurU ([orientableU ̸= S2])queπ0(U Γ) →classesdeπ-conjugaisondesections
+de E sur Γ est bijectif.
+82
+
+--- G103d page 88 ---
+c) Si U Γ ̸= ∅, i.e. il existe un scindage, alors Γ est cyclique ou diédral (et dans le cas
+U ouvert, Γ◦est cyclique)51.
+Corollaire. — Supposons U orientée, Γ conservant l’orientation. Soit U ! l’ensemble de
+x ∈U tels que Γx ̸= {1} (qui est donc une partie discrète dans U). A tout x ∈U !,
+associons la classe de π-conjugaison des sous-groupes de E (sections partielles de E sur Γx′)
+qui correspond à cet x ∈U Γx′.
+Alors
+a) les sections partielles ainsi obtenues sont maximales parmi celles qui sont ̸= {1}.
+b) l’applicationdeU ! versl’unedesclassesdeπ-conjugaisondessectionspartielles̸= (1)
+maximales est bijective52.
+c) pour toutes telles sections partielles, on a πΓ′ = {1}, i.e. les automorphismes du
+revêtement universel Rx de U qui commutent à l’action de Γx sont triviaux. Il y
+a un isomorphisme unique commutant à l’action Γx entre ce torseur et le torseur
+déduit de eU en tordant par le π-torseur Px de Γ′′ dans la classe [Γ′]…
+Prouvons a). Soit Γ′ ⊂E section partielle sur Γx déduite de x ∈U !. Soit Γ′′ ⊃Γ′
+x un
+autre sous-groupe tel que Γ′′ ∩π = {1} i.e. Γ′′ ,→Γ. Soit Γ1 ⊃Γx son image dans Γ.
+Par le théorème précédent, il est défini par un unique y ∈U Γ1, et il est clair que cet y ne
+change pas si on remplace l’action de Γ1 sur U par l’action d’un groupe plus petit ̸= {1}
+(et la section induite) tel Γx, donc [?] Γ1 fixe x donc (par définition de Γx) Γ1 = Γx
+donc Γ′′ = Γ′.
+b) Soient x, y donnant même image [Γ′], [Γ′′], donc Γx = Γy, soit Γ1, et appliquant
+le théorème à Γ1 opérant sur U, on trouve x = y. Soit d’autre part Γ′
+0 une section
+partielle ̸= 1 maximale, Γ0 ⊂Γ, son image ; par le théorème appliqué à l’action de Γ0
+sur U, ∃x ∈U tel que x ∈U Γ′
+0 i.e. Γ′
+0 ⊂Γx et que [Γ′
+0] soit défini par x, mais si [Γ′]
+est défini par x pour l’action de Γx tout entier, on aura [Γ′
+0] ⊂[Γ′], donc par le caractère
+maximal de [Γ′
+0], on aura [Γ′
+0] = [Γ′], ce qui prouve b). D’autre part c) est clair.
+51N.B. Les hypothèses sur U assurant que eU ≃D, et celles sur Γ que Γ opérant sur D satisfait aux
+hypothèses du lemme fondamental.
+52(N.B. Cette application commute aux actions naturelles de Γ !).
+83
+
+--- G103d page 89 ---
+Revenons maintenant au cas où U = X \ S, X surface T-orientée compacte avec S
+partie finie, anabélienne. Donc on a une description “pleinement fidèle” de U par un π
+avec structure à lacets, et on voudrait se convaincre que l’opération extérieure d’un Γ sur
+π, quand Γ conserve l’orientation (pour simplifier) est également suffisante pour décrire
+pleinement l’objet (M, Γ) dans le catégorie isotopique qui convient.
+On récupère déjà une description de U ! en terme de l’action de π, soit J(≃U !)
+l’ensemble des classes de π-conjugaison de sections partielles (̸= 1) maximales de E sur
+Γ. Pour tout j ∈J, j est un π-torseur comme classe de π-conjugaison de sections [que
+ce soit un π-torseur résulte de πΓ′ = {1}]. En fait l’ensemble de toutes ces sections
+partielles maximales (̸= 1) est de façon naturelle un E-ensemble (par conjugaison) sur
+lequel π opère librement et cet E-ensemble s’identifie canoniquement à eU|U! = eU pour
+la structure de E-ensemble.
+Soit S′ = S ∪U !, U ′ = X \ S′, il s’impose d’essayer de reconstituer (en terme
+de l’extension E de Γ par le groupe à lacets π) le groupe extérieur à lacets correspon-
+dant à X′, S′ i.e. à U ′ et l’action extérieure de Γ sur celui-ci. Mais il faudrait d’abord
+s’assurer du caractère intrinsèque de la définition de J(≃U !) comme Γ-ensemble, en
+terme du groupe extérieur π, et de l’action extérieure de Γ dessus. (Ceci est assez évident
+d’ailleurs : en termes justement de classes de π-conjugaison de relèvements partiels de
+Γ →Autextlac(π) (vers Autlac(π))). On aimerait cependant aussi une description in-
+trinsèque de eU|U!, en un paradigme pour l’application de Γ-espace : U ! →U ; on doit
+donc décrire un morphisme de topos avec opération de Γ dessus
+BJ
+ν
+−→BE
+qui correspond donc à un foncteur “image inverse” ν∗(compatible avec l’action de Γ)
+BE
+BJ
+π −ensemble
+Ensemble sur J
+≈
+≈
+ν∗
+Ce n’est autre que le produit contracté sur π avec l’ensemble des sections partielles ̸= 1
+invariantes de E sur Γ.
+Revenons ‘l’extension E de Γ par π provenant d’une situation géométrique (laquelle
+extension dans le cas anabélien est définie déjà en terme d’une opération extérieure de Γ
+84
+
+--- G103d page 90 ---
+sur π) on voit que celle-ci satisfait des conditions supplémentaires draconiennes. (Pour
+les formules, on va supposer l’action de Γ fidèle).
+Tout-sous-groupe Γ′ ⊂E tel que Γ′ ∩π = {1} (“sections partielles”) est cyclique
+(si Γ = Γ◦) ou diédral, et l’ensemble des classes de π-conjugaison de tels sous-groupes est
+fini. Tout sous-groupe section Γ′ ̸= 1 est contenu dans un unique sous-groupe section
+maximal. (On l’a établi tout au moins dans le cas Γ = Γ◦, il faudrait revenir sur le cas
+général, je pense que cela reste vrai tel quel, à vérifier…)
+De plus on vit apparaître une structure supplémentaire sur le groupe E [qui dans le
+cas anabélien s’identifie à un sous-groupe de Aut(π)], à savoir une application
+µ : {élément u d’ordre fini de E} →T ⊗Q/Z
+obtenu en notant que si u ∈E est d’ordre fini n d’où Z/nZ ,→iE, on a Im i∩π = {1}
+(π n’a pas d’élément de torsion) donc Z/nZ ,→Γ d’où un sous-groupe Γ1 ⊂Γ (i.e.
+l’image a le même ordre n) et le relèvement Γ1 →E définit un x ∈U Γi et U1 opérant
+sur U en laissant fixe n correspond donc au voisinage de n à un “multiplicateur”, qui
+(pour une orientation locale choisie) est une racine primitive nième de 1 i.e. un élément de
+Z/nZetquipourl’orientationchangeantes’interprèteintrinsèquementcommeélément
+de T ⊗Z/nZ ⊂T ⊗Q/Z53.
+L’application µ satisfait les conditions évidentes :
+
+
+
+µ(αuα−1) = µ(u)
+si
+α ∈π
+µ(un) = nµ(u)
+si
+n ∈Z
+J’ignore si cette application µ peut se définir intrinsèquement en terme de l’extension ou
+si au contraire il peut exister deux extensions E, E′ de Γ par π, définies par des situations
+géométriques de Γ opérant sur U et U ′ et un isomorphisme d’extension E, E′ qui ne soit
+compatible avec les fonctions µ, µ′. Le cas non trivial le plus simple à regarder est le cas
+abélien (où π ≃Z (card I = 2) ou π ≃Z2 (I = ∅)). Dans le premier cas π = Z, on
+doit avoir (pour avoir une action fidèle de Γ = Γ◦),
+Γ◦cyclique,E ≃Z,iln’yapasd’élémentsd’ordrefinidansE sauf1donclaquestion
+ne se pose pas.
+53Pour un u d’ordre fini de E, on doit avoir, si u /∈E◦, que u est d’ordre 2 exactement (…) [?].
+85
+
+--- G103d page 91 ---
+Le cas π ≃Z2 est plus intéressant ; si π est un Z-module libre de rang n, on aune
+suite exacte
+0 →π →π ⊗Z R →X0(π) →0
+et si Γ opère sur π, la suite exacte de cohomologie donne :
+(compte tenu de Hi(Γ, π ⊗Z R) = 0 pour i > 0)
+H2(Γ, π)
+H1(Γ, X0(π))
+classes d’extension
+classes de X0(π) torseur
+avec opération de Γ dessus compatible avec
+son action sur X0(π)
+;
+∼
+donc la donnée d’une extension E de Γ par π revient essentiellement à celle d’un Γ-
+X0(π)-torseur X (n-tore inhomogène intrinsèque sur lequel Γ opère - donc il opère sur
+son groupe des translations X0, donc sur π = π1(X0, 0)…). S’il était vrai pour n = 1
+que toute opération de Γ sur une surface torique (≃S′ × S′) est isomorphe à une telle
+action standard, alors le caractère intrinsèque de l’application µ dans ce cas serait établi -
+ce qui ne rendrait pas inintéressant pour autant le calcul de µ, qui prend ses valeurs dans
+T ⊗Q/Z où ici T ≃Λ2
+Zπ (dim 2 dans H2(π, Z) ≃Λ2H2(π, Z) = π).
+La question revient à ceci : on a une extension scindée d’un groupe cyclique Z/nZ de
+générateur u par π (décrite entièrement par un automorphisme θ de π tel que θn = idπ),
+décrire en termes de ceci un élément de T ⊗Z/Z.
+Réponse : la situation géométrique standard correspond à X = X0(π), avec 0
+comme point fixe sous Γ. Si on renverse l’orientation il est d’ordre 1 ou 2, il n’y a pas
+de problème, sinon c’est dans π ⊗Z R une rotation autour de 0 (d’ordre 2, 3, 4 ou 6) qui
+se repère bien par un élément de T ⊗Z/νZ (si ν est l’ordre). C’est aussi (si on identifie
+T ⊗Z/νZ à µν(C∗)), en posant T
+∼
+←−Z donné i.e. π orienté i.e. X0(π) = X orienté)
+une de deux valeurs propres de u⊗Z C (automorphisme du vectoriel sur C de dimension
+2 π ⊗Z C).
+Ceci nous montre, dans ce cas de la géométrie algébrique sur un corps algébrique-
+ment clos Ω, que si X = X0 est une courbe elliptique, u un automorphisme d’ordre
+fini, on a comme description paradigmatique non seulement π = π1(X, 0) (Z-module
+86
+
+--- G103d page 92 ---
+libre de rang 2) et l’action de u sur π, mais comme structure supplémentaire l’une des
+deux solutions dans Ωde l’équation caractéristique de u (à coefficients entiers)
+T 2 + aT + b = 0
+(a = −Tr u, b = det u)
+Il est clair que cette structure supplémentaire ne peut se déduire de la seule connaissance
+de l’action de u sur π.
+Mais il reste la question si ce µ(u) ∈µn(Ω) peut se déduire de la connaissance au
+moinsdel’actionextérieuredeusurlegroupe“avecunlacet”correspondantàlasituation
+géométrique — i.e. un automorphisme extérieur d’ordre n d’un tel groupe54
+(Oùsilàencoreilfautlaconsidérerdécidémentcommeunedonnéesupplémentaire).
+Mais s’il en était bien ainsi, cela impliquerait d’autre part que la construction de u
+appartenant au groupe à (1) lacet(s), avec l’opération de Γ dessus ne peut se faire non
+plus à l’aide de la seule connaissance de l’action de Γ(= Z/nZ) sur π.
+C’est cette question de “forage de trous” qu’il faut donc en fin de compte, à la fin du
+fin, attaquer !
+Quand à la question de savoir si dans le cas anabélien, l’application µ :
+∞E →
+T ⊗Q/Z (∞E : ensemble des éléments d’ordre fini de E) est déduisible de l’action de
+Γ sur π [si elle est fidèle, E s’identifie donc à un sous-groupe de Autextlac(π) = A, et
+on peut se demander si µ n’est pas alors définissable sur ∞E tout entier], ou si c’est une
+donné supplémentaire dont il faut disposer pour reconstruire la situation géométrique.
+La question reste entière55
+54Oui il le peut grâce à la considération des “sous-groupes de ramification” de E qui définissent des
+structures d’extensions
+1 →T
+ni idT
+−−−−→EI(≃T) →ΓI →1
+d’où Γi ≃T/niT…
+55N.B. Cela semble bien ainsi, compte tenu que pour Γ résoluble (a fortiori pour Γ cyclique) sauf erreur,
+on sait que toute action de Γ sur π se réalise géométriquement.
+87

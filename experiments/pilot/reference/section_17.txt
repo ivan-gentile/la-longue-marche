@@ -1,0 +1,55 @@
+Section: § 17. — COMPLÉMENTS SUR LES OPÉRATIONS DE GROUPES
+G103d pages: 103-104
+
+--- G103d page 103 ---
+§ 17. — COMPLÉMENTS SUR LES OPÉRATIONS DE GROUPES
+FINIS SUR LES SURFACES
+(COMPLÉMENT AU §15)
+Théorème. — Soit U surface paracompacte connexe telle que π1(U) ̸= (1), i.e. U ̸≃S2,
+R2. On dit que U est “anabélienne” si π = π1(U) non abélien (auquel cas Centre(π) =
+1) et si U ̸≃C∗, S1 × S1. Soit Γ un groupe fini opérant sur U 58, on a les conditions
+équivalentes :
+a) (cas anabélien) Γ opère trivialement ou (cas abélien) structure de groupe topologique
+sur U (donc U ≃S∗de S1 × S1) de façon que Γ opère par translations,
+b) ∀g ∈Γ, gU est isotope à l’identité,
+b’) ∀g ∈Γ, gU est homotope à identité,
+c) l’opération extérieure de Γ sur π1(U) est triviale,
+d) (cas anabélien) l’extension E de Γ par π est isomorphe à une extension produit, ou
+(cas abélien) elle est centrale
+Démonstration. a) ⇒b) ⇒b’) ⇒c) trivial.
+58N. B. : Il est prudent de supposer que Γ opère en conservant l’orientation de U (supposée orientable)
+sinon on a des ennuis par exemple avec z 7→z−1 de C∗→C∗(Cela doit être le sel contre-exemple dans
+le cas où Γ ne conserve pas l’orientation…) En tout cas un contre-exemple doit être tel que (si Γ fidèle)
+Γ =≃{±1}, opère par anti-involutions…Il faudrait tirer au clair le cas de la situation générale…
+
+--- G103d page 104 ---
+c) ⇒d). Dans [le] cas anabélien, cela provient du fait que Centre(π) = 1 une exten-
+siondeΓparπ estdéfiniedéjàparl’actionextérieure, commeimageinversedel’extension
+1 →π →Aut π →Autext π →1.
+Dans le cas abélien c’est trivial.
+d) ⇒a) est la partie pas évidente. OPS que Γ opère fidèlement.
+Cas anabélien : Si on avait Γ = 1, pour un scindage de l’extension de Γ par π, on
+doit avoir par le théorème du n◦15 πΓ = 1, or le scindage canonique de π × Γ sur Γ
+donne πΓ = π, absurde.
+Cas abélien. U ≃C∗(plus intrinsèquement U est un torseur sous U0 = π ⊗Z C/π)
+ou U ≃S1 × S1 (plus intrinsèquement U est un torseur sous U0 ≃S1 × S1).
+Je dis qu’une action de Γ sur U est (à homéomorphisme près) défini par une action
+de Γ sur le torseur59 ; la classe d’isomorphisme d’un tel torseur s’identifie par ailleurs par
+la suite exacte de cohomologie associée à la suite exacte
+0
+π
+π ⊗Z C
+U0
+0
+(ou π ⊗Z R)
+à une classe d’extension de Γ par π.
+Mais dire que l’action de Γ sur π est triviale, signifie que l’action de Γ sur le torseur
+U sous U0 se fait par translations.
+Corollaire-Scholie. — Le cas “abélien” n’est pas tout à fait démontré faute d’avoir
+établi la classification topologique des opérations d’un groupe fini sur C∗ou sur S1 × S1.
+Cependant, si dans le cas abélien on suppose d’avance que U Γ = ∅alors il est encore vrai
+que l’opération triviale de Γ sur π équivaut à la trivialité de l’action de Γ sur U. Car on
+est ramené au cas où Γ opère fidèlement et à prouver dans ce cas que si l’opération de Γ sur
+π est triviale on a Γ = 1. Et on fait comme plus haut dans le cas anabélien.
+59pas prouvé !
+99

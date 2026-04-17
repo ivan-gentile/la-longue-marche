@@ -1,0 +1,6619 @@
+{
+  "benchmark_v2": {
+    "run_20260305_204647_all-phases": {
+      "latex-direct-fewshot__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1147,
+              "line_count": 19,
+              "content_words": 98,
+              "unique_content_words": 71,
+              "has_latex": true,
+              "latex_inline_count": 18,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 27,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.2437,
+              "word_score": 0.5593,
+              "combined_score": 0.4015,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.2437,
+                    "word_score": 0.5593,
+                    "combined": 0.4015
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0465,
+                    "word_score": 0.1576,
+                    "combined": 0.1021
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0719,
+                    "word_score": 0.0909,
+                    "combined": 0.0814
+                  }
+                ],
+                [
+                  "12",
+                  {
+                    "seq_score": 0.1371,
+                    "word_score": 0.0187,
+                    "combined": 0.0779
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1266,
+                    "word_score": 0.0278,
+                    "combined": 0.0772
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1223,
+              "line_count": 29,
+              "content_words": 118,
+              "unique_content_words": 51,
+              "has_latex": true,
+              "latex_inline_count": 40,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 4,
+              "content_commands": 84,
+              "formatting_ratio": 0.045,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "35",
+              "seq_score": 0.0705,
+              "word_score": 0.0312,
+              "combined_score": 0.0509,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0705,
+                    "word_score": 0.0312,
+                    "combined": 0.0509
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0497,
+                    "word_score": 0.0319,
+                    "combined": 0.0408
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0264,
+                    "word_score": 0.0446,
+                    "combined": 0.0355
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.032,
+                    "word_score": 0.0166,
+                    "combined": 0.0243
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0316,
+                    "word_score": 0.0141,
+                    "combined": 0.0229
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1297,
+              "line_count": 23,
+              "content_words": 98,
+              "unique_content_words": 63,
+              "has_latex": true,
+              "latex_inline_count": 23,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 64,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0777,
+              "word_score": 0.1349,
+              "combined_score": 0.1063,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0777,
+                    "word_score": 0.1349,
+                    "combined": 0.1063
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0558,
+                    "word_score": 0.083,
+                    "combined": 0.0694
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.027,
+                    "word_score": 0.0563,
+                    "combined": 0.0417
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0139,
+                    "word_score": 0.0614,
+                    "combined": 0.0377
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0177,
+                    "word_score": 0.0529,
+                    "combined": 0.0353
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1375,
+              "line_count": 7,
+              "content_words": 114,
+              "unique_content_words": 84,
+              "has_latex": true,
+              "latex_inline_count": 19,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 50,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.3065,
+              "word_score": 0.4352,
+              "combined_score": 0.3709,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.3065,
+                    "word_score": 0.4352,
+                    "combined": 0.3709
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0367,
+                    "word_score": 0.0839,
+                    "combined": 0.0603
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0182,
+                    "word_score": 0.0964,
+                    "combined": 0.0573
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0207,
+                    "word_score": 0.0851,
+                    "combined": 0.0529
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0118,
+                    "word_score": 0.0759,
+                    "combined": 0.0439
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2324,
+          "avg_seq_score": 0.1746,
+          "avg_word_score": 0.2902,
+          "total_unclear": 5,
+          "avg_formatting_ratio": 0.011,
+          "avg_content_words": 107,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.4015,
+              "seq": 0.2437,
+              "word": 0.5593,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 98
+            },
+            {
+              "page": 50,
+              "combined": 0.0509,
+              "seq": 0.0705,
+              "word": 0.0312,
+              "unclear": 0,
+              "formatting_ratio": 0.045,
+              "content_words": 118
+            },
+            {
+              "page": 52,
+              "combined": 0.1063,
+              "seq": 0.0777,
+              "word": 0.1349,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 98
+            },
+            {
+              "page": 54,
+              "combined": 0.3709,
+              "seq": 0.3065,
+              "word": 0.4352,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 114
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "latex-direct-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "latex-direct__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1077,
+              "line_count": 20,
+              "content_words": 79,
+              "unique_content_words": 63,
+              "has_latex": true,
+              "latex_inline_count": 16,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 18,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 8
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.412,
+              "word_score": 0.4224,
+              "combined_score": 0.4172,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.412,
+                    "word_score": 0.4224,
+                    "combined": 0.4172
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0555,
+                    "word_score": 0.1479,
+                    "combined": 0.1017
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1467,
+                    "word_score": 0.0455,
+                    "combined": 0.0961
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0858,
+                    "word_score": 0.0942,
+                    "combined": 0.09
+                  }
+                ],
+                [
+                  "12",
+                  {
+                    "seq_score": 0.1401,
+                    "word_score": 0.0227,
+                    "combined": 0.0814
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1194,
+              "line_count": 38,
+              "content_words": 107,
+              "unique_content_words": 41,
+              "has_latex": true,
+              "latex_inline_count": 33,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 4,
+              "content_commands": 78,
+              "formatting_ratio": 0.049,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.0398,
+              "word_score": 0.0506,
+              "combined_score": 0.0452,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0398,
+                    "word_score": 0.0506,
+                    "combined": 0.0452
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0203,
+                    "word_score": 0.0389,
+                    "combined": 0.0296
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0324,
+                    "word_score": 0.0248,
+                    "combined": 0.0286
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0353,
+                    "word_score": 0.0127,
+                    "combined": 0.024
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0311,
+                    "word_score": 0.0149,
+                    "combined": 0.023
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1211,
+              "line_count": 26,
+              "content_words": 97,
+              "unique_content_words": 70,
+              "has_latex": true,
+              "latex_inline_count": 25,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 55,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0623,
+              "word_score": 0.131,
+              "combined_score": 0.0966,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0623,
+                    "word_score": 0.131,
+                    "combined": 0.0966
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0431,
+                    "word_score": 0.0598,
+                    "combined": 0.0514
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0397,
+                    "word_score": 0.0612,
+                    "combined": 0.0505
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0384,
+                    "word_score": 0.0625,
+                    "combined": 0.0504
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0158,
+                    "word_score": 0.0599,
+                    "combined": 0.0379
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1184,
+              "line_count": 7,
+              "content_words": 108,
+              "unique_content_words": 78,
+              "has_latex": true,
+              "latex_inline_count": 20,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 42,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.2506,
+              "word_score": 0.4492,
+              "combined_score": 0.3499,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.2506,
+                    "word_score": 0.4492,
+                    "combined": 0.3499
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0434,
+                    "word_score": 0.0935,
+                    "combined": 0.0685
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0238,
+                    "word_score": 0.0827,
+                    "combined": 0.0533
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0147,
+                    "word_score": 0.0909,
+                    "combined": 0.0528
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0209,
+                    "word_score": 0.0731,
+                    "combined": 0.047
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2272,
+          "avg_seq_score": 0.1912,
+          "avg_word_score": 0.2633,
+          "total_unclear": 0,
+          "avg_formatting_ratio": 0.012,
+          "avg_content_words": 98,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.4172,
+              "seq": 0.412,
+              "word": 0.4224,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 79
+            },
+            {
+              "page": 50,
+              "combined": 0.0452,
+              "seq": 0.0398,
+              "word": 0.0506,
+              "unclear": 0,
+              "formatting_ratio": 0.049,
+              "content_words": 107
+            },
+            {
+              "page": 52,
+              "combined": 0.0966,
+              "seq": 0.0623,
+              "word": 0.131,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 97
+            },
+            {
+              "page": 54,
+              "combined": 0.3499,
+              "seq": 0.2506,
+              "word": 0.4492,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 108
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "latex-direct",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__flash-lite__low__pdf__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1142,
+              "line_count": 20,
+              "content_words": 78,
+              "unique_content_words": 61,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 20,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.265,
+              "word_score": 0.5327,
+              "combined_score": 0.3989,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.265,
+                    "word_score": 0.5327,
+                    "combined": 0.3989
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0466,
+                    "word_score": 0.1488,
+                    "combined": 0.0977
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1545,
+                    "word_score": 0.0341,
+                    "combined": 0.0943
+                  }
+                ],
+                [
+                  "12",
+                  {
+                    "seq_score": 0.1395,
+                    "word_score": 0.023,
+                    "combined": 0.0813
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0647,
+                    "word_score": 0.0947,
+                    "combined": 0.0797
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 955,
+              "line_count": 32,
+              "content_words": 87,
+              "unique_content_words": 43,
+              "has_latex": true,
+              "latex_inline_count": 35,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 4,
+              "formatting_commands": 2,
+              "content_commands": 51,
+              "formatting_ratio": 0.038,
+              "french_math_terms": 1
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.0263,
+              "word_score": 0.0504,
+              "combined_score": 0.0384,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0263,
+                    "word_score": 0.0504,
+                    "combined": 0.0384
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.027,
+                    "word_score": 0.0224,
+                    "combined": 0.0247
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0381,
+                    "word_score": 0.0109,
+                    "combined": 0.0245
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0335,
+                    "word_score": 0.0146,
+                    "combined": 0.024
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0183,
+                    "word_score": 0.0245,
+                    "combined": 0.0214
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1148,
+              "line_count": 27,
+              "content_words": 92,
+              "unique_content_words": 66,
+              "has_latex": true,
+              "latex_inline_count": 26,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 1,
+              "formatting_commands": 0,
+              "content_commands": 49,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0796,
+              "word_score": 0.1429,
+              "combined_score": 0.1112,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0796,
+                    "word_score": 0.1429,
+                    "combined": 0.1112
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0294,
+                    "word_score": 0.0944,
+                    "combined": 0.0619
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0406,
+                    "word_score": 0.0639,
+                    "combined": 0.0523
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0309,
+                    "word_score": 0.0556,
+                    "combined": 0.0432
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0121,
+                    "word_score": 0.0684,
+                    "combined": 0.0402
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1405,
+              "line_count": 7,
+              "content_words": 116,
+              "unique_content_words": 78,
+              "has_latex": true,
+              "latex_inline_count": 19,
+              "unclear_count": 4,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 53,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.1651,
+              "word_score": 0.4235,
+              "combined_score": 0.2943,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.1651,
+                    "word_score": 0.4235,
+                    "combined": 0.2943
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0433,
+                    "word_score": 0.0922,
+                    "combined": 0.0678
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0338,
+                    "word_score": 0.0833,
+                    "combined": 0.0586
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0292,
+                    "word_score": 0.088,
+                    "combined": 0.0586
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0394,
+                    "word_score": 0.0629,
+                    "combined": 0.0512
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2107,
+          "avg_seq_score": 0.134,
+          "avg_word_score": 0.2874,
+          "total_unclear": 4,
+          "avg_formatting_ratio": 0.009,
+          "avg_content_words": 93,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.3989,
+              "seq": 0.265,
+              "word": 0.5327,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 78
+            },
+            {
+              "page": 50,
+              "combined": 0.0384,
+              "seq": 0.0263,
+              "word": 0.0504,
+              "unclear": 0,
+              "formatting_ratio": 0.038,
+              "content_words": 87
+            },
+            {
+              "page": 52,
+              "combined": 0.1112,
+              "seq": 0.0796,
+              "word": 0.1429,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 92
+            },
+            {
+              "page": 54,
+              "combined": 0.2943,
+              "seq": 0.1651,
+              "word": 0.4235,
+              "unclear": 4,
+              "formatting_ratio": 0.0,
+              "content_words": 116
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__flash-lite__low__png150__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1127,
+              "line_count": 20,
+              "content_words": 77,
+              "unique_content_words": 60,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 16,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 8
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.4039,
+              "word_score": 0.5377,
+              "combined_score": 0.4708,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.4039,
+                    "word_score": 0.5377,
+                    "combined": 0.4708
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0503,
+                    "word_score": 0.1497,
+                    "combined": 0.1
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0901,
+                    "word_score": 0.1011,
+                    "combined": 0.0956
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1514,
+                    "word_score": 0.0345,
+                    "combined": 0.0929
+                  }
+                ],
+                [
+                  "12",
+                  {
+                    "seq_score": 0.1384,
+                    "word_score": 0.0233,
+                    "combined": 0.0809
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1139,
+              "line_count": 33,
+              "content_words": 102,
+              "unique_content_words": 45,
+              "has_latex": true,
+              "latex_inline_count": 31,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 2,
+              "content_commands": 70,
+              "formatting_ratio": 0.028,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "36",
+              "seq_score": 0.047,
+              "word_score": 0.034,
+              "combined_score": 0.0405,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "36",
+                  {
+                    "seq_score": 0.047,
+                    "word_score": 0.034,
+                    "combined": 0.0405
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0255,
+                    "word_score": 0.052,
+                    "combined": 0.0388
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0197,
+                    "word_score": 0.0516,
+                    "combined": 0.0357
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0407,
+                    "word_score": 0.0152,
+                    "combined": 0.0279
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.0416,
+                    "word_score": 0.0133,
+                    "combined": 0.0274
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1221,
+              "line_count": 25,
+              "content_words": 99,
+              "unique_content_words": 65,
+              "has_latex": true,
+              "latex_inline_count": 25,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 57,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0427,
+              "word_score": 0.1389,
+              "combined_score": 0.0908,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0427,
+                    "word_score": 0.1389,
+                    "combined": 0.0908
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0277,
+                    "word_score": 0.1008,
+                    "combined": 0.0643
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0285,
+                    "word_score": 0.0649,
+                    "combined": 0.0467
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0213,
+                    "word_score": 0.065,
+                    "combined": 0.0432
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0293,
+                    "word_score": 0.048,
+                    "combined": 0.0387
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1310,
+              "line_count": 9,
+              "content_words": 111,
+              "unique_content_words": 81,
+              "has_latex": true,
+              "latex_inline_count": 20,
+              "unclear_count": 5,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 42,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.3337,
+              "word_score": 0.4731,
+              "combined_score": 0.4034,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.3337,
+                    "word_score": 0.4731,
+                    "combined": 0.4034
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0337,
+                    "word_score": 0.081,
+                    "combined": 0.0574
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0245,
+                    "word_score": 0.0819,
+                    "combined": 0.0532
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0427,
+                    "word_score": 0.0603,
+                    "combined": 0.0515
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0214,
+                    "word_score": 0.0745,
+                    "combined": 0.0479
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2514,
+          "avg_seq_score": 0.2068,
+          "avg_word_score": 0.2959,
+          "total_unclear": 5,
+          "avg_formatting_ratio": 0.007,
+          "avg_content_words": 97,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.4708,
+              "seq": 0.4039,
+              "word": 0.5377,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 77
+            },
+            {
+              "page": 50,
+              "combined": 0.0405,
+              "seq": 0.047,
+              "word": 0.034,
+              "unclear": 0,
+              "formatting_ratio": 0.028,
+              "content_words": 102
+            },
+            {
+              "page": 52,
+              "combined": 0.0908,
+              "seq": 0.0427,
+              "word": 0.1389,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 99
+            },
+            {
+              "page": 54,
+              "combined": 0.4034,
+              "seq": 0.3337,
+              "word": 0.4731,
+              "unclear": 5,
+              "formatting_ratio": 0.0,
+              "content_words": 111
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 979,
+              "line_count": 20,
+              "content_words": 78,
+              "unique_content_words": 61,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 16,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.3825,
+              "word_score": 0.4909,
+              "combined_score": 0.4367,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.3825,
+                    "word_score": 0.4909,
+                    "combined": 0.4367
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0507,
+                    "word_score": 0.1488,
+                    "combined": 0.0997
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1478,
+                    "word_score": 0.0341,
+                    "combined": 0.091
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0882,
+                    "word_score": 0.089,
+                    "combined": 0.0886
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0483,
+                    "word_score": 0.1218,
+                    "combined": 0.085
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1051,
+              "line_count": 31,
+              "content_words": 98,
+              "unique_content_words": 42,
+              "has_latex": true,
+              "latex_inline_count": 31,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 2,
+              "content_commands": 67,
+              "formatting_ratio": 0.029,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.0279,
+              "word_score": 0.0524,
+              "combined_score": 0.0402,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0279,
+                    "word_score": 0.0524,
+                    "combined": 0.0402
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0217,
+                    "word_score": 0.0533,
+                    "combined": 0.0375
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0389,
+                    "word_score": 0.0302,
+                    "combined": 0.0345
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0449,
+                    "word_score": 0.0155,
+                    "combined": 0.0302
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.029,
+                    "word_score": 0.0204,
+                    "combined": 0.0247
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1210,
+              "line_count": 26,
+              "content_words": 92,
+              "unique_content_words": 59,
+              "has_latex": true,
+              "latex_inline_count": 24,
+              "unclear_count": 4,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 54,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0914,
+              "word_score": 0.1382,
+              "combined_score": 0.1148,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0914,
+                    "word_score": 0.1382,
+                    "combined": 0.1148
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0333,
+                    "word_score": 0.0759,
+                    "combined": 0.0546
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0253,
+                    "word_score": 0.0615,
+                    "combined": 0.0434
+                  }
+                ],
+                [
+                  "32",
+                  {
+                    "seq_score": 0.0257,
+                    "word_score": 0.0476,
+                    "combined": 0.0367
+                  }
+                ],
+                [
+                  "29",
+                  {
+                    "seq_score": 0.0278,
+                    "word_score": 0.0417,
+                    "combined": 0.0348
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1234,
+              "line_count": 9,
+              "content_words": 114,
+              "unique_content_words": 82,
+              "has_latex": true,
+              "latex_inline_count": 20,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 43,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.3123,
+              "word_score": 0.4656,
+              "combined_score": 0.3889,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.3123,
+                    "word_score": 0.4656,
+                    "combined": 0.3889
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0508,
+                    "word_score": 0.0954,
+                    "combined": 0.0731
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.022,
+                    "word_score": 0.0929,
+                    "combined": 0.0574
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0234,
+                    "word_score": 0.0848,
+                    "combined": 0.0541
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0164,
+                    "word_score": 0.0751,
+                    "combined": 0.0458
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2452,
+          "avg_seq_score": 0.2035,
+          "avg_word_score": 0.2868,
+          "total_unclear": 6,
+          "avg_formatting_ratio": 0.007,
+          "avg_content_words": 96,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.4367,
+              "seq": 0.3825,
+              "word": 0.4909,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 78
+            },
+            {
+              "page": 50,
+              "combined": 0.0402,
+              "seq": 0.0279,
+              "word": 0.0524,
+              "unclear": 2,
+              "formatting_ratio": 0.029,
+              "content_words": 98
+            },
+            {
+              "page": 52,
+              "combined": 0.1148,
+              "seq": 0.0914,
+              "word": 0.1382,
+              "unclear": 4,
+              "formatting_ratio": 0.0,
+              "content_words": 92
+            },
+            {
+              "page": 54,
+              "combined": 0.3889,
+              "seq": 0.3123,
+              "word": 0.4656,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 114
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__flash-lite__low__png300__1img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1051,
+              "line_count": 18,
+              "content_words": 78,
+              "unique_content_words": 60,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 0,
+              "content_commands": 7,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 10
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.4511,
+              "word_score": 0.5769,
+              "combined_score": 0.514,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.4511,
+                    "word_score": 0.5769,
+                    "combined": 0.514
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.1035,
+                    "word_score": 0.1064,
+                    "combined": 0.1049
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0533,
+                    "word_score": 0.1557,
+                    "combined": 0.1045
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1354,
+                    "word_score": 0.0341,
+                    "combined": 0.0848
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0473,
+                    "word_score": 0.1218,
+                    "combined": 0.0846
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1124,
+              "line_count": 30,
+              "content_words": 89,
+              "unique_content_words": 39,
+              "has_latex": true,
+              "latex_inline_count": 35,
+              "unclear_count": 4,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 2,
+              "content_commands": 72,
+              "formatting_ratio": 0.027,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.0279,
+              "word_score": 0.05,
+              "combined_score": 0.039,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0279,
+                    "word_score": 0.05,
+                    "combined": 0.039
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.0422,
+                    "word_score": 0.0093,
+                    "combined": 0.0258
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0379,
+                    "word_score": 0.0108,
+                    "combined": 0.0244
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0319,
+                    "word_score": 0.0144,
+                    "combined": 0.0232
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0326,
+                    "word_score": 0.0132,
+                    "combined": 0.0229
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1111,
+              "line_count": 21,
+              "content_words": 98,
+              "unique_content_words": 70,
+              "has_latex": true,
+              "latex_inline_count": 24,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 50,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0994,
+              "word_score": 0.1304,
+              "combined_score": 0.1149,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0994,
+                    "word_score": 0.1304,
+                    "combined": 0.1149
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0239,
+                    "word_score": 0.0741,
+                    "combined": 0.049
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0185,
+                    "word_score": 0.0595,
+                    "combined": 0.039
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0311,
+                    "word_score": 0.0465,
+                    "combined": 0.0388
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0224,
+                    "word_score": 0.0529,
+                    "combined": 0.0376
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1191,
+              "line_count": 7,
+              "content_words": 114,
+              "unique_content_words": 78,
+              "has_latex": true,
+              "latex_inline_count": 20,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 45,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.1927,
+              "word_score": 0.4133,
+              "combined_score": 0.303,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.1927,
+                    "word_score": 0.4133,
+                    "combined": 0.303
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0491,
+                    "word_score": 0.0727,
+                    "combined": 0.0609
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0246,
+                    "word_score": 0.0887,
+                    "combined": 0.0566
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0162,
+                    "word_score": 0.0775,
+                    "combined": 0.0468
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0151,
+                    "word_score": 0.0751,
+                    "combined": 0.0451
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2427,
+          "avg_seq_score": 0.1928,
+          "avg_word_score": 0.2926,
+          "total_unclear": 4,
+          "avg_formatting_ratio": 0.007,
+          "avg_content_words": 95,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.514,
+              "seq": 0.4511,
+              "word": 0.5769,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 78
+            },
+            {
+              "page": 50,
+              "combined": 0.039,
+              "seq": 0.0279,
+              "word": 0.05,
+              "unclear": 4,
+              "formatting_ratio": 0.027,
+              "content_words": 89
+            },
+            {
+              "page": 52,
+              "combined": 0.1149,
+              "seq": 0.0994,
+              "word": 0.1304,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 98
+            },
+            {
+              "page": 54,
+              "combined": 0.303,
+              "seq": 0.1927,
+              "word": 0.4133,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 114
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__pro__medium__pdf__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1064,
+              "line_count": 19,
+              "content_words": 79,
+              "unique_content_words": 61,
+              "has_latex": true,
+              "latex_inline_count": 18,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 16,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.6251,
+              "word_score": 0.4602,
+              "combined_score": 0.5426,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.6251,
+                    "word_score": 0.4602,
+                    "combined": 0.5426
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.064,
+                    "word_score": 0.1412,
+                    "combined": 0.1026
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0865,
+                    "word_score": 0.0885,
+                    "combined": 0.0875
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1475,
+                    "word_score": 0.0222,
+                    "combined": 0.0849
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0257,
+                    "word_score": 0.1139,
+                    "combined": 0.0698
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1166,
+              "line_count": 31,
+              "content_words": 74,
+              "unique_content_words": 37,
+              "has_latex": true,
+              "latex_inline_count": 35,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 0,
+              "content_commands": 65,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "36",
+              "seq_score": 0.1556,
+              "word_score": 0.0539,
+              "combined_score": 0.1047,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "36",
+                  {
+                    "seq_score": 0.1556,
+                    "word_score": 0.0539,
+                    "combined": 0.1047
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0307,
+                    "word_score": 0.0533,
+                    "combined": 0.042
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0157,
+                    "word_score": 0.0548,
+                    "combined": 0.0352
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0277,
+                    "word_score": 0.0385,
+                    "combined": 0.0331
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0172,
+                    "word_score": 0.0415,
+                    "combined": 0.0294
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1308,
+              "line_count": 24,
+              "content_words": 95,
+              "unique_content_words": 64,
+              "has_latex": true,
+              "latex_inline_count": 27,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 50,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.151,
+              "word_score": 0.1743,
+              "combined_score": 0.1626,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.151,
+                    "word_score": 0.1743,
+                    "combined": 0.1626
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0558,
+                    "word_score": 0.0886,
+                    "combined": 0.0722
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0417,
+                    "word_score": 0.0583,
+                    "combined": 0.05
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0388,
+                    "word_score": 0.0604,
+                    "combined": 0.0496
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.019,
+                    "word_score": 0.063,
+                    "combined": 0.041
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1424,
+              "line_count": 27,
+              "content_words": 120,
+              "unique_content_words": 88,
+              "has_latex": true,
+              "latex_inline_count": 22,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 44,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.5073,
+              "word_score": 0.5464,
+              "combined_score": 0.5268,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.5073,
+                    "word_score": 0.5464,
+                    "combined": 0.5268
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0303,
+                    "word_score": 0.0972,
+                    "combined": 0.0638
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0235,
+                    "word_score": 0.0868,
+                    "combined": 0.0552
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0188,
+                    "word_score": 0.0833,
+                    "combined": 0.0511
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0188,
+                    "word_score": 0.0734,
+                    "combined": 0.0461
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.3342,
+          "avg_seq_score": 0.3598,
+          "avg_word_score": 0.3087,
+          "total_unclear": 7,
+          "avg_formatting_ratio": 0.0,
+          "avg_content_words": 92,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.5426,
+              "seq": 0.6251,
+              "word": 0.4602,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 79
+            },
+            {
+              "page": 50,
+              "combined": 0.1047,
+              "seq": 0.1556,
+              "word": 0.0539,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 74
+            },
+            {
+              "page": 52,
+              "combined": 0.1626,
+              "seq": 0.151,
+              "word": 0.1743,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 95
+            },
+            {
+              "page": 54,
+              "combined": 0.5268,
+              "seq": 0.5073,
+              "word": 0.5464,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 120
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "pro",
+          "thinking_level": "medium",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__pro__medium__png150__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1049,
+              "line_count": 33,
+              "content_words": 80,
+              "unique_content_words": 63,
+              "has_latex": true,
+              "latex_inline_count": 16,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 16,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.2953,
+              "word_score": 0.431,
+              "combined_score": 0.3632,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.2953,
+                    "word_score": 0.431,
+                    "combined": 0.3632
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1512,
+                    "word_score": 0.0449,
+                    "combined": 0.0981
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0488,
+                    "word_score": 0.1337,
+                    "combined": 0.0913
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0863,
+                    "word_score": 0.0881,
+                    "combined": 0.0872
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0256,
+                    "word_score": 0.0994,
+                    "combined": 0.0625
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1128,
+              "line_count": 30,
+              "content_words": 80,
+              "unique_content_words": 42,
+              "has_latex": true,
+              "latex_inline_count": 32,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 5,
+              "formatting_commands": 2,
+              "content_commands": 59,
+              "formatting_ratio": 0.033,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "36",
+              "seq_score": 0.0563,
+              "word_score": 0.0474,
+              "combined_score": 0.0519,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0563,
+                    "word_score": 0.0474,
+                    "combined": 0.0519
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0408,
+                    "word_score": 0.039,
+                    "combined": 0.0399
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0266,
+                    "word_score": 0.0474,
+                    "combined": 0.037
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0413,
+                    "word_score": 0.0171,
+                    "combined": 0.0292
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.0347,
+                    "word_score": 0.0147,
+                    "combined": 0.0247
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1238,
+              "line_count": 24,
+              "content_words": 96,
+              "unique_content_words": 65,
+              "has_latex": true,
+              "latex_inline_count": 25,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 49,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.1489,
+              "word_score": 0.1639,
+              "combined_score": 0.1564,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.1489,
+                    "word_score": 0.1639,
+                    "combined": 0.1564
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0517,
+                    "word_score": 0.0747,
+                    "combined": 0.0632
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0422,
+                    "word_score": 0.0533,
+                    "combined": 0.0478
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0403,
+                    "word_score": 0.0543,
+                    "combined": 0.0473
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0224,
+                    "word_score": 0.0519,
+                    "combined": 0.0372
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1380,
+              "line_count": 26,
+              "content_words": 123,
+              "unique_content_words": 89,
+              "has_latex": true,
+              "latex_inline_count": 23,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 46,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.5628,
+              "word_score": 0.5376,
+              "combined_score": 0.5502,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.5628,
+                    "word_score": 0.5376,
+                    "combined": 0.5502
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0293,
+                    "word_score": 0.085,
+                    "combined": 0.0571
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0211,
+                    "word_score": 0.0825,
+                    "combined": 0.0518
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0247,
+                    "word_score": 0.0785,
+                    "combined": 0.0516
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0207,
+                    "word_score": 0.0684,
+                    "combined": 0.0446
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2804,
+          "avg_seq_score": 0.2658,
+          "avg_word_score": 0.295,
+          "total_unclear": 4,
+          "avg_formatting_ratio": 0.008,
+          "avg_content_words": 95,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.3632,
+              "seq": 0.2953,
+              "word": 0.431,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 80
+            },
+            {
+              "page": 50,
+              "combined": 0.0519,
+              "seq": 0.0563,
+              "word": 0.0474,
+              "unclear": 0,
+              "formatting_ratio": 0.033,
+              "content_words": 80
+            },
+            {
+              "page": 52,
+              "combined": 0.1564,
+              "seq": 0.1489,
+              "word": 0.1639,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 96
+            },
+            {
+              "page": 54,
+              "combined": 0.5502,
+              "seq": 0.5628,
+              "word": 0.5376,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 123
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "pro",
+          "thinking_level": "medium",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__pro__medium__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1117,
+              "line_count": 19,
+              "content_words": 81,
+              "unique_content_words": 63,
+              "has_latex": true,
+              "latex_inline_count": 20,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 19,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 8
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.4493,
+              "word_score": 0.4397,
+              "combined_score": 0.4445,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.4493,
+                    "word_score": 0.4397,
+                    "combined": 0.4445
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0567,
+                    "word_score": 0.1329,
+                    "combined": 0.0948
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1467,
+                    "word_score": 0.033,
+                    "combined": 0.0898
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0863,
+                    "word_score": 0.0876,
+                    "combined": 0.087
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0451,
+                    "word_score": 0.0988,
+                    "combined": 0.0719
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1190,
+              "line_count": 31,
+              "content_words": 78,
+              "unique_content_words": 39,
+              "has_latex": true,
+              "latex_inline_count": 38,
+              "unclear_count": 3,
+              "diagram_count": 1,
+              "margin_count": 3,
+              "formatting_commands": 0,
+              "content_commands": 64,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "36",
+              "seq_score": 0.1406,
+              "word_score": 0.058,
+              "combined_score": 0.0993,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "36",
+                  {
+                    "seq_score": 0.1406,
+                    "word_score": 0.058,
+                    "combined": 0.0993
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0265,
+                    "word_score": 0.0748,
+                    "combined": 0.0507
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0294,
+                    "word_score": 0.0433,
+                    "combined": 0.0363
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0301,
+                    "word_score": 0.0317,
+                    "combined": 0.0309
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0385,
+                    "word_score": 0.0233,
+                    "combined": 0.0309
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1204,
+              "line_count": 23,
+              "content_words": 94,
+              "unique_content_words": 65,
+              "has_latex": true,
+              "latex_inline_count": 27,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 47,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.1487,
+              "word_score": 0.175,
+              "combined_score": 0.1619,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.1487,
+                    "word_score": 0.175,
+                    "combined": 0.1619
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0324,
+                    "word_score": 0.0798,
+                    "combined": 0.0561
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0326,
+                    "word_score": 0.0608,
+                    "combined": 0.0467
+                  }
+                ],
+                [
+                  "29",
+                  {
+                    "seq_score": 0.0414,
+                    "word_score": 0.0413,
+                    "combined": 0.0414
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.02,
+                    "word_score": 0.0588,
+                    "combined": 0.0394
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1341,
+              "line_count": 9,
+              "content_words": 126,
+              "unique_content_words": 85,
+              "has_latex": true,
+              "latex_inline_count": 22,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 46,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.402,
+              "word_score": 0.4745,
+              "combined_score": 0.4382,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.402,
+                    "word_score": 0.4745,
+                    "combined": 0.4382
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.025,
+                    "word_score": 0.0915,
+                    "combined": 0.0583
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0236,
+                    "word_score": 0.0777,
+                    "combined": 0.0507
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0195,
+                    "word_score": 0.0816,
+                    "combined": 0.0506
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0332,
+                    "word_score": 0.0553,
+                    "combined": 0.0443
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.286,
+          "avg_seq_score": 0.2852,
+          "avg_word_score": 0.2868,
+          "total_unclear": 6,
+          "avg_formatting_ratio": 0.0,
+          "avg_content_words": 95,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.4445,
+              "seq": 0.4493,
+              "word": 0.4397,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 81
+            },
+            {
+              "page": 50,
+              "combined": 0.0993,
+              "seq": 0.1406,
+              "word": 0.058,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 78
+            },
+            {
+              "page": 52,
+              "combined": 0.1619,
+              "seq": 0.1487,
+              "word": 0.175,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 94
+            },
+            {
+              "page": 54,
+              "combined": 0.4382,
+              "seq": 0.402,
+              "word": 0.4745,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 126
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "pro",
+          "thinking_level": "medium",
+          "use_context": null
+        }
+      },
+      "text-first-fewshot__pro__medium__png300__1img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1130,
+              "line_count": 18,
+              "content_words": 83,
+              "unique_content_words": 64,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 21,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.6116,
+              "word_score": 0.4569,
+              "combined_score": 0.5342,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.6116,
+                    "word_score": 0.4569,
+                    "combined": 0.5342
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0556,
+                    "word_score": 0.1379,
+                    "combined": 0.0967
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1436,
+                    "word_score": 0.0323,
+                    "combined": 0.0879
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0846,
+                    "word_score": 0.0867,
+                    "combined": 0.0857
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.03,
+                    "word_score": 0.1043,
+                    "combined": 0.0671
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1212,
+              "line_count": 36,
+              "content_words": 78,
+              "unique_content_words": 39,
+              "has_latex": true,
+              "latex_inline_count": 33,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 4,
+              "formatting_commands": 2,
+              "content_commands": 60,
+              "formatting_ratio": 0.032,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "36",
+              "seq_score": 0.0738,
+              "word_score": 0.0529,
+              "combined_score": 0.0633,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0738,
+                    "word_score": 0.0529,
+                    "combined": 0.0633
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0343,
+                    "word_score": 0.0395,
+                    "combined": 0.0369
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.0345,
+                    "word_score": 0.0302,
+                    "combined": 0.0323
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.041,
+                    "word_score": 0.0233,
+                    "combined": 0.0321
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0291,
+                    "word_score": 0.034,
+                    "combined": 0.0315
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1252,
+              "line_count": 23,
+              "content_words": 101,
+              "unique_content_words": 71,
+              "has_latex": true,
+              "latex_inline_count": 26,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 54,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.1577,
+              "word_score": 0.1796,
+              "combined_score": 0.1686,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.1577,
+                    "word_score": 0.1796,
+                    "combined": 0.1686
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0215,
+                    "word_score": 0.0909,
+                    "combined": 0.0562
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0258,
+                    "word_score": 0.0661,
+                    "combined": 0.046
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0285,
+                    "word_score": 0.0585,
+                    "combined": 0.0435
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0316,
+                    "word_score": 0.0507,
+                    "combined": 0.0412
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1471,
+              "line_count": 26,
+              "content_words": 109,
+              "unique_content_words": 81,
+              "has_latex": true,
+              "latex_inline_count": 24,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 49,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.5325,
+              "word_score": 0.4945,
+              "combined_score": 0.5135,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.5325,
+                    "word_score": 0.4945,
+                    "combined": 0.5135
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0288,
+                    "word_score": 0.0816,
+                    "combined": 0.0552
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0237,
+                    "word_score": 0.0709,
+                    "combined": 0.0473
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0217,
+                    "word_score": 0.0712,
+                    "combined": 0.0464
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0217,
+                    "word_score": 0.0679,
+                    "combined": 0.0448
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.3199,
+          "avg_seq_score": 0.3439,
+          "avg_word_score": 0.296,
+          "total_unclear": 8,
+          "avg_formatting_ratio": 0.008,
+          "avg_content_words": 93,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.5342,
+              "seq": 0.6116,
+              "word": 0.4569,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 83
+            },
+            {
+              "page": 50,
+              "combined": 0.0633,
+              "seq": 0.0738,
+              "word": 0.0529,
+              "unclear": 2,
+              "formatting_ratio": 0.032,
+              "content_words": 78
+            },
+            {
+              "page": 52,
+              "combined": 0.1686,
+              "seq": 0.1577,
+              "word": 0.1796,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 101
+            },
+            {
+              "page": 54,
+              "combined": 0.5135,
+              "seq": 0.5325,
+              "word": 0.4945,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 109
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first-fewshot",
+          "model": "pro",
+          "thinking_level": "medium",
+          "use_context": null
+        }
+      },
+      "text-first__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1219,
+              "line_count": 19,
+              "content_words": 76,
+              "unique_content_words": 61,
+              "has_latex": true,
+              "latex_inline_count": 19,
+              "unclear_count": 6,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 21,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 9
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.3627,
+              "word_score": 0.3966,
+              "combined_score": 0.3796,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.3627,
+                    "word_score": 0.3966,
+                    "combined": 0.3796
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1494,
+                    "word_score": 0.0471,
+                    "combined": 0.0982
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0323,
+                    "word_score": 0.1506,
+                    "combined": 0.0914
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0758,
+                    "word_score": 0.0957,
+                    "combined": 0.0858
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0332,
+                    "word_score": 0.1161,
+                    "combined": 0.0746
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1107,
+              "line_count": 33,
+              "content_words": 104,
+              "unique_content_words": 47,
+              "has_latex": true,
+              "latex_inline_count": 36,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 1,
+              "formatting_commands": 2,
+              "content_commands": 73,
+              "formatting_ratio": 0.027,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.024,
+              "word_score": 0.0512,
+              "combined_score": 0.0376,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.024,
+                    "word_score": 0.0512,
+                    "combined": 0.0376
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0406,
+                    "word_score": 0.0294,
+                    "combined": 0.035
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.018,
+                    "word_score": 0.0455,
+                    "combined": 0.0317
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.033,
+                    "word_score": 0.0196,
+                    "combined": 0.0263
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0342,
+                    "word_score": 0.0151,
+                    "combined": 0.0247
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1156,
+              "line_count": 8,
+              "content_words": 95,
+              "unique_content_words": 61,
+              "has_latex": true,
+              "latex_inline_count": 22,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 52,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.1061,
+              "word_score": 0.1457,
+              "combined_score": 0.1259,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.1061,
+                    "word_score": 0.1457,
+                    "combined": 0.1259
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0685,
+                    "word_score": 0.0979,
+                    "combined": 0.0832
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0233,
+                    "word_score": 0.0604,
+                    "combined": 0.0419
+                  }
+                ],
+                [
+                  "32",
+                  {
+                    "seq_score": 0.0287,
+                    "word_score": 0.0524,
+                    "combined": 0.0405
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0205,
+                    "word_score": 0.0543,
+                    "combined": 0.0374
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1342,
+              "line_count": 9,
+              "content_words": 115,
+              "unique_content_words": 85,
+              "has_latex": true,
+              "latex_inline_count": 21,
+              "unclear_count": 6,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 51,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.2608,
+              "word_score": 0.433,
+              "combined_score": 0.3469,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.2608,
+                    "word_score": 0.433,
+                    "combined": 0.3469
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0244,
+                    "word_score": 0.0883,
+                    "combined": 0.0564
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0322,
+                    "word_score": 0.0799,
+                    "combined": 0.056
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0212,
+                    "word_score": 0.0848,
+                    "combined": 0.053
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0261,
+                    "word_score": 0.0661,
+                    "combined": 0.0461
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2225,
+          "avg_seq_score": 0.1884,
+          "avg_word_score": 0.2566,
+          "total_unclear": 16,
+          "avg_formatting_ratio": 0.007,
+          "avg_content_words": 98,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.3796,
+              "seq": 0.3627,
+              "word": 0.3966,
+              "unclear": 6,
+              "formatting_ratio": 0.0,
+              "content_words": 76
+            },
+            {
+              "page": 50,
+              "combined": 0.0376,
+              "seq": 0.024,
+              "word": 0.0512,
+              "unclear": 1,
+              "formatting_ratio": 0.027,
+              "content_words": 104
+            },
+            {
+              "page": 52,
+              "combined": 0.1259,
+              "seq": 0.1061,
+              "word": 0.1457,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 95
+            },
+            {
+              "page": 54,
+              "combined": 0.3469,
+              "seq": 0.2608,
+              "word": 0.433,
+              "unclear": 6,
+              "formatting_ratio": 0.0,
+              "content_words": 115
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-first__pro__medium__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1180,
+              "line_count": 30,
+              "content_words": 78,
+              "unique_content_words": 62,
+              "has_latex": true,
+              "latex_inline_count": 19,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 1,
+              "formatting_commands": 0,
+              "content_commands": 20,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.4481,
+              "word_score": 0.4261,
+              "combined_score": 0.4371,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.4481,
+                    "word_score": 0.4261,
+                    "combined": 0.4371
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1495,
+                    "word_score": 0.046,
+                    "combined": 0.0977
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0527,
+                    "word_score": 0.1287,
+                    "combined": 0.0907
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0813,
+                    "word_score": 0.089,
+                    "combined": 0.0851
+                  }
+                ],
+                [
+                  "13",
+                  {
+                    "seq_score": 0.0344,
+                    "word_score": 0.0949,
+                    "combined": 0.0647
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1103,
+              "line_count": 36,
+              "content_words": 73,
+              "unique_content_words": 36,
+              "has_latex": true,
+              "latex_inline_count": 33,
+              "unclear_count": 5,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 0,
+              "content_commands": 56,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "35",
+              "seq_score": 0.0885,
+              "word_score": 0.0479,
+              "combined_score": 0.0682,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0885,
+                    "word_score": 0.0479,
+                    "combined": 0.0682
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0579,
+                    "word_score": 0.0647,
+                    "combined": 0.0613
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0255,
+                    "word_score": 0.0489,
+                    "combined": 0.0372
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0322,
+                    "word_score": 0.0331,
+                    "combined": 0.0326
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0404,
+                    "word_score": 0.0179,
+                    "combined": 0.0291
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1254,
+              "line_count": 24,
+              "content_words": 104,
+              "unique_content_words": 73,
+              "has_latex": true,
+              "latex_inline_count": 32,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 52,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 4
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0764,
+              "word_score": 0.1542,
+              "combined_score": 0.1153,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0764,
+                    "word_score": 0.1542,
+                    "combined": 0.1153
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0632,
+                    "word_score": 0.0898,
+                    "combined": 0.0765
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0311,
+                    "word_score": 0.0652,
+                    "combined": 0.0482
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0345,
+                    "word_score": 0.0521,
+                    "combined": 0.0433
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0261,
+                    "word_score": 0.0563,
+                    "combined": 0.0412
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1387,
+              "line_count": 26,
+              "content_words": 120,
+              "unique_content_words": 85,
+              "has_latex": true,
+              "latex_inline_count": 24,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 45,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.5827,
+              "word_score": 0.5053,
+              "combined_score": 0.544,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.5827,
+                    "word_score": 0.5053,
+                    "combined": 0.544
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0325,
+                    "word_score": 0.0897,
+                    "combined": 0.0611
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0237,
+                    "word_score": 0.083,
+                    "combined": 0.0534
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0392,
+                    "word_score": 0.0584,
+                    "combined": 0.0488
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0207,
+                    "word_score": 0.0759,
+                    "combined": 0.0483
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2912,
+          "avg_seq_score": 0.2989,
+          "avg_word_score": 0.2834,
+          "total_unclear": 12,
+          "avg_formatting_ratio": 0.0,
+          "avg_content_words": 94,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.4371,
+              "seq": 0.4481,
+              "word": 0.4261,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 78
+            },
+            {
+              "page": 50,
+              "combined": 0.0682,
+              "seq": 0.0885,
+              "word": 0.0479,
+              "unclear": 5,
+              "formatting_ratio": 0.0,
+              "content_words": 73
+            },
+            {
+              "page": 52,
+              "combined": 0.1153,
+              "seq": 0.0764,
+              "word": 0.1542,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 104
+            },
+            {
+              "page": 54,
+              "combined": 0.544,
+              "seq": 0.5827,
+              "word": 0.5053,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 120
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-first",
+          "model": "pro",
+          "thinking_level": "medium",
+          "use_context": null
+        }
+      },
+      "text-inline-fewshot__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1084,
+              "line_count": 18,
+              "content_words": 78,
+              "unique_content_words": 61,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 15,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 8
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.3996,
+              "word_score": 0.5185,
+              "combined_score": 0.459,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.3996,
+                    "word_score": 0.5185,
+                    "combined": 0.459
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0486,
+                    "word_score": 0.1488,
+                    "combined": 0.0987
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0903,
+                    "word_score": 0.1005,
+                    "combined": 0.0954
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1479,
+                    "word_score": 0.0341,
+                    "combined": 0.091
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0459,
+                    "word_score": 0.1218,
+                    "combined": 0.0839
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1084,
+              "line_count": 24,
+              "content_words": 95,
+              "unique_content_words": 41,
+              "has_latex": true,
+              "latex_inline_count": 35,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 2,
+              "content_commands": 69,
+              "formatting_ratio": 0.028,
+              "french_math_terms": 1
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.026,
+              "word_score": 0.0531,
+              "combined_score": 0.0395,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.026,
+                    "word_score": 0.0531,
+                    "combined": 0.0395
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0377,
+                    "word_score": 0.0294,
+                    "combined": 0.0335
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0394,
+                    "word_score": 0.0261,
+                    "combined": 0.0327
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0324,
+                    "word_score": 0.0208,
+                    "combined": 0.0266
+                  }
+                ],
+                [
+                  "29",
+                  {
+                    "seq_score": 0.0172,
+                    "word_score": 0.027,
+                    "combined": 0.0221
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1209,
+              "line_count": 24,
+              "content_words": 101,
+              "unique_content_words": 71,
+              "has_latex": true,
+              "latex_inline_count": 22,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 1,
+              "formatting_commands": 0,
+              "content_commands": 56,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 5
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0964,
+              "word_score": 0.1378,
+              "combined_score": 0.1171,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0964,
+                    "word_score": 0.1378,
+                    "combined": 0.1171
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0325,
+                    "word_score": 0.0645,
+                    "combined": 0.0485
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0152,
+                    "word_score": 0.0702,
+                    "combined": 0.0427
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0256,
+                    "word_score": 0.0585,
+                    "combined": 0.0421
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0228,
+                    "word_score": 0.0556,
+                    "combined": 0.0392
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1207,
+              "line_count": 11,
+              "content_words": 109,
+              "unique_content_words": 78,
+              "has_latex": true,
+              "latex_inline_count": 19,
+              "unclear_count": 1,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 38,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 2
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.3293,
+              "word_score": 0.4783,
+              "combined_score": 0.4038,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.3293,
+                    "word_score": 0.4783,
+                    "combined": 0.4038
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0557,
+                    "word_score": 0.1011,
+                    "combined": 0.0784
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0233,
+                    "word_score": 0.0906,
+                    "combined": 0.0569
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0235,
+                    "word_score": 0.0863,
+                    "combined": 0.0549
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0416,
+                    "word_score": 0.0607,
+                    "combined": 0.0512
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2549,
+          "avg_seq_score": 0.2128,
+          "avg_word_score": 0.2969,
+          "total_unclear": 1,
+          "avg_formatting_ratio": 0.007,
+          "avg_content_words": 96,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.459,
+              "seq": 0.3996,
+              "word": 0.5185,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 78
+            },
+            {
+              "page": 50,
+              "combined": 0.0395,
+              "seq": 0.026,
+              "word": 0.0531,
+              "unclear": 0,
+              "formatting_ratio": 0.028,
+              "content_words": 95
+            },
+            {
+              "page": 52,
+              "combined": 0.1171,
+              "seq": 0.0964,
+              "word": 0.1378,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 101
+            },
+            {
+              "page": 54,
+              "combined": 0.4038,
+              "seq": 0.3293,
+              "word": 0.4783,
+              "unclear": 1,
+              "formatting_ratio": 0.0,
+              "content_words": 109
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-inline-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "text-inline__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1102,
+              "line_count": 21,
+              "content_words": 74,
+              "unique_content_words": 57,
+              "has_latex": true,
+              "latex_inline_count": 16,
+              "unclear_count": 5,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 19,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.261,
+              "word_score": 0.3913,
+              "combined_score": 0.3262,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.261,
+                    "word_score": 0.3913,
+                    "combined": 0.3262
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0452,
+                    "word_score": 0.1739,
+                    "combined": 0.1096
+                  }
+                ],
+                [
+                  "9",
+                  {
+                    "seq_score": 0.1532,
+                    "word_score": 0.0482,
+                    "combined": 0.1007
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.066,
+                    "word_score": 0.1087,
+                    "combined": 0.0873
+                  }
+                ],
+                [
+                  "13",
+                  {
+                    "seq_score": 0.0451,
+                    "word_score": 0.1192,
+                    "combined": 0.0822
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1117,
+              "line_count": 27,
+              "content_words": 94,
+              "unique_content_words": 42,
+              "has_latex": true,
+              "latex_inline_count": 31,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 2,
+              "content_commands": 72,
+              "formatting_ratio": 0.027,
+              "french_math_terms": 1
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.0271,
+              "word_score": 0.0447,
+              "combined_score": 0.0359,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0271,
+                    "word_score": 0.0447,
+                    "combined": 0.0359
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0409,
+                    "word_score": 0.0217,
+                    "combined": 0.0313
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.0408,
+                    "word_score": 0.0184,
+                    "combined": 0.0296
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0365,
+                    "word_score": 0.0213,
+                    "combined": 0.0289
+                  }
+                ],
+                [
+                  "26",
+                  {
+                    "seq_score": 0.0317,
+                    "word_score": 0.021,
+                    "combined": 0.0264
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1229,
+              "line_count": 24,
+              "content_words": 96,
+              "unique_content_words": 64,
+              "has_latex": true,
+              "latex_inline_count": 24,
+              "unclear_count": 8,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 53,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0284,
+              "word_score": 0.136,
+              "combined_score": 0.0822,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0284,
+                    "word_score": 0.136,
+                    "combined": 0.0822
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0297,
+                    "word_score": 0.0837,
+                    "combined": 0.0567
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0301,
+                    "word_score": 0.0601,
+                    "combined": 0.0451
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0253,
+                    "word_score": 0.0487,
+                    "combined": 0.037
+                  }
+                ],
+                [
+                  "29",
+                  {
+                    "seq_score": 0.0307,
+                    "word_score": 0.0409,
+                    "combined": 0.0358
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 1320,
+              "line_count": 7,
+              "content_words": 122,
+              "unique_content_words": 83,
+              "has_latex": true,
+              "latex_inline_count": 22,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 45,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 2
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.4496,
+              "word_score": 0.4691,
+              "combined_score": 0.4593,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.4496,
+                    "word_score": 0.4691,
+                    "combined": 0.4593
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0311,
+                    "word_score": 0.0928,
+                    "combined": 0.0619
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0209,
+                    "word_score": 0.0828,
+                    "combined": 0.0519
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.024,
+                    "word_score": 0.0788,
+                    "combined": 0.0514
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0199,
+                    "word_score": 0.0728,
+                    "combined": 0.0463
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2259,
+          "avg_seq_score": 0.1915,
+          "avg_word_score": 0.2603,
+          "total_unclear": 18,
+          "avg_formatting_ratio": 0.007,
+          "avg_content_words": 96,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.3262,
+              "seq": 0.261,
+              "word": 0.3913,
+              "unclear": 5,
+              "formatting_ratio": 0.0,
+              "content_words": 74
+            },
+            {
+              "page": 50,
+              "combined": 0.0359,
+              "seq": 0.0271,
+              "word": 0.0447,
+              "unclear": 3,
+              "formatting_ratio": 0.027,
+              "content_words": 94
+            },
+            {
+              "page": 52,
+              "combined": 0.0822,
+              "seq": 0.0284,
+              "word": 0.136,
+              "unclear": 8,
+              "formatting_ratio": 0.0,
+              "content_words": 96
+            },
+            {
+              "page": 54,
+              "combined": 0.4593,
+              "seq": 0.4496,
+              "word": 0.4691,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 122
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "text-inline",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "two-pass-fewshot__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 2055,
+              "line_count": 55,
+              "content_words": 173,
+              "unique_content_words": 88,
+              "has_latex": true,
+              "latex_inline_count": 17,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 4,
+              "formatting_commands": 0,
+              "content_commands": 19,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 9
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.1612,
+              "word_score": 0.3925,
+              "combined_score": 0.2768,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.1612,
+                    "word_score": 0.3925,
+                    "combined": 0.2768
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0412,
+                    "word_score": 0.1755,
+                    "combined": 0.1083
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0577,
+                    "word_score": 0.114,
+                    "combined": 0.0858
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0373,
+                    "word_score": 0.1066,
+                    "combined": 0.0719
+                  }
+                ],
+                [
+                  "10",
+                  {
+                    "seq_score": 0.0259,
+                    "word_score": 0.1025,
+                    "combined": 0.0642
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 2353,
+              "line_count": 52,
+              "content_words": 222,
+              "unique_content_words": 57,
+              "has_latex": true,
+              "latex_inline_count": 66,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 4,
+              "content_commands": 157,
+              "formatting_ratio": 0.025,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "36",
+              "seq_score": 0.0435,
+              "word_score": 0.0254,
+              "combined_score": 0.0345,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0435,
+                    "word_score": 0.0254,
+                    "combined": 0.0345
+                  }
+                ],
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0259,
+                    "word_score": 0.0414,
+                    "combined": 0.0336
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0184,
+                    "word_score": 0.0462,
+                    "combined": 0.0323
+                  }
+                ],
+                [
+                  "30",
+                  {
+                    "seq_score": 0.0338,
+                    "word_score": 0.0127,
+                    "combined": 0.0232
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0261,
+                    "word_score": 0.0149,
+                    "combined": 0.0205
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 2237,
+              "line_count": 49,
+              "content_words": 201,
+              "unique_content_words": 71,
+              "has_latex": true,
+              "latex_inline_count": 51,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 3,
+              "formatting_commands": 0,
+              "content_commands": 83,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.0782,
+              "word_score": 0.121,
+              "combined_score": 0.0996,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0782,
+                    "word_score": 0.121,
+                    "combined": 0.0996
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0517,
+                    "word_score": 0.1131,
+                    "combined": 0.0824
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0189,
+                    "word_score": 0.0672,
+                    "combined": 0.0431
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0157,
+                    "word_score": 0.0653,
+                    "combined": 0.0405
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0336,
+                    "word_score": 0.0342,
+                    "combined": 0.0339
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 2195,
+              "line_count": 56,
+              "content_words": 214,
+              "unique_content_words": 93,
+              "has_latex": true,
+              "latex_inline_count": 20,
+              "unclear_count": 2,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 25,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 2
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.1837,
+              "word_score": 0.3275,
+              "combined_score": 0.2556,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.1837,
+                    "word_score": 0.3275,
+                    "combined": 0.2556
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0484,
+                    "word_score": 0.0924,
+                    "combined": 0.0704
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0284,
+                    "word_score": 0.106,
+                    "combined": 0.0672
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0157,
+                    "word_score": 0.1141,
+                    "combined": 0.0649
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0199,
+                    "word_score": 0.1093,
+                    "combined": 0.0646
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.1666,
+          "avg_seq_score": 0.1167,
+          "avg_word_score": 0.2166,
+          "total_unclear": 4,
+          "avg_formatting_ratio": 0.006,
+          "avg_content_words": 202,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.2768,
+              "seq": 0.1612,
+              "word": 0.3925,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 173
+            },
+            {
+              "page": 50,
+              "combined": 0.0345,
+              "seq": 0.0435,
+              "word": 0.0254,
+              "unclear": 2,
+              "formatting_ratio": 0.025,
+              "content_words": 222
+            },
+            {
+              "page": 52,
+              "combined": 0.0996,
+              "seq": 0.0782,
+              "word": 0.121,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 201
+            },
+            {
+              "page": 54,
+              "combined": 0.2556,
+              "seq": 0.1837,
+              "word": 0.3275,
+              "unclear": 2,
+              "formatting_ratio": 0.0,
+              "content_words": 214
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "two-pass-fewshot",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "two-pass__flash-lite__low__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 1952,
+              "line_count": 59,
+              "content_words": 164,
+              "unique_content_words": 76,
+              "has_latex": true,
+              "latex_inline_count": 14,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 4,
+              "formatting_commands": 0,
+              "content_commands": 17,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.1181,
+              "word_score": 0.2626,
+              "combined_score": 0.1904,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.1181,
+                    "word_score": 0.2626,
+                    "combined": 0.1904
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.0415,
+                    "word_score": 0.1674,
+                    "combined": 0.1044
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0681,
+                    "word_score": 0.1094,
+                    "combined": 0.0887
+                  }
+                ],
+                [
+                  "13",
+                  {
+                    "seq_score": 0.0484,
+                    "word_score": 0.1021,
+                    "combined": 0.0753
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0479,
+                    "word_score": 0.0921,
+                    "combined": 0.07
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 1970,
+              "line_count": 64,
+              "content_words": 198,
+              "unique_content_words": 47,
+              "has_latex": true,
+              "latex_inline_count": 54,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 136,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 0
+            },
+            "reference_match": {
+              "best_page": "35",
+              "seq_score": 0.034,
+              "word_score": 0.0412,
+              "combined_score": 0.0376,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "35",
+                  {
+                    "seq_score": 0.034,
+                    "word_score": 0.0412,
+                    "combined": 0.0376
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0374,
+                    "word_score": 0.0304,
+                    "combined": 0.0339
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0205,
+                    "word_score": 0.0434,
+                    "combined": 0.0319
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0206,
+                    "word_score": 0.0234,
+                    "combined": 0.022
+                  }
+                ],
+                [
+                  "33",
+                  {
+                    "seq_score": 0.0367,
+                    "word_score": 0.0062,
+                    "combined": 0.0215
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 1836,
+              "line_count": 57,
+              "content_words": 140,
+              "unique_content_words": 63,
+              "has_latex": true,
+              "latex_inline_count": 18,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 18,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.1383,
+              "word_score": 0.1927,
+              "combined_score": 0.1655,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.1383,
+                    "word_score": 0.1927,
+                    "combined": 0.1655
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0133,
+                    "word_score": 0.1126,
+                    "combined": 0.0629
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0226,
+                    "word_score": 0.0996,
+                    "combined": 0.0611
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0122,
+                    "word_score": 0.1033,
+                    "combined": 0.0578
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0133,
+                    "word_score": 0.0934,
+                    "combined": 0.0533
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 2295,
+              "line_count": 39,
+              "content_words": 216,
+              "unique_content_words": 92,
+              "has_latex": true,
+              "latex_inline_count": 18,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 31,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 2
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.2469,
+              "word_score": 0.3024,
+              "combined_score": 0.2746,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.2469,
+                    "word_score": 0.3024,
+                    "combined": 0.2746
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.013,
+                    "word_score": 0.1257,
+                    "combined": 0.0693
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.044,
+                    "word_score": 0.0889,
+                    "combined": 0.0665
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0199,
+                    "word_score": 0.1117,
+                    "combined": 0.0658
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0244,
+                    "word_score": 0.0924,
+                    "combined": 0.0584
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.167,
+          "avg_seq_score": 0.1343,
+          "avg_word_score": 0.1997,
+          "total_unclear": 0,
+          "avg_formatting_ratio": 0.0,
+          "avg_content_words": 180,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.1904,
+              "seq": 0.1181,
+              "word": 0.2626,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 164
+            },
+            {
+              "page": 50,
+              "combined": 0.0376,
+              "seq": 0.034,
+              "word": 0.0412,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 198
+            },
+            {
+              "page": 52,
+              "combined": 0.1655,
+              "seq": 0.1383,
+              "word": 0.1927,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 140
+            },
+            {
+              "page": 54,
+              "combined": 0.2746,
+              "seq": 0.2469,
+              "word": 0.3024,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 216
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "two-pass",
+          "model": "flash-lite",
+          "thinking_level": "low",
+          "use_context": null
+        }
+      },
+      "two-pass__pro__medium__png300__0img": {
+        "pages": {
+          "5": {
+            "description": "§1 Topos multigaloisiens — Prop 1.1",
+            "quality": {
+              "length": 2232,
+              "line_count": 50,
+              "content_words": 181,
+              "unique_content_words": 73,
+              "has_latex": true,
+              "latex_inline_count": 32,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 2,
+              "formatting_commands": 0,
+              "content_commands": 41,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 7
+            },
+            "reference_match": {
+              "best_page": "6",
+              "seq_score": 0.252,
+              "word_score": 0.2899,
+              "combined_score": 0.2709,
+              "search_pages": [
+                "1",
+                "2",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13"
+              ],
+              "top_matches": [
+                [
+                  "6",
+                  {
+                    "seq_score": 0.252,
+                    "word_score": 0.2899,
+                    "combined": 0.2709
+                  }
+                ],
+                [
+                  "7",
+                  {
+                    "seq_score": 0.043,
+                    "word_score": 0.1518,
+                    "combined": 0.0974
+                  }
+                ],
+                [
+                  "8",
+                  {
+                    "seq_score": 0.0657,
+                    "word_score": 0.0912,
+                    "combined": 0.0785
+                  }
+                ],
+                [
+                  "13",
+                  {
+                    "seq_score": 0.0428,
+                    "word_score": 0.0866,
+                    "combined": 0.0647
+                  }
+                ],
+                [
+                  "11",
+                  {
+                    "seq_score": 0.0378,
+                    "word_score": 0.0902,
+                    "combined": 0.064
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "50": {
+            "description": "§7 Reformulation bordélique — dense math",
+            "quality": {
+              "length": 2465,
+              "line_count": 57,
+              "content_words": 183,
+              "unique_content_words": 64,
+              "has_latex": true,
+              "latex_inline_count": 33,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 10,
+              "formatting_commands": 2,
+              "content_commands": 133,
+              "formatting_ratio": 0.015,
+              "french_math_terms": 1
+            },
+            "reference_match": {
+              "best_page": "35",
+              "seq_score": 0.0148,
+              "word_score": 0.0605,
+              "combined_score": 0.0376,
+              "search_pages": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40"
+              ],
+              "top_matches": [
+                [
+                  "35",
+                  {
+                    "seq_score": 0.0148,
+                    "word_score": 0.0605,
+                    "combined": 0.0376
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0253,
+                    "word_score": 0.0422,
+                    "combined": 0.0337
+                  }
+                ],
+                [
+                  "36",
+                  {
+                    "seq_score": 0.0081,
+                    "word_score": 0.0588,
+                    "combined": 0.0335
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0253,
+                    "word_score": 0.0412,
+                    "combined": 0.0333
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0229,
+                    "word_score": 0.0333,
+                    "combined": 0.0281
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "52": {
+            "description": "§7 late — continued",
+            "quality": {
+              "length": 2446,
+              "line_count": 49,
+              "content_words": 183,
+              "unique_content_words": 75,
+              "has_latex": true,
+              "latex_inline_count": 24,
+              "unclear_count": 3,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 92,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "37",
+              "seq_score": 0.1171,
+              "word_score": 0.138,
+              "combined_score": 0.1276,
+              "search_pages": [
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42"
+              ],
+              "top_matches": [
+                [
+                  "37",
+                  {
+                    "seq_score": 0.1171,
+                    "word_score": 0.138,
+                    "combined": 0.1276
+                  }
+                ],
+                [
+                  "38",
+                  {
+                    "seq_score": 0.0267,
+                    "word_score": 0.0745,
+                    "combined": 0.0506
+                  }
+                ],
+                [
+                  "42",
+                  {
+                    "seq_score": 0.0136,
+                    "word_score": 0.0656,
+                    "combined": 0.0396
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0108,
+                    "word_score": 0.0646,
+                    "combined": 0.0377
+                  }
+                ],
+                [
+                  "40",
+                  {
+                    "seq_score": 0.0202,
+                    "word_score": 0.0508,
+                    "combined": 0.0355
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          },
+          "54": {
+            "description": "§8 Réflexion taxonomique — strong match",
+            "quality": {
+              "length": 2910,
+              "line_count": 37,
+              "content_words": 259,
+              "unique_content_words": 91,
+              "has_latex": true,
+              "latex_inline_count": 44,
+              "unclear_count": 0,
+              "diagram_count": 0,
+              "margin_count": 0,
+              "formatting_commands": 0,
+              "content_commands": 100,
+              "formatting_ratio": 0.0,
+              "french_math_terms": 3
+            },
+            "reference_match": {
+              "best_page": "38",
+              "seq_score": 0.3801,
+              "word_score": 0.3657,
+              "combined_score": 0.3729,
+              "search_pages": [
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45",
+                "46"
+              ],
+              "top_matches": [
+                [
+                  "38",
+                  {
+                    "seq_score": 0.3801,
+                    "word_score": 0.3657,
+                    "combined": 0.3729
+                  }
+                ],
+                [
+                  "39",
+                  {
+                    "seq_score": 0.0291,
+                    "word_score": 0.0885,
+                    "combined": 0.0588
+                  }
+                ],
+                [
+                  "44",
+                  {
+                    "seq_score": 0.0171,
+                    "word_score": 0.0839,
+                    "combined": 0.0505
+                  }
+                ],
+                [
+                  "41",
+                  {
+                    "seq_score": 0.0156,
+                    "word_score": 0.0815,
+                    "combined": 0.0486
+                  }
+                ],
+                [
+                  "37",
+                  {
+                    "seq_score": 0.0381,
+                    "word_score": 0.0518,
+                    "combined": 0.0449
+                  }
+                ]
+              ]
+            },
+            "has_reference": true
+          }
+        },
+        "summary": {
+          "n_pages_aligned": 4,
+          "avg_combined_score": 0.2022,
+          "avg_seq_score": 0.191,
+          "avg_word_score": 0.2135,
+          "total_unclear": 3,
+          "avg_formatting_ratio": 0.004,
+          "avg_content_words": 202,
+          "per_page": [
+            {
+              "page": 5,
+              "combined": 0.2709,
+              "seq": 0.252,
+              "word": 0.2899,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 181
+            },
+            {
+              "page": 50,
+              "combined": 0.0376,
+              "seq": 0.0148,
+              "word": 0.0605,
+              "unclear": 0,
+              "formatting_ratio": 0.015,
+              "content_words": 183
+            },
+            {
+              "page": 52,
+              "combined": 0.1276,
+              "seq": 0.1171,
+              "word": 0.138,
+              "unclear": 3,
+              "formatting_ratio": 0.0,
+              "content_words": 183
+            },
+            {
+              "page": 54,
+              "combined": 0.3729,
+              "seq": 0.3801,
+              "word": 0.3657,
+              "unclear": 0,
+              "formatting_ratio": 0.0,
+              "content_words": 259
+            }
+          ]
+        },
+        "metadata": {
+          "prompt_style": "two-pass",
+          "model": "pro",
+          "thinking_level": "medium",
+          "use_context": null
+        }
+      }
+    }
+  }
+}

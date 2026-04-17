@@ -1,0 +1,648 @@
+{
+  "latex-direct-fewshot__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 5,
+      "overall": 4,
+      "notes": "The transcription is highly accurate and clean, but it only covers the first portion of the provided reference text, omitting the latter half starting from Proposition 1.4.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical logic well but corresponds to a different page (p. 50) than the provided reference text (p. 25-26), making completeness impossible to evaluate against the provided reference. The transcription quality itself is high for handwritten mathematical text.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 1,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription captures a completely different section of the manuscript than the provided reference text, making a direct comparison of content impossible. The transcription itself contains significant 'unclear' markers and appears to be a different page or draft segment.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription struggles with Grothendieck's idiosyncratic handwriting, leading to several misread words and hallucinated terms. It also cuts off significantly earlier than the provided reference text.",
+      "status": "success"
+    }
+  },
+  "latex-direct__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is accurate in its rendering of the text and math it covers, but it is highly incomplete, capturing only the first section of the provided reference text.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription appears to be from a different page or section of the manuscript than the provided reference text, making direct comparison difficult. The transcription contains significant hallucinations (e.g., 'le de-nice de') and struggles with the legibility of the handwritten mathematical notation.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription captures a different page/section of the manuscript than the provided reference text, making direct comparison difficult. The transcription contains significant hallucinations and meta-commentary ('je pense cela') not present in the source material.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general flow but suffers from significant hallucinations (e.g., 'K' instead of 'L') and stops abruptly, missing more than half of the provided reference text.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__flash-lite__low__pdf__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 5,
+      "overall": 4,
+      "notes": "The transcription is highly accurate and clean, but it only covers the first portion of the provided reference text, omitting Proposition 1.4 through 1.11. The use of calligraphic E is a stylistic choice consistent with mathematical notation.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 1,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription does not match the provided reference text at all, likely because it is reading a different page of the manuscript. While the mathematical notation is internally consistent, it fails to capture the content of the provided reference.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription fails to capture the actual content of the provided reference text, appearing to hallucinate or transcribe a different section of the manuscript. The mathematical notation is inconsistent and the logical flow does not match the reference.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription struggles with Grothendieck's specific notation and handwriting, leading to significant misinterpretations of mathematical terms and incomplete sentences. While readable, it requires substantial correction to be mathematically accurate.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__flash-lite__low__png150__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 5,
+      "overall": 4,
+      "notes": "The transcription is highly accurate and clean, though it only covers a small portion of the provided reference text, omitting Proposition 1.3 and everything following it.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making a direct comparison difficult. While the mathematical notation is generally well-transcribed, the content mismatch significantly impacts the completeness score.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general mathematical spirit but fails to align with the specific content of the provided reference text, likely due to the VLM hallucinating or transcribing a different section of the manuscript. Mathematical notation is inconsistent with the reference.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the initial sections but fails significantly on completeness, ending abruptly and including several '[unclear]' placeholders. While the mathematical notation is generally consistent, the transcription misses large portions of the provided reference text.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 5,
+      "overall": 3,
+      "notes": "The transcription is highly accurate in its rendering of the text and math it covers, but it is significantly incomplete, capturing only the first section of the provided reference.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical logic well but covers a different page/section of the manuscript than the provided reference text, making completeness low. The transcription is accurate in its own context but lacks the structural coherence of the reference.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription captures only a small fragment of the reference text and contains several [unclear] placeholders. While the mathematical notation is reasonably consistent with the reference, the significant lack of content and incomplete sentences make it poor for research purposes.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general flow but suffers from significant hallucinations (e.g., 'K' instead of 'L') and omits large portions of the text. Mathematical notation is inconsistent with the reference, though readable.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__flash-lite__low__png300__1img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 5,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is highly accurate for the text and math it covers, but it stops abruptly after Proposition 1.2, missing the majority of the provided reference text.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription fails to capture the actual content of the provided reference text, appearing to transcribe a different section or page of the manuscript. While the mathematical notation is legible, the lack of correspondence to the reference material makes it unusable for this evaluation.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 2,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making a direct comparison difficult. It contains significant hallucinations (English phrases like 'that, it seems') and fails to capture the technical depth of the reference material.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general structure but suffers from significant hallucinations and misinterpretations of mathematical notation compared to the reference. It is incomplete, cutting off well before the end of the provided reference text.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__pro__medium__pdf__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is highly accurate for the text it covers, but it only transcribes the first page of the provided reference, missing a significant portion of the content.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription is accurate in its own right but covers a different section of the manuscript than the provided reference text, leading to a low completeness score. The mathematical notation is consistent and well-transcribed despite the discrepancy in content.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate in its interpretation of the handwritten French and mathematical notation, though it covers only a small portion of the provided reference text. The use of LaTeX is well-executed, though some minor transcription errors exist in the bracketed unclear sections.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate in capturing the mathematical content and French text, though it is incomplete as it cuts off significantly earlier than the provided reference text.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__pro__medium__png150__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate for the text it covers, but it is incomplete as it stops early and fails to transcribe the full content of Proposition 1.3.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical logic well but covers only a small fragment of the provided reference text, likely due to the VLM focusing on a specific page or section.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical essence well but covers only a small fragment of the provided reference text, leading to low completeness. The use of calligraphic notation (E vs E_script) is acceptable given the handwritten source.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is accurate for the portion it covers, but it stops abruptly after the first few paragraphs, missing the majority of the provided reference text.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__pro__medium__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is highly accurate for the text it covers, but it only captures a small fraction of the provided reference material. The inclusion of marginal notes from the manuscript is a helpful feature.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making a direct comparison difficult. While the mathematical notation is generally clear, the transcription is incomplete relative to the provided reference and contains some unclear segments.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is accurate in its rendering of the handwritten French and math, but it covers only a small fragment of the provided reference text, leading to low completeness.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is accurate in its interpretation of the French and mathematical notation, but it covers only a small fraction of the provided reference text, ending abruptly.",
+      "status": "success"
+    }
+  },
+  "text-first-fewshot__pro__medium__png300__1img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate for the text it covers, but it is incomplete as it stops after Definition 1.2 and misses the latter half of the provided reference text.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical logic well but covers a different page/section of the manuscript than the provided reference text, making completeness low. The use of marginal notes in the transcription is helpful but creates a fragmented layout.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate in its French and mathematical notation, though it only covers a small fragment of the provided reference text. The use of calligraphic E instead of standard E is a minor stylistic choice consistent with Grothendieck's handwriting.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate for handwriting, though it misses significant portions of the text compared to the reference and contains a few [unclear] tags.",
+      "status": "success"
+    }
+  },
+  "text-first__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 3,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the core mathematical structure well but suffers from significant omissions of text and several misread French phrases (e.g., 'mieux sûr' instead of 'moins sûr'). It is a useful draft but requires substantial manual correction to match the source content.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription appears to be from a different page or section of the manuscript than the provided reference text, making direct comparison difficult. The transcription contains significant gaps and misinterpretations of the mathematical notation compared to the standard Grothendieck style.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 2,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making it impossible to evaluate content alignment. While the mathematical notation is readable, the transcription is incomplete and fails to match the provided reference material.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription suffers from significant hallucinations and misinterpretations of the handwritten text, particularly in the mathematical notation and technical terminology. It fails to capture the majority of the provided reference text, ending prematurely.",
+      "status": "success"
+    }
+  },
+  "text-first__pro__medium__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate for the text present, but it only covers a small portion of the provided reference text. The inclusion of marginal notes from the manuscript is a positive feature.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical logic well but covers a different section of the manuscript than the provided reference text, making completeness low. The use of LaTeX is good, though some segments remain marked as unclear.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription captures the mathematical essence well despite minor notation shifts (E vs script E). It is incomplete as it only covers a small portion of the provided reference text.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 4,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the French text well but struggles with mathematical notation consistency and stops abruptly, missing a significant portion of the source text.",
+      "status": "success"
+    }
+  },
+  "text-inline-fewshot__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate in its text and mathematical notation, though it only covers the first section of the provided reference text. The use of LaTeX formatting is excellent and appropriate for mathematical manuscripts.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical content accurately but represents a different page or section of the manuscript than the provided reference text, leading to a low completeness score. The transcription quality itself is high for handwritten French mathematical text.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 4,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general mathematical context but covers a different section of the manuscript than the provided reference text, leading to a mismatch in content. Mathematical notation is generally readable but contains some transcription errors in symbols and indices.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the initial paragraphs but misses a significant portion of the text and mathematical derivations present in the reference. It also introduces some hallucinations (e.g., 'C.N.B.' expansion) and misinterprets some symbols.",
+      "status": "success"
+    }
+  },
+  "text-inline__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription captures the mathematical content well but is significantly incomplete, covering only the first section of the provided reference. It includes some hallucinated or unclear segments in the transcription of the handwritten notes.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 1,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription does not correspond to the provided reference text, likely because the VLM transcribed a different page of the manuscript. The mathematical notation is inconsistent with the reference, and the content is entirely different.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making direct comparison difficult. It suffers from multiple [unclear] tags and fails to capture the technical depth of the mathematical definitions present in the source.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription struggles with Grothendieck's specific terminology and handwriting, leading to several misread words and incomplete mathematical definitions. It captures the general structure but misses significant portions of the text and contains hallucinated or garbled phrases.",
+      "status": "success"
+    }
+  },
+  "two-pass-fewshot__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 3,
+      "formatting_quality": 4,
+      "overall": 4,
+      "notes": "The transcription is highly accurate in its rendering of the French text and mathematical notation, though it is incomplete as it cuts off after Proposition 1.3. The use of LaTeX formatting is excellent and improves readability.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making direct comparison difficult. While the mathematical notation is generally consistent, the transcription contains several 'unclear' placeholders and lacks the structural coherence of the original text.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making direct comparison difficult. The transcription contains significant hallucinations and misinterpretations of the mathematical notation.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general structure but suffers from significant word-level errors, misinterpretations of mathematical notation, and stops abruptly, missing the majority of the provided reference text.",
+      "status": "success"
+    }
+  },
+  "two-pass__flash-lite__low__png300__0img": {
+    "5": {
+      "text_accuracy": 4,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures the general structure well but suffers from significant hallucinations in the 'Démonstration' section (e.g., 'je vois mieux sûr' instead of 'je suis moins sûr') and misses a large portion of the provided text.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 1,
+      "formatting_quality": 3,
+      "overall": 2,
+      "notes": "The transcription appears to be from a different page or section of the manuscript than the provided reference text, making it impossible to evaluate content alignment. The transcription itself contains significant OCR hallucinations and lacks the structural coherence of the mathematical argument.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 1,
+      "math_accuracy": 2,
+      "completeness": 1,
+      "formatting_quality": 2,
+      "overall": 1,
+      "notes": "The transcription is largely incoherent and fails to capture the mathematical content of the provided reference text, appearing to hallucinate introductory text not present in the source.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 2,
+      "math_accuracy": 2,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 2,
+      "notes": "The transcription suffers from significant hallucinations and misinterpretations of the handwritten text, particularly in the first paragraph where mathematical terms are garbled. It also cuts off prematurely compared to the provided reference.",
+      "status": "success"
+    }
+  },
+  "two-pass__pro__medium__png300__0img": {
+    "5": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is highly accurate for the text it covers, but it only captures the first section of the provided reference text, leading to a significant completeness deficit.",
+      "status": "success"
+    },
+    "50": {
+      "text_accuracy": 5,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 3,
+      "overall": 3,
+      "notes": "The transcription is highly accurate for the text and math it captures, but it covers a completely different page/section of the manuscript than the provided reference text, leading to a low completeness score.",
+      "status": "success"
+    },
+    "52": {
+      "text_accuracy": 3,
+      "math_accuracy": 3,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription captures a different section of the manuscript than the provided reference text, making direct comparison difficult. While the mathematical notation is consistent, the content is largely disjoint from the reference provided.",
+      "status": "success"
+    },
+    "54": {
+      "text_accuracy": 4,
+      "math_accuracy": 4,
+      "completeness": 2,
+      "formatting_quality": 4,
+      "overall": 3,
+      "notes": "The transcription is accurate in its interpretation of the handwriting but is significantly incomplete, covering only the first third of the provided reference text.",
+      "status": "success"
+    }
+  }
+}

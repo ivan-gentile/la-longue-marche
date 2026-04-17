@@ -1,0 +1,340 @@
+Section: § 20. — DIGRESSION : DESCRIPTION 2-ISOTOPIQUE DE LA
+G103d pages: 131-139
+
+--- G103d page 131 ---
+§ 20. — DIGRESSION : DESCRIPTION 2-ISOTOPIQUE DE LA
+CATÉGORIE DES SPHÈRES TOPOLOGIQUES
+Voici une façon de trouver une description 1-isotopique (et même 2-isotopique, il se
+trouve) en utilisant un groupe revêtement canonique eA0 de A0, s’insérant dans la suite
+exacte
+(62)
+1 →µ2(C) →eA0 →A0 →1,
+qui contient la suite exacte correspondante de sous-groupes
+(63)
+1 →µ2 →eSl(2, C) →f
+GP(1, C) →1
+où eSl(2, C) est formé des automorphismes semi-linéaires de C2 (pour un R-
+automorphisme ρ non précisé, id ou la conjugaison complexe τ), tels que
+l’automorphisme ρ-linéaire correspondant de V2 C2 ≃C soit l’identité si ρ = id
+et soit τ : z 7→z si ρ = τ i.e. indépendamment des cas, on considère un vectoriel
+unimodulaire V sur R, d’où VC sur C, avec une restriction de V2 VC à R, d’où une
+conjugaison complexe sur V2 VC et une base de V2 VC invariante par celle-ci - et on
+s’intéresse aux automorphismes ρ-linéaires (ρ ∈AutR C de VC qui sur V2 VC soient id
+ou la conjugaison complexe…)
+f
+GP(1, C)74 s’identifieaugroupedesautomorphismesconformesdelasphèredeRie-
+mann P 1
+C ≃P1(C2), i.e. des automorphismes de P 1
+C comme R-schéma.
+74N.B. f
+GP(1, C) est aussi le grupe des automorphismes R-linéaires de la R-algèbre M2(C) (et la classi-
+fication ∞-isotopique des 2-sphères équivaut donc à celle des algèbres simples de rang 4 sur une extension
+quadratique non précisée de C…)
+
+--- G103d page 132 ---
+On choisit ici X0 = P 1
+C, de sorte qu’on a une inclusion canonique
+f
+GP(1, C) ,→A0
+qui est (par ce qui précède (59)) une équivalence d’homotopie.
+Sauf erreur il en résulte que la classification des extensions du groupe topologique
+A0 par un groupe discret disons µ est équivalente (par le foncteur restriction, à la caté-
+gorie des extensions correspondantes pour GP(1, C), ce qui permet de construire eA0, à
+isomorphisme unique près).
+Ceci posé la donnée d’une surface compacte orientée X de genre 0, qui équivaut à
+celle d’un torseur [Isom(P1
+C, X)] sous A0, définit
+1◦) le torseur sous {±1} qui s’en déduit par χ : A0 →{±1} (qui est surjectif de
+noyau A◦
+0) et
+2◦) le groupoïde des relèvements de ce A0-torseur en un eA0-torseur, qui est un
+groupoïde connexe (= gerbe) lié par le lien abélien µ2(C) = {±1}
+|
+{z
+}
+µ
+, et sur lequel
+par suite Tors(µ) ≃Ens2 opère (c’est un 1-torseur sous la Gr-catégorie Tors(µ)).
+Associant ainsi à tout X le couple (ω, R) du µ-torseur associé ω (i.e. l’ensemble à 2 élé-
+ments des deux orientations de X, ou ce qui revient au même, le module des orientations
+de X), plus le µ-groupoïde R, on trouve un 2-foncteur de la 2-catégorie 2-isotopique des
+2-sphères topologiques dans la catégorie des couples (ω, R), et celui-ci est une équiva-
+lence de 2-catégorie.
+De ce point de vue on a envie de dire qu’elle est 3-fidèle, mais comme la surjectivité
+essentielle sur les objets est triviale, ilvaut mieux l’appeler 2-fidèle, et même(comme pour
+la décrire on a fait attention de respecter les π1 (en plus des π0) des composantes connexes
+duA0-torseurIsom(X0, X), quisontdesA◦
+0-torseursdoncàπ1 isomorpheàµ = {±1},
+il vaut encore mieux l’appeler 1-fidèle).
+Mais en fait elle est même 2-fidèle (en le sens correspondant) grâce au fait que
+(65)
+π2(A◦
+0)
+π2(GP(1, C))
+π2(S3/ ± 1) ≃π2S3 = 0
+∼
+∼
+Par contre elle n’est pas 3-fidèle, car
+(66)
+πi(A◦
+0)
+πi(S3)
+pour i ≥2
+∼
+127
+
+--- G103d page 133 ---
+et π0(S3) ≃Z(̸= 0) donc π3(A◦
+0) ≃Z ̸= 0.
+On cherche une description ∞-isotopique, qui tienne compte des groupes
+d’homotopie de tous ordres (à déterminer !) de A◦
+0 i.e. de S3 (ou encore Sl(2, C), ou
+de GP(1, C)). Au concours !
+Maisdéjàpourlamodestedescriptionproposéeàprétention1ou2-isotopique, faute
+d’avoir écrit les choses avec soin je ne suis pas trop sûr si la description donnée est bien
+correcte - je suis un peu inquiet du fait que je n’ai pas imposé de relations entre le µ-
+torseur w, et le µ-groupoïde R.
+Soit plus généralement un groupe topologique G ( eA0, ou f
+GP(1, C)) tel que G◦soit
+simplement connexe :
+(67)
+π1(G◦) = 0
+Soit
+(68)
+µ = Centre(G◦),
+Γ = G/G◦
+On suppose µ discret (donc G◦s’identifie au groupe revêtement universel de G◦/µ =
+H◦si H = G/µ).
+Alors l’extension de groupes topologiques G de Γ par G◦définit
+(69)
+Γ →Autext(G◦)(→Aut(µ))
+et l’ensemble des classes d’extensions correspondants à une opération extérieure donnée
+de Γ sur G◦est de façon naturelle un torseur sous H2(Γ, µ) (s’il n’est vide, ce qu’on a
+exclu par l’hypothèse de départ, en parlant de G…)
+Cette catégorie d’extension est d’ailleurs équivalente à celle des scindages d’une cer-
+taine Gr-catégorie définie par Sinh via (69) dont les π0 et π1 sont respectivement Γ est
+µ - laquelle est donc ici scindée par la donnée de l’extension G. Dans le cas qui nous
+intéresse, Γ ≃µ ≃{±1}, et cette extension est même scindée, et correspond à une
+opération d’ordre 2 de Γ sur G◦, dont je doute fort que ce soit un automorphisme in-
+térieur.
+En fait, j’ai l’impression que dans les deux cas qui nous occupent (f
+GP(1, C) et eA0)
+que (69) est un isomorphisme : Γ = {±1} ≃Autext(G◦).
+Ceci posé, la donné d’un torseur sous H = G/µ définit75
+75on suppose que Γ opère trivialement que µ i.e. µ ⊂Centre(G)
+128
+
+--- G103d page 134 ---
+1◦) un torseur sous Γ, grâce à H →Γ ≃H/H◦
+2◦) le groupoïde des relèvements des relèvements de ce torseur est un torseur sous G,
+qui est un µ-groupoïde connexe (sur lequel µ opère).
+Si on reprend en termes de fibrés sur un espace de base S, on trouve encore sur S
+(pour tout HS-torseur topologique) un couple (ω, R) d’un Γ-torseur et d’une µ-gerbe
+sur S, qui sont décrits, (à isomorphisme et à équivalence près) par H1(S, Γ) et H2(S, µ)
+respectivement76.
+On voudrait dégager des conditions sur G et sur S pour que l’application
+(70)
+H1(S, H) →H1(S, Γ) × H2(S, µ)
+soit bijective.
+Injectivité : si l’image d’un ξ ∈H1(S, H) dans H2(S, µ) est nulle, ξ se relève en un
+élément ˜ξ dans H1(S, eH = G), dont l’image dans H1(S, Γ) est la même que celle de ξ.
+Donc si elle est triviale, on voit que ˜ξ provient d’un ˜ξ0 ∈H2(S, G◦).
+Si on sait que H2(S, G◦) = {1}, on gagne. Par les marteaux-pilons d’homotopie, ça
+marche si ∃n ∈N avec :
+πi(G◦) = 0 si i ≤n (donc πi(B◦
+G) = 0 si i ≤n + 1)
+(dans le cas qui nous occupe on peut prendre n = 2) et S un CW-complexe de dimen-
+sion ≤n + 1.
+Par la surjectivité notons que pour un élément dans H2(S, µ), l’obstraction à ce qu’il
+se relève en un élément ξ dans H1(S, H) est dans H2(S, G) [par la suite exacte de coho-
+mologie associée à 1 →µS →GS →HS →1].
+Ilfautexprimerqu’unecertainegerbeliéepar gs estneutre-brr! Maispartonsplutôt
+de l’élément ω de H1(S, Γ), si l’extension de Γ par H◦est scindée, alors on peut trouver
+un ξ0 ∈H1(S, HS) qui donne naissance à ω.
+Elle a une certaine obstruction ρ0 dans H2(S, µ), et il s’agit de corriger ρ0 en ξ, de
+telle façon que l’obstruction devienne ρ ∈H2(S, µ) donnée.
+76N.B. ω ne dépend pas du choix de l’extension G de H par ? ≃π1(H◦) ; par contre R en dépend (et
+il faudrait voir comment).
+129
+
+--- G103d page 135 ---
+Utilisant ρ0 pour tordre HS en H′
+S, et (via l’opération de HS = GS/µS sur GS,
+compte tenu que µS ⊂Centre GS) pour tordre aussi GS et G′
+S, d’où
+1µ →G′
+S →H′
+S →1
+on trouve que les ξ ayant même image dans H1(s, Γ) que ξ0 correspond bijectivemment
+aux ξ′ ∈H1(S, H′
+S).
+Pour un tel ξ′, soit S′(ξ′) ∈H2(S, µ) l’obstruction à le relever dans H1(S, G′
+S) et
+S(ξ′) = S(ξ) l’obstruction à le relever dans H2(S, GS).
+Sauf erreur on a
+δ′(ξ′) = δ(ξ′) −ρ0
+i.e. δ(ξ′) = δ(ξ) = δ′(ξ′) + ρ0 et on veut δ(ξ) = ρ i.e. δ′(ξ′) = ρ −ρ0 et la question
+revient encore à la surjectivité de
+H1(S, H′
+S) →H2(S, µ)
+- je ne m’en tire pas. Il faudrait consulter des gens compétents, comme Giraud ou Larry
+Breen. On sent qu’il faudrait travailler avec un Gr-champ H de coefficients, d’invariants,
+π0 = Γ et π1 = µ, (mais pas nécessairement un champ de Picard !) et H1(S, H) ≃
+Classes d’applications de S dans BH, qui est un espace connexe avec π1(BH) ≃Γ et
+π2(BH) = µ.
+Ici la classe de Postnikov dans H3(Γ, µ) est nulle. [mais peut-être n’y a-t-il pas lieu
+trop sa raccrocher à cette hypothèse, correspondant à l’existence d’une extension G de
+H par π1(H◦) qui redonne l’extension universelle de H◦par π1(H◦)].
+On a un homomorphisme BH →BH qui induit un isomorphisme sur les πi pour
+i ≤2, et pour i ≤n (où n ≥2 est donné) si et seulement si πi(BH) = 0 pour
+2 < i ≤n, i.e. πi(H) = 0 pour 2 ≤i ≤n −1 (dans le cas qui nous intéresse H = A0,
+on peut prendre n = 3).
+Ceci implique que pour tout CW-complexe S de dimension ≤n, on a
+Hot(S, BH)
+∼
+−→Hot(S, BH)
+(Hot désignant les morphismes dans la catégorie homotopique non ponctuée) i.e.
+H1(S, H)
+∼
+−→H1(S, H)
+130
+
+--- G103d page 136 ---
+Mais si l’invariant de Postnikov-Sinh k ∈H3(Γ, µ) est nul, (ainsi qu l’action de Γ sur
+µ) alors sauf erreur BH s’identifie à un produit K(Γ, 1) × K(π, 2) (cette “idetification”
+dépendant justement du choix des H2(π1, π2) ≃H2(Γ, µ) !) et par suite
+H1(S, H) ≃H1(S, Γ) × H2(S, µ)
+pour tout espace S donc pour S un CW-complexe de dimension ≤n
+(71)
+H1(S, H)
+∼
+−→H1(S, Γ) × H2(S, µ)
+Donc la classification des fibrés en sphères topologiques sur un espace topologique S,
+pour un CW-complexe S de dimension ≤3, marche bel et bien.
+Bien entendu, le fait qu’on soit obligé ici à se borner à S de dim ≤3 tient au fait que
+nous n’avons trouvé (via H) qu’une description 2-isotopique (et non ∞-isotopique) de
+la catégorie des 2-sphères topologiques.
+Je voudrais reprendre la classification pour un CW-complexe S quelconque, en util-
+isant le fait que l’inclusion
+f
+GP(1, C) ,→A0
+est une équivalence d’homotopie, et induit donc une bijection
+H1(S, f
+GP(1, C)) →H1(S, A0)
+et même une ∞-équivalence des ∞-catégories des torseurs sur S de groupe f
+GP (corre-
+spondant aux fibrés en sphères conformes, en droites projectives sur une R-algèbre non
+précisée isomorphe à C) et de groupe A0 - correspondant aux fibrés en sphères sur S.
+Le premier invariant d’un fibré de groupe f
+GP est un torseur η sous (Z/2Z)S, défini
+(à isomorphisme non unique près) par un χ ∈H1(S, Z/2Z) i.e. un revêtement de degré
+2. La donnée de η revient à la donnée d’une système T d’entiers tordus sur S.
+Ce torseur servira à tordre C (via l’opération fidèle de Z/2Z sur la R-extension C),
+d’où un fibré localement constant en extension quadratiques de R, soit C, et on [?] S
+par le faisceau CS (ou C) des sections continues de C (ce qui est une façon de tordre
+GP(1, C)S ou GP(1, C)S = GP(1, C)) et il s’agit de décrire de façon compréhensible
+- en passant au besoin aux n-isotopiques, pour n = . . . - la catégorie (dépendant du
+choix de χ via C) des algèbres d’Azumaya de rang 4 sur C, ou encore des fibrés en droites
+projectives sur C, ou des torseurs sous GP(1, C).
+131
+
+--- G103d page 137 ---
+Or utilisant la suite exacte
+1 →µ2S →Sl(2, CS) →GP(1, CS) →1
+on associe à un objet de la catégorie - disons un torseur sous GP(1, CS) - la catégorie
+fibrée (sur des ouverts variables de S) de ces relèvements à Sl(2, CS), qui est une gerbe G
+liée par µ2. C’est cette gerbe qui est le deuxième invariant complet - plus fin que sa classe
+d’équivalence qui s’identifie à un ξ ∈H2(S, µ2) = H2(S, {±1}) (jouant le rôle d’un
+groupe de Brauer).
+Un isomorphisme de fibrés, d’invariants (T, G)
+≃
+(T ′, G′), définira un iso-
+morphisme T
+≃T ′ (d’où un isomorphisme CT
+≃CT ′ d’où un isomorphisme
+GP(1, CT) ≃GP(1, CT ′)) et une équivalence de gerbes.
+Il faudrait expliciter que pour deux isomorphismes f et g des torseurs, d’où
+fT, gT : T
+T ′
+fG, gG : G
+G′
+∼
+∼
+∼
+∼
+etpourtoutehomotopieht (0 ≤t ≤1)def àg ontrouvefT = gT etunisomorphisme
+h∗: fG
+∼
+−→gG d’équivalence des gerbes, qui ne dépend que de la classe d’homotopie
+de cette homotopie.
+Ontrouveainsiun2-foncteurdela2-catégoriedestorseurssurS degroupe f
+GP(1, C)
+vers la 2-catégorie formée des couples (T, G) d’un système d’entiers tordus (⇔d’un
+torseur sur S de groupe Z/2Z) et d’une µ2(C)-gerbe G sur S.
+Ce 2-foncteur, sauf erreur, est 2-fidèle sous les conditions explicitées plus haut
+(dim S ≤4) et est 3-fidèle (i.e. l’application injective
+H1(S, f
+GP) →H1(S, Z/2Z) × H2(S, µ2)
+est surjective) si on a même dim S ≤3.
+On s’attend qu’elle soi1-fidèle dèsquedim S ≤5, 0-fidèledès quedim S ≤6 (??…).
+N.B. : l’assertion “0-fidèle” signifie que si ci-dessus on a deux homotopies h, h′, de f
+à g, telles que h∗= h′
+∗alors h et h′ sont homotopes.
+La condition “1-fidèle” signifie 0-fidèle et que tout isomorphisme de fG à gG est de
+la forme h∗(avec h bien déterminé à homotopie près, par la condition précédente de
+0-fidélité).
+La condition 2-fidèle signifies de plus que pour toute ϕ : T
+∼
+−→T ′, ψ : G
+≈
+−→G′,
+il existe un isomorphisme de fibrés f tel que ϕ = fT, et un isomorphisme ψ
+∼
+−→fG.
+132
+
+--- G103d page 138 ---
+Enfin 3-fidèle signifie que de plus, pour tout couple T, G, ∃T ′, G′ provenant d’un
+fibré, un isomorphisme T
+∼
+−→T ′ et une équivalence G
+∼
+−→G′.
+Ces notions catégoriques doivent interpréter simplement que, si on regarde H =
+f
+GP(1, C) →H - ou H est déduite de H en “tuant les groupes d’homotopie πi pour
+i ≥2”, de sorte que α induit un isomorphisme des πi pour i ≤1 (et même pour i ≤n
+si πi(H) = 0 pour 1 < i ≤n) d’où Bα : BH →BH77 (induisant un isomorphisme des
+πi pour i ≤n+1), alors prenant pour un espace donné S, l’application correspondante
+des espaces d’applications continues
+Cont(S, BH) →Cont(S, BH)
+celle-ci induit un isomorphisme pour les πi (0 ≤i ≤2).
+Il semblerait que 0-fidèle est une condition d’injectivité pour les π2, 1-fidèle la bijec-
+tivité pou les π2, l’injectivité pour les π1, 2-fidèle la bijectivité π2 et π3 et l’injectivié pour
+π0, 3-fidèle la bijectivité pour π0, π1, π2.
+Comme πi(Cont(S, B)) ≃π0(S × Si, B), il semblerait qu’on est conduit, pour
+la 0-fidèlité, de faire l’hypothèse draconienne que S × S2 de dim ≤4 pour la 1-fidèlite
+que S × S2 de dim ≤3 i.e. dim S ≤1 ?, (qui impliquerait alors la 3-fidélité…)
+Prenons l’analogue arithmétique d’une description (plus ou moins “fidèle”) de na-
+ture “profinie” des droites projectives (éventuellement tordues) définies sur un corps de
+type fini K sur Q (plus généralement sur un schéma S quelconque), celle-ci forment à
+priori une catégorie sans plus - un groupoïde (pas nécessairement connexe) - je ne sais pas
+en faire une 2-catégorie raisonnablement, pour deux isomorphismes f, g (= f ◦u) de
+tels torseurs, définir les homotopismes de f à g, i.e. pour une “forme” G de GP(1)S et
+une section u de G, définir les “homotopies” de u à l’identité, ou plutôt une notion qui
+remplace la notion de classe d’homotopie de telles homotopies. Et serait sans doute un
+relèvement de u en une section du revêtement simplement connexe eG de G !
+Je tiens là quelque chose d’assez amusant, mais que je ne vais pas poursuivre - de
+toute façon il est clair que la “description” des droites projectives (sur un corps de type
+fini disons) à laquelle on aboutit, n’a rien de fidèle - par même 0-fidèle !
+Ainsi tous les automorphismes de P1
+K provenant de Sl(2, K) seraient identifiés à
+l’identité - c’est un peu brutal ! Mais je me rends compte que le travail conceptuel autour
+77N.B. BH est déduite de BH en tuant les πi pour i ≥3
+133
+
+--- G103d page 139 ---
+du thème “Brauer” n’est pas terminé - qu’il y a à comprendre des choses pour l’étude de
+la catégorie (qui devrait être une 2-catégorie !) des Algèbres d’Azumaya de degré fixé (ici
+4)…
+134

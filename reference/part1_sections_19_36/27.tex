@@ -1,0 +1,190 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 27. --- CHANGEMENT DE TYPE $(g,\nu)$~: \\ a) BOUCHAGE DE TROUS}\thispagestyle{empty}
+\addcontentsline{toc}{section}{27. Changement de type $(g,\nu)$~: a) Bouchage de trous (et diagrammes remarquables p.174)}
+\label{sec:27}
+\section*{}
+
+Je vais changer de terminologie, en appelant prédiscrétification ce que j'avais appelé (un peu péjorativement~!) quasi-discrétification. En effet, on prévoit qu'une prédiscrétification --- compatible avec $\Sigma$ --- qui revient moralement au plongement (modulo la conjugaison complexe) dans $\mathbf{C}$ de la clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$ canoniquement associé à $(\pi,\Sigma (\subset\hat{\hat{\mathfrak{T}}}(\pi)))$, donne naissance, dès que l'action extérieure arithmétique de $\boldsymbol{\Gamma}_\Sigma= \mathcal{N}_\Sigma/\Sigma$ sur $\pi$ est relevée en un germe d'action sur $\pi$, à une vraie discrétification de $\pi$. Itou pour les prédiscrétifications orientées. Le groupe $\mathcal{N}_\Sigma/\Sigma$ mérite aussi un nom --- je vais l'appeler le \emph{groupe de Teichmüller arithmétique} associé à $(\pi,\Sigma)$\footnote{moralement, $\Sigma=\hat{\mathfrak{T}}^+$, mais il n'y a pas de $\hat{\mathfrak{T}}^!$}, et ses éléments seront appelés les automorphismes arithmétiquement extérieurs de $\pi$ --- déduits d'un automorphisme extérieur (normalisant $\Sigma$) en négligeant les automorphismes extérieurs ``géométriques'' (i.e. justement ceux dans $\Sigma$) --- comme les automorphismes extérieurs ordinaires étaient décrits en négligeant les automorphismes intérieurs de $\pi$. On fera attention que le caractère ``multiplicateur''
+$$
+\chi:\hat{\hat{\mathfrak{T}}}(\pi)\to \hat{\mathbf{Z}}^*
+$$
+est trivial sur $\Sigma$, par construction de $\Sigma$, et passe à $\boldsymbol{\Gamma}_\Sigma$~:
+$$
+\chi_{\Sigma}:\boldsymbol{\Gamma}_\Sigma \to \hat{\mathbf{Z}}^*.
+$$
+Bien sûr, ce caractère s'appelera encore ``multiplicateur'', ou ``caractère cyclotomique''. Si notre conjecture fondamentale est vraie, %${}^1$, 
+ce caractère identifie $(\boldsymbol{\Gamma}_\Sigma)_{\text{ab}}$ à $\hat{\mathbf{Z}}^*$. Par contre, si $I=I(\pi)$, l'homomorphisme canonique
+$$
+\hat{\hat{\mathfrak{T}}}\to \mathfrak{S}_I
+$$
+n'est pas trivial sur $\Sigma$, mais induit un homorphisme surjectif~:
+$$
+\Sigma\to \mathfrak{S}_I,
+$$
+d'où un sous-groupe $\Sigma^!$ tel que\footnote{moralement, $\Sigma^! \isom \hat{\mathfrak{T}}^{!+}$}
+$$
+\Sigma/\Sigma^!\isommap \mathfrak{S}_I.
+$$
+On voit de suite que tout $\gamma\in\hat{\hat{\mathfrak{T}}}$ qui normalise $\Sigma$ normalise $\Sigma^!=\Sigma\cap\hat{\hat{\mathfrak{T}}}^!$, d'où $\Sigma^!$ est aussi invariant dans $\mathcal{N}_\Sigma$. Soit $\mathcal{N}_\Sigma^!=\mathcal{N}_\Sigma\cap\hat{\hat{\mathfrak{T}}}^!$, on a un diagramme cartésien de sous-groupes de $\hat{\hat{\mathfrak{T}}}$~:
+\[\begin{tikzcd}
+	{\mathcal{N}^!} && \mathcal{N} \\
+	\\
+	{\Sigma^!} && \Sigma
+	\arrow["{\boldsymbol{\Gamma}_\Sigma}", hook, from=3-1, to=1-1]
+	\arrow["{\mathfrak{S}_I}", hook, from=1-1, to=1-3]
+	\arrow["{\mathfrak{S}_I}", hook, from=3-1, to=3-3]
+	\arrow["{\boldsymbol{\Gamma}_\Sigma}"', hook, from=3-3, to=1-3]
+\end{tikzcd}\]
+donnant un homomorphisme injectif $\mathcal{N}/\Sigma^!\isommap \mathcal{N}/\mathcal{N}^!\times\mathcal{N}/\Sigma$ (ici $\mathcal{N}/\mathcal{N}^!=\mathfrak{S}_I$, $\mathcal{N}/\Sigma=\boldsymbol{\Gamma}_\Sigma$ et $\Sigma/\Sigma^! \isommap \mathcal{N}/\mathcal{N}^! \isom \mathfrak{S}_I$), dont on voit de suite qu'il est bijectif
+$$
+\mathcal{N}/\Sigma^! \isommap \mathcal{N}/\mathcal{N}^!\times\mathcal{N}/\Sigma \isom 
+\mathfrak{S}_I\times\boldsymbol{\Gamma}_\Sigma,
+$$
+et on a par suite aussi
+$$
+\mathcal{N}^!/\Sigma^! \isommap \mathcal{N}/\Sigma=\boldsymbol{\Gamma}_\Sigma,
+$$
+i.e. le groupe $\boldsymbol{\Gamma}_\Sigma$ des automorphismes arithmétiquement extérieurs de $(\pi,\Sigma)$ peut se décrire aussi via les automorphismes extérieurs induisant l'identité sur $I$.
+
+Dans le cas $(g,\nu)=(0,3)$, on a $\Sigma^!=\{1\}$, donc $\Sigma \isommap \mathfrak{S}_3$.  $\mathcal{N}$ est le normalisateur de $\mathfrak{S}_3$ dans $\hat{\hat{\mathfrak{T}}}$, $\mathcal{N}^! \isommap \boldsymbol{\Gamma}_\Sigma$ est son centralisateur, et $\mathcal{N}$ s'identifie au produit direct des deux.
+
+Soit maintenant $I'\subset  I$, $\nu'={\card}(I')$, et considérons le groupe extérieur $\pi'$ déduit de $\pi$ par ``bouchage de trous'' en $I\setminus I'$, d'où un homomorphisme
+$$
+\pi\to \pi'.
+$$
+Considérons les bases de $\pi$ pour lesquelles, les $\nu'$ premiers $l_i$ soient dans des groupes à lacets $L_{i'}$ ($i'\in I'$) --- on les appelle adaptées à $I'$; elles forment un torseur $\subset {\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)$ sous le sous-groupe $\hat{\hat{\mathfrak{S}}}_{g;(\nu,\nu')}$ de $\hat{\hat{\mathfrak{S}}}_{g,\nu}={\Aut}_{\operatorname{lac}} (\hat{\pi}_{g,\nu})$, formé des $u\in\hat{\hat{\mathfrak{S}}}_{g,\nu}$ dont l'image dans $\mathfrak{S}_I$ invarie l'ensemble des $\nu'$ premiers éléments (ou encore l'ensemble complémentaire des $\nu-\nu'$ derniers).
+
+Pour une telle base, on trouve une base correspondante de $\pi'$.  La donnée de $(\pi,I')$ équivaut à celle d'un torseur sous $\hat{\hat{\mathfrak{S}}}_{g;(\nu,\nu')}$, celle d'un $\pi'$ à la donnée d'un torseur sous $\hat{\hat{\mathfrak{S}}}_{g,\nu'}$, et le passage de $\pi$ à $\pi'$ est décrit par le changement de groupe d'opérateurs\footnote{D'où aussi~: toute base, toute discrétification, discrétification orientée de $\pi$ en définit une de $\pi'$, itou pour les classes de $\pi, \pi'$ conjugaison i.e. pour les prédiscrétifications (éventuellement orientées) strictes, et aussi pour les adhérences des classes i.e. pour les prédiscrétifications et prédiscrétifications orientées. Il n'y a que le cas des arithmétisations qui demande une analyse plus fine.}
+$$
+\hat{\hat{\mathfrak{S}}}_{g;(\nu,\nu')}\to \hat{\hat{\mathfrak{S}}}_{g,\nu'}.
+$$
+Cet homomorphisme envoie $\hat{\mathfrak{S}}_{g;(\nu,\nu')}$ dans $\hat{\mathfrak{S}}_{g,\nu'}$, et même $\mathfrak{S}_{g;(\nu,\nu')}$ dans $\mathfrak{S}_{g,\nu'}$, aussi $\pi$ dans $\pi'$.  Il s'ensuit que toute prédiscrétification de $\pi$ en définit une de $\pi'$, de même pour les prédiscrétifications strictes, discrétifications, bases extérieures ``adaptées à $I'$ ''. Enfin, si on a une  ``préarithmétisation'' %${}^2$
+de $\pi$, i.e. un $\Sigma\subset \hat{\hat{\mathfrak{T}}}(\pi)$, en déduit-on une préarithmétisation de $\pi'$ --- i.e. (par exemple) si deux prédiscrétifications de $\pi$ sont compatibles i.e. ont le même groupe $\Sigma\subset \hat{\hat{\mathfrak{T}}}(\pi)$ d'automorphismes extérieurs, en est-il de même de leurs images~?
+
+Pour y voir plus clair, on va écrire sous forme de diagramme les ensembles remarquables associés à $\pi$, et ceci de deux fa\c{c}ons, l'une sans utiliser de structure particulière sur $I=I(\pi)$, l'autre en utilisant un ordre total, ce qui permet, dans le torseur ${\Isom}_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)$ sous $\hat{\hat{\mathfrak{S}}}_{g,\nu}$, de définir le sous-torseur sous $\hat{\hat{\mathfrak{S}}}^!_{g,\nu}$ qu'on peut noter ${\Isom}^!_{\operatorname{lac}}(\hat{\pi}_{g,\nu},\pi)$.
+\par\noindent\hspace*{-1.4cm}\vbox{
+\[\begin{tikzcd}
+	& {\text{Bases de}~(\pi) \isom \Isom_{\text{lac}}(\hat{\pi}_{g, \nu}, \pi)} \\
+	& {[\text{Bases de}^!(\pi) \isom \Isom^!_{\text{lac}}(\hat{\pi}_{g, \nu}, \pi)]} \\
+	{\begin{matrix} \text{discrétifications orientées}~(\pi) \\ \isom {\rm Isom}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathfrak{S}^+_{g,\nu} \\ \isom {\rm Isom}^!_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathfrak{S}^{!+}_{g,\nu} \end{matrix}} && {\begin{matrix} \text{Bases extérieures de}~\pi \\ \isom {\rm Isom}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\hat\pi_ {g,\nu} \\ \isom {\rm Isomext}_{\rm lac}(\hat\pi_{g,\nu},\pi) \end{matrix}} \\
+	& {\begin{matrix} \text{discrétifications orientées strictes}~(\pi) \\ \isom {\rm Isom}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathfrak{S}^+_{g,\nu} Dot\hat\pi_{g,\nu} \\ \isom {\rm Isomext}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathfrak{T}^+_ {g,\nu} \\ \isom {\rm Isom}^!_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathfrak{S}^{!+}_ {g,\nu}Dot\hat\pi_{g,\nu} \\ \isom {\rm Isomext}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathfrak{T}^{!+}_ {g,\nu} \end{matrix}} \\
+	& {\begin{matrix} \text{prédiscrétifications orientées}~(\pi) \\ \isom {\rm Isom}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\hat{\mathfrak{S}}^+_{g,\nu} \\ \isom {\rm Isomext}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\hat{\mathfrak{T}}^+_{g,\nu} \\ \isom {\rm Isom}^!_{\rm lac}(\hat\pi_{g,\nu},\pi)/\hat{\mathfrak{S}}^{!+}_{g,\nu} \\ \isom {\rm Isomext}^!_{\rm lac}(\hat\pi_{g,\nu},\pi)/\hat{\mathfrak{T}}^{!+}_ {g,\nu} \end{matrix}} \\
+	& {\begin{matrix} \text{préarithmétisations de}~\pi \\ \isom {\rm Isom}_{\rm lac}(\hat\pi_{g,\nu},\pi)/M_{g,\nu}{}^3 \\ \isom {\rm Isomext}_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathcal{N}_{g,\nu} \\ \isom {\rm Isom}^!_{\rm lac}(\hat\pi_{g,\nu},\pi)/M^!_{g,\nu} \\ \isom {\rm Isomext}^!_{\rm lac}(\hat\pi_{g,\nu},\pi)/\mathcal{N}^!_ {g,\nu} \end{matrix}}
+	\arrow[from=1-2, to=2-2]
+	\arrow["{\mathfrak{S}^+_{g, \nu}}", from=2-2, to=3-1]
+	\arrow["{\hat{\pi}_{g, \nu}}"', from=2-2, to=3-3]
+	\arrow["{\mathfrak{T}_{g, \nu}}"', from=3-3, to=4-2]
+	\arrow[from=3-1, to=4-2]
+	\arrow["{\boldsymbol{\Gamma}_{g, \nu}}", from=5-2, to=6-2]
+	\arrow["{\boldsymbol{\Gamma}_\Sigma}"', from=5-2, to=6-2]
+	\arrow[from=4-2, to=5-2]
+\end{tikzcd}\]
+}
+\vskip .3cm
+N.B. On pose
+$$
+\boldsymbol{\Gamma}_{g,\nu}=\mathcal{N}_{g,\nu}/\Sigma_{g,\nu}=\mathcal{N}^!_{g,\nu}/\Sigma^!_{g,\nu}
+$$
+(où $\Sigma_{g,\nu}=\hat{\mathfrak{T}}^+_{g,\nu}$, $\Sigma^!_{g,\nu}= \hat{\mathfrak{T}}^{!+}_{g,\nu}$). On peut aussi le décrire comme le groupe $\boldsymbol{\Gamma}_\Sigma$ associé à un groupe extérieur profini à lacets $\pi$ \emph{muni} d'une prédiscrétification orientée $\alpha$ (sans plus). Si on a deux tels couples $(\pi,\alpha)$, $(\pi',\alpha')$, d'où $\boldsymbol{\Gamma}_\Sigma$ et $\boldsymbol{\Gamma}_{\Sigma'}$ ($\Sigma={\Autext}_{\operatorname{lac}} (\pi,\alpha)$, $\Sigma'={\Autext}_{\operatorname{lac}}(\pi',\alpha')$), on trouve en effet un isomorphisme \emph{canonique}~:
+$$
+\boldsymbol{\Gamma}_\Sigma \isommap \boldsymbol{\Gamma}_{\Sigma'}
+$$
+en prenant n'importe quel isomorphisme extérieur à lacets $u$ de $\pi$ avec $\pi'$ transformant $\alpha$ en $\alpha'$ et l'isomorphisme associé $\boldsymbol{\Gamma}_\Sigma\to\boldsymbol{\Gamma}_{\Sigma'}$ ne dépend évidemment pas du choix de $u$.
+
+Ceci posé, les couples $(\pi,\Sigma)$ d'un groupe profini à lacets de type $(g,\nu)$, muni d'une préarithmétisation, avec comme morphismes les isomorphismes arithmétiquement extérieurs (relatifs à $\Sigma$ et $\Sigma'$\dots), forment un groupoïde connexe $\Pi_{g,\nu}$, ayant un objet ``origine'' défini à isomorphisme unique près comme étant $(\hat{\pi}_{g,\nu},\Sigma_{g,\nu})$, où au choix n'importe quel $(\pi,\Sigma_\alpha)$ provenant d'un $(\pi,\alpha)$ ($\alpha$ une prédiscrétification orientée de $\pi$), et dont le groupe des automorphismes est justement $\boldsymbol{\Gamma}_{g,\nu}$.
+
+On constate qu'à l'exception des deux espaces homogènes (sous $\hat{\hat{\mathfrak{S}}}(\pi)$, mais pas nécessairement sous $\hat{\hat{\mathfrak{S}}}(\pi,I')$, voire sous $\hat{\hat{\mathfrak{S}}}^!(\pi)$) Bases$(\pi)$ et Bases ext$(\pi)$, les quatre autres sont en fait des espaces homogènes sous $\hat{\hat{\mathfrak{S}}}^!$, et s'expriment comme quotients du $\hat{\hat{\mathfrak{S}}}^!_{g,\nu}$-torseur ${\Isom}^!(\hat{\pi}_{g,\nu},\pi)$, par les quatre sous-groupes $\mathfrak{S}^!_{g,\nu}$, $\mathfrak{S}^!_{g,\nu} \hat\pi_{g,\nu}$, $\hat{\mathfrak{S}}^!_{g,\nu}$, $M^!_{g,\nu}$ (ce dernier défini comme image inverse de $\mathcal{N}^!_{g,\nu}$ dans $\hat{\hat{\mathfrak{S}}}_{g,\nu}$, tout comme $M_{g,\nu}$ est défini comme image inverse de $\mathcal{N}_{g,\nu}$). On trouve d'autre part, si $I'=\{i_0,\ldots,i_{\nu'-1}\}$, un homomorphisme $\hat{\hat{\mathfrak{S}}}^!_{g,\nu}\to\hat{\hat{\mathfrak{S}}}^!_{g,\nu'}$, envoyant $\mathfrak{S}^!_{g, \nu}$ dans $\mathfrak{S}^!_{g,\nu'}$, en envoyant $\pi_{g, \nu}$ dans $\pi_{g,\nu'}$, donc $\hat{\pi}_{g, \nu}$ dans $\hat\pi_{g,\nu'}$, $\hat{\mathfrak{S}}^!_{g, \nu}$ dans $\hat{\mathfrak{S}}^!_{g,\nu'}$, et le sous-groupe $\mathfrak{S}^!_{g, \nu} \hat{\pi}_{g, \nu}$ de $\hat{\mathfrak{S}}^!_{g \nu}$ dans le sous-groupe $\mathfrak{S}^!_{g,\nu'} \hat{\pi}_{g,\nu'}$ de $\hat{\mathfrak{S}}^!_{g,\nu'}$. Enfin, comme $\Sigma^!_{g, \nu}$ s'envoie dans $\Sigma^!_{g,\nu'}$, $\mathcal{N}^!_{g, \nu}$ s'envoie dans le normalisateur de $\Sigma^!_{g,\nu'}$ dans $\hat{\hat{\mathfrak{T}}}^!_{g,\nu'}$, je dis que ce n'est autre que $\mathcal{N}^!_{g,\nu'}$.  Changeant de notation, ceci revient au\footnote{pas prouvé}
+\vskip .3cm
+{
+Lemme. --- \it $\mathcal{N}^!_\Sigma={\Norm}_{{\hat{\hat{\mathfrak{T}}}^!}} (\Sigma^!) (={\Norm}_{{\hat{\hat{\mathfrak{T}}}}}(\Sigma^!)\cap\hat{\hat{\mathfrak{T}}}^!)$.
+}
+\vskip .3cm
+Évidemment on a $\mathcal{N}^!_\Sigma\subset {\Norm}_{{\hat{\hat{\mathfrak{T}}}}}(\Sigma^!)\cap\hat{\hat{\mathfrak{T}}}^!$~; inversement soit $g\in\hat{\hat{\mathfrak{T}}}^!$ qui normalise $\Sigma^!$, montrons qu'il normalise $\Sigma$, i.e. qu'il est $\in\mathcal{N}$ (donc $\in \mathcal{N}^! = \mathcal{N} \cap \hat{\hat{\mathfrak{T}}}^!$)\dots.
+
+C'est pas clair. J'ai pourtant envie de prouver la
+\vskip .3cm
+{
+Conjecture. --- \it L'application canonique
+$$
+{\operatorname{Prédiscrét}}^+(\pi)\to
+{\operatorname{Prédiscrét}}^+(\pi')
+$$ est {\it bijective}. Pour que deux prédiscrétifications orientées $\alpha$, $\beta$ de $\pi$ aient même groupe d'automorphismes extérieurs $\Sigma_\alpha=\Sigma_\beta$, il faut qu'il en soit ainsi pour leurs images $\Sigma_{\alpha'}$ et $\Sigma_{\beta'}$, i.e. que $\Sigma_{\alpha'}=\Sigma_{\beta'}$, de sorte que la bijection précédente induit une bijection
+$$
+{\operatorname{Préarithmétisation}}(\pi)\isommap
+{\operatorname{Préarithmétisation}}(\pi').
+$$
+Enfin, les bijections précédentes sont compatibles avec
+l'homomorphisme des groupes d'opérateurs $\hat{\hat{\mathfrak{T}}}(\pi,I')\to\hat{\hat{\mathfrak{T}}}(\pi')$, %{}^4 
+a fortiori avec $\hat{\hat{\mathfrak{T}}}^!(\pi)\to\hat{\hat{\mathfrak{T}}}^!(\pi')$, ce qui implique qu'elle induit (pour une préarithmétisation $\Sigma\subset  \hat{\hat{\mathfrak{T}}}(\pi)$ donnée de $\pi$, donnant $\Sigma'\subset \hat{\hat{\mathfrak{T}}}(\pi')$ dans $\pi'$ avec $\Sigma^!\to \Sigma'^!$) %{}^5 
+un homomorphisme $\mathcal{N}^!_\Sigma\to\mathcal{N}^!_{\Sigma'}$, et l'homomorphisme correspondant
+$$
+\boldsymbol{\Gamma}_\Sigma=\mathcal{N}^!_\Sigma/\Sigma^!\to
+\boldsymbol{\Gamma}_{\Sigma'}=\mathcal{N}^!_{\Sigma'}/\Sigma'^!
+$$
+est un isomorphisme.
+}
+\vskip .3cm
+Pour s'en convaincre il suffit de regarder le cas où $I'=\{i\}$ (et si on note $\pi = \pi_{g \nu}$, $I'$ réduit au dernier élément de $I$).  On a alors un homomorphisme
+$$
+\hat{\hat{\mathfrak{T}}}(\pi,i)\to\hat{\hat{\mathfrak{S}}}(\pi')$$
+%{}^6
+(les automorphismes \emph{extérieurs} à lacets de $\pi$ fixant $i$ définissent des automorphismes bien déterminés de $\pi'$ --- pas seulement extérieurs, i.e. $\hat{\hat{\mathfrak{S}}}(\pi,i)\to\hat{\hat{\mathfrak{S}}}(\pi')$ est trivial sur $\pi$, et passe donc au quotient en $\hat{\hat{\mathfrak{T}}}(\pi,i)\to \hat{\hat{\mathfrak{S}}}(\pi,i)$).
+
+J'admets, en analogie avec le cas discret, que cet homomorphisme est un \emph{isomorphisme}, de sorte qu'on a une suite exacte\footnote{rappelons qu'on suppose $\pi$ anabélien, i.e. $2g+\nu \geq 3$}
+$$
+1\to \pi'\to\hat{\hat{\mathfrak{T}}}(\pi,i) \to\hat{\hat{\mathfrak{S}}}(\pi,i)\to 1
+$$
+ou encore
+$$
+1\to \hat\pi_{g,\nu-1}\to\hat{\hat{\mathfrak{T}}}_{g;(\nu,\nu-1)}\to\hat{\hat{\mathfrak{S}}}_{g,\nu-1}\to 1
+$$
+qui contient la suite exacte
+$$
+1\to \pi_{g,\nu-1}\to\mathfrak{T}_{g;(\nu,\nu-1)}
+\to\mathfrak{S}_{g,\nu-1}\to 1
+$$
+comme sous-suite exacte. Il est commode de travailler plutôt avec
+\[\begin{tikzcd}
+	1 & {\pi_{g,\nu-1}} & {\mathfrak{T}^{!+}_{g,\nu}} & {\mathfrak{S}^{!+}_{g,\nu-1}} & 1 \\
+	1 & {\hat{\pi}_{g,\nu-1}} & {\hat{\mathfrak{T}}^{!+}_{g,\nu}} & {\hat{\mathfrak{S}}^{!+}_{g,\nu-1}} & 1 \\
+	1 & {\hat{\pi}_{g,\nu-1}} & {\hat{\hat{\mathfrak{T}}}^!_{g,\nu}} & {\hat{\hat{\mathfrak{S}}}^!_{g,\nu-1}} & {1.}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=2-1, to=2-2]
+	\arrow[from=3-1, to=3-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow[from=2-2, to=2-3]
+	\arrow[from=3-2, to=3-3]
+	\arrow[from=2-3, to=2-4]
+	\arrow[from=3-3, to=3-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow[from=3-4, to=3-5]
+	\arrow[hook', from=1-4, to=2-4]
+	\arrow[hook', from=2-4, to=3-4]
+	\arrow[hook', from=1-3, to=2-3]
+	\arrow[hook', from=2-3, to=3-3]
+	\arrow[hook', from=1-2, to=2-2]
+	\arrow[shift left=1, shorten <=2pt, shorten >=2pt, no head, from=2-2, to=3-2]
+	\arrow[shorten <=2pt, shorten >=2pt, no head, from=2-2, to=3-2]
+\end{tikzcd}\]
+L'application $\operatorname{Prédiscrét}^+(\pi)\to \operatorname{Prédiscrét}^+(\pi')$ s'identifie alors à $\hat{\hat{\mathfrak{T}}}^!_{g,\nu}/\hat{\mathfrak{T}}^!_{g,\nu}$, on lit sur le diagramme que c'est $ \isom  \hat{\hat{\mathfrak{S}}}^!_{g,\nu-1}/\hat{\mathfrak{S}}^{!+}_{g,\nu-1}$, d'où la bijectivité sur les ensembles de prédiscrétifications orientées.
+
+Dans le groupe $\hat{\hat{\mathfrak{T}}}^!_{g,\nu}=\mathfrak{T}$, on a un sous-groupe invariant $\hat{\pi}_{g,\nu-1}=\pi'$, et un sous-groupe $\Sigma$ ($=\hat{\mathfrak{T}}^{!+}_{g,\nu}$) entre $\pi'$ et $\mathfrak{T}$, donnant un sous-groupe $\Sigma' \isom \hat{\mathfrak{S}}^{!+}_{g,\nu-1}$ dans $\mathfrak{T}^!=\mathfrak{T}/\pi'$ ($ \isom \hat{\hat{\mathfrak{S}}}^!_{g,\nu-1}$), et on sait bien qu'alors $\mathfrak{T}/\Sigma \isom \mathfrak{T}'/\Sigma'$, et que le normalisateur $\mathcal{N}$ de $\Sigma$ dans $\mathfrak{T}$ est l'image inverse du normalisateur $\mathcal{N}'$ de $\Sigma'$ dans $\mathfrak{T}'$, de sorte que $\mathcal{N}/\Sigma \isom \mathcal{N}'/\Sigma'$, ce qui prouve ce qu'on voulait.
+\vskip .3cm
+{
+Corollaire. --- \it On a des isomorphismes canoniques:
+$$
+\boldsymbol{\Gamma}_{g,\nu} \isommap \boldsymbol{\Gamma}_{g,\nu-1} \isommap \dots 
+$$
+de sorte que si $g\ge 2$, on a canoniquement $\boldsymbol{\Gamma}_{g,\nu} \isom \boldsymbol{\Gamma}_{g,0}$~; d'autre part $\boldsymbol{\Gamma}_{1,\nu} \isom \boldsymbol{\Gamma}_{1,1}$ ($g=1$, $\nu\ge 1$), $\boldsymbol{\Gamma}_{0,\nu} \isom \boldsymbol{\Gamma}_{0,3}$ ($\nu\ge 3$).\footnote{On voit aussi que $\Sigma$ invariant dans $\hat{\hat{\mathfrak{T}}}$
+ équivaut à $\Sigma'$ invariant dans $\hat{\hat{\mathfrak{T}'}}$.}
+ }
+\vskip .3cm
+NB. Le ``fait'' admis est loin d'être évident --- même que $\hat{\hat{\mathfrak{T}}}_{g;(\nu,\nu-1)} \to\hat{\hat{\mathfrak{T}}}_{g,\nu-1}$ soit surjectif ou que $\hat{\hat{\mathfrak{T}}}_{g;(\nu,\nu-1)}\to\hat{\hat{\mathfrak{S}}}_{g,\nu-1}$ soit injectif, est loin d'être évident, et est peut-être tout à fait faux~! Le fait admis revient à un énoncé d'existence d'un foncteur en sens inverse ``forage de trous'' qui en tout état de cause reste incompris.
+
+
+% End

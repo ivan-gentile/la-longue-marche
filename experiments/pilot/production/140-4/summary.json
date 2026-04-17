@@ -1,0 +1,15 @@
+{
+  "volume": "140-4",
+  "total_pages": 280,
+  "success": 280,
+  "errors": 22,
+  "total_chars": 335590,
+  "total_tokens_in": 499988,
+  "total_tokens_out": 124262,
+  "estimated_cost": 2.49,
+  "elapsed_seconds": 1076,
+  "model": "gemini-3.1-pro-preview",
+  "model_key": "pro",
+  "thinking_level": "medium",
+  "completed": "2026-03-09T16:06:34.515878"
+}

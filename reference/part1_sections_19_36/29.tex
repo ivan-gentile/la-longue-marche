@@ -1,0 +1,203 @@
+% Begin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{\S \space 29. --- CRITIQUE DE L'APPROCHE PRÉCÉDENTE}\thispagestyle{empty}
+\addcontentsline{toc}{section}{29. Critique de l'approche précédente (on rajuste les notions et les conjectures)}
+\label{sec:29}
+\section*{}
+
+L'approche des paragraphes précédents semble finalement très brutale. J'ai même des doutes si la conjecture sur les propriétés du foncteur ``bouchage de trous'' est vraie telle quelle. Il est vrai que pour un groupe profini à lacets $\pi$, si on fixe $i\in I(\pi)$, on a un homomorphisme canonique 
+$$
+\hat{\hat{\mathfrak{T}}}(\pi,i)=\hat{\hat{\mathfrak{T}}}(\pi)_i\to\hat{\hat{\mathfrak{S}}}(\pi'),
+\leqno{(1)}
+$$
+(où $\hat{\hat{\mathfrak{T}}}(\pi)_i$ est le stabilisateur de $i$ dans $\hat{\hat{\mathfrak{T}}}(\pi)$), mais il est problématique si c'est un isomorphisme --- et même si c'est injectif, ou si c'est surjectif. Mais, choisissant une discrétification $\pi_0 \subset \pi$, d'où itou $\pi'_0$ pour $\pi'$, l'homomorphisme précédent induit bel et bien un isomorphisme
+$$
+\mathfrak{T}(\pi_0)_i \isom \mathfrak{S}(\pi'_0)
+\leqno{(2)}
+$$
+d'où
+$$
+\hat{\mathfrak{T}}(\pi_0)\isommap\hat{\mathfrak{S}}(\pi'_0)
+\leqno{(3)}
+$$
+et par suite, la suite exacte $1\to\hat\pi'_0\to \hat{\mathfrak{S}}(\pi'_0)\to\hat{\mathfrak{T}}(\pi'_0)\to 1$ donne~:
+$$
+1\to\hat\pi'_0\to\hat{\mathfrak{T}}(\pi_0)\to \hat{\mathfrak{T}}(\pi'_0)\to 1
+\leqno{(4)}
+$$
+et par suite on trouve un homomorphisme injectif
+$$
+\hat\pi'_0\to\hat{\mathfrak{T}}(\pi_0)_i\hookrightarrow\hat{\hat{\mathfrak{T}}} (\pi_0)_i  \isom  \hat{\hat{\mathfrak{T}}}(\pi)
+$$
+(où $\hat\pi'_0=\pi'$) donc un homomorphisme 
+$$
+i_{\pi_0}:\pi'\to\hat{\hat{\mathfrak{T}}}(\pi)_i
+\leqno{(5)}
+$$
+dont le composé avec (1) est l'injection canonique $\pi'\hookrightarrow \hat{\hat{\mathfrak{S}}}(\pi')$. Rempla\c{c}ant la discrétification $\pi_0$ par une autre, $\pi_1$, on trouve a priori un autre homomorphisme $i_{\pi_1}:\pi'\to\hat{\hat{\mathfrak{T}}}(\pi)_i$. On peut supposer que $\pi_1=u(\pi_0)$, $u\in\hat{\hat{\mathfrak{T}}}(\pi_0)_i$ et par transport de structure on trouve
+$$
+i_{\pi_1}=i_{u(\pi_0)}={\operatorname{Int}}(u)\circ i_{\pi_0}\circ u_{\pi'}^{-1}
+$$
+où $u_{\pi'}$ est l'automorphisme de $\pi'$ défini par $u$ via (1). Dire que $i_{\pi_0}$ est indépendant du choix de la discrétification $\pi_0$, revient aussi à dire que son image dans $\hat{\hat{\mathfrak{T}}}(\pi)_i$ est un sous-groupe invariant --- et alors l'action de $\hat{\hat{\mathfrak{T}}}(\pi)_i$ sur le sous-groupe invariant $i_{\pi_0}(\pi)=i(\pi)$ via automorphismes intérieurs, n'est autre que celle définie par (1). Dans ce cas, on trouve par passage au quotient un homomorphisme
+$$
+\hat{\hat{\mathfrak{T}}}(\pi)_i/\pi'\to\hat{\hat{\mathfrak{T}}}(\pi')
+\leqno{(6)}
+$$
+dont l'injectivité resp. surjectivité équivaudrait à celle de (1). Mais il n'est pas évident du tout qu'il en soit toujours ainsi.
+
+S'il n'en était pas ainsi, il s'imposerait de regarder le sous-groupe de $\hat{\hat{\mathfrak{T}}}(\pi)_i$ formé des $\gamma\in\hat{\hat{\mathfrak{T}}}(\pi)_i$ qui normalisent le sous-groupe $i_{\pi_0}(\pi')$, et tels que l'action induite sur $i_{\pi_0}(\pi')$ correspond à celle donnée par l'action (1) de $\hat{\hat{\mathfrak{T}}}(\pi)$ sur $\pi'$. Ce sous-groupe $H_{\pi_0}$ (qui contient $\hat{\mathfrak{T}}(\pi_0)_i$) dépend donc a priori de la discrétification choisie. Rempla\c{c}ant $\pi_0$ par $u(\pi_0)$ (où $u\in\hat{\hat{\mathfrak{T}}} (\pi)_i$) le remplace par ${\operatorname{Int}}(u)\cdot H$ --- donc $H$ tout au moins ne change pas, si on fait varier $\pi_0$ dans une classe de prédiscrétifications.
+
+On peut faire des choix plus symétriques, en considérant \emph{pour tout} $i\in I$ le quotient correspondant $\pi'_i$ de $\pi$, d'où, pour une discrétification donnée $\pi_0$, des homomorphismes
+$$
+i_{\pi_0,i}:\pi'_i\to\hat{\hat{\mathfrak{T}}}(\pi)_i\subset 
+\hat{\hat{\mathfrak{T}}}(\pi),
+$$
+et on définit $H_{\pi_0}\subset \hat{\hat{\mathfrak{T}}}(\pi)$ comme le sous-groupe des $\gamma\in\hat{\hat{\mathfrak{T}}}(\pi)$ qui ``permutent les $i_{\pi_0,i}$ entre eux'' dans un sens évident. On a donc
+$$
+H_{\pi_0}\cap\hat{\hat{\mathfrak{T}}}(\pi)_i=H_{\pi_0,i}
+\leqno{(7)}
+$$
+et
+$$
+H\supset\hat{\mathfrak{T}}(\pi_0).
+\leqno{(8)}
+$$
+Le point que j'ai en vue, c'est que le sous-groupe de $\hat{\hat{\mathfrak{T}}} (\pi_0)$ image de $\pi_1(M_{g, \nu})$, doit non seulement normaliser $\hat{\mathfrak{T}}(\pi_0)^+$, mais de plus être contenu dans un $H$. C'est là une condition que j'ai rencontrée par la bande, à la faveur de l'hypothèse (peut-être bien hâtive) que (1) est un isomorphisme, qui impliquait (facilement) que l'on avait $H= \hat{\hat{\mathfrak{T}}}(\pi_0)$ tout entier. Il est possible que $\hat{\hat{\mathfrak{T}}}(\pi_0)$ soit un groupe à tel point démesuré et pathologique, qu'il ne pourra jamais être question de dire des choses raisonnables (et vraies) sur le groupe tout entier, (tel que la bijectivité de (1) par exemple) et qu'on soit obligé de travailler avec des sous-groupes plus petits, qui restent proches du discret (avec quand-même des aspects supplémentaires ``arithmétiques'', dû au $\boldsymbol{\Gamma}_0= {\Gal}(\overline{\mathbf{Q}}_0/\mathbf{Q})$~!). En fait, il y a (pour $I= I(\pi)\ne\emptyset$, i.e. $\nu\ne 0$) dans le groupe $\hat{\mathfrak{T}}(\pi_0)$ une structure simpliciale d'extensions successives, qui va être respectée par l'action extérieure du groupe de Galois, et dont il faudrait tenir compte. Elle fait partie de la ``structure à l'$\infty$'' dans le $\pi_1$ des multiplicités modulaires $M_{g, \nu}$, qui même pour $\nu=0$ est sans doute non triviale, et il est possible qu'il faille en tenir compte, pour arriver à mettre le doigt sur $\boldsymbol{\Gamma}_\mathbf{Q}$.
+
+Sans essayer de donner d'emblée une description a priori de $\boldsymbol{\Gamma}_\mathbf{Q}$ ``dans les $\hat{\hat{\mathfrak{T}}}_{g, \nu}$'', on va procéder de  fa\c{c}on plus inductive, en partant de la présence de $\boldsymbol{\Gamma}_\mathbf{Q}$ (pour des raisons arithmético-géométriques), et en essayant de dégager des propriétés de cette présence peut-être assez fortes pour finir par donner une caractérisation purement algébrique. Rappelons que, via le choix de $U_{g, \nu}$ (différentiable), on avait pu construire, par voie transcendante, un $\widetilde{M_{{g, \nu},\mathbf{C}}}$ et un $\widetilde{U_{{g, \nu},\mathbf{C}}}= \widetilde{M_{g,\nu+,\mathbf{C}}}$, d'où un $\widetilde{M_{{g, \nu},\mathbf{Q}}}$, et un $\widetilde{U_{{g, \nu},\mathbf{Q}}}$, d'où un $\pi_1(U_{{g, \nu},\mathbf{Q}})$, avec une filtration en trois crans, dont les facteurs sont respectivement canoniquement isomorphes à
+$$
+\hat{\pi}_{g, \nu},\ \hat{\mathfrak{T}}(\pi_{g, \nu})^+,\ \boldsymbol{\Gamma}_\mathbf{Q}={\Gal}(\overline{\mathbf{Q}_0}/\mathbf{Q}).
+\leqno{(9)}
+$$
+Ce groupe s'envoie (on présume injectivement) dans $\hat{\hat{\mathfrak{S}}}(\pi_{g, \nu})$, induisant un isomorphisme entre son sous-groupe $\pi_1(U_{{g, \nu},\overline{\mathbf{Q}}_0})$ et $\hat{\mathfrak{S}}(\pi_{g, \nu})$~; désignons son image par $M_{g, \nu}$.  Donc c'est un sous-groupe fermé
+$$
+\hat{\mathfrak{S}}_{g, \nu}\subset M_{g, \nu}\subset \hat{\hat{\mathfrak{S}}}_{g, \nu}
+\leqno{(10)}
+$$
+et $\hat{\mathfrak{S}}^+_{g, \nu}$ est normal dans $M_{g, \nu}$ (mais pas $\hat{\mathfrak{S}}_{g, \nu}$~!), La donnée d'un tel $M_{g, \nu}$ équivaut à celle d'un $\mathcal{N}_{g, \nu}$
+$$
+\hat{\mathfrak{T}}_{g, \nu}\subset \mathcal{N}_{g, \nu}\subset \hat{\hat{\mathfrak{T}}}_{g, \nu},
+\leqno{(11)}
+$$
+avec $\hat{\mathfrak{T}}^+_{g, \nu}$ normal dans $\mathcal{N}_{g, \nu}$. On pose\footnote{Dans $\boldsymbol{\Gamma}_{g, \nu}$, on a un élément canonique d'ordre 2 $\tau_{g, \nu}$, correspondant aux éléments de $\hat{\mathfrak{T}}_{g, \nu} \setminus \hat{\mathfrak{T}}_{g, \nu}^+ = \hat{\mathfrak{T}}_{g, \nu}^-$.}:
+$$
+\boldsymbol{\Gamma}_{g, \nu}=\mathcal{N}_{g, \nu}/\hat{\mathfrak{T}}^+_{g, \nu} \isom M_{g, \nu}/\hat{\mathfrak{S}}^+_{g, \nu}.
+\leqno{(12)}
+$$
+On a un homomorphisme surjectif
+$$
+\boldsymbol{\Gamma}_\mathbf{Q}\to\boldsymbol{\Gamma}_{g, \nu}
+\leqno{(13)}
+$$
+dont on présume qu'il est bijectif --- i.e. que les $\boldsymbol{\Gamma}_{g, \nu}$ sont canoniquement isomorphes entre eux.
+
+Soit maintenant $\pi_0$ un groupe discret à lacets de type ${g, \nu}$, alors on définit des sous-groupes $M_{\pi_0}$, $\mathcal{N}_{\pi_0}$~:
+$$
+\hat{\mathfrak{S}}(\pi_0)\subset M_{\pi_0}\subset \hat{\hat{\mathfrak{S}}}(\pi_0)
+\leqno{(14)}
+$$
+$$
+\hat{\mathfrak{T}}(\pi_0)\subset \mathcal{N}_{\pi_0}=M(\pi_0)/\hat\pi_0\subset \hat{\hat{\mathfrak{T}}}(\pi_0)
+\leqno{(15)}
+$$
+(et on pose $\boldsymbol{\Gamma}_{\pi_0}=M_{\pi_0}/\hat{\mathfrak{S}}(\pi_0)$), en utilisant un isomorphisme $\pi_0\isommap\pi_{g, \nu}$ et en procédant par transport de structure --- le résultat n'en dépend pas. Plus généralement, partons d'un couple $(\pi,\alpha)$ d'un groupe $\pi$ profini, muni d'une \emph{prédiscrétification} $\alpha$, qu'on peut donc interpréter comme une classe d'isomorphismes $\hat{\pi}_{g, \nu}\to\pi$, définie modulo composition à droite par un $u\in\hat{\mathfrak{S}}_{g, \nu}$. Alors par transport de structure on en déduit des groupes $M_\alpha$, $\mathcal{N}_\alpha$
+$$
+\hat{\mathfrak{S}}_\alpha\subset M_\alpha\subset \hat{\hat{\mathfrak{S}}}(\pi)
+\leqno{(16)}
+$$
+$$
+\hat{\mathfrak{T}}_\alpha\subset \mathcal{N}_\alpha=M_\alpha
+/\pi\subset \hat{\hat{\mathfrak{T}}}(\pi)
+\leqno{(17)}
+$$
+avec $\hat{\mathfrak{S}}(\pi)^+$ normal dans $M_\alpha$, i.e. $\hat{\mathfrak{T}}^+(\pi)$ normal dans $\mathcal{N}_\alpha$. On pose
+$$
+\boldsymbol{\Gamma}_\alpha=M_\alpha/\hat{\mathfrak{S}}^+_\alpha \isom \mathcal{N}_\alpha/\hat{\mathfrak{T}}^+_\alpha.
+\leqno{(18)}
+$$
+On a un élément canonique
+$$
+\tau_\alpha\in\boldsymbol{\Gamma}_\alpha,\ \ \tau_\alpha^2=1,\ \ \tau_\alpha\ne 1.
+\leqno{(19)}
+$$
+Soit maintenant $\pi$ un groupe profini à lacets de type $({g, \nu})$. On appelle \emph{arithmétisation} de $\pi$ la donnée d'un
+élément de
+$$
+A(\pi)={\Isom}_{\operatorname{lac}}(\hat{\pi}_{g, \nu},\pi)/M_{g, \nu} \isom {\Isomext}_{\operatorname{lac}}(\hat{\pi}_{g, \nu},\pi)/\mathcal{N}_{g, \nu}.
+\leqno{(20)}$$
+Soit $P(\pi)$ l'ensemble des prédiscrétifications orientées de $\pi$:
+$$
+P(\pi)={\Isom}_{\rm lac}(\hat\pi_{g, \nu},\pi)/\hat{\mathfrak{S}}^+_{g, \nu} \isom {\Isomext}_{\rm lac}(\hat\pi_{g, \nu},\pi)/\hat{\mathfrak{T}}^+_{g, \nu};
+\leqno{(21)}
+$$
+alors $\boldsymbol{\Gamma}_{g, \nu}$ opère librement à droite sur $P(\pi)$, et 
+$$
+A(\pi) \isom  P(\pi)/\boldsymbol{\Gamma}_{g, \nu}
+\leqno{(22)}
+$$
+--- $P(\pi)$ est un torseur relatif sur $A(\pi)$, de groupe $\boldsymbol{\Gamma}_{g, \nu}$. Pour $a\in A(\pi)$, soit $M_a$ le sous-groupe de $\hat{\hat{\mathfrak{S}}} (\pi)$ des automorphismes de $(\pi,a)$, il opère sur le $\boldsymbol{\Gamma}_{g, \nu}$-torseur $P_a$ des discrétifications orientées de $\pi$ sur $a$.  Pour $\alpha\in P_a$, soit $\hat{\mathfrak{S}}_\alpha \subset \hat{\hat{\mathfrak{S}}}(\pi)$~; alors $\hat{\mathfrak{S}}^+_\alpha$ ne dépend pas de $\alpha$ (on le notera $\hat{\mathfrak{S}}_a$)~;\footnote{mais attention, $\hat{\mathfrak{S}}_\alpha$ dépend de $\alpha$, i.e.$\tau_\alpha\in\boldsymbol{\Gamma}_a$ dépend de $\alpha$.}
+c'est aussi le noyau de l'opération de $M_a$ sur $P_a$. On a
+$$
+\hat{\mathfrak{S}}^+_a\subset M_a\subset \hat{\hat{\mathfrak{S}}}(\pi)
+\leqno{(23)}
+$$
+d'où encore
+$$
+\hat{\mathfrak{T}}^+_a\subset \mathcal{N}_a\subset \hat{\hat{\mathfrak{T}}}(\pi)
+\leqno{(24)}
+$$
+en posant 
+$$
+\mathcal{N}_a=M_a/\pi,\ \hat{\mathfrak{T}}^+_a=\hat{\mathfrak{S}}^+_a/\pi.
+\leqno{(25)}
+$$
+On pose
+$$
+\boldsymbol{\Gamma}_a=M_a/\hat{\mathfrak{S}}^+_a \isom  \mathcal{N}_a/\hat{\mathfrak{T}}^+_a.
+\leqno{(26)}
+$$
+Alors $\boldsymbol{\Gamma}_a$ s'identifie au commutant de $\boldsymbol{\Gamma}_{g, \nu}$ opérant sur $P_a$, i.e. à $\boldsymbol{\Gamma}_{g, \nu}$ ``tordu'' par le torseur $P_a$. Le choix d'un $\alpha\in P_a$ revient donc au choix d'un tel
+isomorphisme
+$$
+\boldsymbol{\Gamma}_a \isom \boldsymbol{\Gamma}_{g, \nu}
+\leqno{(27)}
+$$
+qui est changé par automorphisme intérieur si on change $\alpha$\dots
+
+On a la catégorie des groupes à lacets extérieurs arithmétisés
+de type ${g, \nu}$ --- c'est un groupoïde connexe, avec une origine fixée $(\hat{\pi}_{g, \nu},a_{g, \nu})$ ($a_{g, \nu}$ arithmétisation ``canonique''), dont le groupe des automorphismes est $\mathcal{N}_{g, \nu}$, extension de $\boldsymbol{\Gamma}_{g, \nu}$ par $\hat{\mathfrak{T}}_{g, \nu}^+ \isom  \pi_1(M_{{g, \nu},\mathbf{Q}})$ (si $\boldsymbol{\Gamma}_\mathbf{Q}\to\boldsymbol{\Gamma}_{g, \nu}$ est injectif~!) (calculé par rapport au revêtement universel canonique de $M_{{g, \nu},\mathbf{Q}})$\dots
+
+Se donner un objet de cette catégorie, c'est essentiellement la même chose (à isomorphisme unique près) que de se donner un revêtement universel $\widetilde{M_{{g, \nu},\mathbf{Q}}}$ de $M_{{g, \nu},\mathbf{Q}}$ --- ou un torseur sous $\mathcal{N}_{g, \nu}$~; on considère alors la famille de courbes de type ${g, \nu}$ sur $\widetilde{M_{{g, \nu},\mathbf{Q}}}$
+$$
+U_{g, \nu}\times_{M_{g, \nu}}\widetilde{M_{{g, \nu},\mathbf{Q}}}=U_{g, \nu}(\widetilde{M_{{g, \nu},\mathbf{Q}}})
+\leqno{(28)}
+$$
+comme étant ``la'' courbe algébrique dont le $\pi_1$ extérieur (qui est donc le $\pi_1$ de ce schéma\dots) soit le groupe extérieur à lacets donné.
+
+Si on prenait les groupes à lacets arithmétisés, pas extérieurs, on aurait encore un groupoïde connexe avec ``origine'' $(\hat{\pi}_{g, \nu},a_{g, \nu})$, avec un groupe d'automorphismes qui est $M_{g, \nu} \isom \pi_1(U_{{g, \nu},\mathbf{Q}})$. La donnée d'un objet de cette catégorie revient à la donnée d'un revêtement universel (non seulement de $M_{{g, \nu},\mathbf{Q}}$, mais) de $U_{{g, \nu},\mathbf{Q}}$, soit $\widetilde{U_{{g, \nu},\mathbf{Q}}}$, qui sert de revêtement universel de référence pour la courbe relative (28), permettant alors de préciser son groupe fondamental comme un vrai groupe à lacets (pas seulement un groupe extérieur).
+
+On peut enfin regarder aussi la catégorie des groupes profinis à lacets arithmétisés, où on prend comme morphismes les \emph{isomorphismes arithmétiquement extérieurs}. On trouve encore un groupoïde connexe avec origine marquée $(\hat{\pi}_{g, \nu},a_{g, \nu})$, dont le groupe des automorphismes est maintenant $\boldsymbol{\Gamma}_{g, \nu}$. Maintenant les groupes $\hat\pi_0$ ($\pi_0$ groupe à lacets discret de type ${g, \nu}$) sont canoniquement isomorphe entre eux. La catégorie est (conjecturalement, admettant que $\boldsymbol{\Gamma}_\mathbf{Q}\to \boldsymbol{\Gamma}_{g, \nu}$ soit un isomorphisme) équivalente à celle des revêtement universels de ${\Spec}\,\mathbf{Q}$, i.e. à celle des clôtures algébriques de $\mathbf{Q}$, l'élément origine correspondant à $\overline{\mathbf{Q}}_0$.
+
+Quand on se donne un $\pi$ avec arithmétisation $a$, alors il lui correspond donc canoniquement une clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$.  Le $\boldsymbol{\Gamma}_\mathbf{Q}$-torseur des isomorphismes ${\Isom}(\overline{\mathbf{Q}}_0,\overline{\mathbf{Q}})$, i.e. des plongements $\overline{\mathbf{Q}}\hookrightarrow \mathbf{C}$, est en correspondance 1-1 avec l'une ($P_a$) des prédiscrétifications orientées de $\pi$ donnant naissance à $a$.
+
+Notons que tout $\alpha$ définit un élément $\tau_\alpha\in \boldsymbol{\Gamma}_a$, $\tau_\alpha^2=1$ ($\tau_a\ne 1)$, d'où une application canonique
+$$
+P_a\to {}_2\boldsymbol{\Gamma}_a.
+\leqno{(29)}
+$$
+On voit que cette application est compatible avec l'action du groupe $\pm 1$ sur $P_a$,
+$$
+\tau_\alpha=\tau_{-\alpha}.
+$$
+S'il est vrai que $\boldsymbol{\Gamma}_\mathbf{Q}\isommap \boldsymbol{\Gamma}_{g, \nu}$, alors (29) induit par passage au quotient une application bijective
+
+(30)\ \ \ $P_a/\pm 1\isommap$ ensemble des éléments d'ordre $2$ de $\boldsymbol{\Gamma}_a$
+
+(où $P_a/\pm 1=P_a^\natural=$ ensemble des prédiscrétifications -- pas orientées -- sur $a$).
+
+Cela provient du fait connu que dans $\boldsymbol{\Gamma}_\mathbf{Q}$, les seuls éléments d'ordre $2$ sont les conjugués de $\tau$, et que le centralisateur de $\tau$ dans $\boldsymbol{\Gamma}_\mathbf{Q}$ est réduit à $\{1,\tau\}$.  On peut dire que la donnée d'une discrétification (pas orientée) $\alpha^\natural$ sous l'arithmétisation $a$, revient à la donnée d'une valuation archimédienne sur la clôture algébrique $\overline{\mathbf{Q}}$ de $\mathbf{Q}$ définie par $(\pi,a)$ (i.e. d'un isomorphisme $\overline{\mathbf{Q}}_1 \isom \overline{\mathbf{Q}}_0$ \emph{modulo conjugaison complexe}).
+
+
+% End
