@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Transcription of Alexander Grothendieck's handwritten manuscript *"La longue marche à travers la théorie de Galois"* (Cote 140) from the Montpellier archives into LaTeX. Collaboration with Mateo Carmona (archivist, Centre pour les Sciences de Grothendieck) and Olivia Caramello (Istituto Grothendieck).
+Transcription of Alexander Grothendieck's handwritten manuscript *"La longue marche à travers la théorie de Galois"* (Cote 140) from the Montpellier archives into LaTeX. Collaboration with Mateo Carmona (archivist, Centre for Grothendieckian Studies (Centro di Studi Grothendieckiani)) and Olivia Caramello (Istituto Grothendieck).
 
 **Scope**: ~1,000 pages of handwritten mathematics (Part 2 of the manuscript). Part 1 (~90% transcribed by Mateo in LaTeX) serves as training/alignment data.
 

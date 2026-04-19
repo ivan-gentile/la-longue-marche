@@ -60,9 +60,15 @@ DEFAULT_OUT_DIR = HERE / "bench_opus_vs_gemini"
 OUT_DIR = DEFAULT_OUT_DIR
 OUT_DIR.mkdir(exist_ok=True)
 
-GEMINI_MODEL_ID = "gemini-3.1-pro-preview"
-GEMINI_THINKING = "medium"
-GEMINI_PRICES = {"in": 2.00, "out": 12.00}  # USD per 1M tokens
+GEMINI_MODEL_ID = os.environ.get("GEMINI_MODEL_ID", "gemini-3.1-pro-preview")
+GEMINI_THINKING = os.environ.get("GEMINI_THINKING", "medium")
+# Price tables keyed by model; default to Pro pricing.
+_GEMINI_PRICE_TABLE = {
+    "gemini-3.1-pro-preview": {"in": 2.00, "out": 12.00},
+    "gemini-3.1-flash-lite-preview": {"in": 0.25, "out": 1.50},
+    "gemini-3-flash-preview": {"in": 0.40, "out": 3.00},
+}
+GEMINI_PRICES = _GEMINI_PRICE_TABLE.get(GEMINI_MODEL_ID, {"in": 2.00, "out": 12.00})
 
 CLAUDE_MODEL_ID = "claude-opus-4-7"
 # Standard Anthropic Opus pricing at the time of writing (USD per 1M tokens)
@@ -272,8 +278,9 @@ def gemini_from_production(vol: str, page_1: int) -> dict:
 
 
 def run_single_page(gem_client, claude_client, vol: str, page_1: int,
-                    results: dict, gemini_source: str) -> None:
-    """Run Claude on one page. Fetch Gemini either live or from cache."""
+                    results: dict, gemini_source: str,
+                    skip_claude: bool = False) -> None:
+    """Run Claude and/or Gemini on one page and persist the result."""
     key = f"{vol}_p{page_1}"
     print(f"\n  [{key}] ", end="", flush=True)
 
@@ -288,24 +295,25 @@ def run_single_page(gem_client, claude_client, vol: str, page_1: int,
 
         # Gemini
         if gemini_source == "live":
-            print("gemini(live)...", end="", flush=True)
+            print(f"gemini[{GEMINI_MODEL_ID}](live)...", end="", flush=True)
             gem = call_gemini(gem_client, system_prompt, user_text, curr_bytes, prev_bytes, prev_label)
-            print(f" {len(gem['text'])}ch ${gem['cost_usd']} / ", end="", flush=True)
+            print(f" {len(gem['text'])}ch ${gem['cost_usd']}", end="", flush=True)
         else:
             gem = gemini_from_production(vol, page_1)
-            print(f"gemini(cached) {len(gem['text'])}ch / ", end="", flush=True)
+            print(f"gemini(cached) {len(gem['text'])}ch", end="", flush=True)
 
-        # Claude
-        print("claude...", end="", flush=True)
-        cla = call_claude(claude_client, system_prompt, user_text, curr_bytes, prev_bytes, prev_label)
-        print(f" {len(cla['text'])}ch ${cla['cost_usd']}", flush=True)
+        entry = {"volume": vol, "page": page_1, "gemini_pbp": gem}
 
-        results[key] = {
-            "volume": vol,
-            "page": page_1,
-            "gemini_pbp": gem,
-            "claude_pbp": cla,
-        }
+        # Claude (optional)
+        if not skip_claude:
+            print(" / claude...", end="", flush=True)
+            cla = call_claude(claude_client, system_prompt, user_text, curr_bytes, prev_bytes, prev_label)
+            print(f" {len(cla['text'])}ch ${cla['cost_usd']}", flush=True)
+            entry["claude_pbp"] = cla
+        else:
+            print(" (claude skipped)", flush=True)
+
+        results[key] = entry
     finally:
         doc.close()
 
@@ -394,10 +402,13 @@ def score_ground_truth(results: dict, new_tex: str) -> dict:
     # Keys for pages 495-499 of 140-3
     gt_keys = [k for k in results if k.startswith("140-3_p49") and int(k.split("_p")[1]) in range(495, 500)]
 
-    gem_all = "\n\n".join(results[k]["gemini_pbp"]["text"] for k in gt_keys)
-    cla_all = "\n\n".join(results[k]["claude_pbp"]["text"] for k in gt_keys)
-
-    variants = [("gemini_pbp", gem_all), ("claude_pbp", cla_all)]
+    variants: list = []
+    gem_all = "\n\n".join(results[k]["gemini_pbp"]["text"] for k in gt_keys if "gemini_pbp" in results[k])
+    if gem_all:
+        variants.append(("gemini_pbp", gem_all))
+    cla_all = "\n\n".join(results[k]["claude_pbp"]["text"] for k in gt_keys if "claude_pbp" in results[k])
+    if cla_all:
+        variants.append(("claude_pbp", cla_all))
 
     whole = results.get("__whole_doc__", {}).get("text")
     if whole:
@@ -687,6 +698,8 @@ def main():
     parser.add_argument("--gemini-source", choices=["cached", "live"], default="cached",
                          help="cached: use production transcriptions.json (default, no cost); "
                               "live: call Gemini fresh (needs GEMINI_API_KEY).")
+    parser.add_argument("--skip-claude", action="store_true",
+                         help="skip Claude calls (useful when benchmarking Gemini variants).")
     parser.add_argument("--prompt-style", default=DEFAULT_PROMPT_STYLE,
                          help="override default prompt style (e.g. mateo-canonical)")
     parser.add_argument("--output-subdir", default=None,
@@ -700,11 +713,13 @@ def main():
         OUT_DIR.mkdir(exist_ok=True)
     PROMPT_STYLE = args.prompt_style
 
-    ant_api = os.environ.get("ANTHROPIC_API_KEY")
-    if not ant_api:
-        print("ERROR: set ANTHROPIC_API_KEY in .env")
-        sys.exit(1)
-    claude_client = Anthropic(api_key=ant_api)
+    claude_client = None
+    if not args.skip_claude:
+        ant_api = os.environ.get("ANTHROPIC_API_KEY")
+        if not ant_api:
+            print("ERROR: set ANTHROPIC_API_KEY in .env (or pass --skip-claude)")
+            sys.exit(1)
+        claude_client = Anthropic(api_key=ant_api)
 
     gem_client = None
     if args.gemini_source == "live" or not args.skip_whole_doc:
@@ -736,10 +751,12 @@ def main():
 
     for (vol, page) in targets:
         key = f"{vol}_p{page}"
-        if args.resume and key in results and "gemini_pbp" in results[key] and "claude_pbp" in results[key]:
+        needed_keys = ["gemini_pbp"] + ([] if args.skip_claude else ["claude_pbp"])
+        if args.resume and key in results and all(k in results[key] for k in needed_keys):
             print(f"  [{key}] (cached)")
             continue
-        run_single_page(gem_client, claude_client, vol, page, results, args.gemini_source)
+        run_single_page(gem_client, claude_client, vol, page, results,
+                        args.gemini_source, skip_claude=args.skip_claude)
 
     if not args.skip_whole_doc and gem_client is not None:
         if args.resume and "__whole_doc__" in results:

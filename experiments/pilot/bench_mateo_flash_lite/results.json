@@ -1,0 +1,62 @@
+{
+  "140-3_p495": {
+    "volume": "140-3",
+    "page": 495,
+    "gemini_pbp": {
+      "model": "gemini-3.1-flash-lite-preview",
+      "text": "49. Homomorphismes de $M_{0,3}$, les groupes $M_{g,0}$ généralisés\n\nI) Considérons un sous-groupe $G$ de $M_{0,3}$, contenant $\\mathfrak{S}^{+\\wedge}_{0,3}$, d'image inverse d'un sous-groupe fermé de $\\mathfrak{T}_{0,3}$. On suppose que celui-ci \"s'affranchit\", disons qu'il contienne un sous-groupe d'indice fini $H \\subset \\mathfrak{T}_{0,3}$. Pour le moment, on suppose pour simplification que $G \\subset K_{\\varepsilon_3}$. En résumé \\marginpar{Tout ceci est sectionnel, mais la restriction est la seule chose à considérer pour l'instant (cf. p. 453-454)}:\n$$\nG \\cap \\mathfrak{S}^{+\\wedge}_{0,3} \\subset M_{0,3}, \\quad u \\in G \\implies \\mu(u) \\equiv 1 \\pmod 3 \\leqno{(1)}\n$$\nCette dernière hypothèse signifie donc que pour tout $u \\in G$, $\\sigma_{\\alpha(u)} \\in \\mathfrak{S}^{+\\wedge}_{0,3}$, donc on a:\n$$\ng \\defeq \\sigma_{\\alpha(u)} \\in \\mathfrak{S}^{+\\wedge}_{0,3} \\leqno{(2)}\n$$\nDéfinissons par\n$$\n\\begin{cases} \\mu(p) = \\operatorname{sur}(\\alpha)p & \\alpha_0 = \\alpha_{|H} \\\\ \\mu(\\sigma) = \\operatorname{int}(\\mu_{\\sigma})\\sigma & \\mu_0 = \\mu_{|H} \\end{cases} \\leqno{(3)}\n$$\nOn considère\n$$\n\\begin{aligned}\nG_{0} &\\defeq G \\cap M_{0,3} [0] \\\\\nG_{[0]} &\\defeq G \\cap M_{0,3} [0] = \\operatorname{Norm}(L_0^{\\sim})\n\\end{aligned} \\leqno{(3)}\n$$\nOn note que\n$$\n\\begin{aligned}\nG &= G_0 \\cdot \\mathfrak{S}^{+\\wedge}_{0,3} \\quad (\\text{ceux-ci sont des joints}) \\\\\nG_{[0]} &= G_0 \\cdot L_0^{\\sim} \\\\\nG_{[0]} &= \\mathfrak{S}^{+\\wedge}_{0,3} = L_0^{\\sim}\n\\end{aligned} \\leqno{(4)} \\leqno{(5)} \\leqno{(6)}\n$$\nOn a posé\n$$\nL_0^{\\sim} \\defeq \\text{sous-groupe fermé de } \\mathfrak{S}^{+\\wedge}_{0,3} \\text{ engendré par } \\varepsilon_0 \\leqno{(7)}\n$$\nIl s'agit de $L_1^{\\sim}, L_0^{\\sim}$.",
+      "tokens_in": 2905,
+      "tokens_out": 659,
+      "cost_usd": 0.0017,
+      "latency_s": 5.78
+    }
+  },
+  "140-3_p496": {
+    "volume": "140-3",
+    "page": 496,
+    "gemini_pbp": {
+      "model": "gemini-3.1-flash-lite-preview",
+      "text": "Considérons un groupe $M$ et un homomorphisme surjectif\n$$\n\\varphi : G \\longrightarrow M \\leqno{(8)}\n$$\nOn pose\n$$\n\\begin{cases}\n\\varphi(\\mathfrak{G}_{0,3}^+) = \\mathfrak{C} \\\\\n\\varphi(\\mathcal{G}_{(0)}) = \\mathcal{M}_{(0)} \\\\\n\\varphi(\\mathcal{G}_{[0]}) = \\mathcal{M}_{[0]} \\\\\n\\varphi(\\mathbf{L}_0) = \\mathbf{L}_0'\n\\end{cases} \\leqno{(9)}\n$$\n\\marginpar{sous-groupe distingué de $M$}\n\nDonc on a un sous-groupe fini de $M$, et \\dots\n$$\n\\mathcal{M}_{(0)} \\subset \\mathcal{M}_{[0]} \\subset \\operatorname{Norm}_{\\mathcal{M}}(\\mathbf{L}_0') \\leqno{(10)}\n$$\n$$\n\\mathbf{L}_0' \\subset \\mathcal{M}_{(0)} \\leqno{(11)}\n$$\n\nPour avoir le groupe, \\dots désignons par $\\rho, \\sigma, \\varepsilon_1$ \\dots les images des éléments dans $\\mathfrak{G}_{0,3}^+$, qui satisfont des relations connues dans $\\mathfrak{G}_{0,3}^+$, en particulier\n$$\n\\rho^2 = \\rho^3 = 1, \\quad \\sigma\\rho = \\varepsilon_0, \\quad \\rho\\varepsilon_1 = \\rho(\\varepsilon_0). \\leqno{(12)}\n$$\nLes restrictions des actions $\\alpha_0, \\beta_0$ de $(2, 2')$ à $\\mathcal{M}_{\\mathcal{M}}[0]$ seront plutôt notées $\\alpha, \\beta$, où $\\alpha, \\beta$ \\dots à faire des \\dots\n$$\n\\mathcal{S}\\mathcal{G} = \\frac{\\mathfrak{G}_{0,3}^+ \\leftleftarrows \\dots \\rightleftarrows \\mathcal{S}\\mathcal{M}_{\\mathcal{G}}}{=\\{u, f\\} \\in \\mathcal{G}_{0,3}^+ \\times \\mathcal{G} \\mid f \\in \\mathcal{G}[0]} \\leqno{(13)}\n$$\ndonnant un \\dots de \\dots \\dots au sous-groupe ($\\cong \\mathcal{M}_{\\mathcal{M}}[0]$) de $\\mathcal{S}\\mathcal{G}$ défini par la relation $f=1$.\n\nComparons $\\alpha, \\beta : \\mathcal{G} \\leftleftarrows \\mathcal{G}_{0,3}^+$ via $\\varphi(\\mathfrak{G}_{0,3}^+)$, \\dots des \\dots, \\dots \\dots $\\alpha, \\beta$ (en $\\alpha^{\\#}, \\beta^{\\#}$ en confusion possible)\n$$\ng[0] \\leftleftarrows \\mathcal{C} \\leqno{(14)}\n$$\ndéfini par\n$$\n\\begin{cases}\n\\alpha(p) = \\alpha(\\alpha_0)p \\\\\n\\beta(p) = \\beta(\\beta_0)\\sigma\n\\end{cases} \\text{ pour } p \\in \\mathcal{M}_{\\mathcal{M}}[0] \\text{ fixant } \\varphi(u_0), \\text{ et } \\alpha = \\alpha(u_0), \\beta = \\beta(u_0). \\leqno{(15)}\n$$",
+      "tokens_in": 2905,
+      "tokens_out": 766,
+      "cost_usd": 0.0019,
+      "latency_s": 5.33
+    }
+  },
+  "140-3_p497": {
+    "volume": "140-3",
+    "page": 497,
+    "gemini_pbp": {
+      "model": "gemini-3.1-flash-lite-preview",
+      "text": "A priori, $\\alpha$ et $\\beta$ dépendent des choix de $u_0$ dans les orbites par $\\mathcal{M}$, mais\n$$\n\\left\\{ \\begin{aligned}\n\\alpha(u) &= [u, \\alpha] \\\\\n\\beta(u) &= [u, \\beta]\n\\end{aligned} \\right. \\leqno{(16)}\n$$\nils ne dépendent pas... pour\n$$\nT_{\\rho} = \\operatorname{Centr}_{\\mathcal{M}}(\\rho), \\quad T_{\\sigma} = \\operatorname{Centr}_{\\mathcal{M}}(\\sigma) \\leqno{(17)}\n$$\nOn voit donc que, modulo $T_{\\rho}, T_{\\sigma}$, $\\alpha, \\beta$ dépendent pas de $u$.\n\nHypothèse : $\\alpha, \\beta$ dépendent que de $u \\in \\mathcal{G}[0]$ (pour $u \\notin \\mathcal{G}[0]$).\n\nOn récapitule cette hypothèse de façon plus explicite :\n$$\nJ = \\Ker(\\mathcal{G}[0] \\to \\mathcal{M}[0]), \\leqno{(18)}\n$$\non voit donc que pour tout $u \\in \\mathcal{G}[0], \\delta_0 \\in J$, on a $\\alpha(u_0) = \\alpha(u_0)$, $\\beta(u_0) = \\beta(u_0)$.\nSoient $\\alpha = \\alpha(u_0)$, $\\beta = \\beta(u_0)$, $\\alpha' = \\alpha(u_0')$, $\\beta' = \\beta(u_0')$, $\\bar{u}_0 = \\alpha(u_0)$, $\\bar{p}_0 = \\beta(u_0)$ dans $\\mathcal{G}$, soient alors, par les formules de cocycles de $\\mathcal{G}$\n$$\n\\alpha' = \\delta_0(\\alpha)\\alpha_0, \\quad \\beta' = \\delta_0(\\beta)\\beta_0 \\leqno{(19)}\n$$\nd'où, et on a $\\varphi(\\delta_0(\\alpha)) = \\varphi(\\delta_0)\\varphi(\\alpha) = \\varphi(\\alpha_0) = \\alpha$ et on a $\\varphi(\\delta_0(\\beta)) = \\varphi(\\delta_0) = \\beta$.\nAinsi $\\alpha, \\beta, \\alpha', \\beta'$ sont les images par $\\varphi$ des quantités $\\alpha$ de $\\mathcal{G}_{0,3}^{\\wedge}$, sous l'hypothèse de l'hypothèse\n$$\n\\forall \\delta_0 \\in J = \\Ker(\\mathcal{G}[0] \\to \\mathcal{M}[0]), \\dots, \\alpha'(\\delta_0), \\beta'(\\delta_0) \\in \\Ker \\varphi \\leqno{(20)}\n$$\nQuand cette hypothèse est satisfaite, ...",
+      "tokens_in": 2905,
+      "tokens_out": 645,
+      "cost_usd": 0.0017,
+      "latency_s": 9.02
+    }
+  },
+  "140-3_p498": {
+    "volume": "140-3",
+    "page": 498,
+    "gemini_pbp": {
+      "model": "gemini-3.1-flash-lite-preview",
+      "text": "$$\n\\mathcal{M}[\\sigma] \\xrightarrow{\\alpha} \\mathcal{G} \\leqno (21)\n$$\nSatisfaisant aux conditions (14), et satisfaisant aux\n$$\n\\begin{cases} u \\varphi = \\alpha(u) \\varphi \\\\ \\varphi \\sigma = \\beta(\\sigma) \\varphi \\end{cases} \\quad \\text{pour } u \\in \\mathcal{M}[\\sigma], \\alpha = \\alpha(u), \\beta = \\beta(\\sigma), \\leqno(27)\n$$\nqui généralisent (21).\nD'ailleurs, posons\n$$\n\\xi = \\alpha \\varphi \\alpha^{-1}, \\quad \\eta = \\beta \\sigma \\beta^{-1} \\leqno(23)\n$$\nles relations (12) deviennent alors\n$$\nu \\varphi = \\varphi \\xi, \\quad \\sigma \\varphi = \\varphi \\eta \\leqno(24)\n$$\nsoit encore\n$$\n\\xi = [u, \\varphi], \\quad \\eta = [\\sigma, \\varphi] \\leqno(25)\n$$\net de plus\n$$\n\\xi = \\eta^{\\mu} \\quad \\left(\\text{où } \\mu = \\frac{n-1}{2} \\in \\hat{\\mathbf{Z}} \\quad (\\text{cf. la multiplication } \\mu)\\right) \\leqno(26)\n$$\nqui provient de la relation unique des $\\mathfrak{S}_{0,3}^+$.\n(On suppose pour fixer les idées que\n$$\n\\mathcal{G} \\xrightarrow{\\chi} \\hat{\\mathbf{Z}}^{\\times} \\quad (\\text{multiplication})\n$$\nest induite par\n$$\n\\mathcal{G} \\to \\mathcal{M} \\xrightarrow{\\chi} \\hat{\\mathbf{Z}}^{\\times},\n$$\nde même que la relation de multiplication (cf. $\\hat{\\mathbf{Z}}^{\\times}$) pour le $\\mathcal{M}$.)\nConsidérons l'homomorphisme\n$$\n\\mathcal{M}[\\sigma] \\to \\Aut(\\mathcal{G}) \\leqno(28)\n$$\net\n$$\nu \\mapsto \\text{int}(u) \\quad (\\text{cf. } (22))\n$$\ndéfini comme suit ---",
+      "tokens_in": 2905,
+      "tokens_out": 517,
+      "cost_usd": 0.0015,
+      "latency_s": 7.36
+    }
+  },
+  "140-3_p499": {
+    "volume": "140-3",
+    "page": 499,
+    "gemini_pbp": {
+      "model": "gemini-3.1-flash-lite-preview",
+      "text": "Les fonctions $\\alpha, \\beta : \\mathcal{M}_{0,3} \\to \\mathfrak{T}$ et $\\mathcal{M}_{0,3} \\to \\mathfrak{T}$.\\marginpar{052}\n\\noindent D'ailleurs, pour \n$$\n\\mathcal{M}'_{0,3} = \\operatorname{Im}(\\mathcal{M}_{0,3} \\to \\operatorname{Aut}(\\mathfrak{T})) \\leqno{(29)}\n$$\nces nouvelles fonctions $\\alpha, \\beta$ sont déjà définies sur $\\mathcal{M}_{0,3}$ --- bien qu'il ne soit pas clair qu'il en soit de même de $\\alpha, \\beta$ sur $\\mathcal{M}_{0,3}$ munie d'une fidèle sur $\\mathfrak{T}$. D'où ainsi une application d'un certain sous-groupe $\\mathcal{M}'_{0,3}$ à $\\operatorname{Norm}_{\\operatorname{Aut}(\\mathfrak{T})}(L_0)$ des l'une base\\footnote{[unclear: base]} des solutions de l'équation (17) \n$$\n\\xi = \\eta \\epsilon_1^\\mu \\leqno{(26)}\n$$\n$$\n\\zeta^\\mu \\in L_1 \\leqno{(30)}\n$$\nrelation qui est une des (26), avec la forme précise de l'exposant $\\mu$ on a que pour que $\\mathfrak{T}_{0,3} \\to \\mathfrak{T}$ factorise par $\\mathfrak{T}$ --- ce qui, on suppose, pour simplifier la vie.\n\nOn va faire sur $\\mathfrak{T}$, comme en $\\S5.4$, l'hypothèse pour préciser, soit\n$$\n\\mathfrak{T}_{\\alpha, \\beta, \\sigma} \\subset \\mathcal{G} \\times \\mathcal{G} \\leqno{(33)}\n$$\n$$\n\\left\\{ (\\xi, \\eta) \\in \\dots \\mid \\zeta^\\mu \\in L_1, \\text{ i.e. } \\exists \\mu \\mid \\xi = \\eta \\epsilon_1^\\mu \\right\\}\n$$\n\nPour $\\sigma \\in \\operatorname{Aut}(\\mathfrak{T})$... et faisant la clause de la situation où $\\zeta = [u, \\sigma]$ et $\\eta = ([u, \\rho] [u, \\sigma])$, satisfaisant aux deux premières conditions de (33), et",
+      "tokens_in": 2905,
+      "tokens_out": 536,
+      "cost_usd": 0.0015,
+      "latency_s": 9.36
+    }
+  }
+}

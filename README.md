@@ -3,7 +3,7 @@
 AI-assisted transcription of Alexander Grothendieck's handwritten
 manuscript *La longue marche à travers la théorie de Galois* (Part II,
 Cote 140-3 and 140-4, ~976 pages) into LaTeX, in collaboration with
-Mateo Carmona (Centre pour les Sciences de Grothendieck) and Olivia
+Mateo Carmona (Centre for Grothendieckian Studies (Centro di Studi Grothendieckiani)) and Olivia
 Caramello (Istituto Grothendieck).
 
 **The introductory blog post, for non-specialists:**
@@ -71,7 +71,7 @@ python experiments/pilot/diagnose_49_1.py
 This project exists because Mateo Carmona (CSG) shared the Part I
 typeset source and ground truth. Please cite:
 
-- Mateo Carmona, Centre pour les Sciences de Grothendieck
+- Mateo Carmona, Centre for Grothendieckian Studies (Centro di Studi Grothendieckiani)
 - Olivia Caramello, Istituto Grothendieck
 - Ivan Gentile (IFAB), AI pipeline and evaluation
 

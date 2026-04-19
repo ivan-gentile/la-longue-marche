@@ -1,0 +1,11 @@
+{
+  "length": 0,
+  "score": {
+    "raw_density_per_kchar": 0.0,
+    "notation_density_per_kchar": 0.0,
+    "abbr_density_per_kchar": 0.0,
+    "structure_coverage": 0.0,
+    "composite_penalty": 0.3,
+    "quality": 0.7
+  }
+}

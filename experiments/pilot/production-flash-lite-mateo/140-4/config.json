@@ -1,0 +1,12 @@
+{
+  "volume": "140-4",
+  "pdf": "140-4.pdf",
+  "total_pages": 280,
+  "model": "gemini-3.1-flash-lite-preview",
+  "model_key": "flash-lite",
+  "prompt_style": "mateo-canonical",
+  "thinking_level": "low",
+  "max_output_tokens": 16000,
+  "context": "previous_page_pdf",
+  "started": "2026-04-18T12:58:49.243541"
+}

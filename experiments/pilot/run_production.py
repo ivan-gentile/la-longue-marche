@@ -62,7 +62,8 @@ MODELS = {
 
 DEFAULT_MODEL = "pro"
 DEFAULT_THINKING = "medium"
-PROMPT_STYLE = "text-first-fewshot"
+DEFAULT_PROMPT_STYLE = "text-first-fewshot"
+PROMPT_STYLE = DEFAULT_PROMPT_STYLE  # mutated by --prompt-style
 MAX_OUTPUT_TOKENS = 16000
 DELAY = 5.0  # seconds between calls
 MAX_BACKOFF = 300  # max backoff on 429 (5 min)
@@ -322,7 +323,12 @@ def main():
                         help="Thinking level (default: medium)")
     parser.add_argument("--output-dir", type=str, default=None,
                         help="Output directory (default: production/)")
+    parser.add_argument("--prompt-style", type=str, default=DEFAULT_PROMPT_STYLE,
+                        help=f"Prompt style key from prompts_v2.py (default: {DEFAULT_PROMPT_STYLE})")
     args = parser.parse_args()
+
+    global PROMPT_STYLE
+    PROMPT_STYLE = args.prompt_style
 
     model_key = args.model
     thinking_level = args.thinking
@@ -340,7 +346,7 @@ def main():
     print(f"  Volumes:    {volumes}")
     print(f"  Total pages: {total_pages}")
     print(f"  Model:      {model_id} (thinking={thinking_level})")
-    print(f"  Prompt:     {PROMPT_STYLE}")
+    print(f"  Prompt:     {PROMPT_STYLE}  (--prompt-style {args.prompt_style})")
     print(f"  Context:    previous page PDF")
     print(f"  Max tokens: {MAX_OUTPUT_TOKENS}")
     print(f"  Output:     {output_dir}")

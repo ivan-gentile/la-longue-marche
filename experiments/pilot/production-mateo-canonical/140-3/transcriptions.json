@@ -1,0 +1,907 @@
+{
+  "1": {
+    "status": "success",
+    "transcription": "\\begin{center}\n\\vspace*{2cm}\n\n{\\Large UNIVERSITÉ MONTPELLIER}\n\n\\vspace{1cm}\n\n{\\Large \\textbf{IMAG}} \\\\\n{\\small INSTITUT MONTPELLIERAIN} \\\\\n{\\small ALEXANDER GROTHENDIECK}\n\n\\vspace{3cm}\n\n{\\huge \\textbf{La \"Longue Marche\" à travers la théorie de Galois}}\n\n\\vspace{1.5cm}\n\n{\\Large Deuxième partie : variations sur l'équation des lacets [suite à La \"Longue Marche\" à\ntravers la théorie de Galois\\dots, pages 293 à 650, dont table des matières]\\footnote{Lacunes entre les pages 371 et 379, la page 414 est manquante (ou erreur de pagination), la page 558 bis semble manquer. La page 518 est une photocopie.} : notes et copies\nde notes manuscrites (s.d.).}\n\n\\vspace{0.5cm}\n\n{\\large Cote n$^\\circ$ 140-3, 695 pages}\n\n\\vspace{2cm}\n\n{\\Large Alexander GROTHENDIECK}\n\n\\vspace{1cm}\n\n{\\large s.d.}\n\n\\end{center}\n\\newpage",
+    "usage": {
+      "prompt_tokens": 2361,
+      "output_tokens": 285,
+      "thinking_tokens": 1591
+    }
+  },
+  "2": {
+    "status": "success",
+    "transcription": "Pages 291-650 + table des matières\n\n\\underline{NB} Les pages 291, 292 figurent deux fois (erreur de numérotation)",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 41,
+      "thinking_tokens": 585
+    }
+  },
+  "3": {
+    "status": "success",
+    "transcription": "\\chapter*{2\\textsuperscript{ème} partie : Variations sur l'équation des lacets}\n\n\\noindent \\textbf{38} Détermination de $\\hat{\\Pi}_{0,3} \\isommap \\hat{\\mathfrak{S}}_{0,3}^+$. \\hfill 291\n\n\\vspace{0.5cm}\n\\noindent \\textbf{39} Propriétés de congruence de l'opération de $\\boldsymbol{\\Gamma}$ sur $\\hat{\\Pi}_{0,3}$. Lien : l'hom $\\mathcal{N}_1 \\to \\GL(2, \\hat{\\mathbf{Z}})$. \\hfill 299\n\n\\vspace{0.5cm}\n\\noindent \\textbf{40} Paraphrases topologico-isotopiques de la théorie de Legendre \\hfill 307'\n\n\\vspace{0.5cm}\n\\noindent \\textbf{41} Conditions de commutation des $\\hat{\\Pi}_{0,3}^+ \\isommap \\hat{\\mathfrak{S}}_{0,3}^+$ avec l'op. ext. de $\\boldsymbol{\\Gamma}$. \\\\\nCalculs des autom. ext. dans $\\hat{\\Pi}_{0,3}$ et dans $\\hat{\\mathfrak{S}}_{0,3}^+$. \\hfill 315\n\n\\vspace{0.5cm}\n\\noindent \\textbf{42} Récapitulation sur le groupe $\\hat{\\mathfrak{S}}_{0,3}^+$ \\\\\n\\dots et sur les autom. à lacets de $\\hat{\\mathfrak{S}}_{0,3}^+$ et de $\\hat{\\Pi}_{0,3}$ : \\hfill 331\n\\begin{itemize}\n    \\item[I] $\\hat{\\mathfrak{S}}_{0,3}^+$ \\hfill 331\n    \\item[II] $\\hat{\\Pi}_{0,3}$ et $\\hat{\\mathfrak{S}}_{0,3}$ \\hfill 332\n    \\item[III] relations avec $\\hat{\\Pi}_{0,3}$ et $\\SL(2, \\hat{\\mathbf{Z}})'$ \\hfill 334\n    \\item[IV] relations avec $\\hat{\\mathfrak{S}}_{0,3}$ et $\\SL(2, \\hat{\\mathbf{Z}})'$ \\hfill 335\n    \\item[V] les avatars de $\\hat{\\mathfrak{S}}_{0,3}$ \\hfill 336\n    \\item[VI] Autom. à lacets de $\\hat{\\Pi}_{0,3}$ et $\\hat{\\mathfrak{S}}_{0,3}^+$ \\hfill 337'\n    \\item[VII] Calculs dans $\\SL(2, \\hat{\\mathbf{Z}})'$ : cocycles normaux \\hfill 342\n    \\item[VIII] Calculs dans $\\SL(2, \\hat{\\mathbf{Z}})'$ : cocycles sur $\\mathfrak{S}_3$ \\hfill 346\n\\end{itemize}\n\\marginpar{NB les calculs des sections VII, VIII en fait [unclear: s'appliquent au cas] d'un groupe qcq! [unclear: dans] des \\S 40 à 44 notations complexes...}\n\n\\vspace{0.5cm}\n\\noindent \\textbf{43} Digressions sur les 1-cocycles des groupes cycliques \\hfill 350 \\\\\n(cas [unclear: pro-$p$, fini, $\\dots$])\n\n\\vspace{0.5cm}\n\\noindent \\textbf{44} Retour aux notations [unclear: initiales]. Mise en équations dans $\\SL(2, \\hat{\\mathbf{Z}})'$. \\hfill 356\n\n\\vspace{0.5cm}\n\\noindent \\textbf{45} L'hom. $\\mathcal{M}_{0,3} \\to \\GL(2, \\hat{\\mathbf{Z}})'$, et construction de l'extension $\\mathcal{N}_{0,3}$ de $\\boldsymbol{\\Gamma}$ par $\\SL(2, \\hat{\\mathbf{Z}})'$. \\hfill 384\n\n\\vspace{0.5cm}\n\\noindent \\textbf{46} Notations définitives (?) -- récapitulation des calculs sur les autom. à lacets de $\\hat{\\Pi}_{0,3}$ et de $\\hat{\\mathfrak{S}}_{0,3}^+$. \\hfill 390",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 977,
+      "thinking_tokens": 2464
+    }
+  },
+  "4": {
+    "status": "success",
+    "transcription": "\\noindent I Les groupes $M_{0,3}^{\\sim}$ et $N_{0,3}^{\\sim \\wedge}$ \\hfill 390\\\\\nII Calcul des éléments de $N_{0,3}^{\\sim \\wedge}$ \\hfill 392\\\\\n\\hspace*{1em} 1) Voie $f, g, h$ \\hfill 392\\\\\n\\hspace*{1em} 2) Voie $\\alpha, \\beta, \\gamma$ \\hfill 393\\\\\n\\hspace*{1em} 3) Voie $\\alpha, \\beta, f$ \\hfill 393'\\\\\n\\hspace*{1em} 4) Voie $x, y, \\xi$ \\hfill 393'\\\\\n\\hspace*{1em} 5) Congruences au niveau 12, relat.\\ aux cocycles \\hfill 394\\\\\nIII Calculs dans $\\SL(2,\\hat{\\mathbf{Z}})'$ et cocycles dans $\\SL(2,\\hat{\\mathbf{Z}})$ \\hfill 395\\\\\nIV Les trois cas fondamentaux ($m=1, \\rho=1, f=1$), et les relèvements $K_{1/2}, K_{2}, K_{\\infty}$. Les sous-groupes $M_{0,3}^{\\sim \\wedge}(q)$, $q \\in \\{1, 2, 1/2\\}$ \\hfill 402\\\\\nV Récapitulation en termes de $M_{0,3}^{\\sim \\wedge}[Q]$ \\marginpar{calculs num. Les sous-groupes $M_{0,3}^{\\sim \\wedge}(q)$, $q \\in \\{1, 2, 1/2, \\infty\\}$} \\hfill 404\\\\\nVI Retour sur l'introduction de $\\alpha$ et $\\beta$ \\hfill 414\\\\\n\n\\vspace{0.5em}\n\\noindent \\underline{47.} Retour sur l'homomorphisme $\\widehat{\\Pi}_{0,3} \\isommap \\mathfrak{S}^{+\\wedge}_{0,3}$, et les groupes $M_{0,3}^\\wedge, N_{0,3}^\\wedge, M_{0,3}^{\\wedge(2)}$ \\hfill 415\\\\\n\\underline{48.} Construction d'un schéma en groupes \\hfill 420\\\\\n\\hspace*{1em} I) Etude du morphisme [unclear: $\\alpha \\mapsto \\alpha p(\\alpha)^{-1} f(p)$] \\hfill 420\\\\\n\\hspace*{1em} II) L'équation [unclear: $\\zeta = y \\varepsilon_y (\\xi \\varepsilon - 1)$], et le groupe $B \\tilde{\\times} P_r$ \\hfill 434'\\\\\n\\hspace*{1em} III) L'équation [unclear: $\\alpha p(\\alpha)^\\sim = \\tilde{p}(\\beta)\\varepsilon(\\tilde{p}-1)$] \\hfill 443'\\\\\n\\hspace*{1em} (IV) Un épinglage canonique associé, pour $\\mathfrak{S}_{0,3}^\\sim$ \\hfill 445\\\\\n\\hspace*{1em} (V) L'équation $\\alpha p(\\alpha)^\\sim = \\varepsilon(\\tilde{p} \\sigma p(\\sigma)^{-1}) \\varepsilon_p(\\mu - 1)$ et son étude au $2^e$ ordre. Le groupe $M_{0,3}^\\sim$, la condition $Tr \\sigma = 0$ \\hfill 459\\\\\n\\hspace*{1em} (VI) Caractérisation du triplet $(E, \\sigma, p)$ modulaire \\hfill 462\\\\\n\n\\vspace{1em}\n\\noindent \\underline{VII} Récapitulation sur les épinglages. \\hfill 475\\\\\n\\underline{VIII} Récapitulation sur l'équation. Le groupe $S\\mathcal{G}_{g,\\nu}$ et ses variantes \\hfill 485\\\\\n\\underline{IX} Les groupes $\\mathcal{M}_{g,\\nu}$ et $S\\mathcal{M}_{g,\\nu}$, et les homomorphismes [unclear: $\\mathcal{S}\\mathcal{M}_{0,3}^{\\sim \\wedge} \\to \\mathcal{M}_{g,\\nu}^{(l)}/\\mathcal{Z}_{g,\\nu}$] \\hfill 490'\\\\\n\\underline{X} Structure de $\\mathcal{M}_{g,\\nu}$, et l'homomorphisme canonique $\\mathcal{M}_{g,\\nu} \\to GL(\\nu) \\simeq GL(2)$ \\hfill 499\\\\\n\\underline{XI} Récapitulation sur $\\mathcal{M}_{g,\\nu}$ \\hfill 508\\\\\n\\hspace*{1em} Reprise des (3°) $M_{g,\\nu}$, $\\mathcal{M}_{g,\\nu}$, calculs de pts critiques \\hfill 511\\\\\n\\hspace*{1em} 4°) L'hom $\\theta: \\mathcal{M}_{g,\\nu} \\to G$, $\\bar{\\theta}: \\mathcal{M}_{g,\\nu} \\to P G$ \\hfill 512, 513\\\\\n\\hspace*{1em} 5°) $R_{g,\\nu}$, $S R_{g,\\nu}$ \\hfill 513'\\\\\n\\hspace*{1em} 6°) (Nouveau) - Le centre du radical $R_{g,\\nu}$. Le sous-groupe $\\Sigma \\simeq \\mathbf{Z}/2\\mathbf{Z} \\times \\mathbf{Z}/2\\mathbf{Z}$ \\hfill 517\\\\\n\\hspace*{1em} 7°) Division de $R_{g,\\nu}$ et de $M_{g,\\nu}$ \\hfill 526'\\\\\n\\hspace*{1em} 8°) Les paramètres $U, z, k, \\mu, \\varepsilon, e$ et $x, f, \\alpha, \\beta, \\infty, \\rho, (i, j, q, h)$ \\hfill 529\\\\\n\\hspace*{1em} 9°) Les sous-groupes $M_{g,\\nu}(\\alpha)$, $M_{g,\\nu}[\\alpha]$, et l'algèbre $S\\mathcal{M}_{g,\\nu, \\text{lisse}}$. L'équa $\\sigma = S \\Sigma_{\\rho, \\sigma}^\\alpha$ \\hfill 542\\\\\n\\hspace*{1em} 10°) Les sous-groupes (nouveau) $\\mathcal{M}_{g,\\nu}(A)$, $\\mathcal{M}_{g,\\nu}(p)$ \\hfill 550'\\\\\n\\underline{XII} Rétrospective. \\hfill 592",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 1500,
+      "thinking_tokens": 7722
+    }
+  },
+  "5": {
+    "status": "success",
+    "transcription": "\\section*{49. Les groupes $\\mathcal{M}_{p,\\sigma}$ généraux \\hfill 550}\n\n\\noindent [ I Préliminaires heuristiques ]\n\n\\noindent II Les groupes $\\mathcal{M}_{p,\\sigma}$ ``sans signes'' -- nouvelles variantes sur la relation des lacets \\hfill 553\n\n\\noindent III Passage de $\\mathcal{M}_{0,3}^{\\sim}$ à $\\mathcal{N}_{1,1}^{\\sim}$ -- et de $GL(2, \\mathbf{Z})^{\\wedge} / \\pm 1$ à $GL(2, \\mathbf{Z})^{\\wedge}$ \\hfill 565\n\n\\noindent [ IV Où on se bat avec ``les signes'' $\\varepsilon_2, \\varepsilon_3$ dans la relation des lacets -- calculs -- brouillons\\dots ] \\hfill 568\n\n\\noindent V Les groupes $\\mathcal{M}_{p,\\sigma}$ généraux (contexte pro-fini) \\hfill 577\n\\begin{enumerate}\n\\item[1º)] Données \\hfill 577\n\\item[2º)] $Z_{p,\\sigma}, \\mathfrak{S}_{p,\\sigma}$ \\hfill 577'\n\\item[3º)] $S_0 G_{p,\\sigma}, G_{p,\\sigma}$ \\hfill 579\n\\item[4º)] $Z_p, Z_\\sigma, \\mathcal{N}_p, \\mathcal{N}_\\sigma, \\mathcal{N}_p^\\wedge, \\mathcal{N}_\\sigma^\\wedge, S\\mathcal{N}_p^\\wedge, S\\mathcal{N}_\\sigma^\\wedge$ \\hfill 580\n\\item[5º)] $S_0 \\mathcal{M}_{p,\\sigma}, \\mathcal{M}_{p,\\sigma}, S_0 \\Gamma_{p,\\sigma}, \\Gamma_{p,\\sigma}$ \\hfill 585\n\\item[6º)] $\\Xi_{p,\\sigma}, S\\mathfrak{G}_{p,\\sigma}, \\Xi_{p,\\sigma}^{\\text{eff}}, S\\mathfrak{G}_{p,\\sigma}^{\\text{eff}}$ \\hfill 586\n\\item[7º)] Fonctorialités. \\hfill 588\n\\item[8º)] \\marginpar{rectifications pour la ``relation du cas pur''} Le cas universel $\\mathfrak{G}^\\wedge \\simeq GL(2, \\mathbf{Z})^\\wedge$. Le sous-groupe $K_0$. Étude de l'extension $S_0 \\Gamma_{p,\\sigma}$ de $Z_{p,\\sigma} = M(\\Gamma_0)$ par $L_p \\times L_\\sigma$, et $S_0^{\\text{eff}} \\Gamma_{p,\\sigma}^1$ de $Z_{p,\\sigma}$ par $\\mu = \\pm 1$. \\hfill 590\n\\item[9º)] Récapitulation sur le cas universel. Structure de $\\mathcal{N}_\\sigma, \\mathcal{N}_\\sigma^\\wedge$. L'hom. can. $\\mathcal{M} \\to \\mathcal{M}_{p,\\sigma} / \\mathcal{M}_p \\isom \\mathcal{M}_{p,\\sigma} / \\mathcal{N}_p$. \\hfill 614\n\\end{enumerate}\n\n\\noindent VI Les groupes $\\mathcal{M}_{p,\\sigma}$ généraux : récapitulations et raffinement de la construction ci-dessus. \\hfill 628\n\\begin{enumerate}\n\\item[1º)] Données \\hfill 628\n\\item[2º)] $Z_{p,\\sigma}, \\mathfrak{S}_{p,\\sigma}$ \\hfill 629\n\\item[3º)] $G_{p,\\sigma}, G_{p,\\sigma} \\dots$ \\hfill 632\n\\item[4º)] $\\mathcal{N}_p, \\mathcal{N}_\\sigma, \\mathcal{N}_p^\\wedge, \\mathcal{N}_\\sigma^\\wedge \\dots$ \\hfill 635\n\\item[5º)] $\\mathcal{M}_{p,\\sigma}, \\mathcal{M}_{p,\\sigma} \\dots$ \\hfill 639\n\\item[6º)] Fonctorialités \\hfill 640\n\\item[7º)] $\\mathcal{M}_{p,\\sigma}[p]$, $\\mathcal{M}_{p,\\sigma}[s]$ \\hfill 642\n\\item[8º)] Autom. virtuels : $\\mathcal{M}_p^{\\text{virt}}$ \\hfill 643\n\\item[9º)] Digression sur les schémas en groupes \\hfill 648\n\\item[10º)] Lien avec §47\n\\end{enumerate}",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 1048,
+      "thinking_tokens": 7038
+    }
+  },
+  "6": {
+    "status": "success",
+    "transcription": "\\section*{29. (bis). Détermination explicite de l'hom. $\\Pi'_{0,3} \\to \\underline{C}_{0,3}^+$}\n(et de $\\Pi'_{0,3}$ ([unclear: Gr. pro-catégorique] $\\to \\underline{C}_{0,3}$)).\n\nJ'ai envie de revenir sur la prop. du \\S\\ précédent (p. 262) avec surfaces $X$, groupe discret $G$ opérant proprement, les stabilisateurs des $x \\in X$ conservent l'orientation et opèrent fidèlement --- sur un voisinage de $x$ ---\non prend $Y = X/G$, muni de la ``signature'' $\\underline{d} = d(X/Y)$ définie par la ramification ---\nd'où un iso\n$$\n\\Pi = \\Pi_1((X,G), x) \\isommap \\Pi_1((Y,\\underline{d}), y) = \\Pi' \\leqno{(1)}\n$$\n($x \\in X$, $y$ image de $x$ dans $Y$)\nque je voudrais étudier de plus près.\n\nOn a dans $\\Pi_1((Y,\\underline{d}), y)$, pour tout $b \\in Y!$ (supp.\\ $d_b>1$)\ndes ``sous-groupes locaux-disques'', plus précisément\nune classe de conjugaison de ss-groupes\nquotients de $\\mathbf{Z}/d_b\\mathbf{Z}$, et plus précisément encore,\nun hom.\\ canonique\n$$\nT_b \\otimes_{\\mathbf{Z}} \\mathbf{Z}/d_b\\mathbf{Z} \\to \\Pi' \\leqno{(2)}\n$$\ndéduit par passage au quotient de l'hom.\n$$\nT_b \\overset{\\xi_b}{\\to} \\Pi_1(Y \\setminus Y!) \\quad (\\to \\Pi_1((Y,\\underline{d}))) \\leqno{(3)}\n$$\n(où $T_b$ est le $\\mathbf{Z}$-module libre de rang $1$ des ``entiers tordus'' en $b$ sur $Y$). D'autre part, si $a \\in X$ est au-dessus de $b$, le stabilisateur $G_a$ est un groupe cyclique d'ordre $d_a=d_b$, on a un isom.\\ can.\\ évident\n$$\nG_a \\simeq T_a \\otimes_{\\mathbf{Z}} \\mathbf{Z}/d_a\\mathbf{Z} \\simeq T_b \\otimes \\mathbf{Z}/d_b\\mathbf{Z} \\leqno{(4)}\n$$\n(NB $T_a \\simeq T_b$ canoniquement).",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 612,
+      "thinking_tokens": 3208
+    }
+  },
+  "7": {
+    "status": "success",
+    "transcription": "D'autre part, à $a$ est associé une classe de conjugaison de scindages de l'extension\n$$\n1 \\to \\Pi_1(X,x) \\to \\Pi_1((X,G),x) \\to G \\to 1 \\leqno{(5)}\n$$\n(cf \\S 15)\n$$\nk_a : G_a \\to \\Pi_1((X,G),x) \\leqno{(6)}\n$$\n(à un $\\Pi_1(X,x)$-conjugué près).\nCes classes (ou scindages (si $X \\neq S^2$)) correspondent biunivoquement aux points fixes de $G$ opérant sur $X$. Si on prend l'homomorphisme extérieur défini par (6), celui-ci est défini à conjugaison près non seulement par les $g \\in \\Pi_1(X)$, mais par ceux de $\\Pi_1(X,G)$ tout entier) on trouve une correspondance 1-1 entre l'ensemble des homomorphismes extérieurs (6) qui relèvent l'inclusion\n$$\nG_a \\subset G\n$$\n(considérés comme homomorphismes extérieurs), et l'ensemble des orbites de $G$ dans $X!$\n\ndonc entre les points de $Y!$ En résumé -\n\n\\underline{Proposition} On a une bijection entre $Y!$ et l'ensemble des homomorphismes extérieurs \"maximaux\" ([unclear: $\\varphi = \\varphi_\\Gamma : \\Gamma \\to \\Pi_1$]) de sous-groupes $\\Gamma \\subset G$, (où $\\Gamma \\neq 1$, dans $\\Pi_1(X,G)$ qui relèvent l'inclusion $\\Gamma \\hookrightarrow G$ (les dits $\\Gamma$ sont nécessairement cycliques, les $\\Gamma$",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 404,
+      "thinking_tokens": 4981
+    }
+  },
+  "8": {
+    "status": "success",
+    "transcription": "292 (bis)\n\nen question correspondent à un $b \\in Y!$ et à\nles stabilisateurs $G_a$ dans $G$ des\n$a \\in X_b = X!_b$. De plus, le composé des\nhomo.\n$$\nT_b \\otimes \\mathbf{Z}/\\nu\\mathbf{Z} \\xrightarrow{\\sim} G_a \\xrightarrow{\\varphi_a=\\varphi_b} \\pi_1(X, G) \\xrightarrow{\\sim} \\pi_1(Y, \\underline{d}) \\leqno{(7)}\n$$\nn'est autre (on s'en serait douté !) que l'hom.\n\"lacets tronqué\" (2).\n\nSupposons maintenant que $X$ soit de\nla forme $\\hat{X} \\setminus S$, $\\hat{X}$ surface compacte,\n$S$ partie finie de $\\hat{X}$, donc\n$$\n\\begin{cases}\nX = \\hat{X} \\setminus S \\quad \\text{et} \\quad Y = \\hat{Y} \\setminus T \\\\\n\\hat{Y} = \\hat{X} / G\n\\end{cases} \\leqno{(8)}\n$$\nConsidérons alors, pour tout $a \\in S$, l'hom.\nextérieur\n$$\nk_a : T_a \\longrightarrow \\pi_1(X) \\hookrightarrow \\pi_1(X, G) \\leqno{(9)}\n$$\nque je vais comparer au composé\n$$\nT_b \\xrightarrow{k_b} \\pi_1(Y) \\longrightarrow \\pi_1(Y, \\underline{d}) \\leqno{(10)}\n$$\npour $b = \\hat{f}(a)$, moyennant l'isom. can.\n$$\nT_a \\simeq T_b \\leqno{(11)}\n$$\nSi $d_a$ désigne encore l'indice de ramifica-\ntion en $a$, on aura un diagramme\ncommutatif de compatibilité :",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 458,
+      "thinking_tokens": 5165
+    }
+  },
+  "9": {
+    "status": "success",
+    "transcription": "\\begin{tikzcd}\nT_a \\arrow[r, \"k_a\"] \\arrow[d, \"\\text{can}\"'] & \\pi_1(X) \\arrow[r] & \\pi_1(X, G) \\arrow[dd, \"\\wr\"] \\\\\nT_b \\arrow[d, \"d_a \\cdot \\text{id}\"'] & & \\\\\nT_b \\arrow[rr, \"k_b\"'] & & \\pi_1(Y, d)\n\\end{tikzcd} \\leqno{(12)}\n$$\n\nNous allons appliquer ceci à la situation où $X = \\mathcal{U}_{0,3}$, $G = \\mathfrak{S}_3$, $\\hat{X} = \\mathbb{P}^1$, $\\hat{Y} \\simeq \\mathbb{P}^1$, avec l'application de passage au quotient donnée par (p. 288' (58))\n$$\nf(z) = \\frac{3^3}{2^2} \\frac{z^2(z-1)^2}{(z^2-z+1)^3} \\leqno{(13)}\n$$\n$$\nf \\colon \\quad \n\\begin{matrix} 0 \\\\ 1 \\\\ \\infty \\end{matrix} \\longrightarrow 0 \\qquad \n\\begin{matrix} -1 \\\\ 2 \\\\ 1/2 \\end{matrix} \\longrightarrow 1 \\qquad \n\\begin{matrix} j \\\\ \\bar{\\jmath} \\end{matrix} \\longrightarrow \\infty\n$$\n\nOn voit donc, avec les notations de [unclear: espace vide], que les générateurs $l'_0, l'_1, l'_{\\infty}$ de $\\Pi'_{0,3}$\n$$\n(l'_0 l'_1 l'_{\\infty} = 1, \\qquad l'_1{}^2 = l'_{\\infty}{}^3 = 1) \\leqno{(14)}\n$$\ncorrespondent, par l'isomorphisme\n$$\n\\mathfrak{S}_{0,3}^+ = \\underset{\\substack{\\text{groupe cartographique} \\\\ \\text{triangulé pondéré or.}}}{\\pi_1(\\mathcal{U}_{0,3}, \\mathfrak{S}_3)} \\isommap \\underset{\\substack{\\text{groupe cartographique} \\\\ \\text{triangulaire orienté}}}{\\Pi'_{0,3}} = \\underset{\\substack{\\downarrow \\\\ \\simeq \\SL(2, \\hat{\\mathbf{Z}})}}{\\widehat{\\mathfrak{T}}_{1,1}^+} \\leqno{(15)}\n$$\naux éléments notés\n$$\n\\begin{matrix}\n\\varepsilon_0, \\varepsilon_1, \\varepsilon_{\\infty}\\footnote{ou $p_i$ ?} \\\\\n(\\text{tels que } \\varepsilon_i^2 = 1) \\\\\n\\sigma_",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 640,
+      "thinking_tokens": 15356
+    }
+  },
+  "10": {
+    "status": "success",
+    "transcription": "Ceci montre que l'on peut trouver (dans $\\pi = \\mathfrak{S}_{0,3}^+$)\ndes conjugués $\\varepsilon'_0$ de $\\varepsilon_0$, $\\sigma'_0$ de $\\sigma_0$, tels qu'on ait\n$$ \\rho \\sigma'_0 \\varepsilon'_0 = 1 \\, , \\text{ en plus de } \\rho^3 = {\\sigma'_0}^2 = 1 \\leqno{(1)} $$\net de telle façon que ces relations constituent\nune présentation de $\\pi$ (donc en particulier,\nque $\\varepsilon'_0, \\sigma'_0, \\rho$ engendrent $\\pi$). S'inspirant d'\nailleurs de l'isomorphisme plus fin qui\nprolonge (15) et s'obtient à [unclear: l'avenant]\n$$ \\mathfrak{S}_{0,3} \\cong \\Pi_1(U_{0,3}, \\underbrace{\\mathfrak{S}_3 \\times \\mathbf{Z}/2}_{\\overline{C}_{0,3}}) \\isommap \\underset{\\begin{subarray}{c} \\text{groupe cartographique} \\\\ \\text{triangulaire non} \\\\ \\text{orienté} \\\\ \\simeq \\operatorname{GL}(2,\\mathbf{Z}) \\end{subarray}}{\\overline{\\mathcal{C}}_{1,1}'} \\leqno{(16)} $$\non devrait trouver dans le premier membre\ntrois générateurs $\\tau'_0, \\tau'_1, \\tau'_\\infty$ (correspondants aux\ngén. analogues $\\tau_0, \\tau_1, \\tau_\\infty$ des groupes cartogra-\nphiques correspondants) satisfaisant\n$$ {\\tau'_0}^2 = {\\tau'_1}^2 = {\\tau'_\\infty}^2 = 1 \\, , \\quad (\\underbrace{\\tau'_0 \\tau'_1}_{\\text{conj. à } \\ell'_1})^2 = (\\underbrace{\\tau'_1 \\tau'_\\infty}_{\\text{corr. à } \\ell'_\\infty})^3 = 1 \\leqno{(17)} $$\nde telle façon que ce soient là les seules\nrelations de présentation de $\\mathfrak{S}_{0,3}$. Il\nfaudrait que l'on ait\n$$ \\tau'_\\infty \\tau'_1 = \\underset{\\begin{subarray}{c} \\downarrow \\\\ \\ell'_0 \\end{subarray}}{\\varepsilon'_0} \\, ; \\quad \\tau'_0 \\tau'_\\infty = \\underset{\\begin{subarray}{c} \\downarrow \\\\ \\ell'_1 \\end{subarray}}{\\sigma'_0} \\, , \\quad \\tau'_1 \\tau'_0 = \\underset{\\begin{subarray}{c} \\downarrow \\\\ \\ell'_\\infty \\end{subarray}}{\\rho} \\leqno{(18)} $$",
+    "usage": {
+      "prompt_tokens": 2903,
+      "output_tokens": 619,
+      "thinking_tokens": 6075
+    }
+  },
+  "11": {
+    "status": "success",
+    "transcription": "$X$ surface topologique\n\n$\\mathcal{G}$ groupe discret opérant sur $X$\n\n$G$ sous-groupe invariant dans $\\mathcal{G}$, opérant proprement sur $X$, de sorte que $\\forall x \\in X$ les stabilisateurs $G_x$ ($x \\in X$) opèrent sans renverser l'orientation locale en $x$.\n\n$Y = X/G$ (surface topologique), $f : X \\to Y$\n\n$X'$ partie discrète de $X$, stable sous $\\mathcal{G}$,\n\n$d_X$ \\og signature \\fg{} sur $X$ de support $X'$, inv. par $\\mathcal{G}$\n$$ d_X : X' \\to \\mathbf{N} $$\n\n$Y' = X'/G \\subset Y$ image de $X'$ dans $Y$\n\nOn suppose $x \\in X, \\quad G_x \\neq \\{1\\} \\Rightarrow x \\in X'$\n\n$d_Y : Y' \\to \\mathbf{N}, \\quad d_Y(y) = \\nu_x d_X(x)$\nsi $y = f(x), \\quad \\nu_x = [G_x]$\n\n$\\operatorname{Rev}(X, d_X, \\mathcal{G})$ catégorie des $\\mathcal{G}$-revêtements ramifiés de $X$, subordonnés à $d_X$\n\n$\\operatorname{Rev}(Y, d_Y, \\mathcal{H})$ catégorie des $\\mathcal{H}$-revêtements ramifiés de $Y$, subordonnés à $d_Y$\n\nPour $X'' \\in Ob \\operatorname{Rev}(X, d_X, \\mathcal{G})$, considérons\n$X''/G$ comme surface sur laquelle opère\n$\\mathcal{H} = \\mathcal{G}/G$, au-dessus de $Y = X/G$. Alors",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 415,
+      "thinking_tokens": 4119
+    }
+  },
+  "12": {
+    "status": "success",
+    "transcription": "\\begin{enumerate}\n\\item[a)] $X'/G \\in Ob \\mathcal{R}ev(Y, d_Y, \\mathcal{H})$\n\\item[b)] on trouve ainsi un foncteur\n$$\n\\mathcal{R}ev(X, d_X, G) \\to \\mathcal{R}ev(Y, d_Y, \\mathcal{H}) \\leqno{(19)}\n$$\n\\item[c)] ce foncteur est une équivalence de catégories.\n\\item[d)] Description d'un foncteur quasi-inverse par image inverse ``normalisée''.\n\\end{enumerate}\n\nRemarques. OPS $d_X : \\text{valeurs} > 0$ i.e.\\ $d_Y : \\text{valeurs} > 0$\n(sinon, si $S = \\{x \\in X' \\mid d_X(x) = 0\\}$, remplacer $X$ par $X \\setminus S$, $Y$ par $Y \\setminus T$ ($T = S/G$)).\n\nOPS $d_X(x) = 1 \\implies [G_x] \\neq 1$ (sinon, [unclear: enlever de] $X'$ [unclear: les points avec] $d_X(x) = 1$ et $G_x = 1$).\n\nLe cas le plus intéressant pour [unclear: nous] est celui où $d_X(x) = 1$ $\\forall x \\in X'$, et où $G_x \\neq \\{1\\}$ (donc $X' = \\{x \\in X \\mid G_x \\neq \\{1\\}\\}$), dans ce cas on a\n$$\n\\mathcal{R}ev(X, d_X, G) = \\mathcal{R}ev(X, G) \\leqno{(20)}\n$$\net on [unclear: utilise] $\\mathcal{R}ev(Y, d_Y, \\mathcal{H})$ pour s'enquérir [unclear: sur] $\\mathcal{R}ev(X, G)$\n(sans [unclear: données] de ramification)",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 481,
+      "thinking_tokens": 3949
+    }
+  },
+  "13": {
+    "status": "success",
+    "transcription": "\\noindent\n\\underline{Corollaire} Soit $x \\in X \\setminus X'$, $y$ son image dans $Y \\setminus Y'$. On a un isomorphisme canonique\n$$\n\\Pi_1((X, d_X, G)_x) \\isommap \\Pi_1((Y, d_Y, \\mathcal{H})_y) \\leqno{(21)}\n$$\nNous allons expliciter cet isomorphisme en termes de classes de lacets classiques.\n\nUn élément $\\alpha$ de $\\Pi_1((X, d_X, G)_x)$ provient d'un couple $(\\gamma, \\ell)$, où\n$$\n\\gamma \\in G, \\quad \\ell \\text{ classe de chemins dans } X \\setminus X' \\text{ de } x \\text{ vers } \\gamma^{-1}x\n$$\n(avec $(\\gamma, \\ell)$ et $(\\gamma', \\ell')$ définissant le même élément ssi $\\gamma' = \\gamma$, et $\\ell'^{-1} \\ell$ de $\\pi_1(X \\setminus X', x)$ est dans le sous-groupe invariant engendré dans $\\pi_1(X \\setminus X', x) \\longrightarrow \\pi_1((X, d_X), x)$ --- par les $k \\lambda_a^{d_X(a)} k^{-1}$, pour $a \\in X'$, $\\lambda_a$ désigne la classe dans $\\pi_1(X \\setminus X', x)$ d'un \"lacet de $x$ entourant $a$\").\n\nSoit alors $j$ l'image de $\\gamma$ dans $\\mathcal{H}$ --- et soit $p_U : X \\setminus X' \\defeq U \\longrightarrow Y \\setminus Y' \\defeq V \\isom U/G$ l'application.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 402,
+      "thinking_tokens": 2178
+    }
+  },
+  "14": {
+    "status": "success",
+    "transcription": "canoniques, d'où l'image $\\beta$ \\marginpar{de $\\alpha \\in \\Pi_1(X, d_X, \\mathcal{G}; x)$ défini par $(\\gamma, l)$}\ndans $\\Pi_1(Y, d_Y, \\mathcal{H}; y)$ est $(\\dot{\\gamma}, f_u(l))$\n\n(NB $f_u(l)$ est une classe de chemins dans $V \\defeq Y \\setminus Y'$ de $y = f_u(x)$ vers $\\dot{\\gamma}^{-1}(y) = f_u(\\gamma^{-1}x)$).\n\n\\marginpar{NB.}On voit tout de suite que si\n$(\\gamma, l)$ et $(\\gamma', l')$ définissent le même $\\alpha$, alors\nils définissent le même $\\beta$, ce qui\nprovient du fait que\n$$ \\pi_1(f_u) \\colon \\pi_1(X \\setminus X', x) \\to \\pi_1(Y \\setminus Y', y) $$\napplique un $\\lambda_a$ dans $\\lambda_b^{\\nu(a)}$\n($b = f(a)$, $\\nu(a) = [\\mathcal{G}_a] =$ degré de ramification de $f$ en $a$)\ndonc $\\lambda_a^{d_X(a)}$ dans $\\lambda_b^{d_X(a)\\nu(a) = d_Y(b)}$\n\nRevenons à la situation de (13) \\marginpar{$X' = \\{2,-1, 1/2 \\}$}\n$$ X = \\mathcal{U}_{0,3}, \\quad \\mathcal{G} = \\mathfrak{T}_{0,3} \\simeq \\mathfrak{S}_3 \\times \\mathbf{Z}/2, \\quad \\mathcal{G}^+ = \\mathfrak{T}_{0,3}^+ = \\mathfrak{S}_3 $$\n$$ Y \\simeq \\mathbf{P}^1 \\setminus \\{0\\}, \\quad Y' = \\{1, \\infty\\}, \\quad \\mathcal{H} = \\mathbf{Z}/2 \\mathbf{Z} $$\n[unclear: prolongé aux quotients] de $\\widehat{X} = \\mathbf{P}^1$ et $\\widehat{Y} = \\mathbf{P}^1$\ndonnés par (13)\n$$ f(z) = \\frac{3^3}{2^2} \\frac{z^2(z-1)^2}{(z^2-z+1)^3} $$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 555,
+      "thinking_tokens": 4206
+    }
+  },
+  "15": {
+    "status": "success",
+    "transcription": "Pour calculer $\\pi_1(Y, d_Y, \\mathbf{Z}/2\\mathbf{Z}) = \\widetilde{\\mathfrak{T}}_{0,3}$ (groupe cartographique trigénéré non orienté), on a pris le point base $y = -\\bar{J}$ , et choisi un $x \\in U_{0,3}$ au dessus de $y$, tel que\n$$\nf(x) = y = -\\bar{J}\n$$\n- il y a un choix [unclear: d'un] tel dans un $f^{-1}(\\{y\\})$ à six éléments, dont trois dans l'hémisphère nord (et les trois autres dans l'hémisphère sud), ceux-ci sont permutés transitivement par $\\mathfrak{S}_3$.\nIls se trouvent respectivement dans les triangles sphériques $(-\\bar{J}, 0, 1/2)$, $(-\\bar{J}, 1, 2)$, $(-\\bar{J}, \\infty, -1)$ (appliqués par $f$ homéomorphiquement sur le triangle sphérique $(0, 1, \\infty)$ supérieur (ou inférieur resp.) de centre $-\\bar{J}$ ). Le choix de $x$ revient donc à un choix de l'un des trois segments sphériques $(0, 1/2)$, $(1, 2)$, $(\\infty, -1)$ — j'ai envie de prendre $(0, 1/2)$, correspondant au triangle $(-\\bar{J}, 0, 1/2)$.\n\nLes trois générateurs $\\tilde{\\tau}_0, \\tilde{\\tau}_1, \\tilde{\\tau}_\\infty$ dans $\\pi_1(Y, d_Y, \\mathbf{Z}/2\\mathbf{Z})$ au dessus de $\\tau \\in \\mathbf{Z}/2\\mathbf{Z}$ s'obtiennent en prenant des chemins $l_0', l_1', l_\\infty'$ partant du point base $y = -\\bar{J}$ vers $\\tau y = -J$, qui sont les arcs de grand cercle coupant l'équateur resp. en $2, -1, 1/2$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 465,
+      "thinking_tokens": 4216
+    }
+  },
+  "16": {
+    "status": "success",
+    "transcription": "Ces chemins sont les images par $f$ de chemins sur $X$, soient $\\lambda_0: x \\xrightarrow{\\lambda_0} g_0 x$, $\\lambda_1: x \\xrightarrow{\\lambda_1} g_1 x$, $\\lambda_\\infty: x \\xrightarrow{\\lambda_\\infty} g_\\infty x$, qui coupent la subdivision barycentrique des dits triangles sphériques $(0,1,\\infty)$ en exactement un point, situés respectivement sur les côtés $(1/2, \\bar{J}), (\\bar{J}, 0), (0, 1/2)$ du triangle sphérique $(0, 1/2, \\bar{J})$.\\marginpar{NB Les points $2_0, 2_1, 2_\\infty$ sont les points [unclear: fixés] par $\\tau_0, \\tau_1, \\tau_\\infty$ sur $X$ (au dessus de [unclear: $\\bar{J}$ ou $\\tau \\bar{J}$]) dans les triangles sphériques $(\\bar{J}, 1/2, -1)$, $(0, \\bar{J}, -1)$, $(\\bar{J}, 1/2, 1)$.} Ces points (les $2_0, 2_1, 2_\\infty$) sont [unclear: d'abscisses] et extrémités respectives de la forme $g_0 x = \\sigma_0 \\tau x, g_1 x = \\sigma_1 \\tau x, g_\\infty x = \\sigma_\\infty \\tau x$ (i.e. $g_0 = \\sigma_0 \\tau, g_1 = \\sigma_1 \\tau, g_\\infty = \\sigma_\\infty \\tau$). Ainsi les générateurs involutifs $\\tau_0', \\tau_1', \\tau_\\infty'$ de $\\widetilde{\\Pi}_{0,3} = \\Pi_1(Y, dy, \\mathbf{Z}/2\\mathbf{Z}; y)$ sont les images des éléments (notés par le même signe)\n$$ \\tau_0' = (\\sigma_0 \\tau, \\lambda_0) ; \\quad \\tau_1' = (\\sigma_1 \\tau, \\lambda_1), \\quad \\tau_\\infty' = (\\sigma_\\infty \\tau, \\lambda_\\infty) $$\nde $\\Pi_1(X, \\underline{G} ; x)$. Nous allons utiliser le bout de grand cercle $x \\to -\\bar{J} = p$ (origine habituelle pour le calcul de $\\Pi_1(X, \\underline{g})$) pour identifier $\\Pi_1(X, \\underline{G} ; x)$ à $\\Pi_1(X, \\underline{g} ; p)$.\n\nOn peut alors prendre\n$$ \\tau_0' = (\\sigma_0 \\tau, \\lambda_0'), \\quad \\tau_1' = (\\sigma_1 \\tau, \\lambda_1'), \\quad \\tau_\\infty' = (\\sigma_\\infty \\tau, \\lambda_\\infty') \\leqno{(21)} $$\noù $\\lambda_0', \\lambda_1', \\lambda_\\infty'$ sont les bouts de chemins de $p = -\\bar{J}$ vers $g_0 p, g_1 p, g_\\infty p$ [unclear: qui s'en déduisent].",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 732,
+      "thinking_tokens": 4114
+    }
+  },
+  "17": {
+    "status": "success",
+    "transcription": "liés aux demi-axes [unclear: originaux] par la subdivision\nbarycentrique des doubles triangles sphériques\ny a pour $P=-j$, le demi-axe le rejoignant au\npôle sud, et [unclear: sous] le segment sphérique $(0, 1/2)$.\n\nLes points $z_0, z_1, z_\\infty$ sont caractérisés\nrespectivement comme les points $z$\ntels que $f(z) = -j$ et qu'ils\nse trouvent sur les triangles sphériques\n$([unclear: \\frac{1}{2}+i\\frac{\\sqrt{3}}{2}], j, 1)$, $(-j, 0, -1)$, $(0, 1/2, -j)$.\n\n[unclear: donnés] par\n$$ \\lambda'_i = [unclear: (\\dots)(l')(\\lambda_i)l] $$\n\nOn a donc\n$$ \\lambda'_0 = \\underset{\\substack{\\text{symétrie} \\\\ \\text{par rapp. à l'équa-} \\\\ \\text{teur } (\\infty, -j, 1/2, -j)}}{(\\sigma_0 \\dot{\\tau})(l')} \\cdot \\lambda_0 l \\quad \\text{homotope au lacet trivial dans } U_{0,3} $$\n\n$$ \\lambda'_1 = \\underset{\\substack{\\text{symétrie} \\\\ \\text{par l'équateur} \\\\ (0, -j, \\dots)}}{\\sigma_1 \\dot{\\tau}(l')} \\cdot \\lambda_1 l \\quad \\text{homotope au lacet trivial dans } U_{0,3} $$\n\n$$ \\lambda'_\\infty = (\\tau(l')) \\cdot \\lambda_\\infty l \\quad \\text{homotope au demi grand cercle } (-j, 1/2, j) \\text{ de } P=j \\text{ vers } P=-j $$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 428,
+      "thinking_tokens": 4303
+    }
+  },
+  "18": {
+    "status": "success",
+    "transcription": "En résumant, avec les notations de [C] (4b) p. 7 ff, on aura donc\n$$\n\\begin{cases}\n\\tau'_0 = \\widetilde{\\sigma}_\\infty & (\\text{ou } \\dot{\\sigma}_1) \\\\\n\\tau'_1 = \\widetilde{\\sigma}_0 & (\\text{ou } \\dot{\\sigma}_\\infty) \\\\\n\\tau'_\\infty = \\tau_\\infty & (\\text{ou } \\dot{\\tau})\n\\end{cases} \\qquad \\text{NB } \\tau_\\infty = \\widetilde{\\sigma}_\\infty \\widetilde{\\sigma}_0 = \\widetilde{\\sigma}_0 \\widetilde{\\sigma}_\\infty \\leqno{(22)}\n$$\n\nIl faut vérifier les relations essentielles\n$$\n\\tau'_0{}^2 = \\tau'_1{}^2 = \\tau'_\\infty{}^2 = (\\underbrace{\\tau'_\\infty \\tau'_0}_{\\widetilde{\\sigma}_\\infty})^2 = (\\underbrace{\\tau'_1 \\tau'_0}_{\\rho^{-1}})^3 = 1 \\leqno{(23)}\n$$\n\nLes quatre premières sont claires, la dernière s'écrit\n$$\n(\\widetilde{\\sigma}_0 \\widetilde{\\sigma}_\\infty)^3 = 1\n$$\nou\n$$\n\\widetilde{\\sigma}_0 \\widetilde{\\sigma}_\\infty = \\rho^{-1} \\quad (\\text{[C], formule 13,})\n$$\nd'où ce qu'on veut.\n\n\\marginpar{\\raggedright On exprime les $l_0, l_1, l_\\infty, \\tau_0, \\tau_1, \\tau_\\infty, \\rho, \\sigma_0, \\sigma_1, \\sigma_\\infty \\in \\Pi_{0,3}(V)$ en fct de $\\tau'_0, \\tau'_1, \\tau'_\\infty$ ainsi : $\\rho = \\tau'_0 \\tau'_1$, $\\tau_\\infty = \\tau'_\\infty$, $\\tau_0 = \\rho \\tau_\\infty \\rho^{-1} = \\tau'_0 \\tau'_1 \\tau'_\\infty \\tau'_1 \\tau'_0$, $\\tau_1 = \\rho^{-1} \\tau_\\infty \\rho = \\tau'_1 \\tau'_0 \\tau'_\\infty \\tau'_0 \\tau'_1$, $\\sigma_\\infty = \\tau'_0$, $\\sigma_0 = \\tau'_1$, $\\sigma_1 = \\tau'_0 \\tau'_1 \\tau'_0 = \\tau'_1 \\tau'_0 \\tau'_1$, $l_0 = \\tau_\\infty \\sigma_1 = \\tau'_\\infty \\tau'_0 \\tau'_1 \\tau'_0$, $l_1 = \\tau_0 \\sigma_0 = \\tau'_0 \\tau'_1 \\tau'_\\infty \\tau'_1 \\tau'_0 \\tau'_1 = \\tau'_0 \\tau'_1 \\tau'_\\infty \\tau'_0$, $l_\\infty = \\tau_1 \\sigma_\\infty = \\tau'_1 \\tau'_0 \\tau'_\\infty \\tau'_0 \\tau'_1 \\tau'_0 = \\tau'_1 \\tau'_0 \\tau'_\\infty \\tau'_1$.}\nCalculons (cf notations de (18)) $\\tau'_\\infty \\tau'_1$, $\\tau'_0 \\tau'_\\infty$, $\\tau'_1 \\tau'_0$ -- qui devaient correspondre à $l'_0, l'_1, l'_\\infty$ -- \n$$\nl'_0 = \\tau'_\\infty \\tau'_1 = \\tau_\\infty \\widetilde{\\sigma}_0 = \\widetilde{\\sigma}_\\infty \\underbrace{\\widetilde{\\sigma}_0 \\widetilde{\\sigma}_0}_{1} = \\widetilde{\\sigma}_\\infty\n$$\n$$\nl'_1 = \\tau'_0 \\tau'_\\infty = \\widetilde{\\sigma}_0\n$$\n$$\nl'_\\infty = \\tau'_1 \\tau'_0 = \\rho^{-1}\n$$\n\ni.e.\n$$\nl'_0 = \\widetilde{\\sigma}_\\infty , \\quad l'_1 = \\widetilde{\\sigma}_0 , \\quad l'_\\infty = \\rho^{-1} \\leqno{(24)}\n$$\n\navec les relations caractéristiques\n$$\nl'_0 l'_1 l'_\\infty = 1 \\quad , \\quad l'_1{}^2 = 1, \\quad l'_\\infty{}^3 = 1 \\leqno{(25)}\n$$\n\nTout est OK !",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 1004,
+      "thinking_tokens": 10466
+    }
+  },
+  "19": {
+    "status": "success",
+    "transcription": "Je voudrais encore expliciter la relation\n$$ \\Pi_{0,3} \\simeq \\mathfrak{S}_{0,3} $$\n\\marginpar{qui revient à $\\Aut_{ext}(\\Pi_{0,3})$}\navec $GP(1,\\mathbf{Z}) \\simeq GL(2,\\mathbf{Z})$.\n\ni.e.\\ $GL(2,\\mathbf{Z}) / \\{\\pm 1\\}$. Rappelons d'abord l'opération\nde\n$$ GP(1,\\mathbf{R}) \\simeq GL(2,\\mathbf{R})/\\mathbf{R}^* \\simeq GL(2,\\mathbf{R})^{\\pm 1} / \\{\\pm 1\\} \\leqno{(26)} $$\n\\footnote{NB $GP(1,\\mathbf{R})$ opère fidèlement sur $D$, et s'identifie au groupe des automorphismes de $D$, $\\SL(2,\\mathbf{R})/\\pm 1$ s'identifiant aux automorphismes analytiques.}dans le demi-plan de Poincaré $D$\n$$ D = \\{ z \\in \\mathbf{C} \\ | \\ \\Im(z) > 0 \\} = \\{ x + i y \\ | \\ x \\in \\mathbf{R}, y \\in \\mathbf{R}^{*+} \\} \\leqno{(27)} $$\nfaisant opérer la matrice $u = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ par\n$$ f_u(z) = \\begin{cases} \\frac{az+b}{cz+d} & \\text{si } \\det u > 0 \\\\ \\frac{a\\bar{z}+b}{c\\bar{z}+d} & \\text{si } \\det u < 0 \\end{cases} \\leqno{(28)} $$\nDe cette façon, $GP(1,\\mathbf{R})$ est isomorphe au groupe des automorphismes conformes de $D$.\n\nD'ailleurs, la donnée d'une courbe elliptique\\footnote{$E \\simeq \\mathbf{C} / \\pi$} équivaut : à la donnée d'un espace vectoriel $V$ complexe de dimension 1 sur $\\mathbf{C}$, et d'un \"réseau\" $\\pi \\subset V$ (sous-groupe discret de rang 2).\nL'orientation canonique de $V$ correspond à un générateur pour $\\bigwedge_{\\mathbf{Z}}^2 \\pi \\simeq \\mathbf{Z}$ dit \"orienté\". Le choix d'une rigidification",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 549,
+      "thinking_tokens": 2923
+    }
+  },
+  "20": {
+    "status": "success",
+    "transcription": "de base uni-modulaire de $\\pi$, équivaut à (comme $\\mathbf{Z}$-mod.) celui d'une base $(e_1, e_2)$ de $\\pi$ telle que (comme base de $V$ sur $\\mathbf{R}$) $e_1 \\wedge e_2 = \\eta$. L'élément $e_1$ permet d'ailleurs d'identifier $V$ à $\\mathbf{C}$, $e_1$ devenant $1$. Ainsi la donnée de $E$ munie de sa rigidification de base uni-modulaire, équivaut à celle d'un élément $e_2 = \\tau$ de $\\mathbf{C}$, tel que\n\\begin{enumerate}\n    \\item[1)] $(1, \\tau)$ engendre un sous-groupe discret de rang $2$, i.e.\\ $\\tau \\notin \\mathbf{R}$ i.e.\\ $\\Im \\tau \\neq 0$.\n    \\item[2)] L'orientation induite sur [unclear: le $\\mathbf{R}$-e.v.] par la base $(1, \\tau)$ est « directe », i.e.\\ $\\Im \\tau > 0$, i.e.\\ $\\tau \\in D$.\n\\end{enumerate}\n\nQuand on regarde l'opération de $\\SL(2, \\mathbf{Z})$ sur (les classes d') isomorphie de courbes ell.\\ rigidifiées, ainsi identifiées à $D$, on trouve que $u = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ opère par $\\tau \\mapsto \\frac{a\\tau + b}{c\\tau + d}$, c'est l'opération habituelle de $\\SL(2, \\mathbf{Z})$ sur $D$, à travers $\\SL(2, \\mathbf{Z}) \\to \\operatorname{GP}(1, \\mathbf{Z})^+$.\nCe groupe opère proprement, il a exactement deux trajectoires critiques, qui corres-",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 430,
+      "thinking_tokens": 7023
+    }
+  },
+  "21": {
+    "status": "success",
+    "transcription": "-pondent respectivement aux $\\tau$ qui avec $1$ engendrent le réseau des entiers alg. de $\\mathbf{Q}(i)$ (soit $\\mathbf{Z} + i\\mathbf{Z}$), et le réseau des entiers de $\\mathbf{Q}(j)$, formé des nbs de la forme $a + b j$ ($j = \\frac{-1+i\\sqrt{3}}{2} = \\exp \\frac{2 i \\pi}{3}$) ; les [unclear: ordres] de fixité correspondantes st $2$ et $3$.\n\nOn a un isom. canonique (analytique complexe)\n$$\nD / \\GL(2,\\mathbf{Z})^+ \\isom \\mathbf{P}^1_{\\mathbf{C}} \\setminus \\{\\infty\\} = Y , \\leqno{(29)}\n$$\ncaractérisé par la condition que l'orbite critique de ramification $3$ s'envoie sur le point $0$, et celle de ramification $2$ au point $1$. On trouve ainsi un isom.\n(posant $\\mathcal{G} = \\GL(2,\\mathbf{Z})$, $G = \\GL(2,\\mathbf{Z})^+ = \\SL(2,\\mathbf{Z})$)\n\\marginpar{$(x \\in \\overset{\\circ}{D}!)$}\n$$\n\\begin{tikzcd}\n\\pi_1(D, G, x) \\arrow[r, \"\\sim\"] \\arrow[d, equal] & \\pi_1(Y, \\underline{d} ; y) \\\\\nG &\n\\end{tikzcd} \\leqno{(30)}\n$$\nque je voudrais expliciter, en identifiant les $\\tau'_0, \\tau'_1, \\tau'_\\infty$ comme éléments de $\\SL(2,\\mathbf{Z})$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 404,
+      "thinking_tokens": 9747
+    }
+  },
+  "22": {
+    "status": "success",
+    "transcription": "\\section*{39. Les conditions de congruence pour l'opération extérieure de $\\Gamma_{\\mathbf{Q}}$ sur $\\hat{\\Pi}_{0,3}$.}\n\nConsidérons le diagramme\n$$\n\\begin{tikzcd}\n1 \\arrow[r] & \\hat{\\mathfrak{T}}_{1,1}^+ \\arrow[d, \"\\simeq\"'] \\arrow[r] & N_{1,1} \\arrow[dd] \\arrow[r] & \\Gamma_{\\mathbf{Q}} \\arrow[dd, \"\\chi\"] \\arrow[r] & 1 \\\\\n& \\SL(2, \\mathbf{Z})^\\wedge \\arrow[d] & & & \\\\\n1 \\arrow[r] & \\SL(2, \\hat{\\mathbf{Z}}) \\arrow[r] & \\operatorname{GL}(2, \\hat{\\mathbf{Z}}) \\arrow[r, \"\\det\"] & \\hat{\\mathbf{Z}}^* \\arrow[r] & 1\n\\end{tikzcd}\n\\leqno{(1)}\n$$\n\nIl montre que l'opération extérieure de $\\Gamma_{\\mathbf{Q}}$ sur $\\hat{\\mathfrak{T}}_{1,1}^+ \\simeq \\SL(2, \\mathbf{Z})^\\wedge$ passe au quotient en une opération extérieure sur $\\SL(2, \\hat{\\mathbf{Z}})$, et cette opération extérieure, de plus, peut s'expliciter entièrement à l'aide du caractère cyclotomique\n$$\n\\chi : \\Gamma_{\\mathbf{Q}} \\to \\hat{\\mathbf{Z}}^*\n\\leqno{(2)}\n$$\n\nPour préciser ce dernier point, notons que la deuxième ligne de (1) donne un homomorphisme\n$$\n\\hat{\\mathbf{Z}}^* \\to \\Autext(\\SL(2, \\hat{\\mathbf{Z}})),\n\\leqno{(3)}\n$$\net l'homomorphisme canonique\n$$\n\\Gamma_{\\mathbf{Q}} \\to \\Autext(\\SL(2, \\hat{\\mathbf{Z}}))\n\\leqno{(4)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 457,
+      "thinking_tokens": 7970
+    }
+  },
+  "23": {
+    "status": "success",
+    "transcription": "n'est autre que la composée de (2) et (3).\nPar ailleurs, l'hom.\\ (4) se factorise\nen\n$$\n\\hat{\\mathbf{Z}}^* / \\hat{\\mathbf{Z}}^{*2} \\longrightarrow \\Autext(\\SL(2, \\hat{\\mathbf{Z}})) \\leqno{(5)}\n$$\n(provient du fait que les éléments de\n$\\operatorname{GL}(2, \\hat{\\mathbf{Z}})$ qui sont dans le centre\n$\\hat{\\mathbf{Z}}^*$ opèrent trivialement sur $\\SL(2, \\hat{\\mathbf{Z}})$,\net que la composée\n$$ \\hat{\\mathbf{Z}}^* \\underset{\\text{(centre)}}{\\hookrightarrow} \\operatorname{GL}(2, \\hat{\\mathbf{Z}}) \\overset{\\det}{\\longrightarrow} \\hat{\\mathbf{Z}}^* $$\nn'est autre que $\\lambda \\mapsto \\lambda^2$). Plus\nprécisément, on voit que pour que l'\nautomorphisme de $\\SL(2, \\hat{\\mathbf{Z}})$ induit par un\n$u \\in \\operatorname{GL}(2, \\hat{\\mathbf{Z}})$ soit intérieur, i.e.\\ de la forme\n$\\operatorname{int}(u_0)$ avec $u_0 \\in \\SL(2, \\hat{\\mathbf{Z}})$, il f.\\ et i.s.\\\nqu'il existe $u_0 \\in \\SL(2, \\hat{\\mathbf{Z}})$ tel que\n$u u_0^{-1}$ commute à $\\SL(2, \\hat{\\mathbf{Z}})$, et cela signifie\nque c'est un scalaire - i.e.\\\n$u \\in \\SL(2, \\hat{\\mathbf{Z}}) \\cdot \\hat{\\mathbf{Z}}^*$. En d'autres termes,\nl'hom.\\ (5) est injectif, et on [unclear: remarquera]",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 426,
+      "thinking_tokens": 2748
+    }
+  },
+  "24": {
+    "status": "success",
+    "transcription": "le noyau de (4) n'est autre que le noyau du composé\n$$ \n\\Gamma_{\\mathbf{Q}} \\xrightarrow{\\chi} \\hat{\\mathbf{Z}}^* \\to \\hat{\\mathbf{Z}}^*/\\hat{\\mathbf{Z}}^{*2} \\leqno{(6)} \n$$\ni.e.\\ (par la théorie des corps de classes pour $\\mathbf{Q}$) l'opération ext.\\footnote{NB L'op.\\ ext.\\ de $\\Gamma_{\\mathbf{Q}}$ sur $\\SL(2,\\hat{\\mathbf{Z}})$ se fait par l'intermédiaire de $\\hat{\\mathbf{Z}}^*/\\hat{\\mathbf{Z}}^{*2}$.} de $\\Gamma_{\\mathbf{Q}}$ sur $\\SL(2,\\hat{\\mathbf{Z}})$ se factorise par une opération ext.\\ du $(\\Gamma_{\\mathbf{Q}_{ab}})$ -- le quotient \"abélien\" de $\\Gamma_{\\mathbf{Q}}$ -- et cette dernière est fidèle.\n\nAinsi, si on identifie $\\Gamma_{\\mathbf{Q}}$ [unclear: par ex.] à un sous-groupe de $\\Autext(\\SL(2,\\mathbf{Z})^\\wedge)$, ce sous-groupe satisfait à des conditions assez fortes : préserver le sous-groupe distingué noyau de\n$$ \n\\SL(2,\\mathbf{Z})^\\wedge \\to \\SL(2,\\hat{\\mathbf{Z}}) \\leqno{(7)} \n$$\net induire sur $\\SL(2,\\hat{\\mathbf{Z}})$ l'opération extérieure provenant d'un hom.\\ $\\Gamma \\to \\hat{\\mathbf{Z}}^*/\\hat{\\mathbf{Z}}^{*2}$.\n\nOn peut d'ailleurs préciser cet hom.\\ ainsi. Considérons dans $\\SL(2,\\hat{\\mathbf{Z}})$ le \"sous-groupe de Cartan\" provenant des points :",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 396,
+      "thinking_tokens": 6524
+    }
+  },
+  "25": {
+    "status": "success",
+    "transcription": "l'infini de $\\mathcal{M}_{1,1\\mathbf{Q}}$, il correspond :\n\nune classe d'homomorphisme extérieur\n$$ T = T_\\infty(\\overline{\\mathbf{Q}}) \\longrightarrow \\SL(2, \\hat{\\mathbf{Z}})^{\\wedge} \\leqno{(8)} $$\ndont l'image, disons, est (à conjugaison près)\nun sous-groupe \"unipotent\"\n$$ \\begin{pmatrix} 1 & 0 \\\\ n & 1 \\end{pmatrix} , \\quad n \\in \\hat{\\mathbf{Z}} \\leqno{(9)} $$\nCet homomorphisme extérieur est respecté par l'opération de $\\boldsymbol{\\Gamma}$, d'où une opération bien déterminée de $\\boldsymbol{\\Gamma}$ sur $T$\n$$ \\boldsymbol{\\Gamma} \\xrightarrow{\\chi} \\Aut(T) \\simeq \\hat{\\mathbf{Z}}^* \\leqno{(10)} $$\nqui sera justement le caractère cyclotomique. De façon plus précise, pour \\marginpar{[unclear: faisant l'identification]}\ntout automorphisme extérieur $u$ de $\\SL(2, \\mathbf{Z})^{\\wedge}$ (ou seulement de $\\SL(2, \\hat{\\mathbf{Z}})$)\nqui invariante la classe de \"conjugaison\" de l'image de (8) [ou seulement de son composé $T \\to \\SL(2, \\hat{\\mathbf{Z}})$], il existe un $\\chi(u) \\in \\Aut(T) \\simeq \\hat{\\mathbf{Z}}^*$ unique, tel qu'on ait commutativité dans...",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 353,
+      "thinking_tokens": 2652
+    }
+  },
+  "26": {
+    "status": "success",
+    "transcription": "$$\n\\begin{tikzcd}\nT \\arrow[r, \"\\text{sur}\"] \\arrow[d, \"\\chi(u)\"'] & \\SL(2, \\mathbf{Z})^\\wedge \\arrow[d, \"u\"] \\\\\nT \\arrow[r] & \\SL(2, \\mathbf{Z})^\\wedge\n\\end{tikzcd} \\leqno{(11)}\n$$\n\n-- ou mieux, seulement dans\n\n$$\n\\begin{tikzcd}\nT \\arrow[r, \"\\kappa\"] \\arrow[d, \"\\chi(u)\"'] & \\SL(2, \\hat{\\mathbf{Z}}) \\arrow[d, \"\\dot{u}\"] \\\\\nT \\arrow[r] & \\SL(2, \\hat{\\mathbf{Z}})\n\\end{tikzcd} \\leqno{(11)}\n$$\n\n-- et de là une condition (10) sur le\ngroupe de tous les autom. ext. de\n$\\SL(2, \\hat{\\mathbf{Z}})$ qui ont la propriété envisagée.\n\nCeci dit, $\\boldsymbol{\\Gamma}$ est contenu dans ce\nsous-groupe, et de plus dans le sous-\n-groupe des autom. ext. qui de plus\ninvarient le noyau de (7), et qui\nopèrent dans le quotient $\\SL(2, \\hat{\\mathbf{Z}})$\nsuivant le composé\n\n$$\n\\boldsymbol{\\Gamma} \\xrightarrow{\\chi} \\hat{\\mathbf{Z}}^* \\to \\hat{\\mathbf{Z}}^*/\\hat{\\mathbf{Z}}^{*2} \\to \\Autext_{loc!} (\\SL(2, \\hat{\\mathbf{Z}}))\n$$\n\nL'on d'ailleurs notera que le centre $\\{ \\pm 1 \\}$\nde $\\SL(2, \\mathbf{Z})^\\wedge$ n'étant pas trivial, l'op. ext.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 411,
+      "thinking_tokens": 6581
+    }
+  },
+  "27": {
+    "status": "success",
+    "transcription": "de $\\Gamma_{\\mathbf{Q}}$ sur $\\hat{\\mathfrak{T}}_{1,1}^+$ ne permet pas à priori de reconstituer (à isomorphisme unique près) l'extension $\\mathcal{N}_{1,1}$ de $\\Gamma_{\\mathbf{Q}}$ par $\\hat{\\mathfrak{T}}_{1,1}^+$ de (1). Elle donne seulement l'extension $\\mathcal{N}_{1,1}'$ de $\\Gamma_{\\mathbf{Q}}$ par $\\hat{\\mathfrak{T}}_{1,1}^{+\\prime} \\simeq \\SL(2, \\mathbf{Z})^\\wedge / \\{\\pm 1\\} \\marginpar{\\defeq \\SL(2, \\hat{\\mathbf{Z}})'}$ qui est l'image inverse de l'extension\n\n$$ 1 \\to (\\SL(2, \\hat{\\mathbf{Z}})') \\to \\Aut_{lac}(\\SL(2, \\hat{\\mathbf{Z}})') \\to \\Autext_{lac}(\\SL(2, \\hat{\\mathbf{Z}})') \\leqno{(13)} $$\n\nCette extension $\\mathcal{N}_{1,1}'$ a été aussi interprétée comme l'extension $\\mathcal{M}_{0,3} \\simeq \\mathcal{N}_{0,4}'$ de $\\Gamma_{\\mathbf{Q}}$ par $\\hat{\\mathfrak{S}}_{0,3} \\simeq \\hat{\\mathfrak{T}}_{0,4}'$ (groupe qui est lui-même extension de $\\mathfrak{S}_3 \\simeq \\SL(2, \\mathbf{Z}/2\\mathbf{Z})$ par $\\hat{\\pi}_{0,3}$).\n\nNous savons déjà que l'opération extérieure de $\\Gamma_{\\mathbf{Q}}$ sur le noyau $\\hat{\\pi}_{0,3}$ de $\\SL(2, \\hat{\\mathbf{Z}})' \\to \\SL(2, \\mathbf{Z}/2\\mathbf{Z})$ est fidèle, et concordante à l'opération extérieure de $\\mathfrak{S}_3 \\simeq \\SL(2, \\mathbf{Z}/2\\mathbf{Z}) \\simeq \\SL(2, \\hat{\\mathbf{Z}})' / \\hat{\\pi}_{0,3}$.\n\nMais cette concordance permet...",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 478,
+      "thinking_tokens": 8674
+    }
+  },
+  "28": {
+    "status": "success",
+    "transcription": "nant s'interpréter comme conséquence du fait que l'opération ext. de $\\Gamma_{\\mathbf{Q}}$ sur $\\mathfrak{S}_3 \\simeq \\SL(2, \\mathbf{Z}/2\\mathbf{Z})$ est triviale, elle-même (dans l'optique présente) conséquence du fait qu'elle se fait par l'intermédiaire d'une op. (fidèle) de $(\\mathbf{Z}/n\\mathbf{Z})^\\ast_{/ \\pm}$ , où pour $n=2$ $(\\mathbf{Z}/n\\mathbf{Z})^\\ast_{/\\pm} = 1$ (assertion qui est par contre fausse pour les valeurs $n \\neq 1,2$ i.e. $n \\geq 3$). Cette relation de commutativité, de nature assez triviale, apparait donc à présent comme un cas très particulier des relations congruentielles nettement plus subtiles engendrées par les symétries galoisiennes. On peut l'exprimer de façon directe en termes de l'opération ext. de $\\Gamma_{\\mathbf{Q}}$ sur $\\widehat{\\pi}_{0,3}$, en introduisant les noyaux des hom. $\\widehat{\\mathfrak{T}}_{1,1}^+ \\to \\SL(2, m)$, qui sont des sous-groupes ouverts\n$$\n\\pi(2m) \\subset \\widehat{\\pi}_{0,3} \\leqno{(14)}\n$$\ndistingués et [unclear: isomorphes] au pro $\\mathfrak{S}_3$, noyaux",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 334,
+      "thinking_tokens": 2917
+    }
+  },
+  "29": {
+    "status": "success",
+    "transcription": "d'homomorphismes\n$$ \\phi_{2m} : \\widehat{\\Pi}_{0,3} \\to \\SL(2, \\mathbf{Z}/2m\\mathbf{Z})' \\leqno{(15)} $$\nqu'il ne doit pas être bien difficile d'expliciter, provenant par \"réduction mod $2m$\" d'un hom.\n$$ \\phi_\\infty : \\widehat{\\Pi}_{0,3} \\to \\SL(2, \\hat{\\mathbf{Z}})' \\leqno{(16)} $$\ndont il a été question déjà précédemment - hom. dont l'image est le sous-groupe noyau de $\\SL(2, \\hat{\\mathbf{Z}}) \\to \\SL(2, \\mathbf{Z}/2\\mathbf{Z})$, i.e. on a des suites exactes\n$$ 1 \\to \\Pi(\\infty) \\to \\widehat{\\Pi}_{0,3} \\to \\SL(2, \\hat{\\mathbf{Z}}) \\to \\SL(2, \\mathbf{Z}/2\\mathbf{Z}) \\to 1 \\leqno{(17)} $$\n$$ 1 \\to \\Pi(2m) \\to \\widehat{\\Pi}_{0,3} \\to \\SL(2, \\mathbf{Z}/2m\\mathbf{Z}) \\to \\SL(2, \\mathbf{Z}/2\\mathbf{Z}) \\to 1 \\leqno{(18)} $$\nCeci posé, lesdites suites exactes permettent de façon naturelle de définir une opération ext. de $\\hat{\\mathbf{Z}}^\\times / \\hat{\\mathbf{Z}}^{\\times 2}$ sur $\\widehat{\\Pi}_{0,3} / \\Pi(\\infty)$ , ou encore des $(\\mathbf{Z}/2m\\mathbf{Z})^\\times_2$ sur les $\\widehat{\\Pi}_{0,3} / \\Pi(2m)$ , et la \"coalition des congruences\" s'exprimera en disant que la condition cyclotomique s'exprime par la condition que l'action $\\chi$ de $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$ (déduite de l'opération ext. de",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 479,
+      "thinking_tokens": 7408
+    }
+  },
+  "30": {
+    "status": "success",
+    "transcription": "$\\Gamma_{\\mathbf{Q}}$ sur $\\hat{\\mathfrak{T}}_{0,3}$ (ou $\\hat{\\mathfrak{S}}_{0,3}$ : [unclear: base] $\\hat{\\Pi}_{0,3}$), [unclear: provient] d'un\n$$\n\\Gamma_{\\mathbf{Q}} \\xrightarrow{\\chi} \\hat{\\mathbf{Z}}^\\times \\xrightarrow{\\mathrm{can.}} \\hat{\\mathbf{Z}}^\\times / \\hat{\\mathbf{Z}}^{\\times 2} \\leqno{(19)}\n$$\net que cette opération extérieure de $\\Gamma_{\\mathbf{Q}}$ sur\n$\\hat{\\Pi}_{0,3} / \\Pi(\\infty)$, est compatible avec\nl'opération extérieure de $\\Gamma_{\\mathbf{Q}}$ sur $\\hat{\\Pi}_{0,3}$ lui-même.\n\nPour chaque entier $m$, cette condition\ns'explicite par le fait que $\\Pi(2m)$ est\ninvariant par l'opération extérieure de $\\Gamma_{\\mathbf{Q}}$, et que\nl'opération extérieure induite sur\n$\\hat{\\Pi}_{0,3} / \\Pi(2m)$ est celle déduite du\ncaractère composé de (19) avec\n$\\hat{\\mathbf{Z}}^\\times / \\hat{\\mathbf{Z}}^{\\times 2} \\to (\\mathbf{Z}/2m\\mathbf{Z})_2^\\times$ :\n$$\n\\Gamma_{\\mathbf{Q}} \\to (\\mathbf{Z}/2m\\mathbf{Z})_2^\\times \\leqno{(20)}\n$$\nOn devrait regarder si cette formulation\nest vraiment équivalente à celle des\nconditions de congruences dans $\\hat{\\mathfrak{T}}_{1,1}^{+ '}$\nles autres, étant de simples\nconséquences ; exercice ! Par contre, le",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 397,
+      "thinking_tokens": 8686
+    }
+  },
+  "31": {
+    "status": "success",
+    "transcription": "question de savoir si ces conditions\nconstituent bel et bien une restriction\neffective, sur un autom.\\ ext.\\ du\ngr.\\ $\\pi$ : [unclear: tout] $\\hat{\\pi}_{0,3}$, contrairement\nà l'action de $\\mathfrak{S}_3$, risque fort d'être\nhors de portée, faute de savoir\nconstruire effectivement de tels autom.\\footnote{Ou ne fût-ce des éléments [unclear: mystérieux] de $\\hat{\\mathfrak{S}}_{0,3}^*$.}\nextérieurs de $\\pi$ - autrement que\njustement par voie arithmétique, à\nl'aide de l'opération de $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$ sur\n$\\hat{\\pi}_{0,3}$ ! (Il faudrait quand même\nrefaire à l'occasion un effort en ce\nsens...)\n\nJe me pose aussi la question, dans\nquelle mesure on peut reconstituer, en\ntermes de la théorie des groupes profinis\nà lacets et de leurs autom.\\ ext.\\ de\n$\\hat{\\pi}_{0,3}$, ou de $\\hat{\\mathfrak{T}}_{0,3} \\simeq \\hat{\\mathfrak{T}}_{1,1}^+$, l'homo-",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 264,
+      "thinking_tokens": 3209
+    }
+  },
+  "32": {
+    "status": "success",
+    "transcription": "\\begin{enumerate}\n    \\item[a)] l'extension plus fine $\\mathcal{N}_{1,1}$ de $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$ par $\\hat{\\mathfrak{T}}_{1,1}^+$, qui est donc une ext.\\ de $\\mathcal{N}_{1,1}'$\n    (censé être connue) par le gr.\\ $\\simeq \\{\\pm 1\\}$\n    \\item[b)] l'hom.\\ $\\mathcal{N}_{1,1} \\to \\mathrm{GL}(2, \\hat{\\mathbf{Z}})$ de (21),\n    et à défaut, l'hom.\n    $$ \\mathcal{N}_{1,1}' \\simeq \\hat{\\mathcal{M}}_{0,3}^{\\text{paire}} \\to \\mathrm{GL}(2, \\hat{\\mathbf{Z}})/\\{\\pm 1\\} \\leqno{(22)} $$\n\\end{enumerate}\n\nJe commence par la question b).\nSi on dispose de l'extension $\\mathcal{N}_{1,1}$ de $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$ par $\\hat{\\mathfrak{T}}_{1,1}^+ \\simeq \\SL(2, \\hat{\\mathbf{Z}})^\\sim$, on a un hom.\n$$ \\mathcal{N}_{1,1} \\to \\Autext(\\underset{\\SL(2, \\hat{\\mathbf{Z}})^\\sim}{\\hat{\\mathfrak{T}}_{1,1}^+}) \\leqno{(23)} $$\nqui passe au quotient en un hom.\n$$ \\mathcal{N}_{1,1} \\to \\Autext(\\SL(2, \\hat{\\mathbf{Z}})) \\leqno{(24)} $$\non a un hom.\\ évident\n$$ \\mathrm{GL}(2, \\hat{\\mathbf{Z}}) \\to \\Autext(\\SL(2, \\hat{\\mathbf{Z}})) $$\nqui se factorise en\n$$ \\mathrm{GL}(2, \\hat{\\mathbf{Z}}) \\to \\mathrm{GL}(2, \\hat{\\mathbf{Z}})/\\hat{\\mathbf{Z}}^\\times \\simeq \\mathrm{PGL}(2, \\hat{\\mathbf{Z}}) \\hookrightarrow \\Autext(\\SL(2, \\hat{\\mathbf{Z}})) \\leqno{(25)} $$\net il se trouve que (24) se factorise en\n$$ \\mathcal{N}_{1,1} \\to \\underset{\\simeq \\mathrm{GL}(2, \\hat{\\mathbf{Z}})/\\hat{\\mathbf{Z}}^\\times}{\\mathrm{PGL}(2, \\hat{\\mathbf{Z}})} \\hookrightarrow \\Autext(\\SL(2, \\hat{\\mathbf{Z}})) \\leqno{(26)} $$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 600,
+      "thinking_tokens": 4654
+    }
+  },
+  "33": {
+    "status": "success",
+    "transcription": "ce qui permet donc de reconstituer, à partir de l'extension $\\mathcal{N}_{1,1}$, un hom\n$$\n\\mathcal{N}_{1,1} \\overset{\\varphi}{\\longrightarrow} \\operatorname{PGL}(1, \\hat{\\mathbf{Z}}) \\simeq \\operatorname{GL}(2, \\hat{\\mathbf{Z}}) / \\hat{\\mathbf{Z}}^* \\leqno{(27)}\n$$\nun peu plus faible que l'hom (21) qu'on demande : [unclear: à] construire. Mais notons que l'hom.\n$$\n\\operatorname{GL}(2, \\hat{\\mathbf{Z}}) \\overset{u \\mapsto (\\bar{u}, \\det(u))}{\\longrightarrow} \\operatorname{PGL}(1, \\hat{\\mathbf{Z}}) \\times \\hat{\\mathbf{Z}}^* \\leqno{(28)}\n$$\na comme noyau l'ens. des $\\lambda \\in \\hat{\\mathbf{Z}}^*$ tels que $\\lambda^2 = 1$ i.e. le groupe\n$$\n{_2\\hat{\\mathbf{Z}}^*} \\simeq (\\mathbf{Z} / 2 \\mathbf{Z})^P \\quad \\text{ P ens. des nbs premiers} \\leqno{(29)}\n$$\nAinsi, on a l'hom\n$$\n\\mathcal{N}_{1,1} \\overset{u \\mapsto (\\varphi(u), \\chi(u))}{\\longrightarrow} \\operatorname{PGL}(1, \\hat{\\mathbf{Z}}) \\times \\hat{\\mathbf{Z}}^* \\leqno{(30)}\n$$\n(déduit de $(27)$ et de $\\chi$)\\footnote{c.à.d. un scindage de l'ext. $\\mathcal{N}_{1,1}$ de la cat. ou plutôt un relev. de l'op. de $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$ sur $\\hat{\\mathfrak{T}}_{1,1}^\\pm$} se factorise par l'image de $(28)$, et définit donc un hom\n$$\n\\mathcal{N}_{1,1} \\overset{\\psi}{\\longrightarrow} \\operatorname{GL}(2, \\hat{\\mathbf{Z}}) / {_2\\hat{\\mathbf{Z}}^*} \\leqno{(31)}\n$$\nqui est encore une version affaiblie de $(21)$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 522,
+      "thinking_tokens": 5310
+    }
+  },
+  "34": {
+    "status": "success",
+    "transcription": "À vrai dire, l'homomorphisme (31) se factorise en\n$$\n[\\mathcal{N}_{1,1} \\to] \\underset{\\substack{|| \\\\ \\mathcal{N}_{1,1}/\\pm 1}}{\\mathcal{N}'_{1,1}} \\overset{\\Psi'}{\\longrightarrow} \\GL(2, \\hat{\\mathbf{Z}})/_2\\hat{\\mathbf{Z}}^* \\leqno{(32)}\n$$\net l'hom. $\\Psi'$ peut sûrement se construire directement à partir de l'extension $\\mathcal{N}'_{1,1}$ de $\\Gamma_{\\mathbf{Q}}$ par $\\overline{\\mathfrak{T}}_{1,1} \\simeq \\hat{\\mathfrak{S}}_{0,3}^+ \\simeq \\SL(2, \\hat{\\mathbf{Z}})'$, tout comme tantôt $\\varphi$ : il suffit de vérifier que l'hom. canonique\n$$\n\\begin{tikzcd}\n\\mathcal{G}P(1, \\hat{\\mathbf{Z}}) \\arrow[r] & \\Autext(\\SL(2, \\hat{\\mathbf{Z}})') \\\\\n\\GL(2, \\hat{\\mathbf{Z}})/\\hat{\\mathbf{Z}}^* \\arrow[u, \"\\simeq\"']\n\\end{tikzcd}\n\\leqno{(33)}\n$$\nest injectif. La question (question du reste [unclear: des plus futiles]...) est comment relier $\\Psi'$ de (31) avec l'hom. canonique\n$$\n\\mathcal{N}'_{1,1} \\longrightarrow \\GL(2, \\hat{\\mathbf{Z}})' \\defeq \\GL(2, \\hat{\\mathbf{Z}})/\\pm 1 \\leqno{(34)}\n$$\n--- une fois cet hom. obtenu, on en déduit l'ext. $\\mathcal{N}_{1,1}$ par image inverse de la structure d'ext.\n$$\n1 \\to \\{\\pm 1\\} \\to \\GL(2, \\hat{\\mathbf{Z}}) \\to \\GL(2, \\hat{\\mathbf{Z}})' \\to 1 \\leqno{(35)}\n$$\nainsi que l'hom. (21) $\\mathcal{N}_{1,1} \\to \\GL(2, \\hat{\\mathbf{Z}})$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 518,
+      "thinking_tokens": 3798
+    }
+  },
+  "35": {
+    "status": "success",
+    "transcription": "Donc en résumé, la question essentielle semble ici la détermination d'un relèvement (34) de (32).\n\nReprenons nos arguments. On se donne un sous-groupe $\\Gamma$ de $\\Autext(\\hat{\\pi}_{0,3})$, commutant à $\\mathfrak{S}_3$, d'où une extension $\\mathcal{M}$ (notée $\\mathcal{M}_{0,3}$ ou $\\mathcal{N}_{1,1}'$) de $\\Gamma$ par $\\hat{\\mathfrak{S}}_{0,3}^+$, ou encore de $\\mathfrak{S}_3 \\times \\Gamma$ par $\\hat{\\pi}_{0,3}$, d'où un homomorphisme\n$$\n\\mathcal{M}_{0,3} (\\simeq \\mathcal{N}_{1,1}') \\to \\Aut(\\hat{\\mathfrak{S}}_{0,3}^+ \\simeq \\SL(2,\\hat{\\mathbf{Z}})'^\\wedge) \\leqno{(36)}\n$$\ninduisant sur $\\hat{\\mathfrak{S}}_{0,3}^+$ l'opération intérieure de ce groupe sur lui-même.\nOn a par ailleurs un hom. injectif\n$$\n\\mathrm{GL}(2,\\hat{\\mathbf{Z}}) \\hookrightarrow \\Aut(\\SL(2,\\hat{\\mathbf{Z}})') \\leqno{(37)}\n$$\net $\\Gamma \\subset \\Autext(\\hat{\\pi}_{0,3})$ est astreint (si ce n'est déjà une conséquence de l'hyp. de commutation à $\\mathfrak{S}_3$) à la condition que l'action ext.\n$$\n\\Gamma \\to \\Autext(\\hat{\\mathfrak{S}}_{0,3}^+ \\simeq \\SL(2,\\hat{\\mathbf{Z}})'^\\wedge) \\leqno{(38)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 396,
+      "thinking_tokens": 6845
+    }
+  },
+  "36": {
+    "status": "success",
+    "transcription": "soit compatible aux actions ext. de $\\Gamma$, sur $\\hat{\\mathfrak{S}}_{0,3}^+$ par tautologie (du fait que $\\Gamma$ est formé d'él. de $\\Autext(\\hat{\\Pi}_{0,3})$ qui commutent à $\\mathfrak{S}_3$), sur $\\SL(2,\\hat{\\mathbf{Z}})'$ via $\\hat{\\mathbf{Z}}^* / \\hat{\\mathbf{Z}}^{*2}$ et le caractère \"cyclotomique\"\n$$\n\\chi: \\Gamma \\to \\hat{\\mathbf{Z}}^* \\leqno{(39)}\n$$\ndéduit de l'op. ext. tautologique de $\\Gamma$ sur $\\hat{\\Pi}_{0,3}$ (respectant la structure à lacets).\nCette \"condition de congruence\" signifie que (36) se factorise par (37), en un hom. [unclear: disons] déterminant\n$$\n\\varphi': \\mathcal{M}_{0,3} \\to \\mathrm{GL}(1, \\hat{\\mathbf{Z}}) \\leqno{(40)}\n$$\nd'où, en utilisant de plus ledit caractère cyclotomique, un hom.\n$$\n\\mathcal{M}_{0,3} \\xrightarrow{u \\mapsto (\\varphi'(u), \\chi(u))} \\mathrm{GL}(1, \\hat{\\mathbf{Z}}) \\times \\hat{\\mathbf{Z}}^* \\leqno{(41)}\n$$\net la condition géométrique nous assure en fait, plus précisément, que ce dernier se factorise en un hom.\n$$\n\\mathcal{M}_{0,3} \\xrightarrow{\\Psi'} \\mathrm{GL}(2, \\hat{\\mathbf{Z}}) / \\hat{\\mathbf{Z}}^*_2 \\leqno{(42)}\n$$\ncompte tenu de l'injection",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 404,
+      "thinking_tokens": 3396
+    }
+  },
+  "37": {
+    "status": "success",
+    "transcription": "$$\n\\GL(2, \\hat{\\mathbf{Z}})/\\hat{\\mathbf{Z}}^{*2} \\hookrightarrow PGL(2, \\hat{\\mathbf{Z}}) \\times \\hat{\\mathbf{Z}}^* \\leqno{(43)}\n$$\n$$\nu \\bmod \\hat{\\mathbf{Z}}^{*2} \\longmapsto (u \\bmod \\hat{\\mathbf{Z}}^*, \\det u)\n$$\n\nConsidérons l'hom. can. (surjectif)\n$$\n\\underset{\\GL(2, \\hat{\\mathbf{Z}})/\\pm 1}{\\underset{\\defeq}{\\GL(2, \\hat{\\mathbf{Z}})'}} \\longrightarrow \\GL(2, \\hat{\\mathbf{Z}})/\\hat{\\mathbf{Z}}^{*2} \\leqno{(44)}\n$$\n\ndont le noyau est donc :\n$$\n\\nu = (\\mathbf{Z}/2\\mathbf{Z})^P/\\text{diag} \\qquad (P = \\text{ens. des nb. premiers}) \\leqno{(45)}\n$$\n\nL'hom. canonique $\\Psi'$ (42), déduit\ndes conditions de congruences, définit\npar image inverse une extension centrale\n$$\n1 \\to \\nu \\to \\overline{\\mathcal{M}}_{0,3} \\to \\mathcal{M}_{0,3} \\to 1 \\leqno{(46)}\n$$\net la donnée d'un hom. $\\tilde{\\varphi}_1$\n$$\n\\mathcal{M}_{0,3} \\to \\GL(2, \\hat{\\mathbf{Z}})' \\leqno{(47)}\n$$\nqui relèverait (42), équivaut à celle d'un\nscindage de cette extension (46). La\nquestion à élucider à présent : est-il\npossible d'expliciter un tel relèvement canonique\n(42), ou scindage de (46), en termes de la",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 435,
+      "thinking_tokens": 6472
+    }
+  },
+  "38": {
+    "status": "success",
+    "transcription": "seule donnée de $\\Gamma \\subset \\Autext(\\widehat{\\Pi}_{0,3})$, satisfaisant aux conditions congruentielles énoncées plus haut ?\n\nNotons que sur le sous-groupe $\\hat{\\mathfrak{T}}_{0,3}^+ \\simeq \\SL(2, \\hat{\\mathbf{Z}})/\\pm 1$ de $\\mathcal{M}_{0,3}$ , le relèvement cherché (47) est déjà connu, comme étant $\\SL(2, \\hat{\\mathbf{Z}})/\\pm 1 \\to \\SL(2, \\hat{\\mathbf{Z}})' \\subset \\operatorname{GL}(2, \\hat{\\mathbf{Z}})'$. En d'autres termes, le scindage cherché de (46) est déjà connu au dessus du sous-groupe $\\hat{\\mathfrak{T}}_{0,3}^+$ de $\\mathcal{M}_{0,3}$.\n\nL'indétermination du relèvement ou scindage est a priori dans $\\operatorname{Hom}(\\mathcal{M}_{0,3}, \\nu)$ , tenant compte de la condition précédente elle sera dans\n$$\n\\Ker( \\operatorname{Hom}(\\mathcal{M}_{0,3}, \\nu) \\to \\operatorname{Hom}(\\hat{\\mathfrak{T}}_{0,3}^+, \\nu) ) \\leqno{(48)}\n$$\n$$\n\\simeq \\operatorname{Hom}(\\Gamma, \\nu)\n$$\nsi on suppose que $\\Gamma / \\Ker \\chi \\xrightarrow{\\chi} \\hat{\\mathbf{Z}}^*$ est iso, l'indétermination serait encore dans $\\operatorname{Hom}( (\\hat{\\mathbf{Z}}^*)_2, \\nu)$ - c'est gros ! Il",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 373,
+      "thinking_tokens": 8759
+    }
+  },
+  "39": {
+    "status": "success",
+    "transcription": "faut un élément un peu astucieux\npour justifier ce relèvement --- on devine\nqu'il est lié justement à l'interprétation\nd'un $M_{0,3}$ comme un $M_{1,1}$ --- i.e.\\ à\nl'introduction, dans une ``théorie profinie\nde courbes rationnelles'', de la ``théorie\nprofinie des courbes elliptiques''.\n\n\\bigskip\n\n\\noindent \\textbf{40} \\marginpar{40} Paraphrases topologiques-isotopiques\n(ou en termes des groupes fondamentaux)\nde la théorie de Legendre.\n\nPour tâter le terrain, j'ai envie d'abord\nde partir de la situation des groupes\ndiscrets, qu'on a mieux en main, c'est\nle cas de le dire !\n\nSoit $\\mathcal{C}_{0,3}$ la catégorie des groupes\n(discrets) à lacets de type $0,3$, \\marginpar{(avec les isomorphies ext. comme flèches)} dont le\nreprésentant-type est $\\Pi_{0,3}$ --- cette catégorie\nest donc équivalente canoniquement à : celle\ndes torseurs sous le groupe\n$$\n\\Autext(\\Pi_{0,3}) \\simeq \\mathfrak{S}_{0,3} \\simeq \\operatorname{GL}(2, \\mathbf{Z}) / \\pm 1 \\simeq \\operatorname{PGL}(2, \\mathbf{Z}) \\leqno (49)\n$$\n\nSoit $\\mathcal{C}_{1,1}^{ext}$ la catégorie des groupes à lacets\nde type $(1,1)$, dont le représentant-type est\n$$\n\\Pi_{1,1} = \\{x,y,l \\mid [x,y]l = 1\\} \\ ; \n$$\ncette catégorie est",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 408,
+      "thinking_tokens": 3563
+    }
+  },
+  "40": {
+    "status": "success",
+    "transcription": "équivalente à celle des torseurs sous le groupe\n$\\Autext(\\pi_{1,1}) \\simeq \\GL(2, \\mathbf{Z})$ --- l'isomorphisme\n$$\n\\Autext(\\pi_{1,1}) \\to \\GL(2,\\mathbf{Z}) \\leqno{(50)}\n$$\nest obtenu en associant à tout automorphisme\nextérieur de $\\pi_{1,1}$ son action sur\n$$\n(\\pi_{1,1})_{ab} \\simeq \\mathbf{Z}^2 \\leqno{(51)}\n$$\nOn a donc un foncteur canonique\n$$\nL : \\mathcal{C}_{1,1}^{ext} \\to \\mathcal{C}_{0,3}\\footnote{$L$, initiale pour ``Legendre''.} \\leqno{(52)}\n$$\ndéfini (à isomorphisme près) pour rendre\ncommutatif le diagramme\n$$\n\\begin{tikzcd}\n\\mathcal{C}_{1,1}^{ext} \\arrow[r] \\arrow[d, \"\\simeq\"'] & \\mathcal{C}_{0,3} \\arrow[d] \\\\\n\\operatorname{Tors}(\\GL(2,\\mathbf{Z})) \\arrow[r] & \\operatorname{Tors}(\\operatorname{PGL}(2,\\mathbf{Z}))\n\\end{tikzcd} \\leqno{(53)}\n$$\noù\n$$\n\\operatorname{Tors}(\\GL(2,\\mathbf{Z})) \\to \\operatorname{Tors}(\\operatorname{PGL}(2,\\mathbf{Z}))\n$$\nest le foncteur de changement de groupe d'opérateurs\nrelatif à\n$$\n\\GL(2,\\mathbf{Z}) \\xrightarrow{can} \\operatorname{PGL}(2,\\mathbf{Z}) \\simeq \\GL(2,\\mathbf{Z}) / \\pm 1 \\leqno{(54)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 421,
+      "thinking_tokens": 3773
+    }
+  },
+  "41": {
+    "status": "success",
+    "transcription": "On peut de même \\marginpar{groupoïde} définir le groupoïde $C_{1,1}^{ext '}$, déduit de $C_{1,1}^{ext}$ en passant au quotient par l'automorphisme universel $-id$ \\marginpar{$\\{\\pm 1\\}$} - correspondant au centre (du groupe fondamental de ce groupoïde - on trouve un groupoïde connexe équivalent à : celui des torseurs sous $\\GL(2, \\mathbf{Z})' = \\GL(2, \\mathbf{Z})/(\\pm 1)$ )\n\nD'où on tire maintenant une équivalence de catégories\n\n$$\nC_{1,1}^{ext '} \\isommap C_{0,3} \\leqno{(55)}\n$$\n\nrendant commutatif\n\n$$\n\\begin{tikzcd}\nC_{1,1}^{ext '} \\arrow[r, \"\\isommap\"] \\arrow[d] & C_{0,3} \\arrow[d] \\\\\nTors(\\GL(2, \\mathbf{Z})') \\arrow[r, \"\\isommap\"] & Tors(\\PGL(2, \\mathbf{Z}))\n\\end{tikzcd} \\leqno{(56)}\n$$\n\noù\n\n$$\nTors(\\GL(2, \\mathbf{Z})') \\isommap Tors(\\PGL(2, \\mathbf{Z}))\n$$\n\nest le foncteur tautologique associé à l'iso\n\n$$\n\\GL(2, \\mathbf{Z})' \\isommap \\PGL(2, \\mathbf{Z}) . \\leqno{(57)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 360,
+      "thinking_tokens": 8149
+    }
+  },
+  "42": {
+    "status": "success",
+    "transcription": "En somme, je suis en train de faire une paraphrase topologique tautologique, en termes des groupes fondamentaux à lacets, de la théorie de Legendre des relations entre courbes elliptiques et courbes rationnelles. J'aimerais expliciter maintenant l'équivalence de Legendre (55), qui avait été obtenue grâce à la connaissance des groupes de Teichmüller discrets relatifs aux deux membres et d'un isomorphisme ad-hoc entre ces deux groupes, directement en termes des groupes fondamentaux de type $\\Pi_{0,3} - \\Pi_{1,1}$.\n\nSi $\\pi'$ est un groupe à lacets de type $1,1$, il convient d'abord de noter qu'il y a dans $\\Autext(\\pi')$\\marginpar{NB $\\mathfrak{S}_{1,1}$ conserve l'orientation, i.e.\\ est sous-groupe d'indice 2 de $\\Autext(\\pi')$.} un élément canonique d'ordre $2$ --- en fait l'unique élément non trivial du centre, noté commodément $(-1)_{\\pi'}$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 229,
+      "thinking_tokens": 3765
+    }
+  },
+  "43": {
+    "status": "success",
+    "transcription": "Ainsi, on peut considérer $\\pi'$ comme muni\\footnote{can!}\nd'une opération extérieure de\n$G = \\mathbf{Z}/2\\mathbf{Z}$ sur lui, d'où une extension\ncanonique\n$$ 1 \\to \\pi' \\to \\mathcal{E} \\to \\mathbf{Z}/2\\mathbf{Z} \\to 1 \\leqno (58) $$\n\nLe modèle topologique nous apprend\nqu'il y a exactement trois classes de $\\pi'$-\n-conjugaison de scindages de cette\nextension, correspondant aux trois\npoints d'ordre $2$ d'un groupe topologique\n$E \\simeq \\mathbf{U} \\times \\mathbf{U}$ -- les trois points fixes de\n$x \\mapsto -x$ dans $E \\setminus \\{0\\}$. La théorie des\n\n\"franges et des scellements\", relative à une\nsituation de groupes finis d'opérations exté-\nrieures sur des groupes à lacets (théorie qui\\marginpar{mais rien n'a encore été écrit sur le fond d'un tel groupe des franges, des conjectures...}\ndans le cas discret n'a vraiment\nété écrite -- il y a pour le moment des\nconjectures...) permet alors",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 277,
+      "thinking_tokens": 3171
+    }
+  },
+  "44": {
+    "status": "success",
+    "transcription": "de construire canoniquement un groupe (noté $\\tilde{\\pi}'$) de type $\\pi_{1,4}$, avec une opération extérieure de $G = \\mathbf{Z}/2\\mathbf{Z}$ sur ce groupe, et une partie $J$ de cardinal 3 \\marginpar{en fait $G$ opère trivialement sur $I = I(\\tilde{\\pi}')$} de $I = I(\\tilde{\\pi}')$ (qui est de cardinal 4), $J$ stable par $G$ i.e. de pt fixe $i_0$, et un iso. du groupe $\\tilde{\\pi}'(J)$ (déduit par \"bouchage des trous dans $J$\") avec $\\pi'$\n$$\n\\tilde{\\pi}'(J) \\isom \\pi' \\leqno{(59)}\n$$\nqui soit compatible avec les opérations de $G$. Dans le modèle topologique, $\\tilde{\\pi}'$ est le groupe fond. de l'espace $E \\setminus {}_2E$, sur lequel $G$ opère librement.\n\nL'extension $\\tilde{\\mathcal{E}}$ de $G$ par $\\tilde{\\pi}'$ correspondante\n$$\n1 \\to \\tilde{\\pi}' \\to \\tilde{\\mathcal{E}} \\to \\mathbf{Z}/2\\mathbf{Z} \\to 1 , \\leqno{(60)}\n$$\ns'identifie donc au groupe fondamental mixte de $(E \\setminus {}_2E, G)$, s'identifie de [unclear: même]",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 333,
+      "thinking_tokens": 7540
+    }
+  },
+  "45": {
+    "status": "success",
+    "transcription": "au groupe fondamental de\n$$\nV = (E \\setminus {}_2E)/\\{\\pm 1\\} \\leqno (61)\n$$\nqui est une surface top.\\ de type $(0,4)$.\n\nEn d'autres termes, $\\widetilde{\\mathcal{E}}$ peut être considéré comme un groupe à lacets de type $(0,4)$, pour une structure à lacets facile à décrire, se déduisant de celle de $\\widetilde{\\pi'}$, et pour laquelle on a un iso.\\ canonique\n$$\nI(\\widetilde{\\mathcal{E}}) = I(\\widetilde{\\pi'})/G \\simeq I(\\widetilde{\\pi'}) \\leqno (62)\n$$\n\nAinsi on dispose d'un $i_0 \\in I(\\widetilde{\\mathcal{E}})$, ce qui permet de \"boucher le trou en $i_0$\" pour obtenir un groupe à lacets effectif de type $(0,3)$, soit\n$$\n\\pi = \\mathcal{L}(\\pi') \\leqno (63)\n$$\nReprenant un peu encore la relation entre $\\pi$ et $\\pi'$, on peut procéder ainsi : d'un groupe à lacets effectif de type $(0,3)$, on passe par",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 263,
+      "thinking_tokens": 2018
+    }
+  },
+  "46": {
+    "status": "success",
+    "transcription": "le foncteur \"forage d'un trou\" ($\\pi \\mapsto \\widetilde{\\pi}$) un groupe\nà lacets extérieur de type (0,4), muni d'\nun élément $i_0 \\in I(\\widetilde{\\pi})$ tel que\n$$ I(\\widetilde{\\pi}) \\isom \\{i_0\\} \\amalg \\underset{\\text{(cardinal 3)}}{I(\\pi)} \\leqno{(64)} $$\nOn a donc ($T$ étant le module d'orientation\nde $\\pi$)\n$$ \\widetilde{\\pi}_{ab} \\isom T^{I(\\widetilde{\\pi})} \\qquad ((\\widetilde{\\pi}_{ab})_2 \\isom (\\mathbf{Z}/2\\mathbf{Z})^{I(\\widetilde{\\pi})}) \\leqno{(65)} $$\n[unclear: il s'en déduit] un homomorphisme (extérieur)\n$$ \\widetilde{\\pi} \\longrightarrow \\mathbf{Z}/2\\mathbf{Z} \\leqno{(66)} $$\ncanonique, défini par le fait d'être\n\"ramifié\" en tous les $i \\in I(\\widetilde{\\pi})$ - i.e. correspond\npar l'homomorphisme\n$$ (\\widetilde{\\pi}_{ab})_2 \\isom (\\mathbf{Z}/2\\mathbf{Z})^{I(\\widetilde{\\pi})} \\longrightarrow \\mathbf{Z}/2\\mathbf{Z} \\leqno{(67)} $$\nsomme des coefficients. Le noyau $\\widetilde{\\pi}'$ de\n(66) est un groupe à lacets de type (1,4)\n- mais il n'est pas tout à fait un groupe\nextérieur - il est par définition \"à un signe\nprès\", défini seulement modulo (au plus)\nl'opération extérieure du quotient $\\mathbf{Z}/2\\mathbf{Z}$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 401,
+      "thinking_tokens": 13403
+    }
+  },
+  "47": {
+    "status": "success",
+    "transcription": "dessus. Si on [unclear: dévisse] le groupe $\\widetilde{\\pi}$\n(dans sa \"classe extérieure\") - on a donc une suite exacte\n$$\n1 \\to \\widetilde{\\pi}' \\to \\widetilde{\\pi} \\to \\mathbf{Z}/2\\mathbf{Z} \\to 1 \\leqno{(68)}\n$$\noù $\\widetilde{\\pi}'$ est un groupe à lacets, avec\n$$\nI(\\widetilde{\\pi}') \\simeq I(\\widetilde{\\pi}) \\leqno{(69)}\n$$\nEn bouchant les trous relatifs à \n$I(\\infty) \\subset I(\\widetilde{\\pi}) \\simeq I(\\widetilde{\\pi}')$ , qui est de cardinal $3$,\non trouve un groupe extérieur de type $(1,1)$, avec une opération de $\\mathbf{Z}/2\\mathbf{Z}$\nqui n'est autre que l'op. canonique ci-dessus. Mais [unclear: la justification des deux faits], c'est un peu [unclear: abusif] pour un groupe extérieur de type\n$(1,1)$ i.e. un objet de $\\mathcal{C}_{1,1}^{ext}$ - i.e. une [unclear: telle] classe \"modulo symétrie\" - i.e. un\nobjet de $\\mathcal{C}_{1,1}^{ext}$. Pour avoir un objet\nde $\\mathcal{C}_{1,1}^{ext}$, il faut avoir \"choisi un [unclear: noyau] $\\widetilde{\\pi}'$\"\npour l'hom. extérieur $\\widetilde{\\pi} \\to \\mathbf{Z}/2\\mathbf{Z}$, outre qu'un\ngroupe extérieur c'est la classe d'isomorphie.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 377,
+      "thinking_tokens": 3934
+    }
+  },
+  "48": {
+    "status": "success",
+    "transcription": "dans une $(\\mathbf{Z}/2\\mathbf{Z})$-gerbe, i.e. un groupoïde connexe admettant $\\mathbf{Z}/2\\mathbf{Z}$ comme groupe fondamental.\n\nModulo une rédaction plus soignée, il me semble que ces réflexions incomplètes prouvent bel et bien un isomorphisme canonique (aux automorphismes intérieurs près)\n$$\n\\mathcal{C}_{1,1}/\\{\\pm 1\\} \\xrightarrow{\\sim} \\mathfrak{S}_{0,3} \\leqno{(70)}\n$$\n\\marginpar{[unclear: en fait, justifié par un isomorphisme prouvant $\\simeq \\Pi_{0,3}$]}\n— la détermination [unclear: de ce dernier] provenant du choix d'isomorphisme entre $\\mathcal{L}(\\Pi_{1,1})$ et $\\Pi_{0,3}$.\n\nCe fait est tout à fait indépendant de celui que l'hom. naturel \n$$\n\\mathcal{C}_{1,1} \\xrightarrow{\\sim} GL(2, \\mathbf{Z})\n$$\nsoit un isomorphisme. Je n'y vois aucun inconvénient à identifier purement et simplement $\\mathcal{C}_{1,1}$ à $GL(2, \\mathbf{Z})$ ; par contre il est plus sage de continuer d'identifier $\\mathfrak{S}_{0,3}$ à $\\mathcal{C}_{1,1}/\\{\\pm 1\\}$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 312,
+      "thinking_tokens": 5265
+    }
+  },
+  "49": {
+    "status": "success",
+    "transcription": "Si ce n'est seulement comme groupe\nextérieur, à cause de l'indétermination\nprovenant du signe dans (70).\n\nD'un point de vue des espaces de\nmodules analytiques, on a un\nisomorphisme canonique \\marginpar{avec un peu plus de soin, i.e. en [unclear: permettant] d'inclure dans la [unclear: famille] des complexes, (au lieu de les banir), ça donnerait un}\n$$ M_{1,1}^{\\text{an}} \\longrightarrow \\underline{M}_{0,3}^{\\text{an}}\\footnote{courbe analytique complexe de type (0,3) ``universelle''} \\simeq M_{0,4}^{\\text{an}} = (\\widetilde{U}_{0,3} / \\mathfrak{S}_3) \\leqno (71) $$\n\nqui induit un isomorphisme\n$$ M_{1,1}^{\\sim} \\isommap M_{0,3}^{\\sim} \\leqno (72) $$\n\net l'effet de (71) sur les groupes fondamen-\n-taux extérieurs n'est autre que l'hom.\n$$ \\mathfrak{T}_{1,1}^+ \\longrightarrow \\mathfrak{S}_{0,3}^+ \\leqno (73) $$\n\ninduit par (70) --- est-il possible de\nle préciser de façon utile, en un hom.\neffectif, non seulement extérieur ? Il y\na un revêtement universel canonique\n$\\widetilde{M}_{1,1}$ de $M_{1,1}$, fourni par l'espace des",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 355,
+      "thinking_tokens": 5531
+    }
+  },
+  "50": {
+    "status": "success",
+    "transcription": "Teichmüller (le demi-plan de Poin\\-caré $D$ du \\S~38) - relatif à ce revêtement\nuniversel - bel et bien un iso.\\ can.\n$$\n\\pi_1(\\widetilde{M}_{1,1}) \\simeq \\SL(2, \\mathbf{Z}) \\leqno{(74)}\n$$\n(pas seulement extérieur), qui n'est autre\nd'ailleurs, essentiellement, que (50) -\n(moyennant un sous-groupe d'indice 2\n$\\mathfrak{T}_{1,1}'$ de $\\mathfrak{T}_{1,1}$). \\marginpar{Pour la définition exacte (qui va suivre), y a} On a bel et bien un\nmorphisme canonique\n$$\nD \\longrightarrow U_{0,3}^{\\mathrm{an}} \\quad (\\simeq M_{1,1}[2]') \\leqno{(75)}\n$$\ncompatible avec un hom.\\ sur les groupes\nd'opérateurs\n$$\n\\SL(2, \\mathbf{Z})' \\longrightarrow \\SL(2, \\mathbf{Z}/2\\mathbf{Z}) \\simeq \\mathfrak{S}_3 \\leqno{(76)}\n$$\n\\footnote{c'est ça qu'il convient de rendre explicite dans \\S~38.}\nde sorte que $D$ apparaît comme un\nrev.\\ universel de $U_{0,3}^{\\mathrm{an}}$, donc aussi\nde $(U_{0,3}^{\\sim}, \\mathfrak{S}_3)$, et $\\SL(2, \\mathbf{Z})'$ comme\nle $\\pi_1$ mixte relatif à ce rev.\\ universel-là.\nPour l'identifier à $\\pi_1( (U_{0,3}^{\\sim}, \\mathfrak{S}_3), P=\\{ \\dots \\} )$, il",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 404,
+      "thinking_tokens": 2516
+    }
+  },
+  "51": {
+    "status": "success",
+    "transcription": "faut donc choisir un point dans $D$ au dessus\nde $-\\bar{j}$ (qui permettra alors d'identifier\n$D$ au rev. universel pointé en $P$ de\n$U_{0,3}$) - ce qui introduit justement\nl'indétermination par un élément du\nnoyau de $\\SL(2, \\mathbf{Z})' \\to \\SL(2, \\mathbf{Z}/2) \\simeq \\mathfrak{S}_3$,\nlui-m. isomorphe à $\\Pi_{0,3}$. Mais\non peut prendre p. ex.\n$$\nj = \\exp \\frac{2 i \\pi}{3} = \\frac{-1 + i \\sqrt{3}}{2} \\leqno{(77)}\n$$\ncomme représentant pt. en dessus de\n$P=-\\bar{j}$ - en trichant un brin pour\nqu'il soit bien en dessus de $P$, et non\nde $\\bar{P} = -j$, sinon c'est $-\\bar{j} = \\frac{1+i\\sqrt{3}}{2} = \\exp \\frac{2 i \\pi}{6}$\nqu'on choisirait. [ NB On trouve que\nles trois éléments de $\\SL(2, \\mathbf{Z})'$\nqui transforment $j$ en $j$ sont\n$\\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix}$, $\\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}$, $\\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$, dont aucun\nn'est $\\equiv \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} \\pmod 2$, ce qui montre que\n$j$ et $-\\bar{j}$ [unclear: ont des images distinctes dans un rev. par congruences] ]",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 423,
+      "thinking_tokens": 9799
+    }
+  },
+  "52": {
+    "status": "success",
+    "transcription": "mod le noyau $\\Gamma(2)$ de $\\SL(2,\\mathbf{Z}) \\to \\SL(2,\\mathbf{Z}/2\\mathbf{Z})$, de sorte qu'ils n'ont pas même image dans $U_{0,3} \\simeq D/\\Gamma(2)$, d'où leurs images respectives $P = - \\bar{j}$ et $\\bar{P} = -j$ (ou inversement) ] Le choix en question est alors caractérisé par le fait que $\\tau \\in D$ au-dessus de $P$ est alors une racine de l'unité, ce qui est quand même bien naturel. On peut dire donc qu'on a \"normalisé\" l'hom. (73) en un hom. effectif --- et de même pour (70).\n\nOn aurait envie de reprendre les constructions précédentes dans le contexte des groupes profinis --- malheureusement je manque des fondements nécessaires, et surtout d'une théorie des \"tresses\" --- \"groupes de tresses\" au niveau groupes à lacets profinis --- même des [unclear: espaces de configuration]",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 234,
+      "thinking_tokens": 4496
+    }
+  },
+  "53": {
+    "status": "success",
+    "transcription": "turale. Pourtant on sent que c'est\nbien dans cette direction que se trouve\nune compréhension \"gruppentheoretisch\"\nde l'homomorphisme (40)\n$$\n\\hat{\\mathcal{M}}_{0,3} \\to \\GL(2, \\hat{\\mathbf{Z}})/\\pm 1 \\simeq \\text{[unclear: PGL(2, \\hat{\\mathbf{Z}})]} ,\n$$\nqui est la motivation principale des\nréflexions du présent $\\S$, et du précédent.\nCe devrait être une incitation pour une\nréflexion renouvelée sur la question du\ntressage dans le contexte profini... Mais\nje me rends compte dès maintenant\nque la question - s'il y a une\nextension des constructions du\nprésent $\\S$, au contexte profini, indépen-\ndamment de l'introduction d'éléments\nde structure \"arithmétiques\" (tels que\nla donnée d'un sous-groupe $\\Gamma \\subset \\Autext(\\hat{\\Pi}_{0,3})$\nsatisfaisant à un certain nombre de\nconditions $\\pm$ semblables, genre relations\nb-géométriques) est subordonnée à une",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 265,
+      "thinking_tokens": 2796
+    }
+  },
+  "54": {
+    "status": "success",
+    "transcription": "si ces relations congruentielles sont bel et\nbien des relations de nature arithmétique\nspécifiques aux autom. ext. provenant\nde $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$, ou au contraire des\nconséquences $\\pm$ automatiques d'un\n[unclear: pur] (purement \"algébrique\") qui serait\nformalisme des groupes profinis, calqué\nsur le cas discret. Sans préjuger aucunement\nde la réponse et du degré de\nplausibilité de une telle formalisation, je\npourrais à titre expérimental [unclear: essayer]\nd'en dégager un, pour tester où il\nmènera.\n\n\\chapter*{\\S \\space 41. --- CONDITIONS DE COMPATIBILITÉ SUR $\\widehat{\\Pi}_{0,3} \\isommap \\widehat{\\mathfrak{S}}_{0,3}^+$ AUX OPÉRATIONS DE $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$. CALCUL D'AUTOMORPHISMES EXTÉRIEURS DE $\\widehat{\\Pi}_{0,3}$ ET $\\widehat{\\mathfrak{S}}_{0,3}^+$.}\\thispagestyle{empty}\n\\addcontentsline{toc}{section}{41. Conditions de compatibilité sur $\\widehat{\\Pi}_{0,3} \\isommap \\widehat{\\mathfrak{S}}_{0,3}^+$ aux opérations de $\\boldsymbol{\\Gamma}_{\\mathbf{Q}}$. Calcul d'automorphismes extérieurs de $\\widehat{\\Pi}_{0,3}$ et $\\widehat{\\mathfrak{S}}_{0,3}^+$}\n\\label{sec:41}\n\\section*{}\n\nAvant de me lancer dans cette\n(tentative), je voudrais encore élucider\nune question, concernant d'autres\néventuelles conditions nécessaires (en plus\ndes conditions congruentielles du $\\S 38$)\npour qu'un autom. ext. de $\\widehat{\\Pi}_{0,3}$ provienne",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 419,
+      "thinking_tokens": 3143
+    }
+  },
+  "55": {
+    "status": "success",
+    "transcription": "de $\\Gamma_{\\mathbf{Q}}$. Pour ceci, reprenons l'hom. entièrement canonique $\\varphi$\n$$\n\\begin{tikzcd}\n\\Pi_{0,3} \\arrow[r, \"\\text{épi}\"] \\arrow[rr, bend left=20, \"\\varphi\"] & \\Pi_{0,3}' \\arrow[r, \"\\sim\"] & \\mathfrak{S}_{0,3}^+ \\simeq \\pi_1(\\dots)\n\\end{tikzcd} \\leqno{(1)}\n$$\n$$ \\Pi_{0,3}' = \\Pi_{0,3}/\\{l_1^2, l_\\infty^3\\} \\simeq \\text{[unclear: gr. des autom. d'un polygone triangulé orienté]} $$\n\ndéfini par\n$$\n\\begin{cases}\n\\varphi(l_0) = l_0' = \\sigma_\\infty \\rho \\\\\n\\varphi(l_1) = l_1' = \\sigma_\\infty \\\\\n\\varphi(l_\\infty) = l_\\infty' = \\rho^{-1}\n\\end{cases} \\leqno{(2)}\n$$\n\n(avec les notations de [C, \\dots] - ),\n\nqui s'étend par continuité en un hom. profini surjectif\n$$\n\\begin{tikzcd}\n\\hat{\\varphi}: \\hat{\\Pi}_{0,3} \\arrow[r, \"\\text{épi}\"] & \\widehat{\\mathfrak{S}}_{0,3}^+ \\simeq \\pi_1((\\mathcal{M}_{0,3})_{\\overline{\\mathbf{Q}}}, P) \\arrow[d, hook] \\\\\n& \\widehat{\\mathfrak{T}}_{0,3} = \\Autext(\\hat{\\Pi}_{0,3})\n\\end{tikzcd} \\leqno{(3)}\n$$\n\nCet homomorphisme est défini via les «~formules brutales~» (2), sans référence à un sous-groupe particulier $\\Gamma$ de $\\Autext(\\hat{\\Pi}_{0,3})$. Si on se donne un tel sous-groupe, contenant $\\mathfrak{S}_3$, celui-ci opère automatiquement sur le groupe extérieur $\\widehat{\\mathfrak{S}}_{0,3}^+$, et il",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 496,
+      "thinking_tokens": 8211
+    }
+  },
+  "56": {
+    "status": "success",
+    "transcription": "s'insère dans une suite exacte\n$$\n1 \\to \\mathfrak{S}^{+\\wedge}_{0,3} \\to \\mathcal{M}_{0,3} \\to \\Gamma \\to 1 \\leqno{(4)}\n$$\n[unclear: complétant] la suite exacte etc.\n$$\n\\begin{tikzcd}\n1 \\arrow[r] & \\hat{\\pi}_{0,3} \\arrow[r] \\arrow[d, hook] & \\mathcal{E}_{0,3} \\arrow[r] \\arrow[d] & \\Gamma \\arrow[r] \\arrow[d, equal] & 1 \\\\\n1 \\arrow[r] & \\mathfrak{S}^{+\\wedge}_{0,3} \\arrow[r] & \\mathcal{M}_{0,3} \\arrow[r] & \\Gamma \\arrow[r] & 1\n\\end{tikzcd} \\leqno{(5)}\n$$\nLe fait que l'homomorphisme (3) commute à l'action de $\\Gamma_{\\mathbf{Q}} = \\Gamma$ qui semble bien a priori une condition non triviale sur $\\Gamma$ - plus précisément, sur les éléments de $\\Gamma$ séparément, qu'il faudrait bien arriver à expliciter (des « quatre conditions congruentielles », en termes des calculs $\\pm$ explicites de [C]. Cette condition équivaut à celle que l'homomorphisme (3) s'insère dans un homomorphisme d'extensions",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 324,
+      "thinking_tokens": 6312
+    }
+  },
+  "57": {
+    "status": "success",
+    "transcription": "$$\n\\begin{tikzcd}\n1 \\arrow[r] & \\hat{\\pi}_{0,3} \\arrow[r] \\arrow[d, \"\\hat{\\varphi}\"] & \\mathcal{E}_{0,3}\\footnote{NB. $\\mathcal{E}_{0,3} =$ le groupe noté $\\mathcal{M}_{0,3}$ dans le \\S 45} \\arrow[r] \\arrow[d, \"\\underline{\\Phi}\"] & \\boldsymbol{\\Gamma} \\arrow[r] \\arrow[d, equal] & 1 \\\\\n1 \\arrow[r] & \\hat{\\mathfrak{S}}_{0,3}^+ \\arrow[r] & \\mathcal{M}_{0,3} \\arrow[r] & \\boldsymbol{\\Gamma} \\arrow[r] & 1\n\\end{tikzcd}\n\\leqno{(6)}\n$$\n\nmoyennant quoi $\\mathcal{M}_{0,3}$ (interprété comme groupe fondamental ``à signatures'' de $(\\mathbb{P}^1_{\\mathbf{Q}} - \\{0\\}, 2 \\{1\\} + 3 \\{\\infty\\})$ ) s'identifie au quotient de $\\hat{\\pi}_{0,3}$ par le sous-groupe fermé invariant engendré par $l_1^2, l_\\infty^3$.\n\nJe commence à soupçonner qu'il y aura toute une kyrielle de conditions de même nature sur $\\boldsymbol{\\Gamma}$, qu'il faudrait bien arriver à dégager de façon plus générale.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 327,
+      "thinking_tokens": 5917
+    }
+  },
+  "58": {
+    "status": "success",
+    "transcription": "Je vais reprendre les calculs faits dans [C], concernant les autom. extérieurs de $\\hat{\\Pi}_{0,3}$ qui commutent à $\\mathfrak{S}_3$, qui peuvent se réaliser de façon unique comme automorphismes \\emph{effectifs} qui commutent à $\\sigma_{\\infty}$ (et qui de plus commutent extérieurement à $\\rho$). Ils correspondent biunivoquement aux couples\n$$\n(g_0, p) \\quad \\begin{cases} g_0 \\in \\hat{\\Pi}_{0,3} \\mod L_0 \\\\ p \\in \\hat{\\mathbf{Z}}^* \\text{ (multiplicateur)} \\end{cases} \\leqno{(7)}\n$$\nsatisfaisant les conditions suivantes (où $g_0 \\in \\hat{\\Pi}_{0,3}$ est déterminé de façon unique par $u$ (ou encore, par l'autom. extérieur correspondant)), où on a posé\n$$\nh_0 = \\sigma_{\\infty}(g_0)^{-1} g_0 = [\\sigma_{\\infty}, g_0^{-1}] : \\leqno{(8)}\n$$\n\n\\footnote{NB l'autom. $A$ de $\\hat{\\Pi}_{0,3}$ (où $\\sigma_{\\infty} = \\text{id}$) prov. par $g_0(p)$ comm. ssi le fait $h_0 \\dots$}\n\\footnote{NB fausse et rétablie [unclear: plus simplement par :]}\n$$\n\\operatorname{int}(h_0)(l_0^p) \\operatorname{int}(l_1^p \\rho(h_0)^{-1})(l_{\\infty}^p) = 1 \\leqno{(9)}\n$$\n$$\nh_0 l_0^{-p} \\rho(h_0) = l_1^p \\rho(h_0)^{-1} [unclear: l_{\\infty}^{-p}] \\leqno{(10)}\n$$\n\nL'hom. $u$ est donné par :\\footnote{NB (10) s'écrit aussi : $$ (l_0^p h_0^{-1}) \\rho(l_0^p h_0^{-1}) \\rho^2(l_0^p h_0^{-1}) = 1 \\leqno{(10 \\text{ bis})} $$}",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 514,
+      "thinking_tokens": 5837
+    }
+  },
+  "59": {
+    "status": "success",
+    "transcription": "$$\n\\begin{cases}\nu(l_0) = \\operatorname{int}(g_0)(l_0^\\rho) \\\\\nu(l_1) = \\operatorname{int}(\\sigma_\\infty(g_0))(l_1^\\rho) \\\\\nu(l_\\infty) = \\operatorname{int}(g_0 l_0^{-\\sigma} \\rho(h_0))(l_\\infty^\\rho)\n\\end{cases} \\leqno (11)\n$$\n\n\\marginpar{(11 bis)}et il faut en toute rigueur, en plus des conditions $(9),(10)$, exiger que les deux éléments donnés par $(11)$ $u(l_0), u(l_1)$ forment des générateurs du groupe profini $\\hat{\\Pi}_{0,3}$.\n\nJe vais calculer l'action de $u$ sur $\\hat{\\mathfrak{S}}_{0,3}$, en considérant ce groupe comme engendré par les éléments\n$$\nl'_1 = \\sigma_\\infty, \\quad l'_\\infty = \\rho^{-1} \\leqno (12)\n$$\n\nIl faut calculer simplement $u \\sigma_\\infty u^{-1}$ et $u \\rho u^{-1}$. On a par construction ($u$ commutant à $\\sigma_\\infty$)\n$$\nu \\sigma_\\infty u^{-1} = \\sigma_\\infty \\leqno (13)\n$$\n\net d'autre part on vérifie que\n$$\n\\begin{cases}\n\\rho^{-1} u \\rho = \\operatorname{int}(h) u \\quad \\text{i.e.} \\quad u \\rho u^{-1} = \\operatorname{int}(\\rho(h)) \\rho \\\\\n\\text{avec} \\\\\nh = (\\rho^{-1}\\sigma_\\infty)(g_0) l_0^\\rho g_0^{-1} \\quad \\text{i.e.} \\quad \\rho(h) = \\sigma_\\infty(g_0) l_1^\\rho \\rho(g_0)^{-1}\n\\end{cases} \\leqno (14)\n$$\n\n[unclear: donc on trouve, en termes de] l'opération sur le groupe $\\hat{\\mathfrak{S}}_{0,3}^+$ engendré par $\\sigma_\\infty$ et $\\rho^{-1}$\n\\marginpar{(cas $\\rho$)}\n$$\n\\begin{cases}\nu(\\sigma_\\infty) = \\sigma_\\infty \\\\\nu(\\rho) = g \\cdot \\rho \\quad \\text{avec} \\quad g = \\sigma_\\infty(g_0) l_1^\\rho \\rho(g_0)^{-1}\n\\end{cases} \\leqno (15)\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 604,
+      "thinking_tokens": 5867
+    }
+  },
+  "60": {
+    "status": "success",
+    "transcription": "NB La relation $u(\\rho)^3 = u(\\sigma_\\infty)^2 = 1$ est triviale,\nla relation $u(\\rho)^3 = 1$ se réduit à\n$$\ng \\rho(g) \\rho^2(g) = 1 \\leqno (16)\n$$\nqui est conséquence de l'expression explicite\n(15) de $g$, et de la formule (10).\n\nNotons qu'on \\marginpar{devrait avoir} \\footnote{[unclear: à retenir]}\n$$\nl'_0 = \\sigma_\\infty \\rho = \\varepsilon_0 \\quad (\\text{d'où } l'_0{}^2 = l_0)\n$$\n\\marginpar{?}\n$$\nu(l'_0) = \\operatorname{int}(g_0)(l'_0{}^p) \\leqno (17)\n$$\n-- cette relation entraînant à son tour que\nla première relation (11)\n$$\nu(l_0) = \\operatorname{int}(g_0)(l_0{}^p) .\n$$\n[La relation (17) en est une conséquence,\nsi on admet que le centralisateur\nde $l_0 = l_0{}^{\\hat{\\mathbf{Z}}}$ dans $\\hat{\\Pi}_{0,3}$ est réduit à $l_0$... ]\n\nOn devrait avoir aussi \\marginpar{compte tenu des} les relations\n$$\nu(\\rho) \\sim \\rho^p \\quad \\text{dans } \\hat{\\Pi}_{0,3} \\leqno (18)\n$$\n\\marginpar{[unclear: plus tard]} relations sur lesquelles nous reviendrons.\n\nIl n'est pas clair pour moi qu'elles\nsoient conséquences des conditions envisagées\njusqu'à présent.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 405,
+      "thinking_tokens": 2547
+    }
+  },
+  "61": {
+    "status": "success",
+    "transcription": "Considérons maintenant l'hom.\\ (13)\n$$\n\\begin{cases}\n\\hat{\\varphi} : \\hat{\\Pi}_{0,3} \\to \\hat{\\mathfrak{S}}_{0,3}^+ \\\\\nl_0 \\mapsto l'_0 = \\sigma_\\infty \\rho = \\varepsilon_0 \\\\\nl_1 \\mapsto l'_1 = \\sigma_\\infty \\\\\nl_\\infty \\mapsto l'_\\infty = \\rho^{-1}\n\\end{cases} \\leqno{(18)}\n$$\net écrivons qu'il commute, i.e.\\ à un autom.\\ int.\\ près, à $u$. Cela signifie donc qu'il existe un\n$$\n\\lambda \\in \\hat{\\mathfrak{S}}_{0,3}^+ \\leqno{(19)}\n$$\ntel que l'on ait\n$$\n\\hat{\\varphi}(u(x)) = \\lambda u(\\hat{\\varphi}(x)) \\lambda^{-1} \\qquad \\forall x \\in \\hat{\\Pi}_{0,3} \\leqno{(20)}\n$$\net il suffit d'exprimer cette condition pour $x$ égal à l'un des deux gén.\\ $l_0, l_1$ de $\\hat{\\Pi}_{0,3}$.\n\nPour $x = l_0$ la relation (20) s'écrit\n$$\nu(l'_0) = \\operatorname{int}(\\lambda^{-1} \\hat{\\varphi}(g_0))(l'_0{}^p) \\leqno{(21)}\n$$\nce qui, comparé avec (17), donne\n$$\n\\operatorname{int}(g_0'^{-1} \\lambda^{-1} \\hat{\\varphi}(g_0))(l'_0{}^p) = l'_0{}^p \\quad \\text{d'où}\n$$\n$$\ng_0'^{-1} \\lambda^{-1} \\hat{\\varphi}(g_0) = l'_0{}^\\beta \\qquad (\\beta \\in \\hat{\\mathbf{Z}})\n$$\nou encore\n$$\n\\lambda = \\hat{\\varphi}(g_0) l'_0{}^{-\\beta} g_0'^{-1} \\quad [= \\hat{\\varphi}(g_0 l_0^{-\\beta}) = \\hat{\\varphi}([unclear: \\sigma_\\infty \\dots])] \\leqno{(22)}\n$$\n\\marginpar{cf plus bas (24 bis)}\n\nPour $x = l_1$ la relation (20) s'écrit",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 564,
+      "thinking_tokens": 4709
+    }
+  },
+  "62": {
+    "status": "success",
+    "transcription": "$$ u(l_1) = \\operatorname{int}(\\lambda^{-1} \\hat{\\varphi}(g_1)) (l'_1{}^\\rho) \\marginpar{où $g_1 = \\sigma_\\infty(g_0) \\\\ = \\sigma_\\infty g_0 \\sigma_\\infty$} \\leqno{(23)} $$\nou encore\\footnote{car $\\sigma_\\infty^\\rho = \\sigma_\\infty$ (stabilité de $\\{0, \\infty\\}$ par $z \\mapsto -z$).}\n$$ \\sigma_\\infty = \\operatorname{int}(\\lambda^{-1} \\hat{\\varphi}(g_1))(\\sigma_\\infty) $$\nou encore \\quad $\\sigma_\\infty$ commute à :\n$$ \\lambda^{-1} \\hat{\\varphi}(g_1) \\overset{\\text{cf (22)}}{=} g_0 l_0^{\\prime -\\beta} \\hat{\\varphi}(\\underbrace{g_0^{-1} \\sigma_\\infty(g_0)}_{h_0^{-1}}) = g_0 l_0^{\\prime -\\beta} \\hat{\\varphi}(h_0^{-1}) $$\nou encore à l'inverse \\quad $\\hat{\\varphi}(h_0) l_0^{\\prime -\\beta} g_0^{-1}$\n\nce qui s'écrit aussi\n$$ \\sigma_\\infty \\left( \\hat{\\varphi}(h_0) l_0^{\\prime -\\beta} g_0^{-1} \\right) = \\hat{\\varphi}(h_0) l_0^{\\prime -\\beta} g_0^{-1} $$\n\n$$ \\sigma_\\infty(\\hat{\\varphi}(h_0)) \\underbrace{\\sigma_\\infty(l_0^{\\prime -\\beta})}_{\\varepsilon_1^{-\\beta}} \\underbrace{\\sigma_\\infty(g_0)^{-1}}_{(g_0 h_0^{-1})^{-1} = h_0 g_0^{-1}} = \\hat{\\varphi}(h_0) \\underbrace{l_0^{\\prime -\\beta}}_{\\varepsilon_0^{-\\beta}} g_0^{-1} $$\n\n\\marginpar{NB Cette équation se réécrit : \\\\ $\\hat{\\varphi}(h_0) = \\sigma_\\infty(\\hat{\\varphi}(h_0)) \\varepsilon_1^{-\\beta} h_0 \\varepsilon_0^\\beta$ (24 bis)}%\n\\footnote{NB. Si $g_0$ est remplacé par $g_0 \\rho$ (qui lui donne $\\beta' = -\\beta$), on a $h_0 = (g_0 \\rho)^{-1} \\sigma_\\infty(g_0 \\rho) = \\rho^{-1} g_0^{-1} \\sigma_\\infty(g_0) \\rho = \\rho^{-1} h_0 \\rho$. Les 2 m. de (24) sont transformés par $\\operatorname{int}(\\rho)$, d'où équivalence.}%\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 640,
+      "thinking_tokens": 15356
+    }
+  },
+  "63": {
+    "status": "success",
+    "transcription": "En résumé :\n\nProposition. Considérons un autom. ext. $u$\ndu groupe à lacets $\\hat{\\Pi}_{0,3}$, réalisé par\n[unclear: via $l_0$] $g_0 \\in \\hat{\\mathfrak{T}}_{0,3}$ (et $\\beta \\in \\hat{\\mathbf{Z}}^*$, et $\\gamma \\in \\hat{\\mathbf{Z}}^*$ uniquement\ndéterminé (en fonction de $g_0$ et $\\beta$) par les\nformules (11), au moyen d'un autom. effectif\n(noté encore $u$)\nqui commute à $\\sigma_\\infty$ — les données\n$g_0, \\beta$ (et $\\gamma$) étant assujetties à vérifier les\nconditions (9) et (10) ci-dessus, plus la\ncondition d'engendrement (11 bis). [unclear: (On prolongera un autom. de $\\mathfrak{S}_{0,3}^{+\\wedge}$ cf (15)).] Pour que\nl'hom. extérieur $\\hat{\\varphi} : \\hat{\\mathfrak{T}}_{0,3} \\to \\mathfrak{S}_{0,3}^{+\\wedge}$\ndéfini par (18) commute à l'action\next. de $u$, il faut et il suffit que l'on\npuisse trouver un $\\beta \\in \\hat{\\mathbf{Z}}^*$, tel qu'on\nait (24)\\footnote{Mieux : (24 bis).}, ou ce qui revient au même,\n(27).\n\nCette condition (pour $\\beta$ fixé) équivaut à la formule\n(20) pour $x=l_\\infty$ ($\\lambda$ étant toujours donné par (22)),\nc.à.d. à la formule\n$$\nu(l_\\infty') = \\operatorname{int}(\\lambda^{-1} \\hat{\\varphi}(g_\\infty))(l_\\infty'^\\beta) \\leqno{(28)}\n$$\noù\n$$\ng_\\infty = g_0 l_0^{-\\beta} \\hat{\\varphi}(h_0) \\quad \\text{(cf. [unclear: la définition] (22))} \\leqno{(29)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 492,
+      "thinking_tokens": 7038
+    }
+  },
+  "64": {
+    "status": "success",
+    "transcription": "formule qui figure dans la formule présomptive (18). Elle s'écrit aussi, plus explicitement\n$$\n\\rho^\\gamma \\rho^{-1} = \\operatorname{int} \\left( g_0 \\varepsilon_0^\\beta \\hat{\\varphi} \\left( l_0^{-\\gamma} p^{-1}(h_0) \\right) \\right) (\\rho^{-\\gamma} \\rho)\n$$\ni.e. (en prenant les inverses et explicitant $g_0$)\n\\marginpar{NB On pose $\\alpha = \\beta + \\gamma$. L'existence de $\\beta \\in \\hat{\\mathbf{Z}}$ vérifiant (24), équivaut à celle de $\\alpha \\in \\hat{\\mathbf{Z}}$ vérifiant (30).}\n$$\n\\rho \\rho^{-\\gamma} = \\operatorname{int} \\left( \\varepsilon_0^{\\beta+\\gamma} \\hat{\\varphi}(p^{-1}(h_0)) \\right) (\\rho^\\gamma \\rho^{-1}) \\leqno{(30)}\n$$\n\nL'équivalence de (24) et (30) peut paraître un peu étrange, du fait qu'en (24), l'exposant $p$ n'intervient pas explicitement, mais seulement $h_0$, tandis que la formule (30) fait intervenir la valeur de $p \\in \\hat{\\mathbf{Z}}^*$ mod $2$ (qui donne $\\rho^p = \\rho$ ou $\\rho^p = \\rho^{-1}$). Mais en tout état de cause, qu'on en soit sur la forme (24) ou sous la forme (30), il semble bien que la condition en question soit hautement tautologique !\n\nPour bien faire, il faudrait s'efforcer d'expliciter les conditions supplémentaires du \\S 39 en fonction de $g_0, p$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 416,
+      "thinking_tokens": 4717
+    }
+  },
+  "65": {
+    "status": "success",
+    "transcription": "Je voudrais comparer les autom. ext. de $\\hat{\\Pi}_{0,3}$, et ceux de $\\mathfrak{S}^{+\\wedge}_{0,3}$, tenant compte de la suite exacte\n$$\n1 \\to \\hat{\\Pi}_{0,3} \\to \\mathfrak{S}^{+\\wedge}_{0,3} \\to \\mathfrak{S}_3 \\to 1 \\leqno{(31)}\n$$\n\nNotons que tout autom. ext. $u$ de $\\mathfrak{S}^{+\\wedge}_{0,3}$ qui invarie le sous-groupe distingué $\\hat{\\Pi}_{0,3}$, et induit dans le quotient $\\mathfrak{S}_3$ un autom. extérieur trivial, peut s'écrire comme déduit d'un autom. $u_0$ de $\\mathfrak{S}^{+\\wedge}_{0,3}$, stabilisant $\\hat{\\Pi}_{0,3}$, et induisant l'identité sur le quotient $\\mathfrak{S}_3$ -- et $u_0$ est alors déterminé modulo composition avec $\\operatorname{int}(g)$, où $g \\in \\mathfrak{S}^{+\\wedge}_{0,3}$ -- tel que son image dans $\\mathfrak{S}_3$ soit central, i.e. $= 1$, i.e. $g \\in \\hat{\\Pi}_{0,3}$. Donc\n\n$$\n\\begin{array}{lcl}\n\\begin{array}{l}\n\\text{Groupe des automorphismes} \\\\\n\\text{ext. de } \\mathfrak{S}^{+\\wedge}_{0,3} \\text{ qui} \\\\\n\\text{induisent dans } \\mathfrak{S}_3 \\text{ un autom.} \\\\\n\\text{ext. trivial (donc invarient} \\\\\n\\hat{\\Pi}_{0,3})\n\\end{array}\n& \\simeq &\n\\begin{array}{l}\n\\text{gr. de tous les} \\\\\n\\text{autom. de} \\\\\n\\mathfrak{S}^{+\\wedge}_{0,3} \\text{ qui} \\\\\n\\text{induisent} \\\\\n\\text{l'identité dans} \\\\\n\\text{le quotient } \\mathfrak{S}_3 \\\\\n\\text{mod le sous-} \\\\\n\\text{groupe des} \\\\\n\\text{autom. int.} \\\\\n\\text{par des } g \\in \\hat{\\Pi}_{0,3}\n\\end{array}\n\\end{array}\n\\leqno{(32)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 544,
+      "thinking_tokens": 3079
+    }
+  },
+  "66": {
+    "status": "success",
+    "transcription": "Un autom. $u_0$ est-il connu par sa restrict. à $\\hat{\\pi}_{0,3}$ ? En d'autres termes, un autom. de $\\widehat{\\mathfrak{S}}_{0,3}^+$ (qui $\\simeq \\SL(2, \\hat{\\mathbf{Z}})^{\\wedge}$) qui induit l'identité sur $\\hat{\\pi}_{0,3}$ et sur $\\mathfrak{S}_3$, est-il trivial ? Il suffit de prouver que sa restriction à l'image inverse de $\\{ \\sigma_\\infty \\} \\subset \\mathfrak{S}_3$ est trivial (car par symétrie on aura la [unclear: même chose] en remplaçant $\\sigma_\\infty$ par $\\sigma_0, \\sigma_1$, or ces trois sous-groupes engendrent $\\widehat{\\mathfrak{S}}_{0,3}^+$). On a \n$$\nf(\\sigma_\\infty) = \\sigma_\\infty g, \\quad \\text{avec } g \\in \\hat{\\pi}_{0,3}\n$$ \n[et on doit avoir $\\sigma_\\infty g \\sigma_\\infty g = 1$ i.e. $g . \\sigma_\\infty(g) = 1$] de plus on doit avoir que $\\operatorname{int}(\\sigma_\\infty g) | \\hat{\\pi}_{0,3} = \\operatorname{int}(\\sigma_\\infty) | \\hat{\\pi}_{0,3}$, d'où $\\operatorname{int}(g) | \\hat{\\pi}_{0,3} = \\mathrm{id}$ i.e. $g \\in \\operatorname{Centr}(\\hat{\\pi}_{0,3})$ i.e. $g=1$, ok. \n\nMais : quand un autom. de $\\hat{\\pi}_{0,3}$ peut-il se prolonger en un autom. de $\\widehat{\\mathfrak{S}}_{0,3}^+$ qui induise l'identité sur $\\mathfrak{S}_3$ ? Bien sûr on voit aussitôt qu'il faut pour cela que l'autom. ext. de $\\hat{\\pi}_{0,3}$ qu'il induit commute à l'action de $\\mathfrak{S}_3$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 474,
+      "thinking_tokens": 4312
+    }
+  },
+  "67": {
+    "status": "success",
+    "transcription": "C'est suffisant, soit $\\Gamma \\subset \\Autext(\\hat{\\pi}_{0,3})$ le groupe des\nautomorphismes extérieurs de $\\hat{\\pi}_{0,3}$ qui a cette propriété (on ne\nse préoccupe pas pour le moment de la\nstructure : [unclear: l'auto] de $\\hat{\\pi}_{0,3}$), on a\n$\\Gamma \\cap \\mathfrak{S}_3 = (1)$ (en identifiant $\\mathfrak{S}_3$ à un\nsous-groupe de $\\Autext(\\hat{\\pi}_{0,3})$ car le centre\nde $\\mathfrak{S}_3$ est trivial, donc \\marginpar{ceci est inexact}\n$$ \\mathfrak{S}_3 \\times \\Gamma \\hookrightarrow \\Autext(\\hat{\\pi}_{0,3}) \\ , $$\net on a donc une structure d'extension\n$$ \\hat{\\pi}_{0,3} \\to \\mathcal{E} \\to \\mathfrak{S}_3 \\times \\Gamma \\to 1 \\leqno{(38)} $$\n(car le centre de $\\hat{\\pi}_{0,3}$ est trivial), on a [unclear: alors]\nune structure d'extension\n$$ 1 \\to \\hat{\\mathfrak{S}}_{0,3}^+ \\to \\mathcal{E} \\to \\Gamma \\to 1 \\leqno{(39)} $$\nqui définit une action extérieure de $\\Gamma$\nsur $\\hat{\\mathfrak{S}}_{0,3}^+$, qui est l'action naturelle\ncherchée. Ainsi\n\nProp. Le groupe des autom. ext. de $\\hat{\\pi}_{0,3}$ qui \\marginpar{Mais tout autom. de $\\mathfrak{S}_3$ est intérieur.}\n[unclear: commutent à] $\\mathfrak{S}_3$ est isom. can. au groupe\ndes autom. ext. de $\\hat{\\mathfrak{S}}_{0,3}^+$ qui induisent\nsur $\\mathfrak{S}_3$ l'autom. ext. trivial.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 448,
+      "thinking_tokens": 3218
+    }
+  },
+  "68": {
+    "status": "success",
+    "transcription": "\\underline{Corollaire} Le groupe des autom. de $\\hat{\\Pi}_{0,3}$ qui commutent extérieurement à $\\mathfrak{S}_3$, est isomorphe au groupe des autom. de $\\hat{\\mathfrak{S}}_{0,3}^+$ qui induisent sur $\\mathfrak{S}_3$ l'autom. trivial (par restriction à ce dernier).\n\n\\underline{Corollaire}\n$$\n\\begin{tikzcd}\n1 \\arrow[r] & \\hat{\\Pi}_{0,3} \\arrow[r] \\arrow[d, equal] & \\Aut(\\hat{\\Pi}_{0,3} \\mid \\substack{\\text{comm.} \\\\ \\text{ext. à} \\\\ \\mathfrak{S}_3}) \\arrow[r] & \\Autext(\\hat{\\Pi}_{0,3} \\mid \\text{comm. ext. à } \\mathfrak{S}_3) \\arrow[r] & 1 \\\\\n1 \\arrow[r] & \\hat{\\Pi}_{0,3} \\arrow[r] & \\Aut(\\hat{\\mathfrak{S}}_{0,3}^+ \\mid \\substack{\\text{id. sur le} \\\\ \\text{quotient } \\mathfrak{S}_3}) \\arrow[u, \"\\simeq\" description] \\arrow[r] & \\Autext(\\hat{\\mathfrak{S}}_{0,3}^+ \\mid \\substack{\\text{trivial} \\\\ \\text{sur } \\mathfrak{S}_3}) \\arrow[u, \"\\simeq\" description] \\arrow[r] & 1\n\\end{tikzcd} \\leqno{(35)}\n$$\n\nCette extension $\\mathcal{E}'$ de $\\Gamma$ par $\\hat{\\Pi}_{0,3}$ est \\underline{scindée}\\footnote{Provient du fait qu'il y a exactement (à conjugaison près) une classe de sous-groupes d'ordre 2 au dessus de $\\sigma_\\infty$.}, de façon \\underline{unique}, par l'action [unclear: naturelle] des automorphismes de $\\hat{\\Pi}_{0,3}$ qui commutent à l'action de $\\sigma_\\infty \\in \\hat{\\mathfrak{S}}_{0,3}^+$ (qui fixe [unclear: un point] de $\\hat{\\Pi}_{0,3}$), [unclear: c'est-à-dire] :\n$$\n\\begin{cases}\nu(\\sigma_\\infty) = \\sigma_\\infty \\\\\nu(g) = g \\cdot \\rho\n\\end{cases}\n\\qquad (g \\in \\hat{\\Pi}_{0,3}) \\leqno{(36)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 581,
+      "thinking_tokens": 3007
+    }
+  },
+  "69": {
+    "status": "success",
+    "transcription": "323\n\nici on a que $s$ est un homom. Car un \"splitting\" pour $\\hat{\\Pi}_{0,3}$ est défini par les gén. $\\sigma_\\infty, \\rho$ avec les relations\n$$\n\\sigma_\\infty^2 = \\rho^3 = 1 \\leqno (37)\n$$\n\\marginpar{[unclear: de plus il faut pour que $\\sigma_\\infty$ et $g\\rho$ ($\\in \\hat{\\Pi}_{0,3}$) engendrent $\\hat{\\Pi}_{0,3}$, val. $\\Rightarrow (g\\rho)^3=1$]}%\net on trouve la condition\n$$\n(g\\rho)^3 = 1 \\quad \\text{i.e.} \\quad g \\rho(g) \\rho^2(g) = 1 \\leqno (38)\n$$\n\nProposition. Soit $u \\in \\mathcal{E}^!$ un élément qui induit l'identité sur $\\mathfrak{S}_3$. Conditions équivalentes :\n\n\\begin{enumerate}\n\\item[a)] $\\exists p \\in \\hat{\\mathbf{Z}}^*$ tel que $u(l_0)$ soit conjugué dans $\\hat{\\mathfrak{S}}_{0,3}^+$ à $l_0^p$ (ce $p$ est alors unique, il est en fait conjugué par un élém. de $\\hat{\\Pi}_{0,3}$)\n\\item[b)] $\\exists p \\in \\hat{\\mathbf{Z}}^*$ tel que $u(l_0)$ soit conjugué dans $\\hat{\\Pi}_{0,3}$ à $l_0^p$ (ce $p$ est alors unique)\n\\item[c)] $u_0 = u | \\hat{\\Pi}_{0,3}$ respecte la structure d'[unclear: inertie] de $\\hat{\\Pi}_{0,3}$.\n\\end{enumerate}\n\nDe plus, le $p$ dans a) et b) est le même.\n\nDém. Si $u(l_0) = \\operatorname{int}(g_0)(l_0^p)$, avec $g_0 \\in \\hat{\\mathfrak{S}}_{0,3}^+$, [unclear: comme $u$ induit] on voit que l'image de $g_0$ dans $\\mathfrak{S}_3$ est $1$ ou $\\sigma_0$, donc si on a (a $\\Rightarrow$ b), si on a $g_0 = h \\sigma_0$ ($h \\in \\hat{\\Pi}_{0,3}$), on a \n$$u(l_0) = \\operatorname{int}(h)(\\sigma_0 l_0^p \\sigma_0^{-1})$$\nor on a $\\sigma_0 l_0 \\sigma_0^{-1} = l_0^{-1}$ (car $\\operatorname{int}(\\sigma_0)(l_0) = l_0^{-1}$)\ndonc $\\sigma_0 l_0^p \\sigma_0^{-1} = l_0^{-p}$, d'où $u(l_0) = \\operatorname{int}(h)(l_0^{-p})$, d'où b) avec $-p$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 710,
+      "thinking_tokens": 6292
+    }
+  },
+  "70": {
+    "status": "success",
+    "transcription": "Comme on sait l'unicité en $p$ dans b), [unclear: celle dans a) s'en déduit].\n\n$$\nu(l_0) = \\operatorname{int}(g_0)(l_0^p) \\quad (g_0 \\in \\hat{\\Pi}_{0,3}) \\leqno{(39)}\n$$\n\non en déduit, écrivant\n$$\n\\rho u \\rho^{-1} = \\operatorname{int}(g) u_0 \\quad (g \\in \\hat{\\Pi}_{0,3})\n$$\nque l'on a\n$$\nu_0(l_1) = \\operatorname{int}(g) \\rho \\underbrace{u \\rho^{-1}(l_1)}_{l_0} = \\operatorname{int}(g) \\rho \\underbrace{u(l_0)}_{\\operatorname{int}(g_0)(l_0^p)} = \\operatorname{int}(g \\rho(g_0)) (\\rho l_0^p) = \\operatorname{int}(g \\rho(g_0))(l_1^p)\n$$\ni.e.\n$$\nu_0(l_1) = \\operatorname{int}(g_1)(l_1^p) \\quad \\text{avec} \\quad g_1 = g \\rho(g_0) \\leqno{(40)}\n$$\net de même\n$$\nu_0(l_\\infty) = \\operatorname{int}(g_\\infty)(l_\\infty^p) \\quad \\text{avec} \\quad g_\\infty = g \\rho(g_1) = g \\rho(g) \\rho^2(g_0) \\leqno{(41)}\n$$\n\ndonc b) $\\implies$ c). Enfin prouvons c) $\\implies$ a).\n\nOn a par hypothèse\n$$\nu_0(l_0) = \\operatorname{int}(g)(l_0^p)\n$$\n$$\n\\implies u(\\varepsilon_0)^2 = \\operatorname{int}(g)(l_0^p) = ( \\operatorname{int}(g)(\\varepsilon_0^p) )^2\n$$\n\nJe dis que l'on a alors\n$$\nu(\\varepsilon_0) = \\operatorname{int}(g)(\\varepsilon_0^p)\n$$\n\nIl suffit en vertu de [unclear: la fidélité de l'action sur $\\hat{\\mathfrak{S}}_{0,3}^+$ de vérifier l'égalité sur $\\varepsilon_0$] \\marginpar{OK}",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 569,
+      "thinking_tokens": 5043
+    }
+  },
+  "71": {
+    "status": "success",
+    "transcription": "Désormais nous nous bornerons aux autom.\n(eff. [unclear: et] extérieurs) de $\\hat{\\pi}_{0,3}$ qui respectent la str.\nde lacets, et commutent à $\\mathfrak{S}_3$ (extérieurement)\n(eff. ou ext.),\n- qui correspondent aux autom. (de\n$\\hat{\\mathfrak{S}}_{0,3}^+$) qui induisent l'identité sur $\\mathfrak{S}_3$,\net satisfont a) ci-dessus. Ils sont\nLes autom. extérieurs de cette nature\ncorrespondent à des autom. effectifs $u$\nde $\\hat{\\pi}_{0,3}$ qui\nfixent $\\sigma_\\infty$, et sont déterminés par\n$g \\in \\hat{\\pi}_{0,3}$ satisfaisant à (38), et tel que\nde plus il existe $g_0 \\in \\hat{\\pi}_{0,3}$ satisfaisant\n$$ u(l_1') = \\operatorname{int}(g_0)(l_1'^p) \\quad \\text{i.e.} \\quad u(l_0) = \\operatorname{int}(g_0)(l_0^p) \\leqno{(39)} $$\n(où $g_0$ est déterminé mod. $L_{00} = l_0^{\\hat{\\mathbf{Z}}}$ - ). Des\ncalculs faits par ailleurs montrent qu'on\ndoit avoir\n$$ g = \\sigma_\\infty(g_0) l_1^r \\rho(g_0)^{-1} \\leqno{(40)} $$\navec $r \\in \\hat{\\mathbf{Z}}$ bien déterminé (indépendant du choix de $g_0$)\ni.e.\n$$ \\sigma_\\infty(g_0)^{-1} g \\rho(g_0) \\in L_1 = \\operatorname{Centr}_{\\hat{\\pi}_{0,3}}(l_1) \\leqno{(41)} $$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 441,
+      "thinking_tokens": 4339
+    }
+  },
+  "72": {
+    "status": "success",
+    "transcription": "En effet, on a par hyp. sur $g_0$ (cf. (39))\n$$ u(L_0) = \\operatorname{int}(g_0)(L_0) \\leqno{(42)} $$\nd'où\n$$ u \\sigma_\\infty (L_0) = u(L_1) = \\operatorname{int}(g)(L_1) $$\n$$ \\parallel \\text{ (car } u \\sigma_\\infty = \\sigma_\\infty u \\text{)} $$\n$$ \\sigma_\\infty u(L_0) = \\sigma_\\infty(\\operatorname{int}(g_0)(L_0)) = \\operatorname{int}(\\sigma_\\infty(g_0)) (\\sigma_\\infty L_0) = \\operatorname{int}(\\sigma_\\infty(g_0))(L_1) $$\nd'où\n$$ \\operatorname{int}(\\sigma_\\infty(g_0)^{-1} g) (L_1) = L_1 $$\ndonc\n$$ \\sigma_\\infty(g_0)^{-1} g p(g_0) \\in \\operatorname{Norm}_{\\hat{\\pi}_{0,3}} (L_1) = L_1 $$\nd'où\n$$ \\sigma_\\infty(g_0)^{-1} g p(g_0) = l_1^{\\gamma} \\quad (\\gamma \\in \\hat{\\mathbf{Z}}) $$\nd'où (40). On notera, pour [unclear: s'en assurer], que l'élément $\\gamma$ [unclear: et donc] $g$ défini au lemme est indépendant en effet du choix de $g_0 \\pmod{L_0 \\cdot \\operatorname{Centr}_{\\dots}}$ satisfaisant (42).\n\nAinsi, la donnée de $u$ [unclear: automorphisme] de $\\hat{\\pi}_{0,3}$ extériorisant [unclear: un élément] de $\\hat{\\mathfrak{S}}_3$, ou encore d'un [unclear: élément] de $\\hat{\\mathfrak{S}}_{0,3}^+$ induisant l'identité sur [unclear: \\dots] et transformant $L_0$ en un conjugué $L_0' = z_0 \\dots$, équivaut à la donnée d'un automorphisme $u_0$ de $\\hat{\\pi}_{0,3}$ induisant l'identité sur $\\sigma_\\infty$ et d'un [unclear: \\dots], équivaut à la donnée de $g_0 \\in \\hat{\\pi}_{0,3} \\pmod{L_0}$, et de $\\gamma \\in \\hat{\\mathbf{Z}}$, satisfaisant la relation",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 592,
+      "thinking_tokens": 4249
+    }
+  },
+  "73": {
+    "status": "success",
+    "transcription": "$$\ng \\rho g \\rho^2 g \\rho = 1, \\leqno (38)\n$$\noù $g$ est donné par (40), et où $u$ s'exprime en termes de $g$ donc de $g_0, \\gamma$ par\n$$\n\\begin{cases}\nu(\\sigma_\\infty) = \\sigma_\\infty \\\\\nu(g_1) = g \\rho \\qquad (= \\sigma_\\infty g_0 l_1^\\gamma \\rho(g_0)^{-1} \\rho)\n\\end{cases} \\leqno (36)\n$$\n\nLa relation (42), s'écrit alors, vu que $L_0$ est engendré par $l_0 = {l_0'}^2 = (\\sigma_\\infty \\rho)^2$\n\nLa relation (42), - ou plutôt sa version plus forte\n$$\nu(L_0') = \\operatorname{int}(g_1)(L_0') \\leqno (43)\n$$\ns'écrit\n$$\n\\operatorname{int}(g_1^{-1}) u(\\sigma_\\infty \\rho) \\in L_0'\n$$\navec $l_0' = \\sigma_\\infty \\rho$.\n$$\n\\sigma_\\infty g \\rho = g_0 \\sigma_\\infty l_1^\\gamma \\rho g_1^{-1}\n$$\n$$\n\\sigma_\\infty l_1^\\gamma \\rho = \\sigma_\\infty \\rho l_0^\\gamma = l_0' {l_0'}^{2\\gamma} = {l_0'}^{2\\gamma+1}\n$$\n\\marginpar{NB on a $\\operatorname{int}(g_1^{-1}) u(l_0') = {l_0'}^{2\\gamma+1}$}\n\nest vérifiée automatiquement, ou encore on a\n$$\nu(l_0') = u(\\sigma_\\infty \\rho) = \\operatorname{int}(g_1) {l_0'}^{2\\gamma+1} \\leqno (44)\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 466,
+      "thinking_tokens": 9252
+    }
+  },
+  "74": {
+    "status": "success",
+    "transcription": "$$\nu(l'_0) = int(g_0)(l_0^{' \\rho}) \\qquad \\text{avec } p = 2\\gamma + 1 \\leqno{(44)}\n$$\nde même (39), donne [unclear: comme on s'en assure] :\n$$\nu(l_0) = int(g_0)(l_0^{\\rho})\n$$\n\n\\marginpar{NB} On notera que si $\\rho \\in \\hat{\\mathbf{Z}}^*$, alors $\\rho - 1 \\in 2\\hat{\\mathbf{Z}}$\ni.e. $\\frac{\\rho-1}{2} \\in \\hat{\\mathbf{Z}}$, car il suffit de vérifier la\nrelation analogue pour un $\\rho \\in \\mathbf{Z}_\\ell^*$, pour $\\ell \\neq 2$ on a $2\\mathbf{Z}_\\ell = \\mathbf{Z}_\\ell$,\ndans le cas $\\ell = 2$ $\\rho \\in \\mathbf{Z}_2^*$ donne que l'image de\n$\\rho$ dans $\\mathbf{Z}/4\\mathbf{Z}$ est $1$ ou $3$ donc\n$\\rho - 1 \\equiv 0 \\text{ ou } 2 \\mod 4$ et donc $\\frac{\\rho-1}{2} \\in \\mathbf{Z}_2$, OK.\n\nIl reste donc à exiger la condition\n(38), et on l'écrit sous la forme\n$$\n\\sigma_\\infty(q_0) l_1^r p(q_0^{-1}) p \\sigma_\\infty(q_0^{-1}) l_0^\\gamma p(q_0) p \\sigma_\\infty(q_0) l_0^\\gamma q_0^{-1} = 1\n$$\nsoit, en appliquant $int(q_0^{-1})$ et posant\n(cf (8))\n$$\nq_0^{-1} \\sigma_\\infty(q_0) = h_0^{-1} \\leqno{(45)}\n$$\ni.e. $h_0 = \\sigma_\\infty(q_0^{-1}) q_0 = [\\sigma_\\infty^{-1}, q_0]$\n\n$$\nh_0^{-1} l_1^r p(h_0 l_1^r) p^2(h_0^{-1}) l_0^\\gamma = 1\n$$\n[unclear: ou encore, par $int(l_0^\\gamma)$]\n$$\n(h_0^{-1} l_1^r) \\cdot p( l_1^r h_0^{-1} ) \\cdot p^2( l_0^\\gamma h_0^{-1} ) = 1 \\qquad (\\text{où } \\gamma = \\frac{\\rho-1}{2}) \\leqno{(46)}\n$$\n\nce qui n'est autre que (10). (Quant à la\ncondition 17), on a vu plus haut qu'elle est automatiquement\nvérifiée).",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 674,
+      "thinking_tokens": 13206
+    }
+  },
+  "75": {
+    "status": "success",
+    "transcription": "32bis\n\n\\textbf{Théorème} Un autom. ext. de $\\hat{\\Pi}_{0,3}$, commuant à\n$\\mathfrak{S}_3$, se relève de façon unique en un autom.\ndu groupe à lacet $\\hat{\\Pi}_{0,3}$, commuant à $\\sigma_\\varpi$ (et comm-\n-utant à $\\rho$ mod. autom. intérieurs), ou encore\ncomme restriction d'un autom. $u$ de $\\hat{\\mathfrak{S}}_{0,3}^+$\nqui fixe $\\sigma_\\varpi$, laisse $\\rho$ mod. $\\hat{\\Pi}_{0,3}$ (i.e. fixe $\\bar{\\rho}$ dans $\\mathfrak{S}_3$),\net qui laisse la classe de conjugaison du \\marginpar{fermé} s-groupe\n$L'_0 = \\langle\\langle l'_0 \\rangle\\rangle$ engendré par $l'_0 = \\varepsilon_0 = \\sigma_\\varpi \\rho$. (ou encore\ndu sous-groupe $L_0 = \\langle\\langle l_0 \\rangle\\rangle$ engendré par $l_0$). La\ndonnée d'un tel $u$ équivaut à celle de son\nmultiplicateur $p \\in \\hat{\\mathbf{Z}}^*$, et d'un $g_0 \\in \\hat{\\Pi}_{0,3}/L_0$\nsatisfaisant les conditions suivantes :\n\n\\begin{enumerate}\n\\item[a)] Posant $h_0 = \\sigma_\\varpi(g_0)^{-1} g_0 = [\\sigma_\\varpi, g_0^{-1}]$ ($\\in \\hat{\\Pi}_{0,3}$)\n$$ \\gamma = \\frac{p-1}{2} \\in \\hat{\\mathbf{Z}} \\leqno (47) $$\non a la relation (46) ci-dessus (invariante\npar remplacement de $g_0$ par $g_0 l_0^\\lambda$, $\\lambda \\in \\hat{\\mathbf{Z}}$)\n$$ (l_0^\\gamma h_0^\\gamma) \\rho(l_0^{p\\gamma} h_0^{-\\gamma}) \\rho^2(l_0^{-\\gamma} h_0^{-\\gamma}) = 1 \\leqno (48) $$\n\n\\item[b)] $\\sigma_\\varpi$ et $g\\rho$ engendrent top. $\\hat{\\mathfrak{S}}_{0,3}^+$, où $g$\nest donné en fonction de $g_0$ par la\n$$ g = \\sigma_\\varpi(g_0) l_1^\\gamma \\rho(g_0)^{-1} = \\sigma_\\varpi(g_0 l_0^\\gamma) \\rho(g_0 l_0^\\gamma)^{-1} \\leqno [(40)] $$\n\\end{enumerate}\n\n(NB la relation (46) équivaut à (38) $g \\rho(g) \\rho^2(g) = 1$,\nexprimée directement en termes de $g_0$, $\\gamma = \\frac{p-1}{2}$),\nvu les relations génératrices $\\sigma_\\varpi^2 = (g\\rho)^3 = 1$ i.e. :\nEt l'automorphisme $u$ est donné en termes de $g_0$ et de $p$ par :",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 757,
+      "thinking_tokens": 9041
+    }
+  },
+  "76": {
+    "status": "success",
+    "transcription": "$$\n\\begin{cases}\nu(\\sigma_{\\infty}) = \\sigma_{\\infty} \\\\\nu(\\rho) = g \\rho\n\\end{cases}\n\\leqno{([36])}\n$$\n(où $g$ donné par $[(40)]$)\n\nOn aura alors\n$$\n\\begin{matrix}\n\\begin{cases}\nu(l_0) = \\operatorname{int}(g_0) l_0^p \\\\\nu(l_1) = \\operatorname{int}(g_1) l_1^p = \\operatorname{int}(\\sigma_{\\infty}(g_0))(l_1^p) \\\\\nu(l_{\\infty}) = \\operatorname{int}(g_{\\infty}) (l_{\\infty}^p)\n\\end{cases}\n&\n\\begin{aligned}\ng_1 &= g \\rho(g_0) = \\sigma_{\\infty}(g_0) l_1^\\gamma \\\\\n    &= \\sigma_{\\infty}(g_0 l_0^\\gamma) \\\\\ng_{\\infty} &= g \\rho(g_1) = \\rho^2(g^{-1} g_0) \\\\\n           &= \\rho(g_0 l_0^\\gamma) h_0\n\\end{aligned}\n\\end{matrix}\n\\leqno{(49)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 300,
+      "thinking_tokens": 3764
+    }
+  },
+  "77": {
+    "status": "success",
+    "transcription": "Scholie \\quad Dans le th. 327, le $g \\in \\Pi_{0,3}$\\footnote{$\\in \\Pi_{0,3}$} n'intervient directe-\nment (dans $u$) s'exprime par l'intermédiaire\nde $q_0$ et $\\gamma = \\frac{p-1}{2}$, \\quad ($q_0$ défini par $L_0$)\n\n- la condition (46) étant en fait une condition\nqui s'exprime directement en termes de $q_0$,\nmieux encore, en termes de\n$$\n\\xi = l_0^\\gamma h_0^{-1} \\in \\Pi_{0,3} \\quad (d'où \\quad h_0 = \\xi^{-1} l_0^\\gamma ) \\leqno{(50)}\n$$\ncomme\n$$\n\\xi \\rho(\\xi) \\rho^2(\\xi) = 1 \\quad , \\leqno{(51)}\n$$\nqui équivaut à :\n$$\n(\\xi \\rho)^3 = 1 \\quad . \\leqno{(52)}\n$$\nLes solutions de l'équation (51), -- ou\nce qui revient au même de (52), correspondent aux\nsous-groupes\\footnote{dans $\\mathfrak{S}_{0,3}^+$} isomorphes à $\\mathbf{Z}/3\\mathbf{Z}$ dans\n$\\hat{\\mathfrak{T}}_{0,3}$, engendrés par $\\rho \\in \\mathfrak{S}_3$, ou i.e. aux\néléments d'ordre 3 de $\\mathfrak{S}_{0,3}^+$ au-dessus de $\\rho$.\n\nSur l'ens. de ces sous-groupes resp. de ces\néléments, $\\Pi_{0,3}$ opère par [unclear: autom. intérieurs].\n$$\n\\operatorname{int}(\\lambda) (\\xi \\rho) = \\lambda \\xi \\rho \\lambda^{-1} = \\lambda \\xi \\rho \\lambda^{-1} \\rho^{-1} \\rho = (\\lambda \\xi \\rho(\\lambda)^{-1} ) \\rho \\leqno{(53)}\n$$\ni.e. il opère sur l'ens. des solutions de (51)\npar\n\\marginpar{NB $\\lambda \\mapsto \\lambda \\rho(\\lambda)^{-1}$ \\\\ est injectif}\n$$\n\\xi \\mapsto \\lambda \\xi \\rho(\\lambda)^{-1} \\leqno{(54)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 550,
+      "thinking_tokens": 11821
+    }
+  },
+  "78": {
+    "status": "success",
+    "transcription": "Admettons (quitte à le vérifier par la suite)\nqu'il y a exactement deux classes de conjugaison :\ncelle de $\\{\\rho\\}$, correspondant au sous-groupe tautologique,\nde sorte que pour de tels $\\xi$ on a\n$$\n\\xi = \\lambda \\rho(\\lambda)^{-1} \\quad (\\lambda \\in \\hat{\\Pi}_{0,3}) \\leqno{(55)}\n$$\net d'autre part la classe de conjugaison\ndes él.$^\\text{ts}$ d'ordre 3 $\\sigma_\\infty \\rho^{-1} \\sigma_\\infty^{-1} = \\sigma_\\infty \\rho^2 \\sigma_\\infty$ de\n$\\hat{\\mathfrak{S}}$ , correspondant à $\\xi_0 \\rho$ , avec\n$$\n\\begin{cases}\n\\xi_0 &= \\sigma_\\infty \\rho^{-1} \\sigma_\\infty \\rho^{-1} = \\sigma_\\infty (\\rho^{-1} \\sigma_\\infty) (\\rho^{-1} \\sigma_\\infty) \\sigma_\\infty \\\\\n&= \\sigma_\\infty \\varepsilon_0^{-2} \\sigma_\\infty = \\overset{\\varepsilon_0^{-1}}{\\sigma_\\infty} (l_0^{-1}) = l_1^{-1}\n\\end{cases}\n$$\n(et on a bien\n$$\nl_1^{-1} \\rho(l_1^{-1}) \\rho^2(l_1^{-1}) = l_1^{-1} l_\\infty^{-1} l_0^{-1} = (l_0 l_\\infty l_1)^{-1} = 1 \\ )\n$$\nCette orbite correspond aux solutions de\nla forme \n$$\n\\xi = \\lambda l_1^{-1} \\rho(\\lambda)^{-1} \\quad (\\lambda \\in \\hat{\\Pi}_{0,3}) \\leqno{(56)}\n$$\n[On notera que $l_0^{-1}$ et $l_1^{-1}$ sont sur la m.\norbite\n$$\nl_1^{-1} = l_0 (l_0^{-1}) \\rho(l_0)^{-1} ]\n$$\ni.e. avec $\\lambda = l_0$.\n\nA) Cas où $\\xi$ est de la forme (55), donc\n$$\nh_0 = \\rho(\\lambda) \\lambda^{-1} l_0^\\gamma \\leqno{(57)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 537,
+      "thinking_tokens": 4065
+    }
+  },
+  "79": {
+    "status": "success",
+    "transcription": "Il reste donc à résoudre l'équation en $g_0$ (47)\n$$\n\\sigma_\\infty(g_0)^{-1} g_0 = \\underbrace{\\rho(\\lambda)\\lambda^{-1} l_0^\\gamma}_{h_0}\n\\leqno{(58)}\n$$\nPour $\\gamma$ et $h_0$ fixés, il y a au plus un seul $g_0$\\footnote{Résultant de ce que $\\hat{\\Pi}_{0,3}^{\\sigma_\\infty} = \\{1\\}$.} qui satisfait à cette condition, et un tel $g_0$ existe ssi $h_0 \\sigma_\\infty(h_0) = 1$, ce qui s'écrit,\n$$\n\\sigma_\\infty(\\rho(\\lambda)) \\sigma_\\infty(\\lambda^{-1}) l_1^\\gamma \\rho(\\lambda)\\lambda^{-1} l_0^\\gamma = 1\n\\leqno{(59)}\n$$\nqui s'écrit aussi, en reprenant l'expression $h_0 = \\xi l_0^\\gamma$\n$$\n\\sigma_\\infty(\\xi) = l_1^{-\\gamma} \\xi^{-1} l_0^{-\\gamma}\n\\leqno{(60)}\n$$\n\nEn résumé\n\nCorollaire. Les $u$ qui [unclear: se distinguent] par la classe de $\\hat{\\Pi}_{0,3}$-conjugaison de $\\rho$ correspondent 1-1 aux systèmes $(\\lambda, \\rho) \\in \\hat{\\Pi}_{0,3} \\times \\hat{\\mathbf{Z}}^*$, tels que, en posant $\\xi = \\lambda \\rho(\\lambda)^{-1}$, (où $\\gamma = \\frac{\\rho-1}{2}$), on ait la relation (60). On notera que pour $\\lambda$ de $\\hat{\\Pi}_{0,3}$ fixé, il existe au plus un $\\gamma \\in \\hat{\\mathbf{Z}}$ tel que la relation (60) soit valable, donc $\\rho$ est déterminé par $\\lambda$ ; mieux : la condition suppose que $2\\gamma+1$ de $\\hat{\\mathbf{Z}}$ soit dans $\\hat{\\mathbf{Z}}^*$ (i.e. $\\exists \\gamma' \\in \\hat{\\mathbf{Z}}$ $2\\gamma\\gamma' + \\gamma + \\gamma' = 0$).",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 521,
+      "thinking_tokens": 3160
+    }
+  },
+  "80": {
+    "status": "success",
+    "transcription": "NB Si $\\lambda$ est remplacé par $\\lambda' = l_0^\\alpha \\lambda$,\n$\\zeta = \\lambda \\rho(\\lambda)^{-1}$ est remplacé par $\\zeta' = l_0^\\alpha \\zeta \\rho(l_0)^{-\\alpha}$,\net $h_0 = \\zeta^{-1} l_0^\\gamma$ est remplacé par\n$h'_0 = \\rho(l_0)^\\alpha h_0 l_0^{-\\alpha}$, enfin $g_0$ est remplacé\npar $g'_0 = g_0 l_0^{-\\alpha}$, OK. (L'équation (60) pour $\\zeta$\net pour $\\zeta'$ sont équivalentes)\n\nFinalement, que se donne-t-on si on ne change\npas la classe de $\\widehat{\\Pi}_{0,3}$-conj. de $\\rho$, la\ndémarche la plus claire pour déterminer\nles $u$ en question me semble celle-ci :\n\n1º) On choisit un $\\zeta \\in \\widehat{\\Pi}_{0,3}$ satisfaisant à l'équation\n$$\n\\zeta \\rho(\\zeta) \\rho^2(\\zeta) = 1 \\leqno (A)\n$$\n(on le présume soit sous la forme (55), soit\nsous la forme (56) :\n$$\n\\zeta = \\lambda \\rho(\\lambda)^{-1} \\quad \\text{ou} \\quad \\zeta = \\lambda l_0^{-1} \\rho(\\lambda)^{-1} \\quad \\text{, avec } \\lambda \\in \\widehat{\\Pi}_{0,3} ) \\leqno (B)\n$$\n\n2º) On choisit $\\gamma \\in \\widehat{\\mathbf{Z}}$ tel que\\marginpar{ici, $\\zeta$ est bien entendu déterminé de $\\lambda$ par les éq (B)}\n$$\n\\sigma_\\infty(\\zeta) = l_1^{\\gamma} \\zeta^{-1} l_0^{\\gamma} \\leqno (C)\n$$\nce qui détermine $\\gamma$ de façon unique. On\n[unclear: dégage] donc des $u$ en se bornant aux $\\zeta$\npour lesquels un tel $\\gamma$ existe, et tel de plus,\nque $p = 2\\gamma + 1$ soit $\\in \\widehat{\\mathbf{Z}}^\\ast$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 517,
+      "thinking_tokens": 5063
+    }
+  },
+  "81": {
+    "status": "success",
+    "transcription": "3°) On construit alors\n$$\nh_0 = \\xi^{-1} l_0^\\gamma \\in \\hat{\\Pi}_{0,3}\n$$\nLa relation de 2°) assure que $h_0 \\sigma_\\infty(h_0) = 1$ i.e.\\ que $h_0$ peut se mettre sous la forme\n$$\nh_0 = \\sigma_\\infty(g_0)^{-1} g_0\n$$\n$g_0 \\in \\hat{\\Pi}_{0,3}$.\\footnote{NB Il faudrait s'assurer cependant que la condition sur $h_0$ détermine uniquement $g_0$ mod.\\ le s-g engendré par $l_0$, i.e.\\ que le commutant de $\\sigma_\\infty$ dans $\\hat{\\Pi}_{0,3}$ soit [unclear: engendré par] $l_0$ ? À vérifier !}\n\n4°) On peut maintenant poser\n$$\ng = \\sigma_\\infty(g_0) l_1^\\gamma \\rho(g_0)^{-1} = (g_0 h_0^{-1}) \\xi \\rho(g_0 l_0^{-\\gamma})^{-1}\n$$\ndéfinissant ce qu'il faut pour définir\n$$\n\\begin{cases} \nu(\\sigma_\\infty) = \\sigma_\\infty \\\\ \nu(\\rho) = g \\rho \n\\end{cases}\n$$\n\nIci, la seule équation délicate, pour laquelle l'existence (non l'unicité, on l'a vu) d'une solution, est problématique, est l'équation (C) (sur $\\gamma \\in \\hat{\\mathbf{Z}}$) --- plus la condition annexe que $2\\gamma + 1 \\in \\hat{\\mathbf{Z}}^\\times$. C'est donc une condition sur $\\lambda \\in \\hat{\\Pi}_{0,3}$ --- ou plutôt deux types de conditions, suivant que $\\xi$ est défini en termes de $\\lambda$ par l'une ou l'autre formule (B).\n\nJe prévois qu'on est dans l'un ou",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 466,
+      "thinking_tokens": 3146
+    }
+  },
+  "82": {
+    "status": "success",
+    "transcription": "l'autre un des formules (B), suivant\nque $p \\bmod 3$ est congru à $1$, ou à $-1$\n(NB. il ne doit pas être congru à $0$,\npuisque $p \\bmod 3 \\in (\\mathbf{Z}/3\\mathbf{Z})^*$) i.e. suivant\nque\n$$\n2\\gamma \\equiv 0 \\text{ ou } -2 \\pmod{3} \\leqno{(3)}\n$$\ni.e.\n$$\n\\gamma \\equiv 0 \\text{ ou } -1 \\pmod{3} \\leqno{(3)}\n$$\n(NB. il ne faut pas\nque $\\gamma$ soit $\\equiv 1 \\pmod{3}$, sinon $2\\gamma+1=p$\nserait congru à $0 \\pmod{3}$). C'est\nen tous cas ce que donne le cas où\n$u \\in \\Gamma_{\\mathbf{Q}_0}$.\n\nPour le tester, réduisons le groupe $\\hat{\\mathfrak{S}}_{0,3}^+$\nmod les équations $l_0^3=1$ i.e. $(\\sigma_{\\infty}\\rho)^6=1$\nde sorte que $\\hat{\\mathfrak{S}}_{0,3}^+$ est remplacé par une\nextension de $\\mathfrak{S}_3$ par le groupe\ndéfini par les générateurs $l_0,l_1,l_{\\infty}$\nsatisfaisant\n$$\nl_0^3 = l_1^3 = l_{\\infty}^3 = (l_{\\infty} l_0 l_0) = 1\n$$\n- ou mieux, utilisons\n$$\n\\hat{\\mathfrak{S}}_{0,3}^+ \\simeq \\SL(2,\\hat{\\mathbf{Z}})'\n$$\net réduisons au niveau de\n$$\n\\SL(2,\\mathbf{Z}/6\\mathbf{Z})' \\simeq \\SL(2,\\mathbf{Z}/2\\mathbf{Z}) \\times \\SL(2,\\mathbf{Z}/3\\mathbf{Z})'.\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 459,
+      "thinking_tokens": 2429
+    }
+  },
+  "83": {
+    "status": "success",
+    "transcription": "Mais pour faire ces calculs, il faut pouvoir identifier $\\sigma_\\infty, \\rho$ comme éléments de $\\SL(2, \\hat{\\mathbf{Z}})$ — explicitation que nous ferons tantôt.\n\nRevenant à (24 bis), et y portant $h_0 = \\xi l_0^\\gamma$, il vient\n$$\ng_0 = \\hat{\\rho}(\\xi) \\varepsilon_0^{\\gamma-\\beta} \\leqno{(61)}\n$$\n\nOn trouve donc que $u$ correspond à $(\\xi, g_0, \\gamma, \\beta)$, avec $\\xi, g_0 \\in \\widehat{\\Pi}_{0,3}$ et $\\gamma, \\beta \\in \\hat{\\mathbf{Z}}$ satisfaisant\n$$\n\\begin{cases} \n\\xi \\rho(\\xi) \\rho^2(\\xi) = 1 \\\\ \n\\sigma_\\infty(g_0)^{-1} g_0 = l_0^\\gamma \\\\ \ng_0 = \\hat{\\rho}(\\xi) \\varepsilon_0^{\\gamma-\\beta} \\\\ \n2\\gamma+1 \\in \\hat{\\mathbf{Z}}^* \n\\end{cases} \\leqno{(62)}\n$$\nd'où on peut éliminer $g_0$, et on trouve les équations en $(\\xi, r, s)$ $(r = \\gamma-\\beta, s = \\gamma+\\beta)$\n$$\n\\begin{cases} \n\\xi \\rho(\\xi) \\rho^2(\\xi) = 1 \\quad (\\text{d'où } \\xi = \\lambda \\rho(\\lambda)^{-1}) \\\\ \n\\sigma_\\infty(\\hat{\\rho}(\\xi))^{-1} \\hat{\\rho}(\\xi) = \\varepsilon_1^r \\varepsilon_0^{-s} \\\\ \nr+s+1 \\in \\hat{\\mathbf{Z}}^* \n\\end{cases} \\leqno{(63)}\n$$\n\nIci, $\\lambda$ est déterminé mod transformation $\\lambda \\mapsto l_0^\\alpha \\lambda$, qui donne $\\xi' = l_0^\\alpha \\xi l_1^{-\\alpha}$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 473,
+      "thinking_tokens": 8723
+    }
+  },
+  "84": {
+    "status": "success",
+    "transcription": "\\section*{42. Récapitulation sur le groupe}\n$(\\mathfrak{S}_{0,3}\\footnote{On a défini $\\mathfrak{S}_{0,3}$ comme un [unclear: certain relèvement] (En fait il y a deux choix différents \\dots) et $\\mathfrak{S}_{0,3}$ \\dots} \\simeq \\underline{\\Pi}_1(U_{0,3}^{\\mathrm{an}}, \\mathfrak{S}_3 ; -\\vec{j}) \\simeq (\\Pi_{0,3}' \\simeq \\pi_1((\\mathbb{P}^{1\\mathrm{an}} \\setminus \\{0\\} + 2\\{1\\} + 3\\{\\infty\\}), \\{-\\vec{j}\\} ))$\n$\\simeq (\\underline{\\underline{\\GL(2, \\mathbf{Z})'}} = \\GL(2, \\mathbf{Z})/\\pm 1 \\simeq \\operatorname{PGL}(2, \\mathbf{Z})) \\simeq \\mathfrak{T}_{1,1}' = \\mathfrak{T}_{1,1}^+ \\ltimes B$\n\net sur les automorphismes \"de lacets\" de $\\hat{\\mathfrak{S}}_{0,3}$ et de $\\hat{\\Pi}_{0,3}$\n(Formulaire fondamental).\n\nI) Le groupe $\\mathfrak{S}_{0,3}$ est présenté comme extension\n$$\n1 \\to \\underset{\\Pi_1(U_{0,3} ; -\\vec{j})}{\\Pi_{0,3}} \\to \\mathfrak{S}_{0,3} \\to \\underset{\\mathfrak{S}_3 \\times \\mathbf{Z}/2\\mathbf{Z}}{\\mathfrak{T}_{0,3}} \\to 1 \\leqno{(1)}\n$$\noù $\\mathfrak{S}_3 \\times \\mathbf{Z}/2\\mathbf{Z}$ est considéré comme groupe\nopérant sur $U_{0,3} = \\mathbb{P}^1_{\\mathrm{an}} \\setminus \\{0, 1, \\infty\\} = \\mathbb{C} \\setminus \\{0, 1\\}$,\n$\\mathfrak{S}_3$ opérant par permutations --\nc-à-d le groupe des automorphismes conformes de $\\mathbb{P}^1$ qui stabilisent $\\{0, 1, \\infty\\}$. Le groupe $\\mathfrak{S}_3$ est le sous-groupe des homographies, il s'identifie au groupe des permutations de $\\{0, 1, \\infty\\}$, ces six éléments sont\na) $\\sigma_0, \\sigma_1, \\sigma_\\infty$ (transpositions), $\\rho, \\rho^{-1}$ (permutations circulaires)\ndonnés par les formules explicites\n$$\n\\begin{cases} \\sigma_0(z) = \\frac{z}{z-1}, \\sigma_1(z) = \\frac{1}{z}, \\sigma_\\infty(z) = 1-z \\\\ \\rho(z) = \\frac{1}{1-z}, \\rho^{-1}(z) = 1 - \\frac{1}{z} = \\frac{z-1}{z} \\end{cases} \\leqno{(2)}\n$$\n\n$$\n\\begin{cases} \\sigma_0 \\sigma_1 = \\sigma_1 \\sigma_\\infty = \\sigma_\\infty \\sigma_0 = \\rho \\\\ \\rho \\sigma_0 \\rho^{-1} = \\sigma_1, \\rho \\sigma_1 \\rho^{-1} = \\sigma_\\infty, \\rho \\sigma_\\infty \\rho^{-1} = \\sigma_0 \\end{cases} \\leqno{(3)}\n$$\n\n$$\n\\sigma_0^2 = \\sigma_1^2 = \\sigma_\\infty^2 = \\rho^3 = 1 \\leqno{(4)}\n$$\n\nLe groupe $T_{0,3} \\simeq \\mathbf{Z}/2\\mathbf{Z} \\subset \\mathfrak{T}_{0,3}$ apparaît comme le centre,",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 866,
+      "thinking_tokens": 5339
+    }
+  },
+  "85": {
+    "status": "success",
+    "transcription": "il est engendré par la conjugaison complexe $\\tau$\n$$ \\tau(z) = \\bar{z} \\leqno (5) $$\nles cinq autres éléments de $\\mathfrak{T}_{0,3}$ sont\n$$ \\tau \\dot{\\sigma}_0 = \\dot{\\tau}_0, \\quad \\tau \\dot{\\sigma}_1 = \\dot{\\tau}_1, \\quad \\tau \\dot{\\sigma}_\\infty = \\dot{\\tau}_\\infty, \\quad \\tau \\dot{\\rho}, \\quad \\tau \\dot{\\rho}^{-1} = (\\tau \\dot{\\rho})^{-1} \\leqno (6) $$\nles anti-involutions $\\dot{\\tau}_i$ ($i = 0, 1, \\infty$) en particulier\nsont [unclear: intimement] données par\n$$ \\dot{\\tau}_0(z) = \\frac{\\bar{z}}{\\bar{z}-1}, \\quad \\dot{\\tau}_1(z) = \\frac{1}{\\bar{z}}, \\quad \\dot{\\tau}_\\infty(z) = 1 - \\bar{z} \\leqno (7) $$\n\nLes points fixes des autom. conformes de $\\left( \\mathbf{P}^{1 \\mathrm{an}} \\setminus \\{0, 1, \\infty\\} \\right)$\nsont les suivants\n$$\n\\begin{cases}\n(\\mathbf{P}_\\mathbf{C}^1)^{\\dot{\\sigma}_0} = \\{0, 2\\} \\quad , \\quad (\\mathbf{P}_\\mathbf{C}^1)^{\\dot{\\sigma}_1} = \\{1, -1\\} \\quad , \\quad (\\mathbf{P}_\\mathbf{C}^1)^{\\dot{\\sigma}_\\infty} = \\{\\infty, 1/2\\} \\\\\n\\mathbf{P}_\\mathbf{C}^1{}^{\\dot{\\rho}} = \\mathbf{P}_\\mathbf{C}^1{}^{\\dot{\\rho}^{-1}} = \\{-j, -\\bar{\\jmath}\\} \\qquad \\text{où } j = \\exp 2 i \\pi / 3 = \\frac{-1 + i \\sqrt{3}}{2} \\text{ racine prim. } 3^{\\text{ème}} \\text{ de } 1 \\\\\n\\hfill -\\bar{\\jmath} = \\exp 2 i \\pi / 6 = \\frac{1 + i \\sqrt{3}}{2} \\text{ racine prim. } 6^{\\text{ème}} \\text{ de } 1\n\\end{cases}\n\\leqno (8)\n$$\n\n\\marginpar{NB $\\mathbf{P}_\\mathbf{C}^{1\\tau\\dot{\\rho}} = \\mathbf{P}_\\mathbf{C}^{1\\tau\\dot{\\rho}^{-1}} = \\emptyset$}\n$$\n\\begin{cases}\n\\mathbf{P}_\\mathbf{C}^{1\\tau} = \\mathbf{P}_\\mathbf{R}^1 = \\{z \\mid z = \\bar{z}\\} = \\mathbf{R} \\cup \\{\\infty\\} \\\\\n\\mathbf{P}_\\mathbf{C}^{1\\dot{\\tau}_0} = \\{x+iy \\mid (x-1)^2+y^2=1\\} \\\\\n\\mathbf{P}_\\mathbf{C}^{1\\dot{\\tau}_1} = \\{z \\mid z\\bar{z}=1\\} = \\{x+iy \\mid x^2+y^2=1\\} = \\mathbf{S}^1 \\\\\n\\mathbf{P}_\\mathbf{C}^{1\\dot{\\tau}_\\infty} = \\{z \\mid z+\\bar{z}=1\\} = \\{x+iy \\mid x=\\frac{1}{2}\\} = \\frac{1}{2} + i\\mathbf{R}\n\\end{cases}\n\\leqno (9)\n$$\n\nL'image la plus suggestive est sans doute celle de la\nsphère de Riemann, $\\tau, \\dot{\\tau}_0, \\dot{\\tau}_1, \\dot{\\tau}_\\infty$ apparaissent comme\nles \\footnote{\"réflexions\" par rapport aux équateurs correspondants} [unclear: qui]\nsont les \"lignes\" tracées en traits pleins\n[unclear: sur la sphère]; les autres sont les\nplans de symétrie passant par les pôles $-\\bar{\\jmath}, -j$, qui\nréduisent le domaine fondamental de l'équateur en six\nsegments circulaires, par les [unclear: points de]\nsubdivision $0, 1/2, 1, 2, \\infty, -1$.\nNotons aussi les formules\n$$\n\\begin{cases}\n\\dot{\\rho} \\dot{\\tau}_0 \\dot{\\rho}^{-1} = \\dot{\\tau}_1 \\quad , \\quad \\dot{\\rho} \\dot{\\tau}_1 \\dot{\\rho}^{-1} = \\dot{\\tau}_\\infty \\quad , \\quad \\dot{\\rho} \\dot{\\tau}_\\infty \\dot{\\rho}^{-1} = \\dot{\\tau}_0 \\\\\n\\dot{\\tau}_0 \\dot{\\tau}_1 = \\dot{\\tau}_1 \\dot{\\tau}_\\infty = \\dot{\\tau}_\\infty \\dot{\\tau}_0 = \\dot{\\rho}\n\\end{cases}\n\\leqno (10)\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 1163,
+      "thinking_tokens": 3907
+    }
+  },
+  "86": {
+    "status": "success",
+    "transcription": "Les quatre grands cercles (9) découpent la sphère en 12 triangles sphériques, qui forment des domaines fondamentaux pour le groupe $\\mathfrak{T}_{0,3} \\simeq \\mathfrak{S}_3 \\times \\mathbf{Z}/2$ d'ordre 12, et il les permute entre eux de façon simple-ment transitive. (Il s'agit de la sous-division barycentrique des doubles triangles sphériques déterminés par l'équateur $\\mathbb{P}^1_{\\mathbf{R}}$, et ses trois points de subdivision : $0, 1, \\infty$). Prend un de ces triangles sphériques, disons $(-\\bar{j}, 0, 1/2)$, les réflexions par rapport à ses trois côtés, i.e. $\\tau, \\tau'_0, \\tau'_1$, forment un système de générateurs de $\\mathfrak{T}_{0,3}$ , avec les relations\n\n$$\n\\tau^2 = {\\tau'_0}^2 = {\\tau'_1}^2 = (\\underset{\\sigma'_0}{\\tau \\tau'_0})^2 = (\\underset{\\rho^{-1}}{\\tau'_0 \\tau'_1})^3 = (\\underset{\\sigma_0}{\\tau'_1 \\tau})^2 = 1 \\leqno (11)\n$$\n\nquant à $\\mathfrak{S}_3 = \\mathfrak{T}_{0,3}^+$, il est engendré par $\\tau \\tau'_0 = \\sigma'_0$, $\\tau'_0 \\tau'_1 = \\rho^{-1}$ et $\\tau'_1 \\tau = \\sigma_0$, avec les relations\n\n$$\n\\sigma'_0 \\rho^{-1} \\sigma_0 = {\\sigma'_0}^2 = \\rho^3 = {\\sigma_0}^2 = 1 \\leqno (12)\n$$\n\nII) Le groupe $\\Pi_{0,3}$ est engendré par $l_0, l_1, l_\\infty$, liés par la relation génératrice\n\n$$\nl_\\infty l_1 l_0 = 1 \\leqno (13)\n$$\n\nLe sous-groupe d'indice 2 $\\mathfrak{S}'_3 = (\\mathfrak{T}_{0,3})_{-\\bar{j}} \\subset \\mathfrak{T}_{0,3}$ , stabilisateur de $-\\bar{j}$, formé des $(g, \\tau^\\varepsilon) \\in \\mathfrak{S}_3 \\times \\mathbf{Z}/2 \\mathbf{Z}$ avec $\\operatorname{sgn}(g) = (-1)^\\varepsilon$ , opère sur $\\Pi_{0,3}$. Ce sous-groupe est formé de $1, \\tau'_0, \\tau'_1, \\tau'_\\infty, \\rho, \\rho^{-1}$, et leurs opérations sur $\\Pi_{0,3}$ sont notées respectivement $1, \\tau'_0, \\tau'_1, \\tau'_\\infty, \\rho, \\rho^{-1}$.\\marginpar{NB $\\tau'_0, \\tau'_1, \\tau'_\\infty$ étant des [unclear: anti-automorphismes] (dans (C)) \\dots opèrent sur $\\Pi_{0,3}$ \\dots}",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 696,
+      "thinking_tokens": 7334
+    }
+  },
+  "87": {
+    "status": "success",
+    "transcription": "On identifie ces éléments à des éléments du groupe $\\Aut_{\\text{loc}}(\\Pi_{0,3}) \\simeq \\mathfrak{S}_{0,3}$\npar $g(x) = g x g^{-1}$ ; et on trouve pour $g \\in \\mathfrak{S}'_J, x \\in \\Pi_{0,3}$, --\n$$\n\\begin{array}{lll}\n\\rho(l_0) = \\rho l_0 \\rho^{-1} = l_1, & \\rho(l_1) = \\rho l_1 \\rho^{-1} = l_\\infty, & \\rho(l_\\infty) = \\rho l_\\infty \\rho^{-1} = l_0 \\\\\n\\tau'_0(l_0) = l_0^{-1}, & \\tau'_0(l_1) = l_\\infty^{-1}, & \\tau'_0(l_\\infty) = l_1^{-1} \\\\\n\\tau'_1(l_1) = l_1^{-1}, & \\tau'_1(l_0) = l_\\infty^{-1}, & \\tau'_1(l_\\infty) = l_0^{-1} \\\\\n\\tau'_\\infty(l_\\infty) = l_\\infty^{-1}, & \\tau'_\\infty(l_0) = l_1^{-1}, & \\tau'_\\infty(l_1) = l_0^{-1}\n\\end{array}\n\\leqno{(14)}\n$$\n\n$$\n\\tau'_0 \\tau'_1 = \\tau'_1 \\tau'_\\infty = \\tau'_\\infty \\tau'_0 = \\rho \\qquad (\\text{on a bien sûr } \\tau'^2_0 = \\tau'^2_1 = \\tau'^2_\\infty = \\rho^3 = 1)\n\\leqno{(15)}\n$$\n\nDans le groupe $\\mathfrak{S}_{0,3}$ on définit des éléments $\\sigma_0, \\sigma_1, \\sigma_\\infty$ au-dessus de $\\bar{\\sigma}_0, \\bar{\\sigma}_1, \\bar{\\sigma}_\\infty$, par\n$$\n\\begin{array}{lll}\n\\sigma_0(l_1) = l_\\infty, & \\sigma_0(l_\\infty) = l_1, & \\sigma_0(l_0) = (l_1 l_\\infty)^{-1} \\\\\n\\sigma_1(l_\\infty) = l_0, & \\sigma_1(l_0) = l_\\infty, & \\sigma_1(l_1) = (l_\\infty l_0)^{-1} \\\\\n\\sigma_\\infty(l_0) = l_1, & \\sigma_\\infty(l_1) = l_0, & \\sigma_\\infty(l_\\infty) = (l_0 l_1)^{-1}\n\\end{array}\n\\leqno{(16)}\n$$\n\nOn a\n$$\n\\begin{array}{lll}\n\\rho \\sigma_0 \\rho^{-1} = \\sigma_1, & \\rho \\sigma_1 \\rho^{-1} = \\sigma_\\infty, & \\rho \\sigma_\\infty \\rho^{-1} = \\sigma_0 \\\\\n\\rho \\tau'_0 \\rho^{-1} = \\tau'_1, & \\rho \\tau'_1 \\rho^{-1} = \\tau'_\\infty, & \\rho \\tau'_\\infty \\rho^{-1} = \\tau'_0 \\\\\n\\sigma_0 \\sigma_1 = \\rho l_0 = l_1 \\rho, & \\sigma_1 \\sigma_\\infty = \\rho l_1 = l_\\infty \\rho, & \\sigma_\\infty \\sigma_0 = \\rho l_\\infty = l_0 \\rho\n\\end{array}\n\\leqno{(17)}\n$$\n\n\\marginpar{NB $\\sigma_0, \\sigma_1, \\sigma_\\infty \\in \\mathfrak{S}_{0,3}^+$ \\\\ $\\tau'_0, \\tau'_1, \\tau'_\\infty \\in \\mathfrak{S}_{0,3}$ \\\\ $\\tau_0, \\tau_1, \\tau_\\infty \\in \\mathfrak{S}_{0,3}$}\nOn a ainsi des éléments de $\\mathfrak{S}_{0,3}$ au-dessus des éléments $1, \\bar{\\sigma}_0, \\bar{\\sigma}_1, \\bar{\\sigma}_\\infty, \\rho, \\rho^{-1}, \\bar{\\tau}'_0, \\bar{\\tau}'_1, \\bar{\\tau}'_\\infty$, mais pas encore au-dessus de $\\bar{\\tau} \\in \\bar{\\mathfrak{S}}_{0,3}$ (qui permet d'en avoir un [unclear: ex $\\tau_0, \\tau_1^{-1}$]), on posera\\marginpar{[unclear: rappelons que pour ... l'identité]}\n$$ \\tau_i = \\sigma_i \\tau'_i \\quad (= \\tau'_i \\sigma_i) $$\n(qui est sur $\\bar{\\tau}$, donc de carré 1), $\\tau_i$ étant caractérisé par la condition d'être sur $\\bar{\\tau}$ et de commuter à $\\sigma_i$ (ou encore, à $\\tau'_i$).\n\n$$\n[\\tau_0, \\sigma_0] = [\\tau_1, \\sigma_1] = [\\tau_\\infty, \\sigma_\\infty] = 1\n\\qquad\n\\begin{array}{l}\n\\tau_0 = \\sigma_0 \\tau'_0 = \\tau'_0 \\sigma_0, \\\\\n\\tau_1 = \\sigma_1 \\tau'_1 = \\tau'_1 \\sigma_1, \\\\\n\\tau_\\infty = \\sigma_\\infty \\tau'_\\infty = \\tau'_\\infty \\sigma_\\infty\n\\end{array}\n\\leqno{(19)}\n$$\n$$\n\\tau_0^2 = \\tau_1^2 = \\tau_\\infty^2 = 1 \\qquad \\text{et} \\qquad \\tau_0, \\tau_1, \\tau_\\infty \\text{ sur } \\bar{\\tau}\n\\leqno{(20)}\n$$\n$$\n\\text{On trouve} \\quad \\tau_0 \\tau_1 = l_\\infty \\ , \\ \\tau_0 \\tau_\\infty = l_1 \\ , \\ \\tau_1 \\tau_\\infty = l_0\n\\leqno{(21)}\n$$\n\nPour bien faire, il faudrait expliciter la description de Malgoire (faite dans [unclear: (C)]) de $\\sigma_0, \\sigma_1, \\sigma_\\infty, \\rho, \\tau'_0, \\tau'_1, \\tau'_\\infty, \\tau_0, \\tau_1, \\tau_\\infty$.",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 1520,
+      "thinking_tokens": 9665
+    }
+  },
+  "88": {
+    "status": "success",
+    "transcription": "On a\n$$\n\\begin{cases}\n(\\sigma_\\infty\\rho)^2 = (\\rho\\sigma_1)^2 = l_0 = \\tau_0^2, & \\xi_0 \\defeq \\sigma_\\infty \\rho = \\rho \\sigma_1 \\\\\n(\\sigma_0\\rho)^2 = (\\rho\\sigma_\\infty)^2 = l_1 = \\tau_1^2, & \\xi_1 \\defeq \\sigma_0 \\rho = \\rho \\sigma_\\infty \\\\\n(\\sigma_1\\rho)^2 = (\\rho\\sigma_0)^2 = l_\\infty = \\tau_\\infty^2, & \\xi_\\infty \\defeq \\sigma_1 \\rho = \\rho \\sigma_0\n\\end{cases}\n\\leqno{(22)}\n$$\n\nL'élément $\\xi_i \\in \\mathfrak{S}_{0,3}$ (en fait $\\xi_i \\in \\mathfrak{S}_{0,3}^+$) au dessus de $\\dot{\\sigma}_i$, il est caractérisé par la condition $\\xi_i^2 = l_i$.\n\nDans le groupe $\\bar{\\mathfrak{T}}_{0,3}$ d'ordre 12, il y a sept éléments involutifs $\\dot{\\sigma}_0, \\dot{\\sigma}_1, \\dot{\\sigma}_\\infty, \\dot{\\tau}'_0, \\dot{\\tau}'_1, \\dot{\\tau}'_\\infty$, (dont un central), d'ordre 3 $\\dot{\\rho}, \\dot{\\rho}^{-1}$ (et $\\dot{\\rho} \\varepsilon, \\dot{\\rho}^{-1} \\varepsilon$ qui sont des éléments d'ordre 6).\n\n[unclear: Nous allons préciser le choix de nos] relèvements en des éléments [unclear: d'ordre fini] de $\\mathfrak{S}_{0,3}$. On sait que les possibilités, mod $\\Pi_{0,3}$-conjugaison, de tels relèvements, correspondent aux composantes connexes des pts fixes dans $\\tilde{U}_{0,3}$ des actions topologiques correspondantes. - pour $\\dot{\\sigma}_0, \\dot{\\sigma}_1, \\dot{\\sigma}_\\infty, \\dot{\\tau}'_0, \\dot{\\tau}'_1, \\dot{\\tau}'_\\infty$ il n'y a qu'une possibilité mod conjugaison (on a choisi $\\sigma_0, \\sigma_1, \\sigma_\\infty$, $\\tau_0, \\tau_1, \\tau_\\infty$ de la façon qui a semblé la plus commode pour les calculs), pour $\\varepsilon$ il y en a trois - on a eu les trois choix $\\tau_0, \\tau_1, \\tau_\\infty$ - pour $\\dot{\\rho}, \\dot{\\rho}^{-1}$ il y en a deux, correspondantes aux points $-j, -j^2$ - nous avons choisi celle qui correspond au point $-j$. Les autres relèvements correspondants à $-j^2$ peuvent s'en déduire en conjuguant par un $\\tau_i$ :",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 675,
+      "thinking_tokens": 7695
+    }
+  },
+  "89": {
+    "status": "success",
+    "transcription": "$$\n[unclear: = l_\\infty^{-1} \\rho l_1 = l_0^{-1} \\rho = \\rho l_1^{-1}]\n$$\n$$\n\\rho_0 = \\tau_0 \\rho \\tau_0^{-1} \\quad \\rho_1 = \\tau_1 \\rho \\tau_1^{-1} \\quad \\rho_\\infty = \\tau_\\infty \\rho \\tau_\\infty^{-1} \\quad \\text{ (d'ordre 3,} \\leqno{(23)}\n$$\nau dessus de $\\rho$ et $\\Pi_{0,3}$-conjugués entre eux\\footnote{* NB $\\rho \\rho_0 \\rho^{-1} = \\rho_1$, $\\rho \\rho_1 \\rho^{-1} = \\rho_\\infty$, $\\rho \\rho_\\infty \\rho^{-1} = \\rho_0$}, mais non $\\Pi_{0,3}$-conjugués à $\\rho$.\n\nNotons aussi par les formules usuelles de la théorie générale - et du fait que les composantes connexes des sous-espaces des pts fixes qui apparaissent ici sont 1-connexes :\n$$\n\\Pi_{0,3}^{\\sigma_i} = \\Pi_{0,3}^{\\rho} = \\Pi_{0,3}^{\\tau_i} = \\Pi_{0,3}^{\\tau'_i} = \\{1\\} \\leqno{(24)}\n$$\n\nSi on regarde les pts critiques de $\\mathcal{U}_{0,3}$, relatifs à l'opération de $\\mathfrak{T}_{0,3}$ , - à savoir les orbites $(2, -1, 1/2)$ et $(-j, -j^2)$ , le stabilisateur d'un point de ces orbites est d'ordre 4 resp. 6. Pour le pt 2 (opposé à $0$) , ce stabilisateur est le groupe $D_2 \\simeq \\mathbf{Z}/2\\mathbf{Z} \\times \\mathbf{Z}/2\\mathbf{Z}$ , engendré par $\\dot{\\sigma}_0, \\dot{\\tau}_0$ (ou $\\sigma_0, \\tau_0$) - qui a été bel et bien relevé explicitement dans $\\widehat{\\mathfrak{S}}_{0,3}$ . Il en est de même pour le point $-j$ , dont le groupe $\\simeq D_3$ a été relevé également. Par la théorie générale on sait que les classes de $\\Pi_{0,3}$-conjugaison d'un tel relèvement correspondent aux pts fixes du groupe d'opérateurs sur $\\mathcal{U}_{0,3}$ , pour $D_2$ il n'y a qu'un seul point fixe, savoir 2, pour $G_{-j} \\simeq D_3$ il y en a deux, $-j$ et $-j^2$ , - [unclear: avant d'avoir] choisi une trivialisation de l' \\dots",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 642,
+      "thinking_tokens": 6155
+    }
+  },
+  "90": {
+    "status": "success",
+    "transcription": "en conjuguant par l'une quelconque des $\\tau_i$ \\\\\n$(\\tau_0, \\tau_1, \\tau_\\infty)$.\n\n\\vspace{1em}\n\nIII. Relations avec le gr. [unclear: cartographique] triangulaire non orienté,\n$$ \\Pi'_{0,3} = \\pi_1((\\mathbb{P}^1_{\\mathbf{C}}, \\{0\\} + 2\\{1\\} + 3\\{\\infty\\}) ; -j) $$\net\n$$ = (\\Pi_{0,3} \\cdot \\{1, \\tau\\}) / (l_1^2, l_\\infty^3) \\marginpar{avec $S\\ell(2,\\mathbf{Z})$} $$\n\nOn a des générateurs involutifs $\\overline{\\sigma}_0, \\overline{\\sigma}_1, \\overline{\\sigma}_2$ de $\\Pi'_{0,3}$,\n( $\\sigma_i$ assoc. à un repère du cart. [unclear: fixant] la ième [unclear: arête] par symétrie par rapport au repère, donc $\\dots$ changement d'orientation [unclear: tri-rectangles]\n$\\sigma_0$ et $\\sigma_2$ sont resp. le passage au triangle [unclear: adjacent] resp. [unclear: transversal], $\\sigma_1$ le passage au triangle [unclear: adjacent] )\navec les relations génératrices\\footnote{On pourrait d'ailleurs utiliser $\\overline{\\sigma}_\\infty$ au lieu de $\\overline{\\sigma}_2$ (qui en fait est $\\overline{\\sigma}_2 \\overline{\\sigma}_0$). On aurait une covariance parfaite des rôles (par conjugaison) entre $(\\overline{\\sigma}_0, \\overline{\\sigma}_1, \\overline{\\sigma}_\\infty)$ et $(\\tau_0, \\tau_1, \\tau_\\infty)$.}\n$$\n\\begin{cases}\n\\overline{\\sigma}_0^2 = \\overline{\\sigma}_1^2 = \\overline{\\sigma}_2^2 = 1 \\\\\n(\\overline{\\sigma}_0 \\overline{\\sigma}_1)^2 = 1 \\\\\n(\\overline{\\sigma}_1 \\overline{\\sigma}_2)^3 = 1\n\\end{cases} \\leqno{(25)}\n$$\n\nLe sous-groupe $\\Pi''_{0,3}$ d'indice 2 [unclear: (groupe cart. dir. gal.-strict)] (qui est engendré\npar $\\overline{\\sigma}_0 \\overline{\\sigma}_1 = \\rho_f$ (associé à $l'_\\infty$), $\\overline{\\sigma}_2 \\overline{\\sigma}_1 = \\rho_s$ (associé à $l'_0$), $\\overline{\\sigma}_0 \\overline{\\sigma}_2 = \\sigma$ (associé à $l'_1$), avec les\nrelations génératrices\n$$\n\\rho_f \\sigma \\rho_s = 1 \\quad \\sigma^2 = \\rho_f^3 = 1 \\leqno{(26)}\n$$\nC'est donc le quotient de $\\Pi_{0,3}$ par $l_1^2, l_\\infty^3$\n$$\n\\begin{tikzcd}\n\\Pi_{0,3} \\arrow[r] & \\Pi''_{0,3} \\\\\nl_0 \\arrow[r, mapsto] & l'_0 = \\rho_s \\\\\nl_1 \\arrow[r, mapsto] & l'_1 = \\sigma \\\\\nl_\\infty \\arrow[r, mapsto] & l'_\\infty = \\rho_f\n\\end{tikzcd} \\leqno{(27)}\n$$\nCet homomorphisme se prolonge [unclear: en un prolongement]",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 828,
+      "thinking_tokens": 7217
+    }
+  },
+  "91": {
+    "status": "success",
+    "transcription": "$$\n\\tilde{\\Pi}_{0,3} = \\Pi_{0,3} \\cdot \\{t_1, t_2\\} \\longrightarrow \\tilde{\\Pi}'_{0,3} \\leqno{(28)}\n$$\n$$\n\\tau_0, \\tau_1, \\tau_\\infty \\longmapsto \\sigma_0, \\sigma_1, \\sigma_\\infty\n$$\n\nCeci posé, on définit un isomorphisme\\footnote{Cet iso. est l'unique homomorphisme de $\\tilde{\\Pi}'_{0,3}$ (resp. de $\\tilde{\\Pi}_{0,3}$) sur $\\tilde{\\mathfrak{S}}_{0,3}$ qui induit l'iso. $\\Pi'_{0,3} \\isommap \\mathfrak{S}^+_{0,3}$ (resp. [unclear: ...]).}\n$$\n\\tilde{\\Pi}'_{0,3} \\isommap \\tilde{\\mathfrak{S}}_{0,3} \\leqno{(29)}\n$$\n$$\n(\\sigma_0, \\sigma_1, \\sigma_\\infty) \\longmapsto (\\tau'_0, \\tau'_1, \\tau'_\\infty) \\quad \\text{notés aussi } \\tau_0, \\tau_1, \\tau_\\infty \\text{ (réflexions fondamentales)}\n$$\nqui induit un iso.\n$$\n\\Pi'_{0,3} \\isommap \\mathfrak{S}^+_{0,3} \\leqno{(30)}\n$$\n$$\n\\begin{cases}\n\\rho_s = l'_0 \\longmapsto \\varepsilon_0 = \\sigma_0 \\rho \\\\\n\\sigma = l'_1 \\longmapsto \\sigma_\\infty \\\\\n\\rho_f = l'_\\infty \\longmapsto \\rho^{-1}\n\\end{cases}\n\\quad \\text{NB } \n\\begin{cases}\n\\tau'_0 \\tau'_1 = \\varepsilon_0 = l'_0 \\\\\n\\tau'_1 \\tau'_\\infty = \\sigma_\\infty = l'_1 \\\\\n\\tau'_0 \\tau'_\\infty = \\rho^{-1} = l'_\\infty\n\\end{cases}\n$$\n$$\n\\text{i.e. } \\begin{cases}\n\\tau_0 \\tau_1 = l'_0 (= \\varepsilon_0) \\\\\n\\tau_1 \\tau_\\infty = l'_1 (= \\sigma_\\infty) \\\\\n\\tau_0 \\tau_\\infty = l'_\\infty (= \\rho^{-1})\n\\end{cases}\n$$\n\nOn trouve donc que $\\tilde{\\mathfrak{S}}_{0,3}$ a des relations génératrices\n$$\n{\\tau'_0}^2 = {\\tau'_1}^2 = {\\tau'_\\infty}^2 = \\underset{\\varepsilon_0}{(\\tau'_0 \\tau'_1)^2} = \\underset{\\rho^{-1}}{(\\tau'_0 \\tau'_\\infty)^3} = 1 \\leqno{(31)}\n$$\net $\\mathfrak{S}^+_{0,3}$ a des relations génératrices\n$$\nl'_0 l'_1 l'_\\infty = {l'_1}^2 = {l'_\\infty}^3 = 1 \\leqno{(32)}\n$$\nou aussi simplement, en éliminant $l'_0$ et\nposant $l'_1 = \\sigma_\\infty$ et $l'_\\infty = \\rho$\n$$\n\\sigma_\\infty^2 = \\rho^3 = 1 \\leqno{(33)}\n$$\n\nPour mémoriser ces expressions des éléments remarquables de $\\mathfrak{S}^+_{0,3}$ en termes de $\\sigma_\\infty, \\rho$ :",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 825,
+      "thinking_tokens": 5287
+    }
+  },
+  "92": {
+    "status": "success",
+    "transcription": "\\text{IV)}$ Relations avec $\\overline{\\operatorname{GL}}(2, \\mathbf{Z}) = \\operatorname{GL}(2, \\mathbf{Z})/\\pm 1 \\simeq \\operatorname{PGL}(2, \\mathbf{Z})$.\n\nCe groupe opère sur le demi-plan de Poincaré\n$$ D = \\{ z \\in \\mathbf{C} \\mid \\Im z > 0 \\} $$\npar\n$$\n\\begin{cases} u_g(z) = \\frac{az+b}{cz+d} & \\text{si } ad-bc = +1 \\\\ u_g(z) = \\frac{a\\bar{z}+b}{c\\bar{z}+d} & \\text{si } ad-bc = -1 \\end{cases} \\qquad g = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\quad a,b,c,d \\in \\mathbf{Z}, ad-bc \\in \\{\\pm 1\\} \\leqno{(37)}\n$$\n\nOn a dans $D$ un domaine fondamental hachuré, qui correspond au triangle sphérique $(0, 1, \\infty)$ par l'homomorphisme de revêtement naturel $J$ ; $\\rho \\mapsto 0$, et le point $i \\mapsto 1$ ; l'infini $\\mapsto \\infty$.\n\nLes réflexions par rapport aux trois côtés de ce triangle sont données par\n$$\nr_0(z) = \\frac{1}{\\bar{z}} \\qquad r_1(z) = -1-\\bar{z} \\qquad r_\\infty(z) = -\\bar{z} \\leqno{(38)}\n$$\n\nIls [unclear: engendrent le groupe] et les produits deux à deux [unclear: engendrent $\\operatorname{PSL}(2,\\mathbf{Z})$].",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 406,
+      "thinking_tokens": 15359
+    }
+  },
+  "93": {
+    "status": "success",
+    "transcription": "$$\n\\begin{cases}\nr_\\infty r_1(z) = \\ell_0'(z) = z-1 \\\\\nr_0 r_\\infty(z) = \\ell_1'(z) = -\\frac{1}{z} \\\\\nr_1 r_0(z) = \\ell_\\infty'(z) = 1-\\frac{1}{z} = \\frac{z-1}{z}\n\\end{cases} \\leqno (39)\n$$\n\nOn trouve ainsi un isomorphisme\n$$\n\\mathfrak{S}_{0,3} \\isommap \\operatorname{GL}(2,\\mathbf{Z})' \\simeq \\operatorname{GL}(2,\\mathbf{Z})/\\pm 1 \\simeq GP(1,\\mathbf{Z}) \\leqno (40)\n$$\n$$\n\\left.\n\\begin{aligned}\nr_0 &= \\tau_0' \\longmapsto r_0 = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} \\\\\nr_1 &= \\tau_1' \\longmapsto r_1 = \\begin{pmatrix} -1 & 1 \\\\ 0 & 1 \\end{pmatrix} \\\\\nr_\\infty &= \\tau_\\infty \\longmapsto r_\\infty = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}\n\\end{aligned}\n\\right\\} \\footnote{il vaut mieux des signes changés cf plus loin}\n$$\n\net une présentation de $GP(1,\\mathbf{Z})$ par\n$$\nr_0^2 = r_1^2 = r_\\infty^2 = (r_0 r_\\infty)^2 = (r_1 r_0)^3 = 1. \\leqno (41)\n$$\n\nCeci donne un isomorphisme\n$$\n\\mathfrak{S}_{0,3}^+ \\isommap \\operatorname{SL}(2,\\mathbf{Z})' \\defeq \\operatorname{SL}(2,\\mathbf{Z})/\\pm 1 \\simeq GP(1,\\mathbf{Z})^+ \\leqno (42)\n$$\n$$\n\\begin{cases}\n\\ell_1' = \\sigma_\\infty \\longmapsto \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\\\\n\\ell_\\infty' = \\rho^{-1} \\longmapsto \\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix}\n\\end{cases}\n$$\n(d'où\n$$\n\\rho \\longmapsto \\begin{pmatrix} 0 & 1 \\\\ -1 & 1 \\end{pmatrix} \\quad ).\n$$\n\nOn identifiera par la suite les éléments de $\\mathfrak{S}_{0,3}$ avec leurs images dans $\\operatorname{GL}(2,\\mathbf{Z})' \\simeq GP(1,\\mathbf{Z})$.\n\nNotons la formule [unclear: suivante bien] utile pour\npour une matrice $u = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\in \\operatorname{GL}(2,\\mathbf{Z})$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 695,
+      "thinking_tokens": 5528
+    }
+  },
+  "94": {
+    "status": "success",
+    "transcription": "\\marginpar{NB 2 : Si $u \\in \\operatorname{GL}(2, A)$, $A$ anneau commutatif, on a pour $u = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, $\\det(u) \\cdot u^{-1} = \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$}\n$$\nu^{-1} = \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix} \\leqno{(43)}\n$$\n\\marginpar{cf ``formulaire'' pour l'étude des relations d'incidence plus complètes}\n$$\n\\begin{aligned}\n\\varepsilon_0 &= \\sigma_{\\infty} \\rho = \\begin{pmatrix} 1 & -1 \\\\ 0 & 1 \\end{pmatrix} \\quad , \\quad \\varepsilon_0^{-1} = \\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix} \\\\\n\\varepsilon_1 &= \\rho \\sigma_{\\infty} = \\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix} \\quad , \\quad \\varepsilon_1^{-1} = \\begin{pmatrix} 1 & 0 \\\\ -1 & 1 \\end{pmatrix} \\\\\n\\varepsilon_{\\infty} &= \\rho^{-1} \\sigma_{\\infty} \\rho^{-1} = \\begin{pmatrix} 2 & -1 \\\\ 1 & 0 \\end{pmatrix} \\quad , \\quad \\varepsilon_{\\infty}^{-1} = \\begin{pmatrix} 0 & 1 \\\\ -1 & 2 \\end{pmatrix} \\\\\n\\ell_0 &= \\varepsilon_0^2 = \\begin{pmatrix} 1 & -2 \\\\ 0 & 1 \\end{pmatrix} \\qquad \\qquad \\qquad \\qquad \\sigma_0 = \\begin{pmatrix} 1 & -1 \\\\ 2 & -1 \\end{pmatrix} \\\\\n\\ell_1 &= \\varepsilon_1^2 = \\begin{pmatrix} 1 & 0 \\\\ 2 & 1 \\end{pmatrix} \\qquad \\qquad \\qquad \\qquad \\sigma_1 = \\begin{pmatrix} 1 & -2 \\\\ 1 & -1 \\end{pmatrix} \\\\\n\\ell_{\\infty} &= \\varepsilon_{\\infty}^2 = \\begin{pmatrix} 3 & -2 \\\\ 2 & -1 \\end{pmatrix} \\qquad \\qquad \\qquad \\qquad \\sigma_{\\infty} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}\n\\end{aligned} \\leqno{(44)}\n$$\n\n$$\n\\rho = \\begin{pmatrix} 0 & 1 \\\\ -1 & 1 \\end{pmatrix} \\quad , \\quad \\rho^{-1} = \\begin{pmatrix} 1 & -1 \\\\ 1 & 0 \\end{pmatrix} \\leqno{(45)}\n$$\n\n$$\n\\ell_{\\infty} \\ell_1 \\ell_0 = \\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix} \\quad \\begin{array}{l} \\text{l'élément non trivial} \\\\ \\text{du centre de } \\SL(2,\\mathbf{Z}) \\\\ \\text{qui (heureusement !) donne} \\\\ 1 \\text{ dans } \\SL(2,\\mathbf{Z})' \\end{array} \\leqno{(46)}\n$$\n\nLe groupe $\\Pi_{0,3}$ se récupère comme le noyau de l'homomorphisme\n$$\n\\begin{tikzcd}\n\\SL(2,\\mathbf{Z})' \\arrow[r] & \\SL(2, \\mathbf{Z}/2\\mathbf{Z}) \\\\\n& \\mathfrak{S}_3 \\arrow[u, \"\\simeq\"']\n\\end{tikzcd}\n$$\nla suite exacte\n$$\n\\begin{tikzcd}[row sep=small]\n1 \\arrow[r] & \\Pi_{0,3} \\arrow[r] & \\mathfrak{S}_{0,3}^+ \\arrow[r] & \\mathfrak{T}_{0,3}^+ \\arrow[r] & 1 \\\\\n& & & \\mathfrak{S}_3 \\arrow[u, \"\\simeq\"'] &\n\\end{tikzcd} \\leqno{(47)}\n$$\nse récupère comme\n$$\n\\begin{tikzcd}[row sep=small]\n1 \\arrow[r] & \\pi(2)' \\arrow[r] & \\SL(2,\\mathbf{Z})' \\arrow[r] & \\SL(2, \\mathbf{Z}/2\\mathbf{Z}) \\arrow[r] & 1 \\\\\n& \\Pi_{0,3} \\arrow[u, \"\\parallel\"'] & & \\mathfrak{S}_3 \\arrow[u, \"\\simeq\"'] &\n\\end{tikzcd} \\leqno{(48)}\n$$",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 1108,
+      "thinking_tokens": 6577
+    }
+  },
+  "95": {
+    "status": "success",
+    "transcription": "Ce [unclear: noeud] formelle dans les mains de [unclear: Teichmüller] dans $\\SL(2,\\mathbf{Z})$ lui-même, extension centrale de $\\mathfrak{S}_{0,3}$ - en fait, cette extension s'interprète comme $\\mathfrak{T}_{1,1}$, mais nous y reviendrons ultérieurement...\n\nV) Résumons les avatars des divers groupes, que nous avons rencontrés jusqu'à présent :\n\n\\begin{enumerate}\n    \\item[1)] $\\mathfrak{S}_{0,3} \\defeq \\Aut_{\\mathrm{loc}}(\\Pi_{0,3})$ \\quad avec sous-groupe $\\mathfrak{S}_{0,3}^+$ (respectant orientation)\n    \\item[2)] $\\mathfrak{T}_{0,4}' \\simeq \\Autext_{\\mathrm{loc}}(\\Pi_{0,4})'$ \\quad automorphisme extérieur de $\\Pi_{0,4}$ respectant la structure à lacets et fixant la classe de lacets $L_4$ (et permutant $L_1, L_2, L_3$)\n    \n    [unclear: $\\mathfrak{S}_{0,4}^{+'}$ composantes orientées]\n    \\item[3)] $A_{0,4}' / A_{0,4}^0$ groupe des composantes connexes de $A_{0,4}' \\subset \\Aut_{\\mathrm{top}}(U_{0,4}^{\\mathrm{top}})$ sous-groupe des automorphismes qui fixent le point : $x_4=1/2$\n    \n    avec $A_{0,4}' / A_{0,4}^0$ (composantes orientées) $\\simeq \\mathfrak{S}_{0,3}$\n    \\item[4)] $\\pi_1( (U_{0,3}^{\\mathrm{top}}, \\mathfrak{S}_{0,3}, -J) )$ (décrit à la J. Malgoire)\n    \n    avec le sous-groupe $\\pi_1( (U_{0,3}^{\\mathrm{top}}, \\mathfrak{S}_{0,3}^+) )$ \\quad $(\\mathfrak{S}_3 = \\mathfrak{T}_{0,3}^+)$\n    \\marginpar{[unclear: cette subtile groupe] $\\pi_{0,3} \\simeq \\Pi_{0,3} \\cdot \\{1, \\varepsilon \\}$}\n    \\item[5)] $\\pi_1( (\\mathbb{P}_{\\mathbf{C}}^{1 \\wedge}, \\infty \\cdot \\{0\\} + 2 \\cdot \\{1\\} + 3 \\cdot \\{\\infty\\} ), -J )$ (à la J. Malgoire)\n    \n    avec le sous-groupe $\\pi_1( (\\mathbb{P}_{\\mathbf{C}}^{1 \\wedge}, \\infty \\cdot \\{0\\} + 2 \\cdot \\{1\\} + 3 \\cdot \\{\\infty\\} ) )$\n    \\item[6)] Groupe cartographique triangulaire $\\bar{\\Gamma}_{0,3}$\n    \n    $$ \\bar{\\Gamma}_{0,3} = \\{ \\tau_0, \\tau_1, \\tau_\\infty \\mid \\tau_0^2 = \\tau_1^2 = \\tau_\\infty^2 = (\\tau_1\\tau_\\infty) = (\\tau_\\infty\\tau_0)^2 = (\\tau_0\\tau_1)^3 = 1 \\} $$\n    \n    (avec sous-groupe des triangles orientés\n    \n    $$ \\Gamma_{0,3} = \\{ \\rho_0, \\rho_1, \\rho_\\infty \\mid \\rho_\\infty\\rho_1\\rho_0 = \\rho_0^2 = \\rho_1^3 = 1 \\} \\quad ) $$\n    \\vspace{-0.5cm}\n    $$ \\hspace{2cm} \\underset{\\tau_1\\tau_\\infty}{\\uparrow} \\hspace{0.3cm} \\underset{\\tau_\\infty\\tau_0}{\\uparrow} \\hspace{0.3cm} \\underset{\\tau_0\\tau_1}{\\uparrow} $$\n\n    \\marginpar{NB $\\mathfrak{A}_{0,3}^{(loc)} \\simeq \\pi_1((U_{0,3}, \\mathfrak{T}_{0,3}))$ ce qui permet d'identifier 7) \\& 4)}\n    \\item[7)] $\\pi_1( U_{0,3}^{\\mathrm{conf}}, pt(U_{0,3}, -J) ) \\quad \\text{avec sous-groupe} \\quad \\pi_1( U_{0,3}, pt(U_{0,3}, -J) )$\n    \n    \\begin{tabular}{ll}\n    domaine de [unclear: structures] & sur les [unclear: holomorphes] \\\\\n    universelles de & universelles de type \\\\\n    type $(0,3)$ & $(0,3)$\n    \\end{tabular}\n\n    \\item[8)] $\\mathfrak{T}_{1,1}' = \\mathfrak{T}_{1,1} / \\underset{\\text{centre}}{\\pm 1}$ \\quad avec \\quad $\\mathfrak{T}_{1,1} \\simeq \\Autext_{\\mathrm{loc}}(\\Pi_{1,1}) \\simeq A_{1,1} / A_{1,1}^0$\n    \n    ($A_{1,1} \\simeq$ automorphisme topologique de $U_{1,1}^{\\mathrm{top}}$) sous-groupe orienté $\\mathfrak{T}_{1,1}^+ \\subset \\mathfrak{T}_{1,1}'$\n\\end{enumerate}",
+    "usage": {
+      "prompt_tokens": 2904,
+      "output_tokens": 1243,
+      "thinking_tokens": 8889
+    }
+  },
+  "96": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 5h18m21.132153299s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19101s'}]}}",
+    "transcription": ""
+  },
+  "97": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 5h17m2.004615874s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19022s'}]}}",
+    "transcription": ""
+  },
+  "98": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 5h14m39.477564027s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18879s'}]}}",
+    "transcription": ""
+  },
+  "99": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 5h10m10.81788088s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18610s'}]}}",
+    "transcription": ""
+  },
+  "100": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 5h2m19.806755145s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18139s'}]}}",
+    "transcription": ""
+  },
+  "101": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 4h51m54.203493225s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17514s'}]}}",
+    "transcription": ""
+  },
+  "102": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 4h41m51.353991436s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16911s'}]}}",
+    "transcription": ""
+  },
+  "103": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 4h31m49.843421102s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16309s'}]}}",
+    "transcription": ""
+  },
+  "104": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 4h21m48.496611693s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15708s'}]}}",
+    "transcription": ""
+  },
+  "105": {
+    "status": "error",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 4h11m46.982739779s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15106s'}]}}",
+    "transcription": ""
+  }
+}
