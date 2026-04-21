@@ -1,9 +1,9 @@
 % La Longue Marche — Volume 140-3 — Flash-Lite + mateo-canonical
 % Model: Gemini 3.1 Flash-Lite (thinking=low)
 % Prompt: mateo-canonical (notation + structure block, Part I few-shot pool)
-% Pages transcribed: 693/696
+% Pages transcribed: 696/696
 % Pages overlaid from diagram-tikzcd branch: 114
-% Rebuilt: 2026-04-19
+% Rebuilt: 2026-04-21
 
 %% ===== Page 1 =====
 
@@ -9579,7 +9579,39 @@ $$
 
 %% ===== Page 354 =====
 
-%% [page 354 missing or failed]
+que $N_0$ et $N_1$ soient pointés isomorphes.
+Alors $\tilde{\varepsilon}_0(G_0)$, $\tilde{\varepsilon}_1(G_0)$, $\tilde{\varepsilon}_0 \in \Gamma \tilde{\varepsilon}_0(G_0)$ définissent un épimorphisme canonique de $PG$ dans $G \dots$
+On a alors, puis cet épimorphisme.
+La situation est
+$$
+\rho = \begin{pmatrix} 0 & u \\ v & 0 \end{pmatrix} \quad \sigma = \begin{pmatrix} 0 & u' \\ v' & 0 \end{pmatrix} \leqno{(26)}
+$$
+où $u, v, u', v' \in \Gamma(G_0)$, $w, w' \in \Gamma G$.
+
+et on a
+$$
+\begin{cases} -\sigma^{-1}\rho = \begin{pmatrix} -\frac{v}{v'} & \frac{uw'-wu'}{u'} \\ 0 & -\frac{u}{u'} \end{pmatrix} = \varepsilon_0 = \begin{pmatrix} 1 & ? \\ 0 & 1 \end{pmatrix} \\ -\rho\sigma^{-1} = \begin{pmatrix} -\frac{u}{u'} & 0 \\ \frac{vw'-wv'}{v'} & -\frac{v}{v'} \end{pmatrix} = \varepsilon_1 = \begin{pmatrix} 1 & 0 \\ ? & 1 \end{pmatrix} \end{cases} \leqno{(27)}
+$$
+\marginpar{vrai définition du notre épimorphisme}
+donc il faut que
+$$
+uu' = -1, \quad vv' = -1, \quad \text{i.e. } u' = -u, v' = -v \leqno{(28)}
+$$
+donc
+$$
+-\rho\sigma^{-1} = \begin{pmatrix} \frac{1}{u}(w+w) & 0 \\ 0 & 1 \end{pmatrix} \quad \text{et il faut}
+$$
+$$
+w' + w = u \quad \text{i.e. } w' = w - u \leqno{(29)}
+$$
+en d'autres termes (ci-dessus (26)(27))
+$$
+\rho + \sigma = u P \quad \text{où } P = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} \leqno{(30)}
+$$
+ce qui détermine $\sigma$ en termes de $\rho$, des coefficients de $\rho$, et de $P$ est la projection élémentaire, [unclear: associé] : l'épimorphisme [unclear: envisagé].
+$$
+-\sigma^{-1}\rho = \varepsilon_0 = \begin{pmatrix} 1 & u/u \\ 0 & 1 \end{pmatrix}, \quad N_0 = \begin{pmatrix} 0 & w \\ 0 & 0 \end{pmatrix} \leqno{(31)}
+$$
 
 \newpage
 
@@ -14171,13 +14203,65 @@ $\underline{G} = S \ell(2, \hat{\mathbb{Z}})' \dots$]
 
 %% ===== Page 507 =====
 
-%% [page 507 missing or failed]
+Mais dans le cas fini-a-anabélien, nous espérons, il ne faut pas de $H$ d'étendue : que $\Gamma_{\rho, \sigma}$ soit aussi petit — p.ex. qu'il soit commutatif.
+Par exemple dans le cas "universel", $\mathfrak{S} = \mathfrak{S}_{0,3}^{+\wedge}$,
+$$
+B_{\rho, \sigma} = M_{0,3}^{\sim}[0]' = \\operatorname{Ker}(M_{0,3}^{\sim}[0] \xrightarrow{\epsilon_3} \{\pm 1\}) \leqno{(23)}
+$$
+donc
+$$
+\Gamma_{\rho, \sigma} = \Gamma_{0,3}^{\sim} (\supset \Gamma_0' !) \leqno{(24)}
+$$
+Par contre, on doit penser dans le cas général, pour les extensions d'un scindage de l'extension $B_{\rho, \sigma}$ de $\Gamma_{\rho, \sigma}$ par $L_0$. En fait, rien n'appuie, dans le cas général, l'existence d'une relation $\sigma^2 = \rho^3 = 1$, i.e. $\mathfrak{S}$ quotient de $\mathfrak{S}_{0,3}^{+\wedge}$, que le groupe $\mathfrak{S} = \mathfrak{S}_{0,3}^{+\wedge}$ est un quotient pour s'assigner des $\mathcal{G} \subset \\operatorname{Sl}(2, \hat{\mathbf{Z}})$, alors que $B_{\rho, \sigma} \simeq \mathfrak{S}_{\rho, \sigma}$ s'envoie dans $B_{0,3}^{\sim}$, et l'image est un sous-groupe de $\widetilde{\Gamma}_0$ (ce qui est encore fini-a-anabélien $\Gamma_{\rho, \sigma}$) :
+$$
+\Gamma_{\rho, \sigma} \subset B_{\rho, \sigma} \quad \Gamma_{\rho, \sigma} \isom \Gamma_{\rho, \sigma} \leqno{(25)}
+$$
+qui est une sous-extension, pour $B_{\rho, \sigma} \to \Gamma_{\rho, \sigma}$, il n'existe que sous-groupes de $\mathcal{G}_{\rho, \sigma}$ pour $\mathcal{G}_{\rho, \sigma} \to \Gamma_{\rho, \sigma}$, de sorte que :
+$$
+B_{\rho, \sigma} \simeq \Gamma_{\rho, \sigma} \cdot L_0, \quad \mathcal{G}_{\rho, \sigma} \simeq \Gamma_{\rho, \sigma} \cdot \mathcal{G} \quad (\text{produits semi-directs}) \leqno{(26)}
+$$
 
 \newpage
 
 %% ===== Page 508 =====
 
-%% [page 508 missing or failed]
+Soit maintenant
+$$
+\mathcal{S}_{g, \sigma} \defeq \mathfrak{G} \times \mathfrak{G} \leqno{(27)}
+$$
+$$
+\{ (\alpha, \rho) \mid \underline{\alpha \rho \alpha^{-1}} = \underline{\rho \alpha \rho^{-1}} \cdot \xi_i, \text{ pour } \nu \neq 2 \text{ connexe} \}
+$$
+i.e. $\eta^{-1} \xi \in L_1$.
+
+On a une application canonique
+$$
+\mathcal{S}_{g, \sigma} \longrightarrow \Sigma_{g, \sigma} \leqno{(28)}
+$$
+$$
+(\alpha, \rho) \longmapsto (\xi, \eta), \text{ avec } \xi = \alpha \rho \alpha^{-1}, \eta = \rho \alpha \rho^{-1}
+$$
+qui est surjective par définition de $\Sigma_{g, \sigma}$ et en fait par l'hypothèse (27), --- [unclear: puisque] sections canoniques.
+
+$$
+\Sigma_{g, \sigma} \longrightarrow \mathcal{S}_{g, \sigma}
+$$
+$$
+(\xi, \eta) \longmapsto \alpha, \rho
+$$
+et cela pris que $\alpha, \rho$ n'est pas dans $\mathfrak{G}$, mais seulement dans $\mathcal{G}_{g, \sigma}$. Nous nous considérons les deux ensembles plus gros
+$$
+\mathcal{G}_{g, \sigma} \subset \mathfrak{G} \times \mathfrak{G}_{g, \sigma} \leqno{(29)}
+$$
+$$
+\{ (\alpha, \rho) \mid \underline{\alpha \rho \alpha^{-1}} = \underline{\rho \alpha \rho^{-1}} \cdot \xi_i, \text{ pour } \nu \neq 2 \text{ connexe} \}
+$$
+\marginpar{NB On a $\xi = \alpha \rho \alpha^{-1}, \eta = \rho \alpha \rho^{-1}$ avec $\xi, \eta \in \mathfrak{G}$ (puisque $\xi, \eta \in \mathcal{G}_{g, \sigma}$)}
+sont les ---
+$$
+\mathcal{S}_{g, \sigma} = \mathcal{G}_{g, \sigma} \cap (\mathfrak{G} \times \mathfrak{G})
+$$
+(voir l'appendice (18) pour vérifier).
 
 \newpage
 

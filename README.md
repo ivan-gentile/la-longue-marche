@@ -15,29 +15,35 @@ Caramello (Istituto Grothendieck).
 |------|------|
 | [`PIPELINE.md`](PIPELINE.md) | Full pipeline description written for Mateo — data flow, prompts, post-processing, evaluation. |
 | [`CLAUDE.md`](CLAUDE.md) | Original project spec (for agents working in this repo). |
-| [`tex_output/la_longue_marche_140-3.tex`](tex_output/la_longue_marche_140-3.tex) | 696-page transcription, ~1.0 MB. |
-| [`tex_output/la_longue_marche_140-4.tex`](tex_output/la_longue_marche_140-4.tex) | 280-page transcription, ~0.35 MB. |
-| [`tex_output/bourbaki_schemes_opus_p1-5.tex`](tex_output/bourbaki_schemes_opus_p1-5.tex) | Typed-text control benchmark (EGA-era schemes), Claude Opus 4.7, first 5 pages. |
+| [`tex_output/la_longue_marche_140-3_flash-lite-mateo.tex`](tex_output/la_longue_marche_140-3_flash-lite-mateo.tex) | 696-page transcription, `mateo-canonical` prompt, Gemini 3.1 Flash-Lite, ~1.0 MB. |
+| [`tex_output/la_longue_marche_140-4_flash-lite-mateo.tex`](tex_output/la_longue_marche_140-4_flash-lite-mateo.tex) | 280-page transcription, `mateo-canonical` prompt, Gemini 3.1 Flash-Lite, ~0.34 MB. |
+| [`tex_output/bourbaki_schemes_full_flash-lite.tex`](tex_output/bourbaki_schemes_full_flash-lite.tex) | Full 437-page Bourbaki *Schémas* typed-text transcription, Flash-Lite, ~1.0 MB. |
+| [`tex_output/bourbaki_schemes_gemini_whole_p1-5.tex`](tex_output/bourbaki_schemes_gemini_whole_p1-5.tex) | Bourbaki 5-page control benchmark, Gemini 3.1 Pro (whole-doc mode). |
+| [`tex_output/bourbaki_schemes_opus_p1-5.tex`](tex_output/bourbaki_schemes_opus_p1-5.tex) | Bourbaki 5-page control benchmark, Claude Opus 4.7. |
 | [`reference/part1_sections_19_36/`](reference/part1_sections_19_36) | Mateo's corrected Part I sections (few-shot style reference). |
 | [`reference/validation/49.1old.tex`](reference/validation/49.1old.tex), [`49.1new.tex`](reference/validation/49.1new.tex) | Paired ground truth for Section 49.I (our output vs Mateo's corrected). |
 | [`experiments/pilot/`](experiments/pilot) | All scripts (transcription runner, diagram re-run, notation normalization, build scripts). |
-| [`experiments/pilot/production/*/transcriptions.json`](experiments/pilot/production) | Per-page JSON output from the production run. |
+| [`experiments/pilot/production-flash-lite-mateo/*/transcriptions.json`](experiments/pilot/production-flash-lite-mateo) | Per-page JSON output from the full Flash-Lite production run. |
 | [`experiments/pilot/49_1_error_profile.md`](experiments/pilot/49_1_error_profile.md) | Categorized diff between our pipeline and Mateo's corrected version. |
 | [`experiments/pilot/bench_opus_vs_gemini/summary.md`](experiments/pilot/bench_opus_vs_gemini/summary.md) | Gemini 3.1 Pro vs Claude Opus 4.7 benchmark. |
-| [`experiments/pilot/bench_mateo_canonical/summary.md`](experiments/pilot/bench_mateo_canonical/summary.md) | Prompt refresh validation (composite quality 0.113 → 0.743). |
+| [`experiments/pilot/bench_mateo_canonical/summary.md`](experiments/pilot/bench_mateo_canonical/summary.md) | Prompt refresh validation (composite quality 0.113 → 0.742). |
 
 ## Headline numbers
 
-- **976 pages** of handwritten French mathematical manuscript transcribed.
-- **~€10** total API cost for the production run.
-- **Gemini 3.1 Pro** (medium thinking) is the production model; with the
-  `mateo-canonical` prompt it reaches composite quality **0.742** on
-  Section 49.1, **beating Claude Opus 4.7** (0.661) at **16× lower cost**.
-- Current shipped corpus on Section 49.1: **0.113**. With the April 2026
-  prompt refresh: **0.742** (6.6× improvement; full-corpus re-run
-  pending).
-- Diagram rollout: both 140-3 (114 pages) and 140-4 (59 pages) have been
-  re-transcribed with the `diagram-tikzcd` prompt.
+- **976 pages** of handwritten French mathematical manuscript transcribed (100% coverage, April 2026).
+- **< €1** total API cost for the full Flash-Lite production run (~$0.59 for all 976 pages).
+- **Gemini 3.1 Flash-Lite** + `mateo-canonical` prompt is the current production model. It reaches composite quality **0.67** on the full Section 49.1 ground truth — **6× better than the shipped baseline (0.113)** — at **150× lower cost** than Claude Opus 4.7.
+- Model comparison on 5-page Section 49.1 ground truth:
+
+| Model | Composite quality | Cost / 5 pages | Latency |
+|-------|------------------|----------------|---------|
+| Shipped baseline (`text-first-fewshot`) | 0.113 | — | — |
+| Claude Opus 4.7 + `mateo-canonical` | 0.661 | $1.173 | 28.6 s |
+| Gemini 3.1 Pro + `mateo-canonical` | 0.742 | $0.074 | 67.8 s |
+| **Gemini 3.1 Flash-Lite + `mateo-canonical`** | **0.777** | **$0.008** | **7.4 s** |
+
+- Diagram rollout complete: 140-3 (114 pages) and 140-4 (58 pages) re-transcribed with `diagram-tikzcd` prompt, producing `\begin{tikzcd}` blocks.
+- Bourbaki typed-text benchmark: full 437-page transcription available (`tex_output/bourbaki_schemes_full_flash-lite.tex`).
 
 ## Reproducing
 

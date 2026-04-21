@@ -3205,9 +3205,14 @@
     }
   },
   "354": {
-    "status": "error",
-    "error": "Server disconnected without sending a response.",
-    "transcription": ""
+    "status": "success",
+    "transcription": "que $N_0$ et $N_1$ soient pointés isomorphes.\nAlors $\\tilde{\\varepsilon}_0(G_0)$, $\\tilde{\\varepsilon}_1(G_0)$, $\\tilde{\\varepsilon}_0 \\in \\Gamma \\tilde{\\varepsilon}_0(G_0)$ définissent un épimorphisme canonique de $PG$ dans $G \\dots$\nOn a alors, puis cet épimorphisme.\nLa situation est\n$$\n\\rho = \\begin{pmatrix} 0 & u \\\\ v & 0 \\end{pmatrix} \\quad \\sigma = \\begin{pmatrix} 0 & u' \\\\ v' & 0 \\end{pmatrix} \\leqno{(26)}\n$$\noù $u, v, u', v' \\in \\Gamma(G_0)$, $w, w' \\in \\Gamma G$.\n\net on a\n$$\n\\begin{cases} -\\sigma^{-1}\\rho = \\begin{pmatrix} -\\frac{v}{v'} & \\frac{uw'-wu'}{u'} \\\\ 0 & -\\frac{u}{u'} \\end{pmatrix} = \\varepsilon_0 = \\begin{pmatrix} 1 & ? \\\\ 0 & 1 \\end{pmatrix} \\\\ -\\rho\\sigma^{-1} = \\begin{pmatrix} -\\frac{u}{u'} & 0 \\\\ \\frac{vw'-wv'}{v'} & -\\frac{v}{v'} \\end{pmatrix} = \\varepsilon_1 = \\begin{pmatrix} 1 & 0 \\\\ ? & 1 \\end{pmatrix} \\end{cases} \\leqno{(27)}\n$$\n\\marginpar{vrai définition du notre épimorphisme}\ndonc il faut que\n$$\nuu' = -1, \\quad vv' = -1, \\quad \\text{i.e. } u' = -u, v' = -v \\leqno{(28)}\n$$\ndonc\n$$\n-\\rho\\sigma^{-1} = \\begin{pmatrix} \\frac{1}{u}(w+w) & 0 \\\\ 0 & 1 \\end{pmatrix} \\quad \\text{et il faut}\n$$\n$$\nw' + w = u \\quad \\text{i.e. } w' = w - u \\leqno{(29)}\n$$\nen d'autres termes (ci-dessus (26)(27))\n$$\n\\rho + \\sigma = u P \\quad \\text{où } P = \\begin{pmatrix} 0 & 0 \\\\ 0 & 1 \\end{pmatrix} \\leqno{(30)}\n$$\nce qui détermine $\\sigma$ en termes de $\\rho$, des coefficients de $\\rho$, et de $P$ est la projection élémentaire, [unclear: associé] : l'épimorphisme [unclear: envisagé].\n$$\n-\\sigma^{-1}\\rho = \\varepsilon_0 = \\begin{pmatrix} 1 & u/u \\\\ 0 & 1 \\end{pmatrix}, \\quad N_0 = \\begin{pmatrix} 0 & w \\\\ 0 & 0 \\end{pmatrix} \\leqno{(31)}\n$$",
+    "latency_s": 4.89,
+    "input_tokens": 2922,
+    "output_tokens": 708,
+    "cost_usd": 0.001792,
+    "model": "gemini-3.1-flash-lite-preview",
+    "prompt_style": "mateo-canonical"
   },
   "355": {
     "status": "success",
@@ -4614,14 +4619,24 @@
     "source": "diagram-retranscription"
   },
   "507": {
-    "status": "error",
-    "error": "Server disconnected without sending a response.",
-    "transcription": ""
+    "status": "success",
+    "transcription": "Mais dans le cas fini-a-anabélien, nous espérons, il ne faut pas de $H$ d'étendue : que $\\Gamma_{\\rho, \\sigma}$ soit aussi petit — p.ex. qu'il soit commutatif.\nPar exemple dans le cas \"universel\", $\\mathfrak{S} = \\mathfrak{S}_{0,3}^{+\\wedge}$,\n$$\nB_{\\rho, \\sigma} = M_{0,3}^{\\sim}[0]' = \\\\operatorname{Ker}(M_{0,3}^{\\sim}[0] \\xrightarrow{\\epsilon_3} \\{\\pm 1\\}) \\leqno{(23)}\n$$\ndonc\n$$\n\\Gamma_{\\rho, \\sigma} = \\Gamma_{0,3}^{\\sim} (\\supset \\Gamma_0' !) \\leqno{(24)}\n$$\nPar contre, on doit penser dans le cas général, pour les extensions d'un scindage de l'extension $B_{\\rho, \\sigma}$ de $\\Gamma_{\\rho, \\sigma}$ par $L_0$. En fait, rien n'appuie, dans le cas général, l'existence d'une relation $\\sigma^2 = \\rho^3 = 1$, i.e. $\\mathfrak{S}$ quotient de $\\mathfrak{S}_{0,3}^{+\\wedge}$, que le groupe $\\mathfrak{S} = \\mathfrak{S}_{0,3}^{+\\wedge}$ est un quotient pour s'assigner des $\\mathcal{G} \\subset \\\\operatorname{Sl}(2, \\hat{\\mathbf{Z}})$, alors que $B_{\\rho, \\sigma} \\simeq \\mathfrak{S}_{\\rho, \\sigma}$ s'envoie dans $B_{0,3}^{\\sim}$, et l'image est un sous-groupe de $\\widetilde{\\Gamma}_0$ (ce qui est encore fini-a-anabélien $\\Gamma_{\\rho, \\sigma}$) :\n$$\n\\Gamma_{\\rho, \\sigma} \\subset B_{\\rho, \\sigma} \\quad \\Gamma_{\\rho, \\sigma} \\isom \\Gamma_{\\rho, \\sigma} \\leqno{(25)}\n$$\nqui est une sous-extension, pour $B_{\\rho, \\sigma} \\to \\Gamma_{\\rho, \\sigma}$, il n'existe que sous-groupes de $\\mathcal{G}_{\\rho, \\sigma}$ pour $\\mathcal{G}_{\\rho, \\sigma} \\to \\Gamma_{\\rho, \\sigma}$, de sorte que :\n$$\nB_{\\rho, \\sigma} \\simeq \\Gamma_{\\rho, \\sigma} \\cdot L_0, \\quad \\mathcal{G}_{\\rho, \\sigma} \\simeq \\Gamma_{\\rho, \\sigma} \\cdot \\mathcal{G} \\quad (\\text{produits semi-directs}) \\leqno{(26)}\n$$",
+    "latency_s": 4.53,
+    "input_tokens": 2922,
+    "output_tokens": 604,
+    "cost_usd": 0.001636,
+    "model": "gemini-3.1-flash-lite-preview",
+    "prompt_style": "mateo-canonical"
   },
   "508": {
-    "status": "error",
-    "error": "Server disconnected without sending a response.",
-    "transcription": ""
+    "status": "success",
+    "transcription": "Soit maintenant\n$$\n\\mathcal{S}_{g, \\sigma} \\defeq \\mathfrak{G} \\times \\mathfrak{G} \\leqno{(27)}\n$$\n$$\n\\{ (\\alpha, \\rho) \\mid \\underline{\\alpha \\rho \\alpha^{-1}} = \\underline{\\rho \\alpha \\rho^{-1}} \\cdot \\xi_i, \\text{ pour } \\nu \\neq 2 \\text{ connexe} \\}\n$$\ni.e. $\\eta^{-1} \\xi \\in L_1$.\n\nOn a une application canonique\n$$\n\\mathcal{S}_{g, \\sigma} \\longrightarrow \\Sigma_{g, \\sigma} \\leqno{(28)}\n$$\n$$\n(\\alpha, \\rho) \\longmapsto (\\xi, \\eta), \\text{ avec } \\xi = \\alpha \\rho \\alpha^{-1}, \\eta = \\rho \\alpha \\rho^{-1}\n$$\nqui est surjective par définition de $\\Sigma_{g, \\sigma}$ et en fait par l'hypothèse (27), --- [unclear: puisque] sections canoniques.\n\n$$\n\\Sigma_{g, \\sigma} \\longrightarrow \\mathcal{S}_{g, \\sigma}\n$$\n$$\n(\\xi, \\eta) \\longmapsto \\alpha, \\rho\n$$\net cela pris que $\\alpha, \\rho$ n'est pas dans $\\mathfrak{G}$, mais seulement dans $\\mathcal{G}_{g, \\sigma}$. Nous nous considérons les deux ensembles plus gros\n$$\n\\mathcal{G}_{g, \\sigma} \\subset \\mathfrak{G} \\times \\mathfrak{G}_{g, \\sigma} \\leqno{(29)}\n$$\n$$\n\\{ (\\alpha, \\rho) \\mid \\underline{\\alpha \\rho \\alpha^{-1}} = \\underline{\\rho \\alpha \\rho^{-1}} \\cdot \\xi_i, \\text{ pour } \\nu \\neq 2 \\text{ connexe} \\}\n$$\n\\marginpar{NB On a $\\xi = \\alpha \\rho \\alpha^{-1}, \\eta = \\rho \\alpha \\rho^{-1}$ avec $\\xi, \\eta \\in \\mathfrak{G}$ (puisque $\\xi, \\eta \\in \\mathcal{G}_{g, \\sigma}$)}\nsont les ---\n$$\n\\mathcal{S}_{g, \\sigma} = \\mathcal{G}_{g, \\sigma} \\cap (\\mathfrak{G} \\times \\mathfrak{G})\n$$\n(voir l'appendice (18) pour vérifier).",
+    "latency_s": 5.6,
+    "input_tokens": 2922,
+    "output_tokens": 558,
+    "cost_usd": 0.001567,
+    "model": "gemini-3.1-flash-lite-preview",
+    "prompt_style": "mateo-canonical"
   },
   "509": {
     "status": "success",
