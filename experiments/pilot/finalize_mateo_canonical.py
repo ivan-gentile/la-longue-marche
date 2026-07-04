@@ -18,6 +18,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime
@@ -111,6 +112,21 @@ def normalize_inplace(vol: str) -> None:
 # ---------------------------------------------------------------------------
 
 
+def placeholder_reason(entry: dict) -> str:
+    """Concise reason for an untranscribed page — never the raw API error dump."""
+    if not entry:
+        return "not yet attempted in this run"
+    err = str(entry.get("error", ""))
+    if "RESOURCE_EXHAUSTED" in err or "'code': 429" in err or err.startswith("429"):
+        return "API daily quota exhausted (HTTP 429); queued for a future run"
+    m = re.match(r"(\d{3})\s", err)
+    if m:
+        return f"API error HTTP {m.group(1)} at run time; queued for a future run"
+    if err:
+        return err.splitlines()[0][:120]
+    return "no transcription recorded"
+
+
 def build_tex(vol: str) -> Path:
     data = json.loads((NEW_PROD / vol / "transcriptions.json").read_text(encoding="utf-8"))
     total = VOLUMES[vol]["pages"]
@@ -135,7 +151,7 @@ def build_tex(vol: str) -> Path:
         if entry.get("status") == "success":
             lines.append(entry.get("transcription", "").strip())
         else:
-            lines.append(f"%% [page {page} missing or failed: {entry.get('error', 'no entry')}]")
+            lines.append(f"%% [page {page} not transcribed: {placeholder_reason(entry)}]")
         lines.append("")
         if page < total:
             lines.append("\\newpage")
@@ -159,6 +175,13 @@ def score_section_49() -> dict:
     data = json.loads((NEW_PROD / "140-3" / "transcriptions.json").read_text(encoding="utf-8"))
     pages = [str(p) for p in range(495, 500)]
     text = "\n\n".join(data[p]["transcription"] for p in pages if data.get(p, {}).get("status") == "success")
+
+    if not text.strip():
+        return {
+            "length": 0,
+            "score": None,
+            "note": "Section 49.1 (140-3 pages 495-499) is not transcribed in this corpus; style score not applicable.",
+        }
 
     new_tex = (REPO / "reference" / "validation" / "49.1new.tex").read_text(encoding="utf-8")
     profile = categorize(text, new_tex)
@@ -198,14 +221,17 @@ def main() -> None:
     print("\n[4/4] Score Section 49.1 on the new corpus...")
     res = score_section_49()
     s = res["score"]
-    print(f"  length: {res['length']:,} chars")
-    print(f"  raw residue per 1000 chars:     {s['raw_density_per_kchar']}")
-    print(f"  notation drift per 1000 chars:  {s['notation_density_per_kchar']}")
-    print(f"  structure coverage:             {s['structure_coverage']:.0%}")
-    print(f"  COMPOSITE QUALITY:              {s['quality']}")
-    print()
-    print("  (shipped corpus scored 0.113, Claude+mateo-canonical 0.661,")
-    print("   pilot Gemini+mateo-canonical on 5 pages scored 0.742)")
+    if s is None:
+        print(f"  {res['note']}")
+    else:
+        print(f"  length: {res['length']:,} chars")
+        print(f"  raw residue per 1000 chars:     {s['raw_density_per_kchar']}")
+        print(f"  notation drift per 1000 chars:  {s['notation_density_per_kchar']}")
+        print(f"  structure coverage:             {s['structure_coverage']:.0%}")
+        print(f"  COMPOSITE QUALITY:              {s['quality']}")
+        print()
+        print("  (shipped corpus scored 0.113, Claude+mateo-canonical 0.661,")
+        print("   pilot Gemini+mateo-canonical on 5 pages scored 0.742)")
 
     # Persist the final score as a small report
     out = NEW_PROD / "FINAL_SCORE.json"

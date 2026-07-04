@@ -1,9 +1,9 @@
 % La Longue Marche — Volume 140-4 — mateo-canonical re-run
 % Model: Gemini 3.1 Pro (medium thinking)
 % Prompt: mateo-canonical (notation + structure block, Part I few-shot pool)
-% Pages transcribed: 134/280
+% Pages transcribed: 236/280
 % Pages overlaid from diagram-tikzcd branch: 58
-% Rebuilt: 2026-04-19
+% Rebuilt: 2026-07-04
 
 %% ===== Page 1 =====
 
@@ -1672,7 +1672,41 @@ qui en tant que schéma en groupes est isomorphe à ${}_N \mathbb{G}_a$,
 
 %% ===== Page 55 =====
 
-%% [page 55 missing or failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}}]
+qui est un schéma en groupes (non plat
+si $N \neq 1$) qui est nul sur $\operatorname{Spec} \mathbf{Z}[1/N]$,
+et dont d'ailleurs toutes les fibres en
+les $p \mid N$ sont $\simeq \mathbf{G}_a$.
+
+Je me rends compte maintenant
+que c'est une maladresse de sortir des
+groupes $\mathbb{O}_N^*$, qui [unclear: a le profil en un
+groupe], pour se rapporter à $\mathbf{G}_m$.
+
+Je vais en particulier examiner
+
+$$
+1 \to (1+12\mathbf{Z})^* \to \mathbb{O}_{12}^* \to (\mathbf{Z}/12\mathbf{Z})_{S_0}^* \to 1 \leqno{(78)}
+$$
+
+Notons que
+$$
+(\mathbf{Z}/12\mathbf{Z})^* \simeq (\mathbf{Z}/4\mathbf{Z})^* \times (\mathbf{Z}/3\mathbf{Z})^* = \mu \times \mu.
+$$
+
+$$
+1 \to (1+12\mathbf{Z})^* \to \mathbb{O}_{12}^* \xrightarrow{\varepsilon_2 \times \varepsilon_3} \mu \times \mu \to 1 \leqno{(79)}
+$$
+
+Les [unclear: caractères] $\varepsilon_2, \varepsilon_3$ sont des [unclear: applications définies]
+sur
+$$
+\mathbb{O}_{12}^* \xrightarrow{(\varepsilon_2, \varepsilon_3)} \{0,1\}_{S_0} \times \{0,1\}_{S_0} \leqno{(80)}
+$$
+de sorte qu'on a
+$$
+\mathbb{O}_{12}^* \xrightarrow{(\varepsilon_2, \varepsilon_3)} \mu \times \mu \simeq \{0,1\}_{S_0} \times \{0,1\}_{S_0} \leqno{(81)}
+$$
+déduit de l'isomorphisme $1 \mapsto 0$, $-1 \mapsto 1$.
 
 \newpage
 
@@ -2987,7 +3021,25 @@ $$
 
 %% ===== Page 94 =====
 
-%% [page 94 missing or failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 5h18m56.010577551s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19136s'}]}}]
+et on voit que $v \in \mathcal{N}_p^?$, d'où la forme
+plus explicite de la section de $\mathcal{N}_p^?$ au dessus
+de $\underline{k} = (\nu_1,\nu_3,\nu_0) \in \Gamma\mathbb{Q}_1^\alpha$
+$$
+(\mathcal{N}_p^?)_{\underline{k}} = \Big\{ \omega^i \sigma^{\nu_3} \delta^{-\nu''} u_{\underline{\mu}} \;\Big|\; i \in \Gamma_{\{0,1\}_{S_0}} \Big\} \leqno{(212)}
+$$
+où $\nu_3 = \nu_3(\underline{k})$, $\nu'' = \nu''(\underline{\mu})$, $\delta = \lambda_1 \lambda_0^{-1}$.
+On a trouve
+\marginpar{$\delta = \lambda_1 \lambda_0^{-1}$}
+$$
+\mathcal{M}_{p,\sigma}^\sim(-J) = \left\{ (\underset{\in \atop \Gamma_a}{\lambda}, \underset{\in \atop \mathfrak{S}^+}{x}) . \underset{\in \atop \mathbb{Q}_1^\pm}{\underline{\mu}} \;\Big|\; x = \omega^i \sigma^{\nu_3} \delta^{-\nu''} u_{\underline{\mu}} \, , \, \text{où } i \in \Gamma_{\{0,1\}_{S_0}} \right\} \leqno{(213)}
+$$
+On aura donc
+$$
+{\mathcal{M}'_{p,\sigma}}^\sim(-J) = \mathcal{M}_{p,\sigma}^\sim(-J) \cap \mathcal{M}_{p,\sigma}^\sim \leqno{(214)}
+$$
+$$
+= \left\{ (\lambda, \delta^{-\nu''}) \underline{\mu} \;\left|\; \begin{matrix} \underline{\mu} \in \Gamma\mathbb{Q}_1^{\pm 1} \quad (\text{ou } \varepsilon_3(\underline{\mu})=0) \\ \lambda \in \Gamma_a \\ \nu'' = \nu''(\underline{\mu}) \end{matrix} \right. \right\}
+$$
 
 \newpage
 
@@ -3028,7 +3080,27 @@ qui comme d'habitude se décompose en
 
 %% ===== Page 96 =====
 
-%% [page 96 missing or failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 5h17m5.884393717s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19025s'}]}}]
+trois, compatibles avec un même hom.
+$$
+\mathcal{M} \longrightarrow Z_{\rho,\sigma}^\wedge \defeq Z_{\rho,\sigma}^*(\hat{\mathbf{Z}})^\wedge = \hat{\mathbf{Z}}^*
+$$
+qui n'est autre que le caractère cyclotomique $\chi$. Le \underline{premier} de ces trois,
+$$
+\mathcal{M} \longrightarrow N_\rho^\sim \simeq \hat{\mathbf{Z}}^*
+$$
+se réduit ici \underline{au dit} caractère, et ne pose de ce fait aucune question intéressante. On a d'autre part
+$$
+\begin{tikzcd}
+\mathcal{M} \arrow[r] \arrow[d] & G_{\rho,\sigma} = \hat{\mathbf{Z}}^* \cdot \mathfrak{S}^{+\wedge} \arrow[d] \\
+\mathcal{M}^! \arrow[r] & G_{\rho,\sigma}^! = \hat{\mathbf{Z}}^* \cdot M^\wedge
+\end{tikzcd} \leqno{(218)}
+$$
+qu'il faudra examiner de plus près - comme le caractère cyclotomique (sur $\hat{\mathbf{Z}}^*$) est surjectif, il est entendu que ces deux hom. sont surjectifs. Enfin, on a un hom. $\mathcal{M} \longrightarrow N_\sigma^S$, qui \underline{fournit} un hom.
+$$
+\Gamma_{\mathbf{Q}} \longrightarrow N_\sigma^S = \hat{\mathbf{Z}}^* \cdot \hat{\mathbf{Z}} \quad \text{(\underline{1/2 direct})} \leqno{(219)}
+$$
+qu'il faudra examiner également - notamment voir s'il est \underline{surjectif}.
+Bien entendu, je n'ai guère de doutes sur le fait que par "voie arithmétique", on prouvera que l'hom. restreint sur $\Gamma_{\mathbf{Q}}$ lui-même est surj.
 
 \newpage
 
@@ -3083,19 +3155,96 @@ F_n \ar[r, "\text{épi}"] \ar[d, equal] & F_{n'} \ar[d, equal] & g \ar[r, |->] &
 
 %% ===== Page 98 =====
 
-%% [page 98 missing or failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 5h9m59.902769437s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18599s'}]}}]
+et $\mu_n^{\{0,1,\infty\}}$, à fortiori $\mu_d^{\{0,1,\infty\}}$, opère librement sur $X_n$, et on a une suite exacte courte
+
+$$
+\begin{tikzcd}
+1 \arrow[r] & \mu_d^{\{0,1,\infty\}}/\mu_d \arrow[r] & F_n \arrow[r] \arrow[d, equal] & F_{n'} \arrow[r] \arrow[d, equal] & 1 \\
+& & \mathfrak{S}_3 \cdot \mu_n^{\{0,1,\infty\}}/\mu_n & \mathfrak{S}_3 \cdot \mu_{n'}^{\{0,1,\infty\}}/\mu_{n'} \\
+& (x_0, x_1, x_\infty) \arrow[r, |->] & (x_0, x_1, x_\infty) \arrow[r, |->] & (x_0^d, x_1^d, x_\infty^d) \\
+& & g \arrow[r, |->] & g
+\end{tikzcd}
+\leqno{(224)}
+$$
+pour $x_0, x_1, x_\infty \in \mu_n$, $g \in \mathfrak{S}_3$.
+
+et le morphisme (223) est compatible avec (224), et induit un iso. (compatible avec actions de $F_{n'}$)
+$$
+X_{n'} \isommap X_n / \big( \mu_d^{\{0,1,\infty\}}/\mu_d \big) , \leqno{(225)}
+$$
+
+De plus, l'action de $F_n^\circ = \mu_n^{\{0,1,\infty\}}/\mu_n$ sur $U_n$ est libre, et à fortiori celle de $\mu_d^{\{0,1,\infty\}}/\mu_d$, de sorte que $U_n$ est bien un torseur sur $U_{n'}$ de groupe $F_d^\circ = \mu_d^{\{0,1,\infty\}}/\mu_d$.
+
+Passant à la limite, on trouve
+$$
+\begin{aligned}
+X_\infty &= \varprojlim_{n \in \mathbf{N}^\ast} X_n , \quad U_\infty = \varprojlim_n U_n \\
+F_\infty &= \varprojlim_n F_n = \big( \mathfrak{S}_3 \cdot \hat{\mathbf{Z}}(1)^{\{0,1,\infty\}} / \hat{\mathbf{Z}}(1) \big)
+\end{aligned}
+\leqno{(226)}
+$$
 
 \newpage
 
 %% ===== Page 99 =====
 
-%% [page 99 missing or failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 5h2m9.39707576s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18129s'}]}}]
+avec opérations de $F_{\infty}$ sur $\mathcal{U}_{\infty}$, $F^{\circ}_{\infty}$ opère
+$$
+F^{\circ}_{\infty} = \varprojlim F^{\circ}_n \simeq T_c(C) \leqno{(227)}
+$$
+opérant librement sur $\mathcal{U}_{\infty}$, le quotient étant
+$$
+\mathcal{U}_s \simeq U_{0,3}.
+$$
+
+Par la théorie de Galois de $(U_{0,3}, \mathfrak{S}_3)$,
+$$
+\mathcal{M}_{0,3} = \pi_1(U_{0,3, \mathbf{Q}}, \mathfrak{S}_3; -\vec{1}) \to M^* \leqno{(227')}
+$$
+\marginpar{NB L'action de $\mathcal{M}_{0,3}$ sur $M \simeq M(\hat{\mathbf{Z}})$ (qui est celle déduite par $\mathcal{M}_{0,3} \to \mathfrak{S}_3$ de l'action par automorphismes de $\mathfrak{S}_3$ sur $M$) provient en fait de l'identification canonique...}
+$$
+F^{\circ}_{\infty} \defeq F^{\circ}_{\infty}(\overline{\mathbf{Q}}) \simeq M \otimes \hat{\mathbf{Z}}(1) \simeq \left( \hat{\mathbf{Z}}^{\{0,1,\infty\}}_{\neq} / \hat{\mathbf{Z}} \right)(1) \leqno{(228)}
+$$
+sur lequel $\Gamma_{\mathbf{Q}}$ opère [unclear: par la correction cyclotomique et l'action évidente de $\mathfrak{S}_3$ sur l'indice].
+
+$$
+\to M \rtimes \mathfrak{S}_3, \quad M \simeq \hat{\mathbf{Z}}^*
+$$
+
+$$
+\mathcal{U}_{\infty}(-\vec{1}) \quad \text{un torseur sous } F^{\circ}_{\infty}, \text{ sur} \leqno{(229)}
+$$
+lequel $\mathcal{M}_{0,3} = \pi_1(U_{0,3, \mathbf{Q}}, \mathfrak{S}_3 ; -\vec{1})$ opère
+de façon compatible avec ses opérations
+sur $F^{\circ}_{\infty}$.
+
+La donnée d'un tel $(F^{\circ}_{\infty}, \mathcal{M}_{0,3})$-torseur
+profini équivaut à celle d'un revêtement
+principal de $U_{0,3, \mathbf{Q}}$, de groupe $F^{\circ}_{\infty}$.
 
 \newpage
 
 %% ===== Page 100 =====
 
-%% [page 100 missing or failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 4h51m57.190312094s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17517s'}]}}]
+... avec les opérations de $\mathfrak{S}_3$ dessus compatibles avec le gr. de $\mathfrak{S}_3$ sur $F_\infty^\circ$.
+
+D'autre part, la catégorie des torseurs sur des gr. abéliens de la forme $M \otimes_{\mathbf{Z}} T$, où $T$ est un $\hat{\mathbf{Z}}$-module inversible, est équivalente à celle des torseurs sous le gr. affine matriciel 
+$$ \hat{\mathbf{Z}}^\ast \cdot M^\wedge $$
+La donnée d'une classe d'isomorphie de tels torseurs, avec opération de $\mathcal{M}_{0,3}$ dessus compatible avec l'action sur $M^\wedge$ \dots
+
+Considérons d'autre part la suite exacte
+$$
+1 \to M \to [unclear: G_{pr}/\mu_a] \xrightarrow{(\chi, can)} \mathcal{O}^\ast_{12}(\mathfrak{S}_3)_{S_0} \to 1 \leqno{(231)}
+$$
+elle donne, par [unclear: foncteur] $( \ )(\hat{\mathbf{Z}})^\Delta$, une suite exacte
+$$
+1 \to M^\wedge \to [unclear: G_{pr}/\mu_a] \to \hat{\mathbf{Z}}^\ast \times \mathfrak{S}_3 \to 1 \leqno{(232)}
+$$
+qui redonne l'opération des [unclear: automorphismes] de $\hat{\mathbf{Z}}^\ast \times \mathfrak{S}_3$ sur $M^\wedge$. Elle contient la suite exacte
+$$
+1 \to M^\wedge \to \mathfrak{S}_3^{+\wedge}/(\mu_2) \to \mathfrak{S}_3 \to 1 \leqno{(233)}
+$$
+qui est un quotient de la suite exacte \dots
 
 \newpage
 
@@ -3137,7 +3286,15 @@ On a un diagr.
 
 %% ===== Page 102 =====
 
-%% [page 102 missing or failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 4h31m51.835343072s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16311s'}]}}]
+donnée d'une classe de $\hat{M}$-conjugaison de relèvements de $\mathcal{M}_{0,3} \to \mathfrak{S}_3 \times \hat{\mathbf{Z}}^*$ en un homomorphisme\footnote{NB Cet homomorphisme induit sur $\Pi_{0,3}$ l'homomorphisme canonique $\Pi_{0,3} \to (\Pi_{0,3})_{ab} \isom \hat{M}$ propriété immédiate...}
+$$
+\mathcal{M}_{0,3} \longrightarrow \operatorname{Aff} \leqno{(238)}
+$$
+Le choix d'un tel relèvement dépend du choix d'une place de $U_0(\overline{\mathbf{Q}})$ au-dessus du point $\vec{0}$ de $U_{0,3}(\overline{\mathbf{Q}})$ -- le changement de ce point origine se fait par translation par un $x \in \hat{M}$, et le relèvement (238) est alors changé par automorphisme intérieur par cet élément $x$.
+
+Donc la Tour de Fermat fournit une \marginpar{(238)} telle classe de conjugaison de relèvements, dont la connaissance équivaut en principe à celle de la Tour de Fermat à isomorphisme près.
+
+Bien entendu on voudrait mettre, si possible, en évidence un scindage de l'homomorphisme (237), et plus particulièrement sans doute un scindage canonique (218), qui fournit un homomorphisme de $\mathcal{M}_{0,3}$ non dans $\operatorname{Aff}$, mais dans le groupe analogue $\mathcal{G}_{P^1 \setminus H_C}$ de (232), qui relève le dit homomorphisme $\mathcal{M}_{0,3} \to \mathfrak{S}_3 \times \hat{\mathbf{Z}}^*$.
 
 \newpage
 
@@ -3233,91 +3390,531 @@ scindages de l'extension induite sur $\mathfrak{S}_3$ :
 
 %% ===== Page 106 =====
 
-%% [page 106 missing or failed: no entry]
+$$
+\begin{cases}
+(\rho', \sigma') = (\xi \rho, \eta \sigma) \quad \text{où } \xi, \eta \in \Gamma \underline{M} \\
+\text{satisfaisant à} \\
+\rho'^3 = \sigma'^2 = 1, \quad \sigma'(\rho') = \rho'^{-1} .
+\end{cases}
+\leqno (244)
+$$
+
+Nous allons interpréter ces conditions en termes de $\xi, \eta$. La condition $\rho'^3 = 1$ s'écrit comme $\rho^3 = 1$ dans $(\mathfrak{S}_3)_{S_0}$
+$$
+\xi \rho(\xi) \rho^2(\xi) = 1 \quad \text{i.e.\ additivement } (1 + \rho_M + \rho_M^2)(\xi) = 0
+\leqno (245)
+$$
+cette condition est toujours satisfaite, car
+$$
+1 + \rho_M + \rho_M^2 = 0
+\leqno (245)
+$$
+
+La condition $\sigma'^2 = 1$ s'écrit
+$$
+\eta \sigma(\eta) = 1 \quad \text{i.e.\ additivement } (1 + \sigma_M)(\eta) = 0
+\leqno (246)
+$$
+et elle signifie que
+$$
+\eta = b \delta \qquad \text{avec } b \in \Gamma G_a, \delta = \lambda_1 - \lambda_0
+\leqno (247)
+$$
+
+Nous poserons
+$$
+\xi = a_0 \lambda_0 + a_1 \lambda_1 \qquad a_0, a_1 \in \Gamma G_a
+\leqno (248)
+$$
+et nous allons exprimer en termes de $a_0, a_1, b$ la condition $\sigma'(\rho') = \rho'^{-1}$.
+
+On a
+$$
+\sigma'(\rho') = \operatorname{int}(\eta) \sigma(\xi \rho) = \operatorname{int}(\eta) \left[ \sigma(\xi) \underbrace{\sigma(\rho)}_{\rho^{-1} \lambda_1} \right]
+$$
+la condition $\sigma'(\rho') = \rho'^{-1}$ s'écrit
+$$
+\sigma(\xi) \rho^{-1} \lambda_1 = \eta^{-1} \rho^{-1} \xi^{-1} \eta
+$$
+soit, en multipliant [unclear: par $\rho$ à gauche] :
+$$
+\rho(\sigma(\xi)) \lambda_1 = \rho(\eta)^{-1} \xi^{-1} \eta
+$$
+soit, additivement :
 
 \newpage
 
 %% ===== Page 107 =====
 
-%% [page 107 missing or failed: no entry]
+$$ \underset{\varepsilon_{1M}}{\rho_M \sigma_M}(\zeta) + \lambda_1 = -\rho_M(\eta) - \zeta + \eta \qquad \text{ou encore} $$
+
+$$ \underbrace{(1+(\varepsilon_1)_M)(\zeta)}_{(2a_1-a_0)\lambda_1} + \lambda_1 = \underbrace{(1-\rho_M)(\eta)}_{3b\lambda_1} \leqno{(249)} $$
+ou encore, par un calcul immédiat
+$$ 2a_1 - a_0 + 1 = 3b \quad \text{ou} \quad 2a_1 - a_0 - 3b = -1. \footnote{lire pour $\rho'$ donné} \leqno{(250)} $$
+
+Ceci montre que pour $\zeta \in \Gamma M$, pour
+qu'il existe $\eta \in \Gamma M$ satisfaisant avec
+$\zeta$ aux conditions (244) — i.e. de fait pour que
+$(\rho'=\zeta \rho, \sigma'=\eta \sigma)$ définisse un scindage de
+(243) — il faut et il suffit que l'on ait
+
+$$ 2a_1 - a_0 + 1 \equiv 0 \pmod 3 \leqno{(251)} $$
+
+et lors $\eta$ est déterminé de façon
+unique par (250), du moins si $3$ est
+un élément régulier de $\underline{O}_S$ sur la base $S$
+envisagée (ce qui est le cas si $S = \operatorname{Spec}(\hat{\mathbf{Z}})$).
+Ainsi les scindages de (243) forment
+un schéma sur $S_0$, qui est canoniquement
+isom. à
+
+$$
+\begin{aligned}
+S_c &\simeq \{ (a_0, a_1, b) \in \Gamma E^3 \mid 2a_1 - a_0 - 3b = -1 \} \\
+&\simeq \{ (\zeta, \eta) \in \Gamma(M \times M) \mid (1+\varepsilon_M)(\zeta) - (1-\rho_M)(\eta) = -\lambda_1 \}
+\end{aligned} \leqno{(252)}
+$$
+
+ce schéma est de façon naturelle un
 
 \newpage
 
 %% ===== Page 108 =====
 
-%% [page 108 missing or failed: no entry]
+[unclear: torseur sur le schéma en modules]
+
+\marginpar{$K \simeq \mathbf{Z}^2$}
+$$
+\begin{cases}
+\underline{S}_C \simeq \underline{K}, \text{ où } K \text{ est le noyau de} \\
+\text{la suite exacte de } \mathbf{Z}\text{-modules} \\
+0 \to K \to \mathbf{Z}^3 \to \mathbf{Z} \to 0 \\
+\quad \quad \quad (\alpha_0, \alpha_1, \beta) \mapsto 2\alpha_1 - \alpha_0 - 3\beta
+\end{cases} \leqno{(253)}
+$$
+
+On a d'autre part une opération de $\underline{M}$ sur $\underline{S}_C$ par automorphismes, que je vais expliciter. À $\lambda \in \Gamma \underline{M}$ correspond l'opération
+$$
+(\xi, \eta) \mapsto (\lambda \xi \rho(\lambda)^{-1}, \lambda \eta \sigma(\lambda)^{-1})
+$$
+soit, additivement
+$$
+(\xi, \eta) \mapsto \big( \xi + (1-\rho_M)(\lambda), \eta + (1-\sigma_M)(\lambda) \big). \leqno{(254)}
+$$
+
+Ainsi, l'opération en question provient de la structure de $\underline{S}_C$-torseur sur $\underline{S}_C$, et d'un homomorphisme de groupes
+$$
+\begin{cases}
+\underline{M} \to \underline{S}_C \\
+\lambda \mapsto \Big( \underbrace{(1-\rho_M)(\lambda)}_{(c_0+c_1)\lambda_0 + (2c_1-c_0)\lambda_1}, \underbrace{(1-\sigma_M)(\lambda)}_{(c_1-c_0)\delta} \Big) \quad \text{où } \lambda = c_0 \lambda_0 + c_1 \lambda_1 \in M
+\end{cases} \leqno{(255)}
+$$
+qui en fait est associé à l'hom. de $\mathbf{Z}$-modules
+$$
+\begin{cases}
+M \to K \subset \mathbf{Z}^3 \\
+c_0 \lambda_0 + c_1 \lambda_1 \mapsto (\alpha_0 = c_0+c_1, \alpha_1 = 2c_1-c_0, \beta = c_1-c_0)
+\end{cases} \leqno{(256)}
+$$
 
 \newpage
 
 %% ===== Page 109 =====
 
-%% [page 109 missing or failed: no entry]
+On voit tout de suite que cet hom. est
+universellement injectif (car la composante
+$M \to \mathbf{Z}^3$ l'est) [unclear: donc par isomorphisme pour les
+quotients de $p$-groupes].
+
+Proposition. L'extension $\mathfrak{S}^{+ \wedge}_{1,2}$ (243) de
+$(\mathfrak{S}_3)_{S_0}$ par $\underline{M}$ est scindée sur $S_0$
+--- [unclear: d'où sur la base] --- les scindages
+sur $S_0$ correspondent 1-1
+aux
+scindages de $\mathfrak{S}^{+ \wedge}_{1,2}$ comme
+extension de $\mathfrak{S}_3$ par $M$. Sur une
+base quelconque $S$, deux scindages
+sont conjugués par une unique
+section de $\underline{M}$ sur $S$, donc le schéma
+des scindages de (243) est
+de façon naturelle un torseur sur $\underline{M}$.
+
+Notons qu'il est immédiat, sur une
+base quelconque $S$, que les scindages
+de (243) correspondent biunivoquement
+aux scindages de l'extension de
+groupes
+$$ 1 \to \underline{M}(S) \to \mathfrak{S}^{+ \wedge}_{1,2}(S)^\wedge \to \mathfrak{S}_3 \to 1 , \leqno{(244)} $$
+qui s'identifie --- à l'extension des
 
 \newpage
 
 %% ===== Page 110 =====
 
-%% [page 110 missing or failed: no entry]
+$\mathfrak{S}_3$ par $M(S) = \Gamma(S, g_S) \otimes_{\mathbf{Z}} M$, déduite
+de l'extension universelle $\mathfrak{S}^+ / H_{\mathfrak{S}}$ de
+$\mathfrak{S}_3$ par $M$, via l'hom.
+$$
+M \to M(S) = M \otimes_{\mathbf{Z}} \Gamma(S, g_S)
+$$
+
+Appliquons ceci au cas $S = \operatorname{Spec}(\hat{\mathbf{Z}})$,
+et trouvons le
+
+Corollaire. L'extension $\mathfrak{S}^{+\wedge} / H_{\mathfrak{S}}$ de
+$\mathfrak{S}_3$ par $M^{\wedge}$ est scindée, et ses
+scindages forment un torseur sous
+$M^{\wedge}$ (par autom. intérieurs).
+
+Étudions maintenant les
+scindages de $\mathfrak{S}_{\Gamma} / H_{\mathfrak{S}}$ tout entier,
+i.e. on essaye de déterminer, pour
+un scindage donné
+$$
+(\rho' = x \rho, \sigma' = y \sigma) \quad \begin{cases} x = a_0 \lambda_0 + a_1 \lambda_1 \\ y = b \delta = b(\lambda_1 - \lambda_0) \end{cases} \leqno{(245)}
+$$
+de $\mathfrak{S}^+ / H_{\mathfrak{S}}$ au-dessus de $\mathfrak{S}_3$,
+les relèvements
+$$
+D_{12}^* \to \mathfrak{S}_{\Gamma} / H_{\mathfrak{S}}
+$$
+compatibles avec le scindage précédent, i.e.
+qui [unclear: correspondent] à $\rho', \sigma'$. Pour ceci
 
 \newpage
 
 %% ===== Page 111 =====
 
-%% [page 111 missing or failed: no entry]
+je vais déterminer le commutant de $(\rho', \sigma')$
+dans $\mathfrak{S}_{\rho, \sigma}/K_G$, i.e.\ le commutant du
+sous-groupe section partielle
+$$ H(\rho', \sigma') \subset \mathfrak{S}_{\rho, \sigma}/K_G \leqno{(258)} $$
+
+L'image de ce commutant dans
+$(\mathfrak{S}_3)_{s_0} \simeq (\mathfrak{S}_{\rho, \sigma} / M) / D_{12}^*$ est contenue
+dans le centre de $(\mathfrak{S}_3)_{s_0}$, donc est
+trivial, d'où on conclut
+$$
+\operatorname{Centr}_{\mathfrak{S}_{\rho, \sigma}/K_G} (H(\rho', \sigma')) \subset D_{12}^* \cdot M = \mathfrak{S}_{\rho, \sigma}^{\natural}/K_G = \left\{ \lambda u_F \ \middle|\ \begin{array}{l} \lambda \in M \\ F \in D_{12}^* \end{array} \right\} \leqno{(259)}
+$$
+
+où $u_F$ est défini dans (150, 151). On a
+donc à déterminer le commutant de $H(\rho', \sigma')$
+en exprimant la condition pour un
+$\lambda u_F$ d'y être, i.e.\ de commuter à $\rho', \sigma'$.
+
+On aura
+$$ (\lambda u_F)(\rho') = \operatorname{int}(\lambda) u_F(\zeta \rho) = \operatorname{int}(\lambda) \big( \underset{\zeta^\mu}{u_F(\zeta)} \underset{\lambda_1^\nu \rho}{u_F(\rho)} \big) = \operatorname{int}(\lambda)(\zeta^\mu \lambda_1^\nu \rho) $$
+où $\nu = \nu(u_F)$, d'où la relation $\lambda u_F(\rho') = \rho'$
+s'écrit aussi
+$$ \lambda \zeta^\mu \lambda_1^\nu \rho(\lambda^{-1}) \rho = \zeta \rho \quad \text{i.e.} \quad \lambda \zeta^\mu \lambda_1^\nu \rho(\lambda^{-1}) = \zeta, $$
+ou en notation additive
+$$
+\left.
+\begin{array}{l}
+\lambda + \mu \zeta + \nu \lambda_1 - \rho(\lambda) = \zeta \\
+\text{compte tenu que } \mu - 1 = 2\nu
+\end{array}
+\right\} \quad , \text{soit}
+$$
 
 \newpage
 
 %% ===== Page 112 =====
 
-%% [page 112 missing or failed: no entry]
+$$
+(1-\rho)(\lambda) + 2\nu y + \nu\lambda_1 = 0 \leqno{(260)}
+$$
+
+La relation $(\lambda u_\mu)(\sigma') = \sigma'$ s'explicite, via
+$$
+(\lambda u_\mu)(\sigma') = \operatorname{int}(\lambda) u_\mu(\eta\sigma) = \operatorname{int}(\lambda) (\underbrace{u_\mu(\eta)}_{=\eta^\mu} \underbrace{u_\mu(\sigma)}_{\substack{=\sigma \\ \text{car } \omega=1 \\ \text{dans } \mathfrak{S}_{\rho,\sigma}/H_A}}) = \lambda \eta^\mu \sigma \lambda^{-1}
+$$
+$$
+= \lambda \eta^\mu \underbrace{\sigma \lambda^{-1}}_{=\sigma(\lambda^{-1})\sigma}
+$$
+donc la relation s'écrit
+$$
+\lambda \eta^\mu \underbrace{\sigma(\lambda^{-1})\sigma}_{(\lambda u_\mu)(\sigma') = \sigma'} = \eta \sigma \quad \text{soit} \quad \lambda \eta^\mu \sigma(\lambda^{-1}) = \eta
+$$
+ou encore, additivement
+$$
+\lambda + \mu y - \sigma(\lambda) = y
+$$
+$$
+(1-\sigma)\lambda + 2\nu y = 0 \leqno{(261)}
+$$
+
+En termes des $a_0, a_1, b$ de (257), ces équations s'explicitent comme des conditions sur
+$$
+\lambda = x\lambda_0 + y\lambda_1
+$$
+par les équations
+$$
+\begin{cases}
+-x + y = -2\nu b & (\text{exprimant } (261)) \\
+\left. \begin{aligned} x + y &= -2\nu a_0 \\ -x + 2y &= -\nu(2a_1+1) \end{aligned} \right\} & (\text{exprimant } (260))
+\end{cases} \leqno{(262)}
+$$
+où les quantités $a_0, a_1, b$ figurant aux deuxièmes membres sont liées par la relation (indépendamment de la multiplicité $\nu = \nu(H)$) satisfaisant (250)
+$$
+-a_0 + 2a_1 - 3b + 1 = 0 \leqno{(263)}
+$$
+
+La première et troisième équation (262) se résolvent en $x, y$
+$$
+\begin{cases}
+y = \nu(-2a_1 + b - 1) \\
+x = y + 2\nu b = \nu(-2a_1 + 3b - 1)
+\end{cases} \leqno{(264)}
+$$
+et la deuxième équation (262) devient, vu
 
 \newpage
 
 %% ===== Page 113 =====
 
-%% [page 113 missing or failed: no entry]
+y portant ces valeurs de $x,y$, une relation
+liant $a_0, a_1, b, \nu$ :
+$$ \nu (-4a_1+4b-2) = -2\nu a_0 \qquad \text{i.e.} $$
+$$ 2\nu (a_0 - 2a_1 + 2b - 1) = 0 $$
+qui est une conséquence de (263) ! Ainsi
+on trouve :
+
+Proposition Pour $H$ scindage de l'ext.
+$\widehat{\mathfrak{S}}^+/\underline{\mu}_2$ au-dessus de $(\widehat{\mathfrak{S}}_2)_{\overline{\mathbf{Q}}}$ par $\mathcal{M}$ (sur base
+$\mathfrak{S}_{1,0}/K_G$
+quelconque), le commutant (dans lui-
+même) du groupe image d'une section est l'image d'une
+section de l'extension $\mathfrak{S}_{1,0}^\natural$ de $\Phi_{12}^\ast$
+par $\mathcal{M}$.
+
+[Le scindage
+$$ u_{\rho', \sigma'} : \Phi_{12}^\ast \longrightarrow \mathfrak{S}_{1,0}^\natural \leqno{(264)} $$
+qui est associé à $\rho', \sigma'$ donnés par (257)
+$$ \rho' = \xi \rho, \quad \sigma' = \eta \sigma \qquad \begin{cases} \xi = a_0 \lambda_0 + a_1 \lambda_1, \eta = b \delta = b(\lambda_1 - \lambda_0) \\ a_0, a_1, b \in \Gamma_{\mathbf{Q}} \end{cases} $$
+est donné par
+$$ u_{\rho', \sigma'}(\underline{\mu}) = \lambda u_{\underline{\mu}} \leqno{(265)} $$
+où $u_{\underline{\mu}}$ est défini dans (150, 151), et
+où $\lambda = x \lambda_0 + y \lambda_1$, avec $x,y \in \Gamma_{\mathbf{Q}}$ donnés
+par 264, où $\nu = \nu(\underline{\mu})$].
+
+Corollaire Le morphisme canonique
+$$ \operatorname{Scindages}(\mathfrak{S}_{1,0}/K_G \text{ sur } \Phi_{12}^\ast) \longrightarrow \operatorname{Scindages}(\widehat{\mathfrak{S}}^+ / \underline{\mu}_2 \text{ au-dessus de } \widehat{\mathfrak{S}}_2) \leqno{(266)} $$
 
 \newpage
 
 %% ===== Page 114 =====
 
-%% [page 114 missing or failed: no entry]
+est un isomorphisme de faisceaux
+dans $(Sch)_{et}$, et par suite (prop.\ p.\ 702)
+le premier est un $\underline{M}$ torseur via
+[unclear: la conjugaison].
+
+Cet énoncé s'explicite en un énoncé
+correspondant sur les extensions ensemblistes,
+comme dans le cas de la prop.\ précédente.
+On trouve en particulier, sur $S = \operatorname{Spec}(\mathbf{Z})$
+
+Corollaire Les scindages de l'extension
+$G_{\rho, \sigma}/K_G$ de $\hat{\mathbf{Z}}^\times \times \mathfrak{S}_3$ par $\hat{M}$ forment
+un torseur sous $\hat{M}$, isomorphe (par restriction) au torseur
+des scindages de l'ext.\ $\mathfrak{S}^{+\wedge}/K_G$ de
+$\mathfrak{S}_3$ par $\hat{M}$.
+
+Variante de l'étude précédente pour
+l'extension $G_{\rho, \sigma}$ de $\Phi_{12}^\ast \times H_{S_0}^+$ par $M$
+(sans division par $K_G = \{1, \omega_{S_0}^2\}$). Considé-
+rons d'abord la question des scindages
+de la sous-extension $\mathfrak{S}^+$ de $H_{S_0}^+$ par
+$M$ -- ils correspondent aux couples
 
 \newpage
 
 %% ===== Page 115 =====
 
-%% [page 115 missing or failed: no entry]
+\noindent
+705
+$$
+\begin{cases} \rho' = p \rho \\ \sigma' = y \sigma \end{cases} \quad (p, y \in M) \text{ tels qu'on ait} \leqno{(267)}
+$$
+$$
+\rho'^3 = \sigma'^2 = \omega, \quad \sigma'(\rho') = \rho'^{-1}
+$$
+
+(On notera qu'un scindage doit transformer $\omega$, qui opère trivialement sur $M$ et est central dans $H^+$, dans un élément central, en l'occurrence $\omega$ lui-même puisque :
+$$
+\begin{cases}
+M \cap \operatorname{Centr}(\mathfrak{S}^+) = M^{\mathfrak{S}_3} = \{1\} \text{, d'où} \\
+\operatorname{Centr}(\mathfrak{S}^+) \simeq \mu_2 = \{1, \omega\} \subset \mathfrak{S}
+\end{cases} \leqno{(268)}
+$$
+-- ce qui montre qu'un scindage doit transformer $\omega$ en $\omega$, d'où forcément la condi-
+-tion (267) en $\rho', \sigma'$ [unclear: sous-entendue !] dans un scindage).
+
+Or on a
+$$
+\begin{cases} 
+\rho'^3 = (p \rho)^3 = p (\rho p) (\rho^2 p) \rho^3 = p (\rho p) (\rho^2 p) \omega \\ 
+\sigma'^2 = (y \sigma)^2 = y (\sigma y) \sigma^2 = y (\sigma y) \omega 
+\end{cases}
+$$
+donc les deux équations $\rho'^3 = \omega$ et $\sigma'^2 = \omega$
+équivalent respectivement à :
+$$
+\begin{cases} 
+p (\rho p) (\rho^2 p) = 1 & \text{i.e.} \quad (1 + \rho_M + \rho_M^2)(p) = 0 \\ 
+y (\sigma y) = 1 & \text{i.e.} \quad (1 + \sigma_M)(y) = 0 
+\end{cases}
+$$
+i.e. cela se réduit aux équations (245) (246)
+et - on a vu que la solution générale est
+que $p$ s'obtient de façon unique, elle
+donne $y$ par : 
+$$
+y = \delta b = b - \sigma(b) , \quad b \in M \leqno{(247)}
+$$
+
+La condition $\sigma'(\rho') = \rho'^{-1}$ s'explicite d'autre
+part comme à la p.
 
 \newpage
 
 %% ===== Page 116 =====
 
-%% [page 116 missing or failed: no entry]
+sur l'équation (249), qui s'explicite par (250).
+Cela montre qu'il existe un scindage
+[unclear: sur un s-groupe $\simeq \mathbf{Z}$] --- ce qui revient à un
+scindage du groupe discret $\mathfrak{S}^+$ ext. de
+$\underline{H}^+ = \underline{\mathfrak{S}}^+/M$ ($\simeq \mathfrak{S}_{0,3}$ pour $\underline{M} \simeq (\pi_0)_{ab}$) --- et que
+les scindages en question forment un
+torseur sur $K$, où $K$ défini dans
+(253), et le fait que
+$M \simeq K$ (254), où $M \simeq K$, correspond
+à l'opération de $\underline{M}$ sur l'ensemble des
+scindages, par conjugaisons. D'où en somme :
+
+Proposition (Pour un [unclear: type] $\mathfrak{S}$ quelconque).
+L'extension $\underline{\mathfrak{S}}^+$ de $\underline{H}^+$ par $\underline{M}$
+est scindée --- deux scindages sont
+conjugués par une unique section
+de $\underline{M}$ --- d'où l'application de
+« passage au quotient par $K$ » définit une
+bijection de l'ensemble des scindages
+de $\underline{\mathfrak{S}}^+$ sur $\underline{H}^+$, sur l'ensemble des
+scindages de $\underline{\mathfrak{S}}^+/K$ sur $\underline{H}^+/p_{H^+} \simeq \underline{\mathfrak{S}}_3$.
 
 \newpage
 
 %% ===== Page 117 =====
 
-%% [page 117 missing or failed: no entry]
+Etudions maintenant le centralisateur dans $\mathfrak{S}_{\rho,\sigma}$ d'un sous-groupe section au dessus de $H^+$, noté $H(\rho',\sigma')$. On doit avoir maintenant
+
+$$
+\operatorname{Centr}_{\mathfrak{S}_{\rho,\sigma}} (H(\rho',\sigma')) \subset \mathfrak{S}_{12}^{\pm} \cdot (M \times \{1, \omega\}_{S_0})
+= \left\{ \lambda \omega^i \mu \mathrel{\Bigg|} \begin{cases} \lambda \in \Gamma_M \\ \mu \in \Gamma_{\mathbf{Q}_{12}^*} \\ i \in \mathbf{Z}/2\mathbf{Z} \end{cases} \right\}_{S_0}
+\leqno (269)
+$$
+
+D'ailleurs $\lambda \omega^i \mu$ centralise $H(\rho',\sigma')$ si et seulement si les $\lambda, \mu$ centralisent. La commutation à $\rho'$ s'explicite comme pour la condition (260), le calcul p. 703 s'appliquant sans variante. Pour la condition de commutation à $\sigma'$, le calcul de p. 703' doit se modifier en ce que on ne peut plus écrire $\omega'^2 = 1$, la condition s'écrit
+$$
+\omega^i \lambda \mu \sigma(\lambda^{-1}) \sigma = \eta \sigma \quad \text{i.e.} \quad \omega^i \lambda \mu \sigma(\lambda^{-1}) = \eta
+$$
+et équivaut à la conjonction de la condition
+$$
+v_2(\mu) = 0 \quad \text{i.e.} \quad \mu \in \Gamma_{\mathbf{Q}_{12}^*}^{\prime\prime} \leqno (270)
+$$
+et de la relation (261). En présence de $v_2(\mu) = 0$, les calculs de p. 703', 704 s'appliquent, pour finalement trouver :
+
+Corollaire. Le centralisateur dans $\mathfrak{S}_{\rho,\sigma}$ d'un sous-groupe section $H(\rho',\sigma')$
 
 \newpage
 
 %% ===== Page 118 =====
 
-%% [page 118 missing or failed: no entry]
+On a alors une suite exacte
+$$
+1 \to M \to \underline{T} \to \mathbf{Q}_{12}^{*\prime\prime} \to 1 \leqno{(271)}
+$$
+et posant $\underline{T}^{\natural} = \underline{T} \cap \mathfrak{S}_{\rho,\sigma}^{\natural}$, - - -
+$$
+\underline{T}^{\natural} \isom \mathbf{Q}_{12}^{*\prime\prime} , \leqno{(272)}
+$$
+i.e.\ $\underline{T}^{\natural}$ est une section partielle de $\mathfrak{S}_{\rho,\sigma}^{\natural}$ au dessus de $\mathbf{Q}_{12}^{*\prime\prime}$.
+
+\smallskip
+
+\noindent
+\underline{Corollaire}. L'extension $\mathfrak{S}_{\rho,\sigma}$ de $\mathbf{Q}_{12}^* \times H^+$ par $M$ n'est scindée sur aucun sous-groupe $S$ non vide. L'extension $\mathfrak{S}_{\rho,\sigma}^{\natural}$ de $\mathbf{Q}_{12}^{*\prime\prime} \times H^+$ par $M$ est scindée sur tout sous-groupe $S$, et deux scindages sont conjugués par un unique élément de $M$. La \og restriction \fg{} naturelle fournit une bijection de l'ensemble des scindages de $\mathfrak{S}_{\rho,\sigma}^{\natural}$ sur $\mathbf{Q}_{12}^{*\prime\prime} \times H^+$, avec l'ensemble des scindages de $\underline{\mathfrak{S}}^+$ sur $H^+$.
+
+\smallskip
+
+\noindent
+\underline{Corollaire}. L'extension $\mathfrak{S}_{\rho,\sigma}$ de $\hat{\mathbf{Z}}^* \times H^+$ par $M^\wedge$ n'est pas scindée. Celle de $\mathfrak{S}_{\rho,\sigma}^{\natural}$ de $\hat{\mathbf{Z}}^{*\prime\prime} \times H^+$ par $M^\wedge$ est scindée, et deux scindages sont conjugués par un unique élément de $\hat{M}$. L'application restriction définit une bijection de l'ensemble des scindages de $\mathfrak{S}_{\rho,\sigma}^{\natural}$ sur $\hat{\mathbf{Z}}^{*\prime\prime} \times H^+$ avec l'ensemble des scindages de $\hat{\mathfrak{S}}^+$ sur $H^+$.
 
 \newpage
 
 %% ===== Page 119 =====
 
-%% [page 119 missing or failed: no entry]
+Explicitions un scindage de l'extension
+$\mathfrak{S}^+$ de $H^+$ par $M$ --- correspondant à un
+scindage de $\underline{\mathfrak{S}}^+$ de $H^+$ par $\underline{M}$ ---, via
+une solution particulière de l'équation
+$$
+a_0 - 2a_1 + 3b - 1 = 0 \leqno{(273)}
+$$
+en prenant
+$$
+a_1 = b = 0 \quad \text{d'où} \quad a_0 = 1
+$$
+i.e.
+$$
+\begin{cases}
+\xi = \lambda_0, \eta = 0 \quad \text{(écriture additive)} \\
+\rho' = \lambda_0 \rho, \quad \underline{\sigma}' = \underline{\sigma}
+\end{cases} \leqno{(274)}
+$$
+Ces mêmes formules fournissent un scindage de $\underline{\mathfrak{S}}^+$
+au dessus de $\underline{\mathfrak{S}}_3 \simeq H^+ / \mu_{H^+}$. Explicitions
+les relèvements de ceux de $\mathbf{Q}_{12}^*$
+dans $\mathcal{G}_{\rho,\sigma}/\mu_G$ resp. de $\mathbf{Q}_{12}^{*\prime\prime}$ dans $\mathcal{G}_{\rho,\sigma}$,
+$$
+\begin{cases}
+u_{\mu}' : \mathbf{Q}_{12}^* \to \mathcal{G}_{\rho,\sigma}/\mu_G \quad \text{resp. } \mathbf{Q}_{12}^{*\prime\prime} \to \mathcal{G}_{\rho,\sigma} \\
+\mu \mapsto \lambda_0^{\nu} u_{\mu} \quad (\nu = \nu(\mu))
+\end{cases} \leqno{(275)}
+$$
+où $u_{\mu}$ défini dans (151). (NB (275) est contenu
+dans [unclear: par.] p.~704 (265) et (264), qui donne
+$$
+u_{\mu}' = \lambda u_{\mu} \quad \lambda = x\lambda_0 + y\lambda_1, \quad x=y=-\nu
+$$
+d'où $\quad \lambda = -\nu(-\lambda_0) = \nu\lambda_0$.
+
+On aura donc, posant
+$$
+u_{\mu}' = u_{\rho,\sigma}'(\mu)
+$$
+$$
+\left.
+\begin{cases}
+u_{\mu}'(\rho) = \rho', \quad u_{\mu}'(\sigma) = \sigma' \\
+u_{\mu}'(\lambda) = \mu \lambda \quad (\lambda \in \Gamma_M) \quad (\text{où } \bar{\mu} = p(\mu))
+\end{cases} \right\} \quad \text{(ce qui détermine } u_{\mu}') \leqno{(276)}
+$$
 
 \newpage
 
 %% ===== Page 120 =====
 
-%% [page 120 missing or failed: no entry]
+et on en déduit aussi
+$$
+\begin{cases}
+u'_{\underline{\mu}}(\rho) = \lambda_0^{-2\nu} \rho \\
+u'_{\underline{\mu}}(\sigma) = \omega^{\nu_2} \sigma
+\end{cases}
+\quad (= \sigma \text{ dans } \underline{\mathfrak{S}}_{\rho,\sigma}/\mu_a \dots) . \leqno{(277)}
+$$
 
 \newpage
 
@@ -3349,13 +3946,30 @@ d'où des suites exactes et hom. de suites exactes
 
 %% ===== Page 122 =====
 
-%% [page 122 missing or failed: no entry]
+se propose d'examiner les façons de relever l'action de $\Gamma$ sur $\mathcal{X}$ en une action sur $\mathcal{X}'_0$, compatible avec l'action de $\Gamma$ sur le gr. d'opérateurs $M$ (via $\Gamma$). Plus généralement, si $\mathcal{X}'$ est un $M$-torseur sur $\mathcal{X}$ isomorphe à $\mathcal{X}'_0$, il se déduit de $\mathcal{X}'_0$ par tordage à l'aide d'un $M$-torseur $E$ ($=$ fibre de $\mathcal{X}'$ en $x_0$) ; étudier les relèvements analogues de l'action de $\Gamma$ sur $\mathcal{X}$ en une action de $\Gamma$ sur $\mathcal{X}'$, compatible avec l'action de $\Gamma$ sur $\mathcal{X}$.
+
+Notons que, si $\tilde{\mathcal{X}}$ désigne le rev. universel de $\mathcal{X}$ en $x_0$, $\mathcal{M}$ opère sur $\tilde{\mathcal{X}}$ de façon compatible avec son action canonique sur $\mathcal{X}$, en prolongeant l'action de $\pi$ sur $\tilde{\mathcal{X}}$ --- comme $[\pi, \pi] \subset \pi$ est distingué dans $\mathcal{M}$, cette action passe au quotient en une action canonique de $\tilde{\mathcal{M}} = \mathcal{M} / [\pi, \pi]$ sur $\mathcal{X}'_0 = \tilde{\mathcal{X}} / [\pi, \pi]$, qui satisfait aux
 
 \newpage
 
 %% ===== Page 123 =====
 
-%% [page 123 missing or failed: no entry]
+\begin{flushright}
+709
+\end{flushright}
+
+conditions analogues. Soit $\theta_0$ cette opération-là de $\mathcal{G}$, et $\theta$ une opération quelconque, satisfaisant aux dites conditions.
+
+On veut donc faire de $\mathfrak{X}'$, qui est un rev.\ de $\mathfrak{X}$, donné par sa fibre $E$ en $x_0$ et l'action de $\pi = \pi_1(\mathfrak{X}, x_0)$ sur $E$ (par translations, grâce à une structure de $M$ torseur sur $E$) un revêtement de $(\mathfrak{X}, \Gamma)$ - i.e.\ prolonger l'action donnée de $\pi$ sur la fibre $E$, en une action de $\mathcal{M}$ sur $E$ - qui d'ailleurs se factorisera nécessairement par $\bar{\mathcal{M}}$.
+
+Je dis que cette action se fera [unclear: nécess$^t$ à travers le groupe affine du torseur] $E$ - de façon précise, $\Gamma$ opère sur $M$, soit $\gamma_M$ l'opération définie par $\gamma \in \Gamma$, et soit $g \in \bar{\mathcal{M}}$ au dessus de $\gamma \in \Gamma$, on aura donc, pour $x \in E$, $\lambda \in M$
+$$
+g ( \underset{\in M}{\lambda} \cdot \underset{\in E}{x} ) = \gamma_M(\lambda) \cdot g x \leqno(280)
+$$
+ce qui est trivial par le calcul
+$$
+g(\lambda \cdot x) = (g \lambda) x = (g \lambda g^{-1} g) x = ( \underbrace{g \lambda g^{-1}}_{\gamma_M(\lambda)} ) \cdot (g x)
+$$
 
 \newpage
 
@@ -3392,13 +4006,57 @@ $Aff(E)$ de $\operatorname{Aut}(M)$ par $M$, d'où
 
 %% ===== Page 125 =====
 
-%% [page 125 missing or failed: no entry]
+$\widetilde{\Gamma}$ par $M$, (qui est d'ailleurs scindable\footnote{les scindages de $\operatorname{Aff}(E)$ déterminés par les pts de $E$, d'où diff. de l'origine scind. fixant $e \in E$ s'identifient...}). Ceci dit, les relèvements
+de $\Gamma$ dans ce dernier correspondent aux
+isomorphismes de cette extension
+de $\Gamma$ par $M$, avec l'extension $\widetilde{\Gamma}$ elle-
+même. Donc elle existe ssi l'extension de
+$\Gamma$ par $M$ est scindable, i.e.\ ssi
+$$
+c^2(\widetilde{\Gamma}) \in H^2(\Gamma, M) \text{ est nulle.} \leqno{(282)}
+$$
+S'il existe un relèvement $s$ i.e.\ un tel
+isomorphisme, ceux-ci forment un torseur
+sous le groupe des automorphismes de
+l'extension (triviale) de $\Gamma$ par $M$
+qui s'identifie aux groupes
+$$
+Z^1(\Gamma, M)
+$$
+des homomorphismes croisés de $\Gamma$ dans $M$.
+Les classes de $M$-conjugaison de
+tels isomorphismes
+correspondent donc aux éléments de
+$$
+H^1(\Gamma, M).
+$$
+Une autre façon de le dire, en prenant
+$E = M$-torseur trivial $= M$, d'où $\operatorname{Aff}(E)$ scindé,
+est que les relèvements désirés corres-
+pondent aux scindages de l'extension
+$\widetilde{\Gamma}$ de $\Gamma$ par $M$, et les classes de $M$-conjugaison de relèvements [unclear: aux classes] d'actions de $\Gamma$ sur $\widetilde{X}$ !
 
 \newpage
 
 %% ===== Page 126 =====
 
-%% [page 126 missing or failed: no entry]
+correspondent aux classes de $M$-conjugaison de scindages de ladite extension $\mathfrak{S}$ de $\Gamma$ par $M$.
+
+Ceci bien posé, revenons à la situation de $(\underset{\widetilde{X}}{U_{0,3 \overline{\mathbf{Q}}}}, \Gamma = \underset{N_{0,3}}{\Gamma_{\mathbf{Q}} \times \mathfrak{S}_3})$, les $\Gamma$-revêtements\footnote{NB La [unclear: question] qui nous occupe ici : $M$ devient $\mathcal{M}_{0,3}$, $\pi$ devient $\widehat{\Pi}_{0,3}$} de $\widetilde{X}$ correspondent aux $\mathfrak{S}_3$-revêtements de $U_{0,3 \mathbf{Q}}$, i.e.\ aux rev.\ de $(U_{0,3 \mathbf{Q}}, \mathfrak{S}_3)$.
+
+À l'aide des constructions générales des § 19 \underline{VI}, on déduit des quotients
+$$
+\mathfrak{S}^{+\wedge}_{0,3} / \mu_2 \simeq \widehat{\mathfrak{S}}^+_{0,3} / [\widehat{\Pi}_{0,3}, \widehat{\Pi}_{0,3}] \defeq \widetilde{\mathcal{M}}\footnote{- et pour [unclear: abréger] on le notera $\widetilde{M}$ !}
+$$
+(avec les notations du \S prec. (où j'avais [unclear: identifié] l'extension de $\mathfrak{S}_3 \subset \Gamma (= \Gamma_{\mathbf{Q}} \times \mathfrak{S}_3)$ par $M^\wedge$, [unclear: on en] déduit ce groupe profini, et qui était noté $G_{\mathbf{Q}}^\sim$ dans les sections précédentes, y apparaissait comme un produit semi-direct
+$$
+G_{\mathbf{Q}}^\sim = \widehat{\mathbf{Z}}^* \cdot \widetilde{\mathcal{M}} \quad , \quad \text{ext. de } \widehat{\mathbf{Z}}^* \times \mathfrak{S}_3 \text{ par } M^\wedge
+$$
+et un hom. canonique
+$$
+\widetilde{\mathcal{M}} = \mathcal{M}_{0,3} / [\widehat{\Pi}_{0,3}, \widehat{\Pi}_{0,3}] \longrightarrow G_{\mathbf{Q}}^\sim
+$$
+s'insérant dans un hom. de suites exactes
 
 \newpage
 
@@ -3438,19 +4096,71 @@ $(U_{0,3 \mathbb{Q}}, \mathfrak{S}_3)$, de fibre un groupe profini
 
 %% ===== Page 128 =====
 
-%% [page 128 missing or failed: no entry]
+commutatif au-dessus de $(U_{0,3\mathbf{Q}}, \mathfrak{S}_3)$
+qui au-dessus de $U_{0,3\overline{\mathbf{Q}}}$ soit isomorphe
+au revêtement $\mathcal{X}'_0$ envisagé plus haut.
+
+Revenons pour un instant à ces généralités de tantôt. Notons que la donnée d'un diagramme (281) définissant un quotient $M$ de $\hat{M}$ donne lieu à une suite exacte
+$$
+1 \to M \to \tilde{\mathcal{M}} \to \underset{\defeq \tilde{\mathcal{M}} / \operatorname{Im} M}{\tilde{\Gamma}} \to 1 \leqno{(283)}
+$$
+$$
+\tilde{\Gamma} \hookrightarrow \\operatorname{Aut}(M) \leqno{(284)}
+$$
+$\tilde{\Gamma}$ s'identifie à l'image de $\Gamma$ dans $\\operatorname{Aut}(M)$ par l'action de $\Gamma$ sur $M$ provenant de la structure d'extension $\tilde{M}$ de $\Gamma$ par $\hat{M}$. Cette [unclear: extension] $\tilde{\mathcal{M}}$ de $M$, donne bien naissance à une suite exacte (283), n'est [unclear: vrai] que pour quelque chose - à part le fait que $M$ s'y envoie injectivement, et que $\tilde{\Gamma} = \tilde{\mathcal{M}}/\operatorname{Im} M$.
 
 \newpage
 
 %% ===== Page 129 =====
 
-%% [page 129 missing or failed: no entry]
+opère fidèlement sur $M$ : en plus, l'extension (283) est triviale, et le fait qu'elle provienne d'un $\widetilde{\Theta}$ implique une structure supplémentaire sur cette extension : à savoir la donnée d'une classe de $M$-conjugaison de scindages.
+
+Plus précisément, on a une application canonique
+$$
+E \to \operatorname{Scind}(\widetilde{M} \text{ comme ext. de } \widetilde{\Gamma} \text{ par } M) \leqno{(285)}
+$$
+compatible avec les opérations de $M$ sur $E$ (par translation) et sur $\operatorname{Scind}$ (par conjugaison - [unclear: via] autom.\ intérieurs).
+
+Pour que $x$ et $y \in E$ aient même image dans $\operatorname{Scind}$, il faut et il suffit que l'élément $u = y^{-1}x \in M$ soit dans $M^\Gamma = M^{\widetilde{\Gamma}}$, ce qui montre que
+$$
+\text{l'hom. } E \to \operatorname{Scind} \text{ est injectif} \leqno{(286)}
+$$
+ssi $M^\Gamma = \{e\}$.
+
+Dans le cas où $M^\Gamma = \{e\}$, on voit donc que $E$ s'identifie exactement à une classe de $M$-conjugaison de scindages de $\widetilde{M}$.
 
 \newpage
 
 %% ===== Page 130 =====
 
-%% [page 130 missing or failed: no entry]
+Résumons ces considérations dans une
+
+Proposition. Soient $\mathcal{X}$ un topos connexe localement connexe muni d'un point géométrique
+$x_0$, on se place dans le contexte discret
+($\mathcal{X}$ localement simplement connexe) ou profini
+(revêtements signifiant [unclear: revêtements] profinis).
+On a un groupe $\Gamma$ d'automorphismes de $\mathcal{X}$
+($\Gamma$ profini dans le cas profini - il faudrait
+expliciter peut-être pour bien faire les hypothèses
+vraisemblables : à faire pour tenir compte
+de la topologie profinie de $\Gamma$ \dots). Posons
+$\pi = \pi_1(\mathcal{X}, x_0)$, $E = \pi_1(\mathcal{X}, \Gamma ; x_0)$
+d'où
+$$
+1 \to \pi \to E \to \Gamma \to 1 \leqno{(*)}
+$$
+on se donne un quotient $\pi \to M$ de $\pi$, par
+un sous-groupe distingué de $E$,
+ce qui revient à un quotient de
+$\pi_{ab} = \pi / [\pi, \pi]$ stable par l'action de $\Gamma$,
+d'où une $\tilde{M} = E / \\operatorname{Ker}(\pi \to M)$ extension quotient de (*),
+$$
+1 \to M \to \tilde{M} \to \Gamma \to 1 \leqno{(287)}
+$$
+[unclear: $M$ est commutatif], donc $\Gamma$ opère sur $M$.
+
+On s'intéresse à la catégorie des revêtements
+$\mathcal{X}'$ de $(\mathcal{X}, \Gamma)$, satisfaisant la condition
 
 \newpage
 
@@ -3485,25 +4195,74 @@ La catégorie des $\mathfrak{X}'$ (à un iso...) équivaut à celle des couples 
 
 %% ===== Page 132 =====
 
-%% [page 132 missing or failed: no entry]
+Les autom. d'un objet $\tilde{X}'$ correspondent aux "translations" par des éléments de $M^\Gamma = \operatorname{Cent}(\tilde{M})$ (ou en termes de $E, \Theta_{\tilde{M}}$) aux translations de $E$ par de tels éléments de $M^\Gamma$, qui sont dans $\operatorname{Aff}_{\tilde{\Gamma}}(E)$ (ils sont centraux, et en conjuguant par ces éléments on trouve le même hom. $\Theta_{\tilde{M}}$\dots). Les classes d'isomorphie de tels objets $\tilde{X}'$ correspondent biunivoquement aux classes de $M$-conjugaison de scindages de l'extension (287) de $\Gamma$ par $\tilde{M}$. De façon précise, à un $(E, \Theta_{\tilde{M}})$ est associé canoniquement un homomorphisme de $M$-ensembles
+$$
+E \to \operatorname{Scind}(\tilde{M} \text{ ext. de } \Gamma \text{ par } M) \leqno{(290)}
+$$
+dont l'image est la classe de conjugaison décrivant la classe d'isomorphie envisagée. L'hom. (290) se factorise par $M \backslash E$ en un mono
+$$
+M \backslash E \hookrightarrow \operatorname{Scind}(\tilde{M} \text{ ext. de } \Gamma \text{ par } M) \leqno{(291)}
+$$
+et si $M^\Gamma = 0$, on voit que $E$ se reconstitue canoniquement à partir de la classe de
 
 \newpage
 
 %% ===== Page 133 =====
 
-%% [page 133 missing or failed: no entry]
+conjugaison envisagée. L'opérat. (affine) (définie par $\Theta_{\tilde{M}}$) de $\tilde{M}$ sur $E$ n'est autre que l'opération (induite par la) de conjugaison sur les scindages (qui bien entendu ne fait pas sortir d'une classe de $M$-conjugaison, = ces conjugués par des éléments quelconques de $\tilde{M}$).
+
+Corollaire Supposons que l'on ait
+$$ H^0(\Gamma, M) = H^1(\Gamma, M) = 0 \leqno(292) $$
+i.e. que $M^\Gamma = 0$ et deux scindages d'une ext. triviale de $\Gamma$ par $M$ soient conjugués par un élément unique de $M$. Ce (le "unique" dû à $M^\Gamma=0$) implique que la catégorie des $\mathcal{F}'$, ou encore celle des couples $(E, \Theta_{\tilde{M}})$, est rigide, i.e. qu'un objet n'a [unclear: pas d'autom.] \dots connue à isom. unique près. Ceci posé, les classes d'isomorphie en question (i.e. les classes correspondantes de scindages de l'ext. $\tilde{M}$ de $\Gamma$ par $M$) correspondent biunivoquement aux [unclear: sous-groupes] quotients de $\tilde{M}$
 
 \newpage
 
 %% ===== Page 134 =====
 
-%% [page 134 missing or failed: no entry]
+de $M$ satisfaisant aux conditions suivantes
+\begin{enumerate}
+\item[a)] $M \to \tilde{M}$ ([unclear: faisant] $M \to \tilde{M} \to \tilde{\tilde{M}}$) est injectif, d'où l'extension
+$$
+1 \to M \to \tilde{M} \to \Gamma' \to 1 \leqno{(293)}
+$$
+\item[b)] $\Gamma' \defeq \tilde{M}/M$ opère fidèlement sur $M$,
+i.e.\ on a $\Gamma' \simeq \bar{\Gamma} = \operatorname{Im}(\Gamma \to \\operatorname{Aut}(M))$.
+\item[c)] L'extension $\tilde{M}$ de $\Gamma'$ par $M$ est
+triviale (i.e.\ sa classe dans $H^2(\bar{\Gamma}, M)$ est nulle).
+\end{enumerate}
+
+Pour un tel quotient $\tilde{M}$ de $\tilde{\tilde{M}}$, on récupère
+$E$ comme l'ensemble de tous les
+scindages de l'extension $\tilde{M}$ de $\Gamma'$ par $M$,
+sur lequel on fait opérer $\tilde{\tilde{M}}$
+via $\tilde{M}$ par conjugaison --- la restriction
+de cette opération à $M \subset \tilde{M}$ fait de $E$
+un $M$-torseur (par l'hyp.\ (292)).
+
+Revenons à nouveau à un cas en particulier
+qui nous intéresse. Au n° précédent (120)
+nous avons vérifié les relations (292),
+en montrant en même temps que les
+[unclear: extensions] centrales $\mathcal{C}_{g,0}$ de $\tilde{\Gamma} \simeq \hat{\mathbf{Z}}^\times \times \mathfrak{S}_3$
+par $M^\wedge$ (noté $M$ dans les considérations générales)
 
 \newpage
 
 %% ===== Page 135 =====
 
-%% [page 135 missing or failed: no entry]
+Let's refine line 8.
+        *   Could it be $\tilde{M} = M_{0,3} \longrightarrow \mathcal{G}_{g,\sigma}$?
+        *   Let's check the rules: "Extensions of $\mathfrak{T}$ by $\pi$: $\mathfrak{S}, \mathfrak{S}_{g,\nu}$".
+        *   So $\mathcal{G}_{g,\nu}$ should be $\mathfrak{S}_{g,\nu}$? Or is $\mathcal{G}$ standard? The rules say: "Subgroups written $\mathcal{G}, \mathcal{M}$ (NOT lowercase g, m for subgroups)". "Teichmuller group: $\mathfrak{T}$". "Extensions ... $\mathfrak{S}$".
+        *   Grothendieck often uses $\mathcal{G}_{g,\nu}$ for the arithmetic fundamental group (Galois + Teichmüller).
+        *   Look at the previous page (133): "l'extension $G_{...}$". It looks like $G_{g,\nu}$ or $\mathcal{G}_{g,\nu}$. Let's use $\mathcal{G}_{g,\nu}$.
+        *   Wait, in "$\mathcal{G}_{g,\nu}$", the second subscript is $\nu$. In the manuscript, it looks like a $\sigma$. Grothendieck often writes $\nu$ looking like a $\sigma$ or a $v$. I will use $\nu$ as it's standard. Wait, the rule says $\mathfrak{S}_{g,\nu}$. I'll use $\mathcal{G}_{g,\nu}$ for the group here.
+        *   Let's look at line 8 again. Is it $\tilde{M} = \mathcal{M}_{0,3} \longrightarrow \mathcal{G}_{g,\nu}$?
+        *   Wait, the first subscript is $0,3$. What is the group? $\mathcal{G}_{0,3}$?
+        *   If the map is $\tilde{M}_{0,3} \longrightarrow \mathcal{G}_{g,\nu}$, why would the indices be different?
+        *   Ah! It must be $\tilde{M} = \tilde{\mathcal{M}}_{0,3} \longrightarrow \mathcal{G}_{g,\nu}$ with $g,\nu$ being general, and $0,3$ being the specific case!
+        *   Wait, look at the right side of line 8. It's $\mathcal{G}_{g,\sigma}$? No, it's $\mathcal{G}_{\overline{\mathbf{Q}}}$? No, it's $\mathcal{G}_{p,q}$? No, it's $\mathcal{G}_{\mathbf{Q}}$! Let's assume $\mathcal{G}_{\mathbf{Q}}$. No, he writes $\mathbf{Q}$ clearly elsewhere.
+        *   Let's reconsider "$\mathcal{G}_{g,\sigma}$". Maybe
 
 \newpage
 
@@ -3540,19 +4299,74 @@ $$ H^1(\widehat{\mathfrak{S}}_3, \widehat{M}) = H^1(\mathfrak{S}_3, M) \otimes_{
 
 %% ===== Page 137 =====
 
-%% [page 137 missing or failed: no entry]
+ce qui nous ramène à calculer
+$$
+H^1(\mathfrak{S}_3, M) \quad ?
+$$
+Mais l'étude faite de l'extension $\mathfrak{S}^{+\wedge}_{0,3}$ de
+$\mathfrak{S}_3$ par $M$ - qui nous a montré que cette
+extension était scindée, et que deux
+scindages étaient conjugués par un
+unique élément de $M$, nous donne
+en fait
+$$
+\begin{cases}
+H^q(\mathfrak{S}_3, M) = H_q(\mathfrak{S}_3, M) = 0 & \text{d'où} \\
+H^q(\mathfrak{S}_3, \hat{M}) = H_q(\mathfrak{S}_3, \hat{M}) = 0
+\end{cases} \leqno{(296)}
+$$
+d'où finalement, grâce à (295), la
+relation triomphale
+$$
+\boxed{ H^1(\Gamma_{\mathbf{Q}} \times \mathfrak{S}_3, \hat{M}) = 0 } \quad ! \leqno{(297)}
+$$
+
+On trouve donc à nouveau
+contre toute attente, je l'avoue ! -
+le
+
+Théorème. Il existe un [unclear: revêtement]
+proétale $U_{\infty}$ de $(U_{0,3 \mathbf{Q}}, \mathfrak{S}_3)$ $(= \mathcal{M}_{0,3 \mathbf{Q}})$, ayant
+la propriété suivante : L'image inverse
+$U_{\infty \overline{\mathbf{Q}}}$ sur $U_{0,3 \overline{\mathbf{Q}}}$ (oubliant l'op. de $\mathfrak{S}_3$)
+est "le" revêtement abélien universel
+de $U_{0,3 \overline{\mathbf{Q}}}$. Pour deux tels revête-
 
 \newpage
 
 %% ===== Page 138 =====
 
-%% [page 138 missing or failed: no entry]
+ments proétales de $(U_{0,3 \mathbf{Q}}, \mathfrak{S}_3) = M_{1,1 \mathbf{Q}}$, il existe un unique isomorphisme de l'un sur l'autre.
+
+Nous avons obtenu l'existence de deux façons : par la tour de Fermat, et par la théorie générale de § 49 \mathrm{III}, appliquée au cas présent — ce qui nous donne un $U_\infty$ et un $U'_\infty$, chacun décrit à isomorphisme près !
+
+Le th.\ d'unicité résulte du petit calcul précédent — j'avais peur des "gros"
+$$
+H^1(\Gamma_{\mathbf{Q}}, \hat{M}) \simeq \hat{M} \otimes_{\hat{\mathbf{Z}}} \underset{\widehat{\mathbf{Q}^*}}{H^1(\Gamma_{\mathbf{Q}}, T_{\hat{\mathbf{Z}}}(\mathbb{G}_m))} ,
+$$
+mais finalement c'est la nullité des $H^i(\mathfrak{S}_3, \hat{M})$ pour $i=0,1$ qui implique (et sans rien connaitre sur $\Gamma_{\mathbf{Q}}$ !) celle de $H^1(\Gamma_{\mathbf{Q}} \times \mathfrak{S}_3, \hat{M})$, qui assure l'unicité qu'il nous fallait.
 
 \newpage
 
 %% ===== Page 139 =====
 
-%% [page 139 missing or failed: no entry]
+717
+
+Le théorème précédent élucide complètement, il me semble, la signification arithmético-géométrique (en termes de la tour de Fermat) de l'homomorphisme ((12bis) p. 695')
+$$
+\mathcal{M} = \mathcal{M}_{1,1} \longrightarrow G_{\rho,\sigma} \simeq \hat{\mathbf{Z}}^* \cdot \mathfrak{S}_3^{+ \wedge}
+$$
+obtenu dans la section 11°) par voie purement algébrique — ou du moins celui de l'homomorphisme un peu plus faible
+$$
+\mathcal{M} \longrightarrow \tilde{G}_{\rho,\sigma} \defeq G_{\rho,\sigma} / \mu_2 \simeq \hat{\mathbf{Z}}^* \cdot \mathfrak{S}_3^{+ \wedge} / \mu_2
+$$
+qui se factorise par un hom.
+$$
+\tilde{\mathcal{M}} \defeq \mathcal{M}/(\mu_{\mathcal{M}} = \mathcal{H}_{\mathfrak{S}_3}) \longrightarrow \tilde{G}_{\rho,\sigma} \qquad \text{extension de } \tilde{\Gamma} = \hat{\mathbf{Z}}^* \times \mathfrak{S}_3 \text{ par } M^\wedge
+$$
+\marginpar{noté $\tilde{\mathcal{M}}$ dans les pages précédentes}
+
+Le passage de $G_{\rho,\sigma}$ à $\tilde{G}_{\rho,\sigma}$, dans [unclear: l'état] actuel, avait comme rôle essentiel (a posteriori !) de fournir une extension par $M^\wedge$ ([unclear: pourvu d'une composante neutre]) d'un groupe opérant fidèlement sur $M^\wedge$, ce qui n'était pas le cas de l'ext. $G_{\rho,\sigma}$ de $\hat{\mathbf{Z}}^* \times \mathcal{H}^+$ par $M^\wedge$, puisque le [unclear: centre] $\mu_{\mathcal{M}}$ y opérait trivialement.
 
 \newpage
 
@@ -3592,103 +4406,382 @@ $\mathcal{M}$, en tant qu'extension centrale de $\mathcal{M}^\sim$
 
 %% ===== Page 141 =====
 
-%% [page 141 missing or failed: no entry]
+par $\mu$, comme image inverse de l'extension
+$G_{\rho, \sigma}$ de $G_{\rho, \tilde{\sigma}}$ par $\mu$, par l'homomorphisme
+$\tilde{\mathcal{M}} \to G_{\rho, \tilde{\sigma}}$ précédent. Il y a une
+analogie frappante avec ce qui s'était
+passé, d'ailleurs, quand on était
+parti (au \S\ 48, et dans certains développe-
+ments qui l'ont précédé) du groupe
+quotient ("de type Lie") $\\operatorname{Sl}(2, \hat{\mathbf{Z}})'$ de
+$\hat{\mathfrak{S}}_{0,3}^{+ \wedge}$, pour construire un homomorphisme
+$$ \mathcal{M}_{0,3} \to \operatorname{Gl}(2, \hat{\mathbf{Z}})/\{\pm 1\}, $$
+d'où il nous a été possible de reconstituer
+l'extension $\mathcal{M} = \mathcal{N}_{1,1}$ de $\mathcal{M}_{0,3}$ par $\mu$ juste-
+ment comme l'image inverse de
+l'extension $\operatorname{Gl}(2, \hat{\mathbf{Z}})$ de $\operatorname{Gl}(2, \hat{\mathbf{Z}})/\{\pm 1\}$
+par $\mu = \{\pm 1\}$. Du point de vue actuel
+--- où j'essaye d'expliciter autant que
+possible des objets arithmético-géomé-
+triques en termes d'automorphismes
+des groupes profinis à lacets $\hat{\Pi}_{0,3}$ --- le fait
+remarquable, c'est que les deux
 
 \newpage
 
 %% ===== Page 142 =====
 
-%% [page 142 missing or failed: no entry]
+extensions de $\tilde{\mathcal{M}}$ par $\mu$, sortant de calculs en apparence assez différents, soient canoniquement isomorphes. Je présume qu'une explication générale de ce fait n'offre aucune difficulté, dans le contexte actuel -- du fait que dans les deux cas, le [unclear: truchement] de $\\operatorname{Sl}(2,\hat{\mathbf{Z}})/\pm 1$ resp de $C_{\rho, \sigma}^\sim$ provenait du fait que j'étais parti d'un groupe quotient non pas de $\mathfrak{S}_{0,3}^{+\wedge} \simeq \\operatorname{Sl}(2,\hat{\mathbf{Z}})/\pm 1$, mais de $\\operatorname{Sl}(2,\hat{\mathbf{Z}}) \simeq N_{1,1}$ lui-même --
+
+Si on cherche malgré tout une interprétation (genre "tour de Fermat") de l'hom. $\mathcal{M} \to C_{\rho, \sigma}$ (comme de l'hom. $\tilde{\mathcal{M}} \to C_{\rho, \sigma}^\sim$) il faudrait interpréter $C_{\rho,\sigma}$ (comme $C_{\rho, \sigma}^\sim$) comme un groupe d'automorphismes d'une "fibre type" "pas trop grosse" -- la difficulté est d'inventer quelque chose sur quoi on opère de façon non triviale.
 
 \newpage
 
 %% ===== Page 143 =====
 
-%% [page 143 missing or failed: no entry]
+719
+
+Interprétant $M_{0,3} = \mathcal{N}_{1,1}'$ comme $\pi_1( \mathcal{M}_{1,1}' )$, où $\mathcal{M}_{1,1}'$ est le schéma modulaire / $\mathbf{Q}$ des courbes elliptiques à symétrie près, on voit que le tour de Fermat revient à ceci : sur tout schéma de base $S$ (de caractéristique 0) et toute quasi-courbe elliptique $\widetilde{X}$ sur $S$, considérons le revêtement étale de degré trois $S'$ de $S$ correspondant à (des points d'ordre 2 de $\widetilde{X}$), 
+$$ 
+M_0(\widetilde{X}/S) \defeq p_*(\mathbf{Z}_{\widetilde{X}})/\mathbf{Z}_S \leqno{(299)}
+$$
+le $\mathbf{Z}$-module [unclear: faisceau] libre de rang deux correspondant, et considérons
+$$ 
+M_1(\widetilde{X}/S) \defeq M_0(\widetilde{X}/S) \otimes_{\mathbf{Z}} \hat{\mathbf{Z}}(1) \leqno{(300)}
+$$
+\marginpar{ $\parallel_{\text{déf}} T(\mathbf{G}_m)$ }
+qui est un pro-groupe profini sur $S$, un système de coefficients localement constant (au sens large) à $\hat{\mathbf{Z}}^2$. Bien sûr, $M_1(\widetilde{X}/S)$ dépend fonctoriellement de $\widetilde{X}/S$ pour homomorphismes et isogénies inverses
+(on a une section cartésienne de cette catégorie fibrée ad-hoc ... ). Ceci posé,
 
 \newpage
 
 %% ===== Page 144 =====
 
-%% [page 144 missing or failed: no entry]
+%% [page 144 not transcribed: API error HTTP 503 at run time; queued for a future run]
 
 \newpage
 
 %% ===== Page 145 =====
 
-%% [page 145 missing or failed: no entry]
+720
+
+une suite exacte
+$$
+1 \to \underset{\simeq \, \mathbf{G}_m \otimes_{\mathbf{Z}} M_0}{J_0^\circ} \to J^\circ \to X \to 1 \leqno{(302)}
+$$
+où $M_0 = M_0(X/S)$ est défini plus haut (299). On en déduit une suite exacte
+$$
+1 \to \underset{= \, M_0 \otimes_{\mathbf{Z}} T_\infty(\mathbf{G}_m)}{M_1} \to T_\infty(J^\circ) \to T_\infty(X) \to 1 \leqno{(303)}
+$$
+$$
+T_\infty(G) = \varprojlim_n {}_n G \leqno{(304)}
+$$
+est le système local des $\pi_1$ des schémas en groupes comm. à fibres connexes sur $S$. Donc la donnée d'un torseur sous $M_1$, équivaut à la donnée d'un torseur sous $T_\infty(J^\circ)$, muni d'une section du torseur associé de groupe $T_\infty(X)$.
+
+Y a-t-il une description remarquable du torseur de Fermat $F_\infty(X/S)$, en termes de la géométrie de la courbe elliptique relative $X/S$ ?
 
 \newpage
 
 %% ===== Page 146 =====
 
-%% [page 146 missing or failed: no entry]
+14º) Relation avec jacobiennes généralisées.
+
+Considérons la "jacobienne généralisée" de $U_{0,3 \mathbf{Z}}\footnote{NB $S = \operatorname{Spec} \mathbf{Z}$} = \mathbf{P}^1_{\mathbf{Z}} - \{0,1,\infty\}_{\mathbf{Z}}$, c'est donc un schéma en groupes $J^*_{U_{0,3}} = J^*$, commutatif sur $\mathbf{Z}$, s'insérant dans la suite exacte
+$$ 1 \to \underset{\substack{\isom \\ \mathbb{G}_{mS} \otimes_{\mathbf{Z}} M_S}}{J^0} \to J^* \xrightarrow{\deg} \mathbf{Z} \to 1 \leqno{(305)} $$
+et muni d'un homomorphisme canonique
+$$ \varphi : U_{0,3 \mathbf{Z}} \longrightarrow \underset{\substack{\text{sous-schéma de } J^* \\ \text{image inverse de} \\ \text{la section } 1 \text{ de } \mathbf{Z}}}{J^1} \leqno{(306)} $$
+Les opérations de $\mathfrak{S}_3$ sur $U_{0,3}$ définissent par fonctorialité des opérations de $\mathfrak{S}_3$ sur $J^*$, compatibles avec la structure d'extension (305), et telles que
+$$ \text{(306) commute aux opérations de } \mathfrak{S}_3. \leqno{(307)} $$
+Notons que $J^1$ est un $J^0$-torseur, et
 
 \newpage
 
 %% ===== Page 147 =====
 
-%% [page 147 missing or failed: no entry]
+mieux un $(\mathfrak{S}_3, \mathcal{J}^0)$-torseur (un $\mathcal{J}^0$-torseur sur lequel $\mathfrak{S}_3$ opère de façon compatible avec son op. sur $\mathcal{J}^0$), donc classifié par un élément de $H^1(S_0, \mathfrak{S}_3 ; \mathcal{J}^0)$. Or je présume qu'on a
+$$
+H^0(S_0, \mathfrak{S}_3, \mathcal{J}^0) = H^1(S_0, \mathfrak{S}_3, \mathcal{J}^0) = 0 \leqno{(307)}
+$$
+(où
+$$
+\begin{cases}
+S_0 = \operatorname{Spec} \mathbf{Z}, \quad \mathcal{J}^0 = \mathbf{G}_{m} \otimes_{\mathbf{Z}} M \simeq \mathbf{G}_m^{\{0,1,\infty\}} / \text{diag} \\
+\qquad \qquad \qquad \qquad \simeq \Ker \Big( \mathbf{G}_m^{\{0,1,\infty\}} \longrightarrow \mathbf{G}_m \Big)\footnote{[unclear: attention - on a un isom. via $(x_0, x_1, x_\infty) \mapsto (x_0^{-1} x_1, x_0^{-1} x_\infty)$ qui est asymétrique]} \\
+\qquad \qquad \qquad \qquad \qquad \quad (x_0, x_1, x_\infty) \longmapsto x_0 x_1 x_\infty
+\end{cases} \leqno{(308)}
+$$
+On a en effet\footnote{Calcul comique, car je m'aperçois que j'utilise l'isomorphisme [unclear: de droite] (cf. (308)) pour le calcul de $H^0(\mathfrak{S}_3, \mathcal{J}^0) = 1$ (qu'il vaudrait d'ailleurs mieux écrire additivement $H^0(\mathfrak{S}_3, \mathcal{J}^0) = 0$), alors que la première définition de $\mathcal{J}^0$ donne immédiatement $H^0(\mathfrak{S}_3, \mathcal{J}^0) = 1$ !}
+$$
+H^0(\mathfrak{S}_3, \mathcal{J}^0) = \left\{ (x_0,x_1,x_\infty) \in \mathbf{Z}^{* \{0,1,\infty\}} \ \Big| \ \begin{matrix} x_0 x_1 x_\infty = 1 \\ (x_0,x_1,x_\infty) \text{ inv. par } \mathfrak{S}_3 \end{matrix} \right\}
+$$
+$$
+= \{ (x,x,x) \mid x \in \mathbf{Z}^*, \ x^3=1 \}
+$$
+$$
+= 1
+$$
+seule racine cubique de $1$ dans $\mathbf{Z}$ (ou $\mathbf{Q}$) est $1$. Cela établit la première relation (307). Pour la seconde, on utilise la suite spectrale
 
 \newpage
 
 %% ===== Page 148 =====
 
-%% [page 148 missing or failed: no entry]
+$$ H^n(S_0, \mathfrak{S}_3; \mathcal{J}^0) \Leftarrow \overset{E_2^{p,q}=}{H^p(\mathfrak{S}_3, \underline{H}^q(S_0, \mathcal{J}^0))} $$
+qui donne la suite exacte
+$$
+\begin{tikzcd}[row sep=tiny]
+0 \arrow[r] & H^1(\mathfrak{S}_3, H^0(S_0, \mathcal{J}^0)) \arrow[r, "\simeq"] & H^1(S_0, \mathfrak{S}_3; \mathcal{J}^0) \arrow[r] & H^0(\mathfrak{S}_3, H^1(S_0, \mathcal{J}^0)) \arrow[r] \arrow[d, equal] & H^2(\mathfrak{S}_3, H^0(S_0, \mathcal{J}^0)) \\
+& & & (H^0(\mathfrak{S}_3, M_{\mathbf{Z}} \otimes H^1(S_0, \mathbf{G}_m))) &
+\end{tikzcd}
+$$
+
+Or on a \footnote{NB on n'a pas besoin de la relation $\operatorname{Pic}(S_0)=0$}
+$$ H^1(S_0, \mathcal{J}^0) \simeq H^1(S_0, \mathbf{G}_m^2) \simeq \operatorname{Pic}(S_0)^2 = 0 $$
+donc il reste
+$$ H^1(S_0, \mathfrak{S}_3; \mathcal{J}^0) \simeq H^1(\mathfrak{S}_3, \underbrace{H^0(S_0, \mathcal{J}^0)}_{\substack{\simeq (\mathbf{Z}^*)^{\{0,1,\infty\}} / \mathbf{Z}^* \\ \simeq \mathbf{Z}^* \otimes M_{\mathbf{Z}}}}) $$
+
+Mais en fait, les calculs faits par ailleurs montrent qu'on a
+$$ H^0(\mathfrak{S}_3, M_{\mathbf{Z}} \otimes_{\mathbf{Z}} I) = H^1(\mathfrak{S}_3, M_{\mathbf{Z}} \otimes_{\mathbf{Z}} I) = 0 \leqno{(309)} $$
+quel que soit le $\mathbf{Z}$-module $I$ (p. ex. $I = \mathcal{J}^0(S)$ (ou $I = H^1(S, \mathbf{G}_m) = \operatorname{Pic}(S)$), $S$ un schéma quelconque), d'où finalement,
+$$ H^1(S_0, \mathfrak{S}_3; \mathcal{J}^0) \simeq H^1(S, \mathfrak{S}_3; \mathcal{J}^0) = 0 \leqno{(310)} $$
+pour tout schéma $S$. On trouve ainsi :
 
 \newpage
 
 %% ===== Page 149 =====
 
-%% [page 149 missing or failed: no entry]
+Proposition Soit $J^\circ = \mathbb{G}_m^{\{0,1,\infty\}} / \mathbb{G}_{m \text{ diag.}} \simeq \mathbb{G}_m \otimes_{\mathbf{Z}} M$
+
+Alors pour tout $(\mathfrak{S}_3, J^\circ)$ - torseur sur une base $S$ quelconque, il existe une unique trivialisation de celui-ci, i.e. une unique section, invariante par les opérations de $\mathfrak{S}_3$.
+
+Corollaire 1 Sur toute base $S$, il existe un unique morphisme
+$$
+\psi: \mathcal{U}_{0,3 S}\footnote{NB Avec les notations de p. 695, on a $\mathcal{U}_{0,3 S} \simeq (U_1)_S$, où $U_1 \subset \mathbb{G}_m^{\{0,1,\infty\}} / \text{diag } \mathbb{G}_m$ est défini par $x_0 x_1 x_\infty = 1$.} \longrightarrow J^\circ_S \leqno{(311)}
+$$
+qui soit compatible avec les opérations de $\mathfrak{S}_3$, et qui (via l'hom. $J^\circ_S \to \hat{J}^\circ_S$ que la factorisation par la [unclear: propriété] universelle des [unclear: pseudo] jacobiennes généralisées) induise l'hom. $\hat{J}^\circ_S \to \hat{J}^\circ_S$ identique.
+
+Corollaire 3 \marginpar{(312)} Soit $Y$ un schéma de
 
 \newpage
 
 %% ===== Page 150 =====
 
-%% [page 150 missing or failed: no entry]
+Brauer-Sévéri sur $S$, de dim relative 1 (i.e.\ une forme de $\mathbf{P}^1_S$), muni d'un sous-schéma fermé $S' \subset X$, étale de degré 3 sur $S$, et soit $U = X \setminus S'$, $J^*_{U/S}$ la jacobienne généralisée, en sorte qu'on a
+
+$$
+1 \longrightarrow \underset{\underset{\mathbf{G}_m \otimes_{\mathbf{Z}} M_{\mathbf{Z}}(S'/S)}{\simeq}}{J^\circ_{U/S}} \longrightarrow J^*_{U/S} \longrightarrow \mathbf{Z}_S \longrightarrow 1 \leqno{(313)}
+$$
+
+où $M_{\mathbf{Z}}(S'/S) \simeq p_*(\mathbf{Z}_{S'}) / \underset{\text{diag.}}{\mathbf{Z}_S}$ est le $S$-schéma en $\mathbf{Z}$-modules (loc. isom.\ : $\mathbf{Z}^2$), déduit de $M_{\mathbf{Z}}$ en le tordant (via action de $\mathfrak{S}_3$) par le $\mathfrak{S}_3$-torseur sur $S$ associé à $S'$.
+Il existe alors un unique morphisme
+
+$$
+\varphi : U \longrightarrow J^\circ_{U/S} \leqno{(314)}
+$$
+
+commutant à l'action de $\\operatorname{Aut}(S'/S) \simeq \\operatorname{Aut}_S(X, S')$, et induisant (par la propriété universelle) un hom.\ canonique $J^*_{U/S} \longrightarrow J^\circ_{U/S} \longrightarrow J^*_{U/S}$ qui soit l'identité.
 
 \newpage
 
 %% ===== Page 151 =====
 
-%% [page 151 missing or failed: no entry]
+733
+
+Explicitons l'isomorphisme
+$$
+\begin{tikzcd}[row sep=large]
+\mathcal{U}_{0,3} = \mathbb{P}^1 \setminus \{0,1,\infty\}_{S_0} \arrow[r, "\psi"] \arrow[d, equal] & \mathbb{G}_m^{\{0,1,\infty\}} / \mathbb{G}_m \arrow[d, equal] \\
+\mathbb{G}_m \setminus \{1\}_{S_0} \simeq \{ z \in \mathbb{G}_m \mid z-1 \text{ inv} \} & \mathcal{U}_1 = \left\{ (x_0,x_1,x_\infty) \in \mathbb{G}_m^3 / \mathbb{G}_m \mid x_0+x_1+x_\infty = 0 \right\}
+\end{tikzcd}
+\leqno{(315)}
+$$
+isomorphisme de $\mathcal{U}_{0,3}$ sur $\mathcal{U}_1$ qui correspond à :
+$$
+\begin{cases}
+\begin{tikzcd}
+\overline{\psi} : \overline{\mathcal{U}}_{0,3} \arrow[r] \arrow[d, equal] & \overline{\mathcal{U}}_1 \subset \mathbb{P}^2_{S_0} \arrow[d, equal] \\
+\mathbb{P}^1_{S_0} & \{ (x_0,x_1,x_\infty) \in \mathbb{P}^2_{S_0} \mid x_0+x_1+x_\infty = 0 \}
+\end{tikzcd} \\
+\\
+\overline{\psi}(0) = (0,1,-1) \\
+\overline{\psi}(1) = (-1,0,1) \\
+\overline{\psi}(\infty) = (1,-1,0)
+\end{cases}
+\leqno{(316)}
+$$
+
+il suffit de prendre
+$$
+\psi(z) = (-z, z-1, 1) = \left(\frac{-z}{z-1}, 1, \frac{1}{z-1}\right)
+\leqno{(317)}
+$$
+
+Revenons maintenant à la donnée d'une courbe elliptique relative / $S$ modulo symétrie (correspondant à un morphisme $S \to \mathcal{M}_{1,1}^\sim$).
 
 \newpage
 
 %% ===== Page 152 =====
 
-%% [page 152 missing or failed: no entry]
+On suppose $2$ inv. sur $S$, de sorte que
+la donnée de $X$ (correspondant, par le
+biais de l'hyperinv. $X \mapsto (X/\{1, w_X\})$,)
+: la donnée d'un $(Y, S')$ comme dessus,
+avec en plus une section de $U = Y \setminus S'$.
+En fait, la donnée de $(Y,S')$ revient
+à la donnée d'un $\mathfrak{S}_3$-torseur
+$S' \to S$ \quad - \quad et $Y$ s'obtient :
+à partir de l'[unclear: un] comme le schéma
+tordu $\mathcal{T}_{\mathfrak{S}_3} \mathbf{P}^1_S$ \quad [unclear: $\simeq \mathcal{T}_{\mathfrak{S}_3} \mathcal{U}_{0,3|S}$]
+d'où $$U = Y \setminus S' \simeq (\mathcal{T}_{\mathfrak{S}_3} \mathbf{P}^1_S) \setminus \underbrace{\mathcal{T}_{\mathfrak{S}_3} \{0,1,\infty\}_S}_{S'}$$
+plonge canoniquement dans
+$\mathcal{T}_{\mathfrak{S}_3} \mathcal{U}_{0,3|S} \simeq J_{U|S}$ . Le plongement
+$U \hookrightarrow J_{U|S}$ peut s'interpréter --
+comme un morphisme canonique
+$$
+X \to J_{U|S} = J^0_{X|S}
+\leqno (318)
+$$
+\marginpar{[unclear: involution] de p. 720}
+qui doit être ainsi : [unclear: caractérisé] géométriq.
 
 \newpage
 
 %% ===== Page 153 =====
 
-%% [page 153 missing or failed: no entry]
+ment, à expliciter en termes
+de "fonctions elliptiques" standard.
+Sans m'attarder sur une telle
+explicitation\marginpar{plutôt}, et revenant au plonge-
+ment correspondant
+$$
+U \hookrightarrow J_{U/S} \leqno{(319)}
+$$
+et à la section manquante
+$$
+e \in U(S) = [unclear: \operatorname{Hom}(S, J_{U/S})] , \leqno{(320)}
+$$
+pour utiliser la tour d'isogénies
+$$
+1 \to {}_n J_{U/S} \hookrightarrow J_{U/S} \xrightarrow{n \cdot \text{id}_{J_{U/S}}} J_{U/S} \to 1 \leqno{(321)}
+$$
+(pour $n$ variable), i.e.\ l'isogénie
+universelle déduite par passage à $\varprojlim$ :
+$$
+\begin{tikzcd}[row sep=small]
+1 \arrow[r] & T_\infty(J_{U/S}) \arrow[r] \arrow[d, equal] & \tilde{J}_{U/S} \arrow[r, "p"] \arrow[d, phantom, "\defeq" description] & J_{U/S} \arrow[r] & 1 \\
+& T_\infty(\mathbf{G}_m)_S \otimes_{\hat{\mathbf{Z}}} M_0(S/S) & \varprojlim_{n} (J_{U/S}) & &
+\end{tikzcd} \leqno{(322)}
+$$
+pour déduire, par image inverse de $e$,
+un torseur sous $T_\infty(J_{U/S}) \simeq T_\infty(\mathbf{G}_m)_S \otimes_{\hat{\mathbf{Z}}} M_0(S/S)$.
+(On posera, en accord avec (301) p.\ 719')
+$$
+\mathcal{F}_\infty(\widetilde{X}/S) \simeq p^{-1}(e) \ , \leqno{(323)}
+$$
+le $T_\infty(J_{U/S})$-torseur
+déduit de la section $e$
+de $J_{U/S}$ sur $S$.
 
 \newpage
 
 %% ===== Page 154 =====
 
-%% [page 154 missing or failed: no entry]
+\underline{Remarque} Le choix d'isomorphisme du
+$T_\infty(J_{U/S})$-torseur obtenu est un
+élément de $H^1(S, T_\infty(J_{U/S}))$, image
+de l'élément $e$ de $H^0(S, J_{U/S})$, par
+le morphisme canonique
+$$
+H^0(S, J^0) \longrightarrow H^1(S, T_\infty(J^0)) , \leqno{(324)}
+$$
+dont le noyau est formé du sous-groupe de $H^0(S, J^0)$ des éléments
+"infiniment divisibles". Dans le
+cas où $S$ réduit de type fini sur
+$\mathbf{Z}$ - p. ex. réduit de type fini sur $\mathbf{Q}$ -
+on sait (et c'est "élémen-taire") que ce noyau est réduit
+à zéro. Cela signifie donc que
+la section $e$ (i.e. la "quasi-courbe
+elliptique" envisagée) est alors entière-ment déterminée, quand on connaît
 
 \newpage
 
 %% ===== Page 155 =====
 
-%% [page 155 missing or failed: no entry]
+\begin{enumerate}
+\item[1)] L'[unclear: extension] trivialisante étale $S'$ de $S$ associé correspondant aux pts d'ordre $2$ de $\widetilde{X}/S$ --- d'où $J^0_{U/S} \simeq J^0_{\widetilde{X}/S'}$ --- et
+\item[2)] Le $T_\infty(J^0_{U/S})$-torseur $F_\infty(\widetilde{X}/S)$,
+\end{enumerate}
 
 \newpage
 
 %% ===== Page 156 =====
 
-%% [page 156 missing or failed: no entry]
+15$^\circ$) Interprétation de $\boldsymbol{\Gamma}_{\mathbf{Q}} \to \mathcal{N}_{\sigma}^{\natural}$.
+
+Au n$^\circ$ 11 nous avons introduit l'homomorphisme
+canonique
+$$
+\begin{tikzcd}
+\mathcal{M} = \mathcal{N}_{1,1}^{\text{ét}} \arrow[r] & \mathcal{M}_{p,\sigma}^{\sim} \\
+\mathcal{M}^1 \arrow[u, hook] \arrow[r] & \mathcal{M}_{p,\sigma}^{\sim, \natural}
+\end{tikzcd}
+\qquad (\text{cf } (217) \text{ p. } 695)
+$$
+que nous avons « décomposé » bien plus tard
+en deux homomorphismes (en plus d'un
+homomorphisme trivial $\mathcal{M} \to \boldsymbol{\Gamma}_{\mathbf{Q}}^{\text{ét}} \simeq \hat{\mathbf{Z}}^\times$ ) en deux
+homomorphismes.
+
+$$
+\begin{tikzcd}
+\mathcal{M} \arrow[r] & G_{p,\sigma} \simeq \hat{\mathbf{Z}}^* \cdot \mathfrak{S}^{\wedge} \\
+\mathcal{M}^1 \arrow[u, hook] \arrow[r] & G_{p,\sigma}^{\natural} \simeq \hat{\mathbf{Z}}^* \cdot \mathcal{M}^\wedge
+\end{tikzcd}
+\qquad (\text{cf } (218))
+\leqno{(325)}
+$$
+
+et
+$$
+\boldsymbol{\Gamma}_{\mathbf{Q}}^{\text{ét}} \to \mathcal{N}_{\sigma}^{\operatorname{Gal}} \simeq \hat{\mathbf{Z}}^* \cdot \hat{\mathbf{Z}} \qquad (\text{cf } (219)) \leqno{(326)}
+$$
+
+Le premier homomorphisme (322) a été caractérisé en termes arithmético-géométriques
+(pour ce qui est de sa restriction à
+$\mathcal{N}_{1,1} \subset \hat{\mathcal{N}}_{1,1}^{\text{ét}}$ lui-même, et on réduisait
+ainsi la [unclear: preuve] pour l'homomorphisme
+$$
+\mathcal{M}_{0,3} \to G_{p,\sigma}^{\sim} \defeq G_{p,\sigma} / \mu_2
+$$
+dans la section 13$^\circ$), via la tour des
 
 \newpage
 
 %% ===== Page 157 =====
 
-%% [page 157 missing or failed: no entry]
+courbes de Fermat. Du point de vue actuel,
+où on essaye d'expliciter la géométrie
+algébrique esst.\ de type fini sur $\mathbf{Q}$ en
+termes d'autom.\ de groupes profinis,
+on peut dire aussi, inversement, que
+nous sommes arrivés à ``décrire'' la
+tour des courbes de Fermat, via
+l'hom.\ (324) construit ici ``à la
+force du poignet''.
+
+Il resterait maintenant à
+trouver une explication arithmetico-
+géométrique de l'hom.\ (326) de
+$\boldsymbol{\Gamma}_{\mathbf{Q}}$ dans $\hat{\mathbf{Z}}^* \cdot \hat{\mathbf{Z}}$, induit par (325).
+Mais en utilisant le plongement
+$$
+( \mathcal{N}_\sigma^{\natural \text{ét}} \hookrightarrow \mathcal{M}_{p,\sigma}^{\sim \natural} \simeq \hat{\mathbf{Z}}^* \cdot \mathcal{M} )
+$$
+l'hom.\ (323) apparaît comme la composée
+$$
+\boldsymbol{\Gamma}_{\mathbf{Q}}^{\text{ét}} \underset{\kappa_{1/2}}{\hookrightarrow} \mathcal{M}_{1/2}^{!} \xrightarrow[\text{i.e.\ ``Fermat''}]{(325)} \mathcal{G}_{p,\sigma}^{\natural \text{ét}}
+$$
+de façon plus précise en un diagr.
 
 \newpage
 
@@ -3723,25 +4816,132 @@ de $U_{0,3\mathbb{Q}}$ avec $U_{1,\mathbb{Q}}$, au point [unclear: $(\xi_{1/2}, 
 
 %% ===== Page 159 =====
 
-%% [page 159 missing or failed: no entry]
+$$
+\begin{aligned}
+s_{1/2} = (-1/2, 1/2, 1) \in U_1 &\subseteq \mathbb{G}_{m \mathbf{Q}}^3 / \mathbb{G}_{m \mathbf{Q}} \subset \mathbf{P}^2_\mathbf{Q} \\
+&= \left\{ (x_0, x_1, x_\infty) \in \Gamma(\mathbb{G}_{m \mathbf{Q}}^3 / \mathbb{G}_{m \mathbf{Q}}) \mid x_0 + x_1 + x_\infty = 0 \right\}
+\end{aligned} \leqno{(331)}
+$$
+
+La fibre de $U_n$ en ledit point s'identifie ainsi aux systèmes de solutions des équations ci-dessous :
+
+$$
+\begin{aligned}
+U_n(s_{1/2}) &\simeq \left\{ (x_0, x_1, x_\infty) \in \Gamma(\mathbb{G}_{m \mathbf{Q}}^3 / \mathbb{G}_{m \mathbf{Q}}) \mid x_0^n = -1/2, x_1^n = 1/2, x_\infty^n = 1 \right\} \\
+&\simeq \left\{ (x_0, x_1, x_\infty) \in \Gamma(\mathbb{G}_{m \mathbf{Q}}^3) \mid x_0^n = -1/2, x_1^n = 1/2, x_\infty^n = 1 \right\} \\
+&\simeq \left\{ (x_0, x_1) \in \Gamma(\mathbb{G}_{m \mathbf{Q}}^2) \mid x_0^n = -1/2, x_1^n = 1/2 \right\} \\
+&\simeq T_n(-1/2) \times T_n(1/2)
+\end{aligned} \leqno{(332)}
+$$
+
+où l'on a posé, pour tout $\xi \in \mathbb{G}_m(S)$ ($S$ schém. quelc.)
+$$
+T_n(\xi) = \text{fibre-torseur sous } \mu_n \text{ en } \xi \text{ de l'isogénie } x \mapsto x^n \text{ de } \mathbb{G}_m \leqno{(333)}
+$$
+
+Passant à la limite on trouve l'iso.
+
+$$
+U_\infty(s_{1/2}) \simeq T_\infty(1/2) \times T_\infty(-1/2) \leqno{(334)}
+$$
+
+où l'on a posé, comme de juste
+$$
+\begin{aligned}
+T_\infty(\xi) &= \varprojlim T_n(\xi) \\
+&\quad \text{(un } T_\infty(\mathbb{G}_m)\text{-torseur)}
+\end{aligned} \leqno{(335)}
+$$
 
 \newpage
 
 %% ===== Page 160 =====
 
-%% [page 160 missing or failed: no entry]
+Ainsi, l'homomorphisme (329) doit pouvoir
+s'interpréter en termes de l'homomorphisme
+galoisien
+$$
+\Gamma_{\mathbf{Q}} \longrightarrow \\operatorname{Gal}(\widetilde{\mathbf{Q}}[\sqrt[\infty]{-\frac{1}{2}}]/\mathbf{Q}) \leqno{(335)}
+$$
+où $\widetilde{\mathbf{Q}}$ désigne l'extension cyclotomique
+universelle de $\mathbf{Q}$
+$$
+\widetilde{\mathbf{Q}} \simeq \mathbf{Q}[\sqrt[\infty]{1}] . \leqno{(336)}
+$$
+
+Pour apprécier la "taille" de l'image
+de $\Gamma_{\mathbf{Q}}$ dans $\hat{\mathbf{Z}}^* \cdot \hat{\mathbf{Z}} \simeq N_{S_3}^{\wedge}$, il y
+a lieu de faire une digression
+de nature générale, sur les groupes de
+Galois (sur $\mathbf{Q}$) des extensions de la forme
+$\widetilde{\mathbf{Q}}[\sqrt[\infty]{\gamma_1}, \dots, \sqrt[\infty]{\gamma_N}]$.
+
+Pour ceci, sur une base [unclear: qcq.] $S$
+(ou pour se simplifier la vie ici même -
+- cas $S = \operatorname{Spec}(\mathbf{Q})$) donnons nous
+un groupe abélien $A$ (le cas qui nous
+intéressera ici sera prendre $A = \mathbf{Z}$), et
 
 \newpage
 
 %% ===== Page 161 =====
 
-%% [page 161 missing or failed: no entry]
+un homomorphisme
+$$
+A \xrightarrow{\xi} \mathbf{G}_m(S) = H^0(S, \mathbf{G}_{m,S}) \leqno{(337)}
+$$
+(dans le cas présent, il est donné par $1 \mapsto -1$),
+ce qui revient à un homomorphisme
+$$
+A_S \xrightarrow{\xi} \mathbf{G}_{m,S}
+$$
+Considérons la tour des isogénies de
+Kummer
+$$
+1 \to \mu_n \to \mathbf{G}_m \xrightarrow{n} \mathbf{G}_m \to 1 \leqno{(338)}
+$$
+d'où, par image inverse via $\xi$, une
+tour d'extensions de schémas en
+groupes étales sur $S$
+$$
+1 \to \mu_n \to E_n(\xi) \to A_S \to 1 \leqno{(339)}
+$$
+et par passage à la $\varprojlim$ :
+$$
+1 \to T_\infty(\mathbf{G}_{m,S}) \to E_\infty(\xi) \to A_S \to 1. \leqno{(340)}
+$$
+Supposons $S$ connexe, et prenons un
+point géométrique $\overline{s}$ sur $S$, on aura donc
+un homomorphisme canonique
+$$
+\pi_1(S, \overline{s}) \to \\operatorname{Aut}_{\text{groupes profinis}}(E_\infty(\xi)_{\overline{s}}) , \leqno{(341)}
+$$
 
 \newpage
 
 %% ===== Page 162 =====
 
-%% [page 162 missing or failed: no entry]
+où la fibre $E_{\infty}(\xi)_{\overline{s}}$ est munie d'une structure d'extension abélienne
+$$
+1 \to T_{\infty}(\bar{k}^*) \to E_{\infty}(\xi)_{\overline{s}} \to A \to 1 \leqno (342)
+$$
+l'homomorphisme (341) est compatible avec cette structure d'extension, quand on fait opérer $\pi_1(S,\bar{s})$ trivialement sur $A$, et sur $T_{\infty}(\bar{k}^*)$ (qui est un $\hat{\mathbf{Z}}$-module libre de rang $1$) par multiplication par le caractère cyclotomique
+$$
+\pi_1(S,\bar{s}) \to \pi_1(Q, \bar{s}) \stackrel{\chi}{\to} \hat{\mathbf{Z}}^* \leqno (343)
+$$
+Soit 
+$$
+G \defeq \\operatorname{Aut}\left( E_{\infty}(\xi)_{\overline{s}} \right) \leqno (344)
+$$
+\marginpar{\footnotesize $G = \{ u \in \Aut \mid \text{il respecte la structure d'ext. en induisant $\mathrm{id}_A$ et un homothétie par un scalaire $\mu \in \hat{\mathbf{Z}}^*$ bien déterminé des $T_{\infty}(\bar{k}^*)$} \}$}
+un homomorphisme canonique, qui ne dépend que de $A$ et de $M$:
+$$
+G \to \hat{\mathbf{Z}}^*,
+$$
+c'est-à-dire une extension
+$$
+1 \to \\operatorname{Hom}_{\hat{\mathbf{Z}}}(A, T_{\infty}(\bar{k}^*)) \to G \to \hat{\mathbf{Z}}^* \leqno (345)
+$$
 
 \newpage
 
@@ -3825,49 +5025,174 @@ Je voudrais essayer de donner des
 
 %% ===== Page 166 =====
 
-%% [page 166 missing or failed: no entry]
+indications sur la taille de $\tilde{\Pi}_1^+ \subset \\operatorname{Hom}_{\hat{\mathbf{Z}}}(A,T)$\marginpar{$\simeq \\operatorname{Hom}(A, \hat{\mathbf{Z}})$}
+
+dans le cas où on suppose
+$$
+\begin{cases}
+1^\circ) \text{ $A$ $\hat{\mathbf{Z}}$-module de type fini} \\
+2^\circ) \text{ $S$ sch. de type fini sur $\mathbf{Q}$ et \underline{normal}} \\
+3^\circ) \text{ $\jmath: A \to \mathbb{G}_m(S)$ est injectif .}
+\end{cases}
+\leqno (355)
+$$
+
+L'hyp. $2^\circ$) implique déjà --- n'est-ce pas, que $\Gamma \subset \hat{\mathbf{Z}}^*$ est un sous-groupe ouvert. L'hyp. que $S$ est normal implique d'ailleurs que les groupes cherchés $\tilde{\Pi}_1^+$ et $\Gamma$ ne changent pas [unclear: en remplaçant] $S$ par un pt générique (on suppose pour simplifier que $\bar{s}$ est au-dessus dudit pt générique), donc ops que $S = \Spec K$, où $K$ est un (corps extension de) type fini de $\mathbf{Q}$. Et on peut supposer de même, si on y tient, que $S$ est affine, et lisse sur $\mathbf{Q}$ \dots
+
+Notons enfin, posant
+$$ \check{A} = \\operatorname{Hom}_{\hat{\mathbf{Z}}}(A, \hat{\mathbf{Z}}) \leqno (356) $$
 
 \newpage
 
 %% ===== Page 167 =====
 
-%% [page 167 missing or failed: no entry]
+que $\check{A}$ est un $\mathbf{Z}$-module libre de t.f.\ (de rang $n$, i.e.\ $n = \mathrm{rg}_{\mathbf{Z}} A$), et qu'on a un isomorphisme canonique
+$$
+\operatorname{Hom}_{\mathbf{Z}}(A, T) \simeq \underset{\check{A}(1)}{\check{A} \otimes_{\mathbf{Z}} \underset{\substack{\simeq \hat{\mathbf{Z}} \\ \text{(non can.!)}}}{T}} \quad (\simeq \hat{\mathbf{Z}}^n \text{ non canon.}) \leqno{(357)}
+$$
+
+J'aurais envie de prouver que l'image de $\widetilde{\pi}_1^+$ de $\pi_1$ dans $\operatorname{Hom}_{\mathbf{Z}}(A, T) \simeq \check{A} \otimes_{\mathbf{Z}} T$ est ouverte. Je me demande si, dans le cas d'un $S_1$ normal de type fini sur $\mathbf{Z}$ et $A = H^0(S_1, \mathbf{G}_m)$, pour $S = S_{1 \mathbf{Q}}$, si l'homomorphisme
+$$
+\pi_1 = \pi_1(\bar{s}, S) \to \operatorname{Hom}(A, T) \simeq \check{A}(1)
+$$
+n'est pas nécessairement surjectif ?? (Plus généralement, il en est peut-être ainsi si $\mathbf{G}_m(S) / \operatorname{Im} A$ est sans torsion, ce auquel on doit pouvoir toujours se ramener, dans l'hypothèse (355), quitte à agrandir $A$ en un $A' \subset H^0(S, \mathbf{G}_m)$ tel que $A'/A$ soit fini...).
 
 \newpage
 
 %% ===== Page 168 =====
 
-%% [page 168 missing or failed: no entry]
+Je vais revenir au cas $S = \operatorname{Spec} \mathbf{Q}$, alors
+$$
+\mathbf{G}_m(S) = \mathbf{G}_m(\mathbf{Q}) = \mathbf{Q}^* \simeq \{ \pm 1 \} \times \mathbf{Z}^{(P)}
+$$
+où $P$ [est] l'ensemble des nombres premiers,
+$$
+\pi_1 = \\operatorname{Gal}(\overline{\mathbf{Q}}/\mathbf{Q}) = \Gamma_{\mathbf{Q}}.
+$$
+La question est donc d'étudier les homomorphismes
+$$
+\xi_p : \Gamma_{\mathbf{Q}}^+ \to \hat{\mathbf{Z}}(1) \leqno{(358)}
+$$
+associés à $p \in P$, et de répondre notamment aux questions
+
+\begin{enumerate}
+\item[a)] les $\xi_p$ sont-ils surjectifs, ou du moins l'image est-elle un sous-groupe ouvert ?
+\item[b)] les $\xi_p$ sont-ils linéairement indépendants sur $\hat{\mathbf{Z}}$ ? Plus précisément, si $p_1, \dots, p_n$ sont des nombres premiers distincts, l'homomorphisme
+$$
+\Gamma_{\mathbf{Q}}^+ \xrightarrow{(\xi_{p_1}, \dots, \xi_{p_n})} \hat{\mathbf{Z}}^n(1)
+$$
+est-il surjectif, ou du moins l'image de $\Gamma_{\mathbf{Q}}^+$ est-elle un sous-groupe ouvert ?
+\end{enumerate}
+
+Je vais commencer par regarder un peu la question a) (le cas pour lequel on a une réponse dans la théorie de Fermat étant celui où $p=2$). Pour ceci, on décompose $\xi_p$ en ses composantes
+$$
+\xi_{p,\ell} : \Gamma_{\mathbf{Q}}^+ \to \hat{\mathbf{Z}}_{\ell}(1) \qquad (\ell \in P) \leqno{(359)}
+$$
 
 \newpage
 
 %% ===== Page 169 =====
 
-%% [page 169 missing or failed: no entry]
+j'aimerais prouver \underline{(au moins!)} que celles-ci sont des homomorphismes surjectifs, ou du moins surjectifs sauf pour un nombre fini de $\ell$, et à images ouvertes pour tout $\ell$. Étudier $\zeta_{p,\ell}$, c'est se restreindre à la tour des isogénies
+$$
+1 \to \mu_n \to \mathbf{G}_m \xrightarrow{\lambda \mapsto \lambda^n} \mathbf{G}_m \to 1 \leqno{(339)}
+$$
+pour $n$ puissance de $\ell$
+(360) la tour des $n = \ell^\nu$,
+
+et étudier l'image inverse de $p \in \mathbf{G}_m(\mathbf{Q})$ par ces isogénies. Il est naturel alors de regarder le groupe de décomposition
+$$
+D_p \defeq \pi_1(\mathbf{Q}_p, \overline{\mathbf{Q}}_p) \hookrightarrow \boldsymbol{\Gamma}_{\mathbf{Q}} \leqno{(361)}
+$$
+et le caractère cyclotomique $\ell$-adique
+$$
+D_p \xrightarrow{\chi_\ell} \mathbf{Z}_\ell^*, \leqno{(362)}
+$$
+ou mieux, le sous-groupe d'inertie
+$$
+I_p \subset D_p \leqno{(363)}
+$$
+et le caractère induit par $\chi_\ell$ sur $I_p$.
+
+On [unclear: pose]
+$$
+I_p^+ \defeq \\operatorname{Ker}(\chi_\ell : I_p \to \mathbf{Z}_\ell^*) \subset \boldsymbol{\Gamma}_{\mathbf{Q}}^+ \leqno{(364)}
+$$
+car les $\chi_{\ell'}$ ($\ell' \neq p$) sont triviaux sur $I_p$ (ils ne sont pas triviaux cependant sur $D_p$!).
 
 \newpage
 
 %% ===== Page 170 =====
 
-%% [page 170 missing or failed: no entry]
+On va donc regarder la restriction
+$$ \xi_{p,l} | I_l^+ : I_l^+ \to \hat{\mathbf{Z}}_l(1) \leqno{(365)} $$
+et on peut se demander déjà si cet
+homomorphisme est surjectif, ou si
+du moins son image est ouverte ?
 
 \newpage
 
 %% ===== Page 171 =====
 
-%% [page 171 missing or failed: no entry]
+16$^\circ$) \underline{Réflexions sur le théorème de Fermat}.
+
+Le "théorème de Fermat" peut s'énoncer en disant que pour $n \ge 3$, la courbe de Fermat affine sur $\mathbf{Q}$
+$$
+\begin{aligned}
+U_n &\defeq \left\{ (x_0, x_1, x_\infty) \in \mathbf{P}^2 \ \Big| \ \substack{x_0, x_1, x_\infty \text{ inv.} \\ x_0^n + x_1^n + x_\infty^n = 0} \right\} \\
+&\simeq \left\{ (x_0, x_1, x_\infty) \in \mathbf{G}_m^{\{0,1,\infty\}} / \mathbf{G}_m \ \Big| \ x_0^n + x_1^n + x_\infty^n = 0 \right\}
+\end{aligned} \leqno{(366)}
+$$
+n'a pas de pt rat / $\mathbf{Q}$. Nous avions introduit cette "tour" des courbes de Fermat dans \S\ 11$^\circ$) (p. 696 ff), et dès 14$^\circ$) on a donné la description de $U_n$ comme image inverse de $T$
+$$
+\begin{aligned}
+U_1 \subset \overbrace{\mathbf{G}_m \otimes_{\mathbf{Z}} M}^{T} &\simeq \mathbf{G}_{m, \mathbf{Q}}^{\{0,1,\infty\}} / \mathbf{G}_{m, \mathbf{Q}} \\
+\parallel \qquad & \\
+\left\{ (x_0, x_1, x_\infty) \in \right. &\left. \mathbf{G}_m^{\{0,1,\infty\}} / \mathbf{G}_m \ \Big| \ x_0 + x_1 + x_\infty = 0 \right\}
+\end{aligned} \leqno{(367)}
+$$
+par l'isogénie de Kummer d'indice $n$
+$$ x \mapsto x^n $$
+$$
+1 \to \mu_n \otimes M \to T \longrightarrow T \to 1 \leqno{(368)}
+$$
+
+Calculons le genre $g_n$ de $U_n$, qui est un revêtement de degré $n^2$ de $U_1 \simeq \mathcal{M}_{0,3}$, ramifié (de degré $n$ au-dessus de chacun) dans les pts $0, 1, \infty$, et étale en dehors. La formule de Hurwitz
 
 \newpage
 
 %% ===== Page 172 =====
 
-%% [page 172 missing or failed: no entry]
+donne
+$$
+\underbrace{(\underbrace{2-2g_n}_{EP \text{ de } \widehat{U}_n}) - 3n}_{EP \text{ de } U_n} = n^2 \underbrace{(\underbrace{2}_{EP \text{ de } \widehat{U}_1} - 3)}_{EP \text{ de } U_1}
+$$
+i.e.
+$$
+2(g_n - 1) = n^2 - 3n
+$$
+
+$$
+g_n = 1 + \frac{1}{2} n(n-3) \leqno{(369)}
+$$
+Donc \dots
+$$
+g_1 = g_2 = 0 \quad , \quad g_3 = 1 \quad , \quad g_n > 1 \text{ si } n \geq 4 \quad . \leqno{(370)}
+$$
+
+En tout état de cause, tous les $U_n$ sont ``anabéliens'', et tous les $\widehat{U}_n$ pour $n \geq 4$.
+
+Si le yoga (``anabélien'') développé dans la première partie de ces notes est valable, l'existence (ou la non-existence) de points rat. / $\mathbf{Q}$ d'une courbe $U_n$ s'exprime par des scindages de l'extension de groupes profinis
+$$
+1 \to \pi_1(U_{n \overline{\mathbf{Q}}}) \to \pi_1(U_n) \to \boldsymbol{\Gamma}_{\mathbf{Q}} \to 1 \leqno{(371)}
+$$
+qui soient distincts des scindages ``à l'infini'' (localisés en les $3n$ pts à l'infini de $U_n \dots$), ou encore, les scindages tels que le centralisateur de l'image dans $\pi_1(U_n)$ soit réduit à $\{1\}$. Donc --- si le ``th.''
 
 \newpage
 
 %% ===== Page 173 =====
 
-%% [page 173 missing or failed: no entry]
+de Fermat'' est bel et bien valable (pour $U_n$, disons), il devrait se refléter par la non-existence d'un tel scindage. D'ailleurs, si nous arrivions à prouver l'inexistence de scindages de (371) autres que ceux ``provenant des pts : l'infini'', le th. de Fermat serait prouvé pour $U_n$, même sans avoir établi le ``yoga anabélien'' (dont une démonstration semble bien hors d'atteinte !). Or il n'est nullement exclu qu'une analyse assez poussée de $M_{0,3}$ et [unclear: $N_{1,1}$] dans la direction actuelle --- impliquant aussi des ``approximations'' de plus en plus fines de $\pi_1(U_n)$ et de la structure d'extension (371), permette finalement de prouver l'inexistence de scindages ``non-triviaux'' de (371), pour tout $n \ge 3$. Chaque nouvel affinement dans les ``approximations de Lie'' de $M_{0,3}$ devrait amener un réexamen de la situation (371) et de la question de ses scindages, dans l'optique d'une démonstration éventuelle du ``th. de Fermat''.
 
 \newpage
 
@@ -3942,37 +5267,140 @@ qui donne [unclear] un scindage de la seconde
 
 %% ===== Page 176 =====
 
-%% [page 176 missing or failed: no entry]
+pt base $-j$ de $U_{0,3 \mathbf{Q}} \simeq U_{1 \mathbf{Q}}$ - il définit
+un pt. géom. de chacun des $U_{n \mathbf{Q}}$ au
+dessus de $-j$. En termes de ce scindage
+de $\mathcal{E}_1$, permettant d'écrire
+$$ \mathcal{E}_1 \simeq (\boldsymbol{\Gamma}_{\mathbf{Q}} \times \mathfrak{S}_3) \cdot \hat{M} \leqno{(375)} $$
+\begin{center}(pr. 1/2 direct)\end{center}
+les $\underset{\underset{\simeq}{\Pi_1(U_n, \mathfrak{S}_n)/\dots}}{\mathcal{E}_n \subset \mathcal{E}_1}$ s'identifient aux
+produits semi-directs
+$$ \mathcal{E}_n = (\boldsymbol{\Gamma}_{\mathbf{Q}} \times \mathfrak{S}_3) \cdot \underset{\defeq \hat{M}[n]}{(n\hat{M})} \leqno{(376)} $$
+
+(Ces interprétations sont des resucées de
+généralités de la page-fleuve de p. 711
+ff, et mériteraient de figurer dans
+la scholie-proposition en question...)
+
+Un pt rationnel $x_n / \mathbf{Q}$ de $U_n$ définit
+un scindage de l'extension (de $\boldsymbol{\Gamma}_{\mathbf{Q}}$ par $n\hat{M} = \hat{M}[n]$)
+$$ \mathcal{E}_n^{x_n} \simeq \boldsymbol{\Gamma}_{\mathbf{Q}} \cdot (n\hat{M}) \quad \text{(1/2 direct)} \leqno{(377)} $$
+quotient de (371), dont la connaissance
 
 \newpage
 
 %% ===== Page 177 =====
 
-%% [page 177 missing or failed: no entry]
+modulo $\hat{M}[n]$-conjugaison implique celle
+des scindages correspondants de $\mathcal{E}_1$, donc
+implique la connaissance des points correspondants
+$x_1$ de $U_1(\mathbf{Q})$, ce qui signifie
+que $x_n$ est connu modulo opération de $\gamma_n =$
+$\mu_n(\mathbf{Q})^{\{0,1,\infty\}} / \mu_n(\mathbf{Q})$. Or on a
+$$
+\gamma_n \defeq \mu_n(\mathbf{Q})^{\{0,1,\infty\}} / \mu_n(\mathbf{Q}) = 1 \leqno{(378)}
+$$
+si $n$ impair
+car $\mu_n(\mathbf{Q}) = 1$ si $n$ impair --- donc dans
+ce cas $x_n$ est connu quand on connaît
+le scindage correspondant, il est [unclear: déterminé] modulo
+les $\hat{M}[n]$-conjugaisons.
+
+Ceci nous ramène à déterminer toutes les
+classes de $\hat{M}[n]$-conjugaison possibles des
+tels scindages, afin d'examiner (si faire se
+peut) lesquels peuvent raisonnablement
+correspondre à un $x_n \in U_n(\mathbf{Q})$. Ces classes
+correspondent aux éléments de
+$$
+\begin{tikzcd}[row sep=small, column sep=small]
+H^1(\Gamma_{\mathbf{Q}}, {}_n\hat{M}) \arrow[r, "\simeq"] & H^1(\Gamma_{\mathbf{Q}}, \hat{M}) \arrow[d, "\simeq"'] \arrow[r, "\simeq"] & H^1(\Gamma_{\mathbf{Q}}, \hat{\mathbf{Z}}(1)) \otimes_{\mathbf{Z}} M \arrow[d, "\simeq"'] \\
+& G(\mathbf{Q})^{\wedge} & (\mathbf{Q}^\ast)^{\wedge}
+\end{tikzcd} \leqno{(379)}
+$$
 
 \newpage
 
 %% ===== Page 178 =====
 
-%% [page 178 missing or failed: no entry]
+$$
+G \defeq G_{m \mathbf{Q}}^{\{0,1,\infty\}} / G_{m \mathbf{Q}}
+$$
+est le tore de dim 2 sur $\mathbf{Q}$ dans lequel
+se trouvent plongés les $U_n$. On voit que
+tout se passe comme si on étudiait
+simplement l'existence (!) et le repérage
+cohomologique des pts $\mathbf{Q}$-rationnels de
+$G$ lui-même - sans nous préoccuper
+de l'équation $x_0^n + x_1^n + x_\infty^n = 1$ qui définit
+$U_n$. Cela montre à l'évidence que
+l'approximation avec laquelle nous travaillons
+est beaucoup trop grossière - en fait,
+pratiquement nous restons dans le
+domaine d'une analyse typiquement
+"abélienne". Il est clair qu'il est
+nécessaire de passer à des approximations
+plus fines.
 
 \newpage
 
 %% ===== Page 179 =====
 
-%% [page 179 missing or failed: no entry]
+\chapter*{\S \space 52. --- ENVELOPPES SCHÉMATIQUES DES L-GROUPES}\thispagestyle{empty}
+\addcontentsline{toc}{section}{52. Enveloppes schématiques des L-groupes}
+\label{sec:52}
+\section*{}
+
+1) \underline{Notion de L-groupe, de LT-groupe} (cas discret).
+La notion de L-groupe est la généralisation naturelle de celle de "groupe à lacets", qui s'impose si on veut pouvoir englober des groupes fondamentaux mixtes de surfaces orientables (de "caractère fini", i.e.\ homéomorphes à un $X \setminus S$, $X$ surface compacte, $S$ partie finie) étendus par un groupe fini d'automorphismes.
+
+Nous avons vu que si $\pi$ est un groupe à lacets (discret), alors tout sous-groupe d'indice fini $\pi_0$ hérite une structure à lacets, en prenant comme "sous-groupes lacets" de $\pi_0$ les intersections avec $\pi_0$ des sous-groupes lacets de $\pi$. [NB. On s'aperçoit que même dans les cas $(g,\nu)$ avec $g=0, \nu \in \{0,1\}$, où la structure à lacets n'est pas déterminée par la seule donnée d'une famille de classes de conjugaison de sous-groupes cycliques libres ($\simeq \mathbf{Z}$) --- le seul cas qui ici ferait problème
 
 \newpage
 
 %% ===== Page 180 =====
 
-%% [page 180 missing or failed: no entry]
+est le cas $(0,1)$ d'où $\pi \simeq \mathbf{Z}$ --- dans le cas $(0,0) \implies \pi=\{1\}$
+et $\pi_0=\{1\}$\dots $\mathrm{]}$. Inversement, la structure
+à lacets de $\pi$ se récupère à partir de
+celle de $\pi_0$ (quand elle existe !), les
+sous-groupes lacets de $\pi$ étant les centralisateurs
+dans $\pi$ des sous-groupes lacets de $\pi_0$.
+
+Soit $\pi$ un groupe discret, et
+soit $\mathcal{L}_0(\pi)$ l'ensemble des structures de groupes
+à lacets sur $\pi$, de type $(g,\nu)$ non abélien i.e.\ $\ne (0,0), (0,1), (0,2), (1,0)$.
+Pour les sous-groupes $\pi_i$ d'indice fini dans $\pi$,
+si $\pi_i$ est distingué,
+$$
+\mathcal{L}_0^{G_i}(\pi_i) = \text{ensemble des structures à lacets sur } \pi_i \text{ invariantes par } G_i = \pi/\pi_i \leqno{(1)}
+$$
+S'il existe $\pi_0$ d'indice fini dans $\pi$ tel que
+$\mathcal{L}_0(\pi_0) \ne \emptyset$, alors $\pi_0$ donc aussi $\pi$ admet
+une génération finie, et il s'ensuit
+que l'ensemble des sous-groupes distingués d'indice fini
+est cofinal dans l'ensemble des sous-groupes
+d'indice fini. On posera alors
 
 \newpage
 
 %% ===== Page 181 =====
 
-%% [page 181 missing or failed: no entry]
+\footnote{NB Si $\pi_i$ n'est pas distingué dans $\pi$, on peut définir $\mathcal{L}^{\mathcal{G}_i}(\pi_i)$ comme l'ens.\ des structures de $\mathcal{L}(\pi_i)$ invariantes par $\pi$, i.e.\ telles que pour tout $g \in \pi$, on ait, si on pose $\pi_i' = g \pi_i g^{-1}$, que la structure $L_g(\lambda) \in \mathcal{L}(\pi_i')$ coïncide avec $\lambda$ dans $\pi_i \cap \pi_i'$ (qui est d'indice fini dans $\pi$\dots)}
+$$
+\mathcal{L}(\pi) = \varinjlim_{\substack{\pi_i \text{ distingué} \\ \text{d'indice fini} \\ \text{de } \pi}} \mathcal{L}^{\mathcal{G}_i}(\pi_i) \ .
+$$
+les morphismes canoniques ($\pi_i$ dist.\ d'indice fini dans $\pi$)
+$$
+\mathcal{L}^{\mathcal{G}_i}(\pi_i) \to \mathcal{L}(\pi) \leqno{(3)}
+$$
+sont injectifs. Si $\lambda \in \mathcal{L}(\pi)$, on dit que $(\pi, \lambda)$ est dit un L-groupe, \underline{L-structure} sur $\pi$, (et si $\lambda \in \operatorname{Im}(\mathcal{L}^{\mathcal{G}_i}(\pi_i) \to \mathcal{L}(\pi))$, on dit que $\pi_i$ est un sous-groupe de définition du L-groupe $\pi$ - on le considère comme un groupe à lacets par l'unique $\lambda_i \in \mathcal{L}^{\mathcal{G}_i}(\pi_i)$ donnant naissance à $\lambda$.
+
+Soient $\pi$ un groupe discret, $\pi_0$ un sous-groupe de $\pi$ d'indice fini. Alors on a un homomorphisme canonique d'induction de L-structures
+$$
+\mathcal{L}(\pi) \hookrightarrow \mathcal{L}(\pi_0) \leqno{(4)}
+$$
+qui est injectif, et dont l'image est formée de l'ens.\ des L-structures sur $\pi_0$ qui sont
 
 \newpage
 
@@ -4011,67 +5439,169 @@ On a donc sur $\pi_0$ une $\mathcal{L}$-structure : [unclear: locale]
 
 %% ===== Page 183 =====
 
-%% [page 183 missing or failed: no entry]
+invariante pour l'opération extérieure de $G$, d'où une $L$-structure sur $\pi$. Il semble que tout $L$-groupe soit isomorphe à un groupe obtenu ainsi -- mais c'est là un résultat qui semble assez profond (essentiellement équivalent à celui de l'existence de points fixes des sous-groupes finis des groupes de Teichmüller \dots), et qui n'est pas compris totalement. Il faudrait dégager un ``bon énoncé'' général, reliant la $2$-catégorie des $L$-groupes, avec celle des surfaces $X$ de caractéristique finie, (munies d'une ``signature'' $\underline{d}$ à support fini (à valeurs dans $\mathbf{N}^*$)), en associant à une telle surface son $\pi_1(X, \underline{d}, a)$, relatif à un point base $a \in X - \operatorname{supp} \underline{d}$. À l'exclusion de quelques cas singuliers, ou ``triviaux'', on devrait trouver alors un $L$-groupe $\pi$, isomorphe à un $\pi_1(X, G, a)$, avec $G$ opérant fidèlement, ce qui devrait s'exprimer
 
 \newpage
 
 %% ===== Page 184 =====
 
-%% [page 184 missing or failed: no entry]
+en termes de $\pi$ par le fait que le centralisateur de tout sous-groupe d'indice fini de $\pi$ est réduit à $\{e\}$. Ceci devrait donner une description complète, en termes topologiques, des L-groupes ayant cette propriété supplémentaire. Il y aurait ensuite encore un travail de raccordage à faire, en termes de certaines extensions de tels L-groupes par des groupes finis, pour trouver le cas général. De plus, il faudrait faire le lien avec les "topos L-galoisiens" associés, en paraphrasant les développements correspondants sur les topos galoisiens etc associés aux groupes à lacets.
 
 \newpage
 
 %% ===== Page 185 =====
 
-%% [page 185 missing or failed: no entry]
+Il se pourrait que le "bon" contexte général pour définir et étudier des groupes de Teichmüller généraux soit celui des L-groupes, plutôt que celui des groupes à lacets.
+
+Prenant p. ex. le groupe
+$$
+\mathfrak{S}_{0,3}^+ \simeq \\operatorname{Sl}(2, \mathbf{Z}) / \{\pm 1\} \simeq \pi_1(U_{0,3}(\mathbf{C}), \mathfrak{S}_3 - J), \leqno{(4)}
+$$
+celui-ci est muni d'une L-structure, qui peut être définie en termes de l'unique classe de conjugaison de sous-groupes $L_0$ engendré par $\varepsilon_0 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, ou de $L_1$ engendré par $\varepsilon_1 = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$. Le L-groupe (discret) a la propriété remarquable que tout L-automorphisme "direct" (induisant l'identité sur le module d'orientation) de celui-ci est intérieur. Il se pourrait que cette propriété, ajoutée à celle que le centre est trivial (ou mieux, peut-être, que le centralisateur
 
 \newpage
 
 %% ===== Page 186 =====
 
-%% [page 186 missing or failed: no entry]
+de tout sous-groupe d'indice fini est
+réduit à $\{1\}$) caractérise $\mathfrak{S}_{0,3}^+$ à
+isomorphisme (un unique) près.
+
+NB Pour prouver que tout L-autom.\
+de cet $\mathfrak{S}_{0,3}^+$ est intérieur, le
+point essentiel me semble de prouver
+qu'il conserve le sous-groupe
+$\Pi_{0,3}$, noyau de
+$$
+1 \to \Pi_{0,3} \to \mathfrak{S}_{0,3}^+ \to \mathfrak{S}_3 \to 1.
+$$
+En fait, tout automorphisme de
+la structure de groupe de $\mathfrak{S}_{0,3}^+$
+(pas nécessairement un L-autom.)
+conserve le sous-groupe distingué
+$\Pi_{0,3}$. Cela provient du
+
+\underline{Lemme} Tout sous-groupe $\pi \subset \mathfrak{S}_{0,3}^+$ distingué tel
+que $\mathfrak{S}_{0,3}^+/\pi \simeq \mathfrak{S}_3$, alors $\pi = \Pi_{0,3}$.
+Plus précisément, tout hom.\ surjectif
+$p : \mathfrak{S}_{0,3}^+ \to \mathfrak{S}_3$ est conjugué à l'hom.\
+canonique (dont le noyau est $\Pi_{0,3}$).
+
+\underline{Dém.} On utilise la présentation
+de $\mathfrak{S}_{0,3}^+$ \quad ( $\rho^3 = \sigma^2 = 1$ )
 
 \newpage
 
 %% ===== Page 187 =====
 
-%% [page 187 missing or failed: no entry]
+qui implique qu'un homomorphisme de $\mathfrak{S}_{0,3}^+$ dans
+un autre groupe, dont l'image n'est pas
+d'ordre 1, 2 ni 3 i.e.\ d'ordre $\geq 4$, transforme
+$\rho$ et $\sigma$ resp.\ en des éléments d'ordre 3
+et d'ordre 2. Donc si l'image est $\mathfrak{S}_3$,
+$\rho$ est transformé en $\rho$ ou $\rho^{-1}$ (OPS, quitte
+à conjuguer [unclear: par $\sigma_0$ pour] que c'est $\rho$) et $\sigma$ est trans-
+formé en $\sigma_0, \sigma_1$ ou $\sigma_2$ (OPS, quitte à
+conjuguer par $\rho$ ou $\rho^{-1}$, pour que c'est $\sigma_0$), et
+on gagne.
+
+On peut appeler \underline{groupe de Teichmüller}
+d'un L-groupe $\Pi$, le groupe de ses
+L-automorphismes extérieurs - ou peut-être,
+mieux, le groupe des L-automorphis-
+mes extérieurs du sous-groupe $\Pi^+$
+(d'indice 1 ou 2) de $\Pi$, formé des
+$g \in \Pi$ tels que l'automorphisme $\operatorname{int}(g)$ soit
+direct. La propriété envisagée de $\mathfrak{S}_{0,3}^+$
+est que son groupe de Teichmüller
+"direct" est réduit à 1. La propriété-
 
 \newpage
 
 %% ===== Page 188 =====
 
-%% [page 188 missing or failed: no entry]
+correspondante du L-groupe $\mathfrak{S}_{0,3} \simeq \\operatorname{Sl}(2, \mathbf{Z})/\pm 1$ est que tout L-automorphisme du sous-groupe $\mathfrak{S}_{0,3}^+$ est induit par un unique élément de $\mathfrak{S}_{0,3}$. Cette propriété est peut-être caractéristique du L-groupe discret $\mathfrak{S}_{0,3}$.
+
+\medskip
+
+J'ai envie de présenter sous une forme légèrement différente la notion de L-groupe $\Pi$ en termes de la donnée d'un $\mathbf{Z}$-module $T$ libre de rang $1$ (le $\mathbf{Z}$-module d'orientations) et d'une famille finie $(K_i)_{i \in I}$ de germes d'homomorphismes extérieurs
+$$ 
+K_i : T \longrightarrow \Pi \quad (i \in I) \leqno{(5)} 
+$$
+\centerline{(germes d'homomorphismes extérieurs) ,}
+
+\noindent où la notion de « germe » est relative à celle de sous-groupes d'indice fini de $T$. L'axiome à [unclear: mettre] est
 
 \newpage
 
 %% ===== Page 189 =====
 
-%% [page 189 missing or failed: no entry]
+et tout sous-groupe ouvert $\pi_0$ de $\pi$ d'indice fini, on trouve un ensemble de germes d'homomorphismes extérieurs
+$$
+T \to \pi_0
+$$
+induits par les homomorphismes effectifs $nT \to \pi$ de la classe $k_i$ - on trouve un nombre fini de germes d'homomorphismes extérieurs $T \to \pi_0$ pour $i$ fixé, d'où un ensemble fini quand $i$ varie dans $I$. Ceci dit, l'unique axiome d'une $L$-structure, c'est qu'on puisse trouver un sous-groupe $\pi_0$ d'indice fini, tel que la "structure induite" provienne d'une structure à lacets de $\pi_0$.
+
+On peut généraliser la notion de $L$-structure, en s'inspirant de la définition précédente (par exemple), et en y laissant tomber l'exigence que $\pi_0$ soit d'indice fini - mais en
 
 \newpage
 
 %% ===== Page 190 =====
 
-%% [page 190 missing or failed: no entry]
+prenant soin par contre que $\Pi_0$ soit distingué. On exige que (pour $i \in I$) les germes d'hom. $k_i \colon nT \to \Pi$ de la classe $K_i^\natural$ se factorisent par $\Pi_0$, donnant\footnote{NB il n'est pas clair a priori que cet ens. de germes d'hom. ext. soit fini} un ens. de germes d'hom. extérieurs de $T$ dans $\Pi_0$ — et on exige que cette structure-là sur $\Pi_0$ provienne (pour $\Pi_0$ convenable) d'une structure à lacets sur $\Pi_0$ (évidemment uniquement déterminée une fois $\Pi_0$ choisi). Quant à $\Pi_0$, il est défini à commensurabilité près — i.e. si $\Pi_0, \Pi'_0$ conviennent, alors $\Pi_0 \cap \Pi'_0$ est d'indice fini dans $\Pi_0$ et $\Pi'_0$, et convient également.
+
+M'inspirant de la terminologie " [unclear: météoritique] ", j'ai envie (à défaut d'une meilleure suggestion) d'appeler les groupes $\Pi$ munis d'une telle
 
 \newpage
 
 %% ===== Page 191 =====
 
-%% [page 191 missing or failed: no entry]
+structure -- liée à une classe de
+sous-groupes discrets commensurables
+entre eux -- des L-T-groupes.
+(Le L est initiale de "lacets", et T
+de "Teichmüller") -- ce sont des
+sortes de mixtures de groupes de
+Teichmüller et de L-groupes. Pour
+illustrer ce point, partons d'une
+extension
+$$
+1 \to \pi \to \mathfrak{S} \to \mathfrak{T} \to 1 \leqno{(6)}
+$$
+où $\pi$ est muni d'une L-structure
+invariante par $\mathfrak{S}$, alors $\mathfrak{S}$ est
+un L-T-groupe admettant (si $\pi$ est
+un groupe à lacets) $\pi$ comme
+sous-groupe de définition. Partant
+d'un groupe à lacets $\pi$, on peut
+prendre p.ex.
+$$
+\begin{cases}
+\mathfrak{S} = \\operatorname{Aut}_L(\pi) \\
+\mathfrak{T} = \Autext_L(\pi)
+\end{cases}
+\leqno{(7)}
+$$
+d'où,
 
 \newpage
 
 %% ===== Page 192 =====
 
-%% [page 192 missing or failed: no entry]
+et ainsi le groupe total $\mathfrak{S}$, extension du groupe de Teichmüller $\mathfrak{T}$ par le groupe à lacets $\pi$, apparait comme un LT-groupe.
 
 \newpage
 
 %% ===== Page 193 =====
 
-%% [page 193 missing or failed: no entry]
+2$^\circ$) Cas profini
+
+L'extension de la notion de L-groupe ou de LT-groupe/$\pi$ en termes de germes d'homomorphismes extérieurs
+$$ K_S^\bullet: \mathfrak{T} \to \pi \leqno{(8)} $$
+est essentiellement évidente. Voici l'exemple le plus important pour nous.
+
+Soit d'abord $k$ un corps alg. et soit $\mathcal{M}$ une multiplicité algébrique sur $k$, qui soit de t.f. sur $k$, lisse séparée et de dimension relative 1. On doit pouvoir [unclear: supposer] que $\mathcal{M}$ puisse se décrire par une courbe alg. lisse et quasi-projective $U$ sur $k$, un groupe fini $G$ qui opère sur $U$, [unclear: comme quotient]
+$$ \mathcal{M} = (U, G) = \text{Topos associé des faisceaux [unclear: abéliens] sur } U \text{ où } G \text{ opère...} \leqno{(9)} $$
 
 \newpage
 
@@ -4104,49 +5634,179 @@ sur $\pi = \pi_1(M, a)$, qui [unclear: manifeste] sur
 
 %% ===== Page 195 =====
 
-%% [page 195 missing or failed: no entry]
+dépend pas du choix du rev.\ étale fini galoisien
+$U$ de $M$, et du relèvement choisi
+du pt géom.\ $a$ de $M$ en un pt.\
+géom.\ de $U$. Nous munissons
+tacitement tous $\pi = \pi_1(M, a)$ de cette L-structure.
+
+Si à nouveau $k$ est un corps
+quelconque (le cas le plus intéressant
+étant celui où $k$ est de type fini
+sur $\mathbf{Q}$), on aura une suite
+exacte
+$$
+1 \to \pi_1(M_{\bar{k}}, a) \to \pi_1(M, a) \to \Gamma_{\bar{k}/k} \to 1 \leqno (12)
+$$
+et $\pi_1(M_{\bar{k}}, a)$ apparaît comme muni
+d'une L-structure invariante par
+$\pi_1(M, a) = \pi$, de sorte que $\pi$ apparaît
+comme un Th-groupe.
+
+Je suis particulièrement intéressé
+par ces «~universels~» de type $(g, \nu)$ ---
+mais la base naturelle n'est plus alors le
 
 \newpage
 
 %% ===== Page 196 =====
 
-%% [page 196 missing or failed: no entry]
+spectre d'un corps $k$, mais la multiplicité modulaire $M_{g,\nu}$. [A vrai dire, pour la structure de $L$-groupe discret $\Pi_0$, jouant le rôle de groupe de référence, on doit pouvoir introduire une multiplicité modulaire correspondante sur $\mathbf{Q}$, et même sur $\mathbf{Z}$. Le fait qui risque de faire des difficultés conceptuelles pour une telle construction, est qu'une multiplicité ``modulaire'' (sur $\mathbf{Q}$, ou sur $\mathbf{Z}$...) décrit en principe une catégorie fibrée -- telle celle des schémas en courbes relatifs de type $(g,\nu)$ -- alors que les 1-multiplicités relatives correspondantes à un ``type'' $\Pi_0$-donné (un groupoïde) forment une 2-catégorie fibrée sur $(Sch)$, et pas seulement une catégorie fibrée ...]
 
 \newpage
 
 %% ===== Page 197 =====
 
-%% [page 197 missing or failed: no entry]
+On aura donc une suite exacte
+$$
+1 \longrightarrow \hat{\Pi}_{g,\nu} \longrightarrow \Pi_1(U_{g,\nu, \mathbf{Q}}) \longrightarrow \Pi_1(M_{g,\nu, \mathbf{Q}}) \longrightarrow 1 \leqno{(13)}
+$$
+où $U_{g,\nu, \mathbf{Q}}$ est la "courbe de type $g,\nu$ universelle" (en car. $0$). Ici c'est $\Pi_1(U_{g,\nu, \overline{\mathbf{Q}}})$ qui apparaît comme un TL-groupe profini.
+
+Je voudrais dégager une propriété commune à ce cas "universel" (13), et au cas d'ailleurs en déduit : un corps de base $k$ extension de type fini de $\mathbf{Q}$ (le premier cas se ramène d'ailleurs essentielle-ment au second, en prenant un "point générique" de $M_{g,\nu}$...). Pour ceci, considérons un LT-groupe $\Pi$, et un homomorphisme
+$$
+u : \Gamma \longrightarrow \operatorname{Out} \Pi
+$$
+appartenant à une classe $K_{\Gamma}$. On peut
 
 \newpage
 
 %% ===== Page 198 =====
 
-%% [page 198 missing or failed: no entry]
+p. ex.\ choisir un sous-groupe de définition
+distingué $\Pi$ dans $\mathcal{M}$, qui sera donc
+un groupe à lacets, s'insérant dans
+une suite exacte
+$$
+1 \to \Pi \to \mathcal{M} \to \mathcal{N} \to 1 \ , \leqno (14)
+$$
+et on a
+$$
+k: \mathfrak{T} \to \Pi \quad , \quad k(\mathfrak{T}) \defeq L \leqno (15)
+$$
+relatif à la structure à lacets de $\Pi$.
+Considérons le normalisateur de
+$L$ dans $\mathcal{M}$
+$$
+\operatorname{Norm}_{\mathcal{M}}(L) \defeq \mathcal{N}(L) \leqno (16)
+$$
+et considérons l'action de $\mathcal{N}(L)$
+sur $L$. (NB On voit aisément
+que l'image de $\mathcal{N}(L)$ dans $\mathcal{N}$ est
+un sous-groupe ouvert de $\mathcal{N}$ \dots) Cette
+action se fait par un ``caractère
+cyclotomique'', induit par un
+caractère
+$$
+\mathcal{N} \xrightarrow{\chi_{\mathcal{N}}} \hat{\mathbf{Z}}^* \ . \leqno (17)
+$$
+L'hypothèse essentielle est que l'image
 
 \newpage
 
 %% ===== Page 199 =====
 
-%% [page 199 missing or failed: no entry]
+de $\mathcal{N}$ par $\chi$ (donc aussi de $N(L)/L$ par
+$\chi$) soit un sous-groupe ouvert de $\hat{\mathbf{Z}}^*$.
+Cette hypothèse a un caractère intrinsèque
+pour le LT-groupe $\mathcal{M}$ lui-même (indé-
+pendamment du choix de $\pi$) --
+car le caractère cyclotomique
+$$
+\chi_{\mathcal{M}} : \mathcal{M} \to \hat{\mathbf{Z}}^* \leqno{(18)}
+$$
+a un caractère intrinsèque à $\mathcal{M}$, et l'hypothèse signifie que l'image de ce
+dernier dans $\hat{\mathbf{Z}}^*$ est ouverte.
+
+Revenant à $L$ et $N(L)$, on voit
+que l'hypothèse faite implique ceci :
+$$
+\text{Tout sous-groupe ouvert de } N(L)/L \text{ opère non trivialement sur } L. \leqno{(19)}
+$$
+
+On sait, par des arguments
+standards que ceci implique que
+pour tout corps $K$
+(notamment un corps local sur $\mathbf{Q}_l$),
 
 \newpage
 
 %% ===== Page 200 =====
 
-%% [page 200 missing or failed: no entry]
+et tout homomorphisme de $\mathcal{M}$ dans un groupe
+$G(K)$, où $G$ est un schéma en
+groupes de type fini affine sur $K$ ; et
+$$ u : \mathcal{M} \longrightarrow G(K) , \leqno{(20)} $$
+la restriction de $u$ à $L$ est "quasi-uni-potente", i.e.
+$$ \exists \text{ sous-groupe ouvert } L' \text{ de } L \text{, tel que } u(L') \subset G(K) \text{ soit formé d'éléments unipotents} , \leqno{(21)} $$
+ce qui revient à dire : si $\ell$ est un
+générateur de $L \simeq \hat{\mathbf{Z}}$ , qu'on ait
+$$ u(\ell) \text{ est un élément quasi-} \leqno{(22)} $$
+unipotent de $G(K)$, i.e.\ $\exists n \in \mathbf{N}^*$
+tel que $\ell^n$ soit unipotent.
 
 \newpage
 
 %% ===== Page 201 =====
 
-%% [page 201 missing or failed: no entry]
+\section*{30) Enveloppe schématique d'un T.-L.-groupe profini ; ses hom.\ admissibles.}
+
+Soient $\mathcal{M}$ un T.-L.-groupe profini, dont le caractère structurel (18)
+$$
+\mathcal{M} \xrightarrow{\chi_{\mathcal{M}}} \hat{\mathbf{Z}}^*
+$$
+ait une image ouverte, $\pi$ un sous-groupe de définition à lacets (c'est donc un groupe profini), et $\pi_0 \subset \pi$ un sous-groupe discret de $\pi$, qui en soit une "discrétification" - c'est-à-dire un groupe à lacets discret, dont $\pi$ s'identifie à son complété profini.
+
+Soit $G$ un schéma en groupes affine de t.f.\ sur $\mathbf{Q}$. Soit $\mathbf{A}_{\mathbf{Q}}$ l'anneau des adèles de $\mathbf{Q}$
+$$
+\mathbf{A}_{\mathbf{Q}} = \hat{\mathbf{Z}} \otimes_{\mathbf{Z}} \mathbf{Q} \subset \prod_{\ell \in P} \mathbf{Q}_{\ell} \leqno{(23)}
+$$
+et considérons le groupe des points adéliques
+$$
+G(\mathbf{A}_{\mathbf{Q}}) \subset \prod_{\ell \in P} G(\mathbf{Q}_{\ell}) . \leqno{(24)}
+$$
+Si $G$ provient de un schéma en groupes
 
 \newpage
 
 %% ===== Page 202 =====
 
-%% [page 202 missing or failed: no entry]
+affine de t.f.\ $G$ sur $\mathbf{Z}$, on a
+$$
+G(\mathbf{A}_{\mathbf{Q}}) \simeq \left\{ (x_\ell)_{\ell \in \mathcal{P}} \in \prod_{\ell} G(\mathbf{Q}_\ell) \mid x_\ell \in G(\mathbf{Z}_\ell) \text{ pour presque tout } \ell \right\} \leqno{(25)}
+$$
+
+On se donne de plus un hom.\
+$$
+G_{\mathbf{Q}} \xrightarrow{\chi_G} \mathbf{G}_{m \mathbf{Q}} \leqno{(26)}
+$$
+On s'intéresse à des homomorphismes de groupes
+$$
+M \to G(\mathbf{A}_{\mathbf{Q}}) \leqno{(27)}
+$$
+satisfaisant à des propriétés que nous allons énumérer.
+
+1º) \underline{Continuité}. Cela équivaut à dire que
+\begin{enumerate}
+\item[a)] les hom.\ $M \to G(\mathbf{Q}_\ell)$ sont continus, et
+\item[b)] $\exists S$ partie finie de $\mathcal{P}$, telle que pour $\ell \notin S$, on ait une factorisation (continue)
+\end{enumerate}
+$$
+M \to G(\hat{\mathbf{Z}}_\ell) \quad (\ell \in \mathcal{P} \setminus S) \leqno{(28)}
+$$
+-- condition qui en effet ne dépend pas du ``modèle sur $\mathbf{Z}$'' $G$ de $G_{\mathbf{Q}}$ choisi.
+
+NB (28) est un hom.\ de groupes profinis.
 
 \newpage
 
@@ -4191,7 +5851,27 @@ Si $G'$ est un sous-schéma en groupes de
 
 %% ===== Page 204 =====
 
-%% [page 204 missing or failed: no entry]
+$G_{\mathbf{Q}}$, tel que $\mathcal{M} \to G(A_{\mathbf{Q}})$ se
+factorise par $G'(A_{\mathbf{Q}})$, alors $G = G'$.
+
+NB Si cette hypothèse n'est pas satisfaite,
+alors parmi tous les $G'_{\mathbf{Q}} \subset G_{\mathbf{Q}}$ qui la
+satisfont en [unclear: défaut], il y en a un
+(unique) plus petit, et en remplaçant $\chi_G$
+par $\chi_{G'} = \chi_G | G'$, les hyp.
+1) à 4) sont satisfaites pour $G'_{\mathbf{Q}}$, $\chi_{G'}$,
+et $\mathcal{M} \to G'(A_{\mathbf{Q}})$.
+
+Remarque \marginpar{Enveloppe du $\pi_1$ d'une $\mathbf{Q}$-variété de Teichmüller discrète} Soit $\mathfrak{S}_\circ \subset \mathcal{M}$ le
+sous-groupe de $\mathcal{M}$ formé des $g \in \mathcal{M}$ qui
+sont tels que $g(\pi_0)$ et $\pi_0$ soient
+commensurables (ce qui neutralise
+le ``germe de discrétification'' $\pi_0$ de $\pi$).
+Il est possible qu'il faille renfor-cer
+la condition 3), en exigeant que
+l'on ait
+$$ \mathfrak{S}_\circ \to G(\mathbf{Q}). $$
+L'avenir le décidera !
 
 \newpage
 
@@ -4232,13 +5912,64 @@ quotient du complété profini de $\mathfrak{S}_0$, mais
 
 %% ===== Page 206 =====
 
-%% [page 206 missing or failed: no entry]
+je n'exige pas pour le moment qu'il soit
+isomorphe à ce complété lui-même. 
+Idem pour $\pi$ et $\pi_0$. Le groupe $\tilde{\mathcal{G}}_0$
+joue le rôle d'un groupe de Teichmüller
+"discret" (le groupe $\tilde{\mathcal{G}}$ celui d'un complété
+de gr. de Teichmüller, le groupe
+$\Gamma = \mathcal{M} / \tilde{\mathcal{G}}$ joue le rôle d'un groupe de
+Galois profini. Je suis intéressé
+surtout par deux situations extrêmes
+
+\begin{enumerate}
+\item[a)] $\tilde{\mathcal{G}}_0 = \pi_0$ d'où $\tilde{\mathcal{G}} = \pi$ -- situation provenant
+d'une multiplicité lisse relative sur
+un corps ext. de t.f. de $\mathbf{Q}$, ou
+plus généralement d'un (comme multiplicité)
+entier de type fini sur $\mathbf{Z}$,
+le gr. de fond.
+relatif à la dite multiplicité,
+
+\item[b)] $\tilde{\mathcal{G}}_0 / \pi_0 \simeq$ groupe de Teichmüller
+(ou d'indice fini dans un gr. de $\mathfrak{T}$)
+de $\pi_0$ -- dans ce cas on est intéressé
+surtout à une situation "anabélienne", où
+\end{enumerate}
 
 \newpage
 
 %% ===== Page 207 =====
 
-%% [page 207 missing or failed: no entry]
+$\mathcal{M}$ s'interprète comme le groupe fondamental
+d'une multiplicité modulaire convenable,
+$\mathfrak{T}$ comme sa partie "géométrique", $\Pi_0$ comme
+sa partie "transcendante", et $\Gamma$ comme
+$\Gamma_{\overline{\mathbf{Q}}/\mathbf{Q}}$ \dots
+
+On fait sur (32) l'hypothèse que le
+caractère cyclotomique sur $\mathcal{M}$ (opérant sur
+$\pi$ par automorphismes de L-structures) soit
+trivial sur $\mathfrak{S}$, a fortiori sur $\pi$ (donc
+$$
+\pi = \pi^+, \quad \mathfrak{S} = \mathfrak{S}^+ \quad ) \leqno{(33)}
+$$
+i.e.\ qu'il se factorise
+$$
+\Gamma \xrightarrow{\chi_\Gamma} \hat{\mathbf{Z}}^* \ , \leqno{(34)}
+$$
+dont l'image soit un sous-groupe ouvert.
+
+Si $(G, \chi_G)$ est comme plus haut
+(p.\ 748), on s'intéresse aux homomorphismes continus
+$$
+\mathcal{M} \to G(\mathbf{A}_{\mathbf{Q}})
+$$
+satisfaisant les conditions 1) 2) 3) 4)
+comme ci-dessus, mais où 3) est formulé
+de la façon un peu plus forte
+($3^\circ$ forte) (Compatibilité avec discrétification de
+Teichmüller $\mathfrak{S}_0$) : On a une factorisation
 
 \newpage
 
@@ -4265,19 +5996,90 @@ Je désigne par $\mathbb{G}_{\mathbb{Q}}$ le sous-schéma en groupes de $M_{\mat
 
 %% ===== Page 209 =====
 
-%% [page 209 missing or failed: no entry]
+image de $\mathfrak{S}_{\circ} \to G(\mathbf{Q})$, par $\underline{\Pi}_{\mathbf{Q}}$
+celui engendré par l'image de $\Pi \to G(\mathbf{Q})$.
+
+On a ainsi des sous-schémas en
+groupes
+$$
+\underline{\Pi}_{\mathbf{Q}} \subset \underline{\mathfrak{S}}_{\mathbf{Q}} \subset \underline{\mathcal{M}}_{\mathbf{Q}}
+\leqno{(36)}
+$$
+distingués dans $\underline{\mathcal{M}}_{\mathbf{Q}}$, donnant lieu à
+des schémas en groupes quotients
+$$
+\begin{cases} 
+\underline{\mathfrak{T}}_{\mathbf{Q}} \simeq \underline{\mathfrak{S}}_{\mathbf{Q}} / \underline{\Pi}_{\mathbf{Q}} \, , \quad \underline{\Gamma}_{\mathbf{Q}} \simeq \underline{\mathcal{M}}_{\mathbf{Q}} / \underline{\mathfrak{S}}_{\mathbf{Q}} \\
+\underline{\mathcal{N}}_{\mathbf{Q}} \simeq \underline{\mathcal{M}}_{\mathbf{Q}} / \underline{\Pi}_{\mathbf{Q}} 
+\end{cases}
+\leqno{(37)}
+$$
+donnant lieu à quatre suites
+exactes de schémas en groupes, dont la
+dernière est
+$$
+1 \to \underline{\mathfrak{T}}_{\mathbf{Q}} \to \underline{\mathcal{N}}_{\mathbf{Q}} \to \underline{\Gamma}_{\mathbf{Q}} \to 1 \, .
+\leqno{(38)}
+$$
+Notons enfin le [unclear: caractère] $\chi_G : G_{\mathbf{Q}} \to G_m$
+est épi, et se factorise par $\underline{\Gamma}_{\mathbf{Q}}$ en
+$$
+\underline{\Gamma}_{\mathbf{Q}} \xrightarrow{\chi_{\Gamma}} G_{m \mathbf{Q}} \, .
+\leqno{(39)}
+$$
 
 \newpage
 
 %% ===== Page 210 =====
 
-%% [page 210 missing or failed: no entry]
+Le système de groupes (sur $\mathbf{Q}$) (36), (37), muni
+de l'homomorphisme de
+$$
+\Pi \subset \mathfrak{S} \subset \mathcal{M}
+$$
+dans
+$$
+\underline{\Pi}_{\mathbf{Q}}(\mathbf{A}_{\mathbf{Q}}) \subset \underline{\mathfrak{S}}_{\mathbf{Q}}(\mathbf{A}_{\mathbf{Q}}) \subset \underline{\mathcal{M}}_{\mathbf{Q}}(\mathbf{A}_{\mathbf{Q}}) \leqno{(40)}
+$$
+(déduit par $\mathcal{M} \to G(\mathbf{A}_{\mathbf{Q}})$ satisfaisant
+aux conditions 1) à 4) ci-dessus, i.e.\
+d'un "homomorphisme de Lie") s'appellera aussi
+une "approximation de Lie" du
+système de Galois-Teichmüller envisagé.
+
+Considérons un germe d'homomorphisme\footnote{NB pour [unclear: justifier le th. de structure], il suffirait d'un $\mathbf{L}$-morphisme $\Pi_0 \to \underline{\Pi}(\mathbf{Q})$ complétant le morphisme donné $T_0 \to \underline{\Pi}(\mathbf{Q})$, et d'un [unclear: homomorphisme] "meilleur" [unclear: que l'identité] $\operatorname{id}_{T_0}$.}
+$$
+T_0 \longrightarrow \Pi_0 \leqno{(41)}
+$$
+où la $\mathbf{L}$-structure de $T_0$
+provient par composition avec $\Pi_0 \to \underline{\Pi}(\mathbf{Q})$
+d'un homomorphisme
+$$
+T_0 \longrightarrow \underline{\Pi}(\mathbf{Q}) \leqno{(42)}
+$$
+((21) p. 747 !)
+On voit que cet homomorphisme
+est quasi-unipotent, et qu'il définit par
+suite un homomorphisme de $\mathbf{Q}$-schémas en groupes
 
 \newpage
 
 %% ===== Page 211 =====
 
-%% [page 211 missing or failed: no entry]
+$$
+k_i : \underline{T}_0 \longrightarrow \underline{\Pi}_{\mathbf{Q}} \leqno{(43)}
+$$
+(où $\underline{T}_0 \simeq \mathbf{G}_{a \mathbf{Q}} \otimes_{\mathbf{Z}} T_0$, pas seulement [unclear: comme] groupes !)
+qui définit, par passage aux pts $\mathbf{Q}$-rationnels, le germe d'hom. (42). On trouve ainsi un ens. fini (indexé par l'ens. des germes de sous-groupes lacets de $\pi_0$, ou de $\pi$ ce qui revient au =) d'hom. continus (43) de schémas en groupes. J'ai envie d'appeler \emph{l'approximation de Lie} la \emph{variante} de la précédente restreinte aux \emph{seuls} hom. continus, donnés par
+$$
+k_i : \underline{T}_{0\mathbf{Q}} \simeq \mathbf{G}_{a \mathbf{Q}} \otimes_{\mathbf{Z}} T_0 \longrightarrow \underline{\Pi}_{\mathbf{Q}}. \leqno{(44)}
+$$
+
+Supposons que $\underline{\mathcal{M}}_{\mathbf{Q}}$ provienne d'un schéma en groupes (affine d.t.f.) $\underline{\mathcal{M}}$ sur $\mathbf{Z}$, tel que l'on ait
+$$
+\mathcal{M} \longrightarrow \underline{\mathcal{M}}(\hat{\mathbf{Z}}) \leqno{(45)}
+$$
+(il me semble qu'on peut tjs trouver un tel $\underline{\mathcal{M}}$ \dots). On désignera alors par
 
 \newpage
 
@@ -4316,25 +6118,106 @@ lequel nécessairement se factorise par
 
 %% ===== Page 213 =====
 
-%% [page 213 missing or failed: no entry]
+754.
+
+Il serait intéres. de dégager un th. d'existence (voire d'unicité, moyennant des conditions plus fortes [unclear: encore]) d'un "modèle" lisse $\underline{\mathcal{M}}$ sur $\mathbf{Z}$ de $\underline{\mathcal{M}}_{\mathbf{Q}}$, satisfaisant aux conditions précédentes ($\underline{\mathcal{M}} \to \underline{\mathcal{M}}(\hat{\mathbf{Z}})$, et $\underline{\mathcal{M}} \xrightarrow{\chi_{\underline{\mathcal{M}}}} \mathbf{G}_{m \mathbf{Z}}$).
+
+Ici il ne sera plus vrai en général je présume, que les hom. extérieurs $k_i$ (43) se prolongent tels quels en des hom. $\underline{T}_i \simeq \underline{T}_{i \mathbf{Z}} \to \underline{\Pi}$. Mais je puis considérer le centralisateur de $k_i : T_0 \to \Pi_0$ dans $\Pi_0$, soit $\widetilde{L}_{i,0}$ qui est un groupe métabélien : car $\operatorname{Im}(T_0 \xrightarrow{k_i} \Pi_0)$ y est un sous-groupe distingué d'indice fini. Considérons l'hom.
+$$
+\underset{\displaystyle \parallel \atop \displaystyle \operatorname{Centr}_{\Pi_0}(k_i: T_0 \to \Pi_0)}{\widetilde{L}_{i,0}} \longrightarrow \underline{\Pi}(\mathbf{Z}) \leqno{(50)}
+$$
+qui est [unclear: ent.] unipotent -- il se factorise donc par un hom. de schémas en groupes
+$$
+\operatorname{Env}(\widetilde{L}_{i,0}) \to \underline{\Pi} \leqno{(51)}
+$$
+(cf § 50, 4°, p. 658' ff), se factorisant
 
 \newpage
 
 %% ===== Page 214 =====
 
-%% [page 214 missing or failed: no entry]
+par un des schémas en groupes lisses quotients $Z_{i,n}$
+de $Env(\tilde{L}_{i,0})$, donnant une suite exacte :
+\marginpar{S_0 = \operatorname{Spec} \mathbf{Z}}
+$$
+\begin{tikzcd}[row sep=tiny]
+1 \arrow[r] & \underline{uT_0} \arrow[r] & Z_{i,n} \arrow[r] & (H_{i,n})_{S_0} \arrow[r] \arrow[d, phantom, sloped, "\simeq"] & 1 \\
+& & & (\tilde{L}_{i,0}/\underline{uT_0}) &
+\end{tikzcd}
+\leqno{(52)}
+$$
+
+Mais bien entendu, la restriction de l'homomorphisme
+
+obtenu
+$$
+Z_{i,n} \longrightarrow \underline{\Pi}
+$$
+à
+$$
+Z_{i,n}^0 \simeq \underline{uT_0}
+$$
+n'est pas en général un monomorphisme --- s'il
+l'est pour un $n$ fixé, alors pour $n'$ ($n|n', n \neq n'$),
+il ne l'est plus pour $n'$. Un cas particulièrement favorable serait celui où
+il peut se trouver un $n$ tel que l'homomorphisme
+\marginpar{cet homomorphisme est alors unique.}
+$$
+\underline{uT_0} \longrightarrow \underline{\Pi} \leqno{(53)}
+$$
+soit un monomorphisme. Cela indiquerait que l'adhérence
+schématique dans $\underline{\Pi}$ d'un ``sous-groupe
+additif'' à 1 paramètre $\mathbf{G}_a \simeq \underline{L}_{i,\mathbf{Q}} = \underline{k}_i(\underline{T_0})$
+est un sous-schéma en groupes lisse de $\underline{\Pi}$.
 
 \newpage
 
 %% ===== Page 215 =====
 
-%% [page 215 missing or failed: no entry]
+Cette condition doit être [unclear: au moins] suffisante - du moins si on exige que cette adh. schématique ait une comp. neutre qui soit [unclear: isom.] à $\underline{G_a}_{S_0}$.
+On trouve alors, [unclear: un homomorphisme] unique (à conjugaison près)
+$$
+\underline{k}_i' \colon \underline{T}_0 \hookrightarrow \underline{\Pi} \leqno (54)
+$$
+tel que $\underline{k}_{i\,\mathbf{Q}}'$ soit de la forme $\underline{k}_{i\,\mathbf{Q}} \circ (r_i\,\mathrm{id})$, avec $r_i \in \mathbf{Q}^{*+}$ convenable. Je ne suis pas sûr que sous ces conditions, on puisse trouver que l'hom. déduit de $\underline{k}_i'$ en passant aux $\mathbf{Z}$-pts
+$$
+\underline{T}_0 \simeq \underline{T}_0(\mathbf{Z}) \longrightarrow \underline{\Pi}(\mathbf{Z})
+$$
+se factorise en un hom.
+$$
+\underline{T}_0 \xrightarrow{\underline{k}_i'} \underline{\Pi}_0 \longrightarrow \underline{\Pi}(\mathbf{Z}) \leqno (55)
+$$
+où $\underline{T}_0 \to \underline{\Pi}_0$ provienne d'un "vrai" $\underline{k}_i'$.
+
+Je vais néanmoins le poser comme hypothèse suppl., lorsque les $\underline{k}_i'$ existent.
+
+J'ai envie d'énoncer quelques autres "bonnes hypothèses", qui s'efforcent de relier
 
 \newpage
 
 %% ===== Page 216 =====
 
-%% [page 216 missing or failed: no entry]
+en travaillant sur des ``fondations'' de
+Lie ``entières'', i.e.\ sur $\operatorname{Spec} \mathbf{Z}$.
+Considérons tous les hom.\ $\underline{k}'_!$ possibles
+(i.e.\ variables, mais aussi en conjuguant les
+$k_! : \underline{T}_0 \to \Pi_0$ en différant par des éléments
+quelconques de $\Pi_0$), et les hom.\
+correspondants sur les algèbres de Lie
+$$
+\operatorname{Lie}(\underline{k}'_!) : \underline{T}_0 \to [\operatorname{Lie}(\underline{\Pi})] = \operatorname{Lie}(\Pi) \leqno{(56)}
+$$
+qui sont par hyp.\ des monomorphismes
+universels, on voudrait que $\operatorname{Lie}(\underline{\Pi})$ soit
+\marginpar{cette hyp. semble raisonnable dès lors que $\Pi_0 = \\operatorname{Sl}(2,\mathbf{Z})$ mais ici p. ex. ... !}
+engendré sur les [unclear: $k_!$] qui [unclear: univers.] par
+les images d'un générateur de $\underline{T}_0$. Je
+reviens [unclear: à ce que j'ai dit de]
+pour L A : un $\underline{k}'_!$, d'où l'image dudit
+générateur de $\underline{T}_0$, les $I$ éléments obtenus
+dans $\operatorname{Lie}(\Pi)$, et leurs conjugués
+par les éléments de $\Pi_0$, engendrent le
+$\mathbf{Z}$-module $\operatorname{Lie}(\Pi)$. Ceci signifie en particulier que
 
 \newpage
 
@@ -4378,25 +6261,89 @@ lesquels groupes discrets sont des quotients
 
 %% ===== Page 218 =====
 
-%% [page 218 missing or failed: no entry]
+$$
+\begin{cases}
+\underline{\gamma}_{\Pi} \text{ (resp.\ } \underline{\gamma}_{\mathfrak{S}}, \text{ resp.\ } \underline{\gamma}_{\mathcal{M}}) \text{ quotients de } \underline{\Pi}, \underline{\mathfrak{S}}, \underline{\mathcal{M}} \\
+\underline{\gamma}_{\Pi} \simeq (\gamma_{\Pi})_{S_0}, \quad \underline{\gamma}_{\mathfrak{S}} \simeq (\gamma_{\mathfrak{S}})_{S_0}, \quad \underline{\gamma}_{\mathcal{M}} \simeq (\gamma_{\mathcal{M}})_{S_0}
+\end{cases} \leqno{(59)}
+$$
+qui s'insèrent dans une suite d'homomorphismes
+
+$$
+\underline{\gamma}_{\Pi} \to \underline{\gamma}_{\mathfrak{S}} \to \underline{\gamma}_{\mathcal{M}} \leqno{(60)}
+$$
+et dans des suites exactes
+
+$$
+\begin{cases}
+\underline{\gamma}_{\Pi} \to \underline{\gamma}_{\mathfrak{S}} \to \underline{\gamma}_Z \to 1 \\
+\underline{\gamma}_{\Pi} \to \underline{\gamma}_{\mathcal{M}} \to \underline{\gamma}_\Gamma \to 1 \\
+\underline{\gamma}_{\mathfrak{S}} \to \underline{\gamma}_{\mathcal{M}} \to \underline{\gamma}_{\overline{\Gamma}} \to 1 \\
+\underline{\gamma}_Z \to \underline{\gamma}_\Gamma \to \underline{\gamma}_{\overline{\Gamma}} \to 1
+\end{cases} \leqno{(61)}
+$$
+
+Cette hypothèse sur $\underline{\Pi}, \underline{\mathfrak{S}}, \underline{\mathcal{M}}$ permet de définir des groupes $\underline{\Pi}^\Delta(\hat{\mathbf{Z}}), \underline{\mathfrak{S}}^\Delta(\hat{\mathbf{Z}}), \underline{\mathcal{M}}^\Delta(\hat{\mathbf{Z}})$
+et on aura nécessairement les deux premières factorisations de
+$$
+\begin{cases}
+\underline{\Pi} \to \underline{\Pi}^\Delta(\hat{\mathbf{Z}}) \\
+\underline{\mathfrak{S}} \to \underline{\mathfrak{S}}^\Delta(\hat{\mathbf{Z}}) \\
+\underline{\mathcal{M}} \to \underline{\mathcal{M}}^\Delta(\hat{\mathbf{Z}})
+\end{cases} \leqno{(62)}
+$$
+
+(car
+$$
+\begin{matrix}
+\Pi_0 \to \underline{\Pi}(\mathbf{Z}) \subset \underline{\Pi}^\Delta(\hat{\mathbf{Z}}) \\
+\mathfrak{S}_0 \to \underline{\mathfrak{S}}(\mathbf{Z}) \subset \underline{\mathfrak{S}}^\Delta(\hat{\mathbf{Z}})
+\end{matrix}
+\quad ). \text{ Quant}
+$$
+
+: la troisième factorisation, elle devrait être incluse dans les conditions de départ d'une [unclear: base de Lie] d'une structure de Teichmüller-Galois -- sachant que \marginpar{c'est} $\underline{\mathcal{M}}_{\mathbf{Q}}/\underline{\mathcal{M}}_{\mathbf{Q}}^\circ$ est constant, ce qui permet
 
 \newpage
 
 %% ===== Page 219 =====
 
-%% [page 219 missing or failed: no entry]
+alors de définir $\underline{M}_{\mathbf{Q}}^\Delta(\mathbb{A}_{\mathbf{Q}})$, et on exige
+que $M \to \underline{M}(\mathbb{A}_{\mathbf{Q}})$ se factorise par
+$$
+M \to \underline{M}_{\mathbf{Q}}^\Delta(\mathbb{A}_{\mathbf{Q}}) . \leqno{(63)}
+$$
+
+Si de plus on suppose que les images
+des trois hom.\ (62) sont des sous-groupes
+ouverts (condition qui renforce considé-
+rablement la condition désirée dans 4°)
+(p.\ 749), [unclear: pourvu qu'on prouve grâce à ce] co-noyau pour
+la surjectivité des composés
+$$
+\begin{cases}
+\Pi \to \underline{\Pi}^\Delta(\hat{\mathbf{Z}}) \to \Gamma_{\gamma_\Pi} \\
+\mathfrak{S} \to \underline{\mathfrak{S}}^\Delta(\hat{\mathbf{Z}}) \to \Gamma_{\gamma_{\mathfrak{S}}} \\
+M \to \underline{M}^\Delta(\hat{\mathbf{Z}}) \to \Gamma_{\gamma_M}
+\end{cases} \Big) , \leqno{(64)}
+$$
+on sera particulièrement heureux. On
+dira qu'on a une [unclear: vraie] \underline{structure de Lie}
+pour $\mathbf{Z}$, dite "entière") [unclear: stricte]
+si toutes les conditions suppl.\ envisagées
+précédemment sont satisfaites \dots
 
 \newpage
 
 %% ===== Page 220 =====
 
-%% [page 220 missing or failed: no entry]
+Remarque Dans la présentation précédente, le groupe $\Pi_0$ \footnote{ou $\pi$} lui-même semble passé au second plan, au profit de $\mathfrak{S}_0$ \footnote{$\mathfrak{S}_{0,3}$} et de sa $LT$-structure. Il me semble en effet que l'importance en vue de $\Pi_0$, s'efface derrière celle du sous-groupe d'indice fini $\Pi'_0$ (s'il en existe) qui serait engendré par les $K'_i(\Pi_0) \subset \Pi_0$ et leurs conjugués, soit $\Pi''_0$, et [unclear: qui contiendra] les sous-groupes de carte exactement. Il n'est \marginpar{trop} pas clair, même si un tel $\Pi'_0$ existe, qu'il soit nécessairement unique (penser au cas par exemple où $I = \emptyset$ !). Le cas qui m'avait occupé jusqu'à présent, $\Pi_0 = \mathfrak{S}_0 = \mathfrak{S}_{0,3}^+$ -- $\hat{\mathfrak{T}}_{0,3}^+$, a été un peu "misleading", car on a pris alors $\Pi_0 = \mathfrak{S}_0$ [unclear: extra justement]. Si on s'était arrêté \marginpar{dans l'idée de ce fait} au début de ce travail, où $\Pi_0 = \Pi_{0,3}$ comme le groupe de départ, on aurait vu (Comme cela d'ailleurs a été le cas effectivement) le rôle de $\Pi_{0,3}$ s'amoindrir au profit des sous-groupes plus petits (type $\Pi_S$ donnant naissance au $\mathfrak{S}$ du § 49 VI ... )
 
 \newpage
 
 %% ===== Page 221 =====
 
-%% [page 221 missing or failed: no entry]
+%% [page 221 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
@@ -4479,13 +6426,13 @@ ouvert de $\mathcal{M}$...
 
 %% ===== Page 225 =====
 
-%% [page 225 missing or failed: no entry]
+%% [page 225 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 226 =====
 
-%% [page 226 missing or failed: no entry]
+%% [page 226 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
@@ -4521,49 +6468,49 @@ $u(e_i)$ en un point $\tilde{a}_i$ de $\tilde{S}_{\sigma(i)}$ (i.e., de $\tilde{
 
 %% ===== Page 228 =====
 
-%% [page 228 missing or failed: no entry]
+%% [page 228 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 229 =====
 
-%% [page 229 missing or failed: no entry]
+%% [page 229 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 230 =====
 
-%% [page 230 missing or failed: no entry]
+%% [page 230 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 231 =====
 
-%% [page 231 missing or failed: no entry]
+%% [page 231 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 232 =====
 
-%% [page 232 missing or failed: no entry]
+%% [page 232 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 233 =====
 
-%% [page 233 missing or failed: no entry]
+%% [page 233 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 234 =====
 
-%% [page 234 missing or failed: no entry]
+%% [page 234 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 235 =====
 
-%% [page 235 missing or failed: no entry]
+%% [page 235 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
@@ -4630,25 +6577,25 @@ $$
 
 %% ===== Page 237 =====
 
-%% [page 237 missing or failed: no entry]
+%% [page 237 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 238 =====
 
-%% [page 238 missing or failed: no entry]
+%% [page 238 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 239 =====
 
-%% [page 239 missing or failed: no entry]
+%% [page 239 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 240 =====
 
-%% [page 240 missing or failed: no entry]
+%% [page 240 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
@@ -4686,49 +6633,49 @@ Alors l'élément $xyx^{-1}y^{-1}$ est figuré par le chemin ci-dessus, qui est 
 
 %% ===== Page 242 =====
 
-%% [page 242 missing or failed: no entry]
+%% [page 242 not transcribed: API daily quota exhausted (HTTP 429); queued for a future run]
 
 \newpage
 
 %% ===== Page 243 =====
 
-%% [page 243 missing or failed: no entry]
+%% [page 243 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 244 =====
 
-%% [page 244 missing or failed: no entry]
+%% [page 244 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 245 =====
 
-%% [page 245 missing or failed: no entry]
+%% [page 245 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 246 =====
 
-%% [page 246 missing or failed: no entry]
+%% [page 246 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 247 =====
 
-%% [page 247 missing or failed: no entry]
+%% [page 247 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 248 =====
 
-%% [page 248 missing or failed: no entry]
+%% [page 248 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 249 =====
 
-%% [page 249 missing or failed: no entry]
+%% [page 249 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -4812,7 +6759,7 @@ par un germe d'arc de courbe [unclear: analyt.]
 
 %% ===== Page 252 =====
 
-%% [page 252 missing or failed: no entry]
+%% [page 252 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -4854,7 +6801,7 @@ qui le définit est différentiable, et de plus
 
 %% ===== Page 254 =====
 
-%% [page 254 missing or failed: no entry]
+%% [page 254 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -4927,31 +6874,31 @@ ordonnée est canoniquement équivalent à $\Pi_1(\mathbb{S}_n)$,
 
 %% ===== Page 257 =====
 
-%% [page 257 missing or failed: no entry]
+%% [page 257 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 258 =====
 
-%% [page 258 missing or failed: no entry]
+%% [page 258 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 259 =====
 
-%% [page 259 missing or failed: no entry]
+%% [page 259 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 260 =====
 
-%% [page 260 missing or failed: no entry]
+%% [page 260 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 261 =====
 
-%% [page 261 missing or failed: no entry]
+%% [page 261 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -4991,13 +6938,13 @@ espace vectoriel $V$. Toute demi-droite [unclear].
 
 %% ===== Page 263 =====
 
-%% [page 263 missing or failed: no entry]
+%% [page 263 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 264 =====
 
-%% [page 264 missing or failed: no entry]
+%% [page 264 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -5042,7 +6989,7 @@ Gr(A_x) \ar[ru, "Gr(H)"'] &
 
 %% ===== Page 266 =====
 
-%% [page 266 missing or failed: no entry]
+%% [page 266 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -5094,7 +7041,7 @@ trois $T$-groupoïdes connexes $g, g', g''$
 
 %% ===== Page 268 =====
 
-%% [page 268 missing or failed: no entry]
+%% [page 268 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -5120,7 +7067,7 @@ qui sont des équivalences de catégories.
 
 %% ===== Page 270 =====
 
-%% [page 270 missing or failed: no entry]
+%% [page 270 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -5167,37 +7114,37 @@ propriété $\pm$ évidente suivante, qui la caractérise:
 
 %% ===== Page 272 =====
 
-%% [page 272 missing or failed: no entry]
+%% [page 272 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 273 =====
 
-%% [page 273 missing or failed: no entry]
+%% [page 273 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 274 =====
 
-%% [page 274 missing or failed: no entry]
+%% [page 274 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 275 =====
 
-%% [page 275 missing or failed: no entry]
+%% [page 275 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 276 =====
 
-%% [page 276 missing or failed: no entry]
+%% [page 276 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 277 =====
 
-%% [page 277 missing or failed: no entry]
+%% [page 277 not transcribed: not yet attempted in this run]
 
 \newpage
 
@@ -5232,10 +7179,10 @@ age de $S$, et soit pour tout $x \in S$,
 
 %% ===== Page 279 =====
 
-%% [page 279 missing or failed: no entry]
+%% [page 279 not transcribed: not yet attempted in this run]
 
 \newpage
 
 %% ===== Page 280 =====
 
-%% [page 280 missing or failed: no entry]
+%% [page 280 not transcribed: not yet attempted in this run]
