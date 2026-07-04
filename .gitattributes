@@ -1,0 +1,20 @@
+# This repo is edited from both WSL and Windows: force LF in git storage
+# for all text formats so regenerated outputs don't produce whole-file
+# CRLF diffs that bury real changes.
+*.tex text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary formats
+*.pdf -text
+*.png -text
+*.jpg -text
+*.zip -text
+*.pptx -text
