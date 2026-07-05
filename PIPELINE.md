@@ -9,6 +9,17 @@ reproduced inline below or linked to the script that implements it.
 The repository is [`github.com/ivan-gentile/la-longue-marche`](https://github.com/ivan-gentile/la-longue-marche).
 All figures below come from scripts you can re-run yourself.
 
+> **Update (July 2026).** The corpus described in §1–§2 has been
+> superseded twice since this document was written: (a) the full corpus
+> was re-transcribed with the `mateo-canonical` prompt on Gemini 3.1
+> Flash-Lite — complete, `tex_output/la_longue_marche_*_flash-lite-mateo.tex` —
+> and (b) a higher-effort Gemini 3.1 Pro + `mateo-canonical` re-run is
+> being filled in as API quota allows (503/696 and 236/280 pages as of
+> July 2026, `tex_output/la_longue_marche_*_mateo-canonical.tex`).
+> Exact page-level coverage of every file:
+> [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md). Passages below
+> marked *historical* describe the original February run.
+
 ---
 
 ## 1. Data flow
@@ -46,6 +57,11 @@ raw_pdf/140-4.pdf  ─┤
       tex_output/la_longue_marche_140-4.tex
 ```
 
+*The flow above is unchanged today, but the current variants replace
+`text-first-fewshot` with `mateo-canonical` and write
+`*_flash-lite-mateo.tex` (Flash-Lite, complete) and
+`*_mateo-canonical.tex` (Pro, partial) instead.*
+
 ## 2. Model choice (why Gemini 3.1 Pro)
 
 We benchmarked 17 configurations on 4 test pages at the start of the
@@ -69,8 +85,15 @@ Opus is **15× more expensive** for modestly better notation drift. On
 volume it produces 40% more text but sometimes includes the previous-page
 context as transcription (a real failure mode).
 
-**Decision**: Gemini 3.1 Pro stays the production model. Opus 4.7 is
-useful as a quality probe on small samples.
+**Decision (February, historical)**: Gemini 3.1 Pro stays the production
+model. Opus 4.7 is useful as a quality probe on small samples.
+
+**Revised (April 2026)**: the complete working draft was produced with
+Gemini 3.1 Flash-Lite + `mateo-canonical` (best style-conformance per
+dollar), while Gemini 3.1 Pro + `mateo-canonical` — which the LLM-judge
+rates higher on fidelity and completeness — re-runs the corpus as API
+quota allows. Coverage of both variants:
+[`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
 
 ## 3. Prompt templates
 
@@ -78,7 +101,7 @@ All prompts are in
 [`experiments/pilot/prompts_v2.py`](experiments/pilot/prompts_v2.py).
 Three matter:
 
-### 3.1. `text-first-fewshot` (what produced the current corpus)
+### 3.1. `text-first-fewshot` (historical — produced the original February corpus)
 
 Text-first output with inline LaTeX, one few-shot excerpt from your
 Part I Section 1 as calibration. This is the prompt behind the
@@ -254,10 +277,12 @@ ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \
 
 ## 8. Known open work
 
-1. **Full-corpus re-run with `mateo-canonical` prompt**. Based on the
-   Section 49.1 measurement (0.113 → 0.742 composite quality), this is
-   the biggest single lever on overall quality. Estimated cost ≈ $10
-   at current token prices for all 976 pages.
+1. **Full-corpus re-run with `mateo-canonical` prompt**. Done on
+   Flash-Lite (complete draft, April 2026). The Gemini 3.1 Pro re-run
+   is partial — 503/696 (140-3) and 236/280 (140-4) — limited by the
+   free-tier daily quota (250 requests/day on `gemini-3.1-pro`);
+   ~237 pages remain, with Section 49 (140-3 pages 495–696) first in
+   the queue once runs resume.
 2. **Geometric / hand-drawn figures**. Roughly 5 pages across `140-3`
    and a few in `140-4` contain pictorial figures (not commutative
    diagrams). The `diagram-tikzcd` prompt either produces a
@@ -270,8 +295,9 @@ ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \
 
 ## 9. One-line summary
 
-Current corpus: **Gemini 3.1 Pro + `text-first-fewshot` prompt + sequential
-previous-page visual context + 114 diagram pages re-run with
-`diagram-tikzcd` + regex notation normalization**. Next release candidate:
-same, but with the `mateo-canonical` prompt instead of
-`text-first-fewshot`, plus the `140-4` diagram branch completed.
+Current working draft: **Gemini 3.1 Flash-Lite + `mateo-canonical`
+prompt + sequential previous-page visual context + diagram pages re-run
+with `diagram-tikzcd` (114 in 140-3, 58 in 140-4) + regex notation
+normalization**, complete on both volumes. In progress: the same
+pipeline on **Gemini 3.1 Pro** (higher fidelity, quota-limited), page
+coverage tracked in [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).

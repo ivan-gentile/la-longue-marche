@@ -1,4 +1,4 @@
-# Opus 4.7 vs Gemini 3.1 Pro benchmark — summary
+# mateo-canonical prompt on Claude Opus 4.7 — benchmark summary
 
 Run: 2026-04-17T15:02:17
 

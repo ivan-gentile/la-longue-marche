@@ -1,4 +1,4 @@
-# Opus 4.7 vs Gemini 3.1 Pro benchmark — summary
+# Gemini 3.1 Pro whole-document mode — benchmark summary
 
 Run: 2026-04-17T15:47:50
 

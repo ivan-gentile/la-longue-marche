@@ -17,6 +17,9 @@ Caramello (Istituto Grothendieck).
 | [`CLAUDE.md`](CLAUDE.md) | Original project spec (for agents working in this repo). |
 | [`tex_output/la_longue_marche_140-3_flash-lite-mateo.tex`](tex_output/la_longue_marche_140-3_flash-lite-mateo.tex) | 696-page transcription, `mateo-canonical` prompt, Gemini 3.1 Flash-Lite, ~1.0 MB. |
 | [`tex_output/la_longue_marche_140-4_flash-lite-mateo.tex`](tex_output/la_longue_marche_140-4_flash-lite-mateo.tex) | 280-page transcription, `mateo-canonical` prompt, Gemini 3.1 Flash-Lite, ~0.34 MB. |
+| [`tex_output/la_longue_marche_140-3_mateo-canonical.tex`](tex_output/la_longue_marche_140-3_mateo-canonical.tex) | Higher-effort Gemini 3.1 Pro re-run, **503/696 pages so far** (untranscribed pages carry an in-file marker). |
+| [`tex_output/la_longue_marche_140-4_mateo-canonical.tex`](tex_output/la_longue_marche_140-4_mateo-canonical.tex) | Higher-effort Gemini 3.1 Pro re-run, **236/280 pages so far**. |
+| [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md) | **Page-level coverage manifest** of every deliverable (machine-readable twin: `coverage.json`). |
 | [`tex_output/bourbaki_schemes_full_flash-lite.tex`](tex_output/bourbaki_schemes_full_flash-lite.tex) | Full 437-page Bourbaki *Schémas* typed-text transcription, Flash-Lite, ~1.0 MB. |
 | [`tex_output/bourbaki_schemes_gemini_whole_p1-5.tex`](tex_output/bourbaki_schemes_gemini_whole_p1-5.tex) | Bourbaki 5-page control benchmark, Gemini 3.1 Pro (whole-doc mode). |
 | [`tex_output/bourbaki_schemes_opus_p1-5.tex`](tex_output/bourbaki_schemes_opus_p1-5.tex) | Bourbaki 5-page control benchmark, Claude Opus 4.7. |
@@ -30,9 +33,9 @@ Caramello (Istituto Grothendieck).
 
 ## Headline numbers
 
-- **976 pages** of handwritten French mathematical manuscript transcribed (100% coverage, April 2026).
-- **< €1** total API cost for the full Flash-Lite production run (~$0.59 for all 976 pages).
-- **Gemini 3.1 Flash-Lite** + `mateo-canonical` prompt is the current production model. It reaches composite quality **0.67** on the full Section 49.1 ground truth — **6× better than the shipped baseline (0.113)** — at **150× lower cost** than Claude Opus 4.7.
+- **976 pages** of handwritten French mathematical manuscript transcribed in full as a Flash-Lite working draft (April 2026). The higher-effort Gemini 3.1 Pro re-run covers **503/696** (140-3) and **236/280** (140-4) pages so far — exact page-level coverage of every file in [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
+- **~$1.4** total recorded API cost for the full Flash-Lite production run ($1.05 + $0.38 in the run `summary.json` files).
+- **Gemini 3.1 Flash-Lite** + `mateo-canonical` prompt produced the full working draft. It reaches composite quality **0.67** on the full Section 49.1 ground truth — **6× better than the shipped baseline (0.113)** — at **150× lower cost** than Claude Opus 4.7.
 - Model comparison on 5-page Section 49.1 ground truth:
 
 | Model | Composite quality | Cost / 5 pages | Latency |
@@ -41,6 +44,15 @@ Caramello (Istituto Grothendieck).
 | Claude Opus 4.7 + `mateo-canonical` | 0.661 | $1.173 | 28.6 s |
 | Gemini 3.1 Pro + `mateo-canonical` | 0.742 | $0.074 | 67.8 s |
 | **Gemini 3.1 Flash-Lite + `mateo-canonical`** | **0.777** | **$0.008** | **7.4 s** |
+
+> **How to read "composite quality":** it is a *style-conformance* score —
+> LaTeX scaffolding, canonical notation, absence of pipeline residue,
+> measured against the 5-page Section 49.1 ground truth. It does **not**
+> measure textual fidelity. The March 2026 LLM-judge evaluation
+> (`experiments/pilot/judge_results_combined.json`), which does rate
+> fidelity, ranked Gemini 3.1 Pro above Flash-Lite and flagged page
+> completeness as the dominant failure mode — that is why the Pro
+> `mateo-canonical` re-run exists alongside the Flash-Lite draft.
 
 - Diagram rollout complete: 140-3 (114 pages) and 140-4 (58 pages) re-transcribed with `diagram-tikzcd` prompt, producing `\begin{tikzcd}` blocks.
 - Bourbaki typed-text benchmark: full 437-page transcription available (`tex_output/bourbaki_schemes_full_flash-lite.tex`).

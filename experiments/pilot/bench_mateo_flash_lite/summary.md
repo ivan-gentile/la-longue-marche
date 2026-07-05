@@ -1,4 +1,4 @@
-# Opus 4.7 vs Gemini 3.1 Pro benchmark — summary
+# mateo-canonical prompt on Gemini 3.1 Flash-Lite — benchmark summary
 
 Run: 2026-04-17T21:46:28
 

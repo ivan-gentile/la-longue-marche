@@ -18,6 +18,17 @@ Transcription of Alexander Grothendieck's handwritten manuscript *"La longue mar
 
 ## Pipeline Architecture
 
+> **As implemented (April 2026):** production sends whole PDF pages
+> directly to the API (no rasterization, no strips — strips were
+> benchmarked and lost to full pages), with the previous page attached
+> as visual context. Prompt `mateo-canonical`
+> (`experiments/pilot/prompts_v2.py`), then a `diagram-tikzcd` re-run
+> pass, regex notation normalization, and tex build
+> (`finalize_*.py` → `tex_output/`, coverage in
+> `tex_output/COVERAGE.md`). The subsections below are the original
+> design sketch, kept for history; see `PIPELINE.md` for the current
+> pipeline.
+
 ### Image Preparation
 - PDFs split into single pages in `raw_pdf/single_pages/`
 - Pages rendered to PNG at 300 DPI using pymupdf (fitz)
@@ -65,33 +76,28 @@ Transcription of Alexander Grothendieck's handwritten manuscript *"La longue mar
 ```
 la_longe_marche/
 ├── CLAUDE.md                   # This file
-├── raw_pdf/                    # Original scanned PDFs
+├── README.md                   # Collaborator-facing overview + headline numbers
+├── PIPELINE.md                 # Pipeline documentation written for Mateo
+├── raw_pdf/                    # Original scanned PDFs (gitignored)
 │   ├── 140-3.pdf               # Pages 1-696
-│   ├── 140-4.pdf               # Pages 1-280
-│   └── single_pages/           # Individual page PDFs
-├── images/                     # Rendered page images (300 DPI PNG)
-│   ├── full_pages/             # Full page renders
-│   └── strips/                 # Horizontal strips with overlap
-├── transcriptions/             # LaTeX output
-│   ├── raw/                    # Per-strip raw transcriptions
-│   ├── merged/                 # Per-page merged transcriptions
-│   └── final/                  # Reviewed and validated LaTeX
-├── reference/                  # Alignment data from Part 1
-│   ├── symbol_glossary.tex     # Known notation reference
-│   └── few_shot_examples/      # Paired (crop, LaTeX) examples
-├── prompts/                    # Prompt templates
-│   ├── structure_pass.txt
-│   ├── detail_pass.txt
-│   └── merge_pass.txt
-├── scripts/                    # Pipeline scripts
-│   ├── render_pages.py         # PDF → PNG at 300 DPI
-│   ├── crop_and_strip.py       # Header/footer removal + strip generation
-│   ├── transcribe.py           # API calls for transcription
-│   └── merge_strips.py         # Strip → page merge logic
-├── experiments/                # A/B tests and research
-│   └── pilot/                  # Initial 10-20 page pilot
-└── costs/                      # API cost tracking
+│   └── 140-4.pdf               # Pages 1-280
+├── tex_output/                 # Final LaTeX deliverables + COVERAGE.md manifest
+├── reference/
+│   ├── part1_sections_19_36/   # Mateo's corrected Part I sections (few-shot pool)
+│   └── validation/             # 49.1old.tex / 49.1new.tex ground-truth pair
+├── experiments/
+│   ├── pilot/                  # ALL pipeline code: runners, prompts_v2.py,
+│   │                           #   bench_* comparisons, production-* run data,
+│   │                           #   finalize_*.py, make_coverage.py, viewers
+│   └── bourbaki/               # Typed-text control (Bourbaki Schémas, G103d.pdf)
+├── share/                      # Dated delivery packages + email drafts
+└── notes/                      # Project logs, blog/article drafts
 ```
+
+Note: `scripts/`, `prompts/`, `costs/`, and `transcriptions/` exist but
+are empty — the original design placed code there, the pilot in
+`experiments/pilot/` became production in place. API keys come from
+`.env` (`GEMINI_API_KEY`, `ANTHROPIC_API_KEY`), untracked.
 
 ## Key Dependencies
 
@@ -103,17 +109,19 @@ la_longe_marche/
 ## Workflow Commands
 
 ```bash
-# Render all pages to PNG
-python scripts/render_pages.py
+# Production transcription (resume-aware: only untranscribed pages run)
+GEMINI_API_KEY=... python experiments/pilot/run_production.py --volume 140-3 --resume
 
-# Generate strips for a page range
-python scripts/crop_and_strip.py --pages 1-20
+# Diagram re-run, then merge into the main JSON
+GEMINI_API_KEY=... python experiments/pilot/retranscribe_diagrams.py
+python experiments/pilot/retranscribe_diagrams.py --merge
 
-# Run transcription pilot
-python scripts/transcribe.py --pages 1-20 --model claude-opus
+# Rebuild deliverables from the run JSONs (no API calls)
+python experiments/pilot/finalize_mateo_canonical.py   # Gemini Pro variant
+python experiments/pilot/finalize_flash_lite.py        # Flash-Lite variant
 
-# Merge strips into page transcriptions
-python scripts/merge_strips.py --pages 1-20
+# Regenerate the page-coverage manifest (no API calls)
+python experiments/pilot/make_coverage.py
 ```
 
 ## Conventions

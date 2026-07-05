@@ -1,4 +1,4 @@
-# Opus 4.7 vs Gemini 3.1 Pro benchmark — summary
+# Opus 4.7 vs Gemini 3.1 Pro (text-first-fewshot prompt) — benchmark summary
 
 Run: 2026-04-17T14:56:13
 
