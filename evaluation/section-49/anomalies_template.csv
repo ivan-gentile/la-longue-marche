@@ -1,0 +1,2 @@
+file,volume,pdf_page,line_ref,error_type,manuscript_reading,transcription_reading,severity,notes
+tex_output/la_longue_marche_140-3_mateo-canonical.tex,140-3,105,"tex line 2887","omission","(example row — delete) the manuscript continues with ...","absent","major","reported 2026-04-30; fixed in delivery-2026-07-05"

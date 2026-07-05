@@ -1,0 +1,74 @@
+name: Transcription anomaly
+description: Report a divergence between a transcription and the source manuscript
+title: "[anomaly] <volume> p.<page>: <short description>"
+labels: ["anomaly"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Each report filed here feeds directly into the evaluation
+        pipeline. If you prefer working offline, the same fields exist as a
+        CSV template in `evaluation/section-49/anomalies_template.csv` —
+        a filled CSV sent by email works just as well.
+  - type: dropdown
+    id: error_type
+    attributes:
+      label: Error type
+      description: The recurring classes we track — pick the closest one
+      options:
+        - omission (text present in the manuscript, absent in the transcription)
+        - silent normalisation (spelling, notation or layout standardised without a marker)
+        - punctuation or wording change
+        - marginal note lost or mishandled
+        - consistency drift (same symbol or term rendered differently across pages)
+        - notation error (wrong symbol)
+        - misreading (wrong word or formula)
+        - structure error (heading, equation numbering, page layout)
+        - other
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Transcription file
+      description: Path in this repository
+      placeholder: tex_output/la_longue_marche_140-3_mateo-canonical.tex
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: PDF page number
+      description: The `%% ===== Page N =====` marker nearest the problem
+      placeholder: "105"
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Line reference (optional)
+      description: Line in the tex file, or line on the manuscript page — please mention which
+  - type: textarea
+    id: manuscript_reading
+    attributes:
+      label: What the manuscript says
+      description: Quote or describe the source reading
+    validations:
+      required: true
+  - type: textarea
+    id: transcription_reading
+    attributes:
+      label: What the transcription says
+      description: Paste the corresponding transcription passage (or "absent")
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - major (mathematical or textual meaning affected)
+        - minor (cosmetic, meaning preserved)
+        - unsure
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes

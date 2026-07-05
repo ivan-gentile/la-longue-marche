@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project overview and coverage manifest
+    url: https://github.com/ivan-gentile/la-longue-marche/blob/main/tex_output/COVERAGE.md
+    about: Which pages of each deliverable are transcribed and which are still pending.
