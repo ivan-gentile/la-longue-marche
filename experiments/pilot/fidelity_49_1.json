@@ -1,0 +1,129 @@
+{
+  "shipped baseline (49.1old, text-first-fewshot)": {
+    "char_similarity": 0.607,
+    "word_similarity": 0.662,
+    "reference_tokens": 763,
+    "candidate_tokens": 793,
+    "omitted_tokens": 105,
+    "replaced_tokens": 143,
+    "inserted_tokens": 106,
+    "omission_spans": [
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 14,
+        "excerpt": "empty toc section 49 les groupes généraux sec 49 toc subsection préliminaires heuristiques 3cm"
+      },
+      {
+        "ref_tokens": 12,
+        "excerpt": "40 70 -- 40 92 40 70 ellipse radius 10 radius 25"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
+  },
+  "Claude Opus 4.7 + mateo-canonical": {
+    "char_similarity": 0.324,
+    "word_similarity": 0.402,
+    "reference_tokens": 763,
+    "candidate_tokens": 749,
+    "omitted_tokens": 72,
+    "replaced_tokens": 387,
+    "inserted_tokens": 293,
+    "omission_spans": [
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 12,
+        "excerpt": "40 70 -- 40 92 40 70 ellipse radius 10 radius 25"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
+  },
+  "Gemini 3.1 Pro + mateo-canonical": {
+    "char_similarity": 0.654,
+    "word_similarity": 0.611,
+    "reference_tokens": 763,
+    "candidate_tokens": 557,
+    "omitted_tokens": 120,
+    "replaced_tokens": 240,
+    "inserted_tokens": 50,
+    "omission_spans": [
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 26,
+        "excerpt": "sera unique si on ainsi sur l'ensemble des des satisfaisant on aura une structure de groupe déduite par transport de structure de celle de 0' etc"
+      },
+      {
+        "ref_tokens": 12,
+        "excerpt": "40 70 -- 40 92 40 70 ellipse radius 10 radius 25"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      },
+      {
+        "ref_tokens": 8,
+        "excerpt": "et soit un automorphisme de et posons ll"
+      }
+    ]
+  },
+  "Gemini 3.1 Flash-Lite + mateo-canonical": {
+    "char_similarity": 0.461,
+    "word_similarity": 0.449,
+    "reference_tokens": 763,
+    "candidate_tokens": 443,
+    "omitted_tokens": 270,
+    "replaced_tokens": 222,
+    "inserted_tokens": 39,
+    "omission_spans": [
+      {
+        "ref_tokens": 197,
+        "excerpt": "posons ll -1 -1 -1 -1 cf 24 25 -5mm 34 33 n'existe pas alors dire que est conjugué signifie que fixe la classe de conjugaison de dire que est conjugué de signifie que fixe la classe de conjugaison de "
+      },
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      },
+      {
+        "ref_tokens": 8,
+        "excerpt": "dans fu 13 dont on regarde les restrictions"
+      }
+    ]
+  },
+  "shipped corpus (production Flash-Lite + mateo-canonical)": {
+    "char_similarity": 0.485,
+    "word_similarity": 0.41,
+    "reference_tokens": 763,
+    "candidate_tokens": 451,
+    "omitted_tokens": 66,
+    "replaced_tokens": 448,
+    "inserted_tokens": 15,
+    "omission_spans": [
+      {
+        "ref_tokens": 11,
+        "excerpt": "que se factorise par --- ce qu'on va supposer pour nous"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
+  }
+}
