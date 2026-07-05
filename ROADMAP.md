@@ -30,9 +30,10 @@ two-track plan agreed with Mateo (June 2026). Updated 2026-07-05.
 
 ## Track 1 — preliminary drafts for legible typescripts
 
-1. **Re-run Bourbaki Schémas page-by-page** (replaces the whole-doc
-   draft; pipeline writes PDF-indexed page markers, so nothing can be
-   skipped silently). Run a coverage census before delivering.
+1. **Re-run Bourbaki Schémas page-by-page** — *in progress 2026-07-05*
+   (`experiments/bourbaki/run_bourbaki_pages.py`; pipeline writes
+   PDF-indexed page markers, so nothing can be skipped silently). Run a
+   coverage census before delivering.
 2. Apply the same census gate to any future typescript Mateo sends
    (waiting on his Préschémas source scans to confirm we work from the
    same material).

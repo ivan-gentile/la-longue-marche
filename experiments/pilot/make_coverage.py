@@ -134,8 +134,11 @@ def main() -> None:
         "  pages; it is being filled in as API quota allows and its gaps are",
         "  listed above. Where it covers a page, prefer it over `flash-lite-mateo`.",
         "- Section 49 begins at PDF page 495 of 140-3.",
-        "- The Bourbaki *Schémas* typescript transcription",
-        "  (`bourbaki_schemes_full_flash-lite.tex`, 437 pages) is complete.",
+        "- The Bourbaki *Schémas* whole-document transcription",
+        "  (`bourbaki_schemes_full_flash-lite.tex`) silently lacks ~70 of its",
+        "  437 source pages and its page markers are not PDF positions (see",
+        "  `experiments/bourbaki/GAPS.md`); the page-by-page replacement is",
+        "  `bourbaki_schemes_pages_flash-lite.tex`.",
         "",
     ]
     (TEX_OUT / "COVERAGE.md").write_text("\n".join(lines), encoding="utf-8")
