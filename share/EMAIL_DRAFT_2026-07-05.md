@@ -30,9 +30,13 @@ structural defect of the "whole document at once" mode I used for that
 typescript: it silently skipped about 70 of the 437 pages and numbered
 the rest by the page numbers printed on the typescript itself (which
 restart per chapter), so the file cannot be navigated against the
-scans. The full analysis is in `experiments/bourbaki/GAPS.md`. I will
-re-run it page-by-page — the mode used for La Longue Marche, which
-cannot skip pages silently — and deliver a page-aligned replacement.
+scans. The full analysis is in `experiments/bourbaki/GAPS.md`. I have
+already re-run it page-by-page — the mode used for La Longue Marche,
+where the pipeline writes the page markers itself and cannot skip a
+page silently. The replacement is
+`tex_output/bourbaki_schemes_pages_flash-lite.tex`: all 437 pages, each
+under a marker that matches the PDF position, so your review can
+navigate scan and transcription side by side.
 
 **Filing anomalies.** The repository now has a structured issue form —
 "Transcription anomaly" under

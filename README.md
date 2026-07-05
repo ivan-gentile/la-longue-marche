@@ -20,7 +20,8 @@ Caramello (Istituto Grothendieck).
 | [`tex_output/la_longue_marche_140-3_mateo-canonical.tex`](tex_output/la_longue_marche_140-3_mateo-canonical.tex) | Higher-effort Gemini 3.1 Pro re-run, **503/696 pages so far** (untranscribed pages carry an in-file marker). |
 | [`tex_output/la_longue_marche_140-4_mateo-canonical.tex`](tex_output/la_longue_marche_140-4_mateo-canonical.tex) | Higher-effort Gemini 3.1 Pro re-run, **236/280 pages so far**. |
 | [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md) | **Page-level coverage manifest** of every deliverable (machine-readable twin: `coverage.json`). |
-| [`tex_output/bourbaki_schemes_full_flash-lite.tex`](tex_output/bourbaki_schemes_full_flash-lite.tex) | Bourbaki *Schémas* whole-doc transcription — **~70 of 437 pages silently missing, no page alignment** ([`GAPS.md`](experiments/bourbaki/GAPS.md)); superseded by the page-by-page re-run. |
+| [`tex_output/bourbaki_schemes_pages_flash-lite.tex`](tex_output/bourbaki_schemes_pages_flash-lite.tex) | **Bourbaki *Schémas*, page-by-page re-run (July 2026): 437/437 pages, PDF-indexed markers, ~$0.67.** |
+| [`tex_output/bourbaki_schemes_full_flash-lite.tex`](tex_output/bourbaki_schemes_full_flash-lite.tex) | Superseded whole-doc transcription — ~70 of 437 pages silently missing, no page alignment ([`GAPS.md`](experiments/bourbaki/GAPS.md)). Kept for comparison. |
 | [`tex_output/bourbaki_schemes_gemini_whole_p1-5.tex`](tex_output/bourbaki_schemes_gemini_whole_p1-5.tex) | Bourbaki 5-page control benchmark, Gemini 3.1 Pro (whole-doc mode). |
 | [`tex_output/bourbaki_schemes_opus_p1-5.tex`](tex_output/bourbaki_schemes_opus_p1-5.tex) | Bourbaki 5-page control benchmark, Claude Opus 4.7. |
 | [`reference/part1_sections_19_36/`](reference/part1_sections_19_36) | Mateo's corrected Part I sections (few-shot style reference). |

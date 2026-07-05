@@ -30,10 +30,10 @@ two-track plan agreed with Mateo (June 2026). Updated 2026-07-05.
 
 ## Track 1 — preliminary drafts for legible typescripts
 
-1. **Re-run Bourbaki Schémas page-by-page** — *in progress 2026-07-05*
-   (`experiments/bourbaki/run_bourbaki_pages.py`; pipeline writes
-   PDF-indexed page markers, so nothing can be skipped silently). Run a
-   coverage census before delivering.
+1. **Re-run Bourbaki Schémas page-by-page** — *done 2026-07-05*:
+   `tex_output/bourbaki_schemes_pages_flash-lite.tex`, 437/437 pages,
+   0 errors, ~$0.67 (`experiments/bourbaki/run_bourbaki_pages.py`).
+   Census verified: every PDF page has a pipeline-written marker.
 2. Apply the same census gate to any future typescript Mateo sends
    (waiting on his Préschémas source scans to confirm we work from the
    same material).

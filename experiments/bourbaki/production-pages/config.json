@@ -1,0 +1,9 @@
+{
+  "pdf": "bourbaki_schemes.pdf",
+  "total_pages": 437,
+  "model": "gemini-3.1-flash-lite-preview",
+  "mode": "page-by-page",
+  "context": "previous_page_pdf",
+  "max_output_tokens": 16000,
+  "started": "2026-07-05T13:38:39.913208"
+}
