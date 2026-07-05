@@ -1,0 +1,63 @@
+{
+  "generated": "2026-07-05",
+  "variants": {
+    "flash-lite-mateo": {
+      "note": "complete corpus, shipped April 2026",
+      "volumes": {
+        "140-3": {
+          "model": "gemini-3.1-flash-lite-preview",
+          "prompt_style": "mateo-canonical",
+          "thinking_level": "low",
+          "run_started": "2026-04-17T21:49:47.268330",
+          "total_pages": 696,
+          "pages_transcribed": 696,
+          "pages_from_diagram_overlay": 114,
+          "pages_missing": 0,
+          "missing_ranges": "",
+          "tex_file": "la_longue_marche_140-3_flash-lite-mateo.tex"
+        },
+        "140-4": {
+          "model": "gemini-3.1-flash-lite-preview",
+          "prompt_style": "mateo-canonical",
+          "thinking_level": "low",
+          "run_started": "2026-04-18T12:58:49.243541",
+          "total_pages": 280,
+          "pages_transcribed": 280,
+          "pages_from_diagram_overlay": 58,
+          "pages_missing": 0,
+          "missing_ranges": "",
+          "tex_file": "la_longue_marche_140-4_flash-lite-mateo.tex"
+        }
+      }
+    },
+    "mateo-canonical": {
+      "note": "higher-effort Gemini Pro re-run, in progress (free-tier daily quota)",
+      "volumes": {
+        "140-3": {
+          "model": "gemini-3.1-pro-preview",
+          "prompt_style": "mateo-canonical",
+          "thinking_level": "medium",
+          "run_started": "2026-04-21T08:15:41.943440",
+          "total_pages": 696,
+          "pages_transcribed": 503,
+          "pages_from_diagram_overlay": 114,
+          "pages_missing": 193,
+          "missing_ranges": "390, 409, 451, 454-481, 483-504, 507-516, 521, 523, 527-532, 534-535, 537-542, 544-549, 551-552, 554, 558, 564-569, 571-572, 575-600, 602-612, 616-618, 620-621, 623-627, 629, 632, 634-635, 639-642, 645-648, 650-657, 659, 661-663, 665, 668, 670-672, 674-675, 677-679, 681-684, 686-696",
+          "tex_file": "la_longue_marche_140-3_mateo-canonical.tex"
+        },
+        "140-4": {
+          "model": "gemini-3.1-pro-preview",
+          "prompt_style": "mateo-canonical",
+          "thinking_level": "medium",
+          "run_started": "2026-04-21T08:14:48.859269",
+          "total_pages": 280,
+          "pages_transcribed": 236,
+          "pages_from_diagram_overlay": 58,
+          "pages_missing": 44,
+          "missing_ranges": "144, 221, 225-226, 228-235, 237-240, 242-249, 252, 254, 257-261, 263-264, 266, 268, 270, 272-277, 279-280",
+          "tex_file": "la_longue_marche_140-4_mateo-canonical.tex"
+        }
+      }
+    }
+  }
+}
