@@ -1,0 +1,85 @@
+{
+  "source_pdf": "raw_pdf/bourbaki_schemes.pdf",
+  "source_pages": 437,
+  "tex_file": "tex_output/bourbaki_schemes_full_flash-lite.tex",
+  "tex_marker_count": 367,
+  "tex_marker_numeric": 315,
+  "tex_marker_unique_numbers": 137,
+  "tex_marker_max_numeric": 142,
+  "tex_marker_resets": 5,
+  "estimated_pages_dropped": 70,
+  "chunks": [
+    {
+      "chunk": "chunk_000_p1-50",
+      "pdf_pages": "1-50",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 48,
+      "marker_numbers_seen": "1 … 50",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_001_p51-100",
+      "pdf_pages": "51-100",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 22,
+      "marker_numbers_seen": "31 … 52",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_002_p101-150",
+      "pdf_pages": "101-150",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 48,
+      "marker_numbers_seen": "1 … 50",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_003_p151-200",
+      "pdf_pages": "151-200",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 28,
+      "marker_numbers_seen": "115 … 142",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_004_p201-250",
+      "pdf_pages": "201-250",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 45,
+      "marker_numbers_seen": "12 … 51",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_005_p251-300",
+      "pdf_pages": "251-300",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 49,
+      "marker_numbers_seen": "62 … 105 quater",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_006_p301-350",
+      "pdf_pages": "301-350",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 46,
+      "marker_numbers_seen": "11-105 quinquiès … III-22",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_007_p351-400",
+      "pdf_pages": "351-400",
+      "assigned_pages": 50,
+      "pages_marked_in_output": 44,
+      "marker_numbers_seen": "23 … 66",
+      "status": "success"
+    },
+    {
+      "chunk": "chunk_008_p401-437",
+      "pdf_pages": "401-437",
+      "assigned_pages": 37,
+      "pages_marked_in_output": 37,
+      "marker_numbers_seen": "73 … 109",
+      "status": "success"
+    }
+  ]
+}
