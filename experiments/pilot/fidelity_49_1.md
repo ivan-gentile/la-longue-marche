@@ -16,6 +16,7 @@ layer, so compare candidates against each other, not to 1.0.
 | Gemini 3.1 Pro + mateo-canonical | 0.654 | 0.611 | 120 | 240 | 50 | 763 |
 | Gemini 3.1 Flash-Lite + mateo-canonical | 0.461 | 0.449 | 270 | 222 | 39 | 763 |
 | shipped corpus (production Flash-Lite + mateo-canonical) | 0.485 | 0.41 | 66 | 448 | 15 | 763 |
+| canonical corpus (production Gemini Pro + mateo-canonical) | 0.65 | 0.606 | 86 | 281 | 23 | 763 |
 
 ## Largest omissions — shipped baseline (49.1old, text-first-fewshot)
 
@@ -48,5 +49,12 @@ layer, so compare candidates against each other, not to 1.0.
 ## Largest omissions — shipped corpus (production Flash-Lite + mateo-canonical)
 
 - (11 tokens) “que se factorise par --- ce qu'on va supposer pour nous”
+- (9 tokens) “1pt 1pt at 150 anchor west at anchor west”
+
+## Largest omissions — canonical corpus (production Gemini Pro + mateo-canonical)
+
+- (26 tokens) “sera unique si on ainsi sur l'ensemble des des satisfaisant on aura une structure de groupe déduite par transport de structure de celle de 0' etc”
+- (14 tokens) “empty toc section 49 les groupes généraux sec 49 toc subsection préliminaires heuristiques 3cm”
+- (12 tokens) “40 70 -- 40 92 40 70 ellipse radius 10 radius 25”
 - (9 tokens) “1pt 1pt at 150 anchor west at anchor west”
 

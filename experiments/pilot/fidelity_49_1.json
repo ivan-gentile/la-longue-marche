@@ -125,5 +125,32 @@
         "excerpt": "1pt 1pt at 150 anchor west at anchor west"
       }
     ]
+  },
+  "canonical corpus (production Gemini Pro + mateo-canonical)": {
+    "char_similarity": 0.65,
+    "word_similarity": 0.606,
+    "reference_tokens": 763,
+    "candidate_tokens": 543,
+    "omitted_tokens": 86,
+    "replaced_tokens": 281,
+    "inserted_tokens": 23,
+    "omission_spans": [
+      {
+        "ref_tokens": 26,
+        "excerpt": "sera unique si on ainsi sur l'ensemble des des satisfaisant on aura une structure de groupe déduite par transport de structure de celle de 0' etc"
+      },
+      {
+        "ref_tokens": 14,
+        "excerpt": "empty toc section 49 les groupes généraux sec 49 toc subsection préliminaires heuristiques 3cm"
+      },
+      {
+        "ref_tokens": 12,
+        "excerpt": "40 70 -- 40 92 40 70 ellipse radius 10 radius 25"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
   }
 }

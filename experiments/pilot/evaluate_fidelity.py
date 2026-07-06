@@ -130,6 +130,9 @@ def preset_49_1() -> None:
         "shipped corpus (production Flash-Lite + mateo-canonical)": _production_pages(
             "production-flash-lite-mateo"
         ),
+        "canonical corpus (production Gemini Pro + mateo-canonical)": _production_pages(
+            "production-mateo-canonical"
+        ),
     }
 
     results = {name: compare(reference, cand) for name, cand in candidates.items()}
