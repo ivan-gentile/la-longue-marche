@@ -17,10 +17,13 @@ Caramello (Istituto Grothendieck).
 | [`CLAUDE.md`](CLAUDE.md) | Original project spec (for agents working in this repo). |
 | [`tex_output/la_longue_marche_140-3_flash-lite-mateo.tex`](tex_output/la_longue_marche_140-3_flash-lite-mateo.tex) | 696-page transcription, `mateo-canonical` prompt, Gemini 3.1 Flash-Lite, ~1.0 MB. |
 | [`tex_output/la_longue_marche_140-4_flash-lite-mateo.tex`](tex_output/la_longue_marche_140-4_flash-lite-mateo.tex) | 280-page transcription, `mateo-canonical` prompt, Gemini 3.1 Flash-Lite, ~0.34 MB. |
-| [`tex_output/la_longue_marche_140-3_mateo-canonical.tex`](tex_output/la_longue_marche_140-3_mateo-canonical.tex) | Higher-effort Gemini 3.1 Pro re-run, **503/696 pages so far** (untranscribed pages carry an in-file marker). |
-| [`tex_output/la_longue_marche_140-4_mateo-canonical.tex`](tex_output/la_longue_marche_140-4_mateo-canonical.tex) | Higher-effort Gemini 3.1 Pro re-run, **236/280 pages so far**. |
+| [`tex_output/la_longue_marche_140-3_mateo-canonical.tex`](tex_output/la_longue_marche_140-3_mateo-canonical.tex) | **Recommended.** Higher-effort Gemini 3.1 Pro re-run, **696/696 pages**, Section 49 included. |
+| [`tex_output/la_longue_marche_140-4_mateo-canonical.tex`](tex_output/la_longue_marche_140-4_mateo-canonical.tex) | **Recommended.** Higher-effort Gemini 3.1 Pro re-run, **280/280 pages**. |
 | [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md) | **Page-level coverage manifest** of every deliverable (machine-readable twin: `coverage.json`). |
-| [`tex_output/bourbaki_schemes_pages_flash-lite.tex`](tex_output/bourbaki_schemes_pages_flash-lite.tex) | **Bourbaki *Schémas*, page-by-page re-run (July 2026): 437/437 pages, PDF-indexed markers, ~$0.67.** |
+| [`tex_output/bourbaki_schemes_pages_flash-lite.tex`](tex_output/bourbaki_schemes_pages_flash-lite.tex) | **Préschémas (Bourbaki *Schémas*), page-by-page: 437/437 pages, PDF-indexed markers.** Source scans: U86u1 (pages 1–210) + U86u2 (pages 211–437). |
+| [`tex_output/varietes_categories_U46.tex`](tex_output/varietes_categories_U46.tex) | ***Catégories de variétés* (n° 262), 100 pages**, page-by-page on Gemini 3.1 Pro. Source scans: U46. |
+| [`experiments/pilot/CORPUS_AUDIT.md`](experiments/pilot/CORPUS_AUDIT.md) | **Silent-defect audit** of every corpus: context echoes, empty successes, distant duplicates. |
+| [`experiments/pilot/COSTS.md`](experiments/pilot/COSTS.md) | **True API cost of every run**, thinking tokens included. |
 | [`tex_output/bourbaki_schemes_full_flash-lite.tex`](tex_output/bourbaki_schemes_full_flash-lite.tex) | Superseded whole-doc transcription — ~70 of 437 pages silently missing, no page alignment ([`GAPS.md`](experiments/bourbaki/GAPS.md)). Kept for comparison. |
 | [`tex_output/bourbaki_schemes_gemini_whole_p1-5.tex`](tex_output/bourbaki_schemes_gemini_whole_p1-5.tex) | Bourbaki 5-page control benchmark, Gemini 3.1 Pro (whole-doc mode). |
 | [`tex_output/bourbaki_schemes_opus_p1-5.tex`](tex_output/bourbaki_schemes_opus_p1-5.tex) | Bourbaki 5-page control benchmark, Claude Opus 4.7. |
@@ -34,9 +37,11 @@ Caramello (Istituto Grothendieck).
 
 ## Headline numbers
 
-- **976 pages** of handwritten French mathematical manuscript transcribed in full as a Flash-Lite working draft (April 2026). The higher-effort Gemini 3.1 Pro re-run covers **503/696** (140-3) and **236/280** (140-4) pages so far — exact page-level coverage of every file in [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
-- **~$1.4** total recorded API cost for the full Flash-Lite production run ($1.05 + $0.38 in the run `summary.json` files).
-- **Gemini 3.1 Flash-Lite** + `mateo-canonical` prompt produced the full working draft. It reaches composite quality **0.67** on the full Section 49.1 ground truth — **6× better than the shipped baseline (0.113)** — at **150× lower cost** than Claude Opus 4.7.
+- **976 pages** of handwritten French mathematical manuscript transcribed **completely twice**: as a Gemini 3.1 Pro corpus (696/696 and 280/280 — the recommended one) and as a cheaper Flash-Lite draft. Exact page-level coverage of every file in [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
+- **537 further pages** of typescript: Préschémas (437) and *Catégories de variétés* (100), both page-by-page with markers written from the PDF index.
+- **~$90** total API cost across every run, thinking tokens included ([`experiments/pilot/COSTS.md`](experiments/pilot/COSTS.md)): $82 for the two Pro corpora, $5.56 for the Flash-Lite draft, $0.68 for Préschémas, ~$1.2 for *Variétés*.
+- Every corpus passes a **silent-defect audit** — no page carrying its predecessor's text, no empty success, no distant duplicate ([`experiments/pilot/CORPUS_AUDIT.md`](experiments/pilot/CORPUS_AUDIT.md)). 19 pages of Préschémas failed this check in August and were repaired; see [`experiments/bourbaki/GAPS.md`](experiments/bourbaki/GAPS.md).
+- **Gemini 3.1 Flash-Lite** + `mateo-canonical` prompt reaches composite *style* quality **0.67** on the full Section 49.1 ground truth — **6× better than the shipped baseline (0.113)** — at a small fraction of Claude Opus 4.7's cost. On *content fidelity*, however, Gemini 3.1 Pro is the more faithful model, which is why the Pro corpus is the recommended one ([`experiments/pilot/fidelity_49_1.md`](experiments/pilot/fidelity_49_1.md)).
 - Model comparison on 5-page Section 49.1 ground truth:
 
 | Model | Composite quality | Cost / 5 pages | Latency |
@@ -45,6 +50,15 @@ Caramello (Istituto Grothendieck).
 | Claude Opus 4.7 + `mateo-canonical` | 0.661 | $1.173 | 28.6 s |
 | Gemini 3.1 Pro + `mateo-canonical` | 0.742 | $0.074 | 67.8 s |
 | **Gemini 3.1 Flash-Lite + `mateo-canonical`** | **0.777** | **$0.008** | **7.4 s** |
+
+> **Caveat on the cost column:** these per-page costs come from
+> `bench_*/results.json`, which never recorded thinking tokens. Gemini
+> bills thinking at the output rate, so the two Gemini rows understate
+> real spend (on the production corpora the true figure is several
+> times the naive one), while the Claude row does not — Anthropic counts
+> thinking inside its output tokens. The cost gap between the models is
+> therefore narrower than the table suggests. Run-level costs computed
+> correctly are in [`experiments/pilot/COSTS.md`](experiments/pilot/COSTS.md).
 
 > **How to read "composite quality":** it is a *style-conformance* score —
 > LaTeX scaffolding, canonical notation, absence of pipeline residue,
@@ -56,7 +70,6 @@ Caramello (Istituto Grothendieck).
 > `mateo-canonical` re-run exists alongside the Flash-Lite draft.
 
 - Diagram rollout complete: 140-3 (114 pages) and 140-4 (58 pages) re-transcribed with `diagram-tikzcd` prompt, producing `\begin{tikzcd}` blocks.
-- Bourbaki typed-text benchmark: full 437-page transcription available (`tex_output/bourbaki_schemes_full_flash-lite.tex`).
 
 ## Reproducing
 
@@ -76,6 +89,15 @@ python experiments/pilot/normalize_notation.py --mode regex
 
 # Rebuild tex_output/*.tex from the JSON
 python experiments/pilot/build_tex.py
+
+# Quality gates — no API calls, run before sharing anything
+python experiments/pilot/audit_corpus.py        # silent defects → CORPUS_AUDIT.md
+python experiments/pilot/make_coverage.py       # page coverage → COVERAGE.md
+python experiments/pilot/recompute_costs.py     # true costs → COSTS.md
+
+# Typescripts, page-by-page (markers written from the PDF index)
+GEMINI_API_KEY=... python experiments/bourbaki/run_bourbaki_pages.py
+GEMINI_API_KEY=... python experiments/varietes/run_varietes_pages.py
 
 # Opus 4.7 vs Gemini 3.1 Pro benchmark
 ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \

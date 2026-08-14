@@ -1,5 +1,11 @@
 {
-  "length": 0,
-  "score": null,
-  "note": "Section 49.1 (140-3 pages 495-499) is not transcribed in this corpus; style score not applicable."
+  "length": 9712,
+  "score": {
+    "raw_density_per_kchar": 1.75,
+    "notation_density_per_kchar": 0.31,
+    "abbr_density_per_kchar": 0.0,
+    "structure_coverage": 0.5,
+    "composite_penalty": 0.404,
+    "quality": 0.596
+  }
 }

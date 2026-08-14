@@ -19,6 +19,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
 import os
 import sys
@@ -41,14 +42,20 @@ PRICES = {"in": 0.25, "out": 1.50}
 MAX_OUTPUT_TOKENS = 16000
 DELAY = 2.0
 MAX_BACKOFF = 300
+# Similarity above which a page is assumed to have echoed its context page
+# instead of transcribing its target.
+ECHO_SIMILARITY_THRESHOLD = 0.75
 
 PROMPT = r"""This is one scanned page from the Bourbaki archives — an early typed
 manuscript by Alexander Grothendieck developing the theory of schemes (EGA-era,
 French, circa 1958-59).
 
 ## Your task
-Transcribe THIS page (the last attached PDF) into LaTeX. If a previous page is
-attached, it is context only — do NOT transcribe it.
+Transcribe the page attached under the [TARGET PAGE] label into LaTeX. A page
+may also be attached under [CONTEXT — PREVIOUS PAGE]; that one exists only so
+you can resolve words broken across the page break, and must NOT be
+transcribed. If your output ends up reproducing the context page's content,
+you have transcribed the wrong page.
 
 Rules:
 1. French prose exactly as typed, preserving accents.
@@ -81,6 +88,81 @@ def extract_page(doc, page_idx: int) -> bytes:
     return data
 
 
+def request_page(client, types, doc, page_idx: int, corrective: bool = False):
+    """One transcription call. Returns (text, usage); raises on empty output.
+
+    Each label precedes the PDF it describes: with the label placed *after*
+    the bytes, the model sometimes read it as tagging the following part and
+    transcribed the context page instead of the target one (15 pages of the
+    first 437-page run were shifted this way).
+    """
+    parts = []
+    if page_idx > 0:
+        parts.append(types.Part.from_text(
+            text=f"[CONTEXT — PREVIOUS PAGE] The PDF below is PDF page {page_idx} "
+                 f"of the document. It is background only. Do NOT transcribe it."
+        ))
+        parts.append(
+            types.Part.from_bytes(
+                data=extract_page(doc, page_idx - 1), mime_type="application/pdf"
+            )
+        )
+    parts.append(types.Part.from_text(
+        text=f"[TARGET PAGE] The PDF below is PDF page {page_idx + 1} of the "
+             f"document. This is the page to transcribe."
+    ))
+    parts.append(
+        types.Part.from_bytes(data=extract_page(doc, page_idx), mime_type="application/pdf")
+    )
+    parts.append(types.Part.from_text(text=PROMPT))
+    if corrective:
+        parts.append(types.Part.from_text(
+            text="IMPORTANT: a previous attempt returned the CONTEXT page's text. "
+                 "Transcribe only the [TARGET PAGE] attachment — the last PDF "
+                 "attached — and ignore the context page entirely."
+        ))
+
+    response = client.models.generate_content(
+        model=MODEL_ID,
+        contents=[types.Content(parts=parts)],
+        config=types.GenerateContentConfig(
+            temperature=1.0, max_output_tokens=MAX_OUTPUT_TOKENS
+        ),
+    )
+    candidate = response.candidates[0]
+    text = "".join(
+        p.text for p in candidate.content.parts
+        if p.text and not getattr(p, "thought", False)
+    ).strip()
+    finish = str(getattr(candidate, "finish_reason", ""))
+    if not text:
+        raise RuntimeError(f"empty output (finish_reason={finish})")
+    if "STOP" not in finish.upper():
+        raise RuntimeError(f"truncated output (finish_reason={finish})")
+
+    um = getattr(response, "usage_metadata", None)
+    usage = {
+        "prompt_tokens": getattr(um, "prompt_token_count", None),
+        "output_tokens": getattr(um, "candidates_token_count", None),
+        "thinking_tokens": getattr(um, "thoughts_token_count", None),
+    } if um is not None else {}
+    return text, usage
+
+
+def echo_similarity(text: str, prev_entry: dict) -> float:
+    prev = (prev_entry or {}).get("transcription", "")
+    if not prev or not text:
+        return 0.0
+    return difflib.SequenceMatcher(None, prev, text).ratio()
+
+
+def save_results(results: dict, results_file: Path) -> None:
+    """Atomically replace transcriptions.json (a truncating write can lose all)."""
+    tmp = results_file.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp, results_file)
+
+
 def placeholder_reason(entry: dict) -> str:
     if not entry:
         return "not yet attempted in this run"
@@ -107,6 +189,8 @@ def build_tex(results: dict, total_pages: int) -> Path:
         lines.append(f"%% ===== Page {page} =====")
         lines.append("")
         if entry.get("status") == "success":
+            if entry.get("warning"):
+                lines.append(f"%% [REVIEW: {entry['warning']}]")
             lines.append(entry.get("transcription", "").strip())
         else:
             lines.append(f"%% [page {page} not transcribed: {placeholder_reason(entry)}]")
@@ -125,7 +209,13 @@ def main() -> None:
     ap.add_argument("--resume", action="store_true")
     ap.add_argument("--build-only", action="store_true")
     ap.add_argument("--delay", type=float, default=DELAY)
+    ap.add_argument("--pages", type=int, nargs="+", default=None,
+                    help="Re-transcribe these PDF pages even if already successful "
+                         "(used to repair the context-echo pages found by "
+                         "experiments/pilot/audit_corpus.py)")
     args = ap.parse_args()
+    if args.pages:
+        args.resume = True  # never discard the rest of the corpus
 
     try:
         from google import genai
@@ -174,52 +264,42 @@ def main() -> None:
 
     backoff = args.delay
     done = errors = 0
+    forced = set(args.pages or [])
     for page_idx in range(total_pages):
         pkey = str(page_idx + 1)
-        if results.get(pkey, {}).get("status") == "success":
+        if results.get(pkey, {}).get("status") == "success" and (page_idx + 1) not in forced:
             continue
-
-        parts = []
-        if page_idx > 0:
-            parts.append(
-                types.Part.from_bytes(
-                    data=extract_page(doc, page_idx - 1), mime_type="application/pdf"
-                )
-            )
-            parts.append(types.Part.from_text(text="[Previous page, context only]"))
-        parts.append(
-            types.Part.from_bytes(data=extract_page(doc, page_idx), mime_type="application/pdf")
-        )
-        parts.append(types.Part.from_text(text=PROMPT))
 
         print(f"  [{pkey}/{total_pages}] ...", end="", flush=True)
         t0 = time.monotonic()
         try:
-            response = client.models.generate_content(
-                model=MODEL_ID,
-                contents=[types.Content(parts=parts)],
-                config=types.GenerateContentConfig(
-                    temperature=1.0, max_output_tokens=MAX_OUTPUT_TOKENS
-                ),
-            )
-            text = "".join(
-                p.text
-                for p in response.candidates[0].content.parts
-                if p.text and not getattr(p, "thought", False)
-            ).strip()
-            um = response.usage_metadata
-            results[pkey] = {
+            text, usage = request_page(client, types, doc, page_idx)
+
+            # Guard against the model transcribing its context page instead of
+            # its target page.
+            prev_entry = results.get(str(page_idx))
+            sim = echo_similarity(text, prev_entry)
+            warning = None
+            if sim >= ECHO_SIMILARITY_THRESHOLD:
+                print(f" echo? ({sim:.2f}) retrying...", end="", flush=True)
+                text, usage = request_page(client, types, doc, page_idx, corrective=True)
+                sim = echo_similarity(text, prev_entry)
+                if sim >= ECHO_SIMILARITY_THRESHOLD:
+                    warning = (f"possible context echo: {sim:.2f} similarity to the "
+                               f"transcription of page {page_idx}")
+
+            entry = {
                 "status": "success",
                 "transcription": text,
-                "usage": {
-                    "prompt_tokens": um.prompt_token_count,
-                    "output_tokens": um.candidates_token_count,
-                },
+                "usage": usage,
                 "latency_s": round(time.monotonic() - t0, 1),
             }
+            if warning:
+                entry["warning"] = warning
+            results[pkey] = entry
             done += 1
             backoff = args.delay
-            print(f" OK ({len(text)}ch)")
+            print(f" OK ({len(text)}ch)" + (f" [WARNING: {warning}]" if warning else ""))
         except Exception as e:
             err = str(e)
             results[pkey] = {"status": "error", "error": err}
@@ -229,9 +309,7 @@ def main() -> None:
                 backoff = min(backoff * 2, MAX_BACKOFF)
                 print(f"    backing off {backoff:.0f}s")
 
-        results_file.write_text(
-            json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        save_results(results, results_file)
         time.sleep(backoff)
 
     doc.close()
@@ -245,7 +323,14 @@ def main() -> None:
         v.get("usage", {}).get("output_tokens", 0) for v in results.values()
         if v.get("status") == "success"
     )
-    cost = (tok_in * PRICES["in"] + tok_out * PRICES["out"]) / 1_000_000
+    # Thinking tokens are billed at the output rate and reported separately
+    # from candidates_token_count. This run has no thinking config, so the sum
+    # is zero here, but the arithmetic must not lie if that ever changes.
+    tok_think = sum(
+        v.get("usage", {}).get("thinking_tokens") or 0 for v in results.values()
+        if v.get("status") == "success"
+    )
+    cost = (tok_in * PRICES["in"] + (tok_out + tok_think) * PRICES["out"]) / 1_000_000
     (OUT_DIR / "summary.json").write_text(
         json.dumps(
             {
@@ -254,6 +339,7 @@ def main() -> None:
                 "total_pages": total_pages,
                 "tokens_in": tok_in,
                 "tokens_out": tok_out,
+                "tokens_thinking": tok_think,
                 "estimated_cost": round(cost, 3),
                 "finished": datetime.now().isoformat(),
             },

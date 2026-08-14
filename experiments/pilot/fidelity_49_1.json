@@ -127,13 +127,13 @@
     ]
   },
   "canonical corpus (production Gemini Pro + mateo-canonical)": {
-    "char_similarity": 0.65,
-    "word_similarity": 0.606,
+    "char_similarity": 0.648,
+    "word_similarity": 0.605,
     "reference_tokens": 763,
-    "candidate_tokens": 543,
-    "omitted_tokens": 86,
+    "candidate_tokens": 550,
+    "omitted_tokens": 85,
     "replaced_tokens": 281,
-    "inserted_tokens": 23,
+    "inserted_tokens": 27,
     "omission_spans": [
       {
         "ref_tokens": 26,

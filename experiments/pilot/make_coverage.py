@@ -33,11 +33,31 @@ VARIANTS = {
     "mateo-canonical": {
         "dir": HERE / "production-mateo-canonical",
         "tex": "la_longue_marche_{vol}_mateo-canonical.tex",
-        "note": "higher-effort Gemini Pro re-run, in progress (free-tier daily quota)",
+        "note": "higher-effort Gemini Pro re-run (canonical — prefer where it covers a page)",
     },
 }
 
 VOLUMES = {"140-3": 696, "140-4": 280}
+
+# Standalone documents transcribed page-by-page outside the La Longue
+# Marche volumes. Each dir holds the same transcriptions.json/config.json
+# pair the volume runs use.
+STANDALONE = {
+    "bourbaki-pages": {
+        "dir": REPO / "experiments" / "bourbaki" / "production-pages",
+        "tex": "bourbaki_schemes_pages_flash-lite.tex",
+        "label": "Préschémas (Bourbaki Schémas typescript)",
+        "source": "U86u1.pdf + U86u2.pdf (CSG): tex pages 1-210 = U86u1, tex pages 211-437 = U86u2 pages 1-227",
+        "total": 437,
+    },
+    "varietes-U46": {
+        "dir": REPO / "experiments" / "varietes" / "production-pages",
+        "tex": "varietes_categories_U46.tex",
+        "label": "Catégories de variétés (typescript n° 262)",
+        "source": "U46.pdf (CSG)",
+        "total": 100,
+    },
+}
 
 
 def page_ranges(pages: list[int]) -> str:
@@ -85,8 +105,36 @@ def volume_coverage(variant_dir: Path, vol: str, total: int) -> dict:
     }
 
 
+def standalone_coverage(spec: dict) -> dict | None:
+    data_path = spec["dir"] / "transcriptions.json"
+    if not data_path.exists():
+        return None
+    data = json.loads(data_path.read_text(encoding="utf-8"))
+    config_path = spec["dir"] / "config.json"
+    config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+    total = spec["total"]
+
+    transcribed = [
+        page for page in range(1, total + 1)
+        if data.get(str(page), {}).get("status") == "success"
+        and len((data.get(str(page), {}).get("transcription") or "").strip()) >= 30
+    ]
+    missing = [p for p in range(1, total + 1) if p not in set(transcribed)]
+    return {
+        "label": spec["label"],
+        "source": spec["source"],
+        "model": config.get("model"),
+        "run_started": config.get("started"),
+        "total_pages": total,
+        "pages_transcribed": len(transcribed),
+        "pages_missing": len(missing),
+        "missing_ranges": page_ranges(missing),
+        "tex_file": spec["tex"],
+    }
+
+
 def main() -> None:
-    manifest: dict = {"generated": date.today().isoformat(), "variants": {}}
+    manifest: dict = {"generated": date.today().isoformat(), "variants": {}, "standalone": {}}
 
     for name, spec in VARIANTS.items():
         manifest["variants"][name] = {"note": spec["note"], "volumes": {}}
@@ -94,6 +142,11 @@ def main() -> None:
             cov = volume_coverage(spec["dir"], vol, total)
             cov["tex_file"] = spec["tex"].format(vol=vol)
             manifest["variants"][name]["volumes"][vol] = cov
+
+    for name, spec in STANDALONE.items():
+        cov = standalone_coverage(spec)
+        if cov is not None:
+            manifest["standalone"][name] = cov
 
     (TEX_OUT / "coverage.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -126,14 +179,32 @@ def main() -> None:
             )
         lines.append("")
 
+    if manifest["standalone"]:
+        lines.append("## Standalone documents (page-by-page, census-gated)")
+        lines.append("")
+        lines.append("| Document | Tex file | Model | Pages transcribed | Missing | Missing ranges |")
+        lines.append("|---|---|---|---|---|---|")
+        for name, cov in manifest["standalone"].items():
+            ranges = cov["missing_ranges"] or "—"
+            if len(ranges) > 140:
+                ranges = ranges[:140] + "… (full list in coverage.json)"
+            lines.append(
+                f"| {cov['label']} | `{cov['tex_file']}` | {cov['model']} "
+                f"| **{cov['pages_transcribed']}/{cov['total_pages']}** "
+                f"| {cov['pages_missing']} | {ranges} |"
+            )
+        lines.append("")
+        for name, cov in manifest["standalone"].items():
+            lines.append(f"- Source of *{cov['label']}*: {cov['source']}.")
+        lines.append("")
+
     lines += [
         "## Reading guide",
         "",
         "- `flash-lite-mateo` is the complete working draft of both volumes.",
         "- `mateo-canonical` is the higher-effort Gemini Pro re-run of the same",
-        "  pages; it is being filled in as API quota allows and its gaps are",
-        "  listed above. Where it covers a page, prefer it over `flash-lite-mateo`.",
-        "- Section 49 begins at PDF page 495 of 140-3.",
+        "  pages; where it covers a page, prefer it over `flash-lite-mateo`.",
+        "- Section 49 begins at PDF page 495 of 140-3 (pages 495-696).",
         "- The Bourbaki *Schémas* whole-document transcription",
         "  (`bourbaki_schemes_full_flash-lite.tex`) silently lacks ~70 of its",
         "  437 source pages and its page markers are not PDF positions (see",

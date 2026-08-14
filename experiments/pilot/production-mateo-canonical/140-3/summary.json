@@ -1,15 +1,19 @@
 {
   "volume": "140-3",
   "total_pages": 696,
-  "success": 693,
-  "errors": 8,
-  "total_chars": 1058065,
-  "total_tokens_in": 1970105,
-  "total_tokens_out": 400576,
-  "estimated_cost": 8.75,
-  "elapsed_seconds": 359,
+  "success": 696,
+  "errors": 3,
+  "total_chars": 1062089,
+  "total_tokens_in": 1978820,
+  "total_tokens_out": 401914,
+  "estimated_cost": 60.88,
+  "elapsed_seconds": 159,
   "model": "gemini-3.1-pro-preview",
   "model_key": "pro",
   "thinking_level": "medium",
-  "completed": "2026-07-06T13:31:02.645702"
+  "completed": "2026-08-14T19:40:18.438771",
+  "tokens_in": 1978820,
+  "tokens_out": 401914,
+  "tokens_thinking": 4341243,
+  "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py"
 }

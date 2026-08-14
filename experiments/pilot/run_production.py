@@ -269,10 +269,14 @@ def run_volume(client, volume_key: str, resume: bool = False,
                        for v in results.values() if v.get("status") == "success")
     total_tok_out = sum(v.get("usage", {}).get("output_tokens", 0) or 0
                         for v in results.values() if v.get("status") == "success")
+    total_tok_think = sum(v.get("usage", {}).get("thinking_tokens", 0) or 0
+                          for v in results.values() if v.get("status") == "success")
 
     cost_in = model_cfg["cost_input"]
     cost_out = model_cfg["cost_output"]
-    cost = (total_tok_in * cost_in + total_tok_out * cost_out) / 1_000_000
+    # Thinking tokens are reported separately from candidates_token_count but
+    # billed at the output rate; on a thinking model they dominate the bill.
+    cost = (total_tok_in * cost_in + (total_tok_out + total_tok_think) * cost_out) / 1_000_000
 
     print(f"\n  {'='*60}")
     print(f"  Volume {volume_key} complete")
@@ -282,7 +286,8 @@ def run_volume(client, volume_key: str, resume: bool = False,
     print(f"  Total chars: {total_chars:,}")
     print(f"  Tokens in:  {total_tok_in:,}")
     print(f"  Tokens out: {total_tok_out:,}")
-    print(f"  Cost: ~${cost:.2f}")
+    print(f"  Tokens thinking: {total_tok_think:,}")
+    print(f"  Cost: ~${cost:.2f} (incl. thinking tokens)")
     print(f"  Time: {elapsed/60:.1f} min")
     print(f"  Results: {results_file}")
 
@@ -295,7 +300,9 @@ def run_volume(client, volume_key: str, resume: bool = False,
         "total_chars": total_chars,
         "total_tokens_in": total_tok_in,
         "total_tokens_out": total_tok_out,
+        "tokens_thinking": total_tok_think,
         "estimated_cost": round(cost, 2),
+        "cost_note": "includes thinking tokens billed at the output rate",
         "elapsed_seconds": round(elapsed),
         "model": model_id,
         "model_key": model_key,

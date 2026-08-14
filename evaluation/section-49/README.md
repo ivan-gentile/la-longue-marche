@@ -17,9 +17,14 @@ pipeline change here before extending it to the rest of the corpus.
 ## Current transcription state (see `tex_output/COVERAGE.md`)
 
 - `flash-lite-mateo` (complete): covers all of §49, draft quality.
-- `mateo-canonical` (Gemini 3.1 Pro): **does not yet cover §49** apart
-  from scattered diagram-overlay pages — pages 495–696 are first in the
-  queue for the next quota window.
+- `mateo-canonical` (Gemini 3.1 Pro): **covers all of §49** — 140-3 is
+  complete (696/696) as of 2026-08-14. This is the version to use for
+  the research track and the one Mateo should draft from.
+
+Note on page conventions: Mateo (2026-08-09) locates §49 at Cote 140-3
+pp. 494–695 — the same 202-page span as our PDF pages 495–696, shifted
+by one. Pin down the convention with him before anomaly reports
+reference pages.
 
 ## What we know about error classes here
 

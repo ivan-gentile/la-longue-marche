@@ -43,3 +43,46 @@ Flash-Lite at recorded rates: well under $1 for all 437 pages.
 Until then, `bourbaki_schemes_full_flash-lite.tex` should be treated
 as a continuous-text draft without page alignment, not as a
 page-faithful transcription.
+
+**Done** (July 2026): `tex_output/bourbaki_schemes_pages_flash-lite.tex`,
+437/437 pages, every marker written from the PDF index.
+
+## A third defect, found August 2026: context echo
+
+The page-by-page re-run fixed the two defects above but introduced a
+subtler one. Each request attaches the previous page as visual context
+so words broken across a page break can be resolved. In the original
+part ordering the context label was placed *after* the PDF bytes it
+described:
+
+    [previous page PDF] "[Previous page, context only]" [current page PDF] <prompt>
+
+Read left to right, that label sits immediately before the *current*
+page, and the model sometimes took it as labelling what follows — so it
+transcribed the context page and ignored the target. The result is a
+page recorded as a perfectly ordinary success whose text belongs to the
+previous page: no error, no gap, nothing a success count can reveal.
+
+**Extent.** 19 of 437 pages (4.3%) in the shipped Préschémas file.
+Confirmed against the scans; e.g. PDF page 338 is an English errata
+sheet ("- II-xxi -", *P. II-104 ter, the cor.2 is incorrect*) but
+carried a copy of page 337, and PDF page 99 is the errata page "- v -"
+but carried a copy of page 98.
+
+**Fix.** Every label now precedes the artifact it describes and names
+its PDF page number explicitly (`[CONTEXT — PREVIOUS PAGE]` /
+`[TARGET PAGE]`), and the runner compares each new page against its
+predecessor: above 0.75 similarity it retries once with a corrective
+instruction, and if the result still matches it stores the page with a
+`warning` that surfaces in the tex as a `%% [REVIEW: ...]` line. All 19
+pages were re-transcribed and verified; the corpus now converges clean.
+
+**Detection everywhere else.** `experiments/pilot/audit_corpus.py`
+scans every corpus for this and two neighbouring silent failure classes
+(empty successes, distant duplicates) and writes
+`experiments/pilot/CORPUS_AUDIT.md`. The La Longue Marche
+`mateo-canonical` corpus — the recommended one — is clean at a 0.65
+threshold, because its runner's label said "shown above" and so was
+never ambiguous. One page (140-3 p. 4) of the superseded
+`flash-lite-mateo` draft is a partial echo of its predecessor; the
+canonical file transcribes that page correctly.

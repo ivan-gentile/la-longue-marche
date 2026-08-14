@@ -4,12 +4,16 @@
   "success": 693,
   "errors": 3,
   "total_chars": 963721,
-  "total_tokens_in": 2012513,
-  "total_tokens_out": 364134,
-  "estimated_cost": 1.05,
+  "total_tokens_in": 1970105,
+  "total_tokens_out": 366585,
+  "estimated_cost": 4.11,
   "elapsed_seconds": 54542,
   "model": "gemini-3.1-flash-lite-preview",
   "model_key": "flash-lite",
   "thinking_level": "low",
-  "completed": "2026-04-18T12:58:49.197267"
+  "completed": "2026-04-18T12:58:49.197267",
+  "tokens_in": 1970105,
+  "tokens_out": 366585,
+  "tokens_thinking": 2046872,
+  "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py"
 }

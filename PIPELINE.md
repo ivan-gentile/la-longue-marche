@@ -9,16 +9,22 @@ reproduced inline below or linked to the script that implements it.
 The repository is [`github.com/ivan-gentile/la-longue-marche`](https://github.com/ivan-gentile/la-longue-marche).
 All figures below come from scripts you can re-run yourself.
 
-> **Update (July 2026).** The corpus described in §1–§2 has been
+> **Update (August 2026).** The corpus described in §1–§2 has been
 > superseded twice since this document was written: (a) the full corpus
 > was re-transcribed with the `mateo-canonical` prompt on Gemini 3.1
 > Flash-Lite — complete, `tex_output/la_longue_marche_*_flash-lite-mateo.tex` —
-> and (b) a higher-effort Gemini 3.1 Pro + `mateo-canonical` re-run is
-> being filled in as API quota allows (503/696 and 236/280 pages as of
-> July 2026, `tex_output/la_longue_marche_*_mateo-canonical.tex`).
-> Exact page-level coverage of every file:
+> and (b) a higher-effort Gemini 3.1 Pro + `mateo-canonical` re-run,
+> which is now **complete on both volumes** (696/696 and 280/280,
+> `tex_output/la_longue_marche_*_mateo-canonical.tex`) and is the
+> version to work from. Exact page-level coverage of every file:
 > [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md). Passages below
 > marked *historical* describe the original February run.
+>
+> Two further corrections were made in August, both described in §10:
+> a class of silently wrong pages (a page carrying its *previous*
+> page's text) was found and repaired in the Préschémas file, and the
+> cost figures this project had published were understated because
+> thinking tokens were left out of the arithmetic.
 
 ---
 
@@ -277,12 +283,9 @@ ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \
 
 ## 8. Known open work
 
-1. **Full-corpus re-run with `mateo-canonical` prompt**. Done on
-   Flash-Lite (complete draft, April 2026). The Gemini 3.1 Pro re-run
-   is partial — 503/696 (140-3) and 236/280 (140-4) — limited by the
-   free-tier daily quota (250 requests/day on `gemini-3.1-pro`);
-   ~237 pages remain, with Section 49 (140-3 pages 495–696) first in
-   the queue once runs resume.
+1. ~~**Full-corpus re-run with `mateo-canonical` prompt**~~. Done on
+   Flash-Lite (April 2026) and now on Gemini 3.1 Pro as well: 696/696
+   (140-3) and 280/280 (140-4), Section 49 included.
 2. **Geometric / hand-drawn figures**. Roughly 5 pages across `140-3`
    and a few in `140-4` contain pictorial figures (not commutative
    diagrams). The `diagram-tikzcd` prompt either produces a
@@ -295,9 +298,54 @@ ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \
 
 ## 9. One-line summary
 
-Current working draft: **Gemini 3.1 Flash-Lite + `mateo-canonical`
-prompt + sequential previous-page visual context + diagram pages re-run
-with `diagram-tikzcd` (114 in 140-3, 58 in 140-4) + regex notation
-normalization**, complete on both volumes. In progress: the same
-pipeline on **Gemini 3.1 Pro** (higher fidelity, quota-limited), page
-coverage tracked in [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
+Recommended file: **Gemini 3.1 Pro + `mateo-canonical` prompt +
+sequential previous-page visual context + diagram pages re-run with
+`diagram-tikzcd` + regex notation normalization**, complete on both
+volumes. The Flash-Lite build of the same pipeline remains available as
+the cheaper draft. Page coverage of everything is tracked in
+[`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
+
+## 10. Two corrections made in August 2026
+
+### 10.1 Pages that silently carried the previous page's text
+
+Each request attaches the previous page as visual context, so words
+broken across a page break can be resolved. In the page-by-page runners
+the context label was placed *after* the PDF it described, and the model
+sometimes read it as labelling the page that followed — so it
+transcribed the context page and ignored the target one. The result was
+a page recorded as an ordinary success whose text belonged to its
+predecessor: no error was raised, no gap appeared, and a success count
+could not reveal it.
+
+This affected **19 of the 437 pages** of the Préschémas file. All 19
+have been re-transcribed and verified against the scans. Three things
+changed so it cannot recur silently:
+
+- every attachment is now labelled *before* its bytes and names its own
+  PDF page number (`[CONTEXT — PREVIOUS PAGE]` / `[TARGET PAGE]`);
+- the runner compares each page against its predecessor, retries once
+  with a corrective instruction above 0.75 similarity, and if the
+  result still matches, ships the page with a `%% [REVIEW: ...]` line
+  in the tex rather than silently;
+- [`experiments/pilot/audit_corpus.py`](experiments/pilot/audit_corpus.py)
+  scans every corpus for this and two neighbouring silent failure
+  classes (successes with no text, identical text at distant pages) and
+  writes [`experiments/pilot/CORPUS_AUDIT.md`](experiments/pilot/CORPUS_AUDIT.md).
+
+The La Longue Marche `mateo-canonical` corpus is clean of this defect —
+its runner's label said "shown above" and so was never ambiguous.
+
+### 10.2 The cost figures were understated
+
+Gemini reports *thinking* tokens separately from visible output tokens
+but bills them at the output rate, and the runners' arithmetic summed
+only the visible ones. Every cost this project published for a run with
+thinking enabled was therefore several times below the real bill — on
+the Pro corpus, thinking tokens outnumber visible output about 11 to 1,
+so the "$8.78" recorded for volume 140-3 was really $60.88. The token
+counts were always stored, so
+[`experiments/pilot/recompute_costs.py`](experiments/pilot/recompute_costs.py)
+recovers the true figures without re-running anything; they are listed
+in [`experiments/pilot/COSTS.md`](experiments/pilot/COSTS.md), and the
+runners now compute cost correctly at the source.

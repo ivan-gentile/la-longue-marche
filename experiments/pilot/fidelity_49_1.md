@@ -16,7 +16,7 @@ layer, so compare candidates against each other, not to 1.0.
 | Gemini 3.1 Pro + mateo-canonical | 0.654 | 0.611 | 120 | 240 | 50 | 763 |
 | Gemini 3.1 Flash-Lite + mateo-canonical | 0.461 | 0.449 | 270 | 222 | 39 | 763 |
 | shipped corpus (production Flash-Lite + mateo-canonical) | 0.485 | 0.41 | 66 | 448 | 15 | 763 |
-| canonical corpus (production Gemini Pro + mateo-canonical) | 0.65 | 0.606 | 86 | 281 | 23 | 763 |
+| canonical corpus (production Gemini Pro + mateo-canonical) | 0.648 | 0.605 | 85 | 281 | 27 | 763 |
 
 ## Largest omissions — shipped baseline (49.1old, text-first-fewshot)
 

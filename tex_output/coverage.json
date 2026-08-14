@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05",
+  "generated": "2026-08-14",
   "variants": {
     "flash-lite-mateo": {
       "note": "complete corpus, shipped April 2026",
@@ -31,33 +31,57 @@
       }
     },
     "mateo-canonical": {
-      "note": "higher-effort Gemini Pro re-run, in progress (free-tier daily quota)",
+      "note": "higher-effort Gemini Pro re-run (canonical — prefer where it covers a page)",
       "volumes": {
         "140-3": {
           "model": "gemini-3.1-pro-preview",
           "prompt_style": "mateo-canonical",
           "thinking_level": "medium",
-          "run_started": "2026-04-21T08:15:41.943440",
+          "run_started": "2026-08-14T19:37:38.951718",
           "total_pages": 696,
-          "pages_transcribed": 503,
+          "pages_transcribed": 696,
           "pages_from_diagram_overlay": 114,
-          "pages_missing": 193,
-          "missing_ranges": "390, 409, 451, 454-481, 483-504, 507-516, 521, 523, 527-532, 534-535, 537-542, 544-549, 551-552, 554, 558, 564-569, 571-572, 575-600, 602-612, 616-618, 620-621, 623-627, 629, 632, 634-635, 639-642, 645-648, 650-657, 659, 661-663, 665, 668, 670-672, 674-675, 677-679, 681-684, 686-696",
+          "pages_missing": 0,
+          "missing_ranges": "",
           "tex_file": "la_longue_marche_140-3_mateo-canonical.tex"
         },
         "140-4": {
           "model": "gemini-3.1-pro-preview",
           "prompt_style": "mateo-canonical",
           "thinking_level": "medium",
-          "run_started": "2026-04-21T08:14:48.859269",
+          "run_started": "2026-08-14T19:40:18.582902",
           "total_pages": 280,
-          "pages_transcribed": 236,
+          "pages_transcribed": 280,
           "pages_from_diagram_overlay": 58,
-          "pages_missing": 44,
-          "missing_ranges": "144, 221, 225-226, 228-235, 237-240, 242-249, 252, 254, 257-261, 263-264, 266, 268, 270, 272-277, 279-280",
+          "pages_missing": 0,
+          "missing_ranges": "",
           "tex_file": "la_longue_marche_140-4_mateo-canonical.tex"
         }
       }
+    }
+  },
+  "standalone": {
+    "bourbaki-pages": {
+      "label": "Préschémas (Bourbaki Schémas typescript)",
+      "source": "U86u1.pdf + U86u2.pdf (CSG): tex pages 1-210 = U86u1, tex pages 211-437 = U86u2 pages 1-227",
+      "model": "gemini-3.1-flash-lite-preview",
+      "run_started": "2026-08-14T20:09:57.872516",
+      "total_pages": 437,
+      "pages_transcribed": 437,
+      "pages_missing": 0,
+      "missing_ranges": "",
+      "tex_file": "bourbaki_schemes_pages_flash-lite.tex"
+    },
+    "varietes-U46": {
+      "label": "Catégories de variétés (typescript n° 262)",
+      "source": "U46.pdf (CSG)",
+      "model": "gemini-3.1-pro-preview",
+      "run_started": "2026-08-14T20:01:44.968065",
+      "total_pages": 100,
+      "pages_transcribed": 23,
+      "pages_missing": 77,
+      "missing_ranges": "24-100",
+      "tex_file": "varietes_categories_U46.tex"
     }
   }
 }
