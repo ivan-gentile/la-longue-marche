@@ -55,6 +55,10 @@ PRICES = {"in": 2.00, "out": 12.00}
 MAX_OUTPUT_TOKENS = 16000
 DELAY = 3.0
 MAX_BACKOFF = 300
+# Per-request timeout (ms). The SDK waits indefinitely by default, and a
+# single stalled call otherwise hangs the whole run with no output — a page
+# of this document takes ~25 s, so 300 s is far beyond any healthy call.
+REQUEST_TIMEOUT_MS = 300_000
 # Consecutive quota errors after which the run aborts loudly instead of
 # grinding through every remaining page at MAX_BACKOFF (the historical
 # silent-quota failure mode documented in experiments/bourbaki/GAPS.md).
@@ -187,6 +191,7 @@ def request_page(client, types, doc, page_idx: int, corrective: bool = False):
             temperature=1.0,
             max_output_tokens=MAX_OUTPUT_TOKENS,
             thinking_config=types.ThinkingConfig(thinking_level=THINKING_LEVEL),
+            http_options=types.HttpOptions(timeout=REQUEST_TIMEOUT_MS),
         ),
     )
     candidate = response.candidates[0]

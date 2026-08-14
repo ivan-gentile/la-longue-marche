@@ -3,18 +3,14 @@
 Status: DRAFT, not sent. Reply to Mateo's email of 2026-08-09
 ("Re: Observations on Transcription Gaps"). Cc: Olivia Caramello.
 
-This draft absorbs the never-sent 2026-07-05 delta (root-cause of the
-two anomalies, issue form, coverage manifests) — Mateo has not seen any
-of that content.
+This draft absorbs the never-sent 2026-07-05 delta (root cause of the
+two anomalies, issue form, coverage manifests) — Mateo has seen none of
+that content.
 
-Pre-send checklist (every claim must be live before sending):
-- [ ] Resume run finished: 140-3 → 696/696, 140-4 → 280/280
-      (36 pages: 140-3 failed 571/611/652; 140-4 six failed + 27 never run)
-- [ ] `finalize_mateo_canonical.py` + `make_coverage.py` re-run,
-      committed AND pushed (Mateo reads GitHub, not our working tree)
-- [ ] U46 Varieties run complete; tex filename below matches reality
-- [ ] Volunteer paragraph: pick variant A or B — Ivan's decision
-- [ ] Optional: split Bourbaki tex into two files matching U86u1/U86u2
+Open decision for Ivan: the volunteer paragraph has two variants (A =
+apply to the CSG, B = stay informal). Pick one and delete the other
+before sending. Everything else below is live on GitHub as of commit
+`09513c7` and the Variétés commit that follows it.
 
 ---
 
@@ -22,83 +18,114 @@ Subject: Re: Observations on Transcription Gaps
 
 Dear Mateo,
 
-Thank you for the detailed reply — no apology at all needed for the
-timing. It is very good news that Section 49 is moving; a first draft
-from your hand is exactly what the research side of this work has been
-waiting for, and I am happy to treat the points we exchanged as a
-working framework rather than a fixed organisation.
+Thank you for the detailed reply — no apology needed for the timing. It
+is very good news that Section 49 is advancing; a first draft from your
+hand is exactly what the research side of this work has been waiting
+for, and I am happy to treat the points we exchanged as a working
+framework rather than a fixed organisation of the project.
 
 [VARIANT A — formalise] On the framework: I would be glad to formalise
 this as a CSG volunteer, and I will fill in the form on the
-collaborations page this week, with a short description of the ongoing
-project. To keep things clean I would join as an individual — my
-involvement here is personal and distinct from my employer. And
-understood, of course, on the other point: nothing public that implies
-CSG involvement or representation without discussing it with you first.
+collaborations page this week with a description of the ongoing
+project. I would join in a personal capacity, distinct from my
+employer. And understood on the other point: nothing that implies CSG
+involvement or representation will be published without discussing it
+with you first.
 
 [VARIANT B — stay informal] On the framework: for the moment I would
-prefer to continue in the informal setting we have used so far, exactly
-under the understanding you describe — anything that could imply CSG
+prefer to continue in the informal setting we have used so far, under
+exactly the understanding you describe — anything that could imply CSG
 involvement or representation will be discussed and confirmed with you
-first. I remain open to the volunteer framework as the work matures.
+first. I remain glad to revisit the volunteer framework as the work
+develops.
 
-While waiting for your draft I closed the pending items on my side, so
-the material you are working from is current:
+Since your message I have closed the open items on my side, so that
+what you are working from is current and its limitations are stated.
 
-- The higher-fidelity "canonical" transcription (Gemini Pro) is now
-  complete for both volumes — 696/696 pages of 140-3 and 280/280 of
-  140-4 — including all of Section 49. Since you are drafting Section
-  49 right now, `tex_output/la_longue_marche_140-3_mateo-canonical.tex`
-  is the file I would draft from: on the corrected 49.1 sample you
-  shared, it stays noticeably closer to the original wording than the
-  fast-model draft (far fewer silent rewordings; measurements in
-  `evaluation/section-49/`). Every file in `tex_output/` also carries a
-  page-coverage manifest (`tex_output/COVERAGE.md`), so a gap can never
-  again be something you have to discover by scrolling.
+**The canonical transcription is now complete.** The higher-fidelity
+Gemini Pro run covers both volumes in full — 696/696 pages of 140-3 and
+280/280 of 140-4, Section 49 included. Since you are drafting Section
+49 now, `tex_output/la_longue_marche_140-3_mateo-canonical.tex` is the
+file I would work from: measured against your corrected 49.1, it stays
+markedly closer to the original wording than the fast-model draft
+(word-level agreement 0.61 against 0.41, with far fewer silent
+rewordings). Every deliverable also carries a page-level coverage
+manifest, `tex_output/COVERAGE.md`, so a gap can never again be
+something you discover by scrolling into it.
 
-- Both anomalies you reported earlier are root-caused. The 140-3 pages
-  105–175 omission was a delivery fault of mine: a run died on an API
-  daily quota and the later backfill was never published — fixed, and
-  the manifest now makes that class of accident visible immediately.
-  The Préschémas gaps were a structural defect of the "whole document
-  at once" mode, which silently skipped about 70 of the 437 pages and
-  numbered the rest by the typescript's own chapter-restarting page
-  numbers. I re-ran it page by page:
-  `tex_output/bourbaki_schemes_pages_flash-lite.tex`, all 437 pages,
-  each under a marker the pipeline writes from the PDF position. I also
-  verified that the source I used is exactly the two files you linked —
-  pages 1–210 correspond to U86u1 and 211–437 to U86u2 (the scans are
-  identical) — and I can split the file in two to match them if that is
-  more convenient for your review.
+**The two anomalies you reported earlier are both resolved.** The
+missing 140-3 pages 105–175 were a delivery failure of mine: a run died
+on an API quota limit and the backfill that repaired it was never
+published. The Préschémas gaps had a different cause — the
+"whole document at once" mode silently skipped about 70 of the 437
+pages and numbered the rest by the typescript's own chapter-restarting
+page numbers, so the file could not be navigated against the scans.
+That document has been re-transcribed page by page, with every marker
+written by the pipeline from the PDF position:
+`tex_output/bourbaki_schemes_pages_flash-lite.tex`, all 437 pages. I
+also confirmed it was made from exactly the scans you linked — pages
+1–210 correspond to U86u1 and 211–437 to U86u2 — and I can split it
+into two files matching them if that helps your review.
 
-- The structured format you mention already exists in the repository as
-  the "Transcription anomaly" issue form (error type, page, line,
-  manuscript reading vs transcription reading, severity):
-  https://github.com/ivan-gentile/la-longue-marche/issues/new/choose —
-  plus an equivalent CSV template in `evaluation/section-49/` if you
-  prefer working offline. Both are ready whenever your Section 49 draft
-  is, and whatever you file will feed directly into the evaluation that
-  drives the next round of pipeline changes.
+**A defect I found while checking that file, which I want to report to
+you directly.** Each page is transcribed with the previous page
+attached as visual context, so words broken across a page break can be
+resolved. In some cases the model transcribed that context page instead
+of the intended one. The result is a page that looks perfectly normal —
+no error, no gap, correct page marker — but carries the *previous*
+page's text. In the Préschémas file this affected 19 of 437 pages;
+for instance the page at PDF position 338 is an English errata sheet
+("- II-xxi -", *P. II-104 ter, the cor.2 is incorrect*), but the file
+contained a copy of page 337 instead. All 19 have been re-transcribed
+and checked against the scans, and the file on GitHub is corrected.
 
-Varieties is a very good idea — a nice intermediate case: typescript
-body with the mathematical script letters written in by hand, harder
-than Préschémas, far easier than La Longue Marche. I ran it through the
-same page-by-page pipeline with the coverage census: the preliminary
-draft of all 100 pages is in the repository as
-`tex_output/varietes_categories_U46.tex`, with its coverage declared in
-the manifest. As always, it is a working draft and every line needs
-your verification.
+I mention it in this much detail because it is precisely the class of
+error your review is meant to catch and mine had not been catching: it
+is invisible to any success count. Three things now guard against it —
+the page attachments are labelled unambiguously, the pipeline compares
+each page against its predecessor and retries when they are suspiciously
+alike, and a new audit
+(`experiments/pilot/audit_corpus.py` → `CORPUS_AUDIT.md`) scans every
+corpus for this and two related silent failures before anything is
+shared. All current files pass. La Longue Marche was not affected, and
+I verified that specifically.
 
-One small practical point for when your draft arrives: I place the §49
-heading on PDF page 495 of 140-3 and read the section through page 696,
-while you wrote pp. 494–695 — almost certainly just a
-counting-convention difference, but worth pinning down together so that
-page references in anomaly reports line up exactly.
+In the same spirit I corrected the project's cost figures, which were
+understated several-fold because the model's internal "thinking" tokens
+are billed but were left out of my arithmetic. The corrected figures
+are in `experiments/pilot/COSTS.md`. It does not change anything for
+you, but the published record should be accurate.
+
+**Varieties.** Thank you for this suggestion — it is a good
+intermediate case: typewritten body with the mathematical script
+letters added by hand, harder than Préschémas and far easier than La
+Longue Marche. It has been transcribed with the same page-by-page,
+census-checked pipeline and is in the repository as
+`tex_output/varietes_categories_U46.tex`, 100 pages, with its coverage
+declared in the manifest. As always it is a working draft and every
+line needs your verification.
+
+**Filing anomalies.** The structured format you describe already exists
+in the repository as the "Transcription anomaly" issue form — error
+type, file, page, line, what the manuscript reads against what the
+transcription reads, severity:
+https://github.com/ivan-gentile/la-longue-marche/issues/new/choose —
+with an equivalent CSV template in `evaluation/section-49/` if you
+prefer to work offline. Both are ready whenever your Section 49 draft
+reaches that stage, and whatever you file feeds directly into the
+evaluation that drives the next round of changes.
+
+One small practical point for when the draft arrives: I place the §49
+heading at PDF page 495 of 140-3 and read the section through page 696,
+while you cite pp. 494–695 — the same 202-page span, shifted by one, so
+almost certainly a difference in counting convention. Worth pinning
+down between us so that page references in anomaly reports line up
+exactly.
 
 Thank you again for the care in your reply. The distinction you draw
-between facilitating access and the research question proper is one I
-will keep as the organising principle. Looking forward to the Section
-49 draft.
+between facilitating access to the material and the research question
+proper is one I will keep as the organising principle for this work.
+I look forward to the Section 49 draft.
 
 Best,
 Ivan

@@ -67,11 +67,30 @@ PROMPT_STYLE = DEFAULT_PROMPT_STYLE  # mutated by --prompt-style
 MAX_OUTPUT_TOKENS = 16000
 DELAY = 5.0  # seconds between calls
 MAX_BACKOFF = 300  # max backoff on 429 (5 min)
+# Per-request timeout (ms). The SDK waits indefinitely by default, and one
+# stalled call otherwise hangs a whole overnight run with no output.
+REQUEST_TIMEOUT_MS = 300_000
+# Consecutive quota errors after which the run aborts loudly instead of
+# grinding through every remaining page at MAX_BACKOFF. This is the April
+# 2026 failure mode: a run died on quota and nobody noticed.
+MAX_CONSECUTIVE_QUOTA_ERRORS = 5
 
 VOLUMES = {
     "140-3": {"pdf": "140-3.pdf", "pages": 696},
     "140-4": {"pdf": "140-4.pdf", "pages": 280},
 }
+
+
+def save_results(results: dict, results_file) -> None:
+    """Atomically replace transcriptions.json.
+
+    A plain truncating write can be interrupted mid-flight, leaving the only
+    copy of every paid page unparseable.
+    """
+    tmp = Path(results_file).with_suffix(".json.tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, results_file)
 
 
 def extract_pdf_page(doc, page_idx: int) -> bytes:
@@ -115,16 +134,31 @@ def transcribe_page(client, doc, page_idx: int, prev_page_idx: int = None,
                 temperature=1.0,
                 max_output_tokens=MAX_OUTPUT_TOKENS,
                 thinking_config=types.ThinkingConfig(thinking_level=thinking_level),
+                http_options=types.HttpOptions(timeout=REQUEST_TIMEOUT_MS),
             )
         )
 
         text = ""
+        finish = ""
         if response.candidates:
+            finish = str(getattr(response.candidates[0], "finish_reason", ""))
             for part in response.candidates[0].content.parts:
                 if hasattr(part, "thought") and part.thought:
                     continue
                 if part.text:
                     text += part.text
+
+        # An empty or truncated candidate must not be stored as a success: the
+        # resume logic would skip it forever and the tex would carry a silently
+        # blank page under a valid marker.
+        if not text.strip():
+            return {"status": "error",
+                    "error": f"empty output (finish_reason={finish})",
+                    "transcription": ""}
+        if finish and "STOP" not in finish.upper():
+            return {"status": "error",
+                    "error": f"truncated output (finish_reason={finish})",
+                    "transcription": ""}
 
         usage = {}
         if hasattr(response, "usage_metadata") and response.usage_metadata:
@@ -194,6 +228,8 @@ def run_volume(client, volume_key: str, resume: bool = False,
     errors = sum(1 for v in results.values() if v.get("status") == "error")
     skipped = 0
     backoff = DELAY
+    consecutive_quota_errors = 0
+    aborted = False
     start_time = time.time()
 
     for page_idx in range(total_pages):
@@ -231,13 +267,25 @@ def run_volume(client, volume_key: str, resume: bool = False,
                 print(f"  Still rate limited. Saving and continuing...")
                 results[pkey] = result
                 errors += 1
-                with open(results_file, "w", encoding="utf-8") as f:
-                    json.dump(results, f, ensure_ascii=False, indent=2)
+                consecutive_quota_errors += 1
+                save_results(results, results_file)
+                if consecutive_quota_errors >= MAX_CONSECUTIVE_QUOTA_ERRORS:
+                    print()
+                    print("!" * 70)
+                    print(f"QUOTA EXHAUSTED — {consecutive_quota_errors} consecutive "
+                          f"quota errors, aborting at page {pkey}.")
+                    print("Re-run with --resume later to continue where this stopped.")
+                    print("!" * 70)
+                    aborted = True
+                    break
                 time.sleep(backoff)
                 continue
         else:
             # Reset backoff on success
             backoff = DELAY
+
+        if result["status"] == "success":
+            consecutive_quota_errors = 0
 
         results[pkey] = result
 
@@ -253,8 +301,7 @@ def run_volume(client, volume_key: str, resume: bool = False,
             print(f" ERROR: {result.get('error', '?')[:80]}")
 
         # Save after each page (resume-safe)
-        with open(results_file, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2)
+        save_results(results, results_file)
 
         time.sleep(backoff)
 
@@ -307,12 +354,17 @@ def run_volume(client, volume_key: str, resume: bool = False,
         "model": model_id,
         "model_key": model_key,
         "thinking_level": thinking_level,
+        "aborted_on_quota": aborted,
         "completed": datetime.now().isoformat(),
     }
     with open(out_dir / "summary.json", "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
-    return results
+    if success < total_pages:
+        print(f"  INCOMPLETE: {total_pages - success} page(s) still untranscribed — "
+              f"re-run with --resume to fill them in.")
+
+    return results, aborted
 
 
 def main():
@@ -379,17 +431,21 @@ def main():
 
     client = genai.Client(api_key=api_key)
 
+    any_aborted = False
     for vol in volumes:
         print(f"\n{'='*70}")
         print(f"Starting volume: {vol}")
         print(f"{'='*70}")
-        run_volume(client, vol, resume=args.resume,
-                   model_key=model_key, thinking_level=thinking_level,
-                   output_dir=output_dir)
+        _, aborted = run_volume(client, vol, resume=args.resume,
+                                model_key=model_key, thinking_level=thinking_level,
+                                output_dir=output_dir)
+        any_aborted = any_aborted or aborted
 
-    print(f"\nAll volumes complete.")
-    print(f"Results in: {output_dir}")
-    print(f"\nNext: python3 judge_v2.py  (to quality-check transcriptions)")
+    print(f"\nResults in: {output_dir}")
+    print(f"\nNext: python3 audit_corpus.py  (silent-defect gate), "
+          f"then judge_v2.py")
+    if any_aborted:
+        sys.exit(2)
 
 
 if __name__ == "__main__":
