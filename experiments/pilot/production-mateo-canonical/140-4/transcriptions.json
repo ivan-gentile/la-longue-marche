@@ -1615,9 +1615,13 @@
     }
   },
   "144": {
-    "status": "error",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'Deadline expired before operation could complete.', 'status': 'UNAVAILABLE'}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "la donnée de la « tour de Fermat »\néquivaut à la donnée, pour tout $\\tilde{X}/S$\ncomme dessus, d'un torseur\\footnote{pour une autre [unclear: formulation] cf (320) p. 724}\n$$\nF_\\infty(\\tilde{X}/S) \\text{ torseur sur } S \\text{ sous } M_1(\\tilde{X}/S) , \\leqno{(301)}\n$$\ncompatible aux isomorphismes et changements de base.\nLe théorème précédent dit essentiel-\nment qu'un tel $F_\\infty(\\tilde{X}/S)$ existe,\net est unique à isomorphisme unique près,\nen exigeant de plus que l'homomorphisme\nnaturel\n$$\n\\Pi_0^\\wedge \\longrightarrow M^\\wedge\n$$\nassocié à une telle donnée $F_\\infty$ soit\nl'homomorphisme canonique...\n\nSoit d'autre part $X$ une courbe\nelliptique relative au dessus d'une\nbase $S$ de caractéristique $0$, et soit $S' \\subset X$ le\nsous-schéma fermé, étale de degré $3$ sur $S$,\ncorrespondant aux points d'ordre $2$. Considérons\nla jacobienne généralisée $J$ de $X$\ndéduite de cette multisection, soit\n$J^0$ sa partie de degré $0$, on a donc",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 318,
+      "thinking_tokens": 4267
+    }
   },
   "145": {
     "status": "success",
@@ -2187,54 +2191,94 @@
     }
   },
   "221": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 15h7m14.901560829s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54434s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "40) \\sout{approximation} \\underline{Hom de Lie} $75^{\\text{bis}}(\\pi_0, \\mathfrak{S}_0, \\underline{M})$ induite par une approximation de $\\mathfrak{S}_0$.\n\nPartons d'un système discret $(\\mathfrak{S}_0, \\pi_0)$ d'un $L\\Gamma$-groupe $\\mathfrak{S}_0$, et d'un sous-groupe $\\pi_0$ de $\\mathfrak{S}_0$\\footnote{On suppose que l'hom. d'inclusion $\\pi_0 \\subset \\mathfrak{S}_0$ définit pour la $L$-structure sur $\\mathfrak{S}_0$ une $L$-structure de $\\pi_0$ (i.e. l'hom. $\\pi_0 \\hookrightarrow \\mathfrak{S}_0$ soit strict...).}. Supposons donné en outre un groupe $\\underline{\\mathfrak{S}}_{\\mathbf{Q}}$ sur $\\mathbf{Q}$, et un hom.\n$$ \\varphi: \\mathfrak{S}_0 \\longrightarrow \\underline{\\mathfrak{S}}(\\mathbf{Q}) \\leqno{(65)} $$\nayant la propriété que pour tout $i$, l'hom.\n$$ k_i: T_0 \\longrightarrow \\mathfrak{S}_0 \\leqno{(66)} $$\nqui fait partie de la $L\\Gamma$-structure l'hom. composé\n$$ T_0 \\longrightarrow \\mathfrak{S}_0 \\longrightarrow \\underline{\\mathfrak{S}}(\\mathbf{Q}) $$\nsoit quasi-unipotent. On supposera de plus que $\\underline{\\mathfrak{S}}_{\\mathbf{Q}}$ soit engendré par l'image des sous-groupes $\\mathbf{Q}$-rationnels définis par ces éléments de $\\mathfrak{S}_0$ via (65).\n\nOn considère $\\underline{\\mathfrak{S}}_{\\mathbf{Q}}$ comme muni de l'homomorphisme (65) et de la famille des homomorphismes extérieurs\n$$ k_i: T_0 \\longrightarrow \\underline{\\mathfrak{S}}_{\\mathbf{Q}} \\leqno{(67)} $$",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 459,
+      "thinking_tokens": 3426
+    }
   },
   "225": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 15h6m13.130956115s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54373s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "1^\\circ) Action différentiable du groupe de Teichmüller spéciale. \\marginpar{Cat. différentiable}\n\nSoit $X$ une surface connexe (orientable, compacte dans le cas qui nous intéresse), $I$ une partie discrète de $X$. Pour tout $i \\in I$, soit $\\mathbb{S}_i$ l'espace (homéomorphe à une circonférence) des demi-droites tangentes dans l'espace tangent, et soit $\\tilde{\\mathbb{S}}_i$ un revêtement universel de $\\mathbb{S}_i$. \n\nSoit $g$ un automorphisme différentiable de $(X, I)$, il induit un automorphisme de\n$$\n\\mathbb{S} = \\mathbb{S}_I \\defeq \\coprod_{i \\in I} \\mathbb{S}_i , \\leqno{(1)}\n$$\nnoté $u_g$. Considérons l'ensemble des relèvements $\\tilde{u}_g$ de $u_g$ en un automorphisme de\n$$\n\\tilde{\\mathbb{S}} = \\coprod_{i \\in I} \\tilde{\\mathbb{S}}_i . \\leqno{(2)}\n$$\n\nNotons, si $T_0$ est le module d'orientation de $X$, que $T_0$ opère dans chaque $\\tilde{\\mathbb{S}}_i$,",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 309,
+      "thinking_tokens": 6424
+    }
   },
   "226": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 15h4m11.683333189s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54251s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "de sorte que $T_0$ opère en fait sur $\\widetilde{S}$ et\n$$\n\\widetilde{S}/T_0 \\simeq S \\leqno{(3)}\n$$\nCeci montre que (les notations étant comme ci-dessus) le groupe $T_0^I$ opère à g. (p. ex.) sur l'ens. des relèvements $\\tilde{u}$. qui devient ainsi un torseur sous $T_0^I$.\n\nSoit $G$ un groupe topologique, qui opère différentiablement sur $(X,S)$, d'où une action continue sur $S$. On pose\n$$\n\\widetilde{G} = \\left\\{ (u, \\tilde{u}) \\, \\middle| \\, \\begin{array}{l} u \\in G, \\, \\tilde{u} \\text{ un relèvement} \\\\ \\text{continu de } u_S \\text{ à } \\widetilde{S} \\end{array} \\right\\} \\leqno{(4)}\n$$\nOn munit $\\widetilde{G}$ d'une topologie (munie de la top. de la conv. unif. sur $\\widetilde{S}$) canonique, qui soit telle que $\\widetilde{G} \\to G$ fasse de $\\widetilde{G}$ un revêtement de $G$, de groupe $T_0^I$\\footnote{NB $G$ opère sur $T_0^I$ via le caractère d'orientation} :\n$$\n1 \\to T_0^I \\to \\widetilde{G} \\to G \\to 1 \\leqno{(6)}\n$$\n\n\\underline{Proposition} Supposons que $X$ soit compact,",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 369,
+      "thinking_tokens": 7090
+    }
   },
   "228": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 15h10.123121375s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54010s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "2º) Le groupe $\\operatorname{GL}(2, \\mathbf{R})^{\\pm 1} \\sim$ \\marginpar{bien pour $\\operatorname{GL}(2, \\mathbf{Z})$}\n\n$$\n\\operatorname{GL}(2, \\mathbf{R})^{\\pm 1} = \\{ u \\in \\operatorname{GL}(2, \\mathbf{R}) \\mid \\det u \\in \\{ \\pm 1 \\} \\} \\leqno{(8)}\n$$\n\nCe groupe opère différentiablement sur $\\mathbf{C} \\simeq \\mathbf{R}^2$ en laissant fixe l'origine, on peut lui appliquer la construction des $\\mathfrak{S}$. Ici $\\mathfrak{S}_0$ s'identifie au cercle unité\n\n$$\n\\begin{tikzcd}\n\\mathcal{U} \\defeq \\{ z \\in \\mathbf{C} \\mid |z| = 1 \\} \\ar[r] & \\mathfrak{S}_0 \\\\\nz \\ar[r, maps to] & \\mathbf{R}^+ z\n\\end{tikzcd} \\leqno{(9)}\n$$\n\net pour $u \\in \\operatorname{GL}(2, \\mathbf{R})^{\\pm 1}$, son action sur $\\mathfrak{S}_0$ s'identifie à l'action sur $\\mathcal{U}$ donnée par\n\n$$\n\\begin{tikzcd}\nz \\ar[r, maps to] & \\frac{u(z)}{|u(z)|} \\\\\n\\in \\mathcal{U} & \\in \\mathcal{U}\n\\end{tikzcd} \\leqno{(10)}\n$$\n\nUn relèvement de cette action sur $\\tilde{\\mathfrak{S}}_0$ revient à : un relèvement de [unclear: $u(z_0=1)$] en un élément de $\\tilde{\\mathfrak{S}}_0$.\nNous choisissons un point-base $\\tilde{e}_0$ de $\\tilde{\\mathfrak{S}}_0$, correspondant à $\\to$",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 436,
+      "thinking_tokens": 11350
+    }
   },
   "229": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 14h52m28.515214211s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53548s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "point $1$ de $\\mathcal{U}$, de sorte que le revêtement\nuniversel de $\\mathbb{S}_0$ pointé au dessus de\n$e_0$ s'identifie au revêtement exponentiel\n$$\n\\begin{tikzcd}[row sep=tiny]\n\\mathbf{R} \\arrow[r] & \\mathcal{U} & {(\\isom \\mathbb{S}_0)} \\\\\nt \\arrow[r, maps to] & \\exp 2 i \\pi t & {(\\mapsto \\mathbf{R}^+ \\exp 2 i \\pi t)}\n\\end{tikzcd} \\leqno{(11)}\n$$\nAinsi, un relèvement de $u_{\\mathbb{S}_0}$ revient au\nchoix d'un $t \\in \\mathbf{R}$ tel que\n$$\n\\exp 2 i \\pi t = \\frac{u(1)}{|u(1)|} \\leqno{(12)}\n$$\ni.e. au choix d'un argument $t$ de\n$u(1)$.\n\nOn applique la construction de\n$\\widetilde{G}$ du 10) au cas $G = \\operatorname{GL}(2, \\mathbf{R})^{\\pm 1}$,\non trouve une structure d'extension\n$$\n1 \\longrightarrow \\mathbf{Z} \\longrightarrow \\operatorname{GL}(2, \\mathbf{R})^{\\pm 1 \\sim} \\longrightarrow \\operatorname{GL}(2, \\mathbf{R})^{\\pm 1} \\longrightarrow 1 \\leqno{(13)}\n$$\nqui induit au dessus de la composante\nneutre $\\SL(2, \\mathbf{R})$ de $\\operatorname{GL}(2, \\mathbf{R})^{\\pm 1}$ une\nstructure d'extension\n$$\n1 \\longrightarrow \\mathbf{Z} \\longrightarrow \\SL(2, \\mathbf{R})^\\sim \\longrightarrow \\SL(2, \\mathbf{R}) \\longrightarrow 1 \\leqno{(14)}\n$$\n\n\\underline{Proposition}. Le groupe $\\SL(2, \\mathbf{R})^\\sim$ est connexe,\net \\underline{est} [unclear: même] homéomorphe \\underline{à} : $\\mathbf{R}^3$.",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 495,
+      "thinking_tokens": 7131
+    }
   },
   "230": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 14h42m26.745978223s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52946s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "\\underline{Dém.} Comme l'inclusion\n$$\n\\mathcal{U} \\hookrightarrow \\SL(2, \\mathbf{R}) \\leqno{(15)}\n$$\nest une équivalence d'homotopie,\nqui s'identifie topologiquement à l'inclusion\n$\\mathcal{U} \\longrightarrow \\mathcal{U} \\times \\mathbf{R}^2$, ce qui prouve que\nl'image inverse $\\widetilde{\\mathcal{U}}$ de $\\mathcal{U}$ dans $\\SL(2, \\mathbf{R})^\\sim$ s'identifie au\nrev. universel $\\mathbf{R}$ de $\\mathcal{U}$ (pointant au-dessus\nde $1$ par $0$ \\dots) Or si\n$u \\in \\mathcal{U}$, le choix d'un $\\tilde{u}$ au dessus\nde $u$, i.e.\\ d'un relèvement de $\\frac{u(1)}{|u(1)|}$\ndans $\\mathbf{R}$ par la formule (12), s'identifie\n(puisque $\\frac{u(1)}{|u(1)|} = u(1) = u$) -- au choix\nd'un $t \\in \\mathbf{R}$ tel que $\\exp 2i\\pi t = u$,\nO.K.\n\n\\underline{Cor. 1} [unclear: La donnée] dans $\\GL(2, \\mathbf{R})^{\\pm 1 \\sim}$ d'un s.-g.\\ [unclear: discret] $\\simeq \\mathbf{Z}$ (de générateur $\\omega$ tel qu'on ait $\\omega^2 = \\omega'_0$, où $\\omega'_0$ est le gén.\\ de $\\Ker(\\GL(2, \\mathbf{R})^{\\pm 1 \\sim} \\to \\GL(2, \\mathbf{R})^{\\pm 1})$, avec $\\omega_0 \\in \\SL(2, \\mathbf{R})^\\sim$, $\\omega_0 = \\omega'_0$) \\dots\n\n\\underline{Cor. 2} L'action d'un $g \\in \\GL(2, \\mathbf{R})^{\\pm 1 \\sim}$ sur $\\SL(2, \\mathbf{R})^\\sim$ (ou sur le centre $\\omega_0^\\mathbf{Z}$ de $\\SL(2, \\mathbf{R})^\\sim$) envoie $\\omega_0$ en $\\omega_0^{-1}$ (resp.\\ $\\omega'_0 \\mapsto \\omega_0^{\\prime -1}$) \\dots",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 553,
+      "thinking_tokens": 13501
+    }
   },
   "231": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 14h32m24.946696904s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52344s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "3) Le groupe $\\SL(2,\\mathbf{Z})^\\sim$.\n\nSoit $\\SL(2,\\mathbf{Z})^\\sim$ l'image inverse de $\\SL(2,\\mathbf{Z})$ dans $\\SL(2,\\mathbf{R})^\\sim$, de sorte qu'on a une structure d'extension\n$$\n1 \\longrightarrow \\underset{n \\mapsto \\omega_0^n}{\\mathbf{Z}} \\longrightarrow \\SL(2,\\mathbf{Z})^\\sim \\longrightarrow \\SL(2,\\mathbf{Z}) \\longrightarrow 1 \\leqno{(16)}\n$$\nJe voudrais décrire $\\SL(2,\\mathbf{Z})^\\sim$ par générateurs et relations. Pour ceci, je note ceci :\n\n\\underline{Proposition} L'image inverse dans $\\SL(2,\\mathbf{Z})^\\sim$ des sous-groupes $L_\\rho \\simeq \\mathbf{Z}/6\\mathbf{Z}$ et $L_\\sigma \\simeq \\mathbf{Z}/4\\mathbf{Z}$ engendrés par $\\rho$ et $\\sigma$ sont isomorphes à $\\mathbf{Z}$.\n\nCeci résulte du\n\n\\underline{Corollaire} (à la proposition p. 752) : Pour tout sous-groupe fini $z \\subset \\SL(2,\\mathbf{R})$, l'image inverse de $z$ dans $\\SL(2,\\mathbf{R})^\\sim$ est isomorphe à $\\mathbf{Z}$.\n\nEn effet, par une \"conjugaison\" on peut supposer que $z \\subset \\mathcal{U}$, i.e.\\ $z = \\mu_n(\\mathbf{C})$, mais alors $\\tilde{z}$ s'identifie : à l'ensemble des $t \\in \\mathbf{R}$ avec $(\\exp 2i\\pi t)^n = 1$ i.e.\\ $\\exp 2i\\pi(nt) = 1$ i.e.",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 422,
+      "thinking_tokens": 8987
+    }
   },
   "232": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 14h22m23.034129906s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51743s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "$$\nt \\in \\frac{1}{n} \\mathbf{Z} ,\n$$\nle groupe de ces $t$ est $\\simeq \\mathbf{Z}$, cqfd.\n\nCorollaire\\footnote{pour une démonstration plus directe, cf. fin p. 209 plus bas...} Il existe $\\tilde{\\rho} \\in \\SL(2, \\mathbf{Z})^\\sim$ et $\\tilde{\\sigma} \\in \\SL(2, \\mathbf{Z})^\\sim$ au-dessus de $\\rho$ et $\\sigma$ respectivement, tels qu'on ait\n$$\n\\tilde{\\rho}^3 = \\tilde{\\sigma}^2 \\leqno{(17)}\n$$\nL'ensemble de ces systèmes $(\\tilde{\\rho}, \\tilde{\\sigma})$ est un torseur sous $\\mathbf{Z}$, par l'opération\n$$\n(\\tilde{\\rho}, \\tilde{\\sigma}) \\mapsto (\\tilde{\\rho} \\omega_0^{2n}, \\tilde{\\sigma} \\omega_0^{3n}) , \\leqno{(18)}\n$$\noù $\\omega_0$ est le générateur canonique de $\\SL(2, \\mathbf{Z})^\\sim \\to \\SL(2, \\mathbf{Z})$.\n\nOn peut dire\\footnote{Il sera mieux de dire : le centre $Z^\\sim$ de $\\SL(2, \\mathbf{Z})^\\sim$ (image inverse du centre $\\{\\pm 1\\}$ de $\\SL(2, \\mathbf{Z})$) a un unique générateur $\\omega_0$ tel que $\\omega_0^2 = z_0^\\sim$ (générateur canon. de $\\Ker(\\SL(2, \\mathbf{Z})^\\sim \\to \\SL(2, \\mathbf{Z}))$).} aussi que l'image inverse du centre $\\{\\pm 1\\}$ de $\\SL(2, \\mathbf{Z})$ a un unique générateur $\\omega_0$ satisfaisant\n$$\n\\omega_0^2 = z_0^\\sim \\quad (\\text{générateur can. de } \\SL(2, \\mathbf{Z})^\\sim \\to \\SL(2, \\mathbf{Z})) \\leqno{(19)}\n$$\net ceci étant, il est possible de relever $\\rho$, $\\sigma$ en $\\tilde{\\rho}$, $\\tilde{\\sigma}$ satisfaisant\n\\marginpar{Faire la vérification}\n$$\n\\tilde{\\rho}^3 = \\omega_0^{-1} , \\quad \\tilde{\\sigma}^2 = \\omega_0 \\leqno{(20)}\n$$\nEt cette fois-ci, $\\tilde{\\rho}$ et $\\tilde{\\sigma}$ sont uniquement déterm-",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 586,
+      "thinking_tokens": 7380
+    }
   },
   "233": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 14h12m21.158489985s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51141s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "minés. Ceci résulte aussitôt de la prop. précédente.\n\n\\marginpar{NB $\\tau = \\tau_{\\infty} = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ \\\\ i.e.\\ $\\tau(x+iy) = -x+iy$ \\\\ (symétrie par rapport à l'axe des $y$).} Considérons l'image inverse de $\\{1, \\tau\\} \\subset \\GL(2,\\mathbf{Z})$ dans $\\widetilde{\\GL}(2,\\mathbf{Z})$, extension de $\\{1, \\tau\\} \\simeq \\mathbf{Z}/2\\mathbf{Z}$ par $\\mathbf{Z}$ -- je dis que cette extension est scindée. En effet, l'action de $\\tau$ sur $S_0$ se relève en l'action de $\\tilde{\\tau}$ d'ordre 2 sur $\\tilde{S}_0 \\simeq \\mathbf{R}$, qui est donnée par\n$$ \n\\tilde{\\tau}t = \\frac{1}{2} - t \\leqno (21) \n$$\ncar on a pour $z \\in \\mathcal{H}$, $z = \\exp 2i\\pi t$\n$$ \n\\tau z = - \\bar{z} = - \\overline{\\exp 2i\\pi t} = - \\exp(-2i\\pi \\bar{t}) = \\exp(\\pi i - 2i\\pi \\bar{t}) \\leqno (22) \n$$\n$$ \n= \\exp 2i\\pi \\underbrace{\\left(\\frac{1}{2} - t\\right)}_{\\tilde{\\tau}(t)} \n$$\n\nIl est peut-être plus commode de travailler avec $\\tau' = \\tau_0' = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$, qui échange $e_0=1$ et $e_1=i$, i.e.\\ la symétrie par rapport à la diagonale principale. Cet automorphisme stabilise $\\mathcal{H}$, et fixe le point $\\exp \\frac{i\\pi}{4} = \\frac{\\sqrt{2}}{2}(1+i)$, il se relève en\n$$ \n\\tilde{\\tau}'(t) = \\frac{1}{4} - t \\leqno (23) \n$$\nNotons que l'action de $\\tilde{\\tau}'$ comme celle",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 537,
+      "thinking_tokens": 7942
+    }
   },
   "234": {
-    "status": "error",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\\nPlease retry in 14h2m19.298724476s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50539s'}]}}",
-    "transcription": ""
+    "status": "success",
+    "transcription": "de $\\tilde{\\tau}$) sur $\\omega_0$ est la symétrie $\\omega_0 \\mapsto \\omega_0^{-1}$\n(cf fin du \\S\\ précédent). Je dis qu'on a\n$$\n\\tilde{\\tau}(\\tilde{\\rho}) = \\tilde{\\rho}^{-1} , \\quad \\tilde{\\tau}(\\tilde{\\sigma}) = \\tilde{\\sigma}^{-1} \\leqno{(24)}\n$$\nCes formules s'écrivent aussi\n$$\n\\tilde{\\tau}(\\tilde{\\rho}^{-1}) = \\tilde{\\rho} , \\quad \\tilde{\\tau}(\\tilde{\\sigma}^{-1}) = \\tilde{\\sigma}\n$$\nElles sont valables dans $\\SL(2,\\mathbf{R})$, donc\npour voir qu'elles sont valables dans $\\SL(2,\\mathbf{Z})^\\sim$,\nil suffit de montrer que les premières\nnous redonnent les relations caractéristiques\n(20), ce qui s'écrit\n$$\n\\tilde{\\tau}(\\underbrace{\\tilde{\\rho}^3}_{\\omega_0}) = \\underbrace{\\tilde{\\rho}^{-3}}_{\\omega_0^{-1}}, \\quad \\tilde{\\tau}(\\underbrace{\\tilde{\\sigma}^2}_{\\omega_0}) = \\underbrace{\\tilde{\\sigma}^{-2}}_{\\omega_0^{-1}}\n$$\ni.e.\n$$\n\\tilde{\\tau}(\\omega_0) = \\omega_0^{-1}, \\quad \\text{ok.}\n$$\n\nThéorème Le groupe $\\SL(2,\\mathbf{Z})^\\sim$ admet\nla présentation (à deux gén. $\\tilde{\\rho}, \\tilde{\\sigma}$)\n$$\n\\tilde{\\rho}^3 \\cdot \\tilde{\\sigma}^{-2} = 1 \\leqno{(25)}\n$$\nDém. Soit $\\Pi$ le groupe défini\npar cette présentation, et considérons\nl'homomorphisme\n$$\n\\Pi \\to \\SL(2,\\mathbf{Z})/\\pm 1 = \\{\\rho,\\sigma \\mid \\rho^3 = \\sigma^2 = 1\\} \\leqno{(26)}\n$$\n$$\n(\\tilde{\\rho},\\tilde{\\sigma}) \\mapsto (\\rho,\\sigma \\pmod{\\pm 1})\n$$",
+    "usage": {
+      "prompt_tokens": 2905,
+      "output_tokens": 488,
+      "thinking_tokens": 5557
+    }
   },
   "235": {
     "status": "error",
