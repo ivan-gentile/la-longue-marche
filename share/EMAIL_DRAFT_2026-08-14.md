@@ -16,9 +16,11 @@ Pre-send checklist:
 - [x] Variétés run finished; COVERAGE.md reads 100/100
 - [x] `audit_corpus.py` clean on every corpus, all seven defect classes
 - [x] tikz-cd label fix in; canonical volumes compile 679/696 and 278/280 clean
-- [ ] review website deployed — add its URL to the draft, send Mateo the
-      password separately (never in this email thread)
-- [ ] all commits pushed; the tex files open at their GitHub URLs
+- [x] review website deployed (https://longue-marche-review.vercel.app,
+      all 1,513 scans in the private Blob store) — send Mateo the
+      password separately (never in this email thread); it is in
+      review-site/.env.local, untracked
+- [x] all commits pushed; the tex files open at their GitHub URLs
 
 ---
 
@@ -153,6 +155,24 @@ turned into emphasis (so $\underline{K}$ stays distinct from $K$, and
 the structure sheaf stays $\underline{O}_X$), and the handwritten hats
 are kept ($\hat{\mathcal{C}}$ against $\mathcal{C}$). As always it is
 a working draft and every line needs your verification.
+
+**A review website.** Until now, reviewing against the scans meant
+keeping a PDF and a tex file open side by side and counting pages.
+There is now a website that does this for you:
+
+  https://longue-marche-review.vercel.app
+
+Every page of all four documents — both La Longue Marche volumes,
+Préschémas and Varieties — with the scan on the left and the
+transcription on the right, page-synced, with keyboard navigation,
+zoom, and a "Report anomaly" button on each page that opens the GitHub
+issue form already filled in with the file and page number. For the two
+handwritten volumes you can also display a second, independent machine
+reading next to the canonical one; where the two disagree the site says
+so, and those pages usually deserve the closest look. The site is
+password-protected because the scans must not be publicly
+redistributed — I will send you the password separately. Nothing on it
+needs more than a browser.
 
 **Filing anomalies.** The structured format you describe already exists
 in the repository as the "Transcription anomaly" issue form — error

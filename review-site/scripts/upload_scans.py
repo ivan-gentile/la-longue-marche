@@ -12,7 +12,7 @@ Vercel Blob REST API (as implemented by @vercel/blob 2.8.0, API version 12):
              headers: authorization: Bearer <token>
                       x-api-version: 12
                       x-vercel-blob-store-id: <field 4 of the rw token>
-                      x-vercel-blob-access: public
+                      x-vercel-blob-access: private  (private store)
                       x-content-type: image/jpeg
                       x-add-random-suffix: 0     (exact pathname, no suffix)
                       x-allow-overwrite: 0|1
@@ -150,7 +150,8 @@ class BlobClient:
         headers = self._headers()
         headers.update(
             {
-                "x-vercel-blob-access": "public",
+                # The store is private: scans must never be publicly readable.
+                "x-vercel-blob-access": "private",
                 "x-content-type": "image/jpeg",
                 "x-add-random-suffix": "0",
                 "x-allow-overwrite": "1" if allow_overwrite else "0",

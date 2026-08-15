@@ -49,9 +49,19 @@ export async function GET(
   const padded = String(pageNum).padStart(4, "0");
   const upstreamUrl = `${base}/scans/${meta.id}/${padded}.jpg`;
 
+  // The store is private: reads require a bearer token. Kept optional so
+  // a public store (no token) would also work.
+  const blobToken = process.env.BLOB_READ_WRITE_TOKEN;
+  const upstreamHeaders: Record<string, string> = blobToken
+    ? { authorization: `Bearer ${blobToken}` }
+    : {};
+
   let upstream: Response;
   try {
-    upstream = await fetch(upstreamUrl, { cache: "no-store" });
+    upstream = await fetch(upstreamUrl, {
+      cache: "no-store",
+      headers: upstreamHeaders,
+    });
   } catch {
     return new NextResponse("Scan storage unreachable.", { status: 502 });
   }

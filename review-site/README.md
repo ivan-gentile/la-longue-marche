@@ -9,8 +9,12 @@ one-click "Report anomaly" link that opens a pre-filled GitHub issue.
 
 Minimal Next.js 15 (App Router, TypeScript), no UI framework. The
 scans are **not** in the git repo and never may be: they live in a
-Vercel Blob store and are served only through the authenticated
-`/api/scan/<doc>/<page>` proxy — the browser never sees the Blob URL.
+**private** Vercel Blob store (unauthenticated reads get 403) and are
+served only through the authenticated `/api/scan/<doc>/<page>` proxy —
+the browser never sees the Blob URL or token.
+
+Deployed: <https://longue-marche-review.vercel.app>
+(Vercel project `longue-marche-review`, Blob store `longue-marche-scans`).
 
 ## Documents
 
@@ -27,8 +31,8 @@ Vercel Blob store and are served only through the authenticated
 | --- | --- | --- |
 | `REVIEW_PASSWORD` | app | The shared login password. |
 | `SESSION_SECRET` | app | HMAC key signing the session JWT (cookie `lm_session`, HS256, 90-day expiry). Use a long random string. |
-| `SCAN_BASE_URL` | app | Public base URL of the Vercel Blob store (e.g. `https://xxxxxxxx.public.blob.vercel-storage.com`), no trailing slash. Server-side only. |
-| `BLOB_READ_WRITE_TOKEN` | upload script only | Vercel Blob write token for `scripts/upload_scans.py`. The app never reads it. |
+| `SCAN_BASE_URL` | app | Base URL of the Vercel Blob store (private store: `https://xxxxxxxx.private.blob.vercel-storage.com`), no trailing slash. Server-side only. |
+| `BLOB_READ_WRITE_TOKEN` | app + upload script | Blob token: the upload script writes with it, and the app's scan proxy reads the private store with it (sent as a bearer header, server-side only). Auto-provisioned when the store is connected to the Vercel project. |
 
 ## Run locally
 
@@ -63,15 +67,22 @@ document list shows "transcription data not yet loaded".
 
 ## Deploy on Vercel
 
-1. Import the GitHub repo into Vercel and set the project
-   **Root Directory** to `review-site/`. Framework preset: Next.js.
-2. Set `REVIEW_PASSWORD`, `SESSION_SECRET`, and `SCAN_BASE_URL` in
-   Project → Settings → Environment Variables.
-3. Create a Blob store in the same project (Storage → Blob); its
-   public base URL is the value for `SCAN_BASE_URL`. Run
-   `scripts/upload_scans.py` locally with the store's
-   `BLOB_READ_WRITE_TOKEN` to upload the scans.
-4. Make sure `data/<id>.json` files are committed in `review-site/data/`
-   (they contain only transcription text, no scans) so the deployed
-   lambdas can read them from disk.
-5. Deploy. Every path except `/login` is behind the password.
+Deployed 2026-08-15 with the Vercel CLI from this directory (no git
+integration; re-deploy with `vercel deploy --prod`). To reproduce from
+scratch:
+
+1. `vercel link --yes --project longue-marche-review` in `review-site/`.
+2. `vercel blob create-store longue-marche-scans --access private --yes`
+   — creates a **private** store, connects it to the project, and
+   provisions `BLOB_READ_WRITE_TOKEN` in all environments.
+3. Set `REVIEW_PASSWORD`, `SESSION_SECRET`, and `SCAN_BASE_URL`
+   (`https://<store-id-lowercase>.private.blob.vercel-storage.com`)
+   with `vercel env add`.
+4. `vercel env pull .env.local`, then run `scripts/upload_scans.py`
+   with that env to upload the scans.
+5. Keep `data/<id>.json` committed in `review-site/data/` (they contain
+   only transcription text, no scans); `next.config.mjs` declares them
+   in `outputFileTracingIncludes` so the deployed lambdas can read
+   them — without that they silently miss from the bundle.
+6. `vercel deploy --prod`. Every path except `/login` is behind the
+   password.
