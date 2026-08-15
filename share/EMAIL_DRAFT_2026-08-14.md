@@ -104,7 +104,7 @@ corpus before anything is shared.
 That audit also looks for neighbouring failures that are equally
 invisible to an error count, and it found those too: pages where the
 model's own English deliberation reached the output instead of the
-transcription, pages cut off mid-formula, LaTeX that would not compile,
+transcription, pages cut off mid-formula, mismatched LaTeX environments,
 and a systematic escaping fault that had turned roughly 1,200 operator
 names into a line break followed by a stray word. Some of those pages
 were in the canonical La Longue Marche files. All of them have been
@@ -115,6 +115,18 @@ Préschémas file and Varieties.
 On the context-echo defect specifically, the canonical La Longue Marche
 corpus was unaffected, which I checked directly; one page of the
 superseded Flash-Lite draft was, and it has been re-transcribed.
+
+One more practical thing, since you may want to typeset these files
+rather than only read them. They are LaTeX bodies that use a few macros
+which, embarrassingly, nothing in the repository defined — so strictly
+speaking they could not be compiled at all. There is now a
+`tex_output/preamble.tex` that supplies them. With it, Varieties
+compiles to a 100-page PDF with no errors and Préschémas produces its
+437 pages. The two handwritten La Longue Marche volumes still raise
+LaTeX errors: a page can be the right page, complete and well-formed,
+and still contain a missing `$` in a formula. Those errors are now
+listed page by page in `experiments/pilot/COMPILE_REPORT.md` rather than
+left for you to run into, and reducing them is on my list.
 
 In the same spirit I corrected the project's cost figures, which were
 understated several-fold because the model's internal "thinking" tokens
