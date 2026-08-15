@@ -11,10 +11,10 @@ Open decision for Ivan: the volunteer paragraph has two variants (A =
 apply to the CSG, B = stay informal). Pick one and delete the other
 before sending.
 
-Pre-send checklist — every claim below must be live on GitHub first:
-- [ ] Variétés run finished and COVERAGE.md reads 100/100
-- [ ] `audit_corpus.py` clean on every corpus
-- [ ] all commits pushed; the tex files open at their GitHub URLs
+Pre-send checklist (all satisfied as of commit f4e2516, pushed):
+- [x] Variétés run finished; COVERAGE.md reads 100/100
+- [x] `audit_corpus.py` clean on every corpus, all seven defect classes
+- [x] all commits pushed; the tex files open at their GitHub URLs
 
 ---
 
@@ -77,11 +77,20 @@ attached as visual context, so words broken across a page break can be
 resolved. In some cases the model transcribed that context page instead
 of the intended one. The result is a page that looks perfectly normal —
 no error, no gap, correct page marker — but carries the *previous*
-page's text. In the Préschémas file this affected 19 of 437 pages;
-for instance the page at PDF position 338 is an English errata sheet
+page's text. In the Préschémas file this affected 22 of 437 pages. For
+instance the page at PDF position 338 is an English errata sheet
 ("- II-xxi -", *P. II-104 ter, the cor.2 is incorrect*), but the file
-contained a copy of page 337 instead. All 19 have been re-transcribed
-and checked against the scans, and the file on GitHub is corrected.
+contained a copy of page 337 instead. Worse, in two places the shift
+meant a page of the source was absent from the transcription
+altogether: PDF 182 ("Compléments au chap. 0") and PDF 384. All of them
+have been re-transcribed and checked against the scans, and the file on
+GitHub is corrected.
+
+I should add that I only found the last of these because I went back
+and checked my own check: the first version of this test compared the
+two pages character by character, and a page whose lines had simply been
+re-wrapped slipped under the threshold. Comparing word by word caught
+four more.
 
 I mention it in this much detail because it is precisely the class of
 error your review is meant to catch and mine had not been catching: it
@@ -93,16 +102,19 @@ suspiciously alike, and a new audit
 corpus before anything is shared.
 
 That audit also looks for neighbouring failures that are equally
-invisible to an error count, and it did find some: pages where the
-model's own English reasoning reached the output instead of the
-transcription, pages cut off mid-formula, and LaTeX that would not
-compile. A few such pages were in the canonical La Longue Marche files;
-they have been re-transcribed, and the audit is clean on every corpus I
-am pointing you to. On the context-echo defect specifically, the
-canonical La Longue Marche corpus was unaffected — I checked that
-directly. One page of the superseded Flash-Lite draft (140-3 p. 4) is a
-partial echo of its predecessor; the canonical file transcribes that
-page correctly.
+invisible to an error count, and it found those too: pages where the
+model's own English deliberation reached the output instead of the
+transcription, pages cut off mid-formula, LaTeX that would not compile,
+and a systematic escaping fault that had turned roughly 1,200 operator
+names into a line break followed by a stray word. Some of those pages
+were in the canonical La Longue Marche files. All of them have been
+re-transcribed or repaired, and the audit is now clean on every corpus
+I am pointing you to — including the two La Longue Marche variants, the
+Préschémas file and Varieties.
+
+On the context-echo defect specifically, the canonical La Longue Marche
+corpus was unaffected, which I checked directly; one page of the
+superseded Flash-Lite draft was, and it has been re-transcribed.
 
 In the same spirit I corrected the project's cost figures, which were
 understated several-fold because the model's internal "thinking" tokens
@@ -113,11 +125,16 @@ you, but the published record should be accurate.
 **Varieties.** Thank you for this suggestion — it is a good
 intermediate case: typewritten body with the mathematical script
 letters added by hand, harder than Préschémas and far easier than La
-Longue Marche. It has been transcribed with the same page-by-page,
-census-checked pipeline and is in the repository as
-`tex_output/varietes_categories_U46.tex`, 100 pages, with its coverage
-declared in the manifest. As always it is a working draft and every
-line needs your verification.
+Longue Marche. All 100 pages are transcribed with the same page-by-page
+pipeline and are in the repository as
+`tex_output/varietes_categories_U46.tex`, with coverage declared in the
+manifest and the audit clean. Two details of that typescript that the
+transcription tries to respect, and that are worth your eye: the
+underline on a mathematical symbol is kept as notation rather than
+turned into emphasis (so $\underline{K}$ stays distinct from $K$, and
+the structure sheaf stays $\underline{O}_X$), and the handwritten hats
+are kept ($\hat{\mathcal{C}}$ against $\mathcal{C}$). As always it is
+a working draft and every line needs your verification.
 
 **Filing anomalies.** The structured format you describe already exists
 in the repository as the "Transcription anomaly" issue form — error
