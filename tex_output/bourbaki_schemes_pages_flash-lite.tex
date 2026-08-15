@@ -1191,31 +1191,35 @@ Appliquant le lemme 3 aux ouverts $U_\alpha \cap U_\beta$, $V_\lambda \cap V_\mu
 - 34 -
 
 \cancel{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} Or, $p_j^{-1}(U_\alpha) \cap q_j^{-1}(V_\lambda) =$
-$= p_j^{-1}(U_\alpha \cap U_\alpha) \cap q_j^{-1}(V_\lambda \cap V_\lambda)$ ; en vertu du lemme 3, les restrictions
+$= p_j^{-1}(U_\alpha \cap U_\beta) \cap q_j^{-1}(V_\lambda \cap V_\mu)$ ; en vertu du lemme 3, les restrictions
 de $p_j$ et $q_j$ à $p_j^{-1}(U_\alpha) \cap q_j^{-1}(V_\lambda)$ définissent sur ce $S$-préschéma une
-structure de produit de $U_\alpha \times V_\lambda$ ; mais l'unicité du produit
-entraîne alors que $p_j^{-1}(U_\alpha) \cap q_j^{-1}(V_\lambda) = W_{ij}$. On a par suite $Z_j \cap Z_j = Z_j \cap Z_j$ pour tout $j$, d'où $Z_j = Z_j$. On déduit alors du lemme 4 que $(Z, p, q)$ est un produit de $X$ et $Y$.
+structure de produit de $U_\alpha \times_S V_\lambda$ ; mais l'unicité du produit
+entraîne alors que $p_j^{-1}(U_\alpha) \cap q_j^{-1}(V_\lambda) = W_{ij}$. On a par suite $Z_j \cap Z_i =$
+$= Z_j \cap Z_i$ pour tout $j$, d'où $Z_j = Z_i$. On déduit alors du lemme 4 que
+$(Z, p, q)$ est un produit de $X$ et $Y$.
 
 b) Soient $\varphi : X \to S$, $\psi : Y \to S$ les morphismes structuraux de $X$ et $Y$,
 $(S_j)$ un recouvrement ouvert de $S$, et posons $X_i = \varphi^{-1}(S_i)$, $Y_j = \psi^{-1}(S_j)$.
 Si chacun des produits $X_i \times_S Y_j$ existe, alors $X \times_S Y$ existe.
-D'après a) ; tout revient à prouver que les produits $X_i \times_S Y_j$ exis-
-tent quels que soient $i$ et $j$. Posons $X_{ij} = X_i \cap X_j = \varphi^{-1}(S_i \cap S_j)$, $Y_{ij} = Y_i \cap Y_j = \psi^{-1}(S_i \cap S_j)$ ; en vertu du lemme 3, le produit $X_{ij} \times_S Y_{ij}$
+D'après a), tout revient à prouver que les produits $X_i \times_S Y_j$ exis-
+tent quels que soient $i$ et $j$. Posons $X_{ij} = X_i \cap X_j = \varphi^{-1}(S_i \cap S_j)$, $Y_{ij} =$
+$= \psi^{-1}(S_i \cap S_j)$ ; en vertu du lemme 3, le produit $X_{ij} \times_S Y_{ij}$
 existe. Notons maintenant que si $T$ est un $S$-préschéma et s'il existe
 des $S$-morphismes $g : T \to X_i$, $h : T \to Y_j$, on a nécessairement $\varphi(g(T))$
 $= \psi(h(T)) \subset S_i \cap S_j$, autrement dit $g(T) \subset X_{ij}$ et $h(T) \subset Y_{ij}$ ; il est a-
-lors immédiat que $Z_{ij}$ est un produit de $X_i$ et $Y_j$.
+lors immédiat que $X_{ij} \times_S Y_{ij}$ est un produit de $X_i$ et $Y_j$.
 
 c) Nous pouvons maintenant achever de démontrer le th. 1. Si $S$ est
-un schéma affine, il y a des recouvrements $(U_i), (V_j)$ respectivement,
-formés d'ouverts affines ; comme $U_i \times_S V_j$ existe en vertu de la prop.
-6, il en est de même de $X \times_S Y$ par a). Si $S$ est un préschéma quelconque, il y a un recouvrement $(S_j)$ de $S$ formé d'ouverts affines. Si
+un schéma affine, il y a des recouvrements $(U_\alpha), (V_\lambda)$ respectivement,
+formés d'ouverts affines ; comme $U_\alpha \times_S V_\lambda$ existe en vertu de la prop.
+6, il en est de même de $X \times_S Y$ par a). Si $S$ est un préschéma quel-
+que, il y a un recouvrement $(S_i)$ de $S$ formé d'ouverts affines. Si
 $\varphi : X \to S$, $\psi : Y \to S$ sont les morphismes structuraux, et si on pose
 $X_i = \varphi^{-1}(S_i)$, $Y_i = \psi^{-1}(S_i)$, les produits $X_i \times_S Y_i$ existent d'après ce
 qui précède ; mais alors les produits $X_i \times_S Y_i$ existent aussi (prop.
 7), donc il en est de même de $X \times_S Y$ d'après b).
 \underline{Corollaire}
-\cancel{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} Soient $Z = X \times_S Y$ le produit
+\cancel{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX} Soient $X \times_S Y$ le produit
 de deux $S$-préschémas, $p, q$ les projections de $Z$ dans $X$ et $Y$, $\varphi$ (resp.
 $\psi$) le morphisme structural de $X$ (resp. $Y$). Soient $S'$ une partie ou-
 verte de $S$, $U$ (resp. $V$) une partie ouverte de $X$ (resp. $Y$), contenant
@@ -8900,9 +8904,9 @@ Il est trivial que (i) entra\(\hat{\text{i}}\)ne (ii), prouvons que (ii) entra\(
 
 - III-93 -
 
-$U_j$ domine un $Y_i$. Par hypothèse, il existe $i$ tel que $U_j$ domine $Y_i$, autrement dit, si $x_j$ est le point générique de $U_j$, $f(x_j)=y_i$ ; par suite (I, 7, 5, lemme 7) $x_j$ est aussi le point générique de $U_j \cap f^{-1}(y_i)$ que nous noterons pour abréger $U_j(y_i)$, et qui est égal à $U_j \times_{\operatorname{Spec}(k(y_i))} \operatorname{Spec}(k(y_i))$. De même, le point générique $y_i'$ de $Y_i'$ est aussi celui de $Y_i'(y_i) = Y_i' \times_Y \operatorname{Spec}(k(y_i)) = \operatorname{Spec}(k(y_i)[t_1, \dots, t_e])$, qui est d'ailleurs aussi égal à $Y' \times_Y \operatorname{Spec}(k(y_i))$, puisque $V$ est un voisinage de $y_i$ dans $Y$. Le morphisme quasi-fini $U_j \to Y'$ définit un morphisme quasi-fini $U_j(y_i) \to Y_i'(y_i)$ (n° 2, prop. 4) ; si ce morphisme $g$ n'était pas dominant, il \st{pourrait} être considéré comme un morphisme de $(U_j(y_i))_{\text{red}}$ dans un sous-préschéma fermé de $Y_i'(y_i)$, dont l'espace sous-jacent est distinct de $Y_i'(y_i)$ (I, 3, 4, cor. de la prop. 9). Comme $g_{\text{red}}$ est quasi-fini, $Y_i'(y_i)$ \st{étant} intègre et de dimension $e$ (I, 7, 3, cor. 1 de la prop. 9), on aurait $\dim(U_j(y_i)) < e$ (n° 2, prop. 4), ce qui contredit l'hypothèse, puisque $U_j(y_i)$ est une composante irréductible de $U \cap f^{-1}(y_i)$. On en conclut que $g(x_j)=y_i'$, ce qu'établit (iii).
+$U_j$ domine un $Y_i$. Par hypothèse, il existe $i$ tel que $U_j$ domine $Y_i$, autrement dit, si $x_j$ est le point générique de $U_j$, $f(x_j) = y_i$ ; par suite (I, 7, 5, lemme 7) $x_j$ est aussi le point générique de $U_j \cap f^{-1}(y_i)$ que nous noterons pour abréger $U_j(y_i)$, et qui est égal à $U_j \times_{\operatorname{Spec}(k(y_i))} \operatorname{Spec}(k(y_i))$. De même, le point générique $y'_i$ de $Y'_i$ est aussi celui de $Y'_i(y_i) = Y'_i \times_{\operatorname{Spec}(k(y_i))} \operatorname{Spec}(k(y_i))$, qui est d'ailleurs aussi égal à $Y'_i \times_Y \operatorname{Spec}(k(y_i))$, puisque $V$ est un voisinage de $y_i$ dans $Y$. Le morphisme quasi-fini $U_j \to Y'$ définit un morphisme quasi-fini $U_j(y_i) \to Y'_i(y_i)$ (n°2, prop. 4) ; si ce morphisme $g$ n'était pas dominant, il \emph{red} pourrait être considéré comme un morphisme de $(U_j(y_i))_{\operatorname{red}}$ dans un sous-préschéma fermé de $Y'_i(y_i)$, dont l'espace sous-jacent est distinct de $Y'_i(y_i)$ (I, 3, 4, cor. de la prop. 9). Comme $g_{\operatorname{red}}$ est quasi-fini, $Y'_i(y_i)$ intègre et de dimension $e$ (I, 7, 3, cor. 1 de la prop. 9), on aurait $\dim(U_j(y_i)) < e$ (n°2, prop. 4), ce qui contredit l'hypothèse, puisque $U_j(y_i)$ est une composante irréductible de $U \cap f^{-1}(y_i)$. On en conclut que $g(x_j) = y'_i$, ce qui établit (iii).
 
-Il reste à montrer que (iii) entraîne (i). On peut évidemment, en remplaçant $V$ par un voisinage plus petit, supposer que $V$ ne \st{rencontre} rencontre aucune des composantes irréductibles de $Y$ ne contenant pas $y$. Gardant les mêmes notations que ci-dessus, il résulte de (iii) que tout $U_j$ domine un $Y_i$, puisque $U_j \to Y_i$ est composé de $U_j \to Y_i'$ qui est dominant par hypothèse, et de $Y_i' \to Y_i$, qui est dominant par construction. \st{D'ailleurs} Pour tout $z \in Y$, $U \cap f^{-1}(z)$ est réunion des $U_j(z) = U_j \cap f^{-1}(z)$, donc ses composantes irréductibles sont parmi celles des $U_j(z)$, et il suffit de prouver que ces dernières sont de dimension $e$. Or, d'après le cor. du th. 3, \st{déjà} appliqué au morphisme dominant
+Il reste à montrer que (iii) entraîne (i). On peut évidemment, en remplaçant $V$ par un voisinage plus petit, supposer que $V$ ne rencontre aucune des composantes irréductibles de $Y$ ne contenant pas $y$. Gardant les mêmes notations que ci-dessus, il résulte de (iii) que tout $U_j$ domine un $Y_i$, puisque $U_j \to Y_i$ est composé de $U_j \to Y'_i$ qui est dominant par hypothèse, et de $Y'_i \to Y_i$, qui est dominant par construction. Pour tout $z \in Y$, $U \cap f^{-1}(z)$ est réunion des $U_j(z) = U_j \cap f^{-1}(z)$, donc ses composantes irréductibles sont parmi celles des $U_j(z)$, et il suffit de prouver que ces dernières sont de dimension $e$. Or, d'après le cor. du th. 3, appliqué au morphisme dominant
 
 \newpage
 

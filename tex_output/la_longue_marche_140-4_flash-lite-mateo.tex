@@ -761,59 +761,63 @@ provenant du système de limites canoniques.
 
 %% ===== Page 32 =====
 
-\section*{}
 $$
-\mathfrak{C}_{S} \longrightarrow \mathfrak{C}
+\begin{tikzcd}
+\mathcal{G}_{/S} \arrow[r] & \mathcal{G}_{i}
+\end{tikzcd}
 $$
-Dans, via (59), on trouve
+D'où, via (59), le diagramme
 $$
-\operatorname{Hom}_{\text{pro-gr}}(\varprojlim \mathfrak{E}\text{ns}(\mathfrak{C}), G) \xrightarrow{\sim} \operatorname{Hom}_{\text{gr}}(\mathfrak{C}_{S}, G) \cong \operatorname{Hom}_{\text{gr}}(\mathfrak{C}, G(S)) \leqno{(60)}
+\begin{tikzcd}[column sep=huge]
+\operatorname{Hom}_{S\text{-gr}}(\varprojlim \operatorname{Ens}(\mathcal{C}_i), G) \arrow[r] & \operatorname{Hom}_{S\text{-gr}}(\mathcal{C}_i, G) \arrow[d, "\sim"] \\
+& \operatorname{Hom}_{\text{gr}}(\mathcal{C}_i, G(S))
+\end{tikzcd} \leqno{(60)}
 $$
-Composant (58) et (60), on trouve
+Comparant (58) et (60), on trouve
 $$
-\operatorname{Hom}_{\text{pro-gr}}(\mathfrak{E}\text{ns}(\mathfrak{C}), G) \cong \operatorname{Hom}_{\text{gr}}(\varprojlim \mathfrak{E}\text{ns}(\mathfrak{C}), G) \longrightarrow \operatorname{Hom}_{\text{gr}}(\mathfrak{C}, G) \cong \operatorname{Hom}_{\text{gr}}(\mathfrak{C}, G(S)) \leqno{(61)}
+\operatorname{Hom}_{\text{pro-}S\text{-gr}}(\operatorname{Ens}(\mathcal{C}), G) \isom \varinjlim \operatorname{Hom}_{S\text{-gr}}(\mathcal{C}_i, G) \longrightarrow \varinjlim \operatorname{Hom}_{\text{gr}}(\mathcal{C}_i, G(S)) \leqno{(61)}
 $$
-Ceci posé, on a le résultat suivant:
+Ceci permet de donner le résultat suivant.
 
-\textbf{Théorème.} Sous les conditions précédentes ($\mathfrak{C}$ catégorie discrète multiplicative, $G$ schéma en groupes localement de type fini sur $S$), l'application canonique est injective, et comme image... \leqno{(62)}
-plus, pour des tels foncteurs $\mathfrak{C} \to G(S)$ dans une variété de $\mathfrak{C} \to G(S)$, des vrais foncteurs... pour voir simplement l'existence, que $S$ est multiplicative et $G$ affine sur $S$.
+Théorème. Sous les conditions précitées ($\mathcal{C}$ groupe discret, $G$ schéma en groupes loc. de type fini sur schéma $S$), l'application canonique est injective, et est une bijection si $G$ est \dots \leqno{(63)}
+plus précisément un isomorphisme de \dots
 
 \newpage
 
 %% ===== Page 33 =====
 
-\section*{50. Exemple : La ``tour'' de Fermat.}
+\section*{50. Exemple : La « tour » de Fermat.}
 
-\subsection*{1. Les sous-groupes $\mathcal{B}, \mathcal{C}$.}
+\noindent 1. Les groupes $\mathcal{G}, \mathfrak{C}$.
 
-Je m'intéresse au quotient de $\mathcal{G} \defeq \Gamma_0(2)$ obtenu en prenant le quotient par $[\Pi_0, \Pi_0]$ on \dots un \dots
-\marginpar{On engendre $\Pi_0$ par les $\lambda_i = \begin{cases} \lambda_0 = \begin{pmatrix} 1 & -2 \\ 0 & 1 \end{pmatrix} \\ \lambda_1 = \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix} \end{cases}$}
-$\mathcal{G}$ de $\mathcal{G}/\Pi_0$ par le groupe
-$$
-M \defeq \Pi_0^{\mathrm{ab}} \isom (\hat{\mathbf{Z}}(0) + \hat{\mathbf{Z}}(1) + \hat{\mathbf{Z}}(\infty)) / \text{diagonale} \leqno (1)
-$$
-Ainsi on a une suite exacte de groupes profinis
-$$
-1 \to M \to \mathcal{G} \to \mathcal{G}/\Pi_0 \to 1 \leqno (2)
-$$
-où $\mathcal{G}/\Pi_0 \isom \operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z}) / \langle \lambda_0, \lambda_1 \rangle$.
-
-Par générateurs et relations \dots
+\noindent Je m'intéresse au quotient de $\mathfrak{C} = \widehat{\pi}_1(\mathbb{P}^1 \setminus \{0,1,\infty\})$ obtenu en prenant le quotient par $[\Pi_0, \Pi_0]$ sur le groupe $\mathfrak{C}$.\marginpar{$\Pi_0$ engendré par $\lambda_0 = \begin{pmatrix} 1 & -2 \\ 0 & 1 \end{pmatrix}, \lambda_1 = \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}$}
 
 $$
-\mathcal{G} = \left\{ \tau, \rho, \sigma \mid \begin{array}{l} \rho^6 = \sigma^4 = \tau^2 = 1 \\ \rho^3 = \sigma^2, \tau(\rho) = \rho^{-1}, \tau(\sigma) = \sigma^{-1} \\ [\lambda_0, \lambda_1] = 1, \dots \end{array} \right\} \leqno (3)
+M = \Pi_{ab} \simeq (\hat{\mathbf{Z}}(0) + \hat{\mathbf{Z}}(1) + \hat{\mathbf{Z}}(\infty)) / \text{diagonale} \leqno{(1)}
+$$
+
+\noindent Ainsi on a une suite exacte de groupes profinis
+$$
+\begin{tikzcd}
+1 \arrow[r] & M \arrow[r] & \mathfrak{C} \arrow[r] & \mathfrak{C}/\Pi_0 \arrow[r] & 1 \leqno{(2)}
+\end{tikzcd}
+$$
+\noindent avec $\mathfrak{C}/\Pi_0 \simeq \operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z}) / \langle \text{involution} \rangle$.
+
+\noindent Par générateurs et relations :
+$$
+\mathcal{G} = \{ \tau, \rho, \sigma \mid \rho^6 = \sigma^4 = \tau^2 = 1, \rho^3 = \sigma^2, \tau(\rho) = \rho^{-1}, \tau(\sigma) = \sigma^{-1} \} \leqno{(3)}
+$$
+\noindent d'où relation de commutateurs $[\lambda_0, \lambda_1] = 1$ :
+
+$$
+\sigma \rho \sigma \rho \sigma = \rho \sigma \rho \sigma \rho \leqno{(4)}
 $$
 $$
-\left\{ \begin{array}{l} \lambda_0 = \rho = \sigma \rho \sigma = \sigma \rho \sigma^{-1} \\ \lambda_1 = \dots = \rho \sigma \rho = \rho \sigma \rho^{-1} \end{array} \right.
+\sigma \rho \sigma \rho \sigma = \rho \sigma \rho^3 \rho \leqno{(5)}
 $$
-d'où la relation de commutateurs $[\lambda_0, \lambda_1] = 1$ s'écrit aussi
-$$
-\sigma \rho \sigma \rho \sigma \rho = \rho \sigma \rho^3 \rho \leqno (4)
-$$
-$$
-\sigma \rho \sigma \rho^{-1} \sigma \rho = \rho \sigma^{-1} \rho \sigma \leqno (5)
-$$
-On le sens des règles \dots \dots \dots les formules des générateurs et relations en supposant des \dots \dots \dots et en remplaçant les \dots \dots (\dots \dots des $\sigma$ de la formule \dots des $\sigma^{-1}$. Par exemple, de \dots
+
+\noindent On le sent des lignes dans les formules des générateurs et relations, et on peut, dans les cas où l'on est dans le groupe de Fermat, des $\lambda_i$.
 
 \newpage
 
@@ -1092,7 +1096,7 @@ On a
 $$
 \det(\operatorname{id}_M - \rho_M) = 3, \quad \det(\operatorname{id}_M - \sigma_M) = 0
 $$
-ce qui montre que les endomorphismes $\operatorname{id}_M - \rho_M$ et $\operatorname{id}_M - \sigma_M$ de $M$ sont, i.e. des isomorphismes — et ce n'est pas faire des isomorphismes —\footnote{Note-t-il : "soit distinctes les valeurs 3 pour le premier, 0 pour le second".}
+ce qui montre que les endomorphismes $\operatorname{id}_M - \rho_M$ et $\operatorname{id}_M - \sigma_M$ de $M$ sont, i.e. des isomorphismes — et ce n'est pas faire des isomorphismes —\footnote{Note-t-il : "{soit distinctes les valeurs 3 pour le premier, 0 pour le second}".}
 
 On aurait pu être tenté de prendre comme "primitives" non $\zeta_0$ et $\eta_0$, mais bien convenablement $\alpha_0$ et $\beta_0$ (au plus des "primitives" discrètes $\lambda_2, \lambda_3$ et $\lambda'$), et observer donc ce qui est possible... avec les systèmes.
 
@@ -3571,7 +3575,7 @@ d'origine d'une suite exacte.
 
 (28bis)
 \begin{tikzcd}
-1 \ar[r] & \hat{M} \ar[r] \ar[d] & \tilde{\mathcal{M}} \ar[r] \ar[d] & \Gamma \ar[r] \ar[d, "N_{0,3}=\Gamma_{\mathbb{Q}} \times \mathfrak{S}_3" description, "\hat{\mathbb{Z}}^\times \times id_{\mathfrak{S}_3}"] & 1 \\
+1 \ar[r] & \hat{M} \ar[r] \ar[d] & \tilde{\mathcal{M}} \ar[r] \ar[d] & \Gamma \ar[r] \ar[d, "{N_{0,3}=\Gamma_{\mathbb{Q}} \times \mathfrak{S}_3}" description, "\hat{\mathbb{Z}}^\times \times id_{\mathfrak{S}_3}"] & 1 \\
 1 \ar[r] & \hat{M} \ar[r] & G_{\tilde{\rho}} \ar[r] & \hat{\mathbb{Z}}^\times \times \mathfrak{S}_3 \ar[r] & 1
 \end{tikzcd}
 
@@ -4969,7 +4973,7 @@ On a donc une suite exacte
 $$
 1 \to \Pi_{g,\nu} \to \underset{M_{g,\nu}}{\Pi_1(M_{g,\nu})} \to \underset{N_{g,\nu}}{\Pi_1(M_{g,\nu,\mathbf{Q}})} \to 1 \leqno{(13)}
 $$
-$M_{g,\nu}$ est la "courbe de type $(g,\nu)$ universelle" (en car. 0). Ici c'est $\Pi_1(M_{g,\nu}, \bar{\eta})$ qui apparaît comme un $\mathfrak{T}$-groupe profini.
+$M_{g,\nu}$ est la "{courbe de type $(g,\nu)$ universelle}" (en car. 0). Ici c'est $\Pi_1(M_{g,\nu}, \bar{\eta})$ qui apparaît comme un $\mathfrak{T}$-groupe profini.
 
 Je voudrais dégager une propriété commune à ce cas "universel" (13), (qui est d'ailleurs en fait : un corps de base $k$ extension de type fini de $\mathbf{Q}$. Le premier cas est d'ailleurs essentiellement en commun avec le second, en pensant au "point générique" de $M_{g,\nu} \dots$). Puis ceci, considérons un $\mathfrak{T}$-groupe $\mathcal{M}$ et un homomorphisme $k: \mathfrak{T} \to \mathcal{M}$ appartenant à un clan $K_{\mathfrak{T}}$.
 
@@ -6478,7 +6482,7 @@ Soit $E$ niveau, un diagramme d'équivalences de Galois
 
 (93)
 \begin{tikzcd}
-germ\, revdiff(X,x) \ar[r, "\simeq"', "\gamma \mapsto \Delta(\gamma)"] \ar[d, "\gamma \mapsto Revunis(D_x^*,\gamma) = D_{x,\gamma}^{*\sim}"'] & \Pi_1(S_x) \ar[d, "\simeq", "a \mapsto Revunis(S_x,-)"'] \\
+germ\, revdiff(X,x) \ar[r, "\simeq"', "\gamma \mapsto \Delta(\gamma)"] \ar[d, "{\gamma \mapsto Revunis(D_x^*,\gamma) = D_{x,\gamma}^{*\sim}}"'] & \Pi_1(S_x) \ar[d, "\simeq", "{a \mapsto Revunis(S_x,-)}"'] \\
 Rev.unis(D_x^*) \ar[r, "\simeq"'] \ar[ur, dashed, "\Theta \simeq"'] & Revunis(S_x)
 \end{tikzcd}
 

@@ -361,6 +361,38 @@ def fix_env_mismatches(text: str) -> tuple:
     out.append(text[last:])
     return "".join(out), fixes
 
+
+def protect_tikzcd_labels(text: str) -> tuple:
+    """Brace the content of tikz-cd quoted labels that contain a comma or '='.
+
+    `\\ar[d, "\\gamma \\mapsto F(X,\\gamma) = Y"]` looks harmless, but the
+    option list is split on commas before the quotes library sees it, so the
+    tail is parsed as a pgfkeys key — pdflatex then reports "Missing
+    \\endcsname inserted. <to be read again> \\gamma". Bracing the label
+    content is the documented tikz-cd remedy and changes nothing about what
+    is typeset. This single class was the most common compile error in the
+    corpus (147 occurrences in 140-3 alone); on the page that blocked volume
+    140-4 entirely it took 37 errors to 0.
+    """
+    out, i, n, fixed = [], 0, len(text), 0
+    while i < n:
+        if text[i] != '"':
+            out.append(text[i]); i += 1; continue
+        j = text.find('"', i + 1)
+        if j == -1 or "\n" in text[i:j]:
+            out.append(text[i]); i += 1; continue
+        label = text[i + 1:j]
+        if ("," in label or "=" in label) and not label.startswith("{"):
+            out.append('"{' + label + '}"'); fixed += 1
+        else:
+            out.append('"' + label + '"')
+        i = j + 1
+    result = "".join(out)
+    changes = ([{"rule": "tikz-cd label with , or = → braced content",
+                 "count": fixed}] if fixed else [])
+    return result, changes
+
+
 def apply_regex_normalization(text: str, rules: list, verbose: bool = False) -> tuple:
     """Apply regex rules to text. Returns (normalized_text, changes_list)."""
     changes = []
@@ -385,6 +417,9 @@ def apply_regex_normalization(text: str, rules: list, verbose: bool = False) -> 
 
     result, env_fixes = fix_env_mismatches(result)
     changes.extend(env_fixes)
+
+    result, tikz_fixes = protect_tikzcd_labels(result)
+    changes.extend(tikz_fixes)
 
     # Combining diacritics (e.g. "E" + U+0301 rather than "É") are valid
     # Unicode but pdflatex rejects them outright: "Unicode character ́ not

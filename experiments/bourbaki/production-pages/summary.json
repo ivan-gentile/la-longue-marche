@@ -3,9 +3,8 @@
   "errors": 0,
   "total_pages": 437,
   "tokens_in": 612519,
-  "tokens_out": 335239,
+  "tokens_out": 335203,
   "tokens_thinking": 0,
-  "estimated_cost": 0.66,
-  "finished": "2026-08-15T08:59:35.739807",
-  "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py"
+  "estimated_cost": 0.656,
+  "finished": "2026-08-15T18:53:38.524950"
 }

@@ -7,14 +7,18 @@ This draft absorbs the never-sent 2026-07-05 delta (root cause of the
 two anomalies, issue form, coverage manifests) — Mateo has seen none of
 that content.
 
-Open decision for Ivan: the volunteer paragraph has two variants (A =
-apply to the CSG, B = stay informal). Pick one and delete the other
-before sending.
+Volunteer decision (resolved 2026-08-15): Ivan will read the terms and
+possibly accept later; away late August – mid September and busy after.
+The paragraph below says exactly that — keep working informally for
+now, revisit when there is news.
 
-Pre-send checklist (all satisfied as of commit f4e2516, pushed):
+Pre-send checklist:
 - [x] Variétés run finished; COVERAGE.md reads 100/100
 - [x] `audit_corpus.py` clean on every corpus, all seven defect classes
-- [x] all commits pushed; the tex files open at their GitHub URLs
+- [x] tikz-cd label fix in; canonical volumes compile 679/696 and 278/280 clean
+- [ ] review website deployed — add its URL to the draft, send Mateo the
+      password separately (never in this email thread)
+- [ ] all commits pushed; the tex files open at their GitHub URLs
 
 ---
 
@@ -28,20 +32,17 @@ hand is exactly what the research side of this work has been waiting
 for, and I am happy to treat the points we exchanged as a working
 framework rather than a fixed organisation of the project.
 
-[VARIANT A — formalise] On the framework: I would be glad to formalise
-this as a CSG volunteer, and I will fill in the form on the
-collaborations page this week with a description of the ongoing
-project. I would join in a personal capacity, distinct from my
-employer. And understood on the other point: nothing that implies CSG
-involvement or representation will be published without discussing it
-with you first.
-
-[VARIANT B — stay informal] On the framework: for the moment I would
-prefer to continue in the informal setting we have used so far, under
-exactly the understanding you describe — anything that could imply CSG
-involvement or representation will be discussed and confirmed with you
-first. I remain glad to revisit the volunteer framework as the work
-develops.
+On the framework: thank you for the invitation — I am genuinely
+interested, and I want to read the collaboration terms properly before
+answering rather than answer lightly. The coming months make that
+slower than I would like: I will be away from late August to
+mid-September, and rather busy in the period that follows. So for now I
+would ask to continue in the informal setting we have used so far,
+under exactly the understanding you describe — anything that could
+imply CSG involvement or representation will be discussed and confirmed
+with you first — and to come back to the volunteer question when I can
+give it the attention it deserves. In the meantime the work itself
+continues, and I will keep sharing results as they land.
 
 Since your message I have closed the open items on my side, so that
 what you are working from is current and its limitations are stated.
@@ -122,11 +123,16 @@ which, embarrassingly, nothing in the repository defined — so strictly
 speaking they could not be compiled at all. There is now a
 `tex_output/preamble.tex` that supplies them. With it, Varieties
 compiles to a 100-page PDF with no errors and Préschémas produces its
-437 pages. The two handwritten La Longue Marche volumes still raise
-LaTeX errors: a page can be the right page, complete and well-formed,
-and still contain a missing `$` in a formula. Those errors are now
-listed page by page in `experiments/pilot/COMPILE_REPORT.md` rather than
-left for you to run into, and reducing them is on my list.
+437 pages. The two handwritten La Longue Marche volumes now compile
+end to end as well — 679 of 696 pages of 140-3 and 278 of 280 of 140-4
+produce no LaTeX error at all. Most of what used to fail turned out to
+be one systematic quirk (commas inside commutative-diagram labels,
+which the diagram package misparses) rather than hundreds of individual
+faults, and that is now repaired mechanically on every rebuild. The
+remaining errors are listed page by page in
+`experiments/pilot/COMPILE_REPORT.md` rather than left for you to run
+into; a page can be the right page, complete and well-formed, and still
+contain a missing `$` in a formula.
 
 In the same spirit I corrected the project's cost figures, which were
 understated several-fold because the model's internal "thinking" tokens

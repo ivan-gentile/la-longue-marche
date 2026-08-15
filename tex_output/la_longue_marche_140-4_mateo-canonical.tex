@@ -1288,37 +1288,48 @@ d'où
 %% ===== Page 43 =====
 
 $$
-u(l_0) = u(\varepsilon^2) = l_0^\mu
+u(l_0) = u(\varepsilon_0^2) = l_0^\mu
 $$
 et
 $$
-u(\lambda_0) = u(\omega l_0) = \underset{=\omega}{u(\omega)} u(l_0) = \omega l_0^\mu = \omega l_0 (l_0^2)^{\frac{\mu-1}{2}} = \lambda_0 \lambda_0^{\mu-1} = \lambda_0^\mu
+u(\lambda_0) = u(\omega l_0) = \underbrace{u(\omega)}_{= \omega} u(l_0) = \omega l_0^\mu = \underbrace{\omega l_0}_{\lambda_0} (l_0^{\frac{\mu-1}{2}}) = \lambda_0 \lambda_0^{\mu-1} = \lambda_0^\mu
 $$
-il convient. (Pour me rassurer, j'ai vérifié que la deuxième formule (33) donne bien
-$$
-u(\omega) = (\beta_0 \cdot \sigma)(\beta_0 \cdot \sigma) = (\beta_0 \cdot \sigma(\beta_0)) \sigma^2 = \omega
-$$
+comme il convient. (Pour me rassurer, j'ai vérifié
+que la deuxième formule (33) donne bien
+$u(\omega) = (y_0 \sigma)(y_0 \sigma) = (y_0 \sigma(y_0)) \underbrace{\sigma^2}_{=\omega} = \omega$ i.e.
 $$
 u(\omega) = \omega \leqno{(37)}
 $$
-
 On aura
 $$
-u(\lambda_1) = u(\rho \lambda_0) = (\zeta \rho) u(\lambda_0) = (\zeta \rho)(\lambda_0^\mu) = \lambda_1^\mu
+u(\lambda_1) = u(\rho \lambda_0) = (\zeta \rho u)(\lambda_0) = (\zeta \rho) u(\lambda_0) = (\zeta \rho) (\lambda_0^\mu) = \lambda_1^\mu
 $$
-donc finalement, --- prévisible ---
-\marginpar{\mu = 2\nu+1 = 4\nu'+2\nu_2+1}
+d'où finalement, puisque $\lambda_0, \lambda_1$ engendrent $M$:
+\marginpar{$\mu = 2\nu+1 = 4\nu' + 2\nu_2 + 1$}
 $$
-u(\lambda) = \mu \cdot \lambda \quad \text{pour } \lambda \in \Gamma \mathcal{M} \leqno{(38)}
+u(\lambda) = \mu \cdot \lambda \quad \text{pour } \lambda \in \Gamma M \leqno{(38)}
+$$
+On aura bien que 
+$$
+u(\sigma) = (\beta_0 - \sigma(\beta_0)) \omega^{\nu_2} \sigma
+$$
+$$
+u(\lambda_0) = \mu \cdot \lambda_0
 $$
 
-Tous ces calculs sont un peu oiseux, logiquement, car à la fois pour [unclear: s'assurer] de l'existence d'un homomorphisme $u$ et dès lors les calculs précédents pour l'élément déjà construit, dans un groupe "plus gros", savoir le $\underline{\text{schéma}}$ $\underline{\text{en}}$ $\underline{\text{groupes}}$ $\underline{\text{des}}$ $\underline{\text{automorphismes}}$ du pro-groupe $P \dots$
-
-Une façon de les rendre rigoureux serait d'utiliser la description théorique de $\underline{\widehat{\mathfrak{S}}^+}$ :
+Tous ces calculs sont un peu oiseux,
+logiquement, car à la fois j'en prouverai
+l'existence d'un [unclear: endomorphisme] de $\underline{\mathfrak{S}}^+$ dans les
+calculs précédents par l'identité déjà [unclear: observée],
+dans un groupe "plus gros", savoir le
+schéma en groupes [unclear: christallographique] défini sur $\mathbf{Z}$.
+Une façon de les rendre rigoureux serait
+d'utiliser la description théorique de $\underline{\mathfrak{S}}^+$ :
 $$
-\underline{\widehat{\mathfrak{S}}^+} = \underline{\mathfrak{S}}_0^+ \wedge^{\mathcal{M}} \mathfrak{S}_0 \leqno{(39)}
+\underline{\mathfrak{S}}^+ = \underline{\mathfrak{S}}_0 \ast_{M_{S_0}} \underline{M}_{S_0} \leqno{(39)}
 $$
-de définir un homomorphisme de $\underline{\widehat{\mathfrak{S}}^+}$ dans un groupe $\mathcal{G}$ (ici $\mathcal{G} = \underline{\widehat{\mathfrak{S}}^+}$) revenant à :
+donc définir un homomorphisme de $\underline{\mathfrak{S}}^+$ dans un
+$S_0$-groupe $G$ (ici $G = \underline{\mathfrak{S}}^+$) revient à
 
 \newpage
 
@@ -2993,36 +3004,26 @@ Il semblerait que ces groupes mériteraient la notation la plus simple, en l'occ
 
 %% ===== Page 93 =====
 
-dilemmes notationnels, pour l'instant je
-garde les notations introduites sur la
-bande dans la présente section, qui
-seront révisées avec soin dans un $\S$ spécial
-ultérieur.
+... lemmes notationnels, pour l'instant je garde les notations introduites par la bande dans la présente section, qui seront revisées avec soin dans un \S \space spécial ultérieur.
 
-Il faudrait encore décrire des
-sous-groupes $\underline{M}_{p,\sigma}^\sim (-J)$, $\underline{M}_{p,\sigma}'^\sim (-J)$
-dans $\underline{M}_{p,\sigma}^\sim$ décrit comme produit
-1/2 direct, trouvant
-$$ 
-\underline{M}_{p,\sigma}^\sim (-J) \subset \underline{M}_{p,\sigma}^\sim \simeq Q_1^+ ( \Gamma_{\mathbf{Q}} \times \underline{\mathfrak{S}}_{p,\sigma}^+ ) \leqno{(211)} 
+Il faudrait encore décrire les sous-groupes $M_{p, \Gamma}^{\sim}(-J)$, $M_{p, \Gamma}^{\prime \sim}(-J)$ dans $M_{p, \Gamma}^{\sim}$ décrit comme produit semi-direct, à travers
 $$
-$$ 
-= \left\{ (\underset{\in \Gamma_{\mathbf{Q}}}{(\lambda, x)}, \underset{\in Q_1^+}{u}) \mid u_\mu \in \underline{G}_{p,\sigma} \right\} 
+M_{p, \Gamma}^{\sim}(-J) \subset M_{p, \Gamma}^{\sim} \isommap \mathbf{Q}_l^* \rtimes (\hat{G}_{\mathbf{a}} \times \hat{\mathfrak{S}}_{p,\Gamma}^+) \leqno{(211)}
 $$
-
-où $u_\mu$ est défini dans (151), en particulier
-$$ 
-u_\mu(\rho) = \lambda_1^{-1} u(\rho) \quad , \quad \nu = \nu(\mu) , \quad \text{avec (154)} 
 $$
-
-\marginpar{\delta = \lambda_1 \lambda_0^{-1}}
-$$ 
-u = \sigma \nu_3 \delta^{-\nu} u_\mu \in \Gamma_{N_p} \quad , \quad \chi(u) = \mu 
+= \left\{ ((\lambda, x), u) \mid \lambda \in \hat{G}_{\mathbf{a}}, x \in \hat{\mathfrak{S}}_{p,\Gamma}^+, u \in N_p^\sim \right\}
 $$
-et posant $\sigma = \omega \tau ' \varepsilon$, la première
-s'écrit aussi
-$$ 
-u = \varepsilon \nu_3^{1/3} \big( \underbrace{\omega^{1/3} \cdot \tau^{1/3} \delta^{-\nu} u_\mu}_{\in \Gamma_{p,\sigma} \text{ car les trois facteurs de la droite sont } \in \Gamma_{N_p} \cap \underline{G}_{p,\sigma} = \Gamma_{\mathbf{Z}_p}^S} \big) \leqno{(212)} 
+où $u_\rho$ est défini dans (151), en particulier
+$$
+u_\rho(\rho) = \lambda_1^v \lambda_0^{-v} x(\rho) \quad (\text{avec } v = v(H)) \leqno{(154)}
+$$
+\marginpar{$\delta = \lambda_1 \lambda_0^{-1}$}
+$$
+u = \sigma \nu_3 \delta^{-v} u_\rho \in \Gamma_{N_p}, \quad \chi(u) = 1
+$$
+et posant $\sigma = \omega \tau$, le premier membre s'écrit aussi
+$$
+u = \lambda_0^{-1} \left( \omega \nu_3 . \tau \nu_3 \delta^{-v} u_\rho \right) \leqno{(212)}
 $$
 
 \newpage
@@ -4070,7 +4071,7 @@ s'insérant dans un hom. de suites exactes
 
 (28bis)
 \begin{tikzcd}
-1 \ar[r] & \hat{M} \ar[r] \ar[d] & \tilde{\mathcal{M}} \ar[r] \ar[d] & \Gamma \ar[r] \ar[d, "N_{0,3}=\Gamma_{\mathbb{Q}} \times \mathfrak{S}_3" description, "\hat{\mathbb{Z}}^\times \times id_{\mathfrak{S}_3}"] & 1 \\
+1 \ar[r] & \hat{M} \ar[r] \ar[d] & \tilde{\mathcal{M}} \ar[r] \ar[d] & \Gamma \ar[r] \ar[d, "{N_{0,3}=\Gamma_{\mathbb{Q}} \times \mathfrak{S}_3}" description, "\hat{\mathbb{Z}}^\times \times id_{\mathfrak{S}_3}"] & 1 \\
 1 \ar[r] & \hat{M} \ar[r] & G_{\tilde{\rho}} \ar[r] & \hat{\mathbb{Z}}^\times \times \mathfrak{S}_3 \ar[r] & 1
 \end{tikzcd}
 
@@ -4349,15 +4350,27 @@ de $U_{0,3 \overline{\mathbf{Q}}}$. Pour deux tels revête-
 
 %% ===== Page 138 =====
 
-ments proétales de $(U_{0,3 \mathbf{Q}}, \mathfrak{S}_3) = M_{1,1 \mathbf{Q}}$, il existe un unique isomorphisme de l'un sur l'autre.
+ments proétales de $(U_{0,3\,\mathbf{Q}}, \mathfrak{S}_3) = M'_{1,1\,\mathbf{Q}}$,
+il existe un unique isomorphisme
+de l'un sur l'autre.
 
-Nous avons obtenu l'existence de deux façons : par la tour de Fermat, et par la théorie générale de § 49 \mathrm{III}, appliquée au cas présent — ce qui nous donne un $U_\infty$ et un $U'_\infty$, chacun décrit à isomorphisme près !
-
-Le th.\ d'unicité résulte du petit calcul précédent — j'avais peur des "gros"
+Nous avons obtenu l'existence de
+deux façons : par la tour de Fermat,
+et par la théorie générale de § 99 \textbf{III},
+appliquée au cas présent -- ce qui
+nous donne un $U_\infty$ et un $U'_\infty$,
+chacun décrit à isomorphisme près !
+Le th.\ d'unicité résulte du
+petit calcul précédent -- j'avais
+peur des ``gros''
 $$
-H^1(\Gamma_{\mathbf{Q}}, \hat{M}) \simeq \hat{M} \otimes_{\hat{\mathbf{Z}}} \underset{\widehat{\mathbf{Q}^*}}{H^1(\Gamma_{\mathbf{Q}}, T_{\hat{\mathbf{Z}}}(\mathbb{G}_m))} ,
+H^1(\Gamma_{\mathbf{Q}}, \hat{M}) \simeq M \otimes_{\hat{\mathbf{Z}}} H^1(\Gamma_{\mathbf{Q}}, T_{\hat{\mathbf{Z}}}(\mathbf{G}_m))
 $$
-mais finalement c'est la nullité des $H^i(\mathfrak{S}_3, \hat{M})$ pour $i=0,1$ qui implique (et sans rien connaitre sur $\Gamma_{\mathbf{Q}}$ !) celle de $H^1(\Gamma_{\mathbf{Q}} \times \mathfrak{S}_3, \hat{M})$, qui assure l'unicité qu'il nous fallait.
+mais finalement c'est la nullité de
+$H^i(\mathfrak{S}_3, M)$ pour $i=0, 1$ qui implique
+(sans rien connaitre sur $\Gamma_{\mathbf{Q}}$ !)
+celle de $H^1(\Gamma_{\mathbf{Q}} \times \mathfrak{S}_3, \hat{M})$, qui donne
+l'unicité qu'il nous fallait.
 
 \newpage
 
@@ -5709,7 +5722,7 @@ On aura donc une suite exacte
 $$
 1 \longrightarrow \hat{\Pi}_{g,\nu} \longrightarrow \Pi_1(U_{g,\nu, \mathbf{Q}}) \longrightarrow \Pi_1(M_{g,\nu, \mathbf{Q}}) \longrightarrow 1 \leqno{(13)}
 $$
-où $U_{g,\nu, \mathbf{Q}}$ est la "courbe de type $g,\nu$ universelle" (en car. $0$). Ici c'est $\Pi_1(U_{g,\nu, \overline{\mathbf{Q}}})$ qui apparaît comme un TL-groupe profini.
+où $U_{g,\nu, \mathbf{Q}}$ est la "{courbe de type $g,\nu$ universelle}" (en car. $0$). Ici c'est $\Pi_1(U_{g,\nu, \overline{\mathbf{Q}}})$ qui apparaît comme un TL-groupe profini.
 
 Je voudrais dégager une propriété commune à ce cas "universel" (13), et au cas d'ailleurs en déduit : un corps de base $k$ extension de type fini de $\mathbf{Q}$ (le premier cas se ramène d'ailleurs essentielle-ment au second, en prenant un "point générique" de $M_{g,\nu}$...). Pour ceci, considérons un LT-groupe $\Pi$, et un homomorphisme
 $$
@@ -6174,38 +6187,34 @@ $$
 
 %% ===== Page 214 =====
 
-par un des schémas en groupes lisses quotients $Z_{i,n}$
-de $Env(\tilde{L}_{i,0})$, donnant une suite exacte :
-\marginpar{S_0 = \operatorname{Spec} \mathbf{Z}}
+par un des schémas en groupes lisses quotients $\mathcal{Z}_{i,n}$ de
+$Env(\widetilde{L}_{i,0})$, d'où se déduit la suite :
+\marginpar{$S_0 = \operatorname{Spec} \mathbf{Z}$}
 $$
-\begin{tikzcd}[row sep=tiny]
-1 \arrow[r] & \underline{uT_0} \arrow[r] & Z_{i,n} \arrow[r] & (H_{i,n})_{S_0} \arrow[r] \arrow[d, phantom, sloped, "\simeq"] & 1 \\
-& & & (\tilde{L}_{i,0}/\underline{uT_0}) &
-\end{tikzcd}
-\leqno{(52)}
+1 \longrightarrow \underline{n T_0} \longrightarrow \mathcal{Z}_{i,n} \longrightarrow \underset{\simeq (\widetilde{L}_{i,0} / \underline{n T_0})}{(\widetilde{H}_{i,n})_{S_0}} \longrightarrow 1 \leqno{(52)}
 $$
-
 Mais bien entendu, la restriction de l'homomorphisme
-
 obtenu
 $$
-Z_{i,n} \longrightarrow \underline{\Pi}
+\mathcal{Z}_{i,n} \longrightarrow \underline{\Pi}
 $$
 à
 $$
-Z_{i,n}^0 \simeq \underline{uT_0}
+\mathcal{Z}_{i,n}^\circ \simeq \underline{n T_0}
 $$
-n'est pas en général un monomorphisme --- s'il
-l'est pour un $n$ fixé, alors pour $n'$ ($n|n', n \neq n'$),
-il ne l'est plus pour $n'$. Un cas particulièrement favorable serait celui où
-il peut se trouver un $n$ tel que l'homomorphisme
-\marginpar{cet homomorphisme est alors unique.}
+n'est pas en général un monomorphisme - s'il
+l'est pour un $n$ fixé, dès $n'$ multiple, $n' \neq n$ ;
+il ne l'est plus pour $n'$. Une parti-
+-cularité fâcheuse serait alors de
+ne pas trouver un $M$ pour que l'homomorphisme
+induit
+\marginpar{cet homomorphisme est unique}
 $$
-\underline{uT_0} \longrightarrow \underline{\Pi} \leqno{(53)}
+\underline{n T_0} \longrightarrow \underline{\Pi} \leqno{(53)}
 $$
-soit un monomorphisme. Cela indiquerait que l'adhérence
-schématique dans $\underline{\Pi}$ d'un ``sous-groupe
-additif'' à 1 paramètre $\mathbf{G}_a \simeq \underline{L}_{i,\mathbf{Q}} = \underline{k}_i(\underline{T_0})$
+soit un monomorphisme. Ceci indique que l'adhérence
+schématique dans $\underline{\Pi}$ du "sous-groupe
+additif" à $1$ paramètre\footnote{$\simeq \widetilde{L}_{i,\mathbf{Q}} = K_i(x_0)$}
 est un sous-schéma en groupes lisse de $\underline{\Pi}$.
 
 \newpage
@@ -6474,20 +6483,21 @@ ouvert de $\mathcal{M}$...
 
 %% ===== Page 225 =====
 
-1^\circ) Action différentiable du groupe de Teichmüller spéciale. \marginpar{Cat. différentiable}
+\marginpar{750}
+\underline{53}
 
-Soit $X$ une surface connexe (orientable, compacte dans le cas qui nous intéresse), $I$ une partie discrète de $X$. Pour tout $i \in I$, soit $\mathbb{S}_i$ l'espace (homéomorphe à une circonférence) des demi-droites tangentes dans l'espace tangent, et soit $\tilde{\mathbb{S}}_i$ un revêtement universel de $\mathbb{S}_i$. 
+1°) Action différentiable du groupe de Teichmüller spécial.
 
-Soit $g$ un automorphisme différentiable de $(X, I)$, il induit un automorphisme de
+Soit $X$ une surface orientable (différentiable, compacte dans le cas qui nous intéresse), $I$ une partie discrète de $X$. Pour tout $i \in I$, soit $\mathbb{S}_i$ l'espace (homéomorphe à la circonférence) des demi-droites tangentes dans l'espace tangent, et soit $\widetilde{\mathbb{S}}_i$ un revêtement universel de $\mathbb{S}_i$.
+Soit $u$ un automorphisme différentiable de $(X,I)$, il induit un automorphisme de
 $$
 \mathbb{S} = \mathbb{S}_I \defeq \coprod_{i \in I} \mathbb{S}_i , \leqno{(1)}
 $$
-noté $u_g$. Considérons l'ensemble des relèvements $\tilde{u}_g$ de $u_g$ en un automorphisme de
+noté $u_{\mathbb{S}}$. Considérons l'ensemble des relèvements $\widetilde{u}$ de $u_{\mathbb{S}}$ en un automorphisme de
 $$
-\tilde{\mathbb{S}} = \coprod_{i \in I} \tilde{\mathbb{S}}_i . \leqno{(2)}
+\widetilde{\mathbb{S}} = \coprod_{i \in I} \widetilde{\mathbb{S}}_i . \leqno{(2)}
 $$
-
-Notons, si $T_0$ est le module d'orientation de $X$, que $T_0$ opère dans chaque $\tilde{\mathbb{S}}_i$,
+Notons, si $T$ est le module d'orientation de $X$, que [unclear: pour chaque $i$, $T$] opère sur [unclear: chaque quotient] de $\widetilde{\mathbb{S}}_i$.
 
 \newpage
 
@@ -6746,22 +6756,33 @@ $$
 
 %% ===== Page 235 =====
 
-Le groupe $\operatorname{Sl}(2,\mathbf{Z})/\pm 1$ s'identifie au quotient de $\Pi$ par le sous-groupe distingué engendré par l'élément $\omega_0 = \tilde{\rho}^3 = \tilde{\sigma}^2$. Mais cet élément étant central, le groupe engendré par $\omega_0$ est déjà distingué, donc on a une suite exacte
-$$
-1 \longrightarrow \mathbf{Z} \xrightarrow{1 \mapsto \omega_0} \Pi \longrightarrow \operatorname{Sl}(2,\mathbf{Z})/\pm 1 \longrightarrow 1 \leqno{(27)}
+Le groupe $\operatorname{Sl}(2, \mathbf{Z})/\pm 1$ s'identifie au
+quotient de $\Pi$ par le sous-groupe distingué
+engendré par l'élément $w_0 \defeq \tilde{\rho}^3 = \tilde{\sigma}^2$.
+Mais cet élément est central, le groupe
+engendré par $w_0$ est déjà distingué.
+On a une suite exacte
+$$ 
+\mathbf{Z} \xrightarrow{1 \mapsto w_0} \Pi \to \operatorname{Sl}(2, \mathbf{Z})/\pm 1 \to 1 \leqno{(27)} 
 $$
 qui s'envoie dans la suite exacte
+$$ 
+1 \to \mathbf{Z} \xrightarrow{n \mapsto w_0^n} \operatorname{Sl}(2, \mathbf{Z})^\sim \to \operatorname{Sl}(2, \mathbf{Z})/\pm 1 \to 1 
 $$
-1 \longrightarrow \mathbf{Z} \xrightarrow{n \mapsto \omega_0^n} \operatorname{Sl}(2,\mathbf{Z})^\sim \longrightarrow \operatorname{Sl}(2,\mathbf{Z})/\pm 1 \longrightarrow 1
-$$
-en induisant des isomorphismes (identiques sur les facteurs extrêmes) donc par le lemme des 5 $\Pi \longrightarrow \operatorname{Sl}(2,\mathbf{Z})^\sim$ est un isomorphisme, cqfd.
+en induisant des isomorphismes (identiques) sur les termes
+extrêmes — donc par le lemme des 5
+$\Pi \to \operatorname{Sl}(2, \mathbf{Z})^\sim$ est un isomorphisme, cqfd.
 
-Corollaire! Le groupe $\operatorname{Gl}(2,\mathbf{Z})^\sim$ admet la présentation (à trois générateurs $\tilde{\rho}, \tilde{\sigma}, \tilde{\tau}$)
+Corollaire ! Le groupe $\operatorname{Gl}(2, \mathbf{Z})^\sim$ admet
+la présentation (à trois générateurs $\tilde{\rho}, \tilde{\sigma}, \tilde{\tau}$)
+$$ 
+\tilde{\tau}^2 = \tilde{\rho}^3 = \tilde{\sigma}^2, \quad \tilde{\tau}(\tilde{\rho}) = \tilde{\rho}^{-1}, \quad \tilde{\tau}(\tilde{\sigma}) = \tilde{\sigma}^{-1} \leqno{(28)} 
 $$
-( \tilde{\tau}^2 = \omega_0, [unclear: \tilde{\rho}^3 \cdot \tilde{\sigma}^{-2} = 1], \tilde{\tau}(\tilde{\rho}) = \tilde{\rho}^{-1}, \tilde{\tau}(\tilde{\sigma}) = \tilde{\sigma}^{-1} ) \leqno{(28)}
-$$
-
-Je vais essayer de présenter le [unclear: groupe] $\operatorname{Gl}(2,\mathbf{Z})^\sim$ à trois générateurs involutifs, notés [unclear: \tilde{\rho}_0, \tilde{\sigma}_0, \tilde{\tau}_0] au-dessus des éléments [unclear: \rho_0, \sigma_0, \tau_0] de $\operatorname{Gl}(2,\mathbf{Z})$, en m'inspirant des formulaires de $\operatorname{Sl}(2,\mathbf{Z})$ :
+Je vais essayer de présenter le groupe
+$\operatorname{Gl}(2, \mathbf{Z})^\sim$ avec trois générateurs involutifs,
+[unclear: notés] $\tilde{v}_0, \tilde{v}_1, \tilde{v}_\infty$ — au-dessus des éléments
+$v_0, v_1, v_\infty$ de $\operatorname{Gl}(2, \mathbf{Z})$, en m'inspirant
+des [unclear: formulaires] de $\operatorname{Sl}(2, \mathbf{Z})$ :
 
 \newpage
 
@@ -7457,7 +7478,7 @@ ce qui est la bijection (80) cherchée.
 
 (93)
 \begin{tikzcd}
-germ\, revdiff(X,x) \ar[r, "\simeq"', "\gamma \mapsto \Delta(\gamma)"] \ar[d, "\gamma \mapsto Revunis(D_x^*,\gamma) = D_{x,\gamma}^{*\sim}"'] & \Pi_1(S_x) \ar[d, "\simeq", "a \mapsto Revunis(S_x,-)"'] \\
+germ\, revdiff(X,x) \ar[r, "\simeq"', "\gamma \mapsto \Delta(\gamma)"] \ar[d, "{\gamma \mapsto Revunis(D_x^*,\gamma) = D_{x,\gamma}^{*\sim}}"'] & \Pi_1(S_x) \ar[d, "\simeq", "{a \mapsto Revunis(S_x,-)}"'] \\
 Rev.unis(D_x^*) \ar[r, "\simeq"'] \ar[ur, dashed, "\Theta \simeq"'] & Revunis(S_x)
 \end{tikzcd}
 
