@@ -28,6 +28,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import time
 from collections import Counter
 from datetime import datetime
@@ -384,6 +385,16 @@ def apply_regex_normalization(text: str, rules: list, verbose: bool = False) -> 
 
     result, env_fixes = fix_env_mismatches(result)
     changes.extend(env_fixes)
+
+    # Combining diacritics (e.g. "E" + U+0301 rather than "É") are valid
+    # Unicode but pdflatex rejects them outright: "Unicode character ́ not
+    # set up for use with LaTeX". NFC composes them into the precomposed
+    # characters inputenc understands, and leaves everything else alone.
+    composed = unicodedata.normalize("NFC", result)
+    if composed != result:
+        changes.append({"rule": "combining diacritics → precomposed (NFC)",
+                        "count": 1})
+        result = composed
 
     return result, changes
 

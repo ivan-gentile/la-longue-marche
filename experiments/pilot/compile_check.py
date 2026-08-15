@@ -59,16 +59,27 @@ def page_index(tex: str) -> tuple[list[int], list[int]]:
     return lines, pages
 
 
-def compile_one(stem: str, workdir: Path) -> tuple[str, int]:
-    """Compile one file; return (log text, pdf page count)."""
+def compile_one(stem: str, workdir: Path, timeout: int) -> tuple[str, int, bool]:
+    """Compile one file; return (log text, pdf page count, timed_out).
+
+    A file that makes pdflatex hang must not take the whole report down with
+    it: the process is killed, the partial log is still read, and the run
+    moves on to the next file.
+    """
     shutil.copy(TEX_OUT / f"{stem}.tex", workdir / f"{stem}.tex")
     (workdir / "doc.tex").write_text(
         f"\\input{{preamble}}\n\\input{{{stem}}}\n\\end{{document}}\n", encoding="utf-8"
     )
-    subprocess.run(
-        ["pdflatex", "-interaction=nonstopmode", "-jobname", stem, "doc.tex"],
-        cwd=workdir, capture_output=True, timeout=1800,
-    )
+    timed_out = False
+    try:
+        subprocess.run(
+            ["pdflatex", "-interaction=nonstopmode", "-no-shell-escape",
+             "-jobname", stem, "doc.tex"],
+            cwd=workdir, capture_output=True, timeout=timeout,
+        )
+    except subprocess.TimeoutExpired:
+        timed_out = True
+        subprocess.run(["pkill", "-f", f"-jobname {stem}"], capture_output=True)
     log = workdir / f"{stem}.log"
     text = log.read_text(encoding="utf-8", errors="replace") if log.exists() else ""
     pdf = workdir / f"{stem}.pdf"
@@ -79,12 +90,15 @@ def compile_one(stem: str, workdir: Path) -> tuple[str, int]:
             pages = len(fitz.open(str(pdf)))
         except Exception:
             pages = -1
-    return text, pages
+    return text, pages, timed_out
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--only", help="compile just this stem")
+    ap.add_argument("--timeout", type=int, default=600,
+                    help="seconds allowed per file before pdflatex is killed "
+                         "and the file is reported as hanging (default 600)")
     args = ap.parse_args()
 
     if not shutil.which("pdflatex"):
@@ -105,7 +119,7 @@ def main() -> None:
             tex = src.read_text(encoding="utf-8")
             marker_lines, marker_pages = page_index(tex)
 
-            log, pdf_pages = compile_one(stem, workdir)
+            log, pdf_pages, timed_out = compile_one(stem, workdir, args.timeout)
 
             # The body is \input at a fixed offset; line numbers in the log
             # refer to the body file itself, so they map directly.
@@ -120,7 +134,8 @@ def main() -> None:
             n_errors = sum(kinds.values())
             bad_pages = sorted(by_page)
             clean = total - len(bad_pages)
-            rows.append((label, stem, total, clean, len(bad_pages), n_errors, pdf_pages))
+            rows.append((label, stem, total, clean, len(bad_pages), n_errors,
+                         pdf_pages, timed_out))
 
             if bad_pages:
                 details.append(f"### {label}\n")
@@ -133,7 +148,8 @@ def main() -> None:
                 more = f" … and {len(bad_pages) - 40} more" if len(bad_pages) > 40 else ""
                 details.append(f"\nPages (error count): {shown}{more}\n")
             print(f"{label}: {clean}/{total} pages compile clean, "
-                  f"{n_errors} errors, PDF {pdf_pages} pages")
+                  f"{n_errors} errors, PDF {pdf_pages} pages"
+                  + ("  [pdflatex HUNG — partial log]" if timed_out else ""))
 
     lines = [
         "# Compile check",
@@ -150,9 +166,10 @@ def main() -> None:
         "| Document | Pages | Compile clean | With errors | Total errors | PDF pages |",
         "|---|---|---|---|---|---|",
     ]
-    for label, stem, total, clean, bad, errs, pdf_pages in rows:
-        lines.append(f"| {label} | {total} | **{clean}** | {bad} | {errs} "
-                     f"| {pdf_pages if pdf_pages else '— (aborted)'} |")
+    for label, stem, total, clean, bad, errs, pdf_pages, timed_out in rows:
+        state = (f"{pdf_pages}" if pdf_pages
+                 else ("— (pdflatex hung)" if timed_out else "— (aborted)"))
+        lines.append(f"| {label} | {total} | **{clean}** | {bad} | {errs} | {state} |")
     lines += ["", *details]
 
     out = HERE / "COMPILE_REPORT.md"
