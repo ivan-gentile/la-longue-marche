@@ -13,7 +13,8 @@ two-track plan agreed with Mateo (June 2026) and his reply of
 - **La Longue Marche working draft** (`flash-lite-mateo`): complete,
   976/976 pages, superseded by the canonical corpus wherever both
   cover a page. Content fidelity on hard sections is draft-grade: on
-  Section 49.1 roughly half the content tokens are omitted or reworded
+  Section 49.1 about two thirds of the content tokens are omitted or
+  reworded (514 of 763)
   (`experiments/pilot/fidelity_49_1.md`).
 - **Préschémas / Bourbaki Schémas**: 437/437 pages, page-by-page,
   markers written from the PDF index. Verified to be transcribed from
@@ -26,7 +27,9 @@ two-track plan agreed with Mateo (June 2026) and his reply of
   page-level coverage of every deliverable, standalone documents
   included (`experiments/pilot/make_coverage.py`).
 - **Silent-defect audit**: `experiments/pilot/audit_corpus.py` scans
-  every corpus for context echoes, empty successes and distant
+  every corpus for context echoes (word-level, so re-wrapped text can
+  not hide one), leaked model reasoning, truncated pages, unbalanced
+  LaTeX environments, escaping artifacts, empty successes and distant
   duplicates → `experiments/pilot/CORPUS_AUDIT.md`.
 - **Honest cost accounting**: thinking tokens are billed at the output
   rate but were left out of every runner's arithmetic, understating
@@ -68,10 +71,20 @@ two-track plan agreed with Mateo (June 2026) and his reply of
    delivery zips — scans stay out of the public repo.
 8. Bring-your-own-API-key: keys already come from `.env`; document a
    reviewer path to re-run a single page with a private key.
-9. Quota-aware runner: the page-by-page runners now abort loudly after
-   5 consecutive quota errors and exit non-zero on an incomplete run,
+9. ~~Quota-aware runner~~ — done: every runner now aborts loudly after
+   5 consecutive quota errors, sets a 300 s per-request timeout, writes
+   its results file atomically, and exits non-zero on an incomplete run,
    instead of grinding silently to a "Done" (the April failure mode).
-   `run_production.py` still needs the same treatment.
+
+## Models
+
+12. Model registry consolidated in `experiments/pilot/models.py` (ids +
+    prices + measured notes). `gemini-3.7-flash` is the new draft model
+    on measured fidelity; Pro stays the default for full runs;
+    `gemini-3.5-flash-lite` was measured and rejected. Before any
+    full-corpus re-run on 3.7 Flash, repeat the comparison on a wider
+    page sample than the five pages of Section 49.1
+    (`experiments/pilot/bench_models_2026_08/summary.md`).
 
 ## Publication
 

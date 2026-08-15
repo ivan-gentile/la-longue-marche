@@ -1,11 +1,18 @@
 # Page coverage of the tex_output deliverables
 
-Generated 2026-08-14 by `experiments/pilot/make_coverage.py`.
+Generated 2026-08-15 by `experiments/pilot/make_coverage.py`.
 
 A page is counted only when the model returned a non-trivial
 transcription. Untranscribed pages keep their `%% ===== Page N =====`
 marker in the tex file with a one-line reason, so page alignment with
 the scans is preserved. Machine-readable version: `coverage.json`.
+
+## Variant `february-original` — superseded February 2026 run (`text-first-fewshot` prompt) — still published because it was delivered in April; prefer `mateo-canonical`
+
+| Volume | Tex file | Model | Pages transcribed | Missing | Missing ranges |
+|---|---|---|---|---|---|
+| 140-3 | `la_longue_marche_140-3.tex` | gemini-3.1-pro-preview | **696/696** | 0 | — |
+| 140-4 | `la_longue_marche_140-4.tex` | gemini-3.1-pro-preview | **280/280** | 0 | — |
 
 ## Variant `flash-lite-mateo` — complete corpus, shipped April 2026
 
@@ -26,7 +33,7 @@ the scans is preserved. Machine-readable version: `coverage.json`.
 | Document | Tex file | Model | Pages transcribed | Missing | Missing ranges |
 |---|---|---|---|---|---|
 | Préschémas (Bourbaki Schémas typescript) | `bourbaki_schemes_pages_flash-lite.tex` | gemini-3.1-flash-lite-preview | **437/437** | 0 | — |
-| Catégories de variétés (typescript n° 262) | `varietes_categories_U46.tex` | gemini-3.1-pro-preview | **23/100** | 77 | 24-100 |
+| Catégories de variétés (typescript n° 262) | `varietes_categories_U46.tex` | gemini-3.1-pro-preview | **100/100** | 0 | — |
 
 - Source of *Préschémas (Bourbaki Schémas typescript)*: U86u1.pdf + U86u2.pdf (CSG): tex pages 1-210 = U86u1, tex pages 211-437 = U86u2 pages 1-227.
 - Source of *Catégories de variétés (typescript n° 262)*: U46.pdf (CSG).

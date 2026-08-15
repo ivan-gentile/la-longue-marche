@@ -32,6 +32,7 @@ import argparse
 import difflib
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime
@@ -48,6 +49,10 @@ OUT_DIR = HERE / "production-pages"
 TEX_OUT = REPO / "tex_output"
 TEX_NAME = "varietes_categories_U46.tex"
 
+# Pinned for corpus consistency: every page of this document must come from
+# the same model, so a later repair run cannot silently mix generations.
+# gemini-3.1-pro-preview is still the newest Pro as of 2026-08-14 (see
+# experiments/pilot/models.py).
 MODEL_ID = "gemini-3.1-pro-preview"
 THINKING_LEVEL = "medium"
 # USD per 1M tokens. Thinking tokens bill at the output rate.
@@ -218,12 +223,25 @@ def request_page(client, types, doc, page_idx: int, corrective: bool = False):
     return text, usage
 
 
+def _words(text: str) -> list[str]:
+    """Lowercased word tokens, insensitive to line wrapping and hyphenation."""
+    s = re.sub(r"(?m)^\s*%.*$", " ", text)
+    s = re.sub(r"-\s*\n\s*", "", s)
+    return [w.lower() for w in re.findall(r"[a-zà-öø-ÿœ0-9]+", s, re.IGNORECASE)]
+
+
 def echo_similarity(text: str, prev_entry: dict) -> float:
-    """How much this page's output looks like the previous page's output."""
+    """Word-level similarity to the previous page's output.
+
+    Compared at word level deliberately: a character-level comparison
+    missed real echoes whose text had merely been re-wrapped (0.21-0.71
+    character similarity against 0.75-0.96 word similarity).
+    """
     prev = (prev_entry or {}).get("transcription", "")
-    if not prev or not text:
+    a, b = _words(prev), _words(text or "")
+    if not a or not b:
         return 0.0
-    return difflib.SequenceMatcher(None, prev, text).ratio()
+    return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
 
 
 def placeholder_reason(entry: dict) -> str:

@@ -25,6 +25,13 @@ REPO = HERE.parent.parent
 TEX_OUT = REPO / "tex_output"
 
 VARIANTS = {
+    "february-original": {
+        "dir": HERE / "production",
+        "tex": "la_longue_marche_{vol}.tex",
+        "note": "superseded February 2026 run (`text-first-fewshot` prompt) — "
+                "still published because it was delivered in April; prefer "
+                "`mateo-canonical`",
+    },
     "flash-lite-mateo": {
         "dir": HERE / "production-flash-lite-mateo",
         "tex": "la_longue_marche_{vol}_flash-lite-mateo.tex",

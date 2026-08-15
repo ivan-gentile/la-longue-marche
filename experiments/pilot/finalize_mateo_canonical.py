@@ -41,23 +41,48 @@ VOLUMES = {
 # ---------------------------------------------------------------------------
 
 
+def _defects(text: str) -> list[str]:
+    """Audit-level defects in a page's text (empty list means clean)."""
+    sys.path.insert(0, str(HERE))
+    from audit_corpus import find_leaks, truncation_signals, unbalanced_envs
+
+    return (["leaked reasoning"] if find_leaks(text) else []) \
+        + truncation_signals(text) + unbalanced_envs(text)
+
+
 def overlay_diagrams(vol: str) -> dict:
-    """Return merged transcriptions.json for vol after overlaying diagrams."""
+    """Return merged transcriptions.json for vol after overlaying diagrams.
+
+    The diagram pass produces better tikz-cd for diagram-heavy pages, but it
+    comes from an older run: where its page is defective and the canonical
+    page is not, the canonical page wins. Otherwise a repaired page is
+    silently overwritten by the bad one on every rebuild.
+    """
     new_path = NEW_PROD / vol / "transcriptions.json"
     diag_path = OLD_PROD / vol / "diagram_transcriptions.json"
 
     new_data = json.loads(new_path.read_text(encoding="utf-8"))
     diag_count = 0
+    rejected: list[str] = []
 
     if diag_path.exists():
         diag_data = json.loads(diag_path.read_text(encoding="utf-8"))
         for pkey, entry in diag_data.items():
             if entry.get("status") == "success":
+                diag_text = entry.get("transcription", "")
+                current = new_data.get(pkey, {})
+                if (current.get("status") == "success"
+                        and _defects(diag_text) and not _defects(current.get("transcription", ""))):
+                    rejected.append(pkey)
+                    continue
                 new_data[pkey] = {
                     **entry,
                     "source": "diagram-retranscription",
                 }
                 diag_count += 1
+    if rejected:
+        print(f"  {vol}: kept the canonical text on {len(rejected)} page(s) whose "
+              f"diagram version is defective: {', '.join(sorted(rejected, key=int))}")
 
     # Backup before overwriting
     backup = NEW_PROD / vol / "transcriptions_pre_diagram_overlay.json"
@@ -149,6 +174,8 @@ def build_tex(vol: str) -> Path:
         lines.append(f"%% ===== Page {page} =====")
         lines.append("")
         if entry.get("status") == "success":
+            if entry.get("warning"):
+                lines.append(f"%% [REVIEW: {entry['warning']}]")
             lines.append(entry.get("transcription", "").strip())
         else:
             lines.append(f"%% [page {page} not transcribed: {placeholder_reason(entry)}]")
@@ -237,6 +264,45 @@ def main() -> None:
     out = NEW_PROD / "FINAL_SCORE.json"
     out.write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nWrote {out.relative_to(REPO)}")
+
+    # Step 5 — release gate. A page can be a perfectly ordinary "success"
+    # and still be unusable (leaked model reasoning, truncation, LaTeX that
+    # will not compile). Nothing ships without this being clean.
+    print("\n[5/5] Release gate — audit the built corpus...")
+    sys.path.insert(0, str(HERE))
+    from audit_corpus import audit as audit_corpus_fn
+
+    blocking = 0
+    for vol, spec in VOLUMES.items():
+        res_a = audit_corpus_fn(NEW_PROD / vol, spec["pages"], 0.75)
+        if res_a is None:
+            continue
+        counts = {
+            "context echoes": [p for p, _ in res_a["echoes"]],
+            "reasoning leaks": [p for p, _ in res_a["reasoning_leaks"]],
+            "truncated": [p for p, _ in res_a["truncations"]],
+            "unbalanced env": [p for p, _ in res_a["unbalanced_envs"]],
+            "escape artifacts": [p for p, _ in res_a["escape_artifacts"]],
+            "empty": res_a["empty_successes"],
+        }
+        flagged = {k: v for k, v in counts.items() if v}
+        if not flagged:
+            print(f"  {vol}: clean")
+            continue
+        for label, pages in flagged.items():
+            blocking += len(pages)
+            shown = ", ".join(str(p) for p in pages[:12])
+            more = f" (+{len(pages) - 12} more)" if len(pages) > 12 else ""
+            print(f"  {vol}: {len(pages)} page(s) with {label}: {shown}{more}")
+
+    if blocking:
+        print(f"\n  {blocking} flagged page(s). Repair with:")
+        print("    python experiments/pilot/run_production.py --volume <vol> "
+              "--output-dir production-mateo-canonical --prompt-style mateo-canonical "
+              "--pages <N ...>")
+        print("  then re-run this script. Do not ship until this is clean.")
+    else:
+        print("  All volumes clean — safe to ship.")
 
 
 if __name__ == "__main__":

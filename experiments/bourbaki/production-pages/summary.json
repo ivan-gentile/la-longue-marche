@@ -2,10 +2,10 @@
   "success": 437,
   "errors": 0,
   "total_pages": 437,
-  "tokens_in": 611280,
-  "tokens_out": 350507,
+  "tokens_in": 611965,
+  "tokens_out": 335906,
   "tokens_thinking": 0,
-  "estimated_cost": 0.68,
-  "finished": "2026-08-14T20:10:15.069483",
+  "estimated_cost": 0.66,
+  "finished": "2026-08-14T21:07:06.565366",
   "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py"
 }

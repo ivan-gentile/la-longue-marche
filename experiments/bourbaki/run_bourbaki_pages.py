@@ -22,6 +22,7 @@ import argparse
 import difflib
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime
@@ -37,6 +38,11 @@ PDF_PATH = REPO / "raw_pdf" / "bourbaki_schemes.pdf"
 OUT_DIR = HERE / "production-pages"
 TEX_OUT = REPO / "tex_output"
 
+# Pinned deliberately: this document's 437 pages were transcribed with this
+# model, and repairs (--pages) must stay on it — mixing models inside one
+# transcription would make the corpus inconsistent for review. Newer models
+# are in experiments/pilot/models.py; adopting one here means re-running the
+# whole document.
 MODEL_ID = "gemini-3.1-flash-lite-preview"
 PRICES = {"in": 0.25, "out": 1.50}
 MAX_OUTPUT_TOKENS = 16000
@@ -149,11 +155,25 @@ def request_page(client, types, doc, page_idx: int, corrective: bool = False):
     return text, usage
 
 
+def _words(text: str) -> list[str]:
+    """Lowercased word tokens, insensitive to line wrapping and hyphenation."""
+    s = re.sub(r"(?m)^\s*%.*$", " ", text)
+    s = re.sub(r"-\s*\n\s*", "", s)
+    return [w.lower() for w in re.findall(r"[a-zà-öø-ÿœ0-9]+", s, re.IGNORECASE)]
+
+
 def echo_similarity(text: str, prev_entry: dict) -> float:
+    """Word-level similarity to the previous page.
+
+    Compared at word level deliberately: a character-level comparison
+    missed real echoes whose text had merely been re-wrapped (0.21-0.71
+    character similarity against 0.75-0.96 word similarity).
+    """
     prev = (prev_entry or {}).get("transcription", "")
-    if not prev or not text:
+    a, b = _words(prev), _words(text or "")
+    if not a or not b:
         return 0.0
-    return difflib.SequenceMatcher(None, prev, text).ratio()
+    return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
 
 
 def save_results(results: dict, results_file: Path) -> None:

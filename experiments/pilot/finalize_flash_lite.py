@@ -34,17 +34,42 @@ import normalize_notation as nn
 from diagnose_49_1 import categorize, score as score_profile
 
 
+def _defects(text: str) -> list:
+    """Audit-level defects in a page's text (empty list means clean)."""
+    sys.path.insert(0, str(HERE))
+    from audit_corpus import find_leaks, truncation_signals, unbalanced_envs
+
+    return (["leaked reasoning"] if find_leaks(text) else []) \
+        + truncation_signals(text) + unbalanced_envs(text)
+
+
 def overlay_diagrams(vol: str) -> int:
+    """Overlay the diagram pass, but never replace good text with bad.
+
+    The diagram pass is from an older run: where its page is defective and
+    the current page is not, the current page wins. Without this, a repaired
+    page is silently overwritten by the defective one on every rebuild.
+    """
     path = NEW_PROD / vol / "transcriptions.json"
     diag_path = OLD_PROD / vol / "diagram_transcriptions.json"
     data = json.loads(path.read_text(encoding="utf-8"))
     merged = 0
+    rejected = []
     if diag_path.exists():
         diag = json.loads(diag_path.read_text(encoding="utf-8"))
         for pkey, entry in diag.items():
             if entry.get("status") == "success":
+                current = data.get(pkey, {})
+                if (current.get("status") == "success"
+                        and _defects(entry.get("transcription", ""))
+                        and not _defects(current.get("transcription", ""))):
+                    rejected.append(pkey)
+                    continue
                 data[pkey] = {**entry, "source": "diagram-retranscription"}
                 merged += 1
+    if rejected:
+        print(f"  {vol}: kept the current text on {len(rejected)} page(s) whose "
+              f"diagram version is defective: {', '.join(sorted(rejected, key=int))}")
     backup = NEW_PROD / vol / "transcriptions_pre_diagram_overlay.json"
     if not backup.exists():
         backup.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")

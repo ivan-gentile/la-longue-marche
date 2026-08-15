@@ -9,8 +9,12 @@ that content.
 
 Open decision for Ivan: the volunteer paragraph has two variants (A =
 apply to the CSG, B = stay informal). Pick one and delete the other
-before sending. Everything else below is live on GitHub as of commit
-`09513c7` and the Variétés commit that follows it.
+before sending.
+
+Pre-send checklist — every claim below must be live on GitHub first:
+- [ ] Variétés run finished and COVERAGE.md reads 100/100
+- [ ] `audit_corpus.py` clean on every corpus
+- [ ] all commits pushed; the tex files open at their GitHub URLs
 
 ---
 
@@ -82,13 +86,23 @@ and checked against the scans, and the file on GitHub is corrected.
 I mention it in this much detail because it is precisely the class of
 error your review is meant to catch and mine had not been catching: it
 is invisible to any success count. Three things now guard against it —
-the page attachments are labelled unambiguously, the pipeline compares
-each page against its predecessor and retries when they are suspiciously
-alike, and a new audit
+the page attachments are labelled unambiguously, every runner compares
+each page against its predecessor and retries when the two are
+suspiciously alike, and a new audit
 (`experiments/pilot/audit_corpus.py` → `CORPUS_AUDIT.md`) scans every
-corpus for this and two related silent failures before anything is
-shared. All current files pass. La Longue Marche was not affected, and
-I verified that specifically.
+corpus before anything is shared.
+
+That audit also looks for neighbouring failures that are equally
+invisible to an error count, and it did find some: pages where the
+model's own English reasoning reached the output instead of the
+transcription, pages cut off mid-formula, and LaTeX that would not
+compile. A few such pages were in the canonical La Longue Marche files;
+they have been re-transcribed, and the audit is clean on every corpus I
+am pointing you to. On the context-echo defect specifically, the
+canonical La Longue Marche corpus was unaffected — I checked that
+directly. One page of the superseded Flash-Lite draft (140-3 p. 4) is a
+partial echo of its predecessor; the canonical file transcribes that
+page correctly.
 
 In the same spirit I corrected the project's cost figures, which were
 understated several-fold because the model's internal "thinking" tokens

@@ -1,6 +1,35 @@
 {
-  "generated": "2026-08-14",
+  "generated": "2026-08-15",
   "variants": {
+    "february-original": {
+      "note": "superseded February 2026 run (`text-first-fewshot` prompt) — still published because it was delivered in April; prefer `mateo-canonical`",
+      "volumes": {
+        "140-3": {
+          "model": "gemini-3.1-pro-preview",
+          "prompt_style": "text-first-fewshot",
+          "thinking_level": "medium",
+          "run_started": "2026-03-09T11:35:21.815535",
+          "total_pages": 696,
+          "pages_transcribed": 696,
+          "pages_from_diagram_overlay": 114,
+          "pages_missing": 0,
+          "missing_ranges": "",
+          "tex_file": "la_longue_marche_140-3.tex"
+        },
+        "140-4": {
+          "model": "gemini-3.1-pro-preview",
+          "prompt_style": "text-first-fewshot",
+          "thinking_level": "medium",
+          "run_started": "2026-03-09T15:48:38.437721",
+          "total_pages": 280,
+          "pages_transcribed": 280,
+          "pages_from_diagram_overlay": 58,
+          "pages_missing": 0,
+          "missing_ranges": "",
+          "tex_file": "la_longue_marche_140-4.tex"
+        }
+      }
+    },
     "flash-lite-mateo": {
       "note": "complete corpus, shipped April 2026",
       "volumes": {
@@ -11,7 +40,7 @@
           "run_started": "2026-04-17T21:49:47.268330",
           "total_pages": 696,
           "pages_transcribed": 696,
-          "pages_from_diagram_overlay": 114,
+          "pages_from_diagram_overlay": 112,
           "pages_missing": 0,
           "missing_ranges": "",
           "tex_file": "la_longue_marche_140-3_flash-lite-mateo.tex"
@@ -37,10 +66,10 @@
           "model": "gemini-3.1-pro-preview",
           "prompt_style": "mateo-canonical",
           "thinking_level": "medium",
-          "run_started": "2026-08-14T19:37:38.951718",
+          "run_started": "2026-08-15T06:26:48.177094",
           "total_pages": 696,
           "pages_transcribed": 696,
-          "pages_from_diagram_overlay": 114,
+          "pages_from_diagram_overlay": 112,
           "pages_missing": 0,
           "missing_ranges": "",
           "tex_file": "la_longue_marche_140-3_mateo-canonical.tex"
@@ -49,7 +78,7 @@
           "model": "gemini-3.1-pro-preview",
           "prompt_style": "mateo-canonical",
           "thinking_level": "medium",
-          "run_started": "2026-08-14T19:40:18.582902",
+          "run_started": "2026-08-15T06:19:15.986586",
           "total_pages": 280,
           "pages_transcribed": 280,
           "pages_from_diagram_overlay": 58,
@@ -65,7 +94,7 @@
       "label": "Préschémas (Bourbaki Schémas typescript)",
       "source": "U86u1.pdf + U86u2.pdf (CSG): tex pages 1-210 = U86u1, tex pages 211-437 = U86u2 pages 1-227",
       "model": "gemini-3.1-flash-lite-preview",
-      "run_started": "2026-08-14T20:09:57.872516",
+      "run_started": "2026-08-14T21:06:55.327373",
       "total_pages": 437,
       "pages_transcribed": 437,
       "pages_missing": 0,
@@ -76,11 +105,11 @@
       "label": "Catégories de variétés (typescript n° 262)",
       "source": "U46.pdf (CSG)",
       "model": "gemini-3.1-pro-preview",
-      "run_started": "2026-08-14T20:01:44.968065",
+      "run_started": "2026-08-14T20:31:16.309646",
       "total_pages": 100,
-      "pages_transcribed": 23,
-      "pages_missing": 77,
-      "missing_ranges": "24-100",
+      "pages_transcribed": 100,
+      "pages_missing": 0,
+      "missing_ranges": "",
       "tex_file": "varietes_categories_U46.tex"
     }
   }

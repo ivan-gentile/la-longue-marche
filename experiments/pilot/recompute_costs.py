@@ -35,10 +35,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 
-PRICES = {
-    "gemini-3.1-pro-preview": {"in": 2.00, "out": 12.00},
-    "gemini-3.1-flash-lite-preview": {"in": 0.25, "out": 1.50},
-}
+import sys
+
+sys.path.insert(0, str(HERE))
+from models import PRICES_BY_ID as PRICES  # noqa: E402
 
 RUNS = [
     ("La Longue Marche 140-3", "mateo-canonical (Pro)",

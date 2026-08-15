@@ -8,5 +8,21 @@
   "thinking_level": "low",
   "max_output_tokens": 16000,
   "context": "previous_page_pdf",
-  "started": "2026-04-17T21:49:47.268330"
+  "started": "2026-04-17T21:49:47.268330",
+  "repairs": [
+    {
+      "date": "2026-08-15",
+      "pages": [
+        4,
+        195,
+        231,
+        404,
+        561,
+        638
+      ],
+      "thinking_level": "high",
+      "max_output_tokens": 32000,
+      "reason": "pages flagged by audit_corpus.py (context echo, leaked reasoning, truncation, unbalanced environments) and re-transcribed"
+    }
+  ]
 }

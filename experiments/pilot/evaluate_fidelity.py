@@ -116,6 +116,16 @@ def _production_pages(prod: str) -> str:
     )
 
 
+def _new_bench_pages(model_id: str) -> str:
+    """Pages from bench_models_2026_08 (one bucket per model id)."""
+    path = HERE / "bench_models_2026_08" / "results.json"
+    if not path.exists():
+        return ""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    bucket = data.get(model_id, {}).get("pages", {})
+    return "\n\n".join(bucket.get(p, {}).get("text", "") for p in PAGES_49_1)
+
+
 def preset_49_1() -> None:
     reference = (REPO / "reference" / "validation" / "49.1new.tex").read_text(encoding="utf-8")
     candidates = {
@@ -134,6 +144,18 @@ def preset_49_1() -> None:
             "production-mateo-canonical"
         ),
     }
+
+    # August 2026 model refresh (bench_models_2026_08.py). Included only
+    # once benchmarked, so the preset still runs on a clean checkout.
+    for label, model_id in [
+        ("Gemini 3.7 Flash + mateo-canonical (Aug 2026)", "gemini-3.7-flash"),
+        ("Gemini 3.6 Flash + mateo-canonical (Aug 2026)", "gemini-3.6-flash"),
+        ("Gemini 3.5 Flash-Lite + mateo-canonical (Aug 2026)", "gemini-3.5-flash-lite"),
+        ("Gemini 3.1 Pro + mateo-canonical (Aug 2026 re-run)", "gemini-3.1-pro-preview"),
+    ]:
+        text = _new_bench_pages(model_id)
+        if text.strip():
+            candidates[label] = text
 
     results = {name: compare(reference, cand) for name, cand in candidates.items()}
 

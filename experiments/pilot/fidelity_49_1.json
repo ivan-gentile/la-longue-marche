@@ -152,5 +152,109 @@
         "excerpt": "1pt 1pt at 150 anchor west at anchor west"
       }
     ]
+  },
+  "Gemini 3.7 Flash + mateo-canonical (Aug 2026)": {
+    "char_similarity": 0.457,
+    "word_similarity": 0.562,
+    "reference_tokens": 763,
+    "candidate_tokens": 551,
+    "omitted_tokens": 99,
+    "replaced_tokens": 295,
+    "inserted_tokens": 50,
+    "omission_spans": [
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 27,
+        "excerpt": "-1 tel que et soit un automorphisme de et posons ll -1 -1 -1 -1 cf 24 25 -5mm 34 33 n'existe pas alors dire que est"
+      },
+      {
+        "ref_tokens": 12,
+        "excerpt": "40 70 -- 40 92 40 70 ellipse radius 10 radius 25"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
+  },
+  "Gemini 3.6 Flash + mateo-canonical (Aug 2026)": {
+    "char_similarity": 0.595,
+    "word_similarity": 0.487,
+    "reference_tokens": 763,
+    "candidate_tokens": 513,
+    "omitted_tokens": 111,
+    "replaced_tokens": 341,
+    "inserted_tokens": 30,
+    "omission_spans": [
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 26,
+        "excerpt": "sera unique si on ainsi sur l'ensemble des des satisfaisant on aura une structure de groupe déduite par transport de structure de celle de 0' etc"
+      },
+      {
+        "ref_tokens": 13,
+        "excerpt": "toc section 49 les groupes généraux sec 49 toc subsection préliminaires heuristiques 3cm"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
+  },
+  "Gemini 3.5 Flash-Lite + mateo-canonical (Aug 2026)": {
+    "char_similarity": 0.394,
+    "word_similarity": 0.313,
+    "reference_tokens": 763,
+    "candidate_tokens": 363,
+    "omitted_tokens": 244,
+    "replaced_tokens": 343,
+    "inserted_tokens": 12,
+    "omission_spans": [
+      {
+        "ref_tokens": 108,
+        "excerpt": "même considérons un groupe profini et un homomorphisme continu surjectif on pose sous-groupe distingué de donc ce sont des sous-groupes fermés de satisfaisant norm 10 11 par abus de langage on désigne"
+      },
+      {
+        "ref_tokens": 96,
+        "excerpt": "de façon plus précise soit conjugué dans -1 conjugué dans -1 -1 tel que et soit un automorphisme de et posons ll -1 -1 -1 -1 cf 24 25 -5mm 34 33 n'existe pas alors dire que est conjugué signifie que f"
+      },
+      {
+        "ref_tokens": 11,
+        "excerpt": "que se factorise par --- ce qu'on va supposer pour nous"
+      }
+    ]
+  },
+  "Gemini 3.1 Pro + mateo-canonical (Aug 2026 re-run)": {
+    "char_similarity": 0.601,
+    "word_similarity": 0.573,
+    "reference_tokens": 763,
+    "candidate_tokens": 519,
+    "omitted_tokens": 104,
+    "replaced_tokens": 292,
+    "inserted_tokens": 37,
+    "omission_spans": [
+      {
+        "ref_tokens": 27,
+        "excerpt": "où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553"
+      },
+      {
+        "ref_tokens": 12,
+        "excerpt": "40 70 -- 40 92 40 70 ellipse radius 10 radius 25"
+      },
+      {
+        "ref_tokens": 11,
+        "excerpt": "sorte qu'on aura par les formules de cocycles dans 0' 0'"
+      },
+      {
+        "ref_tokens": 9,
+        "excerpt": "1pt 1pt at 150 anchor west at anchor west"
+      }
+    ]
   }
 }

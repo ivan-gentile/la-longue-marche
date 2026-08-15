@@ -9,7 +9,7 @@ pipeline change here before extending it to the rest of the corpus.
 
 | What | Where |
 |---|---|
-| Section heading | volume 140-3, **PDF page 495** (`\chapter*{§ 49 — Homomorphismes de M_{0,3}, les groupes M_{g,0} généralisés}`) |
+| Section heading | volume 140-3, **PDF page 495**. Mateo's corrected text reads `\chapter*{\S \space 49. --- HOMOMORPHISMES DE $\mathcal{M}_{0, 3}$, LES GROUPES $\mathcal{M}_{\rho,\sigma}$ GÉNÉRAUX}` (`reference/validation/49.1new.tex`, line 5) |
 | Extent | PDF pages 495–696 of 140-3 (no §50 heading found in this volume) |
 | Ground truth | `reference/validation/49.1new.tex` — Mateo's corrected Section 49.1 (= PDF pages 495–499); `49.1old.tex` is the shipped February output over the same pages |
 | Manuscript page | Grothendieck's own pagination puts §49 at p. 550 (per the manuscript's table of contents, PDF page 5) |
@@ -35,7 +35,8 @@ reference pages.
 2. Content fidelity (`experiments/pilot/fidelity_49_1.md`, July 2026):
    the style gains did **not** carry content. Against Mateo's corrected
    text (763 content tokens), Flash-Lite outputs omit or rewrite about
-   half; Gemini 3.1 Pro is the most faithful; Opus inserts spurious
+   two thirds (514 of 763 omitted or reworded); Gemini 3.1 Pro is the
+   most faithful; Opus inserts spurious
    text. This matches Mateo's review experience (omissions, silent
    rewording) and drives the model choice for §49.
 

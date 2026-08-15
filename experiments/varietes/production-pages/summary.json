@@ -1,0 +1,13 @@
+{
+  "success": 100,
+  "errors_this_run": 0,
+  "total_pages": 100,
+  "tokens_in": 198833,
+  "tokens_out": 68909,
+  "tokens_thinking": 382902,
+  "estimated_cost": 5.82,
+  "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py",
+  "model": "gemini-3.1-pro-preview",
+  "thinking_level": "medium",
+  "finished": "2026-08-14T21:22:12.756985"
+}

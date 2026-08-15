@@ -66,7 +66,7 @@ raw_pdf/140-4.pdf  ─┤
 *The flow above is unchanged today, but the current variants replace
 `text-first-fewshot` with `mateo-canonical` and write
 `*_flash-lite-mateo.tex` (Flash-Lite, complete) and
-`*_mateo-canonical.tex` (Pro, partial) instead.*
+`*_mateo-canonical.tex` (Pro, complete — the recommended file) instead.*
 
 ## 2. Model choice (why Gemini 3.1 Pro)
 
@@ -96,9 +96,9 @@ model. Opus 4.7 is useful as a quality probe on small samples.
 
 **Revised (April 2026)**: the complete working draft was produced with
 Gemini 3.1 Flash-Lite + `mateo-canonical` (best style-conformance per
-dollar), while Gemini 3.1 Pro + `mateo-canonical` — which the LLM-judge
-rates higher on fidelity and completeness — re-runs the corpus as API
-quota allows. Coverage of both variants:
+dollar), while Gemini 3.1 Pro + `mateo-canonical` — which the LLM-judge rates
+higher on fidelity and completeness — has since re-run the corpus in
+full and is the recommended version. Coverage of both variants:
 [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
 
 ## 3. Prompt templates
@@ -118,9 +118,9 @@ Part I Section 1 as calibration. This is the prompt behind the
 Specialized prompt that forbids `\begin{matrix}` and stacked
 `\downarrow` constructions and requires `\begin{tikzcd}` for any 2D
 structure, with three explicit tikz-cd examples drawn from your
-manuscript.  This prompt re-transcribed 114 diagram pages in `140-3`
-(merged into the current .tex file). The 59 diagram pages in `140-4`
-are the immediate next target (see [Known open work](#8-known-open-work)).
+manuscript.  This prompt re-transcribed 114 diagram pages in `140-3` and 58 in
+`140-4` (59 attempted, page 96 errored and kept its original
+transcription); both sets are merged into the current .tex files.
 
 ### 3.3. `mateo-canonical` (April 2026 — driven by your `49.1new.tex`)
 
@@ -155,7 +155,7 @@ actual publishable style alongside the canonical-notation block.
 |---------|----------------|-------------------|--------------------|-------------------|
 | Shipped 49.1old.tex | 4.71 | 5.42 | 7 % | **0.113** |
 | Gemini 3.1 Pro + old prompt | 3.33 | 7.10 | 14 % | **0.132** |
-| Claude Opus 4.7 + `mateo-canonical` | 0.71 | 1.42 | 71 % | **0.661** |
+| Claude Opus 4.7 + `mateo-canonical` | 1.48 | 0.84 | 71 % | **0.661** |
 | **Gemini 3.1 Pro + `mateo-canonical`** | **0.80** | **0.90** | **71 %** | **0.742** |
 | Gemini 3.1 Pro + `mateo-canonical`, whole-doc (10 pages in one call) | 0.62 | 0.75 | 50 % | **0.714** |
 
@@ -204,7 +204,7 @@ folds them into the main `transcriptions.json`. The merge leaves a
 
 As of April 2026, both `140-3` and `140-4` have their diagram pages
 re-transcribed with the `diagram-tikzcd` prompt and merged into the
-main corpus. 140-3 contributed 114 pages; 140-4 contributed 59.
+main corpus. 140-3 contributed 114 pages; 140-4 contributed 58.
 
 ### 5.2. Notation normalization
 

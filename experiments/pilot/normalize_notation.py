@@ -194,17 +194,31 @@ def build_regex_rules():
     # --- Environment mismatches ---
     # \begin{matrix}...\end{array} → \end{matrix}
     # This is a simple heuristic; for complex nesting we'd need a parser
-    rules.append((
-        re.compile(r'\\begin\{matrix\}(.*?)\\end\{array\}', re.DOTALL),
-        r'\\begin{matrix}\1\\end{matrix}',
-        "\\begin{matrix}...\\end{array} mismatch → \\end{matrix}"
-    ))
+
 
     # --- \widehat{\mathbb{Z}} → \hat{\mathbb{Z}} (single symbol) ---
     rules.append((
         re.compile(r'\\widehat\{\\mathbb\{Z\}\}'),
         r'\\hat{\\mathbb{Z}}',
         "\\widehat{\\mathbb{Z}} → \\hat{\\mathbb{Z}}"
+    ))
+
+
+
+    # --- Cleanup: stray double backslash before a math command ------------
+    # Must run LAST. The model sometimes writes an invalid command such as
+    # "\GL(2,\hat{Z})"; the bare-name rules above rewrite the "GL(" part and
+    # leave the model's backslash in front, producing "\\operatorname{Gl}(" —
+    # in math mode a line break followed by the bare word "operatorname".
+    # Restricted to the commands this normalizer itself emits, so genuine
+    # LaTeX line breaks ("\\" ending a matrix row) are never touched.
+    # Restricted to \operatorname: that is the artifact these rules create.
+    # A "\\" before \mathbb, \mathcal etc. is usually a legitimate row break
+    # inside a matrix/subarray, and collapsing it would merge two rows.
+    rules.append((
+        re.compile(r'\\\\(?=operatorname\b)'),
+        r'\\',
+        "stray \\\\ before \\operatorname → single backslash"
     ))
 
     return rules
@@ -314,6 +328,38 @@ def collect_stats(data: dict) -> dict:
 # MAIN LOGIC
 # =============================================================================
 
+
+ENV_TOKEN_RE = re.compile(r'\\(begin|end)\{([a-zA-Z*]+)\}')
+
+
+def fix_env_mismatches(text: str) -> tuple:
+    """Make every \\end{...} match the \\begin{...} it actually closes.
+
+    Replaces the old regex "mismatch" rules, which matched a non-greedy span
+    from one \\begin to the next \\end of a different name and could run
+    straight past an unrelated environment, rewriting a correct closer into
+    an incorrect one (this corrupted page 236 of 140-4). A stack cannot make
+    that mistake: it only ever renames the closer of the environment that is
+    genuinely open.
+    """
+    stack, fixes, out, last = [], [], [], 0
+    for m in ENV_TOKEN_RE.finditer(text):
+        kind, name = m.group(1), m.group(2)
+        if kind == "begin":
+            stack.append(name)
+            continue
+        if stack and stack[-1] != name:
+            opener = stack.pop()
+            out.append(text[last:m.start()])
+            out.append(f"\\end{{{opener}}}")
+            last = m.end()
+            fixes.append({"rule": f"\\end{{{name}}} → \\end{{{opener}}} "
+                                  f"(closer matched to its opener)", "count": 1})
+        elif stack:
+            stack.pop()
+    out.append(text[last:])
+    return "".join(out), fixes
+
 def apply_regex_normalization(text: str, rules: list, verbose: bool = False) -> tuple:
     """Apply regex rules to text. Returns (normalized_text, changes_list)."""
     changes = []
@@ -335,6 +381,9 @@ def apply_regex_normalization(text: str, rules: list, verbose: bool = False) -> 
                         context = result[start:end].replace("\n", "↵")
                         print(f"      {description}: {count}x  ...{context}...")
                 result = new_result
+
+    result, env_fixes = fix_env_mismatches(result)
+    changes.extend(env_fixes)
 
     return result, changes
 

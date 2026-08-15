@@ -3,7 +3,7 @@
 % Prompt: mateo-canonical (notation + structure block, Part I few-shot pool)
 % Pages transcribed: 280/280
 % Pages overlaid from diagram-tikzcd branch: 58
-% Rebuilt: 2026-08-14
+% Rebuilt: 2026-08-15
 
 %% ===== Page 1 =====
 
@@ -50,10 +50,10 @@ NB. La page 650 figure deux fois (erreur de numérotation)
 \noindent \textbf{51. Exemple : la tour de Fermat.} \hfill 669
 
 \begin{enumerate}
-\item[1)] Les groupes $\mathcal{G} = \\operatorname{Sl}(2, \mathbf{Z}) / [\pm I_2]$ et $\overline{\mathcal{G}}$ \hfill 665
+\item[1)] Les groupes $\mathcal{G} = \operatorname{Sl}(2, \mathbf{Z}) / [\pm I_2]$ et $\overline{\mathcal{G}}$ \hfill 665
 \item[2)] $\mathcal{G}_{p,\sigma}$ : version provisoire \hfill 673
 \item[3)] Les groupes $\widehat{\Phi}_N^*$ et variantes
-\item[4)] La suite $1 \to \mathcal{N}_{p,\sigma}^{0+} \to \mathcal{N}_{p,\sigma} \to \widehat{\Phi}_{12}^* \to 1$, et relations avec $\\operatorname{Sl}(2, \mathbf{Z}/12\mathbf{Z})$ \hfill 677
+\item[4)] La suite $1 \to \mathcal{N}_{p,\sigma}^{0+} \to \mathcal{N}_{p,\sigma} \to \widehat{\Phi}_{12}^* \to 1$, et relations avec $\operatorname{Sl}(2, \mathbf{Z}/12\mathbf{Z})$ \hfill 677
 \item[5)] $\mathcal{M}_{p,\sigma}$, $\underline{\mathcal{M}}_{p,\sigma}$ via $\mathcal{N}_{p,\sigma}$ \hfill 682
 \item[6)] La suite $1 \to \mathcal{G}_\sigma \to \mathcal{G}_{p,\sigma} \to \widehat{\Phi}_{12}^* \to 1$, et $1 \to \overline{\mathcal{G}}_\sigma^+ \to \overline{\mathcal{G}}_{p,\sigma} \to \widehat{\Phi}_{12}^* \to 1$ \hfill 684
 \item[7)] $\mathcal{N}_p, \mathcal{N}_p^\Sigma$ etc \hfill 686
@@ -214,7 +214,7 @@ X \in \operatorname{End}_A(M) \otimes_A K \quad , \quad X^n = 0 \leqno{(8)}
 $$
 Donc par hypothèse
 $$
-g_y = \varphi_y(1) = \sum \frac{X^i}{i!} \in \\operatorname{Aut}(M)
+g_y = \varphi_y(1) = \sum \frac{X^i}{i!} \in \operatorname{Aut}(M)
 $$
 i.e.
 $$
@@ -347,7 +347,7 @@ Je ne vais pas essayer de le démontrer dans un
 contexte général des schémas en groupes généraux,
 et vais me limiter, à titre de test décisif
 (pour emporter conviction que ça marche)
-au cas où $G = \\operatorname{Gl}(n)_S$, comme tantôt,
+au cas où $G = \operatorname{Gl}(n)_S$, comme tantôt,
 et celui où $S$ de plus est régulier de dim 1.
 Donc on est ramené à la situation d'un anneau
 $A$, et de $X \in M_n(K)$ ($K$ corps des fractions)
@@ -760,28 +760,36 @@ On a une description analogue de la limite projective de l'enveloppe scindée $\
 
 %% ===== Page 28 =====
 
-C'est donc un schéma en groupes sur $\Spec \mathbf{Z}$ dont toutes les fibres sont isomorphes au groupe additif, y c.\ la fibre générique, qui est $\mathbf{G}_{a, \mathbf{Q}}$.
+C'est donc un schéma en groupes sur $\mathbf{Z}$ [unclear: plat]
+dont toutes les fibres sont connexes et des groupes
+unipotents, y. c. la fibre générique, qui est
+$\mathbf{G}_{a \mathbf{Q}}^n$.
 
-Dans le cas d'un groupe abélien quelconque $G$, désignons par $\hat{G}$ son complété profini, par $\hat{G}_{S_0}$ le schéma en groupes profini sur $S_0$
+Dans le cas d'un groupe métabélien
+quelconque $G$, désignons par $\hat{G}$ sa
+complétion profinie, par $\hat{G}_{S_0}$ le schéma
+en groupes profini sur $S_0$
 $$
-\hat{G}_{S_0} \defeq \varprojlim_i (M_i)_{S_0} \leqno{(50)}
+\hat{G}_{S_0} \defeq \varprojlim (\tilde{M}_i)_{S_0} \leqno{(50)}
 $$
 on aura encore une suite exacte canonique
 $$
-1 \to \underline{\operatorname{Env}}^0(\hat{G}) \to \underline{\varprojlim} \, \underline{\operatorname{Env}}(\hat{G}) \to (\hat{\mathbf{Z}})_{S_0} \to 1 \leqno{(51)}
+1 \to \operatorname{Un}^\circ(\hat{G}) \to \hat{G}_{S_0} \to (\hat{\mathbf{Z}})_{S_0}^n \to 1 \leqno{(51)}
 $$
-où $\underline{\operatorname{Env}}^0(\hat{G})$ désigne la composante neutre de $\varprojlim \underline{\operatorname{Env}}(\hat{G})$, i.e.
+où $\operatorname{Un}^\circ(\hat{G})$ désigne la composante neutre
+de $\hat{G}_{S_0}$, i.e.
 $$
-\underline{\operatorname{Env}}^0(\hat{G}) \defeq \varprojlim_i \underline{M}_i \leqno{(52)}
+\operatorname{Un}^\circ(\hat{G}) \defeq \varprojlim \tilde{M}_i \simeq \varprojlim n \cdot \tilde{M}_0 \leqno{(52)}
 $$
+où les $M_i$ sont les sous-groupes d'in-dice
+fini dans $G$ qui sont des $\mathbf{Z}$-modules
+libres, et où (comme
+plus haut) pour un $\mathbf{Z}$-module $M$,
 $$
-= \varprojlim_n n \cdot \underline{M}_0
+\tilde{M} = \mathbf{V}(M) = \operatorname{Spec} \operatorname{Sym}_{\mathbf{Z}}(\check{M}) \leqno{(53)}
 $$
-où les $M_i$ sont les [unclear: quotients d'indice fini] de $G$ par des sous-groupes libres de type fini. [unclear: Plus haut] pour un $\mathbf{Z}$-module $M$,
-$$
-\underline{M} = \mathbb{V}(M) = \Spec \operatorname{Sym}_{\mathbf{Z}}(\check{M}) \leqno{(53)}
-$$
-désigne le fibré vectoriel sur $S_0$ [unclear: qui le définit], \dots
+désigne le fibré
+vectoriel cov. associé au $\mathbf{Z}$-module $M$.
 
 \newpage
 
@@ -860,13 +868,13 @@ provenant du système d'homomorphismes canoniques.
 $$ \mathfrak{G}_{S_0} \longrightarrow \mathfrak{G}_S $$
 
 Donc, via (59) on trouve
-$$ \\operatorname{Hom}_{\text{S-gr}}(L\operatorname{Env}_S(\mathfrak{G}), G) \longrightarrow \\operatorname{Hom}_{\text{S-gr}}(\mathfrak{G}_S, G) \simeq \\operatorname{Hom}_{\text{gr}}(\mathfrak{G}, G(S)) \leqno{(60)} $$
+$$ \operatorname{Hom}_{\text{S-gr}}(L\operatorname{Env}_S(\mathfrak{G}), G) \longrightarrow \operatorname{Hom}_{\text{S-gr}}(\mathfrak{G}_S, G) \simeq \operatorname{Hom}_{\text{gr}}(\mathfrak{G}, G(S)) \leqno{(60)} $$
 
 Comparant (58) et (60), on trouve
 $$
 \begin{aligned}
-\\operatorname{Hom}_{\text{pro-S-gr}}(\operatorname{Env}_S(\mathfrak{G}), G) &\simeq \\operatorname{Hom}_{\text{S-gr}}(L\operatorname{Env}_S(\mathfrak{G}), G) \\
-&\longrightarrow \\operatorname{Hom}_{\text{S-gr}}(\mathfrak{G}_S, G) \simeq \\operatorname{Hom}_{\text{gr}}(\mathfrak{G}, G(S))
+\operatorname{Hom}_{\text{pro-S-gr}}(\operatorname{Env}_S(\mathfrak{G}), G) &\simeq \operatorname{Hom}_{\text{S-gr}}(L\operatorname{Env}_S(\mathfrak{G}), G) \\
+&\longrightarrow \operatorname{Hom}_{\text{S-gr}}(\mathfrak{G}_S, G) \simeq \operatorname{Hom}_{\text{gr}}(\mathfrak{G}, G(S))
 \end{aligned} \leqno{(61)}
 $$
 
@@ -889,7 +897,7 @@ $$
 
 Ainsi on a une suite exacte de groupes profinis
 $$
-1 \to \underset{\substack{\simeq \\ {\Pi_0}_{\text{ab}}, \circlearrowleft \mathfrak{G}_0}}{M} \to \mathfrak{G} \to \underset{\substack{\simeq \\ \\operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z}) / \langle l_0, l_1 \rangle}}{\mathfrak{G}_0/\Pi_0} \to 1 \leqno{(2)}
+1 \to \underset{\substack{\simeq \\ {\Pi_0}_{\text{ab}}, \circlearrowleft \mathfrak{G}_0}}{M} \to \mathfrak{G} \to \underset{\substack{\simeq \\ \operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z}) / \langle l_0, l_1 \rangle}}{\mathfrak{G}_0/\Pi_0} \to 1 \leqno{(2)}
 $$
 
 Par générateurs et relations on a :
@@ -934,7 +942,7 @@ $$
 
 On va faire opérer $\mathcal{G}$
 $$
-\mathcal{G} \simeq \\operatorname{Gl}(2, \mathbf{Z}) / [\Pi_0, \Pi_0] \leqno{(4)}
+\mathcal{G} \simeq \operatorname{Gl}(2, \mathbf{Z}) / [\Pi_0, \Pi_0] \leqno{(4)}
 $$
 sur $M$, en décrivant [unclear: ainsi l'action]
 $$
@@ -1022,10 +1030,10 @@ Le pas essentiel est de déterminer le groupe $Z_{\rho,\sigma}$
 
 \marginpar{ici, "$\exists \alpha$" "$\exists \beta$" signifie bien sûr l'existence locale de $\alpha, \beta \dots$}
 $$
-Z_{\rho,\sigma} \defeq \\operatorname{Aut}(\widehat{\underline{\mathfrak{S}}}^+) \leqno{(15)}
+Z_{\rho,\sigma} \defeq \operatorname{Aut}(\widehat{\underline{\mathfrak{S}}}^+) \leqno{(15)}
 $$
 $$
-= \left\{ u \in \\operatorname{Aut}(\widehat{\underline{\mathfrak{S}}}^+) \left| 
+= \left\{ u \in \operatorname{Aut}(\widehat{\underline{\mathfrak{S}}}^+) \left| 
 \begin{array}{l}
 \text{a) } \exists \alpha \in \widehat{\underline{\mathfrak{S}}}_{\mathbf{Z}} = \{\pm 1\} \cdot M, \ u(\rho) = \alpha(\rho) \\
 \text{b) } \exists \beta \in \dots, \ u(\sigma) = \beta(\sigma) \\
@@ -1472,11 +1480,11 @@ $\varepsilon_2, \varepsilon_5 : \tilde{Z}_{\rho, \sigma} \rightrightarrows \mu_{
 
 et un morphisme de faisceaux sur $S_0$
 $$
-\widetilde{Z}_{\rho,\sigma} \longrightarrow \\operatorname{Aut}_{gr} (\underline{\mathfrak{G}}^+) \leqno{(52)}
+\widetilde{Z}_{\rho,\sigma} \longrightarrow \operatorname{Aut}_{gr} (\underline{\mathfrak{G}}^+) \leqno{(52)}
 $$
 donnant lieu à un morphisme
 $$
-\widetilde{Z}_{\rho,\sigma} \longrightarrow \\operatorname{Aut}_{gr} (\underline{\mathfrak{G}}^+) \times \mathbf{G}_m \times \mu_{S_0} \times \mu_{S_0} \leqno{(53)}
+\widetilde{Z}_{\rho,\sigma} \longrightarrow \operatorname{Aut}_{gr} (\underline{\mathfrak{G}}^+) \times \mathbf{G}_m \times \mu_{S_0} \times \mu_{S_0} \leqno{(53)}
 $$
 $$
 u \longmapsto u, \mu(u), \varepsilon_2(u), \varepsilon_3(u)
@@ -1712,52 +1720,67 @@ déduit de l'isomorphisme $1 \mapsto 0$, $-1 \mapsto 1$.
 
 %% ===== Page 56 =====
 
-qui se traduisent en des lois de groupes pour l'addition mod 2 sur $\{0,1\}_{S_0}$ (où $\varepsilon_2 = (-1)^{\nu_2} = 1-2\nu_2$, $\varepsilon_3 = (-1)^{\nu_3} = 1-2\nu_3$). Les « quatre cas de figures » de $(\mathbf{Z}/12\mathbf{Z})^\times$ se donnent dans le tableau
+[unclear: que]
+
+et on en déduit les [unclear: générateurs] de [unclear: $\mathbf{Z}/12\mathbf{Z}$].
+
+On a (rappelons-le) $\varepsilon_2 = (-1)^{\nu_2} = 1 - 2\nu_2 \in \{ \pm 1 \}_{S_0}$, $\varepsilon_3 = (-1)^{\nu_3} = 1 - 2\nu_3 \in \{ \pm 1 \}_{S_0}$
+
+les "générateurs" des $2$ "signes" de $(\mathbf{Z}/12\mathbf{Z})^*$ 
+
+sont donnés dans le tableau :
 
 $$
-\begin{array}{r|c|c}
-\frac{\varepsilon_2}{\varepsilon_3} & \begin{matrix} +1 \\ \text{i.e. } \nu_2=0 \end{matrix} & \begin{matrix} -1 \\ \text{i.e. } \nu_2=1 \end{matrix} \\
+\begin{array}{c|c|c}
+\varepsilon_2 \backslash \varepsilon_3 & +1 \text{ i.e. } \nu_3=0 & -1 \text{ i.e. } \nu_3=1 \\
 \hline
-\begin{matrix} +1 \\ \text{i.e. } \nu_3=0 \end{matrix} & 1 & +5 \\
++1 \text{ i.e. } \nu_2=0 & 1 & +5 \\
 \hline
-\begin{matrix} -1 \\ \text{i.e. } \nu_3=1 \end{matrix} & -5 & -1
-\end{matrix} \leqno{(82)}
+-1 \text{ i.e. } \nu_2=1 & -5 & -1
+\end{array}
+\leqno (82)
 $$
 
-donc on trouve une section ensembliste de (79) en prenant la section de $\mathfrak{O}_{12}^\times$ de la forme
+donne une section ensembliste de (79).
+
+Prenons les sections de $\mathbf{O}_{12}^*$ de la forme :
 
 $$
-\mu_0 = (-5)^{\nu_2} (+5)^{\nu_3} \quad \begin{cases} \equiv (-1)^{\nu_3} & (6) \\ \equiv (-1)^{\nu_2} & (4) \end{cases} \leqno{(83)}
+\mu_0 = (-5)^{\nu_2} (+5)^{\nu_3} \begin{cases} \equiv (-1)^{\nu_3} \quad (4) \\ \equiv (-1)^{\nu_2} \quad (3) \end{cases}
+\leqno (83)
 $$
 
-Donc une section générale de $\mathfrak{O}_{12}^\times$ s'écrit
+Donc une section générale de $\mathbf{O}_{12}^*$ s'écrit
 
 $$
-\mu = \underbrace{(-5)^{\nu_2}(+5)^{\nu_3}}_{\mu_0} + 12 \lambda_0 \leqno{(84)}
-$$
-$$
-\begin{cases}
-(\nu_2, \nu_3) \in \Gamma(\{0,1\}_{S_0} \times \{0,1\}_{S_0}) \\
-\lambda_0 \in \Gamma(\widehat{\mathbf{Z}})
-\end{cases}
+\mu = \underbrace{(-5)^{\nu_2} (+5)^{\nu_3}}_{\mu_0} + 12 X
+\leqno (84)
 $$
 
+où $(\nu_2, \nu_3) \in \Gamma(\{0,1\}_{S_0} \times \{0,1\}_{S_0})$
+
+et $X \in \Gamma( \hat{\mathbf{Z}}_{S_0} )$
+
+Notons que
 $$
-\begin{aligned}
-5^{\nu_3} &= 1 + 4\nu_3 \\
-(-5)^{\nu_2} &= (-1)^{\nu_2} 5^{\nu_2} = (1-2\nu_2)(1+4\nu_2) \\
-&= 1 + 2\nu_2 - 8\nu_2^2 = 1 - 6\nu_2 \marginpar{NB $\nu_2 = \nu_2^2$}
-\end{aligned}
+5^{\nu_3} = 1 + 4\nu_3
+$$
+\marginpar{NB $\nu_2 = \nu_2^2$}
+$$
+(-5)^{\nu_2} = [(-1)^{\nu_2}] 5^{\nu_2} = (1-2\nu_2)(1+4\nu_2) = 1 + 2\nu_2 - 8\nu_2^2 = 1 - 6\nu_2
 $$
 
-donc
+d'où
 
 $$
-\mu_0 = (1 + 4\nu_3)(1 - 6\nu_2) \leqno{(85)}
+\mu_0 = (1+4\nu_3)(1-6\nu_2)
+\leqno (85)
 $$
 $$
 = 1 + 4\nu_3 - 6\nu_2 - 24\nu_2\nu_3
 $$
+
+prenons donc $\mu_0 = 1 + 4\nu_3 - 6\nu_2$
 
 \newpage
 
@@ -1855,7 +1878,7 @@ $$
 $$
 où
 $$
-\tilde{Z}_{\bar{p},\sigma}^{+0} = \\operatorname{Ker}\left( \tilde{Z}_{\bar{p},\sigma} \to \mathbb{O}_{12}^* \right) \leqno{(98)}
+\tilde{Z}_{\bar{p},\sigma}^{+0} = \operatorname{Ker}\left( \tilde{Z}_{\bar{p},\sigma} \to \mathbb{O}_{12}^* \right) \leqno{(98)}
 $$
 $$
 \simeq \{(\alpha_0, \beta_0) \mid (1-\rho_M)(\alpha_0) - (1-\sigma_M)(\beta_0) = 0\}
@@ -1985,7 +2008,7 @@ $$
 
 Il est bien sûr stable aussi par $\tau_M = -\operatorname{id}_M$.
 
-Donc $M_0$ est un module pour $\mathfrak{S}$, d'où un sous-groupe de $\mathfrak{S}$ distingué dans $\mathfrak{S}_0$. C'est un sous-groupe distingué de $\mathfrak{S}_0 = \\operatorname{Gl}(2, \mathbf{Z})$,
+Donc $M_0$ est un module pour $\mathfrak{S}$, d'où un sous-groupe de $\mathfrak{S}$ distingué dans $\mathfrak{S}_0$. C'est un sous-groupe distingué de $\mathfrak{S}_0 = \operatorname{Gl}(2, \mathbf{Z})$,
 
 \newpage
 
@@ -2043,19 +2066,19 @@ $$
 
 Considérons
 $$
-\\operatorname{Sl}(2, \mathbf{Z}/12\mathbf{Z}) \simeq \underbrace{\\operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z})}_{48} \times \underbrace{\\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z})}_{24} \xrightarrow{u \times v} \underbrace{\mathfrak{S}_0^+ / \Pi_0}_{12} \times \underbrace{\mathfrak{S}_3^+}_{3} \leqno{(113)}
+\operatorname{Sl}(2, \mathbf{Z}/12\mathbf{Z}) \simeq \underbrace{\operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z})}_{48} \times \underbrace{\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z})}_{24} \xrightarrow{u \times v} \underbrace{\mathfrak{S}_0^+ / \Pi_0}_{12} \times \underbrace{\mathfrak{S}_3^+}_{3} \leqno{(113)}
 $$
 où
 $$
-u : \\operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z}) \to \mathfrak{S}_0^+ / \Pi_0
+u : \operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z}) \to \mathfrak{S}_0^+ / \Pi_0
 $$
 est l'hom.\ canonique surjectif, dont le noyau se réduit à --- les trois éléments non nuls du noyau sont justes $\lambda_0, \lambda_1, \lambda_\infty$ permutés entre eux par $\rho$, et $\lambda_1 \lambda_0^{-1} = \lambda_1 \lambda_0 = \lambda_\infty$ etc.\ ici les $\lambda_i$ sont permutés par $\rho$ --- et
 $$
-v : \\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z}) \to \mathfrak{S}_3^+
+v : \operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z}) \to \mathfrak{S}_3^+
 $$
 est l'hom.\ composé
 \begin{tikzcd}[column sep=large]
-\\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z}) \arrow[r, "\text{épi}"] & \mathfrak{A}_4 \arrow[r, "\text{épi}"] \arrow[d, phantom, sloped, "\simeq"] & \mathfrak{S}_3^+ \\
+\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z}) \arrow[r, "\text{épi}"] & \mathfrak{A}_4 \arrow[r, "\text{épi}"] \arrow[d, phantom, sloped, "\simeq"] & \mathfrak{S}_3^+ \\
 & \mathfrak{A}_{\mathbf{P}^1(\mathbf{Z}/3\mathbf{Z})} &
 \end{tikzcd}
 dont le noyau est d'ordre 8. Le noyau de $u \times v$ est d'ordre $4 \times 8 = 32$, et il contient évidemment $\delta$. Reste à montrer que c'est bien le sous-groupe distingué engendré par $\delta$ (dont l'ordre a priori était [unclear: un] multiple de 32), et
@@ -2109,11 +2132,11 @@ c) $Syl_2 \subset \operatorname{Sl}(2, \mathbb{Z}/3\mathbb{Z})$, sous-groupe de 
 
 Ceci posé, la tour de sous-groupes (114) est image inverse de la tour (116).
 
-Par acquit de conscience, je vais reprendre l'esquisse de démonstration précédente. On note que l'homomorphisme $\mathfrak{S}_0^+ \to H$ applique les groupes figurant dans (114) dans ceux de (116) - pour $\Pi$ et $\Pi_0$, on sait d'ailleurs depuis un moment que ce sont les images inverses de $\Pi', \Pi_0'$ ! (pour ceci, il suffisait d'examiner $\\operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z})$, au lieu de $\\operatorname{Sl}(2, \mathbf{Z}/12\mathbf{Z})$ ...). Ainsi l'image inverse de $\Pi_{00}'$ dans $\mathfrak{S}_0^+$ contient $\Pi_{00}$. Comme les deux sont d'indice $36$, ces deux groupes sont égaux, cqfd. (le même argument pourrait s'appliquer au cas de $\Pi_0, \Pi_0'$ ...)
+Par acquit de conscience, je vais reprendre l'esquisse de démonstration précédente. On note que l'homomorphisme $\mathfrak{S}_0^+ \to H$ applique les groupes figurant dans (114) dans ceux de (116) - pour $\Pi$ et $\Pi_0$, on sait d'ailleurs depuis un moment que ce sont les images inverses de $\Pi', \Pi_0'$ ! (pour ceci, il suffisait d'examiner $\operatorname{Sl}(2, \mathbf{Z}/4\mathbf{Z})$, au lieu de $\operatorname{Sl}(2, \mathbf{Z}/12\mathbf{Z})$ ...). Ainsi l'image inverse de $\Pi_{00}'$ dans $\mathfrak{S}_0^+$ contient $\Pi_{00}$. Comme les deux sont d'indice $36$, ces deux groupes sont égaux, cqfd. (le même argument pourrait s'appliquer au cas de $\Pi_0, \Pi_0'$ ...)
 
 Corollaire L'homomorphisme canonique
 $$
-\mathfrak{S}_0^\pm = \operatorname{Gl}(2,\mathbf{Z}) \to \operatorname{Gl}(2,\mathbf{Z}/12\mathbf{Z}) / (\Pi_{00}' \simeq \\operatorname{Sl}(2,\mathbf{F}_2)' \times \operatorname{Syl}_2)
+\mathfrak{S}_0^\pm = \operatorname{Gl}(2,\mathbf{Z}) \to \operatorname{Gl}(2,\mathbf{Z}/12\mathbf{Z}) / (\Pi_{00}' \simeq \operatorname{Sl}(2,\mathbf{F}_2)' \times \operatorname{Syl}_2)
 $$
 se factorise par $\mathfrak{S} = \operatorname{Gl}(2,\mathbf{Z})/[\Pi_0,\Pi_0]$ étudié dans le présent § 5, et l'image inverse de $\Pi_{00}'$ n'est autre que le sous-groupe $M_0$ de (99) (108).
 
@@ -2138,7 +2161,7 @@ il me faudrait examiner cette action,
 et la mettre en relation avec l'autre
 qui [unclear: y est subordonnée] :
 $$
-\text{l'hom. } \\operatorname{Sl}(2, \mathbf{Z})^{\wedge} \longrightarrow \\operatorname{Sl}(2, \hat{\mathbf{Z}}).
+\text{l'hom. } \operatorname{Sl}(2, \mathbf{Z})^{\wedge} \longrightarrow \operatorname{Sl}(2, \hat{\mathbf{Z}}).
 $$
 
 \newpage
@@ -2760,7 +2783,7 @@ où
 $$
 \gamma = \gamma_{\rho,\sigma} = \mathbb{O}_{12}^\ast.
 $$
-En fait, les groupes $S_0 \underline{M}_{\rho,\sigma}$, $S_0 \underline{M}_{\rho,\sigma}^\natural$, $S_0 \Gamma_{\rho,\sigma}$ jouent plutôt un rôle technique auxiliaire, on a des extensions des groupes $\underline{M}_{\rho,\sigma}$, $\underline{M}_{\rho,\sigma}^\natural$ et $\Gamma_{\rho,\sigma}$ par $L_0^M = \\operatorname{Ker}(Z_{\rho,\sigma} \to \mathbb{O}_{12}^\ast)$,\footnote{toutes déduites de l'extension de $\Gamma_{\rho,\sigma}$ par $L_0^M \simeq \mathbb{G}_a$,} par image inverse via les homomorphismes $\underline{M}_{\rho,\sigma} \to \Gamma_{\rho,\sigma}$ et l'homomorphisme $\underline{M}_{\rho,\sigma}^\natural \to \Gamma_{\rho,\sigma}$.
+En fait, les groupes $S_0 \underline{M}_{\rho,\sigma}$, $S_0 \underline{M}_{\rho,\sigma}^\natural$, $S_0 \Gamma_{\rho,\sigma}$ jouent plutôt un rôle technique auxiliaire, on a des extensions des groupes $\underline{M}_{\rho,\sigma}$, $\underline{M}_{\rho,\sigma}^\natural$ et $\Gamma_{\rho,\sigma}$ par $L_0^M = \operatorname{Ker}(Z_{\rho,\sigma} \to \mathbb{O}_{12}^\ast)$,\footnote{toutes déduites de l'extension de $\Gamma_{\rho,\sigma}$ par $L_0^M \simeq \mathbb{G}_a$,} par image inverse via les homomorphismes $\underline{M}_{\rho,\sigma} \to \Gamma_{\rho,\sigma}$ et l'homomorphisme $\underline{M}_{\rho,\sigma}^\natural \to \Gamma_{\rho,\sigma}$.
 
 Nous utiliserons en outre d'autres groupes (plus gros), reliés par une [unclear: série] de suites exactes (comparer p. 83 (179)) :
 
@@ -2958,14 +2981,14 @@ i.e. $\underline{M}_{p,\sigma}^\sim(-1/2)$ est une bisection de $\underline{M}_{
 $$ \underline{M}_{p,\sigma}^{\prime \sim}(-j) \defeq \underline{M}_{p,\sigma}^{\sim}(-j) \cap \underbrace{\underline{M}_{p,\sigma}^{\prime \sim}}_{\substack{|| \text{def} \\ M_{p,\sigma}^\prime / \mu_p}} \leqno{(209)} $$
 
 on a
-$$ \underline{M}_{p,\sigma}^{\prime \sim}(-j) \isommap \underline{\Gamma}_{p,\sigma}^{\prime \sim} \defeq \\operatorname{Ker}(\underline{\Gamma}_{p,\sigma}^\sim \xrightarrow{\varepsilon_2} \text{[unclear: $\mu_2$]}) $$
+$$ \underline{M}_{p,\sigma}^{\prime \sim}(-j) \isommap \underline{\Gamma}_{p,\sigma}^{\prime \sim} \defeq \operatorname{Ker}(\underline{\Gamma}_{p,\sigma}^\sim \xrightarrow{\varepsilon_2} \text{[unclear: $\mu_2$]}) $$
 
 $\underline{M}_{p,\sigma}^{\prime \sim}(-j)$ d'indice 4 dans $\underline{M}_{p,\sigma}^\sim(-j)$, section partielle de $\underline{M}_{p,\sigma}^\sim$ au dessus de $\underline{\Gamma}_{p,\sigma}^{\prime \sim}$, d'image [unclear: $\underline{\Gamma}_{p,\sigma}^{\prime \sim}$] d'indice 2 dans $\underline{\Gamma}_{p,\sigma}^\sim$. On aura donc
 
 $$
 \begin{cases}
-\underline{M}_{p,\sigma}^{\prime \sim} \defeq \\operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_3} \text{[unclear: $\mu_2$]}) \simeq \underline{M}_{p,\sigma}^{\prime \sim}(-j) \cdot \mathfrak{S}^+ \\
-\underline{M}_{p,\sigma}^{\sim} \defeq \\operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_4} \text{[unclear: $\mu_2$]}) \simeq \underline{M}_{p,\sigma}^{\sim}(-j) \cdot \mathfrak{S}
+\underline{M}_{p,\sigma}^{\prime \sim} \defeq \operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_3} \text{[unclear: $\mu_2$]}) \simeq \underline{M}_{p,\sigma}^{\prime \sim}(-j) \cdot \mathfrak{S}^+ \\
+\underline{M}_{p,\sigma}^{\sim} \defeq \operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_4} \text{[unclear: $\mu_2$]}) \simeq \underline{M}_{p,\sigma}^{\sim}(-j) \cdot \mathfrak{S}
 \end{cases} \leqno{(210)}
 $$
 
@@ -2977,7 +3000,7 @@ Remarque. Je m'arrête là dans les dévissages de sous-groupes [unclear: intér
 
 pour la suite, entre les notations possibles respectives pour les groupes notés ici $\underline{M}_{p,\sigma}$ et $\underline{M}_{p,\sigma}/\mu_p \simeq \underline{M}_{p,\sigma}^\sim$ (et idem sans $\sigma$) ce sont ces derniers, il est vrai, qui me semblent les plus intéressants, car c'est eux\footnote{Plutôt, le gr. pro-fini [unclear: que je regrette...]} qui reçoivent le groupe universel 
 $$
-\mathcal{M} = \mathcal{N}_{1,1}^\sim \quad \text{(extension de } \Gamma_{\mathbf{Q}}^\sim \text{ (} =\mathcal{G}_{\mathbf{Q}}^\sim \text{) par } \\operatorname{Sl}(2, \mathbf{Z})^\wedge \text{).}
+\mathcal{M} = \mathcal{N}_{1,1}^\sim \quad \text{(extension de } \Gamma_{\mathbf{Q}}^\sim \text{ (} =\mathcal{G}_{\mathbf{Q}}^\sim \text{) par } \operatorname{Sl}(2, \mathbf{Z})^\wedge \text{).}
 $$
 Il semblerait que ces groupes mériteraient la notation la plus simple, en l'occurrence $\underline{M}_{p,\sigma}$, et les groupes notés précédemment $\underline{M}_{p,\sigma}$ prendraient des $\sim$, ou un index analogue. (Le $\sim$ est déjà utilisé dans un sens un peu différent dans $\Gamma_{\mathbf{Q}}^\sim$, $M_{0,3}^\sim$ etc — d'autre part les exposants [unclear: biffés], $^\circ, ^+, ^{1/2}, ^\sim$ déjà utilisés dans des sens différents. Le double emploi du $\sim$ risque d'ailleurs d'introduire des conflits de notations, tôt ou tard ; il est peut-être préférable de remplacer le $\sim$ dans $\Gamma_{\mathbf{Q}}^\sim$ par des lettres telles que $\Gamma_{\mathbf{Q}}^{\text{ét}}$ (suggère "étendu") ou $\Gamma_{\mathbf{Q}}^{\text{gén}}$ "généralisé" gén... Il faudra que je résolve ces di-
 
@@ -3226,25 +3249,21 @@ principal de $U_{0,3, \mathbf{Q}}$, de groupe $F^{\circ}_{\infty}$.
 
 %% ===== Page 100 =====
 
-... avec les opérations de $\mathfrak{S}_3$ dessus compatibles avec le gr. de $\mathfrak{S}_3$ sur $F_\infty^\circ$.
-
-D'autre part, la catégorie des torseurs sur des gr. abéliens de la forme $M \otimes_{\mathbf{Z}} T$, où $T$ est un $\hat{\mathbf{Z}}$-module inversible, est équivalente à celle des torseurs sous le gr. affine matriciel 
-$$ \hat{\mathbf{Z}}^\ast \cdot M^\wedge $$
-La donnée d'une classe d'isomorphie de tels torseurs, avec opération de $\mathcal{M}_{0,3}$ dessus compatible avec l'action sur $M^\wedge$ \dots
+\dots\ avec les opérations de $\mathfrak{S}_3$ dessus compatibles avec l'action de $\mathfrak{S}_3$ sur $F^\circ_\infty$.
 
 Considérons d'autre part la suite exacte
 $$
-1 \to M \to [unclear: G_{pr}/\mu_a] \xrightarrow{(\chi, can)} \mathcal{O}^\ast_{12}(\mathfrak{S}_3)_{S_0} \to 1 \leqno{(231)}
+1 \to M \to G_{\rho,\sigma}/\mu_G \xrightarrow{(\underline{\chi}, can)} \underset{\Subset H^+/\mu_G}{\mathfrak{O}_{12}^* \rtimes \mathfrak{S}_3} \to 1 \leqno{(231)}
 $$
-elle donne, par [unclear: foncteur] $( \ )(\hat{\mathbf{Z}})^\Delta$, une suite exacte
+elle donne, par passage à $(\ ) \otimes \hat{\mathbf{Z}}$, une suite exacte
 $$
-1 \to M^\wedge \to [unclear: G_{pr}/\mu_a] \to \hat{\mathbf{Z}}^\ast \times \mathfrak{S}_3 \to 1 \leqno{(232)}
+1 \to M^\wedge \to \widehat{G}_{\rho,\sigma}/\mu_G \to \hat{\mathbf{Z}}^* \rtimes \mathfrak{S}_3 \to 1 \leqno{(232)}
 $$
-qui redonne l'opération des [unclear: automorphismes] de $\hat{\mathbf{Z}}^\ast \times \mathfrak{S}_3$ sur $M^\wedge$. Elle contient la suite exacte
+qui redonne l'opération du groupe $\hat{\mathbf{Z}}^* \rtimes \mathfrak{S}_3$ sur $M^\wedge$. Elle contient la suite exacte
 $$
-1 \to M^\wedge \to \mathfrak{S}_3^{+\wedge}/(\mu_2) \to \mathfrak{S}_3 \to 1 \leqno{(233)}
+1 \to M^\wedge \to \overset{\Subset \widehat{G}_{\rho,\sigma}/\mu_G}{G_{\rho,\sigma}^+/\mu_G} \to \mathfrak{S}_3 \to 1 \leqno{(233)}
 $$
-qui est un quotient de la suite exacte \dots
+qui [unclear: donne] l'opération de $\mathfrak{S}_3$ sur la suite exacte.
 
 \newpage
 
@@ -4105,9 +4124,9 @@ $$
 1 \to M \to \tilde{\mathcal{M}} \to \underset{\defeq \tilde{\mathcal{M}} / \operatorname{Im} M}{\tilde{\Gamma}} \to 1 \leqno{(283)}
 $$
 $$
-\tilde{\Gamma} \hookrightarrow \\operatorname{Aut}(M) \leqno{(284)}
+\tilde{\Gamma} \hookrightarrow \operatorname{Aut}(M) \leqno{(284)}
 $$
-$\tilde{\Gamma}$ s'identifie à l'image de $\Gamma$ dans $\\operatorname{Aut}(M)$ par l'action de $\Gamma$ sur $M$ provenant de la structure d'extension $\tilde{M}$ de $\Gamma$ par $\hat{M}$. Cette [unclear: extension] $\tilde{\mathcal{M}}$ de $M$, donne bien naissance à une suite exacte (283), n'est [unclear: vrai] que pour quelque chose - à part le fait que $M$ s'y envoie injectivement, et que $\tilde{\Gamma} = \tilde{\mathcal{M}}/\operatorname{Im} M$.
+$\tilde{\Gamma}$ s'identifie à l'image de $\Gamma$ dans $\operatorname{Aut}(M)$ par l'action de $\Gamma$ sur $M$ provenant de la structure d'extension $\tilde{M}$ de $\Gamma$ par $\hat{M}$. Cette [unclear: extension] $\tilde{\mathcal{M}}$ de $M$, donne bien naissance à une suite exacte (283), n'est [unclear: vrai] que pour quelque chose - à part le fait que $M$ s'y envoie injectivement, et que $\tilde{\Gamma} = \tilde{\mathcal{M}}/\operatorname{Im} M$.
 
 \newpage
 
@@ -4153,7 +4172,7 @@ on se donne un quotient $\pi \to M$ de $\pi$, par
 un sous-groupe distingué de $E$,
 ce qui revient à un quotient de
 $\pi_{ab} = \pi / [\pi, \pi]$ stable par l'action de $\Gamma$,
-d'où une $\tilde{M} = E / \\operatorname{Ker}(\pi \to M)$ extension quotient de (*),
+d'où une $\tilde{M} = E / \operatorname{Ker}(\pi \to M)$ extension quotient de (*),
 $$
 1 \to M \to \tilde{M} \to \Gamma \to 1 \leqno{(287)}
 $$
@@ -4226,7 +4245,7 @@ $$
 1 \to M \to \tilde{M} \to \Gamma' \to 1 \leqno{(293)}
 $$
 \item[b)] $\Gamma' \defeq \tilde{M}/M$ opère fidèlement sur $M$,
-i.e.\ on a $\Gamma' \simeq \bar{\Gamma} = \operatorname{Im}(\Gamma \to \\operatorname{Aut}(M))$.
+i.e.\ on a $\Gamma' \simeq \bar{\Gamma} = \operatorname{Im}(\Gamma \to \operatorname{Aut}(M))$.
 \item[c)] L'extension $\tilde{M}$ de $\Gamma'$ par $M$ est
 triviale (i.e.\ sa classe dans $H^2(\bar{\Gamma}, M)$ est nulle).
 \end{enumerate}
@@ -4250,19 +4269,28 @@ par $M^\wedge$ (noté $M$ dans les considérations générales)
 
 %% ===== Page 135 =====
 
-Let's refine line 8.
-        *   Could it be $\tilde{M} = M_{0,3} \longrightarrow \mathcal{G}_{g,\sigma}$?
-        *   Let's check the rules: "Extensions of $\mathfrak{T}$ by $\pi$: $\mathfrak{S}, \mathfrak{S}_{g,\nu}$".
-        *   So $\mathcal{G}_{g,\nu}$ should be $\mathfrak{S}_{g,\nu}$? Or is $\mathcal{G}$ standard? The rules say: "Subgroups written $\mathcal{G}, \mathcal{M}$ (NOT lowercase g, m for subgroups)". "Teichmuller group: $\mathfrak{T}$". "Extensions ... $\mathfrak{S}$".
-        *   Grothendieck often uses $\mathcal{G}_{g,\nu}$ for the arithmetic fundamental group (Galois + Teichmüller).
-        *   Look at the previous page (133): "l'extension $G_{...}$". It looks like $G_{g,\nu}$ or $\mathcal{G}_{g,\nu}$. Let's use $\mathcal{G}_{g,\nu}$.
-        *   Wait, in "$\mathcal{G}_{g,\nu}$", the second subscript is $\nu$. In the manuscript, it looks like a $\sigma$. Grothendieck often writes $\nu$ looking like a $\sigma$ or a $v$. I will use $\nu$ as it's standard. Wait, the rule says $\mathfrak{S}_{g,\nu}$. I'll use $\mathcal{G}_{g,\nu}$ for the group here.
-        *   Let's look at line 8 again. Is it $\tilde{M} = \mathcal{M}_{0,3} \longrightarrow \mathcal{G}_{g,\nu}$?
-        *   Wait, the first subscript is $0,3$. What is the group? $\mathcal{G}_{0,3}$?
-        *   If the map is $\tilde{M}_{0,3} \longrightarrow \mathcal{G}_{g,\nu}$, why would the indices be different?
-        *   Ah! It must be $\tilde{M} = \tilde{\mathcal{M}}_{0,3} \longrightarrow \mathcal{G}_{g,\nu}$ with $g,\nu$ being general, and $0,3$ being the specific case!
-        *   Wait, look at the right side of line 8. It's $\mathcal{G}_{g,\sigma}$? No, it's $\mathcal{G}_{\overline{\mathbf{Q}}}$? No, it's $\mathcal{G}_{p,q}$? No, it's $\mathcal{G}_{\mathbf{Q}}$! Let's assume $\mathcal{G}_{\mathbf{Q}}$. No, he writes $\mathbf{Q}$ clearly elsewhere.
-        *   Let's reconsider "$\mathcal{G}_{g,\sigma}$". Maybe
+était triviale, et que deux scindages
+étaient conjugués par un élément de
+$\mathcal{M}$ et un seul (c'est cette deuxième
+assertion d'existence et unicité de conju-
+gaisons qui est le contenu précis de (292)).
+De plus, on a donc construit justement,
+en 11), un homomorphisme surjectif
+$$ \mathcal{M} = \mathcal{M}_{0,3} \longrightarrow C_{p,\sigma} $$
+faisant de ce $C_{p,\sigma}$ un quotient de
+$\mathcal{M}$ et même de $\widetilde{\mathcal{M}}$, qui a les propriétés
+a) b) c) du corollaire précédent. Cela
+nous définit donc, à un isomorphisme
+près, un objet de la catégorie des $\widetilde{\mathfrak{X}}'$,
+i.e. un prorevêtement de un revêtement
+proétale de $(U_{0,3 \mathbf{Q}}, \mathfrak{S}_3) \isom M_{1,1 \mathbf{Q}}$,
+qui après oubli du groupe $\mathfrak{S}_3$ et
+extension de la base de $\mathbf{Q}$ à $\overline{\mathbf{Q}}$, devient
+le revêtement universel abélien de $U_{0,3 \overline{\mathbf{Q}}}$.
+
+Mais d'autre part la tour des
+revêtements de Fermat nous fournit
+très exactement un tel objet - et si
 
 \newpage
 
@@ -4413,7 +4441,7 @@ analogie frappante avec ce qui s'était
 passé, d'ailleurs, quand on était
 parti (au \S\ 48, et dans certains développe-
 ments qui l'ont précédé) du groupe
-quotient ("de type Lie") $\\operatorname{Sl}(2, \hat{\mathbf{Z}})'$ de
+quotient ("de type Lie") $\operatorname{Sl}(2, \hat{\mathbf{Z}})'$ de
 $\hat{\mathfrak{S}}_{0,3}^{+ \wedge}$, pour construire un homomorphisme
 $$ \mathcal{M}_{0,3} \to \operatorname{Gl}(2, \hat{\mathbf{Z}})/\{\pm 1\}, $$
 d'où il nous a été possible de reconstituer
@@ -4431,7 +4459,7 @@ remarquable, c'est que les deux
 
 %% ===== Page 142 =====
 
-extensions de $\tilde{\mathcal{M}}$ par $\mu$, sortant de calculs en apparence assez différents, soient canoniquement isomorphes. Je présume qu'une explication générale de ce fait n'offre aucune difficulté, dans le contexte actuel -- du fait que dans les deux cas, le [unclear: truchement] de $\\operatorname{Sl}(2,\hat{\mathbf{Z}})/\pm 1$ resp de $C_{\rho, \sigma}^\sim$ provenait du fait que j'étais parti d'un groupe quotient non pas de $\mathfrak{S}_{0,3}^{+\wedge} \simeq \\operatorname{Sl}(2,\hat{\mathbf{Z}})/\pm 1$, mais de $\\operatorname{Sl}(2,\hat{\mathbf{Z}}) \simeq N_{1,1}$ lui-même --
+extensions de $\tilde{\mathcal{M}}$ par $\mu$, sortant de calculs en apparence assez différents, soient canoniquement isomorphes. Je présume qu'une explication générale de ce fait n'offre aucune difficulté, dans le contexte actuel -- du fait que dans les deux cas, le [unclear: truchement] de $\operatorname{Sl}(2,\hat{\mathbf{Z}})/\pm 1$ resp de $C_{\rho, \sigma}^\sim$ provenait du fait que j'étais parti d'un groupe quotient non pas de $\mathfrak{S}_{0,3}^{+\wedge} \simeq \operatorname{Sl}(2,\hat{\mathbf{Z}})/\pm 1$, mais de $\operatorname{Sl}(2,\hat{\mathbf{Z}}) \simeq N_{1,1}$ lui-même --
 
 Si on cherche malgré tout une interprétation (genre "tour de Fermat") de l'hom. $\mathcal{M} \to C_{\rho, \sigma}$ (comme de l'hom. $\tilde{\mathcal{M}} \to C_{\rho, \sigma}^\sim$) il faudrait interpréter $C_{\rho,\sigma}$ (comme $C_{\rho, \sigma}^\sim$) comme un groupe d'automorphismes d'une "fibre type" "pas trop grosse" -- la difficulté est d'inventer quelque chose sur quoi on opère de façon non triviale.
 
@@ -4604,7 +4632,7 @@ $$
 \varphi : U \longrightarrow J^\circ_{U/S} \leqno{(314)}
 $$
 
-commutant à l'action de $\\operatorname{Aut}(S'/S) \simeq \\operatorname{Aut}_S(X, S')$, et induisant (par la propriété universelle) un hom.\ canonique $J^*_{U/S} \longrightarrow J^\circ_{U/S} \longrightarrow J^*_{U/S}$ qui soit l'identité.
+commutant à l'action de $\operatorname{Aut}(S'/S) \simeq \operatorname{Aut}_S(X, S')$, et induisant (par la propriété universelle) un hom.\ canonique $J^*_{U/S} \longrightarrow J^\circ_{U/S} \longrightarrow J^*_{U/S}$ qui soit l'identité.
 
 \newpage
 
@@ -4886,7 +4914,7 @@ Ainsi, l'homomorphisme (329) doit pouvoir
 s'interpréter en termes de l'homomorphisme
 galoisien
 $$
-\Gamma_{\mathbf{Q}} \longrightarrow \\operatorname{Gal}(\widetilde{\mathbf{Q}}[\sqrt[\infty]{-\frac{1}{2}}]/\mathbf{Q}) \leqno{(335)}
+\Gamma_{\mathbf{Q}} \longrightarrow \operatorname{Gal}(\widetilde{\mathbf{Q}}[\sqrt[\infty]{-\frac{1}{2}}]/\mathbf{Q}) \leqno{(335)}
 $$
 où $\widetilde{\mathbf{Q}}$ désigne l'extension cyclotomique
 universelle de $\mathbf{Q}$
@@ -4939,7 +4967,7 @@ Supposons $S$ connexe, et prenons un
 point géométrique $\overline{s}$ sur $S$, on aura donc
 un homomorphisme canonique
 $$
-\pi_1(S, \overline{s}) \to \\operatorname{Aut}_{\text{groupes profinis}}(E_\infty(\xi)_{\overline{s}}) , \leqno{(341)}
+\pi_1(S, \overline{s}) \to \operatorname{Aut}_{\text{groupes profinis}}(E_\infty(\xi)_{\overline{s}}) , \leqno{(341)}
 $$
 
 \newpage
@@ -4956,7 +4984,7 @@ $$
 $$
 Soit 
 $$
-G \defeq \\operatorname{Aut}\left( E_{\infty}(\xi)_{\overline{s}} \right) \leqno (344)
+G \defeq \operatorname{Aut}\left( E_{\infty}(\xi)_{\overline{s}} \right) \leqno (344)
 $$
 \marginpar{\footnotesize $G = \{ u \in \Aut \mid \text{il respecte la structure d'ext. en induisant $\mathrm{id}_A$ et un homothétie par un scalaire $\mu \in \hat{\mathbf{Z}}^*$ bien déterminé des $T_{\infty}(\bar{k}^*)$} \}$}
 un homomorphisme canonique, qui ne dépend que de $A$ et de $M$:
@@ -4965,7 +4993,7 @@ G \to \hat{\mathbf{Z}}^*,
 $$
 c'est-à-dire une extension
 $$
-1 \to \\operatorname{Hom}_{\hat{\mathbf{Z}}}(A, T_{\infty}(\bar{k}^*)) \to G \to \hat{\mathbf{Z}}^* \leqno (345)
+1 \to \operatorname{Hom}_{\hat{\mathbf{Z}}}(A, T_{\infty}(\bar{k}^*)) \to G \to \hat{\mathbf{Z}}^* \leqno (345)
 $$
 
 \newpage
@@ -5050,7 +5078,7 @@ Je voudrais essayer de donner des
 
 %% ===== Page 166 =====
 
-indications sur la taille de $\tilde{\Pi}_1^+ \subset \\operatorname{Hom}_{\hat{\mathbf{Z}}}(A,T)$\marginpar{$\simeq \\operatorname{Hom}(A, \hat{\mathbf{Z}})$}
+indications sur la taille de $\tilde{\Pi}_1^+ \subset \operatorname{Hom}_{\hat{\mathbf{Z}}}(A,T)$\marginpar{$\simeq \operatorname{Hom}(A, \hat{\mathbf{Z}})$}
 
 dans le cas où on suppose
 $$
@@ -5065,7 +5093,7 @@ $$
 L'hyp. $2^\circ$) implique déjà --- n'est-ce pas, que $\Gamma \subset \hat{\mathbf{Z}}^*$ est un sous-groupe ouvert. L'hyp. que $S$ est normal implique d'ailleurs que les groupes cherchés $\tilde{\Pi}_1^+$ et $\Gamma$ ne changent pas [unclear: en remplaçant] $S$ par un pt générique (on suppose pour simplifier que $\bar{s}$ est au-dessus dudit pt générique), donc ops que $S = \Spec K$, où $K$ est un (corps extension de) type fini de $\mathbf{Q}$. Et on peut supposer de même, si on y tient, que $S$ est affine, et lisse sur $\mathbf{Q}$ \dots
 
 Notons enfin, posant
-$$ \check{A} = \\operatorname{Hom}_{\hat{\mathbf{Z}}}(A, \hat{\mathbf{Z}}) \leqno (356) $$
+$$ \check{A} = \operatorname{Hom}_{\hat{\mathbf{Z}}}(A, \hat{\mathbf{Z}}) \leqno (356) $$
 
 \newpage
 
@@ -5092,7 +5120,7 @@ $$
 $$
 où $P$ [est] l'ensemble des nombres premiers,
 $$
-\pi_1 = \\operatorname{Gal}(\overline{\mathbf{Q}}/\mathbf{Q}) = \Gamma_{\mathbf{Q}}.
+\pi_1 = \operatorname{Gal}(\overline{\mathbf{Q}}/\mathbf{Q}) = \Gamma_{\mathbf{Q}}.
 $$
 La question est donc d'étudier les homomorphismes
 $$
@@ -5141,7 +5169,7 @@ et le caractère induit par $\chi_\ell$ sur $I_p$.
 
 On [unclear: pose]
 $$
-I_p^+ \defeq \\operatorname{Ker}(\chi_\ell : I_p \to \mathbf{Z}_\ell^*) \subset \boldsymbol{\Gamma}_{\mathbf{Q}}^+ \leqno{(364)}
+I_p^+ \defeq \operatorname{Ker}(\chi_\ell : I_p \to \mathbf{Z}_\ell^*) \subset \boldsymbol{\Gamma}_{\mathbf{Q}}^+ \leqno{(364)}
 $$
 car les $\chi_{\ell'}$ ($\ell' \neq p$) sont triviaux sur $I_p$ (ils ne sont pas triviaux cependant sur $D_p$!).
 
@@ -5480,7 +5508,7 @@ Il se pourrait que le "bon" contexte général pour définir et étudier des gro
 
 Prenant p. ex. le groupe
 $$
-\mathfrak{S}_{0,3}^+ \simeq \\operatorname{Sl}(2, \mathbf{Z}) / \{\pm 1\} \simeq \pi_1(U_{0,3}(\mathbf{C}), \mathfrak{S}_3 - J), \leqno{(4)}
+\mathfrak{S}_{0,3}^+ \simeq \operatorname{Sl}(2, \mathbf{Z}) / \{\pm 1\} \simeq \pi_1(U_{0,3}(\mathbf{C}), \mathfrak{S}_3 - J), \leqno{(4)}
 $$
 celui-ci est muni d'une L-structure, qui peut être définie en termes de l'unique classe de conjugaison de sous-groupes $L_0$ engendré par $\varepsilon_0 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, ou de $L_1$ engendré par $\varepsilon_1 = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$. Le L-groupe (discret) a la propriété remarquable que tout L-automorphisme "direct" (induisant l'identité sur le module d'orientation) de celui-ci est intérieur. Il se pourrait que cette propriété, ajoutée à celle que le centre est trivial (ou mieux, peut-être, que le centralisateur
 
@@ -5545,7 +5573,7 @@ est que son groupe de Teichmüller
 
 %% ===== Page 188 =====
 
-correspondante du L-groupe $\mathfrak{S}_{0,3} \simeq \\operatorname{Sl}(2, \mathbf{Z})/\pm 1$ est que tout L-automorphisme du sous-groupe $\mathfrak{S}_{0,3}^+$ est induit par un unique élément de $\mathfrak{S}_{0,3}$. Cette propriété est peut-être caractéristique du L-groupe discret $\mathfrak{S}_{0,3}$.
+correspondante du L-groupe $\mathfrak{S}_{0,3} \simeq \operatorname{Sl}(2, \mathbf{Z})/\pm 1$ est que tout L-automorphisme du sous-groupe $\mathfrak{S}_{0,3}^+$ est induit par un unique élément de $\mathfrak{S}_{0,3}$. Cette propriété est peut-être caractéristique du L-groupe discret $\mathfrak{S}_{0,3}$.
 
 \medskip
 
@@ -5602,7 +5630,7 @@ d'un groupe à lacets $\pi$, on peut
 prendre p.ex.
 $$
 \begin{cases}
-\mathfrak{S} = \\operatorname{Aut}_L(\pi) \\
+\mathfrak{S} = \operatorname{Aut}_L(\pi) \\
 \mathfrak{T} = \Autext_L(\pi)
 \end{cases}
 \leqno{(7)}
@@ -6234,7 +6262,7 @@ $$
 $$
 qui sont par hyp.\ des monomorphismes
 universels, on voudrait que $\operatorname{Lie}(\underline{\Pi})$ soit
-\marginpar{cette hyp. semble raisonnable dès lors que $\Pi_0 = \\operatorname{Sl}(2,\mathbf{Z})$ mais ici p. ex. ... !}
+\marginpar{cette hyp. semble raisonnable dès lors que $\Pi_0 = \operatorname{Sl}(2,\mathbf{Z})$ mais ici p. ex. ... !}
 engendré sur les [unclear: $k_!$] qui [unclear: univers.] par
 les images d'un générateur de $\underline{T}_0$. Je
 reviens [unclear: à ce que j'ai dit de]
@@ -6333,30 +6361,29 @@ $$
 
 %% ===== Page 219 =====
 
-alors de définir $\underline{M}_{\mathbf{Q}}^\Delta(\mathbb{A}_{\mathbf{Q}})$, et on exige
-que $M \to \underline{M}(\mathbb{A}_{\mathbf{Q}})$ se factorise par
+alors de définir $\underline{\mathcal{M}}_0^\Delta(\mathbf{A}_{\mathbf{Q}})$, et on exige
+que $\mathcal{M} \to \underline{\mathcal{M}}_0^\Delta(\mathbf{A}_{\mathbf{Q}})$ se factorise par
 $$
-M \to \underline{M}_{\mathbf{Q}}^\Delta(\mathbb{A}_{\mathbf{Q}}) . \leqno{(63)}
+\mathcal{M} \to \underline{\mathcal{M}}_{\mathbf{Q}}^\Delta(\mathbf{A}_{\mathbf{Q}}) \leqno{(63)}
 $$
-
 Si de plus on suppose que les images
 des trois hom.\ (62) sont des sous-groupes
-ouverts (condition qui renforce considé-
-rablement la condition désirée dans 4°)
-(p.\ 749), [unclear: pourvu qu'on prouve grâce à ce] co-noyau pour
+\underline{ouverts} (condition qui renforce considé-
+rablement la condition dérivée [unclear: d-a 4)]
+(p.\ 749), pour assurer
 la surjectivité des composés
 $$
 \begin{cases}
-\Pi \to \underline{\Pi}^\Delta(\hat{\mathbf{Z}}) \to \Gamma_{\gamma_\Pi} \\
-\mathfrak{S} \to \underline{\mathfrak{S}}^\Delta(\hat{\mathbf{Z}}) \to \Gamma_{\gamma_{\mathfrak{S}}} \\
-M \to \underline{M}^\Delta(\hat{\mathbf{Z}}) \to \Gamma_{\gamma_M}
-\end{cases} \Big) , \leqno{(64)}
+\pi \to \underline{\Pi}^{\Delta}(\hat{\mathbf{Z}}) \to \Gamma_{\pi} \\
+\mathfrak{S} \to \underline{\mathfrak{S}}^{\Delta}(\hat{\mathbf{Z}}) \to \Gamma_{\mathfrak{S}} \\
+\mathcal{M} \to \underline{\mathcal{M}}^{\Delta}(\hat{\mathbf{Z}}) \to \Gamma_{\mathcal{M}}
+\end{cases} \leqno{(64)}
 $$
-on sera particulièrement heureux. On
-dira qu'on a une [unclear: vraie] \underline{structure de Lie}
-pour $\mathbf{Z}$, dite "entière") [unclear: stricte]
-si toutes les conditions suppl.\ envisagées
-précédemment sont satisfaites \dots
+on sera particulièrement heureux. Bien
+dire qu'on a une \underline{[unclear: géométrie]} de Lie
+sur $\mathbf{Z}$ (bien ``entière'') \underline{acquise},
+si toutes ces conditions suppl.\ envisagées
+précédemment sont satisfaites...
 
 \newpage
 
@@ -6587,57 +6614,51 @@ $$
 1 \longrightarrow \mathbf{Z} \longrightarrow \operatorname{Gl}(2, \mathbf{R})^{\pm 1 \sim} \longrightarrow \operatorname{Gl}(2, \mathbf{R})^{\pm 1} \longrightarrow 1 \leqno{(13)}
 $$
 qui induit au dessus de la composante
-neutre $\\operatorname{Sl}(2, \mathbf{R})$ de $\operatorname{Gl}(2, \mathbf{R})^{\pm 1}$ une
+neutre $\operatorname{Sl}(2, \mathbf{R})$ de $\operatorname{Gl}(2, \mathbf{R})^{\pm 1}$ une
 structure d'extension
 $$
-1 \longrightarrow \mathbf{Z} \longrightarrow \\operatorname{Sl}(2, \mathbf{R})^\sim \longrightarrow \\operatorname{Sl}(2, \mathbf{R}) \longrightarrow 1 \leqno{(14)}
+1 \longrightarrow \mathbf{Z} \longrightarrow \operatorname{Sl}(2, \mathbf{R})^\sim \longrightarrow \operatorname{Sl}(2, \mathbf{R}) \longrightarrow 1 \leqno{(14)}
 $$
 
-\underline{Proposition}. Le groupe $\\operatorname{Sl}(2, \mathbf{R})^\sim$ est connexe,
+\underline{Proposition}. Le groupe $\operatorname{Sl}(2, \mathbf{R})^\sim$ est connexe,
 et \underline{est} [unclear: même] homéomorphe \underline{à} : $\mathbf{R}^3$.
 
 \newpage
 
 %% ===== Page 230 =====
 
-\underline{Dém.} Comme l'inclusion
+Démonstration. Comme l'inclusion
 $$
-\mathcal{U} \hookrightarrow \\operatorname{Sl}(2, \mathbf{R}) \leqno{(15)}
+U \hookrightarrow \operatorname{Sl}(2, \mathbf{R}) \leqno{(15)}
 $$
-est une équivalence d'homotopie,
-qui s'identifie topologiquement à l'inclusion
-$\mathcal{U} \longrightarrow \mathcal{U} \times \mathbf{R}^2$, ce qui prouve que
-l'image inverse $\widetilde{\mathcal{U}}$ de $\mathcal{U}$ dans $\\operatorname{Sl}(2, \mathbf{R})^\sim$ s'identifie au
-rev. universel $\mathbf{R}$ de $\mathcal{U}$ (pointant au-dessus
-de $1$ par $0$ \dots) Or si
-$u \in \mathcal{U}$, le choix d'un $\tilde{u}$ au dessus
-de $u$, i.e.\ d'un relèvement de $\frac{u(1)}{|u(1)|}$
-dans $\mathbf{R}$ par la formule (12), s'identifie
-(puisque $\frac{u(1)}{|u(1)|} = u(1) = u$) -- au choix
-d'un $t \in \mathbf{R}$ tel que $\exp 2i\pi t = u$,
-O.K.
+est une équivalence d'homotopie, (qui s'identifie topologiquement à l'inclusion
+$$
+U \hookrightarrow U \times \mathbf{R}^2 \ ,
+$$
+il s'ensuit que l'image inverse de $U$ dans $\operatorname{Sl}(2, \mathbf{R})^\sim$ s'identifie au revêtement universel $\mathbf{R}$ de $U$ (pointé au-dessus de $1$ par $0$\dots) Or si $u \in U$, le choix d'un $\tilde{u}$ au-dessus de $u$, i.e.\ d'un relèvement de $\frac{u(1)}{|u(1)|}$ dans $\mathbf{R}$ par la formule (12), s'identifie (puisque $\frac{u(1)}{|u(1)|} = u(1) = u$) au choix d'un $t \in \mathbf{R}$ tel que $\exp 2i\pi t = u$, O.K.
 
-\underline{Cor. 1} [unclear: La donnée] dans $\\operatorname{Gl}(2, \mathbf{R})^{\pm 1 \sim}$ d'un s.-g.\ [unclear: discret] $\simeq \mathbf{Z}$ (de générateur $\omega$ tel qu'on ait $\omega^2 = \omega'_0$, où $\omega'_0$ est le gén.\ de $\\operatorname{Ker}(\\operatorname{Gl}(2, \mathbf{R})^{\pm 1 \sim} \to \\operatorname{Gl}(2, \mathbf{R})^{\pm 1})$, avec $\omega_0 \in \\operatorname{Sl}(2, \mathbf{R})^\sim$, $\omega_0 = \omega'_0$) \dots
+\marginpar{Expliquer d'abord le centre $\simeq \mathbf{Z} \times \mathbf{Z}$ de $\operatorname{Gl}(2,\mathbf{R})^\sim$, engendré par le centre $\omega_0 \in \operatorname{Sl}(2,\mathbf{R})^\sim$ et $\omega'_0$ du $\Ker$ \dots}
+Cor. 1 Le [unclear: sous-groupe] d'indice 2 de $\operatorname{Gl}(2,\mathbf{R})^\sim$ d'où s'ensuit que son centre est $\simeq \mathbf{Z}$ ($\exists$ générateur canonique du centre $\omega_0^\sim$ tel qu'il s'envoie sur $\omega'_0$, où $\omega'_0$ gén. de $\operatorname{Ker}(\operatorname{Gl}(2,\mathbf{R})^\sim \to \operatorname{Sl}(2,\mathbf{R}))$).
 
-\underline{Cor. 2} L'action d'un $g \in \\operatorname{Gl}(2, \mathbf{R})^{\pm 1 \sim}$ sur $\\operatorname{Sl}(2, \mathbf{R})^\sim$ (ou sur le centre $\omega_0^\mathbf{Z}$ de $\\operatorname{Sl}(2, \mathbf{R})^\sim$) envoie $\omega_0$ en $\omega_0^{-1}$ (resp.\ $\omega'_0 \mapsto \omega_0^{\prime -1}$) \dots
+Cor. 2 L'action d'un $g \in \operatorname{Gl}(2,\mathbf{R})^{\pm 1}$ sur $\mathbf{Z}$ (ou sur le centre $\omega_0^\sim$ de $\operatorname{Sl}(2,\mathbf{R})^\sim$) est donnée par [unclear: $x \mapsto x^{\det g}$].
 
 \newpage
 
 %% ===== Page 231 =====
 
-3) Le groupe $\\operatorname{Sl}(2,\mathbf{Z})^\sim$.
+3) Le groupe $\operatorname{Sl}(2,\mathbf{Z})^\sim$.
 
-Soit $\\operatorname{Sl}(2,\mathbf{Z})^\sim$ l'image inverse de $\\operatorname{Sl}(2,\mathbf{Z})$ dans $\\operatorname{Sl}(2,\mathbf{R})^\sim$, de sorte qu'on a une structure d'extension
+Soit $\operatorname{Sl}(2,\mathbf{Z})^\sim$ l'image inverse de $\operatorname{Sl}(2,\mathbf{Z})$ dans $\operatorname{Sl}(2,\mathbf{R})^\sim$, de sorte qu'on a une structure d'extension
 $$
-1 \longrightarrow \underset{n \mapsto \omega_0^n}{\mathbf{Z}} \longrightarrow \\operatorname{Sl}(2,\mathbf{Z})^\sim \longrightarrow \\operatorname{Sl}(2,\mathbf{Z}) \longrightarrow 1 \leqno{(16)}
+1 \longrightarrow \underset{n \mapsto \omega_0^n}{\mathbf{Z}} \longrightarrow \operatorname{Sl}(2,\mathbf{Z})^\sim \longrightarrow \operatorname{Sl}(2,\mathbf{Z}) \longrightarrow 1 \leqno{(16)}
 $$
-Je voudrais décrire $\\operatorname{Sl}(2,\mathbf{Z})^\sim$ par générateurs et relations. Pour ceci, je note ceci :
+Je voudrais décrire $\operatorname{Sl}(2,\mathbf{Z})^\sim$ par générateurs et relations. Pour ceci, je note ceci :
 
-\underline{Proposition} L'image inverse dans $\\operatorname{Sl}(2,\mathbf{Z})^\sim$ des sous-groupes $L_\rho \simeq \mathbf{Z}/6\mathbf{Z}$ et $L_\sigma \simeq \mathbf{Z}/4\mathbf{Z}$ engendrés par $\rho$ et $\sigma$ sont isomorphes à $\mathbf{Z}$.
+\underline{Proposition} L'image inverse dans $\operatorname{Sl}(2,\mathbf{Z})^\sim$ des sous-groupes $L_\rho \simeq \mathbf{Z}/6\mathbf{Z}$ et $L_\sigma \simeq \mathbf{Z}/4\mathbf{Z}$ engendrés par $\rho$ et $\sigma$ sont isomorphes à $\mathbf{Z}$.
 
 Ceci résulte du
 
-\underline{Corollaire} (à la proposition p. 752) : Pour tout sous-groupe fini $z \subset \\operatorname{Sl}(2,\mathbf{R})$, l'image inverse de $z$ dans $\\operatorname{Sl}(2,\mathbf{R})^\sim$ est isomorphe à $\mathbf{Z}$.
+\underline{Corollaire} (à la proposition p. 752) : Pour tout sous-groupe fini $z \subset \operatorname{Sl}(2,\mathbf{R})$, l'image inverse de $z$ dans $\operatorname{Sl}(2,\mathbf{R})^\sim$ est isomorphe à $\mathbf{Z}$.
 
 En effet, par une "conjugaison" on peut supposer que $z \subset \mathcal{U}$, i.e.\ $z = \mu_n(\mathbf{C})$, mais alors $\tilde{z}$ s'identifie : à l'ensemble des $t \in \mathbf{R}$ avec $(\exp 2i\pi t)^n = 1$ i.e.\ $\exp 2i\pi(nt) = 1$ i.e.
 
@@ -6650,7 +6671,7 @@ t \in \frac{1}{n} \mathbf{Z} ,
 $$
 le groupe de ces $t$ est $\simeq \mathbf{Z}$, cqfd.
 
-Corollaire\footnote{pour une démonstration plus directe, cf. fin p. 209 plus bas...} Il existe $\tilde{\rho} \in \\operatorname{Sl}(2, \mathbf{Z})^\sim$ et $\tilde{\sigma} \in \\operatorname{Sl}(2, \mathbf{Z})^\sim$ au-dessus de $\rho$ et $\sigma$ respectivement, tels qu'on ait
+Corollaire\footnote{pour une démonstration plus directe, cf. fin p. 209 plus bas...} Il existe $\tilde{\rho} \in \operatorname{Sl}(2, \mathbf{Z})^\sim$ et $\tilde{\sigma} \in \operatorname{Sl}(2, \mathbf{Z})^\sim$ au-dessus de $\rho$ et $\sigma$ respectivement, tels qu'on ait
 $$
 \tilde{\rho}^3 = \tilde{\sigma}^2 \leqno{(17)}
 $$
@@ -6658,11 +6679,11 @@ L'ensemble de ces systèmes $(\tilde{\rho}, \tilde{\sigma})$ est un torseur sous
 $$
 (\tilde{\rho}, \tilde{\sigma}) \mapsto (\tilde{\rho} \omega_0^{2n}, \tilde{\sigma} \omega_0^{3n}) , \leqno{(18)}
 $$
-où $\omega_0$ est le générateur canonique de $\\operatorname{Sl}(2, \mathbf{Z})^\sim \to \\operatorname{Sl}(2, \mathbf{Z})$.
+où $\omega_0$ est le générateur canonique de $\operatorname{Sl}(2, \mathbf{Z})^\sim \to \operatorname{Sl}(2, \mathbf{Z})$.
 
-On peut dire\footnote{Il sera mieux de dire : le centre $Z^\sim$ de $\\operatorname{Sl}(2, \mathbf{Z})^\sim$ (image inverse du centre $\{\pm 1\}$ de $\\operatorname{Sl}(2, \mathbf{Z})$) a un unique générateur $\omega_0$ tel que $\omega_0^2 = z_0^\sim$ (générateur canon. de $\\operatorname{Ker}(\\operatorname{Sl}(2, \mathbf{Z})^\sim \to \\operatorname{Sl}(2, \mathbf{Z}))$).} aussi que l'image inverse du centre $\{\pm 1\}$ de $\\operatorname{Sl}(2, \mathbf{Z})$ a un unique générateur $\omega_0$ satisfaisant
+On peut dire\footnote{Il sera mieux de dire : le centre $Z^\sim$ de $\operatorname{Sl}(2, \mathbf{Z})^\sim$ (image inverse du centre $\{\pm 1\}$ de $\operatorname{Sl}(2, \mathbf{Z})$) a un unique générateur $\omega_0$ tel que $\omega_0^2 = z_0^\sim$ (générateur canon. de $\operatorname{Ker}(\operatorname{Sl}(2, \mathbf{Z})^\sim \to \operatorname{Sl}(2, \mathbf{Z}))$).} aussi que l'image inverse du centre $\{\pm 1\}$ de $\operatorname{Sl}(2, \mathbf{Z})$ a un unique générateur $\omega_0$ satisfaisant
 $$
-\omega_0^2 = z_0^\sim \quad (\text{générateur can. de } \\operatorname{Sl}(2, \mathbf{Z})^\sim \to \\operatorname{Sl}(2, \mathbf{Z})) \leqno{(19)}
+\omega_0^2 = z_0^\sim \quad (\text{générateur can. de } \operatorname{Sl}(2, \mathbf{Z})^\sim \to \operatorname{Sl}(2, \mathbf{Z})) \leqno{(19)}
 $$
 et ceci étant, il est possible de relever $\rho$, $\sigma$ en $\tilde{\rho}$, $\tilde{\sigma}$ satisfaisant
 \marginpar{Faire la vérification}
@@ -6677,7 +6698,7 @@ Et cette fois-ci, $\tilde{\rho}$ et $\tilde{\sigma}$ sont uniquement déterm-
 
 minés. Ceci résulte aussitôt de la prop. précédente.
 
-\marginpar{NB $\tau = \tau_{\infty} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ \\ i.e.\ $\tau(x+iy) = -x+iy$ \\ (symétrie par rapport à l'axe des $y$).} Considérons l'image inverse de $\{1, \tau\} \subset \\operatorname{Gl}(2,\mathbf{Z})$ dans $\widetilde{\GL}(2,\mathbf{Z})$, extension de $\{1, \tau\} \simeq \mathbf{Z}/2\mathbf{Z}$ par $\mathbf{Z}$ -- je dis que cette extension est scindée. En effet, l'action de $\tau$ sur $S_0$ se relève en l'action de $\tilde{\tau}$ d'ordre 2 sur $\tilde{S}_0 \simeq \mathbf{R}$, qui est donnée par
+\marginpar{NB $\tau = \tau_{\infty} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ \\ i.e.\ $\tau(x+iy) = -x+iy$ \\ (symétrie par rapport à l'axe des $y$).} Considérons l'image inverse de $\{1, \tau\} \subset \operatorname{Gl}(2,\mathbf{Z})$ dans $\widetilde{\GL}(2,\mathbf{Z})$, extension de $\{1, \tau\} \simeq \mathbf{Z}/2\mathbf{Z}$ par $\mathbf{Z}$ -- je dis que cette extension est scindée. En effet, l'action de $\tau$ sur $S_0$ se relève en l'action de $\tilde{\tau}$ d'ordre 2 sur $\tilde{S}_0 \simeq \mathbf{R}$, qui est donnée par
 $$ 
 \tilde{\tau}t = \frac{1}{2} - t \leqno (21) 
 $$
@@ -6708,8 +6729,8 @@ Ces formules s'écrivent aussi
 $$
 \tilde{\tau}(\tilde{\rho}^{-1}) = \tilde{\rho} , \quad \tilde{\tau}(\tilde{\sigma}^{-1}) = \tilde{\sigma}
 $$
-Elles sont valables dans $\\operatorname{Sl}(2,\mathbf{R})$, donc
-pour voir qu'elles sont valables dans $\\operatorname{Sl}(2,\mathbf{Z})^\sim$,
+Elles sont valables dans $\operatorname{Sl}(2,\mathbf{R})$, donc
+pour voir qu'elles sont valables dans $\operatorname{Sl}(2,\mathbf{Z})^\sim$,
 il suffit de montrer que les premières
 nous redonnent les relations caractéristiques
 (20), ce qui s'écrit
@@ -6721,7 +6742,7 @@ $$
 \tilde{\tau}(\omega_0) = \omega_0^{-1}, \quad \text{ok.}
 $$
 
-Théorème Le groupe $\\operatorname{Sl}(2,\mathbf{Z})^\sim$ admet
+Théorème Le groupe $\operatorname{Sl}(2,\mathbf{Z})^\sim$ admet
 la présentation (à deux gén. $\tilde{\rho}, \tilde{\sigma}$)
 $$
 \tilde{\rho}^3 \cdot \tilde{\sigma}^{-2} = 1 \leqno{(25)}
@@ -6730,7 +6751,7 @@ Dém. Soit $\Pi$ le groupe défini
 par cette présentation, et considérons
 l'homomorphisme
 $$
-\Pi \to \\operatorname{Sl}(2,\mathbf{Z})/\pm 1 = \{\rho,\sigma \mid \rho^3 = \sigma^2 = 1\} \leqno{(26)}
+\Pi \to \operatorname{Sl}(2,\mathbf{Z})/\pm 1 = \{\rho,\sigma \mid \rho^3 = \sigma^2 = 1\} \leqno{(26)}
 $$
 $$
 (\tilde{\rho},\tilde{\sigma}) \mapsto (\rho,\sigma \pmod{\pm 1})
@@ -6740,15 +6761,15 @@ $$
 
 %% ===== Page 235 =====
 
-Le groupe $\\operatorname{Sl}(2,\mathbf{Z})/\pm 1$ s'identifie au quotient de $\Pi$ par le sous-groupe distingué engendré par l'élément $\omega_0 = \tilde{\rho}^3 = \tilde{\sigma}^2$. Mais cet élément étant central, le groupe engendré par $\omega_0$ est déjà distingué, donc on a une suite exacte
+Le groupe $\operatorname{Sl}(2,\mathbf{Z})/\pm 1$ s'identifie au quotient de $\Pi$ par le sous-groupe distingué engendré par l'élément $\omega_0 = \tilde{\rho}^3 = \tilde{\sigma}^2$. Mais cet élément étant central, le groupe engendré par $\omega_0$ est déjà distingué, donc on a une suite exacte
 $$
-1 \longrightarrow \mathbf{Z} \xrightarrow{1 \mapsto \omega_0} \Pi \longrightarrow \\operatorname{Sl}(2,\mathbf{Z})/\pm 1 \longrightarrow 1 \leqno{(27)}
+1 \longrightarrow \mathbf{Z} \xrightarrow{1 \mapsto \omega_0} \Pi \longrightarrow \operatorname{Sl}(2,\mathbf{Z})/\pm 1 \longrightarrow 1 \leqno{(27)}
 $$
 qui s'envoie dans la suite exacte
 $$
-1 \longrightarrow \mathbf{Z} \xrightarrow{n \mapsto \omega_0^n} \\operatorname{Sl}(2,\mathbf{Z})^\sim \longrightarrow \\operatorname{Sl}(2,\mathbf{Z})/\pm 1 \longrightarrow 1
+1 \longrightarrow \mathbf{Z} \xrightarrow{n \mapsto \omega_0^n} \operatorname{Sl}(2,\mathbf{Z})^\sim \longrightarrow \operatorname{Sl}(2,\mathbf{Z})/\pm 1 \longrightarrow 1
 $$
-en induisant des isomorphismes (identiques sur les facteurs extrêmes) donc par le lemme des 5 $\Pi \longrightarrow \\operatorname{Sl}(2,\mathbf{Z})^\sim$ est un isomorphisme, cqfd.
+en induisant des isomorphismes (identiques sur les facteurs extrêmes) donc par le lemme des 5 $\Pi \longrightarrow \operatorname{Sl}(2,\mathbf{Z})^\sim$ est un isomorphisme, cqfd.
 
 Corollaire! Le groupe $\operatorname{Gl}(2,\mathbf{Z})^\sim$ admet la présentation (à trois générateurs $\tilde{\rho}, \tilde{\sigma}, \tilde{\tau}$)
 $$
@@ -6859,12 +6880,12 @@ dont on sait que c'est un isomorphisme. D'ailleurs, $G = \operatorname{Gl}(2, \m
 $1^\circ$) $\tilde{E}$ est canoniquement isomorphe, en
 tant qu'extension de $G$ par $T_0 \simeq \mathbf{Z}$ (NB.
 $\mathbf{R}^2$ et son quotient $X_1$ sont canoniquement
-orientés) au groupe $\\operatorname{Sl}(2, \mathbf{Z})^\sim$ du $3^\circ$.
+orientés) au groupe $\operatorname{Sl}(2, \mathbf{Z})^\sim$ du $3^\circ$.
 Ainsi on trouve (cf § 14 p. 161) le
 
 Théorème: L'image inverse par l'isom.
 (37) de l'extension $\mathfrak{S}_{1,1}$ de $\mathfrak{T}_{1,1}$ par $\mathbf{Z}$
-s'identifie canoniquement à $\\operatorname{Sl}(2, \mathbf{Z})^\sim$,
+s'identifie canoniquement à $\operatorname{Sl}(2, \mathbf{Z})^\sim$,
 donc il admet les deux présentations explicites
 dans $3^\circ$
 \begin{enumerate}
@@ -6890,11 +6911,11 @@ $$
 $$
 et désignant par $L$ le sous-groupe -lacets\footnote{justifier le choix de $l'_0$, ou bien dire que la classe de conjugaison de $l_0^{\pm 1}$ est bien définie dans $\pi_{1,1}$ comme élément [unclear: direction] déterminé par $\operatorname{Gl}(2,\mathbf{Z})$!} de $\pi_{1,1}$, engendré par $l'_0$, on aura
 $$
-S\mathfrak{T}_{1,1} \simeq \operatorname{Norm}_{\\operatorname{Aut}_{loc}(\pi_{1,1})}(L). \leqno{(41)}
+S\mathfrak{T}_{1,1} \simeq \operatorname{Norm}_{\operatorname{Aut}_{loc}(\pi_{1,1})}(L). \leqno{(41)}
 $$
 Donc il faudrait expliciter l'action
 $$
-S\mathfrak{T}_{1,1} \simeq \operatorname{Gl}(2,\mathbf{Z})^\sim \hookrightarrow \\operatorname{Aut}_{loc}(\pi_{1,1}) ,
+S\mathfrak{T}_{1,1} \simeq \operatorname{Gl}(2,\mathbf{Z})^\sim \hookrightarrow \operatorname{Aut}_{loc}(\pi_{1,1}) ,
 $$
 par l'action des générateurs $\tilde{\rho}, \tilde{\sigma}, \tilde{\tau}$ ou $\tilde{\tau}_0 = \tilde{\tau}', \tilde{\tau}_1, \tilde{\tau}_\infty$ — action qui doit normaliser $L$, et de façon plus précise, transforme $l'_0$ en $l'_0$ (pour $\tilde{\rho}, \tilde{\sigma}$) ou en $l_0^{\prime -1}$ (pour $\tilde{\tau}_0, \tilde{\tau}_1, \tilde{\tau}_\infty$). Il faut donc expliciter l'action des générateurs sur $x$ et sur $y$. (NB $\pi_{1,1}$ est le groupe libre ayant pour générateurs $x$ et $y$).
 
@@ -6940,9 +6961,9 @@ Alors l'élément $xyx^{-1}y^{-1}$ est figuré par le chemin ci-dessus, qui est 
 
 \marginpar{A) Revêtements de germes}\footnote{Ici un "espace" topologique filtré $S$ (par filtre $\Phi$ des $S_i \in \Phi$) formalise la notion de germe d'espace.}Un "germe d'espace" est défini par un espace topologique $S$ et un filtre $\Phi$ sur $S$, un morphisme de $(S, \Phi)$ dans $(S', \Phi')$ est un élément de
 $$
-\varinjlim_{S_i \in \Phi} \\operatorname{Hom}_{\Phi_{S_i}, \Phi'}(S_i, S') \leqno{(46)}
+\varinjlim_{S_i \in \Phi} \operatorname{Hom}_{\Phi_{S_i}, \Phi'}(S_i, S') \leqno{(46)}
 $$
-où $\Phi_{S_i}$ pour $S_i \in \Phi$, est le filtre induit par $\Phi$ sur $S_i$, et $\\operatorname{Hom}_{\Phi_{S_i}, \Phi'}$ désigne l'ensemble des applications continues $f \colon S_i \to S'$ compatibles avec $\Phi_{S_i}, \Phi'$, i.e.\ telles que $\forall S'_j \in \Phi'$, $f^{-1}(S'_j) \in \Phi_{S_i}$. La composition des morphismes de germes est évidente.
+où $\Phi_{S_i}$ pour $S_i \in \Phi$, est le filtre induit par $\Phi$ sur $S_i$, et $\operatorname{Hom}_{\Phi_{S_i}, \Phi'}$ désigne l'ensemble des applications continues $f \colon S_i \to S'$ compatibles avec $\Phi_{S_i}, \Phi'$, i.e.\ telles que $\forall S'_j \in \Phi'$, $f^{-1}(S'_j) \in \Phi_{S_i}$. La composition des morphismes de germes est évidente.
 
 Un revêtement (étale) d'un germe $(S, \Phi)$ d'espace topologique est un objet de la catégorie
 $$
@@ -7042,26 +7063,39 @@ qui est pleinement fidèle. Un germe d'espace $S'$ au-dessus de $S$ est dit un r
 
 Supposons pour simplifier que cette catégorie $\underline{Rev}(S)$ soit multi-galoisienne. Les objets 1-connexes s'appellent des revêtements universels de $S$ - ils forment un groupoïde, connexe si $\underline{Rev}(S)$ est galoisienne. Les revêtements universels de $S$ peuvent s'interpréter comme des germes d'espaces. Soit $\widetilde{S}$ un tel germe universel, alors $\widetilde{S}$ est bel et bien un germe universel, et $\widetilde{S} \to S$ fournit le revêtement d'icelui. On pose alors [unclear: en conséquence] :
 $$
-\Pi_1(S, \widetilde{S})\footnote{Le groupoïde $\Pi_1(S, \widetilde{S})$ s'identifie à le $\Pi_1$ de la catégorie galoisienne "stricte" $\underline{Rev}(S)$, calculée en l'objet [unclear: initial] $\widetilde{S}$.} \isom \\operatorname{Aut}_{\underline{Rev}(S)}(\widetilde{S}) \leqno{(55)}
+\Pi_1(S, \widetilde{S})\footnote{Le groupoïde $\Pi_1(S, \widetilde{S})$ s'identifie à le $\Pi_1$ de la catégorie galoisienne "stricte" $\underline{Rev}(S)$, calculée en l'objet [unclear: initial] $\widetilde{S}$.} \isom \operatorname{Aut}_{\underline{Rev}(S)}(\widetilde{S}) \leqno{(55)}
 $$
 
 \newpage
 
 %% ===== Page 248 =====
 
-\marginpar{B) Cas des surfaces ponctuées}
-Ceci dit, revenons à la situation, à (53), d'un espace topologique $X$, et d'un $x \in X$ tel que $X$ soit un [unclear: bon espace] en $x$.
-
-Alors la catégorie $\operatorname{Rev}(D_x^*)$ est une catégorie galoisienne, dont le groupe fondamental s'identifie au [unclear: modèle d'asymptote] $T_x$ de $X$ en $x$ :
+\marginpar{B) Cas des surfaces [unclear: pointées]} 
+Ceci dit, revenons à la situation de (53),
+d'un espace topologique $X$, et d'un
+$x \in X$ tel que $X$ soit une surface en $x$.
+Alors la catégorie
 $$
-\pi_1(D_x^*) \defeq \pi_1(\operatorname{Rev}(D_x^*)) \simeq T_x \leqno{(56)}
+Rev(D^*_x)
 $$
+est une catégorie galoisienne dont le
+groupe fondamental s'identifie canoniquement
+au module d'orientation $T_x$ de $X$ en $x$ :
+$$
+\pi_1(D^*_x) \defeq \pi_1(Rev(D^*_x)) \simeq T_x \leqno{(56)}
+$$
+Ceci provient du fait que le germe
+$D^*_x$ s'identifie à un
+système projectif de disques
+épointés en $x$, et les $\pi_1$ des dits
+disques forment un syst. projectif
+constant...
 
-Ceci provient du fait que les germes $D_{x,i}^*$ forment un système fondamental de voisinages épointés de $x$, et les $\pi_1$ des dits disques forment un système projectif constant\dots
-
-Ainsi les revêtements universels $\widetilde{D}_x^*$ de $D_x^*$ forment un groupoïde connexe, de groupoïde fondamental $T_x$.
-
-Choisissons en un $\widetilde{D}_x^*$, et considérons le morphisme composé\dots
+Ainsi les rev. universels $\widetilde{D^*}$ de
+$D^*$ forment un groupoïde connexe,
+de groupe fondamental $T_x$.
+Choisissons donc un tel $\widetilde{D^*}$, et
+considérons le morphisme composé
 
 \newpage
 
@@ -7086,7 +7120,7 @@ $$
 $$
 je vais définir un homomorphisme canonique
 $$
-\kappa_x : T_x \longrightarrow \underbrace{\pi_1(U, D_x^{*\sim})}_{\simeq \\operatorname{Aut}(\text{du foncteur fibre } \underline{Rev}(U) \to \underline{Rev}(D_{x}^{*\sim}))} \leqno{(60)}
+\kappa_x : T_x \longrightarrow \underbrace{\pi_1(U, D_x^{*\sim})}_{\simeq \operatorname{Aut}(\text{du foncteur fibre } \underline{Rev}(U) \to \underline{Rev}(D_{x}^{*\sim}))} \leqno{(60)}
 $$
 on peut le décrire p. ex. par
 $$
@@ -7345,27 +7379,21 @@ $$
 %% ===== Page 258 =====
 
 $$
-\psi: \underline{A}_* \longrightarrow \mathcal{G} \leqno{(86)}
+\psi : \underline{A}_x \longrightarrow \mathcal{G} \leqno{(86)}
 $$
-
-et (85) est une équivalence de cat. où $\mathcal{G}$ [unclear: se conduit] comme le Gr $\Pi_1$, où $\Aut \simeq \mathbf{Z}$, et où, pour une paire $\{a, b\}$ de pts $a, b$ distincts de $\$$, définissant deux arcs $A$ et $B$ d'extrémités $a, b$, déterminant l'automorphisme de $\operatorname{Gr}(\underline{A}_*)$ (issu de $\operatorname{Gr}(A_*)$), composé de
-
+et (85) est une [unclear: équivalence] de cat. où $\mathcal{G}$ se [unclear: présente] comme un groupoïde connexe dont le $\pi_1$ est $\simeq \mathbf{Z}$, et où, pour deux points $a,b$ distincts de $\$_x$, définis par deux arêtes $A$ et $B$ d'extrémités $a,b$, déterminant l'automorphisme de $a$ dans $\operatorname{Gr}(\underline{A}_x)$, exprimé par
 $$
-\{a\} \xrightarrow{\sim} A \xleftarrow{\sim} \{b\} \xrightarrow{\sim} B \xleftarrow{\sim} \{a\} \leqno{(86bis)}
+\{a \isommap A \isommap b \isommap B \isommap a\} \leqno{(86\text{bis})}
 $$
-
-l'automorphisme correspondant de $\psi(\{a\})$ dans $\mathcal{G}$ soit un générateur de $\\operatorname{Aut}_{\mathcal{G}}(\psi(\{a\}))$.
+l'automorphisme correspondant de $\psi(a)$ dans $\mathcal{G}$ soit un générateur de $\operatorname{Aut}_{\mathcal{G}}(\psi(\{a\}))$.
 
 Nous allons donc définir un foncteur
-
 $$
-\underline{A}_* \longrightarrow \operatorname{Rev}_{\text{mod}}(\mathbf{D}^*) \leqno{(87)}
+\underline{A}_x \longrightarrow \operatorname{Rev}_{\text{conn}}(D_1^*) \leqno{(87)}
 $$
-
-satisfaisant les conditions supplémentaires énoncées. Pour définir un tel foncteur il suffit de définir un foncteur
-
+satisfaisant la condition supplémentaire annoncée. Pour définir un tel foncteur, il suffit de définir un foncteur
 $$
-\underline{A}_* \longrightarrow \begin{matrix} \text{catégorie des germes [unclear: locaux]} \\ \text{d'espaces au-dessus du} \\ \text{germe } \mathbf{D}^* \end{matrix} \leqno{(88)}
+\underline{A}_x \longrightarrow \text{catégorie des germes [unclear: 1-analytiques] d'espaces au-dessus du germe } D_1^* \leqno{(88)}
 $$
 
 \newpage
@@ -7895,7 +7923,7 @@ $$
 $$
 Le cas "universel" est celui où
 $$
-G = \mathcal{A} = \\operatorname{Aut}_{\text{top}}(X, S) \leqno{(137)}
+G = \mathcal{A} = \operatorname{Aut}_{\text{top}}(X, S) \leqno{(137)}
 $$
 (avec la top.\ de la conv.\ uniforme des $u$ et des $u^{-1}$). Alors dans le cas anabélien (type de $(X,S)$ de genre $g, \nu$, et
 $$
@@ -7909,7 +7937,7 @@ $$
 $$
 du groupe de Teichmüller
 $$
-\mathfrak{T} = \mathfrak{T}(X,S) = \mathcal{A}/\mathcal{A}^\circ = \pi_0(\underbrace{\\operatorname{Aut}_{\text{top}}(X,S)}_{\mathcal{A}}) \leqno{(140)}
+\mathfrak{T} = \mathfrak{T}(X,S) = \mathcal{A}/\mathcal{A}^\circ = \pi_0(\underbrace{\operatorname{Aut}_{\text{top}}(X,S)}_{\mathcal{A}}) \leqno{(140)}
 $$
 
 \newpage
@@ -7953,8 +7981,8 @@ On vérifie que l'on a sur $\tilde{G}$ une [unclear: unique] topologie de groupe
 $$
 \begin{cases}
 q : \tilde{G} \to G \\
-q_1 : \tilde{G} \to \\operatorname{Aut}_{\text{top}}(\tilde{S}_I) & (u, \tilde{u}_{\tilde{S}_I}) \mapsto \tilde{u}_{\tilde{S}_I} \\
-q' = [unclear: q_1] : \tilde{G} \to \\operatorname{Aut}_{\text{top}}(\tilde{S}_I)
+q_1 : \tilde{G} \to \operatorname{Aut}_{\text{top}}(\tilde{S}_I) & (u, \tilde{u}_{\tilde{S}_I}) \mapsto \tilde{u}_{\tilde{S}_I} \\
+q' = [unclear: q_1] : \tilde{G} \to \operatorname{Aut}_{\text{top}}(\tilde{S}_I)
 \end{cases} \leqno (144)
 $$
 

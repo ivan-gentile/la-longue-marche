@@ -18,8 +18,10 @@ Usage:
 """
 
 import argparse
+import difflib
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime
@@ -47,24 +49,20 @@ RAW_PDF_DIR = PROJECT_DIR / "raw_pdf"
 PRODUCTION_DIR = BASE_DIR / "production"
 
 # --- Default config (overridable via CLI) ---
-MODELS = {
-    "pro": {
-        "id": "gemini-3.1-pro-preview",
-        "cost_input": 2.00,
-        "cost_output": 12.00,
-    },
-    "flash-lite": {
-        "id": "gemini-3.1-flash-lite-preview",
-        "cost_input": 0.25,
-        "cost_output": 1.50,
-    },
-}
+# Model ids and prices live in models.py so a new Gemini release is a
+# one-file change; superseded models stay listed so old runs remain
+# reproducible.
+from models import MODELS  # noqa: E402
 
 DEFAULT_MODEL = "pro"
 DEFAULT_THINKING = "medium"
 DEFAULT_PROMPT_STYLE = "text-first-fewshot"
 PROMPT_STYLE = DEFAULT_PROMPT_STYLE  # mutated by --prompt-style
-MAX_OUTPUT_TOKENS = 16000
+# The API allows 65536 output tokens on these models; 16000 was our own
+# cap and page 561 of 140-3 genuinely exceeded it (MAX_TOKENS truncation).
+# Billing is on tokens actually produced, so a higher ceiling costs nothing
+# on ordinary pages and rescues the dense ones.
+MAX_OUTPUT_TOKENS = 32000
 DELAY = 5.0  # seconds between calls
 MAX_BACKOFF = 300  # max backoff on 429 (5 min)
 # Per-request timeout (ms). The SDK waits indefinitely by default, and one
@@ -74,11 +72,35 @@ REQUEST_TIMEOUT_MS = 300_000
 # grinding through every remaining page at MAX_BACKOFF. This is the April
 # 2026 failure mode: a run died on quota and nobody noticed.
 MAX_CONSECUTIVE_QUOTA_ERRORS = 5
+# Word-level similarity to the previous page above which a page is assumed to
+# have echoed its context instead of transcribing its target.
+ECHO_SIMILARITY_THRESHOLD = 0.75
 
 VOLUMES = {
     "140-3": {"pdf": "140-3.pdf", "pages": 696},
     "140-4": {"pdf": "140-4.pdf", "pages": 280},
 }
+
+
+def _words(text: str) -> list[str]:
+    """Lowercased word tokens, insensitive to line wrapping and hyphenation."""
+    s = re.sub(r"(?m)^\s*%.*$", " ", text)
+    s = re.sub(r"-\s*\n\s*", "", s)
+    return [w.lower() for w in re.findall(r"[a-zà-öø-ÿœ0-9]+", s, re.IGNORECASE)]
+
+
+def echo_similarity(text: str, prev_entry: dict) -> float:
+    """Word-level similarity to the previous page's transcription.
+
+    Guards against the model transcribing the context page instead of its
+    target. Word level, not character level: re-wrapped text hid four real
+    echoes from an earlier character-level check.
+    """
+    prev = (prev_entry or {}).get("transcription", "")
+    a, b = _words(prev), _words(text or "")
+    if not a or not b:
+        return 0.0
+    return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
 
 
 def save_results(results: dict, results_file) -> None:
@@ -177,7 +199,7 @@ def transcribe_page(client, doc, page_idx: int, prev_page_idx: int = None,
 
 def run_volume(client, volume_key: str, resume: bool = False,
                model_key: str = DEFAULT_MODEL, thinking_level: str = DEFAULT_THINKING,
-               output_dir: Path = None):
+               output_dir: Path = None, force_pages: set | None = None):
     """Run transcription for an entire volume."""
     vol = VOLUMES[volume_key]
     pdf_path = RAW_PDF_DIR / vol["pdf"]
@@ -235,7 +257,8 @@ def run_volume(client, volume_key: str, resume: bool = False,
     for page_idx in range(total_pages):
         pkey = str(page_idx + 1)  # 1-indexed page numbers
 
-        if pkey in results and results[pkey].get("status") == "success":
+        if (pkey in results and results[pkey].get("status") == "success"
+                and (page_idx + 1) not in (force_pages or set())):
             skipped += 1
             continue
 
@@ -286,6 +309,21 @@ def run_volume(client, volume_key: str, resume: bool = False,
 
         if result["status"] == "success":
             consecutive_quota_errors = 0
+            # Guard against the model transcribing its context page instead
+            # of its target — a defect that no error count would reveal.
+            sim = echo_similarity(result.get("transcription", ""), results.get(str(page_idx)))
+            if sim >= ECHO_SIMILARITY_THRESHOLD:
+                print(f" echo? ({sim:.2f}) retrying...", end="", flush=True)
+                retry = transcribe_page(client, doc, page_idx, prev_idx,
+                                        model_id=model_id, thinking_level=thinking_level)
+                if retry["status"] == "success":
+                    sim2 = echo_similarity(retry.get("transcription", ""),
+                                           results.get(str(page_idx)))
+                    result = retry if sim2 < sim else result
+                    sim = min(sim, sim2)
+                if sim >= ECHO_SIMILARITY_THRESHOLD:
+                    result["warning"] = (f"possible context echo: {sim:.2f} word-level "
+                                         f"similarity to page {page_idx}")
 
         results[pkey] = result
 
@@ -384,7 +422,13 @@ def main():
                         help="Output directory (default: production/)")
     parser.add_argument("--prompt-style", type=str, default=DEFAULT_PROMPT_STYLE,
                         help=f"Prompt style key from prompts_v2.py (default: {DEFAULT_PROMPT_STYLE})")
+    parser.add_argument("--pages", type=int, nargs="+", default=None,
+                        help="Re-transcribe these PDF pages even if already successful "
+                             "(used to repair pages flagged by audit_corpus.py). "
+                             "Implies --resume so the rest of the corpus is kept.")
     args = parser.parse_args()
+    if args.pages:
+        args.resume = True
 
     global PROMPT_STYLE
     PROMPT_STYLE = args.prompt_style
@@ -410,10 +454,17 @@ def main():
     print(f"  Max tokens: {MAX_OUTPUT_TOKENS}")
     print(f"  Output:     {output_dir}")
 
-    # Cost estimate
+    # Cost estimate. Thinking tokens bill at the output rate and dominate:
+    # measured on this corpus they run ~11x visible output on Pro and ~6x on
+    # Flash-Lite, so an estimate that ignores them is off by an order of
+    # magnitude (see COSTS.md).
     avg_input = 3000
     avg_output = 1500
-    est_cost = total_pages * (avg_input * model_cfg["cost_input"] + avg_output * model_cfg["cost_output"]) / 1_000_000
+    thinking_multiple = 11 if model_key == "pro" else 6
+    est_cost = total_pages * (
+        avg_input * model_cfg["cost_input"]
+        + avg_output * (1 + thinking_multiple) * model_cfg["cost_output"]
+    ) / 1_000_000
     call_time = 3 if model_key == "flash-lite" else 8
     est_time_min = total_pages * (args.delay + call_time) / 60
 
@@ -438,7 +489,8 @@ def main():
         print(f"{'='*70}")
         _, aborted = run_volume(client, vol, resume=args.resume,
                                 model_key=model_key, thinking_level=thinking_level,
-                                output_dir=output_dir)
+                                output_dir=output_dir,
+                                force_pages=set(args.pages) if args.pages else None)
         any_aborted = any_aborted or aborted
 
     print(f"\nResults in: {output_dir}")

@@ -33,14 +33,14 @@ Caramello (Istituto Grothendieck).
 | [`experiments/pilot/production-flash-lite-mateo/*/transcriptions.json`](experiments/pilot/production-flash-lite-mateo) | Per-page JSON output from the full Flash-Lite production run. |
 | [`experiments/pilot/49_1_error_profile.md`](experiments/pilot/49_1_error_profile.md) | Categorized diff between our pipeline and Mateo's corrected version. |
 | [`experiments/pilot/bench_opus_vs_gemini/summary.md`](experiments/pilot/bench_opus_vs_gemini/summary.md) | Gemini 3.1 Pro vs Claude Opus 4.7 benchmark. |
-| [`experiments/pilot/bench_mateo_canonical/summary.md`](experiments/pilot/bench_mateo_canonical/summary.md) | Prompt refresh validation (composite quality 0.113 → 0.742). |
+| [`experiments/pilot/bench_mateo_gemini/summary.md`](experiments/pilot/bench_mateo_gemini/summary.md) | Prompt refresh validation on Gemini 3.1 Pro (composite quality 0.113 → 0.742). |
 
 ## Headline numbers
 
 - **976 pages** of handwritten French mathematical manuscript transcribed **completely twice**: as a Gemini 3.1 Pro corpus (696/696 and 280/280 — the recommended one) and as a cheaper Flash-Lite draft. Exact page-level coverage of every file in [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
 - **537 further pages** of typescript: Préschémas (437) and *Catégories de variétés* (100), both page-by-page with markers written from the PDF index.
-- **~$90** total API cost across every run, thinking tokens included ([`experiments/pilot/COSTS.md`](experiments/pilot/COSTS.md)): $82 for the two Pro corpora, $5.56 for the Flash-Lite draft, $0.68 for Préschémas, ~$1.2 for *Variétés*.
-- Every corpus passes a **silent-defect audit** — no page carrying its predecessor's text, no empty success, no distant duplicate ([`experiments/pilot/CORPUS_AUDIT.md`](experiments/pilot/CORPUS_AUDIT.md)). 19 pages of Préschémas failed this check in August and were repaired; see [`experiments/bourbaki/GAPS.md`](experiments/bourbaki/GAPS.md).
+- **~$93** total API cost across every run, thinking tokens included ([`experiments/pilot/COSTS.md`](experiments/pilot/COSTS.md)): $81 for the two Pro corpora, $5.56 for the Flash-Lite draft, $5.82 for *Variétés*, $0.66 for Préschémas.
+- Every corpus passes a **silent-defect audit** across seven classes — a page carrying its predecessor's text, leaked model reasoning, truncation, unbalanced LaTeX, escaping artifacts, empty successes, distant duplicates ([`experiments/pilot/CORPUS_AUDIT.md`](experiments/pilot/CORPUS_AUDIT.md)). Building a deliverable now runs that audit as a release gate. The August sweep found and repaired 22 pages of Préschémas carrying the previous page's text, 1,246 malformed `\\operatorname`, and ~40 pages of the La Longue Marche corpora that were truncated, carried the model's English reasoning, or would not compile; see [`experiments/bourbaki/GAPS.md`](experiments/bourbaki/GAPS.md) and [`PIPELINE.md` §10](PIPELINE.md).
 - **Gemini 3.1 Flash-Lite** + `mateo-canonical` prompt reaches composite *style* quality **0.67** on the full Section 49.1 ground truth — **6× better than the shipped baseline (0.113)** — at a small fraction of Claude Opus 4.7's cost. On *content fidelity*, however, Gemini 3.1 Pro is the more faithful model, which is why the Pro corpus is the recommended one ([`experiments/pilot/fidelity_49_1.md`](experiments/pilot/fidelity_49_1.md)).
 - Model comparison on 5-page Section 49.1 ground truth:
 
@@ -70,6 +70,7 @@ Caramello (Istituto Grothendieck).
 > `mateo-canonical` re-run exists alongside the Flash-Lite draft.
 
 - Diagram rollout complete: 140-3 (114 pages) and 140-4 (58 pages) re-transcribed with `diagram-tikzcd` prompt, producing `\begin{tikzcd}` blocks.
+- **August 2026 model refresh** ([`experiments/pilot/bench_models_2026_08/summary.md`](experiments/pilot/bench_models_2026_08/summary.md)): `gemini-3.7-flash` (released 2026-08-13) reaches **0.562** word-level fidelity on Section 49.1 against Gemini 3.1 Pro's **0.573**, at **a sixth of the cost** and a quarter of the latency — it replaces Flash-Lite as the draft model. The *newest* Flash-Lite (`gemini-3.5-flash-lite`) measured markedly **worse** than the older one it would replace (0.313, omitting 244 of 763 reference tokens) and was not adopted: bumping every model id to the latest would have quietly degraded quality. Model ids and prices now live in one table, [`experiments/pilot/models.py`](experiments/pilot/models.py).
 
 ## Reproducing
 

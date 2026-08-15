@@ -1,11 +1,11 @@
 {
-  "length": 9712,
+  "length": 9877,
   "score": {
-    "raw_density_per_kchar": 1.75,
-    "notation_density_per_kchar": 0.31,
+    "raw_density_per_kchar": 1.32,
+    "notation_density_per_kchar": 0.51,
     "abbr_density_per_kchar": 0.0,
-    "structure_coverage": 0.5,
-    "composite_penalty": 0.404,
-    "quality": 0.596
+    "structure_coverage": 0.71,
+    "composite_penalty": 0.295,
+    "quality": 0.705
   }
 }

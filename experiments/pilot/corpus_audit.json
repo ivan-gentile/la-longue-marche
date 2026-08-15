@@ -1,0 +1,78 @@
+{
+  "generated": "2026-08-15",
+  "echo_threshold": 0.75,
+  "corpora": {
+    "La Longue Marche 140-3 — mateo-canonical (Pro)": {
+      "pages_with_text": 696,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
+    "La Longue Marche 140-4 — mateo-canonical (Pro)": {
+      "pages_with_text": 280,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
+    "La Longue Marche 140-3 — flash-lite-mateo": {
+      "pages_with_text": 696,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
+    "La Longue Marche 140-4 — flash-lite-mateo": {
+      "pages_with_text": 280,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
+    "Préschémas (Bourbaki Schémas) — page-by-page": {
+      "pages_with_text": 437,
+      "echoes": [],
+      "known_duplicates": [
+        [
+          130,
+          0.97,
+          "PDF pages 129 and 130 are both typescript page '- 94 -' — a second impression of the same sheet, verified against the scans on 2026-08-14. The transcriptions agree because the pages do."
+        ]
+      ],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
+    "Catégories de variétés (U46) — page-by-page": {
+      "pages_with_text": 100,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    }
+  }
+}
