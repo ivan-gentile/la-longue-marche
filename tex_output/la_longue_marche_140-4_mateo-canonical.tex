@@ -10,7 +10,7 @@
 UNIVERSITÉ MONTPELLIER
 
 IMAG
-INSTITUT MONTPELLIÉRAIN
+INSTITUT MONTPELLIÉRAIN
 ALEXANDER GROTHENDIECK
 
 La "Longue Marche" à travers la théorie de Galois
@@ -250,36 +250,32 @@ donc $X^3/6 \in M_q(A)$, OK. Donc la difficulté-
 
 %% ===== Page 10 =====
 
-se présente ici en \marginpar{Essai de caractérisation des sections quasi-unipotentes} [unclear: car.] résiduelle 2. Supposons pour simplifier que 2 soit [unclear: régulier] dans $A$, on a, si $X \notin M_4(A)$
-$$
-X = \frac{1}{2^\nu} X_0 \dots X_0 \in M_4(A), \quad X_0 \notin 2 M_4(A)
-$$
-de sorte que la donnée de $X$ équivaut à celle de
-$X_0 = (a_{ij})_{1 \le i, j \le 4}$, tels que les $a_{ij} \in A$ pas tous
-divisibles par 2, etc.
-$$
-X_0^4=0, \quad \frac{1}{2} \frac{X_0^2}{2^{2\nu}} \pm \frac{1}{6} \frac{X_0^3}{2^{3\nu}} \in M_4(A) \leqno{(11 \text{ bis})}
-$$
-et la question est s'il en résulte que l'on ait
-$$
-\frac{1}{2} \frac{X_0^2}{2^{2\nu}} , \frac{1}{6} \frac{X_0^3}{2^{3\nu}} \in M_4(A) \quad ? \leqno{(12 \text{ bis})}
-$$
+se présente ici en car.\ résiduelles 2. Supposons
+pour simplifier que 2 non div.\ de 0 dans $A$, on a $X \notin M_4(A)$
+$$ X = \frac{1}{2} X_0 \quad X_0 \in M_4(A) $$
+La donnée de $X$ équivaut à celle de
+$X_0 = (a_{ij})_{1 \leq i, j \leq 4}$, tous les $a_{ij} \in A$ pas tous
+divisibles par 2,
+$$ X_0^4 = 0 , \quad \frac{1}{2} \frac{X_0^2}{2^2} \pm \frac{1}{6} \frac{X_0^3}{2^3} \in M_4(A) \leqno{(11 \text{ bis})} $$
+et la question est s'il en résulte que l'on a :
+$$ \frac{1}{2} \frac{X_0^2}{2^2} , \frac{1}{2} \frac{X_0^3}{2^3} \in M_4(A) \quad ? \leqno{(12 \text{ bis})} $$
 
 Bien sûr, la réponse est trivialement oui
-si $X^3=0$, s'écrivant encore
-$X_A^3 = 0$, i.e. $g_y$ est "unipotent principal".
+si $X_0^3 = 0$, et d'ailleurs l'intérêt de la question
+est de voir si on peut avoir 
+$X_0^3 \neq 0$, i.e.\ $g$ est « unipotent principal ».
 
+\marginpar{Essai de caractérisation des sections quasi-unipotentes}
 Pour en avoir le cœur net, il faudrait
-un contre-exemple dans le contexte précédent
-(avec une matrice nilpotente d'ordre 4) --
-ou un théorème ! Mais pour mon
+un contre-exemple de la nature précisée
+(avec une matrice nilpotente d'ordre 4) ---
+théorème ! Mais pour mon
 propos, il semble qu'il ne soit pas
 utile d'avoir une solution de ce pb.
-
 Par contre, je vais essayer le
 
-\underline{Théorème}. Soit $G$ un schéma en groupes (séparé)
-loc. de présentation finie sur un schéma
+Théorème (!) : Soit $G$ un schéma en groupes
+loc.\ de présentation finie sur un schéma
 $S$ quasi-compact, et soit $g$ une section de
 $G$. Pour que $g$ soit quasi-unipotente, il
 
@@ -923,48 +919,54 @@ la formule par des inverses. Par exemple, la formule
 
 %% ===== Page 34 =====
 
-s'écrit \marginpar{NB $\lambda_\infty^{\text{th}} \defeq -l_\infty$} \marginpar{NB $\sigma = \sigma_\infty$} [unclear: introduisant $\lambda$] :
+\marginpar{NB $\lambda_{\infty}' \defeq - l_\infty$}
+s'écrit
 $$
-\lambda_\infty = \rho \sigma \rho^{-1} \sigma \rho = \rho(\sigma) \sigma \rho = -\rho(\sigma \rho)^{-1} \rho = \rho \sigma \rho^{-1}(\sigma) \leqno{(6)}
+\lambda_\infty = \rho \sigma \rho^{-1} \sigma \rho = \rho(\sigma) \sigma \rho = -\rho \sigma (\rho^{-1}) \rho = \rho \sigma \rho^{-1}(\sigma) \leqno{(6)}
 $$
-\marginpar{NB On trouve \\ $[\rho_0, \rho_1] = [\lambda_0, \lambda_1] = (\sigma(\rho)\rho^{-1})^3$ \\ $[\lambda_0, \lambda_\infty] = [\sigma_\infty, \lambda_\infty] = (\sigma(\rho^{-1})\rho)^3 = \operatorname{int}(\sigma\rho^{-1})([\lambda_0, \lambda_1])$}
+
+\marginpar{NB $\sigma \defeq \sigma_{\infty}$}
 $$
 [\sigma, \lambda_\infty] = 1 \leqno{(7)}
 $$
+\footnote{NB: On trouve $\begin{cases} [l_0, l_1] = [\lambda_0, \lambda_1] = (\sigma(\rho)\rho^{-1})^3 \\ [l_\infty, l_0] = [\lambda_\infty, \lambda_0] = (\sigma(\rho^{-1})\rho)^3 = \operatorname{int}(\rho)([l_0, l_1]) \end{cases}$}
 
-On va définir un schéma en groupes (séparé, [unclear: de type fini]) sur $\mathbf{Z}$, dont les [unclear: $\hat{\mathbf{Z}}$-points s'identifient à $\hat{\pi}$].
+On va définir un [unclear: schéma] en groupes [unclear: d'indice fini] sur $\mathbf{Z}$, de n'importe quel [unclear: type] sur les fibres de $\underline{\mathfrak{S}}^\wedge$.
 
 On pose
-\marginpar{[unclear: Il s'agit du vrai $M$]}
+\marginpar{Il va s'agir de $M \isom \underline{\mathfrak{S}}^\circ$}
 $$
-M = \mathcal{G}^\circ = \underline{E}^{\{0,1,\infty\}} / \text{diagonale} \leqno{(*)}
-$$
-
-On va faire opérer $\mathcal{G}$
-$$
-\mathcal{G} \simeq \operatorname{Gl}(2, \mathbf{Z}) / [\Pi_0, \Pi_0] \leqno{(4)}
-$$
-sur $M$, en décrivant [unclear: ainsi l'action]
-$$
-\mathfrak{S}_3 \ltimes \hat{M} \simeq \hat{\mathcal{G}} / \hat{M} \simeq \mathcal{G}_{0,3} / \Pi \simeq \Gamma_{0,3} \leqno{(5)}
+M = \underline{\mathfrak{S}}^\circ = \underline{E}^{\{0,1,\infty\}} / \text{diagonale}
 $$
 
-Désignons par $\lambda_0', \lambda_1', \lambda_\infty'$ les images des $\lambda_0, \lambda_1, \lambda_i = - l_i$ dans $\mathcal{G}$, identifiées à des éléments de $M = \mathcal{G}^\circ = \mathcal{G}^\circ(\hat{\mathbf{Z}})$ --- en fait, on a
-$$
-\lambda_0', \lambda_1', \lambda_\infty' \in M(\mathbf{Z}) \subset M(\hat{\mathbf{Z}}) = M \otimes \hat{\mathbf{Z}} \leqno{(6)}
-$$
-avec $\lambda_0' + \lambda_1' + \lambda_\infty' = 0$. (On a écrit additivement la loi de groupe de $M = \mathcal{G}^\circ$).
+On va faire opérer $\underline{\mathcal{G}}_{0,3}$ sur $M$, décrivant ainsi
 
-Alors $\mathcal{G}$ opère sur $M = \mathcal{G}^\circ$ par
 $$
-\begin{cases}
-\sigma(\lambda_0') = \lambda_1', \quad \sigma(\lambda_1') = \lambda_0', \quad \sigma(\lambda_\infty') = \lambda_\infty' \\
-\rho(\lambda_i') = \lambda_{i+1}' \quad \text{par définition} \\
-\tau(\lambda_0') = -\lambda_1' \quad \text{où } \tau = \sigma \tau'
-\end{cases} \leqno{(7)}
+\underline{\mathfrak{S}}_{0,3} \ltimes M \isom \underline{\mathfrak{S}} \leqno{(5)}
 $$
 
-\footnote{Ceci se voit d'abord pour l'action d'automorphismes dans $M \dots$}
+Désignons par $\lambda_0, \lambda_1, \lambda_\infty$ les images dans $\underline{\mathfrak{S}}$, identifiées à des éléments de $M = \underline{\mathfrak{S}}^\circ = \underline{\mathfrak{S}}^\circ(\hat{\mathbf{Z}})$.
+
+en fait
+\marginpar{Alors $\underline{\mathcal{G}}_{0,3}$ opère sur $M$}
+$$
+\lambda_0, \lambda_1, \lambda_\infty \in M(\mathbf{Z}) \subset M(\hat{\mathbf{Z}}) = M \otimes \hat{\mathbf{Z}} \leqno{(6)}
+$$
+\footnote{Où $\lambda_0 + \lambda_1 + \lambda_\infty = 0$ en notation additive de $M$.}
+
+Ces [unclear: formules donnent] l'action de $\underline{\mathcal{G}}_{0,3}$ sur les $\lambda_i$, d'où :
+
+\marginpar{Ceci se voit direct-ment avec les form. ci-dessus pour les $\lambda_i$}
+$$
+\sigma(\lambda_0) = \lambda_1, \quad \sigma(\lambda_1) = \lambda_0, \quad \sigma(\lambda_\infty) = \lambda_\infty \leqno{(7)}
+$$
+$$
+\rho(\lambda_i) = \lambda_{i+1} \quad \text{par définition}
+$$
+$$
+\tau(\lambda_i) = - \lambda_i \leqno{(8)}
+$$
+\marginpar{où $\tau = \sigma \tau'$ (ou $\tau' \sigma$)}
 
 \newpage
 
@@ -1286,43 +1288,37 @@ d'où
 %% ===== Page 43 =====
 
 $$
-u(l_0) = u(\varepsilon_0^2) = l_0^\mu
+u(l_0) = u(\varepsilon^2) = l_0^\mu
 $$
 et
 $$
-u(\lambda_0) = u(\omega l_0) = \underbrace{u(\omega)}_{=\omega} u(l_0) = \omega l_0^\mu = \underbrace{\omega l_0}_{\lambda_0} \underbrace{(l_0^{\mu-1})}_{\lambda_0^{\mu-1}} = \lambda_0^\mu
+u(\lambda_0) = u(\omega l_0) = \underset{=\omega}{u(\omega)} u(l_0) = \omega l_0^\mu = \omega l_0 (l_0^2)^{\frac{\mu-1}{2}} = \lambda_0 \lambda_0^{\mu-1} = \lambda_0^\mu
 $$
-comme il convient. (Pour me rassurer, j'ai vérifié
-que la deuxième formule (33) donne bien
-$u(\omega) = (y_0 \sigma)(y_0 \sigma) = (y_0 \sigma(y_0)) \sigma^2 = \omega$ i.e.
+il convient. (Pour me rassurer, j'ai vérifié que la deuxième formule (33) donne bien
+$$
+u(\omega) = (\beta_0 \cdot \sigma)(\beta_0 \cdot \sigma) = (\beta_0 \cdot \sigma(\beta_0)) \sigma^2 = \omega
+$$
 $$
 u(\omega) = \omega \leqno{(37)}
 $$
+
 On aura
 $$
-u(\lambda_1) = u(\operatorname{int}(\rho) \lambda_0) = \operatorname{int}(\rho) u(\lambda_0) = \operatorname{int}(\rho) (\lambda_0^\mu) = \lambda_1^\mu
+u(\lambda_1) = u(\rho \lambda_0) = (\zeta \rho) u(\lambda_0) = (\zeta \rho)(\lambda_0^\mu) = \lambda_1^\mu
 $$
-d'où finalement, comme prévisible
-\marginpar{\mu = 2\nu_1 + 1 = 4\nu' + 2\nu_2 + 1}
+donc finalement, --- prévisible ---
+\marginpar{\mu = 2\nu+1 = 4\nu'+2\nu_2+1}
 $$
-u(\lambda) = \mu.\lambda \quad \text{pour } \lambda \in \Gamma_{\underline{M}} \leqno{(38)}
+u(\lambda) = \mu \cdot \lambda \quad \text{pour } \lambda \in \Gamma \mathcal{M} \leqno{(38)}
 $$
-On s'assure bien que $u(\sigma) = (\beta_0 - \sigma(\beta_0)) \omega^{\nu_2} \sigma$
-commute avec $u(\lambda_0) = \lambda_0^\mu$.
 
-Tous ces calculs sont un peu vaseux,
-logiquement, car à la fois pour prouver
-l'existence d'un tel hom. $u$ et dans les
-calculs précédents je l'admets déjà (implicite-
-ment, dans un groupe "plus gros", à savoir le
-groupe libre engendré par $\rho, \sigma \dots$).
-Une façon de les rendre rigoureux serait
-d'utiliser la description amalgamée de $\underline{\widehat{\mathfrak{S}}}^+$ :
+Tous ces calculs sont un peu oiseux, logiquement, car à la fois pour [unclear: s'assurer] de l'existence d'un homomorphisme $u$ et dès lors les calculs précédents pour l'élément déjà construit, dans un groupe "plus gros", savoir le $\underline{\text{schéma}}$ $\underline{\text{en}}$ $\underline{\text{groupes}}$ $\underline{\text{des}}$ $\underline{\text{automorphismes}}$ du pro-groupe $P \dots$
+
+Une façon de les rendre rigoureux serait d'utiliser la description théorique de $\underline{\widehat{\mathfrak{S}}^+}$ :
 $$
-\underline{\widehat{\mathfrak{S}}}^+ = \underline{\widehat{\mathfrak{S}}}_0^+ \ast_{\underline{M}_{S_0}} \underline{M} \leqno{(39)}
+\underline{\widehat{\mathfrak{S}}^+} = \underline{\mathfrak{S}}_0^+ \wedge^{\mathcal{M}} \mathfrak{S}_0 \leqno{(39)}
 $$
-donc définir un hom. de $\underline{\widehat{\mathfrak{S}}}^+$ dans un
-$S_0$-groupe $G$ (ici $G = \underline{\widehat{\mathfrak{S}}}^+$) revient à
+de définir un homomorphisme de $\underline{\widehat{\mathfrak{S}}^+}$ dans un groupe $\mathcal{G}$ (ici $\mathcal{G} = \underline{\widehat{\mathfrak{S}}^+}$) revenant à :
 
 \newpage
 
@@ -2969,30 +2965,19 @@ $$
 
 %% ===== Page 91 =====
 
-\footnote{NB On a $\underline{\Gamma}_{p,\sigma}^\sim \to \underline{N}_\sigma^\natural/\mu_p$ épi de noyau $\underline{\Gamma}_{p,\sigma}^{\prime \sim}$ ($\underline{N}_\sigma^\sim = \text{[unclear: Diag]} \dots$) et donc le diag. comm.
-\begin{tikzcd}
-1 \ar[r] & \underline{\Gamma}_{p,\sigma}^{\prime\sim} \ar[r] & \underline{\Gamma}_{p,\sigma}^\sim \ar[r] & \underline{N}_\sigma^\natural / \mu_p \ar[r] & 1 \\
-& \underline{M}_{p,\sigma}^{\prime\sim}(-j) \ar[u, "\simeq"] \ar[r] & \underline{M}_{p,\sigma}^{\sim}(-j) \ar[u]
-\end{tikzcd}
-Le diag. en pointillé se déduit de lui par [unclear: intersection avec] $\underline{M}_{p,\sigma}^{\sim}(-j) \dots$}
-$$ [unclear: contient] \quad 1 \to \dots \to \underline{M}_{p,\sigma}^\sim(-j) \to \underline{\Gamma}_{p,\sigma}^\sim \to 1 \leqno{(208)} $$
+\footnote{N.B. on a $\underline{\Gamma}_{p,\sigma}^{\sim} \to N_{\hat{G}} / H_p (\simeq \mathfrak{S}^+)$ de noyau $\underline{\Gamma}^{1\sim}_{p,\sigma}$ (i.e. $1 \to \underline{\Gamma}^{1\sim}_{p,\sigma} \to \underline{\Gamma}_{p,\sigma}^{\sim} \to N_{\hat{G}} / H_p \to 1$). Le diviseur \dots en résulte car $\underline{M}^{\sim}_{p,\sigma}(-j)$ s'envoie sur $\underline{\Gamma}^{\sim}_{p,\sigma} \to N_{\hat{G}} / H_p$. On a $\underline{M}^{\prime \sim}_{p,\sigma}(-j) \xrightarrow{\sim} \underline{\Gamma}^{1 \sim}_{p,\sigma}$.}
+$$ \text{soit} \quad \underline{M}_{p,\sigma}^{\sim}(-\bar{j}) \xrightarrow{\sim} \underline{\Gamma}_{p,\sigma}^{\sim} \leqno{(208)} $$
+$\underline{M}_{p,\sigma}^{\sim}(-1/2)$ a une bisection de $\underline{M}_{p,\sigma}^{\sim} = \underline{M}_{p,\sigma} / H_p$ au dessus de $\underline{\Gamma}_{p,\sigma}^{\sim}$. Posant
+$$ \underline{M}^{\prime \sim}_{p,\sigma}(-j) = \underline{M}_{p,\sigma}^{\sim}(-j) \cap \underline{M}^{1\sim}_{p,\sigma} $$
+(où $\underline{M}^{1 \sim}_{p,\sigma} \defeq \underline{M}^1_{p,\sigma} / H_p$)
+$$ \underline{M}^{\prime \sim}_{p,\sigma}(-j) \xrightarrow{\sim} \underline{\Gamma}^{1 \sim}_{p,\sigma} \defeq \operatorname{Ker}(\underline{\Gamma}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon} N_{\hat{G}}/H_p) \leqno{(209)} $$
+section partielle de $\underline{M}_{p,\sigma}^{\sim}$ au dessus de $\underline{\Gamma}_{p,\sigma}^{\sim}$, d'image $\underline{\Gamma}^{1 \sim}_{p,\sigma}$ d'indice 2 dans $\underline{\Gamma}_{p,\sigma}^{\sim}$. On aura donc :
+$$ \begin{cases} 
+\underline{M}_{p,\sigma}^{1\sim} \defeq \operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_1} H_{\dots}) \simeq \underline{M}_{p,\sigma}^{\prime \sim}(-j) \cdot \mathfrak{S}^+ \\ 
+\underline{M}_{p,\sigma}^{\prime 1\sim} \defeq \operatorname{Ker}(\underline{M}_{p,\sigma}^{1\sim} \xrightarrow{\varepsilon_2} \mu_2) \simeq \underline{M}_{p,\sigma}^{\prime \sim}(-j) \cdot \mathcal{M} 
+\end{cases} \leqno{(210)} $$
 
-i.e. $\underline{M}_{p,\sigma}^\sim(-1/2)$ est une bisection de $\underline{M}_{p,\sigma}^\sim = M_{p,\sigma} / \mu_p$ au dessus de $\underline{\Gamma}_{p,\sigma}^\sim$. Posant
-$$ \underline{M}_{p,\sigma}^{\prime \sim}(-j) \defeq \underline{M}_{p,\sigma}^{\sim}(-j) \cap \underbrace{\underline{M}_{p,\sigma}^{\prime \sim}}_{\substack{|| \text{def} \\ M_{p,\sigma}^\prime / \mu_p}} \leqno{(209)} $$
-
-on a
-$$ \underline{M}_{p,\sigma}^{\prime \sim}(-j) \isommap \underline{\Gamma}_{p,\sigma}^{\prime \sim} \defeq \operatorname{Ker}(\underline{\Gamma}_{p,\sigma}^\sim \xrightarrow{\varepsilon_2} \text{[unclear: $\mu_2$]}) $$
-
-$\underline{M}_{p,\sigma}^{\prime \sim}(-j)$ d'indice 4 dans $\underline{M}_{p,\sigma}^\sim(-j)$, section partielle de $\underline{M}_{p,\sigma}^\sim$ au dessus de $\underline{\Gamma}_{p,\sigma}^{\prime \sim}$, d'image [unclear: $\underline{\Gamma}_{p,\sigma}^{\prime \sim}$] d'indice 2 dans $\underline{\Gamma}_{p,\sigma}^\sim$. On aura donc
-
-$$
-\begin{cases}
-\underline{M}_{p,\sigma}^{\prime \sim} \defeq \operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_3} \text{[unclear: $\mu_2$]}) \simeq \underline{M}_{p,\sigma}^{\prime \sim}(-j) \cdot \mathfrak{S}^+ \\
-\underline{M}_{p,\sigma}^{\sim} \defeq \operatorname{Ker}(\underline{M}_{p,\sigma}^{\sim} \xrightarrow{\varepsilon_4} \text{[unclear: $\mu_2$]}) \simeq \underline{M}_{p,\sigma}^{\sim}(-j) \cdot \mathfrak{S}
-\end{cases} \leqno{(210)}
-$$
-
-Remarque. Je m'arrête là dans les dévissages de sous-groupes [unclear: intérieurs] de $\underline{M}_{p,\sigma}^\sim(-j)$ -- j'y reviendrai sans doute plus tard, dans le contexte des schémas en groupes $\underline{M}_{p,\sigma}$ généraux. Il devient clair qu'il faudra clarifier,
+Remarque. Je ne m'attarde pas sur les développements de sous-groupes intéressants de $\underline{M}^{\sim}_{p,\sigma}(-j)$ - j'y reviendrai une fois, sans doutes, dans le contexte des schémas en groupes $\underline{M}_{p,\sigma}$ génériques. Il devient clair qu'il faudra disséquer,
 
 \newpage
 

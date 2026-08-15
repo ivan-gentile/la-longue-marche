@@ -14,15 +14,18 @@
       "date": "2026-08-15",
       "pages": [
         4,
+        110,
         195,
         231,
         404,
+        432,
         561,
+        587,
         638
       ],
       "thinking_level": "high",
       "max_output_tokens": 32000,
-      "reason": "pages flagged by audit_corpus.py (context echo, leaked reasoning, truncation, unbalanced environments) and re-transcribed"
+      "reason": "pages flagged by audit_corpus.py (context echo, leaked reasoning, truncation, unbalanced environments, unclosed inline math) and re-transcribed"
     }
   ]
 }

@@ -2,7 +2,7 @@
 % Model: Gemini 3.1 Pro (medium thinking)
 % Prompt: mateo-canonical (notation + structure block, Part I few-shot pool)
 % Pages transcribed: 696/696
-% Pages overlaid from diagram-tikzcd branch: 112
+% Pages overlaid from diagram-tikzcd branch: 111
 % Rebuilt: 2026-08-15
 
 %% ===== Page 1 =====
@@ -722,15 +722,11 @@ de $\operatorname{Sl}(2, \mathbb{Z})^\wedge$ n'étant pas trivial, l'op. ext.
 
 %% ===== Page 27 =====
 
-de $\Gamma_{\mathbf{Q}}$ sur $\hat{\mathfrak{T}}_{1,1}^+$ ne permet pas à priori de reconstituer (à isomorphisme unique près) l'extension $\mathcal{N}_{1,1}$ de $\Gamma_{\mathbf{Q}}$ par $\hat{\mathfrak{T}}_{1,1}^+$ de (1). Elle donne seulement l'extension $\mathcal{N}_{1,1}'$ de $\Gamma_{\mathbf{Q}}$ par $\hat{\mathfrak{T}}_{1,1}^{+\prime} \simeq \operatorname{Sl}(2, \mathbf{Z})^\wedge / \{\pm 1\} \marginpar{\defeq \operatorname{Sl}(2, \hat{\mathbf{Z}})'}$ qui est l'image inverse de l'extension
-
-$$ 1 \to (\operatorname{Sl}(2, \hat{\mathbf{Z}})') \to \operatorname{Aut}_{lac}(\operatorname{Sl}(2, \hat{\mathbf{Z}})') \to \Autext_{lac}(\operatorname{Sl}(2, \hat{\mathbf{Z}})') \leqno{(13)} $$
-
-Cette extension $\mathcal{N}_{1,1}'$ a été aussi interprétée comme l'extension $\mathcal{M}_{0,3} \simeq \mathcal{N}_{0,4}'$ de $\Gamma_{\mathbf{Q}}$ par $\hat{\mathfrak{S}}_{0,3} \simeq \hat{\mathfrak{T}}_{0,4}'$ (groupe qui est lui-même extension de $\mathfrak{S}_3 \simeq \operatorname{Sl}(2, \mathbf{Z}/2\mathbf{Z})$ par $\hat{\pi}_{0,3}$).
-
-Nous savons déjà que l'opération extérieure de $\Gamma_{\mathbf{Q}}$ sur le noyau $\hat{\pi}_{0,3}$ de $\operatorname{Sl}(2, \hat{\mathbf{Z}})' \to \operatorname{Sl}(2, \mathbf{Z}/2\mathbf{Z})$ est fidèle, et concordante à l'opération extérieure de $\mathfrak{S}_3 \simeq \operatorname{Sl}(2, \mathbf{Z}/2\mathbf{Z}) \simeq \operatorname{Sl}(2, \hat{\mathbf{Z}})' / \hat{\pi}_{0,3}$.
-
-Mais cette concordance permet...
+de $\Gamma_{\mathbf{Q}}$ sur $\hat{\mathfrak{T}}_{1,1}^+$ en passant par à priori des bi-extensions (à un iso unique près) l'extension $\mathcal{N}_{1,1}$ de $\Gamma_{\mathbf{Q}}$ par $\hat{\mathfrak{T}}_{1,1}$ de (1). Elle donne surtout l'extension $\mathcal{N}'_{1,1}$ de $\Gamma_{\mathbf{Q}}$ par $\hat{\mathfrak{T}}'_{1,1} \simeq \operatorname{Sl}(2, \mathbf{Z})^{\wedge}/\{\pm 1\} \simeq \operatorname{Sl}(2, \hat{\mathbf{Z}})/\{\pm 1\}$ tirée en image inverse de l'extension
+$$
+1 \to \operatorname{Sl}(2, \hat{\mathbf{Z}})/\{\pm 1\} \to \operatorname{Aut}(\operatorname{Sl}(2, \hat{\mathbf{Z}})) \to \Autext(\operatorname{Sl}(2, \hat{\mathbf{Z}})) \leqno{(13)}
+$$
+Cette extension $\mathcal{N}'_{1,1}$ est ainsi interprétée comme l'extension $\mathcal{N}_{0,3} \simeq \mathcal{N}'_{0,3}$ de $\Gamma_{\mathbf{Q}}$ par $\hat{\mathfrak{S}}_{0,3} \simeq \hat{\mathfrak{T}}'_{1,1}$ (groupe qui est lui-même extension de $\mathfrak{S}_3 \simeq \operatorname{Sl}(2, \mathbf{Z}/2\mathbf{Z})$ par $\hat{\pi}_{0,3}$). Nous savons déjà que l'opération de $\Gamma_{\mathbf{Q}}$ sur le noyau $\hat{\pi}_{0,3}$ de $\operatorname{Sl}(2, \hat{\mathbf{Z}}) \to \operatorname{Sl}(2, \mathbf{Z}/2\mathbf{Z})$ est fidèle, et se remonte à l'opération extérieure de $\mathfrak{S}_3 = \operatorname{Sl}(2, \mathbf{Z}/2\mathbf{Z}) \simeq \operatorname{Sl}(2, \hat{\mathbf{Z}})/\hat{\pi}_{0,3}$. Mais cette compatibilité, pour rassurante
 
 \newpage
 
@@ -1313,28 +1309,11 @@ On aurait envie de reprendre les constructions précédentes dans le contexte de
 
 %% ===== Page 53 =====
 
-turale. Pourtant on sent que c'est
-bien dans cette direction que se trouve
-une compréhension "gruppentheoretisch"
-de l'homomorphisme (40)
+dales. Pourtant on sent que c'est bien dans cette direction, que se trouve une compréhension "gruppentheoretisch" de l'homomorphisme (40)
 $$
-\hat{\mathcal{M}}_{0,3} \to \operatorname{Gl}(2, \hat{\mathbf{Z}})/\pm 1 \simeq \text{[unclear: P\operatorname{Gl}(2, \hat{\mathbf{Z}})]} ,
+\hat{\mathcal{M}}_{0,3} \to \operatorname{Gl}(2, \hat{\mathbf{Z}})/\pm 1 \simeq \operatorname{PGL}(2, \hat{\mathbf{Z}}),
 $$
-qui est la motivation principale des
-réflexions du présent $\S$, et du précédent.
-Ce devrait être une incitation pour une
-réflexion renouvelée sur la question du
-tressage dans le contexte profini... Mais
-je me rends compte dès maintenant
-que la question - s'il y a une
-extension des constructions du
-présent $\S$, au contexte profini, indépen-
-damment de l'introduction d'éléments
-de structure "arithmétiques" (tels que
-la donnée d'un sous-groupe $\Gamma \subset \Autext(\hat{\Pi}_{0,3})$
-satisfaisant à un certain nombre de
-conditions $\pm$ semblables, genre relations
-b-géométriques) est subordonnée à une
+qui est la motivation principale des réflexions du présent \S, et du précédent. Ce devrait être une incitation pour une réflexion renouvelée sur la question du dévissage dans le contexte profini... Mais je me rends compte dès maintenant que la question (extension des constructions du présent \S, au contexte profini, indépendamment de l'intermédiaire d'éléments de structure "arithmétiques" (tels que le donné d'un sous-groupe $\Gamma \subset \Autext(\hat{\pi}_{0,3})$ satisfaisant à un certain nombre de conditions $\pm$ semblables aux relations fondamentales) est subordonnée à une
 
 \newpage
 
@@ -1765,27 +1744,27 @@ Mais : quand un autom. de $\hat{\pi}_{0,3}$ peut-il se prolonger en un autom. de
 
 %% ===== Page 67 =====
 
-C'est suffisant, soit $\Gamma \subset \Autext(\hat{\pi}_{0,3})$ le groupe des
-automorphismes extérieurs de $\hat{\pi}_{0,3}$ qui a cette propriété (on ne
-se préoccupe pas pour le moment de la
-structure : [unclear: l'auto] de $\hat{\pi}_{0,3}$), on a
-$\Gamma \cap \mathfrak{S}_3 = (1)$ (en identifiant $\mathfrak{S}_3$ à un
-sous-groupe de $\Autext(\hat{\pi}_{0,3})$ car le centre
-de $\mathfrak{S}_3$ est trivial, donc \marginpar{ceci est inexact}
-$$ \mathfrak{S}_3 \times \Gamma \hookrightarrow \Autext(\hat{\pi}_{0,3}) \ , $$
+C'est suffisant car soit $\Gamma$ le groupe\footnote{$= \Autext(\hat{\pi}_{0,3})$}
+ext. de $\hat{\pi}_{0,3}$ , qui [unclear: jouit de cette] propriété ( [unclear: vu la projection] pour la [unclear: conservation] de la
+structure : [unclear: base] sur $\hat{\pi}_{0,3}$ ) , on a 
+$$ \Gamma \cap \hat{\mathfrak{S}}_3 = (1) $$ 
+(car le centre de $\hat{\mathfrak{S}}_3$ comme\footnote{ceci est évidemment faux}
+ss-groupe de $\Autext(\hat{\pi}_{0,3})$ ) car [unclear: l'action]
+de $\hat{\mathfrak{S}}_3$ est fidèle, d'où
+$$ \hat{\mathfrak{S}}_3 \times \Gamma \hookrightarrow \Autext(\hat{\pi}_{0,3}) , $$
 et on a donc une structure d'extension
-$$ \hat{\pi}_{0,3} \to \mathcal{E} \to \mathfrak{S}_3 \times \Gamma \to 1 \leqno{(38)} $$
-(car le centre de $\hat{\pi}_{0,3}$ est trivial), on a [unclear: alors]
+$$ 1 \to \hat{\pi}_{0,3} \to \mathcal{E} \to \hat{\mathfrak{S}}_3 \times \Gamma \to 1 \leqno{(33)} $$
+(car le centre de $\hat{\pi}_{0,3}$ est trivial), ou encore
 une structure d'extension
-$$ 1 \to \hat{\mathfrak{S}}_{0,3}^+ \to \mathcal{E} \to \Gamma \to 1 \leqno{(39)} $$
+$$ 1 \to \mathfrak{S}^{+\wedge}_{0,3} \to \mathcal{E} \to \Gamma \to 1 \leqno{(34)} $$
 qui définit une action extérieure de $\Gamma$
-sur $\hat{\mathfrak{S}}_{0,3}^+$, qui est l'action naturelle
-cherchée. Ainsi
+sur $\mathfrak{S}^{+\wedge}_{0,3}$ qui prolonge l'action nat.
+déjà étudiée. Ainsi
 
-Prop. Le groupe des autom. ext. de $\hat{\pi}_{0,3}$ qui \marginpar{Mais tout autom. de $\mathfrak{S}_3$ est intérieur.}
-[unclear: commutent à] $\mathfrak{S}_3$ est isom. can. au groupe
-des autom. ext. de $\hat{\mathfrak{S}}_{0,3}^+$ qui induisent
-sur $\mathfrak{S}_3$ l'autom. ext. trivial.
+Prop\footnote{Mais tout autom. de $\hat{\mathfrak{S}}_3$ est intérieur !} Le groupe des autom. ext. de $\hat{\pi}_{0,3}$ qui
+commutent à $\hat{\mathfrak{S}}_3$ est isomorphe au groupe
+des autom. ext. de $\mathfrak{S}^{+\wedge}_{0,3}$ qui induisent
+sur $\hat{\mathfrak{S}}_3$ l'autom. ext. trivial.
 
 \newpage
 
@@ -3250,22 +3229,28 @@ $$ \begin{cases} \text{a)} & b^3 = \delta^3 = 1 \\ \text{b)} & c\left( (b\delta)
 
 %% ===== Page 109 =====
 
-On distinguera encore deux cas :
+On distingue encore deux cas :
 
-a) $b\delta = 1$ i.e.\ $b = \frac{1}{\delta}$, alors l'équation (* b) devient
-$$ c = -\frac{1}{3} (2\delta^2 + 1) \leqno{(88)} $$
-Or $\delta \in \hat{\mathbf{Z}}^\times \implies \delta^2 \equiv 1 \ (3)$ donc $2\delta^2+1 \equiv 0 \ (3)$, donc l'équation admet une solution dans $\hat{\mathbf{Z}}$ :
-correspondant à :
-$$ g = \begin{pmatrix} [unclear: -\delta^5] & \delta^4 \\ [unclear: -c] & 0 \end{pmatrix} \leqno{(89)} $$
+\begin{enumerate}
+\item[a)] $b\delta = 1$ i.e.\ $b = \frac{1}{\delta}$, alors l'équation (87 b) devient
+
+Or $\delta \in \hat{\mathbf{Z}}^* \Rightarrow \delta^2 \equiv 1 \ (3)$ donc $2\delta^2+1 \equiv 0 \ (3)$,
+donc l'équation admet une solution dans $\hat{\mathbf{Z}}$
+$$ c = -\frac{1}{3}(2\delta^2+1) \leqno{(89)} $$
+correspondant à
+$$ g = \begin{pmatrix} -\delta^2 & \delta^2 \\ -c & 0 \end{pmatrix} \leqno{(90)} $$
 où, je le rappelle, $\delta$ est assujetti à la seule condition $\delta^3=1$.
 
-b) $b\delta \neq 1$ donc (comme $(b\delta)^3=1$) $(b\delta)^2+b\delta+1=0$, et l'équation (* b) devient
-$$ b^2 \delta + b = 0 \leqno{(90)} $$
-On pose $b = \frac{1}{\delta} u$ avec $u^3=1, u \neq 1$ de sorte que $u^2+u+1=0$
-et l'équation se réduit à :
-[unclear: u^2 + \dots = 0]
-ce qui montre que $u$ et $\delta$ sont des solutions distinctes de l'équation cyclotomique $X^2+X+1=0$. Or $u \neq 1$ signifie $u \neq \delta$ i.e.\ $b \neq \delta^2$ ce qui exige i.e.\ $b=\delta$.
-$$ g = \begin{pmatrix} -\delta & \delta \\ c & [unclear: -1-c] \end{pmatrix} \leqno{(91)} $$
+\item[b)] $b\delta \neq 1$ donc (comme $(b\delta)^3=1$) $(b\delta)^2+b\delta+1=0$,
+et l'équation (87 b) devient
+$$ \delta^2+b^2\delta+b=0 \quad \text{soit} $$
+$$ b = \frac{1}{\delta} u = u \delta^2 \quad \text{avec} \quad u^3=1, u \neq 1 $$
+elle est donc satisfaite pour toute solution $u$ de l'équation
+$$ x^2+x+1=0 . $$
+Or $u \neq 1$ signifie
+que $b \neq \frac{1}{\delta}$ i.e.\ $b \neq \delta^2$, ce qui exige i.e.\ $b = \delta$.
+$$ g = \begin{pmatrix} -\delta & \delta \\ c & -1-c \end{pmatrix} \leqno{(91)} $$
+\end{enumerate}
 
 \newpage
 
@@ -6357,21 +6342,27 @@ $$
 
 %% ===== Page 207 =====
 
-\marginpar{\alpha, \beta \text{ astreints à la relation (cf. § 4, (37))}}
-ou aux couples $(\alpha, \beta)$ d'éléments de $\widehat{\Pi}_{0,3}$ satisfaisant la relation des lacets (37)
-$$ (\alpha \rho(\alpha)^{-1}) = (\beta \tau_\infty(\beta)^{-1}) b^\alpha \leqno{(97)=(37)} $$
-(qu'on complétera dans un moment par $f = \beta$).
-Au changement près de $\alpha$ en $b^\alpha \alpha = \alpha_0$, c'étaient les conventions du § 4, où la formule prend encore la forme
-$$ \underbrace{\alpha_0 \rho(\alpha_0)^{-1}}_{\xi} = b^\alpha \underbrace{(f \tau_\infty(f)^{-1})}_{[unclear: f=\beta]} $$
+ou aux couples $(\alpha, \beta)$ d'éléments de $\Pi_{0,3}^{\wedge}$ satisfaisant la relation des lacets (37) \marginpar{$\alpha, \beta$ déterminés (à $Z(\Pi_{0,3}^{\wedge})$ près)}
+$$
+(97) \equiv (37) \quad (\alpha \rho(\alpha^c)) = (\beta \tau_{\infty} \beta^{-1}) h^{\mathbf{Z}}
+$$
+(qu'on complétera dans ce qui suit par $f=\beta$).
+Au signe près de $\alpha$ en $\alpha' = \pm \alpha$, c'étaient les conventions du § 4 (où la formule prend la forme [unclear: $\alpha \rho(\alpha)^c = b(\tau_{\infty}) f^{-1}$]).
 
-Compte tenu de (79), les conditions (97) (94) prennent aussi la forme
-$$ u_{\alpha,\beta,f} = \mu (b \tau_\infty + u) \tau_\infty^{\alpha_2} \leqno{(98)} $$
-et impliquent que $u = u_{\alpha,\beta,f}$ normalise la sous-algèbre de l'algèbre des matrices $M_2(\hat{\mathbf{Z}})$ engendrée par $\sigma_\infty$ (compte tenu de la relation
-$$ \tau_\infty (\sigma_\infty) = - \sigma_\infty \qquad \text{dans } \operatorname{Gl}(2, \hat{\mathbf{Z}})). \leqno{(99)} $$
+Compte tenu de (79), les conditions (93) (94) prennent aussi la forme
+$$
+u_{\alpha, \beta, f} = \mu(t \sigma_{\infty} + \nu) \tau_{\infty}^{x_2} \leqno{(98)}
+$$
+et impliquent que $u = u_{\alpha, \beta, f}$ normalise la sous-algèbre de l'algèbre de matrices $\mathcal{M}_2(\hat{\mathbf{Z}})$ engendrée par $\sigma_{\infty}$ (compte tenu de la relation
+$$
+\tau_{\infty}(\sigma_{\infty}) = -\sigma_{\infty} \qquad \text{dans } \operatorname{Sl}(2, \hat{\mathbf{Z}})). \leqno{(99)}
+$$
 
-Si on désigne le sous-groupe de $\widehat{\mathcal{M}}_{0,3}^\sim$ formé des $u$ satisfaisant aux conditions équivalentes (93) (94) (98)
-$$ \widehat{\mathcal{M}}_{0,3}^\sim(1/2) = \left\{ u \in \widehat{\mathcal{M}}_{0,3}^\sim \mid [u, \tau_\infty] = 1 \right\} \isom \widehat{\mathcal{N}}_{0,3}^\sim \leqno{(100)} $$
-on trouve que l'hom. composé
+Si on désigne le sous-groupe de $\mathcal{M}_{0,3}^{\wedge}$ formé des $u$ qui satisfont aux relations (équivalentes) (93) (94) (98)
+$$
+\mathcal{M}_{0,3}^{\wedge (1)} = \{ u \in \mathcal{M}_{0,3}^{\wedge} \mid [u, \sigma_{\infty}] = 1 \} \isom [unclear: \hat{\mathbf{Z}}^* \times \hat{\mathbf{Z}}] \leqno{(100)}
+$$
+on trouve que l'homomorphisme composé
 
 \newpage
 
@@ -6925,89 +6916,87 @@ connaissance équivaut à celle de $\xi \in \operatorname{Sl}(2, \hat{\mathbf{Z}
 
 %% ===== Page 222 =====
 
-\footnote{Les formules (163) s'écrivent aussi $u_{\underline{\xi}}(\sigma_\infty) = \eta \sigma_\infty$, $u_{\underline{\xi}}(\rho) = \xi \rho \leqno{(163\text{ bis})}$, elles se déduisent de façon évidente de la condition à l'aide de $u_{\underline{\xi}}$.}
+\footnote{On a aussi la formule (163) s'écrivant
+$$ (u_f \tau_\infty) = \eta\tau_\infty = [u_f(\rho_1)]^\mu \leqno{(163\text{ bis})} $$
+elles découlent de $u_f(\tilde{\tau}_\infty) = \tilde{\tau}_\infty^\mu$ et de $u_f(\rho_1) = \eta$.}
+
 $$
-u_{\underline{\xi}}(\sigma_\infty) = \eta \sigma_\infty = (\xi \rho_1^{-1}) \sigma_\infty \quad , \quad u_{\underline{\xi}}(\rho) = \xi \rho \leqno{(163)}
+u_f(\tau_\infty) = \eta\tau_\infty = (f\rho_1^\mu f^{-1})\tau_\infty \quad , \quad u_f(\rho) = f\rho \leqno{(163)}
 $$
 $$
-u_{\underline{\xi}}(\varepsilon_0) = \varepsilon_0^\mu \quad \text{et} \quad u_{\underline{\xi}}(l_0) = l_0^\mu \leqno{(164)}
+u_f(\varepsilon_0) = \varepsilon_0^\mu \quad \text{et} \quad u_f(e_0) = e_0^\mu \leqno{(164)}
 $$
 
 Si on considère une matrice inversible quelconque
 $$
-\underline{u} = \begin{pmatrix} L & M \\ N & P \end{pmatrix} \in \operatorname{Gl}(2, \hat{\mathbf{Z}})
+\underline{u} = \begin{pmatrix} L & M \\ N & P \end{pmatrix} \in \operatorname{Gl}(2,\hat{\mathbf{Z}})
 $$
 la relation
 $$
-\underline{u}(\varepsilon_0) = \varepsilon_0^\mu \quad \text{i.e.} \quad \underline{u} \varepsilon_0 = \varepsilon_0^\mu \quad (\text{où } \mu \in \hat{\mathbf{Z}}^*)
+\underline{u}(\varepsilon_0) = \varepsilon_0^\mu \quad \text{i.e.} \quad \underline{u}\varepsilon_0 = \varepsilon_0^\mu\underline{u} \qquad (\text{où } \mu \in \hat{\mathbf{Z}}^*) \leqno{(*)}
 $$
 s'écrit
 $$
-\begin{pmatrix} L & -L+M \\ N & -N+P \end{pmatrix} = \begin{pmatrix} L - \mu N & M - \mu P \\ N & P \end{pmatrix}
+\begin{pmatrix} L & -L+M \\ N & -N+P \end{pmatrix} = \begin{pmatrix} L-\mu N & M-\mu P \\ N & P \end{pmatrix}
 $$
 et équivaut à :
 $$
-N = 0 \quad , \quad L = \mu P
+N=0 \quad , \quad L = \mu P
 $$
 i.e.
 $$
-\underline{u} = \begin{pmatrix} \mu P & M \\ 0 & P \end{pmatrix} \quad , \quad \text{d'où } \det \underline{u} = \mu P^2
+\underline{u} = \begin{pmatrix} \mu P & M \\ 0 & P \end{pmatrix} \quad , \quad \text{de dét} = \mu P^2
 $$
-
-la condition supplémentaire
+La condition
 $$
-\det \underline{u} = \mu
+\det \underline{u} = \mu \leqno{(**)}
 $$
 donne la condition
 $$
-P^2 = 1
+P^2 = 1 \quad ,
 $$
-la solution la plus évidente est $P=1$, ce qui donne juste les matrices
+la solution la plus simple étant $P=1$ ,
+ce qui donne juste les matrices
 $$
-\underline{u} = \begin{pmatrix} \mu & M \\ 0 & 1 \end{pmatrix} = \underline{u}_{\underline{\xi}}
+\underline{u} = \begin{pmatrix} \mu & M \\ 0 & 1 \end{pmatrix} = \underline{u}_\xi
 $$
 
 \newpage
 
 %% ===== Page 223 =====
 
-où $\xi = \begin{pmatrix} A & B \\ C & D \end{pmatrix}$ satisfaisant à (411) est donné en termes de $B, D$ par $D = \frac{1}{\mu}$, $B = D M = M/\mu$.
+où $\xi = \begin{pmatrix} A & B \\ C & D \end{pmatrix}$ satisfait à [unclear: (161)] et est donné en termes de $B, D$ par $D = \frac{1}{\mu}$, $B = DM = M/\mu$.
 
-Théorème. L'application\footnote{NB Du fait qu'ils sont naturels ! (168) (où on trouve $\mathcal{M}_{0,3}$ bien dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})/\pm 1$, pas seulement dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})$)}\footnote{NB Cette relation s'obtient plus bas par B ci-dessous.}
+Théorème. L'application
+\marginpar{NB Du fait qu'en tout rationnel de [unclear: (165)] on trouve un homomorphisme dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})/\pm 1$ pas seulement dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})$. $\mathcal{M}_{0,3}$}
+\marginpar{NB Cette application n'est [unclear: d'ailleurs pas un homomorphisme] dans [unclear: le cas] $B$ [unclear: ...] (169)}
 $$
-\mathcal{M}_{0,3}^{\sim \wedge}[\infty] \isommap \operatorname{Gl}(2, \hat{\mathbf{Z}}) \leqno{(169)}
+\mathcal{M}_{0,3}^\sim ( \mathbf{Q} ) \to \operatorname{Gl}(2, \hat{\mathbf{Z}}) \leqno{(165)}
 $$
 $$
-u_{\xi, \eta} \mapsto \underline{u}_{\xi} \quad, \quad \text{notée aussi } u \mapsto \underline{u}
+u_{\xi, y} \mapsto u_{\xi}
 $$
-où $\underline{u}_{\xi}$ est donné par (160) est un hom. de groupes.
+où $u_{\xi}$ est donné par (160) est un homomorphisme de groupes.
 
-\underline{Dém.}
-
-Tout d'abord $u$ a une image dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})$, et si $x \in \hat{\Pi}_{0,3}$, $\underline{x}$ son image dans $\operatorname{Sl}(2, \hat{\mathbf{Z}})$ (dans $\hat{\mathfrak{T}}_{0,3}$) : on a 
+Dém. [unclear: Considérons] $u = u_{\xi, y}$, un [unclear: automorphisme] de $\dots$ dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})$, et $x \in \hat{\pi}_{0,3}$, $\underline{x}$ son image dans $\operatorname{Sl}(2, \hat{\mathbf{Z}})$ :
 $$
-\underline{u(x)} = \underline{u}(\underline{x}) \quad \left( \defeq \underline{u} \, \underline{x} \, \underline{u}^{-1} \right) \leqno{(166)}
+\underline{u(x)} = u(\underline{x}) \left( \defeq u_\xi \underline{x} u_\xi^{-1} \right) \leqno{(166)}
 $$
-car il suffit de le voir pour $x = \varpi_\infty$ et pour $x = \rho$, où cette formule se réduit à (161). Ceci noté,
-si $u = u_{\xi, \eta}$, $u' = u_{\xi', \eta'}$ sont deux éléments de $\mathcal{M}_{0,3}^{\sim \wedge}(\infty)$, $u'' = u' u$ leur produit, on aura \leqno{(139)}
+Car il suffit de le voir pour $x = \sigma_{\infty}$ et pour $x=p$, où cette formule se réduit à (161). Ceci vaut pour $u = u_{\xi, y}$ ; de même pour $u' = u_{\xi', y'}$ dans $\mathcal{M}_{0,3}(\mathbf{Q})$. Pour le produit, $u'' = u u' = u_{\xi'', y''}$, on aura
 $$
-\eta'' = u'(\eta) \eta'
+\xi'' = u(\xi') \xi
 $$
 d'où
 $$
-\xi'' = \underline{u}'(\xi) \xi' \defeq \underline{u}'(\xi) \xi' \quad \text{i.e.}
+\xi'' = u(\xi') \xi = \operatorname{int}(u_\xi)(\xi') \xi \leqno{(167)}
 $$
+et il s'agit de vérifier que pour trois solutions
 $$
-\xi'' = \operatorname{int}(\underline{u}_{\xi'})(\xi) \xi' \leqno{(167)}
+\xi = \begin{pmatrix} A & B \\ C & D \end{pmatrix}, \quad \xi' = \begin{pmatrix} A' & B' \\ C' & D' \end{pmatrix}, \quad \xi'' = \begin{pmatrix} A'' & B'' \\ C'' & D'' \end{pmatrix}
 $$
-et il s'agit de vérifier que si trois solutions $\xi, \xi', \xi''$ des équations
+des équations $AD-BC = 1$, $C+D-B = 1$, $D \in \hat{\mathbf{Z}}^*$, reliées par (167), alors on a
 $$
-\xi = \begin{pmatrix} A & B \\ C & D \end{pmatrix} , \quad \xi' = \begin{pmatrix} A' & B' \\ C' & D' \end{pmatrix} , \quad \xi'' = \begin{pmatrix} A'' & B'' \\ C'' & D'' \end{pmatrix}
-$$
-des équations $AD-BC=1$, $C+D B = 1$, $D \in \hat{\mathbf{Z}}^\times$,
-sont reliées par (167), alors on a
-$$
-\underline{u}_{\xi''} = \underline{u}_{\xi'} \cdot \underline{u}_{\xi} \leqno{(168)}
+u_{\xi''} = u_{\xi'} \cdot u_{\xi} \leqno{(168)}
 $$
 
 \newpage
@@ -8801,70 +8790,76 @@ $\rho$ et $N_1$ (i.e. $\rho$ et $N_1$ de trace nulle) -
 
 %% ===== Page 283 =====
 
-supposer en plus
-\leqno{(2^\circ)} $1, \rho, \sigma$ linéairement indépendants en chaque fibre i.e. $1, \rho^{-1}, N_1$ lin. indép. en chaque fibre i.e. $1, \sigma^{-1}, N_1$ lin. indép. en chaque fibre\footnote{NB $2^\circ)$ est corollaire du $3^\circ)$, [unclear: sauf peut-être pour les s-schémas fermés de $S$ où il s'annule].}
-et \leqno{(3^\circ)} $\Tr N_1 \rho$ inversible.
-(Ceci posé, on aura $N_1 \rho = - N_1 \sigma = \rho + \sigma$).
-$\operatorname{int}(\rho^{-1}) \varepsilon_1 = \operatorname{int}(\sigma^{-1}) \varepsilon_1$, soit $\varepsilon_0$
-(dans la notation de (74) on a $\varepsilon_0 = 1 + N_0$)
+supposons de plus \marginpar{supposons $\varepsilon_1(=1+N_1)$ de rang 2 en chaque fibre, $1, \rho^{-1}, N_1$ linéairement indépendants.}
+$$
+\begin{cases}
+\text{1) } 1, \rho, \sigma \text{ linéairement indépendants en chaque fibre (i.e. } 1, \rho^{-1}, N_1 \text{ linéairement indépendants en chaque fibre)} \\
+\text{2) } 1, \sigma^{-1}, N_1 \text{ linéairement indépendants en chaque fibre} \\
+\text{et (3°)} \operatorname{Tr} N_1 \rho \text{ inversible.}\footnote{NB 2°) est conséquence du 3°), vu la formule $N_1 \rho - N_0 \sigma = \rho + \sigma$.}
+\end{cases} \leqno{(29)}
+$$
 
-Soit $B_0$ le [unclear: sous-schéma en groupes normalisateur de la droite] $L_0 = S \cdot N_0$
-$B'_0 \subset B_0$ le sous-schéma en groupes
-défini par (74), de sorte qu'on a
-$\varepsilon_0 = 1 + N_0$
-posons
-$$ \varepsilon_0(\lambda) = 1 + \lambda N_0 , \quad \varepsilon_1(\lambda) = 1 + \lambda N_1 $$
-(sous-groupes à 1-paramètre additifs (isomorphes à $\mathbb{G}_a$) dans $\mathbb{G}(M)$)
-et soient $L_0 =$ sous-schéma en groupes $\varepsilon_0(\mathbb{G}_a)$
-$L_1 =$ sous-schéma en groupes $\varepsilon_1(\mathbb{G}_a)$,
+$$
+\varepsilon_0(\lambda) = 1 + \lambda N_0 \quad , \quad \varepsilon_1(\lambda) = 1 + \lambda N_1
+$$
 
-(donc $\rho(L_0) = \sigma(L_0) = L_1$, )
+Considérons les 1-paramètres [unclear: unipotents] dans $\mathcal{G}(\mathcal{M})$ et soit
+$L_0 = $ sous-schéma en groupes $\varepsilon_0(\mathbb{G}_a)$
+$L_1 = \dots \varepsilon_1(\mathbb{G}_a)$
+($\rho(L_0) = \sigma(L_0) = L_1$,)
 
-Soit $B'_0$ le sous-schéma en groupes de $B_0$ défini par (74), de sorte que $B_0$
-s'insère dans une suite exacte
-$$ 1 \to L_0 \hookrightarrow B_0 \xrightarrow{\det} \mathbb{G}_m \to 1 $$
-et que $u \in \Gamma(B_0)$ implique
-$\underline{u}(N_0) = \det(u) N_0$, i.e.
-$\underline{u}(\varepsilon_0(\lambda)) = \varepsilon_0(\det(u) \lambda)$.
+Soit $B_0'$ le sous-schéma en groupes de $B_0$ défini par (74), de sorte que $B_0'$ s'insère dans une suite exacte
+$$
+1 \to L_0 \to B_0' \xrightarrow{\det} \mathbb{G}_m \to 1
+$$
+et pour $u \in \Gamma(B_0')$ on a
+$$
+\underline{u}(N_0) = \det(u) N_0 \quad ,
+$$
+$$
+\underline{u}(\varepsilon_0(\lambda)) = \varepsilon_0(\det(u) \lambda) \quad .
+$$
 
 Ceci posé, considérons le morphisme
-$$ B'_0 \to \mathbb{G}(M) \times \mathbb{G}(M) \times \mathbb{G}_m $$
-$$ u \mapsto ([\underline{u}, \rho], [\underline{u}, \sigma], \det(u)) . $$
+$$
+\begin{tikzcd}
+B_0' \arrow[r] & \mathcal{G}(\mathcal{M}) \times \mathcal{G}(\mathcal{M}) \times E' \\
+u \arrow[r, mapsto] & ( [\underline{u}, \rho], [\underline{u}, \sigma], \det(u) ) .
+\end{tikzcd}
+$$
 
 \newpage
 
 %% ===== Page 284 =====
 
-Celui-ci prend ses valeurs dans $\mathcal{X}_{\rho, \sigma}$, le schéma des solutions des équations simultanées (33) à (35), et induit un iso
+Celui-ci prend ses valeurs dans $\mathcal{X}_{\rho, \sigma}$, le schéma des solutions des équations simultanées (33) à (35), et induit un isomorphisme
 $$
-B'_0 \isom \mathcal{X}_{\rho, \sigma} \cdot \leqno{(79)}
+B'_0 \isommap \mathcal{X}_{\rho, \sigma} \leqno{(71)}
 $$
 
-Rappelons pour mémoire
-
-\noindent \textbf{Corollaire.} La projection $\mathcal{X}_{\rho} \to \mathcal{G}(\mathcal{M})$
+Corollaire. La projection $\mathcal{X}_{\rho, \sigma} \to G(\mathcal{M})$
 $$
-(\xi, \eta, \nu) \mapsto \xi
+(\xi, \eta, \lambda) \mapsto \xi
 $$
-est un mono, et l'image est formée des $\xi$ satisfaisant
+est un monomorphisme, et l'image est formée des $\xi$ vérifiant
 $$
-\det \xi = 1, \quad \operatorname{Tr} \xi \rho = \operatorname{Tr} \rho, \quad \operatorname{Tr} \xi (-N_{1\rho}) \text{ inv.} \marginpar{[unclear: -N_{1\rho} = N_0 \rho = N_0 - \sigma N_0]}
+\det \xi = 1, \quad \operatorname{Tr} \xi \rho = \operatorname{Tr} \rho, \quad \operatorname{Tr} \xi(\rho + \sigma) \text{ inv.}
 $$
-De même la projection $\mathcal{X}_{\rho} \to \mathcal{G}(\mathcal{M})$
+De même la projection $\mathcal{X}_{\rho, \sigma} \to G(\mathcal{M})$
 $$
-(\xi, \eta, \nu) \mapsto \eta
+(\xi, \eta, \lambda) \mapsto \eta
 $$
-est un mono, et l'image est formée des $\eta$ satisfaisant
+est un monomorphisme, et l'image est formée des $\eta$ vérifiant
 $$
-\det \eta = 1, \quad \operatorname{Tr} \eta \sigma = \operatorname{Tr} \sigma, \quad \operatorname{Tr} \eta (\rho + \sigma) \text{ inv.}
+\det \eta = 1, \quad \operatorname{Tr} \eta \sigma = \operatorname{Tr} \sigma, \quad \operatorname{Tr} \eta(\rho + \sigma) \text{ inv.}
 $$
 
 Enfin, on a
 $$
-\operatorname{Tr} \xi (\rho + \sigma) = \operatorname{Tr} \eta (\rho + \sigma) = 1/\nu \cdot \leqno{(80)}
+\operatorname{Tr} \xi(\rho + \sigma) = \operatorname{Tr} \eta(\rho + \sigma) = 1/\lambda \leqno{(80)}
 $$
 
-\noindent \textbf{Scholie.} Par transport de structure, on trouve une structure de groupe sur $\mathcal{X}_{\rho, \sigma}$.
+Scolie. Par transport de structure, on trouve une structure de groupe sur $\mathcal{X}_{\rho, \sigma}$.
 
 \newpage
 
@@ -9993,24 +9988,39 @@ De même, une section de $\mathcal{G}_{\rho, \sigma}^*$
 
 %% ===== Page 320 =====
 
-de $\alpha$ comme dessus, d'où $\mu = \det \alpha$, d'où $\varepsilon$, et il reste ensuite à déterminer $\beta$ comme $\beta = u b^{-1}$, avec $b \in \Gamma/\mathcal{N}_{0'}$, arbitraire, $\varepsilon$ étant défini alors en termes du choix de $b$ comme cl. de $\varepsilon(b)$. La condition pour que $\alpha$ fixé puisse se compléter par $(\beta, \mu, \varepsilon)$ en $(\alpha, \beta, \mu, \varepsilon) \in \Gamma_{\hat{\mathfrak{S}}_{\hat{T}^{0'}}}$ est [unclear: tirée] la condition que le coeff. $D$ de 
-$$ \zeta = \alpha \rho (\alpha)^{-1} = \begin{pmatrix} A & B \\ C & D \end{pmatrix} \leqno (33) $$
-soit inversible, ce qui permet de déterminer $\mu$ par
-$$ \mu = 1/D \leqno (34) $$
+450
 
-Posons
-$$ \alpha = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \leqno (35) $$
-et explicitons $\alpha \rho (\alpha)^{-1}$ ; où $\rho = \begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix}$ \marginpar{\delta = \det \alpha = ad-bc}
-$$ \alpha \rho (\alpha)^{-1} = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} 0 & 1 \\ 1 & 1 \end{pmatrix} \frac{1}{\delta} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} (-1) \begin{pmatrix} 1 & -1 \\ -1 & 0 \end{pmatrix} $$
-$$ = - \frac{1}{\delta} \begin{pmatrix} b & a+b \\ d & c+d \end{pmatrix} \begin{pmatrix} d+b & -d \\ -c-a & c \end{pmatrix} \quad , \quad d'où $$
-$$ 
-\begin{aligned} 
-(-\delta) A &= b(d+b) - (a+b)(c+a) & (-\delta) B &= -bd + c(a+b) \\ 
-(-\delta) C &= d(d+b) - (c+d)(c+a) & (-\delta) D &= -d^2 + cd + c^2 
-\end{aligned} \leqno (36) 
+de $\alpha$ connu dès lors, d'où $\mu = \det \alpha$, d'où
+et il reste à déterminer $\beta$ comme
+$\beta = v b^{-1}$, où $b \in \Gamma/N_0$ arbitraire, $\varepsilon$ et $\alpha$
+définis alors en termes du choix de $\underline{b}$
+(comme $\alpha_*$ et $\beta$). La condition pour
+que $\alpha_*$ fixé puisse se compléter par
+$(\beta, \mu, \varepsilon)$ en $(\alpha, \beta, \mu, \varepsilon) \in \Gamma_{\tilde{\mathfrak{S}}^{pt}}$, est que
+la condition que le coeff. $D$ de $\gamma = $
 $$
-La quantité la plus essentielle étant donc
-$$ (-\delta) D = -d^2 + cd + c^2 \quad , \leqno (37) $$
+\gamma = \alpha \rho \alpha^{-1} = \begin{pmatrix} A & B \\ C & D \end{pmatrix} \leqno{(33)}
+$$
+soit inversible, ce qui permet de déterminer $\mu$ par
+$$
+\mu = 1/D \leqno{(34)}
+$$
+Posons
+$$
+\alpha = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \leqno{(35)}
+$$
+et explicitons $\alpha \rho \alpha^{-1}$ ; où $\rho = \begin{pmatrix} 0 & 1 \\ -1 & -1 \end{pmatrix}$
+\marginpar{\delta = ad - bc}
+$$
+\alpha \rho \alpha^{-1} = - \frac{1}{\delta v} \begin{pmatrix} b v & a+b v \\ d v & c+d v \end{pmatrix} \begin{pmatrix} d+v b & -d \\ -(c+v a) & c \end{pmatrix} , \quad \text{d'où}
+$$
+$$
+\begin{cases} (-\delta v) A = v b(d+v b) - (a+v b)(c+v a) & (-\delta v) B = -v b d + c(a+b) \\ (-\delta v) C = v d(d+v b) - (c+v d)(c+v a) & (-\delta v) D = -v d^2 + c d + c^2 \end{cases} \leqno{(36)}
+$$
+la quantité la plus essentielle étant donc
+$$
+(-\delta v) D = -v d^2 + c d + c^2 = [unclear: \det(\alpha p + c)] \leqno{(37)}
+$$
 
 \newpage
 
@@ -13559,27 +13569,27 @@ dans $M_{\rho,\sigma}^0$, donc $G$ y opère trivialement.
 D'autre part on a
 $$
 \begin{tikzcd}
-S\mathcal{R}^0_{\rho, \sigma} \ar[d, "\simeq"'] \ar[r, hook] & \mathcal{M}_{\rho, \sigma}(0) \ar[d, "\cap"'] \ar[r, twoheadrightarrow, "\text{épi}", "(\varepsilon_3, \varepsilon_2)"'] & \mu_2 \times \mu_2 \\
-S\mathfrak{T}_{\rho} \times S\mathfrak{T}_{\sigma} & \mathfrak{T}_0 \times \mathfrak{T}_{\rho} \times \mathcal{N}_{\sigma} &
+SR^{\circ}_{p,\sigma} \arrow[d, phantom, sloped, "\simeq"] \arrow[r, hook] & \mathcal{M}_{p,\sigma(0)} \arrow[d, phantom, sloped, "\cap"] \arrow[r, "\text{épi}"] & \mu_2 \times \mu_2 \arrow[d, phantom, sloped, "(\varepsilon_1,\varepsilon_2)"] \\
+ST_p \times ST_\sigma & T_0 \times T_p \times \mathcal{N}_L & 
 \end{tikzcd}
 $$
-et on trouve que $\mu_2 \times \mu_2$ opère sur $S\mathcal{R}_{\rho,\sigma}$ via ses deux projections (correspondant à $\varepsilon_2(u,v,k) = \varepsilon_v(k)$), un $\varepsilon$ de celui-ci ($\varepsilon = \pm 1$) opère sur $S\mathcal{R}_{\rho,\sigma} \simeq S\mathfrak{T}_{\rho} \times S\mathfrak{T}_{\sigma}$ en laissant inchangé le premier facteur, et en opérant sur $\mathfrak{T}_{\sigma}$ donc sur $S\mathfrak{T}_{\sigma}$ via
+et on trouve que $\mu_2 \times \mu_2$ opère sur $SR^{\circ}_{p,\sigma}$ via son deuxième facteur (correspondant à $\varepsilon = (\underline{y}, \underline{z}, \underline{k}) = \varepsilon_{\sigma}(\underline{k})$), où $\varepsilon$ de ce 2ème facteur $\simeq \mu_2$ opère sur $SR_{p,\sigma} \simeq ST_p \times ST_\sigma$ en laissant invariant le premier facteur, et en opérant sur $T_{\sigma}$ et sur $ST_\sigma$ via
 $$
-\sigma \mapsto \varepsilon \sigma \leqno{(68)}
+\sigma \mapsto \sigma^{-1} \leqno (68)
 $$
-(compatible avec l'équation de Cayley $\sigma^2 - v = 0$ de $\sigma$).
+(compatible avec l'équation de K.M. $c_{y,k} y \sigma^2 = -x=e$ ...)
 
-Soit\footnote{Il y aurait intérêt de suite à [unclear: l'étude] de l'extension $\mathcal{R}_{\rho,\sigma}$ (voir (69) plus bas) et de la relation de $\mathcal{M}_{\rho,\sigma}$, - les deux s'obtenant de [unclear: façon] voir... p. (76).}
-$$
-\mathcal{R}^0_{\rho,\sigma} \quad \text{image inverse de } G_{\text{un}} \subset G \text{ dans } \mathcal{M}_{\rho,\sigma} \text{ par } \Theta: \mathcal{M}_{\rho,\sigma} \to G \leqno{(69)}
-$$
+\marginpar{Il y a un truc louche : ça contredit le th. de la fin du fasc (2) plus bas, que $\mathcal{M}_{p,\sigma}^\natural$ [unclear: est trivial de facon rel. au p ...]}
+
+Soit
+$$ R^{\circ}_{p,\sigma} \quad \text{l'image inverse de} \quad G_\infty \subset G \quad \text{dans} \quad \mathcal{M}_{p,\sigma} \quad \text{par} \quad \Theta: \mathcal{M}_{p,\sigma} \to G \leqno (69) $$
 d'où une structure d'extension
 $$
-1 \to S\mathcal{R}^0_{\rho,\sigma} \to \mathcal{R}^0_{\rho,\sigma} \to G_{\text{un}} \to 1 \leqno{(70)}
+1 \to SR^{\circ}_{p,\sigma} \to R^{\circ}_{p,\sigma} \to G_\infty \to 1 \leqno (70)
 $$
 On aura
 $$
-\mathcal{R}^0_{\rho,\sigma} = \left\{ (\underset{\in \mathfrak{T}_0}{\underline{u}}, \underset{\in \mathfrak{T}_\rho}{\underline{\sigma}}, \underset{\in \mathcal{N}_\sigma}{\underline{k}}), f \ \left| \ \det u = \det \sigma = \det k \ , \ u, f \in G_{\text{un}} \atop{\text{i.e. } f = \lambda \cdot u^\sim \atop{\text{où } \lambda \in G_{\text{un}}, \ \lambda^2 = \det u}} \right. \right\}
+R^{\circ}_{p,\sigma} = \left\{ (\underline{y}, \underline{z}, \underline{k}) . f \ \mid \ \det u = \det \alpha = \det \beta, \ \underline{y}, f \in [unclear: \dots] \right\}
 $$
 
 \newpage
@@ -13820,25 +13830,35 @@ commutatif.
 %% ===== Page 432 =====
 
 On a le diagramme d'inclusions
-(94)
+$$
 \begin{tikzcd}
-\underset{\text{"Ker }\kappa\text{"}}{SR_{\rho,\sigma}} \ar[r, hook, "\mathbb{G}_m \ (90)"] \ar[d, "\mu_2 \times \mu_2"'] & \underset{\text{"Ker }\Theta\text{"}}{R_{\rho,\sigma}} \ar[r, hook, "PG \ (86)"] \ar[d, "\text{cart et cocart}"'] & M_{\rho,\sigma} \ar[d, "\mu_2 \times \mu_2"] \\
-\underset{\text{"Ker }\kappa^\circ\text{" \ (62)}}{\underset{\simeq S T_\rho \times S T_\sigma}{SR_{\rho,\sigma}^\circ}} \ar[r, hook, "\mathbb{G}_m"] & \underset{\text{"Ker }\Theta^\circ\text{" \ (69)}}{R_{\rho,\sigma}^\circ} \ar[r, hook, "PG"] & M_{\rho,\sigma}^\circ
+& \text{(90)} & \text{(86)} \\
+\mathcal{S} R_{p,\sigma} \arrow[r, hook, "\mathbb{G}_m"] \arrow[d, hook, "\text{pr}_1 \times \text{pr}_2"'] & R_{p,\sigma}^\sim \arrow[r, hook, "\mathcal{P} G"] \arrow[d, "cart"', "et surj"] & M_{p,\sigma}^\sim \arrow[d, hook, "\text{pr}_1 \times \text{pr}_2"] \\
+\mathcal{S} R_{p,\sigma}^\circ \arrow[r, hook, "\mathbb{G}_m"] \arrow[d, phantom, sloped, "\simeq"] & R_{p,\sigma}^\circ \arrow[r, hook, "\mathcal{P} G"] & M_{p,\sigma}^\circ \\
+\mathcal{S} T_p \times \mathcal{S} T_\sigma & \text{(62) } "\Ker \Theta^\circ" & \text{(69) } "\Ker \widetilde{\Theta}^\circ"
 \end{tikzcd}
+\leqno{(94)}
+$$
+\footnote{Il y a une vérification à faire - c'est évident d'après ce qu'on a vu, que le sous-groupe ouvert $\mathcal{S} R_{p,\sigma}$ de l'un l'est dans l'autre (qui s'injecte, d'après (87) dans $R_{p,\sigma}^\sim$).}
 
-[MARGIN: NB il y a une vérification à faire, qui se réduit à voir que les flèches $SR_{\rho,\sigma}^+ \to SR_{\rho,\sigma}$, $R_{\rho,\sigma}^+ \to R_{\rho,\sigma}$ sont des isomorph. — oui, cf plus bas en (100) où la flèche est rendue explicite par ex.]
-
-La deuxième ligne est formée des composantes neutres de la première, qu'on peut réécrire plus joliment encore
-
-(95)
+où la deuxième ligne est formée des composantes neutres de la première, qu'on peut réécrire plus joliment encore :
+$$
 \begin{tikzcd}
-& R_{\rho,\sigma} \ar[dr, "PG"] \ar[dd] \\
-SR_{\rho,\sigma} \ar[ur, "\mathbb{G}_m"] \ar[rr, dashed, "G"] \ar[dd, "\mu_2 \times \mu_2"'] & & M_{\rho,\sigma} \ar[dd, "\mu_2 \times \mu_2"] \\
-& R_{\rho,\sigma}^\circ \ar[dr, "PG" near start] \\
-\underset{(S T_\rho \times S T_\sigma)^-}{\underset{\parallel}{SR_{\rho,\sigma}^\circ}} \ar[ur, "\mathbb{G}_m"] \ar[rr, dashed, "G"'] & & M_{\rho,\sigma}^\circ
+& \mathbb{G}_m \arrow[r, hook] & R_{p,\sigma} \arrow[r, hook] & \mathcal{P} G \\
+\mathcal{S} R_{p,\sigma} \arrow[r, hook] \arrow[ru] \arrow[d, hook, "pr_1 \times pr_2"'] & R_{p,\sigma}^\sim \arrow[r, hook, "G"'] \arrow[d, "surj", "cart"'] \arrow[ru] & M_{p,\sigma}^\sim \arrow[d, "surj", "cart"'] \arrow[ru] \\
+\mathcal{S} R_{p,\sigma}^\circ \arrow[r, hook] \arrow[d, phantom, sloped, "\simeq"] & R_{p,\sigma}^\circ \arrow[r, hook, "G"'] & M_{p,\sigma}^\circ \\
+(\mathcal{S} T_p \times \mathcal{S} T_\sigma)
 \end{tikzcd}
+\leqno{(95)}
+$$
+formé de un [unclear: prisme] dont les trois carrés latéraux sont à la fois artiniens et cartésiens - donc aussi liés à des quotients ([unclear: de ce fait] parallèles), isomorphismes - etc, questions que nous laissons en suspens.
+[unclear: Notons] $\mathbb{G}_m \to \mathcal{P} G$ et l'action de $G$ de $\mathcal{P} G$ sur $\mathbb{G}_m$.
 
-sous forme d'un prisme dont les trois carrés latéraux sont à la fois cartésiens et cocartésiens — donc donnent lieu à des quotients (sur des cotés parallèles) isomorphes — les quotients qui interviennent étant $\mu_2 \times \mu_2$, $\mathbb{G}_m$, $PG$ et l'extension $G$ de $
+On lit sur ce diagramme, p. ex., la suite exacte
+$$
+1 \to \mathcal{S} R_{p,\sigma}^\circ \to R_{p,\sigma}^\sim \to \mathbb{G}_m \times \dots \to 1
+\leqno{(96)}
+$$
 
 \newpage
 
@@ -15842,23 +15862,13 @@ $$
 
 %% ===== Page 492 =====
 
-et de
+On a des signes pour $\Theta^\pi_F$, $\Theta^\pi_V$ correspondants aux [unclear: mêmes] indéterminations\footnote{De façon plus expéditive, pour éviter ces indéterminations de signe, on peut continuer à remplacer le sous-groupe $\mathfrak{T}_{g,\nu}^\sim$ par son sous-groupe $\mathfrak{T}_{g,\nu}^{\sim \pi}$ défini par $\mathfrak{T}_{g,\nu}^{\sim \pi} \defeq \{ \tau \in \mathfrak{T}_{g,\nu}^\sim \mid \varepsilon_3(\mu) = 1, \mu = \chi(\tau) \}$.} pour $\Theta_G^\pi$ lui-même tout à l'heure ! Cette dernière est levée en [unclear: remplaçant] le groupe $\mathcal{M}_{0,3}^\sim$ par l'extension [unclear: centrale] d'ordre 2 $\mathfrak{T}_{1,1}^\sim$, de [unclear: groupe] $\pm 1$, de sorte qu'on trouve
 $$
-\begin{cases}
-\hat{\Gamma}_{\mathbf{Q}}^{\pi} : \hat{\Gamma}_{\mathbf{Q}}^{1 \sim} \simeq \hat{C}_3^{1\sim \prime} \longrightarrow T_g(\hat{\mathbf{Z}})/\pm 1 \\
-\tilde{\hat{\Gamma}}_{\mathbf{Q}}^{\pi} : \tilde{\hat{\Gamma}}_{\mathbf{Q}}^{1 \sim} = \left\{ \gamma \in \hat{\Gamma}_{\mathbf{Q}}^{1 \sim \prime} \mid \varepsilon_3(\mu) = 1 , \dots \mu = \chi(\gamma) \right\}
-\end{cases}
+\mathfrak{T}_{1,1}^\sim \longrightarrow \operatorname{Gl}(2, \hat{\mathbf{Z}}) \leqno{(50)}
 $$
-
-On voit donc\footnote{Au fait l'hom. $\Theta_{\mathbf{Q}}^\pi$ s'identifie à l'hom. continu $\Gamma_{\mathbf{Q}} \to \Out(\hat{\pi}_{1,1})$ à déf. d'une section près.} que les signes pour $\hat{\Theta}_{\mathbf{Q}}^\pi$, $\tilde{\hat{\Theta}}_{\mathbf{Q}}^\pi$ correspondent à des indéterminations pour $\Theta_{\mathbf{Q}}^\pi$ lui-même - tout se tient ! Cette dernière est levée par [unclear: le remplacement] en remplaçant $\mathcal{M}_{0,3}^\sim$ par une extension de degré 2 $\tilde{\mathfrak{T}}_{1,1}^\sim \to \pm 1$, de sorte qu'on trouve
+et il faudrait pouvoir interpréter cet homomorphisme comme l'homomorphisme fondamental "anabélien" de la théorie des courbes elliptiques (que l'image de $\Gamma_{\mathbf{Q}}$ ou $\tilde{\Gamma}_{\mathbf{Q}}$ dans $\mathfrak{T}_{1,1}^\sim$ puisse s'interpréter comme $\mathfrak{T}_{1,1}^\sim \simeq \pi_1(\mathcal{M}_{1/\mathbf{Q}})$ doit être plus ou moins tautologique, par construction). Il est clair en tout cas que les deux [unclear: homomorphismes] coïncident (modulo éléments de
 $$
-\tilde{\mathfrak{T}}_{1,1}^\sim \longrightarrow \operatorname{Gl}(2, \hat{\mathbf{Z}}) \leqno{(50)}
-$$
-et il faudrait [unclear: prendre] cet homomorphisme comme l'homomorphisme fondamental "anabélien" de la théorie des courbes elliptiques (où l'image inverse de $\Gamma_{\mathbf{Q}} \subset \tilde{\Gamma}_{\mathbf{Q}}^\sim$ dans $\tilde{\mathfrak{T}}_{1,1}^\sim$ peut s'interpréter comme $\tilde{\mathfrak{T}}_{1,1} \simeq \pi_1(\mathcal{M}_{1/\mathbf{Q}})$ dont on fera plus un usage [unclear: topologique] par la suite).
-
-Je ne vois clair en tous cas que sur les points de $\mathcal{M}_{0,3}^\sim$, un [unclear: choix] de deux [unclear: coïncidant aux] éléments de
-$$
-\mu_2(\hat{\mathbf{Z}}) = \{\pm 1\}^\mathcal{P} \quad (\mathcal{P} = \text{ens des nbs premiers}) \leqno{(51)}
+\mu_2(\hat{\mathbf{Z}}) = \{ \pm 1 \}^P \quad (P = \text{ensemble des nombres premiers}) \leqno{(51)}
 $$
 
 \newpage
@@ -17045,44 +17055,44 @@ $$ \Gamma_{\rho,\sigma}' \simeq \Gamma_{\rho,\sigma}(\hat{\mathbb{Z}})/\Sigma_0 
 
 %% ===== Page 523 =====
 
-3^\circ) Prenons $\mathcal{G} = \operatorname{Sl}(2, \hat{\mathbf{Z}})$, [unclear: un] couple modulaire
-$$
-\begin{cases}
-B'_{\rho, \sigma} = \left\{ \left. \begin{pmatrix} \mu & \lambda \\ 0 & 1 \end{pmatrix} \right| \mu \in \hat{\mathbf{Z}}^*,\ \mu \equiv 1\ (3),\ \lambda \in \hat{\mathbf{Z}} \right\} \\
-G'_{\rho, \sigma} = Gl'(2, \hat{\mathbf{Z}}) = \{ g \in \operatorname{Gl}(2, \hat{\mathbf{Z}}) \mid \det g \equiv 1\ (3) \} \\
-Z'_{\rho} = \left\{ c\rho + d \mid c, d \in \hat{\mathbf{Z}}, c^2+cd+d^2 \in \hat{\mathbf{Z}}^* \right\} \\
-Z'_{\sigma} = T'_{\sigma} \cdot \{ 1, \tau_{\sigma} \}, \text{ où } T'_{\sigma} = \left\{ t \sigma + u \mid \begin{smallmatrix} t,u \in \hat{\mathbf{Z}} \\ t^2+u^2 \in \hat{\mathbf{Z}}^* \end{smallmatrix} \right\}, \tau_{\sigma} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} \\
-S_0 M'_{\rho, \sigma} = S_0 M'_{\rho, \sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \text{ avec notations } § 48 \\
-M'_{\rho, \sigma} = M'_{\rho, \sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \text{ \hspace{1cm} \hrulefill} \\
-\Gamma'_{\rho, \sigma} = \Gamma'_{\rho, \sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \text{ \hspace{1cm} \hrulefill}
-\end{cases} \leqno{(95)}
-$$
-
-\vspace{0.5cm}
-\noindent \underline{III \quad Le groupe $M_{\rho, \sigma}$}
-
-Considérons l'homomorphisme
+3°) Prenons $\mathcal{G} = \operatorname{Sl}(2, \hat{\mathbf{Z}})$, avec couple modulaire.
 $$
 \begin{aligned}
-\hat{\mathbf{Z}} &\xrightarrow{u} \mathcal{G} \\
-n &\mapsto \xi_0^n \quad \text{où } \xi_0 = \sigma^{-1}\rho
-\end{aligned} \leqno{(1)}
+B'_{p,\sigma} &= \left\{ \begin{pmatrix} \mu & \lambda \\ 0 & 1 \end{pmatrix} \Biggm| \mu \in \hat{\mathbf{Z}}^*, \mu \equiv 1 \ (3), \lambda \in \hat{\mathbf{Z}} \right\} \\
+G'_{p,\sigma} &= GL'(2, \hat{\mathbf{Z}}) = \{ u \in \operatorname{Gl}(2, \hat{\mathbf{Z}}) \mid \det u \equiv 1 \ (3) \} \\
+Z'_p &= \{ c p + d \mid c^2 + c d - d^2 \in \hat{\mathbf{Z}}^* \} \\
+Z'_\sigma &= T'_0 \cdot \{1, \tau_\infty\}, \quad \text{où } \begin{cases} T'_0 \defeq \{ [unclear: \tau_{a,b} \mid a,b \in \hat{\mathbf{Z}}] \} \\ \tau_\infty = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} \end{cases}
+\end{aligned} \leqno{(95)}
 $$
-[unclear: (dont on note $L_0$ l'image)], et soit $J$ [unclear: l'idéal noyau de $u$], d'où
 $$
-(\hat{\mathbf{Z}}/J)^* \isommap \operatorname{Aut}(L_0) \leqno{(2)}
+\begin{aligned}
+S_0 M'_{p,\sigma} &= S_0 M'_{p,\sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \quad \text{avec notations du § 48} \\
+M'_{p,\sigma} &= M'_{p,\sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \quad \text{--- \quad --- \quad ---} \\
+S_0 \Gamma_{p,\sigma} &= S_0 \Gamma'_{p,\sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \quad \text{--- \quad --- \quad ---} \\
+\Gamma_{p,\sigma} &= \Gamma'_{p,\sigma}(\hat{\mathbf{Z}}) / \Sigma_0 \quad \text{--- \quad --- \quad ---}
+\end{aligned}
 $$
+
+\vspace{1em}
+\underline{\text{III Le groupe } $M_{p,\sigma}$}
+
+Considérons les homomorphismes
+
+$$
+(\hat{\mathbf{Z}}/3)^* \isommap \operatorname{Aut}(L_0) \leqno{(2)}
+$$
+
 On a un homomorphisme induit
 $$
-B'_{\rho, \sigma} \to \operatorname{Aut}(L_0) \isommap (\hat{\mathbf{Z}}/J)^* \leqno{(3)}
+B_{p,\sigma} \to \operatorname{Aut}(L_0) \simeq (\hat{\mathbf{Z}}/3)^* \leqno{(3)}
 $$
-[unclear: qui sur $L_0$ s'annule, d'où]
+qui donne par [unclear: factorisation] correspondante
 $$
-\Gamma'_{\rho, \sigma} \to (\hat{\mathbf{Z}}/J)^* \leqno{(4)}
+\Gamma'_{p,\sigma} \xrightarrow{\chi_{p,\sigma}} (\hat{\mathbf{Z}}/3)^* \leqno{(4)}
 $$
-[unclear: d'où par composition]
+d'où
 $$
-G'_{\rho, \sigma} \xrightarrow{\chi_G} (\hat{\mathbf{Z}}/J)^* \leqno{(4 \text{ bis})}
+G'_{p,\sigma} \xrightarrow{\chi_{G'}} (\hat{\mathbf{Z}}/3)^* \leqno{(4 \text{ bis})}
 $$
 
 \newpage
@@ -17608,14 +17618,18 @@ Notons p.ex.\ pour $\overline{\mathfrak{S}} = \operatorname{Sl}(2, \hat{\mathbf{
 %% ===== Page 538 =====
 
 Proposition
+
 \begin{enumerate}
-\item[1^\circ)] L'image $\delta_{\rho}(Z_{\rho})$ contient $\gamma_{\rho,\sigma}'$, et est réduite à $\gamma_{\rho,\sigma}'$ ssi $\rho$ et $\rho^{-1}$ non conjugués dans $\mathfrak{S}$ --- donc elle est égale à $\gamma_{\rho,\sigma}$ i.e.\ $\delta_{\rho} \colon Z_{\rho} \to \gamma_{\rho,\sigma}$ épi ssi $\rho$ et $\rho^{-1}$ sont conjugués dans $\mathfrak{S}$.
-\item[2^\circ)] L'image $\delta_{\sigma}(Z_{\sigma})$ contient $\gamma_{\rho,\sigma}''$, et elle est réduite à $\gamma_{\rho,\sigma}''$ ssi $\sigma$ et $\sigma^{-1} = -\sigma$ non conjugués dans $\mathfrak{S}$ --- donc elle est égale à $\gamma_{\rho,\sigma}$ i.e.\ $\delta_{\sigma} \colon Z_{\sigma} \to \gamma_{\rho,\sigma}$ épi ssi $\sigma$ et $\sigma^{-1} = -\sigma$ sont conjugués dans $\mathfrak{S}$.
+    \item[1º)] L'image $\delta_{\rho}(Z_{\rho})$ contient $\gamma'_{\rho,\sigma}$, et est réduite à $\gamma'_{\rho,\sigma}$ ssi $\rho$ et $\rho^{-1}$ non conjugués dans $\mathfrak{S}$ --- ou elle est égale à $\gamma_{\rho,\sigma}$, i.e.\ $\delta_{\rho} : Z_{\rho} \to \gamma_{\rho,\sigma}$ épi ssi $\rho$ et $\rho^{-1}$ sont conjugués dans $\mathfrak{S}$.
+    
+    \item[2º)] L'image $\delta_{\sigma}(Z_{\sigma})$ contient $\gamma''_{\rho,\sigma}$, et elle est réduite à $\gamma''_{\rho,\sigma}$ ssi $\sigma$ et $\sigma' = -\sigma$ non conjugués dans $\mathfrak{S}$ --- ou elle est égale à $\gamma_{\rho,\sigma}$ i.e.\ $\delta_{\sigma} : Z_{\sigma} \to \gamma_{\rho,\sigma}$ épi ssi $\sigma$ et $\sigma' = -\sigma$ sont conjugués dans $\mathfrak{S}$.
 \end{enumerate}
 
-Corollaire. Si $\mathfrak{S}$ contient comme quotient $\operatorname{Sl}(2,\mathbf{Z}/3\mathbf{Z})'$ ; avec $\rho = \begin{pmatrix} 0 & -1 \\ 1 & 1 \end{pmatrix}$, $\sigma = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ $(\text{mod } \pm 1)$, alors l'image de $\delta_{\rho}$ est $\gamma_{\rho,\sigma}'$.
+Corollaire! Si $\mathfrak{S}$ s'envoie comme quotient sur $\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z})'$, avec $\rho = \left(\begin{smallmatrix} -1 & 1 \\ -1 & 0 \end{smallmatrix}\right)$, $\sigma = \left(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\right)$ (mod $\pm 1$), alors l'image de $\delta_{\rho}$ est $\gamma'_{\rho,\sigma}$.
 
-En effet, on voit que $\rho$ et $\rho^{-1}$ ne sont pas conjugués dans $\mathfrak{S}$, car ils ne le sont pas dans $\operatorname{Sl}(2,\mathbf{Z}/3\mathbf{Z})'$ --- On a $(\tau_{\infty})(\rho) = \rho^{-1}$, donc tous les éléments de $\operatorname{Gl}(2,\mathbf{Z}/3\mathbf{Z})$ qui conjuguent $\rho$ en $\rho^{-1}$ sont de la forme $f \tau_{\infty}$, où $f = c\rho + d$, on a $\det(f \tau_{\infty}) = 1$ i.e.\ $\det(f) = -1$ car $\det(\tau_{\infty}) = -1$ i.e.\ $c^2 + cd + d^2 = -1$, impossible.
+En effet, on voit que $\rho$ et $\rho^{-1}$ ne sont pas conjugués dans $\mathfrak{S}$, car ils ont, dans $\operatorname{Sl}(2, \mathbf{Z}/3\mathbf{Z})'$, des traces distinctes $1$ et $-1$, $\in \mathbf{Z}/3\mathbf{Z}$, ils ne peuvent être conjugués.
+
+On a $(\tau\sigma)(\rho) = \rho^{-1}$ ; dans $\operatorname{Gl}(2, \mathbf{Z}/3\mathbf{Z})$ un $f$ qui conjugue $\rho$ à $\rho^{-1}$ est de la forme $f = \pm \tau\sigma$, on a $\det f = -1$, or on veut $\det f = 1$ i.e.\ $\det(\tau\sigma) = -1$, car [unclear: impossible].
 
 \newpage
 
@@ -18531,39 +18545,35 @@ gement
 
 %% ===== Page 561 =====
 
-\[
-\begin{tikzcd}[row sep=1.5em, column sep=1.5em]
+$$
+\begin{tikzcd}[row sep=3em, column sep=1.5em]
+% Row 0
+& & & L_0 & & & & \\
 % Row 1
-& L_0 \times S_{N_{\tilde{P}}^*} \times S_{N_\sigma^*} \arrow[rr, "pr"] \arrow[dd, "pr"'] \arrow[dr, twoheadrightarrow] & & L_0 \arrow[dd, twoheadrightarrow] & & \\
+& L_0 \times \mathfrak{S}_{N^*} \times \mathfrak{S}_{N^*} \arrow[d, "pr"'] \arrow[uur, "pr"] \arrow[drrr] & L_0 \times \mathfrak{S}_{N^*} \times \mathfrak{S}_{N^*} \times \mathcal{G}^+ \arrow[l, "pr"'] \arrow[d, "pr"] \arrow[dr] & & & & & \\
 % Row 2
-& & S_0 \Gamma_{\tilde{P},\sigma} \arrow[rr, "\Theta_Z"] \arrow[dd, twoheadrightarrow] & & \mathbf{Z}_{\tilde{P},\sigma} \arrow[dd, hook] \arrow[dr, "\delta_Z"] & \\
+& & & S_0 \mathcal{M}_{\rho,\sigma} \arrow[r] \arrow[dd] & S_0 \Gamma_{\rho,\sigma} \arrow[dd] \arrow[rr, "\theta_Z"] & & Z_{\rho,\sigma} \arrow[uull] \arrow[dd, "\delta_Z"] & \\
 % Row 3
-& L_0 \times S_{\{\pm 1\}} \times S_{\{\pm 1\}} \arrow[dr, twoheadrightarrow] \arrow[dd, "pr"'] & & & & \Gamma_{\tilde{P},\sigma} \arrow[r, shift left, "\varepsilon_{\tilde{P},\sigma} = \varepsilon_{\tilde{P}} \cdot \{\pm 1\}"] \arrow[r, shift right, "\varepsilon_{\sigma} = \varepsilon_\sigma \cdot \{\pm 1\}"'] & \hat{\mathbf{Z}}^* \\
+& \mathfrak{S}_{N^*} \times \mathfrak{S}_{N^*} \arrow[drrr] & \mathfrak{S}_{N^*} \times \mathfrak{S}_{N^*} \times \mathcal{G}^+ \arrow[l, "pr"] \arrow[dr] & & & & & \\
 % Row 4
-& & S_0 M_{\tilde{P},\sigma} \arrow[rr, "\Theta_P" near start] \arrow[dd, twoheadrightarrow] & & N_{\tilde{P}}^* \arrow[dd, twoheadrightarrow] \arrow[ur, "\delta_P"'] & \\
+& & & \mathcal{M}_{\rho,\sigma} \arrow[r] \arrow[ddl, "\theta_{\mathcal{M}}"'] & \Gamma_{\rho,\sigma} \arrow[rr] \arrow[dl, "\theta_\rho"'] \arrow[d, "\theta_I"'] \arrow[dr, "\theta_\sigma"'] & & \gamma_{\rho,\sigma} \arrow[r, "\varepsilon_{\rho,\sigma}=\varepsilon_\rho=\pm 1", shift left=1.5ex] \arrow[r, "\varepsilon_{\gamma,\sigma}=\varepsilon_\sigma=\pm 1"', shift right=1.5ex] \arrow[ddd, "\delta_G"] & \hat{\mathbf{Z}}^* \\
 % Row 5
-C^+ \arrow[r, hook, "inj"] \arrow[ddrrr, dashed, "\sim"'] & S_{N_{\tilde{P}}^*} \times S_{N_\sigma^*} \times C^+ \arrow[rr, crossing over, "pr" near start] \arrow[dd, "pr"'] \arrow[dr, twoheadrightarrow] & & M_{\tilde{P},\sigma} \arrow[rr, "\Theta_\sigma" near start] \arrow[dd, twoheadrightarrow] & & N_\sigma^* \arrow[dd, twoheadrightarrow] \arrow[ul, "\delta_\sigma"'] & \\
+& & & N^*_\rho \arrow[urrr, "\delta_\rho"'] & I \arrow[urr, "\delta_I" near end] & N^*_\sigma \arrow[ur, "\delta_\sigma"'] & & \\
 % Row 6
-& & & & & \\
+& & \mathcal{G}^+ \arrow[uu, "inj"', hook] \arrow[drrrr, "\theta_{\mathcal{G}}"'] & & & & & \\
 % Row 7
-& S_{\{\pm 1\}} \times S_{\{\pm 1\}} \times C^+ \arrow[dr, twoheadrightarrow] & & C^+ \arrow[rr, "\Theta_G" near start] & & G_{\tilde{P},\sigma} \arrow[uuul, "\delta_G"'] & \\
-% Row 8
-& & & & & &
+& & & & & & \mathcal{G}_{\rho,\sigma} &
 \end{tikzcd}
 \leqno{(62)}
-\]
+$$
 
 On a résumé certaines des relations entre les groupes introduits jusqu'à présent dans le diagramme commutatif (62), que je commente brièvement.
 
 \begin{enumerate}
-\item[a)] Toutes les flèches sont soit injectives ($\hookrightarrow$) soit surjectives ($\twoheadrightarrow$), à l'exception des deux flèches issues de $\Gamma_{\tilde{P},\sigma}$.
-\item[b)] Les dix carrés (six faces d'un cube, et quatre carrés marqués I, II, III, IV) sont cartésiens.
-\item[c)] Les flèches marquées $pr$ sont des projections canoniques de groupes produits sur des produits partiels. La flèche marquée $inj$ : $C^+ \hookrightarrow S_{N_{\tilde{P}}^*} \times S_{N_\sigma^*} \times C^+$ est l'injection canonique.
-\item[d)] Pour ne pas détruire la commutativité du diagramme, nous nous sommes dispensés d'y faire figurer les flèches évidentes (inclusions)
-$$
-N_{\tilde{P},\sigma} \to G_{\tilde{P},\sigma} \quad , \quad N_{\tilde{P}}^* \to G_{\tilde{P},\sigma} \quad , \quad N_\sigma^* \to G_{\tilde{P},\sigma}
-$$
-qui figurent dans (45).
+\item[a)] Toutes les flèches sont soit injectives ($\hookrightarrow$) soit surjectives ($\twoheadrightarrow$), à l'exception des trois flèches (issues de $\Gamma_{\rho,\sigma}$).
+\item[b)] Les dix carrés (six faces d'un cube, et quatre autres I, II, III, V) sont cartésiens.
+\item[c)] Les flèches marquées $pr$ sont des projections canoniques de groupes produits sur des produits partiels. La flèche marquée $inj$ : $\mathcal{G}^+ \hookrightarrow \mathfrak{S}_{N^*} \times \mathfrak{S}_{N^*} \times \mathcal{G}^+$ est l'injection canonique.
+\item[d)] Pour ne pas détruire la commutativité du diagramme, nous avons omis d'y faire figurer les flèches évidentes (inclusions) $N_{\rho,\sigma} \to \mathcal{G}_{\rho,\sigma}$, $N^*_\rho \to \mathcal{G}_{\rho,\sigma}$, $N^*_\sigma \to \mathcal{G}_{\rho,\sigma}$ qui figurent dans (45).
 \end{enumerate}
 
 \newpage
@@ -19558,52 +19568,54 @@ Il apparaît que le succès de la présentation du § 48 \underline{XI} tient au
 
 %% ===== Page 586 =====
 
-\marginpar{NB On a $S_0 \Gamma_{p,\sigma} / \tilde{\Gamma}_Q \simeq \hat{S}_0 \Gamma_{p,\sigma}$ dans $\Gamma_{p,\sigma}$}
-Nous allons essayer de sauver la mise, en trouvant un homomorphisme canonique !
-$$
+Nous allons essayer de serrer la [unclear: mise], en trouvant un homomorphisme canonique !
+\marginpar{NB. On a $S_{0,\Gamma_{0,r}} / \hat{\Gamma}_0 \simeq S_{0,\Gamma_{0,r}} / \hat{\Gamma}_{0,r}$}
+
 \begin{tikzcd}
-\tilde{M}[0] \arrow[r] & \hat{\mathbf{Z}}_{p,\sigma}^* \times_{\Gamma_{p,\sigma}} N_{\rho}^* \times_{\Gamma_{p,\sigma}} N_{\sigma}^* \\
-& \hat{S}_0 \Gamma_{p,\sigma} \subset S_0 \Gamma_{p,\sigma} \text{ (indice 2)} \arrow[u, hookrightarrow, phantom]
+\mathcal{M}[\Gamma_0] \arrow[r, "!"] \arrow[d, "\simeq"'] & Z_{\hat{\Gamma}_0}^\times \times N_{\hat{\Gamma}_{0,r}}^* \times_{\hat{\Gamma}_{0,r}} N_{\Gamma_0}^* \arrow[d, "\subset \text{ induit}"'] \\
+Z_{\hat{\Gamma}_0}^\times & S_{0,\Gamma_{0,r}}
 \end{tikzcd}
+
+Notons que le deuxième membre est formé des triplets
 $$
-Notons que ce dernier ensemble est formé des triplets
+\{ (u, a, b) \mid u = f b = f' a, \text{ avec } f, f' \in \hat{\Gamma}_{0,r} \} \leqno{(49)}
 $$
-(u, a, b) \mid u = f b = f' a , \text{ avec } f, f' \in \hat{\Gamma}_Q \text{ convenables} \leqno{(49)}
-$$
-ce qui implique $\varepsilon_2(u) = \varepsilon_0(b)$, $\varepsilon_3(u) = \varepsilon_0(a)$
+\marginpar{ce qui implique $\varepsilon_3(u) = \varepsilon_3(b)$ \\ $\varepsilon_3(u) = \varepsilon_3(a)$}
 et pour un tel triplet, on aura
 $$
-\begin{cases}
-u(\sigma) = \operatorname{int}(fb)(\sigma) = \operatorname{int}(f) \operatorname{int}(b)(\sigma) = \operatorname{int}(f)(\sigma^{\varepsilon_2(u)}) \\
-u(\rho) = \operatorname{int}(f'a)(\rho) = \operatorname{int}(f') \operatorname{int}(a)(\rho) = \operatorname{int}(f')(\rho^{\varepsilon_3(u)}) = \operatorname{int}(f' \varepsilon_3(u))(\rho)
+\begin{cases} 
+u(\sigma) = \operatorname{int}(fb)(\sigma) = \operatorname{int}(f)\operatorname{int}(b)(\sigma) = \operatorname{int}(f)(\sigma) \\ 
+u(\rho) = \operatorname{int}(f'a)(\rho) = \operatorname{int}(f')(\rho^{\varepsilon_3(a)}) = \operatorname{int}(f' \varepsilon_3(a))(\rho) 
 \end{cases} \leqno{(49 \text{ bis})}
 $$
 où on pose
 $$
-\varepsilon_3(u) = \begin{cases} 1 & \text{si } \varepsilon_3 = +1 \\ \rho^2 & \text{si } \varepsilon_3 = -1 \end{cases} \quad \text{i.e. } \varepsilon_3(u) = \rho^{\nu_3} \text{ avec } \varepsilon_3 = (-1)^{\nu_3}
+\varepsilon_3(x) \defeq \begin{cases} x & \text{si } \varepsilon_3 = +1 \\ x^{-1} & \text{si } \varepsilon_3 = -1 \end{cases} \quad \text{i.e. } \varepsilon_3(x) = x^{\varepsilon_3}
 $$
-Si $u$ correspond à $\alpha, \beta$ (cf.\ (38)), ces
-formules (49 bis) s'écrivent, vu les répartitions
+
+Si on compare à $\alpha, \beta$ (cf (38)), les formules (49 bis) s'écrivent sous la forme
 $$
-\begin{cases}
-\operatorname{int}(f)(\sigma) = \operatorname{int}(\beta)(\sigma) & \text{i.e. } f = \beta \sigma^i \quad (i \in \mathbf{Z}/2\mathbf{Z}) \\
-\operatorname{int}(f' \varepsilon_3(u))(\rho) = \operatorname{int}(\alpha)(\rho) & \text{i.e. } f' \varepsilon_3(u) = \alpha \rho^j \quad (j \in \mathbf{Z}/6\mathbf{Z})
+\begin{cases} 
+\operatorname{int}(f)(\sigma) = \operatorname{int}(\beta)(\sigma) & \text{i.e. } f = \beta \sigma^i \quad (i \in \hat{\mathbf{Z}} / 2\hat{\mathbf{Z}}) \\ 
+\operatorname{int}(f' \varepsilon_3(a))(\rho) = \operatorname{int}(\alpha)(\rho) & \text{i.e. } f' \varepsilon_3(a) = \alpha \rho^j \quad (j \in \hat{\mathbf{Z}} / 3\hat{\mathbf{Z}}) 
 \end{cases}
 $$
 
-Dans ce cas on a
-
-Proposition. Pour un $u \in \tilde{Z}_{p,\sigma}^* = \tilde{M}[0] \simeq \text{[unclear: f \mapsto f_0]}$ fixé,
-\marginpar{$\alpha, \beta, \varepsilon_3$ dépendent de $u$ par (38)}les $(u,a,b) \in S_0\Gamma_{p,\sigma}$ au dessus de $u$
-sont exactement les éléments de la forme
+Dans ces termes, la 
+Proposition : Pour un $u \in Z_{\hat{\Gamma}_0}^\times = \mathcal{M}[\Gamma_0] \simeq \dots$ donné, les $(u,a,b) \in S_{0,\Gamma_{0,r}}$ au dessus de $u$ [unclear: sont donnés par] les choix de
+\marginpar{où $\alpha, \beta, \varepsilon_3(u)$ sont définis par $u$ (38)}
 $$
-\left\{ (u,a,b) \mathrel{\Big|} \begin{matrix} a = f'^{-1} u \\ b = f^{-1} u \end{matrix} \text{ avec } \begin{matrix} f' = \alpha \rho^j \varepsilon_3(u)^{-1} & (j \in \mathbf{Z}/6\mathbf{Z}) \\ f = \beta \sigma^i & (i \in \mathbf{Z}/2\mathbf{Z}) \end{matrix} \right\} \leqno{(50)}
+\begin{cases} 
+a = {f'}^{-1} u \\ 
+b = f^{-1} u 
+\end{cases} \text{ avec } 
+\begin{cases} 
+f' = \alpha \rho^j \varepsilon_3(a) & (j \in \hat{\mathbf{Z}} / 3\hat{\mathbf{Z}}) \\ 
+f = \beta \sigma^i & (i \in \hat{\mathbf{Z}} / 2\hat{\mathbf{Z}}) 
+\end{cases} \leqno{(50)}
 $$
 
-Considérons alors l'élément $(u,a,b)$ au dessus de $u$,
-l'expression la plus simple en termes
-de $\alpha, \beta$, en prenant $i=0, j=0$, correspondant
-disons aux choix :
+On considèrera alors l'élément $(u,a,b)$ au dessus de $u$ donné par l'expression la plus simple en termes de $\alpha, \beta$, en prenant $i = 0$, $j = 0$, correspondant aux choix :
 
 \newpage
 
@@ -21534,33 +21546,34 @@ $N_\rho$ est $\mathcal{M}'(-j) = Z_\rho^!$. Les trois autres
 
 %% ===== Page 642 =====
 
-maintenant, par produit $\frac{1}{2}$ direct avec $\mu$,
-des sous-groupes de $N_{\hat{\rho}}$, invariants dans $N_{\hat{\rho}}$.
+naissance, par produit $1/2$ direct avec $\mu_2$,
+à des sous-groupes de $N_{\tilde{\rho}}$, invariants dans $N_{\tilde{\rho}}$.
 Le plus petit de tous ces sous-groupes
-est $\mathcal{M}^\circ[-j]$, qui est d'indice 24
-dans $N_{\hat{\rho}}^*$. Le groupe quotient
+est $\mathcal{M}^\circ(-\overline{J})$, qui est d'indice 24
+dans $N^\ast_{\tilde{\rho}}$. Le groupe quotient
 $$
-N_{\hat{\rho}}^* / \mathcal{M}^\circ[-j]
+N^\ast_{\tilde{\rho}} / \mathcal{M}^\circ(-\overline{J})
 $$
-est donc un groupe d'ordre 24\footnote{=[unclear: H_{24}]} qui
-reçoit d'ailleurs le groupe $D_{\hat{\rho}} \subset N_{\hat{\rho}}^*$,
-normalisateur de $L_{\hat{\rho}}$ dans $\operatorname{Sl}(2, \mathbf{Z})$,
-groupe isomorphe à $D_6$, le dièdre d'ordre
+est donc un groupe d'ordre 24 \marginpar{$= 12 \cdot 2$} qui
+reçoit d'ailleurs le groupe $D_{\tilde{\rho}} \subset N^\ast_{\tilde{\rho}}$,
+normalisateur de $L_{\tilde{\rho}}$ dans $\operatorname{Gl}(2, \hat{\mathbf{Z}})$,
+groupe isomorphe à $D_6$, d'ordre
 12. Le noyau de
 $$
-D_{\hat{\rho}} \hookrightarrow N_{\hat{\rho}}^* / \mathcal{M}^\circ[-j] \leqno (44)
+D_{\tilde{\rho}} \hookrightarrow N^\ast_{\tilde{\rho}} / \mathcal{M}^\circ(-\overline{J}) \leqno{(44)}
 $$
-est évidemment contenu dans $L_{\hat{\rho}} = D_{\hat{\rho}} \cap Z_{\hat{\rho}}$
-et il est réduit à $1$ car
-puisqu'on a
+est évidemment contenu dans $L_{\tilde{\rho}} = D_{\tilde{\rho}} \cap Z_{\tilde{\rho}}$
+et il est réduit à 1
+puisque
 $$
-L_{\hat{\rho}} \cap Z_{\hat{\rho}}^! \subset L_{\hat{\rho}} \cap \mathcal{M}^\circ = L_{\hat{\rho}} \cap \Pi_\circ = \{1\} .
+L_{\tilde{\rho}} \cap Z^!_{\tilde{\rho}} \subset L_{\tilde{\rho}} \cap \mathcal{M}^\circ_0 = L_{\tilde{\rho}} \cap \Pi_\circ = \{ 1 \} .
 $$
-(d'après 12)
-Ainsi $D_{\hat{\rho}}$ apparaît comme un sous-
-groupe d'indice 2 de $N_{\hat{\rho}}^* / \mathcal{M}^\circ[-j]$,
+(d'après 17))
+
+Ainsi $D_{\tilde{\rho}}$ apparaît comme un sous-
+groupe d'indice 2 de $N^\ast_{\tilde{\rho}} / \mathcal{M}^\circ(-\overline{J})$,
 tout comme il est sous-groupe d'indice
-2 de $\mathfrak{S} / \Pi_\circ$. Il serait tentant
+2 de $\mathcal{G} / \Pi_\circ$. Il serait tentant
 
 \newpage
 
@@ -23012,24 +23025,19 @@ Je dis que $\mathcal{M}^\mathfrak{S}$ est un sous-groupe de $\mathcal{M}$. On pe
 
 %% ===== Page 683 =====
 
-On a [unclear: un isomorphisme] $= \mathcal{M}[0] \cdot L_0^\mu$.
-
+On a un isomorphisme $\simeq \mathcal{M}(0).L_0^\pi$
 $$
-Z_{\mathfrak{S}_0} \hookrightarrow \mathcal{M}[0] \left[ \simeq \mathcal{M}_{0,3}^\sim [0] = \mathcal{M}_{0,3}^\sim (\infty) \cdot L_0^\mu \right] \leqno (108)
+Z_{\mathfrak{S}^\natural_0,\sigma} \hookrightarrow \mathcal{M}[0] \quad [\isom \mathcal{M}_{0,3}^\sim[0] = \mathcal{M}_{0,3}^\sim(\infty).L_{0,3}^0 ] \leqno{(108)}
 $$
+traduisant par une égalité si $\mathfrak{S}^\natural_0 = \mathfrak{S}^\natural_+$, et qui s'identifie à $\mathcal{M}[\pi_0] = \mathcal{M}(0).L_0^\pi$ si $\mathfrak{S}^\natural_0 = \pi . \pi_0$.
 
-On remarque que c'est une égalité si $\mathfrak{S}_0^- = \mathfrak{S}_0^+$, et que l'on identifie $Z_{\mathfrak{S}_0} : \mathcal{M}[T_0] = \mathcal{M}(0) \cdot L_0^\mu$ si $\mathfrak{S}_0 = \pi = \pi_0$.
-
-\marginpar{cette explicitation ne servira du reste à rien.}%
-[ --- en fait, si $\mathfrak{S}_0^+ \subset \pi_0$, alors
-
+[ --- en fait, si $\mathfrak{S}^\natural_0 \subset \pi_0$, alors \marginpar{[unclear: cette explicitation a un sens en termes de niveaux]}
 $$
-Z_{\mathfrak{S}_0} = \left\{ \begin{matrix} u = u_0 \cdot l \\ \text{dans } \mathcal{M}(0) \cdot L_0^\mu \end{matrix} \middle| \begin{array}{l} \text{a) } u(p) = \alpha p \beta \text{ avec } \alpha \in \mathfrak{S}^-_0 \\ \text{b) } u(\sigma) = \beta(\sigma) \dots \beta \in \mathfrak{S}^-_0 \\ \text{c) } u \text{ stabilise } \mathcal{M}^\mathfrak{S} \end{array} \right\} \leqno (109)
+Z_{\mathfrak{S}^\natural_0,\sigma} = \left\{ {u = u_0 . l \atop \mathcal{M}(0) \ \ L_0^\pi} \ \vrule \ \begin{matrix} \text{a) } u(\rho) = \alpha(\rho) \text{ avec } \alpha \in \mathfrak{S}^\natural_0 \\ \text{b) } u(\sigma) = \beta(\sigma) \text{ avec } \beta \in \mathfrak{S}^\natural_0 \\ \text{c) } u \text{ stabilise } \mathfrak{S}^\natural_0 \end{matrix} \right\} \leqno{(109)}
 $$
-
-et on voit que $\alpha, \beta$ de a) b) sont déterminés par $u = u_0 \cdot l$ de façon unique (dès que $u \in \mathcal{M}[T_0]$ au plus). On sait que c'est un [unclear: sous-groupe] $\mathcal{M}(\mathfrak{S}_0^\pm) \simeq \hat{\mathbf{Z}}^\times \times \mu_2 \times \mathcal{M}(\mathfrak{S}_0^+)$ (cf.\ p.\ 679).
-
-Considérons [unclear: l'image de] $\mathcal{M}_{0,3}^\sim [\mathfrak{S}]$ dans $\mathcal{M}_{0,3}^\sim [\pi_0]$, qui s'envoie dans $\mathcal{M}_{0,3}^\sim [T_0]$ comme un sous-groupe, donc dans $\mathcal{M}[\mathfrak{S}] \simeq \mathcal{M}_{0,3}^\sim [T_0]$ par un isomorphisme de groupes. ]
+et on voit que $\alpha, \beta$ dans a) b) sont déterminés par $u = u_0 . l$ de façon unique
+([unclear: dès que] $u \in \mathcal{M}[\pi_0]$ sans plus, et $\alpha, \beta \in \pi_0$).
+On sait que c'est un sous-groupe de $\mathcal{M}(0) \times \dots$ (prop. V. 629). Considérons $\mathcal{M}$ dans $\mathcal{M}_{0,3}^\sim$, il s'envoie dans $\mathcal{M}_{0,3}^\sim[\pi_0]$ sous un groupe, donc $\mathcal{M}[\pi_0] \isommap \mathcal{M}_{0,3}^\sim[\pi_0]$ par un isomorphisme de groupes. ]
 
 \newpage
 
@@ -23290,46 +23298,43 @@ Voyons comment (1) définit (2), montrons comment un syst.\ (2) permet de recons
 
 %% ===== Page 692 =====
 
-On part donc de $\mathcal{G}$, on pose
+On part d'un $\mathfrak{S}$, d'un $N$
 $$
-S_{\theta}G = N.\mathcal{G} \quad (\text{produit semi-direct}) \leqno{(3)}
+S_0 G = N \rtimes \mathfrak{S} \quad (\text{produit semi-direct}) \leqno{(3)}
 $$
-on définit un hom.
+définit un hom.
 $$
-\begin{tikzcd}
-S N \arrow[r, "i"] & S_{\theta} G \\
-u \arrow[r, maps to] & u . p(u)^{-1}
-\end{tikzcd}
-\leqno{(5)}
+\begin{cases} 
+S N \hookrightarrow S_0 G \\ 
+u \mapsto u . \varphi(u)^{-1} 
+\end{cases} \leqno{(5)}
 $$
 
-Vérifions que c'est un hom.
-\marginpar{NB on a pour $u \in SN$, $x \in \mathcal{G}$ (dans $S_{\theta} G$)\\
-(*) $u(x) = u x u^{-1} = p(u) x p(u)^{-1}$\\
-dans $S_{\theta} G = N.\mathcal{G}$\\
-donc si $x = p(u')$,\\
-$u(x) = u x u^{-1} = x$\\
-i.e. $x$ commute à $u$}
+Vérifions que c'est un hom.\marginpar{NB on a pour $u \in SN$, $x \in \mathfrak{S}$ \\ (*) $u x u^{-1} = \varphi(u) x \varphi(u)^{-1}$ \\ dans $S_0 G = N \rtimes \mathfrak{S}$ \\ donc si $x = \varphi(u)$, \\ $u(x) = u x u^{-1} = u$ \\ \dots $x \varphi(u) x^{-1} = \dots$}
+$$
+i(u u') = (u u') \varphi(u u')^{-1}
+$$
+$$
+i(u) i(u') = u \varphi(u)^{-1} u' \varphi(u')^{-1} = u \big( \varphi(u)^{-1} u' \varphi(u) \big) \varphi(u)^{-1} \varphi(u')^{-1}
+$$
+$$
+= u \varphi(u)^{-1} u' \varphi(u) \varphi(u u')^{-1} = (u u') \varphi(u u')^{-1} \quad \text{ok.}
+$$
 
+On n'a pas encore utilisé le fait, et il faut le faire, que $SN$ est distingué dans $N$, pour s'assurer que l'image de (5) est distinguée dans $S_0 G$. En effet pour $a \in N$, $u \in SN$:
 $$
-i(u'u) = (u'u) p(u'u)^{-1}
+a (u . \varphi(u)^{-1}) a^{-1} = a u a^{-1} . a \varphi(u)^{-1} a^{-1} 
 $$
-\begin{align*}
-i(u')i(u) &= u' p(u')^{-1} u p(u)^{-1} = u' \big(p(u')^{-1} u p(u')\big) \underbrace{p(u')^{-1} p(u)^{-1}}_{= p(u'u)^{-1}} \\
-&= u' u \big(u^{-1} p(u')^{-1} u p(u')\big) p(u'u)^{-1} \\
-&= (u'u) p(u'u)^{-1} = i(u'u) \quad \text{OK.}
-\end{align*}
+$$
+\in SN \quad = \varphi(a u a^{-1}) = \varphi(a) \varphi(u)^{-1} \varphi(a)^{-1} \dots
+$$
+l'image est donc commutante à $N$ dans $S_0 G$ et son normalisateur contient $SN$ et est $S_0 G > N$ de l'image.
 
-On [unclear: voit] par [unclear: ex] en [unclear: utilisant] le fait que $p$ et l'hyp (b), que $SN$ est distingué dans $N$, [unclear: avec l'hyp. que] l'image de (5) est distinguée dans $S_{\theta} G$,
-en effet on a pour $a \in N$, $u \in SN$
+De plus $SN$ est normalisé par $N \subset S_0 G$. Je dis que pour [unclear: en] déduire qu'elle est normalisée par $\mathfrak{S}$, il suffit de voir que:
 $$
-a(u.p(u)^{-1})a^{-1} = a u a^{-1} \cdot a p(u)^{-1} a^{-1}
+x \varphi(u)^{-1} x^{-1} = (x u x^{-1}) (x \varphi(u)^{-1} x^{-1})
 $$
-$$
-= \underbrace{a u a^{-1}}_{\in SN} \cdot p(a u a^{-1})^{-1}
-$$
-i.e. l'hom. (5) commute à l'action de $N$ sur $SN$ et sur $S_{\theta}G = N.\mathcal{G}$
-[unclear: l'image de] $SN$ est normalisée par $N
+L'image de $SN$ dans $S_0 G$ commute à $\mathfrak{S}$, ie.
 
 \newpage
 

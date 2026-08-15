@@ -2,7 +2,7 @@
 % Model: Gemini 3.1 Flash-Lite (thinking=low)
 % Prompt: mateo-canonical (notation + structure block, Part I few-shot pool)
 % Pages transcribed: 696/696
-% Pages overlaid from diagram-tikzcd branch: 112
+% Pages overlaid from diagram-tikzcd branch: 111
 % Rebuilt: 2026-08-15
 
 %% ===== Page 1 =====
@@ -2842,31 +2842,28 @@ $$
 
 %% ===== Page 110 =====
 
-Proposition. --- Soit $g \in \operatorname{Sl}(2, \hat{\mathbf{Z}})$, $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $a, b, c, d \in \hat{\mathbf{Z}}$, $ad-bc = \delta \in \hat{\mathbf{Z}}^\times$. Pour qu'on ait
+\noindent\textbf{Proposition.} Soit $g \in \operatorname{Sl}(2, \hat{\mathbf{Z}})$, $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $a, b, c, d \in \hat{\mathbf{Z}}$, $ad-bc = \delta \in \hat{\mathbf{Z}}^\times$. Pour que l'on ait
 $$
-g^3 = 1 \leqno (81)
+g \rho(g) \rho(g) = 1 \leqno{(87)}
 $$
-il faut et il suffit qu'on ait $\delta^3 = 1$, et qu'on soit dans l'un des deux cas suivants, qui s'excluent mutuellement :
+il faut que l'on ait $\delta^3 = 1$, et que l'on soit dans l'un des deux cas suivants, que j'explicite maintenant :
 
 \begin{enumerate}
-\item[1\textdegree)] $a+d-b = 1$
-\item[2\textdegree)] $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} = -\delta' \begin{pmatrix} -1 & 1 \\ 0 & -1 \end{pmatrix} = -\delta' p^{-1} \quad (\text{où } \delta' = \delta^{-1} = \delta^2)
+\item[1$^\circ$)] $c+d-b = 1$
+\item[2$^\circ$)] $g = \delta'^{-1} \begin{pmatrix} -1 & 1 \\ 0 & \delta \end{pmatrix} = \delta' \delta^{-1} \dots \quad (c = \delta'^{-1} \dots)$
 \end{enumerate}
 
-De plus, dans le cas 1\textdegree), on a $a+b=0$, etc.
-Corollaire : les $g$ pour lesquels $a+b \neq 0$ sont ceux de la forme
+De plus, dans le cas 1$^\circ$), on a $a+b=0$.
 
+\medskip
+\noindent\textbf{Corollaire.} Les $g$ pour lesquels on a $a+b \neq 0$ sont ceux de la forme
 $$
-g = \begin{pmatrix} a & b \\ c & b-c+\frac{1}{\delta} \end{pmatrix} \leqno (\text{avec } a+b)
+\left\{ \begin{aligned} g &= \begin{pmatrix} a & b \\ c & b-c+1 \end{pmatrix} \\ c &= \frac{1}{a+b} (\dots) \end{aligned} \right.
 $$
-avec $c = \frac{1}{a+b} (a(b+\delta')-\delta)$,
-
-ceux pour lesquels $a+b = 0$ et $c=0$ sont ceux de la forme
-
+et les $g$ pour lesquels on a $a+b = 0$ sont de la forme
 $$
-g = \begin{pmatrix} -u\delta' & u\delta' \\ 0 & -u^{-1}-\delta \end{pmatrix}
+\left\{ \begin{aligned} g &= \begin{pmatrix} -u^3 & b \\ c & -\delta u^{-1} \end{pmatrix} \\ \text{où } \delta' &= \dots, \ u' = u^3, \ u \text{ est une racine} \\ &\text{de l'équation cyclotomique} \dots \text{de l'unité.} \end{aligned} \right.
 $$
-où $\delta' = \delta^{-1} = u^2$, $u$ étant une solution de l'équation cyclotomique $u^2+u+1=0$ dans les racines $3$-ièmes de l'unité.
 
 \newpage
 
@@ -11805,26 +11802,23 @@ commutatif.
 
 %% ===== Page 432 =====
 
-On a le diagramme d'inclusions
-(94)
+\marginpar{Le $\mathcal{T}$ qui intervient ici est le $\mathcal{T}$ qui intervient dans la suite, et non $\mathcal{T}$ lui-même, il s'agit de $\mathcal{S}\mathcal{T} \times \mathcal{S}\mathcal{T}$ (qui est le produit des trois composantes...)}
+
+On a le diagramme d'extensions
+$$
 \begin{tikzcd}
-\underset{\text{"Ker }\kappa\text{"}}{SR_{\rho,\sigma}} \ar[r, hook, "\mathbb{G}_m \ (90)"] \ar[d, "\mu_2 \times \mu_2"'] & \underset{\text{"Ker }\Theta\text{"}}{R_{\rho,\sigma}} \ar[r, hook, "PG \ (86)"] \ar[d, "\text{cart et cocart}"'] & M_{\rho,\sigma} \ar[d, "\mu_2 \times \mu_2"] \\
-\underset{\text{"Ker }\kappa^\circ\text{" \ (62)}}{\underset{\simeq S T_\rho \times S T_\sigma}{SR_{\rho,\sigma}^\circ}} \ar[r, hook, "\mathbb{G}_m"] & \underset{\text{"Ker }\Theta^\circ\text{" \ (69)}}{R_{\rho,\sigma}^\circ} \ar[r, hook, "PG"] & M_{\rho,\sigma}^\circ
-\end{tikzcd}
+& S R_{\rho, \sigma} \arrow[r] \arrow[d, "\Ker \Theta"] & R_{\rho, \sigma} \arrow[r] \arrow[d, "\Ker \Theta"] & P\mathcal{G} \arrow[d] \\
+\mathcal{S}\mathcal{T} \times \mathcal{S}\mathcal{T} \arrow[r] & G_m \arrow[r] & R_{\rho, \sigma} \arrow[r] & M_{\rho, \sigma}
+\end{tikzcd} \leqno{(95)}
+$$
+La dernière ligne est formée des composantes, à partir de la première, puis par restriction plus précisément encore. 
 
-[MARGIN: NB il y a une vérification à faire, qui se réduit à voir que les flèches $SR_{\rho,\sigma}^+ \to SR_{\rho,\sigma}$, $R_{\rho,\sigma}^+ \to R_{\rho,\sigma}$ sont des isomorph. — oui, cf plus bas en (100) où la flèche est rendue explicite par ex.]
+\smallskip
 
-La deuxième ligne est formée des composantes neutres de la première, qu'on peut réécrire plus joliment encore
-
-(95)
-\begin{tikzcd}
-& R_{\rho,\sigma} \ar[dr, "PG"] \ar[dd] \\
-SR_{\rho,\sigma} \ar[ur, "\mathbb{G}_m"] \ar[rr, dashed, "G"] \ar[dd, "\mu_2 \times \mu_2"'] & & M_{\rho,\sigma} \ar[dd, "\mu_2 \times \mu_2"] \\
-& R_{\rho,\sigma}^\circ \ar[dr, "PG" near start] \\
-\underset{(S T_\rho \times S T_\sigma)^-}{\underset{\parallel}{SR_{\rho,\sigma}^\circ}} \ar[ur, "\mathbb{G}_m"] \ar[rr, dashed, "G"'] & & M_{\rho,\sigma}^\circ
-\end{tikzcd}
-
-sous forme d'un prisme dont les trois carrés latéraux sont à la fois cartésiens et cocartésiens — donc donnent lieu à des quotients (sur des cotés parallèles) isomorphes — les quotients qui interviennent étant $\mu_2 \times \mu_2$, $\mathbb{G}_m$, $PG$ et l'extension $G$ de $
+On voit sur ce diagramme, p. ex. le résultat (K, $S R_{\rho, \sigma}, M_{\rho, \sigma}$) :
+$$
+1 \to S R_{\rho, \sigma} \to R_{\rho, \sigma} \to G_m \times P\mathcal{G} \to 1 \leqno{(96)}
+$$
 
 \newpage
 
@@ -17068,26 +17062,30 @@ On aura alors l'élément \emph{au-dessus} de $u$ considérons l'expression la p
 %% ===== Page 587 =====
 
 $$
-\begin{cases} 
-a = \epsilon_3(\sigma_1) \alpha^{-1} u \\ 
-b = \beta^{-1} u 
-\end{cases} \leqno{(51)}
-$$
-p.c. $\alpha = u a^{-1} \epsilon_3(\tau_1)$ et $\beta = u b^{-1}$.
-
-Je me demande si cette section de $\mathfrak{S}_{g,\nu}$ \dots et qui vérifie \dots et qui vérifie \dots multiplication, et qui vérifie \dots dépendent artificiellement de $u$.
-
-Proposition. Soit $(u, a, b) \in \mathfrak{S}_{g,\nu}$ (cf. (50)). Pour que l'on ait $i=0, j=0$ s.l. pour que l'on ait (51) i.e. pour que $(u, a, b)$ \dots il faut et il suffit que les relations \dots $\mod \hat{\pi}$
-\marginpar{NB $\tau'\tau = \sigma^{-1}$\\$\tau'\sigma = \tau^{-1}$}
-$$
-u \equiv b \equiv \epsilon_3(\sigma) \pmod{\hat{\pi}} = u a^{-1} \epsilon_3(\tau_1) \leqno{(52)}
+(51) \quad \begin{cases} a = \epsilon_3(\sigma) \alpha^{-1} u & \text{resp.} \\ b = \beta^{-1} u & \text{resp.} \end{cases} \leqno{(51)}
 $$
 
-Démonstration. \dots $\hat{\pi}_0$, la condition \dots Pour la condition \dots on sait que la relation (50), $f = u \sigma^{-1}$ i.e. $f' = \alpha \epsilon_3(\tau_1)$ \dots et réduit $\mod \hat{\pi}$ \dots $\epsilon_3(\tau_1^{-1}) = 1$ \dots $\epsilon_3(\tau_1) \alpha^{-1} = 1$ \dots $\epsilon_3(\tau_1) \alpha^{-1} \dots = 1$ \dots
-\marginpar{(53) $\epsilon_3(\sigma) = \dots$}
-\dots $= 1$ \dots $= 1$ i.e. $i=0, j=0$ c.q.f.d.
+Je me demande si cette section ... de $\mathfrak{T}_{\Gamma} = \mathfrak{M}'[\sigma]$ ... de la multiplication, ... qui vérifie ... et les $a, b$ définies par (51) dépendent multiplicativement de $u$.
 
-Corollaire : la section \dots multiplication.
+\medskip
+
+Proposition. Soit $(u, a, b) \in \mathfrak{S}_{g,\nu}$ (cf. (50)).
+Pour que l'on ait $i=0, j=0$, il faut et il suffit que, pour que l'on ait (51), il faut et il suffit que les relations
+$$
+u \equiv b \equiv \epsilon_3(\sigma) \alpha^{-1} \pmod{\hat{\pi}_0} \leqno{(52)}
+$$
+\marginpar{NB $\tau' \tau = \sigma^{-1}$ \\ $\tau' \sigma = \tau^{-1}$}
+\marginpar{$\epsilon_3(\sigma) = \dots$}
+
+\smallskip
+
+Démonstration. ... dans $\hat{\pi}_0$, la condition ...
+Il s'écrit ... 
+$$
+\left\{ f = u \sigma, f' = u \alpha^{-1} \text{ i.e. } f' \epsilon_3(\tau) = u \alpha^{-1} \epsilon_3(\tau) \right\} \leqno{(53)}
+$$
+et réduit mod $\hat{\pi}_0 \dots$
+... on a ... $i=0, j=0$ c.q.f.d.
 
 \newpage
 

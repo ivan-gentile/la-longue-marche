@@ -6,7 +6,7 @@
   "model_key": "pro",
   "prompt_style": "mateo-canonical",
   "thinking_level": "medium",
-  "max_output_tokens": 16000,
+  "max_output_tokens": 32000,
   "context": "previous_page_pdf",
-  "started": "2026-08-15T06:19:15.986586"
+  "started": "2026-08-15T08:55:26.483554"
 }

@@ -8,5 +8,15 @@
   "thinking_level": "low",
   "max_output_tokens": 16000,
   "context": "previous_page_pdf",
-  "started": "2026-04-18T12:58:49.243541"
+  "started": "2026-08-15T18:35:14.315431",
+  "repairs": [
+    {
+      "date": "2026-08-15",
+      "pages": [
+        91
+      ],
+      "thinking_level": "high",
+      "reason": "unbalanced environment flagged by audit_corpus.py"
+    }
+  ]
 }

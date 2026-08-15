@@ -8,10 +8,10 @@ Each column is a class of page that was recorded as a successful transcription b
 |---|---|---|---|---|---|---|---|---|
 | La Longue Marche 140-3 — february-original (superseded, published) | 696 | 0 | 0 | 2 | 4 | 1 | 0 | 0 |
 | La Longue Marche 140-4 — february-original (superseded, published) | 280 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| La Longue Marche 140-3 — mateo-canonical (Pro) | 696 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| La Longue Marche 140-3 — mateo-canonical (Pro) | 696 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | La Longue Marche 140-4 — mateo-canonical (Pro) | 280 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| La Longue Marche 140-3 — flash-lite-mateo | 696 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
-| La Longue Marche 140-4 — flash-lite-mateo | 280 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| La Longue Marche 140-3 — flash-lite-mateo | 696 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| La Longue Marche 140-4 — flash-lite-mateo | 280 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Préschémas (Bourbaki Schémas) — page-by-page | 437 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Catégories de variétés (U46) — page-by-page | 100 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -35,20 +35,6 @@ Each column is a class of page that was recorded as a successful transcription b
 ### Unbalanced environments — La Longue Marche 140-4 — february-original (superseded, published)
 
 - page 56: \begin{array} closed by \end{matrix}; \begin{array} closed by \end{matrix}
-
-### Truncated pages — La Longue Marche 140-3 — mateo-canonical (Pro)
-
-- page 692: odd number of single $ (inline math left open)
-
-### Truncated pages — La Longue Marche 140-3 — flash-lite-mateo
-
-- page 110: odd number of single $ (inline math left open)
-- page 432: odd number of single $ (inline math left open)
-- page 587: odd number of single $ (inline math left open)
-
-### Truncated pages — La Longue Marche 140-4 — flash-lite-mateo
-
-- page 91: odd number of single $ (inline math left open)
 
 ### Known genuine duplicates (exempted, verified against the scans) — Préschémas (Bourbaki Schémas) — page-by-page
 

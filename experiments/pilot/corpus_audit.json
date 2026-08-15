@@ -81,14 +81,7 @@
       "echoes": [],
       "known_duplicates": [],
       "reasoning_leaks": [],
-      "truncations": [
-        [
-          692,
-          [
-            "odd number of single $ (inline math left open)"
-          ]
-        ]
-      ],
+      "truncations": [],
       "unbalanced_envs": [],
       "escape_artifacts": [],
       "empty_successes": [],
@@ -110,26 +103,7 @@
       "echoes": [],
       "known_duplicates": [],
       "reasoning_leaks": [],
-      "truncations": [
-        [
-          110,
-          [
-            "odd number of single $ (inline math left open)"
-          ]
-        ],
-        [
-          432,
-          [
-            "odd number of single $ (inline math left open)"
-          ]
-        ],
-        [
-          587,
-          [
-            "odd number of single $ (inline math left open)"
-          ]
-        ]
-      ],
+      "truncations": [],
       "unbalanced_envs": [],
       "escape_artifacts": [],
       "empty_successes": [],
@@ -140,14 +114,7 @@
       "echoes": [],
       "known_duplicates": [],
       "reasoning_leaks": [],
-      "truncations": [
-        [
-          91,
-          [
-            "odd number of single $ (inline math left open)"
-          ]
-        ]
-      ],
+      "truncations": [],
       "unbalanced_envs": [],
       "escape_artifacts": [],
       "empty_successes": [],

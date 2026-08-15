@@ -10,14 +10,14 @@ Thinking tokens are reported separately from visible output tokens by the Gemini
 | La Longue Marche 140-4 | february-original (Pro, superseded) | gemini-3.1-pro-preview | 280 | 543,198 | 126,355 | 1,094,849 | **$15.74** | $2.60 |
 | La Longue Marche 140-3 | production-flash-lite (text-first-fewshot) | gemini-3.1-flash-lite-preview | 694 | 1,240,220 | 444,922 | 3,457,197 | **$6.16** | $0.98 |
 | La Longue Marche 140-4 | production-flash-lite (text-first-fewshot) | gemini-3.1-flash-lite-preview | 280 | 499,988 | 146,679 | 1,346,235 | **$2.36** | $0.35 |
-| La Longue Marche 140-3 | mateo-canonical (Pro) | gemini-3.1-pro-preview | 696 | 1,982,540 | 402,678 | 4,315,239 | **$60.58** | $8.80 |
-| La Longue Marche 140-4 | mateo-canonical (Pro) | gemini-3.1-pro-preview | 280 | 791,172 | 129,148 | 1,512,158 | **$21.28** | $3.13 |
-| La Longue Marche 140-3 | flash-lite-mateo | gemini-3.1-flash-lite-preview | 696 | 1,970,849 | 365,565 | 2,048,346 | **$4.11** | $1.04 |
-| La Longue Marche 140-4 | flash-lite-mateo | gemini-3.1-flash-lite-preview | 280 | 791,172 | 121,517 | 711,215 | **$1.45** | $0.38 |
-| Préschémas (Bourbaki Schémas) | page-by-page (Flash-Lite) | gemini-3.1-flash-lite-preview | 437 | 611,965 | 335,906 | 0 | **$0.66** | $0.66 |
+| La Longue Marche 140-3 | mateo-canonical (Pro) | gemini-3.1-pro-preview | 696 | 1,979,936 | 402,497 | 4,267,308 | **$60.00** | $8.79 |
+| La Longue Marche 140-4 | mateo-canonical (Pro) | gemini-3.1-pro-preview | 280 | 791,172 | 128,910 | 1,509,363 | **$21.24** | $3.13 |
+| La Longue Marche 140-3 | flash-lite-mateo | gemini-3.1-flash-lite-preview | 696 | 1,971,221 | 365,173 | 2,042,002 | **$4.10** | $1.04 |
+| La Longue Marche 140-4 | flash-lite-mateo | gemini-3.1-flash-lite-preview | 280 | 791,172 | 121,474 | 711,470 | **$1.45** | $0.38 |
+| Préschémas (Bourbaki Schémas) | page-by-page (Flash-Lite) | gemini-3.1-flash-lite-preview | 437 | 612,519 | 335,239 | 0 | **$0.66** | $0.66 |
 | Catégories de variétés (U46) | page-by-page (Pro) | gemini-3.1-pro-preview | 100 | 198,833 | 68,909 | 382,902 | **$5.82** | $1.22 |
 
-**Total across all runs: $160.20** (the old thinking-free arithmetic gave $26.48).
+**Total across all runs: $159.57** (the old thinking-free arithmetic gave $26.47).
 
 Prices assumed (USD per 1M tokens): `gemini-3.7-flash` in $0.75 / out $3.75; `gemini-3.1-flash-lite-preview` in $0.25 / out $1.50; `gemini-3.5-flash-lite` in $0.30 / out $2.50; `gemini-3.1-pro-preview` in $2.00 / out $12.00; `gemini-3.6-flash` in $1.50 / out $7.50; `gemini-3.5-flash` in $1.50 / out $7.50.
 

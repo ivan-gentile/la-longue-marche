@@ -40,6 +40,7 @@ the scans is preserved. Machine-readable version: `coverage.json`.
 
 ## Reading guide
 
+- The `february-original` files are **superseded and kept only because they were delivered in April**. They are audited but not repaired: 7 pages carry unclosed math or mismatched environments (see `experiments/pilot/CORPUS_AUDIT.md`). Repairing them with today's pipeline would mix two prompt generations inside one file, so the better answer is to use `mateo-canonical` instead.
 - `flash-lite-mateo` is the complete working draft of both volumes.
 - `mateo-canonical` is the higher-effort Gemini Pro re-run of the same
   pages; where it covers a page, prefer it over `flash-lite-mateo`.
