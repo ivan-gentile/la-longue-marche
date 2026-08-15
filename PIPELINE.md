@@ -336,7 +336,29 @@ changed so it cannot recur silently:
 The La Longue Marche `mateo-canonical` corpus is clean of this defect —
 its runner's label said "shown above" and so was never ambiguous.
 
-### 10.2 The cost figures were understated
+### 10.2 The files could not be compiled, and now can be (mostly)
+
+The transcriptions are LaTeX *bodies*, and they use macros — `\isommap`,
+`\Autext`, `\Tr`, `\unclear`, `\uncertain` — that nothing in the
+repository defined, so nobody could actually run LaTeX on them.
+[`tex_output/preamble.tex`](tex_output/preamble.tex) now supplies exactly
+the packages and macros the corpora use, collected by compiling them and
+reading the undefined control sequences back out of the log.
+
+With it, *Catégories de variétés* compiles to a 100-page PDF with **zero**
+errors, and Préschémas produces its full 437 pages. The two handwritten La
+Longue Marche volumes still raise LaTeX errors — a transcription of
+handwritten mathematics can be structurally sound and still contain a
+missing `$` or an unbalanced brace, which is a different question from the
+one `audit_corpus.py` answers.
+[`experiments/pilot/compile_check.py`](experiments/pilot/compile_check.py)
+measures that dimension: it compiles each deliverable and attributes every
+error to the page whose marker precedes it, writing
+[`COMPILE_REPORT.md`](experiments/pilot/COMPILE_REPORT.md). So the
+remaining errors are now located page by page rather than merely known to
+exist.
+
+### 10.3 The cost figures were understated
 
 Gemini reports *thinking* tokens separately from visible output tokens
 but bills them at the output rate, and the runners' arithmetic summed

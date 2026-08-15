@@ -1,0 +1,82 @@
+% Preamble for the La Longue Marche / Préschémas / Variétés transcriptions.
+%
+% The transcription files in this directory are LaTeX *bodies*: page
+% markers and content, no document wrapper. They use a handful of macros
+% that have to be defined somewhere, and until now nothing in the
+% repository defined them, so the files could not be compiled as they
+% stood. This preamble supplies exactly the packages and macros the
+% corpora actually use (collected by compiling them and reading back the
+% undefined control sequences).
+%
+% Usage — compile any transcription with:
+%
+%   pdflatex -jobname=140-3 "\input{preamble}\input{la_longue_marche_140-3_mateo-canonical}\end{document}"
+%
+% or use main.tex in this directory, which does the same with an edit at
+% the top to choose the file.
+
+\documentclass[11pt,oneside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}      % \xhookrightarrow, \vcentcolon
+\usepackage{tikz}
+\usepackage{tikz-cd}        % commutative diagrams
+\usepackage{ulem}           % \sout (struck-through text in the manuscript)
+\normalem                   % ulem otherwise redefines \emph as underline
+\usepackage{cancel}         % \cancel (cancelled terms)
+\usepackage{marginnote}
+\usepackage{geometry}
+\geometry{margin=2.5cm,marginparwidth=2.2cm}
+
+% \marginpar is fragile inside math and floats; marginnote is not, and the
+% transcriptions put marginal annotations in many such places.
+\let\LLMmarginpar\marginpar
+\renewcommand{\marginpar}[1]{\marginnote{\footnotesize #1}}
+
+% --- Editorial macros (see CLAUDE.md) --------------------------------
+\providecommand{\uncertain}[1]{\textit{#1}}
+\providecommand{\unclear}[1]{\textit{[#1]}}
+\providecommand{\editnote}[1]{\footnote{#1}}
+
+% --- Operator names ---------------------------------------------------
+\providecommand{\Ker}{\operatorname{Ker}}
+\providecommand{\Aut}{\operatorname{Aut}}
+\providecommand{\Autext}{\operatorname{Aut}\nolimits^{\mathrm{ext}}}
+\providecommand{\End}{\operatorname{End}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\Gal}{\operatorname{Gal}}
+\providecommand{\Norm}{\operatorname{Norm}}
+\providecommand{\Tr}{\operatorname{Tr}}
+\providecommand{\id}{\operatorname{id}}
+\providecommand{\SL}{\operatorname{Sl}}
+\providecommand{\GL}{\operatorname{Gl}}
+\providecommand{\Ob}{\operatorname{Ob}}
+\providecommand{\Ens}{\operatorname{Ens}}
+
+% --- Notation ---------------------------------------------------------
+\providecommand{\defeq}{\mathrel{\vcentcolon=}}
+\providecommand{\isom}{\simeq}
+\providecommand{\isommap}{\xrightarrow{\raisebox{-0.2ex}[0pt][0pt]{$\scriptstyle\sim$}}}
+\providecommand{\Z}{\mathbf{Z}}
+\providecommand{\Q}{\mathbf{Q}}
+\providecommand{\R}{\mathbf{R}}
+\providecommand{\C}{\mathbf{C}}
+\providecommand{\N}{\mathbf{N}}
+
+% French guillemets without loading babel (the corpora use \og and \fg).
+\providecommand{\og}{\guillemotleft{}~}
+\providecommand{\fg}{~\guillemotright{}}
+
+% Grothendieck numbers many equations in the right margin; \leqno is a
+% plain-TeX primitive that amsmath disables inside its environments, so the
+% corpora use it inside bare $$...$$, which is why this preamble does not
+% load an amsmath equation-numbering scheme that would clash.
+
+\begin{document}
