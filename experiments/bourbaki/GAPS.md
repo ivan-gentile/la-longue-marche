@@ -63,26 +63,38 @@ transcribed the context page and ignored the target. The result is a
 page recorded as a perfectly ordinary success whose text belongs to the
 previous page: no error, no gap, nothing a success count can reveal.
 
-**Extent.** 19 of 437 pages (4.3%) in the shipped Préschémas file.
+**Extent.** 22 of 437 pages (5.0%) in the shipped Préschémas file: 19
+found in the first sweep, and 3 more (PDF 181, 182, 384) that only
+became visible once their neighbours were repaired — an echo hides the
+next echo, because the two wrong pages agree with each other.
 Confirmed against the scans; e.g. PDF page 338 is an English errata
 sheet ("- II-xxi -", *P. II-104 ter, the cor.2 is incorrect*) but
 carried a copy of page 337, and PDF page 99 is the errata page "- v -"
-but carried a copy of page 98.
+but carried a copy of page 98. In two places the shift meant a source
+page was absent from the transcription altogether: PDF 182
+("Compléments au chap. 0") and PDF 384 ("- III-56 -").
 
 **Fix.** Every label now precedes the artifact it describes and names
 its PDF page number explicitly (`[CONTEXT — PREVIOUS PAGE]` /
 `[TARGET PAGE]`), and the runner compares each new page against its
 predecessor: above 0.75 similarity it retries once with a corrective
 instruction, and if the result still matches it stores the page with a
-`warning` that surfaces in the tex as a `%% [REVIEW: ...]` line. All 19
+`warning` that surfaces in the tex as a `%% [REVIEW: ...]` line. All 22
 pages were re-transcribed and verified; the corpus now converges clean.
+The check itself had to be fixed first: comparing the two pages
+character by character missed four real echoes whose lines had merely
+been re-wrapped, so the comparison is word-level (0.21-0.71 character
+similarity against 0.75-0.96 word similarity on the same pairs).
 
 **Detection everywhere else.** `experiments/pilot/audit_corpus.py`
-scans every corpus for this and two neighbouring silent failure classes
-(empty successes, distant duplicates) and writes
+scans every corpus for this and six neighbouring silent failure classes
+(leaked model reasoning, truncation and unclosed math, unbalanced LaTeX
+environments, escaping artifacts, empty successes, distant duplicates)
+and writes
 `experiments/pilot/CORPUS_AUDIT.md`. The La Longue Marche
 `mateo-canonical` corpus — the recommended one — is clean at a 0.65
 threshold, because its runner's label said "shown above" and so was
 never ambiguous. One page (140-3 p. 4) of the superseded
-`flash-lite-mateo` draft is a partial echo of its predecessor; the
-canonical file transcribes that page correctly.
+`flash-lite-mateo` draft was a partial echo of its predecessor and was
+re-transcribed on 2026-08-15 (word-level similarity to page 3 fell from
+0.767 to 0.128); the canonical file always had that page right.
