@@ -4,10 +4,10 @@
   "success": 696,
   "errors": 1,
   "total_chars": 1066371,
-  "total_tokens_in": 1979564,
-  "total_tokens_out": 403012,
-  "tokens_thinking": 4261687,
-  "estimated_cost": 59.94,
+  "total_tokens_in": 1982540,
+  "total_tokens_out": 402678,
+  "tokens_thinking": 4315239,
+  "estimated_cost": 60.58,
   "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py",
   "elapsed_seconds": 180,
   "model": "gemini-3.1-pro-preview",
@@ -15,6 +15,6 @@
   "thinking_level": "medium",
   "aborted_on_quota": false,
   "completed": "2026-08-15T06:29:47.735962",
-  "tokens_in": 1979564,
-  "tokens_out": 403012
+  "tokens_in": 1982540,
+  "tokens_out": 402678
 }

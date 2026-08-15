@@ -71,10 +71,6 @@
           "thinking_tokens": 2135
         }
       },
-      "496": {
-        "error": "The read operation timed out",
-        "text": ""
-      },
       "497": {
         "text": "A priori, $\\alpha$ et $\\beta$ dépendent des choix de nos $\\dots$ dans le problème --- semblons-en --- mais\n$$\n\\left\\{ \\begin{aligned}\n\\alpha\\rho\\alpha^{-1} &= [u, \\rho] \\\\\n\\beta\\sigma\\beta^{-1} &= [v, \\sigma]\n\\end{aligned} \\right. \\leqno{(16)}\n$$\n$\\dots$ en dépendent pas bien pour\n$$\nT_\\rho = \\operatorname{Centr}_\\mathcal{M}(\\rho), \\quad T_\\sigma = \\operatorname{Centr}_\\mathcal{M}(\\sigma) \\leqno{(17)}\n$$\nen tant que sous-modules $T_\\rho$ resp.\\ $T_\\sigma$, $\\alpha, \\beta$ en dépendent\npour $\\dots$\n\nHypothèse $\\beta = \\dots$ dépend que de $u = \\varphi(u)$ (pour $u \\in \\mathcal{G}_{0,3}^{\\wedge}$) [unclear: ...]\n\nOn exprime cette hypothèse en façon un peu\ndifférente, en posant\n$$\nJ = \\Ker(\\mathcal{G}[0] \\to \\mathcal{M}[0]), \\leqno{(18)}\n$$\npour un certain $u_0 \\dots$, noté $\\mathcal{G}[0]$ $\\delta_0 \\in J$, $\\dots$ aussi\n$\\alpha(m_0') = \\alpha(m_0)$, $\\beta(m_0') = \\beta(m_0)$.\nSoient $\\alpha_0, \\beta_0, \\alpha_0', \\beta_0', \\bar{\\alpha}_0, \\bar{\\beta}_0$\ndans $\\mathcal{G}$, qu'on [unclear: choisit], pour les familles de cocycles de $\\mathcal{G}$\n$$\n\\alpha' = \\bar{\\alpha}_0 (\\alpha_0) \\tilde{\\alpha}_0, \\quad \\beta' = \\bar{\\beta}_0 (\\beta_0) \\tilde{\\beta}_0\n$$\nd'où $\\dots$ et l'image par $\\varphi$ est nulle que\n$\\varphi(\\delta_0(\\alpha_0)) = \\varphi(\\delta_0) \\varphi(\\alpha_0) = \\varphi(\\alpha_0) = \\alpha$ et $\\dots$\n$\\varphi(\\delta_0\\beta_0) = \\varphi(\\delta_0)\\tilde{\\beta}_0 = \\beta$\n$$\n\\alpha' = \\bar{\\alpha} \\alpha \\tilde{\\alpha}, \\quad \\beta' = \\bar{\\beta} \\beta \\tilde{\\beta} \\quad \\text{dans } \\mathcal{G} \\leqno{(19)}\n$$\noù $\\alpha, \\alpha', \\tilde{\\alpha}, \\beta, \\beta', \\tilde{\\beta}$ sont les images par $\\varphi$ dans $\\mathcal{G}_{0,3}^{\\wedge}$, sous-entendu des conditions de l'hypothèse\n$$\n\\forall \\delta \\in J = \\Ker(\\mathcal{G}[0] \\to \\mathcal{M}[0]), \\dots - \\alpha^\\prime(\\delta\\alpha), \\beta^\\prime(\\delta\\beta) \\in \\Ker \\varphi \\leqno{(20)}\n$$\n[unclear: Quand cette] hypothèse ne s'est satisfaite, $\\dots$ dans des\napplications...",
         "latency_s": 17.3,
@@ -101,17 +97,26 @@
           "output_tokens": 477,
           "thinking_tokens": 1986
         }
+      },
+      "496": {
+        "text": "\\chapter*{\\S \\space 49. --- HOMOMORPHISMES DE $\\mathcal{M}_{0,3}$, LES GROUPES $\\mathcal{M}_{p,0}$ VOISINS}\n\\thispagestyle{empty}\n\\addcontentsline{toc}{section}{49. Homomorphismes de $\\mathcal{M}_{0,3}$, les groupes $\\mathcal{M}_{p,0}$ voisins}\n\\label{sec:49}\n\\section*{}\n\nI) Considérons un sous-groupe $G$ de $\\mathcal{M}_{0,3}$, contenant $\\mathcal{G}_{0,3}^{+\\wedge}$, image inverse d'un sous-groupe fermé de $\\Gamma_{0,3}^\\sim$\\footnote{Toute telle section centrale [unclear: antisymétrique] de section centrale de restriction correspond à un sous-groupe de $\\Gamma_{0,3}$, cf. p. 373.}. On suppose que celui-ci \"contient un sous-groupe\" --- disons qu'il contient un sous-groupe de torsion fini $\\neq 1$ de $\\Gamma \\subset \\Gamma_{0,3}$. Pour fixer les idées, on supposera que $g \\in \\Ker \\varepsilon_3$. En posant\\marginpar{$050$}\n$$\n\\mathcal{G} \\defeq G \\cap \\mathcal{M}_{0,3}^+, \\quad \\text{où } \\text{poids} \\equiv 1 \\pmod 3 \\leqno{(1)}\n$$\nCette dernière hypothèse implique donc que pour tout $u \\in G$, $u^{\\text{poids}} \\in \\mathcal{G}_{0,3}^+$, donc\n$$\ng = \\mathcal{G} \\cdot \\mathcal{G}_{0,3}^+ \\leqno{(2)}\n$$\nRestrictions sur $\\gamma$ :\n$$\n\\begin{cases}\n\\nu(p) = \\operatorname{int}(\\dot{\\alpha}_0) p \\\\\n\\nu(a_0) = \\operatorname{int}(M_{\\beta_0}) a_0\n\\end{cases} \\quad \\text{par ex.} \\leqno{(2')}\n$$\nOn considère\n$$\n\\begin{aligned}\nG_{\\mathcal{M}} &\\defeq G \\cap \\mathcal{M}_{0,3}^\\sim \\\\\nG_{[0,3]} &\\defeq G \\cap \\mathcal{M}_{0,3}[0] = \\operatorname{Norm}_{\\mathcal{G}}(\\mathcal{L}_0^\\sim)\n\\end{aligned} \\leqno{(3)}\n$$\nles sous-groupes\n$$\n\\begin{aligned}\ng &= G_{\\mathcal{M}} \\cdot \\mathcal{G}_{0,3}^+ \\quad (\\text{qui est semi-direct}) \\\\\ng_{[0]} &= G_{\\mathcal{M}} \\cdot \\mathcal{L}_0^\\sim \\\\\ng_{[0,3]} &= \\mathcal{G}_{0,3}^+ \\cdot \\mathcal{L}_0^\\sim\n\\end{aligned} \\leqno{(4), (5), (6)}\n$$\nOn a pour\n$$\n\\mathcal{L}_0^\\sim = \\text{sous-groupe fermé de } \\mathcal{G}_{0,3}^{+\\wedge} \\text{ engendré par } \\nu_0 \\leqno{(7)}\n$$\nainsi que de $\\mathcal{L}_0^\\sim, \\mathcal{L}_0^\\sim$.\n\nConsidérons un profini $\\mathcal{M}$ et un homomorphisme surjectif\n$$\n\\varphi : G \\longrightarrow \\mathcal{M} \\leqno{(8)}\n$$\nOn pose\n$$\n\\begin{cases}\n\\varphi(\\mathcal{G}_{0,3}^{+\\wedge}) = \\mathcal{C} \\\\\n\\varphi(G_{\\mathcal{M}}) = \\mathcal{M}_{[0]} \\\\\n\\varphi(G_{[0,3]}) = \\mathcal{M}_{[0,3]} \\\\\n\\varphi(\\mathcal{L}_0^\\sim) = \\mathcal{L}_0^\\sim\n\\end{cases} \\text{ sous-groupes distingués de } \\mathcal{M} \\leqno{(9)}\n$$\nDonc on a un système de sous-groupes fermés de $\\mathcal{M}$, satisfaisant\n$$\n\\begin{aligned}\n\\mathcal{M}_{[0]} &\\subset \\mathcal{M}_{[0,3]} \\subset \\operatorname{Norm}_{\\mathcal{M}}(\\mathcal{L}_0^\\sim) \\\\\n\\mathcal{L}_0^\\sim &\\subset \\mathcal{M} \\cap \\mathcal{M}_{[0,3]}\n\\end{aligned} \\leqno{(10), (11)}\n$$\nPrésentons les générateurs, désignons par $\\rho, \\sigma, \\varepsilon_i \\dots$ les images des éléments de $\\mathcal{G}$, qui y satisfont les relations communes dans $\\mathcal{G}_{0,3}$, en particulier\n$$\n\\sigma^2 = \\rho^3 = 1, \\quad \\sigma\\rho = \\sigma_0, \\quad \\rho\\sigma = \\varepsilon_i, \\quad \\rho_1 = \\sigma(\\sigma_0) = \\rho(\\varepsilon_0). \\leqno{(12)}\n$$\nLes restrictions des relations $\\alpha_0, \\beta_0$ de $(2, 2')$ à $\\mathcal{M}_{p,0}[0]$ seront plutôt notées $\\alpha, \\beta$, où $\\alpha, \\beta$ font des applications\n$$\n\\operatorname{sg} = \\mathcal{G} \\rightrightarrows \\mathcal{G}_{0,3}^{+\\wedge} \\leqno{(13)}\n$$\n[unclear: ...]\n$$\ng_{[0,3]} \\rightrightarrows \\mathcal{C} \\leqno{(14)}\n$$\nsatisfaisant à\n$$\n\\begin{cases}\n\\nu(p) = \\operatorname{int}(\\alpha) p \\\\\n\\nu(\\beta) = \\operatorname{int}(\\beta) p\n\\end{cases} \\quad \\text{pour } \\gamma \\in \\mathcal{M}[0], \\, \\text{où } f \\in \\varphi(\\mathcal{M}_0), \\, \\alpha = \\alpha(u), \\, \\beta = \\beta(u). \\leqno{(15)}\n$$",
+        "latency_s": 12.7,
+        "usage": {
+          "prompt_tokens": 2905,
+          "output_tokens": 1414,
+          "thinking_tokens": 2947
+        }
       }
     },
     "summary": {
-      "pages_ok": 4,
-      "tokens_in": 11620,
-      "tokens_out": 2444,
-      "tokens_thinking": 8794,
-      "cost_5_pages": 0.0316,
-      "cost_per_1000_pages": 7.9,
-      "avg_latency_s": 12.3,
-      "benchmarked": "2026-08-14T20:58:09.491976"
+      "pages_ok": 5,
+      "tokens_in": 14525,
+      "tokens_out": 3858,
+      "tokens_thinking": 11741,
+      "cost_5_pages": 0.0434,
+      "cost_per_1000_pages": 8.67,
+      "avg_latency_s": 12.4,
+      "benchmarked": "2026-08-15T08:30:04.979224"
     }
   },
   "gemini-3.6-flash": {
@@ -232,6 +237,66 @@
       "cost_per_1000_pages": 93.43,
       "avg_latency_s": 53.3,
       "benchmarked": "2026-08-14T21:06:46.743789"
+    }
+  },
+  "gemini-3.1-flash-lite-preview": {
+    "model_key": "flash-lite",
+    "pages": {
+      "495": {
+        "text": "49. Homomorphismes de $\\mathcal{M}_{0,3}$, les groupes $\\mathcal{M}_{g,\\nu}$ généraux.\n\nI) Considérons un sous-groupe $\\mathcal{G}$ de $\\mathcal{M}_{0,3}$, contenant $\\mathcal{G}_{0,3}^+$, et un sous-groupe ouvert d'un sous-groupe fini $\\Gamma_{0,3}^\\sim$. On suppose que celui-ci contient un sous-groupe d'indice fini de $\\Gamma_{Q} \\subset \\Gamma_{0,3}^\\sim$. Pour le moment, on simplifie en supposant que $\\mathcal{G} \\supset \\mathcal{G}_{0,3}^+$.\n\\marginpar{Tout petit cercle sur le dessin représente le sous-groupe (partie) des s-groupes ... des s-groupes de $\\Gamma_{0,3}^\\sim$, assez très précis, à diviser ... des courbes algébriques des points $\\bar{k}, \\bar{J}$.}\n\n$$\n\\mathcal{G} \\subset \\mathcal{M}_{0,3}, \\quad \\mathcal{G} \\to \\operatorname{proj} \\equiv 1 \\leqno(1)\n$$\nCette dernière hypothèse signifie donc que pour tout $g \\in \\mathcal{G}$, $\\operatorname{int}(g) \\in \\mathcal{G}_{0,3}^+$, et on a :\n$$\ng \\to \\operatorname{int}(g) \\leqno(2)\n$$\nOn définit :\n$$\n\\begin{cases} \\mathcal{G}_{0,3} = \\mathcal{G} \\cap \\mathcal{M}_{0,3} [0] \\\\ \\mathcal{G}_{0,3} = \\mathcal{G} \\cap \\mathcal{M}_{0,3} [0] = \\operatorname{Norm}(\\mathcal{L}_0^\\sim) \\end{cases} \\leqno(3)\n$$\nOn note :\n$$\n\\mathcal{G} = \\mathcal{G}_{0,3} \\cdot \\mathcal{G}_+^\\sim \\quad (\\text{on est semi-direct}) \\leqno(4)\n$$\n$$\n\\mathcal{G}_{0,3} = \\mathcal{G}_{0,3} \\cdot \\mathcal{L}_0^\\sim \\leqno(5)\n$$\n$$\n\\mathcal{G}_{0,3} \\cap \\mathcal{G}_+^\\sim = \\mathcal{L}_0^\\sim \\leqno(6)\n$$\nOn pose :\n$$\n\\mathcal{L}_0^\\sim = \\text{sous-groupe fermé dans } \\mathcal{G}_{0,3}^+ \\text{ engendré par } \\mathcal{L}_0, \\mathcal{L}_0^\\sim \\leqno(9)\n$$",
+        "latency_s": 6.9,
+        "usage": {
+          "prompt_tokens": 2905,
+          "output_tokens": 622,
+          "thinking_tokens": 1471
+        }
+      },
+      "496": {
+        "text": "\\section*{49. Homomorphismes de $M_{0,3}$, les groupes $M_{0,3}$ finis}\n\nI) Considérons un sous-groupe fini $\\mathcal{G}$ de $M_{0,3}$, contenant $\\mathcal{G}_{0,3}^+$, d'indice un sous-groupe fini de $\\Gamma_{0,3}^\\sim$. On suppose que celui-ci \"contient\"\\footnote{Tout cela est un rappel du cours précédent. Il s'agit de voir la restriction d'une action, etc.} un sous-groupe d'indice fini de $\\Gamma_{\\mathcal{G}} \\subset \\Gamma_{0,3}^\\sim$. Pour la simplification, posons que $\\mathcal{G} \\supset \\mathcal{G}_{0,3}^+$.\n$$ \\mathcal{G} \\supset \\mathcal{G}_{0,3}^+ \\implies \\text{proj} \\equiv 1 \\leqno (1) $$\nCette dernière hypothèse implique que pour tout $g \\in \\mathcal{G}$, $x \\in \\mathcal{G}_{0,3}^+$, on a\n$$ g \\xrightarrow{\\text{conj}} \\mathcal{G}_{0,3}^+ \\leqno (2) $$\n$$ \\begin{cases} x(p) = \\operatorname{int}(a)p \\\\ x(\\sigma) = \\operatorname{int}(b)\\sigma \\end{cases} \\quad a_0 = a_0 \\text{ [unclear: \"a0\"] } \\leqno (3) $$\n\nOn considère\n$$ \\mathcal{G}_{0,3} = \\mathcal{G} \\cap M_{0,3}^\\sim \\leqno (3) $$\n$$ \\mathcal{G}_{[0,3]} = \\mathcal{G} \\cap M_{0,3}[0] = \\operatorname{Norm}_{\\mathcal{G}}(L_0^\\sim) \\leqno (3) $$\nOn note que\n$$ \\mathcal{G} = \\mathcal{G}_{0,3} \\cdot \\mathcal{G}^+ \\text{ (qui est semi-direct)} \\leqno (4) $$\n$$ \\mathcal{G}_{[0,3]} = \\mathcal{G}_{0,3} \\cdot L_0^\\sim \\leqno (5) $$\n$$ \\mathcal{G}_{[0,3]} \\cap \\mathcal{G}_{0,3}^+ = L_0^\\sim \\leqno (6) $$\nOn a pour\n$$ L_0^\\sim = \\text{sous-groupe fini de } \\mathcal{G}_{0,3}^+ \\text{ engendré par } \\rho, \\sigma \\leqno (7) $$\n\n\\bigskip\n\nConsidérons $\\varphi : \\mathcal{G} \\longrightarrow \\mathcal{M}$ un homomorphisme surjectif.\n$$ \\begin{cases} \\varphi(\\mathcal{G}_{0,3}^+) = \\mathcal{C} & \\text{ss-groupe distingué dans } \\mathcal{M} \\\\ \\varphi(\\mathcal{G}_{0,3}) = \\mathcal{M}_{0,3} \\\\ \\varphi(\\mathcal{G}_{[0,3]}) = \\mathcal{M}_{[0,3]} \\\\ \\varphi(L_0^\\sim) = L_0^\\sim \\end{cases} \\leqno (8) $$\nDonc on a $\\mathcal{M}_{0,3} \\subset \\mathcal{M}_{[0,3]} \\subset \\operatorname{Norm}_{\\mathcal{M}}(L_0^\\sim)$.\n$$ L_0 \\subset \\mathcal{G} \\cap \\mathcal{M}_{[0,3]} \\leqno (10) $$\n$$ L_0 \\subset \\mathcal{G} \\cap \\mathcal{M}_{[0,3]} \\leqno (11) $$\n\nPour le groupe $\\mathcal{G}$, désigne-t-on par $\\rho, \\sigma, \\varepsilon \\dots$ les images des éléments dans $\\mathcal{G}$ qui sont les relèvements des orbites [unclear: commes] dans $\\mathcal{G}_{0,3}$. En particulier :\n$$ \\rho^2 = \\rho^3 = 1, \\quad \\sigma \\rho = \\varepsilon_0, \\quad \\rho \\varepsilon = \\dots, \\quad \\rho_1 = \\sigma(\\rho_0) = \\rho(\\rho_0) \\leqno (12) $$\nLes restrictions des actions $\\alpha_0, \\beta_0$ de $(2, 2')$ sur $M_{0,3}[0]$ seront plutôt notées $\\alpha, \\beta$ où $\\alpha, \\beta$ font des applications :\n$$ \\mathcal{G} \\xrightarrow{\\alpha, \\beta} \\mathcal{G}_{0,3}^+ \\leqno (13) $$\n$$ \\mathcal{G} = \\{ (u, v) \\in \\mathcal{G} \\times \\mathcal{G} \\mid u \\in \\mathcal{G}[0] \\} $$\n$\\mathcal{M}_{0,3}[0,3]$ et $\\mathcal{G}$ définis par les relations $f=1$.\n$$ \\varphi : \\mathcal{G}[0,3] \\rightrightarrows \\mathcal{G}_{0,3}^+ \\text{ [unclear: rel. } \\varphi \\mathcal{G}_{0,3}^+ \\dots] $$\n$$ \\varphi : \\dots \\text{ [unclear: relations, sans notion } \\rho, \\dots \\text{ confusion possible]} $$\n$$ \\mathcal{G}[0] \\rightrightarrows \\mathcal{C} \\leqno (14) $$\nEt enfin\n$$ \\begin{cases} \\varphi(p) = \\operatorname{int}(\\alpha)p \\\\ \\varphi(\\sigma) = \\operatorname{int}(\\beta)\\sigma \\end{cases} \\quad \\alpha \\in \\mathcal{M}[0] \\text{ [unclear: font } \\varphi(\\mathcal{M}_0)], \\alpha = \\alpha(\\mathcal{M}_0), \\beta = \\beta(\\mathcal{M}_0). \\leqno (15) $$",
+        "latency_s": 4.9,
+        "usage": {
+          "prompt_tokens": 2905,
+          "output_tokens": 1348,
+          "thinking_tokens": null
+        }
+      },
+      "497": {
+        "text": "A priori, $\\alpha$ et $\\beta$ dépendent des choix de $w_0$ dans $\\mathcal{G}$ --- mais\n$$\n\\begin{cases} \\alpha p \\alpha^{-1} = [u, p] \\\\ \\beta \\sigma \\beta^{-1} = [v, \\sigma] \\end{cases} \\leqno{(16)}\n$$\n--- et ne dépendent pas de $w_0$\n$$\nT_p = \\operatorname{Centr}_{\\mathcal{M}}(p), \\quad T_\\sigma = \\operatorname{Centr}_{\\mathcal{M}}(\\sigma) \\leqno{(17)}\n$$\non voit dans quel module $T_p$ resp. $T_\\sigma$, $\\alpha, \\beta$ en dépendent\npour cela.\nHypothèse : $\\alpha = \\alpha(w_0), \\beta = \\beta(w_0)$ dépendent de $w_0 = \\varphi(w_0)$ (pour tout $w_0$).\nOn examine cette hypothèse de façon plus affinée, en considérant\n$$\nJ = \\operatorname{Ker}(\\mathcal{G}[0] \\to \\mathcal{M}[0]), \\leqno{(18)}\n$$\nsoit $w_0, w'_0$ des éléments dans $\\mathcal{G}[0]$ tels que $\\varphi(w_0) = \\varphi(w'_0)$, avec\n$\\alpha(w'_0) = \\alpha(w_0), \\beta(w'_0) = \\beta(w_0)$.\nSoit $\\alpha = \\alpha(w_0), \\beta = \\beta(w_0), \\alpha' = \\alpha(w'_0), \\beta' = \\beta(w'_0), \\bar{\\alpha} = \\alpha(w_0), \\bar{\\beta} = \\beta(w_0)$\ndans $\\mathcal{G}$, étant donné $w_0, w'_0$ des formes de cycles de $\\mathcal{G}$\nd'où $\\alpha' = \\bar{\\alpha} \\alpha_0, \\beta' = \\bar{\\beta} \\beta_0$ et on a que\n$\\varphi(\\delta_0 \\alpha_0) = \\varphi(\\delta_0) \\varphi(\\alpha_0) = \\varphi(\\alpha_0) = \\alpha$ et $\\varphi(\\delta_0 \\beta_0) = \\beta$.\n$$\n\\alpha' = \\bar{\\alpha} \\alpha, \\quad \\beta' = \\bar{\\beta} \\beta \\leqno{(19)}\n$$\n$\\alpha, \\alpha', \\beta, \\beta'$ étant les images dans $\\mathcal{G}[0]$, attendant de l'hypothèse\n$\\forall \\delta \\in J = \\operatorname{Ker}(\\mathcal{G}[0] \\to \\mathcal{M}[0]), \\dots (\\delta_0, \\bar{\\beta}_0) \\in \\operatorname{Ker} \\varphi$.\nQu'avec l'hypothèse on est faite, --- des\n(...)",
+        "latency_s": 7.5,
+        "usage": {
+          "prompt_tokens": 2905,
+          "output_tokens": 665,
+          "thinking_tokens": 1965
+        }
+      },
+      "498": {
+        "text": "(21)\n$$\n\\mathcal{M}[0] \\rightrightarrows \\mathcal{G} \\leqno{(21)}\n$$\nsatisfaisant à (14), et satisfaisant à\n$$\n\\begin{cases} u\\alpha = \\alpha \\rho \\\\ u\\sigma = \\sigma \\beta \\end{cases} \\text{pour } u \\in \\mathcal{M}[0], \\alpha = \\alpha(u), \\beta = \\beta(u), \\leqno{(22)}\n$$\nqui généralisent (2').\nD'ailleurs, posons\n$$\n\\xi = \\alpha \\rho^{-1}, \\quad \\eta = \\beta \\sigma^{-1} \\leqno{(23)}\n$$\nles relations (19) deviennent alors:\n$$\nu\\rho = \\xi \\rho, \\quad u\\sigma = \\eta \\sigma \\leqno{(24)}\n$$\net\n$$\n\\xi = [u, \\rho], \\quad \\eta = [u, \\sigma] \\leqno{(25)}\n$$\net de plus\n$$\n\\xi = \\eta^l, \\quad \\nu = \\frac{l-1}{2} \\in \\hat{\\mathbf{Z}} \\text{ (cf. la multiplication...)} \\leqno{(26)}\n$$\nqui prouve que la relation ... des $\\mathcal{G}^+$.\n(On suppose pour fixer les idées que\n$$\ng \\xrightarrow{\\times \\bar{\\mathbf{Z}}^\\times} \\bar{\\mathbf{Z}}^\\times \\text{ (multiplication...)} \\leqno{(27)}\n$$\net donc pour\n$$\ng \\to \\mathcal{M} \\xrightarrow{\\times \\bar{\\mathbf{Z}}^\\times} \\bar{\\mathbf{Z}}^\\times, \\leqno{(28)}\n$$\nde même que ... action en multiplication... (cf. $\\hat{\\mathbf{Z}}^\\times$)\npour les ... et $\\mathcal{M}$.)\nConsidérons alors\n$$\n\\mathcal{M}[0] \\to \\Aut(\\mathcal{G}) \\leqno{(29)}\n$$\n$$\nu \\mapsto \\operatorname{int}(u)\n$$\net voir sur (22) ...",
+        "latency_s": 6.1,
+        "usage": {
+          "prompt_tokens": 2905,
+          "output_tokens": 502,
+          "thinking_tokens": 1338
+        }
+      },
+      "499": {
+        "text": "\\marginpar{au point de vue topologique} \\noindent les notations $\\alpha, \\beta : \\mathcal{M}_{0,3} \\to \\widehat{\\mathcal{C}}$ et $\\mathcal{C}$.\n\nD'ailleurs, pour \n$$\n\\mathcal{M}_{0,3} = \\operatorname{Im}(\\mathcal{M}_{0,3} \\to \\Aut(\\hat{\\mathcal{C}})) \\leqno{(29)}\n$$\nles notations $\\alpha, \\beta$ pour $\\mathcal{M}_{0,3}$ signifient que l'action est fidèle sur $\\hat{\\mathcal{C}}$. D'où aussi l'application d'un certain sous-groupe $\\mathcal{M}_{0,3} \\subset \\operatorname{Norm}_{\\Aut(\\hat{\\mathcal{C}})}(\\mathcal{L}_0)$ des relations des éléments de l'équation \n$$\n\\text{(26)}\n$$\n$$\n\\xi^{\\sigma} \\in \\mathcal{L}_1 \\leqno{(30)}\n$$\nrelation qui est celle de (26), sous la forme précise de l'exposant $\\sigma \\in \\mathcal{G}$ pour $\\mathcal{G}_{0,3} \\subset \\SL(2, \\hat{\\mathbf{Z}})$ agissant sur $\\hat{\\mathcal{C}}$ — qu'on supprime pour simplifier la vie.\n\nOn se place sur $\\mathcal{G}_{0,3}$, dans ces points-là, soit\n$$\n\\left\\{ \\Sigma = \\mathcal{Z}_{\\sigma, \\sigma'} \\subset \\mathcal{G} \\times \\mathcal{G} \\leqno{(31, 32)} \\right.\n$$\n\\begin{tikzcd}\n\\arrow[loop, left] \\dots \n\\end{tikzcd}\n\\marginpar{[unclear: $\\xi^{\\sigma'} = (\\xi^{\\sigma})_1$]}\nPour $u \\in \\Aut(\\hat{\\mathcal{C}})$ agissant sur les éléments de la catégorie et sur $\\sigma$, i.e. telle que $\\xi^{\\sigma} = (\\xi \\cdot \\sigma) = (\\dots)$ (suit la condition de (31))\n\\smallskip\n\\noindent\n\\textit{[Note: Le manuscrit est ici fortement raturé autour des équations (31) et (32).]}",
+        "latency_s": 6.0,
+        "usage": {
+          "prompt_tokens": 2905,
+          "output_tokens": 513,
+          "thinking_tokens": 1076
+        }
+      }
+    },
+    "summary": {
+      "pages_ok": 5,
+      "tokens_in": 14525,
+      "tokens_out": 3650,
+      "tokens_thinking": 5850,
+      "cost_5_pages": 0.0179,
+      "cost_per_1000_pages": 3.58,
+      "avg_latency_s": 6.3,
+      "benchmarked": "2026-08-15T08:31:51.370651"
     }
   }
 }

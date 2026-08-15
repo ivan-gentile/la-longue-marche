@@ -15,12 +15,13 @@ layer, so compare candidates against each other, not to 1.0.
 | Claude Opus 4.7 + mateo-canonical | 0.324 | 0.402 | 72 | 387 | 293 | 763 |
 | Gemini 3.1 Pro + mateo-canonical | 0.654 | 0.611 | 120 | 240 | 50 | 763 |
 | Gemini 3.1 Flash-Lite + mateo-canonical | 0.461 | 0.449 | 270 | 222 | 39 | 763 |
-| shipped corpus (production Flash-Lite + mateo-canonical) | 0.485 | 0.41 | 66 | 448 | 15 | 763 |
-| canonical corpus (production Gemini Pro + mateo-canonical) | 0.648 | 0.605 | 85 | 281 | 27 | 763 |
+| shipped corpus (production Flash-Lite + mateo-canonical) | 0.491 | 0.41 | 66 | 448 | 15 | 763 |
+| canonical corpus (production Gemini Pro + mateo-canonical) | 0.645 | 0.607 | 103 | 255 | 56 | 763 |
 | Gemini 3.7 Flash + mateo-canonical (Aug 2026) | 0.457 | 0.562 | 99 | 295 | 50 | 763 |
 | Gemini 3.6 Flash + mateo-canonical (Aug 2026) | 0.595 | 0.487 | 111 | 341 | 30 | 763 |
-| Gemini 3.5 Flash-Lite + mateo-canonical (Aug 2026) | 0.394 | 0.313 | 244 | 343 | 12 | 763 |
+| Gemini 3.5 Flash-Lite + mateo-canonical (Aug 2026) | 0.433 | 0.344 | 142 | 397 | 14 | 763 |
 | Gemini 3.1 Pro + mateo-canonical (Aug 2026 re-run) | 0.601 | 0.573 | 104 | 292 | 37 | 763 |
+| Gemini 3.1 Flash-Lite + mateo-canonical (Aug 2026 re-run) | 0.344 | 0.301 | 166 | 407 | 33 | 763 |
 
 ## Largest omissions — shipped baseline (49.1old, text-first-fewshot)
 
@@ -57,8 +58,8 @@ layer, so compare candidates against each other, not to 1.0.
 
 ## Largest omissions — canonical corpus (production Gemini Pro + mateo-canonical)
 
+- (27 tokens) “où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553”
 - (26 tokens) “sera unique si on ainsi sur l'ensemble des des satisfaisant on aura une structure de groupe déduite par transport de structure de celle de 0' etc”
-- (14 tokens) “empty toc section 49 les groupes généraux sec 49 toc subsection préliminaires heuristiques 3cm”
 - (12 tokens) “40 70 -- 40 92 40 70 ellipse radius 10 radius 25”
 - (9 tokens) “1pt 1pt at 150 anchor west at anchor west”
 
@@ -78,7 +79,6 @@ layer, so compare candidates against each other, not to 1.0.
 
 ## Largest omissions — Gemini 3.5 Flash-Lite + mateo-canonical (Aug 2026)
 
-- (108 tokens) “même considérons un groupe profini et un homomorphisme continu surjectif on pose sous-groupe distingué de donc ce sont des sous-groupes fermés de satisfaisant norm 10 11 par abus de langage on désigne”
 - (96 tokens) “de façon plus précise soit conjugué dans -1 conjugué dans -1 -1 tel que et soit un automorphisme de et posons ll -1 -1 -1 -1 cf 24 25 -5mm 34 33 n'existe pas alors dire que est conjugué signifie que f”
 - (11 tokens) “que se factorise par --- ce qu'on va supposer pour nous”
 
@@ -88,4 +88,12 @@ layer, so compare candidates against each other, not to 1.0.
 - (12 tokens) “40 70 -- 40 92 40 70 ellipse radius 10 radius 25”
 - (11 tokens) “sorte qu'on aura par les formules de cocycles dans 0' 0'”
 - (9 tokens) “1pt 1pt at 150 anchor west at anchor west”
+
+## Largest omissions — Gemini 3.1 Flash-Lite + mateo-canonical (Aug 2026 re-run)
+
+- (38 tokens) “un peu différente en introduisant 18 on veut donc que pour 0' avec on ait 0' 0' soient u' u' dans de sorte qu'on aura par les formules de cocycles dans 0' 0' d'où en appliquant et notant”
+- (27 tokens) “où on se met dans le bain toute cette section semble entièrement inutile pour la suite c'est un tâtonnement préliminaire qui débouche sur la section ii 553”
+- (18 tokens) “quantités etc dans donc l'hypothèse signifie aussi on 20 quand cette hypothèse est satisfaite on donc des applications”
+- (14 tokens) “empty toc section 49 les groupes généraux sec 49 toc subsection préliminaires heuristiques 3cm”
+- (12 tokens) “pose sous-groupe distingué de donc ce sont des sous-groupes fermés de satisfaisant”
 

@@ -31,7 +31,9 @@ reference pages.
 1. Style profile (`experiments/pilot/49_1_error_profile.md`): the
    February pipeline read the mathematics well but produced no
    publishable scaffolding; the `mateo-canonical` prompt fixed most of
-   that (composite style 0.113 → 0.74+).
+   that. On the shipped corpora the composite style score over these
+   pages is 0.705 (canonical Pro) and 0.67 (Flash-Lite draft); 0.742 is
+   the 5-page pilot bench, not a corpus figure.
 2. Content fidelity (`experiments/pilot/fidelity_49_1.md`, July 2026):
    the style gains did **not** carry content. Against Mateo's corrected
    text (763 content tokens), Flash-Lite outputs omit or rewrite about

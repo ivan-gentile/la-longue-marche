@@ -40,7 +40,19 @@ import sys
 sys.path.insert(0, str(HERE))
 from models import PRICES_BY_ID as PRICES  # noqa: E402
 
+# Every run directory on disk that holds a transcriptions.json + config.json.
+# The first version of this list covered only the runs behind the current
+# deliverables, which meant the "true total" it published still omitted 41% of
+# documented spend — including the February corpus, which is itself published.
 RUNS = [
+    ("La Longue Marche 140-3", "february-original (Pro, superseded)",
+     HERE / "production" / "140-3"),
+    ("La Longue Marche 140-4", "february-original (Pro, superseded)",
+     HERE / "production" / "140-4"),
+    ("La Longue Marche 140-3", "production-flash-lite (text-first-fewshot)",
+     HERE / "production-flash-lite" / "140-3"),
+    ("La Longue Marche 140-4", "production-flash-lite (text-first-fewshot)",
+     HERE / "production-flash-lite" / "140-4"),
     ("La Longue Marche 140-3", "mateo-canonical (Pro)",
      HERE / "production-mateo-canonical" / "140-3"),
     ("La Longue Marche 140-4", "mateo-canonical (Pro)",
@@ -149,19 +161,20 @@ def main() -> None:
         "the Gemini API but are billed at the output rate. The runners "
         "originally left them out of the arithmetic, so every figure this "
         "project published for a run with thinking enabled was several times "
-        "below the real bill. The corrected totals are below; the last column "
-        "is what was published before.",
+        "below the real bill. The last column recomputes each run with that "
+        "old thinking-free arithmetic, so the two columns are the same data "
+        "priced both ways. (It is computed, not read back from summary.json — "
+        "those files have already been corrected in place, so reading them "
+        "would just print the fixed figure twice.)",
         "",
-        "| Document | Variant | Model | Pages | Tokens in | Tokens out | Thinking | **True cost** | Previously stated |",
+        "| Document | Variant | Model | Pages | Tokens in | Tokens out | Thinking | **True cost** | Old arithmetic |",
         "|---|---|---|---|---|---|---|---|---|",
     ]
     for doc, variant, _, a in rows:
-        prev = a["previously_recorded"]
-        prev_s = f"${prev:.2f}" if isinstance(prev, (int, float)) else "—"
         lines.append(
             f"| {doc} | {variant} | {a['model']} | {a['pages']} "
             f"| {a['tokens_in']:,} | {a['tokens_out']:,} | {a['tokens_thinking']:,} "
-            f"| **${a['cost_true']:.2f}** | {prev_s} |"
+            f"| **${a['cost_true']:.2f}** | ${a['cost_excluding_thinking']:.2f} |"
         )
     lines += [
         "",

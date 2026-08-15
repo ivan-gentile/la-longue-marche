@@ -152,6 +152,8 @@ def preset_49_1() -> None:
         ("Gemini 3.6 Flash + mateo-canonical (Aug 2026)", "gemini-3.6-flash"),
         ("Gemini 3.5 Flash-Lite + mateo-canonical (Aug 2026)", "gemini-3.5-flash-lite"),
         ("Gemini 3.1 Pro + mateo-canonical (Aug 2026 re-run)", "gemini-3.1-pro-preview"),
+        ("Gemini 3.1 Flash-Lite + mateo-canonical (Aug 2026 re-run)",
+         "gemini-3.1-flash-lite-preview"),
     ]:
         text = _new_bench_pages(model_id)
         if text.strip():

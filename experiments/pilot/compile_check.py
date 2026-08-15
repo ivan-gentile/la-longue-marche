@@ -133,9 +133,24 @@ def main() -> None:
 
             n_errors = sum(kinds.values())
             bad_pages = sorted(by_page)
-            clean = total - len(bad_pages)
+
+            # How far did the compiler actually get? pdflatex stops at a fatal
+            # error, at its 100-error limit, or when we kill it — and pages it
+            # never read must not be counted as clean. Without this, a single
+            # bad page early in a file silently certified every page after it.
+            reached_line = max(
+                (int(n) for n in re.findall(r"^l\.(\d+)", log, re.M)), default=0)
+            aborted = (timed_out
+                       or "Fatal error occurred" in log
+                       or "That makes 100 errors" in log)
+            if aborted and reached_line:
+                idx = bisect.bisect_right(marker_lines, reached_line) - 1
+                verified_to = marker_pages[idx] if 0 <= idx < len(marker_pages) else 0
+            else:
+                verified_to = total
+            clean = max(verified_to - len([p for p in bad_pages if p <= verified_to]), 0)
             rows.append((label, stem, total, clean, len(bad_pages), n_errors,
-                         pdf_pages, timed_out))
+                         pdf_pages, timed_out, verified_to))
 
             if bad_pages:
                 details.append(f"### {label}\n")
@@ -147,9 +162,12 @@ def main() -> None:
                     f"{p} ({by_page[p]})" for p in bad_pages[:40])
                 more = f" … and {len(bad_pages) - 40} more" if len(bad_pages) > 40 else ""
                 details.append(f"\nPages (error count): {shown}{more}\n")
-            print(f"{label}: {clean}/{total} pages compile clean, "
+            scope = ("" if verified_to == total
+                     else f" (compiler only reached page {verified_to}; "
+                          f"pages {verified_to + 1}-{total} were never read)")
+            print(f"{label}: {clean}/{verified_to} pages compile clean{scope}, "
                   f"{n_errors} errors, PDF {pdf_pages} pages"
-                  + ("  [pdflatex HUNG — partial log]" if timed_out else ""))
+                  + ("  [pdflatex HUNG]" if timed_out else ""))
 
     lines = [
         "# Compile check",
@@ -163,13 +181,18 @@ def main() -> None:
         "still carry a missing `$` or an unbalanced brace. Errors are attributed "
         "to the page whose `%% ===== Page N =====` marker precedes them.",
         "",
-        "| Document | Pages | Compile clean | With errors | Total errors | PDF pages |",
-        "|---|---|---|---|---|---|",
+        "A compiler that stops early has not certified the pages it never "
+        "read: the **Verified through** column says how far it got, and "
+        "**Compile clean** counts only within that range.",
+        "",
+        "| Document | Pages | Verified through | Compile clean | With errors | Total errors | PDF pages |",
+        "|---|---|---|---|---|---|---|",
     ]
-    for label, stem, total, clean, bad, errs, pdf_pages, timed_out in rows:
+    for label, stem, total, clean, bad, errs, pdf_pages, timed_out, verified_to in rows:
         state = (f"{pdf_pages}" if pdf_pages
                  else ("— (pdflatex hung)" if timed_out else "— (aborted)"))
-        lines.append(f"| {label} | {total} | **{clean}** | {bad} | {errs} | {state} |")
+        scope = ("all" if verified_to == total else f"page {verified_to} only")
+        lines.append(f"| {label} | {total} | {scope} | **{clean}** | {bad} | {errs} | {state} |")
     lines += ["", *details]
 
     out = HERE / "COMPILE_REPORT.md"

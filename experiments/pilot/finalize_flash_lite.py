@@ -172,6 +172,42 @@ def main() -> None:
     )
     print(f"\nWrote {(NEW_PROD / 'FINAL_SCORE.json').relative_to(REPO)}")
 
+    # Release gate — same as the canonical build. A page can be recorded as a
+    # success and still be unusable, so nothing here is called shippable until
+    # the audit is clean.
+    print("\n[5/5] Release gate — audit the built corpus...")
+    from audit_corpus import audit as audit_corpus_fn
+
+    blocking = 0
+    for vol, spec in VOLUMES.items():
+        res_a = audit_corpus_fn(NEW_PROD / vol, spec["pages"], 0.75)
+        if res_a is None:
+            continue
+        flagged = {
+            "context echoes": [p for p, _ in res_a["echoes"]],
+            "reasoning leaks": [p for p, _ in res_a["reasoning_leaks"]],
+            "truncated": [p for p, _ in res_a["truncations"]],
+            "unbalanced env": [p for p, _ in res_a["unbalanced_envs"]],
+            "escape artifacts": [p for p, _ in res_a["escape_artifacts"]],
+            "empty": res_a["empty_successes"],
+        }
+        flagged = {k: v for k, v in flagged.items() if v}
+        if not flagged:
+            print(f"  {vol}: clean")
+            continue
+        for label, pages in flagged.items():
+            blocking += len(pages)
+            shown = ", ".join(str(x) for x in pages[:12])
+            more = f" (+{len(pages) - 12} more)" if len(pages) > 12 else ""
+            print(f"  {vol}: {len(pages)} page(s) with {label}: {shown}{more}")
+
+    if blocking:
+        print(f"\n  {blocking} flagged page(s) — repair with run_production.py "
+              f"--output-dir production-flash-lite-mateo --model flash-lite "
+              f"--pages <N ...>, then re-run this script. Do not ship until clean.")
+    else:
+        print("  All volumes clean — safe to ship.")
+
 
 if __name__ == "__main__":
     main()

@@ -2,12 +2,93 @@
   "generated": "2026-08-15",
   "echo_threshold": 0.75,
   "corpora": {
+    "La Longue Marche 140-3 — february-original (superseded, published)": {
+      "pages_with_text": 696,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [
+        [
+          432,
+          [
+            "odd number of single $ (inline math left open)"
+          ]
+        ],
+        [
+          561,
+          [
+            "odd number of single $ (inline math left open)",
+            "ends mid-command"
+          ]
+        ]
+      ],
+      "unbalanced_envs": [
+        [
+          9,
+          [
+            "\\begin{array} closed by \\end{matrix}"
+          ]
+        ],
+        [
+          320,
+          [
+            "\\begin{array} closed by \\end{matrix}"
+          ]
+        ],
+        [
+          378,
+          [
+            "\\begin{matrix} closed by \\end{cases}"
+          ]
+        ],
+        [
+          638,
+          [
+            "\\begin{tikzcd} never closed"
+          ]
+        ]
+      ],
+      "escape_artifacts": [
+        [
+          19,
+          1
+        ]
+      ],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
+    "La Longue Marche 140-4 — february-original (superseded, published)": {
+      "pages_with_text": 280,
+      "echoes": [],
+      "known_duplicates": [],
+      "reasoning_leaks": [],
+      "truncations": [],
+      "unbalanced_envs": [
+        [
+          56,
+          [
+            "\\begin{array} closed by \\end{matrix}",
+            "\\begin{array} closed by \\end{matrix}"
+          ]
+        ]
+      ],
+      "escape_artifacts": [],
+      "empty_successes": [],
+      "duplicate_groups": []
+    },
     "La Longue Marche 140-3 — mateo-canonical (Pro)": {
       "pages_with_text": 696,
       "echoes": [],
       "known_duplicates": [],
       "reasoning_leaks": [],
-      "truncations": [],
+      "truncations": [
+        [
+          692,
+          [
+            "odd number of single $ (inline math left open)"
+          ]
+        ]
+      ],
       "unbalanced_envs": [],
       "escape_artifacts": [],
       "empty_successes": [],
@@ -29,7 +110,26 @@
       "echoes": [],
       "known_duplicates": [],
       "reasoning_leaks": [],
-      "truncations": [],
+      "truncations": [
+        [
+          110,
+          [
+            "odd number of single $ (inline math left open)"
+          ]
+        ],
+        [
+          432,
+          [
+            "odd number of single $ (inline math left open)"
+          ]
+        ],
+        [
+          587,
+          [
+            "odd number of single $ (inline math left open)"
+          ]
+        ]
+      ],
       "unbalanced_envs": [],
       "escape_artifacts": [],
       "empty_successes": [],
@@ -40,7 +140,14 @@
       "echoes": [],
       "known_duplicates": [],
       "reasoning_leaks": [],
-      "truncations": [],
+      "truncations": [
+        [
+          91,
+          [
+            "odd number of single $ (inline math left open)"
+          ]
+        ]
+      ],
       "unbalanced_envs": [],
       "escape_artifacts": [],
       "empty_successes": [],

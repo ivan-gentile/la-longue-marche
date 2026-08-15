@@ -44,6 +44,13 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
 
 CORPORA = [
+    # The February run is superseded but still published in tex_output/, so it
+    # is audited too: a shipped file that nothing checks is exactly how the
+    # earlier defects survived.
+    ("La Longue Marche 140-3 — february-original (superseded, published)",
+     HERE / "production" / "140-3", 696),
+    ("La Longue Marche 140-4 — february-original (superseded, published)",
+     HERE / "production" / "140-4", 280),
     ("La Longue Marche 140-3 — mateo-canonical (Pro)",
      HERE / "production-mateo-canonical" / "140-3", 696),
     ("La Longue Marche 140-4 — mateo-canonical (Pro)",
@@ -156,6 +163,13 @@ def truncation_signals(text: str) -> list[str]:
     out = []
     if body.count("$$") % 2:
         out.append("odd number of $$ (math left open)")
+    # Inline math parity. Checking only $$ missed pages that end on a
+    # dangling single "$" — the math then runs on into the next page and
+    # errors there, so the damage shows up somewhere other than its cause.
+    without_display = body.replace("$$", "")
+    inline = len(re.findall(r"(?<!\\)\$", without_display))
+    if inline % 2:
+        out.append("odd number of single $ (inline math left open)")
     tail = body.rstrip()
     m = re.search(r"\\([a-zA-Z]*)$", tail)
     if m and m.group(1) not in TERMINAL_COMMANDS:

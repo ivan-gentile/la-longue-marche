@@ -20,7 +20,7 @@ All figures below come from scripts you can re-run yourself.
 > [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md). Passages below
 > marked *historical* describe the original February run.
 >
-> Two further corrections were made in August, both described in §10:
+> Three further corrections were made in August, described in §10:
 > a class of silently wrong pages (a page carrying its *previous*
 > page's text) was found and repaired in the Préschémas file, and the
 > cost figures this project had published were understated because
@@ -305,7 +305,7 @@ volumes. The Flash-Lite build of the same pipeline remains available as
 the cheaper draft. Page coverage of everything is tracked in
 [`tex_output/COVERAGE.md`](tex_output/COVERAGE.md).
 
-## 10. Two corrections made in August 2026
+## 10. Three corrections made in August 2026
 
 ### 10.1 Pages that silently carried the previous page's text
 
@@ -346,7 +346,8 @@ the packages and macros the corpora use, collected by compiling them and
 reading the undefined control sequences back out of the log.
 
 With it, *Catégories de variétés* compiles to a 100-page PDF with **zero**
-errors, and Préschémas produces its full 437 pages. The two handwritten La
+errors, and Préschémas produces its full 437 pages with 430 of them
+error-free (65 errors on 7 pages). The two handwritten La
 Longue Marche volumes still raise LaTeX errors — a transcription of
 handwritten mathematics can be structurally sound and still contain a
 missing `$` or an unbalanced brace, which is a different question from the
@@ -365,7 +366,7 @@ but bills them at the output rate, and the runners' arithmetic summed
 only the visible ones. Every cost this project published for a run with
 thinking enabled was therefore several times below the real bill — on
 the Pro corpus, thinking tokens outnumber visible output about 11 to 1,
-so the "$8.78" recorded for volume 140-3 was really $60.88. The token
+so the $8.75 recorded for volume 140-3 was really $60.58. The token
 counts were always stored, so
 [`experiments/pilot/recompute_costs.py`](experiments/pilot/recompute_costs.py)
 recovers the true figures without re-running anything; they are listed

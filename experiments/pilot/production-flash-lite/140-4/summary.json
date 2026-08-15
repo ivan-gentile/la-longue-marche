@@ -6,10 +6,14 @@
   "total_chars": 383028,
   "total_tokens_in": 499988,
   "total_tokens_out": 146679,
-  "estimated_cost": 0.35,
+  "estimated_cost": 2.36,
   "elapsed_seconds": 7204,
   "model": "gemini-3.1-flash-lite-preview",
   "model_key": "flash-lite",
   "thinking_level": "high",
-  "completed": "2026-03-06T21:58:40.935846"
+  "completed": "2026-03-06T21:58:40.935846",
+  "tokens_in": 499988,
+  "tokens_out": 146679,
+  "tokens_thinking": 1346235,
+  "cost_note": "includes thinking tokens billed at the output rate; recomputed by recompute_costs.py"
 }

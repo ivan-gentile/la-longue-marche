@@ -45,17 +45,18 @@ MODELS: dict[str, dict] = {
         "cost_output": 1.50,
         "released": "2026-01",
         "note": "produced the complete flash-lite-mateo draft and the "
-                "Préschémas transcription; 0.449 word similarity on Section "
-                "49.1, better than the newer 3.5 Flash-Lite (0.313).",
+                "Préschémas transcription; 0.301 word similarity on Section "
+                "49.1 in the August harness — the weakest model measured.",
     },
     "flash-lite-3.5": {
         "id": "gemini-3.5-flash-lite",
         "cost_input": 0.30,
         "cost_output": 2.50,
         "released": "2026-07",
-        "note": "newest Flash-Lite, but NOT adopted: on Section 49.1 it scores "
-                "0.313 word similarity and omits 244 of 763 reference tokens, "
-                "markedly worse than the older 3.1 Flash-Lite it would replace "
+        "note": "newest Flash-Lite. Better than the 3.1 Flash-Lite it "
+                "supersedes (0.344 vs 0.301 word similarity on Section 49.1), "
+                "but both sit far below gemini-3.7-flash (0.562) for a few "
+                "dollars per 1000 pages, so neither is the draft model "
                 "(bench_models_2026_08/summary.md).",
     },
     "pro": {
