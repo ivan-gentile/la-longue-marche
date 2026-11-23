@@ -2,9 +2,10 @@
 
 AI-assisted transcription of Alexander Grothendieck's handwritten
 manuscript *La longue marche à travers la théorie de Galois* (Part II,
-Cote 140-3 and 140-4, ~976 pages) into LaTeX, in collaboration with
-Mateo Carmona (Centre for Grothendieckian Studies (Centro di Studi Grothendieckiani)) and Olivia
-Caramello (Istituto Grothendieck).
+Cote 140-3 and 140-4, ~976 pages) into LaTeX. An independent project by
+Ivan Gentile; it does not represent, and is not endorsed by, any
+institution. Working drafts only: every transcription needs expert
+verification.
 
 **The introductory blog post, for non-specialists:**
 [thinkgentile.com — Transcribing Grothendieck's Handwriting with AI](https://thinkgentile.com/posts/grothendieck-ocr).
@@ -27,8 +28,7 @@ Caramello (Istituto Grothendieck).
 | [`tex_output/bourbaki_schemes_full_flash-lite.tex`](tex_output/bourbaki_schemes_full_flash-lite.tex) | Superseded whole-doc transcription — ~70 of 437 pages silently missing, no page alignment ([`GAPS.md`](experiments/bourbaki/GAPS.md)). Kept for comparison. |
 | [`tex_output/bourbaki_schemes_gemini_whole_p1-5.tex`](tex_output/bourbaki_schemes_gemini_whole_p1-5.tex) | Bourbaki 5-page control benchmark, Gemini 3.1 Pro (whole-doc mode). |
 | [`tex_output/bourbaki_schemes_opus_p1-5.tex`](tex_output/bourbaki_schemes_opus_p1-5.tex) | Bourbaki 5-page control benchmark, Claude Opus 4.7. |
-| [`reference/part1_sections_19_36/`](reference/part1_sections_19_36) | Mateo's corrected Part I sections (few-shot style reference). |
-| [`reference/validation/49.1old.tex`](reference/validation/49.1old.tex), [`49.1new.tex`](reference/validation/49.1new.tex) | Paired ground truth for Section 49.I (our output vs Mateo's corrected). |
+| [`reference/validation/49.1old.tex`](reference/validation/49.1old.tex) | Our pipeline's output for Section 49.I (the corrected reference it is scored against is private and not in this repo). |
 | [`experiments/pilot/`](experiments/pilot) | All scripts (transcription runner, diagram re-run, notation normalization, build scripts). |
 | [`experiments/pilot/production-flash-lite-mateo/*/transcriptions.json`](experiments/pilot/production-flash-lite-mateo) | Per-page JSON output from the full Flash-Lite production run. |
 | [`experiments/pilot/49_1_error_profile.md`](experiments/pilot/49_1_error_profile.md) | Categorized diff between our pipeline and Mateo's corrected version. |
@@ -109,14 +109,15 @@ ANTHROPIC_API_KEY=... python experiments/pilot/run_opus_vs_gemini.py \
 python experiments/pilot/diagnose_49_1.py
 ```
 
-## Collaboration
+## Acknowledgements
 
-This project exists because Mateo Carmona (CSG) shared the Part I
-typeset source and ground truth. Please cite:
+Thanks to Mateo Carmona for expert feedback and for reference material
+used for evaluation. That material was shared privately and is not
+included in this repository; the scripts that use it (few-shot examples,
+the Section 49.1 fidelity evaluation) expect it under `reference/` and
+`experiments/pilot/reference/` locally.
 
-- Mateo Carmona, Centre for Grothendieckian Studies (Centro di Studi Grothendieckiani)
-- Olivia Caramello, Istituto Grothendieck
-- Ivan Gentile (IFAB), AI pipeline and evaluation
+AI pipeline and evaluation: Ivan Gentile.
 
 ## License
 

@@ -55,3 +55,13 @@ notes/2026-03-05_scientific_article_draft_vlm_math_ocr.md
 # Scratch
 experiments/bourbaki_p1.png
 
+
+# Private material shared by the CSG for evaluation only, and private
+# correspondence: kept locally, never published (removed from tracking
+# 2026-11-23).
+reference/part1_sections_19_36/
+reference/validation/49.1new.tex
+experiments/pilot/reference/
+share/
+# Contains verbatim excerpts of the CSG's U46d ("All rights reserved").
+evaluation/varietes-U46/results.json
